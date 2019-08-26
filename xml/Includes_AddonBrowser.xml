@@ -440,7 +440,7 @@
 				<effect easing="inout" end="500,0" start="0,0" time="200" tween="sine" type="slide"/>
 			</animation>
 			<control type="group">
-				<animation condition="Container.Content(addons)" delay="200" easing="inout" effect="slide" end="480,0" reversible="true" start="0,0" time="400" tween="sine">Conditional</animation>
+				<animation condition="Container.Content(addons) + !ListItem.IsParentFolder" delay="200" easing="inout" effect="slide" end="480,0" reversible="true" start="0,0" time="400" tween="sine">Conditional</animation>
 				<control type="image">
 					<left>78</left>
 					<width>879</width>
@@ -513,7 +513,7 @@
 						<textcolor>ffd5d5d5</textcolor>
 						<pagecontrol>96</pagecontrol>
 						<autoscroll>false</autoscroll>
-						<label fallback="161">$INFO[Container(51).ListItem.AddonDescription]</label>
+						<label fallback="195">$INFO[ListItem.AddonDescription]</label>
 					</control>
 					<!-- Hidden scrollbar -->
 					<control id="96" type="scrollbar">
@@ -1348,7 +1348,7 @@
 					<font>Light26</font>
 					<align>right</align>
 					<textcolor>ff6a6c70</textcolor>
-					<label fallback="N/A">$INFO[Container(51).ListItem.AddonSize]</label>
+					<label fallback="N/A">$INFO[ListItem.AddonSize]</label>
 				</control>
 				<control type="image">
 					<top>128</top>
@@ -1363,7 +1363,7 @@
 					<font>Light32Spaced</font>
 					<autoscroll>false</autoscroll>
 					<textcolor>ffb1b2b3</textcolor>
-					<label>$INFO[ListItem.AddonDescription]</label>
+					<label fallback="195">$INFO[ListItem.AddonDescription]</label>
 				</control>
 			</control>
 		</control>
