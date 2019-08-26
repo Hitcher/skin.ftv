@@ -10,9 +10,8 @@
 			<visible>String.IsEmpty(Window(home).Property(ShowXRay)) + !Window.IsActive(videoosd) + !Window.IsActive(musicosd) + !Window.IsActive(subtitlesearch) + !Window.IsVisible(script-nextup-notification-NextUpInfo.xml)</visible>
 			<control type="group">
 				<visible>Player.Paused + !Player.Forwarding + !Player.Rewinding</visible>
-				<animation reversible="true" type="WindowOpen">
-					<effect end="100" start="100" time="4000" type="fade"/>
-					<effect end="0" start="100" time="200" delay="4000" type="fade"/>
+				<animation condition="System.IdleTime(4) + !Player.Caching" reversible="true" type="Conditional">
+					<effect end="0" start="100" time="200" type="fade"/>
 				</animation>
 				<control type="image">
 					<width>1980</width>
@@ -102,9 +101,8 @@
 					<height>341</height>
 					<texture>osd/Pause.png</texture>
 					<visible>Player.Paused + !Player.Caching + !Window.IsVisible(subtitlesearch)</visible>
-					<animation reversible="true" type="WindowOpen">
-						<effect end="100" start="100" time="2000" type="fade"/>
-						<effect end="0" start="100" time="200" delay="2000" type="fade"/>
+					<animation condition="System.IdleTime(2)" reversible="true" type="Conditional">
+						<effect end="0" start="100" time="200" type="fade"/>
 					</animation>
 				</control>
 				<control type="group">
@@ -424,7 +422,19 @@
 					<align>center</align>
 					<font>OSD20</font>
 					<textcolor>ffe5e4e5</textcolor>
-					<label>$VAR[SeekOffsetNew]</label>
+					<label>$VAR[SeekOffset]</label>
+					<visible>$EXP[SeekOffsetLargeLabel]</visible>
+				</control>
+				<control type="label">
+					<centerleft>137</centerleft>
+					<bottom>140</bottom>
+					<width>60</width>
+					<height>40</height>
+					<align>center</align>
+					<font>OSD16</font>
+					<textcolor>ffe5e4e5</textcolor>
+					<label>$VAR[SeekOffset]</label>
+					<visible>$EXP[SeekOffsetSmallLabel]</visible>
 				</control>
 				<control type="slider" id="401">
 					<left>92</left>

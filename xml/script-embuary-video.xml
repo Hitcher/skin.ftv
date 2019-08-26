@@ -2,6 +2,8 @@
 <window>
 	<!-- script-embuary-video.xml -->
 	<defaultcontrol always="true">7000</defaultcontrol>
+	<onload>SetProperty(onback_10052,SetFocus(7000))</onload>
+	<onload>SetProperty(onback_10053,SetFocus(7001))</onload>
 	<onunload>ClearProperty(SimilarTitles,home)</onunload>
 	<animation effect="fade" end="100" start="100" time="200">WindowClose</animation>
 	<controls>
@@ -434,7 +436,6 @@
 				<onleft>7000</onleft>
 				<onright>noop</onright>
 				<onright condition="!Window.IsVisible(1103)">SetProperty(BounceRight,1,Home)</onright>
-				<onback>7000</onback>
 				<onfocus>SetProperty(FadeResume,true,home)</onfocus>
 				<preloaditems>2</preloaditems>
 				<focusposition>2</focusposition>
@@ -769,7 +770,6 @@
 				<onleft>7001</onleft>
 				<onright>noop</onright>
 				<onright condition="!Window.IsVisible(1103)">SetProperty(BounceRight,1,Home)</onright>
-				<onback>7001</onback>
 				<onfocus>SetProperty(FadeResume,true,home)</onfocus>
 				<preloaditems>2</preloaditems>
 				<focusposition>2</focusposition>

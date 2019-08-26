@@ -148,6 +148,70 @@
 						<onfocus condition="!Control.IsVisible(800) + String.IsEqual(Container(800).CurrentItem,6)">Control.Move(800,-5)</onfocus>
 						<onfocus condition="!Control.IsVisible(800) + String.IsEqual(Container(800).CurrentItem,7)">Control.Move(800,-6)</onfocus>
 						<onfocus condition="!Control.IsVisible(800) + String.IsEqual(Container(800).CurrentItem,8)">Control.Move(800,-7)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(1001).ListItemPosition(-1).Label)">Control.Move(1001,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(1002).ListItemPosition(-1).Label)">Control.Move(1002,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(1003).ListItemPosition(-1).Label)">Control.Move(1003,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(1004).ListItemPosition(-1).Label)">Control.Move(1004,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(1005).ListItemPosition(-1).Label)">Control.Move(1005,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(1006).ListItemPosition(-1).Label)">Control.Move(1006,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(1007).ListItemPosition(-1).Label)">Control.Move(1007,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(1008).ListItemPosition(-1).Label)">Control.Move(1008,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(2001).ListItemPosition(-1).Label)">Control.Move(2001,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(2002).ListItemPosition(-1).Label)">Control.Move(2002,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(2003).ListItemPosition(-1).Label)">Control.Move(2003,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(2004).ListItemPosition(-1).Label)">Control.Move(2004,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(2005).ListItemPosition(-1).Label)">Control.Move(2005,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(2006).ListItemPosition(-1).Label)">Control.Move(2006,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(2007).ListItemPosition(-1).Label)">Control.Move(2007,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(2008).ListItemPosition(-1).Label)">Control.Move(2008,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(3001).ListItemPosition(-1).Label)">Control.Move(3001,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(3002).ListItemPosition(-1).Label)">Control.Move(3002,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(3003).ListItemPosition(-1).Label)">Control.Move(3003,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(3004).ListItemPosition(-1).Label)">Control.Move(3004,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(3005).ListItemPosition(-1).Label)">Control.Move(3005,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(3006).ListItemPosition(-1).Label)">Control.Move(3006,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(3007).ListItemPosition(-1).Label)">Control.Move(3007,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(3008).ListItemPosition(-1).Label)">Control.Move(3008,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(4001).ListItemPosition(-1).Label)">Control.Move(4001,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(4002).ListItemPosition(-1).Label)">Control.Move(4002,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(4003).ListItemPosition(-1).Label)">Control.Move(4003,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(4004).ListItemPosition(-1).Label)">Control.Move(4004,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(4005).ListItemPosition(-1).Label)">Control.Move(4005,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(4006).ListItemPosition(-1).Label)">Control.Move(4006,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(4007).ListItemPosition(-1).Label)">Control.Move(4007,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(4008).ListItemPosition(-1).Label)">Control.Move(4008,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(5001).ListItemPosition(-1).Label)">Control.Move(5001,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(5002).ListItemPosition(-1).Label)">Control.Move(5002,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(5003).ListItemPosition(-1).Label)">Control.Move(5003,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(5004).ListItemPosition(-1).Label)">Control.Move(5004,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(5005).ListItemPosition(-1).Label)">Control.Move(5005,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(5006).ListItemPosition(-1).Label)">Control.Move(5006,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(5007).ListItemPosition(-1).Label)">Control.Move(5007,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(5008).ListItemPosition(-1).Label)">Control.Move(5008,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(6001).ListItemPosition(-1).Label)">Control.Move(6001,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(6002).ListItemPosition(-1).Label)">Control.Move(6002,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(6003).ListItemPosition(-1).Label)">Control.Move(6003,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(6004).ListItemPosition(-1).Label)">Control.Move(6004,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(6005).ListItemPosition(-1).Label)">Control.Move(6005,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(6006).ListItemPosition(-1).Label)">Control.Move(6006,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(6007).ListItemPosition(-1).Label)">Control.Move(6007,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(6008).ListItemPosition(-1).Label)">Control.Move(6008,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(7001).ListItemPosition(-1).Label)">Control.Move(7001,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(7002).ListItemPosition(-1).Label)">Control.Move(7002,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(7003).ListItemPosition(-1).Label)">Control.Move(7003,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(7004).ListItemPosition(-1).Label)">Control.Move(7004,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(7005).ListItemPosition(-1).Label)">Control.Move(7005,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(7006).ListItemPosition(-1).Label)">Control.Move(7006,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(7007).ListItemPosition(-1).Label)">Control.Move(7007,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(7008).ListItemPosition(-1).Label)">Control.Move(7008,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(8001).ListItemPosition(-1).Label)">Control.Move(8001,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(8002).ListItemPosition(-1).Label)">Control.Move(8002,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(8003).ListItemPosition(-1).Label)">Control.Move(8003,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(8004).ListItemPosition(-1).Label)">Control.Move(8004,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(8005).ListItemPosition(-1).Label)">Control.Move(8005,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(8006).ListItemPosition(-1).Label)">Control.Move(8006,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(8007).ListItemPosition(-1).Label)">Control.Move(8007,-1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(8008).ListItemPosition(-1).Label)">Control.Move(8008,-1)</onfocus>
 					</control>
 					<control type="label">
 						<width>284</width>
@@ -311,7 +375,7 @@
 				<include>FavouritesContent</include>
 			</control>
 			<!-- Weather widget -->
-			<control type="fixedlist">
+			<control type="fixedlist" id="9001">
 				<left>433</left>
 				<top>83</top>
 				<width>2000</width>
@@ -463,7 +527,7 @@
 				</content>
 			</control>
 			<!-- Settings widget -->
-			<control id="900" type="fixedlist">
+			<control id="9002" type="fixedlist">
 				<left>413</left>
 				<top>289</top>
 				<width>2200</width>
