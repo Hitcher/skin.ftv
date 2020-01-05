@@ -16,9 +16,10 @@
 			<onup condition="System.HasAddon(script.embuary.helper) + !String.IsEmpty(Container(1000).ListItem.Label) + String.IsEmpty(Window(home).Property(ShowXRay))">SetProperty(ShowXRay,true,home)</onup>
 			<onup condition="System.HasAddon(script.embuary.helper) + !String.IsEmpty(Container(1000).ListItem.Label) + !Player.Paused">Pause</onup>
 			<onup condition="System.HasAddon(script.embuary.helper)">1000</onup>
+			<visible>Skin.HasSetting(EnableXRay)</visible>
 		</control>
 		<control type="group">
-			<visible>!Window.IsVisible(script-embuary-person.xml) + !Window.IsVisible(script-embuary-video.xml)</visible>
+			<visible>!Window.IsVisible(script-embuary-person.xml) + !Window.IsVisible(script-embuary-video.xml) + Skin.HasSetting(EnableXRay)</visible>
 			<animation delay="800" effect="fade" end="100" start="0" time="200">Visible</animation>
 			<animation effect="slide" end="0,-1080" start="0,0" time="0" condition="String.IsEmpty(Window(home).Property(ShowXRay))">Conditional</animation>
 			<control type="group">
