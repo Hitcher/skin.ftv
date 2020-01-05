@@ -725,7 +725,7 @@
 						<aligny>bottom</aligny>
 						<textcolor>ffbcbcbc</textcolor>
 						<label>$VAR[TomatoMeter,,/10]</label>
-						<visible>!String.IsEmpty(ListItem.Rating(tomatometerallcritics)) | !String.IsEmpty(ListItem.Rating(tomatometerallaudience)) | !String.IsEmpty(ListItem.Rating(tomatometeravgcritics)) | !String.IsEmpty(ListItem.Rating(tomatometeravgaudience)) | !String.IsEmpty(Container(9001).ListItem.Rating(tomatometerallcritics))) | !String.IsEmpty(Container(9001).ListItem.Rating(tomatometerallaudience))) | !String.IsEmpty(Container(9001).ListItem.Rating(tomatometeravgcritics))) | !String.IsEmpty(Container(9001).ListItem.Rating(tomatometeravgaudience)))</visible>
+						<visible>!String.IsEmpty(ListItem.Rating(tomatometerallcritics)) | !String.IsEmpty(ListItem.Rating(tomatometerallaudience)) | !String.IsEmpty(ListItem.Rating(tomatometeravgcritics)) | !String.IsEmpty(ListItem.Rating(tomatometeravgaudience)) | !String.IsEmpty(Container(9001).ListItem.Rating(tomatometerallcritics)) | !String.IsEmpty(Container(9001).ListItem.Rating(tomatometerallaudience)) | !String.IsEmpty(Container(9001).ListItem.Rating(tomatometeravgcritics)) | !String.IsEmpty(Container(9001).ListItem.Rating(tomatometeravgaudience))</visible>
 					</control>
 					<control type="label">
 						<top>-13</top>
