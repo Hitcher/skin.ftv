@@ -13,9 +13,8 @@
 	<controls>
 		<control id="9001" type="list">
 			<include>HiddenHomeList</include>
-			<visible>System.HasAddon(script.embuary.helper) + !String.IsEmpty(ListItem.DBID)</visible>
-			<preloaditems>2</preloaditems>
-			<content>plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[ListItem.DBID]&amp;type=$INFO[ListItem.DBType]</content>
+			<visible>System.HasAddon(script.embuary.helper)</visible>
+			<content>$VAR[EmbuaryItemDetails]</content>
 		</control>
 		<control id="2" type="button">
 			<include>HiddenControl</include>
