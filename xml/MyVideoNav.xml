@@ -11,11 +11,6 @@
 	<onunload>ClearProperty(Window(Home).Property(ForceViewType))</onunload>
 	<views>60,61,50,51,52,53,55,56,57</views>
 	<controls>
-		<control id="9001" type="list">
-			<include>HiddenHomeList</include>
-			<visible>System.HasAddon(script.embuary.helper)</visible>
-			<content>$VAR[EmbuaryItemDetails]</content>
-		</control>
 		<control id="2" type="button">
 			<include>HiddenControl</include>
 			<visible>!String.IsEmpty(Container.PluginName)</visible>
