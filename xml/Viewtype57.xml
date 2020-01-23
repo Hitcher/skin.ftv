@@ -20,7 +20,7 @@
 				<orientation>horizontal</orientation>
 				<defaultcontrol always="true">0</defaultcontrol>
 				<scrolltime easing="inout" tween="sine">300</scrolltime>
-				<visible>!String.IsEmpty(Container.PluginName) | [!Container.Content(movies) + !Container.Content(sets) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(songs)]</visible>
+				<visible>!String.IsEmpty(Container.PluginName) | [!Container.Content(movies) + !Container.Content(sets) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(songs) + !Container.Content(albums) + !Container.Content(artists)]</visible>
 				<animation condition="Window.IsVisible(1103)" reversible="false" type="Conditional">
 					<effect easing="out" end="-20,0" start="0,0" time="60" tween="sine" type="slide"/>
 					<effect delay="80" easing="out" end="20,0" start="0,0" time="120" tween="sine" type="slide"/>

@@ -13,8 +13,8 @@
 	<controls>
 		<control id="9001" type="list">
 			<include>HiddenHomeList</include>
-			<preloaditems>2</preloaditems>
-			<content>plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[ListItem.DBID]&amp;type=$INFO[ListItem.DBType]</content>
+			<visible>System.HasAddon(script.embuary.helper)</visible>
+			<content>$VAR[EmbuaryItemDetails]</content>
 		</control>
 		<control id="2" type="button">
 			<include>HiddenControl</include>
@@ -724,7 +724,7 @@
 						<aligny>bottom</aligny>
 						<textcolor>ffbcbcbc</textcolor>
 						<label>$VAR[TomatoMeter,,/10]</label>
-						<visible>!String.IsEmpty(ListItem.Rating(tomatometerallcritics)) | !String.IsEmpty(ListItem.Rating(tomatometerallaudience)) | !String.IsEmpty(ListItem.Rating(tomatometeravgcritics)) | !String.IsEmpty(ListItem.Rating(tomatometeravgaudience)) | !String.IsEmpty(Container(9001).ListItem.Rating(tomatometerallcritics))) | !String.IsEmpty(Container(9001).ListItem.Rating(tomatometerallaudience))) | !String.IsEmpty(Container(9001).ListItem.Rating(tomatometeravgcritics))) | !String.IsEmpty(Container(9001).ListItem.Rating(tomatometeravgaudience)))</visible>
+						<visible>!String.IsEmpty(ListItem.Rating(tomatometerallcritics)) | !String.IsEmpty(ListItem.Rating(tomatometerallaudience)) | !String.IsEmpty(ListItem.Rating(tomatometeravgcritics)) | !String.IsEmpty(ListItem.Rating(tomatometeravgaudience)) | !String.IsEmpty(Container(9001).ListItem.Rating(tomatometerallcritics)) | !String.IsEmpty(Container(9001).ListItem.Rating(tomatometerallaudience)) | !String.IsEmpty(Container(9001).ListItem.Rating(tomatometeravgcritics)) | !String.IsEmpty(Container(9001).ListItem.Rating(tomatometeravgaudience))</visible>
 					</control>
 					<control type="label">
 						<top>-13</top>
