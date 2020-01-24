@@ -87,7 +87,7 @@
 	<!-- Hidden Home List -->
 	<include name="HiddenHomeList">
 		<top>-10</top>
-		<width>1</width>
+		<width>10</width>
 		<height>1</height>
 		<viewtype label="">list</viewtype>
 		<orientation>horizontal</orientation>
