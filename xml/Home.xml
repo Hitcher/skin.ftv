@@ -29,7 +29,7 @@
 				<onup>SetProperty(Movement,1)</onup>
 				<ondown>noop</ondown>
 				<ondown>ClearProperty(Movement)</ondown>
-				<onleft>ReloadSkin()</onleft>
+				<onleft>noop</onleft>
 				<onright>ClearProperty(MainMenuFocus,home)</onright>
 				<onfocus>ClearProperty(ForceViewType,home)</onfocus>
 				<onfocus>ClearProperty(WidgetHasFocus,Home)</onfocus>
