@@ -6,7 +6,6 @@
 	<include file="Includes_Parameters.xml"/>
 	<include file="Includes_Variables.xml"/>
 	<include file="Includes_AddonBrowser.xml"/>
-	<include file="Includes_Dialog_Movie_Information.xml"/>
 	<include file="Includes_DialogSelect.xml"/>
 	<include file="Includes_DialogSettings.xml"/>
 	<include file="Includes_Home_Widgets_Setup.xml"/>

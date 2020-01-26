@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<variable name="SimilarVideos">
-		<value condition="[String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(ListItem.DBTYPE,episode)] + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.IMDbNumber) + String.StartsWith(ListItem.IMDbNumber,tt)">plugin://plugin.video.themoviedb.helper?info=similar&amp;type=tv&amp;imdb_id=$INFO[ListItem.IMDBNumber]</value>
-		<value condition="String.IsEqual(ListItem.DBTYPE,tvshow) + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.Title) + !String.IsEmpty(ListItem.Year)">plugin://plugin.video.themoviedb.helper?info=similar&amp;type=tv&amp;query=$INFO[ListItem.Title]&amp;year=$INFO[ListItem.Year]</value>
-		<value condition="String.IsEqual(ListItem.DBTYPE,tvshow) + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.Title)">plugin://plugin.video.themoviedb.helper?info=similar&amp;type=tv&amp;query=$INFO[ListItem.Title]</value>
-		<value condition="String.IsEqual(ListItem.DBTYPE,episode) + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.TVShowTitle)">plugin://plugin.video.themoviedb.helper?info=similar&amp;type=tv&amp;query=$INFO[ListItem.TVShowTitle]</value>
-		<value condition="String.IsEqual(ListItem.DBTYPE,movie) + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.IMDBNumber)">plugin://plugin.video.themoviedb.helper?info=similar&amp;type=movie&amp;imdb_id=$INFO[ListItem.IMDBNumber]</value>
-		<value condition="String.IsEqual(ListItem.DBTYPE,movie) + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.Title) + !String.IsEmpty(ListItem.Year)">plugin://plugin.video.themoviedb.helper?info=similar&amp;type=movie&amp;query=$INFO[ListItem.Title]&amp;year=$INFO[ListItem.Year]</value>
-		<value condition="String.IsEqual(ListItem.DBTYPE,movie) + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.Title)">plugin://plugin.video.themoviedb.helper?info=similar&amp;type=movie&amp;query=$INFO[ListItem.Title]</value>
+		<value condition="[String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(ListItem.DBTYPE,episode)] + System.HasAddon(script.embuary.helper) + !String.IsEmpty(ListItem.IMDBNumber)">plugin://script.embuary.helper/?info=getsimilar&amp;title='$ESCINFO[VideoPlayer.TVShowTitle]'&amp;type=tvshow</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,movie) + System.HasAddon(script.embuary.helper) + !String.IsEmpty(ListItem.IMDBNumber)">plugin://script.embuary.helper/?info=getsimilar&amp;dbid=$INFO[ListItem.DBID]&amp;type=movie</value>
 	</variable>
 	<variable name="XRayCast">
-		<value condition="!Window.IsVisible(1106) + System.HasAddon(plugin.video.themoviedb.helper) + VideoPlayer.Content(movies)">plugin://plugin.video.themoviedb.helper?info=cast&amp;type=movie&amp;query=$INFO[VideoPlayer.Title]</value>
-		<value condition="!Window.IsVisible(1106) + System.HasAddon(plugin.video.themoviedb.helper) + VideoPlayer.Content(episodes)">plugin://plugin.video.themoviedb.helper?info=cast&amp;type=tv&amp;query=$INFO[VideoPlayer.TVShowTitle]</value>
+		<value condition="!Window.IsVisible(1106) + System.HasAddon(script.embuary.helper) + VideoPlayer.Content(movies)">plugin://script.embuary.helper?info=getcast&amp;type=movie&amp;dbid=$INFO[VideoPlayer.DBID]</value>
+		<value condition="!Window.IsVisible(1106) + System.HasAddon(script.embuary.helper) + VideoPlayer.Content(episodes)">plugin://script.embuary.helper?info=getcast&amp;type=tvshow&amp;title='$ESCINFO[VideoPlayer.TVShowTitle]'</value>
 	</variable>
 	<variable name="VideoInfoCast">
-		<value condition="Container.Content(movies) + System.HasAddon(plugin.video.themoviedb.helper)">plugin://plugin.video.themoviedb.helper?info=cast&amp;type=movie&amp;query=$INFO[ListItem.Title]</value>
-		<value condition="Container.Content(tvshows) + System.HasAddon(plugin.video.themoviedb.helper)">plugin://plugin.video.themoviedb.helper?info=cast&amp;type=tv&amp;query=$INFO[ListItem.Title]</value>
-		<value condition="Container.Content(episodes) + System.HasAddon(plugin.video.themoviedb.helper)">plugin://plugin.video.themoviedb.helper?info=cast&amp;type=tv&amp;query=$INFO[ListItem.TVShowTitle]'</value>
+		<value condition="Container.Content(movies) + System.HasAddon(script.embuary.helper)">plugin://script.embuary.helper?info=getcast&amp;type=movie&amp;dbid=$INFO[ListItem.DBID]</value>
+		<value condition="Container.Content(tvshows) + System.HasAddon(script.embuary.helper)">plugin://script.embuary.helper?info=getcast&amp;type=tvshow&amp;dbid=$INFO[ListItem.DBID]</value>
+		<value condition="Container.Content(episodes) + System.HasAddon(script.embuary.helper)">plugin://script.embuary.helper?info=getcast&amp;type=tvshow&amp;title='$ESCINFO[ListItem.TVShowTitle]'</value>
 	</variable>
 	<variable name="ExtendedRatingTextColour">
 		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,12)">FFFF3C3C</value>
