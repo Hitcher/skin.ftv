@@ -208,8 +208,8 @@
 					<texturefocus/>
 					<texturenofocus/>
 					<onclick>Close</onclick>
-					<onclick condition="String.IsEmpty(Skin.String(LyricAddon))">Skin.SetAddon(LyricAddon,xbmc.python.lyrics)</onclick>
-					<onclick condition="!String.IsEmpty(Skin.String(LyricAddon))">XBMC.RunScript($INFO[Skin.String(LyricAddon)])</onclick>
+					<onclick condition="String.IsEmpty(Skin.String(LyricAddon))">Skin.SetAddon(LyricAddon,python.lyrics)</onclick>
+					<onclick condition="!String.IsEmpty(Skin.String(LyricAddon))">RunScript($INFO[Skin.String(LyricAddon)])</onclick>
 				</control>
 				<!-- Playlist -->
 				<control type="button" id="10">
@@ -320,7 +320,7 @@
 					<label>$LOCALIZE[250] $LOCALIZE[21417]</label>
 					<texturefocus/>
 					<texturenofocus/>
-					<onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
+					<onclick>Addon.Default.OpenSettings(player.musicviz)</onclick>
 				</control>
 			</control>
 		</control>

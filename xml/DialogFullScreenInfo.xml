@@ -370,6 +370,16 @@
 				<righttexture/>
 				<overlaytexture/>
 			</control>
+			<!--  Chapters -->
+			<control type="ranges">
+				<left>92</left>
+				<bottom>93</bottom>
+				<width>1735</width>
+				<height>11</height>
+				<info>Player.Chapters</info>
+				<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
+				<righttexture border="2">osd/chapter.png</righttexture>
+			</control>
 			<control type="grouplist">
 				<left>92</left>
 				<bottom>37</bottom>

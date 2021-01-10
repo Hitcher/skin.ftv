@@ -1136,7 +1136,7 @@
 					<height>334</height>
 					<bordersize>0,13,10,13</bordersize>
 					<aspectratio align="center">scale</aspectratio>
-					<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Icon1)]</texture>
+					<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster1)]</texture>
 					<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
 				</control>
 				<control type="image">
@@ -1169,7 +1169,7 @@
 					<height>334</height>
 					<bordersize>0,13,10,13</bordersize>
 					<aspectratio align="center">scale</aspectratio>
-					<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Icon2)]</texture>
+					<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster2)]</texture>
 					<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
 				</control>
 				<control type="image">
@@ -1202,7 +1202,7 @@
 					<height>334</height>
 					<bordersize>0,13,10,13</bordersize>
 					<aspectratio align="center">scale</aspectratio>
-					<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Icon3)]</texture>
+					<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster3)]</texture>
 					<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
 				</control>
 				<control type="image">
@@ -1235,7 +1235,7 @@
 					<height>334</height>
 					<bordersize>0,13,10,13</bordersize>
 					<aspectratio align="center">scale</aspectratio>
-					<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Icon4)]</texture>
+					<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster4)]</texture>
 					<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
 				</control>
 				<control type="image">
@@ -1268,7 +1268,7 @@
 					<height>334</height>
 					<bordersize>0,13,10,13</bordersize>
 					<aspectratio align="center">scale</aspectratio>
-					<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Icon5)]</texture>
+					<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster5)]</texture>
 					<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
 				</control>
 				<control type="image">
@@ -1301,7 +1301,7 @@
 					<height>334</height>
 					<bordersize>0,13,10,13</bordersize>
 					<aspectratio align="center">scale</aspectratio>
-					<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Icon6)]</texture>
+					<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster6)]</texture>
 					<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
 				</control>
 				<control type="image">
@@ -1339,7 +1339,7 @@
 					<height>334</height>
 					<bordersize>0,13,10,13</bordersize>
 					<aspectratio align="center">scale</aspectratio>
-					<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Icon1)]</texture>
+					<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster1)]</texture>
 					<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
 				</control>
 				<control type="image">
@@ -1373,7 +1373,7 @@
 					<height>334</height>
 					<bordersize>0,13,10,13</bordersize>
 					<aspectratio align="center">scale</aspectratio>
-					<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Icon2)]</texture>
+					<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster2)]</texture>
 					<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
 				</control>
 				<control type="image">
@@ -1407,7 +1407,7 @@
 					<height>334</height>
 					<bordersize>0,13,10,13</bordersize>
 					<aspectratio align="center">scale</aspectratio>
-					<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Icon3)]</texture>
+					<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster3)]</texture>
 					<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
 				</control>
 				<control type="image">
@@ -1441,7 +1441,7 @@
 					<height>334</height>
 					<bordersize>0,13,10,13</bordersize>
 					<aspectratio align="center">scale</aspectratio>
-					<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Icon4)]</texture>
+					<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster4)]</texture>
 					<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
 				</control>
 				<control type="image">
@@ -1475,7 +1475,7 @@
 					<height>334</height>
 					<bordersize>0,13,10,13</bordersize>
 					<aspectratio align="center">scale</aspectratio>
-					<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Icon5)]</texture>
+					<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster5)]</texture>
 					<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
 				</control>
 				<control type="image">
@@ -1509,7 +1509,7 @@
 					<height>334</height>
 					<bordersize>0,13,10,13</bordersize>
 					<aspectratio align="center">scale</aspectratio>
-					<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Icon6)]</texture>
+					<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster6)]</texture>
 					<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
 				</control>
 				<control type="image">
@@ -1932,6 +1932,12 @@
 				<property name="Icon4">$INFO[Container(1001).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(1001).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(1001).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(1001).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(1001).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(1001).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(1001).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(1001).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(1001).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(1001).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(1001).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(1001).ListItemPosition(2).Label]</property>
@@ -1971,6 +1977,12 @@
 				<property name="Icon4">$INFO[Container(1002).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(1002).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(1002).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(1002).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(1002).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(1002).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(1002).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(1002).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(1002).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(1002).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(1002).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(1002).ListItemPosition(2).Label]</property>
@@ -2010,6 +2022,12 @@
 				<property name="Icon4">$INFO[Container(1003).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(1003).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(1003).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(1003).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(1003).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(1003).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(1003).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(1003).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(1003).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(1003).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(1003).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(1003).ListItemPosition(2).Label]</property>
@@ -2049,6 +2067,12 @@
 				<property name="Icon4">$INFO[Container(1004).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(1004).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(1004).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(1004).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(1004).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(1004).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(1004).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(1004).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(1004).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(1004).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(1004).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(1004).ListItemPosition(2).Label]</property>
@@ -2088,6 +2112,12 @@
 				<property name="Icon4">$INFO[Container(1005).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(1005).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(1005).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(1005).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(1005).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(1005).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(1005).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(1005).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(1005).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(1005).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(1005).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(1005).ListItemPosition(2).Label]</property>
@@ -2127,6 +2157,12 @@
 				<property name="Icon4">$INFO[Container(1006).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(1006).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(1006).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(1006).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(1006).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(1006).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(1006).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(1006).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(1006).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(1006).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(1006).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(1006).ListItemPosition(2).Label]</property>
@@ -2166,6 +2202,12 @@
 				<property name="Icon4">$INFO[Container(1007).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(1007).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(1007).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(1007).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(1007).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(1007).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(1007).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(1007).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(1007).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(1007).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(1007).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(1007).ListItemPosition(2).Label]</property>
@@ -2205,6 +2247,12 @@
 				<property name="Icon4">$INFO[Container(1008).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(1008).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(1008).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(1008).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(1008).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(1008).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(1008).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(1008).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(1008).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(1008).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(1008).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(1008).ListItemPosition(2).Label]</property>
@@ -2249,6 +2297,12 @@
 				<property name="Icon4">$INFO[Container(2001).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(2001).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(2001).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(2001).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(2001).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(2001).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(2001).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(2001).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(2001).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(2001).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(2001).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(2001).ListItemPosition(2).Label]</property>
@@ -2288,6 +2342,12 @@
 				<property name="Icon4">$INFO[Container(2002).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(2002).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(2002).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(2002).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(2002).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(2002).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(2002).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(2002).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(2002).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(2002).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(2002).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(2002).ListItemPosition(2).Label]</property>
@@ -2327,6 +2387,12 @@
 				<property name="Icon4">$INFO[Container(2003).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(2003).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(2003).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(2003).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(2003).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(2003).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(2003).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(2003).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(2003).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(2003).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(2003).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(2003).ListItemPosition(2).Label]</property>
@@ -2366,6 +2432,12 @@
 				<property name="Icon4">$INFO[Container(2004).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(2004).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(2004).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(2004).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(2004).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(2004).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(2004).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(2004).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(2004).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(2004).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(2004).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(2004).ListItemPosition(2).Label]</property>
@@ -2405,6 +2477,12 @@
 				<property name="Icon4">$INFO[Container(2005).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(2005).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(2005).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(2005).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(2005).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(2005).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(2005).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(2005).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(2005).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(2005).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(2005).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(2005).ListItemPosition(2).Label]</property>
@@ -2444,6 +2522,12 @@
 				<property name="Icon4">$INFO[Container(2006).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(2006).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(2006).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(2006).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(2006).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(2006).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(2006).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(2006).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(2006).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(2006).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(2006).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(2006).ListItemPosition(2).Label]</property>
@@ -2483,6 +2567,12 @@
 				<property name="Icon4">$INFO[Container(2007).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(2007).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(2007).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(2007).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(2007).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(2007).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(2007).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(2007).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(2007).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(2007).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(2007).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(2007).ListItemPosition(2).Label]</property>
@@ -2522,6 +2612,12 @@
 				<property name="Icon4">$INFO[Container(2008).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(2008).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(2008).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(2008).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(2008).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(2008).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(2008).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(2008).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(2008).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(2008).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(2008).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(2008).ListItemPosition(2).Label]</property>
@@ -2566,6 +2662,12 @@
 				<property name="Icon4">$INFO[Container(3001).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(3001).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(3001).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(3001).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(3001).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(3001).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(3001).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(3001).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(3001).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(3001).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(3001).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(3001).ListItemPosition(2).Label]</property>
@@ -2605,6 +2707,12 @@
 				<property name="Icon4">$INFO[Container(3002).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(3002).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(3002).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(3002).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(3002).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(3002).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(3002).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(3002).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(3002).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(3002).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(3002).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(3002).ListItemPosition(2).Label]</property>
@@ -2644,6 +2752,12 @@
 				<property name="Icon4">$INFO[Container(3003).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(3003).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(3003).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(3003).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(3003).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(3003).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(3003).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(3003).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(3003).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(3003).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(3003).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(3003).ListItemPosition(2).Label]</property>
@@ -2683,6 +2797,12 @@
 				<property name="Icon4">$INFO[Container(3004).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(3004).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(3004).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(3004).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(3004).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(3004).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(3004).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(3004).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(3004).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(3004).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(3004).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(3004).ListItemPosition(2).Label]</property>
@@ -2722,6 +2842,12 @@
 				<property name="Icon4">$INFO[Container(3005).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(3005).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(3005).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(3005).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(3005).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(3005).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(3005).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(3005).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(3005).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(3005).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(3005).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(3005).ListItemPosition(2).Label]</property>
@@ -2761,6 +2887,12 @@
 				<property name="Icon4">$INFO[Container(3006).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(3006).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(3006).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(3006).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(3006).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(3006).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(3006).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(3006).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(3006).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(3006).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(3006).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(3006).ListItemPosition(2).Label]</property>
@@ -2800,6 +2932,12 @@
 				<property name="Icon4">$INFO[Container(3007).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(3007).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(3007).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(3007).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(3007).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(3007).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(3007).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(3007).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(3007).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(3007).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(3007).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(3007).ListItemPosition(2).Label]</property>
@@ -2839,6 +2977,12 @@
 				<property name="Icon4">$INFO[Container(3008).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(3008).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(3008).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(3008).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(3008).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(3008).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(3008).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(3008).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(3008).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(3008).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(3008).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(3008).ListItemPosition(2).Label]</property>
@@ -2883,6 +3027,12 @@
 				<property name="Icon4">$INFO[Container(4001).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(4001).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(4001).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(4001).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(4001).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(4001).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(4001).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(4001).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(4001).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(4001).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(4001).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(4001).ListItemPosition(2).Label]</property>
@@ -2922,6 +3072,12 @@
 				<property name="Icon4">$INFO[Container(4002).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(4002).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(4002).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(4002).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(4002).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(4002).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(4002).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(4002).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(4002).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(4002).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(4002).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(4002).ListItemPosition(2).Label]</property>
@@ -2961,6 +3117,12 @@
 				<property name="Icon4">$INFO[Container(4003).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(4003).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(4003).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(4003).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(4003).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(4003).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(4003).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(4003).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(4003).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(4003).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(4003).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(4003).ListItemPosition(2).Label]</property>
@@ -3000,6 +3162,12 @@
 				<property name="Icon4">$INFO[Container(4004).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(4004).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(4004).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(4004).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(4004).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(4004).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(4004).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(4004).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(4004).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(4004).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(4004).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(4004).ListItemPosition(2).Label]</property>
@@ -3039,6 +3207,12 @@
 				<property name="Icon4">$INFO[Container(4005).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(4005).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(4005).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(4005).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(4005).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(4005).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(4005).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(4005).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(4005).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(4005).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(4005).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(4005).ListItemPosition(2).Label]</property>
@@ -3078,6 +3252,12 @@
 				<property name="Icon4">$INFO[Container(4006).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(4006).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(4006).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(4006).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(4006).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(4006).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(4006).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(4006).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(4006).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(4006).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(4006).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(4006).ListItemPosition(2).Label]</property>
@@ -3117,6 +3297,12 @@
 				<property name="Icon4">$INFO[Container(4007).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(4007).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(4007).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(4007).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(4007).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(4007).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(4007).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(4007).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(4007).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(4007).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(4007).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(4007).ListItemPosition(2).Label]</property>
@@ -3156,6 +3342,12 @@
 				<property name="Icon4">$INFO[Container(4008).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(4008).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(4008).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(4008).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(4008).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(4008).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(4008).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(4008).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(4008).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(4008).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(4008).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(4008).ListItemPosition(2).Label]</property>
@@ -3200,6 +3392,12 @@
 				<property name="Icon4">$INFO[Container(5001).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(5001).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(5001).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(5001).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(5001).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(5001).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(5001).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(5001).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(5001).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(5001).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(5001).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(5001).ListItemPosition(2).Label]</property>
@@ -3239,6 +3437,12 @@
 				<property name="Icon4">$INFO[Container(5002).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(5002).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(5002).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(5002).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(5002).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(5002).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(5002).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(5002).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(5002).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(5002).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(5002).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(5002).ListItemPosition(2).Label]</property>
@@ -3278,6 +3482,12 @@
 				<property name="Icon4">$INFO[Container(5003).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(5003).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(5003).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(5003).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(5003).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(5003).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(5003).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(5003).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(5003).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(5003).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(5003).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(5003).ListItemPosition(2).Label]</property>
@@ -3317,6 +3527,12 @@
 				<property name="Icon4">$INFO[Container(5004).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(5004).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(5004).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(5004).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(5004).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(5004).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(5004).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(5004).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(5004).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(5004).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(5004).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(5004).ListItemPosition(2).Label]</property>
@@ -3356,6 +3572,12 @@
 				<property name="Icon4">$INFO[Container(5005).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(5005).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(5005).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(5005).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(5005).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(5005).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(5005).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(5005).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(5005).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(5005).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(5005).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(5005).ListItemPosition(2).Label]</property>
@@ -3395,6 +3617,12 @@
 				<property name="Icon4">$INFO[Container(5006).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(5006).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(5006).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(5006).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(5006).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(5006).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(5006).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(5006).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(5006).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(5006).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(5006).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(5006).ListItemPosition(2).Label]</property>
@@ -3434,6 +3662,12 @@
 				<property name="Icon4">$INFO[Container(5007).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(5007).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(5007).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(5007).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(5007).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(5007).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(5007).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(5007).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(5007).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(5007).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(5007).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(5007).ListItemPosition(2).Label]</property>
@@ -3473,6 +3707,12 @@
 				<property name="Icon4">$INFO[Container(5008).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(5008).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(5008).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(5008).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(5008).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(5008).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(5008).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(5008).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(5008).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(5008).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(5008).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(5008).ListItemPosition(2).Label]</property>
@@ -3517,6 +3757,12 @@
 				<property name="Icon4">$INFO[Container(6001).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(6001).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(6001).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(6001).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(6001).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(6001).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(6001).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(6001).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(6001).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(6001).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(6001).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(6001).ListItemPosition(2).Label]</property>
@@ -3556,6 +3802,12 @@
 				<property name="Icon4">$INFO[Container(6002).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(6002).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(6002).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(6002).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(6002).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(6002).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(6002).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(6002).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(6002).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(6002).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(6002).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(6002).ListItemPosition(2).Label]</property>
@@ -3595,6 +3847,12 @@
 				<property name="Icon4">$INFO[Container(6003).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(6003).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(6003).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(6003).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(6003).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(6003).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(6003).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(6003).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(6003).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(6003).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(6003).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(6003).ListItemPosition(2).Label]</property>
@@ -3634,6 +3892,12 @@
 				<property name="Icon4">$INFO[Container(6004).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(6004).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(6004).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(6004).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(6004).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(6004).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(6004).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(6004).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(6004).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(6004).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(6004).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(6004).ListItemPosition(2).Label]</property>
@@ -3673,6 +3937,12 @@
 				<property name="Icon4">$INFO[Container(6005).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(6005).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(6005).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(6005).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(6005).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(6005).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(6005).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(6005).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(6005).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(6005).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(6005).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(6005).ListItemPosition(2).Label]</property>
@@ -3712,6 +3982,12 @@
 				<property name="Icon4">$INFO[Container(6006).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(6006).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(6006).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(6006).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(6006).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(6006).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(6006).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(6006).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(6006).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(6006).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(6006).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(6006).ListItemPosition(2).Label]</property>
@@ -3751,6 +4027,12 @@
 				<property name="Icon4">$INFO[Container(6007).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(6007).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(6007).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(6007).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(6007).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(6007).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(6007).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(6007).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(6007).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(6007).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(6007).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(6007).ListItemPosition(2).Label]</property>
@@ -3790,6 +4072,12 @@
 				<property name="Icon4">$INFO[Container(6008).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(6008).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(6008).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(6008).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(6008).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(6008).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(6008).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(6008).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(6008).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(6008).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(6008).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(6008).ListItemPosition(2).Label]</property>
@@ -3834,6 +4122,12 @@
 				<property name="Icon4">$INFO[Container(7001).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(7001).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(7001).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(7001).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(7001).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(7001).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(7001).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(7001).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(7001).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(7001).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(7001).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(7001).ListItemPosition(2).Label]</property>
@@ -3873,6 +4167,12 @@
 				<property name="Icon4">$INFO[Container(7002).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(7002).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(7002).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(7002).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(7002).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(7002).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(7002).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(7002).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(7002).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(7002).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(7002).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(7002).ListItemPosition(2).Label]</property>
@@ -3912,6 +4212,12 @@
 				<property name="Icon4">$INFO[Container(7003).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(7003).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(7003).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(7003).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(7003).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(7003).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(7003).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(7003).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(7003).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(7003).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(7003).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(7003).ListItemPosition(2).Label]</property>
@@ -3951,6 +4257,12 @@
 				<property name="Icon4">$INFO[Container(7004).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(7004).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(7004).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(7004).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(7004).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(7004).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(7004).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(7004).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(7004).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(7004).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(7004).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(7004).ListItemPosition(2).Label]</property>
@@ -3990,6 +4302,12 @@
 				<property name="Icon4">$INFO[Container(7005).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(7005).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(7005).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(7005).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(7005).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(7005).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(7005).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(7005).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(7005).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(7005).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(7005).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(7005).ListItemPosition(2).Label]</property>
@@ -4029,6 +4347,12 @@
 				<property name="Icon4">$INFO[Container(7006).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(7006).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(7006).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(7006).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(7006).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(7006).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(7006).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(7006).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(7006).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(7006).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(7006).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(7006).ListItemPosition(2).Label]</property>
@@ -4068,6 +4392,12 @@
 				<property name="Icon4">$INFO[Container(7007).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(7007).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(7007).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(7007).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(7007).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(7007).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(7007).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(7007).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(7007).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(7007).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(7007).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(7007).ListItemPosition(2).Label]</property>
@@ -4107,6 +4437,12 @@
 				<property name="Icon4">$INFO[Container(7008).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(7008).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(7008).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(7008).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(7008).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(7008).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(7008).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(7008).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(7008).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(7008).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(7008).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(7008).ListItemPosition(2).Label]</property>
@@ -4151,6 +4487,12 @@
 				<property name="Icon4">$INFO[Container(8001).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(8001).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(8001).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(8001).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(8001).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(8001).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(8001).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(8001).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(8001).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(8001).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(8001).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(8001).ListItemPosition(2).Label]</property>
@@ -4190,6 +4532,12 @@
 				<property name="Icon4">$INFO[Container(8002).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(8002).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(8002).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(8002).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(8002).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(8002).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(8002).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(8002).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(8002).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(8002).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(8002).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(8002).ListItemPosition(2).Label]</property>
@@ -4229,6 +4577,12 @@
 				<property name="Icon4">$INFO[Container(8003).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(8003).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(8003).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(8003).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(8003).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(8003).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(8003).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(8003).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(8003).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(8003).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(8003).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(8003).ListItemPosition(2).Label]</property>
@@ -4268,6 +4622,12 @@
 				<property name="Icon4">$INFO[Container(8004).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(8004).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(8004).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(8004).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(8004).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(8004).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(8004).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(8004).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(8004).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(8004).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(8004).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(8004).ListItemPosition(2).Label]</property>
@@ -4307,6 +4667,12 @@
 				<property name="Icon4">$INFO[Container(8005).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(8005).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(8005).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(8005).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(8005).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(8005).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(8005).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(8005).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(8005).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(8005).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(8005).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(8005).ListItemPosition(2).Label]</property>
@@ -4346,6 +4712,12 @@
 				<property name="Icon4">$INFO[Container(8006).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(8006).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(8006).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(8006).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(8006).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(8006).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(8006).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(8006).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(8006).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(8006).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(8006).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(8006).ListItemPosition(2).Label]</property>
@@ -4385,6 +4757,12 @@
 				<property name="Icon4">$INFO[Container(8007).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(8007).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(8007).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(8007).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(8007).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(8007).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(8007).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(8007).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(8007).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(8007).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(8007).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(8007).ListItemPosition(2).Label]</property>
@@ -4424,6 +4802,12 @@
 				<property name="Icon4">$INFO[Container(8008).ListItemPosition(3).Icon]</property>
 				<property name="Icon5">$INFO[Container(8008).ListItemPosition(4).Icon]</property>
 				<property name="Icon6">$INFO[Container(8008).ListItemPosition(5).Icon]</property>
+				<property name="Poster1">$INFO[Container(8008).ListItemPosition(0).Art(poster)]</property>
+				<property name="Poster2">$INFO[Container(8008).ListItemPosition(1).Art(poster)]</property>
+				<property name="Poster3">$INFO[Container(8008).ListItemPosition(2).Art(poster)]</property>
+				<property name="Poster4">$INFO[Container(8008).ListItemPosition(3).Art(poster)]</property>
+				<property name="Poster5">$INFO[Container(8008).ListItemPosition(4).Art(poster)]</property>
+				<property name="Poster6">$INFO[Container(8008).ListItemPosition(5).Art(poster)]</property>
 				<property name="InfoLabel1">$INFO[Container(8008).ListItemPosition(0).Label]</property>
 				<property name="InfoLabel2">$INFO[Container(8008).ListItemPosition(1).Label]</property>
 				<property name="InfoLabel3">$INFO[Container(8008).ListItemPosition(2).Label]</property>

@@ -13,7 +13,7 @@
 	<onunload>SetFocus(50)</onunload>
 	<animation effect="fade" end="100" start="100" time="200">WindowClose</animation>
 	<controls>
-		<include condition="!System.HasAddon(plugin.video.themoviedb.helper)">Includes_Dialog_Movie_Information_Default</include>
-		<include condition="System.HasAddon(plugin.video.themoviedb.helper)">Includes_Dialog_Movie_Information_Extra</include>
+		<include condition="!System.HasAddon(script.embuary.info)">Includes_Dialog_Movie_Information_Default</include>
+		<include condition="System.HasAddon(script.embuary.info)">Includes_Dialog_Movie_Information_Extra</include>
 	</controls>
 </window>

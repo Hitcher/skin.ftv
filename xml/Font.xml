@@ -3,6 +3,11 @@
 	<fontset id="Default" unicode="true">
 		<!-- OSD -->
 		<font>
+			<name>OSD50</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>50</size>
+		</font>
+		<font>
 			<name>OSD40</name>
 			<filename>Roboto-Regular.ttf</filename>
 			<size>40</size>
@@ -363,6 +368,11 @@
 	<fontset id="Roboto" unicode="true">
 		<!-- OSD -->
 		<font>
+			<name>OSD50</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>50</size>
+		</font>
+		<font>
 			<name>OSD40</name>
 			<filename>Roboto-Regular.ttf</filename>
 			<size>40</size>
@@ -696,6 +706,12 @@
 	</fontset>
 	<fontset id="Arial" unicode="true">
 		<!-- OSD -->
+		<font>
+			<name>OSD50</name>
+			<filename>Arial.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>50</size>
+		</font>
 		<font>
 			<name>OSD40</name>
 			<filename>Arial.ttf</filename>

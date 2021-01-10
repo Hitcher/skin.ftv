@@ -552,8 +552,8 @@
 						<font>Light30</font>
 						<autoscroll>false</autoscroll>
 						<textcolor>ff8f8f8f</textcolor>
-						<label>[COLOR ffdadada]$LOCALIZE[24098][/COLOR][CR]$INFO[ListItem.AddonBroken]</label>
-						<visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+						<label>[COLOR ffdadada]$LOCALIZE[33020][/COLOR][CR]$INFO[ListItem.AddonLifecycleType]</label>
+						<visible>!String.IsEmpty(ListItem.AddonLifecycleType)</visible>
 					</control>
 					<control type="textbox">
 						<width>470</width>

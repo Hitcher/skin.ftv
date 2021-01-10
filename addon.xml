@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="skin.ftv" version="6.3.0" name="fTV" provider-name="Hitcher">
 	<requires>
-		<import addon="xbmc.gui" version="5.14.0"/>
+		<import addon="xbmc.gui" version="5.15.0"/>
 		<import addon="script.favourites" version="5.0.2"/>
 		<import addon="script.embuary.info" version="0.0.1"/>
 		<import addon="script.globalsearch" version="3.0.4"/>

@@ -91,17 +91,6 @@
 				<font>Bold30</font>
 				<textcolor>ffdadada</textcolor>
 			</control>
-			<!-- Notification -->
-			<control type="label" id="130">
-				<left>92</left>
-				<top>20</top>
-				<width>1400</width>
-				<height>36</height>
-				<font>Bold30</font>
-				<align>right</align>
-				<label>31044</label>
-				<textcolor>ffffffff</textcolor>
-			</control>
 			<!-- List -->
 			<control type="list" id="120">
 				<left>92</left>
@@ -204,7 +193,7 @@
 								<width>784</width>
 								<height>58</height>
 								<font>Light32</font>
-								<scrollspeed>96</scrollspeed>
+								<scrollspeed>120</scrollspeed>
 								<textcolor>ffffc04b</textcolor>
 								<label>$INFO[ListItem.Label2]</label>
 							</control>

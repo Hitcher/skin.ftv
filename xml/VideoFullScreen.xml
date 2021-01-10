@@ -4,6 +4,19 @@
 	<defaultcontrol/>
 	<onload>SetProperty(RefreshCastList,true,Home)</onload>
 	<controls>
+		<control id="99" type="label">
+			<centerleft>50%</centerleft>
+			<top>144</top>
+			<width>278</width>
+			<height>40</height>
+			<align>center</align>
+			<font>OSD50</font>
+			<scroll>false</scroll>
+			<textcolor>fffafafa</textcolor>
+			<shadowcolor>80000000</shadowcolor>
+			<label>$INFO[Player.SeekNumeric]</label>
+			<visible>!Window.IsActive(seekbar) + !Window.IsActive(fullscreeninfo) + !Window.IsActive(videoosd) + !Window.IsActive(musicosd) + !Window.IsActive(subtitlesearch) + !Window.IsVisible(script-nextup-notification-NextUpInfo.xml)</visible>
+		</control>
 		<control id="99" type="group">
 			<visible>!Player.HasGame + String.IsEmpty(Window(home).Property(ShowXRay))</visible>
 			<!-- Cast -->
@@ -197,6 +210,16 @@
 					<midtexture border="4">osd/progress_bar.png</midtexture>
 					<righttexture/>
 					<overlaytexture/>
+				</control>
+				<!--  Chapters -->
+				<control id="99" type="ranges">
+					<left>92</left>
+					<bottom>93</bottom>
+					<width>1735</width>
+					<height>11</height>
+					<info>Player.Chapters</info>
+					<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
+					<righttexture border="2">osd/chapter.png</righttexture>
 				</control>
 				<control id="99" type="grouplist">
 					<left>92</left>
