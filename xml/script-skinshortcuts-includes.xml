@@ -701,9 +701,9 @@
 			<property name="labelID">19026</property>
 			<property name="defaultID">19026</property>
 			<onclick condition="true">Close</onclick>
-			<onclick>AlarmClock(shutdowntimer,XBMC.Shutdown())</onclick>
-			<property name="path">AlarmClock(shutdowntimer,XBMC.Shutdown())</property>
-			<property name="list">AlarmClock(shutdowntimer,XBMC.Shutdown())</property>
+			<onclick>AlarmClock(shutdowntimer,Shutdown())</onclick>
+			<property name="path">AlarmClock(shutdowntimer,Shutdown())</property>
+			<property name="list">AlarmClock(shutdowntimer,Shutdown())</property>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),shutdown)</visible>
 			<property name="group">shutdown</property>
 			<property name="isSubmenu">True</property>
@@ -1706,9 +1706,9 @@
 			<property name="labelID">19026</property>
 			<property name="defaultID">19026</property>
 			<onclick condition="true">Close</onclick>
-			<onclick>AlarmClock(shutdowntimer,XBMC.Shutdown())</onclick>
-			<property name="path">AlarmClock(shutdowntimer,XBMC.Shutdown())</property>
-			<property name="list">AlarmClock(shutdowntimer,XBMC.Shutdown())</property>
+			<onclick>AlarmClock(shutdowntimer,Shutdown())</onclick>
+			<property name="path">AlarmClock(shutdowntimer,Shutdown())</property>
+			<property name="list">AlarmClock(shutdowntimer,Shutdown())</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">shutdown</property>
 			<property name="isSubmenu">True</property>
@@ -1919,9 +1919,9 @@
 			<property name="labelID">19026</property>
 			<property name="defaultID">19026</property>
 			<onclick condition="true">Close</onclick>
-			<onclick>AlarmClock(shutdowntimer,XBMC.Shutdown())</onclick>
-			<property name="path">AlarmClock(shutdowntimer,XBMC.Shutdown())</property>
-			<property name="list">AlarmClock(shutdowntimer,XBMC.Shutdown())</property>
+			<onclick>AlarmClock(shutdowntimer,Shutdown())</onclick>
+			<property name="path">AlarmClock(shutdowntimer,Shutdown())</property>
+			<property name="list">AlarmClock(shutdowntimer,Shutdown())</property>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),shutdown)</visible>
 			<property name="group">shutdown</property>
 			<property name="isSubmenu">True</property>

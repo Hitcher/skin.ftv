@@ -19,7 +19,6 @@
 				<fadetime>400</fadetime>
 				<colordiffuse>26ffffff</colordiffuse>
 				<texture background="true">$VAR[NextAiredFanart]</texture>
-				<visible>!String.IsEmpty(Window(Home).Property(TVGuide.BackgroundFanart))</visible>
 			</control>
 			<!-- No results -->
 			<control type="group">
@@ -159,6 +158,30 @@
 					<include content="NextAiredItems">
 						<param name="ItemID" value="206"/>
 					</include>
+					<include content="NextAiredItems">
+						<param name="ItemID" value="207"/>
+					</include>
+					<include content="NextAiredItems">
+						<param name="ItemID" value="208"/>
+					</include>
+					<include content="NextAiredItems">
+						<param name="ItemID" value="209"/>
+					</include>
+					<include content="NextAiredItems">
+						<param name="ItemID" value="210"/>
+					</include>
+					<include content="NextAiredItems">
+						<param name="ItemID" value="211"/>
+					</include>
+					<include content="NextAiredItems">
+						<param name="ItemID" value="212"/>
+					</include>
+					<include content="NextAiredItems">
+						<param name="ItemID" value="213"/>
+					</include>
+					<include content="NextAiredItems">
+						<param name="ItemID" value="215"/>
+					</include>
 				</content>
 			</control>
 			<!-- Lower group -->
@@ -179,7 +202,7 @@
 						<font>Med24Num</font>
 						<aligny>bottom</aligny>
 						<textcolor>ffbebebe</textcolor>
-						<label>$VAR[NextAiredRuntime,, $LOCALIZE[31147]]</label>
+						<label>$INFO[ListItem.Duration(hh),, $LOCALIZE[31147]]</label>
 					</control>
 					<control type="label">
 						<width>auto</width>
@@ -190,17 +213,26 @@
 						<label>$VAR[NextAiredShortTime,[COLOR ff707070]$LOCALIZE[31227]: [/COLOR]]</label>
 					</control>
 				</control>
+					<control type="label">
+						<top>35</top>
+						<width>auto</width>
+						<height>30</height>
+						<font>Reg30Spaced</font>
+						<aligny>bottom</aligny>
+						<textcolor>ffbebebe</textcolor>
+						<label>[B]$VAR[NextAiredNextSeasonNumber]$VAR[NextAiredNextEpisodeNumber][/B]</label>
+					</control>
 				<control type="group">
 					<control type="textbox">
-						<top>35</top>
+						<top>75</top>
 						<width>1192</width>
-						<height>88</height>
+						<height>130</height>
 						<align>left</align>
 						<font>Reg30Spaced</font>
 						<pagecontrol>96</pagecontrol>
 						<autoscroll>false</autoscroll>
 						<textcolor>ffbcbcbc</textcolor>
-						<label>[B]$VAR[NextAiredNextSeasonNumber]$VAR[NextAiredNextEpisodeNumber][/B] [LIGHT]$VAR[NextAiredNextTitle][/LIGHT]</label>
+						<label>[B]$VAR[NextAiredNextTitle][/B] [LIGHT]$INFO[ListItem.Plot][/LIGHT]</label>
 					</control>
 				</control>
 			</control>
@@ -227,6 +259,33 @@
 			</include>
 			<include content="NextAiredLists">
 				<param name="ListID" value="206"/>
+			</include>
+			<include content="NextAiredLists">
+				<param name="ListID" value="207"/>
+			</include>
+			<include content="NextAiredLists">
+				<param name="ListID" value="208"/>
+			</include>
+			<include content="NextAiredLists">
+				<param name="ListID" value="209"/>
+			</include>
+			<include content="NextAiredLists">
+				<param name="ListID" value="210"/>
+			</include>
+			<include content="NextAiredLists">
+				<param name="ListID" value="211"/>
+			</include>
+			<include content="NextAiredLists">
+				<param name="ListID" value="212"/>
+			</include>
+			<include content="NextAiredLists">
+				<param name="ListID" value="213"/>
+			</include>
+			<include content="NextAiredLists">
+				<param name="ListID" value="214"/>
+			</include>
+			<include content="NextAiredLists">
+				<param name="ListID" value="215"/>
 			</include>
 		</control>
 	</controls>

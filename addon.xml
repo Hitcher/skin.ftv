@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.ftv" version="7.0.0" name="fTV" provider-name="Hitcher">
+<addon id="skin.ftv" version="7.1.0" name="fTV" provider-name="Hitcher">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0"/>
 		<import addon="script.favourites" version="5.0.2"/>
@@ -46,6 +46,6 @@
 			<screenshot>resources/screenshot-12.jpg</screenshot>
 			<screenshot>resources/screenshot-13.jpg</screenshot>
 		</assets>
-		<news>Added Embuary Info support.</news>
+		<news>Updated for Kodi v19 (Matrix).</news>
 	</extension>
 </addon>

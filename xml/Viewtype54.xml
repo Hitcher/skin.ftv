@@ -43,7 +43,7 @@
 			<control id="54" type="fixedlist">
 				<left>668</left>
 				<top>292</top>
-				<width>1000</width>
+				<width>1132</width>
 				<height>900</height>
 				<onup>back</onup>
 				<ondown>noop</ondown>
@@ -55,7 +55,7 @@
 				<scrolltime>0</scrolltime>
 				<visible>Container.Content(songs)</visible>
 				<animation condition="[!Container.HasParent + String.IsEqual(Container(54).CurrentItem,1)] | [Container.HasParent + String.IsEqual(Container(54).CurrentItem,0)]" effect="slide" end="0,-101" start="0,0">Conditional</animation>
-				<itemlayout height="101" width="1000">
+				<itemlayout height="101" width="1132">
 					<control type="label">
 						<width>68</width>
 						<height>31</height>
@@ -66,7 +66,7 @@
 					</control>
 					<control type="label">
 						<left>89</left>
-						<width>892</width>
+						<width>1044</width>
 						<height>31</height>
 						<font>Light32</font>
 						<textcolor>ffd8d8d8</textcolor>
@@ -75,7 +75,7 @@
 					</control>
 					<control type="label">
 						<left>89</left>
-						<width>892</width>
+						<width>1044</width>
 						<height>31</height>
 						<font>Light32</font>
 						<textcolor>ffd8d8d8</textcolor>
@@ -84,7 +84,7 @@
 					</control>
 					<control type="label">
 						<left>89</left>
-						<width>892</width>
+						<width>1044</width>
 						<height>31</height>
 						<font>Light32</font>
 						<align>right</align>
@@ -94,7 +94,7 @@
 					<control type="label">
 						<left>89</left>
 						<top>35</top>
-						<width>892</width>
+						<width>1044</width>
 						<height>28</height>
 						<font>Light28</font>
 						<textcolor>ff636466</textcolor>
@@ -102,7 +102,7 @@
 						<visible>!String.IsEqual(ListItem.AlbumArtist,ListItem.Artist) | String.Contains(Container.FolderPath,singles) | String.Contains(Container.FolderPath,songs)</visible>
 					</control>
 				</itemlayout>
-				<focusedlayout height="101" width="1000">
+				<focusedlayout height="101" width="1132">
 					<control type="label">
 						<width>68</width>
 						<height>31</height>
@@ -114,7 +114,7 @@
 					</control>
 					<control type="label">
 						<left>89</left>
-						<width>892</width>
+						<width>1044</width>
 						<height>31</height>
 						<font>Light32</font>
 						<textcolor>ffe9a01e</textcolor>
@@ -124,7 +124,7 @@
 					</control>
 					<control type="label">
 						<left>89</left>
-						<width>892</width>
+						<width>1044</width>
 						<height>31</height>
 						<font>Light32</font>
 						<textcolor>ffe9a01e</textcolor>
@@ -134,7 +134,7 @@
 					</control>
 					<control type="label">
 						<left>89</left>
-						<width>892</width>
+						<width>1044</width>
 						<height>31</height>
 						<font>Light32</font>
 						<align>right</align>
@@ -145,7 +145,7 @@
 					<control type="label">
 						<left>89</left>
 						<top>35</top>
-						<width>892</width>
+						<width>1044</width>
 						<height>28</height>
 						<font>Light28</font>
 						<textcolor>ffe9a01e</textcolor>
