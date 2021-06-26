@@ -199,7 +199,7 @@
 					<height>0</height>
 					<onfocus>Right</onfocus>
 					<include>NoTextures</include>
-					<visible>!Control.HasFocus(12) + !Control.HasFocus(9) + !Control.HasFocus(20) + !Control.HasFocus(6) + !Control.HasFocus(7) + !Control.HasFocus(8) + !Control.HasFocus(10) + !Control.HasFocus(21)</visible>
+					<visible>!Control.HasFocus(12) + !Control.HasFocus(21) + !Control.HasFocus(9) + !Control.HasFocus(10) + !Control.HasFocus(14) + !Control.HasFocus(6) + !Control.HasFocus(7) + !Control.HasFocus(20)</visible>
 				</control>
 				<!-- Launch Addon Button -->
 				<control id="12" type="button">
@@ -267,20 +267,20 @@
 					<visible>Control.IsEnabled(10)</visible>
 				</control>
 				<!-- Update Addon Button -->
-				<control id="8" type="button">
+				<control id="14" type="button">
 					<width min="124" max="204">auto</width>
 					<wrapmultiline>true</wrapmultiline>
 					<height>116</height>
 					<onup>Close</onup>
 					<ondown condition="Control.IsVisible(50)">50</ondown>
 					<font>Med24</font>
-					<label>$LOCALIZE[31022]</label>
+					<label>$LOCALIZE[24069]</label>
 					<textoffsetx>28</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
 					<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
 					<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
-					<visible>Control.IsEnabled(8)</visible>
+					<visible>Control.IsEnabled(14)</visible>
 				</control>
 				<!-- Install/UnInstall Addon button -->
 				<control id="6" type="button">

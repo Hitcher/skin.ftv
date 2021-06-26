@@ -14,7 +14,7 @@
 			<width>2036</width>
 			<height>576</height>
 			<onup>999</onup>
-			<ondown>1000</ondown>
+			<ondown>noop</ondown>
 			<onleft>Back</onleft>
 			<onright>noop</onright>
 			<onright condition="!Window.IsVisible(1103)">SetProperty(BounceRight,1,Home)</onright>
@@ -52,7 +52,7 @@
 						<width>320</width>
 						<height>480</height>
 						<aspectratio align="center">scale</aspectratio>
-						<texture background="true" fallback="views/movie_fallback.png">$INFO[ListItem.Icon]</texture>
+						<texture background="true" fallback="views/movie_fallback.png">$INFO[ListItem.Art(tvshow.poster)]</texture>
 					</control>
 					<control type="image">
 						<top>48</top>
@@ -93,7 +93,7 @@
 						<width>320</width>
 						<height>480</height>
 						<aspectratio align="center">scale</aspectratio>
-						<texture background="true" fallback="views/movie_fallback.png">$INFO[ListItem.Icon]</texture>
+						<texture background="true" fallback="views/movie_fallback.png">$INFO[ListItem.Art(tvshow.poster)]</texture>
 					</control>
 					<control type="image">
 						<top>48</top>
