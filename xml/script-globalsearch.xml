@@ -7,11 +7,6 @@
 	<onload condition="System.HasAddon(script.tvtunes)">RunScript(script.tvtunes,backend=True)</onload>
 	<views>50</views>
 	<controls>
-		<control id="9001" type="list">
-			<include>HiddenHomeList</include>
-			<preloaditems>2</preloaditems>
-			<content>$VAR[RatingContent]</content>
-		</control>
 		<control type="label" id="991">
 			<include>HiddenControl</include>
 		</control>
@@ -241,25 +236,8 @@
 						<font>Bold30</font>
 						<aligny>bottom</aligny>
 						<textcolor>ffbcbcbc</textcolor>
-						<label>$INFO[Container(9001).Listitem.Rating(imdb),,/10]</label>
+						<label>$INFO[Listitem.Rating(imdb),,/10]</label>
 						<visible>!String.IsEmpty(Listitem.Rating(imdb))</visible>
-					</control>
-					<control type="image">
-						<top>4</top>
-						<width>48</width>
-						<height>23</height>
-						<texture>views/logos/imdb.png</texture>
-						<visible>!String.IsEmpty(Container(9001).Listitem.Rating(imdb)) + String.IsEmpty(ListItem.Rating(imdb))</visible>
-					</control>
-					<control type="label">
-						<top>-13</top>
-						<width>auto</width>
-						<height>34</height>
-						<font>Bold30</font>
-						<aligny>bottom</aligny>
-						<textcolor>ffbcbcbc</textcolor>
-						<label>$INFO[Container(9001).Listitem.Rating(imdb),,/10]</label>
-						<visible>!String.IsEmpty(Container(9001).Listitem.Rating(imdb)) + String.IsEmpty(ListItem.Rating(imdb))</visible>
 					</control>
 					<control type="image">
 						<top>3</top>
@@ -279,23 +257,6 @@
 						<visible>!String.IsEmpty(ListItem.Rating(tvdb))</visible>
 					</control>
 					<control type="image">
-						<top>3</top>
-						<width>40</width>
-						<height>23</height>
-						<texture>views/logos/tvdb.png</texture>
-						<visible>!String.IsEmpty(Container(9001).Listitem.Rating(tvdb)) + String.IsEmpty(ListItem.Rating(tvdb))</visible>
-					</control>
-					<control type="label">
-						<top>-13</top>
-						<width>auto</width>
-						<height>34</height>
-						<font>Bold30</font>
-						<aligny>bottom</aligny>
-						<textcolor>ffbcbcbc</textcolor>
-						<label>$INFO[Container(9001).Listitem.Rating(tvdb),,/10]</label>
-						<visible>!String.IsEmpty(Container(9001).Listitem.Rating(tvdb)) + String.IsEmpty(ListItem.Rating(tvdb))</visible>
-					</control>
-					<control type="image">
 						<top>4</top>
 						<width>60</width>
 						<height>24</height>
@@ -311,23 +272,6 @@
 						<textcolor>ffbcbcbc</textcolor>
 						<label>$INFO[ListItem.Rating(themoviedb),,/10]</label>
 						<visible>!String.IsEmpty(ListItem.Rating(themoviedb))</visible>
-					</control>
-					<control type="image">
-						<top>4</top>
-						<width>60</width>
-						<height>24</height>
-						<texture>views/logos/tmdb.png</texture>
-						<visible>!String.IsEmpty(Container(9001).Listitem.Rating(themoviedb)) + String.IsEmpty(ListItem.Rating(themoviedb))</visible>
-					</control>
-					<control type="label">
-						<top>-13</top>
-						<width>auto</width>
-						<height>34</height>
-						<font>Bold30</font>
-						<aligny>bottom</aligny>
-						<textcolor>ffbcbcbc</textcolor>
-						<label>$INFO[Container(9001).Listitem.Rating(themoviedb),,/10]</label>
-						<visible>!String.IsEmpty(Container(9001).Listitem.Rating(themoviedb)) + String.IsEmpty(ListItem.Rating(themoviedb))</visible>
 					</control>
 				</control>
 				<!-- Movie / TV Show plot -->
