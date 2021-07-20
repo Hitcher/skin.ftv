@@ -16,6 +16,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "Addon Summary"
+msgid "Skin based on the Fire TV UI"
+msgstr ""
+
+msgctxt "Addon Description"
+msgid "A skin designed to access all your content as easily and seemlessly as possible.[CR][CR]Supports:[CR]Global Search[CR]Next Aired[CR]Up Next[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]Based on the original Fire TV UI."
+msgstr ""
+
+msgctxt "Addon Disclaimer"
+msgid "To make use of the 'HDR' &amp; 'ATMOS' tags they need to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV"
+msgstr ""
+
 msgctxt "#31000"
 msgid "Audio Options"
 msgstr ""
