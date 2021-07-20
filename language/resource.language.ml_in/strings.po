@@ -284,7 +284,7 @@ msgctxt "#31063"
 msgid "Enables Cast info during video playback.[CR]Note: Can be CPU intensive."
 msgstr ""
 
-#empty strings from id 31064 to 31066
+# empty strings from id 31064 to 31066
 msgctxt "#31067"
 msgid "Choose Fanart"
 msgstr ""
@@ -333,7 +333,7 @@ msgctxt "#31078"
 msgid "Sorry, nothing found."
 msgstr ""
 
-#empty strings from id 31079 to 31084
+# empty strings from id 31079 to 31084
 msgctxt "#31085"
 msgid "Shutdown Menu"
 msgstr ""
@@ -342,7 +342,7 @@ msgctxt "#31086"
 msgid "Sorted by"
 msgstr ""
 
-#empty string with id 31087
+# empty string with id 31087
 msgctxt "#31088"
 msgid "Current Playlist"
 msgstr ""
@@ -375,7 +375,7 @@ msgctxt "#31095"
 msgid "Clear Playlist"
 msgstr ""
 
-#empty strings from id 31096 to 31097
+# empty strings from id 31096 to 31097
 msgctxt "#31098"
 msgid "Press 'Continue?' to watch the next episode or 'Cancel' to stop watching."
 msgstr ""
@@ -428,7 +428,7 @@ msgctxt "#31110"
 msgid "Written by"
 msgstr ""
 
-#empty strings from id 31111 to 31113
+# empty strings from id 31111 to 31113
 msgctxt "#31114"
 msgid "Customise Shutdown Menu"
 msgstr ""
@@ -493,7 +493,7 @@ msgctxt "#31129"
 msgid "Kodi"
 msgstr ""
 
-#empty string with id 31130
+# empty string with id 31130
 msgctxt "#31131"
 msgid "Enable Wide TV Show Icons"
 msgstr ""
@@ -522,12 +522,12 @@ msgctxt "#31137"
 msgid "Video Options"
 msgstr ""
 
-#empty strings from id 31138 to 31142
+# empty strings from id 31138 to 31142
 msgctxt "#31143"
 msgid "This will undo any changes you've made to the home menu and widgets."
 msgstr ""
 
-#empty string with id 31144
+# empty string with id 31144
 msgctxt "#31145"
 msgid "percent remaining"
 msgstr ""
@@ -632,7 +632,7 @@ msgctxt "#31170"
 msgid "Kids Movies"
 msgstr ""
 
-#empty strings from id 31171 to 31173
+# empty strings from id 31171 to 31173
 msgctxt "#31174"
 msgid "Top Rated Movies"
 msgstr ""
@@ -653,7 +653,7 @@ msgctxt "#31178"
 msgid "Kids TV Shows"
 msgstr ""
 
-#empty strings from id 31179 to 31181
+# empty strings from id 31179 to 31181
 msgctxt "#31182"
 msgid "Top Rated TV Shows"
 msgstr ""
@@ -674,12 +674,12 @@ msgctxt "#31186"
 msgid "Your Artists"
 msgstr ""
 
-#empty strings from id 31187 to 31193
+# empty strings from id 31187 to 31193
 msgctxt "#31194"
 msgid "Submit"
 msgstr ""
 
-#empty strings from id 31195 to 31196
+# empty strings from id 31195 to 31196
 msgctxt "#31197"
 msgid "Widget"
 msgstr ""
@@ -772,7 +772,7 @@ msgctxt "#31219"
 msgid "Customise Widget Group"
 msgstr ""
 
-#empty strings from id 31220 to 31222
+# empty strings from id 31220 to 31222
 msgctxt "#31223"
 msgid "Video Addons"
 msgstr ""
@@ -781,12 +781,12 @@ msgctxt "#31224"
 msgid "Picture Addons"
 msgstr ""
 
-#empty strings from id 31225 to 31226
+# empty strings from id 31225 to 31226
 msgctxt "#31227"
 msgid "Air time"
 msgstr ""
 
-#empty string with id 31228
+# empty string with id 31228
 msgctxt "#31229"
 msgid "Cancel Next Up"
 msgstr ""
@@ -815,7 +815,7 @@ msgctxt "#31235"
 msgid "Your Rating"
 msgstr ""
 
-#Must match #31235 without the space
+# Must match #31235 without the space
 msgctxt "#31236"
 msgid "YourRating"
 msgstr ""
