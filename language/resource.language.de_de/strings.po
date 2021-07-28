@@ -5,21 +5,21 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-07-07 16:03+0000\n"
-"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"PO-Revision-Date: 2021-07-28 08:18+0000\n"
+"Last-Translator: beatmasterRS <danysahne333@yahoo.de>\n"
 "Language-Team: German <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/de_de/>\n"
 "Language: de_de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7.1\n"
+"X-Generator: Weblate 4.7.2\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the Fire TV UI"
-msgstr ""
+msgstr "Skin basierend auf der Fire TV-Benutzeroberfläche"
 
 msgctxt "Addon Description"
 msgid "A skin designed to access all your content as easily and seemlessly as possible.[CR][CR]Supports:[CR]Global Search[CR]Next Aired[CR]Up Next[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]Based on the original Fire TV UI."
@@ -43,15 +43,15 @@ msgstr ""
 
 msgctxt "#31003"
 msgid "Germany"
-msgstr ""
+msgstr "Deutschland"
 
 msgctxt "#31004"
 msgid "minute"
-msgstr ""
+msgstr "Minute"
 
 msgctxt "#31005"
 msgid "hour"
-msgstr ""
+msgstr "Stunde"
 
 msgctxt "#31006"
 msgid "Starts at"
@@ -87,11 +87,11 @@ msgstr "Stumm"
 
 msgctxt "#31014"
 msgid "Next Movie"
-msgstr ""
+msgstr "Nächster Film"
 
 msgctxt "#31015"
 msgid "Next Video"
-msgstr ""
+msgstr "Nächstes Video"
 
 msgctxt "#31016"
 msgid "Settings level"
@@ -103,19 +103,19 @@ msgstr ""
 
 msgctxt "#31018"
 msgid "View Addons that have updates available."
-msgstr ""
+msgstr "Addons anzeigen, für die Updates verfügbar sind."
 
 msgctxt "#31019"
 msgid "View Addons that are currently being downloaded."
-msgstr ""
+msgstr "Addons anzeigen, die gerade heruntergeladen werden."
 
 msgctxt "#31020"
 msgid "View all the system Addons including Dependencies, Orphaned Dependencies, and Running Addons."
-msgstr ""
+msgstr "Alle System-Addons anzeigen, einschließlich Abhängigkeiten, verwaiste Abhängigkeiten und laufende Addons."
 
 msgctxt "#31021"
 msgid "Download Addons from your installed repos."
-msgstr ""
+msgstr "Addons aus Ihren installierten Repos herunterladen."
 
 msgctxt "#31022"
 msgid "Update[CR]Now"
@@ -131,7 +131,7 @@ msgstr ""
 
 msgctxt "#31025"
 msgid "Notice"
-msgstr ""
+msgstr "Hinweis"
 
 msgctxt "#31026"
 msgid "Overview"
@@ -139,7 +139,7 @@ msgstr "Übersicht"
 
 msgctxt "#31027"
 msgid "Install Addons using the file browser."
-msgstr ""
+msgstr "Addons über den Dateibrowser installieren."
 
 msgctxt "#31028"
 msgid "Search for an Addon from your installed repos."
@@ -151,7 +151,7 @@ msgstr ""
 
 msgctxt "#31030"
 msgid "Customise the home menu to your liking with the Skin Shortcuts script."
-msgstr ""
+msgstr "Hauptmenü mit dem Skin Shortcuts Script nach eigenen Wünschen anpassen."
 
 msgctxt "#31031"
 msgid "Customise the shutdown menu to include your favourite actions."
@@ -207,7 +207,7 @@ msgstr ""
 
 msgctxt "#31044"
 msgid "Local subtitle found!"
-msgstr ""
+msgstr "Lokaler Untertitel gefunden!"
 
 msgctxt "#31045"
 msgid "Turn On Randomise"
@@ -219,7 +219,7 @@ msgstr ""
 
 msgctxt "#31047"
 msgid "Visualisation Presets"
-msgstr "Visualisierungspresets"
+msgstr "Visualisierungsvoreinstellungen"
 
 msgctxt "#31048"
 msgid "Playlist Options"
@@ -227,7 +227,7 @@ msgstr "Wiedergabeliste-Optionen"
 
 msgctxt "#31049"
 msgid "Customise Home Menu"
-msgstr ""
+msgstr "Hauptmenü anpassen"
 
 msgctxt "#31050"
 msgid "TV Shows starring"
@@ -235,7 +235,7 @@ msgstr ""
 
 msgctxt "#31051"
 msgid "Images"
-msgstr ""
+msgstr "Bilder"
 
 msgctxt "#31052"
 msgid "Turn On[CR]Shuffle All"
@@ -263,15 +263,15 @@ msgstr ""
 
 msgctxt "#31058"
 msgid "Today's weather:"
-msgstr ""
+msgstr "Heutiges Wetter:"
 
 msgctxt "#31059"
 msgid "Tonight's weather:"
-msgstr ""
+msgstr "Wetter von heute Nacht:"
 
 msgctxt "#31060"
 msgid "Play Now"
-msgstr ""
+msgstr "Jetzt abspielen"
 
 msgctxt "#31061"
 msgid "Enable X-Ray"
@@ -296,7 +296,7 @@ msgstr ""
 
 msgctxt "#31069"
 msgid "Images for"
-msgstr ""
+msgstr "Bilder für"
 
 msgctxt "#31070"
 msgid "Similar Titles"
@@ -324,7 +324,7 @@ msgstr ""
 
 msgctxt "#31076"
 msgid "Cast and Role"
-msgstr ""
+msgstr "Besetzung und Rolle"
 
 msgctxt "#31077"
 msgid "Viewers Also Watched"
@@ -352,7 +352,7 @@ msgstr "Anzeigeoptionen"
 
 msgctxt "#31090"
 msgid "Update Library"
-msgstr ""
+msgstr "Bibliothek aktualisieren"
 
 msgctxt "#31091"
 msgid "Stop scanning"
@@ -364,7 +364,7 @@ msgstr "Sortieren nach"
 
 msgctxt "#31093"
 msgid "Filter By"
-msgstr ""
+msgstr "Filtern nach"
 
 msgctxt "#31094"
 msgid "Save Playlist"
@@ -372,7 +372,7 @@ msgstr "Wiedergabeliste speichern"
 
 msgctxt "#31095"
 msgid "Clear Playlist"
-msgstr ""
+msgstr "Wiedergabeliste löschen"
 
 # empty strings from id 31096 to 31097
 msgctxt "#31098"
@@ -385,7 +385,7 @@ msgstr ""
 
 msgctxt "#31100"
 msgid "Photos"
-msgstr ""
+msgstr "Fotos"
 
 msgctxt "#31101"
 msgid "Apps"
@@ -397,7 +397,7 @@ msgstr "Gerade läuft"
 
 msgctxt "#31103"
 msgid "Addons"
-msgstr ""
+msgstr "Addons"
 
 msgctxt "#31104"
 msgid "Cinema Experience"
@@ -417,7 +417,7 @@ msgstr ""
 
 msgctxt "#31108"
 msgid "Known For"
-msgstr ""
+msgstr "Bekannt für"
 
 msgctxt "#31109"
 msgid "Watch[CR]Now"
@@ -834,23 +834,23 @@ msgstr ""
 
 msgctxt "#31241"
 msgid "I hate it"
-msgstr ""
+msgstr "Ich hasse es"
 
 msgctxt "#31242"
 msgid "I don't like it"
-msgstr ""
+msgstr "Ich mag es nicht"
 
 msgctxt "#31243"
 msgid "It's okay"
-msgstr ""
+msgstr "Es ist okay"
 
 msgctxt "#31244"
 msgid "I like it"
-msgstr ""
+msgstr "Ich mag es"
 
 msgctxt "#31245"
 msgid "I love it"
-msgstr ""
+msgstr "Ich liebe es"
 
 msgctxt "#31246"
 msgid "Location"
@@ -890,7 +890,7 @@ msgstr ""
 
 msgctxt "#31255"
 msgid "Reset Home Menu"
-msgstr ""
+msgstr "Hauptmenü zurücksetzen"
 
 msgctxt "#31256"
 msgid "What's[CR]New"
@@ -898,7 +898,7 @@ msgstr ""
 
 msgctxt "#31257"
 msgid "Rotten Tomatoes Rating"
-msgstr ""
+msgstr "Rotten Tomatoes Bewertung"
 
 msgctxt "#31258"
 msgid "TomatoMeter All Critics"
