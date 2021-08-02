@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-07-28 08:18+0000\n"
-"Last-Translator: beatmasterRS <danysahne333@yahoo.de>\n"
+"PO-Revision-Date: 2021-08-02 08:29+0000\n"
+"Last-Translator: Kai Sommerfeld <kai.sommerfeld@gmx.com>\n"
 "Language-Team: German <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/de_de/>\n"
 "Language: de_de\n"
 "MIME-Version: 1.0\n"
@@ -103,7 +103,7 @@ msgstr ""
 
 msgctxt "#31018"
 msgid "View Addons that have updates available."
-msgstr "Addons anzeigen, für die Updates verfügbar sind."
+msgstr "Addons anzeigen, für die Aktualisierungen verfügbar sind."
 
 msgctxt "#31019"
 msgid "View Addons that are currently being downloaded."
@@ -115,7 +115,7 @@ msgstr "Alle System-Addons anzeigen, einschließlich Abhängigkeiten, verwaiste 
 
 msgctxt "#31021"
 msgid "Download Addons from your installed repos."
-msgstr "Addons aus Ihren installierten Repos herunterladen."
+msgstr "Addons aus installierten Repos herunterladen."
 
 msgctxt "#31022"
 msgid "Update[CR]Now"
@@ -151,7 +151,7 @@ msgstr ""
 
 msgctxt "#31030"
 msgid "Customise the home menu to your liking with the Skin Shortcuts script."
-msgstr "Hauptmenü mit dem Skin Shortcuts Script nach eigenen Wünschen anpassen."
+msgstr "Hauptmenü mit dem Skin-Shortcuts-Skript nach eigenen Wünschen anpassen."
 
 msgctxt "#31031"
 msgid "Customise the shutdown menu to include your favourite actions."
@@ -271,7 +271,7 @@ msgstr "Wetter von heute Nacht:"
 
 msgctxt "#31060"
 msgid "Play Now"
-msgstr "Jetzt abspielen"
+msgstr "Jetzt wiedergeben"
 
 msgctxt "#31061"
 msgid "Enable X-Ray"
@@ -898,7 +898,7 @@ msgstr ""
 
 msgctxt "#31257"
 msgid "Rotten Tomatoes Rating"
-msgstr "Rotten Tomatoes Bewertung"
+msgstr "Rotten-Tomatoes-Bewertung"
 
 msgctxt "#31258"
 msgid "TomatoMeter All Critics"
