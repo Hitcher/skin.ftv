@@ -26,8 +26,8 @@ msgid "A skin designed to access all your content as easily and seemlessly as po
 msgstr "一种外观，旨在尽可能轻松、无缝地访问您的所有内容。[CR][CR]支持：[CR]全局搜索[CR]下一集[CR]接下来播放[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]基于原始Fire TV UI的特殊功能[CR][CR]。"
 
 msgctxt "Addon Disclaimer"
-msgid "To make use of the 'HDR' &amp; 'ATMOS' tags they need to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV"
-msgstr "为使'HDR' &amp; 'ATMOS'标签生效，你需要将它们添加到你的文件名中。[CR]不支持：鼠标和触摸设备或Live TV"
+msgid "To make use of the 'HDR' & 'ATMOS' tags they need to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV"
+msgstr "为使'HDR' & 'ATMOS'标签生效，你需要将它们添加到你的文件名中。[CR]不支持：鼠标和触摸设备或Live TV"
 
 msgctxt "#31000"
 msgid "Audio Options"

@@ -25,7 +25,7 @@ msgid "A skin designed to access all your content as easily and seemlessly as po
 msgstr ""
 
 msgctxt "Addon Disclaimer"
-msgid "To make use of the 'HDR' &amp; 'ATMOS' tags they need to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV"
+msgid "To make use of the 'HDR' & 'ATMOS' tags they need to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV"
 msgstr ""
 
 msgctxt "#31000"
