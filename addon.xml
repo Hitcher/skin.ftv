@@ -48,11 +48,11 @@
 		<description lang="ja_JP">すべてのコンテンツに可能な限り簡単でシームレスにアクセスできるようにデザインされたスキン。[CR][CR]サポート:[CR]Global Search[CR]Next Aired[CR]Up Next[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]ベースになっているオリジナルは、Fire TV UIです。</description>
 		<description lang="ru_RU">Обложка разработана для легкого и быстрого доступа ко всему вашему контенту, насколько это возможно.[CR][CR]Поддерживает:[CR]Global Search[CR]Next Aired[CR]Up Next[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]Основано на интерфейсе Fire TV.</description>
 		<description lang="zh_CN">一种外观，旨在尽可能轻松、无缝地访问您的所有内容。[CR][CR]支持：[CR]全局搜索[CR]下一集[CR]接下来播放[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]基于原始Fire TV UI的特殊功能[CR][CR]。</description>
-		<disclaimer lang="ca_ES">Fer ús de les etiquetes 'HDR' &amp;amp; 'ATMOS', cal afegir-les al nom de fitxer.[CR]No admet: dispositius de ratolí i tàctils, o TV en directe</disclaimer>
-		<disclaimer lang="en_GB">To make use of the 'HDR' &amp;amp; 'ATMOS' tags they need to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV</disclaimer>
-		<disclaimer lang="en_US">To make use of the 'HDR' &amp;amp; 'ATMOS' tags they need to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV</disclaimer>
+		<disclaimer lang="ca_ES">Fer ús de les etiquetes 'HDR' &amp; 'ATMOS', cal afegir-les al nom de fitxer.[CR]No admet: dispositius de ratolí i tàctils, o TV en directe</disclaimer>
+		<disclaimer lang="en_GB">To make use of the 'HDR' &amp; 'ATMOS' tags they need to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV</disclaimer>
+		<disclaimer lang="en_US">To make use of the 'HDR' &amp; 'ATMOS' tags they need to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV</disclaimer>
 		<disclaimer lang="es_ES">Para poder utilizar los tags 'HDR'y 'ATMOS', estos Deben ser añadidos al nombre del archive.[CR]No funciona con: Dispositivos tácitles o ratón ni TV en Vivo</disclaimer>
 		<disclaimer lang="ja_JP">'HDR' と 'ATMOS' タグを使用するには、ファイル名に追加する必要があります。[CR]未サポート: マウスとタッチデバイスまたはLive TV</disclaimer>
-		<disclaimer lang="zh_CN">为使'HDR' &amp;amp; 'ATMOS'标签生效，你需要将它们添加到你的文件名中。[CR]不支持：鼠标和触摸设备或Live TV</disclaimer>
+		<disclaimer lang="zh_CN">为使'HDR' &amp; 'ATMOS'标签生效，你需要将它们添加到你的文件名中。[CR]不支持：鼠标和触摸设备或Live TV</disclaimer>
 	</extension>
 </addon>
