@@ -5,24 +5,25 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Kodi Translation Team\n"
-"Language-Team: Italian (Italy) (http://www.transifex.com/projects/p/kodi-skins/language/it_IT/)\n"
-"Language: it_IT\n"
+"PO-Revision-Date: 2021-12-11 12:47+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Italian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/it_it/>\n"
+"Language: it_it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.9.1\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the Fire TV UI"
-msgstr ""
+msgstr "Skin basata sull'Interfaccia Utente della Fire TV"
 
 msgctxt "Addon Description"
 msgid "A skin designed to access all your content as easily and seemlessly as possible.[CR][CR]Supports:[CR]Global Search[CR]Next Aired[CR]Up Next[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]Based on the original Fire TV UI."
-msgstr ""
+msgstr "Una skin progettata per accedere a tutti i tuoi contenuti nel modo più semplice e facile possibile.[CR][CR]Supporta:[CR]Ricerca Globale[CR]Trasmissione Successiva[CR]Avanti[CR]Info Embuary[CR]Trakt[CR]Testi CU[CR]Esperienza Cinematografica[CR]Funzioni Speciali[CR][CR]Basato sull'Interfaccia Utente originale della Fire TV."
 
 msgctxt "Addon Disclaimer"
 msgid "To make use of the 'HDR' & 'ATMOS' tags they need to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV"
@@ -30,31 +31,31 @@ msgstr ""
 
 msgctxt "#31000"
 msgid "Audio Options"
-msgstr ""
+msgstr "Opzioni Audio"
 
 msgctxt "#31001"
 msgid "US"
-msgstr ""
+msgstr "US (Stati Uniti)"
 
 msgctxt "#31002"
 msgid "UK"
-msgstr ""
+msgstr "UK (Regno Unito)"
 
 msgctxt "#31003"
 msgid "Germany"
-msgstr ""
+msgstr "Germania"
 
 msgctxt "#31004"
 msgid "minute"
-msgstr ""
+msgstr "minuto"
 
 msgctxt "#31005"
 msgid "hour"
-msgstr ""
+msgstr "ora"
 
 msgctxt "#31006"
 msgid "Starts at"
-msgstr ""
+msgstr "Inizio alle"
 
 msgctxt "#31007"
 msgid "System music files"
@@ -62,7 +63,7 @@ msgstr "Suoni di sistema"
 
 msgctxt "#31008"
 msgid "Current selection"
-msgstr ""
+msgstr "Selezione corrente"
 
 msgctxt "#31009"
 msgid "Open playlist"
@@ -86,11 +87,11 @@ msgstr "Audio Disattivato"
 
 msgctxt "#31014"
 msgid "Next Movie"
-msgstr ""
+msgstr "Film successivo"
 
 msgctxt "#31015"
 msgid "Next Video"
-msgstr ""
+msgstr "Video successivo"
 
 msgctxt "#31016"
 msgid "Settings level"
@@ -98,39 +99,39 @@ msgstr "Livello impostazioni"
 
 msgctxt "#31017"
 msgid "View all of your enabled and disabled Addons."
-msgstr ""
+msgstr "Visualizza tutti i tuoi addon abilitati e disabilitati."
 
 msgctxt "#31018"
 msgid "View Addons that have updates available."
-msgstr ""
+msgstr "Visualizza gli addon che hanno un aggiornamento disponibile."
 
 msgctxt "#31019"
 msgid "View Addons that are currently being downloaded."
-msgstr ""
+msgstr "Visualizza gli Addon che sono attualmente in download."
 
 msgctxt "#31020"
 msgid "View all the system Addons including Dependencies, Orphaned Dependencies, and Running Addons."
-msgstr ""
+msgstr "Visualizza tutti gli Addon di sistema, inclusi le Dipendenze, le Dipendenze Orfane e gli Addon in esecuzione."
 
 msgctxt "#31021"
 msgid "Download Addons from your installed repos."
-msgstr ""
+msgstr "Scarica gli Addon dalle tue repository installate."
 
 msgctxt "#31022"
 msgid "Update[CR]Now"
-msgstr ""
+msgstr "Aggiorna[CR]Ora"
 
 msgctxt "#31023"
 msgid "Special[CR]Features"
-msgstr ""
+msgstr "Funzioni[CR]Aggiuntive"
 
 msgctxt "#31024"
 msgid "Widget Name"
-msgstr ""
+msgstr "Nome Widget"
 
 msgctxt "#31025"
 msgid "Notice"
-msgstr ""
+msgstr "Note"
 
 msgctxt "#31026"
 msgid "Overview"
@@ -138,35 +139,35 @@ msgstr "Panoramica"
 
 msgctxt "#31027"
 msgid "Install Addons using the file browser."
-msgstr ""
+msgstr "Installa gli Addon usando il file browser."
 
 msgctxt "#31028"
 msgid "Search for an Addon from your installed repos."
-msgstr ""
+msgstr "Ricerca un Addon dalle repo intallate."
 
 msgctxt "#31029"
 msgid "Addon Details"
-msgstr ""
+msgstr "Dettagli Addon"
 
 msgctxt "#31030"
 msgid "Customise the home menu to your liking with the Skin Shortcuts script."
-msgstr ""
+msgstr "Personalizza il menu iniziale a tuo piacimento con lo script Skin Shortcuts."
 
 msgctxt "#31031"
 msgid "Customise the shutdown menu to include your favourite actions."
-msgstr ""
+msgstr "Personalizza il menu di spegnimento includendo le tue azioni preferite."
 
 msgctxt "#31032"
 msgid "Hide thumbnails for unwatched episodes to avoid possible spoilers."
-msgstr ""
+msgstr "Nascondi le miniature degli episodi non visti per evitare possibili spoiler."
 
 msgctxt "#31033"
 msgid "Launch Now"
-msgstr ""
+msgstr "Avvia Ora"
 
 msgctxt "#31034"
 msgid "Select which Rotten Tomatoes rating to use."
-msgstr ""
+msgstr "Seleziona quale punteggio di Rotten Tomatoes usare."
 
 msgctxt "#31035"
 msgid "Still there?"
@@ -174,51 +175,51 @@ msgstr "Sei ancora lì?"
 
 msgctxt "#31036"
 msgid "Displays fanart for your media in the background."
-msgstr ""
+msgstr "Visualizza le fanart per i tuoi media sullo sfondo."
 
 msgctxt "#31037"
 msgid "Hide Unwatched Episode Thumbs"
-msgstr ""
+msgstr "Nascondi le anteprime degli episodi non visti"
 
 msgctxt "#31038"
 msgid "Select your scrapers certification county."
-msgstr ""
+msgstr "Seleziona il tuo paese di certificazione dello scraper."
 
 msgctxt "#31039"
 msgid "Enable debug grid.[CR]Useful when skinning."
-msgstr ""
+msgstr "Abilita la griglia di debug.[CR]Utile quando si fa lo skinning."
 
 msgctxt "#31040"
 msgid "Enable debug info.[CR]Useful for bug reporting."
-msgstr ""
+msgstr "Abilita le informazioni di debug.[CR]Utile per la segnalazione di bug."
 
 msgctxt "#31041"
 msgid "Debug grid"
-msgstr ""
+msgstr "Griglia di debug"
 
 msgctxt "#31042"
 msgid "Debug labels"
-msgstr ""
+msgstr "Etichette di debug"
 
 msgctxt "#31043"
 msgid "Turn Off Randomise"
-msgstr ""
+msgstr "Disabilita casualità"
 
 msgctxt "#31044"
 msgid "Local subtitle found!"
-msgstr ""
+msgstr "Sottotitoli in locale trovato!"
 
 msgctxt "#31045"
 msgid "Turn On Randomise"
-msgstr ""
+msgstr "Abilita casualità"
 
 msgctxt "#31046"
 msgid "Turn Off Shuffle All"
-msgstr ""
+msgstr "Disabilita Riproduzione casuale dei contenuti"
 
 msgctxt "#31047"
 msgid "Visualisation Presets"
-msgstr "Preimpostazione di visualizzazione"
+msgstr "Preset di visualizzazione"
 
 msgctxt "#31048"
 msgid "Playlist Options"
@@ -230,80 +231,80 @@ msgstr "Personalizza Menù Home"
 
 msgctxt "#31050"
 msgid "TV Shows starring"
-msgstr ""
+msgstr "Protagonisti Serie TV"
 
 msgctxt "#31051"
 msgid "Images"
-msgstr ""
+msgstr "Immagini"
 
 msgctxt "#31052"
 msgid "Turn On[CR]Shuffle All"
-msgstr ""
+msgstr "Abilita[CR]Riproduzione casuale dei contenuti"
 
 msgctxt "#31053"
 msgid "Turn Off[CR]Repeat"
-msgstr ""
+msgstr "Disabilita[CR]Ripeti"
 
 msgctxt "#31054"
 msgid "Repeat This[CR]Item"
-msgstr ""
+msgstr "Ripeti [CR]questo[CR] elemento"
 
 msgctxt "#31055"
 msgid "Turn On[CR]Repeat All"
-msgstr ""
+msgstr "Abilita [CR]Ripeti tutto"
 
 msgctxt "#31056"
 msgid "Move, copy and delete your files with KODI's built-in file manager."
-msgstr ""
+msgstr "Sposta, copia ed elimina i tuoi file con il file manager integrato di KODI."
 
 msgctxt "#31057"
 msgid "Watch[CR]Again"
-msgstr ""
+msgstr "Guarda[CR]Ancora"
 
 msgctxt "#31058"
 msgid "Today's weather:"
-msgstr ""
+msgstr "Meteo di oggi:"
 
 msgctxt "#31059"
 msgid "Tonight's weather:"
-msgstr ""
+msgstr "Meteo di stasera:"
 
 msgctxt "#31060"
 msgid "Play Now"
-msgstr ""
+msgstr "Riproduci ora"
 
 msgctxt "#31061"
 msgid "Enable X-Ray"
-msgstr ""
+msgstr "Abilita X-Ray"
 
 msgctxt "#31062"
 msgid "Choose Thumb"
-msgstr ""
+msgstr "Cambia Anteprima"
 
 msgctxt "#31063"
 msgid "Enables Cast info during video playback.[CR]Note: Can be CPU intensive."
-msgstr ""
+msgstr "Abilita le informazioni sul cast durante la riproduzione del video.[CR]Nota: Può provocare un uso intenso della CPU."
 
 # empty strings from id 31064 to 31066
 msgctxt "#31067"
 msgid "Choose Fanart"
-msgstr ""
+msgstr "Scegli Fanart"
 
 msgctxt "#31068"
 msgid "IP"
-msgstr ""
+msgstr "IP"
 
 msgctxt "#31069"
 msgid "Images for"
-msgstr ""
+msgstr "Immagini per"
 
 msgctxt "#31070"
 msgid "Similar Titles"
-msgstr ""
+msgstr "Titoli Simili"
 
 msgctxt "#31071"
 msgid "Starring"
-msgstr ""
+msgstr "Cast"
 
 msgctxt "#31072"
 msgid "Directed by"
@@ -315,23 +316,23 @@ msgstr "Prossimo episodio"
 
 msgctxt "#31074"
 msgid "Browse[CR]TV Show"
-msgstr ""
+msgstr "Sfoglia [CR]Telefim"
 
 msgctxt "#31075"
 msgid "Play[CR]Trailer"
-msgstr ""
+msgstr "Riproduci [CR]Trailer"
 
 msgctxt "#31076"
 msgid "Cast and Role"
-msgstr ""
+msgstr "Cast e personaggi"
 
 msgctxt "#31077"
 msgid "Viewers Also Watched"
-msgstr ""
+msgstr "Gli utenti hanno visto anche"
 
 msgctxt "#31078"
 msgid "Sorry, nothing found."
-msgstr ""
+msgstr "Spiacente, trovato niente."
 
 msgctxt "#31085"
 msgid "Shutdown Menu"
@@ -339,7 +340,7 @@ msgstr "Menu Spegnimento"
 
 msgctxt "#31086"
 msgid "Sorted by"
-msgstr ""
+msgstr "Ordinati per"
 
 msgctxt "#31088"
 msgid "Current Playlist"
@@ -351,11 +352,11 @@ msgstr "Opzioni vista"
 
 msgctxt "#31090"
 msgid "Update Library"
-msgstr ""
+msgstr "Aggiorna Libreria"
 
 msgctxt "#31091"
 msgid "Stop scanning"
-msgstr ""
+msgstr "Stop Scansione"
 
 msgctxt "#31092"
 msgid "Sort By"
@@ -363,7 +364,7 @@ msgstr "Ordina Per"
 
 msgctxt "#31093"
 msgid "Filter By"
-msgstr ""
+msgstr "Filtra Per"
 
 msgctxt "#31094"
 msgid "Save Playlist"
