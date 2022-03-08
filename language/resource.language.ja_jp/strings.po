@@ -21,12 +21,38 @@ msgid "Skin based on the Fire TV UI"
 msgstr "Fire TV UIベースのスキン"
 
 msgctxt "Addon Description"
-msgid "A skin designed to access all your content as easily and seemlessly as possible.[CR][CR]Supports:[CR]Global Search[CR]Next Aired[CR]Up Next[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]Based on the original Fire TV UI."
-msgstr "すべてのコンテンツに可能な限り簡単でシームレスにアクセスできるようにデザインされたスキン。[CR][CR]サポート:[CR]Global Search[CR]Next Aired[CR]Up Next[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]ベースになっているオリジナルは、Fire TV UIです。"
+msgid "A skin designed to access all your content as easily and seemlessly as possible.
+
+Supports:
+Global Search
+Next Aired
+Up Next
+Embuary Info
+Trakt
+CU Lyrics
+Cinema Experience
+Special Features
+
+Based on the original Fire TV UI."
+msgstr "すべてのコンテンツに可能な限り簡単でシームレスにアクセスできるようにデザインされたスキン。
+
+サポート:
+Global Search
+Next Aired
+Up Next
+Embuary Info
+Trakt
+CU Lyrics
+Cinema Experience
+Special Features
+
+ベースになっているオリジナルは、Fire TV UIです。"
 
 msgctxt "Addon Disclaimer"
-msgid "To make use of the 'HDR' & 'ATMOS' tags they need to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV"
-msgstr "'HDR' と 'ATMOS' タグを使用するには、ファイル名に追加する必要があります。[CR]未サポート: マウスとタッチデバイスまたはLive TV"
+msgid "To make use of the 'HDR' & 'ATMOS' tags they need to be added to your file name.
+Does not support: Mouse and Touch devices or Live TV"
+msgstr "'HDR' と 'ATMOS' タグを使用するには、ファイル名に追加する必要があります。
+未サポート: マウスとタッチデバイスまたはLive TV"
 
 msgctxt "#31000"
 msgid "Audio Options"
