@@ -22,38 +22,12 @@ msgid "Skin based on the Fire TV UI"
 msgstr "Kulit berdasarkan UI Fire TV"
 
 msgctxt "Addon Description"
-msgid "A skin designed to access all your content as easily and seemlessly as possible.
-
-Supports:
-Global Search
-Next Aired
-Up Next
-Embuary Info
-Trakt
-CU Lyrics
-Cinema Experience
-Special Features
-
-Based on the original Fire TV UI."
-msgstr "Skin yang dirancang untuk mengakses semua konten Anda semudah dan semudah mungkin.
-
-Mendukung:
-Pencarian Global
-Tayang Berikutnya
-Berikutnya
-Info Embuary
-Trakt
- Lirik CU
-Pengalaman Bioskop
-Fitur Khusus
-
-Berdasarkan UI Fire TV asli."
+msgid "A skin designed to access all your content as easily and seemlessly as possible.[CR][CR]Supports:[CR]Global Search[CR]Next Aired[CR]Up Next[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]Based on the original Fire TV UI."
+msgstr "Skin yang dirancang untuk mengakses semua konten Anda semudah dan semudah mungkin.[CR][CR]Mendukung:[CR]Pencarian Global[CR]Tayang Berikutnya[CR]Berikutnya[CR]Info Embuary[CR]Trakt[CR] Lirik CU[CR]Pengalaman Bioskop[CR]Fitur Khusus[CR][CR]Berdasarkan UI Fire TV asli."
 
 msgctxt "Addon Disclaimer"
-msgid "To make use of the 'HDR' & 'ATMOS' tags they need to be added to your file name.
-Does not support: Mouse and Touch devices or Live TV"
-msgstr "Untuk menggunakan tag 'HDR' & 'ATMOS', tag tersebut perlu ditambahkan ke nama file Anda.
-Tidak mendukung: Perangkat Mouse dan Sentuh atau TV Langsung"
+msgid "To make use of the 'HDR' & 'ATMOS' tags they need to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV"
+msgstr "Untuk menggunakan tag 'HDR' & 'ATMOS', tag tersebut perlu ditambahkan ke nama file Anda.[CR]Tidak mendukung: Perangkat Mouse dan Sentuh atau TV Langsung"
 
 msgctxt "#31000"
 msgid "Audio Options"

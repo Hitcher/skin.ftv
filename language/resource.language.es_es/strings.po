@@ -22,38 +22,12 @@ msgid "Skin based on the Fire TV UI"
 msgstr "Skin basado en la interfaz gráfica del Fire TV"
 
 msgctxt "Addon Description"
-msgid "A skin designed to access all your content as easily and seemlessly as possible.
-
-Supports:
-Global Search
-Next Aired
-Up Next
-Embuary Info
-Trakt
-CU Lyrics
-Cinema Experience
-Special Features
-
-Based on the original Fire TV UI."
-msgstr "Un skin diseñado para accede a todo su contenido tan fácil y transparentemente como sea possible.
-
-Funciona con:
-Global Search
-Next Aired
-Up Next
-Embuary Info
-Trakt
-CU Lyrics
-Cinema Experience
-Special Features
-
-Basado en la interfaz gráfica original del Fire TV."
+msgid "A skin designed to access all your content as easily and seemlessly as possible.[CR][CR]Supports:[CR]Global Search[CR]Next Aired[CR]Up Next[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]Based on the original Fire TV UI."
+msgstr "Un skin diseñado para accede a todo su contenido tan fácil y transparentemente como sea possible.[CR][CR]Funciona con:[CR]Global Search[CR]Next Aired[CR]Up Next[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]Basado en la interfaz gráfica original del Fire TV."
 
 msgctxt "Addon Disclaimer"
-msgid "To make use of the 'HDR' & 'ATMOS' tags they need to be added to your file name.
-Does not support: Mouse and Touch devices or Live TV"
-msgstr "Para poder utilizar los tags 'HDR'y 'ATMOS', estos Deben ser añadidos al nombre del archive.
-No funciona con: Dispositivos tácitles o ratón ni TV en Vivo"
+msgid "To make use of the 'HDR' & 'ATMOS' tags they need to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV"
+msgstr "Para poder utilizar los tags 'HDR'y 'ATMOS', estos Deben ser añadidos al nombre del archive.[CR]No funciona con: Dispositivos tácitles o ratón ni TV en Vivo"
 
 msgctxt "#31000"
 msgid "Audio Options"
