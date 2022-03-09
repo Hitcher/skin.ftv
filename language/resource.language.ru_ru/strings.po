@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-07-07 16:03+0000\n"
+"PO-Revision-Date: 2022-03-08 08:30+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: Russian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/ru_ru/>\n"
 "Language: ru_ru\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.7.1\n"
+"X-Generator: Weblate 4.11.2\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the Fire TV UI"
@@ -72,7 +72,7 @@ msgstr ""
 
 msgctxt "#31004"
 msgid "minute"
-msgstr ""
+msgstr "минута"
 
 msgctxt "#31005"
 msgid "hour"
@@ -317,7 +317,7 @@ msgstr ""
 
 msgctxt "#31068"
 msgid "IP"
-msgstr ""
+msgstr "IP"
 
 msgctxt "#31069"
 msgid "Images for"
@@ -362,7 +362,7 @@ msgstr ""
 # empty strings from id 31079 to 31084
 msgctxt "#31085"
 msgid "Shutdown Menu"
-msgstr ""
+msgstr "Меню выключения"
 
 msgctxt "#31086"
 msgid "Sorted by"
@@ -386,7 +386,7 @@ msgstr ""
 
 msgctxt "#31092"
 msgid "Sort By"
-msgstr ""
+msgstr "Сорт. по"
 
 msgctxt "#31093"
 msgid "Filter By"
@@ -411,7 +411,7 @@ msgstr ""
 
 msgctxt "#31100"
 msgid "Photos"
-msgstr ""
+msgstr "Фото"
 
 msgctxt "#31101"
 msgid "Apps"
@@ -541,7 +541,7 @@ msgstr ""
 
 msgctxt "#31136"
 msgid "DVD Menu"
-msgstr ""
+msgstr "Меню DVD"
 
 msgctxt "#31137"
 msgid "Video Options"
@@ -559,11 +559,11 @@ msgstr ""
 
 msgctxt "#31146"
 msgid "Special"
-msgstr ""
+msgstr "Особый"
 
 msgctxt "#31147"
 msgid "minutes"
-msgstr ""
+msgstr "минут"
 
 msgctxt "#31148"
 msgid "hours"
@@ -579,7 +579,7 @@ msgstr ""
 
 msgctxt "#31151"
 msgid "Creator"
-msgstr ""
+msgstr "Создатель"
 
 msgctxt "#31152"
 msgid "Air Date"
@@ -587,7 +587,7 @@ msgstr ""
 
 msgctxt "#31153"
 msgid "3D Mode"
-msgstr ""
+msgstr "3D Режим"
 
 msgctxt "#31154"
 msgid "Profile"
@@ -643,7 +643,7 @@ msgstr ""
 
 msgctxt "#31167"
 msgid "Recently Added Movies"
-msgstr ""
+msgstr "Недавно добавленные фильмы"
 
 msgctxt "#31168"
 msgid "Your Movies"
@@ -655,7 +655,7 @@ msgstr ""
 
 msgctxt "#31170"
 msgid "Kids Movies"
-msgstr ""
+msgstr "Детские фильмы"
 
 msgctxt "#31174"
 msgid "Top Rated Movies"
@@ -675,12 +675,12 @@ msgstr ""
 
 msgctxt "#31178"
 msgid "Kids TV Shows"
-msgstr ""
+msgstr "Детские сериалы"
 
 # empty strings from id 31179 to 31181
 msgctxt "#31182"
 msgid "Top Rated TV Shows"
-msgstr ""
+msgstr "Лучшие сериалы"
 
 msgctxt "#31183"
 msgid "Recently Played Albums"
@@ -733,7 +733,7 @@ msgstr ""
 
 msgctxt "#31204"
 msgid "Movies starring"
-msgstr ""
+msgstr "Фильмы с"
 
 msgctxt "#31205"
 msgid "Refresh Information"
@@ -888,7 +888,7 @@ msgstr ""
 
 msgctxt "#31248"
 msgid "Order"
-msgstr ""
+msgstr "Заказ"
 
 msgctxt "#31249"
 msgid "View Addons that have recently been updated."

@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-08-02 08:29+0000\n"
+"PO-Revision-Date: 2022-03-08 08:30+0000\n"
 "Last-Translator: Kai Sommerfeld <kai.sommerfeld@gmx.com>\n"
 "Language-Team: German <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/de_de/>\n"
 "Language: de_de\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7.2\n"
+"X-Generator: Weblate 4.11.2\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the Fire TV UI"
@@ -305,7 +305,7 @@ msgstr ""
 
 msgctxt "#31068"
 msgid "IP"
-msgstr ""
+msgstr "IP"
 
 msgctxt "#31069"
 msgid "Images for"
@@ -353,7 +353,7 @@ msgstr "Beenden-Menü"
 
 msgctxt "#31086"
 msgid "Sorted by"
-msgstr ""
+msgstr "Sortiert nach"
 
 msgctxt "#31088"
 msgid "Current Playlist"
@@ -550,7 +550,7 @@ msgstr "Special"
 
 msgctxt "#31147"
 msgid "minutes"
-msgstr ""
+msgstr "Minuten"
 
 msgctxt "#31148"
 msgid "hours"
@@ -574,7 +574,7 @@ msgstr ""
 
 msgctxt "#31153"
 msgid "3D Mode"
-msgstr ""
+msgstr "3D-Modus"
 
 msgctxt "#31154"
 msgid "Profile"
@@ -642,7 +642,7 @@ msgstr "Laufende Videos"
 
 msgctxt "#31170"
 msgid "Kids Movies"
-msgstr ""
+msgstr "Kinderfilme"
 
 msgctxt "#31174"
 msgid "Top Rated Movies"
@@ -650,7 +650,7 @@ msgstr "Bestbewertet Filme"
 
 msgctxt "#31175"
 msgid "Recently Updated TV Shows"
-msgstr ""
+msgstr "Zuletzt aktualisierte Serien"
 
 msgctxt "#31176"
 msgid "Your TV Shows"
@@ -658,20 +658,20 @@ msgstr ""
 
 msgctxt "#31177"
 msgid "In Progress TV Shows"
-msgstr ""
+msgstr "Laufende Serien ausblenden"
 
 msgctxt "#31178"
 msgid "Kids TV Shows"
-msgstr ""
+msgstr "Kinderserien"
 
 # empty strings from id 31179 to 31181
 msgctxt "#31182"
 msgid "Top Rated TV Shows"
-msgstr ""
+msgstr "Bestbewertete Serien"
 
 msgctxt "#31183"
 msgid "Recently Played Albums"
-msgstr ""
+msgstr "Zuletzt gehörte Alben"
 
 msgctxt "#31184"
 msgid "Your Albums"
@@ -720,7 +720,7 @@ msgstr ""
 
 msgctxt "#31204"
 msgid "Movies starring"
-msgstr ""
+msgstr "Filme mit"
 
 msgctxt "#31205"
 msgid "Refresh Information"

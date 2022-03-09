@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-07-07 16:03+0000\n"
+"PO-Revision-Date: 2022-03-08 08:30+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: Belarusian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/be_by/>\n"
 "Language: be_by\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 4.7.1\n"
+"X-Generator: Weblate 4.11.2\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the Fire TV UI"
@@ -108,7 +108,7 @@ msgstr ""
 
 msgctxt "#31016"
 msgid "Settings level"
-msgstr ""
+msgstr "Узровень налад"
 
 msgctxt "#31017"
 msgid "View all of your enabled and disabled Addons."
@@ -232,7 +232,7 @@ msgstr ""
 
 msgctxt "#31047"
 msgid "Visualisation Presets"
-msgstr ""
+msgstr "Прадвызначаныя налады візуалізацыі"
 
 msgctxt "#31048"
 msgid "Playlist Options"
@@ -350,7 +350,7 @@ msgstr ""
 # empty strings from id 31079 to 31084
 msgctxt "#31085"
 msgid "Shutdown Menu"
-msgstr ""
+msgstr "Меню выключэння"
 
 msgctxt "#31086"
 msgid "Sorted by"
@@ -374,7 +374,7 @@ msgstr ""
 
 msgctxt "#31092"
 msgid "Sort By"
-msgstr ""
+msgstr "Упарадкаваць па"
 
 msgctxt "#31093"
 msgid "Filter By"
@@ -407,7 +407,7 @@ msgstr ""
 
 msgctxt "#31102"
 msgid "Now playing"
-msgstr ""
+msgstr "Зараз прайграецца"
 
 msgctxt "#31103"
 msgid "Addons"
@@ -439,7 +439,7 @@ msgstr ""
 
 msgctxt "#31110"
 msgid "Written by"
-msgstr "Written by"
+msgstr ""
 
 # empty strings from id 31111 to 31113
 msgctxt "#31114"
@@ -607,7 +607,7 @@ msgstr "Постэр"
 
 msgctxt "#31161"
 msgid "Square"
-msgstr "Square"
+msgstr ""
 
 msgctxt "#31162"
 msgid "Show"
@@ -694,11 +694,11 @@ msgstr ""
 
 msgctxt "#31197"
 msgid "Widget"
-msgstr "Widget"
+msgstr ""
 
 msgctxt "#31198"
 msgid "View Type"
-msgstr ""
+msgstr "Выгляд"
 
 msgctxt "#31199"
 msgid "Label Overlay"
@@ -787,7 +787,7 @@ msgstr ""
 # empty strings from id 31220 to 31222
 msgctxt "#31223"
 msgid "Video Addons"
-msgstr ""
+msgstr "Дапаўненні для відэа"
 
 msgctxt "#31224"
 msgid "Picture Addons"
@@ -878,7 +878,7 @@ msgstr ""
 
 msgctxt "#31248"
 msgid "Order"
-msgstr ""
+msgstr "Чарга"
 
 msgctxt "#31249"
 msgid "View Addons that have recently been updated."
