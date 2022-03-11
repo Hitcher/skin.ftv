@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-12-11 12:47+0000\n"
+"PO-Revision-Date: 2022-03-11 09:02+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: Italian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/it_it/>\n"
 "Language: it_it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.9.1\n"
+"X-Generator: Weblate 4.11.2\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the Fire TV UI"
@@ -385,7 +385,7 @@ msgstr ""
 
 msgctxt "#31100"
 msgid "Photos"
-msgstr ""
+msgstr "Foto"
 
 msgctxt "#31101"
 msgid "Apps"
@@ -515,7 +515,7 @@ msgstr ""
 
 msgctxt "#31136"
 msgid "DVD Menu"
-msgstr ""
+msgstr "Menù DVD"
 
 msgctxt "#31137"
 msgid "Video Options"
@@ -537,7 +537,7 @@ msgstr "Speciale"
 
 msgctxt "#31147"
 msgid "minutes"
-msgstr ""
+msgstr "minuti"
 
 msgctxt "#31148"
 msgid "hours"
@@ -553,7 +553,7 @@ msgstr ""
 
 msgctxt "#31151"
 msgid "Creator"
-msgstr ""
+msgstr "Creatore"
 
 msgctxt "#31152"
 msgid "Air Date"
@@ -561,7 +561,7 @@ msgstr ""
 
 msgctxt "#31153"
 msgid "3D Mode"
-msgstr ""
+msgstr "Modalità 3D"
 
 msgctxt "#31154"
 msgid "Profile"
@@ -629,12 +629,12 @@ msgstr "Film da terminare"
 
 msgctxt "#31170"
 msgid "Kids Movies"
-msgstr ""
+msgstr "Film per Bambini"
 
 # empty strings from id 31171 to 31173
 msgctxt "#31174"
 msgid "Top Rated Movies"
-msgstr ""
+msgstr "Film più votati"
 
 msgctxt "#31175"
 msgid "Recently Updated TV Shows"
@@ -650,16 +650,16 @@ msgstr ""
 
 msgctxt "#31178"
 msgid "Kids TV Shows"
-msgstr ""
+msgstr "Serie TV per Bambini"
 
 # empty strings from id 31179 to 31181
 msgctxt "#31182"
 msgid "Top Rated TV Shows"
-msgstr ""
+msgstr "Serie TV più Votate"
 
 msgctxt "#31183"
 msgid "Recently Played Albums"
-msgstr ""
+msgstr "Album Riprodotti di Recente"
 
 msgctxt "#31184"
 msgid "Your Albums"
@@ -708,7 +708,7 @@ msgstr ""
 
 msgctxt "#31204"
 msgid "Movies starring"
-msgstr ""
+msgstr "Film con protagonista"
 
 msgctxt "#31205"
 msgid "Refresh Information"

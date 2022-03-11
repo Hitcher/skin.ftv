@@ -5,16 +5,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Kodi Translation Team\n"
-"Language-Team: Spanish (Argentina) (http://www.transifex.com/projects/p/kodi-skins/language/es_AR/)\n"
-"Language: es_AR\n"
+"PO-Revision-Date: 2022-03-11 09:02+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Spanish (Argentina) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/es_ar/>\n"
+"Language: es_ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.11.2\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the Fire TV UI"
@@ -291,7 +292,7 @@ msgstr ""
 
 msgctxt "#31068"
 msgid "IP"
-msgstr ""
+msgstr "IP"
 
 msgctxt "#31069"
 msgid "Images for"
@@ -307,11 +308,11 @@ msgstr ""
 
 msgctxt "#31072"
 msgid "Directed by"
-msgstr ""
+msgstr "Dirigido por"
 
 msgctxt "#31073"
 msgid "Next episode"
-msgstr ""
+msgstr "Siguiente episodio"
 
 msgctxt "#31074"
 msgid "Browse[CR]TV Show"
@@ -361,7 +362,7 @@ msgstr ""
 
 msgctxt "#31092"
 msgid "Sort By"
-msgstr ""
+msgstr "Clasificar Por"
 
 msgctxt "#31093"
 msgid "Filter By"
@@ -426,7 +427,7 @@ msgstr ""
 
 msgctxt "#31110"
 msgid "Written by"
-msgstr ""
+msgstr "Escrito por"
 
 # empty strings from id 31111 to 31113
 msgctxt "#31114"
@@ -491,7 +492,7 @@ msgstr ""
 
 msgctxt "#31129"
 msgid "Kodi"
-msgstr ""
+msgstr "Kodi"
 
 # empty string with id 31130
 msgctxt "#31131"
@@ -534,7 +535,7 @@ msgstr ""
 
 msgctxt "#31146"
 msgid "Special"
-msgstr ""
+msgstr "Especial"
 
 msgctxt "#31147"
 msgid "minutes"
@@ -554,7 +555,7 @@ msgstr ""
 
 msgctxt "#31151"
 msgid "Creator"
-msgstr ""
+msgstr "Creador"
 
 msgctxt "#31152"
 msgid "Air Date"
@@ -594,7 +595,7 @@ msgstr "Póster"
 
 msgctxt "#31161"
 msgid "Square"
-msgstr ""
+msgstr "Ícono Cuadrado"
 
 msgctxt "#31162"
 msgid "Show"
@@ -618,7 +619,7 @@ msgstr ""
 
 msgctxt "#31167"
 msgid "Recently Added Movies"
-msgstr ""
+msgstr "Películas Añadidas Recientemente"
 
 msgctxt "#31168"
 msgid "Your Movies"
@@ -626,7 +627,7 @@ msgstr ""
 
 msgctxt "#31169"
 msgid "In Progress Movies"
-msgstr ""
+msgstr "Películas En Progreso"
 
 msgctxt "#31170"
 msgid "Kids Movies"
@@ -635,11 +636,11 @@ msgstr ""
 # empty strings from id 31171 to 31173
 msgctxt "#31174"
 msgid "Top Rated Movies"
-msgstr ""
+msgstr "Películas Mejor Valoradas"
 
 msgctxt "#31175"
 msgid "Recently Updated TV Shows"
-msgstr ""
+msgstr "Series TV Recientemente Actualizadas"
 
 msgctxt "#31176"
 msgid "Your TV Shows"
@@ -647,7 +648,7 @@ msgstr ""
 
 msgctxt "#31177"
 msgid "In Progress TV Shows"
-msgstr ""
+msgstr "Series TV en Progreso"
 
 msgctxt "#31178"
 msgid "Kids TV Shows"
@@ -656,11 +657,11 @@ msgstr ""
 # empty strings from id 31179 to 31181
 msgctxt "#31182"
 msgid "Top Rated TV Shows"
-msgstr ""
+msgstr "Series TV Mejor Valoradas"
 
 msgctxt "#31183"
 msgid "Recently Played Albums"
-msgstr ""
+msgstr "Álbumes Reproducidos Recientemente"
 
 msgctxt "#31184"
 msgid "Your Albums"
@@ -668,7 +669,7 @@ msgstr ""
 
 msgctxt "#31185"
 msgid "Recently Added Albums"
-msgstr ""
+msgstr "Álbums Añadidos Recientement"
 
 msgctxt "#31186"
 msgid "Your Artists"
@@ -866,7 +867,7 @@ msgstr ""
 
 msgctxt "#31248"
 msgid "Order"
-msgstr ""
+msgstr "Orden"
 
 msgctxt "#31249"
 msgid "View Addons that have recently been updated."
