@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2022-03-11 09:02+0000\n"
-"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"PO-Revision-Date: 2022-03-30 11:16+0000\n"
+"Last-Translator: Nao3Line Prez <n.yazawa6932@gmail.com>\n"
 "Language-Team: Indonesian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/id_id/>\n"
 "Language: id_id\n"
 "MIME-Version: 1.0\n"
@@ -296,15 +296,15 @@ msgstr "IP"
 
 msgctxt "#31069"
 msgid "Images for"
-msgstr ""
+msgstr "Gambar untuk"
 
 msgctxt "#31070"
 msgid "Similar Titles"
-msgstr ""
+msgstr "Judul serupa"
 
 msgctxt "#31071"
 msgid "Starring"
-msgstr ""
+msgstr "Dibintangi"
 
 msgctxt "#31072"
 msgid "Directed by"
@@ -316,37 +316,37 @@ msgstr "Episode selanjutnya"
 
 msgctxt "#31074"
 msgid "Browse[CR]TV Show"
-msgstr ""
+msgstr "Jelajahi[CR]Acara TV"
 
 msgctxt "#31075"
 msgid "Play[CR]Trailer"
-msgstr ""
+msgstr "Putar[CR]Trailer"
 
 msgctxt "#31076"
 msgid "Cast and Role"
-msgstr ""
+msgstr "Pemeran"
 
 msgctxt "#31077"
 msgid "Viewers Also Watched"
-msgstr ""
+msgstr "Pemirsa Juga Menonton"
 
 msgctxt "#31078"
 msgid "Sorry, nothing found."
-msgstr ""
+msgstr "Maaf, tdk ditemukan."
 
 # empty strings from id 31079 to 31084
 msgctxt "#31085"
 msgid "Shutdown Menu"
-msgstr ""
+msgstr "Menu Aksi"
 
 msgctxt "#31086"
 msgid "Sorted by"
-msgstr ""
+msgstr "Diurutkan berdasarkan"
 
 # empty string with id 31087
 msgctxt "#31088"
 msgid "Current Playlist"
-msgstr ""
+msgstr "Daftar Putar saat ini"
 
 msgctxt "#31089"
 msgid "View Options"
@@ -354,44 +354,44 @@ msgstr "Lihat Pilihan"
 
 msgctxt "#31090"
 msgid "Update Library"
-msgstr ""
+msgstr "Perbarui Pustaka"
 
 msgctxt "#31091"
 msgid "Stop scanning"
-msgstr ""
+msgstr "Hentikan pemindaian"
 
 msgctxt "#31092"
 msgid "Sort By"
-msgstr ""
+msgstr "Urut Berdasarkan"
 
 msgctxt "#31093"
 msgid "Filter By"
-msgstr ""
+msgstr "Saring Berdasarkan"
 
 msgctxt "#31094"
 msgid "Save Playlist"
-msgstr ""
+msgstr "Simpan DaftarPutar"
 
 msgctxt "#31095"
 msgid "Clear Playlist"
-msgstr ""
+msgstr "Hapus DaftarPutar"
 
 # empty strings from id 31096 to 31097
 msgctxt "#31098"
 msgid "Press 'Continue?' to watch the next episode or 'Cancel' to stop watching."
-msgstr ""
+msgstr "Tekan 'Lanjutkan?' untuk menonton episode berikutnya atau 'Batal' untuk berhenti menonton."
 
 msgctxt "#31099"
 msgid "Start Slideshow"
-msgstr ""
+msgstr "Mulai Slideshow"
 
 msgctxt "#31100"
 msgid "Photos"
-msgstr ""
+msgstr "Foto"
 
 msgctxt "#31101"
 msgid "Apps"
-msgstr ""
+msgstr "Aplikasi"
 
 msgctxt "#31102"
 msgid "Now playing"
@@ -399,15 +399,15 @@ msgstr "Sedang dimainkan"
 
 msgctxt "#31103"
 msgid "Addons"
-msgstr ""
+msgstr "Pengaya"
 
 msgctxt "#31104"
 msgid "Cinema Experience"
-msgstr ""
+msgstr "Pengalaman Bioskop"
 
 msgctxt "#31105"
 msgid "Your Addons"
-msgstr ""
+msgstr "Pengayamu"
 
 msgctxt "#31106"
 msgid "Now Playing"
@@ -415,15 +415,15 @@ msgstr "Sedang Memainkan"
 
 msgctxt "#31107"
 msgid "TV Roles"
-msgstr ""
+msgstr "Peran TV"
 
 msgctxt "#31108"
 msgid "Known For"
-msgstr ""
+msgstr "Dikenal sebagai"
 
 msgctxt "#31109"
 msgid "Watch[CR]Now"
-msgstr ""
+msgstr "Tonton[CR]Sekarang"
 
 msgctxt "#31110"
 msgid "Written by"
@@ -432,162 +432,162 @@ msgstr "Ditulis oleh"
 # empty strings from id 31111 to 31113
 msgctxt "#31114"
 msgid "Customise Shutdown Menu"
-msgstr ""
+msgstr "Kustom Menu Aksi"
 
 msgctxt "#31115"
 msgid "Configure your Skin, Region, Control, Screensaver, and Master Lock settings."
-msgstr ""
+msgstr "Konfigurasikan pengaturan Skin, Region, Kontrol, Screensaver, dan Master Lock Anda."
 
 msgctxt "#31116"
 msgid "Manage, browse for, install and modify Addons."
-msgstr ""
+msgstr "Kelola, jelajahi, instal, dan ubah Pengaya."
 
 msgctxt "#31117"
 msgid "Configure the handling and playback settings for Video, Music, and Pictures."
-msgstr ""
+msgstr "Konfigurasikan pengaturan penanganan dan pemutaran untuk Video, Musik, dan Gambar."
 
 msgctxt "#31118"
 msgid "Configure the media list display, information, and database settings."
-msgstr ""
+msgstr "Konfigurasikan tampilan daftar media, informasi, dan pengaturan database."
 
 msgctxt "#31119"
 msgid "Hardware decoding is active"
-msgstr ""
+msgstr "Penguraian kode perangkat keras aktif"
 
 msgctxt "#31120"
 msgid "Hardware decoding is inactive"
-msgstr ""
+msgstr "Penguraian kode perangkat keras tidak aktif"
 
 msgctxt "#31121"
 msgid "Setup and calibrate displays, configure audio output, setup remote controls, set power saving options, enable debugging and setup master lock."
-msgstr ""
+msgstr "Atur dan kalibrasi tampilan, konfigurasikan output audio, atur remote control, atur opsi hemat daya, aktifkan debugging dan atur kunci master."
 
 msgctxt "#31122"
 msgid "Setup control of Kodi via UPnP and HTTP, configure file sharing, enable Zeroconf and configure AirPlay."
-msgstr ""
+msgstr "Atur kontrol Kodi melalui UPnP dan HTTP, konfigurasikan berbagi file, aktifkan Zeroconf, dan konfigurasikan AirPlay."
 
 msgctxt "#31123"
 msgid "Profiles, File Manager, System Information and Settings Level."
-msgstr ""
+msgstr "Profil, Manajer File, Informasi Sistem, dan Tingkat Pengaturan."
 
 msgctxt "#31124"
 msgid "Personalise your experience with profiles. Includes enabling login screen, profile creation and management."
-msgstr ""
+msgstr "Personalisasi pengalaman Anda dengan profil. Termasuk mengaktifkan layar masuk, pembuatan dan pengelolaan profil."
 
 msgctxt "#31125"
 msgid "Login"
-msgstr "Login"
+msgstr "Masuk"
 
 msgctxt "#31126"
 msgid "Last login"
-msgstr ""
+msgstr "Terakhir masuk"
 
 msgctxt "#31127"
 msgid "View your system's information. Includes storage, network, and hardware information."
-msgstr ""
+msgstr "Lihat informasi sistem Anda. Termasuk penyimpanan, jaringan, dan informasi perangkat keras."
 
 msgctxt "#31128"
 msgid "About"
-msgstr ""
+msgstr "Tentang"
 
 msgctxt "#31129"
 msgid "Kodi"
-msgstr ""
+msgstr "Kodi"
 
 # empty string with id 31130
 msgctxt "#31131"
 msgid "Enable Wide TV Show Icons"
-msgstr ""
+msgstr "Aktifkan Ikon Acara TV Lebar"
 
 msgctxt "#31132"
 msgid "Continue watching?"
-msgstr ""
+msgstr "Lanjutkan?"
 
 msgctxt "#31133"
 msgid "Enable Wide Season Icons"
-msgstr ""
+msgstr "Aktifkan Ikon Lebar Musim"
 
 msgctxt "#31134"
 msgid "Enable Fanart"
-msgstr ""
+msgstr "Aktifkan Fanart"
 
 msgctxt "#31135"
 msgid "Select Rating Country"
-msgstr ""
+msgstr "Pilih Negara Penilai"
 
 msgctxt "#31136"
 msgid "DVD Menu"
-msgstr ""
+msgstr "Menu DVD"
 
 msgctxt "#31137"
 msgid "Video Options"
-msgstr ""
+msgstr "Opsi Video"
 
 # empty strings from id 31138 to 31142
 msgctxt "#31143"
 msgid "This will undo any changes you've made to the home menu and widgets."
-msgstr ""
+msgstr "Ini akan membatalkan perubahan apa pun yang Anda buat pada menu beranda dan widget."
 
 # empty string with id 31144
 msgctxt "#31145"
 msgid "percent remaining"
-msgstr ""
+msgstr "persen tersisa"
 
 msgctxt "#31146"
 msgid "Special"
-msgstr ""
+msgstr "Spesial"
 
 msgctxt "#31147"
 msgid "minutes"
-msgstr ""
+msgstr "menit"
 
 msgctxt "#31148"
 msgid "hours"
-msgstr ""
+msgstr "jam"
 
 msgctxt "#31149"
 msgid "Hide OSD controls"
-msgstr ""
+msgstr "Sembunyikan kontrol OSD"
 
 msgctxt "#31150"
 msgid "Hides the Stop, Play, Pause, etc buttons from the music and video OSD."
-msgstr ""
+msgstr "Menyembunyikan tombol Stop, Play, Pause, dll dari OSD musik dan video."
 
 msgctxt "#31151"
 msgid "Creator"
-msgstr ""
+msgstr "Kreator"
 
 msgctxt "#31152"
 msgid "Air Date"
-msgstr ""
+msgstr "Mengudara"
 
 msgctxt "#31153"
 msgid "3D Mode"
-msgstr ""
+msgstr "Mode 3D"
 
 msgctxt "#31154"
 msgid "Profile"
-msgstr ""
+msgstr "Profil"
 
 msgctxt "#31155"
 msgid "Build Version"
-msgstr ""
+msgstr "Versi Build"
 
 msgctxt "#31156"
 msgid "Capacity"
-msgstr ""
+msgstr "Kapasitas"
 
 msgctxt "#31157"
 msgid "Current Date and Time"
-msgstr ""
+msgstr "Tanggal dan Waktu Saat ini"
 
 msgctxt "#31158"
 msgid "Device Name"
-msgstr ""
+msgstr "Nama Perangkat"
 
 msgctxt "#31159"
 msgid "Wide"
-msgstr ""
+msgstr "Lebar"
 
 msgctxt "#31160"
 msgid "Poster"
@@ -595,183 +595,183 @@ msgstr "Poster"
 
 msgctxt "#31161"
 msgid "Square"
-msgstr ""
+msgstr "Kotak"
 
 msgctxt "#31162"
 msgid "Show"
-msgstr ""
+msgstr "Acara"
 
 msgctxt "#31163"
 msgid "Start Party Mode"
-msgstr ""
+msgstr "Mulai Mode Pesta"
 
 msgctxt "#31164"
 msgid "Next Up"
-msgstr ""
+msgstr "Berikut"
 
 msgctxt "#31165"
 msgid "Choose[CR]Art"
-msgstr ""
+msgstr "Pilih[CR]Seni"
 
 msgctxt "#31166"
 msgid "Open Visualiser"
-msgstr ""
+msgstr "Buka Visualiser"
 
 msgctxt "#31167"
 msgid "Recently Added Movies"
-msgstr ""
+msgstr "Film yang Baru Ditambahkan"
 
 msgctxt "#31168"
 msgid "Your Movies"
-msgstr ""
+msgstr "Film Anda"
 
 msgctxt "#31169"
 msgid "In Progress Movies"
-msgstr ""
+msgstr "Film Sedang Berlangsung"
 
 msgctxt "#31170"
 msgid "Kids Movies"
-msgstr ""
+msgstr "Film Anak-anak"
 
 # empty strings from id 31171 to 31173
 msgctxt "#31174"
 msgid "Top Rated Movies"
-msgstr ""
+msgstr "Film Berperingkat Teratas"
 
 msgctxt "#31175"
 msgid "Recently Updated TV Shows"
-msgstr ""
+msgstr "Acara TV yang Baru Diperbarui"
 
 msgctxt "#31176"
 msgid "Your TV Shows"
-msgstr ""
+msgstr "Acara TV Anda"
 
 msgctxt "#31177"
 msgid "In Progress TV Shows"
-msgstr ""
+msgstr "Acara TV Sedang Berlangsung"
 
 msgctxt "#31178"
 msgid "Kids TV Shows"
-msgstr ""
+msgstr "Acara TV Anak-anak"
 
 # empty strings from id 31179 to 31181
 msgctxt "#31182"
 msgid "Top Rated TV Shows"
-msgstr ""
+msgstr "Acara TV Berperingkat Teratas"
 
 msgctxt "#31183"
 msgid "Recently Played Albums"
-msgstr ""
+msgstr "Album yang Baru Diputar"
 
 msgctxt "#31184"
 msgid "Your Albums"
-msgstr ""
+msgstr "Album Anda"
 
 msgctxt "#31185"
 msgid "Recently Added Albums"
-msgstr ""
+msgstr "Album yang Baru Ditambahkan"
 
 msgctxt "#31186"
 msgid "Your Artists"
-msgstr ""
+msgstr "Artis Anda"
 
 # empty strings from id 31187 to 31193
 msgctxt "#31194"
 msgid "Submit"
-msgstr ""
+msgstr "Masukkan"
 
 # empty strings from id 31195 to 31196
 msgctxt "#31197"
 msgid "Widget"
-msgstr ""
+msgstr "Widget"
 
 msgctxt "#31198"
 msgid "View Type"
-msgstr ""
+msgstr "Tampilan"
 
 msgctxt "#31199"
 msgid "Label Overlay"
-msgstr ""
+msgstr "Hamparan Label"
 
 msgctxt "#31200"
 msgid "Enter Name"
-msgstr ""
+msgstr "Masukkan Nama"
 
 msgctxt "#31201"
 msgid "Choose Shortcut"
-msgstr ""
+msgstr "Pilih Pintasan"
 
 msgctxt "#31202"
 msgid "Widget Action"
-msgstr ""
+msgstr "Aksi Widget"
 
 msgctxt "#31203"
 msgid "Square Info"
-msgstr ""
+msgstr "Info Kotak"
 
 msgctxt "#31204"
 msgid "Movies starring"
-msgstr ""
+msgstr "Film yang dibintangi"
 
 msgctxt "#31205"
 msgid "Refresh Information"
-msgstr ""
+msgstr "Segarkan Informasi"
 
 msgctxt "#31206"
 msgid "Enable Auto-Update"
-msgstr ""
+msgstr "Aktifkan Pembaruan Otomatis"
 
 msgctxt "#31207"
 msgid "Disable Auto-Update"
-msgstr ""
+msgstr "Nonaktifkan Pembaruan Otomatis"
 
 msgctxt "#31208"
 msgid "Enable Higher Levels"
-msgstr ""
+msgstr "Aktifkan Level Lebih Tinggi"
 
 msgctxt "#31209"
 msgid "Disable Higher Levels"
-msgstr ""
+msgstr "Nonaktifkan Level Lebih Tinggi"
 
 msgctxt "#31210"
 msgid "Widget Group 1"
-msgstr ""
+msgstr "Grup Widget 1"
 
 msgctxt "#31211"
 msgid "Widget Group 2"
-msgstr ""
+msgstr "Grup Widget 2"
 
 msgctxt "#31212"
 msgid "Widget Group 3"
-msgstr ""
+msgstr "Grup Widget 3"
 
 msgctxt "#31213"
 msgid "Widget Group 4"
-msgstr ""
+msgstr "Grup Widget 4"
 
 msgctxt "#31214"
 msgid "Widget Group 5"
-msgstr ""
+msgstr "Grup Widget 5"
 
 msgctxt "#31215"
 msgid "Widget Group 6"
-msgstr ""
+msgstr "Grup Widget 6"
 
 msgctxt "#31216"
 msgid "Widget Group 7"
-msgstr ""
+msgstr "Grup Widget 7"
 
 msgctxt "#31217"
 msgid "Widget Group 8"
-msgstr ""
+msgstr "Grup Widget 8"
 
 msgctxt "#31218"
 msgid "Select Widget Group"
-msgstr ""
+msgstr "Pilih Grup Widget"
 
 msgctxt "#31219"
 msgid "Customise Widget Group"
-msgstr ""
+msgstr "Sesuaikan Grup Widget"
 
 # empty strings from id 31220 to 31222
 msgctxt "#31223"
@@ -780,82 +780,82 @@ msgstr "Pengaya Video"
 
 msgctxt "#31224"
 msgid "Picture Addons"
-msgstr ""
+msgstr "Pengaya Gambar"
 
 # empty strings from id 31225 to 31226
 msgctxt "#31227"
 msgid "Air time"
-msgstr ""
+msgstr "Waktu udara"
 
 # empty string with id 31228
 msgctxt "#31229"
 msgid "Cancel Next Up"
-msgstr ""
+msgstr "Batalkan Selanjutnya"
 
 msgctxt "#31230"
 msgid "Sorry, no shows are airing at this time."
-msgstr ""
+msgstr "Maaf, tidak ada acara yang ditayangkan saat ini."
 
 msgctxt "#31231"
 msgid "Please try again later."
-msgstr ""
+msgstr "Silakan coba lagi nanti."
 
 msgctxt "#31232"
 msgid "Cast and Role"
-msgstr ""
+msgstr "Pemeran"
 
 msgctxt "#31233"
 msgid "View All Cast"
-msgstr ""
+msgstr "Lihat Semua Pemeran"
 
 msgctxt "#31234"
 msgid "Browse Addons"
-msgstr ""
+msgstr "Jelajahi Pengaya"
 
 msgctxt "#31235"
 msgid "Your Rating"
-msgstr ""
+msgstr "Penilaian Anda"
 
 # Must match #31235 without the space
 msgctxt "#31236"
 msgid "YourRating"
-msgstr ""
+msgstr "Penilaianmu"
 
 msgctxt "#31237"
 msgid "Select your rating"
-msgstr ""
+msgstr "Pilih Nilai Anda"
 
 msgctxt "#31238"
 msgid "This is your own personal rating and is not shared publicly"
-msgstr ""
+msgstr "Ini adalah penilaian pribadi Anda dan tidak dibagikan secara publik"
 
 msgctxt "#31239"
 msgid "Press play to resume"
-msgstr ""
+msgstr "Tekan putar untuk melanjutkan"
 
 msgctxt "#31240"
 msgid "Not rated"
-msgstr ""
+msgstr "Tdk dinilai"
 
 msgctxt "#31241"
 msgid "I hate it"
-msgstr ""
+msgstr "Saya benci ini"
 
 msgctxt "#31242"
 msgid "I don't like it"
-msgstr ""
+msgstr "Saya tdk suka ini"
 
 msgctxt "#31243"
 msgid "It's okay"
-msgstr ""
+msgstr "Tdk apa-apa"
 
 msgctxt "#31244"
 msgid "I like it"
-msgstr ""
+msgstr "Saya suka"
 
 msgctxt "#31245"
 msgid "I love it"
-msgstr ""
+msgstr "Saya cinta ini"
 
 msgctxt "#31246"
 msgid "Location"
@@ -863,7 +863,7 @@ msgstr "Lokasi"
 
 msgctxt "#31247"
 msgid "Media Processing Info"
-msgstr ""
+msgstr "Info Pemrosesan Media"
 
 msgctxt "#31248"
 msgid "Order"
@@ -871,52 +871,52 @@ msgstr "Urut"
 
 msgctxt "#31249"
 msgid "View Addons that have recently been updated."
-msgstr ""
+msgstr "Lihat Addons yang baru saja diperbarui."
 
 msgctxt "#31250"
 msgid "Configure various game settings."
-msgstr ""
+msgstr "Konfigurasikan berbagai pengaturan permainan."
 
 msgctxt "#31251"
 msgid "Watchlist"
-msgstr ""
+msgstr "Daftar pantauan"
 
 msgctxt "#31252"
 msgid "This skin only supports a maximum of 13 home menu items. Please remove some to ensure everything works correctly."
-msgstr ""
+msgstr "Skin ini hanya mendukung maksimal 13 item menu home. Hapus beberapa untuk memastikan semuanya berfungsi dengan benar."
 
 msgctxt "#31253"
 msgid "No items found in Your Favourites"
-msgstr ""
+msgstr "Tidak ada item yang ditemukan di Favorit Anda"
 
 msgctxt "#31254"
 msgid "When you add Favourites they will appear here"
-msgstr ""
+msgstr "Saat Anda menambahkan Favorit, mereka akan muncul di sini"
 
 msgctxt "#31255"
 msgid "Reset Home Menu"
-msgstr ""
+msgstr "Atur Ulang Menu Beranda"
 
 msgctxt "#31256"
 msgid "What's[CR]New"
-msgstr ""
+msgstr "Apa[CR]yang Baru"
 
 msgctxt "#31257"
 msgid "Rotten Tomatoes Rating"
-msgstr ""
+msgstr "Peringkat Rotten Tomatoes"
 
 msgctxt "#31258"
 msgid "TomatoMeter All Critics"
-msgstr ""
+msgstr "TomatoMeter Semua Kritik"
 
 msgctxt "#31259"
 msgid "TomatoMeter Audience Score"
-msgstr ""
+msgstr "Skor Audiens TomatoMeter"
 
 msgctxt "#31260"
 msgid "Average Rating All Critics"
-msgstr ""
+msgstr "Nilai Rata-Rata Semua Kritik"
 
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
-msgstr ""
+msgstr "Rata-rata Rating Skor Audiens"
