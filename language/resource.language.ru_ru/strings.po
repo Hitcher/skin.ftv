@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2022-09-06 07:45+0000\n"
-"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"PO-Revision-Date: 2022-10-13 16:15+0000\n"
+"Last-Translator: NickR <honey_walley.hv4qz@slmail.me>\n"
 "Language-Team: Russian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/ru_ru/>\n"
 "Language: ru_ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.14\n"
+"X-Generator: Weblate 4.14.1\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the Fire TV UI"
@@ -27,23 +27,23 @@ msgstr "Обложка разработана для легкого и быст�
 
 msgctxt "Addon Disclaimer"
 msgid "To make use of the 'HDR' & 'ATMOS' tags they need to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV"
-msgstr ""
+msgstr "Чтобы использовать теги \"HDR\" и \"ATMOS\", они должны быть добавлены в ваше имя файла.[CR]Не поддерживает: мышь и сенсорные устройства, или прямой эфир"
 
 msgctxt "#31000"
 msgid "Audio Options"
-msgstr ""
+msgstr "Настройки аудио"
 
 msgctxt "#31001"
 msgid "US"
-msgstr ""
+msgstr "US (США)"
 
 msgctxt "#31002"
 msgid "UK"
-msgstr ""
+msgstr "UK (Великобритания)"
 
 msgctxt "#31003"
 msgid "Germany"
-msgstr ""
+msgstr "Германия"
 
 msgctxt "#31004"
 msgid "minute"
@@ -51,11 +51,11 @@ msgstr "минута"
 
 msgctxt "#31005"
 msgid "hour"
-msgstr ""
+msgstr "час"
 
 msgctxt "#31006"
 msgid "Starts at"
-msgstr ""
+msgstr "Начинается в"
 
 msgctxt "#31007"
 msgid "System music files"
@@ -63,7 +63,7 @@ msgstr "Системные аудиофайлы"
 
 msgctxt "#31008"
 msgid "Current selection"
-msgstr ""
+msgstr "Текущий выбор"
 
 msgctxt "#31009"
 msgid "Open playlist"
@@ -87,11 +87,11 @@ msgstr "Без звука"
 
 msgctxt "#31014"
 msgid "Next Movie"
-msgstr ""
+msgstr "Следующий фильм"
 
 msgctxt "#31015"
 msgid "Next Video"
-msgstr ""
+msgstr "Следующее видео"
 
 msgctxt "#31016"
 msgid "Settings level"
@@ -99,39 +99,39 @@ msgstr "Уровень настроек"
 
 msgctxt "#31017"
 msgid "View all of your enabled and disabled Addons."
-msgstr ""
+msgstr "Просмотр всех ваших включённых и отключённых дополнений."
 
 msgctxt "#31018"
 msgid "View Addons that have updates available."
-msgstr ""
+msgstr "Просмотр дополнений, для которых доступны обновления."
 
 msgctxt "#31019"
 msgid "View Addons that are currently being downloaded."
-msgstr ""
+msgstr "Просмотр дополнений, которые загружаются в данный момент."
 
 msgctxt "#31020"
 msgid "View all the system Addons including Dependencies, Orphaned Dependencies, and Running Addons."
-msgstr ""
+msgstr "Просмотр всех системных дополнений, включая зависимости, \"осиротевшие\" зависимости и запущенные дополнения."
 
 msgctxt "#31021"
 msgid "Download Addons from your installed repos."
-msgstr ""
+msgstr "Скачать дополнения из вашего установленного репозитория."
 
 msgctxt "#31022"
 msgid "Update[CR]Now"
-msgstr ""
+msgstr "Обновить[CR]сейчас"
 
 msgctxt "#31023"
 msgid "Special[CR]Features"
-msgstr ""
+msgstr "Особые[CR]возможности"
 
 msgctxt "#31024"
 msgid "Widget Name"
-msgstr ""
+msgstr "Имя виджета"
 
 msgctxt "#31025"
 msgid "Notice"
-msgstr ""
+msgstr "Уведомление"
 
 msgctxt "#31026"
 msgid "Overview"
@@ -139,19 +139,19 @@ msgstr "Обзор"
 
 msgctxt "#31027"
 msgid "Install Addons using the file browser."
-msgstr ""
+msgstr "Установить дополнения с помощью файлового браузера."
 
 msgctxt "#31028"
 msgid "Search for an Addon from your installed repos."
-msgstr ""
+msgstr "Поиск дополнения в ваших установленных репозиториях."
 
 msgctxt "#31029"
 msgid "Addon Details"
-msgstr ""
+msgstr "Сведения о дополнении"
 
 msgctxt "#31030"
 msgid "Customise the home menu to your liking with the Skin Shortcuts script."
-msgstr ""
+msgstr "Настройте главное меню как вам захочется с помощью скрипта ярлыков обложек."
 
 msgctxt "#31031"
 msgid "Customise the shutdown menu to include your favourite actions."

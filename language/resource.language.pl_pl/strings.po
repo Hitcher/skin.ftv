@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2022-03-11 09:02+0000\n"
+"PO-Revision-Date: 2022-10-13 16:15+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: Polish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/pl_pl/>\n"
 "Language: pl_pl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.11.2\n"
+"X-Generator: Weblate 4.14.1\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the Fire TV UI"
@@ -235,7 +235,7 @@ msgstr ""
 
 msgctxt "#31051"
 msgid "Images"
-msgstr ""
+msgstr "Zdjęcia"
 
 msgctxt "#31052"
 msgid "Turn On[CR]Shuffle All"
@@ -385,7 +385,7 @@ msgstr ""
 
 msgctxt "#31100"
 msgid "Photos"
-msgstr ""
+msgstr "Zdjęcia"
 
 msgctxt "#31101"
 msgid "Apps"
@@ -629,7 +629,7 @@ msgstr "Filmy w trakcie oglądania"
 
 msgctxt "#31170"
 msgid "Kids Movies"
-msgstr ""
+msgstr "Filmy dla dzieci"
 
 msgctxt "#31174"
 msgid "Top Rated Movies"
@@ -649,7 +649,7 @@ msgstr ""
 
 msgctxt "#31178"
 msgid "Kids TV Shows"
-msgstr ""
+msgstr "Seriale dla dzieci"
 
 # empty strings from id 31179 to 31181
 msgctxt "#31182"
@@ -658,7 +658,7 @@ msgstr ""
 
 msgctxt "#31183"
 msgid "Recently Played Albums"
-msgstr ""
+msgstr "Ostatnio odtwarzane albumy"
 
 msgctxt "#31184"
 msgid "Your Albums"
