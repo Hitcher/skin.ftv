@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2022-11-22 18:15+0000\n"
+"PO-Revision-Date: 2022-12-15 18:15+0000\n"
 "Last-Translator: Massimo Pissarello <mapi68@gmail.com>\n"
 "Language-Team: Italian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/it_it/>\n"
 "Language: it_it\n"
@@ -175,7 +175,7 @@ msgstr "Ancora lì?"
 
 msgctxt "#31036"
 msgid "Displays fanart for your media in the background."
-msgstr "Visualizza le fanart per i tuoi media sullo sfondo."
+msgstr "Visualizza le Fanart per i tuoi media sullo sfondo."
 
 msgctxt "#31037"
 msgid "Hide Unwatched Episode Thumbs"
@@ -336,7 +336,7 @@ msgstr "Spiacente, trovato niente."
 
 msgctxt "#31085"
 msgid "Shutdown Menu"
-msgstr "Menu Spegnimento"
+msgstr "Menu di Spegnimento"
 
 msgctxt "#31086"
 msgid "Sorted by"
@@ -348,7 +348,7 @@ msgstr "Playlist Corrente"
 
 msgctxt "#31089"
 msgid "View Options"
-msgstr "Opzioni vista"
+msgstr "Opzioni Visualizzazione"
 
 msgctxt "#31090"
 msgid "Update Library"
@@ -360,7 +360,7 @@ msgstr "Stop Scansione"
 
 msgctxt "#31092"
 msgid "Sort By"
-msgstr "Ordina Per"
+msgstr "Ordina per"
 
 msgctxt "#31093"
 msgid "Filter By"
@@ -617,7 +617,7 @@ msgstr ""
 
 msgctxt "#31167"
 msgid "Recently Added Movies"
-msgstr "Film recenti"
+msgstr "Film aggiunti di recente"
 
 msgctxt "#31168"
 msgid "Your Movies"
@@ -625,7 +625,7 @@ msgstr ""
 
 msgctxt "#31169"
 msgid "In Progress Movies"
-msgstr "Film da terminare"
+msgstr "Film in corso"
 
 msgctxt "#31170"
 msgid "Kids Movies"
@@ -638,7 +638,7 @@ msgstr "Film più votati"
 
 msgctxt "#31175"
 msgid "Recently Updated TV Shows"
-msgstr ""
+msgstr "Serie TV aggiornate di recente"
 
 msgctxt "#31176"
 msgid "Your TV Shows"
@@ -646,7 +646,7 @@ msgstr ""
 
 msgctxt "#31177"
 msgid "In Progress TV Shows"
-msgstr ""
+msgstr "Serie TV in corso"
 
 msgctxt "#31178"
 msgid "Kids TV Shows"
@@ -655,11 +655,11 @@ msgstr "Serie TV per Bambini"
 # empty strings from id 31179 to 31181
 msgctxt "#31182"
 msgid "Top Rated TV Shows"
-msgstr "Serie TV più Votate"
+msgstr "Serie TV più votate"
 
 msgctxt "#31183"
 msgid "Recently Played Albums"
-msgstr "Album Riprodotti di Recente"
+msgstr "Album ascoltati di recente"
 
 msgctxt "#31184"
 msgid "Your Albums"
@@ -667,7 +667,7 @@ msgstr ""
 
 msgctxt "#31185"
 msgid "Recently Added Albums"
-msgstr "Album recenti"
+msgstr "Album aggiunti di recente"
 
 msgctxt "#31186"
 msgid "Your Artists"
