@@ -36,6 +36,7 @@
 		<summary lang="en_GB">Skin based on the Fire TV UI</summary>
 		<summary lang="en_US">Skin based on the Fire TV UI</summary>
 		<summary lang="es_ES">Skin basado en la interfaz gráfica del Fire TV</summary>
+		<summary lang="fr_FR">Skin basé sur l&apos;interface de Fire TV</summary>
 		<summary lang="gl_ES">Tema baseado no UI do Fire TV</summary>
 		<summary lang="id_ID">Kulit berdasarkan UI Fire TV</summary>
 		<summary lang="it_IT">Skin basata sull&apos;Interfaccia Utente della Fire TV</summary>
@@ -47,6 +48,7 @@
 		<description lang="en_GB">A skin designed to access all your content as easily and seemlessly as possible.[CR][CR]Supports:[CR]Global Search[CR]Next Aired[CR]Up Next[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]Based on the original Fire TV UI.</description>
 		<description lang="en_US">A skin designed to access all your content as easily and seemlessly as possible.[CR][CR]Supports:[CR]Global Search[CR]Next Aired[CR]Up Next[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]Based on the original Fire TV UI.</description>
 		<description lang="es_ES">Un skin diseñado para accede a todo su contenido tan fácil y transparentemente como sea possible.[CR][CR]Funciona con:[CR]Global Search[CR]Next Aired[CR]Up Next[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]Basado en la interfaz gráfica original del Fire TV.</description>
+		<description lang="fr_FR">Un habillage conçu pour accéder à tout votre contenu aussi facilement et de manière transparente que possible.[CR][CR]Prise en charge :[CR]Global Search[CR]Next Aired[CR]Up Next[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]Basé sur l&apos;interface originale de Fire TV.</description>
 		<description lang="id_ID">Skin yang dirancang untuk mengakses semua konten Anda semudah dan semudah mungkin.[CR][CR]Mendukung:[CR]Pencarian Global[CR]Tayang Berikutnya[CR]Berikutnya[CR]Info Embuary[CR]Trakt[CR] Lirik CU[CR]Pengalaman Bioskop[CR]Fitur Khusus[CR][CR]Berdasarkan UI Fire TV asli.</description>
 		<description lang="it_IT">Una skin progettata per accedere a tutti i tuoi contenuti nel modo più semplice e facile possibile.[CR][CR]Supporta:[CR]Ricerca Globale[CR]Trasmissione Successiva[CR]Avanti[CR]Info Embuary[CR]Trakt[CR]Testi CU[CR]Esperienza Cinematografica[CR]Funzioni Speciali[CR][CR]Basato sull&apos;Interfaccia Utente originale della Fire TV.</description>
 		<description lang="ja_JP">すべてのコンテンツに可能な限り簡単でシームレスにアクセスできるようにデザインされたスキン。[CR][CR]サポート:[CR]Global Search[CR]Next Aired[CR]Up Next[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]ベースになっているオリジナルは、Fire TV UIです。</description>
@@ -56,6 +58,7 @@
 		<disclaimer lang="en_GB">To make use of the &apos;HDR&apos; &amp; &apos;ATMOS&apos; tags they need to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV</disclaimer>
 		<disclaimer lang="en_US">To make use of the &apos;HDR&apos; &amp; &apos;ATMOS&apos; tags they need to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV</disclaimer>
 		<disclaimer lang="es_ES">Para poder utilizar los tags &apos;HDR&apos;y &apos;ATMOS&apos;, estos Deben ser añadidos al nombre del archive.[CR]No funciona con: Dispositivos tácitles o ratón ni TV en Vivo</disclaimer>
+		<disclaimer lang="fr_FR">Pour utiliser les balises &quot;HDR&quot; et &quot;ATMOS&quot;, elles doivent être ajoutées au nom de votre fichier.[CR]Ne prend pas en charge : les appareils souris et tactiles ou la TV en direct</disclaimer>
 		<disclaimer lang="id_ID">Untuk menggunakan tag &apos;HDR&apos; &amp; &apos;ATMOS&apos;, tag tersebut perlu ditambahkan ke nama file Anda.[CR]Tidak mendukung: Perangkat Mouse dan Sentuh atau TV Langsung</disclaimer>
 		<disclaimer lang="ja_JP">&apos;HDR&apos; と &apos;ATMOS&apos; タグを使用するには、ファイル名に追加する必要があります。[CR]未サポート: マウスとタッチデバイスまたはLive TV</disclaimer>
 		<disclaimer lang="ru_RU">Чтобы использовать теги &quot;HDR&quot; и &quot;ATMOS&quot;, они должны быть добавлены в ваше имя файла.[CR]Не поддерживает: мышь и сенсорные устройства, или прямой эфир</disclaimer>
