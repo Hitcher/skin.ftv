@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2022-12-15 18:15+0000\n"
+"PO-Revision-Date: 2023-01-03 10:15+0000\n"
 "Last-Translator: Massimo Pissarello <mapi68@gmail.com>\n"
 "Language-Team: Italian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/it_it/>\n"
 "Language: it_it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 4.15\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the Fire TV UI"
@@ -31,7 +31,7 @@ msgstr ""
 
 msgctxt "#31000"
 msgid "Audio Options"
-msgstr "Opzioni Audio"
+msgstr "Opzioni audio"
 
 msgctxt "#31001"
 msgid "US"
@@ -71,7 +71,7 @@ msgstr "Apri playlist"
 
 msgctxt "#31010"
 msgid "Save playlist"
-msgstr "Salva playlist"
+msgstr "Salva Playlist"
 
 msgctxt "#31011"
 msgid "Close playlist"
@@ -79,7 +79,7 @@ msgstr "Chiudi playlist"
 
 msgctxt "#31012"
 msgid "Current playlist"
-msgstr "Playlist corrente"
+msgstr "Playlist attuale"
 
 msgctxt "#31013"
 msgid "Muted"
@@ -107,15 +107,15 @@ msgstr "Visualizza gli addon che hanno un aggiornamento disponibile."
 
 msgctxt "#31019"
 msgid "View Addons that are currently being downloaded."
-msgstr "Visualizza gli Addon che sono attualmente in download."
+msgstr "Visualizza gli add-on che sono attualmente in download."
 
 msgctxt "#31020"
 msgid "View all the system Addons including Dependencies, Orphaned Dependencies, and Running Addons."
-msgstr "Visualizza tutti gli Addon di sistema, inclusi le Dipendenze, le Dipendenze Orfane e gli Addon in esecuzione."
+msgstr "Visualizza tutti gli add-on di sistema, inclusi le Dipendenze, le Dipendenze Orfane e gli add-on in esecuzione."
 
 msgctxt "#31021"
 msgid "Download Addons from your installed repos."
-msgstr "Scarica gli Addon dalle tue repository installate."
+msgstr "Scarica gli add-on dalle tue repository installate."
 
 msgctxt "#31022"
 msgid "Update[CR]Now"
@@ -139,15 +139,15 @@ msgstr "Panoramica"
 
 msgctxt "#31027"
 msgid "Install Addons using the file browser."
-msgstr "Installa gli Addon usando il file browser."
+msgstr "Installa gli add-on usando il file browser."
 
 msgctxt "#31028"
 msgid "Search for an Addon from your installed repos."
-msgstr "Ricerca un Addon dalle repo intallate."
+msgstr "Ricerca un add-on dalle repo intallate."
 
 msgctxt "#31029"
 msgid "Addon Details"
-msgstr "Dettagli Addon"
+msgstr "Dettagli add-on"
 
 msgctxt "#31030"
 msgid "Customise the home menu to your liking with the Skin Shortcuts script."
@@ -231,7 +231,7 @@ msgstr "Personalizza Menu principale"
 
 msgctxt "#31050"
 msgid "TV Shows starring"
-msgstr "Protagonisti Serie TV"
+msgstr "Protagonisti serie TV"
 
 msgctxt "#31051"
 msgid "Images"
@@ -344,7 +344,7 @@ msgstr "Ordinati per"
 
 msgctxt "#31088"
 msgid "Current Playlist"
-msgstr "Playlist Corrente"
+msgstr "Playlist attuale"
 
 msgctxt "#31089"
 msgid "View Options"
@@ -515,7 +515,7 @@ msgstr ""
 
 msgctxt "#31136"
 msgid "DVD Menu"
-msgstr "Menù DVD"
+msgstr "Menu DVD"
 
 msgctxt "#31137"
 msgid "Video Options"
@@ -772,7 +772,7 @@ msgstr ""
 
 msgctxt "#31223"
 msgid "Video Addons"
-msgstr "Addon Video"
+msgstr "Addon video"
 
 msgctxt "#31224"
 msgid "Picture Addons"
