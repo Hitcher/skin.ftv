@@ -39,7 +39,7 @@
 		<summary lang="fr_FR">Skin basé sur l&apos;interface de Fire TV</summary>
 		<summary lang="gl_ES">Tema baseado no UI do Fire TV</summary>
 		<summary lang="id_ID">Kulit berdasarkan UI Fire TV</summary>
-		<summary lang="it_IT">Skin basata sull&apos;Interfaccia Utente della Fire TV</summary>
+		<summary lang="it_IT">Skin basata sull&apos;interfaccia utente della Fire TV</summary>
 		<summary lang="ja_JP">Fire TV UIベースのスキン</summary>
 		<summary lang="ru_RU">Обложка основана на интерфейсе Fire TV</summary>
 		<summary lang="sk_SK">Vzhľad založený na Fire TV UI</summary>
@@ -60,6 +60,7 @@
 		<disclaimer lang="es_ES">Para poder utilizar los tags &apos;HDR&apos;y &apos;ATMOS&apos;, estos Deben ser añadidos al nombre del archive.[CR]No funciona con: Dispositivos tácitles o ratón ni TV en Vivo</disclaimer>
 		<disclaimer lang="fr_FR">Pour utiliser les balises &quot;HDR&quot; et &quot;ATMOS&quot;, elles doivent être ajoutées au nom de votre fichier.[CR]Ne prend pas en charge : les appareils souris et tactiles ou la TV en direct</disclaimer>
 		<disclaimer lang="id_ID">Untuk menggunakan tag &apos;HDR&apos; &amp; &apos;ATMOS&apos;, tag tersebut perlu ditambahkan ke nama file Anda.[CR]Tidak mendukung: Perangkat Mouse dan Sentuh atau TV Langsung</disclaimer>
+		<disclaimer lang="it_IT">Per utilizzare i tag &quot;HDR&quot; e &quot;ATMOS&quot;, è necessario aggiungerli al nome del file.[CR]Non supporta: mouse e dispositivi touch o TV in diretta</disclaimer>
 		<disclaimer lang="ja_JP">&apos;HDR&apos; と &apos;ATMOS&apos; タグを使用するには、ファイル名に追加する必要があります。[CR]未サポート: マウスとタッチデバイスまたはLive TV</disclaimer>
 		<disclaimer lang="ru_RU">Чтобы использовать теги &quot;HDR&quot; и &quot;ATMOS&quot;, они должны быть добавлены в ваше имя файла.[CR]Не поддерживает: мышь и сенсорные устройства, или прямой эфир</disclaimer>
 		<disclaimer lang="zh_CN">为使&apos;HDR&apos; &amp; &apos;ATMOS&apos;标签生效，你需要将它们添加到你的文件名中。[CR]不支持：鼠标和触摸设备或Live TV</disclaimer>
