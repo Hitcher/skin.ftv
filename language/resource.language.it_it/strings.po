@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-01-03 10:15+0000\n"
+"PO-Revision-Date: 2023-01-19 03:15+0000\n"
 "Last-Translator: Massimo Pissarello <mapi68@gmail.com>\n"
 "Language-Team: Italian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/it_it/>\n"
 "Language: it_it\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 msgctxt "Addon Summary"
 msgid "Skin based on the Fire TV UI"
-msgstr "Skin basata sull'Interfaccia Utente della Fire TV"
+msgstr "Skin basata sull'interfaccia utente della Fire TV"
 
 msgctxt "Addon Description"
 msgid "A skin designed to access all your content as easily and seemlessly as possible.[CR][CR]Supports:[CR]Global Search[CR]Next Aired[CR]Up Next[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]Based on the original Fire TV UI."
@@ -27,7 +27,7 @@ msgstr "Una skin progettata per accedere a tutti i tuoi contenuti nel modo più 
 
 msgctxt "Addon Disclaimer"
 msgid "To make use of the 'HDR' & 'ATMOS' tags they need to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV"
-msgstr ""
+msgstr "Per utilizzare i tag \"HDR\" e \"ATMOS\", è necessario aggiungerli al nome del file.[CR]Non supporta: mouse e dispositivi touch o TV in diretta"
 
 msgctxt "#31000"
 msgid "Audio Options"
