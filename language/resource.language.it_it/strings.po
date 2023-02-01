@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-01-19 03:15+0000\n"
+"PO-Revision-Date: 2023-02-01 08:15+0000\n"
 "Last-Translator: Massimo Pissarello <mapi68@gmail.com>\n"
 "Language-Team: Italian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/it_it/>\n"
 "Language: it_it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15\n"
+"X-Generator: Weblate 4.15.2\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the Fire TV UI"
@@ -71,7 +71,7 @@ msgstr "Apri playlist"
 
 msgctxt "#31010"
 msgid "Save playlist"
-msgstr "Salva Playlist"
+msgstr "Salva playlist"
 
 msgctxt "#31011"
 msgid "Close playlist"
@@ -175,7 +175,7 @@ msgstr "Ancora lì?"
 
 msgctxt "#31036"
 msgid "Displays fanart for your media in the background."
-msgstr "Visualizza le Fanart per i tuoi media sullo sfondo."
+msgstr "Visualizza le fanart per i tuoi media sullo sfondo."
 
 msgctxt "#31037"
 msgid "Hide Unwatched Episode Thumbs"
@@ -219,7 +219,7 @@ msgstr "Disabilita Riproduzione casuale dei contenuti"
 
 msgctxt "#31047"
 msgid "Visualisation Presets"
-msgstr "Preset di visualizzazione"
+msgstr "Preimpostazioni visualizzazione"
 
 msgctxt "#31048"
 msgid "Playlist Options"
@@ -288,7 +288,7 @@ msgstr "Abilita le informazioni sul cast durante la riproduzione del video.[CR]N
 # empty strings from id 31064 to 31066
 msgctxt "#31067"
 msgid "Choose Fanart"
-msgstr "Scegli Fanart"
+msgstr "Scegli fanart"
 
 msgctxt "#31068"
 msgid "IP"
@@ -368,7 +368,7 @@ msgstr "Filtra Per"
 
 msgctxt "#31094"
 msgid "Save Playlist"
-msgstr "Salva Playlist"
+msgstr "Salva playlist"
 
 msgctxt "#31095"
 msgid "Clear Playlist"
@@ -381,7 +381,7 @@ msgstr ""
 
 msgctxt "#31099"
 msgid "Start Slideshow"
-msgstr ""
+msgstr "Avvia presentazione"
 
 msgctxt "#31100"
 msgid "Photos"
