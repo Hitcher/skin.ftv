@@ -5,17 +5,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2022-03-08 08:30+0000\n"
-"Last-Translator: Alfonso Cachero <alfonso.cachero@gmail.com>\n"
+"PO-Revision-Date: 2023-02-16 14:15+0000\n"
+"Last-Translator: José Antonio Alvarado <jalvarado0.eses@gmail.com>\n"
 "Language-Team: Spanish (Spain) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/es_es/>\n"
 "Language: es_es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.11.2\n"
+"X-Generator: Weblate 4.15.2\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the Fire TV UI"
@@ -99,23 +99,23 @@ msgstr "Nivel de ajustes"
 
 msgctxt "#31017"
 msgid "View all of your enabled and disabled Addons."
-msgstr "Ver todos sus Complementos activados y desactivados."
+msgstr "Ver todos tus add-ons activados y desactivados."
 
 msgctxt "#31018"
 msgid "View Addons that have updates available."
-msgstr "Ver Complementos que tengan actualizaciones disponibles."
+msgstr "Ver add-ons que tengan actualizaciones disponibles."
 
 msgctxt "#31019"
 msgid "View Addons that are currently being downloaded."
-msgstr "Ver Complementos que se estén descargando en este momento."
+msgstr "Ver add-ons que se estén descargando en este momento."
 
 msgctxt "#31020"
 msgid "View all the system Addons including Dependencies, Orphaned Dependencies, and Running Addons."
-msgstr "Ver todos los Complementos del Sistema, incluyendo Dependencias, Dependencias Huérfanas, y Complementos en Ejecución."
+msgstr "Ver todos los add-ons del sistema, incluidas las dependencias, las dependencias huérfanas y los add-ons en ejecución."
 
 msgctxt "#31021"
 msgid "Download Addons from your installed repos."
-msgstr "Descargar Complementos de sus repositorios instalados."
+msgstr "Descargar add-ons de sus repositorios instalados."
 
 msgctxt "#31022"
 msgid "Update[CR]Now"
@@ -123,7 +123,7 @@ msgstr "Actualizar[CR]Ahora"
 
 msgctxt "#31023"
 msgid "Special[CR]Features"
-msgstr "Special[CR]Features"
+msgstr "Características[CR]especiales"
 
 msgctxt "#31024"
 msgid "Widget Name"
@@ -139,15 +139,15 @@ msgstr "Visión general"
 
 msgctxt "#31027"
 msgid "Install Addons using the file browser."
-msgstr "Instalar Complementos utilizando el explorador de archivos."
+msgstr "Instalar add-ons utilizando el explorador de archivos."
 
 msgctxt "#31028"
 msgid "Search for an Addon from your installed repos."
-msgstr "Buscar un Complemento en sus repositorios instalados."
+msgstr "Buscar un add-on en tus repositorios instalados."
 
 msgctxt "#31029"
 msgid "Addon Details"
-msgstr "Detalles de Complemento"
+msgstr "Detalles del add-on"
 
 msgctxt "#31030"
 msgid "Customise the home menu to your liking with the Skin Shortcuts script."
@@ -395,15 +395,15 @@ msgstr "Reproduciendo"
 
 msgctxt "#31103"
 msgid "Addons"
-msgstr "Complementos"
+msgstr "Add-ons"
 
 msgctxt "#31104"
 msgid "Cinema Experience"
-msgstr "Cinema Experience"
+msgstr "Experiencia cinematográfica"
 
 msgctxt "#31105"
 msgid "Your Addons"
-msgstr "Sus Complementos"
+msgstr "Tus Add-ons"
 
 msgctxt "#31106"
 msgid "Now Playing"
@@ -435,7 +435,7 @@ msgstr "Configurar sus ajustes de Skin, Región, Control, Salvapantallas y Canda
 
 msgctxt "#31116"
 msgid "Manage, browse for, install and modify Addons."
-msgstr "Gestionar, explorer, instalar y modificar Complementos."
+msgstr "Gestionar, explorar, instalar y modificar add-ons."
 
 msgctxt "#31117"
 msgid "Configure the handling and playback settings for Video, Music, and Pictures."
@@ -579,7 +579,7 @@ msgstr "Nombre de Dispositivo"
 
 msgctxt "#31159"
 msgid "Wide"
-msgstr "Wide"
+msgstr "Ancho"
 
 msgctxt "#31160"
 msgid "Poster"
@@ -695,7 +695,7 @@ msgstr "Acción del Widget"
 
 msgctxt "#31203"
 msgid "Square Info"
-msgstr "Square Info"
+msgstr "Información general"
 
 msgctxt "#31204"
 msgid "Movies starring"
@@ -763,11 +763,11 @@ msgstr "Personalizar Grupo de Widgets"
 
 msgctxt "#31223"
 msgid "Video Addons"
-msgstr "Complementos de Vídeo"
+msgstr "Add-ons de vídeo"
 
 msgctxt "#31224"
 msgid "Picture Addons"
-msgstr "Complementos de Fotos"
+msgstr "Add-ons de imagen"
 
 msgctxt "#31227"
 msgid "Air time"
@@ -795,7 +795,7 @@ msgstr "Ver Todo el Elenco"
 
 msgctxt "#31234"
 msgid "Browse Addons"
-msgstr "Explorar Complementos"
+msgstr "Explorar add-ons"
 
 msgctxt "#31235"
 msgid "Your Rating"
@@ -855,7 +855,7 @@ msgstr "Orden"
 
 msgctxt "#31249"
 msgid "View Addons that have recently been updated."
-msgstr "Ver Complementos que han sido actualizados recientemente."
+msgstr "Vista de add-ons que han sido actualizados recientemente."
 
 msgctxt "#31250"
 msgid "Configure various game settings."
@@ -863,7 +863,7 @@ msgstr "Configurar varios ajustes de juegos."
 
 msgctxt "#31251"
 msgid "Watchlist"
-msgstr "Watchlist"
+msgstr "Lista de seguimiento"
 
 msgctxt "#31252"
 msgid "This skin only supports a maximum of 13 home menu items. Please remove some to ensure everything works correctly."
