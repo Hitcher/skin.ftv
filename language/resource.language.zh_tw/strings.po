@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2022-03-08 08:30+0000\n"
+"PO-Revision-Date: 2023-03-15 09:38+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: Chinese (Taiwan) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/zh_tw/>\n"
 "Language: zh_tw\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.11.2\n"
+"X-Generator: Weblate 4.15.2\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the Fire TV UI"
@@ -83,7 +83,7 @@ msgstr "目前的播放清單"
 
 msgctxt "#31013"
 msgid "Muted"
-msgstr ""
+msgstr "靜音"
 
 msgctxt "#31014"
 msgid "Next Movie"
@@ -340,7 +340,7 @@ msgstr "關機選單"
 
 msgctxt "#31086"
 msgid "Sorted by"
-msgstr ""
+msgstr "排序方式"
 
 # empty string with id 31087
 msgctxt "#31088"
@@ -538,7 +538,7 @@ msgstr "特別"
 
 msgctxt "#31147"
 msgid "minutes"
-msgstr ""
+msgstr "分鐘"
 
 msgctxt "#31148"
 msgid "hours"
