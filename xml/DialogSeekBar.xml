@@ -417,7 +417,7 @@
 			</control>
 			<control type="group">
 				<include>VisibleFadeAnimation</include>
-				<visible>!Player.Paused + !Player.Forwarding + !Player.Rewinding + [Player.Seeking | Player.DisplayAfterSeek]</visible>
+				<visible>!Player.Forwarding + !Player.Rewinding + [Player.Seeking | Player.DisplayAfterSeek]</visible>
 				<control type="image">
 					<left>97</left>
 					<bottom>123</bottom>
