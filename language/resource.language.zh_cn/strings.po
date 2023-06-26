@@ -178,8 +178,8 @@ msgid "Displays fanart for your media in the background."
 msgstr "在后台显示媒体的同人画。"
 
 msgctxt "#31037"
-msgid "Hide Unwatched Episode Thumbs"
-msgstr "隐藏未观看的剧集缩略图"
+msgid "Press [B]BACK[/B] to keep current settings or [B]OK[/B] to reset."
+msgstr ""
 
 msgctxt "#31038"
 msgid "Select your scrapers certification county."
@@ -285,6 +285,18 @@ msgctxt "#31063"
 msgid "Enables Cast info during video playback.[CR]Note: Can be CPU intensive."
 msgstr "在视频播放期间启用演员阵容信息。[CR]注意：可能会占用大量CPU资源。"
 
+msgctxt "#31064"
+msgid "Browse[CR]Season"
+msgstr ""
+
+msgctxt "#31065"
+msgid "Browse[CR]Movie Set"
+msgstr ""
+
+msgctxt "#31066"
+msgid "Movies in this Set"
+msgstr ""
+
 # empty strings from id 31064 to 31066
 msgctxt "#31067"
 msgid "Choose Fanart"
@@ -333,6 +345,18 @@ msgstr "观众也观看了"
 msgctxt "#31078"
 msgid "Sorry, nothing found."
 msgstr "抱歉，什么也没找到。"
+
+msgctxt "#31079"
+msgid "Daily"
+msgstr ""
+
+msgctxt "#31080"
+msgid "Enable Extended Information"
+msgstr ""
+
+msgctxt "#31081"
+msgid "Shows Extended Information for actors when selected from the cast list."
+msgstr ""
 
 msgctxt "#31085"
 msgid "Shutdown Menu"
@@ -916,3 +940,7 @@ msgstr "评论家平均分"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "观众平均分"
+
+#~ msgctxt "#31037"
+#~ msgid "Hide Unwatched Episode Thumbs"
+#~ msgstr "隐藏未观看的剧集缩略图"

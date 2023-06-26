@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2022-03-30 11:16+0000\n"
 "Last-Translator: Nao3Line Prez <n.yazawa6932@gmail.com>\n"
@@ -178,8 +178,8 @@ msgid "Displays fanart for your media in the background."
 msgstr "Menampilkan fanart untuk media Anda di latar belakang."
 
 msgctxt "#31037"
-msgid "Hide Unwatched Episode Thumbs"
-msgstr "Sembunyikan gambar Episode yang Belum Ditonton"
+msgid "Press [B]BACK[/B] to keep current settings or [B]OK[/B] to reset."
+msgstr ""
 
 msgctxt "#31038"
 msgid "Select your scrapers certification county."
@@ -285,6 +285,18 @@ msgctxt "#31063"
 msgid "Enables Cast info during video playback.[CR]Note: Can be CPU intensive."
 msgstr "Mengaktifkan info Cast selama pemutaran video.[CR]Catatan: Dapat memakan banyak CPU."
 
+msgctxt "#31064"
+msgid "Browse[CR]Season"
+msgstr ""
+
+msgctxt "#31065"
+msgid "Browse[CR]Movie Set"
+msgstr ""
+
+msgctxt "#31066"
+msgid "Movies in this Set"
+msgstr ""
+
 # empty strings from id 31064 to 31066
 msgctxt "#31067"
 msgid "Choose Fanart"
@@ -333,6 +345,18 @@ msgstr "Pemirsa Juga Menonton"
 msgctxt "#31078"
 msgid "Sorry, nothing found."
 msgstr "Maaf, tdk ditemukan."
+
+msgctxt "#31079"
+msgid "Daily"
+msgstr ""
+
+msgctxt "#31080"
+msgid "Enable Extended Information"
+msgstr ""
+
+msgctxt "#31081"
+msgid "Shows Extended Information for actors when selected from the cast list."
+msgstr ""
 
 # empty strings from id 31079 to 31084
 msgctxt "#31085"
@@ -920,3 +944,7 @@ msgstr "Nilai Rata-Rata Semua Kritik"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "Rata-rata Rating Skor Audiens"
+
+#~ msgctxt "#31037"
+#~ msgid "Hide Unwatched Episode Thumbs"
+#~ msgstr "Sembunyikan gambar Episode yang Belum Ditonton"

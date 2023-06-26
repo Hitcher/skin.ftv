@@ -177,7 +177,7 @@ msgid "Displays fanart for your media in the background."
 msgstr ""
 
 msgctxt "#31037"
-msgid "Hide Unwatched Episode Thumbs"
+msgid "Press [B]BACK[/B] to keep current settings or [B]OK[/B] to reset."
 msgstr ""
 
 msgctxt "#31038"
@@ -284,6 +284,18 @@ msgctxt "#31063"
 msgid "Enables Cast info during video playback.[CR]Note: Can be CPU intensive."
 msgstr ""
 
+msgctxt "#31064"
+msgid "Browse[CR]Season"
+msgstr ""
+
+msgctxt "#31065"
+msgid "Browse[CR]Movie Set"
+msgstr ""
+
+msgctxt "#31066"
+msgid "Movies in this Set"
+msgstr ""
+
 # empty strings from id 31064 to 31066
 msgctxt "#31067"
 msgid "Choose Fanart"
@@ -331,6 +343,18 @@ msgstr ""
 
 msgctxt "#31078"
 msgid "Sorry, nothing found."
+msgstr ""
+
+msgctxt "#31079"
+msgid "Daily"
+msgstr ""
+
+msgctxt "#31080"
+msgid "Enable Extended Information"
+msgstr ""
+
+msgctxt "#31081"
+msgid "Shows Extended Information for actors when selected from the cast list."
 msgstr ""
 
 # empty strings from id 31079 to 31084
