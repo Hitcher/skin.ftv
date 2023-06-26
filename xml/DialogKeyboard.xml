@@ -433,14 +433,28 @@
 							<width>348</width>
 							<height>78</height>
 							<texture border="3">dialogs/KeyboardButtonToggleOn.png</texture>
-							<visible>String.Contains(Control.GetLabel(302),*)</visible>
+							<visible>!Control.IsVisible(310) + String.Contains(Control.GetLabel(302),*)</visible>
 						</control>
 						<!-- Shift off -->
 						<control type="image">
 							<width>348</width>
 							<height>78</height>
 							<texture border="3">dialogs/KeyboardButtonToggleOff.png</texture>
-							<visible>!String.Contains(Control.GetLabel(302),*)</visible>
+							<visible>!Control.IsVisible(310) + !String.Contains(Control.GetLabel(302),*)</visible>
+						</control>
+						<!-- Shift on -->
+						<control type="image">
+							<width>258</width>
+							<height>78</height>
+							<texture border="3">dialogs/KeyboardButtonToggleOn.png</texture>
+							<visible>Control.IsVisible(310) + String.Contains(Control.GetLabel(302),*)</visible>
+						</control>
+						<!-- Shift off -->
+						<control type="image">
+							<width>258</width>
+							<height>78</height>
+							<texture border="3">dialogs/KeyboardButtonToggleOff.png</texture>
+							<visible>Control.IsVisible(310) + !String.Contains(Control.GetLabel(302),*)</visible>
 						</control>
 						<!-- Caps lock on-->
 						<control type="image">
@@ -455,6 +469,34 @@
 							<height>78</height>
 							<texture border="3">dialogs/KeyboardButtonToggleOff.png</texture>
 							<visible>!String.Contains(Control.GetLabel(303),*)</visible>
+						</control>
+						<!-- Password show focus -->
+						<control type="image">
+							<width>78</width>
+							<height>78</height>
+							<texture border="3">dialogs/password_show_fo.png</texture>
+							<visible>Control.IsVisible(310) + String.IsEqual(Control.GetLabel(310),$LOCALIZE[12309]) + Control.HasFocus(310)</visible>
+						</control>
+						<!-- Password show no focus -->
+						<control type="image">
+							<width>78</width>
+							<height>78</height>
+							<texture border="3">dialogs/password_show_nf.png</texture>
+							<visible>Control.IsVisible(310) + String.IsEqual(Control.GetLabel(310),$LOCALIZE[12309]) + !Control.HasFocus(310)</visible>
+						</control>
+						<!-- Password hide focus -->
+						<control type="image">
+							<width>78</width>
+							<height>78</height>
+							<texture border="3">dialogs/password_hide_fo.png</texture>
+							<visible>Control.IsVisible(310) + String.IsEqual(Control.GetLabel(310),$LOCALIZE[12308]) + Control.HasFocus(310)</visible>
+						</control>
+						<!-- Password hide no focus -->
+						<control type="image">
+							<width>78</width>
+							<height>78</height>
+							<texture border="3">dialogs/password_hide_nf.png</texture>
+							<visible>Control.IsVisible(310) + String.IsEqual(Control.GetLabel(310),$LOCALIZE[12308]) + !Control.HasFocus(310)</visible>
 						</control>
 						<!-- Symbols on -->
 						<control type="image">
@@ -492,6 +534,21 @@
 							<textureradioofffocus/>
 							<textureradiooffnofocus/>
 							<include>KeyboardButtons</include>
+							<visible>!Control.IsVisible(310)</visible>
+						</control>
+						<!-- Shift -->
+						<control id="302" type="radiobutton">
+							<width>258</width>
+							<onup>32</onup>
+							<ondown>309</ondown>
+							<label>20178</label>
+							<texturenofocus/>
+							<textureradioonfocus/>
+							<textureradioonnofocus/>
+							<textureradioofffocus/>
+							<textureradiooffnofocus/>
+							<include>KeyboardButtons</include>
+							<visible>Control.IsVisible(310)</visible>
 						</control>
 						<!-- Caps lock -->
 						<control id="303" type="radiobutton">
@@ -504,6 +561,16 @@
 							<textureradioonnofocus/>
 							<textureradioofffocus/>
 							<textureradiooffnofocus/>
+							<include>KeyboardButtons</include>
+						</control>
+						<!-- Password -->
+						<control id="310" type="button">
+							<width>78</width>
+							<onup>8</onup>
+							<ondown>301</ondown>
+							<font/>
+							<texturefocus/>
+							<texturenofocus/>
 							<include>KeyboardButtons</include>
 						</control>
 						<!-- Symbols -->

@@ -243,7 +243,7 @@
 					<animation delay="200" effect="fade" end="100" start="0" time="80">Visible</animation>
 					<control type="image">
 						<top>2</top>
-						<width>147</width>
+						<width>137</width>
 						<height>24</height>
 						<texture>$INFO[ListItem.UserRating,rating/rating,.png]</texture>
 						<aspectratio align="left">keep</aspectratio>
@@ -289,7 +289,7 @@
 						<wrapmultiline>true</wrapmultiline>
 						<height>116</height>
 						<onup>noop</onup>
-						<down>noop</down>
+						<ondown>noop</ondown>
 						<font>Med24</font>
 						<label>$LOCALIZE[184]</label>
 						<textoffsetx>28</textoffsetx>
@@ -305,7 +305,7 @@
 						<wrapmultiline>true</wrapmultiline>
 						<height>116</height>
 						<onup>noop</onup>
-						<down>noop</down>
+						<ondown>noop</ondown>
 						<onclick>SetProperty(SetUserRating,music,home)</onclick>
 						<onclick>SendClick(7)</onclick>
 						<font>Med24</font>
@@ -323,7 +323,7 @@
 						<wrapmultiline>true</wrapmultiline>
 						<height>116</height>
 						<onup>noop</onup>
-						<down>noop</down>
+						<ondown>noop</ondown>
 						<font>Med24</font>
 						<label>$LOCALIZE[31062]</label>
 						<textoffsetx>28</textoffsetx>
@@ -339,7 +339,7 @@
 						<wrapmultiline>true</wrapmultiline>
 						<height>116</height>
 						<onup>noop</onup>
-						<down>noop</down>
+						<ondown>noop</ondown>
 						<font>Med24</font>
 						<label>$LOCALIZE[31067]</label>
 						<textoffsetx>28</textoffsetx>

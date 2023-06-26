@@ -219,7 +219,7 @@
 						<top>17</top>
 						<width>146</width>
 						<height>106</height>
-						<texture fallback="views/square_fallback.png">$INFO[Listitem.Icon]</texture>
+						<texture fallback="views/square_fallback.png">$VAR[DialogSelectImage]</texture>
 						<aspectratio aligny="center">keep</aspectratio>
 					</control>
 					<control type="label">
@@ -253,7 +253,7 @@
 						<top>17</top>
 						<width>146</width>
 						<height>106</height>
-						<texture fallback="views/square_fallback.png">$INFO[Listitem.Icon]</texture>
+						<texture fallback="views/square_fallback.png">$VAR[DialogSelectImage]</texture>
 						<aspectratio aligny="center">keep</aspectratio>
 					</control>
 					<control type="label">
@@ -303,33 +303,13 @@
 			<control type="image">
 				<left>898</left>
 				<top>40</top>
-				<width>499</width>
-				<height>298</height>
-				<aspectratio>keep</aspectratio>
-				<texture fallback="views/square_fallback.png" colordiffuse="00ffffff">$INFO[Container(6).ListItem.Icon]</texture>
-				<bordertexture>common/default_empty.png</bordertexture>
-				<visible>Control.IsVisible(5)</visible>
-			</control>
-			<control type="image">
-				<left>898</left>
-				<top>40</top>
 				<width>512</width>
 				<height>315</height>
 				<aspectratio>keep</aspectratio>
 				<bordersize>0,0,13,17</bordersize>
-				<texture fallback="views/square_fallback.png">$INFO[Container(6).ListItem.Icon]</texture>
+				<texture fallback="views/square_fallback.png">$VAR[DialogSelectImageLarge]</texture>
 				<bordertexture border="14,18,14,18">dialogs/shadow.png</bordertexture>
 				<visible>Control.IsVisible(5)</visible>
-			</control>
-			<control type="image">
-				<left>898</left>
-				<top>40</top>
-				<width>499</width>
-				<height>400</height>
-				<aspectratio>keep</aspectratio>
-				<texture fallback="views/square_fallback.png" colordiffuse="00ffffff">$INFO[Container(6).ListItem.Icon]</texture>
-				<bordertexture>common/default_empty.png</bordertexture>
-				<visible>!Control.IsVisible(5)</visible>
 			</control>
 			<control type="image">
 				<left>898</left>
@@ -338,7 +318,7 @@
 				<height>417</height>
 				<aspectratio>keep</aspectratio>
 				<bordersize>0,0,13,17</bordersize>
-				<texture fallback="views/square_fallback.png">$INFO[Container(6).ListItem.Icon]</texture>
+				<texture fallback="views/square_fallback.png">$VAR[DialogSelectImageLarge]</texture>
 				<bordertexture border="14,18,14,18">dialogs/shadow.png</bordertexture>
 				<visible>!Control.IsVisible(5)</visible>
 			</control>
@@ -375,7 +355,7 @@
 			<onright>noop</onright>
 			<onup>noop</onup>
 			<ondown>20</ondown>
-			<include>HiddenHomeList</include>
+			<include>HiddenList</include>
 		</control>
 		<control id="5" type="button">
 			<include>HiddenControl</include>
@@ -550,8 +530,6 @@
 		</control>
 	</include>
 	<include name="Includes_DialogSelect_Game">
-		<!-- Background -->
-		<include>DialogBackgroundImage</include>
 		<!-- Controls -->
 		<control type="fixedlist" id="11">
 			<left>-374</left>

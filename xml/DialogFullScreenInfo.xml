@@ -2,24 +2,22 @@
 <window>
 	<!-- fullscreeninfo -->
 	<defaultcontrol always="true">99</defaultcontrol>
-	<onunload>ClearProperty(ShowXRay,home)</onunload>
 	<onunload>ClearProperty(ShowIcon,home)</onunload>
 	<onunload>ClearProperty(XRayRole,home)</onunload>
 	<onunload>ClearProperty(XRayInfo,home)</onunload>
 	<onload>Control.Move(1000,$INFO[Container(1000).CurrentItem,-])</onload>
 	<onload>Control.Move(1000,1)</onload>
-	<onunload condition="Player.Paused">Play</onunload>
 	<controls>
 		<!-- Hidden controls -->
 		<control type="button" id="99">
 			<include>HiddenControl</include>
-			<onup condition="System.HasAddon(script.embuary.helper) + !String.IsEmpty(Container(1000).ListItem.Label) + String.IsEmpty(Window(home).Property(ShowXRay))">SetProperty(ShowXRay,true,home)</onup>
-			<onup condition="System.HasAddon(script.embuary.helper) + !String.IsEmpty(Container(1000).ListItem.Label) + !Player.Paused">Pause</onup>
-			<onup condition="System.HasAddon(script.embuary.helper)">1000</onup>
+			<onup condition="!String.IsEmpty(Container(1000).ListItem.Label) + String.IsEmpty(Window(home).Property(ShowXRay))">SetProperty(ShowXRay,true,home)</onup>
+			<onup condition="!String.IsEmpty(Container(1000).ListItem.Label) + !Player.Paused">Pause</onup>
+			<onup>1000</onup>
 			<visible>System.HasAddon(plugin.video.themoviedb.helper) + Skin.HasSetting(EnableXRay)</visible>
 		</control>
 		<control type="group">
-			<visible>!Window.IsVisible(script-embuary-person.xml) + !Window.IsVisible(script-embuary-video.xml) + System.HasAddon(plugin.video.themoviedb.helper) + Skin.HasSetting(EnableXRay)</visible>
+			<visible>System.HasAddon(plugin.video.themoviedb.helper) + Skin.HasSetting(EnableXRay)</visible>
 			<animation delay="800" effect="fade" end="100" start="0" time="200">Visible</animation>
 			<animation effect="slide" end="0,-1080" start="0,0" time="0" condition="String.IsEmpty(Window(home).Property(ShowXRay))">Conditional</animation>
 			<control type="group">
@@ -79,7 +77,8 @@
 				<onclick>SetProperty(XRayInfo,true,home)</onclick>
 				<onclick>SetProperty(XRayIcon,$INFO[ListItem.Icon],home)</onclick>
 				<onclick>SetProperty(XRayRole,$INFO[ListItem.Label2],home)</onclick>
-				<onclick>RunScript(script.embuary.info,call=person,query='"$INFO[ListItem.Label]"')</onclick>
+				<onclick>Dialog.Close(fullscreeninfo,force)</onclick>
+				<onclick>RunScript(plugin.video.themoviedb.helper,add_path=$INFO[Container(1000).ListItem.FolderPath],call_auto=1113)</onclick>
 				<preloaditems>2</preloaditems>
 				<focusposition>1</focusposition>
 				<viewtype label="">list</viewtype>
@@ -370,6 +369,38 @@
 				<righttexture/>
 				<overlaytexture/>
 			</control>
+			<!--  Edits -->
+			<control type="ranges">
+				<left>92</left>
+				<bottom>105</bottom>
+				<width>1735</width>
+				<height>11</height>
+				<info>Player.Editlist</info>
+				<lefttexture border="2">osd/chapter.png</lefttexture>
+				<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
+				<midtexture border="4">osd/osd_scene.png</midtexture>
+				<righttexture border="2">osd/chapter.png</righttexture>
+			</control>
+			<!--  Cuts -->
+			<control type="ranges">
+				<left>92</left>
+				<bottom>105</bottom>
+				<width>1735</width>
+				<height>11</height>
+				<info>Player.Cuts</info>
+				<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
+				<righttexture border="2">osd/osd_cut.png</righttexture>
+			</control>
+			<!--  Scenes -->
+			<control type="ranges">
+				<left>92</left>
+				<bottom>93</bottom>
+				<width>1735</width>
+				<height>11</height>
+				<info>Player.SceneMarkers</info>
+				<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
+				<righttexture border="2">osd/chapter.png</righttexture>
+			</control>
 			<!--  Chapters -->
 			<control type="ranges">
 				<left>92</left>
@@ -464,8 +495,18 @@
 					<height>34</height>
 					<font>Bold36</font>
 					<textcolor>ffebebeb</textcolor>
-					<label>HDR</label>
-					<visible>String.Contains(Player.FileName,HDR)</visible>
+					<label>$VAR[PlayerHDRType]</label>
+					<visible>!String.IsEmpty(VideoPlayer.HdrType)</visible>
+				</control>
+				<!--  HDR label -->
+				<control type="label">
+					<left>6</left>
+					<width>auto</width>
+					<height>34</height>
+					<font>Light35</font>
+					<textcolor>ffebebeb</textcolor>
+					<label>Vision</label>
+					<visible>String.IsEqual(VideoPlayer.HdrType,dolbyvision)</visible>
 				</control>
 			</control>
 			<!--  X-Ray -->
@@ -477,7 +518,7 @@
 				<align>center</align>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
-				<visible>System.HasAddon(script.embuary.helper) + !String.IsEmpty(Container(1000).ListItem.Label)</visible>
+				<visible>!String.IsEmpty(Container(1000).ListItem.Label)</visible>
 				<control type="label">
 					<top>6</top>
 					<width>auto</width>

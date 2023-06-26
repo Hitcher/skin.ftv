@@ -1,10 +1,35 @@
 <includes>
-	<include name="NextAiredItems">
-		<item id="1$PARAM[ItemID]">
-			<onclick>SetFocus($PARAM[ItemID])</onclick>
-			<label>$INFO[Window(home).Property(NextAired.$PARAM[ItemID].Weekday)]</label>
-			<property name="OnDown">SetFocus($PARAM[ItemID])</property>
-			<visible>!String.IsEqual(Window(Home).Property(NextAired.$PARAM[ItemID].Weekday),) + !String.IsEmpty(Container($PARAM[ItemID]).ListItem.Label)</visible>
+	<include name="WeatherHourlyItem">
+		<item>
+			<label>$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Time)]</label>
+			<label2>$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Temperature)] ∙ $INFO[Window(weather).Property(Hourly.$PARAM[item_index].Precipitation)]</label2>
+			<icon>resource://resource.images.weathericons.default/$INFO[Window(weather).Property(Hourly.$PARAM[item_index].OutlookIcon)]</icon>
+			<onclick>noop</onclick>
+			<visible>String.IsEqual(Window(home).Property(Hourly),true)</visible>
+		</item>
+	</include>
+	<include name="WeatherDailyItem">
+		<item>
+			<label>$INFO[Window(weather).Property(Daily.$PARAM[item_index].ShortDay)]</label>
+			<label2>$INFO[Window(weather).Property(Daily.$PARAM[item_index].LowTemperature] ∙ $INFO[Window(weather).Property(Daily.$PARAM[item_index].HighTemperature]</label2>
+			<icon>$INFO[Window(weather).Property(Daily.$PARAM[item_index].FanartCode),weather/icons/,.png]</icon>
+			<property name="LongDay">$INFO[Window(weather).Property(Daily.$PARAM[item_index].LongDay)]</property>
+			<property name="Outlook">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Outlook)]</property>
+			<property name="Fanart">$INFO[Window(Weather).Property(Daily.$PARAM[item_index].FanartCode),resource://resource.images.weatherfanart.single/,.jpg]</property>
+			<onclick>noop</onclick>
+			<visible>!String.IsEmpty(Window(weather).Property(Daily.IsFetched)) + !String.IsEmpty(Window(weather).Property(Daily.$PARAM[item_index].Outlook)) + !String.IsEqual(Window(home).Property(Hourly),true)</visible>
+		</item>
+	</include>
+	<include name="WeatherDayItem">
+		<item>
+			<label>$VAR[Day$PARAM[item_index]]</label>
+			<label2>$INFO[Window(weather).Property(Day$PARAM[item_index].LowTemp)]$INFO[System.TemperatureUnits] ∙ $INFO[Window(weather).Property(Day$PARAM[item_index].HighTemp)]$INFO[System.TemperatureUnits]</label2>
+			<property name="LongDay">$INFO[Window(weather).Property(Day$PARAM[item_index].Title)]</property>
+			<property name="Outlook">$INFO[Window(weather).Property(Day$PARAM[item_index].Outlook)]</property>
+			<property name="Fanart">$INFO[Window(Weather).Property(Day$PARAM[item_index].FanartCode),resource://resource.images.weatherfanart.single/,.jpg]</property>
+			<icon>$INFO[Window(weather).Property(Day$PARAM[item_index].OutlookIcon)]</icon>
+			<onclick>noop</onclick>
+			<visible>String.IsEmpty(Window(weather).Property(Daily.IsFetched)) + !String.IsEmpty(Window(weather).Property(Day$PARAM[item_index].Outlook)) + !String.IsEqual(Window(home).Property(Hourly),true)</visible>
 		</item>
 	</include>
 	<include name="NextAiredLists">
@@ -108,38 +133,37 @@
 			</focusedlayout>
 		</control>
 	</include>
-	<!-- Home Widget Param Include -->
 	<include name="ParamWidgetInclude">
 		<control id="$PARAM[ID]1" type="list">
-			<include>HiddenHomeList</include>
+			<include>HiddenList</include>
 			<content sortby="$VAR[$PARAM[ID]0-SortBy-1]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-1)]</content>
 		</control>
 		<control id="$PARAM[ID]2" type="list">
-			<include>HiddenHomeList</include>
+			<include>HiddenList</include>
 			<content sortby="$VAR[$PARAM[ID]0-SortBy-2]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-2)]</content>
 		</control>
 		<control id="$PARAM[ID]3" type="list">
-			<include>HiddenHomeList</include>
+			<include>HiddenList</include>
 			<content sortby="$VAR[$PARAM[ID]0-SortBy-3]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-3)]</content>
 		</control>
 		<control id="$PARAM[ID]4" type="list">
-			<include>HiddenHomeList</include>
+			<include>HiddenList</include>
 			<content sortby="$VAR[$PARAM[ID]0-SortBy-4]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-4)]</content>
 		</control>
 		<control id="$PARAM[ID]5" type="list">
-			<include>HiddenHomeList</include>
+			<include>HiddenList</include>
 			<content sortby="$VAR[$PARAM[ID]0-SortBy-5]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-5)]</content>
 		</control>
 		<control id="$PARAM[ID]6" type="list">
-			<include>HiddenHomeList</include>
+			<include>HiddenList</include>
 			<content sortby="$VAR[$PARAM[ID]0-SortBy-6]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-6)]</content>
 		</control>
 		<control id="$PARAM[ID]7" type="list">
-			<include>HiddenHomeList</include>
+			<include>HiddenList</include>
 			<content sortby="$VAR[$PARAM[ID]0-SortBy-7]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-7)]</content>
 		</control>
 		<control id="$PARAM[ID]8" type="list">
-			<include>HiddenHomeList</include>
+			<include>HiddenList</include>
 			<content sortby="$VAR[$PARAM[ID]0-SortBy-8]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-8)]</content>
 		</control>
 		<control id="$PARAM[ID]" type="fixedlist">

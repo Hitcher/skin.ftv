@@ -2,5 +2,5 @@
 <smartplaylist type="albums">
     <name>Albums</name>
     <match>all</match>
-    <order direction="ascending">artists</order>
+    <order direction="ascending">artist</order>
 </smartplaylist>

@@ -2,7 +2,7 @@
 <window>
 	<!-- seekbar -->
 	<defaultcontrol always="true">901</defaultcontrol>
-	<visible>[Window.IsVisible(visualisation) | VideoPlayer.IsFullscreen] + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]</visible>
+	<visible>[Window.IsVisible(visualisation) | VideoPlayer.IsFullscreen] + [Player.Seeking | Player.HasPerformedSeek(3) | Player.Paused | Player.Forwarding | Player.Rewinding]</visible>
 	<visible>!Player.HasGame</visible>
 	<visible>!Player.FrameAdvance</visible>
 	<controls>
@@ -159,6 +159,38 @@
 					<righttexture/>
 					<overlaytexture/>
 				</control>
+				<!--  Edits -->
+				<control type="ranges">
+					<left>92</left>
+					<bottom>105</bottom>
+					<width>1735</width>
+					<height>11</height>
+					<info>Player.Editlist</info>
+					<lefttexture border="2">osd/chapter.png</lefttexture>
+					<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
+					<midtexture border="4">osd/osd_scene.png</midtexture>
+					<righttexture border="2">osd/chapter.png</righttexture>
+				</control>
+				<!--  Cuts -->
+				<control type="ranges">
+					<left>92</left>
+					<bottom>105</bottom>
+					<width>1735</width>
+					<height>11</height>
+					<info>Player.Cuts</info>
+					<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
+					<righttexture border="2">osd/osd_cut.png</righttexture>
+				</control>
+				<!--  Scenes -->
+				<control type="ranges">
+					<left>92</left>
+					<bottom>93</bottom>
+					<width>1735</width>
+					<height>11</height>
+					<info>Player.SceneMarkers</info>
+					<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
+					<righttexture border="2">osd/chapter.png</righttexture>
+				</control>
 				<!--  Chapters -->
 				<control type="ranges">
 					<left>92</left>
@@ -253,8 +285,18 @@
 						<height>34</height>
 						<font>Bold36</font>
 						<textcolor>ffebebeb</textcolor>
-						<label>HDR</label>
-						<visible>String.Contains(Player.FileName,HDR)</visible>
+						<label>$VAR[PlayerHDRType]</label>
+						<visible>!String.IsEmpty(VideoPlayer.HdrType)</visible>
+					</control>
+					<!--  HDR label -->
+					<control type="label">
+						<left>6</left>
+						<width>auto</width>
+						<height>34</height>
+						<font>Light35</font>
+						<textcolor>ffebebeb</textcolor>
+						<label>Vision</label>
+						<visible>String.IsEqual(VideoPlayer.HdrType,dolbyvision)</visible>
 					</control>
 				</control>
 				<!--  Current time -->
@@ -270,7 +312,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>!Player.Paused + [Player.Seeking | Player.DisplayAfterSeek]</visible>
+				<visible>!Player.Paused + [Player.Seeking | Player.HasPerformedSeek(3)]</visible>
 				<control type="image">
 					<bottom>0</bottom>
 					<width>1980</width>
@@ -305,6 +347,38 @@
 					<righttexture/>
 					<overlaytexture/>
 				</control>
+				<!--  Edits -->
+				<control type="ranges">
+					<left>92</left>
+					<bottom>105</bottom>
+					<width>1735</width>
+					<height>11</height>
+					<info>Player.Editlist</info>
+					<lefttexture border="2">osd/chapter.png</lefttexture>
+					<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
+					<midtexture border="4">osd/osd_scene.png</midtexture>
+					<righttexture border="2">osd/chapter.png</righttexture>
+				</control>
+				<!--  Cuts -->
+				<control type="ranges">
+					<left>92</left>
+					<bottom>105</bottom>
+					<width>1735</width>
+					<height>11</height>
+					<info>Player.Cuts</info>
+					<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
+					<righttexture border="2">osd/osd_cut.png</righttexture>
+				</control>
+				<!--  Scenes -->
+				<control type="ranges">
+					<left>92</left>
+					<bottom>93</bottom>
+					<width>1735</width>
+					<height>11</height>
+					<info>Player.SceneMarkers</info>
+					<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
+					<righttexture border="2">osd/chapter.png</righttexture>
+				</control>
 				<!--  Chapters -->
 				<control type="ranges">
 					<left>92</left>
@@ -399,8 +473,18 @@
 						<height>34</height>
 						<font>Bold36</font>
 						<textcolor>ffebebeb</textcolor>
-						<label>HDR</label>
-						<visible>String.Contains(Player.FileName,HDR)</visible>
+						<label>$VAR[PlayerHDRType]</label>
+						<visible>!String.IsEmpty(VideoPlayer.HdrType)</visible>
+					</control>
+					<!--  HDR label -->
+					<control type="label">
+						<left>6</left>
+						<width>auto</width>
+						<height>34</height>
+						<font>Light35</font>
+						<textcolor>ffebebeb</textcolor>
+						<label>Vision</label>
+						<visible>String.IsEqual(VideoPlayer.HdrType,dolbyvision)</visible>
 					</control>
 				</control>
 				<!--  Current time -->
@@ -417,7 +501,7 @@
 			</control>
 			<control type="group">
 				<include>VisibleFadeAnimation</include>
-				<visible>!Player.Paused + !Player.Forwarding + !Player.Rewinding + [Player.Seeking | Player.DisplayAfterSeek]</visible>
+				<visible>!Player.Forwarding + !Player.Rewinding + [Player.Seeking | Player.HasPerformedSeek(3)]</visible>
 				<control type="image">
 					<left>97</left>
 					<bottom>123</bottom>
@@ -464,7 +548,7 @@
 					<texturesliderbar border="4" colordiffuse="00ffffff">osd/progress_back.png</texturesliderbar>
 					<textureslidernib>osd/osd_seek_bar.png</textureslidernib>
 					<textureslidernibfocus>osd/osd_seek_bar.png</textureslidernibfocus>
-					<visible>!Player.Paused + !Player.Forwarding + !Player.Rewinding + Player.Seeking</visible>
+					<visible>!Player.Forwarding + !Player.Rewinding + Player.Seeking</visible>
 				</control>
 			</control>
 		</control>

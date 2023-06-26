@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="window" id="1113">
+	<defaultcontrol always="true">9999</defaultcontrol>
+	<onunload condition="Player.Paused + !String.IsEmpty(Window(home).Property(ShowXRay))">Play</onunload>
+	<onunload>ClearProperty(ShowXRay,home)</onunload>
+	<controls>
+		<!-- Background -->
+		<control type="image">
+			<include>FullscreenDimensions</include>
+			<texture>special://skin/extras/backgrounds/default.png</texture>
+			<visible>String.IsEmpty(Window(home).Property(ShowXRay))</visible>
+		</control>
+	</controls>
+</window>

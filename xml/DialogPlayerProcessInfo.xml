@@ -63,8 +63,8 @@
 				<textoffsetx>5</textoffsetx>
 				<textcolor>88ffffff</textcolor>
 				<shadowcolor>ff000000</shadowcolor>
-				<label>$LOCALIZE[169]: $INFO[Player.Process(videowidth),,x]$INFO[Player.Process(videoheight),,px]$INFO[Player.Process(videodar), ,AR]$INFO[Player.Process(videofps), ,FPS]</label>
-				<visible>!String.IsEmpty(Player.Process(videowidth)) | !String.IsEmpty(Player.Process(videoheight)) | !String.IsEmpty(Player.Process(videodar))</visible>
+				<label>$LOCALIZE[169]: $INFO[Player.Process(videowidth),,x]$INFO[Player.Process(videoheight)]$INFO[Player.Process(videoscantype)]$INFO[Player.Process(videodar), ,AR]$INFO[Player.Process(videofps), ,FPS]</label>
+				<visible>!String.IsEmpty(Player.Process(videowidth)) | !String.IsEmpty(Player.Process(videoheight)) | !String.IsEmpty(Player.Process(videoscantype)) | !String.IsEmpty(Player.Process(videodar))</visible>
 			</control>
 			<control type="label">
 				<height>58</height>

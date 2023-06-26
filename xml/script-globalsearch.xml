@@ -182,11 +182,11 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>Med16</font>
-						<label>  HDR  </label>
+						<label>  $VAR[HDRType]  </label>
 						<textcolor>ffcccccc</textcolor>
 						<texturefocus colordiffuse="FF888888" border="3">rating/flag.png</texturefocus>
 						<texturenofocus colordiffuse="FF888888" border="3">rating/flag.png</texturenofocus>
-						<visible>String.Contains(ListItem.FileName,HDR)</visible>
+						<visible>!String.IsEmpty(ListItem.HdrType)</visible>
 					</control>
 					<control type="button">
 						<top>3</top>
@@ -216,7 +216,7 @@
 					</control>
 					<control type="image">
 						<top>2</top>
-						<width>147</width>
+						<width>137</width>
 						<height>24</height>
 						<texture>$INFO[ListItem.UserRating,rating/rating,.png]</texture>
 						<aspectratio align="left">keep</aspectratio>
@@ -381,11 +381,11 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>Med16</font>
-						<label>  HDR  </label>
+						<label>  $VAR[HDRType]  </label>
 						<textcolor>ffcccccc</textcolor>
 						<texturefocus colordiffuse="FF888888" border="3">rating/flag.png</texturefocus>
 						<texturenofocus colordiffuse="FF888888" border="3">rating/flag.png</texturenofocus>
-						<visible>String.Contains(ListItem.FileName,HDR)</visible>
+						<visible>!String.IsEmpty(ListItem.HdrType)</visible>
 					</control>
 					<control type="button">
 						<top>3</top>

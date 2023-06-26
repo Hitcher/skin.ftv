@@ -143,7 +143,7 @@
 				<visible>Container.Content(episodes) + !String.Contains(Container.FolderPath,recentlyaddedepisodes)</visible>
 				<control type="image">
 					<top>2</top>
-					<width>147</width>
+					<width>137</width>
 					<height>24</height>
 					<texture>$INFO[ListItem.UserRating,rating/rating,.png]</texture>
 					<aspectratio align="left">keep</aspectratio>
@@ -341,7 +341,7 @@
 						<focusedcolor>ff222222</focusedcolor>
 						<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
 						<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
-						<visible>!ListItem.IsParentFolder + !String.Contains(Container.FolderName,$LOCALIZE[20434]) + !String.StartsWith(ListItem.Path,videodb://movies/sets)</visible>
+						<visible>!ListItem.IsParentFolder</visible>
 					</control>
 					<control id="1003" type="button">
 						<width min="124" max="204">auto</width>
@@ -479,11 +479,11 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>Med16</font>
-						<label>  HDR  </label>
+						<label>  $VAR[HDRType]  </label>
 						<textcolor>ffcccccc</textcolor>
 						<texturefocus colordiffuse="FF888888" border="3">rating/flag.png</texturefocus>
 						<texturenofocus colordiffuse="FF888888" border="3">rating/flag.png</texturenofocus>
-						<visible>String.Contains(ListItem.FileName,HDR)</visible>
+						<visible>!String.IsEmpty(ListItem.HdrType)</visible>
 					</control>
 					<control type="button">
 						<top>3</top>
@@ -513,7 +513,7 @@
 					</control>
 					<control type="image">
 						<top>2</top>
-						<width>147</width>
+						<width>137</width>
 						<height>24</height>
 						<texture>$INFO[ListItem.UserRating,rating/rating,.png]</texture>
 						<aspectratio align="left">keep</aspectratio>
@@ -876,11 +876,11 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>Med16</font>
-						<label>  HDR  </label>
+						<label>  $VAR[HDRType]  </label>
 						<textcolor>ffcccccc</textcolor>
 						<texturefocus colordiffuse="FF888888" border="3">rating/flag.png</texturefocus>
 						<texturenofocus colordiffuse="FF888888" border="3">rating/flag.png</texturenofocus>
-						<visible>String.Contains(ListItem.FileName,HDR)</visible>
+						<visible>!String.IsEmpty(ListItem.HdrType)</visible>
 					</control>
 					<control type="button">
 						<top>3</top>

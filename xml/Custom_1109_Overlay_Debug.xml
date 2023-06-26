@@ -157,6 +157,26 @@
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
+				<label>Custom_1113_Extended_Info.xml</label>
+				<visible>Window.IsVisible(Custom_1113_Extended_Info.xml)</visible>
+			</control>
+			<control type="label">
+				<width>780</width>
+				<height>21</height>
+				<textcolor>FF0000FF</textcolor>
+				<shadowcolor>FF000000</shadowcolor>
+				<font>font13</font>
+				<align>left</align>
+				<label>Custom_1114_Extended_Info_Slideshow.xml</label>
+				<visible>Window.IsVisible(Custom_1114_Extended_Info_Slideshow.xml)</visible>
+			</control>
+			<control type="label">
+				<width>780</width>
+				<height>21</height>
+				<textcolor>FF0000FF</textcolor>
+				<shadowcolor>FF000000</shadowcolor>
+				<font>font13</font>
+				<align>left</align>
 				<label>EventLog.xml</label>
 				<visible>Window.IsVisible(EventLog.xml)</visible>
 			</control>
@@ -378,6 +398,16 @@
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
+				<label>DialogColorPicker.xml</label>
+				<visible>Window.IsVisible(DialogColorPicker.xml)</visible>
+			</control>
+			<control type="label">
+				<width>780</width>
+				<height>21</height>
+				<textcolor>FFFF0000</textcolor>
+				<shadowcolor>FF000000</shadowcolor>
+				<font>font13</font>
+				<align>left</align>
 				<label>DialogConfirm.xml</label>
 				<visible>Window.IsVisible(DialogConfirm.xml)</visible>
 			</control>
@@ -428,6 +458,16 @@
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
+				<label>DialogGameControllers.xml</label>
+				<visible>Window.IsVisible(DialogGameControllers.xml)</visible>
+			</control>
+			<control type="label">
+				<width>780</width>
+				<height>21</height>
+				<textcolor>FFFF0000</textcolor>
+				<shadowcolor>FF000000</shadowcolor>
+				<font>font13</font>
+				<align>left</align>
 				<label>DialogKeyboard.xml</label>
 				<visible>Window.IsVisible(DialogKeyboard.xml)</visible>
 			</control>
@@ -470,16 +510,6 @@
 				<align>left</align>
 				<label>DialogNumeric.xml</label>
 				<visible>Window.IsVisible(DialogNumeric.xml)</visible>
-			</control>
-			<control type="label">
-				<width>780</width>
-				<height>21</height>
-				<textcolor>FFFF0000</textcolor>
-				<shadowcolor>FF000000</shadowcolor>
-				<font>font13</font>
-				<align>left</align>
-				<label>DialogPeripheralManager.xml</label>
-				<visible>Window.IsVisible(DialogPeripheralManager.xml)</visible>
 			</control>
 			<control type="label">
 				<width>780</width>
@@ -608,28 +638,8 @@
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
-				<label>MusicKaraokeLyrics.xml</label>
-				<visible>Window.IsVisible(MusicKaraokeLyrics.xml)</visible>
-			</control>
-			<control type="label">
-				<width>780</width>
-				<height>21</height>
-				<textcolor>FFFF0000</textcolor>
-				<shadowcolor>FF000000</shadowcolor>
-				<font>font13</font>
-				<align>left</align>
 				<label>MusicOSD.xml</label>
 				<visible>Window.IsVisible(MusicOSD.xml)</visible>
-			</control>
-			<control type="label">
-				<width>780</width>
-				<height>21</height>
-				<textcolor>FFFF0000</textcolor>
-				<shadowcolor>FF000000</shadowcolor>
-				<font>font13</font>
-				<align>left</align>
-				<label>MusicOverlay.xml</label>
-				<visible>Window.IsVisible(MusicOverlay.xml)</visible>
 			</control>
 			<control type="label">
 				<width>780</width>
@@ -740,26 +750,6 @@
 				<align>left</align>
 				<label>VisualisationPresetList.xml</label>
 				<visible>Window.IsVisible(VisualisationPresetList.xml)</visible>
-			</control>
-			<control type="label">
-				<width>780</width>
-				<height>21</height>
-				<textcolor>FFFF0000</textcolor>
-				<shadowcolor>FF000000</shadowcolor>
-				<font>font13</font>
-				<align>left</align>
-				<label>script-embuary-person.xml</label>
-				<visible>Window.IsVisible(script-embuary-person.xml)</visible>
-			</control>
-			<control type="label">
-				<width>780</width>
-				<height>21</height>
-				<textcolor>FFFF0000</textcolor>
-				<shadowcolor>FF000000</shadowcolor>
-				<font>font13</font>
-				<align>left</align>
-				<label>script-embuary-video.xml</label>
-				<visible>Window.IsVisible(script-embuary-video.xml)</visible>
 			</control>
 			<control type="label">
 				<width>780</width>

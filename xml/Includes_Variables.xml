@@ -1,22 +1,154 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<variable name="SimilarVideos">
-		<value condition="[String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(ListItem.DBTYPE,episode)] + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.IMDbNumber) + String.StartsWith(ListItem.IMDbNumber,tt)">plugin://plugin.video.themoviedb.helper?info=similar&amp;type=tv&amp;imdb_id=$INFO[ListItem.IMDBNumber]</value>
-		<value condition="String.IsEqual(ListItem.DBTYPE,tvshow) + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.Title) + !String.IsEmpty(ListItem.Year)">plugin://plugin.video.themoviedb.helper?info=similar&amp;type=tv&amp;query=$INFO[ListItem.Title]&amp;year=$INFO[ListItem.Year]</value>
-		<value condition="String.IsEqual(ListItem.DBTYPE,tvshow) + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.Title)">plugin://plugin.video.themoviedb.helper?info=similar&amp;type=tv&amp;query=$INFO[ListItem.Title]</value>
-		<value condition="String.IsEqual(ListItem.DBTYPE,episode) + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.TVShowTitle)">plugin://plugin.video.themoviedb.helper?info=similar&amp;type=tv&amp;query=$INFO[ListItem.TVShowTitle]</value>
-		<value condition="String.IsEqual(ListItem.DBTYPE,movie) + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.IMDBNumber)">plugin://plugin.video.themoviedb.helper?info=similar&amp;type=movie&amp;imdb_id=$INFO[ListItem.IMDBNumber]</value>
-		<value condition="String.IsEqual(ListItem.DBTYPE,movie) + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.Title) + !String.IsEmpty(ListItem.Year)">plugin://plugin.video.themoviedb.helper?info=similar&amp;type=movie&amp;query=$INFO[ListItem.Title]&amp;year=$INFO[ListItem.Year]</value>
-		<value condition="String.IsEqual(ListItem.DBTYPE,movie) + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.Title)">plugin://plugin.video.themoviedb.helper?info=similar&amp;type=movie&amp;query=$INFO[ListItem.Title]</value>
+	<variable name="DialogPersonInfoListContent">
+		<value condition="String.IsEqual(ListItem.Property(item.type),person) + String.IsEmpty(Window(home).Property(StarredInTV)) + String.IsEmpty(Window(home).Property(ActorImages))">plugin://plugin.video.themoviedb.helper?info=stars_in_movies&amp;type=person&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;nextpage=false&amp;limit=100</value>
+		<value condition="!String.IsEmpty(Window(home).Property(StarredInTV))">plugin://plugin.video.themoviedb.helper?info=stars_in_tvshows&amp;type=person&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;nextpage=false&amp;limit=100</value>
+		<value condition="!String.IsEmpty(Window(home).Property(ActorImages))">plugin://plugin.video.themoviedb.helper?info=images&amp;type=person&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;nextpage=false</value>
+	</variable>
+	<variable name="DialogMovieInfoListContent">
+		<value condition="String.IsEqual(ListItem.Property(item.type),movie)">plugin://plugin.video.themoviedb.helper?info=cast&amp;type=movie&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;nextpage=false</value>
+		<value condition="String.IsEqual(ListItem.Property(item.type),tv)">plugin://plugin.video.themoviedb.helper?info=cast&amp;type=tv&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;nextpage=false</value>
 	</variable>
 	<variable name="XRayCast">
-		<value condition="!Window.IsVisible(1106) + System.HasAddon(plugin.video.themoviedb.helper) + VideoPlayer.Content(movies)">plugin://plugin.video.themoviedb.helper?info=cast&amp;type=movie&amp;query=$INFO[VideoPlayer.Title]</value>
-		<value condition="!Window.IsVisible(1106) + System.HasAddon(plugin.video.themoviedb.helper) + VideoPlayer.Content(episodes)">plugin://plugin.video.themoviedb.helper?info=cast&amp;type=tv&amp;query=$INFO[VideoPlayer.TVShowTitle]</value>
+		<value condition="VideoPlayer.Content(movies) + !String.IsEmpty(Window(Home).Property(TMDbHelper.Player.TMDb_id)) + String.IsEqual(Window(Home).Property(TMDbHelper.Player.Title),VideoPlayer.Title)">plugin://plugin.video.themoviedb.helper/?info=cast&amp;type=movie$INFO[Window(Home).Property(TMDbHelper.Player.TMDb_id),&amp;tmdb_id=,]</value>
+		<value condition="VideoPlayer.Content(movies) + !String.IsEmpty(VideoPlayer.IMDBNumber) + String.StartsWith(VideoPlayer.IMDBNumber,tt)">plugin://plugin.video.themoviedb.helper/?info=cast&amp;type=movie$INFO[VideoPlayer.IMDBNumber,&amp;imdb_id=,]</value>
+		<value condition="VideoPlayer.Content(movies)">plugin://plugin.video.themoviedb.helper/?info=cast&amp;type=movie$INFO[Player.Title,&amp;query=,]$INFO[VideoPlayer.Year,&amp;year=,]</value>
+		<value condition="VideoPlayer.Content(episodes) + !String.IsEmpty(Window(Home).Property(TMDbHelper.Player.tvshow.TMDb_id)) + String.IsEqual(Window(Home).Property(TMDbHelper.Player.Title),VideoPlayer.Title)">plugin://plugin.video.themoviedb.helper/?info=cast&amp;type=tv$INFO[Window(Home).Property(TMDbHelper.Player.tvshow.TMDb_id),&amp;tmdb_id=,]$INFO[VideoPlayer.Season,&amp;season=,]$INFO[VideoPlayer.Episode,&amp;episode=,]</value>
+		<value condition="VideoPlayer.Content(episodes)">plugin://plugin.video.themoviedb.helper/?info=cast&amp;type=tv$INFO[VideoPlayer.TVShowTitle,&amp;query=,]$INFO[VideoPlayer.Season,&amp;season=,]$INFO[VideoPlayer.Episode,&amp;episode=,]$INFO[VideoPlayer.Year,&amp;episode_year=,]</value>
 	</variable>
-	<variable name="VideoInfoCast">
-		<value condition="Container.Content(movies) + System.HasAddon(plugin.video.themoviedb.helper)">plugin://plugin.video.themoviedb.helper?info=cast&amp;type=movie&amp;query=$INFO[ListItem.Title]</value>
-		<value condition="Container.Content(tvshows) + System.HasAddon(plugin.video.themoviedb.helper)">plugin://plugin.video.themoviedb.helper?info=cast&amp;type=tv&amp;query=$INFO[ListItem.Title]</value>
-		<value condition="Container.Content(episodes) + System.HasAddon(plugin.video.themoviedb.helper)">plugin://plugin.video.themoviedb.helper?info=cast&amp;type=tv&amp;query=$INFO[ListItem.TVShowTitle]'</value>
+	<variable name="DialogSelectImage">
+		<value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
+		<value>$INFO[ListItem.Icon]</value>
+	</variable>
+	<variable name="DialogSelectImageLarge">
+		<value condition="!String.IsEmpty(Container(6).ListItem.Art(poster))">$INFO[Container(6).ListItem.Art(poster)]</value>
+		<value>$INFO[Container(6).ListItem.Icon]</value>
+	</variable>
+	<variable name="CalibrationLabel">
+		<value condition="Control.HasFocus(8) | Control.HasFocus(9)">$LOCALIZE[276]</value>
+		<value condition="Control.HasFocus(10)">$LOCALIZE[278]</value>
+		<value condition="Control.HasFocus(11)">$LOCALIZE[273]</value>
+		<value condition="Control.HasFocus(12)">$LOCALIZE[20325]</value>
+	</variable>
+	<variable name="TVShowPercentRemaining">
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),01)">99 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),02)">98 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),03)">97 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),04)">96 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),05)">95 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),06)">94 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),07)">93 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),08)">92 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),09)">91 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),10)">90 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),11)">89 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),12)">88 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),13)">87 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),14)">86 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),15)">85 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),16)">84 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),17)">83 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),18)">82 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),19)">81 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),20)">80 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),21)">79 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),22)">78 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),23)">77 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),24)">76 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),25)">75 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),26)">74 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),27)">73 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),28)">72 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),29)">71 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),30)">70 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),31)">69 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),32)">68 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),33)">67 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),34)">66 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),35)">65 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),36)">64 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),37)">63 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),38)">62 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),39)">61 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),40)">60 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),41)">59 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),42)">58 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),43)">57 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),44)">56 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),45)">55 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),46)">54 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),47)">53 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),48)">52 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),49)">51 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),50)">50 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),51)">49 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),52)">48 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),53)">47 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),54)">46 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),55)">45 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),56)">44 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),57)">43 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),58)">42 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),59)">41 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),60)">40 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),61)">29 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),62)">38 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),63)">37 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),64)">36 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),65)">35 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),66)">34 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),67)">33 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),68)">32 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),69)">31 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),70)">30 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),71)">29 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),72)">28 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),73)">27 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),74)">26 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),75)">25 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),76)">24 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),77)">23 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),78)">22 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),79)">21 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),80)">20 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),81)">19 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),82)">18 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),83)">17 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),84)">16 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),85)">15 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),86)">14 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),87)">13 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),88)">12 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),89)">11 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),90)">10 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),91)">9 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),92)">8 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),93)">7 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),94)">6 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),95)">5 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),96)">4 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),97)">3 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),98)">2 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),99)">1 $LOCALIZE[31145]</value>
+	</variable>
+	<variable name="HDRType">
+		<value condition="String.IsEqual(ListItem.HdrType,hlg)">HLG</value>
+		<value condition="String.IsEqual(ListItem.HdrType,hdr10)">HDR10</value>
+		<value condition="String.IsEqual(ListItem.HdrType,dolbyvision)">Dolby Vision</value>
+	</variable>
+	<variable name="PlayerHDRType">
+		<value condition="String.IsEqual(VideoPlayer.HdrType,hlg)">HLG</value>
+		<value condition="String.IsEqual(VideoPlayer.HdrType,hdr10)">HDR10</value>
+		<value condition="String.IsEqual(VideoPlayer.HdrType,dolbyvision)">Dolby</value>
+	</variable>
+	<variable name="SimilarVideos">
+		<value condition="[String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(ListItem.DBTYPE,episode)] + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.IMDbNumber) + String.StartsWith(ListItem.IMDbNumber,tt)">plugin://plugin.video.themoviedb.helper?info=similar&amp;type=tv&amp;imdb_id=$INFO[ListItem.IMDBNumber]&amp;nextpage=false</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,tvshow) + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.Title) + !String.IsEmpty(ListItem.Year)">plugin://plugin.video.themoviedb.helper?info=similar&amp;type=tv&amp;query=$INFO[ListItem.Title]&amp;year=$INFO[ListItem.Year]&amp;nextpage=false</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,tvshow) + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.Title)">plugin://plugin.video.themoviedb.helper?info=similar&amp;type=tv&amp;query=$INFO[ListItem.Title]&amp;nextpage=false</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,episode) + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.TVShowTitle)">plugin://plugin.video.themoviedb.helper?info=similar&amp;type=tv&amp;query=$INFO[ListItem.TVShowTitle]&amp;nextpage=false</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,movie) + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.IMDBNumber) + String.StartsWith(VideoPlayer.IMDBNumber,tt)">plugin://plugin.video.themoviedb.helper?info=similar&amp;type=movie&amp;imdb_id=$INFO[ListItem.IMDBNumber]&amp;nextpage=false</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,movie) + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.Title) + !String.IsEmpty(ListItem.Year)">plugin://plugin.video.themoviedb.helper?info=similar&amp;type=movie&amp;query=$INFO[ListItem.Title]&amp;year=$INFO[ListItem.Year]&amp;nextpage=false</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,movie) + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.Title)">plugin://plugin.video.themoviedb.helper?info=similar&amp;type=movie&amp;query=$INFO[ListItem.Title]&amp;nextpage=false</value>
 	</variable>
 	<variable name="ExtendedRatingTextColour">
 		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,12)">FFFF3C3C</value>
@@ -191,7 +323,7 @@
 	</variable>
 	<variable name="GameSelectHeader">
 		<value condition="Window.IsActive(gamevideofilter)">$LOCALIZE[230]</value>
-		<value condition="Window.IsActive(gameviewmode)">$LOCALIZE[35233]</value>
+		<value condition="Window.IsActive(gamestretchmode)">$LOCALIZE[35233]</value>
 		<value condition="Window.IsActive(gamevideorotation)">$LOCALIZE[35227]</value>
 	</variable>
 	<variable name="PlaySpeed">
@@ -330,16 +462,22 @@
 		<value condition="String.EndsWith(ListItem.Label2,0&#x25;)">views/percentage/000.png</value>
 	</variable>
 	<variable name="ExtendedInfoLabelKnowFor">
-		<value condition="!String.IsEmpty(Window(home).Property(XRayInfo))">[B]$LOCALIZE[31108]:[/B]  [LIGHT]$INFO[Container(10052).ListItemAbsolute(0).Label]$INFO[Container(10052).ListItemAbsolute(0).Year, (,)]$INFO[Container(10052).ListItemAbsolute(1).Label,$COMMA ]$INFO[Container(10052).ListItemAbsolute(1).Year, (,)]$INFO[Container(10052).ListItemAbsolute(2).Label,$COMMA ]$INFO[Container(10052).ListItemAbsolute(2).Year, (,)][/LIGHT]</value>
-		<value>[COLOR $VAR[ExtendedInfoLabelColor]][B]$LOCALIZE[31108]:[/B][/COLOR]  [LIGHT]$INFO[Container(10052).ListItemAbsolute(0).Label]$INFO[Container(10052).ListItemAbsolute(1).Label,$COMMA ]$INFO[Container(10052).ListItemAbsolute(2).Label,$COMMA ][/LIGHT]</value>
+		<value condition="!String.IsEmpty(Window(home).Property(XRayInfo))">[B]$LOCALIZE[31108]:[/B]  [LIGHT]$INFO[ListItem.Property(Movie.Cast.1.Title)]$INFO[ListItem.Property(Movie.Cast.2.Title),$COMMA ]$INFO[ListItem.Property(Movie.Cast.3.Title),$COMMA ][/LIGHT]</value>
+		<value>[COLOR $VAR[ExtendedInfoLabelColor]][B]$LOCALIZE[31108]:[/B][/COLOR]  [LIGHT]$INFO[ListItem.Property(Movie.Cast.1.Title)]$INFO[ListItem.Property(Movie.Cast.2.Title),$COMMA ]$INFO[ListItem.Property(Movie.Cast.3.Title),$COMMA ][/LIGHT]</value>
 	</variable>
 	<variable name="ExtendedInfoLabelStarring">
-		<value condition="!String.IsEmpty(Window(home).Property(XRayInfo))">[B]$LOCALIZE[31071]:[/B]  [LIGHT]$INFO[Container(10052).ListItemAbsolute(0).Label]$INFO[Container(10052).ListItemAbsolute(0).Year, (,)]$INFO[Container(10052).ListItemAbsolute(1).Label,$COMMA ]$INFO[Container(10052).ListItemAbsolute(1).Year, (,)]$INFO[Container(10052).ListItemAbsolute(2).Label,$COMMA ]$INFO[Container(10052).ListItemAbsolute(2).Year, (,)][/LIGHT]</value>
-		<value>[COLOR $VAR[ExtendedInfoLabelColor]][B]$LOCALIZE[31071]:[/B][/COLOR]  [LIGHT]$INFO[Container(10052).ListItemAbsolute(0).Label]$INFO[Container(10052).ListItemAbsolute(1).Label,$COMMA ]$INFO[Container(10052).ListItemAbsolute(2).Label,$COMMA ][/LIGHT]</value>
+		<value condition="!String.IsEmpty(Window(home).Property(XRayInfo))">[B]$LOCALIZE[31071]:[/B]  [LIGHT]$INFO[Container(50).ListItemAbsolute(0).Label]$INFO[Container(50).ListItemAbsolute(0).Year, (,)]$INFO[Container(50).ListItemAbsolute(1).Label,$COMMA ]$INFO[Container(50).ListItemAbsolute(1).Year, (,)]$INFO[Container(50).ListItemAbsolute(2).Label,$COMMA ]$INFO[Container(50).ListItemAbsolute(2).Year, (,)][/LIGHT]</value>
+		<value>[COLOR $VAR[ExtendedInfoLabelColor]][B]$LOCALIZE[31071]:[/B][/COLOR]  [LIGHT]$INFO[Container(50).ListItemAbsolute(0).Label]$INFO[Container(50).ListItemAbsolute(1).Label,$COMMA ]$INFO[Container(50).ListItemAbsolute(2).Label,$COMMA ][/LIGHT]</value>
 	</variable>
 	<variable name="ExtendedInfoLabelColor">
 		<value condition="!String.IsEmpty(Window(home).Property(XRayInfo))">ffbbbbbb</value>
 		<value>ff717171</value>
+	</variable>
+	<variable name="ExtendedInfoLabelHeading">
+		<value condition="String.IsEmpty(Window(home).Property(StarredInTV)) + String.IsEmpty(Window(home).Property(ActorImages)) + !String.IsEmpty(Container(500).ListItem.Label)">$INFO[ListItem.Title,$LOCALIZE[31204] ]</value>
+		<value condition="!String.IsEmpty(Window(home).Property(StarredInTV)) + String.IsEmpty(Window(home).Property(ActorImages)) + !String.IsEmpty(Container(500).ListItem.Label)">$INFO[ListItem.Title,$LOCALIZE[31050] ]</value>
+		<value condition="String.IsEmpty(Window(home).Property(StarredInTV)) + !String.IsEmpty(Window(home).Property(ActorImages)) + !String.IsEmpty(Container(500).ListItem.Icon)">$INFO[ListItem.Title,$LOCALIZE[31069] ]</value>
+		<value condition="!String.IsEmpty(Container(500).ListItem.Label)">$LOCALIZE[31078]</value>
 	</variable>
 	<variable name="DialogSelectComment">
 		<value condition="String.EndsWith(Container(3).ListItem.Label,1) | String.EndsWith(Container(3).ListItem.Label,2)">$LOCALIZE[31241]</value>
@@ -742,8 +880,8 @@
 		<value>$LOCALIZE[31209]</value>
 	</variable>
 	<variable name="NextUpThumb">
-		<value condition="String.IsEqual(Window.Property(thumb),OverlaySpoiler.png) | [Skin.HasSetting(HideUnwatchedThumbs) + !String.IsEqual(ListItem.Overlay,OverlayWatched.png)]">$INFO[Window.Property(fanart)]</value>
-		<value condition="!String.IsEqual(Window.Property(thumb),OverlaySpoiler.png) + !String.IsEmpty(Window.Property(thumb))">$INFO[Window.Property(thumb)]</value>
+		<value condition="System.Setting(hideunwatchedepisodethumbs)">$INFO[Window.Property(fanart)]</value>
+		<value>$INFO[Window.Property(thumb)]</value>
 	</variable>
 	<variable name="AutoUpdate">
 		<value condition="String.Contains(Skin.String(AutoUpdate),off)">$LOCALIZE[31206]</value>
@@ -1042,6 +1180,7 @@
 		<value condition="ControlGroup(9).HasFocus(22)">$LOCALIZE[31040]</value>
 		<value condition="ControlGroup(9).HasFocus(23)">$LOCALIZE[31034]</value>
 		<value condition="ControlGroup(9).HasFocus(24)">$LOCALIZE[31063]</value>
+		<value condition="ControlGroup(9).HasFocus(25)">$LOCALIZE[31081]</value>
 	</variable>
 	<variable name="AlbumArtistName">
 		<value condition="!String.IsEmpty(ListItem.AlbumArtist)">$INFO[ListItem.AlbumArtist]</value>
@@ -1121,7 +1260,7 @@
 	</variable>
 	<variable name="WideImage">
 		<value condition="ListItem.IsParentFolder">views/folder_back_wide.png</value>
-		<value condition="String.IsEqual(ListItem.Art(thumb),OverlaySpoiler.png) | [Skin.HasSetting(HideUnwatchedThumbs) + !String.IsEqual(ListItem.Overlay,OverlayWatched.png)]">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="String.IsEqual(ListItem.Overlay,OverlayUnWatched.png)">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="Container.Content(episodes) + !String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
 		<value>views/episode_fallback.png</value>
@@ -1136,6 +1275,7 @@
 	<variable name="PosterImage">
 		<value condition="ListItem.IsParentFolder">views/folder_back_poster.png</value>
 		<value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
+		<value condition="Container.Content(seasons)">$INFO[ListItem.Art(tvshow.poster)]</value>
 		<value condition="!String.IsEmpty(ListItem.Icon)">$INFO[ListItem.Icon]</value>
 		<value>views/movie_fallback.png</value>
 	</variable>
@@ -1149,6 +1289,11 @@
 		<value condition="Integer.IsGreater(ListItem.PlayCount,0)">$LOCALIZE[31057]</value>
 		<value>$LOCALIZE[31109]</value>
 	</variable>
+	<variable name="AltVideoInfoButton8">
+		<value condition="String.IsEqual(ListItem.DBTYPE,tvshow)">$LOCALIZE[31074]</value>
+		<value condition="String.IsEqual(Container.Content,seasons)">$LOCALIZE[31064]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,set)">$LOCALIZE[31065]</value>
+	</variable>
 	<variable name="MediaType">
 		<value condition="Container.Content(movies)">$LOCALIZE[20338]</value>
 		<value condition="Container.Content(episodes)">$LOCALIZE[20359]</value>
@@ -1157,6 +1302,7 @@
 		<value condition="Container.Content(albums)">$LOCALIZE[558]</value>
 		<value condition="Container.Content(artists)">$LOCALIZE[557]</value>
 		<value condition="Container.Content(songs)">$LOCALIZE[179]</value>
+		<value condition="Container.Content(sets)">$LOCALIZE[20457]</value>
 	</variable>
 	<variable name="SettingsLabel-1">
 		<value condition="Window.IsVisible(addonbrowser)">$LOCALIZE[14206]</value>
@@ -1430,6 +1576,15 @@
 		<value condition="String.IsEqual(Window(Weather).Property(Day5.Title),$LOCALIZE[15]) | String.IsEqual(Window(Weather).Property(Day5.Title),$LOCALIZE[45])">$LOCALIZE[45]</value>
 		<value condition="String.IsEqual(Window(Weather).Property(Day5.Title),$LOCALIZE[16]) | String.IsEqual(Window(Weather).Property(Day5.Title),$LOCALIZE[46])">$LOCALIZE[46]</value>
 		<value condition="String.IsEqual(Window(Weather).Property(Day5.Title),$LOCALIZE[17]) | String.IsEqual(Window(Weather).Property(Day5.Title),$LOCALIZE[47])">$LOCALIZE[47]</value>
+	</variable>
+	<variable name="Day6">
+		<value condition="String.IsEqual(Window(Weather).Property(Day6.Title),$LOCALIZE[11]) | String.IsEqual(Window(Weather).Property(Day6.Title),$LOCALIZE[41])">$LOCALIZE[41]</value>
+		<value condition="String.IsEqual(Window(Weather).Property(Day6.Title),$LOCALIZE[12]) | String.IsEqual(Window(Weather).Property(Day6.Title),$LOCALIZE[42])">$LOCALIZE[42]</value>
+		<value condition="String.IsEqual(Window(Weather).Property(Day6.Title),$LOCALIZE[13]) | String.IsEqual(Window(Weather).Property(Day6.Title),$LOCALIZE[43])">$LOCALIZE[43]</value>
+		<value condition="String.IsEqual(Window(Weather).Property(Day6.Title),$LOCALIZE[14]) | String.IsEqual(Window(Weather).Property(Day6.Title),$LOCALIZE[44])">$LOCALIZE[44]</value>
+		<value condition="String.IsEqual(Window(Weather).Property(Day6.Title),$LOCALIZE[15]) | String.IsEqual(Window(Weather).Property(Day6.Title),$LOCALIZE[45])">$LOCALIZE[45]</value>
+		<value condition="String.IsEqual(Window(Weather).Property(Day6.Title),$LOCALIZE[16]) | String.IsEqual(Window(Weather).Property(Day6.Title),$LOCALIZE[46])">$LOCALIZE[46]</value>
+		<value condition="String.IsEqual(Window(Weather).Property(Day6.Title),$LOCALIZE[17]) | String.IsEqual(Window(Weather).Property(Day6.Title),$LOCALIZE[47])">$LOCALIZE[47]</value>
 	</variable>
 	<variable name="VideoInfoLabel">
 		<value condition="Container.Content(episodes)">$INFO[ListItem.Title]$INFO[ListItem.TVShowTitle, / ]</value>

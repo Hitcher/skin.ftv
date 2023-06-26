@@ -2,7 +2,9 @@
 <window>
 	<!-- weather -->
 	<backgroundcolor>0xff12161b</backgroundcolor>
-	<defaultcontrol always="true">100</defaultcontrol>
+	<onload>ClearProperty(Hourly,home)</onload>
+	<onload>Control.SetFocus(99,0,absolute)</onload>
+	<onload>Control.SetFocus(101)</onload>
 	<controls>
 		<control type="group">
 			<left>128</left>
@@ -17,7 +19,8 @@
 			<control type="image">
 				<width>1664</width>
 				<height>1080</height>
-				<texture fallback="weather/background/na.jpg">$INFO[Window(Weather).Property(Current.FanartCode),weather/background/,.jpg]</texture>
+				<aspectratio align="center">scale</aspectratio>
+				<texture fallback="resource://resource.images.weatherfanart.single/na.jpg">$INFO[Window(Weather).Property(Current.FanartCode),resource://resource.images.weatherfanart.single/,.jpg]</texture>
 			</control>
 			<control type="image">
 				<top>148</top>
@@ -32,7 +35,7 @@
 					<width>1568</width>
 					<height>68</height>
 					<font>Med59</font>
-					<label fallback="8">$INFO[Weather.Location]</label>
+					<label fallback="8">$INFO[Window(Weather).Property(Location)]</label>
 					<textcolor>ffffffff</textcolor>
 				</control>
 				<control type="label">
@@ -142,15 +145,20 @@
 							<textcolor>ffffffff</textcolor>
 						</control>
 					</control>
-					<control type="fixedlist">
+					<control type="list" id="99">
 						<left>179</left>
 						<top>549</top>
 						<width>1386</width>
-						<height>200</height>
+						<height>220</height>
+						<onback>98</onback>
+						<onback>Control.SetFocus(99,0,absolute)</onback>
+						<onleft>98</onleft>
+						<onright>noop</onright>
 						<viewtype label="">list</viewtype>
 						<orientation>horizontal</orientation>
-						<itemlayout height="200" width="231">
+						<itemlayout height="220" width="198">
 							<control type="image">
+								<left>198</left>
 								<top>28</top>
 								<width>8</width>
 								<height>144</height>
@@ -158,7 +166,7 @@
 								<texture border="3,0,0,0">common/WhiteLine.png</texture>
 							</control>
 							<control type="image">
-								<left>68</left>
+								<left>52</left>
 								<top>3</top>
 								<width>96</width>
 								<height>96</height>
@@ -167,7 +175,7 @@
 							</control>
 							<control type="label">
 								<top>110</top>
-								<width>231</width>
+								<width>198</width>
 								<height>34</height>
 								<font>Med24</font>
 								<align>center</align>
@@ -176,7 +184,7 @@
 							</control>
 							<control type="label">
 								<top>164</top>
-								<width>231</width>
+								<width>198</width>
 								<height>34</height>
 								<font>Med24</font>
 								<align>center</align>
@@ -184,9 +192,23 @@
 								<label>$INFO[ListItem.Label2]</label>
 							</control>
 						</itemlayout>
-						<focusedlayout height="200" width="231">
+						<focusedlayout height="220" width="198">
 							<control type="image">
-								<left>68</left>
+								<left>198</left>
+								<top>28</top>
+								<width>8</width>
+								<height>144</height>
+								<colordiffuse>55ffffff</colordiffuse>
+								<texture border="3,0,0,0">common/WhiteLine.png</texture>
+							</control>
+							<control type="image">
+								<width>198</width>
+								<height>204</height>
+								<texture>views/OverlayNF.png</texture>
+								<visible>Control.HasFocus(99)</visible>
+							</control>
+							<control type="image">
+								<left>52</left>
 								<top>3</top>
 								<width>96</width>
 								<height>96</height>
@@ -195,7 +217,7 @@
 							</control>
 							<control type="label">
 								<top>110</top>
-								<width>231</width>
+								<width>198</width>
 								<height>34</height>
 								<font>Med24</font>
 								<align>center</align>
@@ -204,7 +226,7 @@
 							</control>
 							<control type="label">
 								<top>164</top>
-								<width>231</width>
+								<width>198</width>
 								<height>34</height>
 								<font>Med24</font>
 								<align>center</align>
@@ -213,71 +235,175 @@
 							</control>
 						</focusedlayout>
 						<content>
-							<item>
-								<label>$VAR[Day0]</label>
-								<label2>$INFO[Window(Weather).Property(Day0.LowTemp),,°]  $INFO[Window(Weather).Property(Day0.HighTemp),,°]</label2>
-								<icon>$INFO[Window(Weather).Property(Day0.FanartCode),weather/icons/,.png]</icon>
-								<visible>!String.IsEmpty(Window(Weather).Property(Day0.Outlook))</visible>
-							</item>
-							<item>
-								<label>$VAR[Day1]</label>
-								<label2>$INFO[Window(Weather).Property(Day1.LowTemp),,°]  $INFO[Window(Weather).Property(Day1.HighTemp),,°]</label2>
-								<icon>$INFO[Window(Weather).Property(Day1.FanartCode),weather/icons/,.png]</icon>
-								<visible>!String.IsEmpty(Window(Weather).Property(Day1.Outlook))</visible>
-							</item>
-							<item>
-								<label>$VAR[Day2]</label>
-								<label2>$INFO[Window(Weather).Property(Day2.LowTemp),,°]  $INFO[Window(Weather).Property(Day2.HighTemp),,°]</label2>
-								<icon>$INFO[Window(Weather).Property(Day2.FanartCode),weather/icons/,.png]</icon>
-								<visible>!String.IsEmpty(Window(Weather).Property(Day2.Outlook))</visible>
-							</item>
-							<item>
-								<label>$VAR[Day3]</label>
-								<label2>$INFO[Window(Weather).Property(Day3.LowTemp),,°]  $INFO[Window(Weather).Property(Day3.HighTemp),,°]</label2>
-								<icon>$INFO[Window(Weather).Property(Day3.FanartCode),weather/icons/,.png]</icon>
-								<visible>!String.IsEmpty(Window(Weather).Property(Day3.Outlook))</visible>
-							</item>
-							<item>
-								<label>$VAR[Day4]</label>
-								<label2>$INFO[Window(Weather).Property(Day4.LowTemp),,°]  $INFO[Window(Weather).Property(Day4.HighTemp),,°]</label2>
-								<icon>$INFO[Window(Weather).Property(Day4.FanartCode),weather/icons/,.png]</icon>
-								<visible>!String.IsEmpty(Window(Weather).Property(Day4.Outlook))</visible>
-							</item>
-							<item>
-								<label>$VAR[Day5]</label>
-								<label2>$INFO[Window(Weather).Property(Day5.LowTemp),,°]  $INFO[Window(Weather).Property(Day5.HighTemp),,°]</label2>
-								<icon>$INFO[Window(Weather).Property(Day5.FanartCode),weather/icons/,.png]</icon>
-								<visible>!String.IsEmpty(Window(Weather).Property(Day5.Outlook))</visible>
-							</item>
+							<include content="WeatherHourlyItem">
+								<param name="item_index" value="1"/>
+							</include>
+							<include content="WeatherHourlyItem">
+								<param name="item_index" value="2"/>
+							</include>
+							<include content="WeatherHourlyItem">
+								<param name="item_index" value="3"/>
+							</include>
+							<include content="WeatherHourlyItem">
+								<param name="item_index" value="4"/>
+							</include>
+							<include content="WeatherHourlyItem">
+								<param name="item_index" value="5"/>
+							</include>
+							<include content="WeatherHourlyItem">
+								<param name="item_index" value="6"/>
+							</include>
+							<include content="WeatherHourlyItem">
+								<param name="item_index" value="7"/>
+							</include>
+							<include content="WeatherHourlyItem">
+								<param name="item_index" value="8"/>
+							</include>
+							<include content="WeatherHourlyItem">
+								<param name="item_index" value="9"/>
+							</include>
+							<include content="WeatherHourlyItem">
+								<param name="item_index" value="10"/>
+							</include>
+							<include content="WeatherHourlyItem">
+								<param name="item_index" value="11"/>
+							</include>
+							<include content="WeatherHourlyItem">
+								<param name="item_index" value="12"/>
+							</include>
+							<include content="WeatherHourlyItem">
+								<param name="item_index" value="13"/>
+							</include>
+							<include content="WeatherHourlyItem">
+								<param name="item_index" value="14"/>
+							</include>
+							<include content="WeatherHourlyItem">
+								<param name="item_index" value="15"/>
+							</include>
+							<include content="WeatherHourlyItem">
+								<param name="item_index" value="16"/>
+							</include>
+							<include content="WeatherHourlyItem">
+								<param name="item_index" value="17"/>
+							</include>
+							<include content="WeatherHourlyItem">
+								<param name="item_index" value="18"/>
+							</include>
+							<include content="WeatherHourlyItem">
+								<param name="item_index" value="19"/>
+							</include>
+							<include content="WeatherHourlyItem">
+								<param name="item_index" value="20"/>
+							</include>
+							<include content="WeatherHourlyItem">
+								<param name="item_index" value="21"/>
+							</include>
+							<include content="WeatherHourlyItem">
+								<param name="item_index" value="22"/>
+							</include>
+							<include content="WeatherHourlyItem">
+								<param name="item_index" value="23"/>
+							</include>
+							<include content="WeatherHourlyItem">
+								<param name="item_index" value="24"/>
+							</include>
+							<include content="WeatherDayItem">
+								<param name="item_index" value="0"/>
+							</include>
+							<include content="WeatherDayItem">
+								<param name="item_index" value="1"/>
+							</include>
+							<include content="WeatherDayItem">
+								<param name="item_index" value="2"/>
+							</include>
+							<include content="WeatherDayItem">
+								<param name="item_index" value="3"/>
+							</include>
+							<include content="WeatherDayItem">
+								<param name="item_index" value="4"/>
+							</include>
+							<include content="WeatherDayItem">
+								<param name="item_index" value="5"/>
+							</include>
+							<include content="WeatherDayItem">
+								<param name="item_index" value="6"/>
+							</include>
+							<include content="WeatherDailyItem">
+								<param name="item_index" value="1"/>
+							</include>
+							<include content="WeatherDailyItem">
+								<param name="item_index" value="2"/>
+							</include>
+							<include content="WeatherDailyItem">
+								<param name="item_index" value="3"/>
+							</include>
+							<include content="WeatherDailyItem">
+								<param name="item_index" value="4"/>
+							</include>
+							<include content="WeatherDailyItem">
+								<param name="item_index" value="5"/>
+							</include>
+							<include content="WeatherDailyItem">
+								<param name="item_index" value="6"/>
+							</include>
+							<include content="WeatherDailyItem">
+								<param name="item_index" value="7"/>
+							</include>
+							<include content="WeatherDailyItem">
+								<param name="item_index" value="8"/>
+							</include>
+							<include content="WeatherDailyItem">
+								<param name="item_index" value="9"/>
+							</include>
+							<include content="WeatherDailyItem">
+								<param name="item_index" value="10"/>
+							</include>
+							<include content="WeatherDailyItem">
+								<param name="item_index" value="11"/>
+							</include>
+							<include content="WeatherDailyItem">
+								<param name="item_index" value="12"/>
+							</include>
+							<include content="WeatherDailyItem">
+								<param name="item_index" value="13"/>
+							</include>
+							<include content="WeatherDailyItem">
+								<param name="item_index" value="14"/>
+							</include>
 						</content>
 					</control>
 				</control>
-				<control type="group">
-					<control id="100" type="button">
+				<control type="group" id="98">
+					<control id="101" type="togglebutton">
 						<top>575</top>
 						<width>160</width>
 						<height>64</height>
 						<align>center</align>
-						<label>31246</label>
+						<label>31079</label>
+						<altlabel>33036</altlabel>
 						<onup>Back</onup>
-						<ondown>101</ondown>
+						<ondown>100</ondown>
 						<onleft>Back</onleft>
-						<onright>noop</onright>
-						<onclick>Weather.LocationNext</onclick>
+						<onright>99</onright>
+						<onclick>SetProperty(Hourly,true,home)</onclick>
+						<altclick>ClearProperty(Hourly,home)</altclick>
 						<texturefocus border="3">common/button_fo.png</texturefocus>
 						<texturenofocus border="3">common/button_nf.png</texturenofocus>
+						<alttexturefocus border="3">common/button_fo.png</alttexturefocus>
+						<alttexturenofocus border="3">common/button_nf.png</alttexturenofocus>
+						<usealttexture>String.IsEqual(Window(home).Property(Hourly),true)</usealttexture>
 					</control>
-					<control id="101" type="button">
+					<control id="100" type="button">
 						<top>659</top>
 						<width>160</width>
 						<height>64</height>
 						<align>center</align>
-						<label>5</label>
-						<onup>100</onup>
+						<label>31246</label>
+						<onup>101</onup>
 						<ondown>noop</ondown>
 						<onleft>Back</onleft>
-						<onright>noop</onright>
-						<onclick>ActivateWindow(servicesettings,weather)</onclick>
+						<onright>99</onright>
+						<onclick>Weather.LocationNext</onclick>
 						<texturefocus border="3">common/button_fo.png</texturefocus>
 						<texturenofocus border="3">common/button_nf.png</texturenofocus>
 					</control>
@@ -291,7 +417,7 @@
 			<height>84</height>
 			<texture>common/busy.png</texture>
 			<animation center="auto" condition="true" effect="rotate" end="-360" loop="true" reversible="false" time="1120">Conditional</animation>
-			<visible>String.IsEqual(Weather.Location,$LOCALIZE[503])</visible>
+			<visible>String.IsEmpty(Window(weather).Property(Daily.IsFetched))</visible>
 		</control>
 	</controls>
 </window>

@@ -42,7 +42,7 @@
 	</include>
 	<!-- Dialog video info animation -->
 	<include name="DialogVideoInfoAnimation">
-		<animation condition="Control.HasFocus(50) | Control.HasFocus(500) | Control.HasFocus(150) | Control.HasFocus(250) | Control.HasFocus(1000) | Control.HasFocus(5000) | Control.HasFocus(10052) | Control.HasFocus(10053) | Control.HasFocus(10054)" effect="fade" end="6" start="100" time="200">Conditional</animation>
+		<animation condition="Control.HasFocus(50) | Control.HasFocus(500)" effect="fade" end="6" start="100" time="200">Conditional</animation>
 	</include>
 	<!-- Home Widgets Animation -->
 	<include name="HomeWidgetsAnimation">

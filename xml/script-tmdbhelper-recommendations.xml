@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog">
+	<defaultcontrol always="true">10052</defaultcontrol>
+	<!-- script-tmdbhelper-recommendations.xml -->
+	<animation effect="fade" end="100" start="100" time="200">WindowClose</animation>
+	<controls>
+		<!-- Movies -->
+		<control id="10052" type="fixedlist">
+			<left>-25</left>
+			<top>-271</top>
+			<width>2600</width>
+			<height>576</height>
+			<onup condition="Control.IsVisible(96)">3000</onup>
+			<onup condition="!Control.IsVisible(96)">Close</onup>
+			<ondown>noop</ondown>
+			<onleft>7000</onleft>
+			<onright>noop</onright>
+			<onright condition="!Window.IsVisible(1103)">SetProperty(BounceRight,1,Home)</onright>
+			<onfocus>SetProperty(FadeResume,true,home)</onfocus>
+			<onback>7000</onback>
+			<preloaditems>2</preloaditems>
+			<focusposition>2</focusposition>
+			<viewtype label="">list</viewtype>
+			<orientation>horizontal</orientation>
+			<scrolltime easing="inout" tween="sine">300</scrolltime>
+			<animation condition="Window.IsVisible(1103)" reversible="false" type="Conditional">
+				<effect easing="out" end="-20,0" start="0,0" time="60" tween="sine" type="slide"/>
+				<effect delay="80" easing="out" end="20,0" start="0,0" time="120" tween="sine" type="slide"/>
+			</animation>
+			<animation effect="fade" end="100" start="0" time="300">Visible</animation>
+			<animation effect="fade" end="0" start="100" time="300">Hidden</animation>
+			<animation center="480,212" condition="!Control.HasFocus(10052)" easing="inout" effect="zoom" end="81" start="100" time="300" tween="sine">Conditional</animation>
+			<itemlayout height="576" width="300">
+				<control type="group">
+					<animation center="150,288" condition="true" effect="zoom" end="85" start="85">Conditional</animation>
+					<control type="image">
+						<left>-48</left>
+						<centertop>288</centertop>
+						<width>416</width>
+						<height>576</height>
+						<texture border="50">views/shadow_nf.png</texture>
+					</control>
+					<control type="image">
+						<top>48</top>
+						<width>320</width>
+						<height>480</height>
+						<aspectratio align="center">scale</aspectratio>
+						<texture background="true" fallback="views/movie_fallback.png">$INFO[ListItem.Icon]</texture>
+					</control>
+					<control type="label">
+						<left>18</left>
+						<top>455</top>
+						<width>290</width>
+						<height>42</height>
+						<font>Bold42</font>
+						<scroll>false</scroll>
+						<textcolor>ffffffff</textcolor>
+						<shadowcolor>80000000</shadowcolor>
+						<label>$INFO[ListItem.Label]</label>
+						<visible>String.IsEmpty(ListItem.Icon)</visible>
+					</control>
+					<control type="image">
+						<top>48</top>
+						<width>320</width>
+						<height>480</height>
+						<texture>views/OverlayNF.png</texture>
+						<visible>Control.HasFocus(10052)</visible>
+						<animation center="auto" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">VisibleChange</animation>
+					</control>
+				</control>
+			</itemlayout>
+			<focusedlayout height="576" width="300">
+				<control type="group">
+					<animation center="150,288" condition="Control.HasFocus(10052) + [Container(10052).OnNext | Container(10052).OnPrevious]" easing="inout" effect="zoom" end="100" start="85" time="300" tween="sine">Focus</animation>
+					<animation center="150,288" condition="Control.HasFocus(10052) + [Container(10052).OnNext | Container(10052).OnPrevious]" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">UnFocus</animation>
+					<animation center="150,288" condition="!Control.HasFocus(10052)" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">Conditional</animation>
+					<control type="image">
+						<left>-48</left>
+						<centertop>288</centertop>
+						<width>416</width>
+						<height>576</height>
+						<texture border="50">views/shadow_fo.png</texture>
+						<animation center="auto" condition="Control.HasFocus(10052) | Container(10052).OnNext | Container(10052).OnPrevious" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">Focus</animation>
+						<animation center="auto" condition="Container(10052).OnNext | Container(10052).OnPrevious" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">UnFocus</animation>
+					</control>
+					<control type="image">
+						<left>-48</left>
+						<centertop>288</centertop>
+						<width>416</width>
+						<height>576</height>
+						<texture border="50">views/shadow_nf.png</texture>
+						<animation center="auto" condition="Control.HasFocus(10052)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
+						<animation center="auto" condition="Control.HasFocus(10052)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+					</control>
+					<control type="image">
+						<top>48</top>
+						<width>320</width>
+						<height>480</height>
+						<aspectratio align="center">scale</aspectratio>
+						<texture background="true" fallback="views/movie_fallback.png">$INFO[ListItem.Icon]</texture>
+					</control>
+					<control type="label">
+						<left>18</left>
+						<top>455</top>
+						<width>290</width>
+						<height>42</height>
+						<font>Bold42</font>
+						<scroll>false</scroll>
+						<textcolor>ffffffff</textcolor>
+						<shadowcolor>80000000</shadowcolor>
+						<label>$INFO[ListItem.Label]</label>
+						<visible>String.IsEmpty(ListItem.Icon)</visible>
+					</control>
+					<control type="image">
+						<top>48</top>
+						<width>320</width>
+						<height>480</height>
+						<texture>views/OverlayNF.png</texture>
+						<visible>Control.HasFocus(10052)</visible>
+						<animation center="auto" condition="Control.HasFocus(10052)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
+						<animation center="auto" condition="Control.HasFocus(10052)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+					</control>
+				</control>
+			</focusedlayout>
+		</control>
+	</controls>
+</window>

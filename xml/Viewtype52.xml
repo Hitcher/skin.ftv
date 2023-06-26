@@ -49,7 +49,7 @@
 							<height>480</height>
 							<aspectratio align="center">scale</aspectratio>
 							<texture>views/episode_fallback.png</texture>
-							<visible>!ListItem.IsParentFolder + [String.IsEqual(ListItem.Art(thumb),OverlaySpoiler.png) | [Skin.HasSetting(HideUnwatchedThumbs) + !String.IsEqual(ListItem.Overlay,OverlayWatched.png)]]</visible>
+							<visible>!ListItem.IsParentFolder + [String.IsEqual(ListItem.Overlay,OverlayUnWatched.png)]</visible>
 						</control>
 						<control type="image">
 							<left>119</left>
@@ -164,7 +164,7 @@
 							<height>480</height>
 							<aspectratio align="center">scale</aspectratio>
 							<texture>views/episode_fallback.png</texture>
-							<visible>!ListItem.IsParentFolder + [String.IsEqual(ListItem.Art(thumb),OverlaySpoiler.png) | [Skin.HasSetting(HideUnwatchedThumbs) + !String.IsEqual(ListItem.Overlay,OverlayWatched.png)]]</visible>
+							<visible>!ListItem.IsParentFolder + [String.IsEqual(ListItem.Overlay,OverlayUnWatched.png)]</visible>
 						</control>
 						<control type="image">
 							<left>119</left>

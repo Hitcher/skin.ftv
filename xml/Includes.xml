@@ -6,10 +6,16 @@
 	<include file="Includes_Parameters.xml"/>
 	<include file="Includes_Variables.xml"/>
 	<include file="Includes_AddonBrowser.xml"/>
+	<include file="Includes_Dialog_Video_Information.xml"/>
+	<include file="Includes_Dialog_Person_Information.xml"/>
+	<include file="Includes_Dialog_Set_Information.xml"/>
 	<include file="Includes_Dialog_Movie_Information.xml"/>
+	<include file="Includes_Dialog_Default_Video_Information.xml"/>
 	<include file="Includes_DialogSelect.xml"/>
 	<include file="Includes_DialogSettings.xml"/>
+	<include file="Includes_Games.xml"/>
 	<include file="Includes_Home_Widgets_Setup.xml"/>
+	<include file="Includes_VideoInfoCast.xml"/>
 	<include file="Viewtype50.xml"/>
 	<include file="Viewtype51.xml"/>
 	<include file="Viewtype52.xml"/>
@@ -85,8 +91,8 @@
 		<width>17.36</width>
 		<texture/>
 	</include>
-	<!-- Hidden Home List -->
-	<include name="HiddenHomeList">
+	<!-- Hidden List -->
+	<include name="HiddenList">
 		<top>-10</top>
 		<width>10</width>
 		<height>1</height>

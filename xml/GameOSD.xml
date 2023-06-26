@@ -6,22 +6,22 @@
 		<origin x="0" y="0"/>
 	</coordinates>
 	<controls>
+		<!-- Background -->
+		<include>DialogBackgroundImage</include>
 		<control type="group">
-			<visible>!Window.IsActive(GameVideoFilter) + !Window.IsActive(GameViewMode) + !Window.IsActive(GameControllers)</visible>
-			<!-- Background -->
-			<include>DialogBackgroundImage</include>
+			<visible>!Window.IsActive(GameVideoFilter) + !Window.IsActive(GameStretchMode) + !Window.IsActive(gamevideorotation) + !Window.IsActive(GameControllers)</visible>
 			<!-- Dialog group -->
 			<control type="group">
 				<include>DialogAnimation</include>
 				<centerleft>50%</centerleft>
 				<centertop>50%</centertop>
 				<width>558</width>
-				<height>816</height>
+				<height>480</height>
 				<!-- Dialog background image -->
 				<control type="image">
 					<width>100%</width>
 					<height>100%</height>
-					<texture>dialogs/game_osd_back.png</texture>
+					<texture border="0,64,0,0">dialogs/game_osd_back.png</texture>
 				</control>
 				<!-- Heading -->
 				<control type="label" id="1">
@@ -38,7 +38,7 @@
 				<control type="grouplist" id="100">
 					<top>60</top>
 					<width>100%</width>
-					<height>756</height>
+					<height>420</height>
 					<itemgap>0</itemgap>
 					<onup>noop</onup>
 					<ondown>noop</ondown>
@@ -68,6 +68,19 @@
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 						<label>13007</label>
 						<onclick>PlayerControl(Reset)</onclick>
+					</control>
+					<!-- Saves button -->
+					<control type="button" id="110">
+						<width>100%</width>
+						<height>84</height>
+						<font>Light32</font>
+						<textoffsetx>40</textoffsetx>
+						<textcolor>ff505153</textcolor>
+						<focusedcolor>ffffaf37</focusedcolor>
+						<texturefocus border="3">settings/button_focus.png</texturefocus>
+						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+						<label>35249</label>
+						<onclick>ActivateWindow(InGameSaves)</onclick>
 					</control>
 					<!-- Stop button -->
 					<control type="button" id="103">
@@ -121,7 +134,7 @@
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 						<label>35233</label>
-						<onclick>ActivateWindow(GameViewMode)</onclick>
+						<onclick>ActivateWindow(GameStretchMode)</onclick>
 					</control>
 					<!-- Rotation button -->
 					<control type="button" id="107">
@@ -148,6 +161,19 @@
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 						<label>35234</label>
 						<onclick>ActivateWindow(GameControllers)</onclick>
+					</control>
+					<!-- Ports button -->
+					<control type="button" id="111">
+						<width>100%</width>
+						<height>84</height>
+						<font>Light32</font>
+						<textoffsetx>40</textoffsetx>
+						<textcolor>ff505153</textcolor>
+						<focusedcolor>ffffaf37</focusedcolor>
+						<texturefocus border="3">settings/button_focus.png</texturefocus>
+						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+						<label>35110</label>
+						<onclick>ActivateWindow(GamePorts)</onclick>
 					</control>
 					<!-- Advanced settings button -->
 					<control type="button" id="109">

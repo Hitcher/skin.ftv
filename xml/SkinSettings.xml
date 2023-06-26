@@ -294,11 +294,11 @@
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=shutdown)</onclick>
 				</control>
-				<control id="12" type="radiobutton">
+				<control id="25" type="radiobutton">
 					<width>958</width>
 					<height>84</height>
 					<font>Light32</font>
-					<label>$LOCALIZE[31037]</label>
+					<label>$LOCALIZE[31080]</label>
 					<textoffsetx>40</textoffsetx>
 					<textcolor>ff505153</textcolor>
 					<focusedcolor>ffffaf37</focusedcolor>
@@ -313,8 +313,8 @@
 					<textureradiooffdisabled>settings/radio_off_disabled.png</textureradiooffdisabled>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
-					<onclick>Skin.ToggleSetting(HideUnwatchedThumbs)</onclick>
-					<selected>Skin.HasSetting(HideUnwatchedThumbs)</selected>
+					<onclick>Skin.ToggleSetting(ExtendedInfo)</onclick>
+					<selected>Skin.HasSetting(ExtendedInfo)</selected>
 				</control>
 				<control id="13" type="radiobutton">
 					<width>958</width>

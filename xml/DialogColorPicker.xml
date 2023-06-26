@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<!-- dialogcolorpicker -->
+	<defaultcontrol always="true">6</defaultcontrol>
+	<controls>
+		<!-- Background -->
+		<include>DialogBackgroundImage</include>
+		<!-- Dialog group -->
+		<control type="group">
+			<include>DialogAnimation</include>
+			<centerleft>50%</centerleft>
+			<centertop>50%</centertop>
+			<width>1010</width>
+			<height>879</height>
+			<!-- Background -->
+			<control type="image">
+				<width>1010</width>
+				<height>879</height>
+				<texture border="0,64,0,0">dialogs/game_osd_back.png</texture>
+			</control>
+			<!-- Heading -->
+			<control type="label" id="1">
+				<left>40</left>
+				<top>14</top>
+				<height>30</height>
+				<width>937</width>
+				<aligny>center</aligny>
+				<font>Bold30</font>
+				<label>1021</label>
+				<textcolor>ffdadada</textcolor>
+			</control>
+			<!-- Color picker label -->
+			<control type="label">
+				<right>40</right>
+				<top>14</top>
+				<height>30</height>
+				<width>937</width>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>Light30</font>
+				<label>$INFO[Container(6).ListItem.Label,, - ]$INFO[Container(6).ListItem.Label2,#,]</label>
+				<textcolor>ffa4a4a4</textcolor>
+			</control>
+			<!-- Color picker panel -->
+			<control type="panel" id="6">
+				<left>61</left>
+				<top>118</top>
+				<width>900</width>
+				<height>720</height>
+				<onup>6</onup>
+				<ondown>6</ondown>
+				<onleft>9001</onleft>
+				<onright>61</onright>
+				<orientation>vertical</orientation>
+				<pagecontrol>61</pagecontrol>
+				<viewtype label="100">icon</viewtype>
+				<itemlayout height="90" width="90">
+					<control type="group">
+						<control type="image">
+							<width>78</width>
+							<height>78</height>
+							<texture border="2">dialogs/KeyboardButtonNF.png</texture>
+						</control>
+						<control type="image">
+							<top>2</top>
+							<left>2</left>
+							<width>74</width>
+							<height>74</height>
+							<texture border="2">dialogs/white.png</texture>
+							<colordiffuse>$INFO[ListItem.Label2]</colordiffuse>
+						</control>
+					</control>
+				</itemlayout>
+				<focusedlayout height="90" width="90">
+					<control type="image">
+						<width>78</width>
+						<height>78</height>
+						<texture border="2">dialogs/KeyboardButtonFO.png</texture>
+					</control>
+					<control type="image">
+						<top>2</top>
+						<left>2</left>
+						<width>74</width>
+						<height>74</height>
+						<texture border="2">dialogs/white.png</texture>
+						<colordiffuse>$INFO[ListItem.Label2]</colordiffuse>
+					</control>
+				</focusedlayout>
+			</control>
+		</control>
+	</controls>
+</window>

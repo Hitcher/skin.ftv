@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1110">
-	<zorder>100</zorder>
-	<visible>VideoPlayer.IsFullscreen + !String.IsEmpty(Window(home).Property(ShowXRay))</visible>
+	<zorder>999</zorder>
+	<visible>Player.Paused + !String.IsEmpty(Window(home).Property(ShowXRay))</visible>
 	<controls>
 		<control type="group">
 			<right>100</right>

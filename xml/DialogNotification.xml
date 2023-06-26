@@ -12,9 +12,9 @@
 			<height>223</height>
 			<!-- Background image -->
 			<control type="image">
-			<width>636</width>
-			<height>223</height>
-			<texture border="50">views/shadow_fo.png</texture>
+				<width>636</width>
+				<height>223</height>
+				<texture border="50">views/shadow_fo.png</texture>
 			</control>
 			<control type="image">
 				<left>48</left>
@@ -63,7 +63,8 @@
 				<width>388</width>
 				<height>36</height>
 				<font>Reg25</font>
-				<scroll>false</scroll>
+				<scrollspeed>100</scrollspeed>
+				<scrollsuffix/>
 				<textcolor>ffdadada</textcolor>
 			</control>
 		</control>
