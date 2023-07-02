@@ -5,17 +5,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-03-10 02:32+0000\n"
-"Last-Translator: José Antonio Alvarado <jalvarado0.eses@gmail.com>\n"
+"PO-Revision-Date: 2023-07-02 07:42+0000\n"
+"Last-Translator: Alfonso Cachero <alfonso.cachero@gmail.com>\n"
 "Language-Team: Spanish (Spain) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/es_es/>\n"
 "Language: es_es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15.2\n"
+"X-Generator: Weblate 4.18.2\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the Fire TV UI"
@@ -179,7 +179,7 @@ msgstr "Muestra en el fondo fanart para su media."
 
 msgctxt "#31037"
 msgid "Press [B]BACK[/B] to keep current settings or [B]OK[/B] to reset."
-msgstr ""
+msgstr "Pulsa [B]ATRÁS[/B] para mantener los ajustes actuales u [B]OK[/B] para reiniciarlos."
 
 msgctxt "#31038"
 msgid "Select your scrapers certification county."
@@ -287,15 +287,15 @@ msgstr "Activa información del reparto mientras reproduce.[CR]Nota: Uso intensi
 
 msgctxt "#31064"
 msgid "Browse[CR]Season"
-msgstr ""
+msgstr "Explorar[CR]Temporada"
 
 msgctxt "#31065"
 msgid "Browse[CR]Movie Set"
-msgstr ""
+msgstr "Explorar[CR]Saga de Películas"
 
 msgctxt "#31066"
 msgid "Movies in this Set"
-msgstr ""
+msgstr "Películas de esta Saga"
 
 msgctxt "#31067"
 msgid "Choose Fanart"
@@ -347,15 +347,15 @@ msgstr "Lo sentimos, no se encontró nada."
 
 msgctxt "#31079"
 msgid "Daily"
-msgstr ""
+msgstr "Diario"
 
 msgctxt "#31080"
 msgid "Enable Extended Information"
-msgstr ""
+msgstr "Activar Información Extendida"
 
 msgctxt "#31081"
 msgid "Shows Extended Information for actors when selected from the cast list."
-msgstr ""
+msgstr "Muestra Información Extendida de los actores cuando se eligen de la lista de elenco."
 
 msgctxt "#31085"
 msgid "Shutdown Menu"

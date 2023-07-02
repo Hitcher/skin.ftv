@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-05-22 14:42+0000\n"
+"PO-Revision-Date: 2023-07-02 07:42+0000\n"
 "Last-Translator: Massimo Pissarello <mapi68@gmail.com>\n"
 "Language-Team: Italian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/it_it/>\n"
 "Language: it_it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 4.18.2\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the Fire TV UI"
@@ -179,7 +179,7 @@ msgstr "Visualizza fanart per i tuoi media sullo sfondo."
 
 msgctxt "#31037"
 msgid "Press [B]BACK[/B] to keep current settings or [B]OK[/B] to reset."
-msgstr ""
+msgstr "Premi [B]INDIETRO[/B] per mantenere le impostazioni correnti o [B]OK[/B] per reimpostarle."
 
 msgctxt "#31038"
 msgid "Select your scrapers certification county."
@@ -287,15 +287,15 @@ msgstr "Abilita le informazioni sul cast durante la riproduzione video.[CR]Nota:
 
 msgctxt "#31064"
 msgid "Browse[CR]Season"
-msgstr ""
+msgstr "Sfoglia[CR]Stagioni"
 
 msgctxt "#31065"
 msgid "Browse[CR]Movie Set"
-msgstr ""
+msgstr "Sfoglia[CR]Saghe"
 
 msgctxt "#31066"
 msgid "Movies in this Set"
-msgstr ""
+msgstr "Film in questa saga"
 
 # empty strings from id 31064 to 31066
 msgctxt "#31067"
@@ -348,15 +348,15 @@ msgstr "Siamo spiacenti, non è stato trovato nulla."
 
 msgctxt "#31079"
 msgid "Daily"
-msgstr ""
+msgstr "Quotidiano"
 
 msgctxt "#31080"
 msgid "Enable Extended Information"
-msgstr ""
+msgstr "Abilita informazioni estese"
 
 msgctxt "#31081"
 msgid "Shows Extended Information for actors when selected from the cast list."
-msgstr ""
+msgstr "Mostra informazioni estese per gli attori selezionati dall'elenco del cast."
 
 msgctxt "#31085"
 msgid "Shutdown Menu"
