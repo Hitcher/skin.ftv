@@ -358,12 +358,28 @@ msgctxt "#31081"
 msgid "Shows Extended Information for actors when selected from the cast list."
 msgstr ""
 
+msgctxt "#31082"
+msgid "Last aired"
+msgstr ""
+
+msgctxt "#31083"
+msgid "Yesterday"
+msgstr ""
+
+msgctxt "#31084"
+msgid "Today"
+msgstr ""
+
 msgctxt "#31085"
 msgid "Shutdown Menu"
 msgstr "Menu Matikan"
 
 msgctxt "#31086"
 msgid "Sorted by"
+msgstr ""
+
+msgctxt "#31087"
+msgid "Tomorrow"
 msgstr ""
 
 msgctxt "#31088"
@@ -396,6 +412,10 @@ msgstr "Simpan Senarai Main"
 
 msgctxt "#31095"
 msgid "Clear Playlist"
+msgstr ""
+
+msgctxt "#31096"
+msgid "Next Aired"
 msgstr ""
 
 # empty strings from id 31096 to 31097
