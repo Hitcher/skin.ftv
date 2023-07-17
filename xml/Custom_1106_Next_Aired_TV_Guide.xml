@@ -260,7 +260,7 @@
 				<pagecontrol>96</pagecontrol>
 				<autoscroll>false</autoscroll>
 				<textcolor>ffbcbcbc</textcolor>
-				<label>[B]$VAR[NextAiredTitle][/B] [LIGHT]$VAR[NextAiredPlot]$VAR[NextAiredPlot][/LIGHT]</label>
+				<label>[B]$VAR[NextAiredTitle][/B] [LIGHT]$VAR[NextAiredPlot][/LIGHT]</label>
 			</control>
 			<control id="99" type="scrollbar">
 				<top>75</top>
