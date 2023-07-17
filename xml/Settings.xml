@@ -71,10 +71,7 @@
 			<viewtype label="">list</viewtype>
 			<orientation>horizontal</orientation>
 			<scrolltime easing="inout" tween="sine">300</scrolltime>
-			<animation condition="Window.IsVisible(1103)" reversible="false" type="Conditional">
-				<effect easing="out" end="-20,0" start="0,0" time="60" tween="sine" type="slide"/>
-				<effect delay="80" easing="out" end="20,0" start="0,0" time="120" tween="sine" type="slide"/>
-			</animation>
+			<include>ListBounceAnimation</include>
 			<animation condition="Window.Previous(home)" easing="inout" effect="slide" end="0,0" start="209,0" time="300" tween="sine">WindowOpen</animation>
 			<animation condition="Window.Next(home)" easing="inout" effect="slide" end="209,0" start="0,0" time="300" tween="sine">WindowClose</animation>
 			<itemlayout height="497" width="300">

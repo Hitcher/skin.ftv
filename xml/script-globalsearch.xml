@@ -128,8 +128,8 @@
 						<textoffsetx>28</textoffsetx>
 						<textcolor>ffdadada</textcolor>
 						<focusedcolor>ff222222</focusedcolor>
-						<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-						<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+						<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+						<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 					</control>
 				</control>
 				<!-- Movie / TV Show Details -->
@@ -257,9 +257,9 @@
 						<visible>!String.IsEmpty(ListItem.Rating(tvdb))</visible>
 					</control>
 					<control type="image">
-						<top>4</top>
-						<width>60</width>
-						<height>24</height>
+						<top>3</top>
+						<width>54</width>
+						<height>23</height>
 						<texture>views/logos/tmdb.png</texture>
 						<visible>!String.IsEmpty(Listitem.Rating(themoviedb))</visible>
 					</control>
@@ -511,10 +511,7 @@
 					<effect center="357,540" easing="out" end="98" start="100" time="180" tween="linear" type="zoom"/>
 					<effect easing="out" end="0" start="100" time="180" tween="linear" type="fade"/>
 				</animation>
-				<animation condition="Window.IsVisible(1103)" reversible="false" type="Conditional">
-					<effect easing="out" end="-20,0" start="0,0" time="60" tween="sine" type="slide"/>
-					<effect delay="80" easing="out" end="20,0" start="0,0" time="120" tween="sine" type="slide"/>
-				</animation>
+				<include>ListBounceAnimation</include>
 				<animation reversible="false" type="Visible">
 					<effect center="357,540" delay="280" easing="in" end="100" start="98" time="180" tween="sine" type="zoom"/>
 					<effect delay="280" easing="in" end="100" start="0" time="180" tween="sine" type="fade"/>
@@ -573,8 +570,9 @@
 							<width>416</width>
 							<height>576</height>
 							<texture border="50">views/shadow_fo.png</texture>
-							<animation center="auto" condition="Control.HasFocus(50) | Container(50).OnNext | Container(50).OnPrevious" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Container(50).OnNext | Container(50).OnPrevious" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">UnFocus</animation>
+							<include content="ContainerMoveFadeAnimation">
+								<param name="ListID" value="50"/>
+							</include>
 						</control>
 						<control type="image">
 							<left>-48</left>
@@ -582,8 +580,9 @@
 							<width>416</width>
 							<height>576</height>
 							<texture border="50">views/shadow_nf.png</texture>
-							<animation center="auto" condition="Control.HasFocus(50)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Control.HasFocus(50)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+							<include content="FocusedListIDAnimation">
+								<param name="ListID" value="50"/>
+							</include>
 						</control>
 						<control type="image">
 							<top>48</top>
@@ -611,8 +610,9 @@
 							<height>480</height>
 							<texture>views/OverlayNF.png</texture>
 							<visible>!Control.HasFocus(999)</visible>
-							<animation center="auto" condition="Control.HasFocus(50)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Control.HasFocus(50)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+							<include content="FocusedListIDAnimation">
+								<param name="ListID" value="50"/>
+							</include>
 						</control>
 					</control>
 				</focusedlayout>
@@ -684,8 +684,9 @@
 							<width>736</width>
 							<height>576</height>
 							<texture border="50">views/shadow_fo.png</texture>
-							<animation center="auto" condition="Control.HasFocus(50) | Container(50).OnNext | Container(50).OnPrevious" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Container(50).OnNext | Container(50).OnPrevious" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">UnFocus</animation>
+							<include content="ContainerMoveFadeAnimation">
+								<param name="ListID" value="50"/>
+							</include>
 						</control>
 						<control type="image">
 							<left>-48</left>
@@ -693,8 +694,9 @@
 							<width>736</width>
 							<height>576</height>
 							<texture border="50">views/shadow_nf.png</texture>
-							<animation center="auto" condition="Control.HasFocus(50)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Control.HasFocus(50)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+							<include content="FocusedListIDAnimation">
+								<param name="ListID" value="50"/>
+							</include>
 						</control>
 						<control type="image">
 							<top>48</top>
@@ -738,8 +740,9 @@
 							<height>480</height>
 							<texture>views/OverlayNF.png</texture>
 							<visible>!Control.HasFocus(999)</visible>
-							<animation center="auto" condition="Control.HasFocus(50)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Control.HasFocus(50)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+							<include content="FocusedListIDAnimation">
+								<param name="ListID" value="50"/>
+							</include>
 						</control>
 					</control>
 				</focusedlayout>
@@ -782,8 +785,9 @@
 							<width>576</width>
 							<height>576</height>
 							<texture border="50">views/shadow_fo.png</texture>
-							<animation center="auto" condition="Control.HasFocus(50) | Container(50).OnNext | Container(50).OnPrevious" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Container(50).OnNext | Container(50).OnPrevious" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">UnFocus</animation>
+							<include content="ContainerMoveFadeAnimation">
+								<param name="ListID" value="50"/>
+							</include>
 						</control>
 						<control type="image">
 							<left>-48</left>
@@ -791,8 +795,9 @@
 							<width>576</width>
 							<height>576</height>
 							<texture border="50">views/shadow_nf.png</texture>
-							<animation center="auto" condition="Control.HasFocus(50)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Control.HasFocus(50)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+							<include content="FocusedListIDAnimation">
+								<param name="ListID" value="50"/>
+							</include>
 						</control>
 						<control type="image">
 							<top>48</top>
@@ -807,8 +812,9 @@
 							<height>480</height>
 							<texture>views/OverlayNF.png</texture>
 							<visible>!Control.HasFocus(999)</visible>
-							<animation center="auto" condition="Control.HasFocus(50)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Control.HasFocus(50)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+							<include content="FocusedListIDAnimation">
+								<param name="ListID" value="50"/>
+							</include>
 						</control>
 					</control>
 				</focusedlayout>

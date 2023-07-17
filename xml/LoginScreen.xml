@@ -70,10 +70,7 @@
 			<viewtype label="">list</viewtype>
 			<orientation>horizontal</orientation>
 			<scrolltime easing="inout" tween="sine">300</scrolltime>
-			<animation condition="Window.IsVisible(1103)" reversible="false" type="Conditional">
-				<effect easing="out" end="-20,0" start="0,0" time="60" tween="sine" type="slide"/>
-				<effect delay="80" easing="out" end="20,0" start="0,0" time="120" tween="sine" type="slide"/>
-			</animation>
+			<include>ListBounceAnimation</include>
 			<itemlayout height="497" width="300">
 				<control type="group">
 					<animation center="134,240" condition="True" effect="zoom" end="85" start="85">Conditional</animation>
@@ -182,8 +179,8 @@
 				<textoffsetx>28</textoffsetx>
 				<textcolor>ffdadada</textcolor>
 				<focusedcolor>ff222222</focusedcolor>
-				<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-				<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+				<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+				<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 			</control>
 		</control>
 	</controls>

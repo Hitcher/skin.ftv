@@ -41,9 +41,9 @@
 						<label>31232</label>
 					</control>
 					<control type="image">
-						<top>6</top>
-						<width>120</width>
-						<height>48</height>
+						<top>3</top>
+						<width>54</width>
+						<height>23</height>
 						<texture>views/logos/tmdb.png</texture>
 					</control>
 				</control>
@@ -84,10 +84,7 @@
 				<viewtype label="">list</viewtype>
 				<orientation>horizontal</orientation>
 				<scrolltime easing="inout" tween="sine">300</scrolltime>
-				<animation condition="Window.IsVisible(1103)" reversible="false" type="Conditional">
-					<effect easing="out" end="-20,0" start="0,0" time="60" tween="sine" type="slide"/>
-					<effect delay="80" easing="out" end="20,0" start="0,0" time="120" tween="sine" type="slide"/>
-				</animation>
+				<include>ListBounceAnimation</include>
 				<animation reversible="false" type="Hidden">
 					<effect center="357,540" easing="out" end="98" start="100" time="180" tween="linear" type="zoom"/>
 					<effect easing="out" end="0" start="100" time="180" tween="linear" type="fade"/>
@@ -178,8 +175,9 @@
 							<width>416</width>
 							<height>576</height>
 							<texture border="50">views/shadow_fo.png</texture>
-							<animation center="auto" condition="Control.HasFocus(1000) | Container(1000).OnNext | Container(1000).OnPrevious" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Container(1000).OnNext | Container(1000).OnPrevious" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">UnFocus</animation>
+							<include content="ContainerMoveFadeAnimation">
+								<param name="ListID" value="1000"/>
+							</include>
 						</control>
 						<control type="image">
 							<left>-48</left>
@@ -187,8 +185,9 @@
 							<width>416</width>
 							<height>576</height>
 							<texture border="50">views/shadow_nf.png</texture>
-							<animation center="auto" condition="Control.HasFocus(1000)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Control.HasFocus(1000)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+							<include content="FocusedListIDAnimation">
+								<param name="ListID" value="1000"/>
+							</include>
 						</control>
 						<control type="image">
 							<top>48</top>
@@ -219,8 +218,9 @@
 							<height>480</height>
 							<texture border="2">views/season_overlay.png</texture>
 							<visible>!String.Contains(ListItem.Icon,Default)</visible>
-							<animation center="auto" condition="Control.HasFocus(1000)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Control.HasFocus(1000)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+							<include content="FocusedListIDAnimation">
+								<param name="ListID" value="1000"/>
+							</include>
 						</control>
 						<control type="label">
 							<left>18</left>
@@ -232,8 +232,9 @@
 							<textcolor>ffffffff</textcolor>
 							<shadowcolor>80000000</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
-							<animation center="auto" condition="Control.HasFocus(1000)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Control.HasFocus(1000)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+							<include content="FocusedListIDAnimation">
+								<param name="ListID" value="1000"/>
+							</include>
 						</control>
 						<control type="label">
 							<left>18</left>
@@ -245,8 +246,9 @@
 							<textcolor>ffffffff</textcolor>
 							<shadowcolor>80000000</shadowcolor>
 							<label>$INFO[ListItem.Label2]</label>
-							<animation center="auto" condition="Control.HasFocus(1000)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Control.HasFocus(1000)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+							<include content="FocusedListIDAnimation">
+								<param name="ListID" value="1000"/>
+							</include>
 						</control>
 						<control type="image">
 							<top>48</top>
@@ -254,8 +256,9 @@
 							<height>480</height>
 							<texture>views/OverlayNF.png</texture>
 							<visible>Control.HasFocus(1000)</visible>
-							<animation center="auto" condition="Control.HasFocus(1000)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Control.HasFocus(1000)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+							<include content="FocusedListIDAnimation">
+								<param name="ListID" value="1000"/>
+							</include>
 						</control>
 					</control>
 				</focusedlayout>
@@ -376,10 +379,10 @@
 				<width>1735</width>
 				<height>11</height>
 				<info>Player.Editlist</info>
-				<lefttexture border="2">osd/chapter.png</lefttexture>
+				<lefttexture border="1">osd/chapter.png</lefttexture>
 				<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
 				<midtexture border="4">osd/osd_scene.png</midtexture>
-				<righttexture border="2">osd/chapter.png</righttexture>
+				<righttexture border="1">osd/chapter.png</righttexture>
 			</control>
 			<!--  Cuts -->
 			<control type="ranges">
@@ -399,7 +402,7 @@
 				<height>11</height>
 				<info>Player.SceneMarkers</info>
 				<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
-				<righttexture border="2">osd/chapter.png</righttexture>
+				<righttexture border="1">osd/chapter.png</righttexture>
 			</control>
 			<!--  Chapters -->
 			<control type="ranges">
@@ -409,7 +412,7 @@
 				<height>11</height>
 				<info>Player.Chapters</info>
 				<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
-				<righttexture border="2">osd/chapter.png</righttexture>
+				<righttexture border="1">osd/chapter.png</righttexture>
 			</control>
 			<control type="grouplist">
 				<left>92</left>
@@ -542,7 +545,7 @@
 				<font>OSD32</font>
 				<align>right</align>
 				<textcolor>fff3f3f3</textcolor>
-				<label>$INFO[System.Time]</label>
+				<label>$INFO[System.Time][COLOR ff696969] / $INFO[Player.FinishTime][/COLOR]</label>
 			</control>
 		</control>
 	</controls>

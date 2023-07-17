@@ -7,7 +7,7 @@
 		<!-- Background -->
 		<control type="image">
 			<include>FullscreenDimensions</include>
-			<texture>special://skin/extras/backgrounds/default.png</texture>
+			<texture>common/background_default.png</texture>
 			<visible>String.IsEmpty(Window(home).Property(ShowXRay))</visible>
 		</control>
 	</controls>

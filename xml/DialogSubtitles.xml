@@ -137,9 +137,10 @@
 						<visible>ListItem.Property(sync)</visible>
 					</control>
 					<control type="label">
+						<top>12</top>
 						<left>456</left>
 						<width>784</width>
-						<height>58</height>
+						<height>34</height>
 						<font>Light32</font>
 						<textcolor>ffffffff</textcolor>
 						<label>$INFO[ListItem.Label2]</label>
@@ -189,9 +190,10 @@
 								<visible>ListItem.Property(sync)</visible>
 							</control>
 							<control type="label">
+								<top>12</top>
 								<left>456</left>
 								<width>784</width>
-								<height>58</height>
+								<height>34</height>
 								<font>Light32</font>
 								<scrollspeed>120</scrollspeed>
 								<textcolor>ffffc04b</textcolor>

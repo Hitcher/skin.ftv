@@ -9,7 +9,7 @@
 	<include file="Includes_Dialog_Video_Information.xml"/>
 	<include file="Includes_Dialog_Person_Information.xml"/>
 	<include file="Includes_Dialog_Set_Information.xml"/>
-	<include file="Includes_Dialog_Movie_Information.xml"/>
+	<include file="Includes_Dialog_Movie_TV_Information.xml"/>
 	<include file="Includes_Dialog_Default_Video_Information.xml"/>
 	<include file="Includes_DialogSelect.xml"/>
 	<include file="Includes_DialogSettings.xml"/>
@@ -39,7 +39,7 @@
 	<include name="BackgroundImage">
 		<control type="image">
 			<include>FullscreenDimensions</include>
-			<texture>special://skin/extras/backgrounds/default.png</texture>
+			<texture>common/background_default.png</texture>
 		</control>
 	</include>
 	<!-- Dialog background image -->

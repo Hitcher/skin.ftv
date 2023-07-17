@@ -16,15 +16,12 @@
 				<onright condition="!Window.IsVisible(1103)">SetProperty(BounceRight,1,Home)</onright>
 				<preloaditems>2</preloaditems>
 				<focusposition>1</focusposition>
-				<viewtype label="">list</viewtype>
+				<viewtype label="31161">list</viewtype>
 				<orientation>horizontal</orientation>
 				<defaultcontrol always="true">0</defaultcontrol>
 				<scrolltime easing="inout" tween="sine">300</scrolltime>
 				<visible>String.IsEmpty(Container.PluginName) + Container.Content(episodes)</visible>
-				<animation condition="Window.IsVisible(1103)" reversible="false" type="Conditional">
-					<effect easing="out" end="-20,0" start="0,0" time="60" tween="sine" type="slide"/>
-					<effect delay="80" easing="out" end="20,0" start="0,0" time="120" tween="sine" type="slide"/>
-				</animation>
+				<include>ListBounceAnimation</include>
 				<animation condition="Control.HasFocus(55) | Control.HasFocus(2003) | Control.HasFocus(2004) | Control.HasFocus(3001)" effect="fade" end="0" start="100" time="200">Conditional</animation>
 				<itemlayout height="576" width="572">
 					<control type="group">
@@ -70,7 +67,7 @@
 							<width>90</width>
 							<height>90</height>
 							<texture>views/OverlayWatched.png</texture>
-							<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
+							<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
 						</control>
 						<control type="image">
 							<top>48</top>
@@ -96,7 +93,7 @@
 							<width>640</width>
 							<height>12</height>
 							<texture border="2">views/ProgressBar.png</texture>
-							<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable</visible>
+							<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
 						</control>
 						<control type="label">
 							<left>18</left>
@@ -139,8 +136,9 @@
 							<width>736</width>
 							<height>576</height>
 							<texture border="50">views/shadow_fo.png</texture>
-							<animation center="auto" condition="Control.HasFocus(52) | Container(52).OnNext | Container(52).OnPrevious" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Container(52).OnNext | Container(52).OnPrevious" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">UnFocus</animation>
+							<include content="ContainerMoveFadeAnimation">
+								<param name="ListID" value="51"/>
+							</include>
 						</control>
 						<control type="image">
 							<left>-48</left>
@@ -148,8 +146,9 @@
 							<width>736</width>
 							<height>576</height>
 							<texture border="50">views/shadow_nf.png</texture>
-							<animation center="auto" condition="Control.HasFocus(51)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Control.HasFocus(51)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+							<include content="FocusedListIDAnimation">
+								<param name="ListID" value="52"/>
+							</include>
 						</control>
 						<control type="image">
 							<top>48</top>
@@ -185,7 +184,7 @@
 							<width>90</width>
 							<height>90</height>
 							<texture>views/OverlayWatched.png</texture>
-							<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
+							<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
 						</control>
 						<control type="image">
 							<top>48</top>
@@ -211,7 +210,7 @@
 							<width>640</width>
 							<height>12</height>
 							<texture border="2">views/ProgressBar.png</texture>
-							<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable</visible>
+							<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
 						</control>
 						<control type="label">
 							<left>18</left>
@@ -256,8 +255,9 @@
 							<width>640</width>
 							<height>480</height>
 							<texture>views/OverlayNF.png</texture>
-							<animation center="auto" condition="Control.HasFocus(52)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Control.HasFocus(52)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+							<include content="FocusedListIDAnimation">
+								<param name="ListID" value="52"/>
+							</include>
 						</control>
 					</control>
 				</focusedlayout>

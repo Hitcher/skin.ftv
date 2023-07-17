@@ -1,5 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="NextAiredDurationHours">
+		<value condition="Integer.IsGreater(Container(60).ListItem.Property(DurationHour),09)">$INFO[Container(60).ListItem.Property(DurationHour),, $LOCALIZE[31148]]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),01)">1 $LOCALIZE[31005]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),02)">2 $LOCALIZE[31148]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),03)">3 $LOCALIZE[31148]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),04)">4 $LOCALIZE[31148]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),05)">5 $LOCALIZE[31148]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),06)">6 $LOCALIZE[31148]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),07)">7 $LOCALIZE[31148]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),08)">8 $LOCALIZE[31148]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),09)">9 $LOCALIZE[31148]</value>
+		<value/>
+	</variable>
+	<variable name="NextAiredDurationMins">
+		<value condition="Integer.IsGreater(Container(60).ListItem.Property(DurationMins),09)">$INFO[Container(60).ListItem.Property(DurationMins),, $LOCALIZE[31147]]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),01)">1 $LOCALIZE[31004]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),02)">2 $LOCALIZE[31147]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),03)">3 $LOCALIZE[31147]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),04)">4 $LOCALIZE[31147]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),05)">5 $LOCALIZE[31147]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),06)">6 $LOCALIZE[31147]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),07)">7 $LOCALIZE[31147]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),08)">8 $LOCALIZE[31147]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),09)">9 $LOCALIZE[31147]</value>
+		<value/>
+	</variable>
+	<variable name="NextAiredDurationSpacing">
+		<value condition="Integer.IsGreater(Container(60).ListItem.Property(DurationHour),00) + Integer.IsGreater(Container(60).ListItem.Property(DurationMins),00)">[COLOR=00ffffff]r[/COLOR]</value>
+		<value/>
+	</variable>
+	<variable name="NextAiredSeasonNumber">
+		<value condition="String.IsEmpty(Container(60).ListItem.Property(Stacked)) + Integer.IsLessOrEqual(Container(60).ListItem.Property(Season),9)">$INFO[Container(60).ListItem.Property(Season),S0]</value>
+		<value condition="String.IsEmpty(Container(60).ListItem.Property(Stacked))">$INFO[Container(60).ListItem.Property(Season),S]</value>
+		<value condition="Integer.IsLessOrEqual(Container(60).ListItem.Property(Season),9)">$INFO[Container(60).ListItem.Property(Season),S0]</value>
+		<value>$INFO[Container(60).ListItem.Property(Season),S]</value>
+	</variable>
+	<variable name="NextAiredEpisodeNumber">
+		<value condition="String.IsEmpty(Container(60).ListItem.Property(Stacked)) + Integer.IsLessOrEqual(Container(60).ListItem.Property(Episode),9)">$INFO[Container(60).ListItem.Property(Episode),E0]</value>
+		<value condition="String.IsEmpty(Container(60).ListItem.Property(Stacked))">$INFO[Container(60).ListItem.Property(Episode),E]</value>
+		<value condition="Integer.IsLessOrEqual(Container(60).ListItem.Property(StackedFirst),9) + Integer.IsLessOrEqual(Container(60).ListItem.Property(StackedLast),9)">$INFO[Container(60).ListItem.Property(StackedFirst),E0] - $INFO[Container(60).ListItem.Property(StackedLast),E0]</value>
+		<value condition="Integer.IsLessOrEqual(Container(60).ListItem.Property(StackedFirst),9)">$INFO[Container(60).ListItem.Property(StackedFirst),E0] - $INFO[Container(60).ListItem.Property(StackedLast),E]</value>
+		<value>$INFO[Container(60).ListItem.Property(StackedFirst),E] - $INFO[Container(60).ListItem.Property(StackedLast),E]</value>
+	</variable>
+	<variable name="NextAiredTitle">
+		<value condition="String.IsEmpty(Container(60).ListItem.Property(Stacked))">$INFO[Container(60).ListItem.Property(Title)]</value>
+		<value condition="!String.IsEmpty(Container(60).ListItem.Property(Stacked))">$INFO[Container(60).ListItem.Property(StackedTitle)]</value>
+	</variable>
+	<variable name="NextAiredPlot">
+		<value condition="String.IsEmpty(Container(60).ListItem.Property(Stacked))">$INFO[Container(60).ListItem.Property(Plot)]</value>
+		<value condition="!String.IsEmpty(Container(60).ListItem.Property(Stacked))">$INFO[Container(60).ListItem.Property(Stacked),[CR], $LOCALIZE[36907]]</value>
+	</variable>
+	<variable name="AiredPrefix">
+		<value condition="!String.IsEmpty(Container(99950).ListItem.Property(Next_Aired.Long))">$LOCALIZE[31073]:</value>
+		<value condition="!String.IsEmpty(Container(99950).ListItem.Property(Last_Aired.Long))">$LOCALIZE[31082]:</value>
+	</variable>
+	<variable name="AiredDate">
+		<value condition="!String.IsEmpty(Container(99950).ListItem.Property(Next_Aired.Long))">$INFO[Container(99950).ListItem.Property(Next_Aired.Long)]</value>
+		<value condition="!String.IsEmpty(Container(99950).ListItem.Property(Last_Aired.Long))">$INFO[Container(99950).ListItem.Property(Last_Aired.Long)]</value>
+	</variable>
 	<variable name="DialogPersonInfoListContent">
 		<value condition="String.IsEqual(ListItem.Property(item.type),person) + String.IsEmpty(Window(home).Property(StarredInTV)) + String.IsEmpty(Window(home).Property(ActorImages))">plugin://plugin.video.themoviedb.helper?info=stars_in_movies&amp;type=person&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;nextpage=false&amp;limit=100</value>
 		<value condition="!String.IsEmpty(Window(home).Property(StarredInTV))">plugin://plugin.video.themoviedb.helper?info=stars_in_tvshows&amp;type=person&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;nextpage=false&amp;limit=100</value>
@@ -524,164 +583,6 @@
 	<variable name="VolumeDetails">
 		<value condition="!Player.Muted">$INFO[Control.GetLabel(404),,%]</value>
 		<value>$LOCALIZE[31013]</value>
-	</variable>
-	<variable name="NextAiredFanart">
-		<value condition="Container(999).HasFocus(1200)">$INFO[Container(200).ListItem.Art(tvshow.fanart)]</value>
-		<value condition="Container(999).HasFocus(1201)">$INFO[Container(201).ListItem.Art(tvshow.fanart)]</value>
-		<value condition="Container(999).HasFocus(1202)">$INFO[Container(202).ListItem.Art(tvshow.fanart)]</value>
-		<value condition="Container(999).HasFocus(1203)">$INFO[Container(203).ListItem.Art(tvshow.fanart)]</value>
-		<value condition="Container(999).HasFocus(1204)">$INFO[Container(204).ListItem.Art(tvshow.fanart)]</value>
-		<value condition="Container(999).HasFocus(1205)">$INFO[Container(205).ListItem.Art(tvshow.fanart)]</value>
-		<value condition="Container(999).HasFocus(1206)">$INFO[Container(206).ListItem.Art(tvshow.fanart)]</value>
-		<value condition="Container(999).HasFocus(1207)">$INFO[Container(207).ListItem.Art(tvshow.fanart)]</value>
-		<value condition="Container(999).HasFocus(1208)">$INFO[Container(208).ListItem.Art(tvshow.fanart)]</value>
-		<value condition="Container(999).HasFocus(1209)">$INFO[Container(209).ListItem.Art(tvshow.fanart)]</value>
-		<value condition="Container(999).HasFocus(1210)">$INFO[Container(210).ListItem.Art(tvshow.fanart)]</value>
-		<value condition="Container(999).HasFocus(1211)">$INFO[Container(211).ListItem.Art(tvshow.fanart)]</value>
-		<value condition="Container(999).HasFocus(1212)">$INFO[Container(212).ListItem.Art(tvshow.fanart)]</value>
-		<value condition="Container(999).HasFocus(1213)">$INFO[Container(213).ListItem.Art(tvshow.fanart)]</value>
-		<value condition="Container(999).HasFocus(1214)">$INFO[Container(214).ListItem.Art(tvshow.fanart)]</value>
-		<value condition="Container(999).HasFocus(1215)">$INFO[Container(215).ListItem.Art(tvshow.fanart)]</value>
-	</variable>
-	<variable name="NextAiredNextSeasonNumber">
-		<value condition="Container(999).HasFocus(1200) + Integer.IsLess(Container(200).ListItem.Property(NextSeasonNumber),9)">$INFO[Container(200).ListItem.Property(NextSeasonNumber),S0]</value>
-		<value condition="Container(999).HasFocus(1200)">$INFO[Container(200).ListItem.Property(NextSeasonNumber),S]</value>
-		<value condition="Container(999).HasFocus(1201) + Integer.IsLess(Container(201).ListItem.Property(NextSeasonNumber),9)">$INFO[Container(201).ListItem.Property(NextSeasonNumber),S0]</value>
-		<value condition="Container(999).HasFocus(1201)">$INFO[Container(201).ListItem.Property(NextSeasonNumber),S]</value>
-		<value condition="Container(999).HasFocus(1202) + Integer.IsLess(Container(202).ListItem.Property(NextSeasonNumber),9)">$INFO[Container(202).ListItem.Property(NextSeasonNumber),S0]</value>
-		<value condition="Container(999).HasFocus(1202)">$INFO[Container(202).ListItem.Property(NextSeasonNumber),S]</value>
-		<value condition="Container(999).HasFocus(1203) + Integer.IsLess(Container(203).ListItem.Property(NextSeasonNumber),9)">$INFO[Container(203).ListItem.Property(NextSeasonNumber),S0]</value>
-		<value condition="Container(999).HasFocus(1203)">$INFO[Container(203).ListItem.Property(NextSeasonNumber),S]</value>
-		<value condition="Container(999).HasFocus(1204) + Integer.IsLess(Container(204).ListItem.Property(NextSeasonNumber),9)">$INFO[Container(204).ListItem.Property(NextSeasonNumber),S0]</value>
-		<value condition="Container(999).HasFocus(1204)">$INFO[Container(204).ListItem.Property(NextSeasonNumber),S]</value>
-		<value condition="Container(999).HasFocus(1205) + Integer.IsLess(Container(205).ListItem.Property(NextSeasonNumber),9)">$INFO[Container(205).ListItem.Property(NextSeasonNumber),S0]</value>
-		<value condition="Container(999).HasFocus(1205)">$INFO[Container(205).ListItem.Property(NextSeasonNumber),S]</value>
-		<value condition="Container(999).HasFocus(1206) + Integer.IsLess(Container(206).ListItem.Property(NextSeasonNumber),9)">$INFO[Container(206).ListItem.Property(NextSeasonNumber),S0]</value>
-		<value condition="Container(999).HasFocus(1206)">$INFO[Container(206).ListItem.Property(NextSeasonNumber),S]</value>
-		<value condition="Container(999).HasFocus(1207) + Integer.IsLess(Container(207).ListItem.Property(NextSeasonNumber),9)">$INFO[Container(207).ListItem.Property(NextSeasonNumber),S0]</value>
-		<value condition="Container(999).HasFocus(1207)">$INFO[Container(207).ListItem.Property(NextSeasonNumber),S]</value>
-		<value condition="Container(999).HasFocus(1208) + Integer.IsLess(Container(208).ListItem.Property(NextSeasonNumber),9)">$INFO[Container(208).ListItem.Property(NextSeasonNumber),S0]</value>
-		<value condition="Container(999).HasFocus(1208)">$INFO[Container(208).ListItem.Property(NextSeasonNumber),S]</value>
-		<value condition="Container(999).HasFocus(1209) + Integer.IsLess(Container(209).ListItem.Property(NextSeasonNumber),9)">$INFO[Container(209).ListItem.Property(NextSeasonNumber),S0]</value>
-		<value condition="Container(999).HasFocus(1209)">$INFO[Container(209).ListItem.Property(NextSeasonNumber),S]</value>
-		<value condition="Container(999).HasFocus(1210) + Integer.IsLess(Container(210).ListItem.Property(NextSeasonNumber),9)">$INFO[Container(210).ListItem.Property(NextSeasonNumber),S0]</value>
-		<value condition="Container(999).HasFocus(1210)">$INFO[Container(210).ListItem.Property(NextSeasonNumber),S]</value>
-		<value condition="Container(999).HasFocus(1211) + Integer.IsLess(Container(211).ListItem.Property(NextSeasonNumber),9)">$INFO[Container(211).ListItem.Property(NextSeasonNumber),S0]</value>
-		<value condition="Container(999).HasFocus(1211)">$INFO[Container(211).ListItem.Property(NextSeasonNumber),S]</value>
-		<value condition="Container(999).HasFocus(1212) + Integer.IsLess(Container(212).ListItem.Property(NextSeasonNumber),9)">$INFO[Container(212).ListItem.Property(NextSeasonNumber),S0]</value>
-		<value condition="Container(999).HasFocus(1212)">$INFO[Container(212).ListItem.Property(NextSeasonNumber),S]</value>
-		<value condition="Container(999).HasFocus(1213) + Integer.IsLess(Container(213).ListItem.Property(NextSeasonNumber),9)">$INFO[Container(213).ListItem.Property(NextSeasonNumber),S0]</value>
-		<value condition="Container(999).HasFocus(1213)">$INFO[Container(213).ListItem.Property(NextSeasonNumber),S]</value>
-		<value condition="Container(999).HasFocus(1214) + Integer.IsLess(Container(214).ListItem.Property(NextSeasonNumber),9)">$INFO[Container(214).ListItem.Property(NextSeasonNumber),S0]</value>
-		<value condition="Container(999).HasFocus(1214)">$INFO[Container(214).ListItem.Property(NextSeasonNumber),S]</value>
-		<value condition="Container(999).HasFocus(1215) + Integer.IsLess(Container(215).ListItem.Property(NextSeasonNumber),9)">$INFO[Container(215).ListItem.Property(NextSeasonNumber),S0]</value>
-		<value condition="Container(999).HasFocus(1215)">$INFO[Container(215).ListItem.Property(NextSeasonNumber),S]</value>
-	</variable>
-	<variable name="NextAiredNextEpisodeNumber">
-		<value condition="Container(999).HasFocus(1200) + Integer.IsLess(Container(200).ListItem.Property(NextEpisodeNumber),9)">$INFO[Container(200).ListItem.Property(NextEpisodeNumber),E0]</value>
-		<value condition="Container(999).HasFocus(1200)">$INFO[Container(200).ListItem.Property(NextEpisodeNumber),E]</value>
-		<value condition="Container(999).HasFocus(1201) + Integer.IsLess(Container(201).ListItem.Property(NextEpisodeNumber),9)">$INFO[Container(201).ListItem.Property(NextEpisodeNumber),E0]</value>
-		<value condition="Container(999).HasFocus(1201)">$INFO[Container(201).ListItem.Property(NextEpisodeNumber),E]</value>
-		<value condition="Container(999).HasFocus(1202) + Integer.IsLess(Container(202).ListItem.Property(NextEpisodeNumber),9)">$INFO[Container(202).ListItem.Property(NextEpisodeNumber),E0]</value>
-		<value condition="Container(999).HasFocus(1202)">$INFO[Container(202).ListItem.Property(NextEpisodeNumber),E]</value>
-		<value condition="Container(999).HasFocus(1203) + Integer.IsLess(Container(203).ListItem.Property(NextEpisodeNumber),9)">$INFO[Container(203).ListItem.Property(NextEpisodeNumber),E0]</value>
-		<value condition="Container(999).HasFocus(1203)">$INFO[Container(203).ListItem.Property(NextEpisodeNumber),E]</value>
-		<value condition="Container(999).HasFocus(1204) + Integer.IsLess(Container(204).ListItem.Property(NextEpisodeNumber),9)">$INFO[Container(204).ListItem.Property(NextEpisodeNumber),E0]</value>
-		<value condition="Container(999).HasFocus(1204)">$INFO[Container(204).ListItem.Property(NextEpisodeNumber),E]</value>
-		<value condition="Container(999).HasFocus(1205) + Integer.IsLess(Container(205).ListItem.Property(NextEpisodeNumber),9)">$INFO[Container(205).ListItem.Property(NextEpisodeNumber),E0]</value>
-		<value condition="Container(999).HasFocus(1205)">$INFO[Container(205).ListItem.Property(NextEpisodeNumber),E]</value>
-		<value condition="Container(999).HasFocus(1206) + Integer.IsLess(Container(206).ListItem.Property(NextEpisodeNumber),9)">$INFO[Container(206).ListItem.Property(NextEpisodeNumber),E0]</value>
-		<value condition="Container(999).HasFocus(1206)">$INFO[Container(206).ListItem.Property(NextEpisodeNumber),E]</value>
-		<value condition="Container(999).HasFocus(1207) + Integer.IsLess(Container(207).ListItem.Property(NextEpisodeNumber),9)">$INFO[Container(207).ListItem.Property(NextEpisodeNumber),E0]</value>
-		<value condition="Container(999).HasFocus(1207)">$INFO[Container(207).ListItem.Property(NextEpisodeNumber),E]</value>
-		<value condition="Container(999).HasFocus(1208) + Integer.IsLess(Container(208).ListItem.Property(NextEpisodeNumber),9)">$INFO[Container(208).ListItem.Property(NextEpisodeNumber),E0]</value>
-		<value condition="Container(999).HasFocus(1208)">$INFO[Container(208).ListItem.Property(NextEpisodeNumber),E]</value>
-		<value condition="Container(999).HasFocus(1209) + Integer.IsLess(Container(209).ListItem.Property(NextEpisodeNumber),9)">$INFO[Container(209).ListItem.Property(NextEpisodeNumber),E0]</value>
-		<value condition="Container(999).HasFocus(1209)">$INFO[Container(209).ListItem.Property(NextEpisodeNumber),E]</value>
-		<value condition="Container(999).HasFocus(1210) + Integer.IsLess(Container(210).ListItem.Property(NextEpisodeNumber),9)">$INFO[Container(210).ListItem.Property(NextEpisodeNumber),E0]</value>
-		<value condition="Container(999).HasFocus(1210)">$INFO[Container(210).ListItem.Property(NextEpisodeNumber),E]</value>
-		<value condition="Container(999).HasFocus(1211) + Integer.IsLess(Container(211).ListItem.Property(NextEpisodeNumber),9)">$INFO[Container(211).ListItem.Property(NextEpisodeNumber),E0]</value>
-		<value condition="Container(999).HasFocus(1211)">$INFO[Container(211).ListItem.Property(NextEpisodeNumber),E]</value>
-		<value condition="Container(999).HasFocus(1212) + Integer.IsLess(Container(212).ListItem.Property(NextEpisodeNumber),9)">$INFO[Container(212).ListItem.Property(NextEpisodeNumber),E0]</value>
-		<value condition="Container(999).HasFocus(1212)">$INFO[Container(212).ListItem.Property(NextEpisodeNumber),E]</value>
-		<value condition="Container(999).HasFocus(1213) + Integer.IsLess(Container(213).ListItem.Property(NextEpisodeNumber),9)">$INFO[Container(213).ListItem.Property(NextEpisodeNumber),E0]</value>
-		<value condition="Container(999).HasFocus(1213)">$INFO[Container(213).ListItem.Property(NextEpisodeNumber),E]</value>
-		<value condition="Container(999).HasFocus(1214) + Integer.IsLess(Container(214).ListItem.Property(NextEpisodeNumber),9)">$INFO[Container(214).ListItem.Property(NextEpisodeNumber),E0]</value>
-		<value condition="Container(999).HasFocus(1214)">$INFO[Container(214).ListItem.Property(NextEpisodeNumber),E]</value>
-		<value condition="Container(999).HasFocus(1215) + Integer.IsLess(Container(215).ListItem.Property(NextEpisodeNumber),9)">$INFO[Container(215).ListItem.Property(NextEpisodeNumber),E0]</value>
-		<value condition="Container(999).HasFocus(1215)">$INFO[Container(215).ListItem.Property(NextEpisodeNumber),E]</value>
-	</variable>
-	<variable name="NextAiredShow">
-		<value condition="Container(999).HasFocus(1200)">$INFO[Container(200).ListItem.Label]</value>
-		<value condition="Container(999).HasFocus(1201)">$INFO[Container(201).ListItem.Label]</value>
-		<value condition="Container(999).HasFocus(1202)">$INFO[Container(202).ListItem.Label]</value>
-		<value condition="Container(999).HasFocus(1203)">$INFO[Container(203).ListItem.Label]</value>
-		<value condition="Container(999).HasFocus(1204)">$INFO[Container(204).ListItem.Label]</value>
-		<value condition="Container(999).HasFocus(1205)">$INFO[Container(205).ListItem.Label]</value>
-		<value condition="Container(999).HasFocus(1206)">$INFO[Container(206).ListItem.Label]</value>
-		<value condition="Container(999).HasFocus(1207)">$INFO[Container(207).ListItem.Label]</value>
-		<value condition="Container(999).HasFocus(1208)">$INFO[Container(208).ListItem.Label]</value>
-		<value condition="Container(999).HasFocus(1209)">$INFO[Container(209).ListItem.Label]</value>
-		<value condition="Container(999).HasFocus(1210)">$INFO[Container(210).ListItem.Label]</value>
-		<value condition="Container(999).HasFocus(1211)">$INFO[Container(211).ListItem.Label]</value>
-		<value condition="Container(999).HasFocus(1212)">$INFO[Container(212).ListItem.Label]</value>
-		<value condition="Container(999).HasFocus(1213)">$INFO[Container(213).ListItem.Label]</value>
-		<value condition="Container(999).HasFocus(1214)">$INFO[Container(214).ListItem.Label]</value>
-		<value condition="Container(999).HasFocus(1215)">$INFO[Container(215).ListItem.Label]</value>
-	</variable>
-	<variable name="NextAiredNextTitle">
-		<value condition="Container(999).HasFocus(1200)">$INFO[Container(200).ListItem.Property(NextTitle)]</value>
-		<value condition="Container(999).HasFocus(1201)">$INFO[Container(201).ListItem.Property(NextTitle)]</value>
-		<value condition="Container(999).HasFocus(1202)">$INFO[Container(202).ListItem.Property(NextTitle)]</value>
-		<value condition="Container(999).HasFocus(1203)">$INFO[Container(203).ListItem.Property(NextTitle)]</value>
-		<value condition="Container(999).HasFocus(1204)">$INFO[Container(204).ListItem.Property(NextTitle)]</value>
-		<value condition="Container(999).HasFocus(1205)">$INFO[Container(205).ListItem.Property(NextTitle)]</value>
-		<value condition="Container(999).HasFocus(1206)">$INFO[Container(206).ListItem.Property(NextTitle)]</value>
-		<value condition="Container(999).HasFocus(1207)">$INFO[Container(207).ListItem.Property(NextTitle)]</value>
-		<value condition="Container(999).HasFocus(1208)">$INFO[Container(208).ListItem.Property(NextTitle)]</value>
-		<value condition="Container(999).HasFocus(1209)">$INFO[Container(209).ListItem.Property(NextTitle)]</value>
-		<value condition="Container(999).HasFocus(1210)">$INFO[Container(210).ListItem.Property(NextTitle)]</value>
-		<value condition="Container(999).HasFocus(1211)">$INFO[Container(211).ListItem.Property(NextTitle)]</value>
-		<value condition="Container(999).HasFocus(1212)">$INFO[Container(212).ListItem.Property(NextTitle)]</value>
-		<value condition="Container(999).HasFocus(1213)">$INFO[Container(213).ListItem.Property(NextTitle)]</value>
-		<value condition="Container(999).HasFocus(1214)">$INFO[Container(214).ListItem.Property(NextTitle)]</value>
-		<value condition="Container(999).HasFocus(1215)">$INFO[Container(215).ListItem.Property(NextTitle)]</value>
-	</variable>
-	<variable name="NextAiredShortTime">
-		<value condition="Container(999).HasFocus(1200)">$INFO[Container(200).ListItem.Property(ShortTime)]</value>
-		<value condition="Container(999).HasFocus(1201)">$INFO[Container(201).ListItem.Property(ShortTime)]</value>
-		<value condition="Container(999).HasFocus(1202)">$INFO[Container(202).ListItem.Property(ShortTime)]</value>
-		<value condition="Container(999).HasFocus(1203)">$INFO[Container(203).ListItem.Property(ShortTime)]</value>
-		<value condition="Container(999).HasFocus(1204)">$INFO[Container(204).ListItem.Property(ShortTime)]</value>
-		<value condition="Container(999).HasFocus(1205)">$INFO[Container(205).ListItem.Property(ShortTime)]</value>
-		<value condition="Container(999).HasFocus(1206)">$INFO[Container(206).ListItem.Property(ShortTime)]</value>
-		<value condition="Container(999).HasFocus(1207)">$INFO[Container(207).ListItem.Property(ShortTime)]</value>
-		<value condition="Container(999).HasFocus(1208)">$INFO[Container(208).ListItem.Property(ShortTime)]</value>
-		<value condition="Container(999).HasFocus(1209)">$INFO[Container(209).ListItem.Property(ShortTime)]</value>
-		<value condition="Container(999).HasFocus(1210)">$INFO[Container(210).ListItem.Property(ShortTime)]</value>
-		<value condition="Container(999).HasFocus(1211)">$INFO[Container(211).ListItem.Property(ShortTime)]</value>
-		<value condition="Container(999).HasFocus(1212)">$INFO[Container(212).ListItem.Property(ShortTime)]</value>
-		<value condition="Container(999).HasFocus(1213)">$INFO[Container(213).ListItem.Property(ShortTime)]</value>
-		<value condition="Container(999).HasFocus(1214)">$INFO[Container(214).ListItem.Property(ShortTime)]</value>
-		<value condition="Container(999).HasFocus(1215)">$INFO[Container(215).ListItem.Property(ShortTime)]</value>
-	</variable>
-	<variable name="NextAiredNextDay">
-		<value condition="Container(999).HasFocus(1200)">$INFO[Container(200).ListItem.Property(NextDay)]</value>
-		<value condition="Container(999).HasFocus(1201)">$INFO[Container(201).ListItem.Property(NextDay)]</value>
-		<value condition="Container(999).HasFocus(1202)">$INFO[Container(202).ListItem.Property(NextDay)]</value>
-		<value condition="Container(999).HasFocus(1203)">$INFO[Container(203).ListItem.Property(NextDay)]</value>
-		<value condition="Container(999).HasFocus(1204)">$INFO[Container(204).ListItem.Property(NextDay)]</value>
-		<value condition="Container(999).HasFocus(1205)">$INFO[Container(205).ListItem.Property(NextDay)]</value>
-		<value condition="Container(999).HasFocus(1206)">$INFO[Container(206).ListItem.Property(NextDay)]</value>
-		<value condition="Container(999).HasFocus(1207)">$INFO[Container(207).ListItem.Property(NextDay)]</value>
-		<value condition="Container(999).HasFocus(1208)">$INFO[Container(208).ListItem.Property(NextDay)]</value>
-		<value condition="Container(999).HasFocus(1209)">$INFO[Container(209).ListItem.Property(NextDay)]</value>
-		<value condition="Container(999).HasFocus(1210)">$INFO[Container(210).ListItem.Property(NextDay)]</value>
-		<value condition="Container(999).HasFocus(1211)">$INFO[Container(211).ListItem.Property(NextDay)]</value>
-		<value condition="Container(999).HasFocus(1212)">$INFO[Container(212).ListItem.Property(NextDay)]</value>
-		<value condition="Container(999).HasFocus(1213)">$INFO[Container(213).ListItem.Property(NextDay)]</value>
-		<value condition="Container(999).HasFocus(1214)">$INFO[Container(214).ListItem.Property(NextDay)]</value>
-		<value condition="Container(999).HasFocus(1215)">$INFO[Container(215).ListItem.Property(NextDay)]</value>
 	</variable>
 	<variable name="1000-SortBy-1">
 		<value condition="String.Contains(Skin.String(1000-WidgetList-1),addons://)">label</value>

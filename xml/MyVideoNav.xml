@@ -218,9 +218,9 @@
 					<visible>!String.IsEmpty(Container(9001).ListItem.Rating(tvdb)) + String.IsEmpty(ListItem.Rating(tvdb))</visible>
 				</control>
 				<control type="image">
-					<top>4</top>
-					<width>60</width>
-					<height>24</height>
+					<top>3</top>
+					<width>54</width>
+					<height>23</height>
 					<texture>views/logos/tmdb.png</texture>
 					<visible>!String.IsEmpty(ListItem.Rating(themoviedb))</visible>
 				</control>
@@ -235,9 +235,9 @@
 					<visible>!String.IsEmpty(ListItem.Rating(themoviedb))</visible>
 				</control>
 				<control type="image">
-					<top>4</top>
-					<width>60</width>
-					<height>24</height>
+					<top>3</top>
+					<width>54</width>
+					<height>23</height>
 					<texture>views/logos/tmdb.png</texture>
 					<visible>!String.IsEmpty(Container(9001).ListItem.Rating(themoviedb)) + String.IsEmpty(ListItem.Rating(themoviedb))</visible>
 				</control>
@@ -339,8 +339,8 @@
 						<textoffsetx>28</textoffsetx>
 						<textcolor>ffdadada</textcolor>
 						<focusedcolor>ff222222</focusedcolor>
-						<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-						<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+						<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+						<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 						<visible>!ListItem.IsParentFolder</visible>
 					</control>
 					<control id="1003" type="button">
@@ -357,8 +357,8 @@
 						<textcolor>ffdadada</textcolor>
 						<focusedcolor>ff222222</focusedcolor>
 						<visible>!String.IsEmpty(ListItem.Trailer)</visible>
-						<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-						<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+						<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+						<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 					</control>
 					<control id="1004" type="button">
 						<width min="124" max="204">auto</width>
@@ -373,8 +373,8 @@
 						<textcolor>ffdadada</textcolor>
 						<focusedcolor>ff222222</focusedcolor>
 						<visible>Integer.IsGreater(Playlist.Length(video),0)</visible>
-						<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-						<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+						<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+						<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 					</control>
 					<control id="1005" type="button">
 						<width min="124" max="204">auto</width>
@@ -388,8 +388,8 @@
 						<textoffsetx>28</textoffsetx>
 						<textcolor>ffdadada</textcolor>
 						<focusedcolor>ff222222</focusedcolor>
-						<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-						<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+						<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+						<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 					</control>
 					<control type="button" id="1006">
 						<width min="124" max="204">auto</width>
@@ -404,8 +404,8 @@
 						<focusedcolor>ff222222</focusedcolor>
 						<onclick>Action(close)</onclick>
 						<onclick>RunScript(plugin.video.specialfeatures,ListItem)</onclick>
-						<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-						<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+						<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+						<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 						<visible>String.IsEqual(Window(home).Property(SpecialFeatures.Visible),true)</visible>
 					</control>
 					<control id="20" type="togglebutton">
@@ -423,16 +423,16 @@
 						<focusedcolor>ff222222</focusedcolor>
 						<visible>Control.IsEnabled(20)</visible>
 						<usealttexture>Library.IsScanningVideo</usealttexture>
-						<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-						<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
-						<alttexturefocus border="13,5,6,8">views/button_fo.png</alttexturefocus>
-						<alttexturenofocus border="13,3,6,6">views/button_nf.png</alttexturenofocus>
+						<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+						<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+						<alttexturefocus border="13,5,5,7">views/button_fo.png</alttexturefocus>
+						<alttexturenofocus border="13,3,5,5">views/button_nf.png</alttexturenofocus>
 					</control>
 				</control>
 				<!-- Movie / TV Show Details -->
 				<control type="grouplist">
 					<top>110</top>
-					<height>26</height>
+					<height>38</height>
 					<itemgap>10</itemgap>
 					<orientation>horizontal</orientation>
 					<usecontrolcoords>true</usecontrolcoords>
@@ -588,9 +588,9 @@
 						<visible>!String.IsEmpty(Container(9001).ListItem.Rating(tvdb)) + String.IsEmpty(ListItem.Rating(tvdb))</visible>
 					</control>
 					<control type="image">
-						<top>4</top>
-						<width>60</width>
-						<height>24</height>
+						<top>3</top>
+						<width>54</width>
+						<height>23</height>
 						<texture>views/logos/tmdb.png</texture>
 						<visible>!String.IsEmpty(ListItem.Rating(themoviedb))</visible>
 					</control>
@@ -605,9 +605,9 @@
 						<visible>!String.IsEmpty(ListItem.Rating(themoviedb))</visible>
 					</control>
 					<control type="image">
-						<top>4</top>
-						<width>60</width>
-						<height>24</height>
+						<top>3</top>
+						<width>54</width>
+						<height>23</height>
 						<texture>views/logos/tmdb.png</texture>
 						<visible>!String.IsEmpty(Container(9001).ListItem.Rating(themoviedb)) + String.IsEmpty(ListItem.Rating(themoviedb))</visible>
 					</control>
@@ -985,8 +985,8 @@
 						<textcolor>ffdadada</textcolor>
 						<focusedcolor>ff222222</focusedcolor>
 						<visible>!String.IsEmpty(ListItem.Trailer)</visible>
-						<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-						<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+						<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+						<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 					</control>
 					<control id="1004" type="button">
 						<width min="124" max="204">auto</width>
@@ -1001,8 +1001,8 @@
 						<textcolor>ffdadada</textcolor>
 						<focusedcolor>ff222222</focusedcolor>
 						<visible>Integer.IsGreater(Playlist.Length(video),0)</visible>
-						<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-						<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+						<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+						<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 					</control>
 					<control id="1005" type="button">
 						<width min="124" max="204">auto</width>
@@ -1016,8 +1016,8 @@
 						<textoffsetx>28</textoffsetx>
 						<textcolor>ffdadada</textcolor>
 						<focusedcolor>ff222222</focusedcolor>
-						<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-						<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+						<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+						<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 					</control>
 					<control id="16" type="button">
 						<width min="124" max="204">auto</width>
@@ -1030,8 +1030,8 @@
 						<textoffsetx>28</textoffsetx>
 						<textcolor>ffdadada</textcolor>
 						<focusedcolor>ff222222</focusedcolor>
-						<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-						<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+						<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+						<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 						<visible>Container.Content(musicvideos)</visible>
 					</control>
 					<control id="20" type="togglebutton">
@@ -1049,10 +1049,10 @@
 						<focusedcolor>ff222222</focusedcolor>
 						<visible>Control.IsEnabled(20) + String.IsEmpty(Container.PluginName)</visible>
 						<usealttexture>Library.IsScanningVideo</usealttexture>
-						<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-						<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
-						<alttexturefocus border="13,5,6,8">views/button_fo.png</alttexturefocus>
-						<alttexturenofocus border="13,3,6,6">views/button_nf.png</alttexturenofocus>
+						<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+						<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+						<alttexturefocus border="13,5,5,7">views/button_fo.png</alttexturefocus>
+						<alttexturenofocus border="13,3,5,5">views/button_nf.png</alttexturenofocus>
 					</control>
 				</control>
 				<!-- Details -->
@@ -1102,20 +1102,13 @@
 		</control>
 		<control type="group">
 			<visible>ControlGroup(5000).HasFocus</visible>
-			<animation reversible="true" type="Visible">
-				<effect center="auto" easing="inout" end="100" start="92" time="120" tween="sine" type="zoom"/>
-				<effect easing="inout" end="100" start="0" time="120" tween="sine" type="fade"/>
-			</animation>
-			<animation reversible="true" type="Hidden">
-				<effect center="auto" easing="inout" end="92" start="100" time="120" tween="sine" type="zoom"/>
-				<effect easing="inout" end="0" start="100" time="120" tween="sine" type="fade"/>
-			</animation>
+			<include>DialogZoomFadeVisibleAnimation</include>
 			<!-- Controls -->
 			<control type="grouplist" id="5000">
 				<centerleft>50%</centerleft>
 				<centertop>50%</centertop>
 				<width>640</width>
-				<height>810</height>
+				<height>960</height>
 				<onup>noop</onup>
 				<ondown>noop</ondown>
 				<onleft>50</onleft>
@@ -1128,12 +1121,7 @@
 				<control type="button" id="5001">
 					<width>-8</width>
 					<height>0</height>
-					<onfocus condition="!String.IsEmpty(Container.PluginName)">SetFocus(5022)</onfocus>
-					<onfocus condition="String.IsEmpty(Container.PluginName) + Control.IsEnabled(3)">SetFocus(5004)</onfocus>
-					<onfocus condition="String.IsEmpty(Container.PluginName) + !Control.IsEnabled(3) + Control.IsEnabled(4)">SetFocus(14)</onfocus>
-					<onfocus condition="String.IsEmpty(Container.PluginName) + !Control.IsEnabled(3) + Control.IsEnabled(4) + Control.IsEnabled(14)">SetFocus(4)</onfocus>
-					<onfocus condition="String.IsEmpty(Container.PluginName) + !Control.IsEnabled(3) + !Control.IsEnabled(4) + Control.IsEnabled(14) + Container.CanFilter + !Container.CanFilterAdvanced">SetFocus(19)</onfocus>
-					<onfocus condition="String.IsEmpty(Container.PluginName) + !Control.IsEnabled(3) + !Control.IsEnabled(4) + Control.IsEnabled(14) + Container.CanFilterAdvanced">SetFocus(5011)</onfocus>
+					<onfocus>SetFocus(5022)</onfocus>
 					<include>NoTextures</include>
 					<visible>!Control.HasFocus(5022) + !Control.HasFocus(5004) + !Control.HasFocus(14) + !Control.HasFocus(4) + !Control.HasFocus(19) + !Control.HasFocus(5011) + !Control.HasFocus(5013)</visible>
 				</control>
@@ -1141,7 +1129,6 @@
 					<width>640</width>
 					<height>60</height>
 					<texture border="2">dialogs/OptionsBackgroundHeading.png</texture>
-					<visible>!String.IsEmpty(Container.PluginName)</visible>
 				</control>
 				<control type="label" id="5021">
 					<left>40</left>
@@ -1151,7 +1138,6 @@
 					<font>Bold30</font>
 					<textcolor>ffdadada</textcolor>
 					<label>$LOCALIZE[582]:</label>
-					<visible>!String.IsEmpty(Container.PluginName)</visible>
 				</control>
 				<control type="button" id="5022">
 					<height>110</height>
@@ -1167,7 +1153,6 @@
 					<focusedcolor>ffffaf37</focusedcolor>
 					<texturefocus border="3">dialogs/OptionsBackgroundButtonFO.png</texturefocus>
 					<texturenofocus border="3">dialogs/OptionsBackgroundButtonNF.png</texturenofocus>
-					<visible>!String.IsEmpty(Container.PluginName)</visible>
 				</control>
 				<control type="image" id="5002">
 					<width>640</width>

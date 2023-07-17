@@ -119,6 +119,21 @@
 				<texture border="2">views/ProgressBar.png</texture>
 				<visible>Container.Content(episodes) + Integer.IsGreater(ListItem.PlayCount,0) + !ListItem.IsResumable</visible>
 			</control>
+			<control id="7000" type="button">
+				<top>518</top>
+				<width>480</width>
+				<height>35</height>
+				<onup condition="!Control.IsVisible(96)">Close</onup>
+				<onup condition="Control.IsVisible(96)">3002</onup>
+				<ondown>noop</ondown>
+				<onleft>Close</onleft>
+				<onright>9000</onright>
+				<font>Light35</font>
+				<textcolor>ffdadada</textcolor>
+				<focusedcolor>ffffc24b</focusedcolor>
+				<label>$LOCALIZE[31026]</label>
+				<include>NoTextures</include>
+			</control>
 		</control>
 		<control type="group">
 			<left>510</left>
@@ -246,9 +261,9 @@
 					<visible>!String.IsEmpty(ListItem.Rating(tvdb))</visible>
 				</control>
 				<control type="image">
-					<top>4</top>
-					<width>60</width>
-					<height>24</height>
+					<top>3</top>
+					<width>54</width>
+					<height>23</height>
 					<texture>views/logos/tmdb.png</texture>
 					<visible>!String.IsEmpty(ListItem.Rating(themoviedb))</visible>
 				</control>
@@ -394,7 +409,7 @@
 					<font>Light30Spaced</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffbcbcbc</textcolor>
-					<label>$INFO[Container(500).ListItemAbsolute(0).Label]$INFO[Container(500).ListItemAbsolute(1).Label,$COMMA ]$INFO[Container(500).ListItemAbsolute(2).Label,$COMMA ]</label>
+					<label>$INFO[Container(50).ListItemAbsolute(0).Label]$INFO[Container(50).ListItemAbsolute(1).Label,$COMMA ]$INFO[Container(50).ListItemAbsolute(2).Label,$COMMA ]</label>
 				</control>
 			</control>
 			<!-- Director -->
@@ -427,7 +442,7 @@
 					<label>$INFO[ListItem.Director]</label>
 				</control>
 			</control>
-			<!-- Next Airs -->
+			<!-- Next/Last Aired -->
 			<control type="grouplist">
 				<top>339</top>
 				<width>1192</width>
@@ -436,7 +451,7 @@
 				<include>DialogVideoInfoAnimation</include>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
-				<visible>String.IsEmpty(ListItem.Director) + String.IsEqual(ListItem.DBTYPE,tvshow) + !String.IsEmpty(Window(Home).Property(NextAired.NextDay))</visible>
+				<visible>String.IsEmpty(ListItem.Director) + String.IsEqual(ListItem.DBTYPE,tvshow) + [!String.IsEmpty(Container(99950).ListItem.Property(Last_Aired.Long)) | !String.IsEmpty(Container(99950).ListItem.Property(Next_Aired.Long))]</visible>
 				<animation condition="Control.HasFocus(500)" effect="fade" end="0" start="100" time="0">Conditional</animation>
 				<animation condition="!Control.HasFocus(500)" delay="200" effect="fade" end="100" start="0" time="80">Conditional</animation>
 				<control type="label">
@@ -445,7 +460,7 @@
 					<font>Med30</font>
 					<aligny>bottom</aligny>
 					<textcolor>ff717171</textcolor>
-					<label>$LOCALIZE[31073]:</label>
+					<label>$VAR[AiredPrefix]</label>
 				</control>
 				<control type="label">
 					<top>-1</top>
@@ -454,7 +469,7 @@
 					<font>Light30Spaced</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffbcbcbc</textcolor>
-					<label>$INFO[Window(Home).Property(NextAired.NextDay)]</label>
+					<label>$VAR[AiredDate]</label>
 				</control>
 			</control>
 			<!-- Button grouplist -->
@@ -493,10 +508,10 @@
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
 					<visible>Control.IsVisible(8)</visible>
-					<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
-					<alttexturefocus border="13,5,6,8">views/button_fo.png</alttexturefocus>
-					<alttexturenofocus border="13,3,6,6">views/button_nf.png</alttexturenofocus>
+					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+					<alttexturefocus border="13,5,5,7">views/button_fo.png</alttexturefocus>
+					<alttexturenofocus border="13,3,5,5">views/button_nf.png</alttexturenofocus>
 					<usealttexture>String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(Container.Content,seasons) | String.IsEqual(ListItem.DBTYPE,set)</usealttexture>
 				</control>
 				<!-- User Rating Button -->
@@ -516,8 +531,8 @@
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
 					<visible>Control.IsEnabled(7)</visible>
-					<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 				</control>
 				<!-- Trailer button -->
 				<control id="1003" type="button">
@@ -536,8 +551,8 @@
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
 					<visible>!String.IsEmpty(ListItem.Trailer)</visible>
-					<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 				</control>
 				<!-- Refresh Button -->
 				<control id="6" type="button">
@@ -553,8 +568,8 @@
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
 					<visible>Control.IsEnabled(6)</visible>
-					<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 				</control>
 				<!-- Get Thumb Button -->
 				<control id="10" type="button">
@@ -570,8 +585,8 @@
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
 					<visible>Control.IsEnabled(10)</visible>
-					<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 				</control>
 				<!-- Cinema Experience Button -->
 				<control id="21" type="button">
@@ -588,8 +603,8 @@
 					<textoffsetx>28</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
-					<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 					<visible>System.HasAddon(script.cinema.experience) + String.IsEqual(ListItem.DBTYPE,movie)</visible>
 				</control>
 				<!-- Special Features button -->
@@ -607,8 +622,8 @@
 					<focusedcolor>ff222222</focusedcolor>
 					<onclick>Action(close)</onclick>
 					<onclick>RunScript(plugin.video.specialfeatures,ListItem)</onclick>
-					<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 					<visible>String.IsEqual(Window(home).Property(SpecialFeatures.Visible),true)</visible>
 				</control>
 			</control>
@@ -693,16 +708,13 @@
 				<onright>noop</onright>
 				<onright condition="!Window.IsVisible(1103)">SetProperty(BounceRight,1,Home)</onright>
 				<onback>Control.SetFocus(500,0,absolute)</onback>
-				<onback>9001</onback>
+				<onback>7000</onback>
 				<preloaditems>2</preloaditems>
 				<focusposition>2</focusposition>
 				<viewtype label="">list</viewtype>
 				<orientation>horizontal</orientation>
 				<scrolltime easing="inout" tween="sine">300</scrolltime>
-				<animation condition="Window.IsVisible(1103)" reversible="false" type="Conditional">
-					<effect easing="out" end="-20,0" start="0,0" time="60" tween="sine" type="slide"/>
-					<effect delay="80" easing="out" end="20,0" start="0,0" time="120" tween="sine" type="slide"/>
-				</animation>
+				<include>ListBounceAnimation</include>
 				<animation delay="300" effect="fade" end="100" start="0" time="300">Visible</animation>
 				<animation effect="fade" end="0" start="100" time="300">Hidden</animation>
 				<animation center="480,1022" condition="!Control.HasFocus(500)" easing="inout" effect="zoom" end="81" start="100" time="300" tween="sine">Conditional</animation>
@@ -774,8 +786,9 @@
 							<width>416</width>
 							<height>576</height>
 							<texture border="50">views/shadow_fo.png</texture>
-							<animation center="auto" condition="Control.HasFocus(500) | Container(500).OnNext | Container(500).OnPrevious" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Container(500).OnNext | Container(500).OnPrevious" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">UnFocus</animation>
+							<include content="ContainerMoveFadeAnimation">
+								<param name="ListID" value="500"/>
+							</include>
 						</control>
 						<control type="image">
 							<left>-48</left>
@@ -783,8 +796,9 @@
 							<width>416</width>
 							<height>576</height>
 							<texture border="50">views/shadow_nf.png</texture>
-							<animation center="auto" condition="Control.HasFocus(500)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Control.HasFocus(500)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+							<include content="FocusedListIDAnimation">
+								<param name="ListID" value="500"/>
+							</include>
 						</control>
 						<control type="image">
 							<top>48</top>
@@ -799,8 +813,9 @@
 							<height>480</height>
 							<texture border="2">views/season_overlay.png</texture>
 							<visible>!String.Contains(ListItem.Icon,Default)</visible>
-							<animation center="auto" condition="Control.HasFocus(500)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Control.HasFocus(500)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+							<include content="FocusedListIDAnimation">
+								<param name="ListID" value="500"/>
+							</include>
 						</control>
 						<control type="label">
 							<left>18</left>
@@ -813,8 +828,9 @@
 							<shadowcolor>80000000</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>!Container.Content(Sets)</visible>
-							<animation center="auto" condition="Control.HasFocus(500)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Control.HasFocus(500)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+							<include content="FocusedListIDAnimation">
+								<param name="ListID" value="500"/>
+							</include>
 						</control>
 						<control type="label">
 							<left>18</left>
@@ -827,8 +843,9 @@
 							<shadowcolor>80000000</shadowcolor>
 							<label>$INFO[ListItem.Label2,$LOCALIZE[20347] ,]</label>
 							<visible>!Container.Content(Sets)</visible>
-							<animation center="auto" condition="Control.HasFocus(500)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Control.HasFocus(500)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+							<include content="FocusedListIDAnimation">
+								<param name="ListID" value="500"/>
+							</include>
 						</control>
 						<control type="image">
 							<top>48</top>
@@ -836,8 +853,9 @@
 							<height>480</height>
 							<texture>views/OverlayNF.png</texture>
 							<visible>Control.HasFocus(500)</visible>
-							<animation center="auto" condition="Control.HasFocus(500)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Control.HasFocus(500)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+							<include content="FocusedListIDAnimation">
+								<param name="ListID" value="500"/>
+							</include>
 						</control>
 					</control>
 				</focusedlayout>

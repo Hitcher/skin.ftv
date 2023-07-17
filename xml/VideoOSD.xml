@@ -110,10 +110,10 @@
 				<width>1735</width>
 				<height>11</height>
 				<info>Player.Editlist</info>
-				<lefttexture border="2">osd/chapter.png</lefttexture>
+				<lefttexture border="1">osd/chapter.png</lefttexture>
 				<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
 				<midtexture border="4">osd/osd_scene.png</midtexture>
-				<righttexture border="2">osd/chapter.png</righttexture>
+				<righttexture border="1">osd/chapter.png</righttexture>
 			</control>
 			<!--  Cuts -->
 			<control id="99" type="ranges">
@@ -133,7 +133,7 @@
 				<height>11</height>
 				<info>Player.SceneMarkers</info>
 				<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
-				<righttexture border="2">osd/chapter.png</righttexture>
+				<righttexture border="1">osd/chapter.png</righttexture>
 			</control>
 			<!--  Chapters -->
 			<control id="99" type="ranges">
@@ -143,7 +143,7 @@
 				<height>11</height>
 				<info>Player.Chapters</info>
 				<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
-				<righttexture border="2">osd/chapter.png</righttexture>
+				<righttexture border="1">osd/chapter.png</righttexture>
 			</control>
 			<control type="grouplist">
 				<left>92</left>
@@ -328,7 +328,7 @@
 				<font>OSD32</font>
 				<align>right</align>
 				<textcolor>fff3f3f3</textcolor>
-				<label>$INFO[System.Time]</label>
+				<label>$INFO[System.Time][COLOR ff696969] / $INFO[Player.FinishTime][/COLOR]</label>
 			</control>
 			<!-- Options -->
 			<control id="100" type="grouplist">

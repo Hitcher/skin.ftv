@@ -56,7 +56,7 @@
 				<onup condition="Control.IsVisible(96)">3000</onup>
 				<ondown>noop</ondown>
 				<onleft>Close</onleft>
-				<onright>50</onright>
+				<onright>9000</onright>
 				<font>Light35</font>
 				<textcolor>ffdadada</textcolor>
 				<focusedcolor>ffffc24b</focusedcolor>
@@ -235,10 +235,10 @@
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
 					<visible>Control.IsVisible(8)</visible>
-					<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
-					<alttexturefocus border="13,5,6,8">views/button_fo.png</alttexturefocus>
-					<alttexturenofocus border="13,3,6,6">views/button_nf.png</alttexturenofocus>
+					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+					<alttexturefocus border="13,5,5,7">views/button_fo.png</alttexturefocus>
+					<alttexturenofocus border="13,3,5,5">views/button_nf.png</alttexturenofocus>
 					<usealttexture>String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(Container.Content,seasons) | String.IsEqual(ListItem.DBTYPE,set)</usealttexture>
 				</control>
 				<!-- Get Thumb Button -->
@@ -256,8 +256,8 @@
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
 					<visible>Control.IsEnabled(10)</visible>
-					<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 				</control>
 			</control>
 			<!-- Dummy Button grouplist -->
@@ -318,17 +318,14 @@
 				<onright>noop</onright>
 				<onright condition="!Window.IsVisible(1103)">SetProperty(BounceRight,1,Home)</onright>
 				<onback>Control.SetFocus(50,0,absolute)</onback>
-				<onback>9001</onback>
+				<onback>7000</onback>
 				<preloaditems>2</preloaditems>
 				<focusposition>2</focusposition>
 				<viewtype label="">list</viewtype>
 				<orientation>horizontal</orientation>
 				<scrolltime easing="inout" tween="sine">300</scrolltime>
 				<visible>String.IsEmpty(Window(home).Property(Similar))</visible>
-				<animation condition="Window.IsVisible(1103)" reversible="false" type="Conditional">
-					<effect easing="out" end="-20,0" start="0,0" time="60" tween="sine" type="slide"/>
-					<effect delay="80" easing="out" end="20,0" start="0,0" time="120" tween="sine" type="slide"/>
-				</animation>
+				<include>ListBounceAnimation</include>
 				<animation center="480,1022" condition="!Control.HasFocus(50)" easing="inout" effect="zoom" end="81" start="100" time="300" tween="sine">Conditional</animation>
 				<itemlayout height="576" width="300">
 					<control type="group">
@@ -368,8 +365,9 @@
 							<width>416</width>
 							<height>576</height>
 							<texture border="50">views/shadow_fo.png</texture>
-							<animation center="auto" condition="Control.HasFocus(50) | Container(50).OnNext | Container(50).OnPrevious" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Container(50).OnNext | Container(50).OnPrevious" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">UnFocus</animation>
+							<include content="ContainerMoveFadeAnimation">
+								<param name="ListID" value="50"/>
+							</include>
 						</control>
 						<control type="image">
 							<left>-48</left>
@@ -377,8 +375,9 @@
 							<width>416</width>
 							<height>576</height>
 							<texture border="50">views/shadow_nf.png</texture>
-							<animation center="auto" condition="Control.HasFocus(50)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Control.HasFocus(50)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+							<include content="FocusedListIDAnimation">
+								<param name="ListID" value="50"/>
+							</include>
 						</control>
 						<control type="image">
 							<top>48</top>
@@ -393,8 +392,9 @@
 							<height>480</height>
 							<texture>views/OverlayNF.png</texture>
 							<visible>Control.HasFocus(50)</visible>
-							<animation center="auto" condition="Control.HasFocus(50)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Control.HasFocus(50)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+							<include content="FocusedListIDAnimation">
+								<param name="ListID" value="50"/>
+							</include>
 						</control>
 					</control>
 				</focusedlayout>

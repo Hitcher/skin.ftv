@@ -267,7 +267,7 @@
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<label>$ADDON[script.skinshortcuts 32000]</label>
-					<enable>Integer.IsLessOrEqual(Container(211).NumItems,13)</enable>
+					<enable>Integer.IsLessOrEqual(Container(211).NumItems,12)</enable>
 				</control>
 			</control>
 			<!-- Button grouplist -->

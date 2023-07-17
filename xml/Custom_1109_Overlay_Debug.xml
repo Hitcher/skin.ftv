@@ -87,8 +87,8 @@
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
-				<label>Custom_1106_Refresh.xml</label>
-				<visible>Window.IsVisible(Custom_1106_Refresh.xml)</visible>
+				<label>Custom_1106_Next_Aired_TV_Guide.xml</label>
+				<visible>Window.IsVisible(Custom_1106_Next_Aired_TV_Guide.xml)</visible>
 			</control>
 			<control type="label">
 				<width>780</width>
@@ -941,6 +941,17 @@
 				<font>font13</font>
 				<align>right</align>
 				<label>$INFO[ListItem.DBTYPE,[COLOR FF00FF00]DBTYPE - [/COLOR]]</label>
+			</control>
+			<!-- Plugin label -->
+			<control type="label">
+				<top>48</top>
+				<height>21</height>
+				<textcolor>FFFF0000</textcolor>
+				<shadowcolor>FF000000</shadowcolor>
+				<font>font13</font>
+				<align>right</align>
+				<scroll>true</scroll>
+				<label>$INFO[Container.PluginName,[COLOR FF00FF00]Plugin - [/COLOR]]</label>
 			</control>
 		</control>
 	</controls>

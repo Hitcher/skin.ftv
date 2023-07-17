@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<!-- addoninformation -->
-	<defaultcontrol always="true">9000</defaultcontrol>
 	<onload condition="!String.Contains(Control.GetLabel(13),*) | String.IsEmpty(Skin.String(AutoUpdate))">Skin.SetString(AutoUpdate,off)</onload>
 	<onload>Control.Move(50,$INFO[Container(50).CurrentItem,-])</onload>
 	<onload>Control.Move(50,1)</onload>
@@ -213,8 +212,8 @@
 					<textoffsetx>28</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
-					<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 					<visible>Control.IsEnabled(12)</visible>
 				</control>
 				<!-- What's new Button -->
@@ -230,8 +229,8 @@
 					<textoffsetx>28</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
-					<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 					<visible>!String.IsEmpty(ListItem.AddonNews)</visible>
 				</control>
 				<!-- Configure Addon button -->
@@ -246,8 +245,8 @@
 					<textoffsetx>28</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
-					<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 					<visible>Control.IsEnabled(9)</visible>
 				</control>
 				<!-- Dependencies Button -->
@@ -262,8 +261,8 @@
 					<textoffsetx>28</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
-					<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 					<visible>Control.IsEnabled(10)</visible>
 				</control>
 				<!-- Update Addon Button -->
@@ -278,8 +277,8 @@
 					<textoffsetx>28</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
-					<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 					<visible>Control.IsEnabled(14)</visible>
 				</control>
 				<!-- Install/UnInstall Addon button -->
@@ -293,8 +292,8 @@
 					<textoffsetx>28</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
-					<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 					<visible>Control.IsEnabled(6)</visible>
 				</control>
 				<!-- Enable/Disable Addon button -->
@@ -308,8 +307,8 @@
 					<textoffsetx>28</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
-					<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 					<visible>Control.IsEnabled(7)</visible>
 				</control>
 				<!-- Auto-update Addon Button -->
@@ -329,8 +328,8 @@
 					<textoffsetx>28</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
-					<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 				</control>
 			</control>
 			<!-- Screenshots list -->
@@ -393,10 +392,7 @@
 					<viewtype label="">list</viewtype>
 					<orientation>horizontal</orientation>
 					<scrolltime easing="inout" tween="sine">300</scrolltime>
-					<animation condition="Window.IsVisible(1103)" reversible="false" type="Conditional">
-						<effect easing="out" end="-20,0" start="0,0" time="60" tween="sine" type="slide"/>
-						<effect delay="80" easing="out" end="20,0" start="0,0" time="120" tween="sine" type="slide"/>
-					</animation>
+					<include>ListBounceAnimation</include>
 					<animation delay="300" effect="fade" end="100" start="0" time="300">Visible</animation>
 					<animation effect="fade" end="0" start="100" time="300">Hidden</animation>
 					<animation effect="fade" end="0" start="100" time="0" condition="!String.IsEmpty(Window(home).Property(AddonDetails))">Conditional</animation>
@@ -440,8 +436,9 @@
 								<width>949</width>
 								<height>576</height>
 								<texture border="50">views/shadow_fo.png</texture>
-								<animation center="auto" condition="Control.HasFocus(50) | Container(50).OnNext | Container(50).OnPrevious" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">Focus</animation>
-								<animation center="auto" condition="Container(50).OnNext | Container(50).OnPrevious" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">UnFocus</animation>
+								<include content="ContainerMoveFadeAnimation">
+									<param name="ListID" value="50"/>
+								</include>
 							</control>
 							<control type="image">
 								<left>-48</left>
@@ -449,8 +446,9 @@
 								<width>949</width>
 								<height>576</height>
 								<texture border="50">views/shadow_nf.png</texture>
-								<animation center="auto" condition="Control.HasFocus(50)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-								<animation center="auto" condition="Control.HasFocus(50)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+								<include content="FocusedListIDAnimation">
+									<param name="ListID" value="50"/>
+								</include>
 							</control>
 							<control type="image">
 								<top>48</top>
@@ -465,8 +463,9 @@
 								<height>480</height>
 								<texture>views/OverlayNF.png</texture>
 								<visible>Control.HasFocus(50)</visible>
-								<animation center="auto" condition="Control.HasFocus(50)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-								<animation center="auto" condition="Control.HasFocus(50)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+								<include content="FocusedListIDAnimation">
+									<param name="ListID" value="50"/>
+								</include>
 							</control>
 						</control>
 					</focusedlayout>

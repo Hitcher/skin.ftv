@@ -37,7 +37,7 @@
 		<!-- Background -->
 		<control type="image">
 			<include>FullscreenDimensions</include>
-			<texture>special://skin/extras/backgrounds/default.png</texture>
+			<texture>common/background_default.png</texture>
 			<visible>String.IsEmpty(Window(home).Property(ShowXRay))</visible>
 		</control>
 		<control type="group">
@@ -259,10 +259,7 @@
 				<viewtype label="">list</viewtype>
 				<orientation>horizontal</orientation>
 				<scrolltime easing="inout" tween="sine">300</scrolltime>
-				<animation condition="Window.IsVisible(1103)" reversible="false" type="Conditional">
-					<effect easing="out" end="-20,0" start="0,0" time="60" tween="sine" type="slide"/>
-					<effect delay="80" easing="out" end="20,0" start="0,0" time="120" tween="sine" type="slide"/>
-				</animation>
+				<include>ListBounceAnimation</include>
 				<animation delay="300" effect="fade" end="100" start="0" time="300">Visible</animation>
 				<animation effect="fade" end="0" start="100" time="300">Hidden</animation>
 				<animation center="480,212" condition="!Control.HasFocus(500)" easing="inout" effect="zoom" end="81" start="100" time="300" tween="sine">Conditional</animation>
@@ -281,7 +278,7 @@
 							<width>320</width>
 							<height>480</height>
 							<aspectratio align="center">scale</aspectratio>
-							<texture background="true">$INFO[ListItem.Icon]</texture>
+							<texture background="true">$INFO[ListItem.Art(poster)]</texture>
 						</control>
 						<control type="image">
 							<top>48</top>
@@ -304,8 +301,9 @@
 							<width>416</width>
 							<height>576</height>
 							<texture border="50">views/shadow_fo.png</texture>
-							<animation center="auto" condition="Control.HasFocus(500) | Container(500).OnNext | Container(500).OnPrevious" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Container(500).OnNext | Container(500).OnPrevious" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">UnFocus</animation>
+							<include content="ContainerMoveFadeAnimation">
+								<param name="ListID" value="500"/>
+							</include>
 						</control>
 						<control type="image">
 							<left>-48</left>
@@ -313,15 +311,16 @@
 							<width>416</width>
 							<height>576</height>
 							<texture border="50">views/shadow_nf.png</texture>
-							<animation center="auto" condition="Control.HasFocus(500)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Control.HasFocus(500)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+							<include content="FocusedListIDAnimation">
+								<param name="ListID" value="500"/>
+							</include>
 						</control>
 						<control type="image">
 							<top>48</top>
 							<width>320</width>
 							<height>480</height>
 							<aspectratio align="center">scale</aspectratio>
-							<texture background="true">$INFO[ListItem.Icon]</texture>
+							<texture background="true">$INFO[ListItem.Art(poster)]</texture>
 						</control>
 						<control type="image">
 							<top>48</top>
@@ -329,8 +328,9 @@
 							<height>480</height>
 							<texture>views/OverlayNF.png</texture>
 							<visible>Control.HasFocus(500)</visible>
-							<animation center="auto" condition="Control.HasFocus(500)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Control.HasFocus(500)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+							<include content="FocusedListIDAnimation">
+								<param name="ListID" value="500"/>
+							</include>
 						</control>
 					</control>
 				</focusedlayout>
@@ -389,7 +389,7 @@
 			<visible>Control.HasFocus(99)</visible>
 			<control type="image">
 				<include>FullscreenDimensions</include>
-				<texture>special://skin/extras/backgrounds/default.png</texture>
+				<texture>common/background_default.png</texture>
 			</control>
 			<control type="image">
 				<width>1920</width>
@@ -397,10 +397,7 @@
 				<aspectratio>keep</aspectratio>
 				<texture>$INFO[Container(500).ListItem.Icon]</texture>
 				<fadetime>200</fadetime>
-				<animation condition="Window.IsVisible(1103)" reversible="false" type="Conditional">
-					<effect easing="out" end="-20,0" start="0,0" time="60" tween="sine" type="slide"/>
-					<effect delay="80" easing="out" end="20,0" start="0,0" time="120" tween="sine" type="slide"/>
-				</animation>
+				<include>ListBounceAnimation</include>
 			</control>
 		</control>
 	</include>

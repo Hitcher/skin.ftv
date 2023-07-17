@@ -5,6 +5,8 @@
 	<defaultcontrol>99</defaultcontrol>
 	<onload>ClearProperty(BounceRight,Home)</onload>
 	<onload>ClearProperty(WindowPrevious,home)</onload>
+	<onload>Skin.SetBool(TMDbHelper.Service)</onload>
+	<onload>Skin.SetString(TMDbHelper.MonitorContainer,99950)</onload>
 	<onunload condition="Window.Next(addonbrowser)">SetProperty(WindowPreviousHome,true,home)</onunload>
 	<onunload condition="!Window.Next(addonbrowser)">ClearProperty(WindowPreviousHome,home)</onunload>
 	<onload condition="System.HasAddon(script.skinshortcuts)">RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=99&amp;levels=0&amp;group=mainmenu|shutdown)</onload>
@@ -24,7 +26,7 @@
 				<left>84</left>
 				<top>78</top>
 				<width>284</width>
-				<height>1016</height>
+				<height>1040</height>
 				<onup>noop</onup>
 				<onup>SetProperty(Movement,1)</onup>
 				<ondown>noop</ondown>
@@ -125,6 +127,7 @@
 				<onright condition="String.IsEqual(Container(99).ListItem.Property(widget),weather)">ActivateWindow(weather)</onright>
 				<onright condition="String.IsEqual(Container(99).ListItem.Property(widget),favourites)">ActivateWindow(favourites)</onright>
 				<onright condition="String.IsEqual(Container(99).ListItem.Property(defaultID),settings)">Select</onright>
+				<onright condition="String.IsEqual(Container(99).ListItem.Property(widget),nextaired)">SetFocus(9003)</onright>
 				<orientation>vertical</orientation>
 				<scrolltime easing="out" tween="sine">180</scrolltime>
 				<include>WindowHomeFadeAnimation</include>
@@ -204,6 +207,21 @@
 						<onfocus condition="!Control.IsVisible(800) + String.IsEqual(Container(800).CurrentItem,6)">Control.Move(800,-5)</onfocus>
 						<onfocus condition="!Control.IsVisible(800) + String.IsEqual(Container(800).CurrentItem,7)">Control.Move(800,-6)</onfocus>
 						<onfocus condition="!Control.IsVisible(800) + String.IsEqual(Container(800).CurrentItem,8)">Control.Move(800,-7)</onfocus>
+						<onfocus condition="!Control.IsVisible(9003) + String.IsEqual(Container(9003).CurrentItem,2)">Control.Move(9003,-1)</onfocus>
+						<onfocus condition="!Control.IsVisible(9003) + String.IsEqual(Container(9003).CurrentItem,3)">Control.Move(9003,-2)</onfocus>
+						<onfocus condition="!Control.IsVisible(9003) + String.IsEqual(Container(9003).CurrentItem,4)">Control.Move(9003,-3)</onfocus>
+						<onfocus condition="!Control.IsVisible(9003) + String.IsEqual(Container(9003).CurrentItem,5)">Control.Move(9003,-4)</onfocus>
+						<onfocus condition="!Control.IsVisible(9003) + String.IsEqual(Container(9003).CurrentItem,6)">Control.Move(9003,-5)</onfocus>
+						<onfocus condition="!Control.IsVisible(9003) + String.IsEqual(Container(9003).CurrentItem,7)">Control.Move(9003,-6)</onfocus>
+						<onfocus condition="!Control.IsVisible(9003) + String.IsEqual(Container(9003).CurrentItem,8)">Control.Move(9003,-7)</onfocus>
+						<onfocus condition="!Control.IsVisible(9003) + String.IsEqual(Container(9003).CurrentItem,9)">Control.Move(9003,-8)</onfocus>
+						<onfocus condition="!Control.IsVisible(9003) + String.IsEqual(Container(9003).CurrentItem,10)">Control.Move(9003,-9)</onfocus>
+						<onfocus condition="!Control.IsVisible(9003) + String.IsEqual(Container(9003).CurrentItem,11)">Control.Move(9003,-10)</onfocus>
+						<onfocus condition="!Control.IsVisible(9003) + String.IsEqual(Container(9003).CurrentItem,12)">Control.Move(9003,-11)</onfocus>
+						<onfocus condition="!Control.IsVisible(9003) + String.IsEqual(Container(9003).CurrentItem,13)">Control.Move(9003,-12)</onfocus>
+						<onfocus condition="!Control.IsVisible(9003) + String.IsEqual(Container(9003).CurrentItem,14)">Control.Move(9003,-13)</onfocus>
+						<onfocus condition="!Control.IsVisible(9003) + String.IsEqual(Container(9003).CurrentItem,15)">Control.Move(9003,-14)</onfocus>
+						<onfocus condition="!Control.IsVisible(9003) + String.IsEqual(Container(9003).CurrentItem,16)">Control.Move(9003,-15)</onfocus>
 					</control>
 					<control type="label">
 						<width>284</width>
@@ -253,36 +271,37 @@
 				</content>
 			</control>
 			<control type="image">
-				<left>0</left>
-				<top>-770</top>
-				<width>1920</width>
-				<height>1858</height>
+				<left>84</left>
+				<top>-766</top>
+				<width>284</width>
+				<height>1846</height>
 				<aspectratio>stretch</aspectratio>
-				<texture border="2" diffuse="special://skin/extras/backgrounds/diffuse.png">special://skin/extras/backgrounds/default.png</texture>
+				<texture border="0,0,1,0">common/home_list_fade.png</texture>
 				<animation condition="Container(99).Row(0)" effect="slide" end="0,0" time="200">Conditional</animation>
-				<animation condition="Container(99).Row(1)" effect="slide" end="0,60" time="200">Conditional</animation>
-				<animation condition="Container(99).Row(2)" effect="slide" end="0,119" time="200">Conditional</animation>
-				<animation condition="Container(99).Row(3)" effect="slide" end="0,179" time="200">Conditional</animation>
-				<animation condition="Container(99).Row(4)" effect="slide" end="0,238" time="200">Conditional</animation>
-				<animation condition="Container(99).Row(5)" effect="slide" end="0,298" time="200">Conditional</animation>
-				<animation condition="Container(99).Row(6)" effect="slide" end="0,358" time="200">Conditional</animation>
-				<animation condition="Container(99).Row(7)" effect="slide" end="0,417" time="200">Conditional</animation>
-				<animation condition="Container(99).Row(8)" effect="slide" end="0,477" time="200">Conditional</animation>
-				<animation condition="Container(99).Row(9)" effect="slide" end="0,536" time="200">Conditional</animation>
-				<animation condition="Container(99).Row(10)" effect="slide" end="0,596" time="200">Conditional</animation>
-				<animation condition="Container(99).Row(11)" effect="slide" end="0,655" time="200">Conditional</animation>
-				<animation condition="Container(99).Row(12)" effect="slide" end="0,715" time="200">Conditional</animation>
-				<animation condition="String.IsEqual(Container(99).NumItems,11)" effect="slide" end="0,30" time="0">Conditional</animation>
-				<animation condition="String.IsEqual(Container(99).NumItems,10)" effect="slide" end="0,60" time="0">Conditional</animation>
-				<animation condition="String.IsEqual(Container(99).NumItems,9)" effect="slide" end="0,90" time="0">Conditional</animation>
-				<animation condition="String.IsEqual(Container(99).NumItems,8)" effect="slide" end="0,120" time="0">Conditional</animation>
-				<animation condition="String.IsEqual(Container(99).NumItems,7)" effect="slide" end="0,150" time="0">Conditional</animation>
-				<animation condition="String.IsEqual(Container(99).NumItems,6)" effect="slide" end="0,180" time="0">Conditional</animation>
-				<animation condition="String.IsEqual(Container(99).NumItems,5)" effect="slide" end="0,210" time="0">Conditional</animation>
-				<animation condition="String.IsEqual(Container(99).NumItems,4)" effect="slide" end="0,240" time="0">Conditional</animation>
-				<animation condition="String.IsEqual(Container(99).NumItems,3)" effect="slide" end="0,270" time="0">Conditional</animation>
-				<animation condition="String.IsEqual(Container(99).NumItems,2)" effect="slide" end="0,300" time="0">Conditional</animation>
-				<animation condition="String.IsEqual(Container(99).NumItems,1)" effect="slide" end="0,330" time="0">Conditional</animation>
+				<animation condition="Container(99).Row(1)" effect="slide" end="0,63" time="200">Conditional</animation>
+				<animation condition="Container(99).Row(2)" effect="slide" end="0,126" time="200">Conditional</animation>
+				<animation condition="Container(99).Row(3)" effect="slide" end="0,189" time="200">Conditional</animation>
+				<animation condition="Container(99).Row(4)" effect="slide" end="0,252" time="200">Conditional</animation>
+				<animation condition="Container(99).Row(5)" effect="slide" end="0,315" time="200">Conditional</animation>
+				<animation condition="Container(99).Row(6)" effect="slide" end="0,378" time="200">Conditional</animation>
+				<animation condition="Container(99).Row(7)" effect="slide" end="0,441" time="200">Conditional</animation>
+				<animation condition="Container(99).Row(8)" effect="slide" end="0,504" time="200">Conditional</animation>
+				<animation condition="Container(99).Row(9)" effect="slide" end="0,567" time="200">Conditional</animation>
+				<animation condition="Container(99).Row(10)" effect="slide" end="0,630" time="200">Conditional</animation>
+				<animation condition="Container(99).Row(11)" effect="slide" end="0,693" time="200">Conditional</animation>
+				<animation condition="Container(99).Row(12)" effect="slide" end="0,756" time="200">Conditional</animation>
+				<animation condition="String.IsEqual(Container(99).NumItems,12)" effect="slide" end="0,32" time="0">Conditional</animation>
+				<animation condition="String.IsEqual(Container(99).NumItems,11)" effect="slide" end="0,64" time="0">Conditional</animation>
+				<animation condition="String.IsEqual(Container(99).NumItems,10)" effect="slide" end="0,96" time="0">Conditional</animation>
+				<animation condition="String.IsEqual(Container(99).NumItems,9)" effect="slide" end="0,128" time="0">Conditional</animation>
+				<animation condition="String.IsEqual(Container(99).NumItems,8)" effect="slide" end="0,160" time="0">Conditional</animation>
+				<animation condition="String.IsEqual(Container(99).NumItems,7)" effect="slide" end="0,192" time="0">Conditional</animation>
+				<animation condition="String.IsEqual(Container(99).NumItems,6)" effect="slide" end="0,224" time="0">Conditional</animation>
+				<animation condition="String.IsEqual(Container(99).NumItems,5)" effect="slide" end="0,256" time="0">Conditional</animation>
+				<animation condition="String.IsEqual(Container(99).NumItems,4)" effect="slide" end="0,288" time="0">Conditional</animation>
+				<animation condition="String.IsEqual(Container(99).NumItems,3)" effect="slide" end="0,320" time="0">Conditional</animation>
+				<animation condition="String.IsEqual(Container(99).NumItems,2)" effect="slide" end="0,352" time="0">Conditional</animation>
+				<animation condition="String.IsEqual(Container(99).NumItems,1)" effect="slide" end="0,384" time="0">Conditional</animation>
 			</control>
 			<!-- List Item #1 sub menu -->
 			<include content="ParamWidgetInclude">
@@ -604,6 +623,509 @@
 						<icon>settings/icon_system.png</icon>
 					</item>
 				</content>
+			</control>
+			<!-- Next aired widget -->
+			<control id="9003" type="fixedlist">
+				<left>419</left>
+				<top>-253</top>
+				<width>2100</width>
+				<height>1500</height>
+				<onup condition="!Window.IsVisible(1101)">SetProperty(BounceUp,1,Home)</onup>
+				<onup>noop</onup>
+				<ondown condition="!Window.IsVisible(1101)">SetProperty(BounceDown,1,Home)</ondown>
+				<ondown>noop</ondown>
+				<onleft>99</onleft>
+				<onright>Select</onright>
+				<onback>99</onback>
+				<movement>1</movement>
+				<preloaditems>2</preloaditems>
+				<focusposition>2</focusposition>
+				<viewtype label="">list</viewtype>
+				<orientation>vertical</orientation>
+				<scrolltime easing="inout" tween="sine">300</scrolltime>
+				<include>HomeWidgetsAnimation</include>
+				<include>WindowHomeFadeAnimation</include>
+				<visible>String.IsEqual(Container(99).ListItem.Property(widget),nextaired)</visible>
+				<animation condition="String.IsEqual(Container(9003).NumItems,1)" effect="slide" end="0,-114">Conditional</animation>
+				<animation condition="String.IsEqual(Container(9003).NumItems,2)" effect="slide" end="0,-299">Conditional</animation>
+				<animation condition="Integer.IsGreater(Container(9003).NumItems,2) + !Container(9003).Row(1)" easing="inout" effect="slide" end="0,-114" time="220" tween="sine">Conditional</animation>
+				<animation condition="Integer.IsGreater(Container(9003).NumItems,2) + Container(9003).Row(3) + Control.HasFocus(9003)" easing="inout" effect="slide" end="0,-212" time="220" tween="sine">Conditional</animation>
+				<itemlayout height="370" width="2000">
+					<control type="group">
+						<left>33</left>
+						<control type="image">
+							<width>227</width>
+							<height>334</height>
+							<texture border="0,15,11,14">home/home_button_nf.png</texture>
+						</control>
+						<control type="textbox">
+							<left>14</left>
+							<top>22</top>
+							<width>191</width>
+							<height>152</height>
+							<font>Bold26</font>
+							<align>left</align>
+							<textcolor>ffdadada</textcolor>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+					</control>
+					<control type="group">
+						<left>273</left>
+						<control type="image">
+							<width>215</width>
+							<height>334</height>
+							<bordersize>0,13,10,13</bordersize>
+							<aspectratio align="center">scale</aspectratio>
+							<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster1)]</texture>
+							<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
+						</control>
+					</control>
+					<control type="group">
+						<left>501</left>
+						<visible>!String.IsEmpty(ListItem.Property(Poster2))</visible>
+						<control type="image">
+							<width>215</width>
+							<height>334</height>
+							<bordersize>0,13,10,13</bordersize>
+							<aspectratio align="center">scale</aspectratio>
+							<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster2)]</texture>
+							<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
+						</control>
+					</control>
+					<control type="group">
+						<left>729</left>
+						<visible>!String.IsEmpty(ListItem.Property(Poster3))</visible>
+						<control type="image">
+							<width>215</width>
+							<height>334</height>
+							<bordersize>0,13,10,13</bordersize>
+							<aspectratio align="center">scale</aspectratio>
+							<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster3)]</texture>
+							<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
+						</control>
+					</control>
+					<control type="group">
+						<left>957</left>
+						<visible>!String.IsEmpty(ListItem.Property(Poster4))</visible>
+						<control type="image">
+							<width>215</width>
+							<height>334</height>
+							<bordersize>0,13,10,13</bordersize>
+							<aspectratio align="center">scale</aspectratio>
+							<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster4)]</texture>
+							<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
+						</control>
+					</control>
+					<control type="group">
+						<left>1185</left>
+						<visible>!String.IsEmpty(ListItem.Property(Poster5))</visible>
+						<control type="image">
+							<width>215</width>
+							<height>334</height>
+							<bordersize>0,13,10,13</bordersize>
+							<aspectratio align="center">scale</aspectratio>
+							<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster5)]</texture>
+							<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
+						</control>
+					</control>
+					<control type="group">
+						<left>1413</left>
+						<visible>!String.IsEmpty(ListItem.Property(Poster6))</visible>
+						<control type="image">
+							<width>215</width>
+							<height>334</height>
+							<bordersize>0,13,10,13</bordersize>
+							<aspectratio align="center">scale</aspectratio>
+							<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster6)]</texture>
+							<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
+						</control>
+					</control>
+				</itemlayout>
+				<focusedlayout height="370" width="2000" condition="Integer.IsGreater(Container(9003).NumItems,1)">
+					<control type="button">
+						<include>HiddenControl</include>
+						<onfocus condition="String.IsEqual(Container(9003).NumItems,2) + Container(9003).Row(2)">SetProperty(FocusRow,1_2)</onfocus>
+						<onfocus condition="String.IsEqual(Container(9003).NumItems,2) + Container(9003).Row(3)">SetProperty(FocusRow,2_2)</onfocus>
+						<onfocus condition="Integer.IsGreater(Container(9003).NumItems,2) + Container(9003).Row(1)">SetProperty(FocusRow,1_3)</onfocus>
+						<onfocus condition="Integer.IsGreater(Container(9003).NumItems,2) + Container(9003).Row(2)">SetProperty(FocusRow,2_3)</onfocus>
+						<onfocus condition="Integer.IsGreater(Container(9003).NumItems,2) + Container(9003).Row(3)">SetProperty(FocusRow,3_3)</onfocus>
+					</control>
+					<control type="group">
+						<animation center="142,167" easing="inout" effect="zoom" end="132" start="100" time="220" tween="sine">Focus</animation>
+						<animation center="142,167" easing="inout" effect="zoom" end="100" start="132" time="220" tween="sine">UnFocus</animation>
+						<control type="group">
+							<left>33</left>
+							<control type="image">
+								<width>227</width>
+								<height>334</height>
+								<texture border="0,15,11,14">home/home_button_nf.png</texture>
+							</control>
+							<control type="textbox">
+								<top>2</top>
+								<width>254</width>
+								<height>200</height>
+								<font>Bold34</font>
+								<align>left</align>
+								<textcolor>ffdadada</textcolor>
+								<label>$INFO[ListItem.Label]</label>
+								<animation effect="fade" end="0" start="100" time="0">Focus</animation>
+								<animation condition="true" effect="slide" end="-18,-26" time="0">Conditional</animation>
+								<animation center="135,201" condition="true" effect="zoom" end="76" start="76" time="0">Conditional</animation>
+							</control>
+							<control type="image">
+								<width>227</width>
+								<height>334</height>
+								<texture border="0,14,11,14">home/home_button_fo.png</texture>
+								<visible>!String.IsEmpty(Window(Home).Property(WidgetHasFocus))</visible>
+								<animation effect="fade" end="100" start="0" time="0" condition="!String.IsEmpty(Window(Home).Property(WidgetHasFocus))">Conditional</animation>
+								<animation effect="fade" end="0" start="100" time="0" condition="String.IsEmpty(Window(Home).Property(WidgetHasFocus))">Conditional</animation>
+								<animation effect="fade" end="100" start="0" time="0">Focus</animation>
+								<animation effect="fade" end="0" start="100" time="0">UnFocus</animation>
+							</control>
+							<control type="textbox">
+								<top>2</top>
+								<width>254</width>
+								<height>200</height>
+								<font>Bold34</font>
+								<align>left</align>
+								<textcolor>ff453a18</textcolor>
+								<label>$INFO[ListItem.Label]</label>
+								<visible>!String.IsEmpty(Window(Home).Property(WidgetHasFocus))</visible>
+								<animation effect="fade" end="100" start="0" time="0" condition="!String.IsEmpty(Window(Home).Property(WidgetHasFocus))">Conditional</animation>
+								<animation effect="fade" end="0" start="100" time="0" condition="String.IsEmpty(Window(Home).Property(WidgetHasFocus))">Conditional</animation>
+								<animation effect="fade" end="100" start="0" time="0">Focus</animation>
+								<animation effect="fade" end="0" start="100" time="0">UnFocus</animation>
+								<animation condition="true" effect="slide" end="-18,-26" time="0">Conditional</animation>
+								<animation center="135,201" condition="true" effect="zoom" end="76" start="76" time="0">Conditional</animation>
+							</control>
+						</control>
+						<control type="group">
+							<control type="group">
+								<left>273</left>
+								<control type="image">
+									<width>215</width>
+									<height>334</height>
+									<bordersize>0,13,10,13</bordersize>
+									<aspectratio align="center">scale</aspectratio>
+									<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster1)]</texture>
+									<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
+								</control>
+							</control>
+							<control type="group">
+								<left>501</left>
+								<visible>!String.IsEmpty(ListItem.Property(Poster2))</visible>
+								<control type="image">
+									<width>215</width>
+									<height>334</height>
+									<bordersize>0,13,10,13</bordersize>
+									<aspectratio align="center">scale</aspectratio>
+									<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster2)]</texture>
+									<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
+								</control>
+							</control>
+							<control type="group">
+								<left>729</left>
+								<visible>!String.IsEmpty(ListItem.Property(Poster3))</visible>
+								<control type="image">
+									<width>215</width>
+									<height>334</height>
+									<bordersize>0,13,10,13</bordersize>
+									<aspectratio align="center">scale</aspectratio>
+									<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster3)]</texture>
+									<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
+								</control>
+							</control>
+							<control type="group">
+								<left>957</left>
+								<visible>!String.IsEmpty(ListItem.Property(Poster4))</visible>
+								<control type="image">
+									<width>215</width>
+									<height>334</height>
+									<bordersize>0,13,10,13</bordersize>
+									<aspectratio align="center">scale</aspectratio>
+									<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster4)]</texture>
+									<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
+								</control>
+							</control>
+							<control type="group">
+								<left>1185</left>
+								<visible>!String.IsEmpty(ListItem.Property(Poster5))</visible>
+								<control type="image">
+									<width>215</width>
+									<height>334</height>
+									<bordersize>0,13,10,13</bordersize>
+									<aspectratio align="center">scale</aspectratio>
+									<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster5)]</texture>
+									<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
+								</control>
+							</control>
+							<control type="group">
+								<left>1413</left>
+								<visible>!String.IsEmpty(ListItem.Property(Poster6))</visible>
+								<control type="image">
+									<width>215</width>
+									<height>334</height>
+									<bordersize>0,13,10,13</bordersize>
+									<aspectratio align="center">scale</aspectratio>
+									<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster6)]</texture>
+									<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
+								</control>
+							</control>
+						</control>
+					</control>
+				</focusedlayout>
+				<focusedlayout height="370" width="2000" condition="!Integer.IsGreater(Container(9003).NumItems,1)">
+					<control type="group">
+						<animation center="142,167" condition="true" effect="zoom" end="132" start="100" time="0">Conditional</animation>
+						<control type="group">
+							<left>33</left>
+							<control type="image">
+								<width>227</width>
+								<height>334</height>
+								<texture border="0,15,11,14">home/home_button_nf.png</texture>
+							</control>
+							<control type="textbox">
+								<top>2</top>
+								<width>254</width>
+								<height>200</height>
+								<font>Bold34</font>
+								<align>left</align>
+								<textcolor>ffdadada</textcolor>
+								<label>$INFO[ListItem.Label]</label>
+								<animation effect="fade" end="0" start="100" time="0">Focus</animation>
+								<animation condition="true" effect="slide" end="-18,-26" time="0">Conditional</animation>
+								<animation center="135,201" condition="true" effect="zoom" end="76" start="76" time="0">Conditional</animation>
+							</control>
+							<control type="image">
+								<width>227</width>
+								<height>334</height>
+								<texture border="0,14,11,14">home/home_button_fo.png</texture>
+								<visible>!String.IsEmpty(Window(Home).Property(WidgetHasFocus))</visible>
+								<animation effect="fade" end="100" start="0" time="0" condition="!String.IsEmpty(Window(Home).Property(WidgetHasFocus))">Conditional</animation>
+								<animation effect="fade" end="0" start="100" time="0" condition="String.IsEmpty(Window(Home).Property(WidgetHasFocus))">Conditional</animation>
+								<animation effect="fade" end="100" start="0" time="0">Focus</animation>
+								<animation effect="fade" end="0" start="100" time="0">UnFocus</animation>
+							</control>
+							<control type="textbox">
+								<top>2</top>
+								<width>254</width>
+								<height>200</height>
+								<font>Bold34</font>
+								<align>left</align>
+								<textcolor>ff453a18</textcolor>
+								<label>$INFO[ListItem.Label]</label>
+								<visible>!String.IsEmpty(Window(Home).Property(WidgetHasFocus))</visible>
+								<animation effect="fade" end="100" start="0" time="0" condition="!String.IsEmpty(Window(Home).Property(WidgetHasFocus))">Conditional</animation>
+								<animation effect="fade" end="0" start="100" time="0" condition="String.IsEmpty(Window(Home).Property(WidgetHasFocus))">Conditional</animation>
+								<animation effect="fade" end="100" start="0" time="0">Focus</animation>
+								<animation effect="fade" end="0" start="100" time="0">UnFocus</animation>
+								<animation condition="true" effect="slide" end="-18,-26" time="0">Conditional</animation>
+								<animation center="135,201" condition="true" effect="zoom" end="76" start="76" time="0">Conditional</animation>
+							</control>
+						</control>
+						<control type="group">
+							<left>273</left>
+							<control type="image">
+								<width>215</width>
+								<height>334</height>
+								<bordersize>0,13,10,13</bordersize>
+								<aspectratio align="center">scale</aspectratio>
+								<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster1)]</texture>
+								<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
+							</control>
+						</control>
+						<control type="group">
+							<left>501</left>
+							<visible>!String.IsEmpty(ListItem.Property(Poster2))</visible>
+							<control type="image">
+								<width>215</width>
+								<height>334</height>
+								<bordersize>0,13,10,13</bordersize>
+								<aspectratio align="center">scale</aspectratio>
+								<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster2)]</texture>
+								<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
+							</control>
+						</control>
+						<control type="group">
+							<left>729</left>
+							<visible>!String.IsEmpty(ListItem.Property(Poster3))</visible>
+							<control type="image">
+								<width>215</width>
+								<height>334</height>
+								<bordersize>0,13,10,13</bordersize>
+								<aspectratio align="center">scale</aspectratio>
+								<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster3)]</texture>
+								<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
+							</control>
+						</control>
+						<control type="group">
+							<left>957</left>
+							<visible>!String.IsEmpty(ListItem.Property(Poster4))</visible>
+							<control type="image">
+								<width>215</width>
+								<height>334</height>
+								<bordersize>0,13,10,13</bordersize>
+								<aspectratio align="center">scale</aspectratio>
+								<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster4)]</texture>
+								<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
+							</control>
+						</control>
+						<control type="group">
+							<left>1185</left>
+							<visible>!String.IsEmpty(ListItem.Property(Poster5))</visible>
+							<control type="image">
+								<width>215</width>
+								<height>334</height>
+								<bordersize>0,13,10,13</bordersize>
+								<aspectratio align="center">scale</aspectratio>
+								<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster5)]</texture>
+								<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
+							</control>
+						</control>
+						<control type="group">
+							<left>1413</left>
+							<visible>!String.IsEmpty(ListItem.Property(Poster6))</visible>
+							<control type="image">
+								<width>215</width>
+								<height>334</height>
+								<bordersize>0,13,10,13</bordersize>
+								<aspectratio align="center">scale</aspectratio>
+								<texture background="true" fallback="views/poster_fallback.png">$INFO[ListItem.Property(Poster6)]</texture>
+								<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
+							</control>
+						</control>
+					</control>
+				</focusedlayout>
+				<content>
+					<include content="NextAiredHomeItems">
+						<param name="ItemID" value="1"/>
+						<param name="Title" value="31083"/>
+					</include>
+					<include content="NextAiredHomeItems">
+						<param name="ItemID" value="2"/>
+						<param name="Title" value="31084"/>
+					</include>
+					<include content="NextAiredHomeItems">
+						<param name="ItemID" value="3"/>
+						<param name="Title" value="31087"/>
+					</include>
+					<include content="NextAiredHomeItems">
+						<param name="ItemID" value="4"/>
+						<param name="Title" value="$INFO[Container(90034).ListItem.Property(air_day_short)]$COMMA $INFO[Container(90034).ListItem.Property(air_date_short)]"/>
+					</include>
+					<include content="NextAiredHomeItems">
+						<param name="ItemID" value="5"/>
+						<param name="Title" value="$INFO[Container(90035).ListItem.Property(air_day_short)]$COMMA $INFO[Container(90035).ListItem.Property(air_date_short)]"/>
+					</include>
+					<include content="NextAiredHomeItems">
+						<param name="ItemID" value="6"/>
+						<param name="Title" value="$INFO[Container(90036).ListItem.Property(air_day_short)]$COMMA $INFO[Container(90036).ListItem.Property(air_date_short)]"/>
+					</include>
+					<include content="NextAiredHomeItems">
+						<param name="ItemID" value="7"/>
+						<param name="Title" value="$INFO[Container(90037).ListItem.Property(air_day_short)]$COMMA $INFO[Container(90037).ListItem.Property(air_date_short)]"/>
+					</include>
+					<include content="NextAiredHomeItems">
+						<param name="ItemID" value="8"/>
+						<param name="Title" value="$INFO[Container(90038).ListItem.Property(air_day_short)]$COMMA $INFO[Container(90038).ListItem.Property(air_date_short)]"/>
+					</include>
+					<include content="NextAiredHomeItems">
+						<param name="ItemID" value="9"/>
+						<param name="Title" value="$INFO[Container(90039).ListItem.Property(air_day_short)]$COMMA $INFO[Container(90039).ListItem.Property(air_date_short)]"/>
+					</include>
+					<include content="NextAiredHomeItems">
+						<param name="ItemID" value="10"/>
+						<param name="Title" value="$INFO[Container(900310).ListItem.Property(air_day_short)]$COMMA $INFO[Container(900310).ListItem.Property(air_date_short)]"/>
+					</include>
+					<include content="NextAiredHomeItems">
+						<param name="ItemID" value="11"/>
+						<param name="Title" value="$INFO[Container(900311).ListItem.Property(air_day_short)]$COMMA $INFO[Container(900311).ListItem.Property(air_date_short)]"/>
+					</include>
+					<include content="NextAiredHomeItems">
+						<param name="ItemID" value="12"/>
+						<param name="Title" value="$INFO[Container(900312).ListItem.Property(air_day_short)]$COMMA $INFO[Container(900312).ListItem.Property(air_date_short)]"/>
+					</include>
+					<include content="NextAiredHomeItems">
+						<param name="ItemID" value="13"/>
+						<param name="Title" value="$INFO[Container(900313).ListItem.Property(air_day_short)]$COMMA $INFO[Container(900313).ListItem.Property(air_date_short)]"/>
+					</include>
+					<include content="NextAiredHomeItems">
+						<param name="ItemID" value="14"/>
+						<param name="Title" value="$INFO[Container(900314).ListItem.Property(air_day_short)]$COMMA $INFO[Container(900314).ListItem.Property(air_date_short)]"/>
+					</include>
+					<include content="NextAiredHomeItems">
+						<param name="ItemID" value="15"/>
+						<param name="Title" value="$INFO[Container(900315).ListItem.Property(air_day_short)]$COMMA $INFO[Container(900315).ListItem.Property(air_date_short)]"/>
+					</include>
+					<include content="NextAiredHomeItems">
+						<param name="ItemID" value="16"/>
+						<param name="Title" value="$INFO[Container(900316).ListItem.Property(air_day_short)]$COMMA $INFO[Container(900316).ListItem.Property(air_date_short)]"/>
+					</include>
+				</content>
+			</control>
+			<control id="90031" type="list">
+				<include>HiddenList</include>
+				<content>plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=-1&amp;days=1&amp;type=episode</content>
+			</control>
+			<control id="90032" type="list">
+				<include>HiddenList</include>
+				<content>plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=0&amp;days=1&amp;type=episode</content>
+			</control>
+			<control id="90033" type="list">
+				<include>HiddenList</include>
+				<content>plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=1&amp;days=1&amp;type=episode</content>
+			</control>
+			<control id="90034" type="list">
+				<include>HiddenList</include>
+				<content>plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=2&amp;days=1&amp;type=episode</content>
+			</control>
+			<control id="90035" type="list">
+				<include>HiddenList</include>
+				<content>plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=3&amp;days=1&amp;type=episode</content>
+			</control>
+			<control id="90036" type="list">
+				<include>HiddenList</include>
+				<content>plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=4&amp;days=1&amp;type=episode</content>
+			</control>
+			<control id="90037" type="list">
+				<include>HiddenList</include>
+				<content>plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=5&amp;days=1&amp;type=episode</content>
+			</control>
+			<control id="90038" type="list">
+				<include>HiddenList</include>
+				<content>plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=6&amp;days=1&amp;type=episode</content>
+			</control>
+			<control id="90039" type="list">
+				<include>HiddenList</include>
+				<content>plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=7&amp;days=1&amp;type=episode</content>
+			</control>
+			<control id="900310" type="list">
+				<include>HiddenList</include>
+				<content>plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=8&amp;days=1&amp;type=episode</content>
+			</control>
+			<control id="900311" type="list">
+				<include>HiddenList</include>
+				<content>plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=9&amp;days=1&amp;type=episode</content>
+			</control>
+			<control id="900312" type="list">
+				<include>HiddenList</include>
+				<content>plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=10&amp;days=1&amp;type=episode</content>
+			</control>
+			<control id="900313" type="list">
+				<include>HiddenList</include>
+				<content>plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=11&amp;days=1&amp;type=episode</content>
+			</control>
+			<control id="900314" type="list">
+				<include>HiddenList</include>
+				<content>plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=12&amp;days=1&amp;type=episode</content>
+			</control>
+			<control id="900315" type="list">
+				<include>HiddenList</include>
+				<content>plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=13&amp;days=1&amp;type=episode</content>
+			</control>
+			<control id="900316" type="list">
+				<include>HiddenList</include>
+				<content>plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=14&amp;days=1&amp;type=episode</content>
 			</control>
 		</control>
 	</controls>

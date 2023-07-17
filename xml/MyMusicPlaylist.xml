@@ -32,16 +32,15 @@
 			<viewtype label="">list</viewtype>
 			<orientation>horizontal</orientation>
 			<scrolltime easing="inout" tween="sine">300</scrolltime>
-			<animation condition="Window.IsVisible(1103)" reversible="false" type="Conditional">
-				<effect easing="out" end="-20,0" start="0,0" time="60" tween="sine" type="slide"/>
-				<effect delay="80" easing="out" end="20,0" start="0,0" time="120" tween="sine" type="slide"/>
-			</animation>
-			<animation condition="String.IsEmpty(Window(home).Property(MainMenuFocus)) + String.IsEmpty(Window(home).Property(FocusRow)) + Window.Previous(home)" easing="inout" effect="slide" end="0,0" start="193,-15" time="540" tween="sine">WindowOpen</animation>
-			<animation condition="String.IsEmpty(Window(home).Property(MainMenuFocus)) + String.IsEqual(Window(home).Property(FocusRow),1_2) + Window.Previous(home)" easing="inout" effect="slide" end="0,0" start="497,-200" time="540" tween="sine">WindowOpen</animation>
-			<animation condition="String.IsEmpty(Window(home).Property(MainMenuFocus)) + String.IsEqual(Window(home).Property(FocusRow),2_2) + Window.Previous(home)" easing="inout" effect="slide" end="0,0" start="497,170" time="540" tween="sine">WindowOpen</animation>
-			<animation condition="String.IsEmpty(Window(home).Property(MainMenuFocus)) + String.IsEqual(Window(home).Property(FocusRow),1_3) + Window.Previous(home)" easing="inout" effect="slide" end="0,0" start="497,-271" time="540" tween="sine">WindowOpen</animation>
-			<animation condition="String.IsEmpty(Window(home).Property(MainMenuFocus)) + String.IsEqual(Window(home).Property(FocusRow),2_3) + Window.Previous(home)" easing="inout" effect="slide" end="0,0" start="497,-15" time="540" tween="sine">WindowOpen</animation>
-			<animation condition="String.IsEmpty(Window(home).Property(MainMenuFocus)) + String.IsEqual(Window(home).Property(FocusRow),3_3) + Window.Previous(home)" easing="inout" effect="slide" end="0,0" start="497,143" time="540" tween="sine">WindowOpen</animation>
+			<include>ListBounceAnimation</include>
+			<include content="HomeToWindowSlideAnimation">
+				<param name="FocusRowID1_1" value="193,10"/>
+				<param name="FocusRowID1_2" value="497,-175"/>
+				<param name="FocusRowID2_2" value="497,195"/>
+				<param name="FocusRowID1_3" value="497,-246"/>
+				<param name="FocusRowID2_3" value="497,10"/>
+				<param name="FocusRowID3_3" value="497,168"/>
+			</include>
 			<itemlayout height="576" width="436">
 				<control type="group">
 					<animation center="250,288" condition="true" effect="zoom" end="85" start="85">Conditional</animation>
@@ -158,8 +157,9 @@
 						<width>576</width>
 						<height>576</height>
 						<texture border="50">views/shadow_fo.png</texture>
-						<animation center="auto" condition="Control.HasFocus(50) | Container(50).OnNext | Container(50).OnPrevious" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">Focus</animation>
-						<animation center="auto" condition="Container(50).OnNext | Container(50).OnPrevious" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">UnFocus</animation>
+						<include content="ContainerMoveFadeAnimation">
+							<param name="ListID" value="50"/>
+						</include>
 					</control>
 					<control type="image">
 						<left>-48</left>
@@ -167,8 +167,9 @@
 						<width>576</width>
 						<height>576</height>
 						<texture border="50">views/shadow_nf.png</texture>
-						<animation center="auto" condition="Control.HasFocus(50)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-						<animation center="auto" condition="Control.HasFocus(50)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+						<include content="FocusedListIDAnimation">
+							<param name="ListID" value="50"/>
+						</include>
 					</control>
 					<control type="image">
 						<top>48</top>
@@ -305,8 +306,9 @@
 						<width>480</width>
 						<height>480</height>
 						<texture>views/OverlayNF.png</texture>
-						<animation center="auto" condition="Control.HasFocus(50)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-						<animation center="auto" condition="Control.HasFocus(50)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+						<include content="FocusedListIDAnimation">
+							<param name="ListID" value="50"/>
+						</include>
 					</control>
 				</control>
 			</focusedlayout>
@@ -435,8 +437,8 @@
 						<textoffsetx>28</textoffsetx>
 						<textcolor>ffdadada</textcolor>
 						<focusedcolor>ff222222</focusedcolor>
-						<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-						<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+						<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+						<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 					</control>
 					<control id="1003" type="button">
 						<width min="124" max="204">auto</width>
@@ -449,8 +451,8 @@
 						<textoffsetx>28</textoffsetx>
 						<textcolor>ffdadada</textcolor>
 						<focusedcolor>ff222222</focusedcolor>
-						<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-						<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+						<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+						<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 					</control>
 					<control id="21" type="button">
 						<width min="124" max="204">auto</width>
@@ -463,8 +465,8 @@
 						<textcolor>ffdadada</textcolor>
 						<focusedcolor>ff222222</focusedcolor>
 						<visible>Integer.IsGreater(Playlist.Length(music),0) + Control.IsEnabled(21)</visible>
-						<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-						<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+						<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+						<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 					</control>
 					<control id="22" type="button">
 						<width min="124" max="204">auto</width>
@@ -477,8 +479,8 @@
 						<textcolor>ffdadada</textcolor>
 						<focusedcolor>ff222222</focusedcolor>
 						<visible>Control.IsEnabled(22)</visible>
-						<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-						<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+						<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+						<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 					</control>
 					<control id="1004" type="button">
 						<width min="124" max="204">auto</width>
@@ -492,8 +494,8 @@
 						<textoffsetx>28</textoffsetx>
 						<textcolor>ffdadada</textcolor>
 						<focusedcolor>ff222222</focusedcolor>
-						<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-						<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+						<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+						<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 					</control>
 				</control>
 			</control>
@@ -508,14 +510,7 @@
 		</control>
 		<control type="group">
 			<visible>ControlGroup(5000).HasFocus</visible>
-			<animation reversible="true" type="Visible">
-				<effect center="auto" easing="inout" end="100" start="92" time="120" tween="sine" type="zoom"/>
-				<effect easing="inout" end="100" start="0" time="120" tween="sine" type="fade"/>
-			</animation>
-			<animation reversible="true" type="Hidden">
-				<effect center="auto" easing="inout" end="92" start="100" time="120" tween="sine" type="zoom"/>
-				<effect easing="inout" end="0" start="100" time="120" tween="sine" type="fade"/>
-			</animation>
+			<include>DialogZoomFadeVisibleAnimation</include>
 			<!-- Controls -->
 			<control type="grouplist" id="5000">
 				<centerleft>50%</centerleft>

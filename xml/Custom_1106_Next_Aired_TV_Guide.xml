@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="window" id="1106">
+	<backgroundcolor>0xff12161b</backgroundcolor>
+	<defaultcontrol always="true">60</defaultcontrol>
+	<onunload>ClearProperty(Window(Home).Property(ForceViewType))</onunload>
+	<onunload>ClearProperty(Window(Home).Property(NextAiredDay))</onunload>
+	<animation effect="fade" end="0" start="100" time="0">WindowClose</animation>
+	<controls>
+		<!-- Fanart -->
+		<control type="image">
+			<include>FullscreenDimensions</include>
+			<fadetime>400</fadetime>
+			<colordiffuse>26ffffff</colordiffuse>
+			<texture background="true">$INFO[Container(60).ListItem.Property(Fanart)]</texture>
+		</control>
+		<control type="group">
+			<animation delay="400" effect="fade" end="100" start="0" time="200">WindowOpen</animation>
+			<!-- Show / Time -->
+			<control type="grouplist">
+				<left>196</left>
+				<top>134</top>
+				<height>80</height>
+				<itemgap>10</itemgap>
+				<orientation>horizontal</orientation>
+				<usecontrolcoords>true</usecontrolcoords>
+				<include>VisibleDelayFadeAnimation</include>
+				<control type="label">
+					<width>auto</width>
+					<height>60</height>
+					<font>Med48</font>
+					<aligny>bottom</aligny>
+					<textcolor>ffdadada</textcolor>
+					<label>$INFO[Container(60).ListItem.Label]  </label>
+				</control>
+				<control type="label">
+					<top>15</top>
+					<width>auto</width>
+					<height>60</height>
+					<font>Med32</font>
+					<aligny>bottom</aligny>
+					<textcolor>ffdadada</textcolor>
+					<label>$INFO[Window(home).Property(NextAiredDay)]$COMMA  $INFO[Window(home).Property(NextAiredDate)]</label>
+				</control>
+			</control>
+		</control>
+		<!-- Poster List -->
+		<control id="60" type="fixedlist">
+			<left>-102</left>
+			<top>242</top>
+			<width>2036</width>
+			<height>576</height>
+			<onup>Back</onup>
+			<ondown>3000</ondown>
+			<onleft>Back</onleft>
+			<onright>noop</onright>
+			<onright condition="!Window.IsVisible(1103)">SetProperty(BounceRight,1,Home)</onright>
+			<onclick>ActivateWindow(videos,videodb://tvshows/titles/$INFO[Container(60).ListItem.Property(TVdbID)]/,return)</onclick>
+			<onback>Control.SetFocus(60,0,absolute)</onback>
+			<preloaditems>2</preloaditems>
+			<focusposition>1</focusposition>
+			<viewtype label="">list</viewtype>
+			<orientation>horizontal</orientation>
+			<defaultcontrol always="true">0</defaultcontrol>
+			<scrolltime easing="inout" tween="sine">300</scrolltime>
+			<include>ListBounceAnimation</include>
+			<include content="HomeToWindowSlideAnimation">
+				<param name="FocusRowID1_1" value="208,10"/>
+				<param name="FocusRowID1_2" value="512,-175"/>
+				<param name="FocusRowID2_2" value="512,195"/>
+				<param name="FocusRowID1_3" value="512,-246"/>
+				<param name="FocusRowID2_3" value="512,10"/>
+				<param name="FocusRowID3_3" value="512,168"/>
+			</include>
+			<itemlayout height="576" width="300">
+				<control type="group">
+					<animation center="150,288" condition="true" effect="zoom" end="85" start="85">Conditional</animation>
+					<control type="image">
+						<left>-48</left>
+						<centertop>288</centertop>
+						<width>416</width>
+						<height>576</height>
+						<texture border="50">views/shadow_nf.png</texture>
+					</control>
+					<control type="image">
+						<top>48</top>
+						<width>320</width>
+						<height>480</height>
+						<aspectratio align="center">scale</aspectratio>
+						<texture background="true" fallback="views/movie_fallback.png">$INFO[ListItem.Icon]</texture>
+					</control>
+					<control type="image">
+						<top>48</top>
+						<width>90</width>
+						<height>90</height>
+						<texture>$INFO[ListItem.VideoResolution,views/resolution/,.png]</texture>
+					</control>
+					<control type="image">
+						<top>48</top>
+						<width>90</width>
+						<height>90</height>
+						<texture>views/OverlayWatched.png</texture>
+						<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
+					</control>
+					<control type="image">
+						<top>48</top>
+						<width>320</width>
+						<height>480</height>
+						<texture>views/OverlayNF.png</texture>
+					</control>
+				</control>
+			</itemlayout>
+			<focusedlayout height="576" width="300">
+				<control type="group">
+					<animation center="150,288" easing="inout" effect="zoom" end="100" start="85" time="300" tween="sine">Focus</animation>
+					<animation center="150,288" condition="Container(60).OnNext | Container(60).OnPrevious" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">UnFocus</animation>
+					<animation center="150,288" condition="Control.HasFocus(4000)" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">Conditional</animation>
+					<control type="image">
+						<left>-48</left>
+						<centertop>288</centertop>
+						<width>416</width>
+						<height>576</height>
+						<texture border="50">views/shadow_fo.png</texture>
+						<include content="ContainerMoveFadeAnimation">
+							<param name="ListID" value="60"/>
+						</include>
+					</control>
+					<control type="image">
+						<left>-48</left>
+						<centertop>288</centertop>
+						<width>416</width>
+						<height>576</height>
+						<texture border="50">views/shadow_nf.png</texture>
+						<include content="FocusedListIDAnimation">
+							<param name="ListID" value="60"/>
+						</include>
+					</control>
+					<control type="image">
+						<top>48</top>
+						<width>320</width>
+						<height>480</height>
+						<aspectratio align="center">scale</aspectratio>
+						<texture background="true" fallback="views/movie_fallback.png">$INFO[ListItem.Icon]</texture>
+					</control>
+					<control type="image">
+						<top>48</top>
+						<width>90</width>
+						<height>90</height>
+						<texture>$INFO[ListItem.VideoResolution,views/resolution/,.png]</texture>
+					</control>
+					<control type="image">
+						<top>48</top>
+						<width>90</width>
+						<height>90</height>
+						<texture>views/OverlayWatched.png</texture>
+						<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
+					</control>
+					<control type="image">
+						<top>48</top>
+						<width>320</width>
+						<height>480</height>
+						<texture>views/OverlayNF.png</texture>
+						<include content="FocusedListIDAnimation">
+							<param name="ListID" value="60"/>
+						</include>
+					</control>
+				</control>
+			</focusedlayout>
+			<content>
+				<include content="NextAiredItems">
+					<param name="ItemID" value="1"/>
+				</include>
+				<include content="NextAiredItems">
+					<param name="ItemID" value="2"/>
+				</include>
+				<include content="NextAiredItems">
+					<param name="ItemID" value="3"/>
+				</include>
+				<include content="NextAiredItems">
+					<param name="ItemID" value="4"/>
+				</include>
+				<include content="NextAiredItems">
+					<param name="ItemID" value="5"/>
+				</include>
+				<include content="NextAiredItems">
+					<param name="ItemID" value="6"/>
+				</include>
+				<include content="NextAiredItems">
+					<param name="ItemID" value="7"/>
+				</include>
+				<include content="NextAiredItems">
+					<param name="ItemID" value="8"/>
+				</include>
+				<include content="NextAiredItems">
+					<param name="ItemID" value="9"/>
+				</include>
+				<include content="NextAiredItems">
+					<param name="ItemID" value="10"/>
+				</include>
+				<include content="NextAiredItems">
+					<param name="ItemID" value="11"/>
+				</include>
+				<include content="NextAiredItems">
+					<param name="ItemID" value="12"/>
+				</include>
+				<include content="NextAiredItems">
+					<param name="ItemID" value="13"/>
+				</include>
+				<include content="NextAiredItems">
+					<param name="ItemID" value="14"/>
+				</include>
+				<include content="NextAiredItems">
+					<param name="ItemID" value="15"/>
+				</include>
+			</content>
+		</control>
+		<!-- Lower group -->
+		<control type="group">
+			<left>196</left>
+			<top>782</top>
+			<include>VisibleDelayFadeAnimation</include>
+			<animation delay="400" effect="fade" end="100" start="0" time="200">WindowOpen</animation>
+			<!-- Details -->
+			<control type="grouplist">
+				<height>26</height>
+				<itemgap>20</itemgap>
+				<orientation>horizontal</orientation>
+				<usecontrolcoords>true</usecontrolcoords>
+				<control type="label">
+					<width>auto</width>
+					<height>24</height>
+					<font>Med24Num</font>
+					<aligny>bottom</aligny>
+					<textcolor>ffbebebe</textcolor>
+					<label>$VAR[NextAiredDurationHours]$VAR[NextAiredDurationSpacing]$VAR[NextAiredDurationMins] </label>
+				</control>
+				<control type="label">
+					<width>auto</width>
+					<height>24</height>
+					<font>Med24</font>
+					<aligny>bottom</aligny>
+					<textcolor>ffbebebe</textcolor>
+					<label>$INFO[Container(60).ListItem.Property(Time),[COLOR ff707070]$LOCALIZE[31227]: [/COLOR]]</label>
+				</control>
+			</control>
+			<control type="label">
+				<top>35</top>
+				<width>auto</width>
+				<height>30</height>
+				<font>Reg30Spaced</font>
+				<aligny>bottom</aligny>
+				<textcolor>ffbebebe</textcolor>
+				<label>[B]$VAR[NextAiredSeasonNumber]$VAR[NextAiredEpisodeNumber][/B]</label>
+			</control>
+			<control type="textbox">
+				<top>75</top>
+				<width>1192</width>
+				<height>130</height>
+				<align>left</align>
+				<font>Reg30Spaced</font>
+				<pagecontrol>96</pagecontrol>
+				<autoscroll>false</autoscroll>
+				<textcolor>ffbcbcbc</textcolor>
+				<label>[B]$VAR[NextAiredTitle][/B] [LIGHT]$VAR[NextAiredPlot]$VAR[NextAiredPlot][/LIGHT]</label>
+			</control>
+			<control id="99" type="scrollbar">
+				<top>75</top>
+				<width>1192</width>
+				<height>126</height>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+			</control>
+			<!-- More button -->
+			<control id="3000" type="button">
+				<left>1194</left>
+				<top>164</top>
+				<width>37</width>
+				<height>23</height>
+				<onup>60</onup>
+				<ondown>noop</ondown>
+				<onleft>60</onleft>
+				<onright>60</onright>
+				<onclick>SetProperty(OpenTextViewer,1,home)</onclick>
+				<onclick>RunScript(script.embuary.helper,action=textviewer,header=$VAR[NextAiredTitle],message='$ESCVAR[NextAiredPlot]')</onclick>
+				<visible>Control.IsVisible(99)</visible>
+				<texturefocus>views/more_fo.png</texturefocus>
+				<texturenofocus>views/more_nf.png</texturenofocus>
+			</control>
+		</control>
+	</controls>
+</window>

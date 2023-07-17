@@ -129,8 +129,8 @@
 						<textoffsetx>28</textoffsetx>
 						<textcolor>ffdadada</textcolor>
 						<focusedcolor>ff222222</focusedcolor>
-						<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-						<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+						<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+						<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 					</control>
 					<control id="1003" type="button">
 						<width min="124" max="204">auto</width>
@@ -144,8 +144,8 @@
 						<textoffsetx>28</textoffsetx>
 						<textcolor>ffdadada</textcolor>
 						<focusedcolor>ff222222</focusedcolor>
-						<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
-						<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
+						<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+						<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 					</control>
 				</control>
 				<!-- Details -->
@@ -195,14 +195,7 @@
 		</control>
 		<control type="group">
 			<visible>ControlGroup(5000).HasFocus</visible>
-			<animation reversible="true" type="Visible">
-				<effect center="auto" easing="inout" end="100" start="92" time="120" tween="sine" type="zoom"/>
-				<effect easing="inout" end="100" start="0" time="120" tween="sine" type="fade"/>
-			</animation>
-			<animation reversible="true" type="Hidden">
-				<effect center="auto" easing="inout" end="92" start="100" time="120" tween="sine" type="zoom"/>
-				<effect easing="inout" end="0" start="100" time="120" tween="sine" type="fade"/>
-			</animation>
+			<include>DialogZoomFadeVisibleAnimation</include>
 			<!-- Controls -->
 			<control type="grouplist" id="5000">
 				<centerleft>50%</centerleft>

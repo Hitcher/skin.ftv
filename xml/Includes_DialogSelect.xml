@@ -547,10 +547,7 @@
 			<orientation>horizontal</orientation>
 			<defaultcontrol always="true">0</defaultcontrol>
 			<scrolltime easing="inout" tween="sine">300</scrolltime>
-			<animation condition="Window.IsVisible(1103)" reversible="false" type="Conditional">
-				<effect easing="out" end="-20,0" start="0,0" time="60" tween="sine" type="slide"/>
-				<effect delay="80" easing="out" end="20,0" start="0,0" time="120" tween="sine" type="slide"/>
-			</animation>
+			<include>ListBounceAnimation</include>
 			<itemlayout height="576" width="572">
 				<control type="group">
 					<animation center="316,288" condition="true" effect="zoom" end="85" start="85">Conditional</animation>
@@ -606,8 +603,9 @@
 						<width>736</width>
 						<height>576</height>
 						<texture border="50">views/shadow_fo.png</texture>
-						<animation center="auto" condition="Control.HasFocus(11) | Container(11).OnNext | Container(11).OnPrevious" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">Focus</animation>
-						<animation center="auto" condition="Container(11).OnNext | Container(11).OnPrevious" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">UnFocus</animation>
+							<include content="ContainerMoveFadeAnimation">
+								<param name="ListID" value="11"/>
+							</include>
 					</control>
 					<control type="image">
 						<left>-48</left>
@@ -615,8 +613,9 @@
 						<width>736</width>
 						<height>576</height>
 						<texture border="50">views/shadow_nf.png</texture>
-						<animation center="auto" condition="Control.HasFocus(11)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-						<animation center="auto" condition="Control.HasFocus(11)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+						<include content="FocusedListIDAnimation">
+							<param name="ListID" value="11"/>
+						</include>
 					</control>
 					<control type="gamewindow">
 						<top>48</top>
@@ -656,8 +655,9 @@
 						<width>640</width>
 						<height>480</height>
 						<texture>views/OverlayNF.png</texture>
-						<animation center="auto" condition="Control.HasFocus(11)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-						<animation center="auto" condition="Control.HasFocus(11)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+						<include content="FocusedListIDAnimation">
+							<param name="ListID" value="11"/>
+						</include>
 					</control>
 				</control>
 			</focusedlayout>
