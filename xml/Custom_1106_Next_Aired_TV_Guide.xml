@@ -257,7 +257,7 @@
 				<height>130</height>
 				<align>left</align>
 				<font>Reg30Spaced</font>
-				<pagecontrol>96</pagecontrol>
+				<pagecontrol>99</pagecontrol>
 				<autoscroll>false</autoscroll>
 				<textcolor>ffbcbcbc</textcolor>
 				<label>[B]$VAR[NextAiredTitle][/B] [LIGHT]$VAR[NextAiredPlot][/LIGHT]</label>
