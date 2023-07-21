@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-07-02 07:42+0000\n"
+"PO-Revision-Date: 2023-07-21 05:29+0000\n"
 "Last-Translator: Alfonso Cachero <alfonso.cachero@gmail.com>\n"
 "Language-Team: Spanish (Spain) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/es_es/>\n"
 "Language: es_es\n"
@@ -359,15 +359,15 @@ msgstr "Muestra Información Extendida de los actores cuando se eligen de la lis
 
 msgctxt "#31082"
 msgid "Last aired"
-msgstr ""
+msgstr "Último emitido"
 
 msgctxt "#31083"
 msgid "Yesterday"
-msgstr ""
+msgstr "Ayer"
 
 msgctxt "#31084"
 msgid "Today"
-msgstr ""
+msgstr "Hoy"
 
 msgctxt "#31085"
 msgid "Shutdown Menu"
@@ -379,7 +379,7 @@ msgstr "Clasificado por"
 
 msgctxt "#31087"
 msgid "Tomorrow"
-msgstr ""
+msgstr "Mañana"
 
 msgctxt "#31088"
 msgid "Current Playlist"
@@ -415,7 +415,7 @@ msgstr "Limpiar Lista de Reproducción"
 
 msgctxt "#31096"
 msgid "Next Aired"
-msgstr ""
+msgstr "Próxima Emisión"
 
 msgctxt "#31098"
 msgid "Press 'Continue?' to watch the next episode or 'Cancel' to stop watching."
