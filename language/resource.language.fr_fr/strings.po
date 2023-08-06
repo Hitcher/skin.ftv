@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-02-01 08:15+0000\n"
+"PO-Revision-Date: 2023-08-06 08:11+0000\n"
 "Last-Translator: skypichat <skypichat@hotmail.fr>\n"
 "Language-Team: French (France) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/fr_fr/>\n"
 "Language: fr_fr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.15.2\n"
+"X-Generator: Weblate 4.18.2\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the Fire TV UI"
@@ -179,7 +179,7 @@ msgstr "Affiche les fanarts pour vos médias en toile de fond."
 
 msgctxt "#31037"
 msgid "Press [B]BACK[/B] to keep current settings or [B]OK[/B] to reset."
-msgstr ""
+msgstr "Appuyer sur [B]BACK[/B] pour conserver les paramètres actuels ou sur [B]OK[/B] pour réinitialiser."
 
 msgctxt "#31038"
 msgid "Select your scrapers certification county."
@@ -287,15 +287,15 @@ msgstr "Active Cast info. pendant la lecture vidéo.[CR]Note : peut être gourma
 
 msgctxt "#31064"
 msgid "Browse[CR]Season"
-msgstr ""
+msgstr "Parcourir[CR]Saison"
 
 msgctxt "#31065"
 msgid "Browse[CR]Movie Set"
-msgstr ""
+msgstr "Parcourir[CR]Saga"
 
 msgctxt "#31066"
 msgid "Movies in this Set"
-msgstr ""
+msgstr "Films dans cette Saga"
 
 # empty strings from id 31064 to 31066
 msgctxt "#31067"
@@ -348,27 +348,27 @@ msgstr "Désolé, je n’ai rien trouvé."
 
 msgctxt "#31079"
 msgid "Daily"
-msgstr ""
+msgstr "Quotidien"
 
 msgctxt "#31080"
 msgid "Enable Extended Information"
-msgstr ""
+msgstr "Activer les informations étendues"
 
 msgctxt "#31081"
 msgid "Shows Extended Information for actors when selected from the cast list."
-msgstr ""
+msgstr "Affiche des informations étendues pour les acteurs lorsqu'ils sont sélectionnés dans la liste des acteurs."
 
 msgctxt "#31082"
 msgid "Last aired"
-msgstr ""
+msgstr "Dernière diffusion"
 
 msgctxt "#31083"
 msgid "Yesterday"
-msgstr ""
+msgstr "Hier"
 
 msgctxt "#31084"
 msgid "Today"
-msgstr ""
+msgstr "Aujourd'hui"
 
 # empty strings from id 31079 to 31084
 msgctxt "#31085"
@@ -381,7 +381,7 @@ msgstr "Trié par"
 
 msgctxt "#31087"
 msgid "Tomorrow"
-msgstr ""
+msgstr "Demain"
 
 # empty string with id 31087
 msgctxt "#31088"
@@ -418,7 +418,7 @@ msgstr "Vider la liste de lecture"
 
 msgctxt "#31096"
 msgid "Next Aired"
-msgstr ""
+msgstr "Prochaine Diffusion"
 
 # empty strings from id 31096 to 31097
 msgctxt "#31098"
