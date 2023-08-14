@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-08-06 08:11+0000\n"
+"PO-Revision-Date: 2023-08-14 00:11+0000\n"
 "Last-Translator: Massimo Pissarello <mapi68@gmail.com>\n"
 "Language-Team: Italian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/it_it/>\n"
 "Language: it_it\n"
@@ -360,11 +360,11 @@ msgstr "Mostra informazioni estese per gli attori selezionati dall'elenco del ca
 
 msgctxt "#31082"
 msgid "Last aired"
-msgstr ""
+msgstr "Ultima messa in onda"
 
 msgctxt "#31083"
 msgid "Yesterday"
-msgstr ""
+msgstr "Ieri"
 
 msgctxt "#31084"
 msgid "Today"
@@ -380,7 +380,7 @@ msgstr "Ordinati per"
 
 msgctxt "#31087"
 msgid "Tomorrow"
-msgstr ""
+msgstr "Domani"
 
 msgctxt "#31088"
 msgid "Current Playlist"
@@ -416,7 +416,7 @@ msgstr "Svuota playlist"
 
 msgctxt "#31096"
 msgid "Next Aired"
-msgstr ""
+msgstr "Prossimo in onda"
 
 # empty strings from id 31096 to 31097
 msgctxt "#31098"
