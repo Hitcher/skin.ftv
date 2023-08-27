@@ -522,7 +522,7 @@
 		<!-- Busy -->
 		<control type="group">
 			<left>571</left>
-			<top>847</top>
+			<top>693</top>
 			<visible>Container(500).IsUpdating</visible>
 			<animation effect="fade" end="0" start="100" delay="200">Visible</animation>
 			<control type="image">

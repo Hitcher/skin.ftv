@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<!-- addoninformation -->
+	<defaultcontrol always="true">7000</defaultcontrol>
 	<onload condition="!String.Contains(Control.GetLabel(13),*) | String.IsEmpty(Skin.String(AutoUpdate))">Skin.SetString(AutoUpdate,off)</onload>
 	<onload>Control.Move(50,$INFO[Container(50).CurrentItem,-])</onload>
 	<onload>Control.Move(50,1)</onload>
@@ -30,9 +31,39 @@
 			<orientation>vertical</orientation>
 		</control>
 		<!-- Hidden Button -->
+		<control id="6" type="button">
+			<include>HiddenControl</include>
+			<onfocus>SetFocus(7000)</onfocus>
+		</control>
+		<!-- Hidden Button -->
+		<control id="7" type="button">
+			<include>HiddenControl</include>
+			<onfocus>SetFocus(7000)</onfocus>
+		</control>
+		<!-- Hidden Button -->
+		<control id="9" type="button">
+			<include>HiddenControl</include>
+			<onfocus>SetFocus(7000)</onfocus>
+		</control>
+		<!-- Hidden Button -->
+		<control id="10" type="button">
+			<include>HiddenControl</include>
+			<onfocus>SetFocus(7000)</onfocus>
+		</control>
+		<!-- Hidden Button -->
+		<control id="12" type="button">
+			<include>HiddenControl</include>
+			<onfocus>SetFocus(7000)</onfocus>
+		</control>
+		<!-- Hidden Button -->
 		<control id="13" type="radiobutton">
 			<include>HiddenControl</include>
-			<visible>Control.IsEnabled(13)</visible>
+			<onfocus>SetFocus(7000)</onfocus>
+		</control>
+		<!-- Hidden Button -->
+		<control id="14" type="button">
+			<include>HiddenControl</include>
+			<onfocus>SetFocus(7000)</onfocus>
 		</control>
 		<!-- Background -->
 		<include>BackgroundImage</include>
@@ -198,15 +229,16 @@
 					<height>0</height>
 					<onfocus>Right</onfocus>
 					<include>NoTextures</include>
-					<visible>!Control.HasFocus(12) + !Control.HasFocus(21) + !Control.HasFocus(9) + !Control.HasFocus(10) + !Control.HasFocus(14) + !Control.HasFocus(6) + !Control.HasFocus(7) + !Control.HasFocus(20)</visible>
+					<visible>!Control.HasFocus(9012) + !Control.HasFocus(9021) + !Control.HasFocus(909) + !Control.HasFocus(9010) + !Control.HasFocus(9014) + !Control.HasFocus(906) + !Control.HasFocus(907) + !Control.HasFocus(9013)</visible>
 				</control>
 				<!-- Launch Addon Button -->
-				<control id="12" type="button">
+				<control id="9012" type="button">
 					<width min="124" max="204">auto</width>
 					<wrapmultiline>true</wrapmultiline>
 					<height>116</height>
 					<onup>Close</onup>
 					<ondown condition="Control.IsVisible(50)">50</ondown>
+					<onclick>SendClick(12)</onclick>
 					<font>Med24</font>
 					<label>$LOCALIZE[31033]</label>
 					<textoffsetx>28</textoffsetx>
@@ -217,7 +249,7 @@
 					<visible>Control.IsEnabled(12)</visible>
 				</control>
 				<!-- What's new Button -->
-				<control id="21" type="button">
+				<control id="9021" type="button">
 					<width min="104" max="204">auto</width>
 					<wrapmultiline>true</wrapmultiline>
 					<height>116</height>
@@ -234,12 +266,13 @@
 					<visible>!String.IsEmpty(ListItem.AddonNews)</visible>
 				</control>
 				<!-- Configure Addon button -->
-				<control id="9" type="button">
+				<control id="9009" type="button">
 					<width min="124" max="204">auto</width>
 					<wrapmultiline>true</wrapmultiline>
 					<height>116</height>
 					<onup>Close</onup>
 					<ondown condition="Control.IsVisible(50)">50</ondown>
+					<onclick>SendClick(9)</onclick>
 					<font>Med24</font>
 					<label>24020</label>
 					<textoffsetx>28</textoffsetx>
@@ -250,12 +283,13 @@
 					<visible>Control.IsEnabled(9)</visible>
 				</control>
 				<!-- Dependencies Button -->
-				<control id="10" type="button">
+				<control id="9010" type="button">
 					<width min="104" max="224">auto</width>
 					<wrapmultiline>true</wrapmultiline>
 					<height>116</height>
 					<onup>Close</onup>
 					<ondown condition="Control.IsVisible(50)">50</ondown>
+					<onclick>SendClick(10)</onclick>
 					<font>Med24</font>
 					<label>39024</label>
 					<textoffsetx>28</textoffsetx>
@@ -266,12 +300,13 @@
 					<visible>Control.IsEnabled(10)</visible>
 				</control>
 				<!-- Update Addon Button -->
-				<control id="14" type="button">
+				<control id="9014" type="button">
 					<width min="124" max="204">auto</width>
 					<wrapmultiline>true</wrapmultiline>
 					<height>116</height>
 					<onup>Close</onup>
 					<ondown condition="Control.IsVisible(50)">50</ondown>
+					<onclick>SendClick(14)</onclick>
 					<font>Med24</font>
 					<label>$LOCALIZE[24069]</label>
 					<textoffsetx>28</textoffsetx>
@@ -282,13 +317,15 @@
 					<visible>Control.IsEnabled(14)</visible>
 				</control>
 				<!-- Install/UnInstall Addon button -->
-				<control id="6" type="button">
+				<control id="9006" type="button">
 					<width min="124" max="204">auto</width>
 					<wrapmultiline>true</wrapmultiline>
 					<height>116</height>
 					<onup>Close</onup>
 					<ondown condition="Control.IsVisible(50)">50</ondown>
+					<onclick>SendClick(6)</onclick>
 					<font>Med24</font>
+					<label>$INFO[Control.GetLabel(6)]</label>
 					<textoffsetx>28</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
@@ -297,13 +334,15 @@
 					<visible>Control.IsEnabled(6)</visible>
 				</control>
 				<!-- Enable/Disable Addon button -->
-				<control id="7" type="button">
+				<control id="9007" type="button">
 					<width min="124" max="204">auto</width>
 					<wrapmultiline>true</wrapmultiline>
 					<height>116</height>
 					<onup>Close</onup>
 					<ondown condition="Control.IsVisible(50)">50</ondown>
+					<onclick>SendClick(7)</onclick>
 					<font>Med24</font>
+					<label>$INFO[Control.GetLabel(7)]</label>
 					<textoffsetx>28</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
@@ -312,15 +351,13 @@
 					<visible>Control.IsEnabled(7)</visible>
 				</control>
 				<!-- Auto-update Addon Button -->
-				<control id="20" type="button">
+				<control id="9013" type="button">
 					<width min="124" max="204">auto</width>
 					<wrapmultiline>true</wrapmultiline>
 					<height>116</height>
 					<onup>Close</onup>
 					<ondown condition="Control.IsVisible(50)">50</ondown>
-					<onclick>SetFocus(13)</onclick>
-					<onclick>Select</onclick>
-					<onclick>SetFocus(20)</onclick>
+					<onclick>SendClick(13)</onclick>
 					<onclick condition="String.Contains(Skin.String(AutoUpdate),off)">Skin.SetString(AutoUpdate,on)</onclick>
 					<onclick condition="String.Contains(Skin.String(AutoUpdate),on)">Skin.SetString(AutoUpdate,off)</onclick>
 					<font>Med24</font>

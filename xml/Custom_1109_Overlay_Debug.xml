@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1109">
 	<zorder>100</zorder>
-	<visible>!Window.IsVisible(startup)</visible>
+	<visible>Skin.HasSetting(DebugInfo)</visible>
 	<controls>
-		<!-- Global debug grid -->
-		<control type="image">
-			<width>$INFO[System.ScreenWidth]</width>
-			<height>$INFO[System.ScreenHeight]</height>
-			<texture>special://skin/extras/debuggrid1080.png</texture>
-			<colordiffuse>88ffffff</colordiffuse>
-			<visible>Skin.HasSetting(DebugGrid)</visible>
-		</control>
 		<!-- Window/Dialog debug -->
 		<control type="grouplist">
 			<left>15</left>

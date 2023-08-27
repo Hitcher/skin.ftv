@@ -1082,6 +1082,7 @@
 		<value condition="ControlGroup(9).HasFocus(23)">$LOCALIZE[31034]</value>
 		<value condition="ControlGroup(9).HasFocus(24)">$LOCALIZE[31063]</value>
 		<value condition="ControlGroup(9).HasFocus(25)">$LOCALIZE[31081]</value>
+		<value condition="ControlGroup(9).HasFocus(26)">$LOCALIZE[31111]</value>
 	</variable>
 	<variable name="AlbumArtistName">
 		<value condition="!String.IsEmpty(ListItem.AlbumArtist)">$INFO[ListItem.AlbumArtist]</value>
@@ -1161,7 +1162,7 @@
 	</variable>
 	<variable name="WideImage">
 		<value condition="ListItem.IsParentFolder">views/folder_back_wide.png</value>
-		<value condition="String.IsEqual(ListItem.Overlay,OverlayUnWatched.png)">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="String.IsEqual(ListItem.Icon,ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="Container.Content(episodes) + !String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
 		<value>views/episode_fallback.png</value>

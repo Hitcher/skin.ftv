@@ -502,21 +502,18 @@
 			<control type="group">
 				<include>VisibleFadeAnimation</include>
 				<visible>!Player.Forwarding + !Player.Rewinding + [Player.Seeking | Player.HasPerformedSeek(3)]</visible>
-				<control type="image">
+				<control type="group">
 					<left>97</left>
 					<bottom>123</bottom>
 					<width>80</width>
 					<height>80</height>
-					<texture>osd/step_forward.png</texture>
-					<visible>[!String.IsEmpty(Player.SeekOffset) + !String.Contains(Player.SeekOffset,-)] | [!String.IsEmpty(Player.SeekStepSize) + !String.Contains(Player.SeekStepSize,-)]</visible>
-				</control>
-				<control type="image">
-					<left>97</left>
-					<bottom>123</bottom>
-					<width>80</width>
-					<height>80</height>
-					<texture>osd/step_back.png</texture>
-					<visible>[!String.IsEmpty(Player.SeekOffset) + String.Contains(Player.SeekOffset,-)] | [!String.IsEmpty(Player.SeekStepSize) + String.Contains(Player.SeekStepSize,-)]</visible>
+					<control type="image">
+						<width>80</width>
+						<height>80</height>
+						<texture>osd/step_forward.png</texture>
+						<animation condition="String.Contains(Player.SeekStepSize,-) | [String.IsEmpty(Player.SeekStepSize) + String.Contains(Player.SeekOffset,-)]" effect="rotatey" end="180" center="40,0" time="0">Conditional</animation>
+						<visible>!String.IsEmpty(Player.SeekOffset) | !String.IsEmpty(Player.SeekStepSize)</visible>
+					</control>
 				</control>
 				<control type="label">
 					<centerleft>137</centerleft>

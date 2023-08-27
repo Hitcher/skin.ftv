@@ -12,8 +12,6 @@
 	</requires>
 	<extension point="xbmc.gui.skin" effectslowdown="1.00" debugging="false">
 		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml"/>
-		<!--res width="1280" height="720" aspect="16:9" default="false" folder="xml_720"/>
-		<res width="3840" height="2160" aspect="16:9" default="false" folder="xml_4k"/-->
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>

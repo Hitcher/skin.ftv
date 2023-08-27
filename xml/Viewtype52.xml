@@ -46,7 +46,7 @@
 							<height>480</height>
 							<aspectratio align="center">scale</aspectratio>
 							<texture>views/episode_fallback.png</texture>
-							<visible>!ListItem.IsParentFolder + [String.IsEqual(ListItem.Overlay,OverlayUnWatched.png)]</visible>
+							<visible>!ListItem.IsParentFolder + String.IsEqual(ListItem.Icon,ListItem.Art(fanart))</visible>
 						</control>
 						<control type="image">
 							<left>119</left>
@@ -137,7 +137,7 @@
 							<height>576</height>
 							<texture border="50">views/shadow_fo.png</texture>
 							<include content="ContainerMoveFadeAnimation">
-								<param name="ListID" value="51"/>
+								<param name="ListID" value="52"/>
 							</include>
 						</control>
 						<control type="image">
@@ -163,7 +163,7 @@
 							<height>480</height>
 							<aspectratio align="center">scale</aspectratio>
 							<texture>views/episode_fallback.png</texture>
-							<visible>!ListItem.IsParentFolder + [String.IsEqual(ListItem.Overlay,OverlayUnWatched.png)]</visible>
+							<visible>!ListItem.IsParentFolder + String.IsEqual(ListItem.Icon,ListItem.Art(fanart))</visible>
 						</control>
 						<control type="image">
 							<left>119</left>
