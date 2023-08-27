@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2022-09-16 18:14+0000\n"
+"PO-Revision-Date: 2023-07-29 04:11+0000\n"
 "Last-Translator: Oskari Lavinto <olavinto@protonmail.com>\n"
 "Language-Team: Finnish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/fi_fi/>\n"
 "Language: fi_fi\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14\n"
+"X-Generator: Weblate 4.18.2\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the Fire TV UI"
@@ -352,11 +352,11 @@ msgstr ""
 
 msgctxt "#31080"
 msgid "Enable Extended Information"
-msgstr ""
+msgstr "Käytä ExtendedInfo-tietoja"
 
 msgctxt "#31081"
 msgid "Shows Extended Information for actors when selected from the cast list."
-msgstr ""
+msgstr "Näyttää näyttelijöiden ExtendedInfo-tiedot listalta valittaessa."
 
 msgctxt "#31082"
 msgid "Last aired"
@@ -368,7 +368,7 @@ msgstr ""
 
 msgctxt "#31084"
 msgid "Today"
-msgstr ""
+msgstr "Tänään"
 
 msgctxt "#31085"
 msgid "Shutdown Menu"
@@ -416,7 +416,7 @@ msgstr ""
 
 msgctxt "#31096"
 msgid "Next Aired"
-msgstr ""
+msgstr "Seuraava esitys"
 
 # empty strings from id 31096 to 31097
 msgctxt "#31098"

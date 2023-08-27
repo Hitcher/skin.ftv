@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-07-16 12:11+0000\n"
+"PO-Revision-Date: 2023-07-21 05:29+0000\n"
 "Last-Translator: yohru <yohru7@gmail.com>\n"
 "Language-Team: Japanese <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/ja_jp/>\n"
 "Language: ja_jp\n"
@@ -359,15 +359,15 @@ msgstr "キャストリストから選択した俳優の拡張情報を表示し
 
 msgctxt "#31082"
 msgid "Last aired"
-msgstr ""
+msgstr "前回の放送"
 
 msgctxt "#31083"
 msgid "Yesterday"
-msgstr ""
+msgstr "昨日"
 
 msgctxt "#31084"
 msgid "Today"
-msgstr ""
+msgstr "今日"
 
 msgctxt "#31085"
 msgid "Shutdown Menu"
@@ -379,7 +379,7 @@ msgstr "ソート"
 
 msgctxt "#31087"
 msgid "Tomorrow"
-msgstr ""
+msgstr "明日"
 
 msgctxt "#31088"
 msgid "Current Playlist"
@@ -415,7 +415,7 @@ msgstr "プレイリストをクリア"
 
 msgctxt "#31096"
 msgid "Next Aired"
-msgstr ""
+msgstr "次の放送"
 
 msgctxt "#31098"
 msgid "Press 'Continue?' to watch the next episode or 'Cancel' to stop watching."
