@@ -416,6 +416,10 @@ msgctxt "#31096"
 msgid "Next Aired"
 msgstr ""
 
+msgctxt "#31097"
+msgid "TV Show Wide"
+msgstr ""
+
 msgctxt "#31098"
 msgid "Press 'Continue?' to watch the next episode or 'Cancel' to stop watching."
 msgstr "Press 'Continue?' to watch the next episode or 'Cancel' to stop watching."
@@ -467,6 +471,14 @@ msgstr "Watch[CR]Now"
 msgctxt "#31110"
 msgid "Written by"
 msgstr "Written by"
+
+msgctxt "#31111"
+msgid "Episode Wide"
+msgstr ""
+
+msgctxt "#31112"
+msgid "Song List"
+msgstr ""
 
 msgctxt "#31114"
 msgid "Customise Shutdown Menu"

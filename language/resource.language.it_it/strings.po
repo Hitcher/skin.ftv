@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2023-08-14 00:11+0000\n"
 "Last-Translator: Massimo Pissarello <mapi68@gmail.com>\n"
@@ -418,6 +418,10 @@ msgctxt "#31096"
 msgid "Next Aired"
 msgstr "Prossimo in onda"
 
+msgctxt "#31097"
+msgid "TV Show Wide"
+msgstr ""
+
 # empty strings from id 31096 to 31097
 msgctxt "#31098"
 msgid "Press 'Continue?' to watch the next episode or 'Cancel' to stop watching."
@@ -470,6 +474,14 @@ msgstr "Guarda[CR]Adesso"
 msgctxt "#31110"
 msgid "Written by"
 msgstr "Scritto da"
+
+msgctxt "#31111"
+msgid "Episode Wide"
+msgstr ""
+
+msgctxt "#31112"
+msgid "Song List"
+msgstr ""
 
 # empty strings from id 31111 to 31113
 msgctxt "#31114"
