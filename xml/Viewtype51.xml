@@ -3,7 +3,7 @@
 	<include name="Viewtype51">
 		<control type="group">
 			<visible>Control.IsVisible(51)</visible>
-			<!-- Wide List -->
+			<!-- Wide TV Show List -->
 			<control id="51" type="fixedlist">
 				<left>-374</left>
 				<top>242</top>
@@ -16,7 +16,7 @@
 				<onright condition="!Window.IsVisible(1103)">SetProperty(BounceRight,1,Home)</onright>
 				<preloaditems>2</preloaditems>
 				<focusposition>1</focusposition>
-				<viewtype label="31161">list</viewtype>
+				<viewtype label="31097">list</viewtype>
 				<orientation>horizontal</orientation>
 				<defaultcontrol always="true">0</defaultcontrol>
 				<scrolltime easing="inout" tween="sine">300</scrolltime>
@@ -70,15 +70,15 @@
 							<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
 						</control>
 						<control type="image">
-							<top>48</top>
+							<bottom>48</bottom>
 							<width>640</width>
-							<height>480</height>
-							<texture border="2">views/season_overlay.png</texture>
-							<visible>Container.Content(seasons) + !ListItem.IsParentFolder + !String.Contains(ListItem.Icon,Default)</visible>
+							<height>125</height>
+							<texture border="2">views/default_overlay.png</texture>
+							<visible>Container.Content(seasons) + !ListItem.IsParentFolder</visible>
 						</control>
 						<control type="label">
 							<left>18</left>
-							<top>427</top>
+							<top>448</top>
 							<width>604</width>
 							<height>42</height>
 							<font>Bold44</font>
@@ -150,15 +150,15 @@
 							<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
 						</control>
 						<control type="image">
-							<top>48</top>
+							<bottom>48</bottom>
 							<width>640</width>
-							<height>480</height>
-							<texture border="2">views/season_overlay.png</texture>
-							<visible>Container.Content(seasons) + !ListItem.IsParentFolder + !String.Contains(ListItem.Icon,Default)</visible>
+							<height>125</height>
+							<texture border="2">views/default_overlay.png</texture>
+							<visible>Container.Content(seasons) + !ListItem.IsParentFolder</visible>
 						</control>
 						<control type="label">
 							<left>18</left>
-							<top>427</top>
+							<top>448</top>
 							<width>604</width>
 							<height>42</height>
 							<font>Bold44</font>

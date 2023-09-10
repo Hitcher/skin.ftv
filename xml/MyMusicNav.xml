@@ -29,7 +29,7 @@
 			<!-- Heading / Current item / Total items -->
 			<control type="grouplist">
 				<left>198</left>
-				<top>134</top>
+				<top>118</top>
 				<height>80</height>
 				<itemgap>10</itemgap>
 				<orientation>horizontal</orientation>
@@ -45,7 +45,7 @@
 					<label>$VAR[HeadingLabel]  </label>
 				</control>
 				<control type="label">
-					<top>15</top>
+					<top>30</top>
 					<width>auto</width>
 					<height>60</height>
 					<font>Med32</font>
@@ -55,7 +55,7 @@
 					<visible>Integer.IsGreater(Container.NumItems,0)</visible>
 				</control>
 				<control type="label">
-					<top>14</top>
+					<top>28</top>
 					<width>auto</width>
 					<height>60</height>
 					<font>Light36</font>
@@ -65,7 +65,7 @@
 					<visible>Integer.IsGreater(Container.NumItems,0)</visible>
 				</control>
 				<control type="label">
-					<top>15</top>
+					<top>30</top>
 					<width>auto</width>
 					<height>60</height>
 					<font>Light32</font>

@@ -147,7 +147,9 @@
 				<sliderwidth>200</sliderwidth>
 				<sliderheight>11</sliderheight>
 				<texturesliderbar border="4">osd/progress_back.png</texturesliderbar>
+				<texturesliderbardisabled colordiffuse="DisabledColor" border="4">osd/progress_back.png</texturesliderbardisabled>
 				<textureslidernib border="4">osd/progress_cache.png</textureslidernib>
+				<textureslidernibdisabled colordiffuse="DisabledColor" border="4">osd/progress_cache.png</textureslidernibdisabled>
 				<textureslidernibfocus border="4">osd/progress_bar.png</textureslidernibfocus>
 			</control>
 			<!-- Default label -->

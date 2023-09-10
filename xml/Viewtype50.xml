@@ -3,7 +3,7 @@
 	<include name="Viewtype50">
 		<control type="group">
 			<visible>Control.IsVisible(50)</visible>
-			<!-- List -->
+			<!-- Square List -->
 			<control id="50" type="fixedlist">
 				<left>-238</left>
 				<top>242</top>
@@ -50,10 +50,10 @@
 							<texture background="true">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="image">
-							<top>48</top>
+							<bottom>48</bottom>
 							<width>480</width>
-							<height>480</height>
-							<texture border="2">views/season_overlay.png</texture>
+							<height>125</height>
+							<texture border="2">views/default_overlay.png</texture>
 							<visible>!ListItem.IsParentFolder + !String.Contains(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="image">
@@ -129,10 +129,10 @@
 							<texture background="true">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="image">
-							<top>48</top>
+							<bottom>48</bottom>
 							<width>480</width>
-							<height>480</height>
-							<texture border="2">views/season_overlay.png</texture>
+							<height>125</height>
+							<texture border="2">views/default_overlay.png</texture>
 							<visible>!ListItem.IsParentFolder + !String.Contains(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="image">

@@ -61,7 +61,7 @@
 			<!-- Show / Time -->
 			<control type="grouplist">
 				<left>196</left>
-				<top>134</top>
+				<top>118</top>
 				<height>80</height>
 				<itemgap>10</itemgap>
 				<orientation>horizontal</orientation>
@@ -76,7 +76,7 @@
 					<label>$VAR[NextAiredShow]  </label>
 				</control>
 				<control type="label">
-					<top>15</top>
+					<top>30</top>
 					<width>auto</width>
 					<height>60</height>
 					<font>Med32</font>

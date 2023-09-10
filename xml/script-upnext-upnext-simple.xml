@@ -50,10 +50,10 @@
 				<visible>IntegerGreaterThan(Control.GetLabel(3011),719)</visible>
 			</control-->
 			<control type="image">
-				<top>56</top>
+				<top>237</top>
 				<width>370</width>
-				<height>277</height>
-				<texture border="2">views/season_overlay.png</texture>
+				<height>96</height>
+				<texture border="2">views/default_overlay.png</texture>
 			</control>
 			<!-- Next episode countdown -->
 			<control type="image">

@@ -142,7 +142,8 @@
 		</font>
 		<font>
 			<name>Light30Spaced</name>
-			<filename>HelveticaNeue_Lt.ttf</filename>
+			<filename>HelveticaNeue.ttf</filename>
+			<style>lighten</style>
 			<size>30</size>
 			<linespacing>1.1</linespacing>
 		</font>
@@ -211,7 +212,8 @@
 		</font>
 		<font>
 			<name>Med48</name>
-			<filename>HelveticaNeue_Med.ttf</filename>
+			<filename>HelveticaNeue_Bold.ttf</filename>
+			<style>lighten</style>
 			<size>48</size>
 		</font>
 		<font>

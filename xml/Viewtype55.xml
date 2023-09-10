@@ -3,7 +3,7 @@
 	<include name="Viewtype55">
 		<control type="group">
 			<visible>Control.IsVisible(55)</visible>
-			<!-- List -->
+			<!-- Wide List -->
 			<control id="55" type="fixedlist">
 				<left>-374</left>
 				<top>242</top>
@@ -61,11 +61,11 @@
 							<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
 						</control>
 						<control type="image">
-							<top>48</top>
+							<bottom>48</bottom>
 							<width>640</width>
-							<height>480</height>
+							<height>125</height>
+							<texture border="2">views/default_overlay.png</texture>
 							<visible>!ListItem.IsParentFolder</visible>
-							<texture border="2">views/season_overlay.png</texture>
 						</control>
 						<control type="label">
 							<left>18</left>
@@ -132,11 +132,11 @@
 							<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
 						</control>
 						<control type="image">
-							<top>48</top>
+							<bottom>48</bottom>
 							<width>640</width>
-							<height>480</height>
+							<height>125</height>
+							<texture border="2">views/default_overlay.png</texture>
 							<visible>!ListItem.IsParentFolder</visible>
-							<texture border="2">views/season_overlay.png</texture>
 						</control>
 						<control type="label">
 							<left>18</left>

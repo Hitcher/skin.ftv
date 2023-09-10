@@ -60,11 +60,11 @@
 				<visible>[Integer.IsGreater(ListItem.PlayCount,0) + Container.Content(episodes)] | [Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),99) + Integer.IsGreater(ListItem.Property(TotalEpisodes),0) + !Container.Content(episodes)]</visible>
 			</control>
 			<control type="image">
-				<top>240</top>
+				<top>400</top>
 				<width>320</width>
-				<height>240</height>
-				<texture border="2">views/season_overlay.png</texture>
-				<visible>ListItem.IsResumable | [Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),00) + [Container.Content(tvshows) | Container.Content(seasons)]]</visible>
+				<height>80</height>
+				<texture border="2">views/default_overlay.png</texture>
+				<visible>[ListItem.IsResumable + [!Container.Content(tvshows) + !Container.Content(seasons)]]| [Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),00) + Integer.IsLess(ListItem.Property(WatchedEpisodePercent),100) + [Container.Content(tvshows) | Container.Content(seasons)]]</visible>
 			</control>
 			<control type="label">
 				<left>16</left>
@@ -74,7 +74,7 @@
 				<font>Med20</font>
 				<textcolor>ffbcbcbc</textcolor>
 				<label>$VAR[PercentRemaining]</label>
-				<visible>ListItem.IsResumable</visible>
+				<visible>ListItem.IsResumable + [Container.Content(movies) | Container.Content(episodes)]</visible>
 			</control>
 			<control type="label">
 				<left>16</left>
@@ -225,7 +225,7 @@
 					<visible>!String.IsEmpty(ListItem.UserRating)</visible>
 				</control>
 				<control type="image">
-					<top>4</top>
+					<top>2</top>
 					<width>48</width>
 					<height>23</height>
 					<texture>views/logos/imdb.png</texture>
@@ -242,7 +242,7 @@
 					<visible>!String.IsEmpty(ListItem.Rating(imdb))</visible>
 				</control>
 				<control type="image">
-					<top>3</top>
+					<top>2</top>
 					<width>40</width>
 					<height>23</height>
 					<texture>views/logos/tvdb.png</texture>
@@ -259,7 +259,7 @@
 					<visible>!String.IsEmpty(ListItem.Rating(tvdb))</visible>
 				</control>
 				<control type="image">
-					<top>3</top>
+					<top>2</top>
 					<width>54</width>
 					<height>23</height>
 					<texture>views/logos/tmdb.png</texture>
@@ -274,6 +274,40 @@
 					<textcolor>ffbcbcbc</textcolor>
 					<label>$INFO[ListItem.Rating(themoviedb),,/10]</label>
 					<visible>!String.IsEmpty(ListItem.Rating(themoviedb))</visible>
+				</control>
+				<control type="image">
+					<top>2</top>
+					<width>54</width>
+					<height>23</height>
+					<texture>views/logos/tmdb.png</texture>
+					<visible>!String.IsEmpty(ListItem.Rating(tmdb))</visible>
+				</control>
+				<control type="label">
+					<top>-13</top>
+					<width>auto</width>
+					<height>34</height>
+					<font>Bold30</font>
+					<aligny>bottom</aligny>
+					<textcolor>ffbcbcbc</textcolor>
+					<label>$INFO[ListItem.Rating(tmdb),,/10]</label>
+					<visible>!String.IsEmpty(ListItem.Rating(tmdb))</visible>
+				</control>
+				<control type="image">
+					<top>2</top>
+					<width>23</width>
+					<height>23</height>
+					<texture>views/logos/trakt.png</texture>
+					<visible>!String.IsEmpty(ListItem.Rating(trakt))</visible>
+				</control>
+				<control type="label">
+					<top>-13</top>
+					<width>auto</width>
+					<height>34</height>
+					<font>Bold30</font>
+					<aligny>bottom</aligny>
+					<textcolor>ffbcbcbc</textcolor>
+					<label>$INFO[ListItem.Rating(trakt),,/10]</label>
+					<visible>!String.IsEmpty(ListItem.Rating(trakt))</visible>
 				</control>
 				<control type="image">
 					<top>2</top>
@@ -338,7 +372,7 @@
 					<aligny>bottom</aligny>
 					<textcolor>ffbcbcbc</textcolor>
 					<label>$INFO[ListItem.Rating,,/10]</label>
-					<visible>String.IsEmpty(ListItem.Rating(imdb)) + String.IsEmpty(ListItem.Rating(tvdb)) + String.IsEmpty(ListItem.Rating(themoviedb)) + String.IsEmpty(ListItem.Rating(metacritic)) + String.IsEmpty(ListItem.Rating(tomatometerallaudience)) + String.IsEmpty(ListItem.Rating(tomatometerallcritics)) + String.IsEmpty(ListItem.Rating(tomatometeravgaudience)) + String.IsEmpty(ListItem.Rating(tomatometeravgcritics)) + String.IsEmpty(Container(9001).ListItem.Property(imdb)) + String.IsEmpty(Container(9001).ListItem.Property(tvdb)) + String.IsEmpty(Container(9001).ListItem.Property(themoviedb)) + String.IsEmpty(Container(9001).ListItem.Property(metacritic)) + String.IsEmpty(Container(9001).ListItem.Property(tomatometerallaudience)) + String.IsEmpty(Container(9001).ListItem.Property(tomatometerallcritics)) + String.IsEmpty(Container(9001).ListItem.Property(tomatometeravgaudience)) + String.IsEmpty(Container(9001).ListItem.Property(tomatometeravgcritics))</visible>
+					<visible>String.IsEmpty(ListItem.Rating(imdb)) + String.IsEmpty(ListItem.Rating(trakt)) + String.IsEmpty(ListItem.Rating(tvdb)) + String.IsEmpty(ListItem.Rating(themoviedb)) + String.IsEmpty(ListItem.Rating(tmdb)) + String.IsEmpty(ListItem.Rating(metacritic)) + String.IsEmpty(ListItem.Rating(tomatometerallaudience)) + String.IsEmpty(ListItem.Rating(tomatometerallcritics)) + String.IsEmpty(ListItem.Rating(tomatometeravgaudience)) + String.IsEmpty(ListItem.Rating(tomatometeravgcritics))</visible>
 				</control>
 			</control>
 			<control type="grouplist">
@@ -720,10 +754,10 @@
 							<texture background="true">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="image">
-							<top>48</top>
+							<bottom>48</bottom>
 							<width>320</width>
-							<height>480</height>
-							<texture border="2">views/season_overlay.png</texture>
+							<height>165</height>
+							<texture border="2">views/default_overlay.png</texture>
 							<visible>!String.Contains(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="label">
@@ -790,10 +824,10 @@
 							<texture background="true">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="image">
-							<top>48</top>
+							<bottom>48</bottom>
 							<width>320</width>
-							<height>480</height>
-							<texture border="2">views/season_overlay.png</texture>
+							<height>165</height>
+							<texture border="2">views/default_overlay.png</texture>
 							<visible>!String.Contains(ListItem.Icon,Default)</visible>
 							<include content="FocusedListIDAnimation">
 								<param name="ListID" value="50"/>
@@ -843,9 +877,9 @@
 			<!-- Info -->
 			<control type="grouplist">
 				<left>575</left>
-				<top>287</top>
+				<top>277</top>
 				<width>1192</width>
-				<height>50</height>
+				<height>40</height>
 				<itemgap>8</itemgap>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
@@ -854,23 +888,15 @@
 				<animation effect="fade" end="0" start="100" time="0">Hidden</animation>
 				<control type="label">
 					<width>auto</width>
-					<height>24</height>
+					<height>36</height>
 					<align>left</align>
 					<font>Bold31</font>
 					<textcolor>ffbcbcbc</textcolor>
 					<label>$INFO[Container(50).ListItem.Label]</label>
 					<visible>Control.HasFocus(50)</visible>
-					<control type="label">
-						<width>auto</width>
-						<height>24</height>
-						<align>left</align>
-						<font>Bold31</font>
-						<textcolor>ffbcbcbc</textcolor>
-						<label>$INFO[Container(501).ListItem.Label]</label>
-						<visible>Control.HasFocus(501)</visible>
-					</control>
 				</control>
 				<control type="label">
+					<top>7</top>
 					<width>auto</width>
 					<height>29</height>
 					<align>left</align>

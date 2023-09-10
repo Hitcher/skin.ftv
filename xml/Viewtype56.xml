@@ -3,7 +3,7 @@
 	<include name="Viewtype56">
 		<control type="group">
 			<visible>Control.IsVisible(56)</visible>
-			<!-- List -->
+			<!-- Square List -->
 			<control id="56" type="fixedlist">
 				<left>-238</left>
 				<top>242</top>
@@ -61,10 +61,10 @@
 							<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
 						</control>
 						<control type="image">
-							<top>48</top>
+							<bottom>48</bottom>
 							<width>480</width>
-							<height>480</height>
-							<texture border="2">views/season_overlay.png</texture>
+							<height>125</height>
+							<texture border="2">views/default_overlay.png</texture>
 							<visible>!ListItem.IsParentFolder + !String.Contains(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="label">
@@ -133,10 +133,10 @@
 							<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
 						</control>
 						<control type="image">
-							<top>48</top>
+							<bottom>48</bottom>
 							<width>480</width>
-							<height>480</height>
-							<texture border="2">views/season_overlay.png</texture>
+							<height>125</height>
+							<texture border="2">views/default_overlay.png</texture>
 							<visible>!ListItem.IsParentFolder + !String.Contains(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="label">

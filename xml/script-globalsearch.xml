@@ -30,7 +30,7 @@
 			<!-- Search Result -->
 			<control type="grouplist">
 				<left>176</left>
-				<top>134</top>
+				<top>118</top>
 				<height>80</height>
 				<itemgap>10</itemgap>
 				<orientation>horizontal</orientation>
@@ -223,11 +223,11 @@
 						<visible>!String.IsEmpty(ListItem.UserRating)</visible>
 					</control>
 					<control type="image">
-						<top>4</top>
+						<top>2</top>
 						<width>48</width>
 						<height>23</height>
 						<texture>views/logos/imdb.png</texture>
-						<visible>!String.IsEmpty(Listitem.Rating(imdb))</visible>
+						<visible>!String.IsEmpty(ListItem.Rating(imdb))</visible>
 					</control>
 					<control type="label">
 						<top>-13</top>
@@ -236,15 +236,15 @@
 						<font>Bold30</font>
 						<aligny>bottom</aligny>
 						<textcolor>ffbcbcbc</textcolor>
-						<label>$INFO[Listitem.Rating(imdb),,/10]</label>
-						<visible>!String.IsEmpty(Listitem.Rating(imdb))</visible>
+						<label>$INFO[ListItem.Rating(imdb),,/10]</label>
+						<visible>!String.IsEmpty(ListItem.Rating(imdb))</visible>
 					</control>
 					<control type="image">
-						<top>3</top>
+						<top>2</top>
 						<width>40</width>
 						<height>23</height>
 						<texture>views/logos/tvdb.png</texture>
-						<visible>!String.IsEmpty(Listitem.Rating(tvdb))</visible>
+						<visible>!String.IsEmpty(ListItem.Rating(tvdb))</visible>
 					</control>
 					<control type="label">
 						<top>-13</top>
@@ -257,11 +257,11 @@
 						<visible>!String.IsEmpty(ListItem.Rating(tvdb))</visible>
 					</control>
 					<control type="image">
-						<top>3</top>
+						<top>2</top>
 						<width>54</width>
 						<height>23</height>
 						<texture>views/logos/tmdb.png</texture>
-						<visible>!String.IsEmpty(Listitem.Rating(themoviedb))</visible>
+						<visible>!String.IsEmpty(ListItem.Rating(themoviedb))</visible>
 					</control>
 					<control type="label">
 						<top>-13</top>
@@ -272,6 +272,105 @@
 						<textcolor>ffbcbcbc</textcolor>
 						<label>$INFO[ListItem.Rating(themoviedb),,/10]</label>
 						<visible>!String.IsEmpty(ListItem.Rating(themoviedb))</visible>
+					</control>
+				<control type="image">
+					<top>2</top>
+					<width>54</width>
+					<height>23</height>
+					<texture>views/logos/tmdb.png</texture>
+					<visible>!String.IsEmpty(ListItem.Rating(tmdb))</visible>
+				</control>
+				<control type="label">
+					<top>-13</top>
+					<width>auto</width>
+					<height>34</height>
+					<font>Bold30</font>
+					<aligny>bottom</aligny>
+					<textcolor>ffbcbcbc</textcolor>
+					<label>$INFO[ListItem.Rating(tmdb),,/10]</label>
+					<visible>!String.IsEmpty(ListItem.Rating(tmdb))</visible>
+				</control>
+					<control type="image">
+						<top>2</top>
+						<width>23</width>
+						<height>23</height>
+						<texture>views/logos/trakt.png</texture>
+						<visible>!String.IsEmpty(ListItem.Rating(trakt))</visible>
+					</control>
+					<control type="label">
+						<top>-13</top>
+						<width>auto</width>
+						<height>34</height>
+						<font>Bold30</font>
+						<aligny>bottom</aligny>
+						<textcolor>ffbcbcbc</textcolor>
+						<label>$INFO[ListItem.Rating(trakt),,/10]</label>
+						<visible>!String.IsEmpty(ListItem.Rating(trakt))</visible>
+					</control>
+					<control type="image">
+						<top>2</top>
+						<width>24</width>
+						<height>24</height>
+						<texture>views/logos/metacritic.png</texture>
+						<visible>!String.IsEmpty(ListItem.Rating(metacritic))</visible>
+					</control>
+					<control type="label">
+						<top>-13</top>
+						<width>auto</width>
+						<height>34</height>
+						<font>Bold30</font>
+						<aligny>bottom</aligny>
+						<textcolor>ffbcbcbc</textcolor>
+						<label>$INFO[ListItem.Rating(metacritic),,/10]</label>
+						<visible>!String.IsEmpty(ListItem.Rating(metacritic))</visible>
+					</control>
+					<control type="image">
+						<top>2</top>
+						<width>24</width>
+						<height>24</height>
+						<texture>views/logos/rotten_tomatoes_fresh.png</texture>
+						<visible>[Skin.HasSetting(TomatoMeterAllCritics) + !String.IsEmpty(ListItem.Rating(tomatometerallcritics)) + Integer.IsGreaterOrEqual(Control.GetLabel(777),6)] | [Skin.HasSetting(AverageRatingAllCritics) + !String.IsEmpty(ListItem.Rating(tomatometeravgcritics)) + Integer.IsGreaterOrEqual(Control.GetLabel(777),6)]</visible>
+					</control>
+					<control type="image">
+						<top>2</top>
+						<width>25</width>
+						<height>24</height>
+						<texture>views/logos/rotten_tomatoes_rotten.png</texture>
+						<visible>[Skin.HasSetting(TomatoMeterAllCritics) + !String.IsEmpty(ListItem.Rating(tomatometerallcritics)) + Integer.IsLess(Control.GetLabel(777),6)] | [Skin.HasSetting(AverageRatingAllCritics) + !String.IsEmpty(ListItem.Rating(tomatometeravgcritics)) + Integer.IsLess(Control.GetLabel(777),6)]</visible>
+					</control>
+					<control type="image">
+						<top>2</top>
+						<width>18</width>
+						<height>24</height>
+						<texture>views/logos/rotten_tomatoes_audience_fresh.png</texture>
+						<visible>[Skin.HasSetting(TomatoMeterAudienceScore) + !String.IsEmpty(ListItem.Rating(tomatometerallaudience)) + Integer.IsGreaterOrEqual(Control.GetLabel(777),6)] | [Skin.HasSetting(AverageRatingAudienceScore) + !String.IsEmpty(ListItem.Rating(tomatometeravgaudience)) + Integer.IsGreaterOrEqual(Control.GetLabel(777),6)]</visible>
+					</control>
+					<control type="image">
+						<top>2</top>
+						<width>33</width>
+						<height>24</height>
+						<texture>views/logos/rotten_tomatoes_audience_rotten.png</texture>
+						<visible>[Skin.HasSetting(TomatoMeterAudienceScore) + !String.IsEmpty(ListItem.Rating(tomatometerallaudience)) + Integer.IsLess(Control.GetLabel(777),6)] | [Skin.HasSetting(AverageRatingAudienceScore) + !String.IsEmpty(ListItem.Rating(tomatometeravgaudience)) + Integer.IsLess(Control.GetLabel(777),6)]</visible>
+					</control>
+					<control type="label" id="777">
+						<top>-13</top>
+						<width>auto</width>
+						<height>34</height>
+						<font>Bold30</font>
+						<aligny>bottom</aligny>
+						<textcolor>ffbcbcbc</textcolor>
+						<label>$VAR[TomatoMeter,,/10]</label>
+						<visible>!String.IsEmpty(ListItem.Rating(tomatometerallcritics)) | !String.IsEmpty(ListItem.Rating(tomatometerallaudience)) | !String.IsEmpty(ListItem.Rating(tomatometeravgcritics)) | !String.IsEmpty(ListItem.Rating(tomatometeravgaudience))</visible>
+					</control>
+					<control type="label">
+						<top>-13</top>
+						<width>auto</width>
+						<height>34</height>
+						<font>Bold30</font>
+						<aligny>bottom</aligny>
+						<textcolor>ffbcbcbc</textcolor>
+						<label>$INFO[ListItem.Rating,,/10]</label>
+						<visible>String.IsEmpty(ListItem.Rating(imdb)) + String.IsEmpty(ListItem.Rating(trakt)) + String.IsEmpty(ListItem.Rating(tvdb)) + String.IsEmpty(ListItem.Rating(themoviedb)) + String.IsEmpty(ListItem.Rating(tmdb)) + String.IsEmpty(ListItem.Rating(metacritic)) + String.IsEmpty(ListItem.Rating(tomatometerallaudience)) + String.IsEmpty(ListItem.Rating(tomatometerallcritics)) + String.IsEmpty(ListItem.Rating(tomatometeravgaudience)) + String.IsEmpty(ListItem.Rating(tomatometeravgcritics))</visible>
 					</control>
 				</control>
 				<!-- Movie / TV Show plot -->
@@ -647,10 +746,10 @@
 							<visible>Integer.IsGreater(ListItem.Property(PlayCount),0)</visible>
 						</control>
 						<control type="image">
-							<top>48</top>
+							<bottom>48</bottom>
 							<width>640</width>
-							<height>480</height>
-							<texture border="2">views/season_overlay.png</texture>
+							<height>125</height>
+							<texture border="2">views/default_overlay.png</texture>
 						</control>
 						<control type="label">
 							<left>18</left>
@@ -719,10 +818,10 @@
 							<visible>Integer.IsGreater(ListItem.Property(PlayCount),0)</visible>
 						</control>
 						<control type="image">
-							<top>48</top>
+							<bottom>48</bottom>
 							<width>640</width>
-							<height>480</height>
-							<texture border="2">views/season_overlay.png</texture>
+							<height>125</height>
+							<texture border="2">views/default_overlay.png</texture>
 						</control>
 						<control type="label">
 							<left>18</left>

@@ -569,11 +569,11 @@
 						<rotation>$INFO[ListItem.Property(game.videorotation)]</rotation>
 					</control>
 					<control type="image">
-						<top>48</top>
+						<bottom>48</bottom>
 						<width>640</width>
-						<height>480</height>
+						<height>125</height>
+						<texture border="2">views/default_overlay.png</texture>
 						<visible>!String.IsEqual(ListItem.Label,..) + !String.Contains(ListItem.Icon,Default)</visible>
-						<texture border="2">views/season_overlay.png</texture>
 					</control>
 					<control type="label">
 						<left>18</left>
@@ -605,9 +605,9 @@
 						<width>736</width>
 						<height>576</height>
 						<texture border="50">views/shadow_fo.png</texture>
-							<include content="ContainerMoveFadeAnimation">
-								<param name="ListID" value="11"/>
-							</include>
+						<include content="ContainerMoveFadeAnimation">
+							<param name="ListID" value="11"/>
+						</include>
 					</control>
 					<control type="image">
 						<left>-48</left>
@@ -628,11 +628,11 @@
 						<rotation>$INFO[ListItem.Property(game.videorotation)]</rotation>
 					</control>
 					<control type="image">
-						<top>48</top>
+						<bottom>48</bottom>
 						<width>640</width>
-						<height>480</height>
+						<height>125</height>
+						<texture border="2">views/default_overlay.png</texture>
 						<visible>!String.IsEqual(ListItem.Label,..) + !String.Contains(ListItem.Icon,Default)</visible>
-						<texture border="2">views/season_overlay.png</texture>
 						<animation center="auto" condition="Control.HasFocus(11)" easing="inout" effect="fade" end="0" start="0" time="0" tween="sine">Focus</animation>
 						<animation center="auto" condition="Control.HasFocus(11)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
 						<visible>Control.HasFocus(11)</visible>
@@ -669,7 +669,7 @@
 			<!-- Heading / Current item / Total items -->
 			<control type="grouplist">
 				<left>198</left>
-				<top>134</top>
+				<top>118</top>
 				<height>80</height>
 				<itemgap>10</itemgap>
 				<orientation>horizontal</orientation>
@@ -684,7 +684,7 @@
 					<label>$VAR[GameSelectHeader]  </label>
 				</control>
 				<control type="label">
-					<top>15</top>
+					<top>30</top>
 					<width>auto</width>
 					<height>60</height>
 					<font>Med32</font>
@@ -694,7 +694,7 @@
 					<visible>Integer.IsGreater(Container(11).NumItems,0)</visible>
 				</control>
 				<control type="label">
-					<top>14</top>
+					<top>28</top>
 					<width>auto</width>
 					<height>60</height>
 					<font>Light36</font>
@@ -704,7 +704,7 @@
 					<visible>Integer.IsGreater(Container(11).NumItems,0)</visible>
 				</control>
 				<control type="label">
-					<top>15</top>
+					<top>30</top>
 					<width>auto</width>
 					<height>60</height>
 					<font>Light32</font>

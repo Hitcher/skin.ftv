@@ -90,7 +90,7 @@
 		<value condition="Control.HasFocus(12)">$LOCALIZE[20325]</value>
 	</variable>
 	<variable name="TVShowPercentRemaining">
-		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),01)">99 $LOCALIZE[31145]</value>
+		<value condition="!Integer.IsGreaterOrEqual(ListItem.Property(WatchedEpisodePercent),00)">99 $LOCALIZE[31145]</value>
 		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),02)">98 $LOCALIZE[31145]</value>
 		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),03)">97 $LOCALIZE[31145]</value>
 		<value condition="!Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),04)">96 $LOCALIZE[31145]</value>
@@ -403,6 +403,7 @@
 		<value condition="String.IsEqual(Player.PlaySpeed,1.30)">osd/ffx8.png</value>
 		<value condition="String.IsEqual(Player.PlaySpeed,1.40)">osd/ffx16.png</value>
 		<value condition="String.IsEqual(Player.PlaySpeed,1.50)">osd/ffx32.png</value>
+		<value condition="String.StartsWith(Player.PlaySpeed,1.) | String.StartsWith(Player.PlaySpeed,2.)">osd/ffx32.png</value>
 	</variable>
 	<variable name="ConfirmText">
 		<value condition="!String.IsEmpty(Control.GetLabel(9))">$INFO[Control.GetLabel(9)]</value>
@@ -1182,8 +1183,8 @@
 		<value>views/movie_fallback.png</value>
 	</variable>
 	<variable name="SeasonValue">
-		<value condition="!String.Contains(ListItem.Episode,s) + !String.IsEmpty(ListItem.Season)">$INFO[ListItem.Season,$LOCALIZE[20373] ]</value>
-		<value condition="String.Contains(ListItem.Episode,s)">$LOCALIZE[20381]</value>
+		<value condition="!String.IsEqual(ListItem.Season,0) + !String.IsEmpty(ListItem.Season)">$INFO[ListItem.Season,$LOCALIZE[20373] ]</value>
+		<value condition="String.IsEqual(ListItem.Season,0)">$LOCALIZE[20381]</value>
 		<value>$INFO[ListItem.Label]</value>
 	</variable>
 	<variable name="VideoInfoButton8">
@@ -1523,7 +1524,7 @@
 		<value>$LOCALIZE[161]</value>
 	</variable>
 	<variable name="PercentRemaining">
-		<value condition="!Integer.IsGreater(ListItem.PercentPlayed,00)">$LOCALIZE[31060]</value>
+		<value condition="!Integer.IsGreater(ListItem.PercentPlayed,00) + !Window.IsVisible(movieinformation)">$LOCALIZE[31060]</value>
 		<value condition="!Integer.IsGreater(ListItem.PercentPlayed,01)">99 $LOCALIZE[31145]</value>
 		<value condition="!Integer.IsGreater(ListItem.PercentPlayed,02)">98 $LOCALIZE[31145]</value>
 		<value condition="!Integer.IsGreater(ListItem.PercentPlayed,03)">97 $LOCALIZE[31145]</value>

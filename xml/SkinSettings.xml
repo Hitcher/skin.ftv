@@ -10,7 +10,7 @@
 			<visible>Window.Previous(settingscategory.xml)</visible>
 			<control type="grouplist">
 				<left>198</left>
-				<top>134</top>
+				<top>118</top>
 				<height>80</height>
 				<itemgap>10</itemgap>
 				<orientation>horizontal</orientation>
@@ -24,7 +24,7 @@
 					<label>$LOCALIZE[5]  </label>
 				</control>
 				<control type="label">
-					<top>15</top>
+					<top>30</top>
 					<width>auto</width>
 					<height>60</height>
 					<font>Med32</font>
@@ -33,7 +33,7 @@
 					<label>$NUMBER[1]</label>
 				</control>
 				<control type="label">
-					<top>14</top>
+					<top>28</top>
 					<width>auto</width>
 					<height>60</height>
 					<font>Light36</font>
@@ -42,7 +42,7 @@
 					<label>|</label>
 				</control>
 				<control type="label">
-					<top>15</top>
+					<top>30</top>
 					<width>auto</width>
 					<height>60</height>
 					<font>Light32</font>

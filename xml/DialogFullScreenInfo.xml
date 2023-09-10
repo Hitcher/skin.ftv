@@ -25,7 +25,7 @@
 				<!-- Heading -->
 				<control type="grouplist">
 					<left>196</left>
-					<top>134</top>
+					<top>118</top>
 					<height>80</height>
 					<itemgap>34</itemgap>
 					<orientation>horizontal</orientation>
@@ -39,7 +39,7 @@
 						<label>31232</label>
 					</control>
 					<control type="image">
-						<top>3</top>
+						<top>38</top>
 						<width>54</width>
 						<height>23</height>
 						<texture>views/logos/tmdb.png</texture>
@@ -128,10 +128,10 @@
 							<visible>String.Contains(ListItem.Icon,poster.png)</visible>
 						</control>
 						<control type="image">
-							<top>48</top>
+							<bottom>48</bottom>
 							<width>320</width>
-							<height>480</height>
-							<texture border="2">views/season_overlay.png</texture>
+							<height>165</height>
+							<texture border="2">views/default_overlay.png</texture>
 							<visible>!String.Contains(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="label">
@@ -214,10 +214,10 @@
 							<visible>String.Contains(ListItem.Icon,poster.png)</visible>
 						</control>
 						<control type="image">
-							<top>48</top>
+							<bottom>48</bottom>
 							<width>320</width>
-							<height>480</height>
-							<texture border="2">views/season_overlay.png</texture>
+							<height>165</height>
+							<texture border="2">views/default_overlay.png</texture>
 							<visible>!String.Contains(ListItem.Icon,Default)</visible>
 							<include content="FocusedListIDAnimation">
 								<param name="ListID" value="1000"/>

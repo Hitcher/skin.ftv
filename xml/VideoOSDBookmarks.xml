@@ -40,15 +40,15 @@
 						<texture background="true" fallback="views/episode_fallback.png">$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="image">
-						<top>48</top>
+						<bottom>48</bottom>
 						<width>640</width>
-						<height>480</height>
+						<height>125</height>
+						<texture border="2">views/default_overlay.png</texture>
 						<visible>!String.IsEqual(ListItem.Label,..) + !String.Contains(ListItem.Icon,Default)</visible>
-						<texture border="2">views/season_overlay.png</texture>
 					</control>
 					<control type="label">
 						<left>18</left>
-						<top>427</top>
+						<top>447</top>
 						<width>604</width>
 						<height>42</height>
 						<font>Bold44</font>
@@ -98,18 +98,18 @@
 						<texture background="true" fallback="views/episode_fallback.png">$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="image">
-						<top>48</top>
+						<bottom>48</bottom>
 						<width>640</width>
-						<height>480</height>
+						<height>125</height>
+						<texture border="2">views/default_overlay.png</texture>
 						<visible>!String.IsEqual(ListItem.Label,..) + !String.Contains(ListItem.Icon,Default)</visible>
-						<texture border="2">views/season_overlay.png</texture>
 						<animation center="auto" condition="Control.HasFocus(11)" easing="inout" effect="fade" end="0" start="0" time="0" tween="sine">Focus</animation>
 						<animation center="auto" condition="Control.HasFocus(11)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
 						<visible>Control.HasFocus(11)</visible>
 					</control>
 					<control type="label">
 						<left>18</left>
-						<top>448</top>
+						<top>447</top>
 						<width>604</width>
 						<height>42</height>
 						<font>Bold44</font>
@@ -119,7 +119,6 @@
 						<label>$INFO[ListItem.Label]</label>
 						<visible>!String.IsEqual(ListItem.Label,..)</visible>
 						<animation effect="fade" end="0" start="0" time="0">Focus</animation>
-						<animation condition="Container(11).OnNext | Container(11).OnPrevious" effect="slide" end="0,-21" start="0,0" time="0">UnFocus</animation>
 						<visible>Control.HasFocus(11)</visible>
 					</control>
 					<control type="image">
@@ -139,7 +138,7 @@
 			<!-- Heading / Current item / Total items -->
 			<control type="grouplist">
 				<left>198</left>
-				<top>134</top>
+				<top>118</top>
 				<height>80</height>
 				<itemgap>10</itemgap>
 				<orientation>horizontal</orientation>
@@ -154,7 +153,7 @@
 					<label>$INFO[VideoPlayer.Title]  </label>
 				</control>
 				<control type="label">
-					<top>15</top>
+					<top>30</top>
 					<width>auto</width>
 					<height>60</height>
 					<font>Med32</font>
@@ -164,7 +163,7 @@
 					<visible>Integer.IsGreater(Container(11).NumItems,0)</visible>
 				</control>
 				<control type="label">
-					<top>14</top>
+					<top>28</top>
 					<width>auto</width>
 					<height>60</height>
 					<font>Light36</font>
@@ -174,7 +173,7 @@
 					<visible>Integer.IsGreater(Container(11).NumItems,0)</visible>
 				</control>
 				<control type="label">
-					<top>15</top>
+					<top>30</top>
 					<width>auto</width>
 					<height>60</height>
 					<font>Light32</font>

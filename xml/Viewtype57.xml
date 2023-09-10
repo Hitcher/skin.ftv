@@ -3,7 +3,7 @@
 	<include name="Viewtype57">
 		<control type="group">
 			<visible>Control.IsVisible(57)</visible>
-			<!-- List -->
+			<!-- Poster List -->
 			<control id="57" type="fixedlist">
 				<left>-102</left>
 				<top>242</top>

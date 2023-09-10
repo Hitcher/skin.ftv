@@ -59,10 +59,10 @@
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="image">
-						<top>48</top>
+						<bottom>48</bottom>
 						<width>480</width>
-						<height>480</height>
-						<texture border="2">views/season_overlay.png</texture>
+						<height>125</height>
+						<texture border="2">views/default_overlay.png</texture>
 						<visible>!ListItem.IsParentFolder + !String.Contains(ListItem.Icon,Default)</visible>
 					</control>
 					<control type="label">
@@ -118,10 +118,10 @@
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="image">
-						<top>48</top>
+						<bottom>48</bottom>
 						<width>480</width>
-						<height>480</height>
-						<texture border="2">views/season_overlay.png</texture>
+						<height>125</height>
+						<texture border="2">views/default_overlay.png</texture>
 						<visible>!ListItem.IsParentFolder + !String.Contains(ListItem.Icon,Default)</visible>
 					</control>
 					<control type="label">
@@ -153,7 +153,7 @@
 			<!-- Heading / Current item / Total items -->
 			<control type="grouplist">
 				<left>198</left>
-				<top>134</top>
+				<top>118</top>
 				<height>80</height>
 				<itemgap>10</itemgap>
 				<orientation>horizontal</orientation>
@@ -168,7 +168,7 @@
 					<label>$LOCALIZE[14111]  </label>
 				</control>
 				<control type="label">
-					<top>15</top>
+					<top>30</top>
 					<width>auto</width>
 					<height>60</height>
 					<font>Med32</font>
@@ -178,7 +178,7 @@
 					<visible>Integer.IsGreater(Container.NumItems,0)</visible>
 				</control>
 				<control type="label">
-					<top>14</top>
+					<top>28</top>
 					<width>auto</width>
 					<height>60</height>
 					<font>Light36</font>
@@ -188,7 +188,7 @@
 					<visible>Integer.IsGreater(Container.NumItems,0)</visible>
 				</control>
 				<control type="label">
-					<top>15</top>
+					<top>30</top>
 					<width>auto</width>
 					<height>60</height>
 					<font>Light32</font>

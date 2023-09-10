@@ -70,10 +70,10 @@
 							<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
 						</control>
 						<control type="image">
-							<top>48</top>
+							<bottom>48</bottom>
 							<width>640</width>
-							<height>480</height>
-							<texture border="2">views/season_overlay.png</texture>
+							<height>125</height>
+							<texture border="2">views/default_overlay.png</texture>
 							<visible>[Container.Content(artists) | Container.Content(seasons)] + !ListItem.IsParentFolder + !String.Contains(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="label">
@@ -150,10 +150,10 @@
 							<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
 						</control>
 						<control type="image">
-							<top>48</top>
+							<bottom>48</bottom>
 							<width>640</width>
-							<height>480</height>
-							<texture border="2">views/season_overlay.png</texture>
+							<height>125</height>
+							<texture border="2">views/default_overlay.png</texture>
 							<visible>[Container.Content(artists) | Container.Content(seasons)] + !ListItem.IsParentFolder + !String.Contains(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="label">

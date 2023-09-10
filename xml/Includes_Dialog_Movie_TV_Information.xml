@@ -364,10 +364,10 @@
 							<texture background="true">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="image">
-							<top>48</top>
+							<bottom>48</bottom>
 							<width>320</width>
-							<height>480</height>
-							<texture border="2">views/season_overlay.png</texture>
+							<height>165</height>
+							<texture border="2">views/default_overlay.png</texture>
 							<visible>!String.Contains(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="label">
@@ -436,10 +436,10 @@
 							<texture background="true">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="image">
-							<top>48</top>
+							<bottom>48</bottom>
 							<width>320</width>
-							<height>480</height>
-							<texture border="2">views/season_overlay.png</texture>
+							<height>165</height>
+							<texture border="2">views/default_overlay.png</texture>
 							<visible>!String.Contains(ListItem.Icon,Default)</visible>
 							<include content="FocusedListIDAnimation">
 								<param name="ListID" value="500"/>
@@ -492,9 +492,9 @@
 			<!-- Info -->
 			<control type="grouplist">
 				<left>575</left>
-				<top>287</top>
+				<top>277</top>
 				<width>1192</width>
-				<height>50</height>
+				<height>40</height>
 				<itemgap>8</itemgap>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
@@ -503,13 +503,14 @@
 				<animation effect="fade" end="0" start="100" time="0">Hidden</animation>
 				<control type="label">
 					<width>auto</width>
-					<height>24</height>
+					<height>36</height>
 					<align>left</align>
 					<font>Bold31</font>
 					<textcolor>ffbcbcbc</textcolor>
 					<label>$INFO[Container(500).ListItem.Label]</label>
 				</control>
 				<control type="label">
+					<top>7</top>
 					<width>auto</width>
 					<height>29</height>
 					<align>left</align>
