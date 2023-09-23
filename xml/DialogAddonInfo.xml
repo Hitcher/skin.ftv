@@ -6,14 +6,14 @@
 	<onload>Control.Move(50,$INFO[Container(50).CurrentItem,-])</onload>
 	<onload>Control.Move(50,1)</onload>
 	<onunload>ClearProperty(AddonDetails,home)</onunload>
-	<onunload>SetFocus(50)</onunload>
+	<onunload>SetFocus(56)</onunload>
 	<animation effect="fade" end="100" start="100" time="200">WindowClose</animation>
 	<controls>
 		<!-- Hidden Description -->
 		<control type="textbox">
 			<left>-1200</left>
 			<width>792</width>
-			<height>528</height>
+			<height>560</height>
 			<align>left</align>
 			<font>Light30</font>
 			<pagecontrol>96</pagecontrol>
@@ -26,7 +26,7 @@
 			<left>-1200</left>
 			<top>295</top>
 			<width>792</width>
-			<height>528</height>
+			<height>560</height>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
 		</control>
@@ -522,9 +522,9 @@
 					<visible>!String.IsEmpty(ListItem.AddonDescription)</visible>
 				</control>
 				<control type="textbox">
-					<top>291</top>
+					<top>296</top>
 					<width>792</width>
-					<height>528</height>
+					<height>560</height>
 					<align>left</align>
 					<font>Light30</font>
 					<autoscroll>false</autoscroll>
@@ -534,7 +534,7 @@
 				<!-- More button -->
 				<control id="3002" type="button">
 					<left>794</left>
-					<top>788</top>
+					<top>816</top>
 					<width>37</width>
 					<height>23</height>
 					<onleft>7001</onleft>

@@ -223,7 +223,7 @@
 						<visible>!String.IsEmpty(ListItem.UserRating)</visible>
 					</control>
 					<control type="image">
-						<top>2</top>
+						<top>3</top>
 						<width>48</width>
 						<height>23</height>
 						<texture>views/logos/imdb.png</texture>

@@ -231,33 +231,13 @@
 			<control type="image">
 				<left>498</left>
 				<top>40</top>
-				<width>499</width>
-				<height>400</height>
-				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="00ffffff">$INFO[Container(451).ListItem.Icon]</texture>
-				<bordertexture>common/default_empty.png</bordertexture>
-				<visible>!String.Contains(Control.GetLabel(416),*)</visible>
-			</control>
-			<control type="image">
-				<left>498</left>
-				<top>40</top>
 				<width>512</width>
 				<height>417</height>
 				<aspectratio>keep</aspectratio>
 				<bordersize>0,0,13,17</bordersize>
 				<texture>$INFO[Container(451).ListItem.Icon]</texture>
-				<bordertexture border="14,18,14,18">dialogs/shadow.png</bordertexture>
+				<bordertexture infill="false" border="14,18,14,18">dialogs/shadow.png</bordertexture>
 				<visible>!String.Contains(Control.GetLabel(416),*)</visible>
-			</control>
-			<control type="image">
-				<left>498</left>
-				<top>40</top>
-				<width>499</width>
-				<height>400</height>
-				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="00ffffff">$INFO[Container(451).ListItem.Icon]</texture>
-				<bordertexture>common/default_empty.png</bordertexture>
-				<visible>String.Contains(Control.GetLabel(416),*)</visible>
 			</control>
 			<control type="image">
 				<left>498</left>
@@ -267,7 +247,7 @@
 				<aspectratio>keep</aspectratio>
 				<bordersize>0,0,13,17</bordersize>
 				<texture flipx="true">$INFO[Container(451).ListItem.Icon]</texture>
-				<bordertexture border="14,18,14,18">dialogs/shadow.png</bordertexture>
+				<bordertexture infill="false" border="14,18,14,18">dialogs/shadow.png</bordertexture>
 				<visible>String.Contains(Control.GetLabel(416),*)</visible>
 			</control>
 			<control id="9000" type="grouplist">

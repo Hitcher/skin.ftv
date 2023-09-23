@@ -480,7 +480,7 @@ msgctxt "#31112"
 msgid "Song List"
 msgstr ""
 
-#empty strings from id 31112 to 31113
+#empty string with id 31113
 
 msgctxt "#31114"
 msgid "Customise Shutdown Menu"

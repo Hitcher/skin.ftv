@@ -14,9 +14,9 @@
 		<control type="textbox" id="99">
 			<left>-1200</left>
 			<width>792</width>
-			<height>528</height>
+			<height>560</height>
 			<align>left</align>
-			<font>Light30</font>
+			<font>Light30Spaced</font>
 			<pagecontrol>96</pagecontrol>
 			<autoscroll>false</autoscroll>
 			<textcolor>ffa4a4a4</textcolor>
@@ -27,7 +27,7 @@
 			<left>-1200</left>
 			<top>295</top>
 			<width>792</width>
-			<height>528</height>
+			<height>560</height>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
 		</control>
@@ -418,11 +418,11 @@
 				</control>
 				<!-- Info -->
 				<control type="textbox">
-					<top>291</top>
+					<top>296</top>
 					<width>792</width>
-					<height>528</height>
+					<height>560</height>
 					<align>left</align>
-					<font>Light30</font>
+					<font>Light30Spaced</font>
 					<autoscroll>false</autoscroll>
 					<textcolor>ffa4a4a4</textcolor>
 					<label>$VAR[MusicInfoDescription]</label>
@@ -430,7 +430,7 @@
 				<!-- More button -->
 				<control id="3002" type="button">
 					<left>794</left>
-					<top>788</top>
+					<top>816</top>
 					<width>37</width>
 					<height>23</height>
 					<onleft>7001</onleft>
@@ -468,12 +468,12 @@
 					<left>900</left>
 					<top>293</top>
 					<width>470</width>
-					<height>528</height>
+					<height>560</height>
 					<onleft>7001</onleft>
-					<itemlayout width="470" height="44">
+					<itemlayout width="470" height="40">
 						<control type="label">
 							<width>470</width>
-							<height>44</height>
+							<height>40</height>
 							<align>left</align>
 							<font>Light30</font>
 							<textcolor>ff646668</textcolor>
@@ -482,7 +482,7 @@
 						</control>
 						<control type="label">
 							<width>470</width>
-							<height>44</height>
+							<height>40</height>
 							<align>left</align>
 							<font>Light30</font>
 							<textcolor>ffd8d8d8</textcolor>
@@ -491,7 +491,7 @@
 						</control>
 						<control type="label">
 							<width>470</width>
-							<height>44</height>
+							<height>40</height>
 							<align>left</align>
 							<font>Light30</font>
 							<textcolor>ffd8d8d8</textcolor>
@@ -499,12 +499,12 @@
 							<visible>String.IsEqual(ListItem.DBTYPE,artist)</visible>
 						</control>
 					</itemlayout>
-					<focusedlayout width="470" height="44">
+					<focusedlayout width="470" height="40">
 						<control type="group">
 							<visible>!Control.HasFocus(50)</visible>
 							<control type="label">
 								<width>470</width>
-								<height>44</height>
+								<height>40</height>
 								<align>left</align>
 								<font>Light30</font>
 								<textcolor>ff646668</textcolor>
@@ -513,7 +513,7 @@
 							</control>
 							<control type="label">
 								<width>470</width>
-								<height>44</height>
+								<height>40</height>
 								<align>left</align>
 								<font>Light30</font>
 								<textcolor>ffd8d8d8</textcolor>
@@ -522,7 +522,7 @@
 							</control>
 							<control type="label">
 								<width>470</width>
-								<height>44</height>
+								<height>40</height>
 								<align>left</align>
 								<font>Light30</font>
 								<textcolor>ffd8d8d8</textcolor>
@@ -534,7 +534,7 @@
 							<visible>Control.HasFocus(50)</visible>
 							<control type="label">
 								<width>470</width>
-								<height>44</height>
+								<height>40</height>
 								<align>left</align>
 								<font>Light30</font>
 								<textcolor>ffe9a01e</textcolor>
@@ -543,7 +543,7 @@
 							</control>
 							<control type="label">
 								<width>470</width>
-								<height>44</height>
+								<height>40</height>
 								<align>left</align>
 								<font>Light30</font>
 								<textcolor>ffe9a01e</textcolor>
@@ -552,7 +552,7 @@
 							</control>
 							<control type="label">
 								<width>470</width>
-								<height>44</height>
+								<height>40</height>
 								<align>left</align>
 								<font>Light30</font>
 								<textcolor>ffe9a01e</textcolor>

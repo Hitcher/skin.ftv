@@ -3,17 +3,15 @@
 	<!-- programs -->
 	<menucontrol>5000</menucontrol>
 	<backgroundcolor>0xff12161b</backgroundcolor>
-	<defaultcontrol always="true">55</defaultcontrol>
+	<defaultcontrol always="true">56</defaultcontrol>
 	<onload condition="[Window.Previous(home) | Window.Previous(1112)] + Container.HasParent">Control.SetFocus($VAR[ContainerID],1,absolute)</onload>
 	<onload condition="[Window.Previous(home) | Window.Previous(1112)] + !Container.HasParent">Control.SetFocus($VAR[ContainerID],0,absolute)</onload>
-	<views>56,55,57</views>
+	<views>56</views>
 	<controls>
 		<!-- Fanart -->
 		<include condition="Skin.HasSetting(EnableFanart)">Fanart</include>
 		<!-- Views -->
-		<include>Viewtype55</include>
 		<include>Viewtype56</include>
-		<include>Viewtype57</include>
 		<control type="group">
 			<animation delay="400" effect="fade" end="100" start="0" time="200">WindowOpen</animation>
 			<!-- Heading / Current item / Total items -->
@@ -103,8 +101,8 @@
 					<left>-10</left>
 					<height>100</height>
 					<itemgap>0</itemgap>
-					<onleft>SetFocus(55)</onleft>
-					<onright>SetFocus(55)</onright>
+					<onleft>SetFocus(56)</onleft>
+					<onright>SetFocus(56)</onright>
 					<orientation>horizontal</orientation>
 					<usecontrolcoords>true</usecontrolcoords>
 					<defaultcontrol always="true">1001</defaultcontrol>
@@ -120,9 +118,9 @@
 						<width min="124" max="204">auto</width>
 						<wrapmultiline>true</wrapmultiline>
 						<height>100</height>
-						<onup>55</onup>
+						<onup>56</onup>
 						<ondown>3000</ondown>
-						<onclick>SetFocus(55)</onclick>
+						<onclick>SetFocus(56)</onclick>
 						<onclick>Info</onclick>
 						<font>Med24</font>
 						<label>[CAPITALIZE]$LOCALIZE[24000][CR]$LOCALIZE[19033][/CAPITALIZE]</label>
@@ -136,7 +134,7 @@
 						<width min="124" max="204">auto</width>
 						<wrapmultiline>true</wrapmultiline>
 						<height>100</height>
-						<onup>55</onup>
+						<onup>56</onup>
 						<ondown>3000</ondown>
 						<onclick>SetFocus(5001)</onclick>
 						<font>Med24</font>
@@ -175,8 +173,8 @@
 					<height>23</height>
 					<onup>1000</onup>
 					<ondown>noop</ondown>
-					<onleft>55</onleft>
-					<onright>55</onright>
+					<onleft>56</onleft>
+					<onright>56</onright>
 					<onclick>SetProperty(OpenTextViewer,1,home)</onclick>
 					<onclick>RunScript(script.embuary.helper,action=textviewer,header=$INFO[ListItem.Label],message='$ESCINFO[ListItem.Label2]')</onclick>
 					<visible>Control.IsVisible(96)</visible>
@@ -204,8 +202,8 @@
 				<height>620</height>
 				<onup>noop</onup>
 				<ondown>noop</ondown>
-				<onleft>55</onleft>
-				<onright>55</onright>
+				<onleft>56</onleft>
+				<onright>56</onright>
 				<itemgap>0</itemgap>
 				<align>center</align>
 				<orientation>vertical</orientation>
@@ -246,7 +244,7 @@
 					<aligny>center</aligny>
 					<font>Light30Spaced</font>
 					<label>$INFO[Container.Viewmode]</label>
-					<onback>55</onback>
+					<onback>56</onback>
 					<onclick>Container.NextViewMode</onclick>
 					<textcolor>ff505153</textcolor>
 					<focusedcolor>ffffaf37</focusedcolor>
@@ -278,7 +276,7 @@
 					<aligny>center</aligny>
 					<font>Light30Spaced</font>
 					<label>$INFO[Container.SortMethod]</label>
-					<onback>55</onback>
+					<onback>56</onback>
 					<onclick>Container.NextSortMethod</onclick>
 					<textcolor>ff505153</textcolor>
 					<focusedcolor>ffffaf37</focusedcolor>
@@ -311,7 +309,7 @@
 					<font>Light30Spaced</font>
 					<label>584</label>
 					<altlabel>585</altlabel>
-					<onback>55</onback>
+					<onback>56</onback>
 					<textcolor>ff505153</textcolor>
 					<focusedcolor>ffffaf37</focusedcolor>
 					<texturefocus border="3">dialogs/OptionsBackgroundButtonFO.png</texturefocus>
@@ -344,7 +342,7 @@
 					<textwidth>560</textwidth>
 					<aligny>center</aligny>
 					<font>Light30Spaced</font>
-					<onback>55</onback>
+					<onback>56</onback>
 					<textcolor>ff505153</textcolor>
 					<focusedcolor>ffffaf37</focusedcolor>
 					<texturefocus border="3">dialogs/OptionsBackgroundButtonFO.png</texturefocus>
@@ -375,8 +373,8 @@
 					<aligny>center</aligny>
 					<font>Light30Spaced</font>
 					<label>$VAR[FilterButton]</label>
-					<onback>55</onback>
-					<onclick>SetFocus(55)</onclick>
+					<onback>56</onback>
+					<onclick>SetFocus(56)</onclick>
 					<onclick>Filter</onclick>
 					<textcolor>ff505153</textcolor>
 					<focusedcolor>ffffaf37</focusedcolor>
@@ -401,8 +399,8 @@
 					<height>84</height>
 					<align>center</align>
 					<aligny>top</aligny>
-					<onback>55</onback>
-					<onclick>SetFocus(55)</onclick>
+					<onback>56</onback>
+					<onclick>SetFocus(56)</onclick>
 					<font>Med24</font>
 					<label>20177</label>
 					<textoffsety>27</textoffsety>

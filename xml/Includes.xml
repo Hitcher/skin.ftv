@@ -42,6 +42,33 @@
 			<texture>common/background_default.png</texture>
 		</control>
 	</include>
+	<!-- Debug window label -->
+	<include name="DebugWindowLabel">
+			<width>1920</width>
+		<height>21</height>
+		<textcolor>FF0000FF</textcolor>
+		<shadowcolor>FF000000</shadowcolor>
+		<font>font13</font>
+		<align>left</align>
+	</include>
+	<!-- Debug dialog label -->
+	<include name="DebugDialogLabel">
+			<width>1920</width>
+		<height>21</height>
+		<textcolor>FFFF0000</textcolor>
+		<shadowcolor>FF000000</shadowcolor>
+		<font>font13</font>
+		<align>left</align>
+	</include>
+	<!-- Debug control label -->
+	<include name="DebugControlLabel">
+			<width>1920</width>
+		<height>21</height>
+		<textcolor>FFFF0000</textcolor>
+		<shadowcolor>FF000000</shadowcolor>
+		<font>font13</font>
+		<align>right</align>
+	</include>
 	<!-- Dialog background image -->
 	<include name="DialogBackgroundImage">
 		<control type="image">
@@ -63,7 +90,6 @@
 	<!-- Message Background image -->
 	<include name="MessageBackground">
 		<texture border="2">dialogs/DialogMessageBackground.png</texture>
-		<bordertexture border="2">dialogs/Empty.png</bordertexture>
 		<bordersize>-52</bordersize>
 	</include>
 	<!-- Widths -->

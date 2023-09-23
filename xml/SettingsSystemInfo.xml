@@ -386,8 +386,8 @@
 				<left>501</left>
 				<top>22</top>
 				<width>889</width>
-				<height>434</height>
-				<itemgap>31</itemgap>
+				<height>436</height>
+				<itemgap>14</itemgap>
 				<visible>!Control.HasFocus(101)</visible>
 				<animation delay="100" effect="fade" end="100" start="0" time="200">WindowOpen</animation>
 				<animation effect="fade" end="0" start="100" time="0">WindowClose</animation>
@@ -396,17 +396,18 @@
 					<top>20</top>
 					<width>889</width>
 					<height>31</height>
-					<font>Med24</font>
+					<font>Med24Spaced</font>
 					<aligny>top</aligny>
 					<textcolor>ffdadada</textcolor>
 					<wrapmultiline>true</wrapmultiline>
+					<visible>!String.IsEmpty(Control.GetLabel(2))</visible>
 				</control>
 				<control id="3" type="label">
 					<left>501</left>
 					<top>20</top>
 					<width>889</width>
 					<height>31</height>
-					<font>Med24</font>
+					<font>Med24Spaced</font>
 					<aligny>top</aligny>
 					<textcolor>ffdadada</textcolor>
 					<wrapmultiline>true</wrapmultiline>
@@ -416,7 +417,7 @@
 					<top>20</top>
 					<width>889</width>
 					<height>31</height>
-					<font>Med24</font>
+					<font>Med24Spaced</font>
 					<aligny>top</aligny>
 					<textcolor>ffdadada</textcolor>
 					<wrapmultiline>true</wrapmultiline>
@@ -426,7 +427,7 @@
 					<top>20</top>
 					<width>889</width>
 					<height>31</height>
-					<font>Med24</font>
+					<font>Med24Spaced</font>
 					<aligny>top</aligny>
 					<textcolor>ffdadada</textcolor>
 					<wrapmultiline>true</wrapmultiline>
@@ -436,7 +437,7 @@
 					<top>20</top>
 					<width>889</width>
 					<height>31</height>
-					<font>Med24</font>
+					<font>Med24Spaced</font>
 					<aligny>top</aligny>
 					<textcolor>ffdadada</textcolor>
 					<wrapmultiline>true</wrapmultiline>
@@ -446,7 +447,7 @@
 					<top>20</top>
 					<width>889</width>
 					<height>31</height>
-					<font>Med24</font>
+					<font>Med24Spaced</font>
 					<aligny>top</aligny>
 					<textcolor>ffdadada</textcolor>
 					<wrapmultiline>true</wrapmultiline>
@@ -456,7 +457,7 @@
 					<top>20</top>
 					<width>889</width>
 					<height>31</height>
-					<font>Med24</font>
+					<font>Med24Spaced</font>
 					<aligny>top</aligny>
 					<textcolor>ffdadada</textcolor>
 					<wrapmultiline>true</wrapmultiline>
@@ -466,7 +467,7 @@
 					<top>20</top>
 					<width>889</width>
 					<height>31</height>
-					<font>Med24</font>
+					<font>Med24Spaced</font>
 					<aligny>top</aligny>
 					<textcolor>ffdadada</textcolor>
 					<wrapmultiline>true</wrapmultiline>
@@ -476,7 +477,7 @@
 					<top>20</top>
 					<width>889</width>
 					<height>31</height>
-					<font>Med24</font>
+					<font>Med24Spaced</font>
 					<aligny>top</aligny>
 					<textcolor>ffdadada</textcolor>
 					<wrapmultiline>true</wrapmultiline>
@@ -486,7 +487,7 @@
 					<top>20</top>
 					<width>889</width>
 					<height>31</height>
-					<font>Med24</font>
+					<font>Med24Spaced</font>
 					<aligny>top</aligny>
 					<textcolor>ffdadada</textcolor>
 					<wrapmultiline>true</wrapmultiline>
@@ -520,37 +521,6 @@
 				<animation effect="fade" end="0" start="100" time="200" condition="Window.IsVisible(textviewer)">Conditional</animation>
 				<visible>Control.HasFocus(100)</visible>
 			</control>
-		</control>
-		<!-- Hidden labels -->
-		<control id="2" type="label">
-			<font/>
-		</control>
-		<control id="3" type="label">
-			<font/>
-		</control>
-		<control id="4" type="label">
-			<font/>
-		</control>
-		<control id="5" type="label">
-			<font/>
-		</control>
-		<control id="6" type="label">
-			<font/>
-		</control>
-		<control id="7" type="label">
-			<font/>
-		</control>
-		<control id="8" type="label">
-			<font/>
-		</control>
-		<control id="9" type="label">
-			<font/>
-		</control>
-		<control id="10" type="label">
-			<font/>
-		</control>
-		<control id="11" type="label">
-			<font/>
 		</control>
 	</controls>
 </window>

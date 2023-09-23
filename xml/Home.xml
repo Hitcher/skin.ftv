@@ -276,7 +276,7 @@
 				<width>284</width>
 				<height>1846</height>
 				<aspectratio>stretch</aspectratio>
-				<texture border="0,0,1,0">common/home_list_fade.png</texture>
+				<texture border="0,0,1,0">home/home_list_fade.png</texture>
 				<animation condition="Container(99).Row(0)" effect="slide" end="0,0" time="200">Conditional</animation>
 				<animation condition="Container(99).Row(1)" effect="slide" end="0,63" time="200">Conditional</animation>
 				<animation condition="Container(99).Row(2)" effect="slide" end="0,126" time="200">Conditional</animation>

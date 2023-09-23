@@ -310,7 +310,7 @@
 				<aspectratio>keep</aspectratio>
 				<bordersize>0,0,13,17</bordersize>
 				<texture fallback="views/square_fallback.png">$VAR[DialogSelectImageLarge]</texture>
-				<bordertexture border="14,18,14,18">dialogs/shadow.png</bordertexture>
+				<bordertexture infill="false" border="14,18,14,18">dialogs/shadow.png</bordertexture>
 				<visible>Control.IsVisible(5)</visible>
 			</control>
 			<control type="image">
@@ -321,7 +321,7 @@
 				<aspectratio>keep</aspectratio>
 				<bordersize>0,0,13,17</bordersize>
 				<texture fallback="views/square_fallback.png">$VAR[DialogSelectImageLarge]</texture>
-				<bordertexture border="14,18,14,18">dialogs/shadow.png</bordertexture>
+				<bordertexture infill="false" border="14,18,14,18">dialogs/shadow.png</bordertexture>
 				<visible>!Control.IsVisible(5)</visible>
 			</control>
 			<control id="21" type="button">

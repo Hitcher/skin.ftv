@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="DialogVideoInfoInclude">
+		<value condition="!String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + !Skin.HasSetting(ExtendedInfo)">Includes_Dialog_Default_Video_Information
+		</value>
+		<value condition="String.IsEmpty(ListItem.Property(item.type),movie) + String.IsEmpty(ListItem.Property(item.type),tv) + !String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + Skin.HasSetting(ExtendedInfo)">Includes_Dialog_Video_Information
+		</value>
+		<value condition="[!String.IsEmpty(ListItem.Property(item.type),movie) | !String.IsEmpty(ListItem.Property(item.type),tv)] + !String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + Skin.HasSetting(ExtendedInfo)">Includes_Dialog_Movie_TV_Information
+		</value>
+		<value condition="!String.IsEqual(ListItem.Property(item.type),person) + Container.Content(Sets)">Includes_Dialog_Set_Information
+		</value>
+		<value condition="String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets)">Includes_Dialog_Person_Information
+		</value>
+	</variable>
 	<variable name="NextAiredDurationHours">
 		<value condition="Integer.IsGreater(Container(60).ListItem.Property(DurationHour),09)">$INFO[Container(60).ListItem.Property(DurationHour),, $LOCALIZE[31148]]</value>
 		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),01)">1 $LOCALIZE[31005]</value>
@@ -11,7 +23,6 @@
 		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),07)">7 $LOCALIZE[31148]</value>
 		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),08)">8 $LOCALIZE[31148]</value>
 		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),09)">9 $LOCALIZE[31148]</value>
-		<value/>
 	</variable>
 	<variable name="NextAiredDurationMins">
 		<value condition="Integer.IsGreater(Container(60).ListItem.Property(DurationMins),09)">$INFO[Container(60).ListItem.Property(DurationMins),, $LOCALIZE[31147]]</value>
@@ -24,7 +35,6 @@
 		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),07)">7 $LOCALIZE[31147]</value>
 		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),08)">8 $LOCALIZE[31147]</value>
 		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),09)">9 $LOCALIZE[31147]</value>
-		<value/>
 	</variable>
 	<variable name="NextAiredDurationSpacing">
 		<value condition="Integer.IsGreater(Container(60).ListItem.Property(DurationHour),00) + Integer.IsGreater(Container(60).ListItem.Property(DurationMins),00)">[COLOR=00ffffff]r[/COLOR]</value>
@@ -1188,7 +1198,6 @@
 		<value>$INFO[ListItem.Label]</value>
 	</variable>
 	<variable name="VideoInfoButton8">
-		<value condition="ListItem.IsResumable">$LOCALIZE[13404]</value>
 		<value condition="Integer.IsGreater(ListItem.PlayCount,0)">$LOCALIZE[31057]</value>
 		<value>$LOCALIZE[31109]</value>
 	</variable>

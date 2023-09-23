@@ -117,7 +117,7 @@
 							<width>480</width>
 							<height>480</height>
 							<aspectratio align="center">scale</aspectratio>
-							<texture background="true" fallback="views/wide_fallback.png">$INFO[ListItem.Icon]</texture>
+							<texture background="true" fallback="views/square_fallback.png">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="image">
 							<top>48</top>

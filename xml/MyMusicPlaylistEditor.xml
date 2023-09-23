@@ -189,7 +189,7 @@
 						<aspectratio>scale</aspectratio>
 						<bordersize>0,0,13,17</bordersize>
 						<texture fallback="DefaultAddonMusic.png">$INFO[Container(50).ListItem.Icon]</texture>
-						<bordertexture border="14,18,14,18">dialogs/shadow.png</bordertexture>
+						<bordertexture infill="false" border="14,18,14,18">dialogs/shadow.png</bordertexture>
 					</control>
 					<control type="textbox">
 						<left>20</left>
@@ -214,7 +214,7 @@
 						<aspectratio>scale</aspectratio>
 						<bordersize>0,0,13,17</bordersize>
 						<texture fallback="DefaultAddonMusic.png">$INFO[Container(100).ListItem.Icon]</texture>
-						<bordertexture border="14,18,14,18">dialogs/shadow.png</bordertexture>
+						<bordertexture infill="false" border="14,18,14,18">dialogs/shadow.png</bordertexture>
 					</control>
 					<control type="textbox">
 						<left>20</left>

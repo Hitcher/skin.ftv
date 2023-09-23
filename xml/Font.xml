@@ -253,6 +253,12 @@
 			<size>26</size>
 		</font>
 		<font>
+			<name>Med24Spaced</name>
+			<filename>HelveticaNeue_Med.ttf</filename>
+			<size>24</size>
+			<linespacing>0.8</linespacing>
+		</font>
+		<font>
 			<name>Med24</name>
 			<filename>HelveticaNeue_Med.ttf</filename>
 			<size>24</size>
@@ -590,6 +596,12 @@
 			<name>Med26</name>
 			<filename>Roboto-Medium.ttf</filename>
 			<size>26</size>
+		</font>
+		<font>
+			<name>Med24Spaced</name>
+			<filename>Roboto-Medium.ttf</filename>
+			<size>24</size>
+			<linespacing>0.8</linespacing>
 		</font>
 		<font>
 			<name>Med24</name>
@@ -1002,6 +1014,14 @@
 			<aspect>0.9</aspect>
 			<style>bold</style>
 			<size>26</size>
+		</font>
+		<font>
+			<name>Med24Spaced</name>
+			<filename>Arial.ttf</filename>
+			<aspect>0.9</aspect>
+			<style>bold</style>
+			<size>24</size>
+			<linespacing>0.8</linespacing>
 		</font>
 		<font>
 			<name>Med24</name>

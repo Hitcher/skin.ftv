@@ -14,7 +14,7 @@
 					<width>576</width>
 					<height>576</height>
 					<aspectratio align="center">scale</aspectratio>
-					<bordertexture border="50">views/shadow_fo.png</bordertexture>
+					<bordertexture infill="false" border="50">views/shadow_fo.png</bordertexture>
 					<bordersize>50</bordersize>
 					<texture background="true" fallback="DefaultAlbumCover.png">$INFO[ListItem.Icon]</texture>
 				</control>
