@@ -420,6 +420,10 @@ msgctxt "#31096"
 msgid "Next Aired"
 msgstr ""
 
+msgctxt "#31097"
+msgid "TV Show Wide"
+msgstr ""
+
 # empty strings from id 31096 to 31097
 msgctxt "#31098"
 msgid "Press 'Continue?' to watch the next episode or 'Cancel' to stop watching."
@@ -472,6 +476,14 @@ msgstr ""
 msgctxt "#31110"
 msgid "Written by"
 msgstr "Geskryf deur"
+
+msgctxt "#31111"
+msgid "Episode Wide"
+msgstr ""
+
+msgctxt "#31112"
+msgid "Song List"
+msgstr ""
 
 # empty strings from id 31111 to 31113
 msgctxt "#31114"
