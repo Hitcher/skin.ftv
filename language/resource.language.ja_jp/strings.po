@@ -357,6 +357,18 @@ msgctxt "#31081"
 msgid "Shows Extended Information for actors when selected from the cast list."
 msgstr "キャストリストから選択した俳優の拡張情報を表示します。"
 
+msgctxt "#31082"
+msgid "Last aired"
+msgstr "前回の放送"
+
+msgctxt "#31083"
+msgid "Yesterday"
+msgstr "昨日"
+
+msgctxt "#31084"
+msgid "Today"
+msgstr "今日"
+
 msgctxt "#31085"
 msgid "Shutdown Menu"
 msgstr "シャットダウンメニュー"
@@ -953,18 +965,6 @@ msgstr "すべての評論家の平均評価"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "平均視聴者スコア"
-
-#~ msgctxt "#31082"
-#~ msgid "Last aired"
-#~ msgstr "前回の放送"
-
-#~ msgctxt "#31083"
-#~ msgid "Yesterday"
-#~ msgstr "昨日"
-
-#~ msgctxt "#31084"
-#~ msgid "Today"
-#~ msgstr "今日"
 
 #~ msgctxt "#31087"
 #~ msgid "Tomorrow"

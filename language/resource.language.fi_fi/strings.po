@@ -358,6 +358,18 @@ msgctxt "#31081"
 msgid "Shows Extended Information for actors when selected from the cast list."
 msgstr "Näyttää näyttelijöiden ExtendedInfo-tiedot listalta valittaessa."
 
+msgctxt "#31082"
+msgid "Last aired"
+msgstr ""
+
+msgctxt "#31083"
+msgid "Yesterday"
+msgstr ""
+
+msgctxt "#31084"
+msgid "Today"
+msgstr "Tänään"
+
 msgctxt "#31085"
 msgid "Shutdown Menu"
 msgstr "Sammutusvalikko"
@@ -965,10 +977,6 @@ msgstr ""
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr ""
-
-#~ msgctxt "#31084"
-#~ msgid "Today"
-#~ msgstr "Tänään"
 
 #~ msgctxt "#31096"
 #~ msgid "Next Aired"

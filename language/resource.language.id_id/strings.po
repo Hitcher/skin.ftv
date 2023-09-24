@@ -358,6 +358,18 @@ msgctxt "#31081"
 msgid "Shows Extended Information for actors when selected from the cast list."
 msgstr "Menampilkan Informasi Tambahan untuk aktor ketika dipilih dari daftar pemeran."
 
+msgctxt "#31082"
+msgid "Last aired"
+msgstr "Terakhir mengudara"
+
+msgctxt "#31083"
+msgid "Yesterday"
+msgstr "Kemarin"
+
+msgctxt "#31084"
+msgid "Today"
+msgstr "Hari Ini"
+
 # empty strings from id 31079 to 31084
 msgctxt "#31085"
 msgid "Shutdown Menu"
@@ -969,18 +981,6 @@ msgstr "Nilai Rata-Rata Semua Kritik"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "Rata-rata Rating Skor Audiens"
-
-#~ msgctxt "#31082"
-#~ msgid "Last aired"
-#~ msgstr "Terakhir mengudara"
-
-#~ msgctxt "#31083"
-#~ msgid "Yesterday"
-#~ msgstr "Kemarin"
-
-#~ msgctxt "#31084"
-#~ msgid "Today"
-#~ msgstr "Hari Ini"
 
 #~ msgctxt "#31087"
 #~ msgid "Tomorrow"

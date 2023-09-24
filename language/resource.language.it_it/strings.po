@@ -358,6 +358,18 @@ msgctxt "#31081"
 msgid "Shows Extended Information for actors when selected from the cast list."
 msgstr "Mostra informazioni estese per gli attori selezionati dall'elenco del cast."
 
+msgctxt "#31082"
+msgid "Last aired"
+msgstr "Ultima messa in onda"
+
+msgctxt "#31083"
+msgid "Yesterday"
+msgstr "Ieri"
+
+msgctxt "#31084"
+msgid "Today"
+msgstr "Oggi"
+
 msgctxt "#31085"
 msgid "Shutdown Menu"
 msgstr "Menu spegnimento"
@@ -965,18 +977,6 @@ msgstr "Valutazione media di tutte le recensioni"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "Punteggio medio del pubblico"
-
-#~ msgctxt "#31082"
-#~ msgid "Last aired"
-#~ msgstr "Ultima messa in onda"
-
-#~ msgctxt "#31083"
-#~ msgid "Yesterday"
-#~ msgstr "Ieri"
-
-#~ msgctxt "#31084"
-#~ msgid "Today"
-#~ msgstr "Oggi"
 
 #~ msgctxt "#31087"
 #~ msgid "Tomorrow"
