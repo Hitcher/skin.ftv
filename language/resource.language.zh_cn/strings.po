@@ -358,18 +358,6 @@ msgctxt "#31081"
 msgid "Shows Extended Information for actors when selected from the cast list."
 msgstr ""
 
-msgctxt "#31082"
-msgid "Last aired"
-msgstr ""
-
-msgctxt "#31083"
-msgid "Yesterday"
-msgstr ""
-
-msgctxt "#31084"
-msgid "Today"
-msgstr ""
-
 msgctxt "#31085"
 msgid "Shutdown Menu"
 msgstr "关机菜单"
@@ -377,10 +365,6 @@ msgstr "关机菜单"
 msgctxt "#31086"
 msgid "Sorted by"
 msgstr "排序依据"
-
-msgctxt "#31087"
-msgid "Tomorrow"
-msgstr ""
 
 msgctxt "#31088"
 msgid "Current Playlist"
@@ -413,10 +397,6 @@ msgstr "保存列表"
 msgctxt "#31095"
 msgid "Clear Playlist"
 msgstr "清除播放列表"
-
-msgctxt "#31096"
-msgid "Next Aired"
-msgstr ""
 
 msgctxt "#31097"
 msgid "TV Show Wide"
@@ -729,6 +709,10 @@ msgctxt "#31186"
 msgid "Your Artists"
 msgstr "你的艺术家"
 
+msgctxt "#31187"
+msgid "Your Genres"
+msgstr ""
+
 # empty strings from id 31187 to 31193
 msgctxt "#31194"
 msgid "Submit"
@@ -825,6 +809,15 @@ msgstr "选择小部件组"
 msgctxt "#31219"
 msgid "Customise Widget Group"
 msgstr "自定义小部件组"
+
+# empty string with id 31220
+msgctxt "#31221"
+msgid "Music Addons"
+msgstr ""
+
+msgctxt "#31222"
+msgid "Program Addons"
+msgstr ""
 
 msgctxt "#31223"
 msgid "Video Addons"

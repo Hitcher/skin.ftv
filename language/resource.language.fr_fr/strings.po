@@ -358,18 +358,6 @@ msgctxt "#31081"
 msgid "Shows Extended Information for actors when selected from the cast list."
 msgstr "Affiche des informations étendues pour les acteurs lorsqu'ils sont sélectionnés dans la liste des acteurs."
 
-msgctxt "#31082"
-msgid "Last aired"
-msgstr "Dernière diffusion"
-
-msgctxt "#31083"
-msgid "Yesterday"
-msgstr "Hier"
-
-msgctxt "#31084"
-msgid "Today"
-msgstr "Aujourd'hui"
-
 # empty strings from id 31079 to 31084
 msgctxt "#31085"
 msgid "Shutdown Menu"
@@ -378,10 +366,6 @@ msgstr "Menu d’arrêt"
 msgctxt "#31086"
 msgid "Sorted by"
 msgstr "Trié par"
-
-msgctxt "#31087"
-msgid "Tomorrow"
-msgstr "Demain"
 
 # empty string with id 31087
 msgctxt "#31088"
@@ -415,10 +399,6 @@ msgstr "Enregistrer la liste de lecture"
 msgctxt "#31095"
 msgid "Clear Playlist"
 msgstr "Vider la liste de lecture"
-
-msgctxt "#31096"
-msgid "Next Aired"
-msgstr "Prochaine Diffusion"
 
 msgctxt "#31097"
 msgid "TV Show Wide"
@@ -731,6 +711,10 @@ msgctxt "#31186"
 msgid "Your Artists"
 msgstr "Vos artistes"
 
+msgctxt "#31187"
+msgid "Your Genres"
+msgstr ""
+
 # empty strings from id 31187 to 31193
 msgctxt "#31194"
 msgid "Submit"
@@ -828,6 +812,15 @@ msgstr "Sélectionner le groupe de widgets"
 msgctxt "#31219"
 msgid "Customise Widget Group"
 msgstr "Personnaliser le groupe de widgets"
+
+# empty string with id 31220
+msgctxt "#31221"
+msgid "Music Addons"
+msgstr ""
+
+msgctxt "#31222"
+msgid "Program Addons"
+msgstr ""
 
 # empty strings from id 31220 to 31222
 msgctxt "#31223"
@@ -976,6 +969,26 @@ msgstr "Notation moyenne toutes critiques confondues"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "Score moyen d’audience"
+
+#~ msgctxt "#31082"
+#~ msgid "Last aired"
+#~ msgstr "Dernière diffusion"
+
+#~ msgctxt "#31083"
+#~ msgid "Yesterday"
+#~ msgstr "Hier"
+
+#~ msgctxt "#31084"
+#~ msgid "Today"
+#~ msgstr "Aujourd'hui"
+
+#~ msgctxt "#31087"
+#~ msgid "Tomorrow"
+#~ msgstr "Demain"
+
+#~ msgctxt "#31096"
+#~ msgid "Next Aired"
+#~ msgstr "Prochaine Diffusion"
 
 #~ msgctxt "#31037"
 #~ msgid "Hide Unwatched Episode Thumbs"

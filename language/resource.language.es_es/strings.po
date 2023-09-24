@@ -357,18 +357,6 @@ msgctxt "#31081"
 msgid "Shows Extended Information for actors when selected from the cast list."
 msgstr "Muestra Información Extendida de los actores cuando se eligen de la lista de elenco."
 
-msgctxt "#31082"
-msgid "Last aired"
-msgstr "Última emisión"
-
-msgctxt "#31083"
-msgid "Yesterday"
-msgstr "Ayer"
-
-msgctxt "#31084"
-msgid "Today"
-msgstr "Hoy"
-
 msgctxt "#31085"
 msgid "Shutdown Menu"
 msgstr "Menú de Apagado"
@@ -376,10 +364,6 @@ msgstr "Menú de Apagado"
 msgctxt "#31086"
 msgid "Sorted by"
 msgstr "Ordenado por"
-
-msgctxt "#31087"
-msgid "Tomorrow"
-msgstr "Mañana"
 
 msgctxt "#31088"
 msgid "Current Playlist"
@@ -412,10 +396,6 @@ msgstr "Guardar Lista de Reproducción"
 msgctxt "#31095"
 msgid "Clear Playlist"
 msgstr "Limpiar Lista de Reproducción"
-
-msgctxt "#31096"
-msgid "Next Aired"
-msgstr "Próxima Emisión"
 
 msgctxt "#31097"
 msgid "TV Show Wide"
@@ -721,6 +701,10 @@ msgctxt "#31186"
 msgid "Your Artists"
 msgstr "Sus Intérpretes"
 
+msgctxt "#31187"
+msgid "Your Genres"
+msgstr ""
+
 msgctxt "#31194"
 msgid "Submit"
 msgstr "Proveer"
@@ -816,6 +800,15 @@ msgstr "Seleccionar Grupo de Widgets"
 msgctxt "#31219"
 msgid "Customise Widget Group"
 msgstr "Personalizar Grupo de Widgets"
+
+# empty string with id 31220
+msgctxt "#31221"
+msgid "Music Addons"
+msgstr ""
+
+msgctxt "#31222"
+msgid "Program Addons"
+msgstr ""
 
 msgctxt "#31223"
 msgid "Video Addons"
@@ -960,6 +953,26 @@ msgstr "Valoración Promedio Todos los Críticos"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "Valoración Promedio de Audiencia"
+
+#~ msgctxt "#31082"
+#~ msgid "Last aired"
+#~ msgstr "Última emisión"
+
+#~ msgctxt "#31083"
+#~ msgid "Yesterday"
+#~ msgstr "Ayer"
+
+#~ msgctxt "#31084"
+#~ msgid "Today"
+#~ msgstr "Hoy"
+
+#~ msgctxt "#31087"
+#~ msgid "Tomorrow"
+#~ msgstr "Mañana"
+
+#~ msgctxt "#31096"
+#~ msgid "Next Aired"
+#~ msgstr "Próxima Emisión"
 
 #~ msgctxt "#31037"
 #~ msgid "Hide Unwatched Episode Thumbs"
