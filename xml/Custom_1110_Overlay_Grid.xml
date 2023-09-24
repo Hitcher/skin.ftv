@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window type="dialog" id="1114">
+<window type="dialog" id="1110">
 	<zorder>100</zorder>
 	<visible>Skin.HasSetting(DebugGrid)</visible>
 	<controls>

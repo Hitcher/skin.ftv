@@ -49,8 +49,8 @@
 			</control>
 			<control type="label">
 				<include>DebugWindowLabel</include>
-				<label>Custom_1107_Resume_Playback.xml</label>
-				<visible>Window.IsVisible(Custom_1107_Resume_Playback.xml)</visible>
+				<label>Custom_1107_Overlay_XRay_Image.xml</label>
+				<visible>Window.IsVisible(Custom_1107_Overlay_XRay_Image.xml)</visible>
 			</control>
 			<control type="label">
 				<include>DebugWindowLabel</include>
@@ -64,8 +64,8 @@
 			</control>
 			<control type="label">
 				<include>DebugWindowLabel</include>
-				<label>Custom_1110_Overlay_XRay_Image.xml</label>
-				<visible>Window.IsVisible(Custom_1110_Overlay_XRay_Image.xml)</visible>
+				<label>Custom_1110_Overlay_Grid.xml</label>
+				<visible>Window.IsVisible(Custom_1110_Overlay_Grid.xml)</visible>
 			</control>
 			<control type="label">
 				<include>DebugWindowLabel</include>
@@ -86,11 +86,6 @@
 				<include>DebugWindowLabel</include>
 				<label>Custom_1114_XRay_Cast.xml</label>
 				<visible>Window.IsVisible(Custom_1114_XRay_Cast.xml)</visible>
-			</control>
-			<control type="label">
-				<include>DebugWindowLabel</include>
-				<label>Custom_1115_Overlay_Grid.xml.xml</label>
-				<visible>Window.IsVisible(Custom_1115_Overlay_Grid.xml.xml)</visible>
 			</control>
 			<control type="label">
 				<include>DebugWindowLabel</include>

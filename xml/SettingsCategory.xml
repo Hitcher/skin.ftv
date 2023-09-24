@@ -468,11 +468,10 @@
 						<textwidth>576</textwidth>
 						<aligny>center</aligny>
 						<font>Light30Spaced</font>
-						<label>138</label>
+						<label>13200</label>
 						<textcolor>ff505153</textcolor>
 						<focusedcolor>ffffaf37</focusedcolor>
-						<onclick>ActivateWindow(systeminfo)</onclick>
-						<onfocus>SetProperty(SettingsLevel,$INFO[Control.GetLabel(20)],home)</onfocus>
+						<onclick>ActivateWindow(profiles)</onclick>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					</control>
@@ -483,10 +482,11 @@
 						<textwidth>576</textwidth>
 						<aligny>center</aligny>
 						<font>Light30Spaced</font>
-						<label>13200</label>
+						<label>138</label>
 						<textcolor>ff505153</textcolor>
 						<focusedcolor>ffffaf37</focusedcolor>
-						<onclick>ActivateWindow(profiles)</onclick>
+						<onclick>ActivateWindow(systeminfo)</onclick>
+						<onfocus>SetProperty(SettingsLevel,$INFO[Control.GetLabel(20)],home)</onfocus>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					</control>
