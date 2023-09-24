@@ -356,18 +356,6 @@ msgctxt "#31081"
 msgid "Shows Extended Information for actors when selected from the cast list."
 msgstr ""
 
-msgctxt "#31082"
-msgid "Last aired"
-msgstr ""
-
-msgctxt "#31083"
-msgid "Yesterday"
-msgstr ""
-
-msgctxt "#31084"
-msgid "Today"
-msgstr ""
-
 msgctxt "#31085"
 msgid "Shutdown Menu"
 msgstr "Shutdown Menu"
@@ -375,10 +363,6 @@ msgstr "Shutdown Menu"
 msgctxt "#31086"
 msgid "Sorted by"
 msgstr "Sorted by"
-
-msgctxt "#31087"
-msgid "Tomorrow"
-msgstr ""
 
 msgctxt "#31088"
 msgid "Current Playlist"
@@ -411,10 +395,6 @@ msgstr "Save Playlist"
 msgctxt "#31095"
 msgid "Clear Playlist"
 msgstr "Clear Playlist"
-
-msgctxt "#31096"
-msgid "Next Aired"
-msgstr ""
 
 msgctxt "#31097"
 msgid "TV Show Wide"
@@ -720,6 +700,10 @@ msgctxt "#31186"
 msgid "Your Artists"
 msgstr "Your Artists"
 
+msgctxt "#31187"
+msgid "Your Genres"
+msgstr ""
+
 msgctxt "#31194"
 msgid "Submit"
 msgstr "Submit"
@@ -815,6 +799,15 @@ msgstr "Select Widget Group"
 msgctxt "#31219"
 msgid "Customise Widget Group"
 msgstr "Customize Widget Group"
+
+# empty string with id 31220
+msgctxt "#31221"
+msgid "Music Addons"
+msgstr ""
+
+msgctxt "#31222"
+msgid "Program Addons"
+msgstr ""
 
 msgctxt "#31223"
 msgid "Video Addons"

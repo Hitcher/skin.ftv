@@ -358,18 +358,6 @@ msgctxt "#31081"
 msgid "Shows Extended Information for actors when selected from the cast list."
 msgstr "Menampilkan Informasi Tambahan untuk aktor ketika dipilih dari daftar pemeran."
 
-msgctxt "#31082"
-msgid "Last aired"
-msgstr "Terakhir mengudara"
-
-msgctxt "#31083"
-msgid "Yesterday"
-msgstr "Kemarin"
-
-msgctxt "#31084"
-msgid "Today"
-msgstr "Hari Ini"
-
 # empty strings from id 31079 to 31084
 msgctxt "#31085"
 msgid "Shutdown Menu"
@@ -378,10 +366,6 @@ msgstr "Menu Aksi"
 msgctxt "#31086"
 msgid "Sorted by"
 msgstr "Diurutkan berdasarkan"
-
-msgctxt "#31087"
-msgid "Tomorrow"
-msgstr "Besok"
 
 # empty string with id 31087
 msgctxt "#31088"
@@ -415,10 +399,6 @@ msgstr "Simpan DaftarPutar"
 msgctxt "#31095"
 msgid "Clear Playlist"
 msgstr "Hapus DaftarPutar"
-
-msgctxt "#31096"
-msgid "Next Aired"
-msgstr "Tayang Berikutnya"
 
 msgctxt "#31097"
 msgid "TV Show Wide"
@@ -731,6 +711,10 @@ msgctxt "#31186"
 msgid "Your Artists"
 msgstr "Artis Anda"
 
+msgctxt "#31187"
+msgid "Your Genres"
+msgstr ""
+
 # empty strings from id 31187 to 31193
 msgctxt "#31194"
 msgid "Submit"
@@ -828,6 +812,15 @@ msgstr "Pilih Grup Widget"
 msgctxt "#31219"
 msgid "Customise Widget Group"
 msgstr "Sesuaikan Grup Widget"
+
+# empty string with id 31220
+msgctxt "#31221"
+msgid "Music Addons"
+msgstr ""
+
+msgctxt "#31222"
+msgid "Program Addons"
+msgstr ""
 
 # empty strings from id 31220 to 31222
 msgctxt "#31223"
@@ -976,6 +969,26 @@ msgstr "Nilai Rata-Rata Semua Kritik"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "Rata-rata Rating Skor Audiens"
+
+#~ msgctxt "#31082"
+#~ msgid "Last aired"
+#~ msgstr "Terakhir mengudara"
+
+#~ msgctxt "#31083"
+#~ msgid "Yesterday"
+#~ msgstr "Kemarin"
+
+#~ msgctxt "#31084"
+#~ msgid "Today"
+#~ msgstr "Hari Ini"
+
+#~ msgctxt "#31087"
+#~ msgid "Tomorrow"
+#~ msgstr "Besok"
+
+#~ msgctxt "#31096"
+#~ msgid "Next Aired"
+#~ msgstr "Tayang Berikutnya"
 
 #~ msgctxt "#31037"
 #~ msgid "Hide Unwatched Episode Thumbs"

@@ -357,18 +357,6 @@ msgctxt "#31081"
 msgid "Shows Extended Information for actors when selected from the cast list."
 msgstr "キャストリストから選択した俳優の拡張情報を表示します。"
 
-msgctxt "#31082"
-msgid "Last aired"
-msgstr "前回の放送"
-
-msgctxt "#31083"
-msgid "Yesterday"
-msgstr "昨日"
-
-msgctxt "#31084"
-msgid "Today"
-msgstr "今日"
-
 msgctxt "#31085"
 msgid "Shutdown Menu"
 msgstr "シャットダウンメニュー"
@@ -376,10 +364,6 @@ msgstr "シャットダウンメニュー"
 msgctxt "#31086"
 msgid "Sorted by"
 msgstr "ソート"
-
-msgctxt "#31087"
-msgid "Tomorrow"
-msgstr "明日"
 
 msgctxt "#31088"
 msgid "Current Playlist"
@@ -412,10 +396,6 @@ msgstr "プレイリストを保存"
 msgctxt "#31095"
 msgid "Clear Playlist"
 msgstr "プレイリストをクリア"
-
-msgctxt "#31096"
-msgid "Next Aired"
-msgstr "次の放送"
 
 msgctxt "#31097"
 msgid "TV Show Wide"
@@ -721,6 +701,10 @@ msgctxt "#31186"
 msgid "Your Artists"
 msgstr "あなたのアーティスト"
 
+msgctxt "#31187"
+msgid "Your Genres"
+msgstr ""
+
 msgctxt "#31194"
 msgid "Submit"
 msgstr "登録"
@@ -816,6 +800,15 @@ msgstr "ウィジェットグループを選択"
 msgctxt "#31219"
 msgid "Customise Widget Group"
 msgstr "カスタム ウィジェットグループ"
+
+# empty string with id 31220
+msgctxt "#31221"
+msgid "Music Addons"
+msgstr ""
+
+msgctxt "#31222"
+msgid "Program Addons"
+msgstr ""
 
 msgctxt "#31223"
 msgid "Video Addons"
@@ -960,6 +953,26 @@ msgstr "すべての評論家の平均評価"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "平均視聴者スコア"
+
+#~ msgctxt "#31082"
+#~ msgid "Last aired"
+#~ msgstr "前回の放送"
+
+#~ msgctxt "#31083"
+#~ msgid "Yesterday"
+#~ msgstr "昨日"
+
+#~ msgctxt "#31084"
+#~ msgid "Today"
+#~ msgstr "今日"
+
+#~ msgctxt "#31087"
+#~ msgid "Tomorrow"
+#~ msgstr "明日"
+
+#~ msgctxt "#31096"
+#~ msgid "Next Aired"
+#~ msgstr "次の放送"
 
 #~ msgctxt "#31037"
 #~ msgid "Hide Unwatched Episode Thumbs"
