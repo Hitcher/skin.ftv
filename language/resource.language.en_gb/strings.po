@@ -356,7 +356,17 @@ msgctxt "#31081"
 msgid "Shows Extended Information for actors when selected from the cast list."
 msgstr ""
 
-#empty strings from id 31082 to 31084
+msgctxt "#31082"
+msgid "Last aired"
+msgstr ""
+
+msgctxt "#31083"
+msgid "Yesterday"
+msgstr ""
+
+msgctxt "#31084"
+msgid "Today"
+msgstr ""
 
 msgctxt "#31085"
 msgid "Shutdown Menu"

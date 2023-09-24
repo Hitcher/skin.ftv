@@ -1,5 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="NextAiredDurationHours">
+		<value condition="Integer.IsGreater(Container(60).ListItem.Property(DurationHour),09)">$INFO[Container(60).ListItem.Property(DurationHour),, $LOCALIZE[31148]]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),01)">1 $LOCALIZE[31005]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),02)">2 $LOCALIZE[31148]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),03)">3 $LOCALIZE[31148]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),04)">4 $LOCALIZE[31148]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),05)">5 $LOCALIZE[31148]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),06)">6 $LOCALIZE[31148]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),07)">7 $LOCALIZE[31148]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),08)">8 $LOCALIZE[31148]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),09)">9 $LOCALIZE[31148]</value>
+	</variable>
+	<variable name="NextAiredDurationMins">
+		<value condition="Integer.IsGreater(Container(60).ListItem.Property(DurationMins),09)">$INFO[Container(60).ListItem.Property(DurationMins),, $LOCALIZE[31147]]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),01)">1 $LOCALIZE[31004]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),02)">2 $LOCALIZE[31147]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),03)">3 $LOCALIZE[31147]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),04)">4 $LOCALIZE[31147]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),05)">5 $LOCALIZE[31147]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),06)">6 $LOCALIZE[31147]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),07)">7 $LOCALIZE[31147]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),08)">8 $LOCALIZE[31147]</value>
+		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),09)">9 $LOCALIZE[31147]</value>
+	</variable>
+	<variable name="NextAiredDurationSpacing">
+		<value condition="Integer.IsGreater(Container(60).ListItem.Property(DurationHour),00) + Integer.IsGreater(Container(60).ListItem.Property(DurationMins),00)">[COLOR=00ffffff]r[/COLOR]</value>
+		<value/>
+	</variable>
+	<variable name="NextAiredSeasonNumber">
+		<value condition="String.IsEmpty(Container(60).ListItem.Property(Stacked)) + Integer.IsLessOrEqual(Container(60).ListItem.Property(Season),9)">$INFO[Container(60).ListItem.Property(Season),S0]</value>
+		<value condition="String.IsEmpty(Container(60).ListItem.Property(Stacked))">$INFO[Container(60).ListItem.Property(Season),S]</value>
+		<value condition="Integer.IsLessOrEqual(Container(60).ListItem.Property(Season),9)">$INFO[Container(60).ListItem.Property(Season),S0]</value>
+		<value>$INFO[Container(60).ListItem.Property(Season),S]</value>
+	</variable>
+	<variable name="NextAiredEpisodeNumber">
+		<value condition="String.IsEmpty(Container(60).ListItem.Property(Stacked)) + Integer.IsLessOrEqual(Container(60).ListItem.Property(Episode),9)">$INFO[Container(60).ListItem.Property(Episode),E0]</value>
+		<value condition="String.IsEmpty(Container(60).ListItem.Property(Stacked))">$INFO[Container(60).ListItem.Property(Episode),E]</value>
+		<value condition="Integer.IsLessOrEqual(Container(60).ListItem.Property(StackedFirst),9) + Integer.IsLessOrEqual(Container(60).ListItem.Property(StackedLast),9)">$INFO[Container(60).ListItem.Property(StackedFirst),E0] - $INFO[Container(60).ListItem.Property(StackedLast),E0]</value>
+		<value condition="Integer.IsLessOrEqual(Container(60).ListItem.Property(StackedFirst),9)">$INFO[Container(60).ListItem.Property(StackedFirst),E0] - $INFO[Container(60).ListItem.Property(StackedLast),E]</value>
+		<value>$INFO[Container(60).ListItem.Property(StackedFirst),E] - $INFO[Container(60).ListItem.Property(StackedLast),E]</value>
+	</variable>
+	<variable name="NextAiredTitle">
+		<value condition="String.IsEmpty(Container(60).ListItem.Property(Stacked))">$INFO[Container(60).ListItem.Property(Title)]</value>
+		<value condition="!String.IsEmpty(Container(60).ListItem.Property(Stacked))">$INFO[Container(60).ListItem.Property(StackedTitle)]</value>
+	</variable>
+	<variable name="NextAiredPlot">
+		<value condition="String.IsEmpty(Container(60).ListItem.Property(Stacked))">$INFO[Container(60).ListItem.Property(Plot)]</value>
+		<value condition="!String.IsEmpty(Container(60).ListItem.Property(Stacked))">$INFO[Container(60).ListItem.Property(Stacked),[CR], $LOCALIZE[36907]]</value>
+	</variable>
+	<variable name="AiredPrefix">
+		<value condition="!String.IsEmpty(Container(99950).ListItem.Property(Next_Aired.Long))">$LOCALIZE[31073]:</value>
+		<value condition="!String.IsEmpty(Container(99950).ListItem.Property(Last_Aired.Long))">$LOCALIZE[31082]:</value>
+	</variable>
+	<variable name="AiredDate">
+		<value condition="!String.IsEmpty(Container(99950).ListItem.Property(Next_Aired.Long))">$INFO[Container(99950).ListItem.Property(Next_Aired.Long)]</value>
+		<value condition="!String.IsEmpty(Container(99950).ListItem.Property(Last_Aired.Long))">$INFO[Container(99950).ListItem.Property(Last_Aired.Long)]</value>
+	</variable>
 	<variable name="DialogVideoInfoInclude">
 		<value condition="!String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + !Skin.HasSetting(ExtendedInfo)">Includes_Dialog_Default_Video_Information
 		</value>
