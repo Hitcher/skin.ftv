@@ -34,14 +34,6 @@
 		<action>ActivateWindow(Videos,TVShowTitles,return)</action>
 	</shortcut>
 	<shortcut>
-		<defaultID>nextaired</defaultID>
-		<label>31096</label>
-		<label2>Common Shortcut</label2>
-		<icon>DefaultShortcut.png</icon>
-		<thumb />
-		<action>noop</action>
-	</shortcut>
-	<shortcut>
 		<defaultID>favourites</defaultID>
 		<label>1036</label>
 		<label2>Common Shortcut</label2>
