@@ -1197,6 +1197,10 @@
 		<value condition="String.IsEqual(ListItem.Season,0)">$LOCALIZE[20381]</value>
 		<value>$INFO[ListItem.Label]</value>
 	</variable>
+	<variable name="MusicInfoButton8">
+		<value condition="String.IsEqual(Container.Content,albums)">$LOCALIZE[31096]</value>
+		<value>$LOCALIZE[31097]</value>
+	</variable>
 	<variable name="VideoInfoButton8">
 		<value condition="Integer.IsGreater(ListItem.PlayCount,0)">$LOCALIZE[31057]</value>
 		<value>$LOCALIZE[31109]</value>

@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<!-- musicinformation -->
-	<defaultcontrol always="true">9000</defaultcontrol>
+	<defaultcontrol always="true">7000</defaultcontrol>
 	<onunload>ClearProperty(AlbumDetails,home)</onunload>
 	<onunload>SetFocus(50)</onunload>
 	<animation effect="fade" end="100" start="100" time="200">WindowClose</animation>
 	<controls>
 		<!-- Hidden Button -->
 		<control id="7" type="button">
+			<include>HiddenControl</include>
+		</control>
+		<!-- Hidden Button -->
+		<control id="8" type="button">
 			<include>HiddenControl</include>
 		</control>
 		<!-- Hidden Description -->
@@ -281,7 +285,24 @@
 						<height>0</height>
 						<onfocus>Right</onfocus>
 						<include>NoTextures</include>
-						<visible>!Control.HasFocus(6) + !Control.HasFocus(1002) + !Control.HasFocus(10) + !Control.HasFocus(12)</visible>
+						<visible>!Control.HasFocus(1001) + !Control.HasFocus(6) + !Control.HasFocus(1002) + !Control.HasFocus(10) + !Control.HasFocus(12)</visible>
+					</control>
+					<!-- Play Button -->
+					<control type="button" id="1001">
+						<width min="124" max="204">auto</width>
+						<wrapmultiline>true</wrapmultiline>
+						<height>116</height>
+						<onup>noop</onup>
+						<ondown>noop</ondown>
+						<onclick>SendClick(8)</onclick>
+						<font>Med24</font>
+						<label>$VAR[MusicInfoButton8]</label>
+						<textoffsetx>28</textoffsetx>
+						<textcolor>ffdadada</textcolor>
+						<focusedcolor>ff222222</focusedcolor>
+						<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+						<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+						<visible>Control.IsEnabled(8)</visible>
 					</control>
 					<!-- Refresh Button -->
 					<control type="button" id="6">
@@ -360,7 +381,21 @@
 					<orientation>horizontal</orientation>
 					<usecontrolcoords>true</usecontrolcoords>
 					<animation condition="Control.HasFocus(50)" effect="slide" end="0,-192" start="0,0" time="200">Conditional</animation>
-					<!-- Play/Browse Button -->
+					<!-- Play Button -->
+					<control type="button">
+						<width min="124" max="204">auto</width>
+						<wrapmultiline>true</wrapmultiline>
+						<height>116</height>
+						<font>Med24</font>
+						<label>$INFO[Control.GetLabel(1001)]</label>
+						<textoffsetx>28</textoffsetx>
+						<textcolor>00ffffff</textcolor>
+						<focusedcolor>00ffffff</focusedcolor>
+						<texturefocus/>
+						<texturenofocus/>
+						<visible>Control.IsEnabled(8)</visible>
+					</control>
+					<!-- Refresh Button -->
 					<control type="button">
 						<width min="124" max="204">auto</width>
 						<wrapmultiline>true</wrapmultiline>
@@ -370,9 +405,9 @@
 						<textoffsetx>28</textoffsetx>
 						<textcolor>00ffffff</textcolor>
 						<focusedcolor>00ffffff</focusedcolor>
-						<visible>Control.IsVisible(6)</visible>
 						<texturefocus/>
 						<texturenofocus/>
+						<visible>Control.IsVisible(6)</visible>
 					</control>
 					<!-- User Rating Button -->
 					<control type="image">
