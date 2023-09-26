@@ -740,7 +740,7 @@
 						<onleft>50</onleft>
 						<onright>50</onright>
 						<onclick>SetProperty(OpenTextViewer,1,home)</onclick>
-						<onclick>RunScript(script.embuary.helper,action=textviewer,header=$INFO[ListItem.Label],message='$ESCVAR[Plot]')</onclick>
+						<onclick>RunScript(script.skinvariables,run_dialog=textviewer,heading=$INFO[ListItem.Label],text='$ESCVAR[Plot]')</onclick>
 						<visible>Control.IsVisible(96)</visible>
 						<texturefocus>views/more_fo.png</texturefocus>
 						<texturenofocus>views/more_nf.png</texturenofocus>
@@ -778,7 +778,7 @@
 						<onleft>50</onleft>
 						<onright>50</onright>
 						<onclick>SetProperty(OpenTextViewer,1,home)</onclick>
-						<onclick>RunScript(script.embuary.helper,action=textviewer,header=$INFO[ListItem.TVShowTitle] - $VAR[SeasonValue],message='$ESCVAR[Plot]')</onclick>
+						<onclick>RunScript(script.skinvariables,run_dialog=textviewer,heading=$INFO[ListItem.TVShowTitle] - $VAR[SeasonValue],text='$ESCVAR[Plot]')</onclick>
 						<visible>Control.IsVisible(97)</visible>
 						<texturefocus>views/more_fo.png</texturefocus>
 						<texturenofocus>views/more_nf.png</texturenofocus>
@@ -916,7 +916,7 @@
 						<onleft>50</onleft>
 						<onright>50</onright>
 						<onclick>SetProperty(OpenTextViewer,1,home)</onclick>
-						<onclick>RunScript(script.embuary.helper,action=textviewer,header=$INFO[ListItem.Title],message='$ESCVAR[Plot]')</onclick>
+						<onclick>RunScript(script.skinvariables,run_dialog=textviewer,heading=$INFO[ListItem.Title],text='$ESCVAR[Plot]')</onclick>
 						<visible>Control.IsVisible(98)</visible>
 						<texturefocus>views/more_fo.png</texturefocus>
 						<texturenofocus>views/more_nf.png</texturenofocus>
@@ -1061,7 +1061,7 @@
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onclick>SetProperty(OpenTextViewer,1,home)</onclick>
-					<onclick>RunScript(script.embuary.helper,action=textviewer,header=$INFO[ListItem.Label],message='$ESCVAR[Plot]')</onclick>
+					<onclick>RunScript(script.skinvariables,run_dialog=textviewer,heading=$INFO[ListItem.Label],text='$ESCVAR[Plot]')</onclick>
 					<visible>Control.IsVisible(99)</visible>
 					<texturefocus>views/more_fo.png</texturefocus>
 					<texturenofocus>views/more_nf.png</texturenofocus>

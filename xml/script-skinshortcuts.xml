@@ -3,10 +3,30 @@
 	<!-- script-skinshortcuts -->
 	<defaultcontrol always="true">10</defaultcontrol>
 	<controls>
+		<!-- Remove -->
+		<control type="button" id="302">
+			<include>HiddenControl</include>
+			<onleft>noop</onleft>
+			<onright>301</onright>
+			<onup condition="!String.IsEmpty(Container(211).ListItemNoWrap(-1).Label)">Control.Move(211,-1)</onup>
+			<ondown condition="!String.IsEmpty(Container(211).ListItemNoWrap(1).Label)">Control.Move(211,1)</ondown>
+			<ondown condition="String.IsEmpty(Container(211).ListItemNoWrap(1).Label)">9001</ondown>
+		</control>
+		<!-- Add item -->
+		<control type="button" id="301">
+			<include>HiddenControl</include>
+			<onleft>302</onleft>
+			<onright>304</onright>
+			<onup condition="!String.IsEmpty(Container(211).ListItemNoWrap(-1).Label)">Control.Move(211,-1)</onup>
+			<ondown condition="!String.IsEmpty(Container(211).ListItemNoWrap(1).Label)">Control.Move(211,1)</ondown>
+			<ondown condition="String.IsEmpty(Container(211).ListItemNoWrap(1).Label)">9001</ondown>
+			<enable>Integer.IsLessOrEqual(Container(211).NumItems,12)</enable>
+			<onclick>401</onclick>
+		</control>
 		<!-- Move down -->
 		<control type="button" id="304">
 			<include>HiddenControl</include>
-			<onleft>noop</onleft>
+			<onleft>301</onleft>
 			<onright>303</onright>
 			<onup condition="!String.IsEmpty(Container(211).ListItemNoWrap(-1).Label)">Control.Move(211,-1)</onup>
 			<ondown condition="!String.IsEmpty(Container(211).ListItemNoWrap(1).Label)">Control.Move(211,1)</ondown>
@@ -104,7 +124,7 @@
 						<font>Light32</font>
 						<textcolor>ffffaf37</textcolor>
 						<label>$INFO[ListItem.Label]</label>
-						<visible>Control.HasFocus(303) | Control.HasFocus(304)</visible>
+						<visible>Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303) | Control.HasFocus(304)</visible>
 					</control>
 					<control type="label">
 						<left>40</left>
@@ -113,7 +133,23 @@
 						<font>Light32</font>
 						<textcolor>ffffffff</textcolor>
 						<label>$INFO[ListItem.Label]</label>
-						<visible>!Control.HasFocus(303) + !Control.HasFocus(304)</visible>
+						<visible>!Control.HasFocus(301) + !Control.HasFocus(302) + !Control.HasFocus(303) + !Control.HasFocus(304)</visible>
+					</control>
+					<control type="image">
+						<top>31</top>
+						<left>514</left>
+						<width>21</width>
+						<height>21</height>
+						<texture>dialogs/DeleteNF.png</texture>
+						<visible>!Control.HasFocus(302)</visible>
+					</control>
+					<control type="image">
+						<top>31</top>
+						<left>540</left>
+						<width>21</width>
+						<height>21</height>
+						<texture>dialogs/AddNF.png</texture>
+						<visible>!Control.HasFocus(301)</visible>
 					</control>
 					<control type="image">
 						<top>31</top>
@@ -130,6 +166,22 @@
 						<height>21</height>
 						<texture>dialogs/SpinUpNF.png</texture>
 						<visible>!Control.HasFocus(303)</visible>
+					</control>
+					<control type="image">
+						<top>31</top>
+						<left>514</left>
+						<width>21</width>
+						<height>21</height>
+						<texture>dialogs/DeleteFO.png</texture>
+						<visible>Control.HasFocus(302)</visible>
+					</control>
+					<control type="image">
+						<top>31</top>
+						<left>540</left>
+						<width>21</width>
+						<height>21</height>
+						<texture>dialogs/AddFO.png</texture>
+						<visible>Control.HasFocus(301)</visible>
 					</control>
 					<control type="image">
 						<top>31</top>
@@ -243,32 +295,6 @@
 					<enable>String.StartsWith(Container(211).ListItem.Property(widget),widget)</enable>
 					<onclick>ActivateWindow(1105)</onclick>
 				</control>
-				<!-- Remove -->
-				<control type="button" id="302">
-					<width>870</width>
-					<height>84</height>
-					<font>Light32</font>
-					<textwidth>790</textwidth>
-					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
-					<texturefocus border="3">settings/button_focus.png</texturefocus>
-					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
-				</control>
-				<!-- Add item -->
-				<control type="button" id="301">
-					<width>870</width>
-					<height>84</height>
-					<font>Light32</font>
-					<textwidth>790</textwidth>
-					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
-					<texturefocus border="3">settings/button_focus.png</texturefocus>
-					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
-					<label>$ADDON[script.skinshortcuts 32000]</label>
-					<enable>Integer.IsLessOrEqual(Container(211).NumItems,12)</enable>
-				</control>
 			</control>
 			<!-- Button grouplist -->
 			<control type="grouplist" id="9001">
@@ -320,7 +346,7 @@
 					<onback>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=99&amp;levels=5&amp;group=mainmenu|shutdown)</onback>
 					<onclick>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=99&amp;levels=0&amp;group=mainmenu|shutdown)</onclick>
 					<onclick>Close</onclick>
-					<onunfocus condition="Integer.IsGreater(Container(211).NumItems,13)">RunScript(script.embuary.helper,action=okdialog,header=$LOCALIZE[14117],message=$LOCALIZE[31252])</onunfocus>
+					<onfocus condition="Integer.IsGreater(Container(211).NumItems,13)">RunScript(script.skinvariables,run_dialog=ok,heading=$LOCALIZE[14117],message=$LOCALIZE[31252])</onfocus>
 				</control>
 			</control>
 		</control>

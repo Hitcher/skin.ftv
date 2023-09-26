@@ -7,10 +7,14 @@
 	<onunload>ClearProperty(XRayInfo,home)</onunload>
 	<controls>
 		<!-- Hidden controls -->
+		<control type="list" id="999">
+			<include>HiddenList</include>
+			<content>$VAR[XRayCast]</content>
+		</control>
 		<control type="button" id="99">
 			<include>HiddenControl</include>
-			<onup condition="!String.IsEmpty(Container(1000).ListItem.Label) + String.IsEmpty(Window(home).Property(ShowXRay))">SetProperty(ShowXRay,true,home)</onup>
-			<onup condition="!String.IsEmpty(Container(1000).ListItem.Label) + !Player.Paused">Pause</onup>
+			<onup condition="!String.IsEmpty(Container(999).ListItem.Label) + String.IsEmpty(Window(home).Property(ShowXRay))">SetProperty(ShowXRay,true,home)</onup>
+			<onup condition="!String.IsEmpty(Container(999).ListItem.Label) + !Player.Paused">Pause</onup>
 			<onup>1000</onup>
 			<onfocus>ClearProperty(ShowXRay,home)</onfocus>
 			<visible>System.HasAddon(plugin.video.themoviedb.helper) + Skin.HasSetting(EnableXRay)</visible>
@@ -76,7 +80,7 @@
 				<onclick>SetProperty(XRayIcon,$INFO[ListItem.Icon],home)</onclick>
 				<onclick>SetProperty(XRayRole,$INFO[ListItem.Label2],home)</onclick>
 				<onclick>Dialog.Close(fullscreeninfo,force)</onclick>
-				<onclick>RunScript(plugin.video.themoviedb.helper,add_path=$INFO[Container(1000).ListItem.FolderPath],call_auto=1113)</onclick>
+				<onclick>RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Container(1000).ListItem.Label],type=person,call_auto=1113)</onclick>
 				<onback condition="Player.Paused">PlayerControl(play)</onback>
 				<onback>Control.SetFocus(1000,0,absolute)</onback>
 				<onback>99</onback>
@@ -116,16 +120,7 @@
 							<width>320</width>
 							<height>480</height>
 							<aspectratio align="center">scale</aspectratio>
-							<texture background="true">$INFO[ListItem.Icon]</texture>
-							<visible>!String.Contains(ListItem.Icon,poster.png)</visible>
-						</control>
-						<control type="image">
-							<top>48</top>
-							<width>320</width>
-							<height>480</height>
-							<aspectratio align="center">scale</aspectratio>
-							<texture background="true">DefaultActor.png</texture>
-							<visible>String.Contains(ListItem.Icon,poster.png)</visible>
+							<texture fallback="DefaultActor.png" background="true">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="image">
 							<bottom>48</bottom>
@@ -202,16 +197,7 @@
 							<width>320</width>
 							<height>480</height>
 							<aspectratio align="center">scale</aspectratio>
-							<texture background="true">$INFO[ListItem.Icon]</texture>
-							<visible>!String.Contains(ListItem.Icon,poster.png)</visible>
-						</control>
-						<control type="image">
-							<top>48</top>
-							<width>320</width>
-							<height>480</height>
-							<aspectratio align="center">scale</aspectratio>
-							<texture background="true">DefaultActor.png</texture>
-							<visible>String.Contains(ListItem.Icon,poster.png)</visible>
+							<texture fallback="DefaultActor.png" background="true">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="image">
 							<bottom>48</bottom>
@@ -263,7 +249,308 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<content>$VAR[XRayCast]</content>
+				<content>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="0 "/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="1"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="2"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="3"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="4"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="5"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="6"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="7"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="8"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="9"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="10"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="11"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="12"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="13"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="14"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="15"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="16"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="17"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="18"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="19"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="20"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="21"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="22"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="23"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="24"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="25"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="26"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="27"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="28"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="29"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="30"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="31"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="32"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="33"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="34"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="35"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="36"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="37"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="38"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="39"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="40"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="41"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="42"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="43"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="44"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="45"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="46"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="47"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="48"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="49"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="50"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="51"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="52"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="53"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="54"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="55"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="56"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="57"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="58"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="59"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="60"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="61"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="62"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="63"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="64"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="65"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="66"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="67"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="68"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="69"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="70"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="71"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="72"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="73"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="74"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="75"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="76"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="77"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="78"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="79"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="80"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="81"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="82"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="83"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="84"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="85"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="86"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="87"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="88"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="89"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="90"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="91"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="92"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="93"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="94"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="95"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="96"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="97"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="98"/>
+					</include>
+					<include content="XRayCastListItems">
+						<param name="item_index" value="99"/>
+					</include>
+				</content>
 			</control>
 		</control>
 		<control type="group">

@@ -162,7 +162,7 @@
 					<onleft>55</onleft>
 					<onright>55</onright>
 					<onclick>SetProperty(OpenTextViewer,1,home)</onclick>
-					<onclick>RunScript(script.embuary.helper,action=textviewer,header=$INFO[ListItem.Label],message='$ESCINFO[ListItem.Label2]')</onclick>
+					<onclick>RunScript(script.skinvariables,run_dialog=textviewer,heading=$INFO[ListItem.Label],text='$ESCINFO[ListItem.Label2]')</onclick>
 					<visible>Control.IsVisible(96)</visible>
 					<texturefocus>views/more_fo.png</texturefocus>
 					<texturenofocus>views/more_nf.png</texturenofocus>

@@ -172,7 +172,7 @@
 					<onleft condition="String.IsEmpty(Window(home).Property(StarredInTV)) + String.IsEmpty(Window(home).Property(ActorImages))">7000</onleft>
 					<onleft condition="!String.IsEmpty(Window(home).Property(StarredInTV)) + String.IsEmpty(Window(home).Property(ActorImages))">7001</onleft>
 					<onleft condition="String.IsEmpty(Window(home).Property(StarredInTV)) + !String.IsEmpty(Window(home).Property(ActorImages))">7002</onleft>
-					<onclick>RunScript(script.embuary.helper,action=textviewer,header='empty',message='$ESCINFO[ListItem.Property(Biography)]')</onclick>
+					<onclick>RunScript(script.skinvariables,run_dialog=textviewer,heading='empty',text='$ESCINFO[ListItem.Property(Biography)]')</onclick>
 					<include>DialogVideoInfoAnimation</include>
 					<texturefocus>views/more_fo.png</texturefocus>
 					<texturenofocus>views/more_nf.png</texturenofocus>

@@ -435,7 +435,7 @@
 					<height>23</height>
 					<onleft>7001</onleft>
 					<onright>50</onright>
-					<onclick>RunScript(script.embuary.helper,action=textviewer,header='empty',message='$ESCVAR[MusicInfoDescription]')</onclick>
+					<onclick>RunScript(script.skinvariables,run_dialog=textviewer,heading='empty',text='$ESCVAR[MusicInfoDescription]')</onclick>
 					<texturefocus>views/more_fo.png</texturefocus>
 					<texturenofocus>views/more_nf.png</texturenofocus>
 					<visible>Control.IsVisible(96) + !String.IsEmpty(Control.GetLabel(99))</visible>

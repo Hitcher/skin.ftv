@@ -21,8 +21,8 @@
 				<centerleft>50%</centerleft>
 				<centertop>50%</centertop>
 				<width>973</width>
-				<height>760</height>
-				<texture border="4,7,4,7">views/text_viewer_background.png</texture>
+				<height>764</height>
+				<texture border="4,3,4,7">views/text_viewer_background.png</texture>
 			</control>
 			<!-- Arrow up -->
 			<control type="image">

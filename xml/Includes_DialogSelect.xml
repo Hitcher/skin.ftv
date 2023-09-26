@@ -18,8 +18,8 @@
 			<height>480</height>
 			<visible>Control.IsVisible(3)</visible>
 			<animation condition="[Window.IsVisible(settingscategory.xml) | Window.IsVisible(addonbrowser) | Window.IsVisible(skinsettings)] + Control.IsVisible(5)" effect="slide" end="-43,-11">Conditional</animation>
-			<animation condition="[Window.IsVisible(settingscategory.xml) | Window.IsVisible(addonbrowser) | Window.IsVisible(skinsettings)] + !Control.IsVisible(5)" effect="slide" end="-283,-11">Conditional</animation>
-			<animation condition="Window.IsVisible(settingscategory.xml) | Window.IsVisible(addonbrowser) | Window.IsVisible(skinsettings)" reversible="false" type="WindowOpen">
+			<animation condition="!Window.IsVisible(1105) + [Window.IsVisible(settingscategory.xml) | Window.IsVisible(addonbrowser) | Window.IsVisible(skinsettings)] + !Control.IsVisible(5)" effect="slide" end="-283,-11">Conditional</animation>
+			<animation condition="!Window.IsVisible(1105) + [Window.IsVisible(settingscategory.xml) | Window.IsVisible(addonbrowser) | Window.IsVisible(skinsettings)]" reversible="false" type="WindowOpen">
 				<effect end="100" start="0" time="200" type="fade"/>
 				<effect easing="inout" end="0,0" start="500,0" time="200" tween="sine" type="slide"/>
 			</animation>

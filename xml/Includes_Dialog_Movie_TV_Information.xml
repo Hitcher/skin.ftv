@@ -190,7 +190,7 @@
 					<onup>Close</onup>
 					<onleft>7000</onleft>
 					<onright>noop</onright>
-					<onclick>RunScript(script.embuary.helper,action=textviewer,header='empty',message='$ESCVAR[Plot]')</onclick>
+					<onclick>RunScript(script.skinvariables,run_dialog=textviewer,heading='empty',text='$ESCVAR[Plot]')</onclick>
 					<include>DialogVideoInfoAnimation</include>
 					<texturefocus>views/more_fo.png</texturefocus>
 					<texturenofocus>views/more_nf.png</texturenofocus>

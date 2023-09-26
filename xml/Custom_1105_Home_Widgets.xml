@@ -24,6 +24,7 @@
 			<onclick>SetFocus(200)</onclick>
 			<onclick>Select</onclick>
 			<onclick>SetFocus(20)</onclick>
+			<label>$LOCALIZE[31024]</label>
 		</control>
 		<!-- List 300 Control -->
 		<control type="button" id="30">
@@ -45,6 +46,7 @@
 			<onclick>SetFocus(300)</onclick>
 			<onclick>Select</onclick>
 			<onclick>SetFocus(30)</onclick>
+			<label>$LOCALIZE[31202]</label>
 		</control>
 		<!-- List 400 Control -->
 		<control type="button" id="40">
@@ -66,6 +68,7 @@
 			<onclick>SetFocus(400)</onclick>
 			<onclick>Select</onclick>
 			<onclick>SetFocus(40)</onclick>
+			<label>$LOCALIZE[31198]</label>
 		</control>
 		<!-- Button to fix movement problem  -->
 		<control type="button" id="21">
@@ -499,114 +502,42 @@
 						<item>
 							<label>$VAR[WidgetStyle-1]</label>
 							<label2>$LOCALIZE[31203]</label2>
-							<onclick>SetProperty(Dialog.NumItems,4)</onclick>
-							<onclick>SetProperty(Dialog.1.Label,$LOCALIZE[31159])</onclick>
-							<onclick>SetProperty(Dialog.1.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-1],$LOCALIZE[31159]))</onclick>
-							<onclick>SetProperty(Dialog.2.Label,$LOCALIZE[31160])</onclick>
-							<onclick>SetProperty(Dialog.2.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-1],$LOCALIZE[31160]))</onclick>
-							<onclick>SetProperty(Dialog.3.Label,$LOCALIZE[31161])</onclick>
-							<onclick>SetProperty(Dialog.3.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-1],$LOCALIZE[31161]))</onclick>
-							<onclick>SetProperty(Dialog.4.Label,$LOCALIZE[31203])</onclick>
-							<onclick>SetProperty(Dialog.4.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-1],$LOCALIZE[31203]))</onclick>
-							<onclick>RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[31198])</onclick>
+							<onclick>RunScript(script.skinvariables,run_dialog=select,heading=$LOCALIZE[31198],list=$LOCALIZE[31159] / $LOCALIZE[31160] / $LOCALIZE[31161] / $LOCALIZE[31203],"executebuiltin=Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-1],{v})")</onclick>
 						</item>
 						<item>
 							<label>$VAR[WidgetStyle-2]</label>
 							<label2>$LOCALIZE[31203]</label2>
-							<onclick>SetProperty(Dialog.NumItems,4)</onclick>
-							<onclick>SetProperty(Dialog.1.Label,$LOCALIZE[31159])</onclick>
-							<onclick>SetProperty(Dialog.1.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-2],$LOCALIZE[31159]))</onclick>
-							<onclick>SetProperty(Dialog.2.Label,$LOCALIZE[31160])</onclick>
-							<onclick>SetProperty(Dialog.2.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-2],$LOCALIZE[31160]))</onclick>
-							<onclick>SetProperty(Dialog.3.Label,$LOCALIZE[31161])</onclick>
-							<onclick>SetProperty(Dialog.3.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-2],$LOCALIZE[31161]))</onclick>
-							<onclick>SetProperty(Dialog.4.Label,$LOCALIZE[31203])</onclick>
-							<onclick>SetProperty(Dialog.4.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-2],$LOCALIZE[31203]))</onclick>
-							<onclick>RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[31198])</onclick>
+							<onclick>RunScript(script.skinvariables,run_dialog=select,heading=$LOCALIZE[31198],list=$LOCALIZE[31159] / $LOCALIZE[31160] / $LOCALIZE[31161] / $LOCALIZE[31203],"executebuiltin=Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-2],{v})")</onclick>
 						</item>
 						<item>
 							<label>$VAR[WidgetStyle-3]</label>
 							<label2>$LOCALIZE[31203]</label2>
-							<onclick>SetProperty(Dialog.NumItems,4)</onclick>
-							<onclick>SetProperty(Dialog.1.Label,$LOCALIZE[31159])</onclick>
-							<onclick>SetProperty(Dialog.1.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-3],$LOCALIZE[31159]))</onclick>
-							<onclick>SetProperty(Dialog.2.Label,$LOCALIZE[31160])</onclick>
-							<onclick>SetProperty(Dialog.2.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-3],$LOCALIZE[31160]))</onclick>
-							<onclick>SetProperty(Dialog.3.Label,$LOCALIZE[31161])</onclick>
-							<onclick>SetProperty(Dialog.3.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-3],$LOCALIZE[31161]))</onclick>
-							<onclick>SetProperty(Dialog.4.Label,$LOCALIZE[31203])</onclick>
-							<onclick>SetProperty(Dialog.4.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-3],$LOCALIZE[31203]))</onclick>
-							<onclick>RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[31198])</onclick>
+							<onclick>RunScript(script.skinvariables,run_dialog=select,heading=$LOCALIZE[31198],list=$LOCALIZE[31159] / $LOCALIZE[31160] / $LOCALIZE[31161] / $LOCALIZE[31203],"executebuiltin=Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-3],{v})")</onclick>
 						</item>
 						<item>
 							<label>$VAR[WidgetStyle-4]</label>
 							<label2>$LOCALIZE[31203]</label2>
-							<onclick>SetProperty(Dialog.NumItems,4)</onclick>
-							<onclick>SetProperty(Dialog.1.Label,$LOCALIZE[31159])</onclick>
-							<onclick>SetProperty(Dialog.1.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-4],$LOCALIZE[31159]))</onclick>
-							<onclick>SetProperty(Dialog.2.Label,$LOCALIZE[31160])</onclick>
-							<onclick>SetProperty(Dialog.2.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-4],$LOCALIZE[31160]))</onclick>
-							<onclick>SetProperty(Dialog.3.Label,$LOCALIZE[31161])</onclick>
-							<onclick>SetProperty(Dialog.3.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-4],$LOCALIZE[31161]))</onclick>
-							<onclick>SetProperty(Dialog.4.Label,$LOCALIZE[31203])</onclick>
-							<onclick>SetProperty(Dialog.4.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-4],$LOCALIZE[31203]))</onclick>
-							<onclick>RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[31198])</onclick>
+							<onclick>RunScript(script.skinvariables,run_dialog=select,heading=$LOCALIZE[31198],list=$LOCALIZE[31159] / $LOCALIZE[31160] / $LOCALIZE[31161] / $LOCALIZE[31203],"executebuiltin=Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-4],{v})")</onclick>
 						</item>
 						<item>
 							<label>$VAR[WidgetStyle-5]</label>
 							<label2>$LOCALIZE[31203]</label2>
-							<onclick>SetProperty(Dialog.NumItems,4)</onclick>
-							<onclick>SetProperty(Dialog.1.Label,$LOCALIZE[31159])</onclick>
-							<onclick>SetProperty(Dialog.1.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-5],$LOCALIZE[31159]))</onclick>
-							<onclick>SetProperty(Dialog.2.Label,$LOCALIZE[31160])</onclick>
-							<onclick>SetProperty(Dialog.2.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-5],$LOCALIZE[31160]))</onclick>
-							<onclick>SetProperty(Dialog.3.Label,$LOCALIZE[31161])</onclick>
-							<onclick>SetProperty(Dialog.3.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-5],$LOCALIZE[31161]))</onclick>
-							<onclick>SetProperty(Dialog.4.Label,$LOCALIZE[31203])</onclick>
-							<onclick>SetProperty(Dialog.4.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-5],$LOCALIZE[31203]))</onclick>
-							<onclick>RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[31198])</onclick>
+							<onclick>RunScript(script.skinvariables,run_dialog=select,heading=$LOCALIZE[31198],list=$LOCALIZE[31159] / $LOCALIZE[31160] / $LOCALIZE[31161] / $LOCALIZE[31203],"executebuiltin=Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-5],{v})")</onclick>
 						</item>
 						<item>
 							<label>$VAR[WidgetStyle-6]</label>
 							<label2>$LOCALIZE[31203]</label2>
-							<onclick>SetProperty(Dialog.NumItems,4)</onclick>
-							<onclick>SetProperty(Dialog.1.Label,$LOCALIZE[31159])</onclick>
-							<onclick>SetProperty(Dialog.1.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-6],$LOCALIZE[31159]))</onclick>
-							<onclick>SetProperty(Dialog.2.Label,$LOCALIZE[31160])</onclick>
-							<onclick>SetProperty(Dialog.2.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-6],$LOCALIZE[31160]))</onclick>
-							<onclick>SetProperty(Dialog.3.Label,$LOCALIZE[31161])</onclick>
-							<onclick>SetProperty(Dialog.3.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-6],$LOCALIZE[31161]))</onclick>
-							<onclick>SetProperty(Dialog.4.Label,$LOCALIZE[31203])</onclick>
-							<onclick>SetProperty(Dialog.4.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-6],$LOCALIZE[31203]))</onclick>
-							<onclick>RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[31198])</onclick>
+							<onclick>RunScript(script.skinvariables,run_dialog=select,heading=$LOCALIZE[31198],list=$LOCALIZE[31159] / $LOCALIZE[31160] / $LOCALIZE[31161] / $LOCALIZE[31203],"executebuiltin=Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-6],{v})")</onclick>
 						</item>
 						<item>
 							<label>$VAR[WidgetStyle-7]</label>
 							<label2>$LOCALIZE[31203]</label2>
-							<onclick>SetProperty(Dialog.NumItems,4)</onclick>
-							<onclick>SetProperty(Dialog.1.Label,$LOCALIZE[31159])</onclick>
-							<onclick>SetProperty(Dialog.1.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-7],$LOCALIZE[31159]))</onclick>
-							<onclick>SetProperty(Dialog.2.Label,$LOCALIZE[31160])</onclick>
-							<onclick>SetProperty(Dialog.2.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-7],$LOCALIZE[31160]))</onclick>
-							<onclick>SetProperty(Dialog.3.Label,$LOCALIZE[31161])</onclick>
-							<onclick>SetProperty(Dialog.3.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-7],$LOCALIZE[31161]))</onclick>
-							<onclick>SetProperty(Dialog.4.Label,$LOCALIZE[31203])</onclick>
-							<onclick>SetProperty(Dialog.4.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-7],$LOCALIZE[31203]))</onclick>
-							<onclick>RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[31198])</onclick>
+							<onclick>RunScript(script.skinvariables,run_dialog=select,heading=$LOCALIZE[31198],list=$LOCALIZE[31159] / $LOCALIZE[31160] / $LOCALIZE[31161] / $LOCALIZE[31203],"executebuiltin=Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-7],{v})")</onclick>
 						</item>
 						<item>
 							<label>$VAR[WidgetStyle-8]</label>
 							<label2>$LOCALIZE[31203]</label2>
-							<onclick>SetProperty(Dialog.NumItems,4)</onclick>
-							<onclick>SetProperty(Dialog.1.Label,$LOCALIZE[31159])</onclick>
-							<onclick>SetProperty(Dialog.1.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-8],$LOCALIZE[31159]))</onclick>
-							<onclick>SetProperty(Dialog.2.Label,$LOCALIZE[31160])</onclick>
-							<onclick>SetProperty(Dialog.2.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-8],$LOCALIZE[31160]))</onclick>
-							<onclick>SetProperty(Dialog.3.Label,$LOCALIZE[31161])</onclick>
-							<onclick>SetProperty(Dialog.3.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-8],$LOCALIZE[31161]))</onclick>
-							<onclick>SetProperty(Dialog.4.Label,$LOCALIZE[31203])</onclick>
-							<onclick>SetProperty(Dialog.4.BuiltIn,Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-8],$LOCALIZE[31203]))</onclick>
-							<onclick>RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[31198])</onclick>
+							<onclick>RunScript(script.skinvariables,run_dialog=select,heading=$LOCALIZE[31198],list=$LOCALIZE[31159] / $LOCALIZE[31160] / $LOCALIZE[31161] / $LOCALIZE[31203],"executebuiltin=Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-8],{v})")</onclick>
 						</item>
 					</content>
 				</control>

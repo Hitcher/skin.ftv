@@ -185,7 +185,7 @@
 				</item>
 				<item>
 					<onclick condition="!System.Platform.UWP">ActivateWindow(gamesettings)</onclick>
-					<onclick condition="System.Platform.UWP">RunScript(script.embuary.helper,action=textviewer,header=$LOCALIZE[31025],message=$LOCALIZE[31024])</onclick>
+					<onclick condition="System.Platform.UWP">RunScript(script.skinvariables,run_dialog=textviewer,heading=$LOCALIZE[31025],text=$LOCALIZE[31024])</onclick>
 					<label>15016</label>
 					<label2>$LOCALIZE[31250]</label2>
 					<icon>settings/icon_games.png</icon>

@@ -633,7 +633,7 @@
 				<ondown>noop</ondown>
 				<onleft>5</onleft>
 				<onright>noop</onright>
-				<onclick>RunScript(script.embuary.helper,action=textviewer,header='empty',message='$ESCINFO[Control.GetLabel(6)]')</onclick>
+				<onclick>RunScript(script.skinvariables,run_dialog=textviewer,heading='empty',text='$ESCINFO[Control.GetLabel(6)]')</onclick>
 				<visible>Control.IsVisible(96) + !String.IsEmpty(Control.GetLabel(6))</visible>
 				<texturefocus>views/more_fo.png</texturefocus>
 				<texturenofocus>views/more_nf.png</texturenofocus>

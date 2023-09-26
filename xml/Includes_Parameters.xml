@@ -1,4 +1,12 @@
 <includes>
+	<include name="XRayCastListItems">
+		<item id="$PARAM[item_index]">
+			<label>$INFO[Container(999).ListItemAbsolute($PARAM[item_index]).Label]</label>
+			<label2>$INFO[Container(999).ListItemAbsolute($PARAM[item_index]).Label2]</label2>
+			<icon>$INFO[Container(999).ListItemAbsolute($PARAM[item_index]).Icon]</icon>
+			<visible>!String.IsEmpty(Container(999).ListItemAbsolute($PARAM[item_index]).Label)</visible>
+		</item>
+	</include>
 	<include name="WeatherHourlyItem">
 		<item>
 			<label>$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Time)]</label>
@@ -11,7 +19,7 @@
 	<include name="WeatherDailyItem">
 		<item>
 			<label>$INFO[Window(weather).Property(Daily.$PARAM[item_index].ShortDay)]</label>
-			<label2>$INFO[Window(weather).Property(Daily.$PARAM[item_index].LowTemperature] ∙ $INFO[Window(weather).Property(Daily.$PARAM[item_index].HighTemperature]</label2>
+			<label2>$INFO[Window(weather).Property(Daily.$PARAM[item_index].LowTemperature)] ∙ $INFO[Window(weather).Property(Daily.$PARAM[item_index].HighTemperature)]</label2>
 			<icon>$INFO[Window(weather).Property(Daily.$PARAM[item_index].FanartCode),weather/icons/,.png]</icon>
 			<property name="LongDay">$INFO[Window(weather).Property(Daily.$PARAM[item_index].LongDay)]</property>
 			<property name="Outlook">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Outlook)]</property>

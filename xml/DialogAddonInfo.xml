@@ -255,7 +255,7 @@
 					<height>116</height>
 					<onup>Close</onup>
 					<ondown condition="Control.IsVisible(50)">50</ondown>
-					<onclick>RunScript(script.embuary.helper,action=textviewer,header='$LOCALIZE[24054]',message='$ESCINFO[ListItem.AddonNews]')</onclick>
+					<onclick>RunScript(script.skinvariables,run_dialog=textviewer,heading='$LOCALIZE[24054]',text='$ESCINFO[ListItem.AddonNews]')</onclick>
 					<font>Med24</font>
 					<label>$LOCALIZE[31256]</label>
 					<textoffsetx>28</textoffsetx>
@@ -539,7 +539,7 @@
 					<height>23</height>
 					<onleft>7001</onleft>
 					<onright>50</onright>
-					<onclick>RunScript(script.embuary.helper,action=textviewer,header='empty',message='$ESCINFO[ListItem.AddonDescription]')</onclick>
+					<onclick>RunScript(script.skinvariables,run_dialog=textviewer,heading='empty',text='$ESCINFO[ListItem.AddonDescription]')</onclick>
 					<texturefocus>views/more_fo.png</texturefocus>
 					<texturenofocus>views/more_nf.png</texturenofocus>
 					<visible>Control.IsVisible(96)</visible>

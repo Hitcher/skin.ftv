@@ -379,7 +379,7 @@
 					<focusedcolor>ffffaf37</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
-					<onclick>RunScript(script.embuary.helper,action=textviewer,header='empty',message='$ESCINFO[System.PrivacyPolicy]')</onclick>
+					<onclick>RunScript(script.skinvariables,run_dialog=textviewer,heading='empty',text='$ESCINFO[System.PrivacyPolicy]')</onclick>
 				</control>
 			</control>
 			<control type="grouplist">

@@ -44,7 +44,7 @@
 	</include>
 	<!-- Debug window label -->
 	<include name="DebugWindowLabel">
-			<width>1920</width>
+		<width>1920</width>
 		<height>21</height>
 		<textcolor>FF0000FF</textcolor>
 		<shadowcolor>FF000000</shadowcolor>
@@ -53,7 +53,7 @@
 	</include>
 	<!-- Debug dialog label -->
 	<include name="DebugDialogLabel">
-			<width>1920</width>
+		<width>1920</width>
 		<height>21</height>
 		<textcolor>FFFF0000</textcolor>
 		<shadowcolor>FF000000</shadowcolor>
@@ -62,7 +62,7 @@
 	</include>
 	<!-- Debug control label -->
 	<include name="DebugControlLabel">
-			<width>1920</width>
+		<width>1920</width>
 		<height>21</height>
 		<textcolor>FFFF0000</textcolor>
 		<shadowcolor>FF000000</shadowcolor>
