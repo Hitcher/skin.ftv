@@ -1534,7 +1534,7 @@
 		<value condition="!String.IsEmpty(ListItem.Comment)">$INFO[ListItem.Comment]</value>
 		<value condition="!String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
 		<value condition="!String.IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>
-		<value>$LOCALIZE[161]</value>
+		<value>$LOCALIZE[31087]</value>
 	</variable>
 	<variable name="PercentRemaining">
 		<value condition="!Integer.IsGreater(ListItem.PercentPlayed,00) + !Window.IsVisible(movieinformation)">$LOCALIZE[31060]</value>

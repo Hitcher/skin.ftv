@@ -386,6 +386,7 @@
 				<animation effect="rotate" end="360" center="auto" time="1680" loop="true" reversible="false" condition="true">Conditional</animation>
 			</control>
 		</control>
+		<!-- Fullscreen images -->
 		<control type="group">
 			<visible>Control.HasFocus(99)</visible>
 			<control type="image">
