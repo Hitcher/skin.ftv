@@ -423,10 +423,6 @@ msgctxt "#31097"
 msgid "Play[CR]Song"
 msgstr ""
 
-msgctxt "#31097"
-msgid "TV Show Wide"
-msgstr ""
-
 # empty strings from id 31096 to 31097
 msgctxt "#31098"
 msgid "Press 'Continue?' to watch the next episode or 'Cancel' to stop watching."
@@ -555,6 +551,10 @@ msgstr ""
 
 msgctxt "#31129"
 msgid "Kodi"
+msgstr ""
+
+msgctxt "#31130"
+msgid "TV Show Wide"
 msgstr ""
 
 # empty string with id 31130

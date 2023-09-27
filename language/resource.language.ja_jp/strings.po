@@ -421,10 +421,6 @@ msgctxt "#31097"
 msgid "Play[CR]Song"
 msgstr ""
 
-msgctxt "#31097"
-msgid "TV Show Wide"
-msgstr ""
-
 msgctxt "#31098"
 msgid "Press 'Continue?' to watch the next episode or 'Cancel' to stop watching."
 msgstr "'続行しますか？' を押して、次のエピソードへ、視聴をやめるには、'キャンセル' を押します。"
@@ -552,6 +548,10 @@ msgstr "fTVについて"
 msgctxt "#31129"
 msgid "Kodi"
 msgstr "Kodi"
+
+msgctxt "#31130"
+msgid "TV Show Wide"
+msgstr ""
 
 msgctxt "#31131"
 msgid "Enable Wide TV Show Icons"
