@@ -80,7 +80,7 @@
 	</variable>
 	<variable name="DialogVideoInfoListContent">
 		<value condition="String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEqual(ListItem.DBTYPE,movie)">plugin://plugin.video.themoviedb.helper?info=cast&amp;tmdb_type=movie&amp;query=$INFO[ListItem.Title]&amp;year=$INFO[ListItem.Year]&amp;nextpage=false</value>
-		<value condition="String.IsEmpty(Window(home).Property(RecommendedVideos)) + !String.IsEqual(ListItem.DBTYPE,movie)">plugin://plugin.video.themoviedb.helper?info=cast&amp;tmdb_type=tv&amp;query=$INFO[ListItem.TVShowTitle]&amp;year=$INFO[ListItem.Year]&amp;nextpage=true</value>
+		<value condition="String.IsEmpty(Window(home).Property(RecommendedVideos)) + !String.IsEqual(ListItem.DBTYPE,movie)">plugin://plugin.video.themoviedb.helper?info=cast&amp;tmdb_type=tv&amp;query=$INFO[ListItem.TVShowTitle]&amp;year=$INFO[ListItem.Year]&amp;nextpage=false</value>
 		<value condition="!String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEqual(ListItem.DBTYPE,movie)">plugin://plugin.video.themoviedb.helper?info=recommendations&amp;tmdb_type=movie&amp;query=$INFO[ListItem.Title]&amp;year=$INFO[ListItem.Year]&amp;nextpage=false</value>
 		<value condition="!String.IsEmpty(Window(home).Property(RecommendedVideos)) + !String.IsEqual(ListItem.DBTYPE,movie)">plugin://plugin.video.themoviedb.helper?info=recommendations&amp;tmdb_type=tv&amp;query=$INFO[ListItem.TVShowTitle]&amp;year=$INFO[ListItem.Year]&amp;nextpage=false</value>
 	</variable>
