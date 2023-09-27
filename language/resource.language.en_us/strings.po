@@ -376,6 +376,10 @@ msgctxt "#31086"
 msgid "Sorted by"
 msgstr "Sorted by"
 
+msgctxt "#31087"
+msgid "Unavailable"
+msgstr ""
+
 msgctxt "#31088"
 msgid "Current Playlist"
 msgstr "Current Playlist"
@@ -407,6 +411,14 @@ msgstr "Save Playlist"
 msgctxt "#31095"
 msgid "Clear Playlist"
 msgstr "Clear Playlist"
+
+msgctxt "#31096"
+msgid "Play[CR]Album"
+msgstr ""
+
+msgctxt "#31097"
+msgid "Play[CR]Song"
+msgstr ""
 
 msgctxt "#31097"
 msgid "TV Show Wide"
@@ -470,6 +482,10 @@ msgstr ""
 
 msgctxt "#31112"
 msgid "Song List"
+msgstr ""
+
+msgctxt "#31113"
+msgid "Recommended viewing"
 msgstr ""
 
 msgctxt "#31114"

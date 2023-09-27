@@ -378,6 +378,10 @@ msgctxt "#31086"
 msgid "Sorted by"
 msgstr "Sortiert nach"
 
+msgctxt "#31087"
+msgid "Unavailable"
+msgstr ""
+
 msgctxt "#31088"
 msgid "Current Playlist"
 msgstr "Aktuelle Wiedergabeliste"
@@ -409,6 +413,14 @@ msgstr "Wiedergabeliste speichern"
 msgctxt "#31095"
 msgid "Clear Playlist"
 msgstr "Wiedergabeliste löschen"
+
+msgctxt "#31096"
+msgid "Play[CR]Album"
+msgstr ""
+
+msgctxt "#31097"
+msgid "Play[CR]Song"
+msgstr ""
 
 msgctxt "#31097"
 msgid "TV Show Wide"
@@ -473,6 +485,10 @@ msgstr ""
 
 msgctxt "#31112"
 msgid "Song List"
+msgstr ""
+
+msgctxt "#31113"
+msgid "Recommended viewing"
 msgstr ""
 
 # empty strings from id 31111 to 31113

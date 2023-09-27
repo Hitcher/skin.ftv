@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-09-18 08:49+0000\n"
+"PO-Revision-Date: 2023-09-27 11:19+0000\n"
 "Last-Translator: Massimo Pissarello <mapi68@gmail.com>\n"
 "Language-Team: Italian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/it_it/>\n"
 "Language: it_it\n"
@@ -378,6 +378,10 @@ msgctxt "#31086"
 msgid "Sorted by"
 msgstr "Ordinati per"
 
+msgctxt "#31087"
+msgid "Unavailable"
+msgstr ""
+
 msgctxt "#31088"
 msgid "Current Playlist"
 msgstr "Playlist attuale"
@@ -409,6 +413,14 @@ msgstr "Salva playlist"
 msgctxt "#31095"
 msgid "Clear Playlist"
 msgstr "Svuota playlist"
+
+msgctxt "#31096"
+msgid "Play[CR]Album"
+msgstr "Play[CR]Album"
+
+msgctxt "#31097"
+msgid "Play[CR]Song"
+msgstr "Play[CR]Brano"
 
 msgctxt "#31097"
 msgid "TV Show Wide"
@@ -474,6 +486,10 @@ msgstr "Episodio wide"
 msgctxt "#31112"
 msgid "Song List"
 msgstr "Lista brani"
+
+msgctxt "#31113"
+msgid "Recommended viewing"
+msgstr ""
 
 # empty strings from id 31111 to 31113
 msgctxt "#31114"
@@ -723,7 +739,7 @@ msgstr "I tuoi artisti"
 
 msgctxt "#31187"
 msgid "Your Genres"
-msgstr ""
+msgstr "I tuoi generi"
 
 # empty strings from id 31187 to 31193
 msgctxt "#31194"
@@ -825,11 +841,11 @@ msgstr "Personalizza gruppo widget"
 # empty string with id 31220
 msgctxt "#31221"
 msgid "Music Addons"
-msgstr ""
+msgstr "Add-on musica"
 
 msgctxt "#31222"
 msgid "Program Addons"
-msgstr ""
+msgstr "Add-on programmi"
 
 msgctxt "#31223"
 msgid "Video Addons"
