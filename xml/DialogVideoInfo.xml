@@ -2,14 +2,14 @@
 <window>
 	<!-- movieinformation -->
 	<defaultcontrol always="true">7000</defaultcontrol>
-	<onload>Control.Move(50,$INFO[Container(50).CurrentItem,-])</onload>
-	<onload>Control.Move(50,1)</onload>
-	<onload>Control.Move(500,$INFO[Container(500).CurrentItem,-])</onload>
-	<onload>Control.Move(500,1)</onload>
-	<onload>Control.Move(5001,$INFO[Container(5001).CurrentItem,-])</onload>
-	<onload>Control.Move(5001,1)</onload>
-	<onload>Control.Move(5002,$INFO[Container(5002).CurrentItem,-])</onload>
-	<onload>Control.Move(5002,1)</onload>
+	<onunload>Control.Move(50,$INFO[Container(50).CurrentItem,-])</onunload>
+	<onunload>Control.Move(50,1)</onunload>
+	<onunload>Control.Move(500,$INFO[Container(500).CurrentItem,-])</onunload>
+	<onunload>Control.Move(500,1)</onunload>
+	<onunload>Control.Move(5001,$INFO[Container(5001).CurrentItem,-])</onunload>
+	<onunload>Control.Move(5001,1)</onunload>
+	<onunload>Control.Move(5002,$INFO[Container(5002).CurrentItem,-])</onunload>
+	<onunload>Control.Move(5002,1)</onunload>
 	<onload>Skin.SetBool(TMDbHelper.DirectCallAuto)</onload>
 	<onload condition="System.HasAddon(script.tvtunes)">RunScript(script.tvtunes,backend=True)</onload>
 	<onunload>ClearProperty(StarredInTV,home)</onunload>
@@ -17,9 +17,11 @@
 	<onunload>SetFocus(50)</onunload>
 	<animation effect="fade" end="100" start="100" time="200">WindowClose</animation>
 	<controls>
+		<!-- TMDbHelper monitor list -->
 		<control type="list" id="99950">
 			<include>HiddenList</include>
 		</control>
+		<!-- Content type includes -->
 		<include condition="!String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + !Skin.HasSetting(ExtendedInfo)">Includes_Dialog_Default_Video_Information</include>
 		<include condition="String.IsEmpty(ListItem.Property(item.type),movie) + String.IsEmpty(ListItem.Property(item.type),tv) + !String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + Skin.HasSetting(ExtendedInfo)">Includes_Dialog_Video_Information</include>
 		<include condition="[!String.IsEmpty(ListItem.Property(item.type),movie) | !String.IsEmpty(ListItem.Property(item.type),tv)] + !String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + Skin.HasSetting(ExtendedInfo)">Includes_Dialog_Movie_TV_Information</include>

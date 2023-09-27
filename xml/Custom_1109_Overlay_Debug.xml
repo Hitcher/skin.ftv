@@ -433,7 +433,7 @@
 		<control type="grouplist">
 			<right>15</right>
 			<top>15</top>
-			<width>1920</width>
+			<width>1400</width>
 			<height>450</height>
 			<itemgap>12</itemgap>
 			<visible>Skin.HasSetting(DebugInfo)</visible>
@@ -481,6 +481,24 @@
 				<scroll>true</scroll>
 				<label>$INFO[ListItem.Property(item.type),[COLOR FF00FF00]Item Type - [/COLOR]]</label>
 				<visible>!String.IsEmpty(ListItem.Property(item.type))</visible>
+			</control>
+			<!-- DBID label -->
+			<control type="label">
+				<include>DebugControlLabel</include>
+				<label>$INFO[ListItem.DBID,[COLOR FF00FF00]DBID - [/COLOR]]</label>
+				<visible>!String.IsEmpty(ListItem.DBID)</visible>
+			</control>
+			<!-- TvShowDBID label -->
+			<control type="label">
+				<include>DebugControlLabel</include>
+				<label>$INFO[ListItem.TvShowDBID,[COLOR FF00FF00]TvShowDBID - [/COLOR]]</label>
+				<visible>!String.IsEmpty(ListItem.TvShowDBID)</visible>
+			</control>
+			<!-- IMDBNumber label -->
+			<control type="label">
+				<include>DebugControlLabel</include>
+				<label>$INFO[ListItem.IMDBNumber,[COLOR FF00FF00]IMDBNumber - [/COLOR]]</label>
+				<visible>!String.IsEmpty(ListItem.IMDBNumber)</visible>
 			</control>
 		</control>
 	</controls>

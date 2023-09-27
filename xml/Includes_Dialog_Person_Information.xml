@@ -47,8 +47,8 @@
 			<animation effect="fade" end="100" start="0" time="200">WindowOpen</animation>
 			<!-- Icon -->
 			<control type="image">
-				<width>290</width>
-				<height>430</height>
+				<width>320</width>
+				<height>480</height>
 				<texture>$VAR[VideoInfoImage]</texture>
 				<aspectratio aligny="center">scale</aspectratio>
 			</control>
@@ -216,7 +216,7 @@
 				<label>$VAR[ExtendedInfoLabelHeading]</label>
 				<animation delay="400" effect="fade" end="100" start="0" time="200">Visible</animation>
 				<animation effect="fade" end="0" start="100" time="0">Hidden</animation>
-				<visible>!Control.HasFocus(500)</visible>
+				<visible>!Control.HasFocus(500) + !Container(500).IsUpdating + !String.IsEmpty(Container(500).ListItem.Label)</visible>
 			</control>
 			<!-- No info found -->
 			<control type="label">

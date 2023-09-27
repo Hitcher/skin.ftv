@@ -484,7 +484,9 @@ msgctxt "#31112"
 msgid "Song List"
 msgstr ""
 
-#empty string with id 31113
+msgctxt "#31113"
+msgid "Recommended viewing"
+msgstr ""
 
 msgctxt "#31114"
 msgid "Customise Shutdown Menu"

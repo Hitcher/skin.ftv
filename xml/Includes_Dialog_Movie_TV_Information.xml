@@ -44,8 +44,8 @@
 			<animation effect="fade" end="100" start="0" time="200">WindowOpen</animation>
 			<!-- Icon -->
 			<control type="image">
-				<width>290</width>
-				<height>430</height>
+				<width>320</width>
+				<height>480</height>
 				<texture>$VAR[VideoInfoImage]</texture>
 				<aspectratio aligny="center">scale</aspectratio>
 			</control>
@@ -55,17 +55,32 @@
 				<height>35</height>
 				<onup condition="!Control.IsVisible(96)">Close</onup>
 				<onup condition="Control.IsVisible(96)">3000</onup>
-				<ondown>noop</ondown>
+				<ondown>7001</ondown>
 				<onleft>Close</onleft>
 				<onright>500</onright>
-				<onfocus>ClearProperty(StarredInTV,home)</onfocus>
-				<onfocus>ClearProperty(ActorImages,home)</onfocus>
+				<onfocus>ClearProperty(RecommendedVideos,home)</onfocus>
 				<font>Light35</font>
 				<textcolor>ffdadada</textcolor>
 				<focusedcolor>ffffc24b</focusedcolor>
 				<label>$LOCALIZE[31026]</label>
 				<include>NoTextures</include>
-				<animation condition="![String.IsEmpty(Window(home).Property(StarredInTV)) + String.IsEmpty(Window(home).Property(ActorImages))]" effect="fade" end="50" start="100" time="0">Conditional</animation>
+				<animation condition="!String.IsEmpty(Window(home).Property(RecommendedVideos))" effect="fade" end="50" start="100" time="0">Conditional</animation>
+			</control>
+			<control id="7001" type="button">
+				<top>573</top>
+				<width>480</width>
+				<height>35</height>
+				<onup>7000</onup>
+				<ondown>noop</ondown>
+				<onleft>Close</onleft>
+				<onright>500</onright>
+				<onfocus>SetProperty(RecommendedVideos,1,home)</onfocus>
+				<font>Light35</font>
+				<textcolor>ffdadada</textcolor>
+				<focusedcolor>ffffc24b</focusedcolor>
+				<label>$LOCALIZE[31070]</label>
+				<include>NoTextures</include>
+				<animation condition="String.IsEmpty(Window(home).Property(RecommendedVideos))" effect="fade" end="50" start="100" time="0">Conditional</animation>
 			</control>
 		</control>
 		<control type="group">
@@ -300,10 +315,10 @@
 				<height>32</height>
 				<font>Med32</font>
 				<textcolor>$VAR[ExtendedInfoLabelColor]</textcolor>
-				<label>$LOCALIZE[31076]</label>
-				<visible>!String.IsEmpty(Container(500).ListItem.Label) + !Control.HasFocus(500)</visible>
+				<label>$VAR[VideoInfoLabelHeading]</label>
 				<animation delay="400" effect="fade" end="100" start="0" time="200">Visible</animation>
 				<animation effect="fade" end="0" start="100" time="0">Hidden</animation>
+				<visible>!Control.HasFocus(500) + !Container(500).IsUpdating + !String.IsEmpty(Container(500).ListItem.Label)</visible>
 			</control>
 			<!-- No info found -->
 			<control type="label">
@@ -325,18 +340,21 @@
 				<top>-271</top>
 				<width>2400</width>
 				<height>576</height>
-				<onclick>RunScript(plugin.video.themoviedb.helper,add_path=$INFO[Container(500).ListItem.FolderPath],type=person,call_auto=1113)</onclick>
-				<onclick>Control.SetFocus(500,0,absolute)</onclick>
+				<onclick condition="String.IsEmpty(Window(home).Property(RecommendedVideos))">RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Container(500).ListItem.Label],type=person,call_auto=1113)</onclick>
+				<onclick condition="!String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEqual(ListItem.DBTYPE,movie)">RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Container(500).ListItem.Label],type=movie,call_auto=1113)</onclick>
+				<onclick condition="!String.IsEmpty(Window(home).Property(RecommendedVideos)) + !String.IsEqual(ListItem.DBTYPE,movie)">RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Container(500).ListItem.Label],type=tv,call_auto=1113)</onclick>
 				<onup>Control.SetFocus(500,0,absolute)</onup>
 				<onup condition="Control.IsVisible(96)">3000</onup>
 				<onup>Control.SetFocus(500,0,absolute)</onup>
 				<ondown>noop</ondown>
 				<onleft>Control.SetFocus(500,0,absolute)</onleft>
-				<onleft>7000</onleft>
+				<onleft condition="String.IsEmpty(Window(home).Property(RecommendedVideos))">7000</onleft>
+				<onleft condition="!String.IsEmpty(Window(home).Property(RecommendedVideos))">7001</onleft>
 				<onright>noop</onright>
 				<onright condition="!Window.IsVisible(1103)">SetProperty(BounceRight,1,Home)</onright>
 				<onback>Control.SetFocus(500,0,absolute)</onback>
-				<onback>7000</onback>
+				<onback condition="String.IsEmpty(Window(home).Property(RecommendedVideos))">7000</onback>
+				<onback condition="!String.IsEmpty(Window(home).Property(RecommendedVideos))">7001</onback>
 				<preloaditems>2</preloaditems>
 				<focusposition>2</focusposition>
 				<viewtype label="">list</viewtype>
@@ -361,14 +379,14 @@
 							<width>320</width>
 							<height>480</height>
 							<aspectratio align="center">scale</aspectratio>
-							<texture background="true">$INFO[ListItem.Icon]</texture>
+							<texture background="true">$INFO[ListItem.Art(poster)]</texture>
 						</control>
 						<control type="image">
 							<bottom>48</bottom>
 							<width>320</width>
 							<height>165</height>
 							<texture border="2">views/default_overlay.png</texture>
-							<visible>!String.Contains(ListItem.Icon,Default)</visible>
+							<visible>!String.Contains(ListItem.Art(poster),Default) + !String.IsEmpty(ListItem.Label2)</visible>
 						</control>
 						<control type="label">
 							<left>18</left>
@@ -379,7 +397,7 @@
 							<textcolor>ffffffff</textcolor>
 							<shadowcolor>80000000</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
-							<visible>!Container.Content(Sets)</visible>
+							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label2)</visible>
 						</control>
 						<control type="label">
 							<left>18</left>
@@ -391,7 +409,7 @@
 							<textcolor>ffffffff</textcolor>
 							<shadowcolor>80000000</shadowcolor>
 							<label>$INFO[ListItem.Label2,$LOCALIZE[20347] ,]</label>
-							<visible>!Container.Content(Sets)</visible>
+							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label2)</visible>
 						</control>
 						<control type="image">
 							<top>48</top>
@@ -433,14 +451,14 @@
 							<width>320</width>
 							<height>480</height>
 							<aspectratio align="center">scale</aspectratio>
-							<texture background="true">$INFO[ListItem.Icon]</texture>
+							<texture background="true">$INFO[ListItem.Art(poster)]</texture>
 						</control>
 						<control type="image">
 							<bottom>48</bottom>
 							<width>320</width>
 							<height>165</height>
 							<texture border="2">views/default_overlay.png</texture>
-							<visible>!String.Contains(ListItem.Icon,Default)</visible>
+							<visible>!String.Contains(ListItem.Art(poster),Default) + !String.IsEmpty(ListItem.Label2)</visible>
 							<include content="FocusedListIDAnimation">
 								<param name="ListID" value="500"/>
 							</include>
@@ -455,7 +473,7 @@
 							<textcolor>ffffffff</textcolor>
 							<shadowcolor>80000000</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
-							<visible>!Container.Content(Sets)</visible>
+							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label2)</visible>
 							<include content="FocusedListIDAnimation">
 								<param name="ListID" value="500"/>
 							</include>
@@ -470,7 +488,7 @@
 							<textcolor>ffffffff</textcolor>
 							<shadowcolor>80000000</shadowcolor>
 							<label>$INFO[ListItem.Label2,$LOCALIZE[20347] ,]</label>
-							<visible>!Container.Content(Sets)</visible>
+							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label2)</visible>
 							<include content="FocusedListIDAnimation">
 								<param name="ListID" value="500"/>
 							</include>
@@ -487,7 +505,7 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<content>$VAR[DialogMovieInfoListContent]</content>
+				<content>$VAR[DialogVideoInfoListContent]</content>
 			</control>
 			<!-- Info -->
 			<control type="grouplist">

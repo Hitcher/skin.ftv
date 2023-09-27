@@ -62,7 +62,7 @@
 	</include>
 	<!-- Debug control label -->
 	<include name="DebugControlLabel">
-		<width>1920</width>
+		<width>1400</width>
 		<height>21</height>
 		<textcolor>FFFF0000</textcolor>
 		<shadowcolor>FF000000</shadowcolor>

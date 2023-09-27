@@ -512,7 +512,7 @@
 						<height>80</height>
 						<texture>osd/step_forward.png</texture>
 						<animation condition="String.Contains(Player.SeekStepSize,-) | [String.IsEmpty(Player.SeekStepSize) + String.Contains(Player.SeekOffset,-)]" effect="rotatey" end="180" center="40,0" time="0">Conditional</animation>
-						<visible>!String.IsEmpty(Player.SeekOffset) | !String.IsEmpty(Player.SeekStepSize)</visible>
+						<visible>$EXP[SeekOffsetLargeLabel]</visible>
 					</control>
 				</control>
 				<control type="label">
