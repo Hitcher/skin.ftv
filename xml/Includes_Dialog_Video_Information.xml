@@ -759,7 +759,7 @@
 				<label>$VAR[VideoInfoLabelHeading]</label>
 				<animation delay="400" effect="fade" end="100" start="0" time="200">Visible</animation>
 				<animation effect="fade" end="0" start="100" time="0">Hidden</animation>
-				<visible>!Control.HasFocus(500) + !Container(500).IsUpdating + !String.IsEmpty(Container(500).ListItem.Label)</visible>
+				<visible>!String.IsEmpty(Container(500).ListItem.Label) + !Control.HasFocus(500)</visible>
 			</control>
 			<!-- No info found -->
 			<control type="label">
@@ -771,8 +771,8 @@
 				<label>$LOCALIZE[31078]</label>
 				<visible>String.IsEmpty(Container(500).ListItem.Label)</visible>
 				<animation delay="400" effect="fade" end="100" start="0" time="200">Visible</animation>
-				<animation condition="Control.HasFocus(55)" effect="fade" end="0" start="100" time="0">Conditional</animation>
-				<animation condition="!Control.HasFocus(55)" delay="200" effect="fade" end="100" start="0" time="80">Conditional</animation>
+				<animation condition="Control.HasFocus(500)" effect="fade" end="0" start="100" time="0">Conditional</animation>
+				<animation condition="!Control.HasFocus(500)" delay="200" effect="fade" end="100" start="0" time="80">Conditional</animation>
 			</control>
 			<!-- Cast -->
 			<control id="500" type="fixedlist">

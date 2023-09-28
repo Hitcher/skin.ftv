@@ -738,9 +738,9 @@
 				<font>Med32</font>
 				<textcolor>ff717171</textcolor>
 				<label>$LOCALIZE[31076]</label>
-				<visible>!String.IsEmpty(Container(50).ListItem.Label) + !Control.HasFocus(50)</visible>
 				<animation delay="400" effect="fade" end="100" start="0" time="200">Visible</animation>
 				<animation effect="fade" end="0" start="100" time="0">Hidden</animation>
+				<visible>!String.IsEmpty(Container(50).ListItem.Label) + !Control.HasFocus(50)</visible>
 			</control>
 			<!-- Cast -->
 			<control id="50" type="fixedlist">
