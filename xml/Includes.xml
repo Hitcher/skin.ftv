@@ -87,6 +87,18 @@
 			<animation delay="100" effect="fade" end="0" start="100" time="200">WindowClose</animation>
 		</control>
 	</include>
+	<!-- Video Info Cast List -->
+	<include name="VideoInfoCastList">
+		<control id="50" type="list">
+			<top>-10</top>
+			<width>10</width>
+			<height>1</height>
+			<viewtype label="">list</viewtype>
+			<orientation>horizontal</orientation>
+			<itemlayout height="1" width="1"/>
+			<focusedlayout height="1" width="1"/>
+		</control>
+	</include>
 	<!-- Message Background image -->
 	<include name="MessageBackground">
 		<texture border="2">dialogs/DialogMessageBackground.png</texture>
