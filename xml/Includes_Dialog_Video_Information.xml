@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include name="Includes_Dialog_Video_Information">
-		<!-- Hidden List -->
-		<include>VideoInfoCastList</include>
 		<!-- Hidden Button -->
 		<control id="7" type="button">
 			<include>HiddenControl</include>
@@ -461,7 +459,7 @@
 					<font>Light30Spaced</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffbcbcbc</textcolor>
-					<label>$INFO[Container(50).ListItemAbsolute(0).Label]$INFO[Container(50).ListItemAbsolute(1).Label,$COMMA ]$INFO[Container(50).ListItemAbsolute(2).Label,$COMMA ]</label>
+					<label>$INFO[Container(99950).ListItem.Property(Cast.1.Name)]$INFO[Container(99950).ListItem.Property(Cast.2.Name),$COMMA ]$INFO[Container(99950).ListItem.Property(Cast.3.Name),$COMMA ]</label>
 				</control>
 			</control>
 			<!-- Director -->
@@ -821,16 +819,7 @@
 							<width>320</width>
 							<height>480</height>
 							<aspectratio align="center">scale</aspectratio>
-							<texture background="true">$INFO[ListItem.Thumb]</texture>
-							<visible>String.IsEmpty(ListItem.Art(poster))</visible>
-						</control>
-						<control type="image">
-							<top>48</top>
-							<width>320</width>
-							<height>480</height>
-							<aspectratio align="center">scale</aspectratio>
 							<texture background="true">$INFO[ListItem.Art(poster)]</texture>
-							<visible>!String.IsEmpty(ListItem.Art(poster))</visible>
 						</control>
 						<control type="image">
 							<bottom>48</bottom>
@@ -902,16 +891,7 @@
 							<width>320</width>
 							<height>480</height>
 							<aspectratio align="center">scale</aspectratio>
-							<texture background="true">$INFO[ListItem.Thumb]</texture>
-							<visible>String.IsEmpty(ListItem.Art(poster))</visible>
-						</control>
-						<control type="image">
-							<top>48</top>
-							<width>320</width>
-							<height>480</height>
-							<aspectratio align="center">scale</aspectratio>
 							<texture background="true">$INFO[ListItem.Art(poster)]</texture>
-							<visible>!String.IsEmpty(ListItem.Art(poster))</visible>
 						</control>
 						<control type="image">
 							<bottom>48</bottom>

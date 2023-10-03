@@ -75,13 +75,14 @@
 		<value condition="!String.IsEmpty(Window(home).Property(ActorImages))">plugin://plugin.video.themoviedb.helper?info=images&amp;type=person&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;nextpage=false</value>
 	</variable>
 	<variable name="DialogMovieInfoListContent">
-		<value condition="String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEqual(ListItem.Property(item.type),movie)">plugin://plugin.video.themoviedb.helper?info=cast&amp;type=movie&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;nextpage=false</value>
-		<value condition="String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEqual(ListItem.Property(item.type),tv)">plugin://plugin.video.themoviedb.helper?info=cast&amp;type=tv&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;nextpage=false</value>
+		<value condition="String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEqual(ListItem.Property(item.type),movie)">plugin://plugin.video.themoviedb.helper?info=cast&amp;type=movie&amp;aggregate=true&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;nextpage=false</value>
+		<value condition="String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEqual(ListItem.Property(item.type),tv)">plugin://plugin.video.themoviedb.helper?info=cast&amp;type=tv&amp;aggregate=true&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;nextpage=false</value>
 		<value condition="!String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEqual(ListItem.Property(item.type),movie)">plugin://plugin.video.themoviedb.helper?info=recommendations&amp;type=movie&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;nextpage=false</value>
 		<value condition="!String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEqual(ListItem.Property(item.type),tv)">plugin://plugin.video.themoviedb.helper?info=recommendations&amp;type=tv&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;nextpage=false</value>
 	</variable>
 	<variable name="DialogVideoInfoListContent">
-		<value condition="String.IsEmpty(Window(home).Property(RecommendedVideos))">plugin://script.skinvariables/?info=get_container_labels&amp;containers=50&amp;infolabel=Label&amp;thumb=Icon&amp;label2=Label2&amp;numitems=$INFO[Container(50).NumItems]</value>
+		<value condition="String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEqual(ListItem.DBTYPE,movie)">plugin://plugin.video.themoviedb.helper?info=cast&amp;tmdb_type=movie&amp;aggregate=true&amp;query=$INFO[ListItem.Title]&amp;year=$INFO[ListItem.Year]&amp;nextpage=false</value>
+		<value condition="String.IsEmpty(Window(home).Property(RecommendedVideos)) + !String.IsEqual(ListItem.DBTYPE,movie)">plugin://plugin.video.themoviedb.helper?info=cast&amp;tmdb_type=tv&amp;aggregate=true&amp;query=$INFO[ListItem.TVShowTitle]&amp;year=$INFO[ListItem.Year]&amp;nextpage=false</value>
 		<value condition="!String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEqual(ListItem.DBTYPE,movie)">plugin://plugin.video.themoviedb.helper?info=recommendations&amp;tmdb_type=movie&amp;query=$INFO[ListItem.Title]&amp;year=$INFO[ListItem.Year]&amp;nextpage=false</value>
 		<value condition="!String.IsEmpty(Window(home).Property(RecommendedVideos)) + !String.IsEqual(ListItem.DBTYPE,movie)">plugin://plugin.video.themoviedb.helper?info=recommendations&amp;tmdb_type=tv&amp;query=$INFO[ListItem.TVShowTitle]&amp;year=$INFO[ListItem.Year]&amp;nextpage=false</value>
 	</variable>
