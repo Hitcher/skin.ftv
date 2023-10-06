@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-09-05 07:11+0000\n"
+"PO-Revision-Date: 2023-10-06 02:11+0000\n"
 "Last-Translator: Nao3Line Prez <n.yazawa6932@gmail.com>\n"
 "Language-Team: Indonesian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/id_id/>\n"
 "Language: id_id\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.18.2\n"
+"X-Generator: Weblate 5.0.2\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the Fire TV UI"
@@ -381,7 +381,7 @@ msgstr "Diurutkan berdasarkan"
 
 msgctxt "#31087"
 msgid "Unavailable"
-msgstr ""
+msgstr "Tidak tersedia"
 
 # empty string with id 31087
 msgctxt "#31088"
@@ -418,11 +418,11 @@ msgstr "Hapus DaftarPutar"
 
 msgctxt "#31096"
 msgid "Play[CR]Album"
-msgstr ""
+msgstr "Putar[CR]Album"
 
 msgctxt "#31097"
 msgid "Play[CR]Song"
-msgstr ""
+msgstr "Putar[CR]Lagu"
 
 # empty strings from id 31096 to 31097
 msgctxt "#31098"
@@ -479,15 +479,15 @@ msgstr "Ditulis oleh"
 
 msgctxt "#31111"
 msgid "Episode Wide"
-msgstr ""
+msgstr "Episode Lebar"
 
 msgctxt "#31112"
 msgid "Song List"
-msgstr ""
+msgstr "Daftar Lagu"
 
 msgctxt "#31113"
 msgid "Recommended viewing"
-msgstr ""
+msgstr "Rekomendasi tampilan"
 
 # empty strings from id 31111 to 31113
 msgctxt "#31114"
@@ -556,7 +556,7 @@ msgstr "Kodi"
 
 msgctxt "#31130"
 msgid "TV Show Wide"
-msgstr ""
+msgstr "Acara TV Lebar"
 
 # empty string with id 31130
 msgctxt "#31131"
@@ -741,7 +741,7 @@ msgstr "Artis Anda"
 
 msgctxt "#31187"
 msgid "Your Genres"
-msgstr ""
+msgstr "Aliran Anda"
 
 # empty strings from id 31187 to 31193
 msgctxt "#31194"
@@ -844,11 +844,11 @@ msgstr "Sesuaikan Grup Widget"
 # empty string with id 31220
 msgctxt "#31221"
 msgid "Music Addons"
-msgstr ""
+msgstr "Pengaya Musik"
 
 msgctxt "#31222"
 msgid "Program Addons"
-msgstr ""
+msgstr "Pengaya Program"
 
 # empty strings from id 31220 to 31222
 msgctxt "#31223"

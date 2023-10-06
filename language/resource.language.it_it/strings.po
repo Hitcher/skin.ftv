@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-09-27 11:19+0000\n"
+"PO-Revision-Date: 2023-10-06 02:11+0000\n"
 "Last-Translator: Massimo Pissarello <mapi68@gmail.com>\n"
 "Language-Team: Italian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/it_it/>\n"
 "Language: it_it\n"
@@ -380,7 +380,7 @@ msgstr "Ordinati per"
 
 msgctxt "#31087"
 msgid "Unavailable"
-msgstr ""
+msgstr "Non disponibile"
 
 msgctxt "#31088"
 msgid "Current Playlist"
@@ -485,7 +485,7 @@ msgstr "Lista brani"
 
 msgctxt "#31113"
 msgid "Recommended viewing"
-msgstr ""
+msgstr "Visione consigliata"
 
 # empty strings from id 31111 to 31113
 msgctxt "#31114"
@@ -554,7 +554,7 @@ msgstr "Kodi"
 
 msgctxt "#31130"
 msgid "TV Show Wide"
-msgstr ""
+msgstr "Serie TV wide"
 
 # empty string with id 31130
 msgctxt "#31131"
