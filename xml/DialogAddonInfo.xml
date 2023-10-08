@@ -6,7 +6,7 @@
 	<onload>Control.Move(50,$INFO[Container(50).CurrentItem,-])</onload>
 	<onload>Control.Move(50,1)</onload>
 	<onunload>ClearProperty(AddonDetails,home)</onunload>
-	<onunload>SetFocus(56)</onunload>
+	<onunload condition="Window.Next(programs)">SetFocus(56)</onunload>
 	<animation effect="fade" end="100" start="100" time="200">WindowClose</animation>
 	<controls>
 		<!-- Hidden Description -->

@@ -344,6 +344,7 @@
 		</control>
 		<control id="5" type="button">
 			<include>HiddenControl</include>
+			<onfocus>SetFocus(21)</onfocus>
 			<visible>Control.IsEnabled(5)</visible>
 		</control>
 	</include>
