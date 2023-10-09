@@ -826,7 +826,7 @@
 							<width>320</width>
 							<height>165</height>
 							<texture border="2">views/default_overlay.png</texture>
-							<visible>!String.Contains(ListItem.Art(poster),Default) + !String.IsEmpty(ListItem.Label)</visible>
+							<visible>!String.Contains(ListItem.Art(poster),Default) + !String.IsEmpty(ListItem.Label2)</visible>
 						</control>
 						<control type="label">
 							<left>18</left>
@@ -837,7 +837,7 @@
 							<textcolor>ffffffff</textcolor>
 							<shadowcolor>80000000</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
-							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label)</visible>
+							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label2)</visible>
 						</control>
 						<control type="label">
 							<left>18</left>
@@ -898,7 +898,7 @@
 							<width>320</width>
 							<height>165</height>
 							<texture border="2">views/default_overlay.png</texture>
-							<visible>!String.Contains(ListItem.Art(poster),Default) + !String.IsEmpty(ListItem.Label)</visible>
+							<visible>!String.Contains(ListItem.Art(poster),Default) + !String.IsEmpty(ListItem.Label2)</visible>
 							<include content="FocusedListIDAnimation">
 								<param name="ListID" value="500"/>
 							</include>
@@ -913,7 +913,7 @@
 							<textcolor>ffffffff</textcolor>
 							<shadowcolor>80000000</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
-							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label)</visible>
+							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label2)</visible>
 							<include content="FocusedListIDAnimation">
 								<param name="ListID" value="500"/>
 							</include>
