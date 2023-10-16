@@ -22,7 +22,14 @@
 				<scrolltime easing="inout" tween="sine">300</scrolltime>
 				<visible>!String.IsEmpty(Container.PluginName) | [!Container.Content(movies) + !Container.Content(sets) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(songs) + !Container.Content(albums) + !Container.Content(artists)]</visible>
 				<include>ListBounceAnimation</include>
-				<include>HomeToWindowSlideAnimation</include>
+				<include content="HomeToWindowSlideAnimation">
+					<param name="FocusRowID1_1" value="208,10"/>
+					<param name="FocusRowID1_2" value="512,-175"/>
+					<param name="FocusRowID2_2" value="512,195"/>
+					<param name="FocusRowID1_3" value="512,-246"/>
+					<param name="FocusRowID2_3" value="512,10"/>
+					<param name="FocusRowID3_3" value="512,168"/>
+				</include>
 				<itemlayout height="576" width="300">
 					<control type="group">
 						<animation center="150,288" condition="true" effect="zoom" end="85" start="85">Conditional</animation>
