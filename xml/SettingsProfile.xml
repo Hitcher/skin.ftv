@@ -483,7 +483,7 @@
 				<height>76</height>
 				<font>Light24</font>
 				<align>center</align>
-				<label fallback="13170">$INFO[Container(2).ListItem.Label2]</label>
+				<label fallback="$LOCALIZE[13170]">$INFO[Container(2).ListItem.Label2]</label>
 			</control>
 		</control>
 	</controls>

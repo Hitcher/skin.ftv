@@ -35,7 +35,7 @@
 					<width>1568</width>
 					<height>68</height>
 					<font>Med59</font>
-					<label fallback="8">$INFO[Window(Weather).Property(Location)]</label>
+					<label fallback="$LOCALIZE[8]">$INFO[Window(Weather).Property(Location)]</label>
 					<textcolor>ffffffff</textcolor>
 				</control>
 				<control type="label">
