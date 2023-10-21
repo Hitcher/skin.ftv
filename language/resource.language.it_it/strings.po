@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2023-10-06 02:11+0000\n"
 "Last-Translator: Massimo Pissarello <mapi68@gmail.com>\n"
@@ -584,6 +584,10 @@ msgstr "Menu DVD"
 msgctxt "#31137"
 msgid "Video Options"
 msgstr "Opzioni video"
+
+msgctxt "#31138"
+msgid "Colour Management"
+msgstr ""
 
 # empty strings from id 31138 to 31142
 msgctxt "#31143"
