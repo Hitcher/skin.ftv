@@ -196,7 +196,7 @@
 			<control type="grouplist" id="5">
 				<left>87</left>
 				<top>60</top>
-				<width>805</width>
+				<width>1746</width>
 				<height>348</height>
 				<itemgap>0</itemgap>
 				<onleft>noop</onleft>
