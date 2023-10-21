@@ -581,6 +581,10 @@ msgctxt "#31137"
 msgid "Video Options"
 msgstr "ビデオオプション"
 
+msgctxt "#31138"
+msgid "Colour Management"
+msgstr ""
+
 msgctxt "#31143"
 msgid "This will undo any changes you've made to the home menu and widgets."
 msgstr "これにより、ホームメニューとウィジェットに加えた変更が取り消されます。"

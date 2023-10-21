@@ -580,6 +580,10 @@ msgctxt "#31137"
 msgid "Video Options"
 msgstr "Video Options"
 
+msgctxt "#31138"
+msgid "Colour Management"
+msgstr ""
+
 msgctxt "#31143"
 msgid "This will undo any changes you've made to the home menu and widgets."
 msgstr "This will undo any changes you've made to the home menu and widgets."
