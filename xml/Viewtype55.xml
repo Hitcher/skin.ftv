@@ -45,7 +45,7 @@
 							<width>640</width>
 							<height>480</height>
 							<aspectratio align="center">scale</aspectratio>
-							<texture background="true" fallback="views/wide_fallback.png">$INFO[ListItem.Icon]</texture>
+							<texture background="true" fallback="views/wide_fallback.png">$VAR[WideImage]</texture>
 						</control>
 						<control type="image">
 							<top>48</top>
@@ -116,7 +116,7 @@
 							<width>640</width>
 							<height>480</height>
 							<aspectratio align="center">scale</aspectratio>
-							<texture background="true" fallback="views/wide_fallback.png">$INFO[ListItem.Icon]</texture>
+							<texture background="true" fallback="views/wide_fallback.png">$VAR[WideImage]</texture>
 						</control>
 						<control type="image">
 							<top>48</top>

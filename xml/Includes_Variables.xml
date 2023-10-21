@@ -1184,7 +1184,15 @@
 		<value condition="Control.IsVisible(61)">61</value>
 		<value>50</value>
 	</variable>
+	<variable name="SquareImage">
+		<value condition="String.IsEqual(ListItem.Label,$LOCALIZE[33078]) | String.IsEqual(ListItem.Label,$LOCALIZE[22082])">views/next_page_square.png</value>
+		<value condition="ListItem.IsParentFolder">views/folder_back_square.png</value>
+		<value condition="String.IsEqual(ListItem.Icon,ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="Container.Content(episodes) + !String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
+		<value>$INFO[ListItem.Icon]</value>
+	</variable>
 	<variable name="WideImage">
+		<value condition="String.IsEqual(ListItem.Label,$LOCALIZE[33078]) | String.IsEqual(ListItem.Label,$LOCALIZE[22082])">views/next_page_wide.png</value>
 		<value condition="ListItem.IsParentFolder">views/folder_back_wide.png</value>
 		<value condition="String.IsEqual(ListItem.Icon,ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="Container.Content(episodes) + !String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
@@ -1192,6 +1200,7 @@
 		<value>views/episode_fallback.png</value>
 	</variable>
 	<variable name="TVShowWideImage">
+		<value condition="String.IsEqual(ListItem.Label,$LOCALIZE[33078]) | String.IsEqual(ListItem.Label,$LOCALIZE[22082])">views/next_page_wide.png</value>
 		<value condition="ListItem.IsParentFolder">views/folder_back_wide.png</value>
 		<value condition="!String.IsEmpty(ListItem.Art(ftv))">$INFO[ListItem.Art(ftv)]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
@@ -1199,6 +1208,7 @@
 		<value>views/episode_fallback.png</value>
 	</variable>
 	<variable name="PosterImage">
+		<value condition="String.IsEqual(ListItem.Label,$LOCALIZE[33078]) | String.IsEqual(ListItem.Label,$LOCALIZE[22082])">views/next_page_poster.png</value>
 		<value condition="ListItem.IsParentFolder">views/folder_back_poster.png</value>
 		<value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
 		<value condition="Container.Content(seasons)">$INFO[ListItem.Art(tvshow.poster)]</value>
