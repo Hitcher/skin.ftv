@@ -248,8 +248,9 @@
 				<bottom>26</bottom>
 				<width>800</width>
 				<height>64</height>
-				<onup condition="system.getbool(videoplayer.autoplaynextitem)">SetFocus(16)</onup>
-				<onup condition="!system.getbool(videoplayer.autoplaynextitem)">SetFocus(15)</onup>
+				<onup condition="System.HasCMS">SetFocus(17)</onup>
+				<onup condition="System.GetBool(videoplayer.autoplaynextitem)">SetFocus(16)</onup>
+				<onup condition="!System.GetBool(videoplayer.autoplaynextitem) + !System.HasCMS">SetFocus(15)</onup>
 				<itemgap>0</itemgap>
 				<align>center</align>
 				<orientation>horizontal</orientation>
@@ -402,7 +403,6 @@
 					<texturefocus/>
 					<texturenofocus/>
 					<onclick>ActivateWindow(videobookmarks)</onclick>
-					<onclick>Close</onclick>
 				</control>
 				<!-- Video Settings -->
 				<control id="14" type="button">
@@ -448,6 +448,21 @@
 					<texturenofocus/>
 					<onclick>PlayerControl(Next)</onclick>
 					<visible>Window.IsVisible(VideoFullScreen.xml) + system.getbool(videoplayer.autoplaynextitem)</visible>
+				</control>
+				<!-- Color management -->
+				<control id="17" type="button">
+					<width>600</width>
+					<height>58</height>
+					<font>OSD32</font>
+					<align>right</align>
+					<label>$LOCALIZE[31138]</label>
+					<textcolor>ffffffff</textcolor>
+					<shadowcolor>ff000000</shadowcolor>
+					<focusedcolor>ffffc04b</focusedcolor>
+					<texturefocus/>
+					<texturenofocus/>
+					<onclick>ActivateWindow(osdcmssettings)</onclick>
+					<visible>System.HasCMS</visible>
 				</control>
 			</control>
 		</control>
