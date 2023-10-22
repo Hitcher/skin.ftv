@@ -584,9 +584,29 @@ msgctxt "#31138"
 msgid "Colour Management"
 msgstr ""
 
+msgctxt "#31139"
+msgid "Select + X"
+msgstr ""
+
+msgctxt "#31140"
+msgid "Select + Start"
+msgstr ""
+
+msgctxt "#31141"
+msgid "Select + Right Stick"
+msgstr ""
+
+msgctxt "#31142"
+msgid "Peripheral dialog"
+msgstr ""
+
 msgctxt "#31143"
 msgid "This will undo any changes you've made to the home menu and widgets."
 msgstr "This will undo any changes you've made to the home menu and widgets."
+
+msgctxt "#31144"
+msgid "Game rotation dialog"
+msgstr ""
 
 msgctxt "#31145"
 msgid "percent remaining"
@@ -688,9 +708,13 @@ msgctxt "#31169"
 msgid "In Progress Movies"
 msgstr "In Progress Movies"
 
-msgctxt "#31170"
-msgid "Kids Movies"
-msgstr "Kids Movies"
+msgctxt "#31171"
+msgid "Ingame saves dialog"
+msgstr ""
+
+msgctxt "#31172"
+msgid "Game saves dialog"
+msgstr ""
 
 msgctxt "#31174"
 msgid "Top Rated Movies"
@@ -984,6 +1008,10 @@ msgstr "Average Rating All Critics"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "Average Rating Audience Score"
+
+#~ msgctxt "#31170"
+#~ msgid "Kids Movies"
+#~ msgstr "Kids Movies"
 
 #~ msgctxt "#31037"
 #~ msgid "Hide Unwatched Episode Thumbs"

@@ -589,9 +589,29 @@ msgctxt "#31138"
 msgid "Colour Management"
 msgstr ""
 
+msgctxt "#31139"
+msgid "Select + X"
+msgstr ""
+
+msgctxt "#31140"
+msgid "Select + Start"
+msgstr ""
+
+msgctxt "#31141"
+msgid "Select + Right Stick"
+msgstr ""
+
+msgctxt "#31142"
+msgid "Peripheral dialog"
+msgstr ""
+
 # empty strings from id 31138 to 31142
 msgctxt "#31143"
 msgid "This will undo any changes you've made to the home menu and widgets."
+msgstr ""
+
+msgctxt "#31144"
+msgid "Game rotation dialog"
 msgstr ""
 
 # empty string with id 31144
@@ -695,8 +715,12 @@ msgctxt "#31169"
 msgid "In Progress Movies"
 msgstr "Cereka Masih Dimainkan"
 
-msgctxt "#31170"
-msgid "Kids Movies"
+msgctxt "#31171"
+msgid "Ingame saves dialog"
+msgstr ""
+
+msgctxt "#31172"
+msgid "Game saves dialog"
 msgstr ""
 
 msgctxt "#31174"
