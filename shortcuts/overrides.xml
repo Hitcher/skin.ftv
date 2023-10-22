@@ -26,7 +26,9 @@
 	<icon labelID="20045">DefaultMastermode.png</icon>
 	<icon labelID="settings">DefaultSettings.png</icon>
 	<groupoverride group="shutdown" condition="true">Close</groupoverride>
-	<widgetPlaylists>False</widgetPlaylists>
+	<widgetPlaylists>False</widgetPlaylists>	
+    <!-- Games Shortcut -->
+    <shortcut label="$LOCALIZE[10821]" type="32034" grouping="common" thumbnail="DefaultAddonGame.png" icon="DefaultAddonGame.png">ActivateWindow(games)</shortcut>
 	<groupings>
 		<node label="fTV">
 			<shortcut label="10134" icon="ftv_icon.png">ActivateWindow(Favourites,favourites://,return)</shortcut>
