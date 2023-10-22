@@ -591,10 +591,30 @@ msgctxt "#31138"
 msgid "Colour Management"
 msgstr ""
 
+msgctxt "#31139"
+msgid "Select + X"
+msgstr ""
+
+msgctxt "#31140"
+msgid "Select + Start"
+msgstr ""
+
+msgctxt "#31141"
+msgid "Select + Right Stick"
+msgstr ""
+
+msgctxt "#31142"
+msgid "Peripheral dialog"
+msgstr ""
+
 # empty strings from id 31138 to 31142
 msgctxt "#31143"
 msgid "This will undo any changes you've made to the home menu and widgets."
 msgstr "Ini akan membatalkan perubahan apa pun yang Anda buat pada menu beranda dan widget."
+
+msgctxt "#31144"
+msgid "Game rotation dialog"
+msgstr ""
 
 # empty string with id 31144
 msgctxt "#31145"
@@ -697,9 +717,13 @@ msgctxt "#31169"
 msgid "In Progress Movies"
 msgstr "Film Sedang Berlangsung"
 
-msgctxt "#31170"
-msgid "Kids Movies"
-msgstr "Film Anak-anak"
+msgctxt "#31171"
+msgid "Ingame saves dialog"
+msgstr ""
+
+msgctxt "#31172"
+msgid "Game saves dialog"
+msgstr ""
 
 # empty strings from id 31171 to 31173
 msgctxt "#31174"
@@ -1001,6 +1025,10 @@ msgstr "Nilai Rata-Rata Semua Kritik"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "Rata-rata Rating Skor Audiens"
+
+#~ msgctxt "#31170"
+#~ msgid "Kids Movies"
+#~ msgstr "Film Anak-anak"
 
 #~ msgctxt "#31087"
 #~ msgid "Tomorrow"

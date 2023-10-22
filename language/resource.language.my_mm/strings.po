@@ -7,14 +7,15 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Kodi Translation Team\n"
-"Language-Team: Burmese (Myanmar) (http://www.transifex.com/projects/p/kodi-skins/language/my_MM/)\n"
-"Language: my_MM\n"
+"PO-Revision-Date: 2023-10-22 17:32+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Burmese <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/my_mm/>\n"
+"Language: my_mm\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.0.2\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the Fire TV UI"
@@ -380,7 +381,7 @@ msgstr ""
 
 msgctxt "#31087"
 msgid "Unavailable"
-msgstr ""
+msgstr "မရရှိနိုင်သော"
 
 # empty string with id 31087
 msgctxt "#31088"
@@ -590,9 +591,29 @@ msgctxt "#31138"
 msgid "Colour Management"
 msgstr ""
 
+msgctxt "#31139"
+msgid "Select + X"
+msgstr ""
+
+msgctxt "#31140"
+msgid "Select + Start"
+msgstr ""
+
+msgctxt "#31141"
+msgid "Select + Right Stick"
+msgstr ""
+
+msgctxt "#31142"
+msgid "Peripheral dialog"
+msgstr ""
+
 # empty strings from id 31138 to 31142
 msgctxt "#31143"
 msgid "This will undo any changes you've made to the home menu and widgets."
+msgstr ""
+
+msgctxt "#31144"
+msgid "Game rotation dialog"
 msgstr ""
 
 # empty string with id 31144
@@ -696,8 +717,12 @@ msgctxt "#31169"
 msgid "In Progress Movies"
 msgstr ""
 
-msgctxt "#31170"
-msgid "Kids Movies"
+msgctxt "#31171"
+msgid "Ingame saves dialog"
+msgstr ""
+
+msgctxt "#31172"
+msgid "Game saves dialog"
 msgstr ""
 
 # empty strings from id 31171 to 31173

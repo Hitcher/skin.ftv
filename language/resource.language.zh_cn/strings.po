@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-08-06 08:11+0000\n"
+"PO-Revision-Date: 2023-10-22 17:32+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: Chinese (China) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/zh_cn/>\n"
 "Language: zh_cn\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.18.2\n"
+"X-Generator: Weblate 5.0.2\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the Fire TV UI"
@@ -380,7 +380,7 @@ msgstr "排序依据"
 
 msgctxt "#31087"
 msgid "Unavailable"
-msgstr ""
+msgstr "无效的"
 
 msgctxt "#31088"
 msgid "Current Playlist"
@@ -589,10 +589,30 @@ msgctxt "#31138"
 msgid "Colour Management"
 msgstr ""
 
+msgctxt "#31139"
+msgid "Select + X"
+msgstr ""
+
+msgctxt "#31140"
+msgid "Select + Start"
+msgstr ""
+
+msgctxt "#31141"
+msgid "Select + Right Stick"
+msgstr ""
+
+msgctxt "#31142"
+msgid "Peripheral dialog"
+msgstr ""
+
 # empty strings from id 31138 to 31142
 msgctxt "#31143"
 msgid "This will undo any changes you've made to the home menu and widgets."
 msgstr "这将撤消您对主菜单和小部件进行的任何更改。"
+
+msgctxt "#31144"
+msgid "Game rotation dialog"
+msgstr ""
 
 # empty string with id 31144
 msgctxt "#31145"
@@ -695,9 +715,13 @@ msgctxt "#31169"
 msgid "In Progress Movies"
 msgstr "在播电影"
 
-msgctxt "#31170"
-msgid "Kids Movies"
-msgstr "儿童电影"
+msgctxt "#31171"
+msgid "Ingame saves dialog"
+msgstr ""
+
+msgctxt "#31172"
+msgid "Game saves dialog"
+msgstr ""
 
 # empty strings from id 31171 to 31173
 msgctxt "#31174"
@@ -845,7 +869,7 @@ msgstr "自定义小部件组"
 # empty string with id 31220
 msgctxt "#31221"
 msgid "Music Addons"
-msgstr ""
+msgstr "音乐扩展"
 
 msgctxt "#31222"
 msgid "Program Addons"
@@ -997,6 +1021,10 @@ msgstr "评论家平均分"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "观众平均分"
+
+#~ msgctxt "#31170"
+#~ msgid "Kids Movies"
+#~ msgstr "儿童电影"
 
 #~ msgctxt "#31037"
 #~ msgid "Hide Unwatched Episode Thumbs"

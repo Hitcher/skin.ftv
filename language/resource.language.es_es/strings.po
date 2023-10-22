@@ -585,9 +585,29 @@ msgctxt "#31138"
 msgid "Colour Management"
 msgstr ""
 
+msgctxt "#31139"
+msgid "Select + X"
+msgstr ""
+
+msgctxt "#31140"
+msgid "Select + Start"
+msgstr ""
+
+msgctxt "#31141"
+msgid "Select + Right Stick"
+msgstr ""
+
+msgctxt "#31142"
+msgid "Peripheral dialog"
+msgstr ""
+
 msgctxt "#31143"
 msgid "This will undo any changes you've made to the home menu and widgets."
 msgstr "Esto deshará cualquier cambio que haya hecho sobre el menú de inicio y los widgets."
+
+msgctxt "#31144"
+msgid "Game rotation dialog"
+msgstr ""
 
 msgctxt "#31145"
 msgid "percent remaining"
@@ -689,9 +709,13 @@ msgctxt "#31169"
 msgid "In Progress Movies"
 msgstr "Películas en progreso"
 
-msgctxt "#31170"
-msgid "Kids Movies"
-msgstr "Películas para Niños"
+msgctxt "#31171"
+msgid "Ingame saves dialog"
+msgstr ""
+
+msgctxt "#31172"
+msgid "Game saves dialog"
+msgstr ""
 
 msgctxt "#31174"
 msgid "Top Rated Movies"
@@ -985,6 +1009,10 @@ msgstr "Valoración Promedio Todos los Críticos"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "Valoración Promedio de Audiencia"
+
+#~ msgctxt "#31170"
+#~ msgid "Kids Movies"
+#~ msgstr "Películas para Niños"
 
 #~ msgctxt "#31097"
 #~ msgid "TV Show Wide"

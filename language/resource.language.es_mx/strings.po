@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2022-03-11 09:02+0000\n"
+"PO-Revision-Date: 2023-10-22 17:32+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: Spanish (Mexico) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/es_mx/>\n"
 "Language: es_mx\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.11.2\n"
+"X-Generator: Weblate 5.0.2\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the Fire TV UI"
@@ -368,7 +368,7 @@ msgstr ""
 
 msgctxt "#31084"
 msgid "Today"
-msgstr ""
+msgstr "Hoy"
 
 # empty strings from id 31079 to 31084
 msgctxt "#31085"
@@ -381,7 +381,7 @@ msgstr "Ordenado por"
 
 msgctxt "#31087"
 msgid "Unavailable"
-msgstr ""
+msgstr "No disponible"
 
 # empty string with id 31087
 msgctxt "#31088"
@@ -591,9 +591,29 @@ msgctxt "#31138"
 msgid "Colour Management"
 msgstr ""
 
+msgctxt "#31139"
+msgid "Select + X"
+msgstr ""
+
+msgctxt "#31140"
+msgid "Select + Start"
+msgstr ""
+
+msgctxt "#31141"
+msgid "Select + Right Stick"
+msgstr ""
+
+msgctxt "#31142"
+msgid "Peripheral dialog"
+msgstr ""
+
 # empty strings from id 31138 to 31142
 msgctxt "#31143"
 msgid "This will undo any changes you've made to the home menu and widgets."
+msgstr ""
+
+msgctxt "#31144"
+msgid "Game rotation dialog"
 msgstr ""
 
 # empty string with id 31144
@@ -697,8 +717,12 @@ msgctxt "#31169"
 msgid "In Progress Movies"
 msgstr "Películas en progreso"
 
-msgctxt "#31170"
-msgid "Kids Movies"
+msgctxt "#31171"
+msgid "Ingame saves dialog"
+msgstr ""
+
+msgctxt "#31172"
+msgid "Game saves dialog"
 msgstr ""
 
 # empty strings from id 31171 to 31173
@@ -847,7 +871,7 @@ msgstr ""
 # empty string with id 31220
 msgctxt "#31221"
 msgid "Music Addons"
-msgstr ""
+msgstr "Complementos de música"
 
 msgctxt "#31222"
 msgid "Program Addons"
