@@ -275,7 +275,7 @@
 			</control>
 			<control type="label">
 				<include>DebugDialogLabel</include>
-				<label>DialogSelect.xml</label>
+				<label>DialogSelect.xml [COLOR FF00FF00]$VAR[DebugWindowName][/COLOR]</label>
 				<visible>Window.IsVisible(DialogSelect.xml)</visible>
 			</control>
 			<control type="label">

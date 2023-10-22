@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="DebugWindowName">
+		<value condition="Window.IsVisible(10110)">($LOCALIZE[10110])</value>
+		<value condition="Window.IsVisible(10122)">($LOCALIZE[10122])</value>
+		<value condition="Window.IsVisible(10149)">($LOCALIZE[31142])</value>
+		<value condition="Window.IsVisible(10823)">($LOCALIZE[10823])</value>
+		<value condition="Window.IsVisible(10824)">($LOCALIZE[10824])</value>
+		<value condition="Window.IsVisible(10827)">($LOCALIZE[31144])</value>
+		<value condition="Window.IsVisible(10829)">($LOCALIZE[31171])</value>
+		<value condition="Window.IsVisible(10830)">($LOCALIZE[31172])</value>
+		<value condition="Window.IsVisible(12000)">($LOCALIZE[12000])</value>
+	</variable>
 	<variable name="NextAiredDurationHours">
 		<value condition="Integer.IsGreater(Container(60).ListItem.Property(DurationHour),09)">$INFO[Container(60).ListItem.Property(DurationHour),, $LOCALIZE[31148]]</value>
 		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),01)">1 $LOCALIZE[31005]</value>
@@ -58,15 +69,15 @@
 		<value condition="!String.IsEmpty(Container(99950).ListItem.Property(Last_Aired.Long))">$INFO[Container(99950).ListItem.Property(Last_Aired.Long)]</value>
 	</variable>
 	<variable name="DialogVideoInfoInclude">
-		<value condition="!String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + !Skin.HasSetting(ExtendedInfo)">Includes_Dialog_Default_Video_Information
+		<value condition="!String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + !Skin.HasSetting(ExtendedInfo)">[COLOR FF00FF00]Includes_Dialog_Default_Video_Information[/COLOR]
 		</value>
-		<value condition="String.IsEmpty(ListItem.Property(item.type),movie) + String.IsEmpty(ListItem.Property(item.type),tv) + !String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + Skin.HasSetting(ExtendedInfo)">Includes_Dialog_Video_Information
+		<value condition="String.IsEmpty(ListItem.Property(item.type),movie) + String.IsEmpty(ListItem.Property(item.type),tv) + !String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + Skin.HasSetting(ExtendedInfo)">[COLOR FF00FF00]Includes_Dialog_Video_Information[/COLOR]
 		</value>
-		<value condition="[!String.IsEmpty(ListItem.Property(item.type),movie) | !String.IsEmpty(ListItem.Property(item.type),tv)] + !String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + Skin.HasSetting(ExtendedInfo)">Includes_Dialog_Movie_TV_Information
+		<value condition="[!String.IsEmpty(ListItem.Property(item.type),movie) | !String.IsEmpty(ListItem.Property(item.type),tv)] + !String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + Skin.HasSetting(ExtendedInfo)">[COLOR FF00FF00]Includes_Dialog_Movie_TV_Information[/COLOR]
 		</value>
-		<value condition="!String.IsEqual(ListItem.Property(item.type),person) + Container.Content(Sets)">Includes_Dialog_Set_Information
+		<value condition="!String.IsEqual(ListItem.Property(item.type),person) + Container.Content(Sets)">[COLOR FF00FF00]Includes_Dialog_Set_Information[/COLOR]
 		</value>
-		<value condition="String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets)">Includes_Dialog_Person_Information
+		<value condition="String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets)">[COLOR FF00FF00]Includes_Dialog_Person_Information[/COLOR]
 		</value>
 	</variable>
 	<variable name="DialogPersonInfoListContent">
