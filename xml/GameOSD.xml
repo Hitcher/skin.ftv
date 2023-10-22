@@ -2,6 +2,7 @@
 <window>
 	<!-- gameosd -->
 	<defaultcontrol always="true">100</defaultcontrol>
+				<onload>ClearProperty(ShowSettings,home)</onload>
 	<coordinates>
 		<origin x="0" y="0"/>
 	</coordinates>
@@ -9,14 +10,14 @@
 		<!-- Background -->
 		<include>DialogBackgroundImage</include>
 		<control type="group">
-			<visible>!Window.IsActive(GameVideoFilter) + !Window.IsActive(GameStretchMode) + !Window.IsActive(gamevideorotation) + !Window.IsActive(GameControllers)</visible>
+			<visible>!Window.IsActive(GameVideoFilter) + !Window.IsActive(GameStretchMode) + !Window.IsActive(GameVideoRotation) + !Window.IsActive(GameControllers) + !Window.IsActive(InGameSaves)</visible>
 			<!-- Dialog group -->
 			<control type="group">
 				<include>DialogAnimation</include>
 				<centerleft>50%</centerleft>
 				<centertop>50%</centertop>
 				<width>558</width>
-				<height>480</height>
+				<height>564</height>
 				<!-- Dialog background image -->
 				<control type="image">
 					<width>100%</width>
@@ -38,7 +39,7 @@
 				<control type="grouplist" id="100">
 					<top>60</top>
 					<width>100%</width>
-					<height>420</height>
+					<height>504</height>
 					<itemgap>0</itemgap>
 					<onup>noop</onup>
 					<ondown>noop</ondown>
@@ -52,25 +53,13 @@
 						<focusedcolor>ffffaf37</focusedcolor>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
-						<label>13404</label>
-						<label2>Select + X</label2>
+						<label>35224</label>
+						<label2>31139</label2>
 						<onclick>Play</onclick>
-					</control>
-					<!-- Reset button -->
-					<control type="button" id="102">
-						<width>100%</width>
-						<height>84</height>
-						<font>Light32</font>
-						<textoffsetx>40</textoffsetx>
-						<textcolor>ff505153</textcolor>
-						<focusedcolor>ffffaf37</focusedcolor>
-						<texturefocus border="3">settings/button_focus.png</texturefocus>
-						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
-						<label>13007</label>
-						<onclick>PlayerControl(Reset)</onclick>
+						<visible>String.IsEmpty(Window(home).Property(ShowSettings))</visible>
 					</control>
 					<!-- Saves button -->
-					<control type="button" id="110">
+					<control type="button" id="102">
 						<width>100%</width>
 						<height>84</height>
 						<font>Light32</font>
@@ -81,8 +70,9 @@
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 						<label>35249</label>
 						<onclick>ActivateWindow(InGameSaves)</onclick>
+						<visible>String.IsEmpty(Window(home).Property(ShowSettings))</visible>
 					</control>
-					<!-- Stop button -->
+					<!-- Players button -->
 					<control type="button" id="103">
 						<width>100%</width>
 						<height>84</height>
@@ -90,13 +80,13 @@
 						<textoffsetx>40</textoffsetx>
 						<textcolor>ff505153</textcolor>
 						<focusedcolor>ffffaf37</focusedcolor>
-						<label>35222</label>
-						<label2>Select + Start</label2>
-						<onclick>Stop</onclick>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+						<label>35172</label>
+						<onclick>ActivateWindow(GameAgents)</onclick>
+						<visible>String.IsEmpty(Window(home).Property(ShowSettings))</visible>
 					</control>
-					<!-- Volume button -->
+					<!-- Stop button -->
 					<control type="button" id="104">
 						<width>100%</width>
 						<height>84</height>
@@ -106,12 +96,57 @@
 						<focusedcolor>ffffaf37</focusedcolor>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+						<label>35222</label>
+						<label2>31140</label2>
+						<onclick>Stop</onclick>
+						<visible>String.IsEmpty(Window(home).Property(ShowSettings))</visible>
+					</control>
+					<!-- Reset button -->
+					<control type="button" id="105">
+						<width>100%</width>
+						<height>84</height>
+						<font>Light32</font>
+						<textoffsetx>40</textoffsetx>
+						<textcolor>ff505153</textcolor>
+						<focusedcolor>ffffaf37</focusedcolor>
+						<texturefocus border="3">settings/button_focus.png</texturefocus>
+						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+						<label>13007</label>
+						<onclick>PlayerControl(Reset)</onclick>
+						<visible>String.IsEmpty(Window(home).Property(ShowSettings))</visible>
+					</control>
+					<!-- Settings button -->
+					<control type="button" id="106">
+						<width>100%</width>
+						<height>84</height>
+						<font>Light32</font>
+						<textoffsetx>40</textoffsetx>
+						<textcolor>ff505153</textcolor>
+						<focusedcolor>ffffaf37</focusedcolor>
+						<texturefocus border="3">settings/button_focus.png</texturefocus>
+						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+						<label>35226</label>
+						<onclick>SetProperty(ShowSettings,1,home)</onclick>
+						<onclick>107</onclick>
+						<visible>String.IsEmpty(Window(home).Property(ShowSettings))</visible>
+					</control>
+					<!-- Volume button -->
+					<control type="button" id="107">
+						<width>100%</width>
+						<height>84</height>
+						<font>Light32</font>
+						<textoffsetx>40</textoffsetx>
+						<textcolor>ff505153</textcolor>
+						<focusedcolor>ffffaf37</focusedcolor>
+						<texturefocus border="3">settings/button_focus.png</texturefocus>
+						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 						<label>13376</label>
-						<label2>Select + Right Stick</label2>
+						<label2>31141</label2>
 						<onclick>ActivateWindow(GameVolume)</onclick>
+						<visible>!String.IsEmpty(Window(home).Property(ShowSettings))</visible>
 					</control>
 					<!-- Video filter button -->
-					<control type="button" id="105">
+					<control type="button" id="108">
 						<width>100%</width>
 						<height>84</height>
 						<font>Light32</font>
@@ -122,9 +157,10 @@
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 						<label>230</label>
 						<onclick>ActivateWindow(GameVideoFilter)</onclick>
+						<visible>!String.IsEmpty(Window(home).Property(ShowSettings))</visible>
 					</control>
 					<!-- Stretch mode button -->
-					<control type="button" id="106">
+					<control type="button" id="109">
 						<width>100%</width>
 						<height>84</height>
 						<font>Light32</font>
@@ -135,9 +171,10 @@
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 						<label>35233</label>
 						<onclick>ActivateWindow(GameStretchMode)</onclick>
+						<visible>!String.IsEmpty(Window(home).Property(ShowSettings))</visible>
 					</control>
 					<!-- Rotation button -->
-					<control type="button" id="107">
+					<control type="button" id="110">
 						<width>100%</width>
 						<height>84</height>
 						<font>Light32</font>
@@ -148,9 +185,10 @@
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 						<label>35227</label>
 						<onclick>ActivateWindow(GameVideoRotation)</onclick>
+						<visible>!String.IsEmpty(Window(home).Property(ShowSettings))</visible>
 					</control>
 					<!-- Controller button -->
-					<control type="button" id="108">
+					<control type="button" id="111">
 						<width>100%</width>
 						<height>84</height>
 						<font>Light32</font>
@@ -161,9 +199,10 @@
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 						<label>35234</label>
 						<onclick>ActivateWindow(GameControllers)</onclick>
+						<visible>!String.IsEmpty(Window(home).Property(ShowSettings))</visible>
 					</control>
 					<!-- Ports button -->
-					<control type="button" id="111">
+					<control type="button" id="112">
 						<width>100%</width>
 						<height>84</height>
 						<font>Light32</font>
@@ -174,9 +213,10 @@
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 						<label>35110</label>
 						<onclick>ActivateWindow(GamePorts)</onclick>
+						<visible>!String.IsEmpty(Window(home).Property(ShowSettings))</visible>
 					</control>
 					<!-- Advanced settings button -->
-					<control type="button" id="109">
+					<control type="button" id="113">
 						<width>100%</width>
 						<height>84</height>
 						<font>Light32</font>
@@ -187,6 +227,7 @@
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 						<label>35226</label>
 						<onclick>ActivateWindow(GameAdvancedSettings)</onclick>
+						<visible>!String.IsEmpty(Window(home).Property(ShowSettings))</visible>
 					</control>
 				</control>
 			</control>
