@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-06-21 11:42+0000\n"
+"PO-Revision-Date: 2023-10-23 03:07+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: Bulgarian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/bg_bg/>\n"
 "Language: bg_bg\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.18\n"
+"X-Generator: Weblate 5.0.2\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the Fire TV UI"
@@ -368,7 +368,7 @@ msgstr ""
 
 msgctxt "#31084"
 msgid "Today"
-msgstr ""
+msgstr "Днес"
 
 # empty strings from id 31079 to 31084
 msgctxt "#31085"
@@ -381,7 +381,7 @@ msgstr ""
 
 msgctxt "#31087"
 msgid "Unavailable"
-msgstr ""
+msgstr "Не е наличен"
 
 msgctxt "#31088"
 msgid "Current Playlist"
@@ -592,11 +592,11 @@ msgstr ""
 
 msgctxt "#31139"
 msgid "Select + X"
-msgstr ""
+msgstr "Select + X"
 
 msgctxt "#31140"
 msgid "Select + Start"
-msgstr ""
+msgstr "Select + Start"
 
 msgctxt "#31141"
 msgid "Select + Right Stick"
@@ -869,7 +869,7 @@ msgstr ""
 # empty string with id 31220
 msgctxt "#31221"
 msgid "Music Addons"
-msgstr ""
+msgstr "Добавки тип аудио"
 
 msgctxt "#31222"
 msgid "Program Addons"
