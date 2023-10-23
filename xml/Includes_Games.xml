@@ -499,7 +499,6 @@
 									<top>5</top>
 									<width>76</width>
 									<height>76</height>
-									<controllerid>$INFO[ListItem.Property(controllerid)]</controllerid>
 									<peripherallocation>$INFO[ListItem.FilenameAndPath]</peripherallocation>
 									<controllerdiffuse>button_focus</controllerdiffuse>
 								</control>
@@ -510,7 +509,6 @@
 									<top>5</top>
 									<width>76</width>
 									<height>76</height>
-									<controllerid>$INFO[ListItem.Property(controllerid)]</controllerid>
 									<peripherallocation>$INFO[ListItem.FilenameAndPath]</peripherallocation>
 									<controllerdiffuse>button_focus</controllerdiffuse>
 								</control>
@@ -553,7 +551,6 @@
 									<top>5</top>
 									<width>76</width>
 									<height>76</height>
-									<controllerid>$INFO[ListItem.Property(controllerid)]</controllerid>
 									<peripherallocation>$INFO[ListItem.FilenameAndPath]</peripherallocation>
 									<controllerdiffuse>button_focus</controllerdiffuse>
 								</control>
@@ -564,7 +561,6 @@
 									<top>5</top>
 									<width>76</width>
 									<height>76</height>
-									<controllerid>$INFO[ListItem.Property(controllerid)]</controllerid>
 									<peripherallocation>$INFO[ListItem.FilenameAndPath]</peripherallocation>
 									<controllerdiffuse>button_focus</controllerdiffuse>
 								</control>
