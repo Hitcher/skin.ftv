@@ -2,15 +2,15 @@
 <window>
 	<!-- gameosd -->
 	<defaultcontrol always="true">100</defaultcontrol>
-				<onload>ClearProperty(ShowSettings,home)</onload>
+	<onload>ClearProperty(ShowSettings,home)</onload>
 	<coordinates>
 		<origin x="0" y="0"/>
 	</coordinates>
 	<controls>
 		<!-- Background -->
-		<include>DialogBackgroundImage</include>
 		<control type="group">
-			<visible>!Window.IsActive(GameVideoFilter) + !Window.IsActive(GameStretchMode) + !Window.IsActive(GameVideoRotation) + !Window.IsActive(GameControllers) + !Window.IsActive(InGameSaves)</visible>
+			<include>DialogBackgroundImage</include>
+			<visible>!Window.IsActive(GameSaves) + !Window.IsActive(GameVideoFilter) + !Window.IsActive(GameStretchMode) + !Window.IsActive(GameVideoRotation) + !Window.IsActive(GameControllers) + !Window.IsActive(InGameSaves)</visible>
 			<!-- Dialog group -->
 			<control type="group">
 				<include>DialogAnimation</include>
@@ -22,7 +22,7 @@
 				<control type="image">
 					<width>100%</width>
 					<height>100%</height>
-					<texture border="0,64,0,0">dialogs/game_osd_back.png</texture>
+					<texture border="0,64,1,0">dialogs/game_osd_back.png</texture>
 				</control>
 				<!-- Heading -->
 				<control type="label" id="1">

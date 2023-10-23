@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<variable name="DebugWindowName">
-		<value condition="Window.IsVisible(10110)">($LOCALIZE[10110])</value>
-		<value condition="Window.IsVisible(10122)">($LOCALIZE[10122])</value>
-		<value condition="Window.IsVisible(10149)">($LOCALIZE[31142])</value>
-		<value condition="Window.IsVisible(10823)">($LOCALIZE[10823])</value>
-		<value condition="Window.IsVisible(10824)">($LOCALIZE[10824])</value>
-		<value condition="Window.IsVisible(10827)">($LOCALIZE[31144])</value>
-		<value condition="Window.IsVisible(10829)">($LOCALIZE[31171])</value>
-		<value condition="Window.IsVisible(10830)">($LOCALIZE[31172])</value>
-		<value condition="Window.IsVisible(12000)">($LOCALIZE[12000])</value>
+	<variable name="GameDialogHeading">
+		<value condition="Window.IsVisible(10823)">$LOCALIZE[35225]</value>
+		<value condition="Window.IsVisible(10824)">$LOCALIZE[35233]</value>
+		<value condition="Window.IsVisible(10827)">$LOCALIZE[35227]</value>
+	</variable>
+	<variable name="DialogGameControllersName">
+		<value condition="Window.IsVisible(10820)">(gamecontrollers)</value>
+		<value condition="Window.IsVisible(10828)">(gameports)</value>
+		<value condition="Window.IsVisible(10831)">(gameagents)</value>
+	</variable>
+	<variable name="DialogSelectName">
+		<value condition="Window.IsVisible(10110)">(gamepadinput)</value>
+		<value condition="Window.IsVisible(10122)">(visualisationpresetlist)</value>
+		<value condition="Window.IsVisible(10149)">(peripherals)</value>
+		<value condition="Window.IsVisible(10823)">(gamevideofilter)</value>
+		<value condition="Window.IsVisible(10824)">(gameviewmode)</value>
+		<value condition="Window.IsVisible(10827)">(gamevideorotation)</value>
+		<value condition="Window.IsVisible(10829)">(ingamesaves)</value>
+		<value condition="Window.IsVisible(10830)">(gamesaves)</value>
+		<value condition="Window.IsVisible(12000)">(gameagents)</value>
 	</variable>
 	<variable name="NextAiredDurationHours">
 		<value condition="Integer.IsGreater(Container(60).ListItem.Property(DurationHour),09)">$INFO[Container(60).ListItem.Property(DurationHour),, $LOCALIZE[31148]]</value>

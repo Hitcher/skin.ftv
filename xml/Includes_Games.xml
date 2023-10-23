@@ -262,6 +262,7 @@
 				<scrolltime>0</scrolltime>
 				<focusposition>1</focusposition>
 				<orientation>vertical</orientation>
+				<animation condition="String.IsEqual(Container(3).NumItems,1) | String.IsEqual(Container(3).NumItems,2)" effect="slide" end="0,-140">Conditional</animation>
 				<itemlayout height="140" width="937">
 					<control type="image">
 						<width>937</width>
@@ -388,6 +389,188 @@
 					<textoffsety>27</textoffsety>
 					<label>186</label>
 					<visible>Control.IsEnabled(18)</visible>
+				</control>
+			</control>
+		</control>
+	</include>
+	<include name="Includes_DialogGameAgents">
+		<include>DialogBackgroundImage</include>
+		<control type="group">
+			<left>90</left>
+			<top>90</top>
+			<width>1740</width>
+			<height>900</height>
+			<include>DialogZoomAnimation</include>
+			<control type="image">
+				<width>100%</width>
+				<height>100%</height>
+				<texture border="0,64,1,0">dialogs/game_osd_back.png</texture>
+			</control>
+			<control type="label" id="2">
+				<left>40</left>
+				<top>14</top>
+				<height>30</height>
+				<width>800</width>
+				<aligny>center</aligny>
+				<font>Bold30</font>
+				<textcolor>ffdadada</textcolor>
+				<label>35172</label>
+			</control>
+			<control type="group">
+				<left>20</left>
+				<top>80</top>
+				<height>800</height>
+				<width>1700</width>
+				<control type="button" id="3">
+					<width>1700</width>
+					<height>86</height>
+					<ondown>5</ondown>
+					<font>Light32</font>
+					<textoffsetx>20</textoffsetx>
+					<textcolor>ff505153</textcolor>
+					<focusedcolor>ffffaf37</focusedcolor>
+					<texturefocus border="3">settings/button_focus.png</texturefocus>
+					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+					<label>$LOCALIZE[35110]</label>
+					<onclick>ActivateWindow(GamePorts)</onclick>
+				</control>
+				<control type="gamecontrollerlist" id="4">
+					<left>583</left>
+					<width>1700</width>
+					<height>86</height>
+					<align>right</align>
+					<enable>false</enable>
+					<orientation>horizontal</orientation>
+					<itemlayout width="86" height="86">
+						<control type="gamecontroller">
+							<left>5</left>
+							<top>5</top>
+							<width>76</width>
+							<height>76</height>
+							<texture>$INFO[ListItem.Icon]</texture>
+							<controlleraddress>$INFO[ListItem.FilenameAndPath]</controlleraddress>
+							<controllerdiffuse>InvalidColor</controllerdiffuse>
+						</control>
+					</itemlayout>
+					<focusedlayout width="86" height="86">
+						<control type="gamecontroller">
+							<left>5</left>
+							<top>5</top>
+							<width>76</width>
+							<height>76</height>
+							<texture>$INFO[ListItem.Icon]</texture>
+							<controlleraddress>$INFO[ListItem.FilenameAndPath]</controlleraddress>
+							<controllerdiffuse>InvalidColor</controllerdiffuse>
+						</control>
+					</focusedlayout>
+				</control>
+				<control type="list" id="5">
+					<top>108</top>
+					<width>1700</width>
+					<height>688</height>
+					<onup>3</onup>
+					<ondown>6</ondown>
+					<scrolltime tween="sine">200</scrolltime>
+					<orientation>vertical</orientation>
+					<itemlayout width="1700" height="86">
+						<control type="image">
+							<width>1700</width>
+							<height>86</height>
+							<texture border="3">settings/button_no_focus.png</texture>
+						</control>
+						<control type="label">
+							<left>20</left>
+							<width>1700</width>
+							<height>86</height>
+							<font>Light32</font>
+							<aligny>center</aligny>
+							<textcolor>ff505153</textcolor>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+						<control type="gamecontrollerlist">
+							<left>583</left>
+							<width>1700</width>
+							<align>right</align>
+							<enable>false</enable>
+							<orientation>horizontal</orientation>
+							<itemlayout width="86" height="86">
+								<control type="gamecontroller">
+									<left>5</left>
+									<top>5</top>
+									<width>76</width>
+									<height>76</height>
+									<controllerid>$INFO[ListItem.Property(controllerid)]</controllerid>
+									<peripherallocation>$INFO[ListItem.FilenameAndPath]</peripherallocation>
+									<controllerdiffuse>button_focus</controllerdiffuse>
+								</control>
+							</itemlayout>
+							<focusedlayout width="86" height="86">
+								<control type="gamecontroller">
+									<left>5</left>
+									<top>5</top>
+									<width>76</width>
+									<height>76</height>
+									<controllerid>$INFO[ListItem.Property(controllerid)]</controllerid>
+									<peripherallocation>$INFO[ListItem.FilenameAndPath]</peripherallocation>
+									<controllerdiffuse>button_focus</controllerdiffuse>
+								</control>
+							</focusedlayout>
+						</control>
+					</itemlayout>
+					<focusedlayout width="1700" height="86">
+						<control type="image">
+							<width>1700</width>
+							<height>86</height>
+							<texture border="3">settings/button_focus.png</texture>
+						</control>
+						<control type="label">
+							<left>20</left>
+							<height>86</height>
+							<font>Light32</font>
+							<aligny>center</aligny>
+							<textcolor>ffffaf37</textcolor>
+							<label>$INFO[ListItem.Label]</label>
+							<visible>Control.HasFocus(5)</visible>
+						</control>
+						<control type="label">
+							<left>20</left>
+							<height>86</height>
+							<font>Light32</font>
+							<aligny>center</aligny>
+							<textcolor>ffffffff</textcolor>
+							<label>$INFO[ListItem.Label]</label>
+							<visible>!Control.HasFocus(5)</visible>
+						</control>
+						<control type="gamecontrollerlist">
+							<left>583</left>
+							<width>1700</width>
+							<align>right</align>
+							<enable>false</enable>
+							<orientation>horizontal</orientation>
+							<itemlayout width="86" height="86">
+								<control type="gamecontroller">
+									<left>5</left>
+									<top>5</top>
+									<width>76</width>
+									<height>76</height>
+									<controllerid>$INFO[ListItem.Property(controllerid)]</controllerid>
+									<peripherallocation>$INFO[ListItem.FilenameAndPath]</peripherallocation>
+									<controllerdiffuse>button_focus</controllerdiffuse>
+								</control>
+							</itemlayout>
+							<focusedlayout width="86" height="86">
+								<control type="gamecontroller">
+									<left>5</left>
+									<top>5</top>
+									<width>76</width>
+									<height>76</height>
+									<controllerid>$INFO[ListItem.Property(controllerid)]</controllerid>
+									<peripherallocation>$INFO[ListItem.FilenameAndPath]</peripherallocation>
+									<controllerdiffuse>button_focus</controllerdiffuse>
+								</control>
+							</focusedlayout>
+						</control>
+					</focusedlayout>
 				</control>
 			</control>
 		</control>

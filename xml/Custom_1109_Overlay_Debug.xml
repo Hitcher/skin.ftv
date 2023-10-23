@@ -230,7 +230,7 @@
 			</control>
 			<control type="label">
 				<include>DebugDialogLabel</include>
-				<label>DialogGameControllers.xml</label>
+				<label>DialogGameControllers.xml [COLOR FF00FF00]$VAR[DialogGameControllersName][/COLOR]</label>
 				<visible>Window.IsVisible(DialogGameControllers.xml)</visible>
 			</control>
 			<control type="label">
@@ -275,7 +275,7 @@
 			</control>
 			<control type="label">
 				<include>DebugDialogLabel</include>
-				<label>DialogSelect.xml [COLOR FF00FF00]$VAR[DebugWindowName][/COLOR]</label>
+				<label>DialogSelect.xml [COLOR FF00FF00]$VAR[DialogSelectName][/COLOR]</label>
 				<visible>Window.IsVisible(DialogSelect.xml)</visible>
 			</control>
 			<control type="label">
