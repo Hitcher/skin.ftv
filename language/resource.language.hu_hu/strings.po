@@ -715,12 +715,9 @@ msgctxt "#31169"
 msgid "In Progress Movies"
 msgstr "Folyamatban lévő filmek"
 
-msgctxt "#31171"
-msgid "Ingame saves dialog"
-msgstr ""
-
-msgctxt "#31172"
-msgid "Game saves dialog"
+# empty strings from id 31171 to 31172
+msgctxt "#31173"
+msgid "In-game saves"
 msgstr ""
 
 # empty strings from id 31171 to 31173
