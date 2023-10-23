@@ -708,7 +708,11 @@ msgctxt "#31169"
 msgid "In Progress Movies"
 msgstr ""
 
-#empty strings from id 31171 to 31172
+msgctxt "#31171"
+msgid "Game saves"
+msgstr ""
+
+#empty string with id 31172
 
 msgctxt "#31173"
 msgid "In-game saves"
