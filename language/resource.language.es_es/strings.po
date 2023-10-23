@@ -5,10 +5,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-10-23 03:07+0000\n"
-"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"PO-Revision-Date: 2023-10-23 23:20+0000\n"
+"Last-Translator: Alfonso Cachero <alfonso.cachero@gmail.com>\n"
 "Language-Team: Spanish (Spain) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/es_es/>\n"
 "Language: es_es\n"
 "MIME-Version: 1.0\n"
@@ -583,7 +583,7 @@ msgstr "Opciones de Vídeo"
 
 msgctxt "#31138"
 msgid "Colour Management"
-msgstr ""
+msgstr "Gestión del Color"
 
 msgctxt "#31139"
 msgid "Select + X"
@@ -599,7 +599,7 @@ msgstr "Select + Mando Derecha"
 
 msgctxt "#31142"
 msgid "Peripheral dialog"
-msgstr ""
+msgstr "Diálogo de periférico"
 
 msgctxt "#31143"
 msgid "This will undo any changes you've made to the home menu and widgets."
@@ -607,7 +607,7 @@ msgstr "Esto deshará cualquier cambio que haya hecho sobre el menú de inicio y
 
 msgctxt "#31144"
 msgid "Game rotation dialog"
-msgstr ""
+msgstr "Diálogo de rotación de juego"
 
 msgctxt "#31145"
 msgid "percent remaining"
@@ -709,12 +709,9 @@ msgctxt "#31169"
 msgid "In Progress Movies"
 msgstr "Películas en progreso"
 
-msgctxt "#31171"
-msgid "Ingame saves dialog"
-msgstr ""
-
-msgctxt "#31172"
-msgid "Game saves dialog"
+# empty strings from id 31171 to 31172
+msgctxt "#31173"
+msgid "In-game saves"
 msgstr ""
 
 msgctxt "#31174"
@@ -1009,6 +1006,14 @@ msgstr "Valoración Promedio Todos los Críticos"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "Valoración Promedio de Audiencia"
+
+#~ msgctxt "#31171"
+#~ msgid "Ingame saves dialog"
+#~ msgstr "Diálogo de guardado durante el juego"
+
+#~ msgctxt "#31172"
+#~ msgid "Game saves dialog"
+#~ msgstr "Diálogo de guardado de juego"
 
 #~ msgctxt "#31170"
 #~ msgid "Kids Movies"

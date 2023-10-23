@@ -5,10 +5,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-10-23 03:07+0000\n"
-"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"PO-Revision-Date: 2023-10-23 23:20+0000\n"
+"Last-Translator: Massimo Pissarello <mapi68@gmail.com>\n"
 "Language-Team: Italian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/it_it/>\n"
 "Language: it_it\n"
 "MIME-Version: 1.0\n"
@@ -603,7 +603,7 @@ msgstr "Seleziona + levetta destra"
 
 msgctxt "#31142"
 msgid "Peripheral dialog"
-msgstr ""
+msgstr "Finestra di configurazione periferiche"
 
 # empty strings from id 31138 to 31142
 msgctxt "#31143"
@@ -612,7 +612,7 @@ msgstr "Questo annullerà tutte le modifiche apportate al menu principale e ai w
 
 msgctxt "#31144"
 msgid "Game rotation dialog"
-msgstr ""
+msgstr "Finestra di rotazione del gioco"
 
 # empty string with id 31144
 msgctxt "#31145"
@@ -715,12 +715,9 @@ msgctxt "#31169"
 msgid "In Progress Movies"
 msgstr "Film in corso"
 
-msgctxt "#31171"
-msgid "Ingame saves dialog"
-msgstr ""
-
-msgctxt "#31172"
-msgid "Game saves dialog"
+# empty strings from id 31171 to 31172
+msgctxt "#31173"
+msgid "In-game saves"
 msgstr ""
 
 # empty strings from id 31171 to 31173
@@ -1021,6 +1018,14 @@ msgstr "Valutazione media di tutte le recensioni"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "Punteggio medio del pubblico"
+
+#~ msgctxt "#31171"
+#~ msgid "Ingame saves dialog"
+#~ msgstr "Finestra di salvataggio durante il gioco"
+
+#~ msgctxt "#31172"
+#~ msgid "Game saves dialog"
+#~ msgstr "Finestra di salvataggio del gioco"
 
 #~ msgctxt "#31170"
 #~ msgid "Kids Movies"

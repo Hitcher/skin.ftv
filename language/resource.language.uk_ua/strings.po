@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2023-10-23 03:07+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
@@ -717,12 +717,9 @@ msgctxt "#31169"
 msgid "In Progress Movies"
 msgstr ""
 
-msgctxt "#31171"
-msgid "Ingame saves dialog"
-msgstr ""
-
-msgctxt "#31172"
-msgid "Game saves dialog"
+# empty strings from id 31171 to 31172
+msgctxt "#31173"
+msgid "In-game saves"
 msgstr ""
 
 # empty strings from id 31171 to 31173
