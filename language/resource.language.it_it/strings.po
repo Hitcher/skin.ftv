@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-10-23 23:20+0000\n"
+"PO-Revision-Date: 2023-10-24 07:54+0000\n"
 "Last-Translator: Massimo Pissarello <mapi68@gmail.com>\n"
 "Language-Team: Italian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/it_it/>\n"
 "Language: it_it\n"
@@ -717,12 +717,12 @@ msgstr "Film in corso"
 
 msgctxt "#31171"
 msgid "Game saves"
-msgstr ""
+msgstr "Salvataggi del gioco"
 
 # empty strings from id 31171 to 31172
 msgctxt "#31173"
 msgid "In-game saves"
-msgstr ""
+msgstr "Salvataggi in corso del gioco"
 
 # empty strings from id 31171 to 31173
 msgctxt "#31174"
