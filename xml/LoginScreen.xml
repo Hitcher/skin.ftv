@@ -165,11 +165,12 @@
 		</control>
 		<!-- Lower group -->
 		<control type="group">
-			<left>196</left>
+			<left>186</left>
 			<top>782</top>
 			<include>VisibleDelayFadeAnimation</include>
 			<control id="1000" type="button">
-				<width>182</width>
+				<width min="124" max="204">auto</width>
+				<wrapmultiline>true</wrapmultiline>
 				<height>100</height>
 				<onup>52</onup>
 				<ondown>noop</ondown>
