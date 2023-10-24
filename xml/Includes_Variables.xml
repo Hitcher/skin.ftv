@@ -5,6 +5,12 @@
 		<value condition="Window.IsVisible(10824)">$LOCALIZE[35233]</value>
 		<value condition="Window.IsVisible(10827)">$LOCALIZE[35227]</value>
 	</variable>
+	<variable name="DialogConfirmName">
+		<value condition="Window.IsVisible(10100)">(yesnodialog)</value>
+		<value condition="Window.IsVisible(10101)">(progressdialog)</value>
+		<value condition="Window.IsVisible(10148)">(playeject)</value>
+		<value condition="Window.IsVisible(12002)">(okdialog)</value>
+	</variable>
 	<variable name="DialogGameControllersName">
 		<value condition="Window.IsVisible(10820)">(gamecontrollers)</value>
 		<value condition="Window.IsVisible(10828)">(gameports)</value>
@@ -19,7 +25,34 @@
 		<value condition="Window.IsVisible(10827)">(gamevideorotation)</value>
 		<value condition="Window.IsVisible(10829)">(ingamesaves)</value>
 		<value condition="Window.IsVisible(10830)">(gamesaves)</value>
-		<value condition="Window.IsVisible(12000)">(gameagents)</value>
+		<value condition="Window.IsVisible(12000)">(selectdialog)</value>
+	</variable>
+	<variable name="DialogSettingsName">
+		<value condition="Window.IsVisible(10123)">(osdvideosettings)</value>
+		<value condition="Window.IsVisible(10124)">(osdaudiosettings)</value>
+		<value condition="Window.IsVisible(10128)">(networksetup)</value>
+		<value condition="Window.IsVisible(10130)">(networksetup)</value>
+		<value condition="Window.IsVisible(10130)">(profilesettings)</value>
+		<value condition="Window.IsVisible(10131)">(locksettings)</value>
+		<value condition="Window.IsVisible(10132)">(contentsettings)</value>
+		<value condition="Window.IsVisible(10133)">(libexportsettings)</value>
+		<value condition="Window.IsVisible(10150)">(peripheralsettings)</value>
+		<value condition="Window.IsVisible(10152)">(mediafilter)</value>
+		<value condition="Window.IsVisible(10157)">(osdcmssettings)</value>
+		<value condition="Window.IsVisible(10158)">(infoprovidersettings)</value>
+		<value condition="Window.IsVisible(10159)">(osdsubtitlesettings)</value>
+		<value condition="Window.IsVisible(10602)">(pvrtimersetting)</value>
+		<value condition="Window.IsVisible(10611)">(pvrrecordingsettings)</value>
+		<value condition="Window.IsVisible(10612)">(pvrclientpriorities)</value>
+	</variable>
+	<variable name="SettingsCategoryName">
+		<value condition="Window.IsVisible(10016)">(systemsettings)</value>
+		<value condition="Window.IsVisible(10018)">(servicesettings)</value>
+		<value condition="Window.IsVisible(10021)">(pvrsettings)</value>
+		<value condition="Window.IsVisible(10022)">(gamesettings)</value>
+		<value condition="Window.IsVisible(10030)">(playersettings)</value>
+		<value condition="Window.IsVisible(10031)">(mediasettings)</value>
+		<value condition="Window.IsVisible(10032)">(interfacesettings)</value>
 	</variable>
 	<variable name="NextAiredDurationHours">
 		<value condition="Integer.IsGreater(Container(60).ListItem.Property(DurationHour),09)">$INFO[Container(60).ListItem.Property(DurationHour),, $LOCALIZE[31148]]</value>
@@ -79,15 +112,15 @@
 		<value condition="!String.IsEmpty(Container(99950).ListItem.Property(Last_Aired.Long))">$INFO[Container(99950).ListItem.Property(Last_Aired.Long)]</value>
 	</variable>
 	<variable name="DialogVideoInfoInclude">
-		<value condition="!String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + !Skin.HasSetting(ExtendedInfo)">[COLOR FF00FF00]Includes_Dialog_Default_Video_Information[/COLOR]
+		<value condition="!String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + !Skin.HasSetting(ExtendedInfo)">(Includes_Dialog_Default_Video_Information)
 		</value>
-		<value condition="String.IsEmpty(ListItem.Property(item.type),movie) + String.IsEmpty(ListItem.Property(item.type),tv) + !String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + Skin.HasSetting(ExtendedInfo)">[COLOR FF00FF00]Includes_Dialog_Video_Information[/COLOR]
+		<value condition="String.IsEmpty(ListItem.Property(item.type),movie) + String.IsEmpty(ListItem.Property(item.type),tv) + !String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + Skin.HasSetting(ExtendedInfo)">(Includes_Dialog_Video_Information)
 		</value>
-		<value condition="[!String.IsEmpty(ListItem.Property(item.type),movie) | !String.IsEmpty(ListItem.Property(item.type),tv)] + !String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + Skin.HasSetting(ExtendedInfo)">[COLOR FF00FF00]Includes_Dialog_Movie_TV_Information[/COLOR]
+		<value condition="[!String.IsEmpty(ListItem.Property(item.type),movie) | !String.IsEmpty(ListItem.Property(item.type),tv)] + !String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + Skin.HasSetting(ExtendedInfo)">(Includes_Dialog_Movie_TV_Information)
 		</value>
-		<value condition="!String.IsEqual(ListItem.Property(item.type),person) + Container.Content(Sets)">[COLOR FF00FF00]Includes_Dialog_Set_Information[/COLOR]
+		<value condition="!String.IsEqual(ListItem.Property(item.type),person) + Container.Content(Sets)">(Includes_Dialog_Set_Information)
 		</value>
-		<value condition="String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets)">[COLOR FF00FF00]Includes_Dialog_Person_Information[/COLOR]
+		<value condition="String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets)">(Includes_Dialog_Person_Information)
 		</value>
 	</variable>
 	<variable name="DialogPersonInfoListContent">

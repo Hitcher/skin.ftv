@@ -159,7 +159,7 @@
 			</control>
 			<control type="label">
 				<include>DebugWindowLabel</include>
-				<label>SettingsCategory.xml</label>
+				<label>SettingsCategory.xml [COLOR FF00FF00]$VAR[SettingsCategoryName][/COLOR]</label>
 				<visible>Window.IsVisible(SettingsCategory.xml)</visible>
 			</control>
 			<control type="label">
@@ -205,7 +205,7 @@
 			</control>
 			<control type="label">
 				<include>DebugDialogLabel</include>
-				<label>DialogConfirm.xml</label>
+				<label>DialogConfirm.xml [COLOR FF00FF00]$VAR[DialogConfirmName][/COLOR]</label>
 				<visible>Window.IsVisible(DialogConfirm.xml)</visible>
 			</control>
 			<control type="label">
@@ -280,7 +280,7 @@
 			</control>
 			<control type="label">
 				<include>DebugDialogLabel</include>
-				<label>DialogSettings.xml</label>
+				<label>DialogSettings.xml [COLOR FF00FF00]$VAR[DialogSettingsName][/COLOR]</label>
 				<visible>Window.IsVisible(DialogSettings.xml)</visible>
 			</control>
 			<control type="label">
@@ -300,7 +300,7 @@
 			</control>
 			<control type="label">
 				<include>DebugDialogLabel</include>
-				<label>$VAR[DialogVideoInfoInclude,DialogVideoInfo.xml - ]</label>
+				<label>DialogVideoInfo.xml [COLOR FF00FF00]$VAR[DialogVideoInfoInclude][/COLOR]</label>
 				<visible>Window.IsVisible(DialogVideoInfo.xml)</visible>
 			</control>
 			<control type="label">
