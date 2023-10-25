@@ -19,7 +19,7 @@
 			</control>
 			<control id="9001" type="list">
 				<include>HiddenList</include>
-				<content limit="6">favourites://</content>
+				<content limit="4">favourites://</content>
 			</control>
 			<!-- Main list -->
 			<control id="99" type="list">
@@ -125,7 +125,7 @@
 				<onright condition="String.IsEqual(Container(99).ListItem.Property(widget),widget8) + !Integer.IsGreater(Container(800).NumItems,1) + !String.IsEmpty(Container(8007).ListItemPosition(0).Label)">$INFO[Skin.String(8000-WidgetAction-7)]</onright>
 				<onright condition="String.IsEqual(Container(99).ListItem.Property(widget),widget8) + !Integer.IsGreater(Container(800).NumItems,1) + !String.IsEmpty(Container(8008).ListItemPosition(0).Label)">$INFO[Skin.String(8000-WidgetAction-8)]</onright>
 				<onright condition="String.IsEqual(Container(99).ListItem.Property(widget),weather)">ActivateWindow(weather)</onright>
-				<onright condition="String.IsEqual(Container(99).ListItem.Property(widget),favourites)">ActivateWindow(favourites)</onright>
+				<onright condition="String.IsEqual(Container(99).ListItem.Property(widget),favourites)">ActivateWindow(favouritesbrowser)</onright>
 				<onright condition="String.IsEqual(Container(99).ListItem.Property(defaultID),settings)">Select</onright>
 				<orientation>vertical</orientation>
 				<scrolltime easing="out" tween="sine">180</scrolltime>

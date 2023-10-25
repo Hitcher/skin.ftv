@@ -14,7 +14,8 @@
 	<onload condition="System.HasAddon(script.tvtunes)">RunScript(script.tvtunes,backend=True)</onload>
 	<onunload>ClearProperty(StarredInTV,home)</onunload>
 	<onunload>ClearProperty(ActorImages,home)</onunload>
-	<onunload>SetFocus(50)</onunload>
+	<onunload condition="!Window.IsVisible(favouritesbrowser)">SetFocus(50)</onunload>
+	<onunload condition="Window.IsVisible(favouritesbrowser)">SetFocus(55)</onunload>
 	<animation effect="fade" end="100" start="100" time="200">WindowClose</animation>
 	<controls>
 		<!-- TMDbHelper monitor list -->

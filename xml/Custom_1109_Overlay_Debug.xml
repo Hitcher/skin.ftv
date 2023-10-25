@@ -109,6 +109,11 @@
 			</control>
 			<control type="label">
 				<include>DebugWindowLabel</include>
+				<label>MyFavourites.xml</label>
+				<visible>Window.IsVisible(MyFavourites.xml)</visible>
+			</control>
+			<control type="label">
+				<include>DebugWindowLabel</include>
 				<label>MyGames.xml</label>
 				<visible>Window.IsVisible(MyGames.xml)</visible>
 			</control>

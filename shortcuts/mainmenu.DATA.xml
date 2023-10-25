@@ -39,7 +39,7 @@
 		<label2>Common Shortcut</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb />
-		<action>ActivateWindow(favourites)</action>
+		<action>ActivateWindow(favouritesbrowser,return)</action>
 	</shortcut>
 	<shortcut>
 		<defaultID>videos</defaultID>

@@ -2,13 +2,13 @@
 <window>
 	<!-- favourites -->
 	<backgroundcolor>0xff12161b</backgroundcolor>
-	<defaultcontrol always="true">450</defaultcontrol>
-	<onload>Control.Move(450,$INFO[Container(450).CurrentItem,-])</onload>
-	<onload>Control.Move(450,1)</onload>
+	<views>55</views>
+	<defaultcontrol always="true">55</defaultcontrol>
+	<onload condition="Window.Previous(home)">Control.SetFocus(55,0,absolute)</onload>
 	<controls>
 		<!-- No results -->
 		<control type="group">
-			<visible>Integer.IsEqual(Container(450).NumItems,0)</visible>
+			<visible>Integer.IsEqual(Container(55).NumItems,0)</visible>
 			<animation delay="800" effect="fade" end="100" start="0" time="200">WindowOpen</animation>
 			<control type="image">
 				<centerleft>50%</centerleft>
@@ -47,7 +47,7 @@
 			<usecontrolcoords>true</usecontrolcoords>
 			<animation delay="400" easing="inout" effect="fade" end="100" start="0" time="120" tween="sine" reversible="false">WindowOpen</animation>
 			<animation effect="fade" end="0" start="100" time="0">WindowClose</animation>
-			<visible>!String.IsEmpty(Container(450).NumItems)</visible>
+			<visible>!String.IsEmpty(Container(55).NumItems)</visible>
 			<control type="label">
 				<width>auto</width>
 				<height>60</height>
@@ -63,8 +63,8 @@
 				<font>Med32</font>
 				<aligny>bottom</aligny>
 				<textcolor>ffdadada</textcolor>
-				<label>$INFO[Container(450).CurrentItem]</label>
-				<visible>Integer.IsGreater(Container(450).NumItems,0)</visible>
+				<label>$INFO[Container(55).CurrentItem]</label>
+				<visible>Integer.IsGreater(Container(55).NumItems,0)</visible>
 			</control>
 			<control type="label">
 				<top>28</top>
@@ -74,7 +74,7 @@
 				<aligny>bottom</aligny>
 				<textcolor>ff505050</textcolor>
 				<label>|</label>
-				<visible>Integer.IsGreater(Container(450).NumItems,0)</visible>
+				<visible>Integer.IsGreater(Container(55).NumItems,0)</visible>
 			</control>
 			<control type="label">
 				<top>30</top>
@@ -83,12 +83,12 @@
 				<font>Light32</font>
 				<aligny>bottom</aligny>
 				<textcolor>ff505050</textcolor>
-				<label>$INFO[Container(450).NumItems]</label>
-				<visible>Integer.IsGreater(Container(450).NumItems,0)</visible>
+				<label>$INFO[Container(55).NumItems]</label>
+				<visible>Integer.IsGreater(Container(55).NumItems,0)</visible>
 			</control>
 		</control>
 		<!-- List -->
-		<control id="450" type="fixedlist">
+		<control id="55" type="fixedlist">
 			<left>-238</left>
 			<top>242</top>
 			<width>2200</width>
@@ -104,7 +104,10 @@
 			<orientation>horizontal</orientation>
 			<defaultcontrol always="true">0</defaultcontrol>
 			<scrolltime easing="inout" tween="sine">300</scrolltime>
-			<include>ListBounceAnimation</include>
+				<include>ListBounceAnimation</include>
+				<include content="HomeToWindowSlideAnimation">
+					<param name="FocusRowID1_1" value="193,10"/>
+				</include>
 			<animation reversible="false" condition="Window.IsVisible(home)" easing="inout" effect="slide" end="0,0" start="193,10" time="540" tween="sine">WindowOpen</animation>
 			<itemlayout height="576" width="436">
 				<control type="group">
@@ -168,7 +171,7 @@
 			<focusedlayout height="576" width="436">
 				<control type="group">
 					<animation center="250,288" easing="inout" effect="zoom" end="100" start="85" time="300" tween="sine">Focus</animation>
-					<animation center="250,288" condition="Container(450).OnNext | Container(450).OnPrevious" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">UnFocus</animation>
+					<animation center="250,288" condition="Container(55).OnNext | Container(55).OnPrevious" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">UnFocus</animation>
 					<control type="image">
 						<left>-48</left>
 						<centertop>288</centertop>
@@ -176,7 +179,7 @@
 						<height>576</height>
 						<texture border="50">views/shadow_fo.png</texture>
 						<include content="ContainerMoveFadeAnimation">
-							<param name="ListID" value="450"/>
+							<param name="ListID" value="55"/>
 						</include>
 					</control>
 					<control type="image">
@@ -186,7 +189,7 @@
 						<height>576</height>
 						<texture border="50">views/shadow_nf.png</texture>
 						<include content="FocusedListIDAnimation">
-							<param name="ListID" value="450"/>
+							<param name="ListID" value="55"/>
 						</include>
 					</control>
 					<control type="image">
@@ -236,7 +239,7 @@
 						<height>480</height>
 						<texture>views/OverlayNF.png</texture>
 						<include content="FocusedListIDAnimation">
-							<param name="ListID" value="450"/>
+							<param name="ListID" value="55"/>
 						</include>
 					</control>
 				</control>

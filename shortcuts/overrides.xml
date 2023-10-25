@@ -31,7 +31,7 @@
     <shortcut label="$LOCALIZE[10821]" type="32034" grouping="common" thumbnail="DefaultAddonGame.png" icon="DefaultAddonGame.png">ActivateWindow(games)</shortcut>
 	<groupings>
 		<node label="fTV">
-			<shortcut label="10134" icon="ftv_icon.png">ActivateWindow(Favourites,favourites://,return)</shortcut>
+			<shortcut label="10134" icon="ftv_icon.png">ActivateWindow(favouritesbrowser,return)</shortcut>
 			<shortcut label="15016" icon="ftv_icon.png">ActivateWindow(Games)</shortcut>
 			<node label="342">
 				<shortcut label="31167" type="movie" icon="ftv_icon.png">ActivateWindow(Videos,special://skin/extras/video/RecentlyAddedMovies.xsp,return)</shortcut>
