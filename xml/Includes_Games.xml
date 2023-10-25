@@ -410,11 +410,21 @@
 				<left>20</left>
 				<top>14</top>
 				<height>30</height>
-				<width>800</width>
+				<width>1260</width>
 				<aligny>center</aligny>
 				<font>Bold30</font>
 				<textcolor>ffdadada</textcolor>
 				<label>35172</label>
+			</control>
+			<control type="label">
+				<left>20</left>
+				<top>13</top>
+				<width>1260</width>
+				<height>30</height>
+				<font>Light30Spaced</font>
+				<align>right</align>
+				<textcolor>ff636364</textcolor>
+				<label>[COLOR ffb2b2b2]$INFO[Container(5).CurrentItem][/COLOR] | $INFO[Container(5).NumItems]</label>
 			</control>
 			<control type="group">
 				<top>60</top>
