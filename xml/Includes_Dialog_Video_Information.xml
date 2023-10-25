@@ -64,7 +64,7 @@
 				<width>320</width>
 				<height>80</height>
 				<texture border="2">views/default_overlay.png</texture>
-				<visible>[ListItem.IsResumable + [!Container.Content(tvshows) + !Container.Content(seasons)]]| [Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),00) + Integer.IsLess(ListItem.Property(WatchedEpisodePercent),100) + [Container.Content(tvshows) | Container.Content(seasons)]]</visible>
+				<visible>[ListItem.IsResumable + [!Container.Content(tvshows) + !Container.Content(seasons)]] | [Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),00) + Integer.IsLess(ListItem.Property(WatchedEpisodePercent),100) + [Container.Content(tvshows) | Container.Content(seasons)]]</visible>
 			</control>
 			<control type="label">
 				<left>16</left>
