@@ -396,10 +396,10 @@
 	<include name="Includes_DialogGameAgents">
 		<include>DialogBackgroundImage</include>
 		<control type="group">
-			<left>90</left>
-			<top>90</top>
-			<width>1740</width>
-			<height>900</height>
+			<left>310</left>
+			<top>209</top>
+			<width>1300</width>
+			<height>662</height>
 			<include>DialogZoomAnimation</include>
 			<control type="image">
 				<width>100%</width>
@@ -407,7 +407,7 @@
 				<texture border="0,64,1,0">dialogs/game_osd_back.png</texture>
 			</control>
 			<control type="label" id="2">
-				<left>40</left>
+				<left>20</left>
 				<top>14</top>
 				<height>30</height>
 				<width>800</width>
@@ -417,12 +417,11 @@
 				<label>35172</label>
 			</control>
 			<control type="group">
-				<left>20</left>
-				<top>80</top>
+				<top>60</top>
 				<height>800</height>
-				<width>1700</width>
+				<width>1300</width>
 				<control type="button" id="3">
-					<width>1700</width>
+					<width>1300</width>
 					<height>86</height>
 					<ondown>5</ondown>
 					<font>Light32</font>
@@ -435,8 +434,8 @@
 					<onclick>ActivateWindow(GamePorts)</onclick>
 				</control>
 				<control type="gamecontrollerlist" id="4">
-					<left>583</left>
-					<width>1700</width>
+					<left>183</left>
+					<width>1300</width>
 					<height>86</height>
 					<align>right</align>
 					<enable>false</enable>
@@ -465,22 +464,22 @@
 					</focusedlayout>
 				</control>
 				<control type="list" id="5">
-					<top>108</top>
-					<width>1700</width>
-					<height>688</height>
+					<top>86</top>
+					<width>1300</width>
+					<height>516</height>
 					<onup>3</onup>
 					<ondown>6</ondown>
-					<scrolltime tween="sine">200</scrolltime>
+					<scrolltime>0</scrolltime>
 					<orientation>vertical</orientation>
-					<itemlayout width="1700" height="86">
+					<itemlayout width="1300" height="86">
 						<control type="image">
-							<width>1700</width>
+							<width>1300</width>
 							<height>86</height>
 							<texture border="3">settings/button_no_focus.png</texture>
 						</control>
 						<control type="label">
 							<left>20</left>
-							<width>1700</width>
+							<width>1300</width>
 							<height>86</height>
 							<font>Light32</font>
 							<aligny>center</aligny>
@@ -488,8 +487,8 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="gamecontrollerlist">
-							<left>583</left>
-							<width>1700</width>
+							<left>183</left>
+							<width>1300</width>
 							<align>right</align>
 							<enable>false</enable>
 							<orientation>horizontal</orientation>
@@ -501,6 +500,8 @@
 									<height>76</height>
 									<peripherallocation>$INFO[ListItem.FilenameAndPath]</peripherallocation>
 									<controllerdiffuse>button_focus</controllerdiffuse>
+									<!--texture>$INFO[ListItem.Icon]</texture>
+									<controllerid>$INFO[ListItem.Property(controllerid)]</controllerid-->
 								</control>
 							</itemlayout>
 							<focusedlayout width="86" height="86">
@@ -511,13 +512,56 @@
 									<height>76</height>
 									<peripherallocation>$INFO[ListItem.FilenameAndPath]</peripherallocation>
 									<controllerdiffuse>button_focus</controllerdiffuse>
+									<!--texture>$INFO[ListItem.Icon]</texture>
+									<controllerid>$INFO[ListItem.Property(controllerid)]</controllerid-->
 								</control>
 							</focusedlayout>
+							<!--content>
+								<item>
+									<icon>DefaultAddonNone.png</icon>
+								</item>
+								<item>
+									<property name="controllerid">game.controller.default</property>
+								</item>
+								<item>
+									<property name="controllerid">game.controller.default</property>
+								</item>
+								<item>
+									<property name="controllerid">game.controller.default</property>
+								</item>
+								<item>
+									<property name="controllerid">game.controller.default</property>
+								</item>
+								<item>
+									<property name="controllerid">game.controller.default</property>
+								</item>
+								<item>
+									<property name="controllerid">game.controller.default</property>
+								</item>
+								<item>
+									<property name="controllerid">game.controller.default</property>
+								</item>
+								<item>
+									<property name="controllerid">game.controller.default</property>
+								</item>
+								<item>
+									<property name="controllerid">game.controller.default</property>
+								</item>
+								<item>
+									<property name="controllerid">game.controller.default</property>
+								</item>
+								<item>
+									<property name="controllerid">game.controller.default</property>
+								</item>
+								<item>
+									<property name="controllerid">game.controller.default</property>
+								</item>
+							</content-->
 						</control>
 					</itemlayout>
-					<focusedlayout width="1700" height="86">
+					<focusedlayout width="1300" height="86">
 						<control type="image">
-							<width>1700</width>
+							<width>1300</width>
 							<height>86</height>
 							<texture border="3">settings/button_focus.png</texture>
 						</control>
@@ -540,8 +584,8 @@
 							<visible>!Control.HasFocus(5)</visible>
 						</control>
 						<control type="gamecontrollerlist">
-							<left>583</left>
-							<width>1700</width>
+							<left>183</left>
+							<width>1300</width>
 							<align>right</align>
 							<enable>false</enable>
 							<orientation>horizontal</orientation>
@@ -553,6 +597,8 @@
 									<height>76</height>
 									<peripherallocation>$INFO[ListItem.FilenameAndPath]</peripherallocation>
 									<controllerdiffuse>button_focus</controllerdiffuse>
+									<!--texture>$INFO[ListItem.Icon]</texture>
+									<controllerid>$INFO[ListItem.Property(controllerid)]</controllerid-->
 								</control>
 							</itemlayout>
 							<focusedlayout width="86" height="86">
@@ -563,10 +609,91 @@
 									<height>76</height>
 									<peripherallocation>$INFO[ListItem.FilenameAndPath]</peripherallocation>
 									<controllerdiffuse>button_focus</controllerdiffuse>
+									<!--texture>$INFO[ListItem.Icon]</texture>
+									<controllerid>$INFO[ListItem.Property(controllerid)]</controllerid-->
 								</control>
 							</focusedlayout>
+							<!--content>
+								<item>
+									<icon>DefaultAddonNone.png</icon>
+								</item>
+								<item>
+									<property name="controllerid">game.controller.default</property>
+								</item>
+								<item>
+									<property name="controllerid">game.controller.default</property>
+								</item>
+								<item>
+									<property name="controllerid">game.controller.default</property>
+								</item>
+								<item>
+									<property name="controllerid">game.controller.default</property>
+								</item>
+								<item>
+									<property name="controllerid">game.controller.default</property>
+								</item>
+								<item>
+									<property name="controllerid">game.controller.default</property>
+								</item>
+								<item>
+									<property name="controllerid">game.controller.default</property>
+								</item>
+								<item>
+									<property name="controllerid">game.controller.default</property>
+								</item>
+								<item>
+									<property name="controllerid">game.controller.default</property>
+								</item>
+								<item>
+									<property name="controllerid">game.controller.default</property>
+								</item>
+								<item>
+									<property name="controllerid">game.controller.default</property>
+								</item>
+								<item>
+									<property name="controllerid">game.controller.default</property>
+								</item>
+							</content-->
 						</control>
 					</focusedlayout>
+					<!--content>
+						<item>
+							<label>Player 1</label>
+						</item>
+						<item>
+							<label>Player 2</label>
+						</item>
+						<item>
+							<label>Player 3</label>
+						</item>
+						<item>
+							<label>Player 4</label>
+						</item>
+						<item>
+							<label>Player 5</label>
+						</item>
+						<item>
+							<label>Player 6</label>
+						</item>
+						<item>
+							<label>Player 7</label>
+						</item>
+						<item>
+							<label>Player 8</label>
+						</item>
+						<item>
+							<label>Player 9</label>
+						</item>
+						<item>
+							<label>Player 10</label>
+						</item>
+						<item>
+							<label>Player 11</label>
+						</item>
+						<item>
+							<label>Player 12</label>
+						</item>
+					</content-->
 				</control>
 			</control>
 		</control>
