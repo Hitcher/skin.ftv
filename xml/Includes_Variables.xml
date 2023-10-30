@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="DialogVideoInfoImage">
+		<value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
+		<value>$INFO[ListItem.Icon]</value>
+	</variable>
 	<variable name="GameDialogHeading">
 		<value condition="Window.IsVisible(10823)">$LOCALIZE[35225]</value>
 		<value condition="Window.IsVisible(10824)">$LOCALIZE[35233]</value>
@@ -124,15 +128,15 @@
 		</value>
 	</variable>
 	<variable name="DialogPersonInfoListContent">
-		<value condition="String.IsEqual(ListItem.Property(item.type),person) + String.IsEmpty(Window(home).Property(StarredInTV)) + String.IsEmpty(Window(home).Property(ActorImages))">plugin://plugin.video.themoviedb.helper?info=stars_in_movies&amp;type=person&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;nextpage=false&amp;limit=100</value>
-		<value condition="!String.IsEmpty(Window(home).Property(StarredInTV))">plugin://plugin.video.themoviedb.helper?info=stars_in_tvshows&amp;type=person&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;nextpage=false&amp;limit=100</value>
-		<value condition="!String.IsEmpty(Window(home).Property(ActorImages))">plugin://plugin.video.themoviedb.helper?info=images&amp;type=person&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;nextpage=false</value>
+		<value condition="String.IsEqual(ListItem.Property(item.type),person) + String.IsEmpty(Window(home).Property(StarredInTV)) + String.IsEmpty(Window(home).Property(ActorImages))">plugin://plugin.video.themoviedb.helper?info=stars_in_movies&amp;tmdb_type=person&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;nextpage=false&amp;limit=100</value>
+		<value condition="!String.IsEmpty(Window(home).Property(StarredInTV))">plugin://plugin.video.themoviedb.helper?info=stars_in_tvshows&amp;tmdb_type=person&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;nextpage=false&amp;limit=100</value>
+		<value condition="!String.IsEmpty(Window(home).Property(ActorImages))">plugin://plugin.video.themoviedb.helper?info=images&amp;tmdb_type=person&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;nextpage=false</value>
 	</variable>
 	<variable name="DialogMovieInfoListContent">
-		<value condition="String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEqual(ListItem.Property(item.type),movie)">plugin://plugin.video.themoviedb.helper?info=cast&amp;type=movie&amp;aggregate=true&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;nextpage=false</value>
-		<value condition="String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEqual(ListItem.Property(item.type),tv)">plugin://plugin.video.themoviedb.helper?info=cast&amp;type=tv&amp;aggregate=true&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;nextpage=false</value>
-		<value condition="!String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEqual(ListItem.Property(item.type),movie)">plugin://plugin.video.themoviedb.helper?info=recommendations&amp;type=movie&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;nextpage=false</value>
-		<value condition="!String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEqual(ListItem.Property(item.type),tv)">plugin://plugin.video.themoviedb.helper?info=recommendations&amp;type=tv&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;nextpage=false</value>
+		<value condition="String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEqual(ListItem.Property(item.type),movie)">plugin://plugin.video.themoviedb.helper?info=cast&amp;tmdb_type=movie&amp;aggregate=true&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;nextpage=false</value>
+		<value condition="String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEqual(ListItem.Property(item.type),tv)">plugin://plugin.video.themoviedb.helper?info=cast&amp;tmdb_type=tv&amp;aggregate=true&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;nextpage=false</value>
+		<value condition="!String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEqual(ListItem.Property(item.type),movie)">plugin://plugin.video.themoviedb.helper?info=recommendations&amp;tmdb_type=movie&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;nextpage=false</value>
+		<value condition="!String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEqual(ListItem.Property(item.type),tv)">plugin://plugin.video.themoviedb.helper?info=recommendations&amp;tmdb_type=tv&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;nextpage=false</value>
 	</variable>
 	<variable name="DialogVideoInfoListContent">
 		<value condition="String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEqual(ListItem.DBTYPE,movie)">plugin://plugin.video.themoviedb.helper?info=cast&amp;tmdb_type=movie&amp;aggregate=true&amp;query=$INFO[ListItem.Title]&amp;year=$INFO[ListItem.Year]&amp;nextpage=false</value>
@@ -141,11 +145,11 @@
 		<value condition="!String.IsEmpty(Window(home).Property(RecommendedVideos)) + !String.IsEqual(ListItem.DBTYPE,movie)">plugin://plugin.video.themoviedb.helper?info=recommendations&amp;tmdb_type=tv&amp;query=$INFO[ListItem.TVShowTitle]&amp;nextpage=false</value>
 	</variable>
 	<variable name="XRayCast">
-		<value condition="VideoPlayer.Content(movies) + !String.IsEmpty(Window(Home).Property(TMDbHelper.Player.TMDb_id)) + String.IsEqual(Window(Home).Property(TMDbHelper.Player.Title),VideoPlayer.Title)">plugin://plugin.video.themoviedb.helper/?info=cast&amp;type=movie$INFO[Window(Home).Property(TMDbHelper.Player.TMDb_id),&amp;tmdb_id=,]</value>
-		<value condition="VideoPlayer.Content(movies) + !String.IsEmpty(VideoPlayer.IMDBNumber) + String.StartsWith(VideoPlayer.IMDBNumber,tt)">plugin://plugin.video.themoviedb.helper/?info=cast&amp;type=movie$INFO[VideoPlayer.IMDBNumber,&amp;imdb_id=,]</value>
-		<value condition="VideoPlayer.Content(movies)">plugin://plugin.video.themoviedb.helper/?info=cast&amp;type=movie$INFO[Player.Title,&amp;query=,]$INFO[VideoPlayer.Year,&amp;year=,]</value>
-		<value condition="VideoPlayer.Content(episodes) + !String.IsEmpty(Window(Home).Property(TMDbHelper.Player.tvshow.TMDb_id)) + String.IsEqual(Window(Home).Property(TMDbHelper.Player.Title),VideoPlayer.Title)">plugin://plugin.video.themoviedb.helper/?info=cast&amp;type=tv$INFO[Window(Home).Property(TMDbHelper.Player.tvshow.TMDb_id),&amp;tmdb_id=,]$INFO[VideoPlayer.Season,&amp;season=,]$INFO[VideoPlayer.Episode,&amp;episode=,]</value>
-		<value condition="VideoPlayer.Content(episodes)">plugin://plugin.video.themoviedb.helper/?info=cast&amp;type=tv$INFO[VideoPlayer.TVShowTitle,&amp;query=,]$INFO[VideoPlayer.Season,&amp;season=,]$INFO[VideoPlayer.Episode,&amp;episode=,]</value>
+		<value condition="VideoPlayer.Content(movies) + !String.IsEmpty(Window(Home).Property(TMDbHelper.Player.TMDb_id)) + String.IsEqual(Window(Home).Property(TMDbHelper.Player.Title),VideoPlayer.Title)">plugin://plugin.video.themoviedb.helper/?info=cast&amp;tmdb_type=movie$INFO[Window(Home).Property(TMDbHelper.Player.TMDb_id),&amp;tmdb_id=,]</value>
+		<value condition="VideoPlayer.Content(movies) + !String.IsEmpty(VideoPlayer.IMDBNumber) + String.StartsWith(VideoPlayer.IMDBNumber,tt)">plugin://plugin.video.themoviedb.helper/?info=cast&amp;tmdb_type=movie$INFO[VideoPlayer.IMDBNumber,&amp;imdb_id=,]</value>
+		<value condition="VideoPlayer.Content(movies)">plugin://plugin.video.themoviedb.helper/?info=cast&amp;tmdb_type=movie$INFO[Player.Title,&amp;query=,]$INFO[VideoPlayer.Year,&amp;year=,]</value>
+		<value condition="VideoPlayer.Content(episodes) + !String.IsEmpty(Window(Home).Property(TMDbHelper.Player.tvshow.TMDb_id)) + String.IsEqual(Window(Home).Property(TMDbHelper.Player.Title),VideoPlayer.Title)">plugin://plugin.video.themoviedb.helper/?info=cast&amp;tmdb_type=tv$INFO[Window(Home).Property(TMDbHelper.Player.tvshow.TMDb_id),&amp;tmdb_id=,]$INFO[VideoPlayer.Season,&amp;season=,]$INFO[VideoPlayer.Episode,&amp;episode=,]</value>
+		<value condition="VideoPlayer.Content(episodes)">plugin://plugin.video.themoviedb.helper/?info=cast&amp;tmdb_type=tv$INFO[VideoPlayer.TVShowTitle,&amp;query=,]$INFO[VideoPlayer.Season,&amp;season=,]$INFO[VideoPlayer.Episode,&amp;episode=,]</value>
 	</variable>
 	<variable name="DialogSelectImage">
 		<value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
@@ -1290,7 +1294,8 @@
 	<variable name="MediaType">
 		<value condition="Container.Content(movies)">$LOCALIZE[20338]</value>
 		<value condition="Container.Content(episodes)">$LOCALIZE[20359]</value>
-		<value condition="Container.Content(tvshows) | Container.Content(seasons)">$LOCALIZE[20364]</value>
+		<value condition="Container.Content(tvshows)">$LOCALIZE[20364]</value>
+		<value condition="Container.Content(seasons)">$LOCALIZE[20373]</value>
 		<value condition="Container.Content(musicvideos)">$LOCALIZE[20391]</value>
 		<value condition="Container.Content(albums)">$LOCALIZE[558]</value>
 		<value condition="Container.Content(artists)">$LOCALIZE[557]</value>

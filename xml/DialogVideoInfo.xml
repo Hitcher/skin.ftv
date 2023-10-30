@@ -22,6 +22,10 @@
 		<control type="list" id="99950">
 			<include>HiddenList</include>
 		</control>
+		<!-- Cast list -->
+		<control type="list" id="50">
+			<include>HiddenList</include>
+		</control>
 		<!-- Content type includes -->
 		<include condition="!String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + !Skin.HasSetting(ExtendedInfo)">Includes_Dialog_Default_Video_Information</include>
 		<include condition="String.IsEmpty(ListItem.Property(item.type),movie) + String.IsEmpty(ListItem.Property(item.type),tv) + !String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + Skin.HasSetting(ExtendedInfo)">Includes_Dialog_Video_Information</include>

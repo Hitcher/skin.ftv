@@ -220,7 +220,7 @@
 				<include>DialogVideoInfoAnimation</include>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
-				<visible>!String.IsEmpty(ListItem.Property(Cast.1.Name))</visible>
+				<visible>!String.IsEmpty(Container(99950).ListItem.Property(Cast.1.Name))</visible>
 				<animation condition="Control.HasFocus(500)" effect="fade" end="0" start="100" time="0">Conditional</animation>
 				<animation condition="!Control.HasFocus(500)" delay="200" effect="fade" end="100" start="0" time="80">Conditional</animation>
 				<control type="label">
@@ -238,7 +238,7 @@
 					<font>Light30Spaced</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffbcbcbc</textcolor>
-					<label>$INFO[ListItem.Property(Cast.1.Name)]$INFO[ListItem.Property(Cast.2.Name),$COMMA ]$INFO[ListItem.Property(Cast.3.Name),$COMMA ]</label>
+					<label>$INFO[Container(99950).ListItem.Property(Cast.1.Name)]$INFO[Container(99950).ListItem.Property(Cast.2.Name),$COMMA ]$INFO[Container(99950).ListItem.Property(Cast.3.Name),$COMMA ]</label>
 				</control>
 			</control>
 			<!-- Director -->
@@ -379,14 +379,14 @@
 							<width>320</width>
 							<height>480</height>
 							<aspectratio align="center">scale</aspectratio>
-							<texture background="true">$INFO[ListItem.Art(poster)]</texture>
+							<texture background="true">$VAR[DialogSelectImage]</texture>
 						</control>
 						<control type="image">
 							<bottom>48</bottom>
 							<width>320</width>
 							<height>165</height>
 							<texture border="2">views/default_overlay.png</texture>
-							<visible>!String.Contains(ListItem.Art(poster),Default) + !String.IsEmpty(ListItem.Label2)</visible>
+							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label) + String.IsEmpty(Window(home).Property(RecommendedVideos))</visible>
 						</control>
 						<control type="label">
 							<left>18</left>
@@ -397,7 +397,8 @@
 							<textcolor>ffffffff</textcolor>
 							<shadowcolor>80000000</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
-							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label2)</visible>
+							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label) + String.IsEmpty(Window(home).Property(RecommendedVideos))</visible>
+							<animation condition="String.IsEmpty(ListItem.Label2)" effect="slide" end="0,31" start="0,0" time="0">Conditional</animation>
 						</control>
 						<control type="label">
 							<left>18</left>
@@ -451,14 +452,14 @@
 							<width>320</width>
 							<height>480</height>
 							<aspectratio align="center">scale</aspectratio>
-							<texture background="true">$INFO[ListItem.Art(poster)]</texture>
+							<texture background="true">$VAR[DialogSelectImage]</texture>
 						</control>
 						<control type="image">
 							<bottom>48</bottom>
 							<width>320</width>
 							<height>165</height>
 							<texture border="2">views/default_overlay.png</texture>
-							<visible>!String.Contains(ListItem.Art(poster),Default) + !String.IsEmpty(ListItem.Label2)</visible>
+							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label) + String.IsEmpty(Window(home).Property(RecommendedVideos))</visible>
 							<include content="FocusedListIDAnimation">
 								<param name="ListID" value="500"/>
 							</include>
@@ -473,7 +474,8 @@
 							<textcolor>ffffffff</textcolor>
 							<shadowcolor>80000000</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
-							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label2)</visible>
+							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label) + String.IsEmpty(Window(home).Property(RecommendedVideos))</visible>
+							<animation condition="String.IsEmpty(ListItem.Label2)" effect="slide" end="0,31" start="0,0" time="0">Conditional</animation>
 							<include content="FocusedListIDAnimation">
 								<param name="ListID" value="500"/>
 							</include>
