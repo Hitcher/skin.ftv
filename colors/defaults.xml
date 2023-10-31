@@ -1,5 +1,7 @@
 <colors>
 	<!-- Default colours -->
+	<color name="FocusedColor">ffffaf37</color>
+	<color name="NotFocusedColor">ff555555</color>
 	<color name="ShadowColor">44000000</color>
 	<color name="DisabledColor">ff000000</color>
 	<color name="InvalidColor">ffa10000</color>

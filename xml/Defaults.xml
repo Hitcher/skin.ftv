@@ -81,12 +81,12 @@
 		<spinheight>21</spinheight>
 		<texturenofocus/>
 		<texturefocus/>
-		<textureup>dialogs/SpinUpNF.png</textureup>
-		<texturedown>dialogs/SpinDownNF.png</texturedown>
-		<textureupfocus>dialogs/SpinUpFO.png</textureupfocus>
-		<texturedownfocus>dialogs/SpinDownFO.png</texturedownfocus>
-		<textureupdisabled>dialogs/SpinUpDisabled.png</textureupdisabled>
-		<texturedowndisabled>dialogs/SpinDownDisabled.png</texturedowndisabled>
+		<textureup colordiffuse="NotFocusedColor">dialogs/SpinUp.png</textureup>
+		<texturedown colordiffuse="NotFocusedColor">dialogs/SpinDown.png</texturedown>
+		<textureupfocus colordiffuse="FocusedColor">dialogs/SpinUp.png</textureupfocus>
+		<texturedownfocus colordiffuse="FocusedColor">dialogs/SpinDown.png</texturedownfocus>
+		<textureupdisabled colordiffuse="DisabledColor">dialogs/SpinUp.png</textureupdisabled>
+		<texturedowndisabled colordiffuse="DisabledColor">dialogs/SpinDown.png</texturedowndisabled>
 		<reverse>yes</reverse>
 		<pulseonselect>false</pulseonselect>
 	</default>
@@ -102,12 +102,12 @@
 		<disabledcolor>DisabledColor</disabledcolor>
 		<spinwidth>32</spinwidth>
 		<spinheight>21</spinheight>
-		<textureup>dialogs/SpinUpNF.png</textureup>
-		<texturedown>dialogs/SpinDownNF.png</texturedown>
-		<textureupfocus>dialogs/SpinUpFO.png</textureupfocus>
-		<texturedownfocus>dialogs/SpinDownFO.png</texturedownfocus>
-		<textureupdisabled>dialogs/SpinUpDisabled.png</textureupdisabled>
-		<texturedowndisabled>dialogs/SpinDownDisabled.png</texturedowndisabled>
+		<textureup colordiffuse="NotFocusedColor">dialogs/SpinUp.png</textureup>
+		<texturedown colordiffuse="NotFocusedColor">dialogs/SpinDown.png</texturedown>
+		<textureupfocus colordiffuse="FocusedColor">dialogs/SpinUp.png</textureupfocus>
+		<texturedownfocus colordiffuse="FocusedColor">dialogs/SpinDown.png</texturedownfocus>
+		<textureupdisabled colordiffuse="DisabledColor">dialogs/SpinUp.png</textureupdisabled>
+		<texturedowndisabled colordiffuse="DisabledColor">dialogs/SpinDown.png</texturedowndisabled>
 		<reverse>yes</reverse>
 		<pulseonselect>false</pulseonselect>
 	</default>

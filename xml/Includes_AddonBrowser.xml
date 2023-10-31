@@ -372,7 +372,7 @@
 							<height>120</height>
 							<aligny>center</aligny>
 							<font>Light30Spaced</font>
-							<textcolor>ff505153</textcolor>
+							<textcolor>NotFocusedColor</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
@@ -393,7 +393,7 @@
 							<height>120</height>
 							<aligny>center</aligny>
 							<font>Light30Spaced</font>
-							<textcolor>ffffaf37</textcolor>
+							<textcolor>FocusedColor</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</focusedlayout>
@@ -650,7 +650,7 @@
 						<aligny>top</aligny>
 						<font>Med24</font>
 						<label>16041</label>
-						<textcolor>ff505153</textcolor>
+						<textcolor>NotFocusedColor</textcolor>
 						<visible>Control.IsVisible(6) + !Control.HasFocus(6) + String.Contains(Control.GetLabel(6),*)</visible>
 					</control>
 					<control type="label">
@@ -672,7 +672,7 @@
 						<aligny>top</aligny>
 						<font>Med24</font>
 						<label>351</label>
-						<textcolor>ff505153</textcolor>
+						<textcolor>NotFocusedColor</textcolor>
 						<visible>Control.IsVisible(6) + !Control.HasFocus(6) + !String.Contains(Control.GetLabel(6),*)</visible>
 					</control>
 					<control type="label">
@@ -694,7 +694,7 @@
 						<aligny>top</aligny>
 						<font>Med24</font>
 						<label>16041</label>
-						<textcolor>ff505153</textcolor>
+						<textcolor>NotFocusedColor</textcolor>
 						<visible>Control.IsVisible(7) + !Control.HasFocus(7) + String.Contains(Control.GetLabel(7),*)</visible>
 					</control>
 					<control type="label">
@@ -716,7 +716,7 @@
 						<aligny>top</aligny>
 						<font>Med24</font>
 						<label>351</label>
-						<textcolor>ff505153</textcolor>
+						<textcolor>NotFocusedColor</textcolor>
 						<visible>Control.IsVisible(7) + !Control.HasFocus(7) + !String.Contains(Control.GetLabel(7),*)</visible>
 					</control>
 					<control type="label">
@@ -738,7 +738,7 @@
 						<aligny>top</aligny>
 						<font>Med24</font>
 						<label>16041</label>
-						<textcolor>ff505153</textcolor>
+						<textcolor>NotFocusedColor</textcolor>
 						<visible>Control.IsVisible(8) + !Control.HasFocus(8) + String.Contains(Control.GetLabel(8),*)</visible>
 					</control>
 					<control type="label">
@@ -760,7 +760,7 @@
 						<aligny>top</aligny>
 						<font>Med24</font>
 						<label>351</label>
-						<textcolor>ff505153</textcolor>
+						<textcolor>NotFocusedColor</textcolor>
 						<visible>Control.IsVisible(8) + !Control.HasFocus(8) + !String.Contains(Control.GetLabel(8),*)</visible>
 					</control>
 				</control>
@@ -835,7 +835,7 @@
 						<height>140</height>
 						<aligny>center</aligny>
 						<font>Light30Spaced</font>
-						<textcolor>ff505153</textcolor>
+						<textcolor>NotFocusedColor</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="group">
@@ -874,7 +874,7 @@
 						<height>140</height>
 						<aligny>center</aligny>
 						<font>Light30Spaced</font>
-						<textcolor>ffffaf37</textcolor>
+						<textcolor>FocusedColor</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<visible>Control.HasFocus(51)</visible>
 					</control>

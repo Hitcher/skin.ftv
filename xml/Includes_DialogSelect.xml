@@ -96,7 +96,7 @@
 						<width>878</width>
 						<height>84</height>
 						<font>Light32</font>
-						<textcolor>ff505153</textcolor>
+						<textcolor>NotFocusedColor</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
@@ -111,7 +111,7 @@
 						<width>878</width>
 						<height>84</height>
 						<font>Light32</font>
-						<textcolor>ffffaf37</textcolor>
+						<textcolor>FocusedColor</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</focusedlayout>
@@ -230,7 +230,7 @@
 						<width>626</width>
 						<height>42</height>
 						<font>Light32</font>
-						<textcolor>ff505153</textcolor>
+						<textcolor>NotFocusedColor</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<animation condition="String.IsEmpty(ListItem.Label2)" effect="slide" end="0,19">Conditional</animation>
 					</control>
@@ -240,7 +240,7 @@
 						<width>626</width>
 						<height>34</height>
 						<font>Light24</font>
-						<textcolor>ff505153</textcolor>
+						<textcolor>NotFocusedColor</textcolor>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 				</itemlayout>
@@ -264,7 +264,7 @@
 						<width>626</width>
 						<height>42</height>
 						<font>Light32</font>
-						<textcolor>ffffaf37</textcolor>
+						<textcolor>FocusedColor</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<animation condition="String.IsEmpty(ListItem.Label2)" effect="slide" end="0,19">Conditional</animation>
 						<visible>Control.HasFocus(6)</visible>
@@ -275,7 +275,7 @@
 						<width>626</width>
 						<height>34</height>
 						<font>Light24</font>
-						<textcolor>ffffaf37</textcolor>
+						<textcolor>FocusedColor</textcolor>
 						<label>$INFO[ListItem.Label2]</label>
 						<visible>Control.HasFocus(6)</visible>
 					</control>
@@ -285,7 +285,7 @@
 						<width>626</width>
 						<height>42</height>
 						<font>Light32</font>
-						<textcolor>ff505153</textcolor>
+						<textcolor>NotFocusedColor</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<animation condition="String.IsEmpty(ListItem.Label2)" effect="slide" end="0,19">Conditional</animation>
 						<visible>!Control.HasFocus(6)</visible>
@@ -296,7 +296,7 @@
 						<width>626</width>
 						<height>34</height>
 						<font>Light24</font>
-						<textcolor>ff505153</textcolor>
+						<textcolor>NotFocusedColor</textcolor>
 						<label>$INFO[ListItem.Label2]</label>
 						<visible>!Control.HasFocus(6)</visible>
 					</control>
@@ -806,7 +806,7 @@
 						<width>626</width>
 						<height>42</height>
 						<font>Light32</font>
-						<textcolor>ff505153</textcolor>
+						<textcolor>NotFocusedColor</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<animation condition="String.IsEmpty(ListItem.Label2)" effect="slide" end="0,19">Conditional</animation>
 					</control>
@@ -816,7 +816,7 @@
 						<width>626</width>
 						<height>34</height>
 						<font>Light24</font>
-						<textcolor>ff505153</textcolor>
+						<textcolor>NotFocusedColor</textcolor>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 				</itemlayout>
@@ -840,7 +840,7 @@
 						<width>626</width>
 						<height>42</height>
 						<font>Light32</font>
-						<textcolor>ffffaf37</textcolor>
+						<textcolor>FocusedColor</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<animation condition="String.IsEmpty(ListItem.Label2)" effect="slide" end="0,19">Conditional</animation>
 						<visible>Control.HasFocus(3)</visible>
@@ -851,7 +851,7 @@
 						<width>626</width>
 						<height>34</height>
 						<font>Light24</font>
-						<textcolor>ffffaf37</textcolor>
+						<textcolor>FocusedColor</textcolor>
 						<label>$INFO[ListItem.Label2]</label>
 						<visible>Control.HasFocus(3)</visible>
 					</control>
@@ -861,7 +861,7 @@
 						<width>626</width>
 						<height>42</height>
 						<font>Light32</font>
-						<textcolor>ff505153</textcolor>
+						<textcolor>NotFocusedColor</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<animation condition="String.IsEmpty(ListItem.Label2)" effect="slide" end="0,19">Conditional</animation>
 						<visible>!Control.HasFocus(3)</visible>
@@ -872,7 +872,7 @@
 						<width>626</width>
 						<height>34</height>
 						<font>Light24</font>
-						<textcolor>ff505153</textcolor>
+						<textcolor>NotFocusedColor</textcolor>
 						<label>$INFO[ListItem.Label2]</label>
 						<visible>!Control.HasFocus(3)</visible>
 					</control>

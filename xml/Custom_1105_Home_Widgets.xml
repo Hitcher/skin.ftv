@@ -162,7 +162,7 @@
 							<width>270</width>
 							<height>84</height>
 							<font>Light32</font>
-							<textcolor>ff505153</textcolor>
+							<textcolor>NotFocusedColor</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
@@ -177,7 +177,7 @@
 							<width>270</width>
 							<height>84</height>
 							<font>Light32</font>
-							<textcolor>ffffaf37</textcolor>
+							<textcolor>FocusedColor</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>Control.HasFocus(10)</visible>
 						</control>
@@ -230,7 +230,7 @@
 							<width>440</width>
 							<height>84</height>
 							<font>Light32</font>
-							<textcolor>ff505153</textcolor>
+							<textcolor>NotFocusedColor</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>!String.IsEmpty(ListItem.Label)</visible>
 						</control>
@@ -239,7 +239,7 @@
 							<width>440</width>
 							<height>84</height>
 							<font>Light32</font>
-							<textcolor>ff505153</textcolor>
+							<textcolor>NotFocusedColor</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
 							<visible>String.IsEmpty(ListItem.Label)</visible>
 						</control>
@@ -250,7 +250,7 @@
 							<width>440</width>
 							<height>84</height>
 							<font>Light32</font>
-							<textcolor>ffffaf37</textcolor>
+							<textcolor>FocusedColor</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>Control.HasFocus(20) + !String.IsEmpty(ListItem.Label)</visible>
 						</control>
@@ -268,7 +268,7 @@
 							<width>440</width>
 							<height>84</height>
 							<font>Light32</font>
-							<textcolor>ffffaf37</textcolor>
+							<textcolor>FocusedColor</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
 							<visible>Control.HasFocus(20) + String.IsEmpty(ListItem.Label)</visible>
 						</control>
@@ -337,7 +337,7 @@
 							<width>820</width>
 							<height>84</height>
 							<font>Light32</font>
-							<textcolor>ff505153</textcolor>
+							<textcolor>NotFocusedColor</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>!String.IsEmpty(ListItem.Label)</visible>
 						</control>
@@ -346,7 +346,7 @@
 							<width>820</width>
 							<height>84</height>
 							<font>Light32</font>
-							<textcolor>ff505153</textcolor>
+							<textcolor>NotFocusedColor</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
 							<visible>String.IsEmpty(ListItem.Label)</visible>
 						</control>
@@ -358,7 +358,7 @@
 							<height>84</height>
 							<font>Light32</font>
 							<scroll>true</scroll>
-							<textcolor>ffffaf37</textcolor>
+							<textcolor>FocusedColor</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>Control.HasFocus(30) + !String.IsEmpty(ListItem.Label)</visible>
 						</control>
@@ -376,7 +376,7 @@
 							<width>820</width>
 							<height>84</height>
 							<font>Light32</font>
-							<textcolor>ffffaf37</textcolor>
+							<textcolor>FocusedColor</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
 							<visible>Control.HasFocus(30) + String.IsEmpty(ListItem.Label)</visible>
 						</control>
@@ -445,7 +445,7 @@
 							<width>210</width>
 							<height>84</height>
 							<font>Light32</font>
-							<textcolor>ff505153</textcolor>
+							<textcolor>NotFocusedColor</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>!String.IsEmpty(ListItem.Label)</visible>
 						</control>
@@ -454,7 +454,7 @@
 							<width>210</width>
 							<height>84</height>
 							<font>Light32</font>
-							<textcolor>ff505153</textcolor>
+							<textcolor>NotFocusedColor</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
 							<visible>String.IsEmpty(ListItem.Label)</visible>
 						</control>
@@ -466,7 +466,7 @@
 							<height>84</height>
 							<font>Light32</font>
 							<scroll>true</scroll>
-							<textcolor>ffffaf37</textcolor>
+							<textcolor>FocusedColor</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>Control.HasFocus(40) + !String.IsEmpty(ListItem.Label)</visible>
 						</control>
@@ -484,7 +484,7 @@
 							<width>210</width>
 							<height>84</height>
 							<font>Light32</font>
-							<textcolor>ffffaf37</textcolor>
+							<textcolor>FocusedColor</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
 							<visible>Control.HasFocus(40) + String.IsEmpty(ListItem.Label)</visible>
 						</control>

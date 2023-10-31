@@ -42,8 +42,8 @@
 					<font>Light32</font>
 					<label>467</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<aligny>center</aligny>
@@ -55,8 +55,8 @@
 					<height>84</height>
 					<font>Light32</font>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<hinttext>21433</hinttext>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
@@ -68,8 +68,8 @@
 					<font>Light32</font>
 					<label>21424</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<aligny>center</aligny>
@@ -82,8 +82,8 @@
 					<font>Light32</font>
 					<label>21427</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<aligny>center</aligny>
@@ -96,8 +96,8 @@
 					<font>Light32</font>
 					<label>21429</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<aligny>center</aligny>
@@ -110,8 +110,8 @@
 					<font>Light32</font>
 					<label>31248</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<aligny>center</aligny>
@@ -123,8 +123,8 @@
 					<font>Light32</font>
 					<label>21458</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<aligny>center</aligny>
@@ -138,8 +138,8 @@
 					<label>[CAPITALIZE]$LOCALIZE[21459][/CAPITALIZE]</label>
 					<textwidth>738</textwidth>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<radiowidth>125</radiowidth>
 					<radioheight>53</radioheight>
 					<radioposx>410</radioposx>
@@ -196,7 +196,7 @@
 							<width>490</width>
 							<height>84</height>
 							<font>Light32</font>
-							<textcolor>ff505153</textcolor>
+							<textcolor>NotFocusedColor</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
@@ -211,7 +211,7 @@
 							<width>490</width>
 							<height>84</height>
 							<font>Light32</font>
-							<textcolor>ffffaf37</textcolor>
+							<textcolor>FocusedColor</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>Control.HasFocus(10)</visible>
 						</control>

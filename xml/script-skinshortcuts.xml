@@ -98,7 +98,7 @@
 						<width>590</width>
 						<height>84</height>
 						<font>Light32</font>
-						<textcolor>ff505153</textcolor>
+						<textcolor>NotFocusedColor</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
@@ -107,7 +107,7 @@
 						<height>84</height>
 						<font>Light32</font>
 						<align>right</align>
-						<textcolor>ff505153</textcolor>
+						<textcolor>NotFocusedColor</textcolor>
 						<label>$INFO[Container(211).ListItem.Property(list)]</label>
 					</control>
 				</itemlayout>
@@ -122,7 +122,7 @@
 						<width>590</width>
 						<height>84</height>
 						<font>Light32</font>
-						<textcolor>ffffaf37</textcolor>
+						<textcolor>FocusedColor</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<visible>Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303) | Control.HasFocus(304)</visible>
 					</control>
@@ -140,7 +140,7 @@
 						<left>514</left>
 						<width>21</width>
 						<height>21</height>
-						<texture>dialogs/DeleteNF.png</texture>
+						<texture colordiffuse="NotFocusedColor">dialogs/Delete.png</texture>
 						<visible>!Control.HasFocus(302)</visible>
 					</control>
 					<control type="image">
@@ -148,15 +148,23 @@
 						<left>540</left>
 						<width>21</width>
 						<height>21</height>
-						<texture>dialogs/AddNF.png</texture>
-						<visible>!Control.HasFocus(301)</visible>
+						<texture colordiffuse="NotFocusedColor">dialogs/Add.png</texture>
+						<visible>!Control.HasFocus(301) + Integer.IsLess(Container(211).NumItems,13)</visible>
+					</control>
+					<control type="image">
+						<top>31</top>
+						<left>540</left>
+						<width>21</width>
+						<height>21</height>
+						<texture colordiffuse="DisabledColor">dialogs/Add.png</texture>
+						<visible>!Control.HasFocus(301) + Integer.IsEqual(Container(211).NumItems,13)</visible>
 					</control>
 					<control type="image">
 						<top>31</top>
 						<left>566</left>
 						<width>32</width>
 						<height>21</height>
-						<texture>dialogs/SpinDownNF.png</texture>
+						<texture colordiffuse="NotFocusedColor">dialogs/SpinDown.png</texture>
 						<visible>!Control.HasFocus(304)</visible>
 					</control>
 					<control type="image">
@@ -164,7 +172,7 @@
 						<left>598</left>
 						<width>32</width>
 						<height>21</height>
-						<texture>dialogs/SpinUpNF.png</texture>
+						<texture colordiffuse="NotFocusedColor">dialogs/SpinUp.png</texture>
 						<visible>!Control.HasFocus(303)</visible>
 					</control>
 					<control type="image">
@@ -172,7 +180,7 @@
 						<left>514</left>
 						<width>21</width>
 						<height>21</height>
-						<texture>dialogs/DeleteFO.png</texture>
+						<texture colordiffuse="FocusedColor">dialogs/Delete.png</texture>
 						<visible>Control.HasFocus(302)</visible>
 					</control>
 					<control type="image">
@@ -180,15 +188,23 @@
 						<left>540</left>
 						<width>21</width>
 						<height>21</height>
-						<texture>dialogs/AddFO.png</texture>
-						<visible>Control.HasFocus(301)</visible>
+						<texture colordiffuse="FocusedColor">dialogs/Add.png</texture>
+						<visible>Control.HasFocus(301) + Integer.IsLess(Container(211).NumItems,13)</visible>
+					</control>
+					<control type="image">
+						<top>31</top>
+						<left>540</left>
+						<width>21</width>
+						<height>21</height>
+						<texture colordiffuse="DisabledColor">dialogs/Add.png</texture>
+						<visible>Control.HasFocus(301) + Integer.IsEqual(Container(211).NumItems,13)</visible>
 					</control>
 					<control type="image">
 						<top>31</top>
 						<left>566</left>
 						<width>32</width>
 						<height>21</height>
-						<texture>dialogs/SpinDownFO.png</texture>
+						<texture colordiffuse="FocusedColor">dialogs/SpinDown.png</texture>
 						<visible>Control.HasFocus(304)</visible>
 					</control>
 					<control type="image">
@@ -196,7 +212,7 @@
 						<left>598</left>
 						<width>32</width>
 						<height>21</height>
-						<texture>dialogs/SpinUpFO.png</texture>
+						<texture colordiffuse="FocusedColor">dialogs/SpinUp.png</texture>
 						<visible>Control.HasFocus(303)</visible>
 					</control>
 				</focusedlayout>
@@ -222,8 +238,8 @@
 					<font>Light32</font>
 					<textwidth>790</textwidth>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<label>$ADDON[script.skinshortcuts 32048]</label>
@@ -235,8 +251,8 @@
 					<font>Light32</font>
 					<textwidth>790</textwidth>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<label>$ADDON[script.skinshortcuts 32025]</label>
@@ -249,8 +265,8 @@
 					<font>Light32</font>
 					<textwidth>790</textwidth>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<label>$ADDON[script.skinshortcuts 32027]</label>
@@ -263,8 +279,8 @@
 					<font>Light32</font>
 					<textwidth>790</textwidth>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<label>31218</label>
@@ -278,8 +294,8 @@
 					<font>Light32</font>
 					<textwidth>790</textwidth>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<label>$LOCALIZE[31219]</label>

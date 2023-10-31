@@ -79,7 +79,7 @@
 							<width>745</width>
 							<height>84</height>
 							<font>Light32</font>
-							<textcolor>ff505153</textcolor>
+							<textcolor>NotFocusedColor</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -105,7 +105,7 @@
 								<width>745</width>
 								<height>84</height>
 								<font>Light32</font>
-								<textcolor>ffffaf37</textcolor>
+								<textcolor>FocusedColor</textcolor>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
@@ -215,7 +215,7 @@
 							<width>745</width>
 							<height>84</height>
 							<font>Light32</font>
-							<textcolor>ff505153</textcolor>
+							<textcolor>NotFocusedColor</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -241,7 +241,7 @@
 								<width>745</width>
 								<height>84</height>
 								<font>Light32</font>
-								<textcolor>ffffaf37</textcolor>
+								<textcolor>FocusedColor</textcolor>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">

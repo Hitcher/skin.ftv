@@ -408,8 +408,8 @@
 					<label>584</label>
 					<altlabel>585</altlabel>
 					<onback>570</onback>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">dialogs/OptionsBackgroundButtonFO.png</texturefocus>
 					<texturenofocus border="3">dialogs/OptionsBackgroundButtonNF.png</texturenofocus>
 					<alttexturefocus border="3">dialogs/OptionsBackgroundButtonFO.png</alttexturefocus>

@@ -56,25 +56,6 @@
 			</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<label>$LOCALIZE[20343]</label>
-			<label2>Common Shortcut</label2>
-			<icon>DefaultTVShows.png</icon>
-			<thumb />
-			<property name="labelID">tvshows</property>
-			<property name="defaultID">tvshows</property>
-			<property name="widgetName">Widget Group 3</property>
-			<property name="widget">widget3</property>
-			<visible>Library.HasContent(TVShows)</visible>
-			<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
-			<property name="path">ActivateWindow(Videos,TVShowTitles,return)</property>
-			<property name="list">TVShowTitles</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">tvshows</property>
-			<property name="group">mainmenu</property>
-			<property name="hasSubmenu">True</property>
-			</item>
-		<item id="5">
-			<property name="id">$NUMBER[5]</property>
 			<label>$LOCALIZE[10134]</label>
 			<label2 />
 			<icon>ftv_icon.png</icon>
@@ -92,8 +73,8 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 			</item>
-		<item id="6">
-			<property name="id">$NUMBER[6]</property>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
 			<label>$LOCALIZE[2]</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultMusicAlbums.png</icon>
@@ -110,8 +91,8 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
 			</item>
-		<item id="7">
-			<property name="id">$NUMBER[7]</property>
+		<item id="6">
+			<property name="id">$NUMBER[6]</property>
 			<label>$LOCALIZE[3]</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultVideo.png</icon>
@@ -128,8 +109,8 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
 			</item>
-		<item id="8">
-			<property name="id">$NUMBER[8]</property>
+		<item id="7">
+			<property name="id">$NUMBER[7]</property>
 			<label>$LOCALIZE[31101]</label>
 			<label2>Custom shortcut</label2>
 			<icon>DefaultProgram.png</icon>
@@ -146,8 +127,8 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 			</item>
-		<item id="9">
-			<property name="id">$NUMBER[9]</property>
+		<item id="8">
+			<property name="id">$NUMBER[8]</property>
 			<label>$LOCALIZE[31100]</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultPicture.png</icon>
@@ -164,8 +145,8 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
 			</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
+		<item id="9">
+			<property name="id">$NUMBER[9]</property>
 			<label>$LOCALIZE[10821]</label>
 			<label2>Common menu item</label2>
 			<icon>DefaultAddonGame.png</icon>
@@ -181,8 +162,8 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 			</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
 			<label>$LOCALIZE[12600]</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -200,8 +181,8 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 			</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
 			<label>$LOCALIZE[10004]</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultSettings.png</icon>
@@ -216,8 +197,8 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
 			</item>
-		<item id="13">
-			<property name="id">$NUMBER[13]</property>
+		<item id="12">
+			<property name="id">$NUMBER[12]</property>
 			<label>$LOCALIZE[13012]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -338,91 +319,7 @@
 			</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[20387]</label>
-			<label2>$ADDON[script.skinshortcuts 32014]</label2>
-			<icon>DefaultRecentlyAddedEpisodes.png</icon>
-			<thumb />
-			<property name="labelID">20387</property>
-			<property name="defaultID">20387</property>
-			<onclick>ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</property>
-			<property name="list">videodb://recentlyaddedepisodes/</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),tvshows)</visible>
-			<property name="group">tvshows</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="2">
-			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[369]</label>
-			<label2>$LOCALIZE[20343]</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb />
-			<property name="labelID">369</property>
-			<property name="defaultID">369</property>
-			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),tvshows)</visible>
-			<onclick>ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://tvshows/titles/,return)</property>
-			<property name="list">videodb://tvshows/titles/</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">tvshows</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="3">
-			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[135]</label>
-			<label2>$LOCALIZE[20343]</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb />
-			<property name="labelID">135</property>
-			<property name="defaultID">135</property>
-			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),tvshows)</visible>
-			<onclick>ActivateWindow(Videos,videodb://tvshows/genres/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://tvshows/genres/,return)</property>
-			<property name="list">videodb://tvshows/genres/</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">tvshows</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="4">
-			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[562]</label>
-			<label2>$LOCALIZE[20343]</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb />
-			<property name="labelID">562</property>
-			<property name="defaultID">562</property>
-			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),tvshows)</visible>
-			<onclick>ActivateWindow(Videos,videodb://tvshows/years/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://tvshows/years/,return)</property>
-			<property name="list">videodb://tvshows/years/</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">tvshows</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="5">
-			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[344]</label>
-			<label2>$LOCALIZE[20343]</label2>
-			<icon>DefaultActor.png</icon>
-			<thumb />
-			<property name="labelID">344</property>
-			<property name="defaultID">344</property>
-			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),tvshows)</visible>
-			<onclick>ActivateWindow(Videos,videodb://tvshows/actors/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://tvshows/actors/,return)</property>
-			<property name="list">videodb://tvshows/actors/</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">tvshows</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="1">
-			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultFolder.png</icon>
@@ -438,7 +335,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[15100]</label>
 			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultFolder.png</icon>
@@ -454,7 +351,7 @@
 			</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[1038]</label>
 			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultAddonMusic.png</icon>
@@ -470,7 +367,7 @@
 			</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">6</property>
 			<label>$LOCALIZE[20389]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultMusicVideos.png</icon>
@@ -487,7 +384,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">6</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultFolder.png</icon>
@@ -503,7 +400,7 @@
 			</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">6</property>
 			<label>$LOCALIZE[1037]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddonVideo.png</icon>
@@ -519,7 +416,7 @@
 			</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">9</property>
+			<property name="mainmenuid">8</property>
 			<label>$LOCALIZE[1039]</label>
 			<label2>$ADDON[script.skinshortcuts 32020]</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -535,7 +432,7 @@
 			</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">11</property>
 			<label>$LOCALIZE[7]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultFolder.png</icon>
@@ -551,7 +448,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">11</property>
 			<label>$LOCALIZE[13200]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -567,7 +464,7 @@
 			</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">11</property>
 			<label>$LOCALIZE[10007]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -583,7 +480,7 @@
 			</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">11</property>
 			<label>$LOCALIZE[14111]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -600,7 +497,7 @@
 			</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">14</property>
+			<property name="mainmenuid">13</property>
 			<label>$LOCALIZE[13009]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultQuit.png</icon>
@@ -618,130 +515,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">14</property>
-			<label>$LOCALIZE[13011]</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultSleep.png</icon>
-			<thumb />
-			<property name="labelID">13011</property>
-			<property name="defaultID">13011</property>
-			<visible>[System.CanSuspend] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),shutdown)</visible>
-			<onclick condition="true">Close</onclick>
-			<onclick>Suspend</onclick>
-			<property name="path">Suspend</property>
-			<property name="list">Suspend</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">shutdown</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="3">
-			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">14</property>
-			<label>$LOCALIZE[13010]</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultSleep.png</icon>
-			<thumb />
-			<property name="labelID">13010</property>
-			<property name="defaultID">13010</property>
-			<visible>[System.CanHibernate] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),shutdown)</visible>
-			<onclick condition="true">Close</onclick>
-			<onclick>Hibernate</onclick>
-			<property name="path">Hibernate</property>
-			<property name="list">Hibernate</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">shutdown</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="4">
-			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">14</property>
-			<label>$LOCALIZE[13013]</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultReboot.png</icon>
-			<thumb />
-			<property name="labelID">13013</property>
-			<property name="defaultID">13013</property>
-			<onclick condition="true">Close</onclick>
-			<onclick>Reboot</onclick>
-			<property name="path">Reboot</property>
-			<property name="list">Reboot</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),shutdown)</visible>
-			<property name="group">shutdown</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="5">
-			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">14</property>
-			<label>$LOCALIZE[13016]</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultShutdown.png</icon>
-			<thumb />
-			<property name="labelID">13016</property>
-			<property name="defaultID">13016</property>
-			<visible>[System.CanPowerDown] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),shutdown)</visible>
-			<onclick condition="true">Close</onclick>
-			<onclick>PowerDown</onclick>
-			<property name="path">PowerDown</property>
-			<property name="list">PowerDown</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">shutdown</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="6">
-			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">14</property>
-			<label>$LOCALIZE[13005]</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultShutdown.png</icon>
-			<thumb />
-			<property name="labelID">13005</property>
-			<property name="defaultID">13005</property>
-			<onclick condition="true">Close</onclick>
-			<onclick>ShutDown</onclick>
-			<property name="path">ShutDown</property>
-			<property name="list">ShutDown</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),shutdown)</visible>
-			<property name="group">shutdown</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="7">
-			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">14</property>
-			<label>$LOCALIZE[19026]</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultTimer.png</icon>
-			<thumb />
-			<property name="labelID">19026</property>
-			<property name="defaultID">19026</property>
-			<onclick condition="true">Close</onclick>
-			<onclick>AlarmClock(shutdowntimer,XBMC.Shutdown())</onclick>
-			<property name="path">AlarmClock(shutdowntimer,XBMC.Shutdown())</property>
-			<property name="list">AlarmClock(shutdowntimer,XBMC.Shutdown())</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),shutdown)</visible>
-			<property name="group">shutdown</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="8">
-			<property name="id">$NUMBER[8]</property>
-			<property name="mainmenuid">14</property>
-			<label>$LOCALIZE[20151]</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultQuit.png</icon>
-			<thumb />
-			<property name="labelID">20151</property>
-			<property name="defaultID">20151</property>
-			<visible>[System.HasAlarm(shutdowntimer)] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),shutdown)</visible>
-			<onclick condition="true">Close</onclick>
-			<onclick>CancelAlarm(shutdowntimer)</onclick>
-			<property name="path">CancelAlarm(shutdowntimer)</property>
-			<property name="list">CancelAlarm(shutdowntimer)</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">shutdown</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="9">
-			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">14</property>
+			<property name="mainmenuid">13</property>
 			<label>$LOCALIZE[360]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultScreensaver.png</icon>
@@ -756,45 +530,9 @@
 			<property name="group">shutdown</property>
 			<property name="isSubmenu">True</property>
 			</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
-			<property name="mainmenuid">14</property>
-			<label>$LOCALIZE[20045]</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultMastermode.png</icon>
-			<thumb />
-			<property name="labelID">20045</property>
-			<property name="defaultID">20045</property>
-			<visible>[System.HasLocks] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),shutdown)</visible>
-			<onclick condition="true">Close</onclick>
-			<onclick>Mastermode</onclick>
-			<property name="path">Mastermode</property>
-			<property name="list">Mastermode</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">shutdown</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
-			<property name="mainmenuid">14</property>
-			<label>$LOCALIZE[20126]</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultActor.png</icon>
-			<thumb />
-			<property name="labelID">20126</property>
-			<property name="defaultID">20126</property>
-			<visible>[[System.HasLoginScreen | Integer.IsGreater(System.ProfileCount,1)] + System.Loggedon] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),shutdown)</visible>
-			<onclick condition="true">Close</onclick>
-			<onclick>System.LogOff</onclick>
-			<property name="path">System.LogOff</property>
-			<property name="list">System.LogOff</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">shutdown</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
-			<property name="mainmenuid">14</property>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">13</property>
 			<label>$LOCALIZE[10004]</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultSettings.png</icon>
@@ -1028,178 +766,6 @@
 			<property name="isSubmenu">True</property>
 			</item>
 		</include>
-	<include name="skinshortcuts-group-tvshows">
-		<item id="1">
-			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[20387]</label>
-			<label2>$ADDON[script.skinshortcuts 32014]</label2>
-			<icon>DefaultRecentlyAddedEpisodes.png</icon>
-			<thumb />
-			<property name="labelID">20387</property>
-			<property name="defaultID">20387</property>
-			<onclick>ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</property>
-			<property name="list">videodb://recentlyaddedepisodes/</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">tvshows</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="2">
-			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[369]</label>
-			<label2>$LOCALIZE[20343]</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb />
-			<property name="labelID">369</property>
-			<property name="defaultID">369</property>
-			<visible>Library.HasContent(TVShows)</visible>
-			<onclick>ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://tvshows/titles/,return)</property>
-			<property name="list">videodb://tvshows/titles/</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">tvshows</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="3">
-			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[135]</label>
-			<label2>$LOCALIZE[20343]</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb />
-			<property name="labelID">135</property>
-			<property name="defaultID">135</property>
-			<visible>Library.HasContent(TVShows)</visible>
-			<onclick>ActivateWindow(Videos,videodb://tvshows/genres/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://tvshows/genres/,return)</property>
-			<property name="list">videodb://tvshows/genres/</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">tvshows</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="4">
-			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[562]</label>
-			<label2>$LOCALIZE[20343]</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb />
-			<property name="labelID">562</property>
-			<property name="defaultID">562</property>
-			<visible>Library.HasContent(TVShows)</visible>
-			<onclick>ActivateWindow(Videos,videodb://tvshows/years/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://tvshows/years/,return)</property>
-			<property name="list">videodb://tvshows/years/</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">tvshows</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="5">
-			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[344]</label>
-			<label2>$LOCALIZE[20343]</label2>
-			<icon>DefaultActor.png</icon>
-			<thumb />
-			<property name="labelID">344</property>
-			<property name="defaultID">344</property>
-			<visible>Library.HasContent(TVShows)</visible>
-			<onclick>ActivateWindow(Videos,videodb://tvshows/actors/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://tvshows/actors/,return)</property>
-			<property name="list">videodb://tvshows/actors/</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">tvshows</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		</include>
-	<include name="skinshortcuts-group-alt-tvshows">
-		<item id="1">
-			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[20387]</label>
-			<label2>$ADDON[script.skinshortcuts 32014]</label2>
-			<icon>DefaultRecentlyAddedEpisodes.png</icon>
-			<thumb />
-			<property name="labelID">20387</property>
-			<property name="defaultID">20387</property>
-			<onclick>ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</property>
-			<property name="list">videodb://recentlyaddedepisodes/</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),tvshows)</visible>
-			<property name="group">tvshows</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="2">
-			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[369]</label>
-			<label2>$LOCALIZE[20343]</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb />
-			<property name="labelID">369</property>
-			<property name="defaultID">369</property>
-			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Window(10000).Property(submenuVisibility),tvshows)</visible>
-			<onclick>ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://tvshows/titles/,return)</property>
-			<property name="list">videodb://tvshows/titles/</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">tvshows</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="3">
-			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[135]</label>
-			<label2>$LOCALIZE[20343]</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb />
-			<property name="labelID">135</property>
-			<property name="defaultID">135</property>
-			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Window(10000).Property(submenuVisibility),tvshows)</visible>
-			<onclick>ActivateWindow(Videos,videodb://tvshows/genres/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://tvshows/genres/,return)</property>
-			<property name="list">videodb://tvshows/genres/</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">tvshows</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="4">
-			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[562]</label>
-			<label2>$LOCALIZE[20343]</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb />
-			<property name="labelID">562</property>
-			<property name="defaultID">562</property>
-			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Window(10000).Property(submenuVisibility),tvshows)</visible>
-			<onclick>ActivateWindow(Videos,videodb://tvshows/years/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://tvshows/years/,return)</property>
-			<property name="list">videodb://tvshows/years/</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">tvshows</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="5">
-			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[344]</label>
-			<label2>$LOCALIZE[20343]</label2>
-			<icon>DefaultActor.png</icon>
-			<thumb />
-			<property name="labelID">344</property>
-			<property name="defaultID">344</property>
-			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Window(10000).Property(submenuVisibility),tvshows)</visible>
-			<onclick>ActivateWindow(Videos,videodb://tvshows/actors/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://tvshows/actors/,return)</property>
-			<property name="list">videodb://tvshows/actors/</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">tvshows</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		</include>
 	<include name="skinshortcuts-group-num-10134">
 		<description>No items</description>
 		</include>
@@ -1209,7 +775,7 @@
 	<include name="skinshortcuts-group-music">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultFolder.png</icon>
@@ -1225,7 +791,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[15100]</label>
 			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultFolder.png</icon>
@@ -1241,7 +807,7 @@
 			</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[1038]</label>
 			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultAddonMusic.png</icon>
@@ -1259,7 +825,7 @@
 	<include name="skinshortcuts-group-alt-music">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultFolder.png</icon>
@@ -1275,7 +841,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[15100]</label>
 			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultFolder.png</icon>
@@ -1291,7 +857,7 @@
 			</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[1038]</label>
 			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultAddonMusic.png</icon>
@@ -1309,7 +875,7 @@
 	<include name="skinshortcuts-group-videos">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">6</property>
 			<label>$LOCALIZE[20389]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultMusicVideos.png</icon>
@@ -1326,7 +892,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">6</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultFolder.png</icon>
@@ -1342,7 +908,7 @@
 			</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">6</property>
 			<label>$LOCALIZE[1037]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddonVideo.png</icon>
@@ -1360,7 +926,7 @@
 	<include name="skinshortcuts-group-alt-videos">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">6</property>
 			<label>$LOCALIZE[20389]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultMusicVideos.png</icon>
@@ -1377,7 +943,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">6</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultFolder.png</icon>
@@ -1393,7 +959,7 @@
 			</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">6</property>
 			<label>$LOCALIZE[1037]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddonVideo.png</icon>
@@ -1417,7 +983,7 @@
 	<include name="skinshortcuts-group-num-31100">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">9</property>
+			<property name="mainmenuid">8</property>
 			<label>$LOCALIZE[1039]</label>
 			<label2>$ADDON[script.skinshortcuts 32020]</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -1435,7 +1001,7 @@
 	<include name="skinshortcuts-group-alt-num-31100">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">9</property>
+			<property name="mainmenuid">8</property>
 			<label>$LOCALIZE[1039]</label>
 			<label2>$ADDON[script.skinshortcuts 32020]</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -1465,7 +1031,7 @@
 	<include name="skinshortcuts-group-settings">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">11</property>
 			<label>$LOCALIZE[7]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultFolder.png</icon>
@@ -1481,7 +1047,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">11</property>
 			<label>$LOCALIZE[13200]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -1497,7 +1063,7 @@
 			</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">11</property>
 			<label>$LOCALIZE[10007]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -1513,7 +1079,7 @@
 			</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">11</property>
 			<label>$LOCALIZE[14111]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -1532,7 +1098,7 @@
 	<include name="skinshortcuts-group-alt-settings">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">11</property>
 			<label>$LOCALIZE[7]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultFolder.png</icon>
@@ -1548,7 +1114,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">11</property>
 			<label>$LOCALIZE[13200]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -1564,7 +1130,7 @@
 			</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">11</property>
 			<label>$LOCALIZE[10007]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -1580,7 +1146,7 @@
 			</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">11</property>
 			<label>$LOCALIZE[14111]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -1605,7 +1171,7 @@
 	<include name="skinshortcuts-group-shutdown">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">14</property>
+			<property name="mainmenuid">13</property>
 			<label>$LOCALIZE[13009]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultQuit.png</icon>
@@ -1623,130 +1189,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">14</property>
-			<label>$LOCALIZE[13011]</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultSleep.png</icon>
-			<thumb />
-			<property name="labelID">13011</property>
-			<property name="defaultID">13011</property>
-			<visible>System.CanSuspend</visible>
-			<onclick condition="true">Close</onclick>
-			<onclick>Suspend</onclick>
-			<property name="path">Suspend</property>
-			<property name="list">Suspend</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">shutdown</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="3">
-			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">14</property>
-			<label>$LOCALIZE[13010]</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultSleep.png</icon>
-			<thumb />
-			<property name="labelID">13010</property>
-			<property name="defaultID">13010</property>
-			<visible>System.CanHibernate</visible>
-			<onclick condition="true">Close</onclick>
-			<onclick>Hibernate</onclick>
-			<property name="path">Hibernate</property>
-			<property name="list">Hibernate</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">shutdown</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="4">
-			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">14</property>
-			<label>$LOCALIZE[13013]</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultReboot.png</icon>
-			<thumb />
-			<property name="labelID">13013</property>
-			<property name="defaultID">13013</property>
-			<onclick condition="true">Close</onclick>
-			<onclick>Reboot</onclick>
-			<property name="path">Reboot</property>
-			<property name="list">Reboot</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">shutdown</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="5">
-			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">14</property>
-			<label>$LOCALIZE[13016]</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultShutdown.png</icon>
-			<thumb />
-			<property name="labelID">13016</property>
-			<property name="defaultID">13016</property>
-			<visible>System.CanPowerDown</visible>
-			<onclick condition="true">Close</onclick>
-			<onclick>PowerDown</onclick>
-			<property name="path">PowerDown</property>
-			<property name="list">PowerDown</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">shutdown</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="6">
-			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">14</property>
-			<label>$LOCALIZE[13005]</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultShutdown.png</icon>
-			<thumb />
-			<property name="labelID">13005</property>
-			<property name="defaultID">13005</property>
-			<onclick condition="true">Close</onclick>
-			<onclick>ShutDown</onclick>
-			<property name="path">ShutDown</property>
-			<property name="list">ShutDown</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">shutdown</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="7">
-			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">14</property>
-			<label>$LOCALIZE[19026]</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultTimer.png</icon>
-			<thumb />
-			<property name="labelID">19026</property>
-			<property name="defaultID">19026</property>
-			<onclick condition="true">Close</onclick>
-			<onclick>AlarmClock(shutdowntimer,XBMC.Shutdown())</onclick>
-			<property name="path">AlarmClock(shutdowntimer,XBMC.Shutdown())</property>
-			<property name="list">AlarmClock(shutdowntimer,XBMC.Shutdown())</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">shutdown</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="8">
-			<property name="id">$NUMBER[8]</property>
-			<property name="mainmenuid">14</property>
-			<label>$LOCALIZE[20151]</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultQuit.png</icon>
-			<thumb />
-			<property name="labelID">20151</property>
-			<property name="defaultID">20151</property>
-			<visible>System.HasAlarm(shutdowntimer)</visible>
-			<onclick condition="true">Close</onclick>
-			<onclick>CancelAlarm(shutdowntimer)</onclick>
-			<property name="path">CancelAlarm(shutdowntimer)</property>
-			<property name="list">CancelAlarm(shutdowntimer)</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">shutdown</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="9">
-			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">14</property>
+			<property name="mainmenuid">13</property>
 			<label>$LOCALIZE[360]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultScreensaver.png</icon>
@@ -1761,45 +1204,9 @@
 			<property name="group">shutdown</property>
 			<property name="isSubmenu">True</property>
 			</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
-			<property name="mainmenuid">14</property>
-			<label>$LOCALIZE[20045]</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultMastermode.png</icon>
-			<thumb />
-			<property name="labelID">20045</property>
-			<property name="defaultID">20045</property>
-			<visible>System.HasLocks</visible>
-			<onclick condition="true">Close</onclick>
-			<onclick>Mastermode</onclick>
-			<property name="path">Mastermode</property>
-			<property name="list">Mastermode</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">shutdown</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
-			<property name="mainmenuid">14</property>
-			<label>$LOCALIZE[20126]</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultActor.png</icon>
-			<thumb />
-			<property name="labelID">20126</property>
-			<property name="defaultID">20126</property>
-			<visible>[System.HasLoginScreen | Integer.IsGreater(System.ProfileCount,1)] + System.Loggedon</visible>
-			<onclick condition="true">Close</onclick>
-			<onclick>System.LogOff</onclick>
-			<property name="path">System.LogOff</property>
-			<property name="list">System.LogOff</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">shutdown</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
-			<property name="mainmenuid">14</property>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">13</property>
 			<label>$LOCALIZE[10004]</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultSettings.png</icon>
@@ -1818,7 +1225,7 @@
 	<include name="skinshortcuts-group-alt-shutdown">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">14</property>
+			<property name="mainmenuid">13</property>
 			<label>$LOCALIZE[13009]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultQuit.png</icon>
@@ -1836,130 +1243,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">14</property>
-			<label>$LOCALIZE[13011]</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultSleep.png</icon>
-			<thumb />
-			<property name="labelID">13011</property>
-			<property name="defaultID">13011</property>
-			<visible>[System.CanSuspend] + String.IsEqual(Window(10000).Property(submenuVisibility),shutdown)</visible>
-			<onclick condition="true">Close</onclick>
-			<onclick>Suspend</onclick>
-			<property name="path">Suspend</property>
-			<property name="list">Suspend</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">shutdown</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="3">
-			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">14</property>
-			<label>$LOCALIZE[13010]</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultSleep.png</icon>
-			<thumb />
-			<property name="labelID">13010</property>
-			<property name="defaultID">13010</property>
-			<visible>[System.CanHibernate] + String.IsEqual(Window(10000).Property(submenuVisibility),shutdown)</visible>
-			<onclick condition="true">Close</onclick>
-			<onclick>Hibernate</onclick>
-			<property name="path">Hibernate</property>
-			<property name="list">Hibernate</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">shutdown</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="4">
-			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">14</property>
-			<label>$LOCALIZE[13013]</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultReboot.png</icon>
-			<thumb />
-			<property name="labelID">13013</property>
-			<property name="defaultID">13013</property>
-			<onclick condition="true">Close</onclick>
-			<onclick>Reboot</onclick>
-			<property name="path">Reboot</property>
-			<property name="list">Reboot</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),shutdown)</visible>
-			<property name="group">shutdown</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="5">
-			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">14</property>
-			<label>$LOCALIZE[13016]</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultShutdown.png</icon>
-			<thumb />
-			<property name="labelID">13016</property>
-			<property name="defaultID">13016</property>
-			<visible>[System.CanPowerDown] + String.IsEqual(Window(10000).Property(submenuVisibility),shutdown)</visible>
-			<onclick condition="true">Close</onclick>
-			<onclick>PowerDown</onclick>
-			<property name="path">PowerDown</property>
-			<property name="list">PowerDown</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">shutdown</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="6">
-			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">14</property>
-			<label>$LOCALIZE[13005]</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultShutdown.png</icon>
-			<thumb />
-			<property name="labelID">13005</property>
-			<property name="defaultID">13005</property>
-			<onclick condition="true">Close</onclick>
-			<onclick>ShutDown</onclick>
-			<property name="path">ShutDown</property>
-			<property name="list">ShutDown</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),shutdown)</visible>
-			<property name="group">shutdown</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="7">
-			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">14</property>
-			<label>$LOCALIZE[19026]</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultTimer.png</icon>
-			<thumb />
-			<property name="labelID">19026</property>
-			<property name="defaultID">19026</property>
-			<onclick condition="true">Close</onclick>
-			<onclick>AlarmClock(shutdowntimer,XBMC.Shutdown())</onclick>
-			<property name="path">AlarmClock(shutdowntimer,XBMC.Shutdown())</property>
-			<property name="list">AlarmClock(shutdowntimer,XBMC.Shutdown())</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),shutdown)</visible>
-			<property name="group">shutdown</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="8">
-			<property name="id">$NUMBER[8]</property>
-			<property name="mainmenuid">14</property>
-			<label>$LOCALIZE[20151]</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultQuit.png</icon>
-			<thumb />
-			<property name="labelID">20151</property>
-			<property name="defaultID">20151</property>
-			<visible>[System.HasAlarm(shutdowntimer)] + String.IsEqual(Window(10000).Property(submenuVisibility),shutdown)</visible>
-			<onclick condition="true">Close</onclick>
-			<onclick>CancelAlarm(shutdowntimer)</onclick>
-			<property name="path">CancelAlarm(shutdowntimer)</property>
-			<property name="list">CancelAlarm(shutdowntimer)</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">shutdown</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="9">
-			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">14</property>
+			<property name="mainmenuid">13</property>
 			<label>$LOCALIZE[360]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultScreensaver.png</icon>
@@ -1974,45 +1258,9 @@
 			<property name="group">shutdown</property>
 			<property name="isSubmenu">True</property>
 			</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
-			<property name="mainmenuid">14</property>
-			<label>$LOCALIZE[20045]</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultMastermode.png</icon>
-			<thumb />
-			<property name="labelID">20045</property>
-			<property name="defaultID">20045</property>
-			<visible>[System.HasLocks] + String.IsEqual(Window(10000).Property(submenuVisibility),shutdown)</visible>
-			<onclick condition="true">Close</onclick>
-			<onclick>Mastermode</onclick>
-			<property name="path">Mastermode</property>
-			<property name="list">Mastermode</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">shutdown</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
-			<property name="mainmenuid">14</property>
-			<label>$LOCALIZE[20126]</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultActor.png</icon>
-			<thumb />
-			<property name="labelID">20126</property>
-			<property name="defaultID">20126</property>
-			<visible>[[System.HasLoginScreen | Integer.IsGreater(System.ProfileCount,1)] + System.Loggedon] + String.IsEqual(Window(10000).Property(submenuVisibility),shutdown)</visible>
-			<onclick condition="true">Close</onclick>
-			<onclick>System.LogOff</onclick>
-			<property name="path">System.LogOff</property>
-			<property name="list">System.LogOff</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">shutdown</property>
-			<property name="isSubmenu">True</property>
-			</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
-			<property name="mainmenuid">14</property>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">13</property>
 			<label>$LOCALIZE[10004]</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultSettings.png</icon>

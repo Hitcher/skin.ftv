@@ -49,8 +49,8 @@
 						<height>84</height>
 						<font>Light32</font>
 						<textoffsetx>40</textoffsetx>
-						<textcolor>ff505153</textcolor>
-						<focusedcolor>ffffaf37</focusedcolor>
+						<textcolor>NotFocusedColor</textcolor>
+						<focusedcolor>FocusedColor</focusedcolor>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 						<label>35224</label>
@@ -64,8 +64,8 @@
 						<height>84</height>
 						<font>Light32</font>
 						<textoffsetx>40</textoffsetx>
-						<textcolor>ff505153</textcolor>
-						<focusedcolor>ffffaf37</focusedcolor>
+						<textcolor>NotFocusedColor</textcolor>
+						<focusedcolor>FocusedColor</focusedcolor>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 						<label>35249</label>
@@ -78,8 +78,8 @@
 						<height>84</height>
 						<font>Light32</font>
 						<textoffsetx>40</textoffsetx>
-						<textcolor>ff505153</textcolor>
-						<focusedcolor>ffffaf37</focusedcolor>
+						<textcolor>NotFocusedColor</textcolor>
+						<focusedcolor>FocusedColor</focusedcolor>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 						<label>35172</label>
@@ -92,8 +92,8 @@
 						<height>84</height>
 						<font>Light32</font>
 						<textoffsetx>40</textoffsetx>
-						<textcolor>ff505153</textcolor>
-						<focusedcolor>ffffaf37</focusedcolor>
+						<textcolor>NotFocusedColor</textcolor>
+						<focusedcolor>FocusedColor</focusedcolor>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 						<label>35222</label>
@@ -107,8 +107,8 @@
 						<height>84</height>
 						<font>Light32</font>
 						<textoffsetx>40</textoffsetx>
-						<textcolor>ff505153</textcolor>
-						<focusedcolor>ffffaf37</focusedcolor>
+						<textcolor>NotFocusedColor</textcolor>
+						<focusedcolor>FocusedColor</focusedcolor>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 						<label>13007</label>
@@ -121,8 +121,8 @@
 						<height>84</height>
 						<font>Light32</font>
 						<textoffsetx>40</textoffsetx>
-						<textcolor>ff505153</textcolor>
-						<focusedcolor>ffffaf37</focusedcolor>
+						<textcolor>NotFocusedColor</textcolor>
+						<focusedcolor>FocusedColor</focusedcolor>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 						<label>35226</label>
@@ -136,8 +136,8 @@
 						<height>84</height>
 						<font>Light32</font>
 						<textoffsetx>40</textoffsetx>
-						<textcolor>ff505153</textcolor>
-						<focusedcolor>ffffaf37</focusedcolor>
+						<textcolor>NotFocusedColor</textcolor>
+						<focusedcolor>FocusedColor</focusedcolor>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 						<label>13376</label>
@@ -151,8 +151,8 @@
 						<height>84</height>
 						<font>Light32</font>
 						<textoffsetx>40</textoffsetx>
-						<textcolor>ff505153</textcolor>
-						<focusedcolor>ffffaf37</focusedcolor>
+						<textcolor>NotFocusedColor</textcolor>
+						<focusedcolor>FocusedColor</focusedcolor>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 						<label>230</label>
@@ -165,8 +165,8 @@
 						<height>84</height>
 						<font>Light32</font>
 						<textoffsetx>40</textoffsetx>
-						<textcolor>ff505153</textcolor>
-						<focusedcolor>ffffaf37</focusedcolor>
+						<textcolor>NotFocusedColor</textcolor>
+						<focusedcolor>FocusedColor</focusedcolor>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 						<label>35233</label>
@@ -179,8 +179,8 @@
 						<height>84</height>
 						<font>Light32</font>
 						<textoffsetx>40</textoffsetx>
-						<textcolor>ff505153</textcolor>
-						<focusedcolor>ffffaf37</focusedcolor>
+						<textcolor>NotFocusedColor</textcolor>
+						<focusedcolor>FocusedColor</focusedcolor>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 						<label>35227</label>
@@ -193,8 +193,8 @@
 						<height>84</height>
 						<font>Light32</font>
 						<textoffsetx>40</textoffsetx>
-						<textcolor>ff505153</textcolor>
-						<focusedcolor>ffffaf37</focusedcolor>
+						<textcolor>NotFocusedColor</textcolor>
+						<focusedcolor>FocusedColor</focusedcolor>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 						<label>35234</label>
@@ -207,8 +207,8 @@
 						<height>84</height>
 						<font>Light32</font>
 						<textoffsetx>40</textoffsetx>
-						<textcolor>ff505153</textcolor>
-						<focusedcolor>ffffaf37</focusedcolor>
+						<textcolor>NotFocusedColor</textcolor>
+						<focusedcolor>FocusedColor</focusedcolor>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 						<label>35110</label>
@@ -221,8 +221,8 @@
 						<height>84</height>
 						<font>Light32</font>
 						<textoffsetx>40</textoffsetx>
-						<textcolor>ff505153</textcolor>
-						<focusedcolor>ffffaf37</focusedcolor>
+						<textcolor>NotFocusedColor</textcolor>
+						<focusedcolor>FocusedColor</focusedcolor>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 						<label>35226</label>

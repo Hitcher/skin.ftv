@@ -262,8 +262,8 @@
 					<font>Light32</font>
 					<label>$LOCALIZE[31049]</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<onclick condition="!Skin.HasSetting(CustomHome)">Skin.SetBool(CustomHome)</onclick>
@@ -275,8 +275,8 @@
 					<font>Light32</font>
 					<label>$LOCALIZE[31255]</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<visible>Skin.HasSetting(CustomHome)</visible>
@@ -288,8 +288,8 @@
 					<font>Light32</font>
 					<label>$LOCALIZE[31114]</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=shutdown)</onclick>
@@ -300,8 +300,8 @@
 					<font>Light32</font>
 					<label>$LOCALIZE[31080]</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<radiowidth>125</radiowidth>
 					<radioheight>53</radioheight>
 					<radioposx>813</radioposx>
@@ -322,8 +322,8 @@
 					<font>Light32</font>
 					<label>$LOCALIZE[31131]</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<radiowidth>125</radiowidth>
 					<radioheight>53</radioheight>
 					<radioposx>813</radioposx>
@@ -344,8 +344,8 @@
 					<font>Light32</font>
 					<label>$LOCALIZE[31133]</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<radiowidth>125</radiowidth>
 					<radioheight>53</radioheight>
 					<radioposx>813</radioposx>
@@ -366,8 +366,8 @@
 					<font>Light32</font>
 					<label>$LOCALIZE[31134]</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<radiowidth>125</radiowidth>
 					<radioheight>53</radioheight>
 					<radioposx>813</radioposx>
@@ -388,8 +388,8 @@
 					<font>Light32</font>
 					<label>31061</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<radiowidth>125</radiowidth>
 					<radioheight>53</radioheight>
 					<radioposx>813</radioposx>
@@ -411,8 +411,8 @@
 					<label>$LOCALIZE[31257]</label>
 					<label2>$VAR[TomatoRating]</label2>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<onclick>Skin.SelectBool(31257, 31258|TomatoMeterAllCritics, 31259|TomatoMeterAudienceScore, 31260|AverageRatingAllCritics, 31261|AverageRatingAudienceScore)</onclick>
@@ -424,8 +424,8 @@
 					<label>$LOCALIZE[31135]</label>
 					<label2>$VAR[RatingCountry]</label2>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<onclick>Skin.SelectBool(31135, 31001|US, 31002|UK, 31003|Germany)</onclick>
@@ -436,8 +436,8 @@
 					<font>Light32</font>
 					<label>31149</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<radiowidth>125</radiowidth>
 					<radioheight>53</radioheight>
 					<radioposx>813</radioposx>
@@ -458,8 +458,8 @@
 					<font>Light32</font>
 					<label>31041</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<radiowidth>125</radiowidth>
 					<radioheight>53</radioheight>
 					<radioposx>813</radioposx>
@@ -480,8 +480,8 @@
 					<font>Light32</font>
 					<label>31042</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<radiowidth>125</radiowidth>
 					<radioheight>53</radioheight>
 					<radioposx>813</radioposx>

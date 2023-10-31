@@ -45,8 +45,8 @@
 				<height>84</height>
 				<font>Light32</font>
 				<textoffsetx>40</textoffsetx>
-				<textcolor>ff505153</textcolor>
-				<focusedcolor>ffffaf37</focusedcolor>
+				<textcolor>NotFocusedColor</textcolor>
+				<focusedcolor>FocusedColor</focusedcolor>
 				<texturefocus border="3">settings/button_focus.png</texturefocus>
 				<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 			</control>
@@ -57,8 +57,8 @@
 				<font>Light32</font>
 				<textwidth>704</textwidth>
 				<textoffsetx>40</textoffsetx>
-				<textcolor>ff505153</textcolor>
-				<focusedcolor>ffffaf37</focusedcolor>
+				<textcolor>NotFocusedColor</textcolor>
+				<focusedcolor>FocusedColor</focusedcolor>
 				<radiowidth>125</radiowidth>
 				<radioheight>53</radioheight>
 				<radioposx>773</radioposx>
@@ -78,8 +78,8 @@
 				<font>Light32</font>
 				<textwidth>738</textwidth>
 				<textoffsetx>40</textoffsetx>
-				<textcolor>ff505153</textcolor>
-				<focusedcolor>ffffaf37</focusedcolor>
+				<textcolor>NotFocusedColor</textcolor>
+				<focusedcolor>FocusedColor</focusedcolor>
 				<selectedcolor>ffffffff</selectedcolor>
 				<texturefocus border="3">settings/button_focus.png</texturefocus>
 				<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
@@ -97,8 +97,8 @@
 				<height>84</height>
 				<font>Light32</font>
 				<textoffsetx>40</textoffsetx>
-				<textcolor>ff505153</textcolor>
-				<focusedcolor>ffffaf37</focusedcolor>
+				<textcolor>NotFocusedColor</textcolor>
+				<focusedcolor>FocusedColor</focusedcolor>
 				<texturefocus border="3">settings/button_focus.png</texturefocus>
 				<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 			</control>
@@ -109,8 +109,8 @@
 				<font>Light32</font>
 				<textwidth>738</textwidth>
 				<textoffsetx>40</textoffsetx>
-				<textcolor>ff505153</textcolor>
-				<focusedcolor>ffffaf37</focusedcolor>
+				<textcolor>NotFocusedColor</textcolor>
+				<focusedcolor>FocusedColor</focusedcolor>
 				<texturefocus border="3">settings/button_focus.png</texturefocus>
 				<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 				<sliderwidth>200</sliderwidth>

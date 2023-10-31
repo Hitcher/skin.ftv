@@ -145,8 +145,8 @@
 					<textwidth>576</textwidth>
 					<aligny>center</aligny>
 					<font>Light30Spaced</font>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<pulseonselect>false</pulseonselect>
@@ -171,8 +171,8 @@
 						<aligny>center</aligny>
 						<font>Light30Spaced</font>
 						<label>7</label>
-						<textcolor>ff505153</textcolor>
-						<focusedcolor>ffffaf37</focusedcolor>
+						<textcolor>NotFocusedColor</textcolor>
+						<focusedcolor>FocusedColor</focusedcolor>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					</control>
@@ -184,8 +184,8 @@
 						<aligny>center</aligny>
 						<font>Light30Spaced</font>
 						<label>13200</label>
-						<textcolor>ffffaf37</textcolor>
-						<focusedcolor>ffffaf37</focusedcolor>
+						<textcolor>FocusedColor</textcolor>
+						<focusedcolor>FocusedColor</focusedcolor>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_focus.png</texturenofocus>
 					</control>
@@ -197,8 +197,8 @@
 						<aligny>center</aligny>
 						<font>Light30Spaced</font>
 						<label>138</label>
-						<textcolor>ff505153</textcolor>
-						<focusedcolor>ffffaf37</focusedcolor>
+						<textcolor>NotFocusedColor</textcolor>
+						<focusedcolor>FocusedColor</focusedcolor>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					</control>
@@ -211,7 +211,7 @@
 						<font>Light30Spaced</font>
 						<align>right</align>
 						<label>$INFO[Window(home).Property(SettingsLevel)]</label>
-						<textcolor>ff505153</textcolor>
+						<textcolor>NotFocusedColor</textcolor>
 						<focusedcolor>ffdadada</focusedcolor>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
@@ -225,7 +225,7 @@
 					<aligny>center</aligny>
 					<font>Light30Spaced</font>
 					<label>$LOCALIZE[31016]</label>
-					<textcolor>ff505153</textcolor>
+					<textcolor>NotFocusedColor</textcolor>
 				</control>
 				<control type="image">
 					<width>40</width>
@@ -303,7 +303,7 @@
 					<onclick>SetFocus(200)</onclick>
 					<label>$LOCALIZE[31125]</label>
 					<textcolor>$VAR[ProfileSettingsLoginButton]</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<pulseonselect>false</pulseonselect>
@@ -320,7 +320,7 @@
 					<onclick>SetFocus(2)</onclick>
 					<label>13200</label>
 					<textcolor>$VAR[ProfileSettingsProfileButton]</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<pulseonselect>false</pulseonselect>
@@ -347,8 +347,8 @@
 					<font>Light32</font>
 					<textwidth>738</textwidth>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<radioposx>447</radioposx>
@@ -368,8 +368,8 @@
 					<font>Light32</font>
 					<textwidth>738</textwidth>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<label>33084</label>
@@ -404,7 +404,7 @@
 						<width>878</width>
 						<height>84</height>
 						<font>Light32</font>
-						<textcolor>ff505153</textcolor>
+						<textcolor>NotFocusedColor</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
@@ -426,7 +426,7 @@
 						<width>878</width>
 						<height>84</height>
 						<font>Light32</font>
-						<textcolor>ffffaf37</textcolor>
+						<textcolor>FocusedColor</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<visible>Control.HasFocus(2)</visible>
 					</control>
@@ -435,7 +435,7 @@
 						<width>878</width>
 						<height>84</height>
 						<font>Light32</font>
-						<textcolor>ff505153</textcolor>
+						<textcolor>NotFocusedColor</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<visible>!Control.HasFocus(2)</visible>
 					</control>

@@ -42,8 +42,8 @@
 					<ondown>16</ondown>
 					<font>Light32</font>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<aligny>center</aligny>
@@ -55,7 +55,7 @@
 					<width>520</width>
 					<height>84</height>
 					<font>Light32</font>
-					<textcolor>ffffaf37</textcolor>
+					<textcolor>FocusedColor</textcolor>
 					<label>$INFO[Control.GetLabel(15)]</label>
 					<visible>Control.HasFocus(15)</visible>
 				</control>
@@ -64,7 +64,7 @@
 					<width>520</width>
 					<height>84</height>
 					<font>Light32</font>
-					<textcolor>ff505153</textcolor>
+					<textcolor>NotFocusedColor</textcolor>
 					<label>$INFO[Control.GetLabel(15)]</label>
 					<visible>!Control.HasFocus(15)</visible>
 				</control>
@@ -79,8 +79,8 @@
 					<ondown>17</ondown>
 					<font>Light32</font>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<aligny>center</aligny>
@@ -93,7 +93,7 @@
 					<width>520</width>
 					<height>84</height>
 					<font>Light32</font>
-					<textcolor>ffffaf37</textcolor>
+					<textcolor>FocusedColor</textcolor>
 					<label>$INFO[Control.GetLabel(16)]</label>
 					<visible>Control.HasFocus(16)</visible>
 				</control>
@@ -103,7 +103,7 @@
 					<width>520</width>
 					<height>84</height>
 					<font>Light32</font>
-					<textcolor>ff505153</textcolor>
+					<textcolor>NotFocusedColor</textcolor>
 					<label>$INFO[Control.GetLabel(16)]</label>
 					<visible>!Control.HasFocus(16)</visible>
 				</control>
@@ -118,8 +118,8 @@
 					<ondown>noop</ondown>
 					<font>Light32</font>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<hinttext>...</hinttext>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
@@ -137,8 +137,8 @@
 					<font>Light32</font>
 					<textwidth>738</textwidth>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<label>1024</label>

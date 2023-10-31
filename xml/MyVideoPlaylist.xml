@@ -478,8 +478,8 @@
 					<label>$INFO[Container.SortMethod]</label>
 					<onback>50</onback>
 					<onclick>Container.NextSortMethod</onclick>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">dialogs/OptionsBackgroundButtonFO.png</texturefocus>
 					<texturenofocus border="3">dialogs/OptionsBackgroundButtonNF.png</texturenofocus>
 					<visible>Control.IsEnabled(3)</visible>
@@ -510,8 +510,8 @@
 					<label>584</label>
 					<altlabel>585</altlabel>
 					<onback>50</onback>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">dialogs/OptionsBackgroundButtonFO.png</texturefocus>
 					<texturenofocus border="3">dialogs/OptionsBackgroundButtonNF.png</texturenofocus>
 					<alttexturefocus border="3">dialogs/OptionsBackgroundButtonFO.png</alttexturefocus>
@@ -543,8 +543,8 @@
 					<aligny>center</aligny>
 					<font>Light30Spaced</font>
 					<onback>50</onback>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">dialogs/OptionsBackgroundButtonFO.png</texturefocus>
 					<texturenofocus border="3">dialogs/OptionsBackgroundButtonNF.png</texturenofocus>
 					<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
@@ -576,8 +576,8 @@
 					<onback>50</onback>
 					<onclick>SetFocus(50)</onclick>
 					<onclick>Filter</onclick>
-					<textcolor>ff505153</textcolor>
-					<focusedcolor>ffffaf37</focusedcolor>
+					<textcolor>NotFocusedColor</textcolor>
+					<focusedcolor>FocusedColor</focusedcolor>
 					<texturefocus border="3">dialogs/OptionsBackgroundButtonFO.png</texturefocus>
 					<texturenofocus border="3">dialogs/OptionsBackgroundButtonNF.png</texturenofocus>
 					<textureradioonfocus/>

@@ -1126,16 +1126,16 @@
 		<value>$LOCALIZE[31015]</value>
 	</variable>
 	<variable name="AddonSettingsDefaultButton">
-		<value condition="!ControlGroup(5).HasFocus + !ControlGroup(9000).HasFocus">ffffaf37</value>
+		<value condition="!ControlGroup(5).HasFocus + !ControlGroup(9000).HasFocus">FocusedColor</value>
 		<value>ffffffff</value>
 	</variable>
 	<variable name="ProfileSettingsLoginButton">
 		<value condition="ControlGroup(200).HasFocus">ffffffff</value>
-		<value>ff505153</value>
+		<value>NotFocusedColor</value>
 	</variable>
 	<variable name="ProfileSettingsProfileButton">
 		<value condition="Control.HasFocus(2)">ffffffff</value>
-		<value>ff505153</value>
+		<value>NotFocusedColor</value>
 	</variable>
 	<variable name="AddonBrowserInfo">
 		<value condition="String.StartsWith(Window(home).Property(AddonBrowserValue),$LOCALIZE[24998])">$LOCALIZE[31017]</value>
@@ -1173,9 +1173,9 @@
 		<value>$INFO[ListItem(1).Artist]</value>
 	</variable>
 	<variable name="FilterButton">
-		<value condition="Container.Filtered + Control.HasFocus(5005)">[COLOR ffffaf37]$LOCALIZE[305][/COLOR]</value>
+		<value condition="Container.Filtered + Control.HasFocus(5005)">[COLOR FocusedColor]$LOCALIZE[305][/COLOR]</value>
 		<value condition="Container.Filtered + !Control.HasFocus(5005)">$LOCALIZE[305]</value>
-		<value condition="Control.HasFocus(5005)">[COLOR ffffaf37]$LOCALIZE[1223][/COLOR]</value>
+		<value condition="Control.HasFocus(5005)">[COLOR FocusedColor]$LOCALIZE[1223][/COLOR]</value>
 		<value>$LOCALIZE[1223]</value>
 	</variable>
 	<variable name="RandomiseSlideshow">
