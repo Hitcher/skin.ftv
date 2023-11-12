@@ -13,7 +13,7 @@
 			<label2>$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Temperature)] ∙ $INFO[Window(weather).Property(Hourly.$PARAM[item_index].Precipitation)]</label2>
 			<icon>resource://resource.images.weathericons.default/$INFO[Window(weather).Property(Hourly.$PARAM[item_index].OutlookIcon)]</icon>
 			<onclick>noop</onclick>
-			<visible>String.IsEqual(Window(home).Property(Hourly),true)</visible>
+			<visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched)) + !String.IsEmpty(Window(weather).Property(Hourly.$PARAM[item_index].Outlook)) + String.IsEqual(Window(home).Property(Hourly),true)</visible>
 		</item>
 	</include>
 	<include name="WeatherDailyItem">
