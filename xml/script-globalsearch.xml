@@ -273,23 +273,23 @@
 						<label>$INFO[ListItem.Rating(themoviedb),,/10]</label>
 						<visible>!String.IsEmpty(ListItem.Rating(themoviedb))</visible>
 					</control>
-				<control type="image">
-					<top>2</top>
-					<width>54</width>
-					<height>23</height>
-					<texture>views/logos/tmdb.png</texture>
-					<visible>!String.IsEmpty(ListItem.Rating(tmdb))</visible>
-				</control>
-				<control type="label">
-					<top>-13</top>
-					<width>auto</width>
-					<height>34</height>
-					<font>Bold30</font>
-					<aligny>bottom</aligny>
-					<textcolor>ffbcbcbc</textcolor>
-					<label>$INFO[ListItem.Rating(tmdb),,/10]</label>
-					<visible>!String.IsEmpty(ListItem.Rating(tmdb))</visible>
-				</control>
+					<control type="image">
+						<top>2</top>
+						<width>54</width>
+						<height>23</height>
+						<texture>views/logos/tmdb.png</texture>
+						<visible>!String.IsEmpty(ListItem.Rating(tmdb))</visible>
+					</control>
+					<control type="label">
+						<top>-13</top>
+						<width>auto</width>
+						<height>34</height>
+						<font>Bold30</font>
+						<aligny>bottom</aligny>
+						<textcolor>ffbcbcbc</textcolor>
+						<label>$INFO[ListItem.Rating(tmdb),,/10]</label>
+						<visible>!String.IsEmpty(ListItem.Rating(tmdb))</visible>
+					</control>
 					<control type="image">
 						<top>2</top>
 						<width>23</width>
