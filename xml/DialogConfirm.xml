@@ -38,7 +38,7 @@
 			<include>DialogAnimation</include>
 			<centerleft>50%</centerleft>
 			<centertop>50%</centertop>
-			<width>712</width>
+			<width>772</width>
 			<height>194</height>
 			<!-- Background -->
 			<control type="image">
@@ -52,7 +52,7 @@
 			<control type="grouplist">
 				<centerleft>50%</centerleft>
 				<centertop>50%</centertop>
-				<width>816</width>
+				<width>876</width>
 				<height>528</height>
 				<itemgap>0</itemgap>
 				<align>center</align>
@@ -62,10 +62,10 @@
 				<animation easing="inout" effect="fade" end="0" start="100" time="60" tween="sine">WindowClose</animation>
 				<!-- Heading -->
 				<control type="group">
-					<width>816</width>
+					<width>876</width>
 					<height>97</height>
 					<control type="image">
-						<width>816</width>
+						<width>876</width>
 						<height>97</height>
 						<texture border="2">dialogs/DialogConfirm.png</texture>
 					</control>
@@ -81,7 +81,7 @@
 				<!-- Details -->
 				<control type="textbox">
 					<left>50</left>
-					<width>716</width>
+					<width>776</width>
 					<height min="35" max="210">auto</height>
 					<font>Light28</font>
 					<textcolor>ff9d9d9d</textcolor>
@@ -92,7 +92,7 @@
 				<control id="20" type="progress">
 					<left>50</left>
 					<top>27</top>
-					<width>716</width>
+					<width>776</width>
 					<height>9</height>
 					<reveal>true</reveal>
 					<info>System.Progressbar</info>
@@ -105,10 +105,10 @@
 				</control>
 				<!-- Button grouplist -->
 				<control type="group">
-					<width>816</width>
+					<width>876</width>
 					<height>166</height>
 					<control type="image">
-						<width>816</width>
+						<width>876</width>
 						<height>166</height>
 						<texture flipy="true" border="2">dialogs/DialogConfirm.png</texture>
 					</control>
@@ -124,16 +124,16 @@
 						<visible>!Control.IsVisible(12)</visible>
 						<!-- Cancel -->
 						<control type="group">
-							<width>358</width>
+							<width>388</width>
 							<height>76</height>
 							<visible>Control.IsVisible(10) + Control.HasFocus(10)</visible>
 							<control type="image">
-								<width>358</width>
+								<width>388</width>
 								<height>76</height>
 								<texture border="8">dialogs/DialogButtonFO.png</texture>
 							</control>
 							<control type="label">
-								<width>358</width>
+								<width>388</width>
 								<height>76</height>
 								<align>center</align>
 								<font>MedUpper24</font>
@@ -142,16 +142,16 @@
 							</control>
 						</control>
 						<control type="group">
-							<width>358</width>
+							<width>388</width>
 							<height>76</height>
 							<visible>Control.IsVisible(10) + !Control.HasFocus(10)</visible>
 							<control type="image">
-								<width>358</width>
+								<width>388</width>
 								<height>76</height>
 								<texture border="8">dialogs/DialogButtonNF.png</texture>
 							</control>
 							<control type="label">
-								<width>358</width>
+								<width>388</width>
 								<height>76</height>
 								<align>center</align>
 								<font>MedUpper24</font>
@@ -161,16 +161,16 @@
 						</control>
 						<!-- Yes -->
 						<control type="group">
-							<width>358</width>
+							<width>388</width>
 							<height>76</height>
 							<visible>Control.IsVisible(11) + Control.HasFocus(11)</visible>
 							<control type="image">
-								<width>358</width>
+								<width>388</width>
 								<height>76</height>
 								<texture border="8">dialogs/DialogButtonFO.png</texture>
 							</control>
 							<control type="label">
-								<width>358</width>
+								<width>388</width>
 								<height>76</height>
 								<align>center</align>
 								<font>MedUpper24</font>
@@ -179,16 +179,16 @@
 							</control>
 						</control>
 						<control type="group">
-							<width>358</width>
+							<width>388</width>
 							<height>76</height>
 							<visible>Control.IsVisible(11) + !Control.HasFocus(11)</visible>
 							<control type="image">
-								<width>358</width>
+								<width>388</width>
 								<height>76</height>
 								<texture border="8">dialogs/DialogButtonNF.png</texture>
 							</control>
 							<control type="label">
-								<width>358</width>
+								<width>388</width>
 								<height>76</height>
 								<align>center</align>
 								<font>MedUpper24</font>
@@ -209,16 +209,16 @@
 						<visible>Control.IsVisible(12)</visible>
 						<!-- Cancel -->
 						<control type="group">
-							<width>242</width>
+							<width>262</width>
 							<height>76</height>
 							<visible>Control.HasFocus(10)</visible>
 							<control type="image">
-								<width>242</width>
+								<width>262</width>
 								<height>76</height>
 								<texture border="8">dialogs/DialogButtonFO.png</texture>
 							</control>
 							<control type="label">
-								<width>242</width>
+								<width>262</width>
 								<height>76</height>
 								<align>center</align>
 								<font>MedUpper24</font>
@@ -227,16 +227,16 @@
 							</control>
 						</control>
 						<control type="group">
-							<width>242</width>
+							<width>262</width>
 							<height>76</height>
 							<visible>!Control.HasFocus(10)</visible>
 							<control type="image">
-								<width>242</width>
+								<width>262</width>
 								<height>76</height>
 								<texture border="8">dialogs/DialogButtonNF.png</texture>
 							</control>
 							<control type="label">
-								<width>242</width>
+								<width>262</width>
 								<height>76</height>
 								<align>center</align>
 								<font>MedUpper24</font>
@@ -246,16 +246,16 @@
 						</control>
 						<!-- Yes -->
 						<control type="group">
-							<width>242</width>
+							<width>262</width>
 							<height>76</height>
 							<visible>Control.HasFocus(11)</visible>
 							<control type="image">
-								<width>242</width>
+								<width>262</width>
 								<height>76</height>
 								<texture border="8">dialogs/DialogButtonFO.png</texture>
 							</control>
 							<control type="label">
-								<width>242</width>
+								<width>262</width>
 								<height>76</height>
 								<align>center</align>
 								<font>MedUpper24</font>
@@ -264,16 +264,16 @@
 							</control>
 						</control>
 						<control type="group">
-							<width>242</width>
+							<width>262</width>
 							<height>76</height>
 							<visible>!Control.HasFocus(11)</visible>
 							<control type="image">
-								<width>242</width>
+								<width>262</width>
 								<height>76</height>
 								<texture border="8">dialogs/DialogButtonNF.png</texture>
 							</control>
 							<control type="label">
-								<width>242</width>
+								<width>262</width>
 								<height>76</height>
 								<align>center</align>
 								<font>MedUpper24</font>
@@ -283,16 +283,16 @@
 						</control>
 						<!-- Custom -->
 						<control type="group">
-							<width>242</width>
+							<width>262</width>
 							<height>76</height>
 							<visible>Control.HasFocus(12)</visible>
 							<control type="image">
-								<width>242</width>
+								<width>262</width>
 								<height>76</height>
 								<texture border="8">dialogs/DialogButtonFO.png</texture>
 							</control>
 							<control type="label">
-								<width>242</width>
+								<width>262</width>
 								<height>76</height>
 								<align>center</align>
 								<font>MedUpper24</font>
@@ -301,16 +301,16 @@
 							</control>
 						</control>
 						<control type="group">
-							<width>242</width>
+							<width>262</width>
 							<height>76</height>
 							<visible>!Control.HasFocus(12)</visible>
 							<control type="image">
-								<width>242</width>
+								<width>262</width>
 								<height>76</height>
 								<texture border="8">dialogs/DialogButtonNF.png</texture>
 							</control>
 							<control type="label">
-								<width>242</width>
+								<width>262</width>
 								<height>76</height>
 								<align>center</align>
 								<font>MedUpper24</font>
