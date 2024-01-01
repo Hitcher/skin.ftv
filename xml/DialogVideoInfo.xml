@@ -11,7 +11,7 @@
 	<onunload>Control.Move(5002,$INFO[Container(5002).CurrentItem,-])</onunload>
 	<onunload>Control.Move(5002,1)</onunload>
 	<onload>Skin.SetBool(TMDbHelper.DirectCallAuto)</onload>
-	<onload condition="System.HasAddon(script.tvtunes)">RunScript(script.tvtunes,backend=True)</onload>
+	<onload condition="System.HasAddon(script.tvtunes)">RunScript(script.tvtunes,backend=true)</onload>
 	<onunload>ClearProperty(StarredInTV,home)</onunload>
 	<onunload>ClearProperty(ActorImages,home)</onunload>
 	<onunload condition="!Window.IsVisible(favouritesbrowser)">SetFocus(50)</onunload>
@@ -23,9 +23,7 @@
 			<include>HiddenList</include>
 		</control>
 		<!-- Cast list -->
-		<control type="list" id="50">
-			<include>HiddenList</include>
-		</control>
+		<include condition="!Container.Content(Sets) + Skin.HasSetting(ExtendedInfo)">CastList</include>
 		<!-- Content type includes -->
 		<include condition="!String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + !Skin.HasSetting(ExtendedInfo)">Includes_Dialog_Default_Video_Information</include>
 		<include condition="String.IsEmpty(ListItem.Property(item.type),movie) + String.IsEmpty(ListItem.Property(item.type),tv) + !String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + Skin.HasSetting(ExtendedInfo)">Includes_Dialog_Video_Information</include>

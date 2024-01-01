@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<!-- profiles -->
-	<backgroundcolor>0xff12161b</backgroundcolor>
+	<backgroundcolor>BackgroundColour</backgroundcolor>
 	<defaultcontrol always="true">101</defaultcontrol>
 	<controls>
 		<!-- Heading / Current item / Total items -->
@@ -54,7 +54,7 @@
 			<control type="group">
 				<width>333</width>
 				<height>497</height>
-				<animation center="134,240" condition="True" effect="zoom" end="84.5" start="84.5">Conditional</animation>
+				<animation center="134,240" condition="true" effect="zoom" end="84.5" start="84.5">Conditional</animation>
 				<control type="image">
 					<left>-24</left>
 					<width>333</width>
@@ -122,14 +122,14 @@
 				<left>-359</left>
 				<width>40</width>
 				<height>480</height>
-				<texture flipx="true">settings/shadow.png</texture>
+				<texture border="0,40,0,40" flipx="true">settings/shadow.png</texture>
 			</control>
-			<control type="group">
-				<control type="image">
-					<width>678</width>
-					<height>520</height>
-					<texture>settings/back.png</texture>
-				</control>
+			<control type="image">
+				<width>678</width>
+				<height>520</height>
+				<texture colordiffuse="DialogBackColour">common/white_square.png</texture>
+				<bordertexture border="40" infill="false">settings/drop_shadow.png</bordertexture>
+				<bordersize>0,0,40,40</bordersize>
 			</control>
 			<control type="group">
 				<control type="grouplist">
@@ -145,8 +145,8 @@
 					<textwidth>576</textwidth>
 					<aligny>center</aligny>
 					<font>Light30Spaced</font>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<pulseonselect>false</pulseonselect>
@@ -154,7 +154,7 @@
 				<control type="image">
 					<width>40</width>
 					<height>480</height>
-					<texture>settings/shadow.png</texture>
+					<texture border="0,40,0,40">settings/shadow.png</texture>
 				</control>
 			</control>
 			<control type="group">
@@ -171,8 +171,8 @@
 						<aligny>center</aligny>
 						<font>Light30Spaced</font>
 						<label>7</label>
-						<textcolor>NotFocusedColor</textcolor>
-						<focusedcolor>FocusedColor</focusedcolor>
+						<textcolor>NotFocusedColour</textcolor>
+						<focusedcolor>FocusedColour</focusedcolor>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					</control>
@@ -184,8 +184,8 @@
 						<aligny>center</aligny>
 						<font>Light30Spaced</font>
 						<label>13200</label>
-						<textcolor>FocusedColor</textcolor>
-						<focusedcolor>FocusedColor</focusedcolor>
+						<textcolor>FocusedColour</textcolor>
+						<focusedcolor>FocusedColour</focusedcolor>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_focus.png</texturenofocus>
 					</control>
@@ -197,8 +197,8 @@
 						<aligny>center</aligny>
 						<font>Light30Spaced</font>
 						<label>138</label>
-						<textcolor>NotFocusedColor</textcolor>
-						<focusedcolor>FocusedColor</focusedcolor>
+						<textcolor>NotFocusedColour</textcolor>
+						<focusedcolor>FocusedColour</focusedcolor>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					</control>
@@ -211,7 +211,7 @@
 						<font>Light30Spaced</font>
 						<align>right</align>
 						<label>$INFO[Window(home).Property(SettingsLevel)]</label>
-						<textcolor>NotFocusedColor</textcolor>
+						<textcolor>NotFocusedColour</textcolor>
 						<focusedcolor>ffdadada</focusedcolor>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
@@ -225,12 +225,12 @@
 					<aligny>center</aligny>
 					<font>Light30Spaced</font>
 					<label>$LOCALIZE[31016]</label>
-					<textcolor>NotFocusedColor</textcolor>
+					<textcolor>NotFocusedColour</textcolor>
 				</control>
 				<control type="image">
 					<width>40</width>
 					<height>480</height>
-					<texture>settings/shadow.png</texture>
+					<texture border="0,40,0,40">settings/shadow.png</texture>
 				</control>
 			</control>
 		</control>
@@ -264,21 +264,18 @@
 				<effect end="0" start="100" time="100" type="fade"/>
 				<effect easing="inout" end="500,0" start="0,0" time="200" tween="sine" type="slide"/>
 			</animation>
-			<control type="image">
-				<width>1361</width>
-				<height>480</height>
-				<texture>settings/profile_settings_back.png</texture>
-			</control>
-			<control type="label">
-				<left>40</left>
-				<top>14</top>
-				<height>30</height>
-				<width>419</width>
-				<aligny>center</aligny>
-				<font>Bold30</font>
-				<label>10130</label>
-				<textcolor>ffdadada</textcolor>
-			</control>
+			<include content="DialogBack">
+				<param name="dialog_back_width" value="1360"/>
+				<param name="dialog_heading_width" value="1000"/>
+				<param name="dialog_shadow_1_left" value="1000"/>
+				<param name="dialog_shadow_2_top" value="60"/>
+				<param name="dialog_shadow_2_left" value="422"/>
+				<param name="dialog_shadow_2_visible" value="true"/>
+			</include>
+			<include content="DialogHeading">
+				<param name="dialog_heading_label_width" value="920"/>
+				<param name="dialog_heading_label" value="10130"/>
+			</include>
 			<!-- Default list -->
 			<control type="grouplist" id="100">
 				<top>60</top>
@@ -303,7 +300,7 @@
 					<onclick>SetFocus(200)</onclick>
 					<label>$LOCALIZE[31125]</label>
 					<textcolor>$VAR[ProfileSettingsLoginButton]</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<pulseonselect>false</pulseonselect>
@@ -320,7 +317,7 @@
 					<onclick>SetFocus(2)</onclick>
 					<label>13200</label>
 					<textcolor>$VAR[ProfileSettingsProfileButton]</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<pulseonselect>false</pulseonselect>
@@ -330,7 +327,7 @@
 			<control type="grouplist" id="200">
 				<left>422</left>
 				<top>60</top>
-				<width>579</width>
+				<width>578</width>
 				<height>480</height>
 				<itemgap>0</itemgap>
 				<onleft>101</onleft>
@@ -342,13 +339,13 @@
 				<visible>ControlGroup(100).HasFocus(101)</visible>
 				<!-- Enable login screen -->
 				<control type="radiobutton" id="4">
-					<width>579</width>
+					<width>578</width>
 					<height>84</height>
 					<font>Light32</font>
 					<textwidth>738</textwidth>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<radioposx>447</radioposx>
@@ -363,13 +360,13 @@
 				</control>
 				<!-- Auto login -->
 				<control type="button" id="5">
-					<width>579</width>
+					<width>578</width>
 					<height>84</height>
 					<font>Light32</font>
 					<textwidth>738</textwidth>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<label>33084</label>
@@ -380,7 +377,7 @@
 			<control type="fixedlist" id="2">
 				<left>422</left>
 				<top>60</top>
-				<width>579</width>
+				<width>578</width>
 				<height>420</height>
 				<onleft>102</onleft>
 				<onright>noop</onright>
@@ -404,7 +401,7 @@
 						<width>878</width>
 						<height>84</height>
 						<font>Light32</font>
-						<textcolor>NotFocusedColor</textcolor>
+						<textcolor>NotFocusedColour</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
@@ -426,7 +423,7 @@
 						<width>878</width>
 						<height>84</height>
 						<font>Light32</font>
-						<textcolor>FocusedColor</textcolor>
+						<textcolor>FocusedColour</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<visible>Control.HasFocus(2)</visible>
 					</control>
@@ -435,7 +432,7 @@
 						<width>878</width>
 						<height>84</height>
 						<font>Light32</font>
-						<textcolor>NotFocusedColor</textcolor>
+						<textcolor>NotFocusedColour</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<visible>!Control.HasFocus(2)</visible>
 					</control>
@@ -444,7 +441,7 @@
 			<control type="image">
 				<left>422</left>
 				<top>60</top>
-				<width>579</width>
+				<width>578</width>
 				<height>84</height>
 				<visible>ControlGroup(100).HasFocus(102) + Container(2).HasPrevious</visible>
 				<texture border="2" diffuse="settings/mask.png" flipy="true">settings/mask_back.png</texture>
@@ -452,7 +449,7 @@
 			<control type="image">
 				<left>422</left>
 				<top>396</top>
-				<width>579</width>
+				<width>578</width>
 				<height>84</height>
 				<visible>ControlGroup(100).HasFocus(102) + Container(2).HasNext</visible>
 				<texture border="2" diffuse="settings/mask.png">settings/mask_back.png</texture>

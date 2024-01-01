@@ -243,7 +243,7 @@
 					<visible>!String.IsEmpty(ListItem.UserRating)</visible>
 				</control>
 				<control type="image">
-					<top>3</top>
+					<top>2</top>
 					<width>48</width>
 					<height>23</height>
 					<texture>views/logos/imdb.png</texture>
@@ -541,7 +541,7 @@
 					<height>0</height>
 					<onfocus>Right</onfocus>
 					<include>NoTextures</include>
-					<visible>!Control.HasFocus(8) + !Control.HasFocus(9) + !Control.HasFocus(1003) + !Control.HasFocus(6) + !Control.HasFocus(10) + !Control.HasFocus(20) + !Control.HasFocus(21) + !Control.HasFocus(22) + !Control.HasFocus(1002)</visible>
+					<visible>!Control.HasFocus(8) + !Control.HasFocus(9) + !Control.HasFocus(1003) + !Control.HasFocus(6) + !Control.HasFocus(10) + !Control.HasFocus(20) + !Control.HasFocus(21) + !Control.HasFocus(22) + !Control.HasFocus(1002) + !Control.HasFocus(14) + !Control.HasFocus(15)</visible>
 				</control>
 				<!-- Play/Browse Button -->
 				<control id="8" type="togglebutton">
@@ -693,6 +693,40 @@
 					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
 					<visible>String.IsEqual(Window(home).Property(SpecialFeatures.Visible),true)</visible>
 				</control>
+				<!-- Versions button -->
+				<control type="button" id="14">
+					<width min="124" max="204">auto</width>
+					<wrapmultiline>true</wrapmultiline>
+					<height>116</height>
+					<onup condition="!Control.IsVisible(96)">Close</onup>
+					<onup condition="Control.IsVisible(96)">3002</onup>
+					<ondown>500</ondown>
+					<font>Med24</font>
+					<label>$LOCALIZE[31188]</label>
+					<textoffsetx>28</textoffsetx>
+					<textcolor>ffdadada</textcolor>
+					<focusedcolor>ff222222</focusedcolor>
+					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+					<visible>String.IsEqual(ListItem.DBType,movie)</visible>
+				</control>
+				<!-- Extras button -->
+				<control type="button" id="15">
+					<width min="124" max="204">auto</width>
+					<wrapmultiline>true</wrapmultiline>
+					<height>116</height>
+					<onup condition="!Control.IsVisible(96)">Close</onup>
+					<onup condition="Control.IsVisible(96)">3002</onup>
+					<ondown>500</ondown>
+					<font>Med24</font>
+					<label>$LOCALIZE[31189]</label>
+					<textoffsetx>28</textoffsetx>
+					<textcolor>ffdadada</textcolor>
+					<focusedcolor>ff222222</focusedcolor>
+					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+					<visible>String.IsEqual(ListItem.DBType,movie)</visible>
+				</control>
 			</control>
 			<!-- Dummy Button grouplist -->
 			<control type="grouplist">
@@ -835,7 +869,7 @@
 							<height>42</height>
 							<font>Bold42</font>
 							<textcolor>ffffffff</textcolor>
-							<shadowcolor>80000000</shadowcolor>
+							<shadowcolor>ShadowColour</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label) + String.IsEmpty(Window(home).Property(RecommendedVideos))</visible>
 							<animation condition="String.IsEmpty(ListItem.Label2)" effect="slide" end="0,31" start="0,0" time="0">Conditional</animation>
@@ -848,7 +882,7 @@
 							<font>Med28</font>
 							<scroll>false</scroll>
 							<textcolor>ffffffff</textcolor>
-							<shadowcolor>80000000</shadowcolor>
+							<shadowcolor>ShadowColour</shadowcolor>
 							<label>$INFO[ListItem.Label2,$LOCALIZE[20347] ,]</label>
 							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label2)</visible>
 						</control>
@@ -912,7 +946,7 @@
 							<font>Bold42</font>
 							<scroll>false</scroll>
 							<textcolor>ffffffff</textcolor>
-							<shadowcolor>80000000</shadowcolor>
+							<shadowcolor>ShadowColour</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label) + String.IsEmpty(Window(home).Property(RecommendedVideos))</visible>
 							<animation condition="String.IsEmpty(ListItem.Label2)" effect="slide" end="0,31" start="0,0" time="0">Conditional</animation>
@@ -928,7 +962,7 @@
 							<font>Med28</font>
 							<scroll>false</scroll>
 							<textcolor>ffffffff</textcolor>
-							<shadowcolor>80000000</shadowcolor>
+							<shadowcolor>ShadowColour</shadowcolor>
 							<label>$INFO[ListItem.Label2,$LOCALIZE[20347] ,]</label>
 							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label2)</visible>
 							<include content="FocusedListIDAnimation">

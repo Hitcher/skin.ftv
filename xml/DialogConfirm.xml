@@ -33,284 +33,290 @@
 		</control>
 		<!-- Background -->
 		<include>DialogBackgroundImage</include>
-		<!-- Background -->
-		<control type="image">
-			<centerleft>50%</centerleft>
-			<centertop>50%</centertop>
-			<width>816</width>
-			<height>298</height>
-			<texture border="2">dialogs/DialogMessageBackground.png</texture>
-			<animation easing="inout" effect="fade" end="100" start="0" time="60" tween="sine">WindowOpen</animation>
-			<animation easing="inout" effect="fade" end="0" start="100" time="60" tween="sine">WindowClose</animation>
-		</control>
 		<!-- Main group -->
-		<control type="grouplist">
+		<control type="group">
+			<include>DialogAnimation</include>
 			<centerleft>50%</centerleft>
 			<centertop>50%</centertop>
-			<width>816</width>
-			<height>528</height>
-			<itemgap>0</itemgap>
-			<align>center</align>
-			<orientation>vertical</orientation>
-			<usecontrolcoords>true</usecontrolcoords>
-			<animation easing="inout" effect="fade" end="100" start="0" time="60" tween="sine">WindowOpen</animation>
-			<animation easing="inout" effect="fade" end="0" start="100" time="60" tween="sine">WindowClose</animation>
-			<!-- Heading -->
-			<control type="group">
+			<width>712</width>
+			<height>194</height>
+			<!-- Background -->
+			<control type="image">
+				<centerleft>50%</centerleft>
+				<centertop>50%</centertop>
+				<width>100%</width>
+				<height>100%</height>
+				<include>MessageBackground</include>
+			</control>
+			<!-- Main group -->
+			<control type="grouplist">
+				<centerleft>50%</centerleft>
+				<centertop>50%</centertop>
 				<width>816</width>
-				<height>97</height>
-				<control type="image">
+				<height>528</height>
+				<itemgap>0</itemgap>
+				<align>center</align>
+				<orientation>vertical</orientation>
+				<usecontrolcoords>true</usecontrolcoords>
+				<animation easing="inout" effect="fade" end="100" start="0" time="60" tween="sine">WindowOpen</animation>
+				<animation easing="inout" effect="fade" end="0" start="100" time="60" tween="sine">WindowClose</animation>
+				<!-- Heading -->
+				<control type="group">
 					<width>816</width>
 					<height>97</height>
-					<texture border="2">dialogs/DialogConfirm.png</texture>
+					<control type="image">
+						<width>816</width>
+						<height>97</height>
+						<texture border="2">dialogs/DialogConfirm.png</texture>
+					</control>
+					<control id="1" type="label">
+						<left>50</left>
+						<top>41</top>
+						<width>716</width>
+						<height>38</height>
+						<font>Bold38</font>
+						<textcolor>ffdadada</textcolor>
+					</control>
 				</control>
-				<control id="1" type="label">
+				<!-- Details -->
+				<control type="textbox">
 					<left>50</left>
-					<top>41</top>
 					<width>716</width>
-					<height>38</height>
-					<font>Bold38</font>
-					<textcolor>ffdadada</textcolor>
+					<height min="35" max="210">auto</height>
+					<font>Light28</font>
+					<textcolor>ff9d9d9d</textcolor>
+					<autoscroll>False</autoscroll>
+					<label>$VAR[ConfirmText]</label>
 				</control>
-			</control>
-			<!-- Details -->
-			<control type="textbox">
-				<left>50</left>
-				<width>716</width>
-				<height min="35" max="210">auto</height>
-				<font>Light28</font>
-				<textcolor>ff9d9d9d</textcolor>
-				<autoscroll>False</autoscroll>
-				<label>$VAR[ConfirmText]</label>
-			</control>
-			<!--  Progress -->
-			<control id="20" type="progress">
-				<left>50</left>
-				<top>27</top>
-				<width>716</width>
-				<height>9</height>
-				<reveal>true</reveal>
-				<info>System.Progressbar</info>
-				<texturebg border="4">dialogs/progress_back.png</texturebg>
-				<lefttexture/>
-				<midtexture border="4">dialogs/progress_bar.png</midtexture>
-				<righttexture/>
-				<overlaytexture/>
-				<visible>Window.IsVisible(progressdialog)</visible>
-			</control>
-			<!-- Button grouplist -->
-			<control type="group">
-				<width>816</width>
-				<height>166</height>
-				<control type="image">
+				<!--  Progress -->
+				<control id="20" type="progress">
+					<left>50</left>
+					<top>27</top>
+					<width>716</width>
+					<height>9</height>
+					<reveal>true</reveal>
+					<info>System.Progressbar</info>
+					<texturebg border="4">dialogs/progress_back.png</texturebg>
+					<lefttexture/>
+					<midtexture border="4">dialogs/progress_bar.png</midtexture>
+					<righttexture/>
+					<overlaytexture/>
+					<visible>Window.IsVisible(progressdialog)</visible>
+				</control>
+				<!-- Button grouplist -->
+				<control type="group">
 					<width>816</width>
 					<height>166</height>
-					<texture flipy="true" border="2">dialogs/DialogConfirm.png</texture>
-				</control>
-				<!-- 2 Button grouplist -->
-				<control type="grouplist">
-					<centerleft>50%</centerleft>
-					<bottom>50</bottom>
-					<width>100%</width>
-					<height>76</height>
-					<itemgap>0</itemgap>
-					<align>center</align>
-					<orientation>horizontal</orientation>
-					<visible>!Control.IsVisible(12)</visible>
-					<!-- Cancel -->
-					<control type="group">
-						<width>358</width>
+					<control type="image">
+						<width>816</width>
+						<height>166</height>
+						<texture flipy="true" border="2">dialogs/DialogConfirm.png</texture>
+					</control>
+					<!-- 2 Button grouplist -->
+					<control type="grouplist">
+						<centerleft>50%</centerleft>
+						<bottom>50</bottom>
+						<width>100%</width>
 						<height>76</height>
-						<visible>Control.IsVisible(10) + Control.HasFocus(10)</visible>
-						<control type="image">
+						<itemgap>0</itemgap>
+						<align>center</align>
+						<orientation>horizontal</orientation>
+						<visible>!Control.IsVisible(12)</visible>
+						<!-- Cancel -->
+						<control type="group">
 							<width>358</width>
 							<height>76</height>
-							<texture border="8">dialogs/DialogButtonFO.png</texture>
+							<visible>Control.IsVisible(10) + Control.HasFocus(10)</visible>
+							<control type="image">
+								<width>358</width>
+								<height>76</height>
+								<texture border="8">dialogs/DialogButtonFO.png</texture>
+							</control>
+							<control type="label">
+								<width>358</width>
+								<height>76</height>
+								<align>center</align>
+								<font>MedUpper24</font>
+								<textcolor>ff000000</textcolor>
+								<label>$INFO[Control.GetLabel(10)]</label>
+							</control>
 						</control>
-						<control type="label">
+						<control type="group">
 							<width>358</width>
 							<height>76</height>
-							<align>center</align>
-							<font>MedUpper24</font>
-							<textcolor>ff000000</textcolor>
-							<label>$INFO[Control.GetLabel(10)]</label>
+							<visible>Control.IsVisible(10) + !Control.HasFocus(10)</visible>
+							<control type="image">
+								<width>358</width>
+								<height>76</height>
+								<texture border="8">dialogs/DialogButtonNF.png</texture>
+							</control>
+							<control type="label">
+								<width>358</width>
+								<height>76</height>
+								<align>center</align>
+								<font>MedUpper24</font>
+								<textcolor>ffd8d8d8</textcolor>
+								<label>$INFO[Control.GetLabel(10)]</label>
+							</control>
 						</control>
-					</control>
-					<control type="group">
-						<width>358</width>
-						<height>76</height>
-						<visible>Control.IsVisible(10) + !Control.HasFocus(10)</visible>
-						<control type="image">
+						<!-- Yes -->
+						<control type="group">
 							<width>358</width>
 							<height>76</height>
-							<texture border="8">dialogs/DialogButtonNF.png</texture>
+							<visible>Control.IsVisible(11) + Control.HasFocus(11)</visible>
+							<control type="image">
+								<width>358</width>
+								<height>76</height>
+								<texture border="8">dialogs/DialogButtonFO.png</texture>
+							</control>
+							<control type="label">
+								<width>358</width>
+								<height>76</height>
+								<align>center</align>
+								<font>MedUpper24</font>
+								<textcolor>ff000000</textcolor>
+								<label>$INFO[Control.GetLabel(11)]</label>
+							</control>
 						</control>
-						<control type="label">
+						<control type="group">
 							<width>358</width>
 							<height>76</height>
-							<align>center</align>
-							<font>MedUpper24</font>
-							<textcolor>ffd8d8d8</textcolor>
-							<label>$INFO[Control.GetLabel(10)]</label>
+							<visible>Control.IsVisible(11) + !Control.HasFocus(11)</visible>
+							<control type="image">
+								<width>358</width>
+								<height>76</height>
+								<texture border="8">dialogs/DialogButtonNF.png</texture>
+							</control>
+							<control type="label">
+								<width>358</width>
+								<height>76</height>
+								<align>center</align>
+								<font>MedUpper24</font>
+								<textcolor>ffd8d8d8</textcolor>
+								<label>$INFO[Control.GetLabel(11)]</label>
+							</control>
 						</control>
 					</control>
-					<!-- Yes -->
-					<control type="group">
-						<width>358</width>
+					<!-- 3 Button grouplist -->
+					<control type="grouplist">
+						<centerleft>50%</centerleft>
+						<bottom>50</bottom>
+						<width>100%</width>
 						<height>76</height>
-						<visible>Control.IsVisible(11) + Control.HasFocus(11)</visible>
-						<control type="image">
-							<width>358</width>
-							<height>76</height>
-							<texture border="8">dialogs/DialogButtonFO.png</texture>
-						</control>
-						<control type="label">
-							<width>358</width>
-							<height>76</height>
-							<align>center</align>
-							<font>MedUpper24</font>
-							<textcolor>ff000000</textcolor>
-							<label>$INFO[Control.GetLabel(11)]</label>
-						</control>
-					</control>
-					<control type="group">
-						<width>358</width>
-						<height>76</height>
-						<visible>Control.IsVisible(11) + !Control.HasFocus(11)</visible>
-						<control type="image">
-							<width>358</width>
-							<height>76</height>
-							<texture border="8">dialogs/DialogButtonNF.png</texture>
-						</control>
-						<control type="label">
-							<width>358</width>
-							<height>76</height>
-							<align>center</align>
-							<font>MedUpper24</font>
-							<textcolor>ffd8d8d8</textcolor>
-							<label>$INFO[Control.GetLabel(11)]</label>
-						</control>
-					</control>
-				</control>
-				<!-- 3 Button grouplist -->
-				<control type="grouplist">
-					<centerleft>50%</centerleft>
-					<bottom>50</bottom>
-					<width>100%</width>
-					<height>76</height>
-					<itemgap>0</itemgap>
-					<align>center</align>
-					<orientation>horizontal</orientation>
-					<visible>Control.IsVisible(12)</visible>
-					<!-- Cancel -->
-					<control type="group">
-						<width>242</width>
-						<height>76</height>
-						<visible>Control.HasFocus(10)</visible>
-						<control type="image">
+						<itemgap>0</itemgap>
+						<align>center</align>
+						<orientation>horizontal</orientation>
+						<visible>Control.IsVisible(12)</visible>
+						<!-- Cancel -->
+						<control type="group">
 							<width>242</width>
 							<height>76</height>
-							<texture border="8">dialogs/DialogButtonFO.png</texture>
+							<visible>Control.HasFocus(10)</visible>
+							<control type="image">
+								<width>242</width>
+								<height>76</height>
+								<texture border="8">dialogs/DialogButtonFO.png</texture>
+							</control>
+							<control type="label">
+								<width>242</width>
+								<height>76</height>
+								<align>center</align>
+								<font>MedUpper24</font>
+								<textcolor>ff000000</textcolor>
+								<label>$INFO[Control.GetLabel(10)]</label>
+							</control>
 						</control>
-						<control type="label">
+						<control type="group">
 							<width>242</width>
 							<height>76</height>
-							<align>center</align>
-							<font>MedUpper24</font>
-							<textcolor>ff000000</textcolor>
-							<label>$INFO[Control.GetLabel(10)]</label>
+							<visible>!Control.HasFocus(10)</visible>
+							<control type="image">
+								<width>242</width>
+								<height>76</height>
+								<texture border="8">dialogs/DialogButtonNF.png</texture>
+							</control>
+							<control type="label">
+								<width>242</width>
+								<height>76</height>
+								<align>center</align>
+								<font>MedUpper24</font>
+								<textcolor>ffd8d8d8</textcolor>
+								<label>$INFO[Control.GetLabel(10)]</label>
+							</control>
 						</control>
-					</control>
-					<control type="group">
-						<width>242</width>
-						<height>76</height>
-						<visible>!Control.HasFocus(10)</visible>
-						<control type="image">
+						<!-- Yes -->
+						<control type="group">
 							<width>242</width>
 							<height>76</height>
-							<texture border="8">dialogs/DialogButtonNF.png</texture>
+							<visible>Control.HasFocus(11)</visible>
+							<control type="image">
+								<width>242</width>
+								<height>76</height>
+								<texture border="8">dialogs/DialogButtonFO.png</texture>
+							</control>
+							<control type="label">
+								<width>242</width>
+								<height>76</height>
+								<align>center</align>
+								<font>MedUpper24</font>
+								<textcolor>ff000000</textcolor>
+								<label>$INFO[Control.GetLabel(11)]</label>
+							</control>
 						</control>
-						<control type="label">
+						<control type="group">
 							<width>242</width>
 							<height>76</height>
-							<align>center</align>
-							<font>MedUpper24</font>
-							<textcolor>ffd8d8d8</textcolor>
-							<label>$INFO[Control.GetLabel(10)]</label>
+							<visible>!Control.HasFocus(11)</visible>
+							<control type="image">
+								<width>242</width>
+								<height>76</height>
+								<texture border="8">dialogs/DialogButtonNF.png</texture>
+							</control>
+							<control type="label">
+								<width>242</width>
+								<height>76</height>
+								<align>center</align>
+								<font>MedUpper24</font>
+								<textcolor>ffd8d8d8</textcolor>
+								<label>$INFO[Control.GetLabel(11)]</label>
+							</control>
 						</control>
-					</control>
-					<!-- Yes -->
-					<control type="group">
-						<width>242</width>
-						<height>76</height>
-						<visible>Control.HasFocus(11)</visible>
-						<control type="image">
+						<!-- Custom -->
+						<control type="group">
 							<width>242</width>
 							<height>76</height>
-							<texture border="8">dialogs/DialogButtonFO.png</texture>
+							<visible>Control.HasFocus(12)</visible>
+							<control type="image">
+								<width>242</width>
+								<height>76</height>
+								<texture border="8">dialogs/DialogButtonFO.png</texture>
+							</control>
+							<control type="label">
+								<width>242</width>
+								<height>76</height>
+								<align>center</align>
+								<font>MedUpper24</font>
+								<textcolor>ff000000</textcolor>
+								<label>$INFO[Control.GetLabel(12)]</label>
+							</control>
 						</control>
-						<control type="label">
+						<control type="group">
 							<width>242</width>
 							<height>76</height>
-							<align>center</align>
-							<font>MedUpper24</font>
-							<textcolor>ff000000</textcolor>
-							<label>$INFO[Control.GetLabel(11)]</label>
-						</control>
-					</control>
-					<control type="group">
-						<width>242</width>
-						<height>76</height>
-						<visible>!Control.HasFocus(11)</visible>
-						<control type="image">
-							<width>242</width>
-							<height>76</height>
-							<texture border="8">dialogs/DialogButtonNF.png</texture>
-						</control>
-						<control type="label">
-							<width>242</width>
-							<height>76</height>
-							<align>center</align>
-							<font>MedUpper24</font>
-							<textcolor>ffd8d8d8</textcolor>
-							<label>$INFO[Control.GetLabel(11)]</label>
-						</control>
-					</control>
-					<!-- Custom -->
-					<control type="group">
-						<width>242</width>
-						<height>76</height>
-						<visible>Control.HasFocus(12)</visible>
-						<control type="image">
-							<width>242</width>
-							<height>76</height>
-							<texture border="8">dialogs/DialogButtonFO.png</texture>
-						</control>
-						<control type="label">
-							<width>242</width>
-							<height>76</height>
-							<align>center</align>
-							<font>MedUpper24</font>
-							<textcolor>ff000000</textcolor>
-							<label>$INFO[Control.GetLabel(12)]</label>
-						</control>
-					</control>
-					<control type="group">
-						<width>242</width>
-						<height>76</height>
-						<visible>!Control.HasFocus(12)</visible>
-						<control type="image">
-							<width>242</width>
-							<height>76</height>
-							<texture border="8">dialogs/DialogButtonNF.png</texture>
-						</control>
-						<control type="label">
-							<width>242</width>
-							<height>76</height>
-							<align>center</align>
-							<font>MedUpper24</font>
-							<textcolor>ffd8d8d8</textcolor>
-							<label>$INFO[Control.GetLabel(12)]</label>
+							<visible>!Control.HasFocus(12)</visible>
+							<control type="image">
+								<width>242</width>
+								<height>76</height>
+								<texture border="8">dialogs/DialogButtonNF.png</texture>
+							</control>
+							<control type="label">
+								<width>242</width>
+								<height>76</height>
+								<align>center</align>
+								<font>MedUpper24</font>
+								<textcolor>ffd8d8d8</textcolor>
+								<label>$INFO[Control.GetLabel(12)]</label>
+							</control>
 						</control>
 					</control>
 				</control>

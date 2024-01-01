@@ -37,7 +37,7 @@
 		<!-- Background -->
 		<control type="image">
 			<include>FullscreenDimensions</include>
-			<texture>common/background_default.png</texture>
+			<texture colordiffuse="BackgroundColour">common/white_square.png</texture>
 			<visible>String.IsEmpty(Window(home).Property(ShowXRay))</visible>
 		</control>
 		<control type="group">
@@ -391,7 +391,7 @@
 			<visible>Control.HasFocus(99)</visible>
 			<control type="image">
 				<include>FullscreenDimensions</include>
-				<texture>common/background_default.png</texture>
+				<texture colordiffuse="BackgroundColour">common/white_square.png</texture>
 			</control>
 			<control type="image">
 				<width>1920</width>

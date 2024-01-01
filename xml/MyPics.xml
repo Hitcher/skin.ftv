@@ -2,12 +2,12 @@
 <window>
 	<!-- pictures -->
 	<menucontrol>5000</menucontrol>
-	<backgroundcolor>0xff12161b</backgroundcolor>
-	<defaultcontrol always="true">57</defaultcontrol>
+	<backgroundcolor>BackgroundColour</backgroundcolor>
+	<defaultcontrol always="true">53</defaultcontrol>
 	<onload condition="Window.Previous(home) + Container.HasParent">Control.SetFocus($VAR[ContainerID],1,absolute)</onload>
 	<onload condition="Window.Previous(home) + !Container.HasParent">Control.SetFocus($VAR[ContainerID],0,absolute)</onload>
 	<onload condition="!String.Contains(Control.GetLabel(9),*) | String.IsEmpty(Skin.String(PicturesRandom))">Skin.SetString(PicturesRandom,off)</onload>
-	<views>57,56,55</views>
+	<views>50,53,55</views>
 	<controls>
 		<control id="2" type="button">
 			<include>HiddenControl</include>
@@ -20,9 +20,9 @@
 			<include>HiddenControl</include>
 		</control>
 		<!-- Views -->
+		<include>Viewtype50</include>
+		<include>Viewtype53</include>
 		<include>Viewtype55</include>
-		<include>Viewtype56</include>
-		<include>Viewtype57</include>
 		<control type="group">
 			<animation delay="400" effect="fade" end="100" start="0" time="200">WindowOpen</animation>
 			<!-- Heading / Current item / Total items -->
@@ -112,8 +112,8 @@
 					<left>-10</left>
 					<height>100</height>
 					<itemgap>0</itemgap>
-					<onleft>SetFocus(57)</onleft>
-					<onright>SetFocus(57)</onright>
+					<onleft>SetFocus(53)</onleft>
+					<onright>SetFocus(53)</onright>
 					<orientation>horizontal</orientation>
 					<usecontrolcoords>true</usecontrolcoords>
 					<defaultcontrol always="true">1001</defaultcontrol>
@@ -129,7 +129,7 @@
 						<width min="124" max="204">auto</width>
 						<wrapmultiline>true</wrapmultiline>
 						<height>100</height>
-						<onup>57</onup>
+						<onup>53</onup>
 						<ondown>3000</ondown>
 						<font>Med24</font>
 						<label>$LOCALIZE[31099]</label>
@@ -144,7 +144,7 @@
 						<width min="124" max="204">auto</width>
 						<wrapmultiline>true</wrapmultiline>
 						<height>100</height>
-						<onup>57</onup>
+						<onup>53</onup>
 						<ondown>3000</ondown>
 						<font>Med24</font>
 						<label>$LOCALIZE[31099]</label>
@@ -159,7 +159,7 @@
 						<width min="124" max="204">auto</width>
 						<wrapmultiline>true</wrapmultiline>
 						<height>100</height>
-						<onup>57</onup>
+						<onup>53</onup>
 						<ondown>3000</ondown>
 						<onclick>SendClick(9)</onclick>
 						<onclick condition="String.Contains(Skin.String(PicturesRandom),off)">Skin.SetString(PicturesRandom,on)</onclick>
@@ -177,7 +177,7 @@
 						<width min="124" max="204">auto</width>
 						<wrapmultiline>true</wrapmultiline>
 						<height>100</height>
-						<onup>57</onup>
+						<onup>53</onup>
 						<ondown>3000</ondown>
 						<onclick>SetFocus(5001)</onclick>
 						<font>Med24</font>
@@ -216,8 +216,8 @@
 					<height>23</height>
 					<onup>1000</onup>
 					<ondown>noop</ondown>
-					<onleft>57</onleft>
-					<onright>57</onright>
+					<onleft>53</onleft>
+					<onright>53</onright>
 					<onclick>SetProperty(OpenTextViewer,1,home)</onclick>
 					<onclick>RunScript(script.skinvariables,run_dialog=textviewer,heading=$INFO[ListItem.Label],text='$ESCINFO[ListItem.Label2]')</onclick>
 					<visible>Control.IsVisible(96)</visible>
@@ -245,8 +245,8 @@
 				<height>810</height>
 				<onup>noop</onup>
 				<ondown>noop</ondown>
-				<onleft>57</onleft>
-				<onright>57</onright>
+				<onleft>53</onleft>
+				<onright>53</onright>
 				<itemgap>0</itemgap>
 				<align>center</align>
 				<orientation>vertical</orientation>
@@ -287,10 +287,10 @@
 					<aligny>center</aligny>
 					<font>Light30Spaced</font>
 					<label>$INFO[Container.Viewmode]</label>
-					<onback>57</onback>
-					<onclick>Container.NextViewMode</onclick>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<onback>53</onback>
+					<onclick>Runscript(script.skinvariables,action=buildviews,contentid=$INFO[Container.Content],pluginname=$INFO[Container.PluginName])</onclick>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="3">dialogs/OptionsBackgroundButtonFO.png</texturefocus>
 					<texturenofocus border="3">dialogs/OptionsBackgroundButtonNF.png</texturenofocus>
 					<visible>Control.IsEnabled(2)</visible>
@@ -319,10 +319,10 @@
 					<aligny>center</aligny>
 					<font>Light30Spaced</font>
 					<label>$INFO[Container.SortMethod]</label>
-					<onback>57</onback>
+					<onback>53</onback>
 					<onclick>Container.NextSortMethod</onclick>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="3">dialogs/OptionsBackgroundButtonFO.png</texturefocus>
 					<texturenofocus border="3">dialogs/OptionsBackgroundButtonNF.png</texturenofocus>
 					<visible>Control.IsEnabled(3)</visible>
@@ -352,9 +352,9 @@
 					<font>Light30Spaced</font>
 					<label>584</label>
 					<altlabel>585</altlabel>
-					<onback>57</onback>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<onback>53</onback>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="3">dialogs/OptionsBackgroundButtonFO.png</texturefocus>
 					<texturenofocus border="3">dialogs/OptionsBackgroundButtonNF.png</texturenofocus>
 					<alttexturefocus border="3">dialogs/OptionsBackgroundButtonFO.png</alttexturefocus>
@@ -385,9 +385,9 @@
 					<textwidth>560</textwidth>
 					<aligny>center</aligny>
 					<font>Light30Spaced</font>
-					<onback>57</onback>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<onback>53</onback>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="3">dialogs/OptionsBackgroundButtonFO.png</texturefocus>
 					<texturenofocus border="3">dialogs/OptionsBackgroundButtonNF.png</texturenofocus>
 					<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
@@ -416,11 +416,11 @@
 					<aligny>center</aligny>
 					<font>Light30Spaced</font>
 					<label>$VAR[FilterButton]</label>
-					<onback>57</onback>
-					<onclick>SetFocus(57)</onclick>
+					<onback>53</onback>
+					<onclick>SetFocus(53)</onclick>
 					<onclick>Filter</onclick>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="3">dialogs/OptionsBackgroundButtonFO.png</texturefocus>
 					<texturenofocus border="3">dialogs/OptionsBackgroundButtonNF.png</texturenofocus>
 					<textureradioonfocus/>
@@ -442,8 +442,8 @@
 					<height>84</height>
 					<align>center</align>
 					<aligny>top</aligny>
-					<onback>57</onback>
-					<onclick>SetFocus(57)</onclick>
+					<onback>53</onback>
+					<onclick>SetFocus(53)</onclick>
 					<font>Med24</font>
 					<label>20177</label>
 					<textoffsety>27</textoffsety>

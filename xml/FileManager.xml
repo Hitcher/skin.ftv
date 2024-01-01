@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<!-- filemanager -->
-	<backgroundcolor>0xff12161b</backgroundcolor>
+	<backgroundcolor>BackgroundColour</backgroundcolor>
 	<defaultcontrol always="true">20</defaultcontrol>
 	<controls>
 		<!-- Heading -->
@@ -18,39 +18,31 @@
 		</control>
 		<!-- Main group -->
 		<control type="group">
-			<include>DialogZoomAnimation</include>
+			<include content="DialogZoomAnimation">
+				<param name="OpenCondition" value="true"/>
+				<param name="CloseCondition" value="true"/>
+			</include>
 			<!-- Left group -->
 			<control type="group">
 				<left>90</left>
 				<top>174</top>
 				<width>825</width>
 				<height>816</height>
-				<control type="image">
-					<width>825</width>
-					<height>816</height>
-					<texture border="1,61,1,1">dialogs/file_manager_back.png</texture>
-				</control>
+				<include content="DialogBack">
+					<param name="dialog_back_width" value="825"/>
+					<param name="dialog_back_height" value="816"/>
+					<param name="dialog_heading_width" value="825"/>
+				</include>
 				<!-- Root label -->
-				<control id="101" type="label">
-					<left>40</left>
-					<top>14</top>
-					<height>30</height>
-					<width>605</width>
-					<aligny>center</aligny>
-					<font>Bold30</font>
-					<haspath>true</haspath>
-					<textcolor>ffdadada</textcolor>
-				</control>
-				<control type="label">
-					<left>645</left>
-					<top>13</top>
-					<width>140</width>
-					<height>30</height>
-					<font>Light30Spaced</font>
-					<align>right</align>
-					<textcolor>ff636364</textcolor>
-					<label>[COLOR ffb2b2b2]$INFO[Container(20).CurrentItem][/COLOR] | $INFO[Container(20).NumItems]</label>
-				</control>
+				<include content="DialogHeading">
+					<param name="dialog_heading_label_id" value="101"/>
+					<param name="dialog_heading_label_width" value="600"/>
+					<param name="dialog_heading_label_haspath" value="true"/>
+				</include>
+				<include content="DialogHeadingCount">
+					<param name="dialog_heading_count_width" value="745"/>
+					<param name="dialog_heading_count_container_id" value="20"/>
+				</include>
 				<!-- Left list -->
 				<control id="20" type="fixedlist">
 					<top>60</top>
@@ -79,7 +71,7 @@
 							<width>745</width>
 							<height>84</height>
 							<font>Light32</font>
-							<textcolor>NotFocusedColor</textcolor>
+							<textcolor>NotFocusedColour</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -105,7 +97,7 @@
 								<width>745</width>
 								<height>84</height>
 								<font>Light32</font>
-								<textcolor>FocusedColor</textcolor>
+								<textcolor>FocusedColour</textcolor>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
@@ -161,32 +153,21 @@
 				<top>174</top>
 				<width>825</width>
 				<height>816</height>
-				<control type="image">
-					<width>825</width>
-					<height>816</height>
-					<texture border="1,61,1,1">dialogs/file_manager_back.png</texture>
-				</control>
+				<include content="DialogBack">
+					<param name="dialog_back_width" value="825"/>
+					<param name="dialog_back_height" value="816"/>
+					<param name="dialog_heading_width" value="825"/>
+				</include>
 				<!-- Root label -->
-				<control id="102" type="label">
-					<left>40</left>
-					<top>14</top>
-					<height>30</height>
-					<width>605</width>
-					<aligny>center</aligny>
-					<font>Bold30</font>
-					<haspath>true</haspath>
-					<textcolor>ffdadada</textcolor>
-				</control>
-				<control type="label">
-					<left>645</left>
-					<top>13</top>
-					<width>140</width>
-					<height>30</height>
-					<font>Light30Spaced</font>
-					<align>right</align>
-					<textcolor>ff636364</textcolor>
-					<label>[COLOR ffb2b2b2]$INFO[Container(21).CurrentItem][/COLOR] | $INFO[Container(21).NumItems]</label>
-				</control>
+				<include content="DialogHeading">
+					<param name="dialog_heading_label_id" value="102"/>
+					<param name="dialog_heading_label_width" value="600"/>
+					<param name="dialog_heading_label_haspath" value="true"/>
+				</include>
+				<include content="DialogHeadingCount">
+					<param name="dialog_heading_count_width" value="745"/>
+					<param name="dialog_heading_count_container_id" value="21"/>
+				</include>
 				<!-- Right list -->
 				<control id="21" type="fixedlist">
 					<top>60</top>
@@ -215,7 +196,7 @@
 							<width>745</width>
 							<height>84</height>
 							<font>Light32</font>
-							<textcolor>NotFocusedColor</textcolor>
+							<textcolor>NotFocusedColour</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -241,7 +222,7 @@
 								<width>745</width>
 								<height>84</height>
 								<font>Light32</font>
-								<textcolor>FocusedColor</textcolor>
+								<textcolor>FocusedColour</textcolor>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">

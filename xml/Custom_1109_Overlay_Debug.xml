@@ -54,8 +54,8 @@
 			</control>
 			<control type="label">
 				<include>DebugWindowLabel</include>
-				<label>Custom_1108_Mainmenu_Setup.xml</label>
-				<visible>Window.IsVisible(Custom_1108_Mainmenu_Setup.xml)</visible>
+				<label>Custom_1108_fTV_Startup.xml</label>
+				<visible>Window.IsVisible(Custom_1108_fTV_Startup.xml)</visible>
 			</control>
 			<control type="label">
 				<include>DebugWindowLabel</include>
@@ -310,6 +310,11 @@
 			</control>
 			<control type="label">
 				<include>DebugDialogLabel</include>
+				<label>DialogVideoManager.xml [COLOR FF00FF00]$VAR[DialogVideoManager][/COLOR]</label>
+				<visible>Window.IsVisible(DialogVideoManager.xml)</visible>
+			</control>
+			<control type="label">
+				<include>DebugDialogLabel</include>
 				<label>DialogVolumeBar.xml</label>
 				<visible>Window.IsVisible(DialogVolumeBar.xml)</visible>
 			</control>
@@ -445,8 +450,8 @@
 			<!-- Control label -->
 			<control type="label">
 				<include>DebugControlLabel</include>
-				<label>$INFO[System.CurrentControl,[COLOR FF00FF00]Current control - [/COLOR]]$INFO[System.CurrentControlID, (ID=,)]</label>
-				<visible>!String.IsEmpty(System.CurrentControl)</visible>
+				<label>[COLOR FF00FF00]Current control - [/COLOR]$INFO[System.CurrentControl]$INFO[System.CurrentControlID, (ID=,)]</label>
+				<visible>![String.IsEmpty(System.CurrentControl) + System.CurrentControlID]</visible>
 			</control>
 			<!-- Folder label -->
 			<control type="label">

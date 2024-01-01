@@ -20,7 +20,7 @@
 			<control type="image">
 				<width>100%</width>
 				<height>100%</height>
-				<texture>dialogs/trakt-context-bg.png</texture>
+				<texture border="2">dialogs/DialogMessageBackground.png</texture>
 			</control>
 			<!-- List -->
 			<control type="list" id="111">

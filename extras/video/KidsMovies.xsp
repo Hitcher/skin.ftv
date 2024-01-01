@@ -5,5 +5,6 @@
     <rule field="genre" operator="is">
         <value>family</value>
     </rule>
+    <group>none</group>
     <order direction="ascending">sorttitle</order>
 </smartplaylist>

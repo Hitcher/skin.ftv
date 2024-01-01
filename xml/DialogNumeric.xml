@@ -9,7 +9,10 @@
 		<control type="group">
 			<left>455</left>
 			<top>192</top>
-			<include>DialogZoomAnimation</include>
+			<include content="DialogZoomAnimation">
+				<param name="OpenCondition" value="true"/>
+				<param name="CloseCondition" value="true"/>
+			</include>
 			<!-- Dialog Background -->
 			<control type="image">
 				<width>1010</width>

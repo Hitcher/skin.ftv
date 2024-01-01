@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<!-- loginscreen -->
-	<backgroundcolor>0xff12161b</backgroundcolor>
+	<backgroundcolor>BackgroundColour</backgroundcolor>
 	<defaultcontrol always="true">52</defaultcontrol>
 	<controls>
 		<control type="group">
@@ -73,7 +73,7 @@
 			<include>ListBounceAnimation</include>
 			<itemlayout height="497" width="300">
 				<control type="group">
-					<animation center="134,240" condition="True" effect="zoom" end="85" start="85">Conditional</animation>
+					<animation center="134,240" condition="true" effect="zoom" end="85" start="85">Conditional</animation>
 					<animation condition="ControlGroup(9001).HasFocus" easing="inout" effect="slide" end="49,0" reversible="true" start="0,0" time="125" tween="sine">Conditional</animation>
 					<control type="image">
 						<left>-24</left>

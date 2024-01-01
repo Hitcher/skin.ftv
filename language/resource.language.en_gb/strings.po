@@ -125,7 +125,7 @@ msgid "Special[CR]Features"
 msgstr ""
 
 msgctxt "#31024"
-msgid "Widget Name"
+msgid "Movie Sets"
 msgstr ""
 
 msgctxt "#31025"
@@ -429,7 +429,7 @@ msgid "Start Slideshow"
 msgstr ""
 
 msgctxt "#31100"
-msgid "Photos"
+msgid "Game Addons"
 msgstr ""
 
 msgctxt "#31101"
@@ -708,11 +708,17 @@ msgctxt "#31169"
 msgid "In Progress Movies"
 msgstr ""
 
+msgctxt "#31170"
+msgid "Kids Movies"
+msgstr ""
+
 msgctxt "#31171"
 msgid "Game saves"
 msgstr ""
 
-#empty string with id 31172
+msgctxt "#31172"
+msgid "Square List"
+msgstr ""
 
 msgctxt "#31173"
 msgid "In-game saves"
@@ -738,7 +744,17 @@ msgctxt "#31178"
 msgid "Kids TV Shows"
 msgstr ""
 
-#empty strings from id 31179 to 31181
+msgctxt "#31179"
+msgid "Playlist options"
+msgstr ""
+
+msgctxt "#31180"
+msgid "Choose view"
+msgstr ""
+
+msgctxt "#31181"
+msgid "Collection"
+msgstr ""
 
 msgctxt "#31182"
 msgid "Top Rated TV Shows"
@@ -764,17 +780,25 @@ msgctxt "#31187"
 msgid "Your Genres"
 msgstr ""
 
-#empty strings from id 31188 to 31193
+msgctxt "#31188"
+msgid "Manage[CR]Versions"
+msgstr ""
+
+msgctxt "#31189"
+msgid "Manage[CR]Extras"
+msgstr ""
+
+msgctxt "#31190"
+msgid "Which version you would like to select?"
+msgstr ""
+
+#empty strings from id 31191 to 31193
 
 msgctxt "#31194"
 msgid "Submit"
 msgstr ""
 
-#empty strings from id 31195 to 31196
-
-msgctxt "#31197"
-msgid "Widget"
-msgstr ""
+#empty strings from id 31195 to 31197
 
 msgctxt "#31198"
 msgid "View Type"
@@ -793,7 +817,7 @@ msgid "Choose Shortcut"
 msgstr ""
 
 msgctxt "#31202"
-msgid "Widget Action"
+msgid "Order"
 msgstr ""
 
 msgctxt "#31203"
@@ -921,7 +945,7 @@ msgstr ""
 #Must match #31235 without the space
 
 msgctxt "#31236"
-msgid "YourRating"
+msgid "Your_Rating"
 msgstr ""
 
 msgctxt "#31237"
@@ -929,7 +953,7 @@ msgid "Select your rating"
 msgstr ""
 
 msgctxt "#31238"
-msgid "This is your own personal rating and is not shared publicly"
+msgid "This is your own personal rating and is only stored locally"
 msgstr ""
 
 msgctxt "#31239"
@@ -980,8 +1004,7 @@ msgctxt "#31250"
 msgid "Configure various game settings."
 msgstr ""
 
-msgctxt "#31251"
-msgid "Watchlist"
+#empty string with id 31251
 msgstr ""
 
 msgctxt "#31252"

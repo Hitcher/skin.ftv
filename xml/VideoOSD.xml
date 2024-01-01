@@ -41,7 +41,7 @@
 					<height>50</height>
 					<font>OSD40</font>
 					<textcolor>ffeaeaea</textcolor>
-					<shadowcolor>ff000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<label>$INFO[VideoPlayer.Title]</label>
 					<visible>String.IsEmpty(VideoPlayer.TVShowTitle)</visible>
 				</control>
@@ -51,7 +51,7 @@
 					<height>50</height>
 					<font>OSD40</font>
 					<textcolor>ffeaeaea</textcolor>
-					<shadowcolor>ff000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<label>$INFO[VideoPlayer.TVShowTitle]</label>
 					<visible>!String.IsEmpty(VideoPlayer.TVShowTitle)</visible>
 				</control>
@@ -61,7 +61,7 @@
 					<height>50</height>
 					<font>OSD40</font>
 					<textcolor>ffeaeaea</textcolor>
-					<shadowcolor>ff000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<label>$VAR[PlayerEpisodeValue]</label>
 				</control>
 			</control>
@@ -75,7 +75,7 @@
 				<align>center</align>
 				<font>OSD32</font>
 				<textcolor>fffe8e8e8</textcolor>
-				<shadowcolor>ff000000</shadowcolor>
+				<shadowcolor>ShadowColour</shadowcolor>
 				<wrapmultiline>true</wrapmultiline>
 				<label>$INFO[VideoPlayer.Title]</label>
 				<visible>!String.IsEmpty(VideoPlayer.TVShowTitle)</visible>
@@ -352,7 +352,7 @@
 					<align>right</align>
 					<label>$LOCALIZE[31153]</label>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>ff000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<focusedcolor>ffffc04b</focusedcolor>
 					<texturefocus/>
 					<texturenofocus/>
@@ -368,7 +368,7 @@
 					<align>right</align>
 					<label>$LOCALIZE[31136]</label>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>ff000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<focusedcolor>ffffc04b</focusedcolor>
 					<texturefocus/>
 					<texturenofocus/>
@@ -383,7 +383,7 @@
 					<align>right</align>
 					<label>287</label>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>ff000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<focusedcolor>ffffc04b</focusedcolor>
 					<texturefocus/>
 					<texturenofocus/>
@@ -398,7 +398,7 @@
 					<align>right</align>
 					<label>298</label>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>ff000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<focusedcolor>ffffc04b</focusedcolor>
 					<texturefocus/>
 					<texturenofocus/>
@@ -412,7 +412,7 @@
 					<align>right</align>
 					<label>$LOCALIZE[31137]</label>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>ff000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<focusedcolor>ffffc04b</focusedcolor>
 					<texturefocus/>
 					<texturenofocus/>
@@ -427,7 +427,7 @@
 					<align>right</align>
 					<label>$LOCALIZE[31000]</label>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>ff000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<focusedcolor>ffffc04b</focusedcolor>
 					<texturefocus/>
 					<texturenofocus/>
@@ -442,7 +442,7 @@
 					<align>right</align>
 					<label>$VAR[NextVideo]</label>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>ff000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<focusedcolor>ffffc04b</focusedcolor>
 					<texturefocus/>
 					<texturenofocus/>
@@ -457,7 +457,7 @@
 					<align>right</align>
 					<label>$LOCALIZE[31138]</label>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>ff000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<focusedcolor>ffffc04b</focusedcolor>
 					<texturefocus/>
 					<texturenofocus/>

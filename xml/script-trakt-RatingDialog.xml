@@ -73,18 +73,16 @@
 		<include>DialogBackgroundImage</include>
 		<!-- Main group -->
 		<control type="group">
-			<include>DialogAnimation</include>
+			<include>DialogZoomAnimation</include>
 			<centerleft>50%</centerleft>
 			<centertop>50%</centertop>
 			<width>777</width>
 			<height>318</height>
 			<!-- Background -->
 			<control type="image">
-				<centerleft>50%</centerleft>
-				<centertop>50%</centertop>
 				<width>100%</width>
 				<height>100%</height>
-				<texture>dialogs/trakt-rate-bg.png</texture>
+				<texture border="2">dialogs/DialogMessageBackground.png</texture>
 			</control>
 			<control type="group">
 				<left>31</left>

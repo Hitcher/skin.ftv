@@ -6,31 +6,20 @@
 		<include>DialogBackgroundImage</include>
 		<!-- Main group -->
 		<control type="group">
-			<include>DialogAnimation</include>
+			<include>DialogZoomAnimation</include>
 			<centerleft>50%</centerleft>
 			<centertop>50%</centertop>
-			<width>1337</width>
+			<width>1378</width>
 			<height>480</height>
-			<control type="image">
-				<width>1337</width>
-				<height>480</height>
-				<texture>dialogs/network_back.png</texture>
-			</control>
-			<!-- Heading -->
-			<control type="label">
-				<left>40</left>
-				<top>14</top>
-				<height>30</height>
-				<width>1257</width>
-				<aligny>center</aligny>
-				<font>Bold30</font>
-				<label>13406</label>
-				<textcolor>ffdadada</textcolor>
-			</control>
+			<include content="DialogBack">
+			</include>
+			<include content="DialogHeading">
+				<param name="dialog_heading_label" value="13406"/>
+			</include>
 			<!-- List -->
 			<control id="5" type="fixedlist">
 				<top>60</top>
-				<width>937</width>
+				<width>978</width>
 				<height>420</height>
 				<onleft>noop</onleft>
 				<onright>9001</onright>
@@ -42,65 +31,65 @@
 				<orientation>vertical</orientation>
 				<animation condition="String.IsEqual(Container(5).NumItems,0) | String.IsEqual(Container(5).NumItems,1) | [String.IsEqual(Container(5).NumItems,2) + !Container(5).HasParent]" effect="slide" end="0,-168">Conditional</animation>
 				<animation condition="[String.IsEqual(Container(5).NumItems,2) + Container(5).HasParent] | String.IsEqual(Container(5).NumItems,3) | [String.IsEqual(Container(5).NumItems,4) + !Container(5).HasParent]" effect="slide" end="0,-84">Conditional</animation>
-				<itemlayout height="84" width="937">
+				<itemlayout height="84" width="978">
 					<control type="image">
-						<width>937</width>
+						<width>978</width>
 						<height>84</height>
 						<texture border="3">settings/button_no_focus.png</texture>
 					</control>
 					<control type="label">
 						<left>40</left>
-						<width>857</width>
+						<width>858</width>
 						<height>84</height>
 						<font>Light32</font>
-						<textcolor>NotFocusedColor</textcolor>
+						<textcolor>NotFocusedColour</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
 						<left>40</left>
-						<width>857</width>
+						<width>858</width>
 						<height>84</height>
 						<font>Light32</font>
 						<align>right</align>
-						<textcolor>NotFocusedColor</textcolor>
+						<textcolor>NotFocusedColour</textcolor>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="84" width="937">
+				<focusedlayout height="84" width="978">
 					<control type="image">
-						<width>937</width>
+						<width>978</width>
 						<height>84</height>
 						<texture border="3">settings/button_focus.png</texture>
 					</control>
 					<control type="label">
 						<left>40</left>
-						<width>857</width>
+						<width>858</width>
 						<height>84</height>
 						<font>Light32</font>
-						<textcolor>FocusedColor</textcolor>
+						<textcolor>FocusedColour</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
 						<left>40</left>
-						<width>857</width>
+						<width>858</width>
 						<height>84</height>
 						<font>Light32</font>
 						<align>right</align>
-						<textcolor>FocusedColor</textcolor>
+						<textcolor>FocusedColour</textcolor>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 				</focusedlayout>
 			</control>
 			<control type="image">
 				<top>60</top>
-				<width>937</width>
+				<width>978</width>
 				<height>84</height>
 				<visible>Container(5).HasPrevious</visible>
 				<texture border="2" diffuse="settings/mask.png" flipy="true">settings/mask_back.png</texture>
 			</control>
 			<control type="image">
 				<top>396</top>
-				<width>937</width>
+				<width>978</width>
 				<height>84</height>
 				<visible>Container(5).HasNext</visible>
 				<texture border="2" diffuse="settings/mask.png">settings/mask_back.png</texture>
@@ -108,7 +97,7 @@
 			<control type="grouplist" id="9001">
 				<right>24</right>
 				<bottom>33</bottom>
-				<width>311</width>
+				<width>352</width>
 				<height>420</height>
 				<onleft>5</onleft>
 				<onright>noop</onright>
@@ -118,16 +107,11 @@
 				<itemgap>10</itemgap>
 				<align>right</align>
 				<!-- OK Button -->
-				<control type="button">
-					<width>311</width>
-					<height>76</height>
-					<aligny>top</aligny>
-					<onclick>Close</onclick>
-					<font>Med24</font>
-					<textoffsetx>23</textoffsetx>
-					<textoffsety>27</textoffsety>
-					<label>186</label>
-				</control>
+				<include content="DialogButton">
+					<param name="button_id" value="1"/>
+					<param name="button_label" value="186"/>
+					<onclick>Dialog.Close(all,true)</onclick>
+				</include>
 			</control>
 		</control>
 	</controls>

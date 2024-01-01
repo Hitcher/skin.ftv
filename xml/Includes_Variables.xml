@@ -1,5 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="SelectVersionLabel2">
+		<value condition="!String.IsEmpty(ListItem.HdrType) + !String.IsEmpty(ListItem.AudioLanguage)">$VAR[HDRType] | $VAR[VideoAspect] | $VAR[AudioCodec] | $VAR[AudioChannels] | $INFO[ListItem.AudioLanguage]</value>
+		<value condition="!String.IsEmpty(ListItem.AudioLanguage)">$VAR[VideoAspect] | $VAR[AudioCodec] | $VAR[AudioChannels] | $INFO[ListItem.AudioLanguage]</value>
+		<value>$VAR[VideoAspect] | $VAR[AudioCodec] | $VAR[AudioChannels]</value>
+	</variable>
+	<variable name="VideoAspect">
+		<value condition="String.IsEqual(ListItem.VideoAspect,1.00">1.00:1</value>
+		<value condition="String.IsEqual(ListItem.VideoAspect,1.19">1.19:1</value>
+		<value condition="String.IsEqual(ListItem.VideoAspect,1.33">4:3</value>
+		<value condition="String.IsEqual(ListItem.VideoAspect,1.37">1.37:1</value>
+		<value condition="String.IsEqual(ListItem.VideoAspect,1.66">1.66:1</value>
+		<value condition="String.IsEqual(ListItem.VideoAspect,1.78">16:9</value>
+		<value condition="String.IsEqual(ListItem.VideoAspect,1.85">1.85:1</value>
+		<value condition="String.IsEqual(ListItem.VideoAspect,2.00">2.00:1</value>
+		<value condition="String.IsEqual(ListItem.VideoAspect,2.20">2.20:1</value>
+		<value condition="String.IsEqual(ListItem.VideoAspect,2.35">2.35:1</value>
+		<value condition="String.IsEqual(ListItem.VideoAspect,2.40">2.40:1</value>
+		<value condition="String.IsEqual(ListItem.VideoAspect,2.55">2.55:1</value>
+		<value condition="String.IsEqual(ListItem.VideoAspect,2.76">2.76:1</value>
+	</variable>
+	<variable name="VersionLabel">
+		<value condition="ListItem.HasVideoVersions">[UPPERCASE]$LOCALIZE[24069][/UPPERCASE]</value>
+		<value condition="ListItem.IsCollection">[UPPERCASE]$LOCALIZE[31181][/UPPERCASE]</value>
+	</variable>
+	<variable name="VersionPoster">
+		<value condition="!String.IsEmpty(Container(50).ListItem.Art(poster))">$INFO[Container(50).ListItem.Art(poster)]</value>
+		<value condition="!String.IsEmpty(Container(50).ListItem.Art(thumb))">$INFO[Container(50).ListItem.Art(thumb)]</value>
+	</variable>
+	<variable name="DialogVideoManager">
+		<value condition="Window.IsVisible(managevideoversions)">(managevideoversions)
+		</value>
+		<value condition="Window.IsVisible(managevideoextras)">(managevideoextras)
+		</value>
+	</variable>
+	<variable name="NextAiredTitle">
+		<value condition="String.IsEmpty(ListItem.Property(stacked_count))">$INFO[ListItem.Title]</value>
+		<value condition="!String.IsEmpty(ListItem.Property(stacked_count))">$INFO[ListItem.Property(stacked_titles)]</value>
+	</variable>
 	<variable name="DialogVideoInfoImage">
 		<value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
 		<value>$INFO[ListItem.Icon]</value>
@@ -30,6 +68,8 @@
 		<value condition="Window.IsVisible(10829)">(ingamesaves)</value>
 		<value condition="Window.IsVisible(10830)">(gamesaves)</value>
 		<value condition="Window.IsVisible(12000)">(selectdialog)</value>
+		<value condition="Window.IsVisible(12015)">(selectvideoversion)</value>
+		<value condition="Window.IsVisible(12016)">(selectvideoextra)</value>
 	</variable>
 	<variable name="DialogSettingsName">
 		<value condition="Window.IsVisible(10123)">(osdvideosettings)</value>
@@ -58,62 +98,13 @@
 		<value condition="Window.IsVisible(10031)">(mediasettings)</value>
 		<value condition="Window.IsVisible(10032)">(interfacesettings)</value>
 	</variable>
-	<variable name="NextAiredDurationHours">
-		<value condition="Integer.IsGreater(Container(60).ListItem.Property(DurationHour),09)">$INFO[Container(60).ListItem.Property(DurationHour),, $LOCALIZE[31148]]</value>
-		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),01)">1 $LOCALIZE[31005]</value>
-		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),02)">2 $LOCALIZE[31148]</value>
-		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),03)">3 $LOCALIZE[31148]</value>
-		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),04)">4 $LOCALIZE[31148]</value>
-		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),05)">5 $LOCALIZE[31148]</value>
-		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),06)">6 $LOCALIZE[31148]</value>
-		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),07)">7 $LOCALIZE[31148]</value>
-		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),08)">8 $LOCALIZE[31148]</value>
-		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationHour),09)">9 $LOCALIZE[31148]</value>
-	</variable>
-	<variable name="NextAiredDurationMins">
-		<value condition="Integer.IsGreater(Container(60).ListItem.Property(DurationMins),09)">$INFO[Container(60).ListItem.Property(DurationMins),, $LOCALIZE[31147]]</value>
-		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),01)">1 $LOCALIZE[31004]</value>
-		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),02)">2 $LOCALIZE[31147]</value>
-		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),03)">3 $LOCALIZE[31147]</value>
-		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),04)">4 $LOCALIZE[31147]</value>
-		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),05)">5 $LOCALIZE[31147]</value>
-		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),06)">6 $LOCALIZE[31147]</value>
-		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),07)">7 $LOCALIZE[31147]</value>
-		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),08)">8 $LOCALIZE[31147]</value>
-		<value condition="String.IsEqual(Container(60).ListItem.Property(DurationMins),09)">9 $LOCALIZE[31147]</value>
-	</variable>
-	<variable name="NextAiredDurationSpacing">
-		<value condition="Integer.IsGreater(Container(60).ListItem.Property(DurationHour),00) + Integer.IsGreater(Container(60).ListItem.Property(DurationMins),00)">[COLOR=00ffffff]r[/COLOR]</value>
-		<value/>
-	</variable>
-	<variable name="NextAiredSeasonNumber">
-		<value condition="String.IsEmpty(Container(60).ListItem.Property(Stacked)) + Integer.IsLessOrEqual(Container(60).ListItem.Property(Season),9)">$INFO[Container(60).ListItem.Property(Season),S0]</value>
-		<value condition="String.IsEmpty(Container(60).ListItem.Property(Stacked))">$INFO[Container(60).ListItem.Property(Season),S]</value>
-		<value condition="Integer.IsLessOrEqual(Container(60).ListItem.Property(Season),9)">$INFO[Container(60).ListItem.Property(Season),S0]</value>
-		<value>$INFO[Container(60).ListItem.Property(Season),S]</value>
-	</variable>
-	<variable name="NextAiredEpisodeNumber">
-		<value condition="String.IsEmpty(Container(60).ListItem.Property(Stacked)) + Integer.IsLessOrEqual(Container(60).ListItem.Property(Episode),9)">$INFO[Container(60).ListItem.Property(Episode),E0]</value>
-		<value condition="String.IsEmpty(Container(60).ListItem.Property(Stacked))">$INFO[Container(60).ListItem.Property(Episode),E]</value>
-		<value condition="Integer.IsLessOrEqual(Container(60).ListItem.Property(StackedFirst),9) + Integer.IsLessOrEqual(Container(60).ListItem.Property(StackedLast),9)">$INFO[Container(60).ListItem.Property(StackedFirst),E0] - $INFO[Container(60).ListItem.Property(StackedLast),E0]</value>
-		<value condition="Integer.IsLessOrEqual(Container(60).ListItem.Property(StackedFirst),9)">$INFO[Container(60).ListItem.Property(StackedFirst),E0] - $INFO[Container(60).ListItem.Property(StackedLast),E]</value>
-		<value>$INFO[Container(60).ListItem.Property(StackedFirst),E] - $INFO[Container(60).ListItem.Property(StackedLast),E]</value>
-	</variable>
-	<variable name="NextAiredTitle">
-		<value condition="String.IsEmpty(Container(60).ListItem.Property(Stacked))">$INFO[Container(60).ListItem.Property(Title)]</value>
-		<value condition="!String.IsEmpty(Container(60).ListItem.Property(Stacked))">$INFO[Container(60).ListItem.Property(StackedTitle)]</value>
-	</variable>
-	<variable name="NextAiredPlot">
-		<value condition="String.IsEmpty(Container(60).ListItem.Property(Stacked))">$INFO[Container(60).ListItem.Property(Plot)]</value>
-		<value condition="!String.IsEmpty(Container(60).ListItem.Property(Stacked))">$INFO[Container(60).ListItem.Property(Stacked),[CR], $LOCALIZE[36907]]</value>
-	</variable>
 	<variable name="AiredPrefix">
-		<value condition="!String.IsEmpty(Container(99950).ListItem.Property(Next_Aired.Long))">$LOCALIZE[31073]:</value>
-		<value condition="!String.IsEmpty(Container(99950).ListItem.Property(Last_Aired.Long))">$LOCALIZE[31082]:</value>
+		<value condition="!String.IsEmpty(Container(99950).ListItem.Property(Next_Aired.Custom))">$LOCALIZE[31073]:</value>
+		<value condition="!String.IsEmpty(Container(99950).ListItem.Property(Last_Aired.Custom))">$LOCALIZE[31082]:</value>
 	</variable>
 	<variable name="AiredDate">
-		<value condition="!String.IsEmpty(Container(99950).ListItem.Property(Next_Aired.Long))">$INFO[Container(99950).ListItem.Property(Next_Aired.Long)]</value>
-		<value condition="!String.IsEmpty(Container(99950).ListItem.Property(Last_Aired.Long))">$INFO[Container(99950).ListItem.Property(Last_Aired.Long)]</value>
+		<value condition="!String.IsEmpty(Container(99950).ListItem.Property(Next_Aired.Custom))">$INFO[Container(99950).ListItem.Property(Next_Aired.Day),,$COMMA ]$INFO[Container(99950).ListItem.Property(Next_Aired.Custom)]</value>
+		<value condition="!String.IsEmpty(Container(99950).ListItem.Property(Last_Aired.Custom))">$INFO[Container(99950).ListItem.Property(Last_Aired.Day),,$COMMA ]$INFO[Container(99950).ListItem.Property(Last_Aired.Custom)]</value>
 	</variable>
 	<variable name="DialogVideoInfoInclude">
 		<value condition="!String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + !Skin.HasSetting(ExtendedInfo)">(Includes_Dialog_Default_Video_Information)
@@ -152,10 +143,6 @@
 		<value condition="VideoPlayer.Content(episodes)">plugin://plugin.video.themoviedb.helper/?info=cast&amp;tmdb_type=tv$INFO[VideoPlayer.TVShowTitle,&amp;query=,]$INFO[VideoPlayer.Season,&amp;season=,]$INFO[VideoPlayer.Episode,&amp;episode=,]</value>
 	</variable>
 	<variable name="DialogSelectImage">
-		<value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
-		<value>$INFO[ListItem.Icon]</value>
-	</variable>
-	<variable name="DialogSelectImageLarge">
 		<value condition="!String.IsEmpty(Container(6).ListItem.Art(poster))">$INFO[Container(6).ListItem.Art(poster)]</value>
 		<value>$INFO[Container(6).ListItem.Icon]</value>
 	</variable>
@@ -269,7 +256,7 @@
 	<variable name="HDRType">
 		<value condition="String.IsEqual(ListItem.HdrType,hlg)">HLG</value>
 		<value condition="String.IsEqual(ListItem.HdrType,hdr10)">HDR10</value>
-		<value condition="String.IsEqual(ListItem.HdrType,dolbyvision)">Dolby Vision</value>
+		<value condition="String.IsEqual(ListItem.HdrType,dolbyvision)">DOLBY VISION</value>
 	</variable>
 	<variable name="PlayerHDRType">
 		<value condition="String.IsEqual(VideoPlayer.HdrType,hlg)">HLG</value>
@@ -392,53 +379,53 @@
 		<value>FF888888</value>
 	</variable>
 	<variable name="AudioCodec">
-		<value condition="String.Contains(ListItem.FileName,ATMOS)">  ATMOS  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,AIF)">  AIFF  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,AIFF)">  AIFF  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,MP1)">  MP1  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,APE)">  APE  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,DCA)">  DTS  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,DTS)">  DTS  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,AAC)">  AAC  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,AAC_LATM)">  AAC  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,ALAC)">  APPLE  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,AIFC)">  AIFC  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,OGG)">  OGG  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,MP2)">  MP2  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,FLAC)">  FLAC  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,MP3)">  MP3  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,MP3FLOAT)">  MP3  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,AVC)">  AVC  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,PCM)">  PCM  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,PCM_BLURAY)">  PCM  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,PCM_S16LE)">  PCM  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,PCM_S24LE)">  PCM  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,CDDA)">  CDDA  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,WAV)">  WAV  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,OPUS)">  OPUS  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,WMA)">  WMA  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,WMAPRO)">  WMA  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,WMAV2)">  WMA  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,AC3)">  DD  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,DOLBLYDIGITAL)">  DD  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,EAC3)">  DD+  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,WAVPACK)">  WAVP  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,DTSHD_MA)">  DTS-MA  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,DTSHDMA)">  DTS-MA  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,DTSHD_HRA)">  DTS-HRA  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,TRUEHD)">  DOLBY-HD  </value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,VORBIS)">  VORBIS  </value>
+		<value condition="String.Contains(ListItem.FileName,ATMOS)">ATMOS</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,AIF)">AIFF</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,AIFF)">AIFF</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,MP1)">MP1</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,APE)">APE</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,DCA)">DTS</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,DTS)">DTS</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,AAC)">AAC</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,AAC_LATM)">AAC</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,ALAC)">APPLE</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,AIFC)">AIFC</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,OGG)">OGG</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,MP2)">MP2</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,FLAC)">FLAC</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,MP3)">MP3</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,MP3FLOAT)">MP3</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,AVC)">AVC</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,PCM)">PCM</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,PCM_BLURAY)">PCM</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,PCM_S16LE)">PCM</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,PCM_S24LE)">PCM</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,CDDA)">CDDA</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,WAV)">WAV</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,OPUS)">OPUS</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,WMA)">WMA</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,WMAPRO)">WMA</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,WMAV2)">WMA</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,AC3)">DD</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,DOLBLYDIGITAL)">DD</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,EAC3)">DD+</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,WAVPACK)">WAVP</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,DTSHD_MA)">DTS-MA</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,DTSHDMA)">DTS-MA</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,DTSHD_HRA)">DTS-HRA</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,trueHD)">DOLBY-HD</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,VORBIS)">VORBIS</value>
 	</variable>
 	<variable name="AudioChannels">
-		<value condition="String.IsEqual(ListItem.AudioChannels,1)">  1.0  </value>
-		<value condition="String.IsEqual(ListItem.AudioChannels,2)">  2.0  </value>
-		<value condition="String.IsEqual(ListItem.AudioChannels,3)">  2.1  </value>
-		<value condition="String.IsEqual(ListItem.AudioChannels,4)">  4.0  </value>
-		<value condition="String.IsEqual(ListItem.AudioChannels,5)">  4.1  </value>
-		<value condition="String.IsEqual(ListItem.AudioChannels,6)">  5.1  </value>
-		<value condition="String.IsEqual(ListItem.AudioChannels,7)">  6.1  </value>
-		<value condition="String.IsEqual(ListItem.AudioChannels,8)">  7.1  </value>
-		<value condition="String.IsEqual(ListItem.AudioChannels,10)">  9.1  </value>
+		<value condition="String.IsEqual(ListItem.AudioChannels,1)">1.0</value>
+		<value condition="String.IsEqual(ListItem.AudioChannels,2)">2.0</value>
+		<value condition="String.IsEqual(ListItem.AudioChannels,3)">2.1</value>
+		<value condition="String.IsEqual(ListItem.AudioChannels,4)">4.0</value>
+		<value condition="String.IsEqual(ListItem.AudioChannels,5)">4.1</value>
+		<value condition="String.IsEqual(ListItem.AudioChannels,6)">5.1</value>
+		<value condition="String.IsEqual(ListItem.AudioChannels,7)">6.1</value>
+		<value condition="String.IsEqual(ListItem.AudioChannels,8)">7.1</value>
+		<value condition="String.IsEqual(ListItem.AudioChannels,10)">9.1</value>
 	</variable>
 	<variable name="TomatoRating">
 		<value condition="Skin.HasSetting(TomatoMeterAllCritics)">$LOCALIZE[31258]</value>
@@ -665,198 +652,6 @@
 	<variable name="VolumeDetails">
 		<value condition="!Player.Muted">$INFO[Control.GetLabel(404),,%]</value>
 		<value>$LOCALIZE[31013]</value>
-	</variable>
-	<variable name="1000-SortBy-1">
-		<value condition="String.Contains(Skin.String(1000-WidgetList-1),addons://)">label</value>
-	</variable>
-	<variable name="1000-SortBy-2">
-		<value condition="String.Contains(Skin.String(1000-WidgetList-2),addons://)">label</value>
-	</variable>
-	<variable name="1000-SortBy-3">
-		<value condition="String.Contains(Skin.String(1000-WidgetList-3),addons://)">label</value>
-	</variable>
-	<variable name="1000-SortBy-4">
-		<value condition="String.Contains(Skin.String(1000-WidgetList-4),addons://)">label</value>
-	</variable>
-	<variable name="1000-SortBy-5">
-		<value condition="String.Contains(Skin.String(1000-WidgetList-5),addons://)">label</value>
-	</variable>
-	<variable name="1000-SortBy-6">
-		<value condition="String.Contains(Skin.String(1000-WidgetList-6),addons://)">label</value>
-	</variable>
-	<variable name="1000-SortBy-7">
-		<value condition="String.Contains(Skin.String(1000-WidgetList-7),addons://)">label</value>
-	</variable>
-	<variable name="1000-SortBy-8">
-		<value condition="String.Contains(Skin.String(1000-WidgetList-8),addons://)">label</value>
-	</variable>
-	<variable name="2000-SortBy-1">
-		<value condition="String.Contains(Skin.String(2000-WidgetList-1),addons://)">label</value>
-	</variable>
-	<variable name="2000-SortBy-2">
-		<value condition="String.Contains(Skin.String(2000-WidgetList-2),addons://)">label</value>
-	</variable>
-	<variable name="2000-SortBy-3">
-		<value condition="String.Contains(Skin.String(2000-WidgetList-3),addons://)">label</value>
-	</variable>
-	<variable name="2000-SortBy-4">
-		<value condition="String.Contains(Skin.String(2000-WidgetList-4),addons://)">label</value>
-	</variable>
-	<variable name="2000-SortBy-5">
-		<value condition="String.Contains(Skin.String(2000-WidgetList-5),addons://)">label</value>
-	</variable>
-	<variable name="2000-SortBy-6">
-		<value condition="String.Contains(Skin.String(2000-WidgetList-6),addons://)">label</value>
-	</variable>
-	<variable name="2000-SortBy-7">
-		<value condition="String.Contains(Skin.String(2000-WidgetList-7),addons://)">label</value>
-	</variable>
-	<variable name="2000-SortBy-8">
-		<value condition="String.Contains(Skin.String(2000-WidgetList-8),addons://)">label</value>
-	</variable>
-	<variable name="3000-SortBy-1">
-		<value condition="String.Contains(Skin.String(3000-WidgetList-1),addons://)">label</value>
-	</variable>
-	<variable name="3000-SortBy-2">
-		<value condition="String.Contains(Skin.String(3000-WidgetList-2),addons://)">label</value>
-	</variable>
-	<variable name="3000-SortBy-3">
-		<value condition="String.Contains(Skin.String(3000-WidgetList-3),addons://)">label</value>
-	</variable>
-	<variable name="3000-SortBy-4">
-		<value condition="String.Contains(Skin.String(3000-WidgetList-4),addons://)">label</value>
-	</variable>
-	<variable name="3000-SortBy-5">
-		<value condition="String.Contains(Skin.String(3000-WidgetList-5),addons://)">label</value>
-	</variable>
-	<variable name="3000-SortBy-6">
-		<value condition="String.Contains(Skin.String(3000-WidgetList-6),addons://)">label</value>
-	</variable>
-	<variable name="3000-SortBy-7">
-		<value condition="String.Contains(Skin.String(3000-WidgetList-7),addons://)">label</value>
-	</variable>
-	<variable name="3000-SortBy-8">
-		<value condition="String.Contains(Skin.String(3000-WidgetList-8),addons://)">label</value>
-	</variable>
-	<variable name="4000-SortBy-1">
-		<value condition="String.Contains(Skin.String(4000-WidgetList-1),addons://)">label</value>
-	</variable>
-	<variable name="4000-SortBy-2">
-		<value condition="String.Contains(Skin.String(4000-WidgetList-2),addons://)">label</value>
-	</variable>
-	<variable name="4000-SortBy-3">
-		<value condition="String.Contains(Skin.String(4000-WidgetList-3),addons://)">label</value>
-	</variable>
-	<variable name="4000-SortBy-4">
-		<value condition="String.Contains(Skin.String(4000-WidgetList-4),addons://)">label</value>
-	</variable>
-	<variable name="4000-SortBy-5">
-		<value condition="String.Contains(Skin.String(4000-WidgetList-5),addons://)">label</value>
-	</variable>
-	<variable name="4000-SortBy-6">
-		<value condition="String.Contains(Skin.String(4000-WidgetList-6),addons://)">label</value>
-	</variable>
-	<variable name="4000-SortBy-7">
-		<value condition="String.Contains(Skin.String(4000-WidgetList-7),addons://)">label</value>
-	</variable>
-	<variable name="4000-SortBy-8">
-		<value condition="String.Contains(Skin.String(4000-WidgetList-8),addons://)">label</value>
-	</variable>
-	<variable name="5000-SortBy-1">
-		<value condition="String.Contains(Skin.String(5000-WidgetList-1),addons://)">label</value>
-	</variable>
-	<variable name="5000-SortBy-2">
-		<value condition="String.Contains(Skin.String(5000-WidgetList-2),addons://)">label</value>
-	</variable>
-	<variable name="5000-SortBy-3">
-		<value condition="String.Contains(Skin.String(5000-WidgetList-3),addons://)">label</value>
-	</variable>
-	<variable name="5000-SortBy-4">
-		<value condition="String.Contains(Skin.String(5000-WidgetList-4),addons://)">label</value>
-	</variable>
-	<variable name="5000-SortBy-5">
-		<value condition="String.Contains(Skin.String(5000-WidgetList-5),addons://)">label</value>
-	</variable>
-	<variable name="5000-SortBy-6">
-		<value condition="String.Contains(Skin.String(5000-WidgetList-6),addons://)">label</value>
-	</variable>
-	<variable name="5000-SortBy-7">
-		<value condition="String.Contains(Skin.String(5000-WidgetList-7),addons://)">label</value>
-	</variable>
-	<variable name="5000-SortBy-8">
-		<value condition="String.Contains(Skin.String(5000-WidgetList-8),addons://)">label</value>
-	</variable>
-	<variable name="6000-SortBy-1">
-		<value condition="String.Contains(Skin.String(6000-WidgetList-1),addons://)">label</value>
-	</variable>
-	<variable name="6000-SortBy-2">
-		<value condition="String.Contains(Skin.String(6000-WidgetList-2),addons://)">label</value>
-	</variable>
-	<variable name="6000-SortBy-3">
-		<value condition="String.Contains(Skin.String(6000-WidgetList-3),addons://)">label</value>
-	</variable>
-	<variable name="6000-SortBy-4">
-		<value condition="String.Contains(Skin.String(6000-WidgetList-4),addons://)">label</value>
-	</variable>
-	<variable name="6000-SortBy-5">
-		<value condition="String.Contains(Skin.String(6000-WidgetList-5),addons://)">label</value>
-	</variable>
-	<variable name="6000-SortBy-6">
-		<value condition="String.Contains(Skin.String(6000-WidgetList-6),addons://)">label</value>
-	</variable>
-	<variable name="6000-SortBy-7">
-		<value condition="String.Contains(Skin.String(6000-WidgetList-7),addons://)">label</value>
-	</variable>
-	<variable name="6000-SortBy-8">
-		<value condition="String.Contains(Skin.String(6000-WidgetList-8),addons://)">label</value>
-	</variable>
-	<variable name="7000-SortBy-1">
-		<value condition="String.Contains(Skin.String(7000-WidgetList-1),addons://)">label</value>
-	</variable>
-	<variable name="7000-SortBy-2">
-		<value condition="String.Contains(Skin.String(7000-WidgetList-2),addons://)">label</value>
-	</variable>
-	<variable name="7000-SortBy-3">
-		<value condition="String.Contains(Skin.String(7000-WidgetList-3),addons://)">label</value>
-	</variable>
-	<variable name="7000-SortBy-4">
-		<value condition="String.Contains(Skin.String(7000-WidgetList-4),addons://)">label</value>
-	</variable>
-	<variable name="7000-SortBy-5">
-		<value condition="String.Contains(Skin.String(7000-WidgetList-5),addons://)">label</value>
-	</variable>
-	<variable name="7000-SortBy-6">
-		<value condition="String.Contains(Skin.String(7000-WidgetList-6),addons://)">label</value>
-	</variable>
-	<variable name="7000-SortBy-7">
-		<value condition="String.Contains(Skin.String(7000-WidgetList-7),addons://)">label</value>
-	</variable>
-	<variable name="7000-SortBy-8">
-		<value condition="String.Contains(Skin.String(7000-WidgetList-8),addons://)">label</value>
-	</variable>
-	<variable name="8000-SortBy-1">
-		<value condition="String.Contains(Skin.String(8000-WidgetList-1),addons://)">label</value>
-	</variable>
-	<variable name="8000-SortBy-2">
-		<value condition="String.Contains(Skin.String(8000-WidgetList-2),addons://)">label</value>
-	</variable>
-	<variable name="8000-SortBy-3">
-		<value condition="String.Contains(Skin.String(8000-WidgetList-3),addons://)">label</value>
-	</variable>
-	<variable name="8000-SortBy-4">
-		<value condition="String.Contains(Skin.String(8000-WidgetList-4),addons://)">label</value>
-	</variable>
-	<variable name="8000-SortBy-5">
-		<value condition="String.Contains(Skin.String(8000-WidgetList-5),addons://)">label</value>
-	</variable>
-	<variable name="8000-SortBy-6">
-		<value condition="String.Contains(Skin.String(8000-WidgetList-6),addons://)">label</value>
-	</variable>
-	<variable name="8000-SortBy-7">
-		<value condition="String.Contains(Skin.String(8000-WidgetList-7),addons://)">label</value>
-	</variable>
-	<variable name="8000-SortBy-8">
-		<value condition="String.Contains(Skin.String(8000-WidgetList-8),addons://)">label</value>
 	</variable>
 	<variable name="HigherLevels">
 		<value condition="String.Contains(Skin.String(HigherLevels),off)">$LOCALIZE[31208]</value>
@@ -1110,6 +905,166 @@
 		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetStyle-8)]</value>
 		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetStyle-8)]</value>
 	</variable>
+	<variable name="WidgetSortBy-1">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortBy-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortBy-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortBy-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortBy-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortBy-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortBy-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortBy-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortBy-1)]</value>
+	</variable>
+	<variable name="WidgetSortBy-2">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortBy-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortBy-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortBy-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortBy-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortBy-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortBy-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortBy-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortBy-2)]</value>
+	</variable>
+	<variable name="WidgetSortBy-3">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortBy-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortBy-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortBy-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortBy-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortBy-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortBy-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortBy-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortBy-3)]</value>
+	</variable>
+	<variable name="WidgetSortBy-4">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortBy-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortBy-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortBy-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortBy-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortBy-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortBy-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortBy-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortBy-4)]</value>
+	</variable>
+	<variable name="WidgetSortBy-5">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortBy-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortBy-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortBy-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortBy-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortBy-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortBy-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortBy-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortBy-5)]</value>
+	</variable>
+	<variable name="WidgetSortBy-6">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortBy-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortBy-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortBy-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortBy-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortBy-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortBy-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortBy-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortBy-6)]</value>
+	</variable>
+	<variable name="WidgetSortBy-7">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortBy-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortBy-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortBy-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortBy-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortBy-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortBy-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortBy-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortBy-7)]</value>
+	</variable>
+	<variable name="WidgetSortBy-8">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortBy-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortBy-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortBy-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortBy-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortBy-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortBy-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortBy-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortBy-8)]</value>
+	</variable>
+	<variable name="WidgetSortOrder-1">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortOrder-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortOrder-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortOrder-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortOrder-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortOrder-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortOrder-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortOrder-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortOrder-1)]</value>
+	</variable>
+	<variable name="WidgetSortOrder-2">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortOrder-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortOrder-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortOrder-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortOrder-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortOrder-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortOrder-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortOrder-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortOrder-2)]</value>
+	</variable>
+	<variable name="WidgetSortOrder-3">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortOrder-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortOrder-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortOrder-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortOrder-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortOrder-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortOrder-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortOrder-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortOrder-3)]</value>
+	</variable>
+	<variable name="WidgetSortOrder-4">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortOrder-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortOrder-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortOrder-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortOrder-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortOrder-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortOrder-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortOrder-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortOrder-4)]</value>
+	</variable>
+	<variable name="WidgetSortOrder-5">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortOrder-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortOrder-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortOrder-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortOrder-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortOrder-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortOrder-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortOrder-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortOrder-5)]</value>
+	</variable>
+	<variable name="WidgetSortOrder-6">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortOrder-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortOrder-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortOrder-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortOrder-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortOrder-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortOrder-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortOrder-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortOrder-6)]</value>
+	</variable>
+	<variable name="WidgetSortOrder-7">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortOrder-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortOrder-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortOrder-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortOrder-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortOrder-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortOrder-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortOrder-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortOrder-7)]</value>
+	</variable>
+	<variable name="WidgetSortOrder-8">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortOrder-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortOrder-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortOrder-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortOrder-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortOrder-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortOrder-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortOrder-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortOrder-8)]</value>
+	</variable>
 	<variable name="RatingCountry">
 		<value condition="Skin.HasSetting(US)">$LOCALIZE[31001]</value>
 		<value condition="Skin.HasSetting(UK)">$LOCALIZE[31002]</value>
@@ -1126,16 +1081,16 @@
 		<value>$LOCALIZE[31015]</value>
 	</variable>
 	<variable name="AddonSettingsDefaultButton">
-		<value condition="!ControlGroup(5).HasFocus + !ControlGroup(9000).HasFocus">FocusedColor</value>
+		<value condition="!ControlGroup(5).HasFocus + !ControlGroup(9000).HasFocus">FocusedColour</value>
 		<value>ffffffff</value>
 	</variable>
 	<variable name="ProfileSettingsLoginButton">
 		<value condition="ControlGroup(200).HasFocus">ffffffff</value>
-		<value>NotFocusedColor</value>
+		<value>NotFocusedColour</value>
 	</variable>
 	<variable name="ProfileSettingsProfileButton">
 		<value condition="Control.HasFocus(2)">ffffffff</value>
-		<value>NotFocusedColor</value>
+		<value>NotFocusedColour</value>
 	</variable>
 	<variable name="AddonBrowserInfo">
 		<value condition="String.StartsWith(Window(home).Property(AddonBrowserValue),$LOCALIZE[24998])">$LOCALIZE[31017]</value>
@@ -1173,9 +1128,9 @@
 		<value>$INFO[ListItem(1).Artist]</value>
 	</variable>
 	<variable name="FilterButton">
-		<value condition="Container.Filtered + Control.HasFocus(5005)">[COLOR FocusedColor]$LOCALIZE[305][/COLOR]</value>
+		<value condition="Container.Filtered + Control.HasFocus(5005)">[COLOR FocusedColour]$LOCALIZE[305][/COLOR]</value>
 		<value condition="Container.Filtered + !Control.HasFocus(5005)">$LOCALIZE[305]</value>
-		<value condition="Control.HasFocus(5005)">[COLOR FocusedColor]$LOCALIZE[1223][/COLOR]</value>
+		<value condition="Control.HasFocus(5005)">[COLOR FocusedColour]$LOCALIZE[1223][/COLOR]</value>
 		<value>$LOCALIZE[1223]</value>
 	</variable>
 	<variable name="RandomiseSlideshow">
@@ -1237,7 +1192,6 @@
 		<value condition="Control.IsVisible(54)">54</value>
 		<value condition="Control.IsVisible(55)">55</value>
 		<value condition="Control.IsVisible(56)">56</value>
-		<value condition="Control.IsVisible(57)">57</value>
 		<value condition="Control.IsVisible(60)">60</value>
 		<value condition="Control.IsVisible(61)">61</value>
 		<value>50</value>
@@ -1255,6 +1209,7 @@
 		<value condition="String.IsEqual(ListItem.Icon,ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="Container.Content(episodes) + !String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+		<value>$INFO[ListItem.Icon]</value>
 		<value>views/episode_fallback.png</value>
 	</variable>
 	<variable name="TVShowWideImage">
@@ -1292,15 +1247,15 @@
 		<value condition="String.IsEqual(ListItem.DBTYPE,set)">$LOCALIZE[31065]</value>
 	</variable>
 	<variable name="MediaType">
-		<value condition="Container.Content(movies)">$LOCALIZE[20338]</value>
-		<value condition="Container.Content(episodes)">$LOCALIZE[20359]</value>
-		<value condition="Container.Content(tvshows)">$LOCALIZE[20364]</value>
-		<value condition="Container.Content(seasons)">$LOCALIZE[20373]</value>
-		<value condition="Container.Content(musicvideos)">$LOCALIZE[20391]</value>
-		<value condition="Container.Content(albums)">$LOCALIZE[558]</value>
-		<value condition="Container.Content(artists)">$LOCALIZE[557]</value>
-		<value condition="Container.Content(songs)">$LOCALIZE[179]</value>
-		<value condition="Container.Content(sets)">$LOCALIZE[20457]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,movie)">$LOCALIZE[20338]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,episode)">$LOCALIZE[20359]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,tvshow)">$LOCALIZE[20364]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,season)">$LOCALIZE[20373]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,musicvideo)">$LOCALIZE[20391]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,album)">$LOCALIZE[558]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,artist)">$LOCALIZE[557]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,song)">$LOCALIZE[179]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,set)">$LOCALIZE[20457]</value>
 	</variable>
 	<variable name="SettingsLabel-1">
 		<value condition="Window.IsVisible(addonbrowser)">$LOCALIZE[14206]</value>
@@ -1506,9 +1461,9 @@
 		<value condition="Container.Content(Addons) + !Window.IsVisible(addonbrowser)">$LOCALIZE[31105]</value>
 		<value condition="Container.Content(sets)">$LOCALIZE[20434]</value>
 		<value condition="Container.Content(tags)">$LOCALIZE[20459]</value>
-		<value condition="Window.IsVisible(Music)">$LOCALIZE[14211]</value>
-		<value condition="Window.IsVisible(Videos)">$LOCALIZE[14200]</value>
-		<value condition="Window.IsVisible(pictures)">$LOCALIZE[14036]</value>
+		<value condition="Window.IsVisible(Music)">$LOCALIZE[2]</value>
+		<value condition="Window.IsVisible(Videos)">$LOCALIZE[3]</value>
+		<value condition="Window.IsVisible(pictures)">$LOCALIZE[1]</value>
 		<value condition="Window.IsVisible(programs)">$LOCALIZE[0]</value>
 		<value condition="[Window.IsVisible(settings) | Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(skinsettings) | Window.IsVisible(systeminfo) | Window.IsVisible(addonbrowser) | Window.IsVisible(profiles) | Window.IsVisible(filemanager)]">$LOCALIZE[5]</value>
 		<value condition="Window.IsVisible(weather)">$LOCALIZE[13000]</value>
@@ -2699,11 +2654,11 @@
 		<value>$INFO[ListItem.Label]</value>
 	</variable>
 	<variable name="EpisodeValue">
+		<value condition="!String.IsEmpty(ListItem.Property(stacked_count))">$INFO[ListItem.Season,$LOCALIZE[20373] ,] $INFO[ListItem.Property(stacked_first_episode),$LOCALIZE[20360] ]$INFO[ListItem.Property(stacked_last_episode),-]</value>
 		<value condition="String.IsEqual(ListItem.DBID,-1)">$INFO[ListItem.Label]</value>
 		<value condition="!String.IsEqual(ListItem.Season,0) + !String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.Episode)">$INFO[ListItem.Season,$LOCALIZE[20373] ,] $INFO[ListItem.Episode,$LOCALIZE[20359] ]</value>
 		<value condition="!String.IsEqual(ListItem.Season,0) + !String.IsEmpty(ListItem.Episode)">$INFO[ListItem.Episode,$LOCALIZE[20359] ]</value>
 		<value condition="String.IsEqual(ListItem.Season,0)">$LOCALIZE[31146] $LOCALIZE[20359] $INFO[ListItem.Episode]</value>
-		<value>$INFO[ListItem.Label]</value>
 		<value>$INFO[ListItem.Label]</value>
 	</variable>
 </includes>

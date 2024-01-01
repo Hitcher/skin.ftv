@@ -9,7 +9,10 @@
 		<control type="group">
 			<left>455</left>
 			<top>102</top>
-			<include>DialogZoomAnimation</include>
+			<include content="DialogZoomAnimation">
+				<param name="OpenCondition" value="true"/>
+				<param name="CloseCondition" value="true"/>
+			</include>
 			<animation condition="Window.IsVisible(numericinput)" easing="inout" effect="fade" end="0" start="100" time="120" tween="sine">Conditional</animation>
 			<!-- Background -->
 			<control type="image">
@@ -39,7 +42,6 @@
 					<width>888</width>
 					<height>36</height>
 					<font>LightCap36</font>
-					<label>13406</label>
 					<textcolor>ffdadada</textcolor>
 				</control>
 				<!-- Edit -->
@@ -391,7 +393,8 @@
 						<!-- SPACE -->
 						<control id="32" type="button">
 							<onup>160</onup>
-							<ondown>302</ondown>
+							<ondown condition="!Control.IsVisible(310)">302</ondown>
+							<ondown condition="Control.IsVisible(310)">999</ondown>
 							<width>438</width>
 							<label>20182</label>
 							<include>KeyboardButtons</include>
@@ -420,13 +423,11 @@
 						</control>
 					</control>
 					<!-- Dummy Sixth row -->
-					<control id="6000" type="grouplist">
+					<control type="grouplist">
 						<top>450</top>
 						<width>1080</width>
 						<height>78</height>
 						<itemgap>12</itemgap>
-						<onleft>6000</onleft>
-						<onright>6000</onright>
 						<orientation>horizontal</orientation>
 						<!-- Shift on -->
 						<control type="image">
@@ -536,11 +537,12 @@
 							<include>KeyboardButtons</include>
 							<visible>!Control.IsVisible(310)</visible>
 						</control>
-						<!-- Shift -->
-						<control id="302" type="radiobutton">
+						<!-- Shift short -->
+						<control id="999" type="button">
 							<width>258</width>
 							<onup>32</onup>
 							<ondown>309</ondown>
+							<onclick>SendClick(302)</onclick>
 							<label>20178</label>
 							<texturenofocus/>
 							<textureradioonfocus/>
@@ -576,7 +578,7 @@
 						<!-- Symbols -->
 						<control id="304" type="radiobutton">
 							<width>78</width>
-							<onup>306</onup>
+							<onup>305</onup>
 							<ondown>300</ondown>
 							<label>ãé</label>
 							<texturenofocus/>
@@ -607,7 +609,8 @@
 						<!-- Layout -->
 						<control id="309" type="button">
 							<width>438</width>
-							<onup>302</onup>
+							<onup condition="!Control.IsVisible(310)">302</onup>
+							<onup condition="Control.IsVisible(310)">999</onup>
 							<include>KeyboardButtons</include>
 							<label>20177</label>
 						</control>

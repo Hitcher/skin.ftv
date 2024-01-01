@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
 	<!-- settingscategory -->
-	<backgroundcolor>0xff12161b</backgroundcolor>
+	<backgroundcolor>BackgroundColour</backgroundcolor>
 	<onload>ClearProperty(SettingHeading,home)</onload>
 	<onload>ClearProperty(SettingInfo,home)</onload>
 	<onload condition="!String.IsEqual(Window(settings).Property(SettingsCurrentItem),8)">SetFocus(3)</onload>
@@ -63,7 +63,7 @@
 			<control type="group">
 				<width>333</width>
 				<height>497</height>
-				<animation center="134,240" condition="True" effect="zoom" end="84.5" start="84.5">Conditional</animation>
+				<animation center="134,240" condition="true" effect="zoom" end="84.5" start="84.5">Conditional</animation>
 				<control type="image">
 					<left>-24</left>
 					<width>333</width>
@@ -105,7 +105,7 @@
 				<control type="group">
 					<width>333</width>
 					<height>497</height>
-					<animation center="134,240" condition="True" effect="zoom" end="84.5" start="84.5">Conditional</animation>
+					<animation center="134,240" condition="true" effect="zoom" end="84.5" start="84.5">Conditional</animation>
 					<control type="image">
 						<left>-24</left>
 						<width>333</width>
@@ -144,7 +144,7 @@
 				<control type="group">
 					<width>333</width>
 					<height>497</height>
-					<animation center="134,240" condition="True" effect="zoom" end="84.5" start="84.5">Conditional</animation>
+					<animation center="134,240" condition="true" effect="zoom" end="84.5" start="84.5">Conditional</animation>
 					<control type="image">
 						<left>-24</left>
 						<width>333</width>
@@ -183,7 +183,7 @@
 				<control type="group">
 					<width>333</width>
 					<height>497</height>
-					<animation center="134,240" condition="True" effect="zoom" end="84.5" start="84.5">Conditional</animation>
+					<animation center="134,240" condition="true" effect="zoom" end="84.5" start="84.5">Conditional</animation>
 					<control type="image">
 						<left>-24</left>
 						<width>333</width>
@@ -222,7 +222,7 @@
 				<control type="group">
 					<width>333</width>
 					<height>497</height>
-					<animation center="134,240" condition="True" effect="zoom" end="84.5" start="84.5">Conditional</animation>
+					<animation center="134,240" condition="true" effect="zoom" end="84.5" start="84.5">Conditional</animation>
 					<control type="image">
 						<left>-24</left>
 						<width>333</width>
@@ -261,7 +261,7 @@
 				<control type="group">
 					<width>333</width>
 					<height>497</height>
-					<animation center="134,240" condition="True" effect="zoom" end="84.5" start="84.5">Conditional</animation>
+					<animation center="134,240" condition="true" effect="zoom" end="84.5" start="84.5">Conditional</animation>
 					<control type="image">
 						<left>-24</left>
 						<width>333</width>
@@ -300,7 +300,7 @@
 				<control type="group">
 					<width>333</width>
 					<height>497</height>
-					<animation center="134,240" condition="True" effect="zoom" end="84.5" start="84.5">Conditional</animation>
+					<animation center="134,240" condition="true" effect="zoom" end="84.5" start="84.5">Conditional</animation>
 					<control type="image">
 						<left>-24</left>
 						<width>333</width>
@@ -369,7 +369,7 @@
 				<left>-359</left>
 				<width>40</width>
 				<height>480</height>
-				<texture flipx="true">settings/shadow.png</texture>
+				<texture border="0,40,0,40" flipx="true">settings/shadow.png</texture>
 				<animation condition="!Window.Previous(systeminfo) + !Window.Previous(profiles)" reversible="false" type="WindowOpen">
 					<effect easing="inout" end="100" start="0" time="125" tween="sine" type="fade"/>
 				</animation>
@@ -387,7 +387,9 @@
 				<control type="image">
 					<width>678</width>
 					<height>520</height>
-					<texture>settings/back.png</texture>
+					<texture colordiffuse="DialogBackColour">common/white_square.png</texture>
+					<bordertexture border="40" infill="false">settings/drop_shadow.png</bordertexture>
+					<bordersize>0,0,40,40</bordersize>
 				</control>
 			</control>
 			<control type="group">
@@ -418,8 +420,8 @@
 					<onclick>SetProperty(SettingInfo,$ESCINFO[Control.GetLabel(6)],home)</onclick>
 					<onclick>SetProperty(SettingHeading,$ESCINFO[System.CurrentControl],home)</onclick>
 					<onclick>SetFocus(5)</onclick>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<pulseonselect>false</pulseonselect>
@@ -427,7 +429,7 @@
 				<control type="image">
 					<width>40</width>
 					<height>480</height>
-					<texture>settings/shadow.png</texture>
+					<texture border="0,40,0,40">settings/shadow.png</texture>
 				</control>
 			</control>
 			<control type="group">
@@ -455,8 +457,8 @@
 						<aligny>center</aligny>
 						<font>Light30Spaced</font>
 						<label>7</label>
-						<textcolor>NotFocusedColor</textcolor>
-						<focusedcolor>FocusedColor</focusedcolor>
+						<textcolor>NotFocusedColour</textcolor>
+						<focusedcolor>FocusedColour</focusedcolor>
 						<onclick>ActivateWindow(filemanager)</onclick>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
@@ -469,8 +471,8 @@
 						<aligny>center</aligny>
 						<font>Light30Spaced</font>
 						<label>13200</label>
-						<textcolor>NotFocusedColor</textcolor>
-						<focusedcolor>FocusedColor</focusedcolor>
+						<textcolor>NotFocusedColour</textcolor>
+						<focusedcolor>FocusedColour</focusedcolor>
 						<onclick>ActivateWindow(profiles)</onclick>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
@@ -483,8 +485,8 @@
 						<aligny>center</aligny>
 						<font>Light30Spaced</font>
 						<label>138</label>
-						<textcolor>NotFocusedColor</textcolor>
-						<focusedcolor>FocusedColor</focusedcolor>
+						<textcolor>NotFocusedColour</textcolor>
+						<focusedcolor>FocusedColour</focusedcolor>
 						<onclick>ActivateWindow(systeminfo)</onclick>
 						<onfocus>SetProperty(SettingsLevel,$INFO[Control.GetLabel(20)],home)</onfocus>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
@@ -498,8 +500,8 @@
 						<aligny>center</aligny>
 						<font>Light30Spaced</font>
 						<align>right</align>
-						<textcolor>NotFocusedColor</textcolor>
-						<focusedcolor>FocusedColor</focusedcolor>
+						<textcolor>NotFocusedColour</textcolor>
+						<focusedcolor>FocusedColour</focusedcolor>
 						<onclick>SettingsLevelChange</onclick>
 						<texturefocus border="3">settings/button_focus.png</texturefocus>
 						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
@@ -513,7 +515,7 @@
 					<aligny>center</aligny>
 					<font>Light30Spaced</font>
 					<label>$LOCALIZE[31016]</label>
-					<textcolor>NotFocusedColor</textcolor>
+					<textcolor>NotFocusedColour</textcolor>
 					<visible>!Control.HasFocus(20)</visible>
 				</control>
 				<control type="label">
@@ -524,13 +526,13 @@
 					<aligny>center</aligny>
 					<font>Light30Spaced</font>
 					<label>$LOCALIZE[31016]</label>
-					<textcolor>FocusedColor</textcolor>
+					<textcolor>FocusedColour</textcolor>
 					<visible>Control.HasFocus(20)</visible>
 				</control>
 				<control type="image">
 					<width>40</width>
 					<height>480</height>
-					<texture>settings/shadow.png</texture>
+					<texture border="0,40,0,40">settings/shadow.png</texture>
 				</control>
 			</control>
 		</control>
@@ -572,21 +574,20 @@
 				<effect end="0" start="100" time="100" type="fade"/>
 				<effect easing="inout" end="500,0" start="0,0" time="200" tween="sine" type="slide"/>
 			</animation>
-			<control type="image">
-				<width>1437</width>
-				<height>480</height>
-				<texture>settings/category_back.png</texture>
-			</control>
-			<control type="label">
-				<left>40</left>
-				<top>14</top>
-				<height>30</height>
-				<width>419</width>
-				<aligny>center</aligny>
-				<font>Bold30</font>
-				<label fallback="$LOCALIZE[166]">$INFO[Window(home).Property(SettingHeading)]</label>
-				<textcolor>ffdadada</textcolor>
-			</control>
+			<include content="DialogBack">
+				<param name="dialog_back_width" value="1437"/>
+				<param name="dialog_heading_width" value="958"/>
+				<param name="dialog_shadow_1_left" value="958"/>
+			</include>
+			<include content="DialogHeading">
+				<param name="dialog_heading_label_width" value="878"/>
+				<param name="dialog_heading_label" value="$INFO[Window(home).Property(SettingHeading)]"/>
+				<param name="dialog_heading_label_visible" value="!String.IsEmpty(Window(home).Property(SettingHeading))"/>
+			</include>
+			<include content="DialogHeading">
+				<param name="dialog_heading_label_width" value="878"/>
+				<param name="166" value="String.IsEmpty(Window(home).Property(SettingHeading))"/>
+			</include>
 			<control id="5" type="grouplist">
 				<top>60</top>
 				<width>958</width>
@@ -644,8 +645,8 @@
 			<height>84</height>
 			<font>Light32</font>
 			<textoffsetx>40</textoffsetx>
-			<textcolor>NotFocusedColor</textcolor>
-			<focusedcolor>FocusedColor</focusedcolor>
+			<textcolor>NotFocusedColour</textcolor>
+			<focusedcolor>FocusedColour</focusedcolor>
 			<texturefocus border="3">settings/button_focus.png</texturefocus>
 			<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 		</control>
@@ -655,8 +656,8 @@
 			<font>Light32</font>
 			<textwidth>740</textwidth>
 			<textoffsetx>40</textoffsetx>
-			<textcolor>NotFocusedColor</textcolor>
-			<focusedcolor>FocusedColor</focusedcolor>
+			<textcolor>NotFocusedColour</textcolor>
+			<focusedcolor>FocusedColour</focusedcolor>
 			<radiowidth>125</radiowidth>
 			<radioheight>53</radioheight>
 			<radioposx>813</radioposx>
@@ -674,8 +675,8 @@
 			<height>84</height>
 			<font>Light32</font>
 			<textoffsetx>40</textoffsetx>
-			<textcolor>NotFocusedColor</textcolor>
-			<focusedcolor>FocusedColor</focusedcolor>
+			<textcolor>NotFocusedColour</textcolor>
+			<focusedcolor>FocusedColour</focusedcolor>
 			<selectedcolor>ffffffff</selectedcolor>
 			<texturefocus border="3">settings/button_focus.png</texturefocus>
 			<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
@@ -683,9 +684,9 @@
 			<reverse>yes</reverse>
 		</control>
 		<control id="11" type="image">
-			<top>-84</top>
-			<height>84</height>
-			<texture border="3">settings/button_no_focus.png</texture>
+			<top>-2</top>
+			<height>2</height>
+			<texture>dialogs/default_line.png</texture>
 		</control>
 		<control id="13" type="sliderex">
 			<width>958</width>
@@ -693,16 +694,16 @@
 			<font>Light32</font>
 			<textwidth>558</textwidth>
 			<textoffsetx>40</textoffsetx>
-			<textcolor>NotFocusedColor</textcolor>
-			<focusedcolor>FocusedColor</focusedcolor>
+			<textcolor>NotFocusedColour</textcolor>
+			<focusedcolor>FocusedColour</focusedcolor>
 			<texturefocus border="3">settings/button_focus.png</texturefocus>
 			<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 			<sliderwidth>200</sliderwidth>
 			<sliderheight>11</sliderheight>
 			<texturesliderbar border="4">osd/progress_back.png</texturesliderbar>
-			<texturesliderbardisabled colordiffuse="DisabledColor" border="4">osd/progress_back.png</texturesliderbardisabled>
+			<texturesliderbardisabled colordiffuse="DisabledColour" border="4">osd/progress_back.png</texturesliderbardisabled>
 			<textureslidernib border="4">osd/progress_cache.png</textureslidernib>
-			<textureslidernibdisabled colordiffuse="DisabledColor" border="4">osd/progress_cache.png</textureslidernibdisabled>
+			<textureslidernibdisabled colordiffuse="DisabledColour" border="4">osd/progress_cache.png</textureslidernibdisabled>
 			<textureslidernibfocus border="4">osd/progress_bar.png</textureslidernibfocus>
 		</control>
 		<control id="14" type="label">
@@ -717,8 +718,8 @@
 			<height>84</height>
 			<font>Light32</font>
 			<textoffsetx>40</textoffsetx>
-			<textcolor>NotFocusedColor</textcolor>
-			<focusedcolor>FocusedColor</focusedcolor>
+			<textcolor>NotFocusedColour</textcolor>
+			<focusedcolor>FocusedColour</focusedcolor>
 			<texturefocus border="3">settings/button_focus.png</texturefocus>
 			<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 		</control>

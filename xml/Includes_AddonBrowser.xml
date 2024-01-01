@@ -54,7 +54,7 @@
 			<control type="group">
 				<width>333</width>
 				<height>497</height>
-				<animation center="134,240" condition="True" effect="zoom" end="84.5" start="84.5">Conditional</animation>
+				<animation center="134,240" condition="true" effect="zoom" end="84.5" start="84.5">Conditional</animation>
 				<control type="image">
 					<left>-24</left>
 					<width>333</width>
@@ -87,8 +87,8 @@
 			</control>
 		</control>
 		<control type="group">
-			<animation easing="inout" effect="slide" end="589,0" start="0,0" time="125" tween="sine">WindowOpen</animation>
-			<animation easing="inout" effect="slide" end="0,0" start="589,0" time="125" tween="sine">WindowClose</animation>
+			<animation easing="inout" effect="slide" end="589,0" start="0,0" time="120" tween="sine">WindowOpen</animation>
+			<animation easing="inout" effect="slide" end="0,0" start="589,0" time="120" tween="sine">WindowClose</animation>
 			<control type="group">
 				<left>523</left>
 				<top>289</top>
@@ -96,7 +96,7 @@
 				<control type="group">
 					<width>333</width>
 					<height>497</height>
-					<animation center="134,240" condition="True" effect="zoom" end="84.5" start="84.5">Conditional</animation>
+					<animation center="134,240" condition="true" effect="zoom" end="84.5" start="84.5">Conditional</animation>
 					<control type="image">
 						<left>-24</left>
 						<width>333</width>
@@ -135,7 +135,7 @@
 				<control type="group">
 					<width>333</width>
 					<height>497</height>
-					<animation center="134,240" condition="True" effect="zoom" end="84.5" start="84.5">Conditional</animation>
+					<animation center="134,240" condition="true" effect="zoom" end="84.5" start="84.5">Conditional</animation>
 					<control type="image">
 						<left>-24</left>
 						<width>333</width>
@@ -174,7 +174,7 @@
 				<control type="group">
 					<width>333</width>
 					<height>497</height>
-					<animation center="134,240" condition="True" effect="zoom" end="84.5" start="84.5">Conditional</animation>
+					<animation center="134,240" condition="true" effect="zoom" end="84.5" start="84.5">Conditional</animation>
 					<control type="image">
 						<left>-24</left>
 						<width>333</width>
@@ -213,7 +213,7 @@
 				<control type="group">
 					<width>333</width>
 					<height>497</height>
-					<animation center="134,240" condition="True" effect="zoom" end="84.5" start="84.5">Conditional</animation>
+					<animation center="134,240" condition="true" effect="zoom" end="84.5" start="84.5">Conditional</animation>
 					<control type="image">
 						<left>-24</left>
 						<width>333</width>
@@ -252,7 +252,7 @@
 				<control type="group">
 					<width>333</width>
 					<height>497</height>
-					<animation center="134,240" condition="True" effect="zoom" end="84.5" start="84.5">Conditional</animation>
+					<animation center="134,240" condition="true" effect="zoom" end="84.5" start="84.5">Conditional</animation>
 					<control type="image">
 						<left>-24</left>
 						<width>333</width>
@@ -321,7 +321,7 @@
 				<left>-359</left>
 				<width>40</width>
 				<height>480</height>
-				<texture flipx="true">settings/shadow.png</texture>
+				<texture border="0,40,0,40" flipx="true">settings/shadow.png</texture>
 				<animation reversible="false" type="WindowOpen">
 					<effect easing="inout" end="100" start="0" time="125" tween="sine" type="fade"/>
 				</animation>
@@ -339,7 +339,9 @@
 				<control type="image">
 					<width>678</width>
 					<height>520</height>
-					<texture>settings/back.png</texture>
+					<texture colordiffuse="DialogBackColour">common/white_square.png</texture>
+					<bordertexture border="40" infill="false">settings/drop_shadow.png</bordertexture>
+					<bordersize>0,0,40,40</bordersize>
 				</control>
 			</control>
 			<control type="group">
@@ -372,7 +374,7 @@
 							<height>120</height>
 							<aligny>center</aligny>
 							<font>Light30Spaced</font>
-							<textcolor>NotFocusedColor</textcolor>
+							<textcolor>NotFocusedColour</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
@@ -393,7 +395,7 @@
 							<height>120</height>
 							<aligny>center</aligny>
 							<font>Light30Spaced</font>
-							<textcolor>FocusedColor</textcolor>
+							<textcolor>FocusedColour</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</focusedlayout>
@@ -401,7 +403,7 @@
 				<control type="image">
 					<width>40</width>
 					<height>480</height>
-					<texture>settings/shadow.png</texture>
+					<texture border="0,40,0,40">settings/shadow.png</texture>
 				</control>
 			</control>
 		</control>
@@ -440,12 +442,15 @@
 				<effect easing="inout" end="500,0" start="0,0" time="200" tween="sine" type="slide"/>
 			</animation>
 			<control type="group">
-				<animation condition="Container.Content(addons) + !ListItem.IsParentFolder" delay="200" easing="inout" effect="slide" end="480,0" reversible="true" start="0,0" time="400" tween="sine">Conditional</animation>
-				<control type="image">
+				<animation condition="Container.Content(addons) + !ListItem.IsParentFolder" easing="inout" effect="slide" end="480,0" reversible="true" start="0,0" time="400" delay="200" tween="sine">Conditional</animation>
+				<control type="group">
 					<left>78</left>
-					<width>879</width>
-					<height>480</height>
-					<texture>settings/addon_browser_info_back.png</texture>
+					<include content="DialogBack">
+						<param name="dialog_back_width" value="879"/>
+						<param name="dialog_heading_visible" value="false"/>
+						<param name="dialog_shadow_1_top" value="0"/>
+						<param name="dialog_shadow_1_left" value="479"/>
+					</include>
 				</control>
 				<control type="group">
 					<left>118</left>
@@ -544,84 +549,33 @@
 					<bottom>33</bottom>
 					<width>360</width>
 					<height>420</height>
+					<onleft>51</onleft>
 					<onback>51</onback>
 					<itemgap>10</itemgap>
 					<align>right</align>
 					<orientation>vertical</orientation>
-					<control id="9" type="button">
-						<width>360</width>
-						<height>76</height>
-						<onleft>51</onleft>
-						<onright>noop</onright>
-						<onup>noop</onup>
-						<ondown>noop</ondown>
-						<aligny>top</aligny>
-						<font>Med24</font>
-						<textoffsetx>23</textoffsetx>
-						<textoffsety>27</textoffsety>
-						<label>24034</label>
-						<visible>Control.IsEnabled(9)</visible>
-					</control>
-					<control id="5" type="button">
-						<width>360</width>
-						<height>76</height>
-						<onleft>51</onleft>
-						<onright>noop</onright>
-						<onup>noop</onup>
-						<ondown>noop</ondown>
-						<aligny>top</aligny>
-						<font>Med24</font>
-						<textoffsetx>23</textoffsetx>
-						<textoffsety>27</textoffsety>
-						<label>10004</label>
-						<visible>Control.IsEnabled(5)</visible>
-					</control>
-					<control id="7" type="radiobutton">
-						<width>360</width>
-						<height>76</height>
-						<onleft>51</onleft>
-						<onright>noop</onright>
-						<onup>noop</onup>
-						<ondown>noop</ondown>
-						<aligny>top</aligny>
-						<font>Med24</font>
-						<textoffsetx>23</textoffsetx>
-						<textoffsety>27</textoffsety>
-						<radiowidth>94</radiowidth>
-						<radioheight>40</radioheight>
-						<radioposx>235</radioposx>
-						<label>25001</label>
-						<texturefocus border="8">dialogs/DialogButtonFO.png</texturefocus>
-						<texturenofocus border="8">dialogs/DialogButtonNF.png</texturenofocus>
-						<textureradioonfocus/>
-						<textureradioonnofocus/>
-						<textureradioofffocus/>
-						<textureradiooffnofocus/>
-						<visible>Control.IsEnabled(7)</visible>
-					</control>
-					<control id="8" type="radiobutton">
-						<width>360</width>
-						<height>76</height>
-						<onleft>51</onleft>
-						<onright>noop</onright>
-						<onup>noop</onup>
-						<ondown>noop</ondown>
-						<aligny>top</aligny>
-						<font>Med24</font>
-						<textoffsetx>23</textoffsetx>
-						<textoffsety>27</textoffsety>
-						<radiowidth>94</radiowidth>
-						<radioheight>40</radioheight>
-						<radioposx>235</radioposx>
-						<label>24999</label>
-						<texturefocus border="8">dialogs/DialogButtonFO.png</texturefocus>
-						<texturenofocus border="8">dialogs/DialogButtonNF.png</texturenofocus>
-						<textureradioonfocus/>
-						<textureradioonnofocus/>
-						<textureradioofffocus/>
-						<textureradiooffnofocus/>
-						<visible>Control.IsEnabled(8)</visible>
-					</control>
+					<include content="DialogButton">
+						<param name="button_id" value="9"/>
+						<param name="button_label" value="24034"/>
+						<param name="button_visible" value="Control.IsEnabled(9)"/>
+					</include>
+					<include content="DialogButton">
+						<param name="button_id" value="5"/>
+						<param name="button_label" value="10004"/>
+						<param name="button_visible" value="Control.IsEnabled(5)"/>
+					</include>
+					<include content="DialogButton">
+						<param name="button_id" value="7"/>
+						<param name="button_type" value="radiobutton"/>
+						<param name="button_label" value="25001"/>
+						<param name="button_visible" value="Control.IsEnabled(7)"/>
+					</include>
+					<include content="DialogButton">
+						<param name="button_id" value="8"/>
+						<param name="button_type" value="radiobutton"/>
+						<param name="button_label" value="24999"/>
+						<param name="button_visible" value="Control.IsEnabled(8)"/>
+					</include>
 				</control>
 				<control type="grouplist">
 					<left>556</left>
@@ -650,7 +604,7 @@
 						<aligny>top</aligny>
 						<font>Med24</font>
 						<label>16041</label>
-						<textcolor>NotFocusedColor</textcolor>
+						<textcolor>NotFocusedColour</textcolor>
 						<visible>Control.IsVisible(6) + !Control.HasFocus(6) + String.Contains(Control.GetLabel(6),*)</visible>
 					</control>
 					<control type="label">
@@ -672,7 +626,7 @@
 						<aligny>top</aligny>
 						<font>Med24</font>
 						<label>351</label>
-						<textcolor>NotFocusedColor</textcolor>
+						<textcolor>NotFocusedColour</textcolor>
 						<visible>Control.IsVisible(6) + !Control.HasFocus(6) + !String.Contains(Control.GetLabel(6),*)</visible>
 					</control>
 					<control type="label">
@@ -694,7 +648,7 @@
 						<aligny>top</aligny>
 						<font>Med24</font>
 						<label>16041</label>
-						<textcolor>NotFocusedColor</textcolor>
+						<textcolor>NotFocusedColour</textcolor>
 						<visible>Control.IsVisible(7) + !Control.HasFocus(7) + String.Contains(Control.GetLabel(7),*)</visible>
 					</control>
 					<control type="label">
@@ -716,7 +670,7 @@
 						<aligny>top</aligny>
 						<font>Med24</font>
 						<label>351</label>
-						<textcolor>NotFocusedColor</textcolor>
+						<textcolor>NotFocusedColour</textcolor>
 						<visible>Control.IsVisible(7) + !Control.HasFocus(7) + !String.Contains(Control.GetLabel(7),*)</visible>
 					</control>
 					<control type="label">
@@ -738,7 +692,7 @@
 						<aligny>top</aligny>
 						<font>Med24</font>
 						<label>16041</label>
-						<textcolor>NotFocusedColor</textcolor>
+						<textcolor>NotFocusedColour</textcolor>
 						<visible>Control.IsVisible(8) + !Control.HasFocus(8) + String.Contains(Control.GetLabel(8),*)</visible>
 					</control>
 					<control type="label">
@@ -760,44 +714,29 @@
 						<aligny>top</aligny>
 						<font>Med24</font>
 						<label>351</label>
-						<textcolor>NotFocusedColor</textcolor>
+						<textcolor>NotFocusedColour</textcolor>
 						<visible>Control.IsVisible(8) + !Control.HasFocus(8) + !String.Contains(Control.GetLabel(8),*)</visible>
 					</control>
 				</control>
 			</control>
-			<control type="image">
-				<width>558</width>
-				<height>480</height>
-				<texture>settings/addon_browser_back.png</texture>
-			</control>
-			<control type="image">
-				<left>558</left>
-				<width>40</width>
-				<height>480</height>
-				<texture>settings/shadow.png</texture>
-				<visible>Container.Content(addons)</visible>
-				<animation easing="inout" effect="fade" end="100" start="0" time="0" tween="sine">VisibleChange</animation>
-			</control>
-			<control type="label">
-				<left>40</left>
-				<top>14</top>
-				<height>30</height>
-				<width>478</width>
-				<aligny>center</aligny>
-				<font>Bold30</font>
-				<label>10040</label>
-				<textcolor>ffdadada</textcolor>
-			</control>
-			<control type="label">
-				<left>40</left>
-				<top>13</top>
-				<width>478</width>
-				<height>30</height>
-				<font>Light30Spaced</font>
-				<align>right</align>
-				<textcolor>ff636364</textcolor>
-				<label>[COLOR ffb2b2b2]$INFO[Container.CurrentItem][/COLOR] | $INFO[Container.NumItems]</label>
-			</control>
+			<include content="DialogBack">
+				<param name="dialog_back_width" value="558"/>
+				<param name="dialog_back_height" value="480"/>
+				<param name="dialog_heading_width" value="558"/>
+				<param name="dialog_shadow_1_top" value="0"/>
+				<param name="dialog_shadow_1_left" value="558"/>
+				<param name="dialog_shadow_1_height" value="480"/>
+				<param name="dialog_shadow_1_visible" value="Container.Content(addons)"/>
+				<param name="dialog_shadow_1_animation" value="SettingsShadowAnimation"/>
+			</include>
+			<include content="DialogHeading">
+				<param name="dialog_heading_label_width" value="478"/>
+				<param name="dialog_heading_label" value="10040"/>
+			</include>
+			<include content="DialogHeadingCount">
+				<param name="dialog_heading_count_width" value="478"/>
+				<param name="dialog_heading_count_container_id" value="51"/>
+			</include>
 			<control id="51" type="fixedlist">
 				<top>60</top>
 				<width>558</width>
@@ -835,7 +774,7 @@
 						<height>140</height>
 						<aligny>center</aligny>
 						<font>Light30Spaced</font>
-						<textcolor>NotFocusedColor</textcolor>
+						<textcolor>NotFocusedColour</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="group">
@@ -874,7 +813,7 @@
 						<height>140</height>
 						<aligny>center</aligny>
 						<font>Light30Spaced</font>
-						<textcolor>FocusedColor</textcolor>
+						<textcolor>FocusedColour</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<visible>Control.HasFocus(51)</visible>
 					</control>
@@ -977,37 +916,34 @@
 							<height>576</height>
 							<texture border="50">views/shadow_nf.png</texture>
 						</control>
-						<control type="image">
-							<top>48</top>
-							<width>480</width>
-							<height>480</height>
-							<aspectratio align="center">scale</aspectratio>
-							<texture background="true">$INFO[ListItem.Icon]</texture>
-						</control>
-						<control type="image">
-							<bottom>48</bottom>
-							<width>480</width>
-							<height>125</height>
-							<texture border="2">views/default_overlay.png</texture>
-							<visible>!ListItem.IsParentFolder</visible>
-						</control>
-						<control type="label">
-							<left>18</left>
-							<top>447</top>
-							<width>446</width>
-							<height>42</height>
-							<font>Bold44</font>
-							<scroll>false</scroll>
-							<textcolor>ffffffff</textcolor>
-							<shadowcolor>88000000</shadowcolor>
-							<label>$INFO[ListItem.Label]</label>
-							<visible>!ListItem.IsParentFolder</visible>
-						</control>
-						<control type="image">
-							<top>48</top>
-							<width>480</width>
-							<height>480</height>
-							<texture>views/OverlayNF.png</texture>
+						<control type="group">
+							<include>ItemListFadeDiffuseAnimation</include>
+							<control type="image">
+								<top>48</top>
+								<width>480</width>
+								<height>480</height>
+								<aspectratio align="center">scale</aspectratio>
+								<texture background="true">$INFO[ListItem.Icon]</texture>
+							</control>
+							<control type="image">
+								<bottom>48</bottom>
+								<width>480</width>
+								<height>125</height>
+								<texture border="2">views/default_overlay.png</texture>
+								<visible>!ListItem.IsParentFolder</visible>
+							</control>
+							<control type="label">
+								<left>18</left>
+								<top>447</top>
+								<width>446</width>
+								<height>42</height>
+								<font>Bold44</font>
+								<scroll>false</scroll>
+								<textcolor>ffffffff</textcolor>
+								<shadowcolor>ShadowColour</shadowcolor>
+								<label>$INFO[ListItem.Label]</label>
+								<visible>!ListItem.IsParentFolder</visible>
+							</control>
 						</control>
 					</control>
 				</itemlayout>
@@ -1036,40 +972,36 @@
 								<param name="ListID" value="50"/>
 							</include>
 						</control>
-						<control type="image">
-							<top>48</top>
-							<width>480</width>
-							<height>480</height>
-							<aspectratio align="center">scale</aspectratio>
-							<texture background="true">$INFO[ListItem.Icon]</texture>
-						</control>
-						<control type="image">
-							<bottom>48</bottom>
-							<width>480</width>
-							<height>125</height>
-							<texture border="2">views/default_overlay.png</texture>
-							<visible>!ListItem.IsParentFolder</visible>
-						</control>
-						<control type="label">
-							<left>18</left>
-							<top>447</top>
-							<width>446</width>
-							<height>42</height>
-							<font>Bold44</font>
-							<scroll>false</scroll>
-							<textcolor>ffffffff</textcolor>
-							<shadowcolor>88000000</shadowcolor>
-							<label>$INFO[ListItem.Label]</label>
-							<visible>!ListItem.IsParentFolder</visible>
-						</control>
-						<control type="image">
-							<top>48</top>
-							<width>480</width>
-							<height>480</height>
-							<texture>views/OverlayNF.png</texture>
-							<include content="FocusedListIDAnimation">
+						<control type="group">
+							<include content="FocusedListIDFadeDiffuseAnimation">
 								<param name="ListID" value="50"/>
 							</include>
+							<control type="image">
+								<top>48</top>
+								<width>480</width>
+								<height>480</height>
+								<aspectratio align="center">scale</aspectratio>
+								<texture background="true">$INFO[ListItem.Icon]</texture>
+							</control>
+							<control type="image">
+								<bottom>48</bottom>
+								<width>480</width>
+								<height>125</height>
+								<texture border="2">views/default_overlay.png</texture>
+								<visible>!ListItem.IsParentFolder</visible>
+							</control>
+							<control type="label">
+								<left>18</left>
+								<top>447</top>
+								<width>446</width>
+								<height>42</height>
+								<font>Bold44</font>
+								<scroll>false</scroll>
+								<textcolor>ffffffff</textcolor>
+								<shadowcolor>ShadowColour</shadowcolor>
+								<label>$INFO[ListItem.Label]</label>
+								<visible>!ListItem.IsParentFolder</visible>
+							</control>
 						</control>
 					</control>
 				</focusedlayout>

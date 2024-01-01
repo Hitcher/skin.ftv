@@ -1,82 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<include name="Includes_DialogSelect_Default">
+	<include name="Includes_DialogSelect_Video_Version">
+		<include>DialogBackgroundImage</include>
 		<!-- Hidden Button -->
-		<control id="7" type="button">
+		<control id="3" type="list">
 			<include>HiddenControl</include>
-			<onfocus condition="Control.IsVisible(3)">SetFocus(3)</onfocus>
-			<onfocus condition="Control.IsVisible(6)">SetFocus(6)</onfocus>
 		</control>
-		<control id="1" type="label">
-			<visible>false</visible>
+		<control type="group">
+			<centerleft>50%</centerleft>
+			<centertop>50%</centertop>
+			<width>1060</width>
+			<height>573</height>
+			<include content="DialogZoomAnimation">
+				<param name="OpenCondition" value="!Window.IsVisible(settingscategory.xml)"/>
+				<param name="CloseCondition" value="!Window.IsVisible(settingscategory.xml)"/>
+			</include>
+			<!-- Dialog background image -->
+			<control type="image">
+				<width>100%</width>
+				<height>100%</height>
+				<texture border="2">dialogs/DialogMessageBackground.png</texture>
+			</control>
+			<control type="label">
+				<left>27</left>
+				<top>26</top>
+				<height>34</height>
+				<font>Reg28</font>
+				<label>31190</label>
+				<textcolor>ffdadada</textcolor>
+			</control>
+			<control type="image">
+				<left>27</left>
+				<top>86</top>
+				<width>1006</width>
+				<height>1</height>
+				<texture>rating/dialog_select/line.png</texture>
+			</control>
+			<control type="image">
+				<left>27</left>
+				<top>114</top>
+				<width>301</width>
+				<height>449</height>
+				<aspectratio aligny="top">scale</aspectratio>
+				<bordersize>0,0,13,17</bordersize>
+				<texture fallback="views/square_fallback.png">$INFO[Container(6).ListItem.Art(poster)]</texture>
+				<bordertexture infill="false" border="14,18,14,18">dialogs/shadow.png</bordertexture>
+			</control>
+			<control id="6" type="fixedlist">
+				<left>334</left>
+				<top>107</top>
+				<width>707</width>
+				<height>459</height>
+				<onleft>Back</onleft>
+				<onleft>noop</onleft>
+				<onright>9000</onright>
+				<onup>noop</onup>
+				<ondown>noop</ondown>
+				<movement>1</movement>
+				<scrolltime>0</scrolltime>
+				<focusposition>1</focusposition>
+				<orientation>vertical</orientation>
+				<animation condition="String.IsEqual(Container(6).NumItems,2)" effect="slide" end="0,-154">Conditional</animation>
+				<itemlayout height="154" width="707">
+					<control type="image">
+						<width>707</width>
+						<height>138</height>
+						<texture border="8">dialogs/DialogButtonNF.png</texture>
+					</control>
+					<control type="label">
+						<top>20</top>
+						<left>34</left>
+						<width>772</width>
+						<height>60</height>
+						<font>Reg37</font>
+						<textcolor>ffffffff</textcolor>
+						<scrollspeed>200</scrollspeed>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+					<control type="label">
+						<top>78</top>
+						<left>34</left>
+						<width>772</width>
+						<height>40</height>
+						<font>Reg25</font>
+						<textcolor>ffffffff</textcolor>
+						<scrollspeed>200</scrollspeed>
+						<label>$VAR[SelectVersionLabel2]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout height="154" width="707">
+					<control type="image">
+						<width>707</width>
+						<height>138</height>
+						<texture border="8">dialogs/DialogButtonFO.png</texture>
+					</control>
+					<control type="label">
+						<top>20</top>
+						<left>34</left>
+						<width>772</width>
+						<height>60</height>
+						<font>Reg37</font>
+						<textcolor>ff000000</textcolor>
+						<selectedcolor>ff000000</selectedcolor>
+						<scrollspeed>200</scrollspeed>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+					<control type="label">
+						<top>78</top>
+						<left>34</left>
+						<width>772</width>
+						<height>40</height>
+						<font>Reg25</font>
+						<textcolor>ff000000</textcolor>
+						<selectedcolor>ff000000</selectedcolor>
+						<scrollspeed>200</scrollspeed>
+						<label>$VAR[SelectVersionLabel2]</label>
+					</control>
+				</focusedlayout>
+			</control>
 		</control>
+	</include>
+	<include name="Includes_DialogSelect_Default">
 		<include>DialogBackgroundImage</include>
 		<control type="group">
-			<left>241</left>
-			<top>300</top>
-			<width>1437</width>
+			<centerleft>50%</centerleft>
+			<centertop>50%</centertop>
+			<width>1378</width>
 			<height>480</height>
-			<visible>Control.IsVisible(3)</visible>
-			<animation condition="[Window.IsVisible(settingscategory.xml) | Window.IsVisible(addonbrowser) | Window.IsVisible(skinsettings)] + Control.IsVisible(5)" effect="slide" end="-43,-11">Conditional</animation>
-			<animation condition="!Window.IsVisible(1105) + [Window.IsVisible(settingscategory.xml) | Window.IsVisible(addonbrowser) | Window.IsVisible(skinsettings)] + !Control.IsVisible(5)" effect="slide" end="-283,-11">Conditional</animation>
-			<animation condition="!Window.IsVisible(1105) + [Window.IsVisible(settingscategory.xml) | Window.IsVisible(addonbrowser) | Window.IsVisible(skinsettings)]" reversible="false" type="WindowOpen">
-				<effect end="100" start="0" time="200" type="fade"/>
-				<effect easing="inout" end="0,0" start="500,0" time="200" tween="sine" type="slide"/>
-			</animation>
-			<animation condition="Window.IsVisible(settingscategory.xml) | Window.IsVisible(addonbrowser) | Window.IsVisible(skinsettings)" reversible="false" type="WindowClose">
-				<effect end="0" start="100" time="125" type="fade"/>
-				<effect easing="inout" end="500,0" start="0,0" time="125" tween="sine" type="slide"/>
-			</animation>
-			<animation condition="!Window.IsVisible(settingscategory.xml) + !Window.IsVisible(addonbrowser)" reversible="false" type="WindowOpen">
-				<effect end="100" start="0" time="200" type="fade"/>
-				<effect easing="inout" end="0,0" start="0,-40" time="200" tween="sine" type="slide"/>
-				<effect center="auto" easing="inout" end="100" start="84.5" time="200" tween="sine" type="zoom"/>
-			</animation>
-			<animation condition="!Window.IsVisible(settingscategory.xml) + !Window.IsVisible(addonbrowser)" reversible="false" type="WindowClose">
-				<effect end="0" start="100" time="125" type="fade"/>
-			</animation>
-			<animation condition="!Control.IsVisible(5)" reversible="false" type="Conditional">
-				<effect end="239.5,0" start="239.5,0" time="0" type="slide"/>
-			</animation>
-			<control type="image">
-				<width>1437</width>
-				<height>480</height>
-				<texture>settings/category_back.png</texture>
-				<visible>Control.IsVisible(5)</visible>
-			</control>
-			<control type="image">
-				<width>958</width>
-				<height>480</height>
-				<texture>settings/category_back_no_button.png</texture>
-				<visible>!Control.IsVisible(5)</visible>
-			</control>
-			<control type="label">
-				<left>40</left>
-				<top>14</top>
-				<height>30</height>
-				<width>878</width>
-				<aligny>center</aligny>
-				<font>Bold30</font>
-				<textcolor>ffdadada</textcolor>
-				<label>$INFO[Control.GetLabel(1)]</label>
-			</control>
-			<control type="label">
-				<right>520</right>
-				<top>13</top>
-				<width>878</width>
-				<height>30</height>
-				<font>Light30Spaced</font>
-				<align>right</align>
-				<textcolor>ff636364</textcolor>
-				<label>[COLOR ffb2b2b2]$INFO[Container(3).CurrentItem][/COLOR] | $INFO[Container(3).NumItems]</label>
-			</control>
+			<include>DialogSlideAnimation</include>
+			<include content="DialogZoomAnimation">
+				<param name="OpenCondition" value="!Window.IsVisible(settingscategory.xml)"/>
+				<param name="CloseCondition" value="!Window.IsVisible(settingscategory.xml)"/>
+			</include>
+			<include content="DialogBack">
+				<param name="dialog_group_visible" value="Control.IsVisible(3)"/>
+			</include>
+			<include content="DialogBack">
+				<param name="dialog_shadow_2_left" value="558"/>
+				<param name="dialog_shadow_2_visible" value="true"/>
+				<param name="dialog_group_visible" value="Control.IsVisible(6)"/>
+			</include>
+			<include content="DialogHeading">
+				<param name="dialog_heading_label_visible" value="Control.IsVisible(3)"/>
+			</include>
+			<include content="DialogHeadingCount">
+				<param name="dialog_heading_count_container_id" value="3"/>
+			</include>
+			<include content="DialogHeading">
+				<param name="dialog_heading_label_visible" value="Control.IsVisible(6)"/>
+			</include>
+			<include content="DialogHeadingCount">
+				<param name="dialog_heading_count_container_id" value="6"/>
+			</include>
 			<control id="3" type="fixedlist">
 				<top>60</top>
-				<width>958</width>
+				<width>978</width>
 				<height>420</height>
 				<onleft condition="Window.IsVisible(settingscategory.xml) | Window.IsVisible(addonbrowser) | Window.IsVisible(skinsettings)">Back</onleft>
 				<onleft>noop</onleft>
-				<onright>20</onright>
+				<onright>9000</onright>
 				<onup>noop</onup>
 				<ondown>noop</ondown>
 				<movement>2</movement>
@@ -85,9 +167,9 @@
 				<orientation>vertical</orientation>
 				<animation condition="String.IsEqual(Container(3).NumItems,0) | String.IsEqual(Container(3).NumItems,1) | [String.IsEqual(Container(3).NumItems,2) + !Container(3).HasParent]" effect="slide" end="0,-168">Conditional</animation>
 				<animation condition="[String.IsEqual(Container(3).NumItems,2) + Container(3).HasParent] | String.IsEqual(Container(3).NumItems,3) | [String.IsEqual(Container(3).NumItems,4) + !Container(3).HasParent]" effect="slide" end="0,-84">Conditional</animation>
-				<itemlayout height="84" width="958">
+				<itemlayout height="84" width="978">
 					<control type="image">
-						<width>958</width>
+						<width>978</width>
 						<height>84</height>
 						<texture border="3">settings/button_no_focus.png</texture>
 					</control>
@@ -96,13 +178,13 @@
 						<width>878</width>
 						<height>84</height>
 						<font>Light32</font>
-						<textcolor>NotFocusedColor</textcolor>
+						<textcolor>NotFocusedColour</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="84" width="958">
+				<focusedlayout height="84" width="978">
 					<control type="image">
-						<width>958</width>
+						<width>978</width>
 						<height>84</height>
 						<texture border="3">settings/button_focus.png</texture>
 					</control>
@@ -111,98 +193,32 @@
 						<width>878</width>
 						<height>84</height>
 						<font>Light32</font>
-						<textcolor>FocusedColor</textcolor>
+						<textcolor>FocusedColour</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</focusedlayout>
 			</control>
 			<control type="image">
 				<top>60</top>
-				<width>958</width>
+				<width>978</width>
 				<height>84</height>
 				<visible>Container(3).HasPrevious</visible>
 				<texture border="2" diffuse="settings/mask.png" flipy="true">settings/mask_back.png</texture>
 			</control>
 			<control type="image">
 				<top>396</top>
-				<width>958</width>
+				<width>978</width>
 				<height>84</height>
 				<visible>Container(3).HasNext</visible>
 				<texture border="2" diffuse="settings/mask.png">settings/mask_back.png</texture>
 			</control>
-			<control id="20" type="button">
-				<right>86</right>
-				<bottom>33</bottom>
-				<width>311</width>
-				<height>76</height>
-				<onleft>3</onleft>
-				<onright>noop</onright>
-				<onup>noop</onup>
-				<ondown>noop</ondown>
-				<onclick>SendClick(5)</onclick>
-				<aligny>top</aligny>
-				<font>Med24</font>
-				<textoffsetx>23</textoffsetx>
-				<textoffsety>27</textoffsety>
-				<label>$INFO[Control.GetLabel(5)]</label>
-				<visible>Control.IsVisible(5)</visible>
-			</control>
-		</control>
-		<control type="group">
-			<left>241.5</left>
-			<top>300</top>
-			<width>1437</width>
-			<height>480</height>
-			<visible>Control.IsVisible(6)</visible>
-			<animation condition="Window.IsVisible(settingscategory.xml) | Window.IsVisible(addonbrowser) | Window.IsVisible(skinsettings)" effect="slide" end="-43.5,-11">Conditional</animation>
-			<animation condition="Window.IsVisible(settingscategory.xml) | Window.IsVisible(addonbrowser) | Window.IsVisible(skinsettings)" reversible="false" type="WindowOpen">
-				<effect end="100" start="0" time="200" type="fade"/>
-				<effect easing="inout" end="0,0" start="500,0" time="200" tween="sine" type="slide"/>
-			</animation>
-			<animation condition="Window.IsVisible(settingscategory.xml) | Window.IsVisible(addonbrowser) | Window.IsVisible(skinsettings)" reversible="false" type="WindowClose">
-				<effect end="0" start="100" time="125" type="fade"/>
-				<effect easing="inout" end="500,0" start="0,0" time="125" tween="sine" type="slide"/>
-			</animation>
-			<animation condition="!Window.IsVisible(settingscategory.xml) + !Window.IsVisible(addonbrowser)" reversible="false" type="WindowOpen">
-				<effect end="100" start="0" time="200" type="fade"/>
-				<effect easing="inout" end="0,0" start="0,-40" time="200" tween="sine" type="slide"/>
-				<effect center="auto" easing="inout" end="100" start="90" time="200" tween="sine" type="zoom"/>
-			</animation>
-			<animation condition="!Window.IsVisible(settingscategory.xml) + !Window.IsVisible(addonbrowser)" reversible="false" type="WindowClose">
-				<effect end="0" start="100" time="125" type="fade"/>
-			</animation>
-			<control type="image">
-				<width>1437</width>
-				<height>480</height>
-				<texture>settings/category_back_list.png</texture>
-			</control>
-			<control type="label">
-				<left>40</left>
-				<top>14</top>
-				<height>30</height>
-				<width>778</width>
-				<aligny>center</aligny>
-				<font>Bold30</font>
-				<textcolor>ffdadada</textcolor>
-				<label>$INFO[Control.GetLabel(1)]</label>
-			</control>
-			<control type="label">
-				<left>40</left>
-				<top>13</top>
-				<width>778</width>
-				<height>30</height>
-				<font>Light30Spaced</font>
-				<align>right</align>
-				<textcolor>ff636364</textcolor>
-				<label>[COLOR ffb2b2b2]$INFO[Container(6).CurrentItem][/COLOR] | $INFO[Container(6).NumItems]</label>
-			</control>
 			<control id="6" type="fixedlist">
 				<top>60</top>
-				<width>858</width>
+				<width>558</width>
 				<height>420</height>
 				<onleft condition="Window.IsVisible(settingscategory.xml) | Window.IsVisible(addonbrowser) | Window.IsVisible(skinsettings)">Back</onleft>
 				<onleft>noop</onleft>
-				<onright>21</onright>
+				<onright>9000</onright>
 				<onup>noop</onup>
 				<ondown>noop</ondown>
 				<movement>1</movement>
@@ -210,152 +226,142 @@
 				<focusposition>1</focusposition>
 				<orientation>vertical</orientation>
 				<animation condition="String.IsEqual(Container(6).NumItems,0) | String.IsEqual(Container(6).NumItems,1) | [String.IsEqual(Container(6).NumItems,2) + !Container(6).HasParent]" effect="slide" end="0,-140">Conditional</animation>
-				<itemlayout height="140" width="858">
+				<itemlayout height="140" width="558">
 					<control type="image">
-						<width>858</width>
+						<width>558</width>
 						<height>140</height>
 						<texture border="3">settings/button_no_focus.png</texture>
 					</control>
 					<control type="image">
-						<left>27</left>
-						<top>17</top>
-						<width>146</width>
-						<height>106</height>
+						<left>40</left>
+						<top>20</top>
+						<width>100</width>
+						<height>100</height>
 						<texture fallback="views/square_fallback.png">$VAR[DialogSelectImage]</texture>
 						<aspectratio aligny="center">keep</aspectratio>
 					</control>
 					<control type="label">
 						<top>30</top>
-						<left>192</left>
-						<width>626</width>
+						<left>160</left>
+						<width>358</width>
 						<height>42</height>
 						<font>Light32</font>
-						<textcolor>NotFocusedColor</textcolor>
+						<textcolor>NotFocusedColour</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<animation condition="String.IsEmpty(ListItem.Label2)" effect="slide" end="0,19">Conditional</animation>
 					</control>
 					<control type="label">
 						<top>74</top>
-						<left>192</left>
-						<width>626</width>
+						<left>160</left>
+						<width>358</width>
 						<height>34</height>
 						<font>Light24</font>
-						<textcolor>NotFocusedColor</textcolor>
+						<textcolor>NotFocusedColour</textcolor>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="140" width="858">
+				<focusedlayout height="140" width="558">
 					<control type="image">
-						<width>858</width>
+						<width>558</width>
 						<height>140</height>
 						<texture border="3">settings/button_focus.png</texture>
 					</control>
 					<control type="image">
-						<left>27</left>
-						<top>17</top>
-						<width>146</width>
-						<height>106</height>
+						<left>40</left>
+						<top>20</top>
+						<width>100</width>
+						<height>100</height>
 						<texture fallback="views/square_fallback.png">$VAR[DialogSelectImage]</texture>
 						<aspectratio aligny="center">keep</aspectratio>
 					</control>
 					<control type="label">
 						<top>30</top>
-						<left>192</left>
-						<width>626</width>
+						<left>160</left>
+						<width>358</width>
 						<height>42</height>
 						<font>Light32</font>
-						<textcolor>FocusedColor</textcolor>
+						<textcolor>FocusedColour</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<animation condition="String.IsEmpty(ListItem.Label2)" effect="slide" end="0,19">Conditional</animation>
 						<visible>Control.HasFocus(6)</visible>
 					</control>
 					<control type="label">
 						<top>74</top>
-						<left>192</left>
-						<width>626</width>
+						<left>160</left>
+						<width>358</width>
 						<height>34</height>
 						<font>Light24</font>
-						<textcolor>FocusedColor</textcolor>
+						<textcolor>FocusedColour</textcolor>
 						<label>$INFO[ListItem.Label2]</label>
 						<visible>Control.HasFocus(6)</visible>
 					</control>
 					<control type="label">
 						<top>30</top>
-						<left>192</left>
-						<width>626</width>
+						<left>160</left>
+						<width>358</width>
 						<height>42</height>
 						<font>Light32</font>
-						<textcolor>NotFocusedColor</textcolor>
+						<textcolor>NotFocusedColour</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<animation condition="String.IsEmpty(ListItem.Label2)" effect="slide" end="0,19">Conditional</animation>
 						<visible>!Control.HasFocus(6)</visible>
 					</control>
 					<control type="label">
 						<top>74</top>
-						<left>192</left>
-						<width>626</width>
+						<left>160</left>
+						<width>358</width>
 						<height>34</height>
 						<font>Light24</font>
-						<textcolor>NotFocusedColor</textcolor>
+						<textcolor>NotFocusedColour</textcolor>
 						<label>$INFO[ListItem.Label2]</label>
 						<visible>!Control.HasFocus(6)</visible>
 					</control>
 				</focusedlayout>
 			</control>
 			<control type="image">
-				<left>898</left>
-				<top>40</top>
-				<width>512</width>
-				<height>315</height>
+				<left>598</left>
+				<top>100</top>
+				<width>353</width>
+				<height>357</height>
 				<aspectratio>keep</aspectratio>
 				<bordersize>0,0,13,17</bordersize>
-				<texture fallback="views/square_fallback.png">$VAR[DialogSelectImageLarge]</texture>
+				<texture fallback="views/square_fallback.png">$VAR[DialogSelectImage]</texture>
 				<bordertexture infill="false" border="14,18,14,18">dialogs/shadow.png</bordertexture>
-				<visible>Control.IsVisible(5)</visible>
+				<visible>Control.IsVisible(6)</visible>
 			</control>
-			<control type="image">
-				<left>898</left>
-				<top>40</top>
-				<width>512</width>
-				<height>417</height>
-				<aspectratio>keep</aspectratio>
-				<bordersize>0,0,13,17</bordersize>
-				<texture fallback="views/square_fallback.png">$VAR[DialogSelectImageLarge]</texture>
-				<bordertexture infill="false" border="14,18,14,18">dialogs/shadow.png</bordertexture>
-				<visible>!Window.IsVisible(10149) + !Control.IsVisible(5)</visible>
-			</control>
-			<control type="image">
-				<left>898</left>
-				<top>40</top>
-				<width>512</width>
-				<height>417</height>
-				<aspectratio>keep</aspectratio>
-				<bordersize>0,0,13,17</bordersize>
-				<texture fallback="views/square_fallback.png">$VAR[DialogSelectImageLarge]</texture>
-				<visible>Window.IsVisible(10149) + !Control.IsVisible(5)</visible>
-			</control>
-			<control id="21" type="button">
-				<right>134</right>
+			<!-- Button grouplist -->
+			<control id="9000" type="grouplist">
+				<right>24</right>
 				<bottom>33</bottom>
-				<width>311</width>
-				<height>76</height>
-				<onleft>6</onleft>
+				<width>352</width>
+				<height>400</height>
+				<onleft condition="Control.IsVisible(3)">3</onleft>
+				<onleft condition="Control.IsVisible(6)">6</onleft>
 				<onright>noop</onright>
 				<onup>noop</onup>
 				<ondown>noop</ondown>
-				<onclick>SendClick(5)</onclick>
-				<aligny>top</aligny>
-				<font>Med24</font>
-				<textoffsetx>23</textoffsetx>
-				<textoffsety>27</textoffsety>
-				<label>$INFO[Control.GetLabel(5)]</label>
-				<visible>Control.IsVisible(5)</visible>
+				<onback>3</onback>
+				<itemgap>10</itemgap>
+				<align>right</align>
+				<!-- Get more Button -->
+				<include content="DialogButton">
+					<param name="button_id" value="8"/>
+					<param name="button_label" value=""/>
+					<param name="button_visible" value="Control.IsEnabled(8)"/>
+				</include>
+				<!-- Cancel Button -->
+				<include content="DialogButton">
+					<param name="button_id" value="7"/>
+					<param name="button_label" value="222"/>
+					<param name="button_visible" value="Control.IsEnabled(7)"/>
+				</include>
+				<!-- OK Button -->
+				<include content="DialogButton">
+					<param name="button_id" value="5"/>
+					<param name="button_label" value="409"/>
+					<param name="button_visible" value="Control.IsEnabled(5)"/>
+				</include>
 			</control>
-		</control>
-		<control id="5" type="button">
-			<include>HiddenControl</include>
-			<onfocus>SetFocus(21)</onfocus>
-			<visible>Control.IsEnabled(5)</visible>
 		</control>
 	</include>
 	<include name="Includes_DialogSelect_Special">
@@ -747,24 +753,20 @@
 			<top>300</top>
 			<width>1437</width>
 			<height>480</height>
-			<control type="image">
-				<width>1437</width>
-				<height>480</height>
-				<texture>settings/category_back_list.png</texture>
-			</control>
+			<include content="DialogZoomAnimation">
+			</include>
+			<include content="DialogBack">
+				<param name="dialog_back_width" value="1437"/>
+				<param name="dialog_heading_width" value="858"/>
+				<param name="dialog_shadow_1_left" value="858"/>
+			</include>
+			<include content="DialogHeading">
+				<param name="dialog_heading_label_width" value="778"/>
+				<param name="dialog_heading_label" value="31171"/>
+			</include>
 			<control type="label">
 				<left>40</left>
-				<top>14</top>
-				<height>30</height>
-				<width>778</width>
-				<aligny>center</aligny>
-				<font>Bold30</font>
-				<textcolor>ffdadada</textcolor>
-				<label>31171</label>
-			</control>
-			<control type="label">
-				<left>40</left>
-				<top>13</top>
+				<top>15</top>
 				<width>778</width>
 				<height>30</height>
 				<font>Light30Spaced</font>
@@ -806,7 +808,7 @@
 						<width>626</width>
 						<height>42</height>
 						<font>Light32</font>
-						<textcolor>NotFocusedColor</textcolor>
+						<textcolor>NotFocusedColour</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<animation condition="String.IsEmpty(ListItem.Label2)" effect="slide" end="0,19">Conditional</animation>
 					</control>
@@ -816,7 +818,7 @@
 						<width>626</width>
 						<height>34</height>
 						<font>Light24</font>
-						<textcolor>NotFocusedColor</textcolor>
+						<textcolor>NotFocusedColour</textcolor>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 				</itemlayout>
@@ -840,7 +842,7 @@
 						<width>626</width>
 						<height>42</height>
 						<font>Light32</font>
-						<textcolor>FocusedColor</textcolor>
+						<textcolor>FocusedColour</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<animation condition="String.IsEmpty(ListItem.Label2)" effect="slide" end="0,19">Conditional</animation>
 						<visible>Control.HasFocus(3)</visible>
@@ -851,7 +853,7 @@
 						<width>626</width>
 						<height>34</height>
 						<font>Light24</font>
-						<textcolor>FocusedColor</textcolor>
+						<textcolor>FocusedColour</textcolor>
 						<label>$INFO[ListItem.Label2]</label>
 						<visible>Control.HasFocus(3)</visible>
 					</control>
@@ -861,7 +863,7 @@
 						<width>626</width>
 						<height>42</height>
 						<font>Light32</font>
-						<textcolor>NotFocusedColor</textcolor>
+						<textcolor>NotFocusedColour</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<animation condition="String.IsEmpty(ListItem.Label2)" effect="slide" end="0,19">Conditional</animation>
 						<visible>!Control.HasFocus(3)</visible>
@@ -872,7 +874,7 @@
 						<width>626</width>
 						<height>34</height>
 						<font>Light24</font>
-						<textcolor>NotFocusedColor</textcolor>
+						<textcolor>NotFocusedColour</textcolor>
 						<label>$INFO[ListItem.Label2]</label>
 						<visible>!Control.HasFocus(3)</visible>
 					</control>

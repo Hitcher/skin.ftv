@@ -1,4 +1,116 @@
 <includes>
+	<include name="DialogBack">
+		<param name="dialog_back_width" default="1378"/>
+		<param name="dialog_back_height" default="480"/>
+		<param name="dialog_heading_width" default="978"/>
+		<param name="dialog_heading_height" default="60"/>
+		<param name="dialog_heading_height" default="true"/>
+		<param name="dialog_shadow_1_left" default="978"/>
+		<param name="dialog_shadow_1_height" default="480"/>
+		<param name="dialog_shadow_1_visible" default="true"/>
+		<param name="dialog_shadow_1_animation" default=""/>
+		<param name="dialog_shadow_2_top" default="60"/>
+		<param name="dialog_shadow_2_height" default="420"/>
+		<param name="dialog_shadow_2_visible" default="false"/>
+		<param name="dialog_group_visible" default="true"/>
+		<definition>
+			<control type="group">
+				<visible>$PARAM[dialog_group_visible]</visible>
+				<control type="image">
+					<width>$PARAM[dialog_back_width]</width>
+					<height>$PARAM[dialog_back_height]</height>
+					<texture colordiffuse="DialogBackColour">common/white_square.png</texture>
+				</control>
+				<control type="image">
+					<width>$PARAM[dialog_heading_width]</width>
+					<height>$PARAM[dialog_heading_height]</height>
+					<texture colordiffuse="DialogHeadingColour">common/white_square.png</texture>
+					<visible>$PARAM[dialog_heading_visible]</visible>
+				</control>
+				<control type="image">
+					<top>$PARAM[dialog_shadow_1_top]</top>
+					<left>$PARAM[dialog_shadow_1_left]</left>
+					<width>40</width>
+					<height>$PARAM[dialog_shadow_1_height]</height>
+					<texture>dialogs/dialog_shadow.png</texture>
+					<visible>$PARAM[dialog_shadow_1_visible]</visible>
+					<include>$PARAM[dialog_shadow_1_animation]</include>
+				</control>
+				<control type="image">
+					<top>$PARAM[dialog_shadow_2_top]</top>
+					<left>$PARAM[dialog_shadow_2_left]</left>
+					<width>40</width>
+					<height>$PARAM[dialog_shadow_2_height]</height>
+					<texture>dialogs/dialog_shadow.png</texture>
+					<visible>$PARAM[dialog_shadow_2_visible]</visible>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<include name="DialogHeading">
+		<param name="dialog_heading_label_id" default="1"/>
+		<param name="dialog_heading_label_left" default="40"/>
+		<param name="dialog_heading_label_top" default="14"/>
+		<param name="dialog_heading_label_width" default="898"/>
+		<param name="dialog_heading_label_haspath" default="false"/>
+		<param name="dialog_heading_label_visible" default="true"/>
+		<definition>
+			<control id="$PARAM[dialog_heading_label_id]" type="label">
+				<left>$PARAM[dialog_heading_label_left]</left>
+				<top>$PARAM[dialog_heading_label_top]</top>
+				<height>30</height>
+				<width>$PARAM[dialog_heading_label_width]</width>
+				<aligny>center</aligny>
+				<font>Bold30</font>
+				<haspath>$PARAM[dialog_heading_label_haspath]</haspath>
+				<textcolor>ffdadada</textcolor>
+				<label>$PARAM[dialog_heading_label]</label>
+				<visible>$PARAM[dialog_heading_label_visible]</visible>
+			</control>
+		</definition>
+	</include>
+	<include name="DialogHeadingCount">
+		<param name="dialog_heading_count_width" default="898"/>
+		<param name="dialog_heading_count_visible" default="true"/>
+		<definition>
+			<control type="label">
+				<left>40</left>
+				<top>15</top>
+				<height>30</height>
+				<width>$PARAM[dialog_heading_count_width]</width>
+				<font>Light30Spaced</font>
+				<align>right</align>
+				<textcolor>ff636364</textcolor>
+				<label>[COLOR ffb2b2b2]$INFO[Container($PARAM[dialog_heading_count_container_id]).CurrentItem][/COLOR] | $INFO[Container($PARAM[dialog_heading_count_container_id]).NumItems]</label>
+				<visible>!Integer.IsEqual(Container($PARAM[dialog_heading_count_container_id]).NumItems,0)</visible>
+			</control>
+		</definition>
+	</include>
+	<include name="DialogButton">
+		<param name="button_type" default="button"/>
+		<definition>
+			<control id="$PARAM[button_id]" type="$PARAM[button_type]">
+				<height>76</height>
+				<width>100%</width>
+				<aligny>top</aligny>
+				<font>Med24</font>
+				<textoffsetx>23</textoffsetx>
+				<textoffsety>27</textoffsety>
+				<radiowidth>94</radiowidth>
+				<radioheight>40</radioheight>
+				<radioposx>235</radioposx>
+				<label>$PARAM[button_label]</label>
+				<texturefocus border="8">dialogs/DialogButtonFO.png</texturefocus>
+				<texturenofocus border="8">dialogs/DialogButtonNF.png</texturenofocus>
+				<textureradioonfocus/>
+				<textureradioonnofocus/>
+				<textureradioofffocus/>
+				<textureradiooffnofocus/>
+				<visible>$PARAM[button_visible]</visible>
+				<nested/>
+			</control>
+		</definition>
+	</include>
 	<include name="XRayCastListItems">
 		<item id="$PARAM[item_index]">
 			<label>$INFO[Container(999).ListItemAbsolute($PARAM[item_index]).Label]</label>
@@ -43,35 +155,35 @@
 	<include name="ParamWidgetInclude">
 		<control id="$PARAM[ID]1" type="list">
 			<include>HiddenList</include>
-			<content sortby="$VAR[$PARAM[ID]0-SortBy-1]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-1)]</content>
+			<content target="$INFO[Skin.String($PARAM[ID]0-WidgetType-1)]" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-1)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-1)]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-1)]</content>
 		</control>
 		<control id="$PARAM[ID]2" type="list">
 			<include>HiddenList</include>
-			<content sortby="$VAR[$PARAM[ID]0-SortBy-2]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-2)]</content>
+			<content target="$INFO[Skin.String($PARAM[ID]0-WidgetType-2)]" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-2)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-2)]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-2)]</content>
 		</control>
 		<control id="$PARAM[ID]3" type="list">
 			<include>HiddenList</include>
-			<content sortby="$VAR[$PARAM[ID]0-SortBy-3]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-3)]</content>
+			<content target="$INFO[Skin.String($PARAM[ID]0-WidgetType-3)]" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-3)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-3)]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-3)]</content>
 		</control>
 		<control id="$PARAM[ID]4" type="list">
 			<include>HiddenList</include>
-			<content sortby="$VAR[$PARAM[ID]0-SortBy-4]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-4)]</content>
+			<content target="$INFO[Skin.String($PARAM[ID]0-WidgetType-4)]" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-4)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-4)]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-4)]</content>
 		</control>
 		<control id="$PARAM[ID]5" type="list">
 			<include>HiddenList</include>
-			<content sortby="$VAR[$PARAM[ID]0-SortBy-5]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-5)]</content>
+			<content target="$INFO[Skin.String($PARAM[ID]0-WidgetType-4)]" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-5)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-5)]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-5)]</content>
 		</control>
 		<control id="$PARAM[ID]6" type="list">
 			<include>HiddenList</include>
-			<content sortby="$VAR[$PARAM[ID]0-SortBy-6]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-6)]</content>
+			<content target="$INFO[Skin.String($PARAM[ID]0-WidgetType-6)]" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-6)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-6)]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-6)]</content>
 		</control>
 		<control id="$PARAM[ID]7" type="list">
 			<include>HiddenList</include>
-			<content sortby="$VAR[$PARAM[ID]0-SortBy-7]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-7)]</content>
+			<content target="$INFO[Skin.String($PARAM[ID]0-WidgetType-7)]" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-7)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-7)]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-7)]</content>
 		</control>
 		<control id="$PARAM[ID]8" type="list">
 			<include>HiddenList</include>
-			<content sortby="$VAR[$PARAM[ID]0-SortBy-8]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-8)]</content>
+			<content target="$INFO[Skin.String($PARAM[ID]0-WidgetType-8)]" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-8)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-8)]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-8)]</content>
 		</control>
 		<control id="$PARAM[ID]" type="fixedlist">
 			<left>419</left>

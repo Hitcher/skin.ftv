@@ -2,6 +2,7 @@
 <smartplaylist type="tvshows">
     <name>Your TV Shows</name>
     <match>all</match>
+    <group>none</group>
     <rule field="numepisodes" operator="greaterthan">
         <value>0</value>
     </rule>

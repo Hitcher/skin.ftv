@@ -59,9 +59,9 @@
 				<width>552</width>
 				<height>11</height>
 				<texturesliderbar border="4">osd/progress_back.png</texturesliderbar>
-				<texturesliderbardisabled colordiffuse="DisabledColor" border="4">osd/progress_back.png</texturesliderbardisabled>
+				<texturesliderbardisabled colordiffuse="DisabledColour" border="4">osd/progress_back.png</texturesliderbardisabled>
 				<textureslidernib border="4">osd/progress_cache.png</textureslidernib>
-				<textureslidernibdisabled colordiffuse="DisabledColor" border="4">osd/progress_cache.png</textureslidernibdisabled>
+				<textureslidernibdisabled colordiffuse="DisabledColour" border="4">osd/progress_cache.png</textureslidernibdisabled>
 				<textureslidernibfocus border="4">osd/progress_bar.png</textureslidernibfocus>
 			</control>
 		</control>

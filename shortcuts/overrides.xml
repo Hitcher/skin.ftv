@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <overrides>
-	<doNotShareMenu />
+	<doNotShareMenu/>
+	<override action="ActivateWindow(favourites)">
+		<action>ActivateWindow(favouritesbrowser)</action>
+	</override>
 	<widget label="1036">favourites</widget>
 	<widget label="10508">weather</widget>
 	<widget label="31210">widget1</widget>
@@ -26,9 +29,8 @@
 	<icon labelID="20045">DefaultMastermode.png</icon>
 	<icon labelID="settings">DefaultSettings.png</icon>
 	<groupoverride group="shutdown" condition="true">Close</groupoverride>
-	<widgetPlaylists>False</widgetPlaylists>	
-    <!-- Games Shortcut -->
-    <shortcut label="$LOCALIZE[10821]" type="32034" grouping="common" thumbnail="DefaultAddonGame.png" icon="DefaultAddonGame.png">ActivateWindow(games)</shortcut>
+	<widgetPlaylists>False</widgetPlaylists>
+	<shortcut label="$LOCALIZE[10821]" type="32034" grouping="common" thumbnail="DefaultAddonGame.png" icon="DefaultAddonGame.png">ActivateWindow(games)</shortcut>
 	<groupings>
 		<node label="fTV">
 			<shortcut label="10134" icon="ftv_icon.png">ActivateWindow(favouritesbrowser,return)</shortcut>
@@ -39,6 +41,7 @@
 				<shortcut label="31169" type="movie" icon="ftv_icon.png">ActivateWindow(Videos,special://skin/extras/video/InProgressMovies.xsp,return)</shortcut>
 				<shortcut label="31170" type="movie" icon="ftv_icon.png">ActivateWindow(Videos,special://skin/extras/video/KidsMovies.xsp,return)</shortcut>
 				<shortcut label="31174" type="movie" icon="ftv_icon.png">ActivateWindow(Videos,special://skin/extras/video/TopRatedMovies.xsp,return)</shortcut>
+				<shortcut label="31024" type="movie" icon="ftv_icon.png">ActivateWindow(Videos,&quot;library://video/movies/sets.xml/&quot;,return)</shortcut>
 			</node>
 			<node label="20343">
 				<shortcut label="31175" type="tvshow" icon="ftv_icon.png">ActivateWindow(Videos,special://skin/extras/video/RecentlyUpdatedTVShows.xsp,return)</shortcut>
@@ -102,7 +105,7 @@
 				<content>addon-program</content>
 			</node>
 			<node label="32010">
-				<shortcut label="1037" type="32014" icon="DefaultAddonVideo.png">ActivateWindow(Videos,addons://sources/video/,return)</shortcut>
+				<shortcut label="31223" type="32014" icon="DefaultAddonVideo.png">ActivateWindow(Videos,addons://sources/video/,return)</shortcut>
 				<content>addon-video</content>
 			</node>
 			<node label="32011">
@@ -112,6 +115,10 @@
 			<node label="32012">
 				<shortcut label="1039" type="32020" icon="DefaultAddonPicture.png">ActivateWindow(Pictures,addons://sources/image/,return)</shortcut>
 				<content>addon-image</content>
+			</node>
+			<node label="35049">
+				<shortcut label="31100" type="32123" icon="DefaultGames.png">ActivateWindow(Games,addons://sources/game/,return)</shortcut>
+				<content>addon-program</content>
 			</node>
 		</node>
 		<node label="10004">

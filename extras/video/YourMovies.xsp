@@ -2,5 +2,9 @@
 <smartplaylist type="movies">
     <name>Your Movies</name>
     <match>all</match>
+    <rule field="genre" operator="doesnotcontain">
+        <value>Family</value>
+    </rule>
+    <group>none</group>
     <order direction="ascending">sorttitle</order>
 </smartplaylist>

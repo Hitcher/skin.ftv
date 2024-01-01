@@ -6,27 +6,25 @@
 		<include>DialogBackgroundImage</include>
 		<!-- Main group -->
 		<control type="group">
-			<left>190</left>
-			<top>186</top>
+			<centerleft>50%</centerleft>
+			<centertop>50%</centertop>
 			<width>1540</width>
 			<height>732</height>
 			<include>DialogZoomAnimation</include>
-			<control type="image">
-				<width>1540</width>
-				<height>732</height>
-				<texture>dialogs/smart_playlist_editor_back.png</texture>
-			</control>
+			<include content="DialogBack">
+				<param name="dialog_back_width" value="1540"/>
+				<param name="dialog_back_height" value="732"/>
+				<param name="dialog_heading_width" value="1140"/>
+				<param name="dialog_shadow_1_left" value="1140"/>
+				<param name="dialog_shadow_1_height" value="732"/>
+				<param name="dialog_shadow_2_left" value="570"/>
+				<param name="dialog_shadow_2_height" value="672"/>
+				<param name="dialog_shadow_2_visible" value="true"/>
+			</include>
 			<!-- Heading -->
-			<control type="label" id="2">
-				<left>40</left>
-				<top>14</top>
-				<height>30</height>
-				<width>1540</width>
-				<aligny>center</aligny>
-				<font>Bold30</font>
-				<label>21432</label>
-				<textcolor>ffdadada</textcolor>
-			</control>
+			<include content="DialogHeading">
+				<param name="dialog_heading_label" value="21432"/>
+			</include>
 			<!-- Left group -->
 			<control type="grouplist" id="100">
 				<top>60</top>
@@ -42,8 +40,8 @@
 					<font>Light32</font>
 					<label>467</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<aligny>center</aligny>
@@ -55,8 +53,8 @@
 					<height>84</height>
 					<font>Light32</font>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<hinttext>21433</hinttext>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
@@ -68,8 +66,8 @@
 					<font>Light32</font>
 					<label>21424</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<aligny>center</aligny>
@@ -82,8 +80,8 @@
 					<font>Light32</font>
 					<label>21427</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<aligny>center</aligny>
@@ -96,8 +94,8 @@
 					<font>Light32</font>
 					<label>21429</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<aligny>center</aligny>
@@ -110,8 +108,8 @@
 					<font>Light32</font>
 					<label>31248</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<aligny>center</aligny>
@@ -123,8 +121,8 @@
 					<font>Light32</font>
 					<label>21458</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<aligny>center</aligny>
@@ -138,8 +136,8 @@
 					<label>[CAPITALIZE]$LOCALIZE[21459][/CAPITALIZE]</label>
 					<textwidth>738</textwidth>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<radiowidth>125</radiowidth>
 					<radioheight>53</radioheight>
 					<radioposx>410</radioposx>
@@ -162,16 +160,17 @@
 				<!-- Rules label -->
 				<control type="label">
 					<left>40</left>
-					<width>690</width>
+					<width>490</width>
 					<height>84</height>
 					<font>Bold30</font>
 					<textcolor>ffdadada</textcolor>
 					<label>21434</label>
 				</control>
 				<control type="image">
+					<top>82</top>
 					<width>570</width>
-					<height>84</height>
-					<texture border="3">settings/button_no_focus.png</texture>
+					<height>2</height>
+					<texture>dialogs/default_line.png</texture>
 				</control>
 				<!-- Rules list -->
 				<control type="list" id="10">
@@ -196,7 +195,7 @@
 							<width>490</width>
 							<height>84</height>
 							<font>Light32</font>
-							<textcolor>NotFocusedColor</textcolor>
+							<textcolor>NotFocusedColour</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
@@ -211,7 +210,7 @@
 							<width>490</width>
 							<height>84</height>
 							<font>Light32</font>
-							<textcolor>FocusedColor</textcolor>
+							<textcolor>FocusedColour</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>Control.HasFocus(10)</visible>
 						</control>
@@ -232,7 +231,7 @@
 			<control type="grouplist" id="9001">
 				<right>24</right>
 				<bottom>33</bottom>
-				<width>351</width>
+				<width>352</width>
 				<height>420</height>
 				<onleft>10</onleft>
 				<onright>noop</onright>
@@ -242,25 +241,17 @@
 				<itemgap>10</itemgap>
 				<align>right</align>
 				<!-- Cancel Button -->
-				<control type="button" id="21">
-					<width>351</width>
-					<height>76</height>
-					<aligny>top</aligny>
-					<font>Med24</font>
-					<textoffsetx>23</textoffsetx>
-					<textoffsety>27</textoffsety>
-					<label>222</label>
-				</control>
-				<!-- OK Button -->
-				<control type="button" id="20">
-					<width>351</width>
-					<height>76</height>
-					<aligny>top</aligny>
-					<font>Med24</font>
-					<textoffsetx>23</textoffsetx>
-					<textoffsety>27</textoffsety>
-					<label>186</label>
-				</control>
+				<include content="DialogButton">
+					<param name="button_id" value="21"/>
+					<param name="button_label" value="222"/>
+					<param name="button_visible" value="Control.IsEnabled(21)"/>
+				</include>
+				<!-- OK/Manual/Get more Button -->
+				<include content="DialogButton">
+					<param name="button_id" value="20"/>
+					<param name="button_label" value="186"/>
+					<param name="button_visible" value="Control.IsEnabled(20)"/>
+				</include>
 			</control>
 		</control>
 	</controls>

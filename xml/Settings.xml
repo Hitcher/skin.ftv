@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<!-- settings -->
-	<backgroundcolor>0xff12161b</backgroundcolor>
+	<backgroundcolor>BackgroundColour</backgroundcolor>
 	<onload>Dialog.Close(all,true)</onload>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<onload condition="Window.Previous(home)">Control.SetFocus(9000,0,absolute)</onload>
@@ -76,7 +76,7 @@
 			<animation condition="Window.Next(home)" easing="inout" effect="slide" end="209,0" start="0,0" time="300" tween="sine">WindowClose</animation>
 			<itemlayout height="497" width="300">
 				<control type="group">
-					<animation center="134,240" condition="True" effect="zoom" end="84.5" start="84.5">Conditional</animation>
+					<animation center="134,240" condition="true" effect="zoom" end="84.5" start="84.5">Conditional</animation>
 					<animation condition="ControlGroup(9001).HasFocus" easing="inout" effect="slide" end="49,0" reversible="true" start="0,0" time="125" tween="sine">Conditional</animation>
 					<control type="image">
 						<left>-24</left>
@@ -185,7 +185,7 @@
 				</item>
 				<item>
 					<onclick condition="!System.Platform.UWP">ActivateWindow(gamesettings)</onclick>
-					<onclick condition="System.Platform.UWP">RunScript(script.skinvariables,run_dialog=textviewer,heading=$LOCALIZE[31025],text=$LOCALIZE[31024])</onclick>
+					<onclick condition="System.Platform.UWP">RunScript(script.skinvariables,run_dialog=textviewer,heading=$LOCALIZE[31025],text=$LOCALIZE[31087])</onclick>
 					<label>15016</label>
 					<label2>$LOCALIZE[31250]</label2>
 					<icon>settings/icon_games.png</icon>

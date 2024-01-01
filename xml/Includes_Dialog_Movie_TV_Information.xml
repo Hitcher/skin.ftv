@@ -24,7 +24,7 @@
 		<!-- Background -->
 		<control type="image">
 			<include>FullscreenDimensions</include>
-			<texture>common/background_default.png</texture>
+			<texture colordiffuse="BackgroundColour">common/white_square.png</texture>
 			<visible>String.IsEmpty(Window(home).Property(ShowXRay))</visible>
 		</control>
 		<!-- Fanart -->
@@ -280,7 +280,7 @@
 				<include>DialogVideoInfoAnimation</include>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
-				<visible>String.IsEmpty(ListItem.Director) + String.IsEqual(ListItem.DBTYPE,tvshow) + [!String.IsEmpty(Container(99950).ListItem.Property(Last_Aired.Long)) | !String.IsEmpty(Container(99950).ListItem.Property(Next_Aired.Long))]</visible>
+				<visible>String.IsEmpty(ListItem.Director) + String.IsEqual(ListItem.DBTYPE,tvshow) + [!String.IsEmpty(Container(99950).ListItem.Property(Last_Aired.Custom)) | !String.IsEmpty(Container(99950).ListItem.Property(Next_Aired.Custom))]</visible>
 				<animation condition="Control.HasFocus(500)" effect="fade" end="0" start="100" time="0">Conditional</animation>
 				<animation condition="!Control.HasFocus(500)" delay="200" effect="fade" end="100" start="0" time="80">Conditional</animation>
 				<control type="label">
@@ -395,7 +395,7 @@
 							<height>42</height>
 							<font>Bold42</font>
 							<textcolor>ffffffff</textcolor>
-							<shadowcolor>80000000</shadowcolor>
+							<shadowcolor>ShadowColour</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label) + String.IsEmpty(Window(home).Property(RecommendedVideos))</visible>
 							<animation condition="String.IsEmpty(ListItem.Label2)" effect="slide" end="0,31" start="0,0" time="0">Conditional</animation>
@@ -408,7 +408,7 @@
 							<font>Med28</font>
 							<scroll>false</scroll>
 							<textcolor>ffffffff</textcolor>
-							<shadowcolor>80000000</shadowcolor>
+							<shadowcolor>ShadowColour</shadowcolor>
 							<label>$INFO[ListItem.Label2,$LOCALIZE[20347] ,]</label>
 							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label2)</visible>
 						</control>
@@ -472,7 +472,7 @@
 							<font>Bold42</font>
 							<scroll>false</scroll>
 							<textcolor>ffffffff</textcolor>
-							<shadowcolor>80000000</shadowcolor>
+							<shadowcolor>ShadowColour</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label) + String.IsEmpty(Window(home).Property(RecommendedVideos))</visible>
 							<animation condition="String.IsEmpty(ListItem.Label2)" effect="slide" end="0,31" start="0,0" time="0">Conditional</animation>
@@ -488,7 +488,7 @@
 							<font>Med28</font>
 							<scroll>false</scroll>
 							<textcolor>ffffffff</textcolor>
-							<shadowcolor>80000000</shadowcolor>
+							<shadowcolor>ShadowColour</shadowcolor>
 							<label>$INFO[ListItem.Label2,$LOCALIZE[20347] ,]</label>
 							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label2)</visible>
 							<include content="FocusedListIDAnimation">

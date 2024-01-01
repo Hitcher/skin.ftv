@@ -24,7 +24,7 @@
 				<height>32</height>
 				<font>Light32</font>
 				<textcolor>ffffffff</textcolor>
-				<shadowcolor>ff080808</shadowcolor>
+				<shadowcolor>ShadowColour</shadowcolor>
 				<label>31164</label>
 			</control>
 			<!-- Next episode thumb -->
@@ -78,7 +78,7 @@
 				<height>24</height>
 				<font>Light24</font>
 				<textcolor>ffffffff</textcolor>
-				<shadowcolor>ff080808</shadowcolor>
+				<shadowcolor>ShadowColour</shadowcolor>
 				<label>$INFO[Window.Property(season),$LOCALIZE[20373] ]$INFO[Window.Property(episode),$COMMA Ep. ]</label>
 			</control>
 		</control>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<!-- skinsettings -->
-	<backgroundcolor>0xff12161b</backgroundcolor>
+	<backgroundcolor>BackgroundColour</backgroundcolor>
 	<defaultcontrol always="true">9</defaultcontrol>
 	<onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=99&amp;levels=0&amp;group=mainmenu|shutdown)</onunload>
 	<controls>
@@ -57,7 +57,7 @@
 				<control type="group">
 					<width>333</width>
 					<height>497</height>
-					<animation center="134,240" condition="True" effect="zoom" end="84.5" start="84.5">Conditional</animation>
+					<animation center="134,240" condition="true" effect="zoom" end="84.5" start="84.5">Conditional</animation>
 					<control type="image">
 						<left>-24</left>
 						<width>333</width>
@@ -95,7 +95,7 @@
 				<control type="group">
 					<width>333</width>
 					<height>497</height>
-					<animation center="134,240" condition="True" effect="zoom" end="84.5" start="84.5">Conditional</animation>
+					<animation center="134,240" condition="true" effect="zoom" end="84.5" start="84.5">Conditional</animation>
 					<control type="image">
 						<left>-24</left>
 						<width>333</width>
@@ -133,7 +133,7 @@
 				<control type="group">
 					<width>333</width>
 					<height>497</height>
-					<animation center="134,240" condition="True" effect="zoom" end="84.5" start="84.5">Conditional</animation>
+					<animation center="134,240" condition="true" effect="zoom" end="84.5" start="84.5">Conditional</animation>
 					<control type="image">
 						<left>-24</left>
 						<width>333</width>
@@ -220,8 +220,8 @@
 				<effect easing="inout" end="0,0" start="500,0" time="200" tween="sine" type="slide"/>
 			</animation>
 			<animation condition="Window.Previous(settingscategory.xml)" reversible="false" type="WindowClose">
-				<effect end="0" start="100" time="125" type="fade"/>
-				<effect easing="inout" end="500,0" start="0,0" time="125" tween="sine" type="slide"/>
+				<effect end="0" start="100" time="120" type="fade"/>
+				<effect easing="inout" end="500,0" start="0,0" time="120" tween="sine" type="slide"/>
 			</animation>
 			<animation condition="!Window.Previous(settingscategory.xml)" reversible="false" type="WindowOpen">
 				<effect end="100" start="0" time="200" type="fade"/>
@@ -229,23 +229,17 @@
 				<effect center="auto" easing="inout" end="100" start="84.5" time="200" tween="sine" type="zoom"/>
 			</animation>
 			<animation condition="!Window.Previous(settingscategory.xml)" reversible="false" type="WindowClose">
-				<effect end="0" start="100" time="125" type="fade"/>
+				<effect end="0" start="100" time="120" type="fade"/>
 			</animation>
-			<control type="image">
-				<width>1437</width>
-				<height>480</height>
-				<texture>settings/category_back.png</texture>
-			</control>
-			<control type="label">
-				<left>40</left>
-				<top>14</top>
-				<height>30</height>
-				<width>419</width>
-				<aligny>center</aligny>
-				<font>Bold30</font>
-				<label>20077</label>
-				<textcolor>ffdadada</textcolor>
-			</control>
+			<include content="DialogBack">
+				<param name="dialog_back_width" value="1437"/>
+				<param name="dialog_heading_width" value="958"/>
+				<param name="dialog_shadow_1_left" value="958"/>
+			</include>
+			<include content="DialogHeading">
+				<param name="dialog_heading_label_width" value="878"/>
+				<param name="dialog_heading_label" value="20077"/>
+			</include>
 			<control id="9" type="grouplist">
 				<top>60</top>
 				<width>958</width>
@@ -262,11 +256,10 @@
 					<font>Light32</font>
 					<label>$LOCALIZE[31049]</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
-					<onclick condition="!Skin.HasSetting(CustomHome)">Skin.SetBool(CustomHome)</onclick>
 					<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</onclick>
 				</control>
 				<control id="19" type="button">
@@ -275,12 +268,12 @@
 					<font>Light32</font>
 					<label>$LOCALIZE[31255]</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
-					<visible>Skin.HasSetting(CustomHome)</visible>
-					<onclick>Skin.Reset(CustomHome)</onclick>
+					<onclick>Skin.Reset(firstrun)</onclick>
+					<onclick>ReplaceWindow(startup)</onclick>
 				</control>
 				<control id="11" type="button">
 					<width>958</width>
@@ -288,8 +281,8 @@
 					<font>Light32</font>
 					<label>$LOCALIZE[31114]</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=shutdown)</onclick>
@@ -300,8 +293,8 @@
 					<font>Light32</font>
 					<label>$LOCALIZE[31080]</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<radiowidth>125</radiowidth>
 					<radioheight>53</radioheight>
 					<radioposx>813</radioposx>
@@ -322,8 +315,8 @@
 					<font>Light32</font>
 					<label>$LOCALIZE[31131]</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<radiowidth>125</radiowidth>
 					<radioheight>53</radioheight>
 					<radioposx>813</radioposx>
@@ -344,8 +337,8 @@
 					<font>Light32</font>
 					<label>$LOCALIZE[31133]</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<radiowidth>125</radiowidth>
 					<radioheight>53</radioheight>
 					<radioposx>813</radioposx>
@@ -366,8 +359,8 @@
 					<font>Light32</font>
 					<label>$LOCALIZE[31134]</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<radiowidth>125</radiowidth>
 					<radioheight>53</radioheight>
 					<radioposx>813</radioposx>
@@ -388,8 +381,8 @@
 					<font>Light32</font>
 					<label>31061</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<radiowidth>125</radiowidth>
 					<radioheight>53</radioheight>
 					<radioposx>813</radioposx>
@@ -411,8 +404,8 @@
 					<label>$LOCALIZE[31257]</label>
 					<label2>$VAR[TomatoRating]</label2>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<onclick>Skin.SelectBool(31257, 31258|TomatoMeterAllCritics, 31259|TomatoMeterAudienceScore, 31260|AverageRatingAllCritics, 31261|AverageRatingAudienceScore)</onclick>
@@ -424,8 +417,8 @@
 					<label>$LOCALIZE[31135]</label>
 					<label2>$VAR[RatingCountry]</label2>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<onclick>Skin.SelectBool(31135, 31001|US, 31002|UK, 31003|Germany)</onclick>
@@ -436,8 +429,8 @@
 					<font>Light32</font>
 					<label>31149</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<radiowidth>125</radiowidth>
 					<radioheight>53</radioheight>
 					<radioposx>813</radioposx>
@@ -458,8 +451,8 @@
 					<font>Light32</font>
 					<label>31041</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<radiowidth>125</radiowidth>
 					<radioheight>53</radioheight>
 					<radioposx>813</radioposx>
@@ -480,8 +473,8 @@
 					<font>Light32</font>
 					<label>31042</label>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<radiowidth>125</radiowidth>
 					<radioheight>53</radioheight>
 					<radioposx>813</radioposx>

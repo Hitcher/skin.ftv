@@ -5,7 +5,7 @@
 		<aligny>center</aligny>
 		<font>Med22</font>
 		<textcolor>ffffffff</textcolor>
-		<disabledcolor>DisabledColor</disabledcolor>
+		<disabledcolor>DisabledColour</disabledcolor>
 		<selectedcolor>ffffffff</selectedcolor>
 		<scrollsuffix>         |         </scrollsuffix>
 	</default>
@@ -27,8 +27,8 @@
 		<textcolor>ffd8d8d8</textcolor>
 		<focusedcolor>ff000000</focusedcolor>
 		<selectedcolor>ffffffff</selectedcolor>
-		<invalidcolor>DisabledColor</invalidcolor>
-		<disabledcolor>DisabledColor</disabledcolor>
+		<invalidcolor>DisabledColour</invalidcolor>
+		<disabledcolor>DisabledColour</disabledcolor>
 		<texturefocus border="8">dialogs/DialogButtonFO.png</texturefocus>
 		<texturenofocus border="8">dialogs/DialogButtonNF.png</texturenofocus>
 		<pulseonselect>false</pulseonselect>
@@ -42,7 +42,7 @@
 		<textcolor>ffd8d8d8</textcolor>
 		<focusedcolor>ff000000</focusedcolor>
 		<selectedcolor>ffffffff</selectedcolor>
-		<disabledcolor>DisabledColor</disabledcolor>
+		<disabledcolor>DisabledColour</disabledcolor>
 		<texturefocus/>
 		<texturenofocus/>
 		<alttexturenofocus/>
@@ -58,7 +58,7 @@
 		<textcolor>ffd8d8d8</textcolor>
 		<focusedcolor>ff000000</focusedcolor>
 		<selectedcolor>ffffffff</selectedcolor>
-		<disabledcolor>DisabledColor</disabledcolor>
+		<disabledcolor>DisabledColour</disabledcolor>
 		<radiowidth>100</radiowidth>
 		<radioheight>58</radioheight>
 		<textureradioonfocus/>
@@ -76,17 +76,17 @@
 		<textcolor>ffd8d8d8</textcolor>
 		<focusedcolor>ff000000</focusedcolor>
 		<selectedcolor>ffffffff</selectedcolor>
-		<disabledcolor>DisabledColor</disabledcolor>
+		<disabledcolor>DisabledColour</disabledcolor>
 		<spinwidth>32</spinwidth>
 		<spinheight>21</spinheight>
 		<texturenofocus/>
 		<texturefocus/>
-		<textureup colordiffuse="NotFocusedColor">dialogs/SpinUp.png</textureup>
-		<texturedown colordiffuse="NotFocusedColor">dialogs/SpinDown.png</texturedown>
-		<textureupfocus colordiffuse="FocusedColor">dialogs/SpinUp.png</textureupfocus>
-		<texturedownfocus colordiffuse="FocusedColor">dialogs/SpinDown.png</texturedownfocus>
-		<textureupdisabled colordiffuse="DisabledColor">dialogs/SpinUp.png</textureupdisabled>
-		<texturedowndisabled colordiffuse="DisabledColor">dialogs/SpinDown.png</texturedowndisabled>
+		<textureup colordiffuse="NotFocusedColour">dialogs/SpinUp.png</textureup>
+		<texturedown colordiffuse="NotFocusedColour">dialogs/SpinDown.png</texturedown>
+		<textureupfocus colordiffuse="FocusedColour">dialogs/SpinUp.png</textureupfocus>
+		<texturedownfocus colordiffuse="FocusedColour">dialogs/SpinDown.png</texturedownfocus>
+		<textureupdisabled colordiffuse="DisabledColour">dialogs/SpinUp.png</textureupdisabled>
+		<texturedowndisabled colordiffuse="DisabledColour">dialogs/SpinDown.png</texturedowndisabled>
 		<reverse>yes</reverse>
 		<pulseonselect>false</pulseonselect>
 	</default>
@@ -99,15 +99,15 @@
 		<textcolor>ffd8d8d8</textcolor>
 		<focusedcolor>ff000000</focusedcolor>
 		<selectedcolor>ffffffff</selectedcolor>
-		<disabledcolor>DisabledColor</disabledcolor>
+		<disabledcolor>DisabledColour</disabledcolor>
 		<spinwidth>32</spinwidth>
 		<spinheight>21</spinheight>
-		<textureup colordiffuse="NotFocusedColor">dialogs/SpinUp.png</textureup>
-		<texturedown colordiffuse="NotFocusedColor">dialogs/SpinDown.png</texturedown>
-		<textureupfocus colordiffuse="FocusedColor">dialogs/SpinUp.png</textureupfocus>
-		<texturedownfocus colordiffuse="FocusedColor">dialogs/SpinDown.png</texturedownfocus>
-		<textureupdisabled colordiffuse="DisabledColor">dialogs/SpinUp.png</textureupdisabled>
-		<texturedowndisabled colordiffuse="DisabledColor">dialogs/SpinDown.png</texturedowndisabled>
+		<textureup colordiffuse="NotFocusedColour">dialogs/SpinUp.png</textureup>
+		<texturedown colordiffuse="NotFocusedColour">dialogs/SpinDown.png</texturedown>
+		<textureupfocus colordiffuse="FocusedColour">dialogs/SpinUp.png</textureupfocus>
+		<texturedownfocus colordiffuse="FocusedColour">dialogs/SpinDown.png</texturedownfocus>
+		<textureupdisabled colordiffuse="DisabledColour">dialogs/SpinUp.png</textureupdisabled>
+		<texturedowndisabled colordiffuse="DisabledColour">dialogs/SpinDown.png</texturedowndisabled>
 		<reverse>yes</reverse>
 		<pulseonselect>false</pulseonselect>
 	</default>
@@ -120,15 +120,15 @@
 		<textcolor>ffd8d8d8</textcolor>
 		<focusedcolor>ff000000</focusedcolor>
 		<selectedcolor>ffffffff</selectedcolor>
-		<disabledcolor>DisabledColor</disabledcolor>
+		<disabledcolor>DisabledColour</disabledcolor>
 		<texturefocus border="3">settings/button_focus.png</texturefocus>
 		<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 		<sliderwidth>150</sliderwidth>
 		<sliderheight>11</sliderheight>
 		<texturesliderbar border="4">osd/progress_back.png</texturesliderbar>
-		<texturesliderbardisabled colordiffuse="DisabledColor" border="4">osd/progress_back.png</texturesliderbardisabled>
+		<texturesliderbardisabled colordiffuse="DisabledColour" border="4">osd/progress_back.png</texturesliderbardisabled>
 		<textureslidernib border="4">osd/progress_cache.png</textureslidernib>
-		<textureslidernibdisabled colordiffuse="DisabledColor" border="4">osd/progress_cache.png</textureslidernibdisabled>
+		<textureslidernibdisabled colordiffuse="DisabledColour" border="4">osd/progress_cache.png</textureslidernibdisabled>
 		<textureslidernibfocus border="4">osd/progress_bar.png</textureslidernibfocus>
 		<pulseonselect>false</pulseonselect>
 	</default>
@@ -137,9 +137,9 @@
 		<height>23</height>
 		<orientation>horizontal</orientation>
 		<texturesliderbar border="4">osd/progress_back.png</texturesliderbar>
-		<texturesliderbardisabled colordiffuse="DisabledColor" border="4">osd/progress_back.png</texturesliderbardisabled>
+		<texturesliderbardisabled colordiffuse="DisabledColour" border="4">osd/progress_back.png</texturesliderbardisabled>
 		<textureslidernib border="4">osd/progress_cache.png</textureslidernib>
-		<textureslidernibdisabled colordiffuse="DisabledColor" border="4">osd/progress_cache.png</textureslidernibdisabled>
+		<textureslidernibdisabled colordiffuse="DisabledColour" border="4">osd/progress_cache.png</textureslidernibdisabled>
 		<textureslidernibfocus border="4">osd/progress_bar.png</textureslidernibfocus>
 	</default>
 	<default type="progress">
@@ -152,7 +152,7 @@
 	</default>
 	<default type="textbox">
 		<font>Med22</font>
-		<autoscroll delay="8000" repeat="12000" time="4000">True</autoscroll>
+		<autoscroll delay="8000" repeat="12000" time="4000">true</autoscroll>
 	</default>
 	<default type="edit">
 		<height>66</height>
@@ -162,8 +162,8 @@
 		<textcolor>ffd8d8d8</textcolor>
 		<focusedcolor>ff000000</focusedcolor>
 		<selectedcolor>ffffffff</selectedcolor>
-		<disabledcolor>DisabledColor</disabledcolor>
-		<invalidcolor>DisabledColor</invalidcolor>
+		<disabledcolor>DisabledColour</disabledcolor>
+		<invalidcolor>DisabledColour</invalidcolor>
 		<texturefocus/>
 		<pulseonselect>no</pulseonselect>
 		<hinttext>...</hinttext>
@@ -177,8 +177,8 @@
 		<textcolor>ffd8d8d8</textcolor>
 		<focusedcolor>ff000000</focusedcolor>
 		<selectedcolor>ffffffff</selectedcolor>
-		<invalidcolor>DisabledColor</invalidcolor>
-		<disabledcolor>DisabledColor</disabledcolor>
+		<invalidcolor>DisabledColour</invalidcolor>
+		<disabledcolor>DisabledColour</disabledcolor>
 		<texturefocus border="8">dialogs/DialogButtonFO.png</texturefocus>
 		<texturenofocus border="8">dialogs/DialogButtonNF.png</texturenofocus>
 		<pulseonselect>false</pulseonselect>

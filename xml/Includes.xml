@@ -13,7 +13,7 @@
 	<include file="Includes_Dialog_Default_Video_Information.xml"/>
 	<include file="Includes_DialogSelect.xml"/>
 	<include file="Includes_DialogSettings.xml"/>
-	<include file="Includes_Games.xml"/>
+	<include file="Includes_DialogGameControllers.xml"/>
 	<include file="Includes_Home_Widgets_Setup.xml"/>
 	<include file="Includes_VideoInfoCast.xml"/>
 	<include file="Viewtype50.xml"/>
@@ -23,9 +23,9 @@
 	<include file="Viewtype54.xml"/>
 	<include file="Viewtype55.xml"/>
 	<include file="Viewtype56.xml"/>
-	<include file="Viewtype57.xml"/>
 	<include file="ForcedViewtype60.xml"/>
 	<include file="ForcedViewtype61.xml"/>
+	<include file="script-skinviewtypes-includes.xml"/>
 	<include file="script-skinshortcuts-includes.xml"/>
 	<include file="script-skinshortcuts-includes-default.xml"/>
 	<!-- Fullscreen dimensions -->
@@ -39,7 +39,7 @@
 	<include name="BackgroundImage">
 		<control type="image">
 			<include>FullscreenDimensions</include>
-			<texture>common/background_default.png</texture>
+			<texture colordiffuse="BackgroundColour">common/white_square.png</texture>
 		</control>
 	</include>
 	<!-- Debug window label -->
@@ -47,7 +47,7 @@
 		<width>1920</width>
 		<height>21</height>
 		<textcolor>FF0000FF</textcolor>
-		<shadowcolor>FF000000</shadowcolor>
+		<shadowcolor>ShadowColour</shadowcolor>
 		<font>font13</font>
 		<align>left</align>
 	</include>
@@ -56,7 +56,7 @@
 		<width>1920</width>
 		<height>21</height>
 		<textcolor>FFFF0000</textcolor>
-		<shadowcolor>FF000000</shadowcolor>
+		<shadowcolor>ShadowColour</shadowcolor>
 		<font>font13</font>
 		<align>left</align>
 	</include>
@@ -65,7 +65,7 @@
 		<width>1400</width>
 		<height>21</height>
 		<textcolor>FFFF0000</textcolor>
-		<shadowcolor>FF000000</shadowcolor>
+		<shadowcolor>ShadowColour</shadowcolor>
 		<font>font13</font>
 		<align>right</align>
 	</include>
@@ -126,6 +126,12 @@
 		<orientation>horizontal</orientation>
 		<itemlayout height="1" width="1"/>
 		<focusedlayout height="1" width="1"/>
+	</include>
+	<!-- Cast list -->
+	<include name="CastList">
+		<control type="list" id="50">
+			<include>HiddenList</include>
+		</control>
 	</include>
 	<!-- Fanart -->
 	<include name="Fanart">

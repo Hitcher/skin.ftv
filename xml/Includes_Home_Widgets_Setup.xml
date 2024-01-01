@@ -19,6 +19,7 @@
 					<width>308</width>
 					<height>80</height>
 					<texture border="2">views/default_overlay.png</texture>
+					<visible>!String.Contains(ListItem.Property(Icon1),Default)</visible>
 				</control>
 				<control type="image">
 					<left>10</left>
@@ -36,7 +37,7 @@
 					<font>Bold28</font>
 					<scroll>false</scroll>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>88000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<label>$INFO[ListItem.Property(InfoLabel1)]</label>
 					<visible>Player.Playing + String.IsEqual(MusicPlayer.Album,ListItem.Property(InfoLabel1))</visible>
 				</control>
@@ -48,7 +49,7 @@
 					<font>Bold28</font>
 					<scroll>false</scroll>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>88000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<label>$INFO[ListItem.Property(InfoLabel1)]</label>
 					<visible>!Player.Playing | !String.IsEqual(MusicPlayer.Album,ListItem.Property(InfoLabel1))</visible>
 				</control>
@@ -77,6 +78,7 @@
 					<width>308</width>
 					<height>80</height>
 					<texture border="2">views/default_overlay.png</texture>
+					<visible>!String.Contains(ListItem.Property(Icon2),Default)</visible>
 				</control>
 				<control type="image">
 					<left>10</left>
@@ -94,7 +96,7 @@
 					<font>Bold28</font>
 					<scroll>false</scroll>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>88000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<label>$INFO[ListItem.Property(InfoLabel2)]</label>
 					<visible>Player.Playing + String.IsEqual(MusicPlayer.Album,ListItem.Property(InfoLabel2))</visible>
 				</control>
@@ -106,7 +108,7 @@
 					<font>Bold28</font>
 					<scroll>false</scroll>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>88000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<label>$INFO[ListItem.Property(InfoLabel2)]</label>
 					<visible>!Player.Playing | !String.IsEqual(MusicPlayer.Album,ListItem.Property(InfoLabel2))</visible>
 				</control>
@@ -135,6 +137,7 @@
 					<width>308</width>
 					<height>80</height>
 					<texture border="2">views/default_overlay.png</texture>
+					<visible>!String.Contains(ListItem.Property(Icon3),Default)</visible>
 				</control>
 				<control type="image">
 					<left>10</left>
@@ -152,7 +155,7 @@
 					<font>Bold28</font>
 					<scroll>false</scroll>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>88000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<label>$INFO[ListItem.Property(InfoLabel3)]</label>
 					<visible>Player.Playing + String.IsEqual(MusicPlayer.Album,ListItem.Property(InfoLabel3))</visible>
 				</control>
@@ -164,7 +167,7 @@
 					<font>Bold28</font>
 					<scroll>false</scroll>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>88000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<label>$INFO[ListItem.Property(InfoLabel3)]</label>
 					<visible>!Player.Playing | !String.IsEqual(MusicPlayer.Album,ListItem.Property(InfoLabel3))</visible>
 				</control>
@@ -193,6 +196,7 @@
 					<width>308</width>
 					<height>80</height>
 					<texture border="2">views/default_overlay.png</texture>
+					<visible>!String.Contains(ListItem.Property(Icon4),Default)</visible>
 				</control>
 				<control type="image">
 					<left>10</left>
@@ -210,7 +214,7 @@
 					<font>Bold28</font>
 					<scroll>false</scroll>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>88000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<label>$INFO[ListItem.Property(InfoLabel4)]</label>
 					<visible>Player.Playing + String.IsEqual(MusicPlayer.Album,ListItem.Property(InfoLabel4))</visible>
 				</control>
@@ -222,7 +226,7 @@
 					<font>Bold28</font>
 					<scroll>false</scroll>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>88000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<label>$INFO[ListItem.Property(InfoLabel4)]</label>
 					<visible>!Player.Playing | !String.IsEqual(MusicPlayer.Album,ListItem.Property(InfoLabel4))</visible>
 				</control>
@@ -256,6 +260,7 @@
 					<width>308</width>
 					<height>80</height>
 					<texture border="2">views/default_overlay.png</texture>
+					<visible>!String.Contains(ListItem.Property(Icon1),Default)</visible>
 				</control>
 				<control type="image">
 					<left>10</left>
@@ -273,7 +278,7 @@
 					<font>Bold28</font>
 					<scroll>false</scroll>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>88000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<label>$INFO[ListItem.Property(InfoLabel1)]</label>
 					<visible>Player.Playing + String.IsEqual(MusicPlayer.Album,ListItem.Property(InfoLabel1))</visible>
 				</control>
@@ -285,7 +290,7 @@
 					<font>Bold28</font>
 					<scroll>false</scroll>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>88000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<label>$INFO[ListItem.Property(InfoLabel1)]</label>
 					<visible>!Player.Playing | !String.IsEqual(MusicPlayer.Album,ListItem.Property(InfoLabel1))</visible>
 				</control>
@@ -315,6 +320,7 @@
 					<width>308</width>
 					<height>80</height>
 					<texture border="2">views/default_overlay.png</texture>
+					<visible>!String.Contains(ListItem.Property(Icon2),Default)</visible>
 				</control>
 				<control type="image">
 					<left>10</left>
@@ -332,7 +338,7 @@
 					<font>Bold28</font>
 					<scroll>false</scroll>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>88000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<label>$INFO[ListItem.Property(InfoLabel2)]</label>
 					<visible>Player.Playing + String.IsEqual(MusicPlayer.Album,ListItem.Property(InfoLabel2))</visible>
 				</control>
@@ -344,7 +350,7 @@
 					<font>Bold28</font>
 					<scroll>false</scroll>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>88000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<label>$INFO[ListItem.Property(InfoLabel2)]</label>
 					<visible>!Player.Playing | !String.IsEqual(MusicPlayer.Album,ListItem.Property(InfoLabel2))</visible>
 				</control>
@@ -374,6 +380,7 @@
 					<width>308</width>
 					<height>80</height>
 					<texture border="2">views/default_overlay.png</texture>
+					<visible>!String.Contains(ListItem.Property(Icon3),Default)</visible>
 				</control>
 				<control type="image">
 					<left>10</left>
@@ -391,7 +398,7 @@
 					<font>Bold28</font>
 					<scroll>false</scroll>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>88000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<label>$INFO[ListItem.Property(InfoLabel3)]</label>
 					<visible>Player.Playing + String.IsEqual(MusicPlayer.Album,ListItem.Property(InfoLabel3))</visible>
 				</control>
@@ -403,7 +410,7 @@
 					<font>Bold28</font>
 					<scroll>false</scroll>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>88000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<label>$INFO[ListItem.Property(InfoLabel3)]</label>
 					<visible>!Player.Playing | !String.IsEqual(MusicPlayer.Album,ListItem.Property(InfoLabel3))</visible>
 				</control>
@@ -433,6 +440,7 @@
 					<width>308</width>
 					<height>80</height>
 					<texture border="2">views/default_overlay.png</texture>
+					<visible>!String.Contains(ListItem.Property(Icon4),Default)</visible>
 				</control>
 				<control type="image">
 					<left>10</left>
@@ -450,7 +458,7 @@
 					<font>Bold28</font>
 					<scroll>false</scroll>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>88000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<label>$INFO[ListItem.Property(InfoLabel4)]</label>
 					<visible>Player.Playing + String.IsEqual(MusicPlayer.Album,ListItem.Property(InfoLabel4))</visible>
 				</control>
@@ -462,7 +470,7 @@
 					<font>Bold28</font>
 					<scroll>false</scroll>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>88000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<label>$INFO[ListItem.Property(InfoLabel4)]</label>
 					<visible>!Player.Playing | !String.IsEqual(MusicPlayer.Album,ListItem.Property(InfoLabel4))</visible>
 				</control>
@@ -678,6 +686,7 @@
 					<width>308</width>
 					<height>80</height>
 					<texture border="2">views/default_overlay.png</texture>
+					<visible>!String.Contains(ListItem.Property(Icon1),Default)</visible>
 				</control>
 				<control type="label">
 					<left>11</left>
@@ -687,7 +696,7 @@
 					<font>Bold28</font>
 					<scroll>false</scroll>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>88000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<label>$INFO[ListItem.Property(InfoLabel1)]</label>
 				</control>
 			</control>
@@ -715,6 +724,7 @@
 					<width>308</width>
 					<height>80</height>
 					<texture border="2">views/default_overlay.png</texture>
+					<visible>!String.Contains(ListItem.Property(Icon2),Default)</visible>
 				</control>
 				<control type="label">
 					<left>11</left>
@@ -724,7 +734,7 @@
 					<font>Bold28</font>
 					<scroll>false</scroll>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>88000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<label>$INFO[ListItem.Property(InfoLabel2)]</label>
 				</control>
 			</control>
@@ -752,6 +762,7 @@
 					<width>308</width>
 					<height>80</height>
 					<texture border="2">views/default_overlay.png</texture>
+					<visible>!String.Contains(ListItem.Property(Icon3),Default)</visible>
 				</control>
 				<control type="label">
 					<left>11</left>
@@ -761,7 +772,7 @@
 					<font>Bold28</font>
 					<scroll>false</scroll>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>88000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<label>$INFO[ListItem.Property(InfoLabel3)]</label>
 				</control>
 			</control>
@@ -789,6 +800,7 @@
 					<width>308</width>
 					<height>80</height>
 					<texture border="2">views/default_overlay.png</texture>
+					<visible>!String.Contains(ListItem.Property(Icon4),Default)</visible>
 				</control>
 				<control type="label">
 					<left>11</left>
@@ -798,7 +810,7 @@
 					<font>Bold28</font>
 					<scroll>false</scroll>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>88000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<label>$INFO[ListItem.Property(InfoLabel4)]</label>
 				</control>
 			</control>
@@ -831,6 +843,7 @@
 					<width>308</width>
 					<height>80</height>
 					<texture border="2">views/default_overlay.png</texture>
+					<visible>!String.Contains(ListItem.Property(Icon1),Default)</visible>
 				</control>
 				<control type="label">
 					<left>11</left>
@@ -840,7 +853,7 @@
 					<font>Bold28</font>
 					<scroll>false</scroll>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>88000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<label>$INFO[ListItem.Property(InfoLabel1)]</label>
 				</control>
 			</control>
@@ -868,6 +881,7 @@
 					<width>308</width>
 					<height>80</height>
 					<texture border="2">views/default_overlay.png</texture>
+					<visible>!String.Contains(ListItem.Property(Icon2),Default)</visible>
 				</control>
 				<control type="label">
 					<left>11</left>
@@ -877,7 +891,7 @@
 					<font>Bold28</font>
 					<scroll>false</scroll>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>88000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<label>$INFO[ListItem.Property(InfoLabel2)]</label>
 				</control>
 			</control>
@@ -905,6 +919,7 @@
 					<width>308</width>
 					<height>80</height>
 					<texture border="2">views/default_overlay.png</texture>
+					<visible>!String.Contains(ListItem.Property(Icon3),Default)</visible>
 				</control>
 				<control type="label">
 					<left>11</left>
@@ -914,7 +929,7 @@
 					<font>Bold28</font>
 					<scroll>false</scroll>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>88000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<label>$INFO[ListItem.Property(InfoLabel3)]</label>
 				</control>
 			</control>
@@ -942,6 +957,7 @@
 					<width>308</width>
 					<height>80</height>
 					<texture border="2">views/default_overlay.png</texture>
+					<visible>!String.Contains(ListItem.Property(Icon4),Default)</visible>
 				</control>
 				<control type="label">
 					<left>11</left>
@@ -951,7 +967,7 @@
 					<font>Bold28</font>
 					<scroll>false</scroll>
 					<textcolor>ffffffff</textcolor>
-					<shadowcolor>88000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<label>$INFO[ListItem.Property(InfoLabel4)]</label>
 				</control>
 			</control>
@@ -4708,5 +4724,487 @@
 				<onclick>ActivateWindow(favouritesbrowser)</onclick>
 			</item>
 		</content>
+	</include>
+	<!-- Hidden Button Action -->
+	<include name="HiddenButtonAction">
+		<onup condition="String.IsEqual(Container(100).CurrentItem,1)">noop</onup>
+		<onup condition="!String.IsEqual(Container(100).CurrentItem,1)">Control.Move(100,-1)</onup>
+		<onup condition="!String.IsEqual(Container(100).CurrentItem,1)">Control.Move(200,-1)</onup>
+		<onup condition="!String.IsEqual(Container(100).CurrentItem,1)">Control.Move(300,-1)</onup>
+		<onup condition="!String.IsEqual(Container(100).CurrentItem,1)">Control.Move(400,-1)</onup>
+		<onup condition="!String.IsEqual(Container(100).CurrentItem,1)">Control.Move(500,-1)</onup>
+		<onup condition="!String.IsEqual(Container(100).CurrentItem,1)">Control.Move(600,-1)</onup>
+		<ondown condition="!String.IsEqual(Container(100).CurrentItem,8)">Control.Move(100,1)</ondown>
+		<ondown condition="!String.IsEqual(Container(100).CurrentItem,8)">Control.Move(200,1)</ondown>
+		<ondown condition="!String.IsEqual(Container(100).CurrentItem,8)">Control.Move(300,1)</ondown>
+		<ondown condition="!String.IsEqual(Container(100).CurrentItem,8)">Control.Move(400,1)</ondown>
+		<ondown condition="!String.IsEqual(Container(100).CurrentItem,8)">Control.Move(500,1)</ondown>
+		<ondown condition="!String.IsEqual(Container(100).CurrentItem,8)">Control.Move(600,1)</ondown>
+		<ondown condition="String.IsEqual(Container(100).CurrentItem,8)">SetFocus(9001)</ondown>
+	</include>
+	<!-- Home widgets defaults -->
+	<include name="1000-WidgetDefaults">
+		<onclick>Skin.SetString(1000-WidgetAction-1,ActivateWindow(Videos,special://skin/extras/video/InProgressTVShows.xsp,return))</onclick>
+		<onclick>Skin.SetString(1000-WidgetAction-2,ActivateWindow(Videos,special://skin/extras/video/RecentlyAddedMovies.xsp,return))</onclick>
+		<onclick>Skin.SetString(1000-WidgetAction-3,ActivateWindow(Videos,special://skin/extras/video/RecentlyUpdatedTVShows.xsp,return))</onclick>
+		<onclick>Skin.SetString(1000-WidgetAction-4,ActivateWindow(Videos,special://skin/extras/video/InProgressMovies.xsp,return))</onclick>
+		<onclick>Skin.SetString(1000-WidgetAction-5,ActivateWindow(Music,musicdb://recentlyplayedalbums/,return))</onclick>
+		<onclick>Skin.SetString(1000-WidgetAction-6,ActivateWindow(Music,musicdb://recentlyaddedalbums/,return))</onclick>
+		<onclick>Skin.Reset(1000-WidgetAction-7)</onclick>
+		<onclick>Skin.Reset(1000-WidgetAction-8)</onclick>
+		<onclick>Skin.SetString(1000-WidgetList-1,special://skin/extras/video/InProgressTVShows.xsp)</onclick>
+		<onclick>Skin.SetString(1000-WidgetList-2,special://skin/extras/video/RecentlyAddedMovies.xsp)</onclick>
+		<onclick>Skin.SetString(1000-WidgetList-3,special://skin/extras/video/RecentlyUpdatedTVShows.xsp)</onclick>
+		<onclick>Skin.SetString(1000-WidgetList-4,special://skin/extras/video/InProgressMovies.xsp)</onclick>
+		<onclick>Skin.SetString(1000-WidgetList-5,musicdb://recentlyplayedalbums/)</onclick>
+		<onclick>Skin.SetString(1000-WidgetList-6,musicdb://recentlyaddedalbums/)</onclick>
+		<onclick>Skin.Reset(1000-WidgetList-7)</onclick>
+		<onclick>Skin.Reset(1000-WidgetList-8)</onclick>
+		<onclick>Skin.SetString(1000-WidgetLabel-1,$LOCALIZE[31177])</onclick>
+		<onclick>Skin.SetString(1000-WidgetLabel-2,$LOCALIZE[31167])</onclick>
+		<onclick>Skin.SetString(1000-WidgetLabel-3,$LOCALIZE[31175])</onclick>
+		<onclick>Skin.SetString(1000-WidgetLabel-4,$LOCALIZE[31169])</onclick>
+		<onclick>Skin.SetString(1000-WidgetLabel-5,$LOCALIZE[31183])</onclick>
+		<onclick>Skin.SetString(1000-WidgetLabel-6,$LOCALIZE[31185])</onclick>
+		<onclick>Skin.Reset(1000-WidgetLabel-7)</onclick>
+		<onclick>Skin.Reset(1000-WidgetLabel-8)</onclick>
+		<onclick>Skin.SetString(1000-WidgetSortBy-1,lastplayed)</onclick>
+		<onclick>Skin.SetString(1000-WidgetSortBy-2,dateadded)</onclick>
+		<onclick>Skin.SetString(1000-WidgetSortBy-3,dateadded)</onclick>
+		<onclick>Skin.SetString(1000-WidgetSortBy-4,lastplayed)</onclick>
+		<onclick>Skin.SetString(1000-WidgetSortBy-5,lastplayed)</onclick>
+		<onclick>Skin.SetString(1000-WidgetSortBy-6,dateadded)</onclick>
+		<onclick>Skin.Reset(1000-WidgetSortBy-7)</onclick>
+		<onclick>Skin.Reset(1000-WidgetSortBy-8)</onclick>
+		<onclick>Skin.SetString(1000-WidgetSortOrder-1,descending)</onclick>
+		<onclick>Skin.SetString(1000-WidgetSortOrder-2,descending)</onclick>
+		<onclick>Skin.SetString(1000-WidgetSortOrder-3,descending)</onclick>
+		<onclick>Skin.SetString(1000-WidgetSortOrder-4,descending)</onclick>
+		<onclick>Skin.SetString(1000-WidgetSortOrder-5,descending)</onclick>
+		<onclick>Skin.SetString(1000-WidgetSortOrder-6,descending)</onclick>
+		<onclick>Skin.Reset(1000-WidgetSortOrder-7)</onclick>
+		<onclick>Skin.Reset(1000-WidgetSortOrder-8)</onclick>
+		<onclick>Skin.SetString(1000-WidgetType-1,movie)</onclick>
+		<onclick>Skin.SetString(1000-WidgetType-2,tvshow)</onclick>
+		<onclick>Skin.SetString(1000-WidgetType-3,movie)</onclick>
+		<onclick>Skin.SetString(1000-WidgetType-4,tvshow)</onclick>
+		<onclick>Skin.SetString(1000-WidgetType-5,movie)</onclick>
+		<onclick>Skin.SetString(1000-WidgetType-6,Videos)</onclick>
+		<onclick>Skin.Reset(1000-WidgetType-7)</onclick>
+		<onclick>Skin.Reset(1000-WidgetType-8)</onclick>
+		<onclick>Skin.SetString(1000-WidgetStyle-1,$LOCALIZE[31160])</onclick>
+		<onclick>Skin.SetString(1000-WidgetStyle-2,$LOCALIZE[31160])</onclick>
+		<onclick>Skin.SetString(1000-WidgetStyle-3,$LOCALIZE[31160])</onclick>
+		<onclick>Skin.SetString(1000-WidgetStyle-4,$LOCALIZE[31160])</onclick>
+		<onclick>Skin.SetString(1000-WidgetStyle-5,$LOCALIZE[31203])</onclick>
+		<onclick>Skin.SetString(1000-WidgetStyle-6,$LOCALIZE[31203])</onclick>
+		<onclick>Skin.Reset(1000-WidgetStyle-7)</onclick>
+		<onclick>Skin.Reset(1000-WidgetStyle-8)</onclick>
+	</include>
+	<include name="2000-WidgetDefaults">
+		<onclick>Skin.SetString(2000-WidgetAction-1,ActivateWindow(Videos,special://skin/extras/video/YourMovies.xsp,return))</onclick>
+		<onclick>Skin.SetString(2000-WidgetAction-2,ActivateWindow(Videos,special://skin/extras/video/RecentlyAddedMovies.xsp,return))</onclick>
+		<onclick>Skin.SetString(2000-WidgetAction-3,ActivateWindow(Videos,special://skin/extras/video/InProgressMovies.xsp,return))</onclick>
+		<onclick>Skin.SetString(2000-WidgetAction-4,ActivateWindow(Videos,special://skin/extras/video/KidsMovies.xsp,return))</onclick>
+		<onclick>Skin.SetString(2000-WidgetAction-5,ActivateWindow(Videos,special://skin/extras/video/TopRatedMovies.xsp,return))</onclick>
+		<onclick>Skin.SetString(2000-WidgetAction-6,ActivateWindow(Videos,&quot;library://video/movies/sets.xml/&quot;,return))</onclick>
+		<onclick>Skin.Reset(2000-WidgetAction-7)</onclick>
+		<onclick>Skin.Reset(2000-WidgetAction-8)</onclick>
+		<onclick>Skin.SetString(2000-WidgetLabel-1,$LOCALIZE[31168])</onclick>
+		<onclick>Skin.SetString(2000-WidgetLabel-2,$LOCALIZE[31167])</onclick>
+		<onclick>Skin.SetString(2000-WidgetLabel-3,$LOCALIZE[31169])</onclick>
+		<onclick>Skin.SetString(2000-WidgetLabel-4,$LOCALIZE[31170])</onclick>
+		<onclick>Skin.SetString(2000-WidgetLabel-5,$LOCALIZE[31174])</onclick>
+		<onclick>Skin.SetString(2000-WidgetLabel-6,$LOCALIZE[31024])</onclick>
+		<onclick>Skin.Reset(2000-WidgetLabel-7)</onclick>
+		<onclick>Skin.Reset(2000-WidgetLabel-8)</onclick>
+		<onclick>Skin.SetString(2000-WidgetList-1,special://skin/extras/video/YourMovies.xsp)</onclick>
+		<onclick>Skin.SetString(2000-WidgetList-2,special://skin/extras/video/RecentlyAddedMovies.xsp)</onclick>
+		<onclick>Skin.SetString(2000-WidgetList-3,special://skin/extras/video/InProgressMovies.xsp)</onclick>
+		<onclick>Skin.SetString(2000-WidgetList-4,special://skin/extras/video/KidsMovies.xsp)</onclick>
+		<onclick>Skin.SetString(2000-WidgetList-5,special://skin/extras/video/TopRatedMovies.xsp)</onclick>
+		<onclick>Skin.SetString(2000-WidgetList-6,library://video/movies/sets.xml/)</onclick>
+		<onclick>Skin.Reset(2000-WidgetList-7)</onclick>
+		<onclick>Skin.Reset(2000-WidgetList-8)</onclick>
+		<onclick>Skin.SetString(2000-WidgetSortBy-1,name)</onclick>
+		<onclick>Skin.SetString(2000-WidgetSortBy-2,dateadded)</onclick>
+		<onclick>Skin.SetString(2000-WidgetSortBy-3,lastplayed)</onclick>
+		<onclick>Skin.SetString(2000-WidgetSortBy-4,name)</onclick>
+		<onclick>Skin.SetString(2000-WidgetSortBy-5,rating)</onclick>
+		<onclick>Skin.SetString(2000-WidgetSortBy-6,name)</onclick>
+		<onclick>Skin.Reset(2000-WidgetSortBy-7)</onclick>
+		<onclick>Skin.Reset(2000-WidgetSortBy-8)</onclick>
+		<onclick>Skin.SetString(2000-WidgetSortOrder-1,ascending)</onclick>
+		<onclick>Skin.SetString(2000-WidgetSortOrder-2,descending)</onclick>
+		<onclick>Skin.SetString(2000-WidgetSortOrder-3,descending)</onclick>
+		<onclick>Skin.SetString(2000-WidgetSortOrder-4,ascending)</onclick>
+		<onclick>Skin.SetString(2000-WidgetSortOrder-5,descending)</onclick>
+		<onclick>Skin.SetString(2000-WidgetSortOrder-6,ascending)</onclick>
+		<onclick>Skin.Reset(2000-WidgetSortOrder-7)</onclick>
+		<onclick>Skin.Reset(2000-WidgetSortOrder-8)</onclick>
+		<onclick>Skin.SetString(2000-WidgetStyle-1,$LOCALIZE[31160])</onclick>
+		<onclick>Skin.SetString(2000-WidgetStyle-2,$LOCALIZE[31160])</onclick>
+		<onclick>Skin.SetString(2000-WidgetStyle-3,$LOCALIZE[31160])</onclick>
+		<onclick>Skin.SetString(2000-WidgetStyle-4,$LOCALIZE[31160])</onclick>
+		<onclick>Skin.SetString(2000-WidgetStyle-5,$LOCALIZE[31160])</onclick>
+		<onclick>Skin.SetString(2000-WidgetStyle-6,$LOCALIZE[31160])</onclick>
+		<onclick>Skin.Reset(2000-WidgetStyle-7)</onclick>
+		<onclick>Skin.Reset(2000-WidgetStyle-8)</onclick>
+		<onclick>Skin.SetString(2000-WidgetType-1,movie)</onclick>
+		<onclick>Skin.SetString(2000-WidgetType-2,movie)</onclick>
+		<onclick>Skin.SetString(2000-WidgetType-3,movie)</onclick>
+		<onclick>Skin.SetString(2000-WidgetType-4,movie)</onclick>
+		<onclick>Skin.SetString(2000-WidgetType-5,movie)</onclick>
+		<onclick>Skin.SetString(2000-WidgetType-6,Videos)</onclick>
+		<onclick>Skin.Reset(2000-WidgetType-7)</onclick>
+		<onclick>Skin.Reset(2000-WidgetType-8)</onclick>
+	</include>
+	<include name="3000-WidgetDefaults">
+		<onclick>Skin.SetString(3000-WidgetAction-1,ActivateWindow(Videos,special://skin/extras/video/YourTVShows.xsp,return))</onclick>
+		<onclick>Skin.SetString(3000-WidgetAction-2,ActivateWindow(Videos,special://skin/extras/video/RecentlyUpdatedTVShows.xsp,return))</onclick>
+		<onclick>Skin.SetString(3000-WidgetAction-3,ActivateWindow(Videos,special://skin/extras/video/InProgressTVShows.xsp,return))</onclick>
+		<onclick>Skin.SetString(3000-WidgetAction-4,ActivateWindow(Videos,special://skin/extras/video/KidsTVShows.xsp,return))</onclick>
+		<onclick>Skin.SetString(3000-WidgetAction-5,ActivateWindow(Videos,special://skin/extras/video/TopRatedTVShows.xsp,return))</onclick>
+		<onclick>Skin.Reset(3000-WidgetAction-6)</onclick>
+		<onclick>Skin.Reset(3000-WidgetAction-7)</onclick>
+		<onclick>Skin.Reset(3000-WidgetAction-8)</onclick>
+		<onclick>Skin.SetString(3000-WidgetLabel-1,$LOCALIZE[31176])</onclick>
+		<onclick>Skin.SetString(3000-WidgetLabel-2,$LOCALIZE[31175])</onclick>
+		<onclick>Skin.SetString(3000-WidgetLabel-3,$LOCALIZE[31177])</onclick>
+		<onclick>Skin.SetString(3000-WidgetLabel-4,$LOCALIZE[31178])</onclick>
+		<onclick>Skin.SetString(3000-WidgetLabel-5,$LOCALIZE[31182])</onclick>
+		<onclick>Skin.Reset(3000-WidgetLabel-6)</onclick>
+		<onclick>Skin.Reset(3000-WidgetLabel-7)</onclick>
+		<onclick>Skin.Reset(3000-WidgetLabel-8)</onclick>
+		<onclick>Skin.SetString(3000-WidgetList-1,special://skin/extras/video/YourTVShows.xsp)</onclick>
+		<onclick>Skin.SetString(3000-WidgetList-2,special://skin/extras/video/RecentlyUpdatedTVShows.xsp)</onclick>
+		<onclick>Skin.SetString(3000-WidgetList-3,special://skin/extras/video/InProgressTVShows.xsp)</onclick>
+		<onclick>Skin.SetString(3000-WidgetList-4,special://skin/extras/video/KidsTVShows.xsp)</onclick>
+		<onclick>Skin.SetString(3000-WidgetList-5,special://skin/extras/video/TopRatedTVShows.xsp)</onclick>
+		<onclick>Skin.Reset(3000-WidgetList-6])</onclick>
+		<onclick>Skin.Reset(3000-WidgetList-7)</onclick>
+		<onclick>Skin.Reset(3000-WidgetList-8)</onclick>
+		<onclick>Skin.SetString(3000-WidgetSortBy-1,name)</onclick>
+		<onclick>Skin.SetString(3000-WidgetSortBy-2,dateadded)</onclick>
+		<onclick>Skin.SetString(3000-WidgetSortBy-3,lastplayed)</onclick>
+		<onclick>Skin.SetString(3000-WidgetSortBy-4,name)</onclick>
+		<onclick>Skin.SetString(3000-WidgetSortBy-5,rating)</onclick>
+		<onclick>Skin.Reset(3000-WidgetSortBy-6)</onclick>
+		<onclick>Skin.Reset(3000-WidgetSortBy-7)</onclick>
+		<onclick>Skin.Reset(3000-WidgetSortBy-8)</onclick>
+		<onclick>Skin.SetString(3000-WidgetSortOrder-1,ascending)</onclick>
+		<onclick>Skin.SetString(3000-WidgetSortOrder-2,descending)</onclick>
+		<onclick>Skin.SetString(3000-WidgetSortOrder-3,descending)</onclick>
+		<onclick>Skin.SetString(3000-WidgetSortOrder-4,ascending)</onclick>
+		<onclick>Skin.SetString(3000-WidgetSortOrder-5,descending)</onclick>
+		<onclick>Skin.Reset(3000-WidgetSortOrder-6)</onclick>
+		<onclick>Skin.Reset(3000-WidgetSortOrder-7)</onclick>
+		<onclick>Skin.Reset(3000-WidgetSortOrder-8)</onclick>
+		<onclick>Skin.SetString(3000-WidgetStyle-1,$LOCALIZE[31160])</onclick>
+		<onclick>Skin.SetString(3000-WidgetStyle-2,$LOCALIZE[31160])</onclick>
+		<onclick>Skin.SetString(3000-WidgetStyle-3,$LOCALIZE[31160])</onclick>
+		<onclick>Skin.SetString(3000-WidgetStyle-4,$LOCALIZE[31160])</onclick>
+		<onclick>Skin.SetString(3000-WidgetStyle-5,$LOCALIZE[31160])</onclick>
+		<onclick>Skin.Reset(3000-WidgetStyle-6)</onclick>
+		<onclick>Skin.Reset(3000-WidgetStyle-7)</onclick>
+		<onclick>Skin.Reset(3000-WidgetStyle-8)</onclick>
+		<onclick>Skin.SetString(3000-WidgetType-1,tvshow)</onclick>
+		<onclick>Skin.SetString(3000-WidgetType-2,tvshow)</onclick>
+		<onclick>Skin.SetString(3000-WidgetType-3,tvshow)</onclick>
+		<onclick>Skin.SetString(3000-WidgetType-4,tvshow)</onclick>
+		<onclick>Skin.SetString(3000-WidgetType-5,tvshow)</onclick>
+		<onclick>Skin.Reset(3000-WidgetType-6)</onclick>
+		<onclick>Skin.Reset(3000-WidgetType-7)</onclick>
+		<onclick>Skin.Reset(3000-WidgetType-8)</onclick>
+	</include>
+	<include name="4000-WidgetDefaults">
+		<onclick>Skin.SetString(4000-WidgetAction-1,ActivateWindow(Videos,addons://sources/video/,return))</onclick>
+		<onclick>Skin.Reset(4000-WidgetAction-2)</onclick>
+		<onclick>Skin.Reset(4000-WidgetAction-3)</onclick>
+		<onclick>Skin.Reset(4000-WidgetAction-4)</onclick>
+		<onclick>Skin.Reset(4000-WidgetAction-5)</onclick>
+		<onclick>Skin.Reset(4000-WidgetAction-6)</onclick>
+		<onclick>Skin.Reset(4000-WidgetAction-7)</onclick>
+		<onclick>Skin.Reset(4000-WidgetAction-8)</onclick>
+		<onclick>Skin.SetString(4000-WidgetLabel-1,$LOCALIZE[31223])</onclick>
+		<onclick>Skin.Reset(4000-WidgetLabel-2)</onclick>
+		<onclick>Skin.Reset(4000-WidgetLabel-3)</onclick>
+		<onclick>Skin.Reset(4000-WidgetLabel-4)</onclick>
+		<onclick>Skin.Reset(4000-WidgetLabel-5)</onclick>
+		<onclick>Skin.Reset(4000-WidgetLabel-6)</onclick>
+		<onclick>Skin.Reset(4000-WidgetLabel-7)</onclick>
+		<onclick>Skin.Reset(4000-WidgetLabel-8)</onclick>
+		<onclick>Skin.SetString(4000-WidgetList-1,addons://sources/video/)</onclick>
+		<onclick>Skin.Reset(4000-WidgetList-2)</onclick>
+		<onclick>Skin.Reset(4000-WidgetList-3)</onclick>
+		<onclick>Skin.Reset(4000-WidgetList-4)</onclick>
+		<onclick>Skin.Reset(4000-WidgetList-5)</onclick>
+		<onclick>Skin.Reset(4000-WidgetList-6)</onclick>
+		<onclick>Skin.Reset(4000-WidgetList-7)</onclick>
+		<onclick>Skin.Reset(4000-WidgetList-8)</onclick>
+		<onclick>Skin.SetString(4000-WidgetSortBy-1,label)</onclick>
+		<onclick>Skin.Reset(4000-WidgetSortBy-2)</onclick>
+		<onclick>Skin.Reset(4000-WidgetSortBy-3)</onclick>
+		<onclick>Skin.Reset(4000-WidgetSortBy-4)</onclick>
+		<onclick>Skin.Reset(4000-WidgetSortBy-5)</onclick>
+		<onclick>Skin.Reset(4000-WidgetSortBy-6)</onclick>
+		<onclick>Skin.Reset(4000-WidgetSortBy-7)</onclick>
+		<onclick>Skin.Reset(4000-WidgetSortBy-8)</onclick>
+		<onclick>Skin.SetString(4000-WidgetSortOrder-1,ascending)</onclick>
+		<onclick>Skin.Reset(4000-WidgetSortOrder-2)</onclick>
+		<onclick>Skin.Reset(4000-WidgetSortOrder-3)</onclick>
+		<onclick>Skin.Reset(4000-WidgetSortOrder-4)</onclick>
+		<onclick>Skin.Reset(4000-WidgetSortOrder-5)</onclick>
+		<onclick>Skin.Reset(4000-WidgetSortOrder-6)</onclick>
+		<onclick>Skin.Reset(4000-WidgetSortOrder-7)</onclick>
+		<onclick>Skin.Reset(4000-WidgetSortOrder-8)</onclick>
+		<onclick>Skin.SetString(4000-WidgetStyle-1,$LOCALIZE[31203])</onclick>
+		<onclick>Skin.Reset(4000-WidgetStyle-2)</onclick>
+		<onclick>Skin.Reset(4000-WidgetStyle-3)</onclick>
+		<onclick>Skin.Reset(4000-WidgetStyle-4)</onclick>
+		<onclick>Skin.Reset(4000-WidgetStyle-5)</onclick>
+		<onclick>Skin.Reset(4000-WidgetStyle-6)</onclick>
+		<onclick>Skin.Reset(4000-WidgetStyle-7)</onclick>
+		<onclick>Skin.Reset(4000-WidgetStyle-8)</onclick>
+		<onclick>Skin.SetString(4000-WidgetType-1,item)</onclick>
+		<onclick>Skin.Reset(4000-WidgetType-2)</onclick>
+		<onclick>Skin.Reset(4000-WidgetType-3)</onclick>
+		<onclick>Skin.Reset(4000-WidgetType-4)</onclick>
+		<onclick>Skin.Reset(4000-WidgetType-5)</onclick>
+		<onclick>Skin.Reset(4000-WidgetType-6)</onclick>
+		<onclick>Skin.Reset(4000-WidgetType-7)</onclick>
+		<onclick>Skin.Reset(4000-WidgetType-8)</onclick>
+	</include>
+	<include name="5000-WidgetDefaults">
+		<onclick>Skin.SetString(5000-WidgetAction-1,ActivateWindow(Music,musicdb://recentlyplayedalbums/,return))</onclick>
+		<onclick>Skin.SetString(5000-WidgetAction-2,ActivateWindow(Music,musicdb://recentlyaddedalbums/,return))</onclick>
+		<onclick>Skin.SetString(5000-WidgetAction-3,ActivateWindow(Music,special://skin/extras/music/YourAlbums.xsp,return))</onclick>
+		<onclick>Skin.SetString(5000-WidgetAction-4,ActivateWindow(Music,special://skin/extras/music/YourArtists.xsp,return))</onclick>
+		<onclick>Skin.SetString(5000-WidgetAction-5,ActivateWindow(Music,musicdb://genres/,return))</onclick>
+		<onclick>Skin.Reset(5000-WidgetAction-6)</onclick>
+		<onclick>Skin.Reset(5000-WidgetAction-7)</onclick>
+		<onclick>Skin.Reset(5000-WidgetAction-8)</onclick>
+		<onclick>Skin.SetString(5000-WidgetLabel-1,$LOCALIZE[31183])</onclick>
+		<onclick>Skin.SetString(5000-WidgetLabel-2,$LOCALIZE[31185])</onclick>
+		<onclick>Skin.SetString(5000-WidgetLabel-3,$LOCALIZE[31184])</onclick>
+		<onclick>Skin.SetString(5000-WidgetLabel-4,$LOCALIZE[31186])</onclick>
+		<onclick>Skin.SetString(5000-WidgetLabel-5,$LOCALIZE[31187])</onclick>
+		<onclick>Skin.Reset(5000-WidgetLabel-6)</onclick>
+		<onclick>Skin.Reset(5000-WidgetLabel-7)</onclick>
+		<onclick>Skin.Reset(5000-WidgetLabel-8)</onclick>
+		<onclick>Skin.SetString(5000-WidgetList-1,musicdb://recentlyplayedalbums/)</onclick>
+		<onclick>Skin.SetString(5000-WidgetList-2,musicdb://recentlyaddedalbums/)</onclick>
+		<onclick>Skin.SetString(5000-WidgetList-3,special://skin/extras/music/YourAlbums.xsp)</onclick>
+		<onclick>Skin.SetString(5000-WidgetList-4,special://skin/extras/music/YourArtists.xsp)</onclick>
+		<onclick>Skin.SetString(5000-WidgetList-5,musicdb://genres/)</onclick>
+		<onclick>Skin.Reset(5000-WidgetList-6)</onclick>
+		<onclick>Skin.Reset(5000-WidgetList-7)</onclick>
+		<onclick>Skin.Reset(5000-WidgetList-8)</onclick>
+		<onclick>Skin.SetString(5000-WidgetSortBy-1,lastplayed)</onclick>
+		<onclick>Skin.SetString(5000-WidgetSortBy-2,dateadded)</onclick>
+		<onclick>Skin.SetString(5000-WidgetSortBy-3,artist)</onclick>
+		<onclick>Skin.SetString(5000-WidgetSortBy-4,artist)</onclick>
+		<onclick>Skin.SetString(5000-WidgetSortBy-5,genre)</onclick>
+		<onclick>Skin.Reset(5000-WidgetSortBy-6)</onclick>
+		<onclick>Skin.Reset(5000-WidgetSortBy-7)</onclick>
+		<onclick>Skin.Reset(5000-WidgetSortBy-8)</onclick>
+		<onclick>Skin.SetString(5000-WidgetSortOrder-1,descending)</onclick>
+		<onclick>Skin.SetString(5000-WidgetSortOrder-2,descending)</onclick>
+		<onclick>Skin.SetString(5000-WidgetSortOrder-3,ascending)</onclick>
+		<onclick>Skin.SetString(5000-WidgetSortOrder-4,ascending)</onclick>
+		<onclick>Skin.SetString(5000-WidgetSortOrder-5,ascending)</onclick>
+		<onclick>Skin.Reset(5000-WidgetSortOrder-6)</onclick>
+		<onclick>Skin.Reset(5000-WidgetSortOrder-7)</onclick>
+		<onclick>Skin.Reset(5000-WidgetSortOrder-8)</onclick>
+		<onclick>Skin.SetString(5000-WidgetStyle-1,$LOCALIZE[31203])</onclick>
+		<onclick>Skin.SetString(5000-WidgetStyle-2,$LOCALIZE[31203])</onclick>
+		<onclick>Skin.SetString(5000-WidgetStyle-3,$LOCALIZE[31203])</onclick>
+		<onclick>Skin.SetString(5000-WidgetStyle-4,$LOCALIZE[31203])</onclick>
+		<onclick>Skin.SetString(5000-WidgetStyle-5,$LOCALIZE[31203])</onclick>
+		<onclick>Skin.Reset(5000-WidgetStyle-6)</onclick>
+		<onclick>Skin.Reset(5000-WidgetStyle-7)</onclick>
+		<onclick>Skin.Reset(5000-WidgetStyle-8)</onclick>
+		<onclick>Skin.SetString(5000-WidgetType-1,music)</onclick>
+		<onclick>Skin.SetString(5000-WidgetType-2,music)</onclick>
+		<onclick>Skin.SetString(5000-WidgetType-3,music)</onclick>
+		<onclick>Skin.SetString(5000-WidgetType-4,music)</onclick>
+		<onclick>Skin.SetString(5000-WidgetType-5,music)</onclick>
+		<onclick>Skin.Reset(5000-WidgetType-6)</onclick>
+		<onclick>Skin.Reset(5000-WidgetType-7)</onclick>
+		<onclick>Skin.Reset(5000-WidgetType-8)</onclick>
+	</include>
+	<include name="6000-WidgetDefaults">
+		<onclick>Skin.SetString(6000-WidgetAction-1,ActivateWindow(Games,addons://sources/game/,return))</onclick>
+		<onclick>Skin.Reset(6000-WidgetAction-2)</onclick>
+		<onclick>Skin.Reset(6000-WidgetAction-3)</onclick>
+		<onclick>Skin.Reset(6000-WidgetAction-4)</onclick>
+		<onclick>Skin.Reset(6000-WidgetAction-5)</onclick>
+		<onclick>Skin.Reset(6000-WidgetAction-6)</onclick>
+		<onclick>Skin.Reset(6000-WidgetAction-7)</onclick>
+		<onclick>Skin.Reset(6000-WidgetAction-8)</onclick>
+		<onclick>Skin.SetString(6000-WidgetLabel-1,$LOCALIZE[31100])</onclick>
+		<onclick>Skin.Reset(6000-WidgetLabel-2)</onclick>
+		<onclick>Skin.Reset(6000-WidgetLabel-3)</onclick>
+		<onclick>Skin.Reset(6000-WidgetLabel-4)</onclick>
+		<onclick>Skin.Reset(6000-WidgetLabel-5)</onclick>
+		<onclick>Skin.Reset(6000-WidgetLabel-6)</onclick>
+		<onclick>Skin.Reset(6000-WidgetLabel-7)</onclick>
+		<onclick>Skin.Reset(6000-WidgetLabel-8)</onclick>
+		<onclick>Skin.SetString(6000-WidgetList-1,addons://sources/game/)</onclick>
+		<onclick>Skin.Reset(6000-WidgetList-2)</onclick>
+		<onclick>Skin.Reset(6000-WidgetList-3)</onclick>
+		<onclick>Skin.Reset(6000-WidgetList-4)</onclick>
+		<onclick>Skin.Reset(6000-WidgetList-5)</onclick>
+		<onclick>Skin.Reset(6000-WidgetList-6)</onclick>
+		<onclick>Skin.Reset(6000-WidgetList-7)</onclick>
+		<onclick>Skin.Reset(6000-WidgetList-8)</onclick>
+		<onclick>Skin.SetString(6000-WidgetSortBy-1,label)</onclick>
+		<onclick>Skin.Reset(6000-WidgetSortBy-2)</onclick>
+		<onclick>Skin.Reset(6000-WidgetSortBy-3)</onclick>
+		<onclick>Skin.Reset(6000-WidgetSortBy-4)</onclick>
+		<onclick>Skin.Reset(6000-WidgetSortBy-5)</onclick>
+		<onclick>Skin.Reset(6000-WidgetSortBy-6)</onclick>
+		<onclick>Skin.Reset(6000-WidgetSortBy-7)</onclick>
+		<onclick>Skin.Reset(6000-WidgetSortBy-8)</onclick>
+		<onclick>Skin.SetString(6000-WidgetSortOrder-1,ascending)</onclick>
+		<onclick>Skin.Reset(6000-WidgetSortOrder-2)</onclick>
+		<onclick>Skin.Reset(6000-WidgetSortOrder-3)</onclick>
+		<onclick>Skin.Reset(6000-WidgetSortOrder-4)</onclick>
+		<onclick>Skin.Reset(6000-WidgetSortOrder-5)</onclick>
+		<onclick>Skin.Reset(6000-WidgetSortOrder-6)</onclick>
+		<onclick>Skin.Reset(6000-WidgetSortOrder-7)</onclick>
+		<onclick>Skin.Reset(6000-WidgetSortOrder-8)</onclick>
+		<onclick>Skin.SetString(6000-WidgetStyle-1,$LOCALIZE[31203])</onclick>
+		<onclick>Skin.Reset(6000-WidgetStyle-2)</onclick>
+		<onclick>Skin.Reset(6000-WidgetStyle-3)</onclick>
+		<onclick>Skin.Reset(6000-WidgetStyle-4)</onclick>
+		<onclick>Skin.Reset(6000-WidgetStyle-5)</onclick>
+		<onclick>Skin.Reset(6000-WidgetStyle-6)</onclick>
+		<onclick>Skin.Reset(6000-WidgetStyle-7)</onclick>
+		<onclick>Skin.Reset(6000-WidgetStyle-8)</onclick>
+		<onclick>Skin.SetString(6000-WidgetType-1,Games)</onclick>
+		<onclick>Skin.Reset(6000-WidgetType-2)</onclick>
+		<onclick>Skin.Reset(6000-WidgetType-3)</onclick>
+		<onclick>Skin.Reset(6000-WidgetType-4)</onclick>
+		<onclick>Skin.Reset(6000-WidgetType-5)</onclick>
+		<onclick>Skin.Reset(6000-WidgetType-6)</onclick>
+		<onclick>Skin.Reset(6000-WidgetType-7)</onclick>
+		<onclick>Skin.Reset(6000-WidgetType-8)</onclick>
+	</include>
+	<include name="7000-WidgetDefaults">
+		<onclick>Skin.SetString(7000-WidgetAction-1,ActivateWindow(Programs,addons://sources/executable/,return))</onclick>
+		<onclick>Skin.Reset(7000-WidgetAction-2)</onclick>
+		<onclick>Skin.Reset(7000-WidgetAction-3)</onclick>
+		<onclick>Skin.Reset(7000-WidgetAction-4)</onclick>
+		<onclick>Skin.Reset(7000-WidgetAction-5)</onclick>
+		<onclick>Skin.Reset(7000-WidgetAction-6)</onclick>
+		<onclick>Skin.Reset(7000-WidgetAction-7)</onclick>
+		<onclick>Skin.Reset(7000-WidgetAction-8)</onclick>
+		<onclick>Skin.SetString(7000-WidgetLabel-1,$LOCALIZE[31222])</onclick>
+		<onclick>Skin.Reset(7000-WidgetLabel-2)</onclick>
+		<onclick>Skin.Reset(7000-WidgetLabel-3)</onclick>
+		<onclick>Skin.Reset(7000-WidgetLabel-4)</onclick>
+		<onclick>Skin.Reset(7000-WidgetLabel-5)</onclick>
+		<onclick>Skin.Reset(7000-WidgetLabel-6)</onclick>
+		<onclick>Skin.Reset(7000-WidgetLabel-7)</onclick>
+		<onclick>Skin.Reset(7000-WidgetLabel-8)</onclick>
+		<onclick>Skin.SetString(7000-WidgetList-1,addons://sources/executable/)</onclick>
+		<onclick>Skin.Reset(7000-WidgetList-2)</onclick>
+		<onclick>Skin.Reset(7000-WidgetList-3)</onclick>
+		<onclick>Skin.Reset(7000-WidgetList-4)</onclick>
+		<onclick>Skin.Reset(7000-WidgetList-5)</onclick>
+		<onclick>Skin.Reset(7000-WidgetList-6)</onclick>
+		<onclick>Skin.Reset(7000-WidgetList-7)</onclick>
+		<onclick>Skin.Reset(7000-WidgetList-8)</onclick>
+		<onclick>Skin.SetString(7000-WidgetSortBy-1,label)</onclick>
+		<onclick>Skin.Reset(7000-WidgetSortBy-2)</onclick>
+		<onclick>Skin.Reset(7000-WidgetSortBy-3)</onclick>
+		<onclick>Skin.Reset(7000-WidgetSortBy-4)</onclick>
+		<onclick>Skin.Reset(7000-WidgetSortBy-5)</onclick>
+		<onclick>Skin.Reset(7000-WidgetSortBy-6)</onclick>
+		<onclick>Skin.Reset(7000-WidgetSortBy-7)</onclick>
+		<onclick>Skin.Reset(7000-WidgetSortBy-8)</onclick>
+		<onclick>Skin.SetString(7000-WidgetSortOrder-1,ascending)</onclick>
+		<onclick>Skin.Reset(7000-WidgetSortOrder-2)</onclick>
+		<onclick>Skin.Reset(7000-WidgetSortOrder-3)</onclick>
+		<onclick>Skin.Reset(7000-WidgetSortOrder-4)</onclick>
+		<onclick>Skin.Reset(7000-WidgetSortOrder-5)</onclick>
+		<onclick>Skin.Reset(7000-WidgetSortOrder-6)</onclick>
+		<onclick>Skin.Reset(7000-WidgetSortOrder-7)</onclick>
+		<onclick>Skin.Reset(7000-WidgetSortOrder-8)</onclick>
+		<onclick>Skin.SetString(7000-WidgetStyle-1,$LOCALIZE[31203])</onclick>
+		<onclick>Skin.Reset(7000-WidgetStyle-2)</onclick>
+		<onclick>Skin.Reset(7000-WidgetStyle-3)</onclick>
+		<onclick>Skin.Reset(7000-WidgetStyle-4)</onclick>
+		<onclick>Skin.Reset(7000-WidgetStyle-5)</onclick>
+		<onclick>Skin.Reset(7000-WidgetStyle-6)</onclick>
+		<onclick>Skin.Reset(7000-WidgetStyle-7)</onclick>
+		<onclick>Skin.Reset(7000-WidgetStyle-8)</onclick>
+		<onclick>Skin.SetString(7000-WidgetType-1,program)</onclick>
+		<onclick>Skin.Reset(7000-WidgetType-2)</onclick>
+		<onclick>Skin.Reset(7000-WidgetType-3)</onclick>
+		<onclick>Skin.Reset(7000-WidgetType-4)</onclick>
+		<onclick>Skin.Reset(7000-WidgetType-5)</onclick>
+		<onclick>Skin.Reset(7000-WidgetType-6)</onclick>
+		<onclick>Skin.Reset(7000-WidgetType-7)</onclick>
+		<onclick>Skin.Reset(7000-WidgetType-8)</onclick>
+	</include>
+	<include name="8000-WidgetDefaults">
+		<onclick>Skin.SetString(8000-WidgetAction-1,ActivateWindow(Pictures,addons://sources/image/,return))</onclick>
+		<onclick>Skin.Reset(8000-WidgetAction-2)</onclick>
+		<onclick>Skin.Reset(8000-WidgetAction-3)</onclick>
+		<onclick>Skin.Reset(8000-WidgetAction-4)</onclick>
+		<onclick>Skin.Reset(8000-WidgetAction-5)</onclick>
+		<onclick>Skin.Reset(8000-WidgetAction-6)</onclick>
+		<onclick>Skin.Reset(8000-WidgetAction-7)</onclick>
+		<onclick>Skin.Reset(8000-WidgetAction-8)</onclick>
+		<onclick>Skin.SetString(8000-WidgetLabel-1,$LOCALIZE[1039])</onclick>
+		<onclick>Skin.Reset(8000-WidgetLabel-2)</onclick>
+		<onclick>Skin.Reset(8000-WidgetLabel-3)</onclick>
+		<onclick>Skin.Reset(8000-WidgetLabel-4)</onclick>
+		<onclick>Skin.Reset(8000-WidgetLabel-5)</onclick>
+		<onclick>Skin.Reset(8000-WidgetLabel-6)</onclick>
+		<onclick>Skin.Reset(8000-WidgetLabel-7)</onclick>
+		<onclick>Skin.Reset(8000-WidgetLabel-8)</onclick>
+		<onclick>Skin.SetString(8000-WidgetList-1,addons://sources/image/)</onclick>
+		<onclick>Skin.Reset(8000-WidgetList-2)</onclick>
+		<onclick>Skin.Reset(8000-WidgetList-3)</onclick>
+		<onclick>Skin.Reset(8000-WidgetList-4)</onclick>
+		<onclick>Skin.Reset(8000-WidgetList-5)</onclick>
+		<onclick>Skin.Reset(8000-WidgetList-6)</onclick>
+		<onclick>Skin.Reset(8000-WidgetList-7)</onclick>
+		<onclick>Skin.Reset(8000-WidgetList-8)</onclick>
+		<onclick>Skin.SetString(8000-WidgetSortBy-1,name)</onclick>
+		<onclick>Skin.Reset(8000-WidgetSortBy-2)</onclick>
+		<onclick>Skin.Reset(8000-WidgetSortBy-3)</onclick>
+		<onclick>Skin.Reset(8000-WidgetSortBy-4)</onclick>
+		<onclick>Skin.Reset(8000-WidgetSortBy-5)</onclick>
+		<onclick>Skin.Reset(8000-WidgetSortBy-6)</onclick>
+		<onclick>Skin.Reset(8000-WidgetSortBy-7)</onclick>
+		<onclick>Skin.Reset(8000-WidgetSortBy-8)</onclick>
+		<onclick>Skin.SetString(8000-WidgetSortOrder-1,ascending)</onclick>
+		<onclick>Skin.Reset(8000-WidgetSortOrder-2)</onclick>
+		<onclick>Skin.Reset(8000-WidgetSortOrder-3)</onclick>
+		<onclick>Skin.Reset(8000-WidgetSortOrder-4)</onclick>
+		<onclick>Skin.Reset(8000-WidgetSortOrder-5)</onclick>
+		<onclick>Skin.Reset(8000-WidgetSortOrder-6)</onclick>
+		<onclick>Skin.Reset(8000-WidgetSortOrder-7)</onclick>
+		<onclick>Skin.Reset(8000-WidgetSortOrder-8)</onclick>
+		<onclick>Skin.SetString(8000-WidgetStyle-1,$LOCALIZE[31203])</onclick>
+		<onclick>Skin.Reset(8000-WidgetStyle-2)</onclick>
+		<onclick>Skin.Reset(8000-WidgetStyle-3)</onclick>
+		<onclick>Skin.Reset(8000-WidgetStyle-4)</onclick>
+		<onclick>Skin.Reset(8000-WidgetStyle-5)</onclick>
+		<onclick>Skin.Reset(8000-WidgetStyle-6)</onclick>
+		<onclick>Skin.Reset(8000-WidgetStyle-7)</onclick>
+		<onclick>Skin.Reset(8000-WidgetStyle-8)</onclick>
+		<onclick>Skin.SetString(8000-WidgetType-1,Pictures)</onclick>
+		<onclick>Skin.Reset(8000-WidgetType-2)</onclick>
+		<onclick>Skin.Reset(8000-WidgetType-3)</onclick>
+		<onclick>Skin.Reset(8000-WidgetType-4)</onclick>
+		<onclick>Skin.Reset(8000-WidgetType-5)</onclick>
+		<onclick>Skin.Reset(8000-WidgetType-6)</onclick>
+		<onclick>Skin.Reset(8000-WidgetType-7)</onclick>
+		<onclick>Skin.Reset(8000-WidgetType-8)</onclick>
 	</include>
 </includes>

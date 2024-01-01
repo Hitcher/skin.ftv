@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<!-- favourites -->
-	<backgroundcolor>0xff12161b</backgroundcolor>
+	<backgroundcolor>BackgroundColour</backgroundcolor>
 	<views>55</views>
 	<defaultcontrol always="true">55</defaultcontrol>
 	<onload condition="Window.Previous(home)">Control.SetFocus(55,0,absolute)</onload>
@@ -115,58 +115,55 @@
 					<control type="group">
 						<animation center="250,288" condition="true" effect="zoom" end="85" start="85">Conditional</animation>
 						<control type="image">
-							<top>48</top>
-							<width>480</width>
-							<height>480</height>
-							<aspectratio align="center">scale</aspectratio>
-							<texture background="true">common/default_empty.png</texture>
-							<visible>!String.IsEmpty(ListItem.Icon)</visible>
-						</control>
-						<control type="image">
 							<left>-48</left>
 							<centertop>288</centertop>
 							<width>576</width>
 							<height>576</height>
 							<texture border="50">views/shadow_nf.png</texture>
 						</control>
-						<control type="image">
-							<top>48</top>
-							<width>480</width>
-							<height>480</height>
-							<colordiffuse>ff212121</colordiffuse>
-							<aspectratio align="center">stretch</aspectratio>
-							<texture background="true" fallback="views/square_fallback.png">$INFO[ListItem.Icon]</texture>
-						</control>
-						<control type="image">
-							<top>48</top>
-							<width>480</width>
-							<height>480</height>
-							<aspectratio align="center">keep</aspectratio>
-							<texture background="true" fallback="views/square_fallback.png">$INFO[ListItem.Icon]</texture>
-						</control>
-						<control type="image">
-							<bottom>48</bottom>
-							<width>480</width>
-							<height>125</height>
-							<texture border="2">views/default_overlay.png</texture>
-							<visible>!String.Contains(ListItem.Icon,Default)</visible>
-						</control>
-						<control type="label">
-							<left>18</left>
-							<top>447</top>
-							<width>446</width>
-							<height>42</height>
-							<font>Bold44</font>
-							<scroll>false</scroll>
-							<textcolor>ffffffff</textcolor>
-							<shadowcolor>88000000</shadowcolor>
-							<label>$INFO[ListItem.Label]</label>
-						</control>
-						<control type="image">
-							<top>48</top>
-							<width>480</width>
-							<height>480</height>
-							<texture>views/OverlayNF.png</texture>
+						<control type="group">
+							<include>ItemListFadeDiffuseAnimation</include>
+							<control type="image">
+								<top>48</top>
+								<width>480</width>
+								<height>480</height>
+								<aspectratio align="center">scale</aspectratio>
+								<texture background="true">common/default_empty.png</texture>
+								<visible>!String.IsEmpty(ListItem.Icon)</visible>
+							</control>
+							<control type="image">
+								<top>48</top>
+								<width>480</width>
+								<height>480</height>
+								<colordiffuse>ff212121</colordiffuse>
+								<aspectratio align="center">stretch</aspectratio>
+								<texture background="true" fallback="views/square_fallback.png">$INFO[ListItem.Icon]</texture>
+							</control>
+							<control type="image">
+								<top>48</top>
+								<width>480</width>
+								<height>480</height>
+								<aspectratio align="center">keep</aspectratio>
+								<texture background="true" fallback="views/square_fallback.png">$INFO[ListItem.Icon]</texture>
+							</control>
+							<control type="image">
+								<bottom>48</bottom>
+								<width>480</width>
+								<height>125</height>
+								<texture border="2">views/default_overlay.png</texture>
+								<visible>!String.Contains(ListItem.Icon,Default)</visible>
+							</control>
+							<control type="label">
+								<left>18</left>
+								<top>447</top>
+								<width>446</width>
+								<height>42</height>
+								<font>Bold44</font>
+								<scroll>false</scroll>
+								<textcolor>ffffffff</textcolor>
+								<shadowcolor>ShadowColour</shadowcolor>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
 						</control>
 					</control>
 				</itemlayout>
@@ -194,55 +191,51 @@
 								<param name="ListID" value="55"/>
 							</include>
 						</control>
-						<control type="image">
-							<top>48</top>
-							<width>480</width>
-							<height>480</height>
-							<aspectratio align="center">scale</aspectratio>
-							<texture background="true">common/default_empty.png</texture>
-							<visible>!String.IsEmpty(ListItem.Icon)</visible>
-						</control>
-						<control type="image">
-							<top>48</top>
-							<width>480</width>
-							<height>480</height>
-							<colordiffuse>ff212121</colordiffuse>
-							<aspectratio align="center">stretch</aspectratio>
-							<texture background="true" fallback="views/square_fallback.png">$INFO[ListItem.Icon]</texture>
-						</control>
-						<control type="image">
-							<top>48</top>
-							<width>480</width>
-							<height>480</height>
-							<aspectratio align="center">keep</aspectratio>
-							<texture background="true" fallback="views/square_fallback.png">$INFO[ListItem.Icon]</texture>
-						</control>
-						<control type="image">
-							<bottom>48</bottom>
-							<width>480</width>
-							<height>125</height>
-							<texture border="2">views/default_overlay.png</texture>
-							<visible>!String.Contains(ListItem.Icon,Default)</visible>
-						</control>
-						<control type="label">
-							<left>18</left>
-							<top>447</top>
-							<width>446</width>
-							<height>42</height>
-							<font>Bold44</font>
-							<scroll>false</scroll>
-							<textcolor>ffffffff</textcolor>
-							<shadowcolor>88000000</shadowcolor>
-							<label>$INFO[ListItem.Label]</label>
-						</control>
-						<control type="image">
-							<top>48</top>
-							<width>480</width>
-							<height>480</height>
-							<texture>views/OverlayNF.png</texture>
-							<include content="FocusedListIDAnimation">
+						<control type="group">
+							<include content="FocusedListIDFadeDiffuseAnimation">
 								<param name="ListID" value="55"/>
 							</include>
+							<control type="image">
+								<top>48</top>
+								<width>480</width>
+								<height>480</height>
+								<aspectratio align="center">scale</aspectratio>
+								<texture background="true">common/default_empty.png</texture>
+								<visible>!String.IsEmpty(ListItem.Icon)</visible>
+							</control>
+							<control type="image">
+								<top>48</top>
+								<width>480</width>
+								<height>480</height>
+								<colordiffuse>ff212121</colordiffuse>
+								<aspectratio align="center">stretch</aspectratio>
+								<texture background="true" fallback="views/square_fallback.png">$INFO[ListItem.Icon]</texture>
+							</control>
+							<control type="image">
+								<top>48</top>
+								<width>480</width>
+								<height>480</height>
+								<aspectratio align="center">keep</aspectratio>
+								<texture background="true" fallback="views/square_fallback.png">$INFO[ListItem.Icon]</texture>
+							</control>
+							<control type="image">
+								<bottom>48</bottom>
+								<width>480</width>
+								<height>125</height>
+								<texture border="2">views/default_overlay.png</texture>
+								<visible>!String.Contains(ListItem.Icon,Default)</visible>
+							</control>
+							<control type="label">
+								<left>18</left>
+								<top>447</top>
+								<width>446</width>
+								<height>42</height>
+								<font>Bold44</font>
+								<scroll>false</scroll>
+								<textcolor>ffffffff</textcolor>
+								<shadowcolor>ShadowColour</shadowcolor>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
 						</control>
 					</control>
 				</focusedlayout>

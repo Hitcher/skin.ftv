@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<!-- Focused fade diffuse animation -->
+	<include name="FadeDiffuseAnimationFO">
+		<animation effect="fadediffuse" start="FFFFFFFF" end="FocusedColour" time="0" condition="$PARAM[FadeDiffuseConditionFO]">Conditional</animation>
+	</include>
+	<!-- Not focused fade diffuse animation -->
+	<include name="FadeDiffuseAnimationNF">
+		<animation effect="fadediffuse" start="FFFFFFFF" end="NotFocusedColour" time="0" condition="$PARAM[FadeDiffuseConditionNF]">Conditional</animation>
+	</include>
+	<!-- Disabled fade diffuse animation -->
+	<include name="FadeDiffuseAnimationDisabled">
+		<animation effect="fadediffuse" start="FFFFFFFF" end="DisabledColour" time="0" condition="$PARAM[FadeDiffuseConditionDisabled]">Conditional</animation>
+	</include>
+	<!-- Settings shadow animation -->
+	<include name="SettingsShadowAnimation">
+		<animation condition="Container.Content(addons)" type="Conditional">
+			<effect easing="inout" end="100" start="0" time="120" tween="sine" type="fade" delay="80"/>
+		</animation>
+	</include>
 	<!-- Home to window slide animation -->
 	<include name="HomeToWindowSlideAnimation">
 		<animation condition="String.IsEmpty(Window(home).Property(MainMenuFocus)) + String.IsEmpty(Window(home).Property(FocusRow)) + Window.Previous(home)" easing="inout" effect="slide" end="0,0" start="$PARAM[FocusRowID1_1]" time="540" tween="sine">WindowOpen</animation>
@@ -26,6 +44,15 @@
 		<animation center="auto" condition="Control.HasFocus($PARAM[ListID])" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
 		<animation center="auto" condition="Control.HasFocus($PARAM[ListID])" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
 	</include>
+	<!-- Focused list fade diffuse animation -->
+	<include name="FocusedListIDFadeDiffuseAnimation">
+		<animation center="auto" condition="Control.HasFocus($PARAM[ListID])" easing="inout" effect="fadediffuse" end="FFFFFFFF" start="FF898989" time="300" tween="sine">Focus</animation>
+		<animation center="auto" condition="Control.HasFocus($PARAM[ListID])" easing="inout" effect="fadediffuse" end="FF898989" start="FFFFFFFF" time="300" tween="sine">UnFocus</animation>
+	</include>
+	<!-- Item list fade diffuse animation -->
+	<include name="ItemListFadeDiffuseAnimation">
+		<animation effect="fadediffuse" start="FF898989" end="FF898989" time="0" condition="true">Conditional</animation>
+	</include>
 	<!-- Dialog zoom/fade visible animation -->
 	<include name="DialogZoomFadeVisibleAnimation">
 		<animation reversible="true" type="Visible">
@@ -47,6 +74,11 @@
 			<effect center="auto" easing="inout" end="92" start="100" time="120" tween="sine" type="zoom"/>
 			<effect easing="inout" end="0" start="100" time="120" tween="sine" type="fade"/>
 		</animation>
+	</include>
+	<!-- Startup fade animation -->
+	<include name="StartUpFadeAnimation">
+		<animation effect="fade" end="100" start="0" time="200" delay="1800">WindowOpen</animation>
+		<animation effect="fade" end="100" start="100" time="0">WindowClose</animation>
 	</include>
 	<!-- Custom fade animation -->
 	<include name="CustomFadeAnimation">
@@ -87,13 +119,25 @@
 	</include>
 	<!-- Dialog fade and zoom animation -->
 	<include name="DialogZoomAnimation">
-		<animation type="WindowOpen">
+		<animation condition="$PARAM[OpenCondition]" type="WindowOpen">
 			<effect center="auto" end="100" start="90" time="120" type="zoom"/>
 			<effect easing="inout" end="100" start="0" time="120" tween="sine" type="fade"/>
 		</animation>
-		<animation type="WindowClose">
+		<animation condition="$PARAM[CloseCondition]" type="WindowClose">
 			<effect center="auto" end="90" start="100" time="120" type="zoom"/>
 			<effect easing="inout" end="0" start="100" time="120" tween="sine" type="fade"/>
+		</animation>
+	</include>
+	<!-- Dialog slide animation -->
+	<include name="DialogSlideAnimation">
+		<animation condition="!Window.IsVisible(script-skinshortcuts.xml) + !Window.IsVisible(addoninformation) + [Window.IsVisible(addonbrowser) | Window.IsVisible(settingscategory.xml) | Window.IsVisible(skinsettings)]" effect="slide" end="-74,-11">Conditional</animation>
+		<animation condition="!Window.IsVisible(1105) + !Window.IsVisible(script-skinshortcuts.xml) + !Window.IsVisible(addoninformation) + [Window.IsVisible(addonbrowser) | Window.IsVisible(settingscategory.xml) | Window.IsVisible(skinsettings)]" reversible="false" type="WindowOpen">
+			<effect end="100" start="0" time="200" type="fade" delay="100"/>
+			<effect easing="inout" end="0,0" start="500,0" time="200" tween="sine" type="slide" delay="100"/>
+		</animation>
+		<animation condition="!Window.IsVisible(1105) + !Window.IsVisible(script-skinshortcuts.xml) + !Window.IsVisible(addoninformation) + [Window.IsVisible(addonbrowser) | Window.IsVisible(settingscategory.xml) | Window.IsVisible(skinsettings)]" reversible="false" type="WindowClose">
+			<effect end="0" start="100" time="120" type="fade"/>
+			<effect easing="inout" end="500,0" start="0,0" time="120" tween="sine" type="slide"/>
 		</animation>
 	</include>
 	<!-- Dialog video info animation -->

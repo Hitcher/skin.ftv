@@ -6,35 +6,43 @@
 		<include>DialogBackgroundImage</include>
 		<!-- Main group -->
 		<control type="group">
-			<include>DialogAnimation</include>
 			<centerleft>50%</centerleft>
 			<centertop>50%</centertop>
-			<width>1000</width>
-			<height>312</height>
-			<control type="image">
-				<width>1000</width>
-				<height>312</height>
-				<texture>dialogs/rule_back.png</texture>
-			</control>
+			<width>1200</width>
+			<height>396</height>
+			<include>DialogZoomAnimation</include>
+			<include content="DialogBack">
+				<param name="dialog_back_width" value="1200"/>
+				<param name="dialog_back_height" value="396"/>
+				<param name="dialog_heading_width" value="800"/>
+				<param name="dialog_shadow_1_left" value="800"/>
+				<param name="dialog_shadow_2_top" value="312"/>
+				<param name="dialog_shadow_2_left" value="600"/>
+				<param name="dialog_shadow_2_height" value="84"/>
+				<param name="dialog_shadow_2_visible" value="true"/>
+			</include>
 			<!-- Heading -->
-			<control type="label" id="0">
-				<left>40</left>
-				<top>14</top>
-				<height>30</height>
-				<width>940</width>
-				<aligny>center</aligny>
-				<font>Bold30</font>
-				<label>21422</label>
-				<textcolor>ffdadada</textcolor>
+			<include content="DialogHeading">
+				<param name="dialog_heading_label" value="21421"/>
+			</include>
+			<include content="DialogHeading">
+				<param name="dialog_heading_label_top" value="84"/>
+				<param name="dialog_heading_label" value="21422"/>
+			</include>
+			<control type="image">
+				<top>142</top>
+				<width>800</width>
+				<height>2</height>
+				<texture>dialogs/default_line.png</texture>
 			</control>
 			<!-- Left group -->
 			<control type="group" id="100">
-				<top>60</top>
-				<width>600</width>
+				<top>144</top>
+				<width>800</width>
 				<height>336</height>
 				<!-- Rule Field -->
 				<control type="button" id="15">
-					<width>600</width>
+					<width>800</width>
 					<height>84</height>
 					<onleft>noop</onleft>
 					<onright>9001</onright>
@@ -42,8 +50,8 @@
 					<ondown>16</ondown>
 					<font>Light32</font>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<aligny>center</aligny>
@@ -52,26 +60,26 @@
 				<!-- Rule Field label -->
 				<control type="label">
 					<left>40</left>
-					<width>520</width>
+					<width>720</width>
 					<height>84</height>
 					<font>Light32</font>
-					<textcolor>FocusedColor</textcolor>
+					<textcolor>FocusedColour</textcolor>
 					<label>$INFO[Control.GetLabel(15)]</label>
 					<visible>Control.HasFocus(15)</visible>
 				</control>
 				<control type="label">
 					<left>40</left>
-					<width>520</width>
+					<width>720</width>
 					<height>84</height>
 					<font>Light32</font>
-					<textcolor>NotFocusedColor</textcolor>
+					<textcolor>NotFocusedColour</textcolor>
 					<label>$INFO[Control.GetLabel(15)]</label>
 					<visible>!Control.HasFocus(15)</visible>
 				</control>
 				<!-- Rule operator -->
 				<control type="button" id="16">
 					<top>84</top>
-					<width>600</width>
+					<width>800</width>
 					<height>84</height>
 					<onleft>noop</onleft>
 					<onright>9001</onright>
@@ -79,8 +87,8 @@
 					<ondown>17</ondown>
 					<font>Light32</font>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<aligny>center</aligny>
@@ -90,27 +98,27 @@
 				<control type="label">
 					<top>84</top>
 					<left>40</left>
-					<width>520</width>
+					<width>720</width>
 					<height>84</height>
 					<font>Light32</font>
-					<textcolor>FocusedColor</textcolor>
+					<textcolor>FocusedColour</textcolor>
 					<label>$INFO[Control.GetLabel(16)]</label>
 					<visible>Control.HasFocus(16)</visible>
 				</control>
 				<control type="label">
 					<top>84</top>
 					<left>40</left>
-					<width>520</width>
+					<width>720</width>
 					<height>84</height>
 					<font>Light32</font>
-					<textcolor>NotFocusedColor</textcolor>
+					<textcolor>NotFocusedColour</textcolor>
 					<label>$INFO[Control.GetLabel(16)]</label>
 					<visible>!Control.HasFocus(16)</visible>
 				</control>
 				<!-- Value edit -->
 				<control type="edit" id="17">
 					<top>168</top>
-					<width>400</width>
+					<width>600</width>
 					<height>84</height>
 					<onup>16</onup>
 					<onleft>noop</onleft>
@@ -118,15 +126,15 @@
 					<ondown>noop</ondown>
 					<font>Light32</font>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<hinttext>...</hinttext>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 				</control>
 				<!-- Browse Button -->
 				<control type="button" id="20">
-					<left>400</left>
+					<left>600</left>
 					<top>168</top>
 					<width>200</width>
 					<height>84</height>
@@ -137,8 +145,8 @@
 					<font>Light32</font>
 					<textwidth>738</textwidth>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<label>1024</label>
@@ -148,7 +156,7 @@
 			<control type="grouplist" id="9001">
 				<right>24</right>
 				<bottom>33</bottom>
-				<width>351</width>
+				<width>352</width>
 				<height>420</height>
 				<onleft>100</onleft>
 				<onright>noop</onright>
@@ -158,27 +166,17 @@
 				<itemgap>10</itemgap>
 				<align>right</align>
 				<!-- Cancel Button -->
-				<control type="button" id="19">
-					<width>351</width>
-					<height>76</height>
-					<aligny>top</aligny>
-					<font>Med24</font>
-					<textoffsetx>23</textoffsetx>
-					<textoffsety>27</textoffsety>
-					<label>222</label>
-					<visible>Control.IsEnabled(19)</visible>
-				</control>
-				<!-- OK Button -->
-				<control type="button" id="18">
-					<width>351</width>
-					<height>76</height>
-					<aligny>top</aligny>
-					<font>Med24</font>
-					<textoffsetx>23</textoffsetx>
-					<textoffsety>27</textoffsety>
-					<label>186</label>
-					<visible>Control.IsEnabled(18)</visible>
-				</control>
+				<include content="DialogButton">
+					<param name="button_id" value="19"/>
+					<param name="button_label" value="222"/>
+					<param name="button_visible" value="Control.IsEnabled(19)"/>
+				</include>
+				<!-- OK/Manual/Get more Button -->
+				<include content="DialogButton">
+					<param name="button_id" value="18"/>
+					<param name="button_label" value="186"/>
+					<param name="button_visible" value="Control.IsEnabled(18)"/>
+				</include>
 			</control>
 		</control>
 	</controls>

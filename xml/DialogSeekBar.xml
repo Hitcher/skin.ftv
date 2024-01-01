@@ -32,7 +32,7 @@
 						<height>50</height>
 						<font>OSD40</font>
 						<textcolor>ffeaeaea</textcolor>
-						<shadowcolor>ff000000</shadowcolor>
+						<shadowcolor>ShadowColour</shadowcolor>
 						<label>$INFO[VideoPlayer.Title]</label>
 						<visible>String.IsEmpty(VideoPlayer.TVShowTitle)</visible>
 					</control>
@@ -42,7 +42,7 @@
 						<height>50</height>
 						<font>OSD40</font>
 						<textcolor>ffeaeaea</textcolor>
-						<shadowcolor>ff000000</shadowcolor>
+						<shadowcolor>ShadowColour</shadowcolor>
 						<label>$INFO[VideoPlayer.TVShowTitle]</label>
 						<visible>!String.IsEmpty(VideoPlayer.TVShowTitle)</visible>
 					</control>
@@ -52,7 +52,7 @@
 						<height>50</height>
 						<font>OSD40</font>
 						<textcolor>ffeaeaea</textcolor>
-						<shadowcolor>ff000000</shadowcolor>
+						<shadowcolor>ShadowColour</shadowcolor>
 						<label>$VAR[PlayerEpisodeValue]</label>
 					</control>
 					<!--  Song title -->
@@ -61,7 +61,7 @@
 						<height>50</height>
 						<font>OSD40</font>
 						<textcolor>ffeaeaea</textcolor>
-						<shadowcolor>ff000000</shadowcolor>
+						<shadowcolor>ShadowColour</shadowcolor>
 						<label>$INFO[MusicPlayer.Title]</label>
 						<visible>String.IsEmpty(MusicPlayer.Title)</visible>
 					</control>
@@ -76,7 +76,7 @@
 					<align>center</align>
 					<font>OSD32</font>
 					<textcolor>fffe8e8e8</textcolor>
-					<shadowcolor>ff000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<wrapmultiline>true</wrapmultiline>
 					<label>$INFO[VideoPlayer.Title]</label>
 					<visible>!String.IsEmpty(VideoPlayer.TVShowTitle)</visible>
@@ -90,7 +90,7 @@
 					<align>center</align>
 					<font>OSD32</font>
 					<textcolor>fffe8e8e8</textcolor>
-					<shadowcolor>ff000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, / ,]</label>
 				</control>
 				<!-- Pause -->

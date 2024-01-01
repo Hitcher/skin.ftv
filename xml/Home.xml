@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
 	<!-- home -->
-	<backgroundcolor>0xff12161b</backgroundcolor>
+	<backgroundcolor>BackgroundColour</backgroundcolor>
 	<defaultcontrol>99</defaultcontrol>
 	<onload>ClearProperty(BounceRight,Home)</onload>
 	<onload>ClearProperty(WindowPrevious,home)</onload>
 	<onload>Skin.SetBool(TMDbHelper.Service)</onload>
 	<onload>Skin.SetString(TMDbHelper.MonitorContainer,99950)</onload>
+	<onload>Skin.SetString(TMDbHelper.Date.Format,%d %B %Y)</onload>
+	<onload>RunScript(script.skinvariables,action=buildviews)</onload>
 	<onunload condition="Window.Next(addonbrowser)">SetProperty(WindowPreviousHome,true,home)</onunload>
 	<onunload condition="!Window.Next(addonbrowser)">ClearProperty(WindowPreviousHome,home)</onunload>
 	<onload condition="System.HasAddon(script.skinshortcuts)">RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=99&amp;levels=0&amp;group=mainmenu|shutdown)</onload>
@@ -250,8 +252,7 @@
 					</control>
 				</focusedlayout>
 				<content>
-					<include condition="!Skin.HasSetting(CustomHome)">skinshortcuts-mainmenu-default</include>
-					<include condition="Skin.HasSetting(CustomHome)">skinshortcuts-mainmenu</include>
+					<include>skinshortcuts-mainmenu</include>
 				</content>
 			</control>
 			<control type="image">
@@ -406,7 +407,7 @@
 						<left>23</left>
 						<top>383</top>
 						<width>251</width>
-						<height>46</height>
+						<height>48</height>
 						<font>Med20</font>
 						<label>$INFO[ListItem.Property(Outlook)]</label>
 						<textcolor>ffdadada</textcolor>
@@ -455,7 +456,7 @@
 						<left>23</left>
 						<top>383</top>
 						<width>251</width>
-						<height>46</height>
+						<height>48</height>
 						<font>Med20</font>
 						<label>$INFO[ListItem.Property(Outlook)]</label>
 						<textcolor>ffdadada</textcolor>
@@ -529,7 +530,7 @@
 				<visible>String.IsEqual(Container(99).ListItem.Property(defaultID),settings)</visible>
 				<itemlayout height="497" width="300">
 					<control type="group">
-						<animation center="134,240" condition="True" effect="zoom" end="84.5" start="84.5">Conditional</animation>
+						<animation center="134,240" condition="true" effect="zoom" end="84.5" start="84.5">Conditional</animation>
 						<control type="image">
 							<width>333</width>
 							<height>497</height>
@@ -556,7 +557,7 @@
 				</itemlayout>
 				<focusedlayout height="497" width="300">
 					<control type="group">
-						<animation center="134,240" condition="True" effect="zoom" end="84.5" start="84.5">Conditional</animation>
+						<animation center="134,240" condition="true" effect="zoom" end="84.5" start="84.5">Conditional</animation>
 						<control type="image">
 							<width>333</width>
 							<height>497</height>

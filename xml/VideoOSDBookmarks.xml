@@ -32,36 +32,33 @@
 						<height>576</height>
 						<texture border="50">views/shadow_nf.png</texture>
 					</control>
-					<control type="image">
-						<top>48</top>
-						<width>640</width>
-						<height>480</height>
-						<aspectratio align="center">scale</aspectratio>
-						<texture background="true" fallback="views/episode_fallback.png">$INFO[ListItem.Icon]</texture>
-					</control>
-					<control type="image">
-						<bottom>48</bottom>
-						<width>640</width>
-						<height>125</height>
-						<texture border="2">views/default_overlay.png</texture>
-						<visible>!String.IsEqual(ListItem.Label,..) + !String.Contains(ListItem.Icon,Default)</visible>
-					</control>
-					<control type="label">
-						<left>18</left>
-						<top>447</top>
-						<width>604</width>
-						<height>42</height>
-						<font>Bold44</font>
-						<textcolor>ffffffff</textcolor>
-						<shadowcolor>88000000</shadowcolor>
-						<label>$INFO[ListItem.Label]</label>
-						<visible>!String.IsEqual(ListItem.Label,..)</visible>
-					</control>
-					<control type="image">
-						<top>48</top>
-						<width>640</width>
-						<height>480</height>
-						<texture>views/OverlayNF.png</texture>
+					<control type="group">
+						<include>ItemListFadeDiffuseAnimation</include>
+						<control type="image">
+							<top>48</top>
+							<width>640</width>
+							<height>480</height>
+							<aspectratio align="center">scale</aspectratio>
+							<texture background="true" fallback="views/episode_fallback.png">$INFO[ListItem.Icon]</texture>
+						</control>
+						<control type="image">
+							<bottom>48</bottom>
+							<width>640</width>
+							<height>125</height>
+							<texture border="2">views/default_overlay.png</texture>
+							<visible>!String.IsEqual(ListItem.Label,..) + !String.Contains(ListItem.Icon,Default)</visible>
+						</control>
+						<control type="label">
+							<left>18</left>
+							<top>447</top>
+							<width>604</width>
+							<height>42</height>
+							<font>Bold44</font>
+							<textcolor>ffffffff</textcolor>
+							<shadowcolor>ShadowColour</shadowcolor>
+							<label>$INFO[ListItem.Label]</label>
+							<visible>!String.IsEqual(ListItem.Label,..)</visible>
+						</control>
 					</control>
 				</control>
 			</itemlayout>
@@ -90,45 +87,41 @@
 							<param name="ListID" value="11"/>
 						</include>
 					</control>
-					<control type="image">
-						<top>48</top>
-						<width>640</width>
-						<height>480</height>
-						<aspectratio align="center">scale</aspectratio>
-						<texture background="true" fallback="views/episode_fallback.png">$INFO[ListItem.Icon]</texture>
-					</control>
-					<control type="image">
-						<bottom>48</bottom>
-						<width>640</width>
-						<height>125</height>
-						<texture border="2">views/default_overlay.png</texture>
-						<visible>!String.IsEqual(ListItem.Label,..) + !String.Contains(ListItem.Icon,Default)</visible>
-						<animation center="auto" condition="Control.HasFocus(11)" easing="inout" effect="fade" end="0" start="0" time="0" tween="sine">Focus</animation>
-						<animation center="auto" condition="Control.HasFocus(11)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
-						<visible>Control.HasFocus(11)</visible>
-					</control>
-					<control type="label">
-						<left>18</left>
-						<top>447</top>
-						<width>604</width>
-						<height>42</height>
-						<font>Bold44</font>
-						<scroll>false</scroll>
-						<textcolor>ffffffff</textcolor>
-						<shadowcolor>88000000</shadowcolor>
-						<label>$INFO[ListItem.Label]</label>
-						<visible>!String.IsEqual(ListItem.Label,..)</visible>
-						<animation effect="fade" end="0" start="0" time="0">Focus</animation>
-						<visible>Control.HasFocus(11)</visible>
-					</control>
-					<control type="image">
-						<top>48</top>
-						<width>640</width>
-						<height>480</height>
-						<texture>views/OverlayNF.png</texture>
-						<include content="FocusedListIDAnimation">
+					<control type="group">
+						<include content="FocusedListIDFadeDiffuseAnimation">
 							<param name="ListID" value="11"/>
 						</include>
+						<control type="image">
+							<top>48</top>
+							<width>640</width>
+							<height>480</height>
+							<aspectratio align="center">scale</aspectratio>
+							<texture background="true" fallback="views/episode_fallback.png">$INFO[ListItem.Icon]</texture>
+						</control>
+						<control type="image">
+							<bottom>48</bottom>
+							<width>640</width>
+							<height>125</height>
+							<texture border="2">views/default_overlay.png</texture>
+							<visible>!String.IsEqual(ListItem.Label,..) + !String.Contains(ListItem.Icon,Default)</visible>
+							<animation center="auto" condition="Control.HasFocus(11)" easing="inout" effect="fade" end="0" start="0" time="0" tween="sine">Focus</animation>
+							<animation center="auto" condition="Control.HasFocus(11)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+							<visible>Control.HasFocus(11)</visible>
+						</control>
+						<control type="label">
+							<left>18</left>
+							<top>447</top>
+							<width>604</width>
+							<height>42</height>
+							<font>Bold44</font>
+							<scroll>false</scroll>
+							<textcolor>ffffffff</textcolor>
+							<shadowcolor>ShadowColour</shadowcolor>
+							<label>$INFO[ListItem.Label]</label>
+							<visible>!String.IsEqual(ListItem.Label,..)</visible>
+							<animation effect="fade" end="0" start="0" time="0">Focus</animation>
+							<visible>Control.HasFocus(11)</visible>
+						</control>
 					</control>
 				</control>
 			</focusedlayout>

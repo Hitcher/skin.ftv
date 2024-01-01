@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<!-- weather -->
-	<backgroundcolor>0xff12161b</backgroundcolor>
+	<backgroundcolor>BackgroundColour</backgroundcolor>
 	<onload>Control.SetFocus(99,0,absolute)</onload>
 	<onload>Control.SetFocus(101)</onload>
 	<onunload>ClearProperty(Hourly,home)</onunload>
@@ -55,13 +55,13 @@
 						<texture fallback="weather/icons/na.png">$INFO[Window(Weather).Property(Current.FanartCode),weather/icons/,.png]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
-					<control type="label">
+					<control type="textbox">
 						<left>148</left>
-						<top>167</top>
+						<top>108</top>
 						<width>230</width>
-						<height>50</height>
+						<height>158</height>
 						<font>Light40</font>
-						<wrapmultiline>true</wrapmultiline>
+						<aligny>center</aligny>
 						<label>$INFO[Weather.Conditions]</label>
 						<textcolor>ffffffff</textcolor>
 					</control>

@@ -1,8 +1,11 @@
 <colors>
 	<!-- Default colours -->
-	<color name="FocusedColor">ffffaf37</color>
-	<color name="NotFocusedColor">ff555555</color>
-	<color name="ShadowColor">44000000</color>
-	<color name="DisabledColor">ff000000</color>
-	<color name="InvalidColor">ffa10000</color>
+	<color name="BackgroundColour">ff12161b</color>
+	<color name="DialogBackColour">ff242628</color>
+	<color name="DialogHeadingColour">ff404347</color>
+	<color name="FocusedColour">ffffaf37</color>
+	<color name="NotFocusedColour">ff555555</color>
+	<color name="ShadowColour">88000000</color>
+	<color name="DisabledColour">80000000</color>
+	<color name="InvalidColour">ffa10000</color>
 </colors>

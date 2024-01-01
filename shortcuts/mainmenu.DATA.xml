@@ -9,8 +9,8 @@
 		<action>RunScript(script.globalsearch)</action>
 	</shortcut>
 	<shortcut>
-		<defaultID />
-		<label>Watchlist</label>
+		<defaultID>home</defaultID>
+		<label>10000</label>
 		<label2>Custom item</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb />
@@ -19,7 +19,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID>movies</defaultID>
-		<label>342</label>
+		<label>20342</label>
 		<label2>Common Shortcut</label2>
 		<icon>DefaultMovies.png</icon>
 		<thumb />
@@ -27,7 +27,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID>tvshows</defaultID>
-		<label>20343</label>
+		<label>36903</label>
 		<label2>Common Shortcut</label2>
 		<icon>DefaultTVShows.png</icon>
 		<thumb />
@@ -43,7 +43,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID>videos</defaultID>
-		<label>3</label>
+		<label>10025</label>
 		<label2>Common Shortcut</label2>
 		<icon>DefaultVideo.png</icon>
 		<thumb />
@@ -51,14 +51,14 @@
 	</shortcut>
 	<shortcut>
 		<defaultID>music</defaultID>
-		<label>2</label>
+		<label>10502</label>
 		<label2>Common Shortcut</label2>
 		<icon>DefaultMusicAlbums.png</icon>
 		<thumb />
 		<action>ActivateWindow(Music,root)</action>
 	</shortcut>
 	<shortcut>
-		<defaultID>15016</defaultID>
+		<defaultID>games</defaultID>
 		<label>15016</label>
 		<label2 />
 		<icon>ftv_icon.png</icon>
@@ -68,7 +68,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID>programs</defaultID>
-		<label>$SKIN[31101|skin.ftv|Apps]</label>
+		<label>10506</label>
 		<label2>Custom shortcut</label2>
 		<icon>DefaultProgram.png</icon>
 		<thumb />
@@ -76,7 +76,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID>pictures</defaultID>
-		<label>$SKIN[31100|skin.ftv|Photos]</label>
+		<label>1213</label>
 		<label2>Common Shortcut</label2>
 		<icon>DefaultPicture.png</icon>
 		<thumb />

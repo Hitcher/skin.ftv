@@ -13,17 +13,17 @@
 			<width>1010</width>
 			<height>879</height>
 			<!-- Background -->
-			<control type="image">
-				<width>1010</width>
-				<height>879</height>
-				<texture border="0,64,0,0">dialogs/game_osd_back.png</texture>
-			</control>
+			<include content="DialogBack">
+				<param name="dialog_back_width" value="100%"/>
+				<param name="dialog_back_height" value="100%"/>
+				<param name="dialog_shadow_1_visible" value="false"/>
+			</include>
 			<!-- Heading -->
 			<control type="label" id="1">
 				<left>40</left>
 				<top>14</top>
 				<height>30</height>
-				<width>937</width>
+				<width>938</width>
 				<aligny>center</aligny>
 				<font>Bold30</font>
 				<label>1021</label>
@@ -34,7 +34,7 @@
 				<right>40</right>
 				<top>14</top>
 				<height>30</height>
-				<width>937</width>
+				<width>938</width>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>Light30</font>

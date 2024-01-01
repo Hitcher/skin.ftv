@@ -16,29 +16,25 @@
 		</control>
 		<!-- Main group -->
 		<control type="group">
-			<include>DialogZoomAnimation</include>
+			<include content="DialogZoomAnimation">
+				<param name="OpenCondition" value="true"/>
+				<param name="CloseCondition" value="true"/>
+			</include>
 			<!-- Left group -->
 			<control type="group">
 				<left>90</left>
 				<top>174</top>
 				<width>625</width>
 				<height>816</height>
-				<control type="image">
-					<width>625</width>
-					<height>816</height>
-					<texture border="1,61,1,1">dialogs/file_manager_back.png</texture>
-				</control>
-				<!-- Heading label -->
-				<control type="label">
-					<left>40</left>
-					<top>14</top>
-					<height>30</height>
-					<width>545</width>
-					<aligny>center</aligny>
-					<font>Bold30</font>
-					<label>35050</label>
-					<textcolor>ffdadada</textcolor>
-				</control>
+				<include content="DialogBack">
+					<param name="dialog_back_width" value="625"/>
+					<param name="dialog_back_height" value="816"/>
+					<param name="dialog_heading_width" value="625"/>
+				</include>
+				<include content="DialogHeading">
+					<param name="dialog_heading_label_width" value="545"/>
+					<param name="dialog_heading_label" value="35050"/>
+				</include>
 				<!-- Left list -->
 				<control id="3" type="grouplist">
 					<top>60</top>
@@ -58,8 +54,8 @@
 					<font>Light32</font>
 					<textwidth>545</textwidth>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 				</control>
@@ -68,38 +64,32 @@
 			<control type="group">
 				<centerleft>50%</centerleft>
 				<top>174</top>
-				<width>460</width>
+				<width>400</width>
 				<height>816</height>
-				<control type="image">
-					<width>460</width>
-					<height>816</height>
-					<texture border="1,61,1,1">dialogs/file_manager_back.png</texture>
-				</control>
+				<include content="DialogBack">
+					<param name="dialog_back_width" value="400"/>
+					<param name="dialog_back_height" value="816"/>
+					<param name="dialog_heading_width" value="400"/>
+				</include>
 				<!-- Heading label -->
-				<control type="label">
-					<left>40</left>
-					<top>14</top>
-					<height>30</height>
-					<width>460</width>
-					<aligny>center</aligny>
-					<font>Bold30</font>
-					<label>31008</label>
-					<textcolor>ffdadada</textcolor>
-				</control>
+				<include content="DialogHeading">
+					<param name="dialog_heading_label_width" value="320"/>
+					<param name="dialog_heading_label" value="31008"/>
+				</include>
 				<!-- Image -->
 				<control type="gamecontroller" id="31">
 					<left>90</left>
-					<top>90</top>
-					<width>280</width>
-					<height>280</height>
-					<aspectratio align="center">scale</aspectratio>
+					<top>100</top>
+					<width>220</width>
+					<height>220</height>
+					<aspectratio aligny="top" align="center">scale</aspectratio>
 				</control>
 				<!-- Middle grouplist -->
 				<control type="grouplist" id="9000">
 					<left>24</left>
-					<bottom>8</bottom>
-					<width>460</width>
-					<height>430</height>
+					<bottom>33</bottom>
+					<width>352</width>
+					<height>420</height>
 					<onleft>3</onleft>
 					<onright>5</onright>
 					<onup>noop</onup>
@@ -108,65 +98,41 @@
 					<align>right</align>
 					<orientation>vertical</orientation>
 					<!-- Help Button -->
-					<control type="button" id="17">
-						<width>411</width>
-						<height>76</height>
-						<aligny>top</aligny>
-						<font>Med24</font>
-						<textoffsetx>23</textoffsetx>
-						<textoffsety>27</textoffsety>
-						<label>10043</label>
-					</control>
+					<include content="DialogButton">
+						<param name="button_id" value="17"/>
+						<param name="button_label" value="10043"/>
+						<param name="button_visible" value="Control.IsEnabled(17)"/>
+					</include>
 					<!-- Ignore Button -->
-					<control type="button" id="21">
-						<width>411</width>
-						<height>76</height>
-						<aligny>top</aligny>
-						<font>Med24</font>
-						<textoffsetx>23</textoffsetx>
-						<textoffsety>27</textoffsety>
-						<label>35019</label>
-					</control>
+					<include content="DialogButton">
+						<param name="button_id" value="21"/>
+						<param name="button_label" value="35019"/>
+						<param name="button_visible" value="Control.IsEnabled(21)"/>
+					</include>
 					<!-- Get all Button -->
-					<control type="button" id="22">
-						<width>411</width>
-						<height>76</height>
-						<aligny>top</aligny>
-						<font>Med24</font>
-						<textoffsetx>23</textoffsetx>
-						<textoffsety>27</textoffsety>
-						<label>35021</label>
-					</control>
+					<include content="DialogButton">
+						<param name="button_id" value="22"/>
+						<param name="button_label" value="35021"/>
+						<param name="button_visible" value="Control.IsEnabled(22)"/>
+					</include>
 					<!-- More Button -->
-					<control type="button" id="20">
-						<width>411</width>
-						<height>76</height>
-						<aligny>top</aligny>
-						<font>Med24</font>
-						<textoffsetx>23</textoffsetx>
-						<textoffsety>27</textoffsety>
-						<label>21452</label>
-					</control>
+					<include content="DialogButton">
+						<param name="button_id" value="20"/>
+						<param name="button_label" value="21452"/>
+						<param name="button_visible" value="Control.IsEnabled(20)"/>
+					</include>
 					<!-- Reset Button -->
-					<control type="button" id="19">
-						<width>411</width>
-						<height>76</height>
-						<aligny>top</aligny>
-						<font>Med24</font>
-						<textoffsetx>23</textoffsetx>
-						<textoffsety>27</textoffsety>
-						<label>13007</label>
-					</control>
+					<include content="DialogButton">
+						<param name="button_id" value="19"/>
+						<param name="button_label" value="13007"/>
+						<param name="button_visible" value="Control.IsEnabled(19)"/>
+					</include>
 					<!-- OK Button -->
-					<control type="button" id="18">
-						<width>411</width>
-						<height>76</height>
-						<aligny>top</aligny>
-						<font>Med24</font>
-						<textoffsetx>23</textoffsetx>
-						<textoffsety>27</textoffsety>
-						<label>186</label>
-					</control>
+					<include content="DialogButton">
+						<param name="button_id" value="18"/>
+						<param name="button_label" value="186"/>
+						<param name="button_visible" value="Control.IsEnabled(18)"/>
+					</include>
 				</control>
 			</control>
 			<!-- Right group -->
@@ -175,22 +141,15 @@
 				<top>174</top>
 				<width>625</width>
 				<height>816</height>
-				<control type="image">
-					<width>625</width>
-					<height>816</height>
-					<texture border="1,61,1,1">dialogs/file_manager_back.png</texture>
-				</control>
-				<!-- Heading label -->
-				<control type="label">
-					<left>40</left>
-					<top>14</top>
-					<height>30</height>
-					<width>545</width>
-					<aligny>center</aligny>
-					<font>Bold30</font>
-					<label>35059</label>
-					<textcolor>ffdadada</textcolor>
-				</control>
+				<include content="DialogBack">
+					<param name="dialog_back_width" value="625"/>
+					<param name="dialog_back_height" value="816"/>
+					<param name="dialog_heading_width" value="625"/>
+				</include>
+				<include content="DialogHeading">
+					<param name="dialog_heading_label_width" value="545"/>
+					<param name="dialog_heading_label" value="35059"/>
+				</include>
 				<!-- Right list -->
 				<control id="5" type="grouplist">
 					<top>60</top>
@@ -210,8 +169,8 @@
 					<font>Light32</font>
 					<textwidth>545</textwidth>
 					<textoffsetx>40</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 				</control>
@@ -221,38 +180,26 @@
 	<include name="Includes_DialogGamePorts">
 		<include>DialogBackgroundImage</include>
 		<control type="group">
-			<left>291.5</left>
-			<top>300</top>
-			<width>1337</width>
+			<centerleft>50%</centerleft>
+			<centertop>50%</centertop>
+			<width>1378</width>
 			<height>480</height>
-			<include>DialogZoomAnimation</include>
-			<control type="image">
-				<width>1337</width>
-				<height>480</height>
-				<texture>dialogs/network_back.png</texture>
-			</control>
-			<control type="label" id="2">
-				<left>40</left>
-				<top>14</top>
-				<height>30</height>
-				<width>937</width>
-				<aligny>center</aligny>
-				<font>Bold30</font>
-				<textcolor>ffdadada</textcolor>
-			</control>
-			<control type="label">
-				<right>440</right>
-				<top>13</top>
-				<width>937</width>
-				<height>30</height>
-				<font>Light30Spaced</font>
-				<align>right</align>
-				<textcolor>ff636364</textcolor>
-				<label>[COLOR ffb2b2b2]$INFO[Container(3).CurrentItem][/COLOR] | $INFO[Container(3).NumItems]</label>
-			</control>
+			<include content="DialogZoomAnimation">
+				<param name="OpenCondition" value="true"/>
+				<param name="CloseCondition" value="true"/>
+			</include>
+			<include content="DialogBack">
+			</include>
+			<!-- Heading -->
+			<include content="DialogHeading">
+				<param name="dialog_heading_label_id" value="2"/>
+			</include>
+			<include content="DialogHeadingCount">
+				<param name="dialog_heading_count_container_id" value="3"/>
+			</include>
 			<control id="3" type="fixedlist">
 				<top>60</top>
-				<width>937</width>
+				<width>978</width>
 				<height>420</height>
 				<onleft>noop</onleft>
 				<onright>9001</onright>
@@ -263,9 +210,9 @@
 				<focusposition>1</focusposition>
 				<orientation>vertical</orientation>
 				<animation condition="String.IsEqual(Container(3).NumItems,1) | String.IsEqual(Container(3).NumItems,2)" effect="slide" end="0,-140">Conditional</animation>
-				<itemlayout height="140" width="937">
+				<itemlayout height="140" width="978">
 					<control type="image">
-						<width>937</width>
+						<width>978</width>
 						<height>140</height>
 						<texture border="3">settings/button_no_focus.png</texture>
 					</control>
@@ -283,7 +230,7 @@
 						<width>720</width>
 						<height>42</height>
 						<font>Light32</font>
-						<textcolor>NotFocusedColor</textcolor>
+						<textcolor>NotFocusedColour</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<animation condition="String.IsEmpty(ListItem.Label2)" effect="slide" end="0,19">Conditional</animation>
 					</control>
@@ -293,13 +240,13 @@
 						<width>720</width>
 						<height>34</height>
 						<font>Light24</font>
-						<textcolor>NotFocusedColor</textcolor>
+						<textcolor>NotFocusedColour</textcolor>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="140" width="937">
+				<focusedlayout height="140" width="978">
 					<control type="image">
-						<width>937</width>
+						<width>978</width>
 						<height>140</height>
 						<texture border="3">settings/button_focus.png</texture>
 					</control>
@@ -317,7 +264,7 @@
 						<width>720</width>
 						<height>42</height>
 						<font>Light32</font>
-						<textcolor>FocusedColor</textcolor>
+						<textcolor>FocusedColour</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<animation condition="String.IsEmpty(ListItem.Label2)" effect="slide" end="0,19">Conditional</animation>
 						<visible>Control.HasFocus(3)</visible>
@@ -328,7 +275,7 @@
 						<width>720</width>
 						<height>34</height>
 						<font>Light24</font>
-						<textcolor>FocusedColor</textcolor>
+						<textcolor>FocusedColour</textcolor>
 						<label>$INFO[ListItem.Label2]</label>
 						<visible>Control.HasFocus(3)</visible>
 					</control>
@@ -338,7 +285,7 @@
 						<width>720</width>
 						<height>42</height>
 						<font>Light32</font>
-						<textcolor>NotFocusedColor</textcolor>
+						<textcolor>NotFocusedColour</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<animation condition="String.IsEmpty(ListItem.Label2)" effect="slide" end="0,19">Conditional</animation>
 						<visible>!Control.HasFocus(3)</visible>
@@ -349,7 +296,7 @@
 						<width>720</width>
 						<height>34</height>
 						<font>Light24</font>
-						<textcolor>NotFocusedColor</textcolor>
+						<textcolor>NotFocusedColour</textcolor>
 						<label>$INFO[ListItem.Label2]</label>
 						<visible>!Control.HasFocus(3)</visible>
 					</control>
@@ -359,7 +306,7 @@
 			<control type="grouplist" id="9001">
 				<right>24</right>
 				<bottom>33</bottom>
-				<width>351</width>
+				<width>352</width>
 				<height>420</height>
 				<onleft>3</onleft>
 				<onright>noop</onright>
@@ -369,75 +316,58 @@
 				<itemgap>10</itemgap>
 				<align>right</align>
 				<!-- Reset Button -->
-				<control type="button" id="19">
-					<width>351</width>
-					<height>76</height>
-					<aligny>top</aligny>
-					<font>Med24</font>
-					<textoffsetx>23</textoffsetx>
-					<textoffsety>27</textoffsety>
-					<label>13007</label>
-					<visible>Control.IsEnabled(19)</visible>
-				</control>
+				<include content="DialogButton">
+					<param name="button_id" value="19"/>
+					<param name="button_label" value="13007"/>
+					<param name="button_visible" value="Control.IsEnabled(19)"/>
+				</include>
 				<!-- OK Button -->
-				<control type="button" id="18">
-					<width>351</width>
-					<height>76</height>
-					<aligny>top</aligny>
-					<font>Med24</font>
-					<textoffsetx>23</textoffsetx>
-					<textoffsety>27</textoffsety>
-					<label>186</label>
-					<visible>Control.IsEnabled(18)</visible>
-				</control>
+				<include content="DialogButton">
+					<param name="button_id" value="18"/>
+					<param name="button_label" value="186"/>
+					<param name="button_visible" value="Control.IsEnabled(18)"/>
+				</include>
 			</control>
 		</control>
 	</include>
 	<include name="Includes_DialogGameAgents">
 		<include>DialogBackgroundImage</include>
 		<control type="group">
-			<left>310</left>
-			<top>209</top>
-			<width>1300</width>
+			<centerleft>50%</centerleft>
+			<centertop>50%</centertop>
+			<width>1340</width>
 			<height>662</height>
-			<include>DialogZoomAnimation</include>
-			<control type="image">
-				<width>100%</width>
-				<height>100%</height>
-				<texture border="0,64,1,0">dialogs/game_osd_back.png</texture>
-			</control>
-			<control type="label" id="2">
-				<left>20</left>
-				<top>14</top>
-				<height>30</height>
-				<width>1260</width>
-				<aligny>center</aligny>
-				<font>Bold30</font>
-				<textcolor>ffdadada</textcolor>
-				<label>35172</label>
-			</control>
-			<control type="label">
-				<left>20</left>
-				<top>13</top>
-				<width>1260</width>
-				<height>30</height>
-				<font>Light30Spaced</font>
-				<align>right</align>
-				<textcolor>ff636364</textcolor>
-				<label>[COLOR ffb2b2b2]$INFO[Container(5).CurrentItem][/COLOR] | $INFO[Container(5).NumItems]</label>
-			</control>
+			<include content="DialogZoomAnimation">
+				<param name="OpenCondition" value="true"/>
+				<param name="CloseCondition" value="true"/>
+			</include>
+			<include content="DialogBack">
+				<param name="dialog_back_width" value="1340"/>
+				<param name="dialog_heading_width" value="1340"/>
+				<param name="dialog_back_height" value="662"/>
+				<param name="dialog_shadow_1_visible" value="false"/>
+			</include>
+			<!-- Heading -->
+			<include content="DialogHeading">
+				<param name="dialog_heading_label_width" value="1260"/>
+				<param name="dialog_heading_label" value="35172"/>
+			</include>
+			<include content="DialogHeadingCount">
+				<param name="dialog_heading_count_width" value="1260"/>
+				<param name="dialog_heading_count_container_id" value="5"/>
+			</include>
 			<control type="group">
 				<top>60</top>
 				<height>800</height>
-				<width>1300</width>
+				<width>1340</width>
 				<control type="button" id="3">
-					<width>1300</width>
+					<width>1340</width>
 					<height>86</height>
 					<ondown>5</ondown>
 					<font>Light32</font>
-					<textoffsetx>20</textoffsetx>
-					<textcolor>NotFocusedColor</textcolor>
-					<focusedcolor>FocusedColor</focusedcolor>
+					<textoffsetx>40</textoffsetx>
+					<textcolor>NotFocusedColour</textcolor>
+					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<label>$LOCALIZE[35110]</label>
@@ -445,7 +375,7 @@
 				</control>
 				<control type="gamecontrollerlist" id="4">
 					<left>183</left>
-					<width>1300</width>
+					<width>1340</width>
 					<height>86</height>
 					<align>right</align>
 					<enable>false</enable>
@@ -458,7 +388,7 @@
 							<height>76</height>
 							<texture>$INFO[ListItem.Icon]</texture>
 							<controlleraddress>$INFO[ListItem.FilenameAndPath]</controlleraddress>
-							<controllerdiffuse>InvalidColor</controllerdiffuse>
+							<controllerdiffuse>InvalidColour</controllerdiffuse>
 						</control>
 					</itemlayout>
 					<focusedlayout width="86" height="86">
@@ -469,36 +399,42 @@
 							<height>76</height>
 							<texture>$INFO[ListItem.Icon]</texture>
 							<controlleraddress>$INFO[ListItem.FilenameAndPath]</controlleraddress>
-							<controllerdiffuse>InvalidColor</controllerdiffuse>
+							<controllerdiffuse>InvalidColour</controllerdiffuse>
 						</control>
 					</focusedlayout>
 				</control>
+				<control type="image">
+					<top>84</top>
+					<width>1340</width>
+					<height>2</height>
+					<texture>dialogs/default_line.png</texture>
+				</control>
 				<control type="list" id="5">
 					<top>86</top>
-					<width>1300</width>
+					<width>1340</width>
 					<height>516</height>
 					<onup>3</onup>
 					<ondown>6</ondown>
 					<scrolltime>0</scrolltime>
 					<orientation>vertical</orientation>
-					<itemlayout width="1300" height="86">
+					<itemlayout width="1340" height="86">
 						<control type="image">
-							<width>1300</width>
+							<width>1340</width>
 							<height>86</height>
 							<texture border="3">settings/button_no_focus.png</texture>
 						</control>
 						<control type="label">
-							<left>20</left>
-							<width>1300</width>
+							<left>40</left>
+							<width>1340</width>
 							<height>86</height>
 							<font>Light32</font>
 							<aligny>center</aligny>
-							<textcolor>NotFocusedColor</textcolor>
+							<textcolor>NotFocusedColour</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="gamecontrollerlist">
 							<left>183</left>
-							<width>1300</width>
+							<width>1340</width>
 							<align>right</align>
 							<enable>false</enable>
 							<orientation>horizontal</orientation>
@@ -569,23 +505,23 @@
 							</content-->
 						</control>
 					</itemlayout>
-					<focusedlayout width="1300" height="86">
+					<focusedlayout width="1340" height="86">
 						<control type="image">
-							<width>1300</width>
+							<width>1340</width>
 							<height>86</height>
 							<texture border="3">settings/button_focus.png</texture>
 						</control>
 						<control type="label">
-							<left>20</left>
+							<left>40</left>
 							<height>86</height>
 							<font>Light32</font>
 							<aligny>center</aligny>
-							<textcolor>FocusedColor</textcolor>
+							<textcolor>FocusedColour</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>Control.HasFocus(5)</visible>
 						</control>
 						<control type="label">
-							<left>20</left>
+							<left>40</left>
 							<height>86</height>
 							<font>Light32</font>
 							<aligny>center</aligny>
@@ -595,7 +531,7 @@
 						</control>
 						<control type="gamecontrollerlist">
 							<left>183</left>
-							<width>1300</width>
+							<width>1340</width>
 							<align>right</align>
 							<enable>false</enable>
 							<orientation>horizontal</orientation>

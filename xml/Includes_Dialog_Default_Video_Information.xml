@@ -225,7 +225,7 @@
 					<visible>!String.IsEmpty(ListItem.UserRating)</visible>
 				</control>
 				<control type="image">
-					<top>3</top>
+					<top>2</top>
 					<width>48</width>
 					<height>23</height>
 					<texture>views/logos/imdb.png</texture>
@@ -760,7 +760,7 @@
 				<onback>7000</onback>
 				<preloaditems>2</preloaditems>
 				<focusposition>2</focusposition>
-				<viewtype label="">list</viewtype>
+				<viewtype label="list">list</viewtype>
 				<orientation>horizontal</orientation>
 				<scrolltime easing="inout" tween="sine">300</scrolltime>
 				<include>ListBounceAnimation</include>
@@ -798,7 +798,7 @@
 							<height>42</height>
 							<font>Bold42</font>
 							<textcolor>ffffffff</textcolor>
-							<shadowcolor>80000000</shadowcolor>
+							<shadowcolor>ShadowColour</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -809,7 +809,7 @@
 							<font>Med28</font>
 							<scroll>false</scroll>
 							<textcolor>ffffffff</textcolor>
-							<shadowcolor>80000000</shadowcolor>
+							<shadowcolor>ShadowColour</shadowcolor>
 							<label>$INFO[ListItem.Label2,$LOCALIZE[20347] ,]</label>
 						</control>
 						<control type="image">
@@ -872,7 +872,7 @@
 							<font>Bold42</font>
 							<scroll>false</scroll>
 							<textcolor>ffffffff</textcolor>
-							<shadowcolor>80000000</shadowcolor>
+							<shadowcolor>ShadowColour</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<include content="FocusedListIDAnimation">
 								<param name="ListID" value="50"/>
@@ -886,7 +886,7 @@
 							<font>Med28</font>
 							<scroll>false</scroll>
 							<textcolor>ffffffff</textcolor>
-							<shadowcolor>80000000</shadowcolor>
+							<shadowcolor>ShadowColour</shadowcolor>
 							<label>$INFO[ListItem.Label2,$LOCALIZE[20347] ,]</label>
 							<include content="FocusedListIDAnimation">
 								<param name="ListID" value="50"/>

@@ -11,7 +11,7 @@
 			<font>OSD50</font>
 			<scroll>false</scroll>
 			<textcolor>fffafafa</textcolor>
-			<shadowcolor>80000000</shadowcolor>
+			<shadowcolor>ShadowColour</shadowcolor>
 			<label>$INFO[Player.SeekNumeric]</label>
 			<visible>!Window.IsActive(seekbar) + !Window.IsActive(fullscreeninfo) + !Window.IsActive(videoosd) + !Window.IsActive(musicosd) + !Window.IsActive(subtitlesearch) + !Window.IsVisible(script-nextup-notification-NextUpInfo.xml)</visible>
 		</control>
@@ -53,7 +53,7 @@
 						<font>OSD35</font>
 						<scroll>false</scroll>
 						<textcolor>fffafafa</textcolor>
-						<shadowcolor>80000000</shadowcolor>
+						<shadowcolor>ShadowColour</shadowcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
@@ -64,7 +64,7 @@
 						<font>OSD32</font>
 						<scroll>false</scroll>
 						<textcolor>ffd2d2d2</textcolor>
-						<shadowcolor>80000000</shadowcolor>
+						<shadowcolor>ShadowColour</shadowcolor>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 				</itemlayout>
@@ -94,7 +94,7 @@
 						<font>OSD35</font>
 						<scroll>false</scroll>
 						<textcolor>fffafafa</textcolor>
-						<shadowcolor>80000000</shadowcolor>
+						<shadowcolor>ShadowColour</shadowcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
@@ -105,7 +105,7 @@
 						<font>OSD32</font>
 						<scroll>false</scroll>
 						<textcolor>ffd2d2d2</textcolor>
-						<shadowcolor>80000000</shadowcolor>
+						<shadowcolor>ShadowColour</shadowcolor>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 				</focusedlayout>
@@ -136,7 +136,7 @@
 						<height>50</height>
 						<font>OSD40</font>
 						<textcolor>ffeaeaea</textcolor>
-						<shadowcolor>ff000000</shadowcolor>
+						<shadowcolor>ShadowColour</shadowcolor>
 						<label>$INFO[VideoPlayer.Title]</label>
 						<visible>String.IsEmpty(VideoPlayer.TVShowTitle)</visible>
 					</control>
@@ -146,7 +146,7 @@
 						<height>50</height>
 						<font>OSD40</font>
 						<textcolor>ffeaeaea</textcolor>
-						<shadowcolor>ff000000</shadowcolor>
+						<shadowcolor>ShadowColour</shadowcolor>
 						<label>$INFO[VideoPlayer.TVShowTitle]</label>
 						<visible>!String.IsEmpty(VideoPlayer.TVShowTitle)</visible>
 					</control>
@@ -156,7 +156,7 @@
 						<height>50</height>
 						<font>OSD40</font>
 						<textcolor>ffeaeaea</textcolor>
-						<shadowcolor>ff000000</shadowcolor>
+						<shadowcolor>ShadowColour</shadowcolor>
 						<label>$VAR[PlayerEpisodeValue]</label>
 					</control>
 				</control>
@@ -170,7 +170,7 @@
 					<align>center</align>
 					<font>OSD32</font>
 					<textcolor>fffe8e8e8</textcolor>
-					<shadowcolor>ff000000</shadowcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
 					<wrapmultiline>true</wrapmultiline>
 					<label>$INFO[VideoPlayer.Title]</label>
 					<visible>!String.IsEmpty(VideoPlayer.TVShowTitle)</visible>

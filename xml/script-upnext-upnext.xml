@@ -24,7 +24,7 @@
 				<height>50</height>
 				<font>OSD40</font>
 				<textcolor>ffffffff</textcolor>
-				<shadowcolor>ff080808</shadowcolor>
+				<shadowcolor>ShadowColour</shadowcolor>
 				<label>31164</label>
 			</control>
 			<!-- Next episode thumb -->
@@ -82,7 +82,7 @@
 				<font>OSD32</font>
 				<align>right</align>
 				<textcolor>ffffffff</textcolor>
-				<shadowcolor>ff080808</shadowcolor>
+				<shadowcolor>ShadowColour</shadowcolor>
 				<label>$LOCALIZE[31229]</label>
 			</control>
 			<!--  Close NextUp image -->
