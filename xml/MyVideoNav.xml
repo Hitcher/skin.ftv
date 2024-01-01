@@ -168,7 +168,7 @@
 						<visible>!String.IsEmpty(ListItem.Rating(imdb))</visible>
 					</control>
 					<control type="image">
-						<top>3</top>
+						<top>2</top>
 						<width>40</width>
 						<height>23</height>
 						<texture>views/logos/tvdb.png</texture>
@@ -185,7 +185,7 @@
 						<visible>!String.IsEmpty(ListItem.Rating(tvdb))</visible>
 					</control>
 					<control type="image">
-						<top>3</top>
+						<top>2</top>
 						<width>54</width>
 						<height>23</height>
 						<texture>views/logos/tmdb.png</texture>
@@ -478,6 +478,7 @@
 						<usecontrolcoords>true</usecontrolcoords>
 						<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows)</visible>
 						<control type="label">
+							<top>-1</top>
 							<width>auto</width>
 							<height>24</height>
 							<font>Med24Num</font>
@@ -487,7 +488,7 @@
 							<visible>!String.IsEmpty(ListItem.Year)</visible>
 						</control>
 						<control type="button">
-							<top>3</top>
+							<top>2</top>
 							<width>auto</width>
 							<height>23</height>
 							<align>center</align>
@@ -500,7 +501,7 @@
 							<visible>!String.IsEmpty(ListItem.Mpaa)</visible>
 						</control>
 						<control type="button">
-							<top>3</top>
+							<top>2</top>
 							<width>auto</width>
 							<height>23</height>
 							<align>center</align>
@@ -513,7 +514,7 @@
 							<visible>!String.IsEmpty(ListItem.SubtitleLanguage)</visible>
 						</control>
 						<control type="button">
-							<top>3</top>
+							<top>2</top>
 							<width>auto</width>
 							<height>23</height>
 							<align>center</align>
@@ -526,7 +527,7 @@
 							<visible>!String.IsEmpty(ListItem.HdrType)</visible>
 						</control>
 						<control type="button">
-							<top>3</top>
+							<top>2</top>
 							<width>auto</width>
 							<height>23</height>
 							<align>center</align>
@@ -539,7 +540,7 @@
 							<visible>!String.IsEmpty(ListItem.AudioCodec)</visible>
 						</control>
 						<control type="button">
-							<top>3</top>
+							<top>2</top>
 							<width>auto</width>
 							<height>23</height>
 							<align>center</align>
@@ -577,7 +578,7 @@
 							<visible>!String.IsEmpty(ListItem.Rating(imdb))</visible>
 						</control>
 						<control type="image">
-							<top>3</top>
+							<top>2</top>
 							<width>40</width>
 							<height>23</height>
 							<texture>views/logos/tvdb.png</texture>
@@ -594,7 +595,7 @@
 							<visible>!String.IsEmpty(ListItem.Rating(tvdb))</visible>
 						</control>
 						<control type="image">
-							<top>3</top>
+							<top>2</top>
 							<width>54</width>
 							<height>23</height>
 							<texture>views/logos/tmdb.png</texture>
@@ -711,15 +712,15 @@
 						</control>
 						<!-- Video versions / Collections -->
 						<control type="button">
-							<top>3</top>
+							<top>2</top>
 							<width>auto</width>
 							<height>24</height>
 							<align>center</align>
 							<aligny>top</aligny>
-							<font>Med16</font>
+							<font>Med20</font>
 							<label>$VAR[VersionLabel]</label>
 							<textoffsetx>12</textoffsetx>
-							<textoffsety>2</textoffsety>
+							<textoffsety>-1</textoffsety>
 							<textcolor>ffcccccc</textcolor>
 							<texturefocus border="5">views/version_button.png</texturefocus>
 							<texturenofocus border="5">views/version_button.png</texturenofocus>
@@ -838,7 +839,7 @@
 							<visible>!String.IsEmpty(ListItem.Premiered) + !String.IsEqual(System.Language,English)</visible>
 						</control>
 						<control type="button">
-							<top>3</top>
+							<top>2</top>
 							<width>auto</width>
 							<height>23</height>
 							<align>center</align>
@@ -851,7 +852,7 @@
 							<visible>!String.IsEmpty(ListItem.Mpaa)</visible>
 						</control>
 						<control type="button">
-							<top>3</top>
+							<top>2</top>
 							<width>auto</width>
 							<height>23</height>
 							<align>center</align>
@@ -864,7 +865,7 @@
 							<visible>!String.IsEmpty(ListItem.SubtitleLanguage)</visible>
 						</control>
 						<control type="button">
-							<top>3</top>
+							<top>2</top>
 							<width>auto</width>
 							<height>23</height>
 							<align>center</align>
@@ -877,7 +878,7 @@
 							<visible>!String.IsEmpty(ListItem.HdrType)</visible>
 						</control>
 						<control type="button">
-							<top>3</top>
+							<top>2</top>
 							<width>auto</width>
 							<height>23</height>
 							<align>center</align>
@@ -890,7 +891,7 @@
 							<visible>!String.IsEmpty(ListItem.AudioCodec)</visible>
 						</control>
 						<control type="button">
-							<top>3</top>
+							<top>2</top>
 							<width>auto</width>
 							<height>23</height>
 							<align>center</align>
