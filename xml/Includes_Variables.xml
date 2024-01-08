@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<variable name="SelectVersionLabel2">
-		<value condition="!String.IsEmpty(ListItem.HdrType) + !String.IsEmpty(ListItem.AudioLanguage)">$VAR[HDRType] | $VAR[VideoAspect] | $VAR[AudioCodec] | $VAR[AudioChannels] | $INFO[ListItem.AudioLanguage]</value>
-		<value condition="!String.IsEmpty(ListItem.AudioLanguage)">$VAR[VideoAspect] | $VAR[AudioCodec] | $VAR[AudioChannels] | $INFO[ListItem.AudioLanguage]</value>
-		<value>$VAR[VideoAspect] | $VAR[AudioCodec] | $VAR[AudioChannels]</value>
+		<value condition="!String.IsEmpty(ListItem.HdrType) + !String.IsEmpty(ListItem.AudioLanguage)">$VAR[HDRType] | $VAR[VideoAspect] | $VAR[AudioCodec] | $VAR[AudioChannels] | [UPPERCASE]$INFO[ListItem.AudioLanguage][/UPPERCASE] | $INFO[ListItem.Duration]</value>
+		<value condition="!String.IsEmpty(ListItem.AudioLanguage)">$VAR[VideoAspect] | $VAR[AudioCodec] | $VAR[AudioChannels] | [UPPERCASE]$INFO[ListItem.AudioLanguage][/UPPERCASE] | $INFO[ListItem.Duration]</value>
+		<value>$VAR[VideoAspect] | $VAR[AudioCodec] | $VAR[AudioChannels] | $INFO[ListItem.Duration]</value>
 	</variable>
 	<variable name="VideoAspect">
 		<value condition="String.IsEqual(ListItem.VideoAspect,1.00">1.00:1</value>
