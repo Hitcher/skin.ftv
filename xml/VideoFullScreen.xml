@@ -2,7 +2,7 @@
 <window>
 	<!-- fullscreenvideo -->
 	<controls>
-		<control id="99" type="label">
+		<control type="label">
 			<centerleft>50%</centerleft>
 			<top>144</top>
 			<width>278</width>
@@ -15,10 +15,10 @@
 			<label>$INFO[Player.SeekNumeric]</label>
 			<visible>!Window.IsActive(seekbar) + !Window.IsActive(fullscreeninfo) + !Window.IsActive(videoosd) + !Window.IsActive(musicosd) + !Window.IsActive(subtitlesearch) + !Window.IsVisible(script-nextup-notification-NextUpInfo.xml)</visible>
 		</control>
-		<control id="99" type="group">
+		<control type="group">
 			<visible>!Player.HasGame + String.IsEmpty(Window(home).Property(ShowXRay))</visible>
 			<!-- Cast -->
-			<control id="99" type="fixedlist">
+			<control type="fixedlist">
 				<left>90</left>
 				<bottom>-164</bottom>
 				<width>1920</width>
@@ -111,18 +111,18 @@
 				</focusedlayout>
 				<content limit="4">$VAR[XRayCast]</content>
 			</control>
-			<control id="99" type="group">
+			<control type="group">
 				<animation reversible="true" type="WindowOpen">
 					<effect end="100" start="0" time="200" type="fade"/>
 					<effect delay="4200" end="0" start="100" time="200" type="fade"/>
 				</animation>
 				<visible>!Window.IsActive(seekbar) + !Window.IsActive(fullscreeninfo) + !Window.IsActive(videoosd) + !Window.IsActive(musicosd) + !Window.IsActive(subtitlesearch) + !Window.IsVisible(script-nextup-notification-NextUpInfo.xml)</visible>
-				<control id="99" type="image">
+				<control type="image">
 					<width>1980</width>
 					<height>210</height>
 					<texture border="1">osd/mask_top.png</texture>
 				</control>
-				<control id="99" type="grouplist">
+				<control type="grouplist">
 					<left>20</left>
 					<top>64</top>
 					<width>1880</width>
@@ -131,7 +131,7 @@
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
 					<!--  Movie title -->
-					<control id="99" type="label">
+					<control type="label">
 						<width>auto</width>
 						<height>50</height>
 						<font>OSD40</font>
@@ -141,7 +141,7 @@
 						<visible>String.IsEmpty(VideoPlayer.TVShowTitle)</visible>
 					</control>
 					<!--  TV Show title -->
-					<control id="99" type="label">
+					<control type="label">
 						<width>auto</width>
 						<height>50</height>
 						<font>OSD40</font>
@@ -151,7 +151,7 @@
 						<visible>!String.IsEmpty(VideoPlayer.TVShowTitle)</visible>
 					</control>
 					<!-- Season/Episode number -->
-					<control id="99" type="label">
+					<control type="label">
 						<width>auto</width>
 						<height>50</height>
 						<font>OSD40</font>
@@ -161,7 +161,7 @@
 					</control>
 				</control>
 				<!--  Episode title -->
-				<control id="99" type="label">
+				<control type="label">
 					<left>20</left>
 					<top>129</top>
 					<width>1880</width>
@@ -175,191 +175,13 @@
 					<label>$INFO[VideoPlayer.Title]</label>
 					<visible>!String.IsEmpty(VideoPlayer.TVShowTitle)</visible>
 				</control>
-				<control id="99" type="image">
+				<control type="image">
 					<bottom>0</bottom>
 					<width>1980</width>
 					<height>120</height>
 					<texture>osd/mask.png</texture>
 				</control>
-				<!--  Cache bar -->
-				<control id="99" type="progress">
-					<left>92</left>
-					<bottom>93</bottom>
-					<width>1735</width>
-					<height>11</height>
-					<reveal>true</reveal>
-					<info>Player.ProgressCache</info>
-					<texturebg border="4">osd/progress_back.png</texturebg>
-					<lefttexture/>
-					<midtexture border="4">osd/progress_cache.png</midtexture>
-					<righttexture/>
-					<overlaytexture/>
-				</control>
-				<!--  Progress bar -->
-				<control id="99" type="progress">
-					<left>92</left>
-					<bottom>93</bottom>
-					<width>1735</width>
-					<height>11</height>
-					<reveal>true</reveal>
-					<info>Player.Progress</info>
-					<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
-					<lefttexture/>
-					<midtexture border="4">osd/progress_bar.png</midtexture>
-					<righttexture/>
-					<overlaytexture/>
-				</control>
-				<!--  Edits -->
-				<control id="99" type="ranges">
-					<left>92</left>
-					<bottom>105</bottom>
-					<width>1735</width>
-					<height>11</height>
-					<info>Player.Editlist</info>
-					<lefttexture border="1">osd/chapter.png</lefttexture>
-					<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
-					<midtexture border="4">osd/osd_scene.png</midtexture>
-					<righttexture border="1">osd/chapter.png</righttexture>
-				</control>
-				<!--  Cuts -->
-				<control id="99" type="ranges">
-					<left>92</left>
-					<bottom>105</bottom>
-					<width>1735</width>
-					<height>11</height>
-					<info>Player.Cuts</info>
-					<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
-					<righttexture border="2">osd/osd_cut.png</righttexture>
-				</control>
-				<!--  Scenes -->
-				<control id="99" type="ranges">
-					<left>92</left>
-					<bottom>93</bottom>
-					<width>1735</width>
-					<height>11</height>
-					<info>Player.SceneMarkers</info>
-					<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
-					<righttexture border="1">osd/chapter.png</righttexture>
-				</control>
-				<!--  Chapters -->
-				<control id="99" type="ranges">
-					<left>92</left>
-					<bottom>93</bottom>
-					<width>1735</width>
-					<height>11</height>
-					<info>Player.Chapters</info>
-					<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
-					<righttexture border="1">osd/chapter.png</righttexture>
-				</control>
-				<control id="99" type="grouplist">
-					<left>92</left>
-					<bottom>37</bottom>
-					<width>800</width>
-					<height>40</height>
-					<itemgap>2</itemgap>
-					<orientation>horizontal</orientation>
-					<usecontrolcoords>true</usecontrolcoords>
-					<!--  Current position -->
-					<control id="99" type="label">
-						<width>auto</width>
-						<height>34</height>
-						<font>OSD32</font>
-						<textcolor>fff3f3f3</textcolor>
-						<label>$VAR[PlayerTime]</label>
-					</control>
-					<!--  Divider -->
-					<control id="99" type="label">
-						<width>auto</width>
-						<height>34</height>
-						<font>OSD32</font>
-						<textcolor>ff696969</textcolor>
-						<label>/</label>
-						<visible>!String.IsEmpty(Player.Time) + !String.IsEmpty(Player.Duration)</visible>
-					</control>
-					<!--  Total length -->
-					<control id="99" type="label">
-						<width>auto</width>
-						<height>34</height>
-						<font>OSD32</font>
-						<textcolor>ff696969</textcolor>
-						<label>$VAR[PlayerDuration]</label>
-					</control>
-					<!--  4K label -->
-					<control id="99" type="label">
-						<left>24</left>
-						<top>-2</top>
-						<width>auto</width>
-						<height>34</height>
-						<font>Bold36</font>
-						<textcolor>ffebebeb</textcolor>
-						<label>Ultra</label>
-						<visible>String.IsEqual(VideoPlayer.VideoResolution,4K)</visible>
-					</control>
-					<!--  4K label -->
-					<control id="99" type="label">
-						<left>6</left>
-						<width>auto</width>
-						<height>34</height>
-						<font>Light35</font>
-						<textcolor>ffebebeb</textcolor>
-						<label>HD</label>
-						<visible>String.IsEqual(VideoPlayer.VideoResolution,4K)</visible>
-					</control>
-					<!--  HD label -->
-					<control id="99" type="label">
-						<left>24</left>
-						<top>-2</top>
-						<width>auto</width>
-						<height>34</height>
-						<font>Bold32</font>
-						<textcolor>ffebebeb</textcolor>
-						<label>[B]HD[/B]</label>
-						<visible>String.IsEqual(VideoPlayer.VideoResolution,720) | String.IsEqual(VideoPlayer.VideoResolution,1080)</visible>
-					</control>
-					<!--  Resolution label -->
-					<control id="99" type="label">
-						<left>2</left>
-						<top>-2</top>
-						<width>auto</width>
-						<height>34</height>
-						<font>Bold31</font>
-						<textcolor>ffebebeb</textcolor>
-						<label>1080p</label>
-						<visible>String.IsEqual(VideoPlayer.VideoResolution,1080)</visible>
-					</control>
-					<!--  HDR label -->
-					<control id="99" type="label">
-						<left>24</left>
-						<top>-2</top>
-						<width>auto</width>
-						<height>34</height>
-						<font>Bold36</font>
-						<textcolor>ffebebeb</textcolor>
-						<label>$VAR[PlayerHDRType]</label>
-						<visible>!String.IsEmpty(VideoPlayer.HdrType)</visible>
-					</control>
-					<!--  HDR label -->
-					<control id="99" type="label">
-						<left>6</left>
-						<width>auto</width>
-						<height>34</height>
-						<font>Light35</font>
-						<textcolor>ffebebeb</textcolor>
-						<label>Vision</label>
-						<visible>String.IsEqual(VideoPlayer.HdrType,dolbyvision)</visible>
-					</control>
-				</control>
-				<!--  Current time -->
-				<control id="99" type="label">
-					<right>92</right>
-					<bottom>44</bottom>
-					<width>800</width>
-					<height>30</height>
-					<font>OSD32</font>
-					<align>right</align>
-					<textcolor>fff3f3f3</textcolor>
-					<label>$INFO[System.Time][COLOR ff696969] / $INFO[Player.FinishTime][/COLOR]</label>
-				</control>
+				<include>VideoPlayerDetails</include>
 			</control>
 			<control id="2" type="group">
 				<visible>!Player.Paused + [Player.Forwarding | Player.Rewinding]</visible>
@@ -854,7 +676,7 @@
 				</control>
 			</control>
 			<!-- Pause -->
-			<control type="image" id="99">
+			<control type="image">
 				<centerleft>50%</centerleft>
 				<centertop>50%</centertop>
 				<width>321</width>
@@ -865,10 +687,10 @@
 					<effect type="fade" start="100" end="0" time="200"/>
 				</animation>
 			</control>
-			<control type="group" id="99">
+			<control type="group">
 				<visible>Player.Caching + !Window.IsVisible(seekbar)</visible>
 				<!-- Busy -->
-				<control type="image" id="99">
+				<control type="image">
 					<centerleft>50%</centerleft>
 					<centertop>50%</centertop>
 					<width>94</width>
@@ -876,7 +698,7 @@
 					<texture>common/spinner_outer.png</texture>
 					<animation effect="rotate" end="-360" center="auto" time="1120" loop="true" reversible="false" condition="true">Conditional</animation>
 				</control>
-				<control type="image" id="99">
+				<control type="image">
 					<centerleft>50%</centerleft>
 					<centertop>50%</centertop>
 					<width>94</width>
@@ -885,14 +707,6 @@
 					<animation effect="rotate" end="360" center="auto" time="1680" loop="true" reversible="false" condition="true">Conditional</animation>
 				</control>
 			</control>
-		</control>
-		<!-- X-Ray diffuse -->
-		<control id="99" type="image">
-			<width>1920</width>
-			<height>1080</height>
-			<texture>dialogs/XRayBackground.png</texture>
-			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
-			<visible>!String.IsEmpty(Window(home).Property(ShowXRay)) + Skin.HasSetting(EnableXRay)</visible>
 		</control>
 	</controls>
 </window>
