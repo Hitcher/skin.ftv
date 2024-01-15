@@ -789,7 +789,7 @@ msgid "Manage[CR]Extras"
 msgstr ""
 
 msgctxt "#31190"
-msgid "Which version you would like to select?"
+msgid "Which version would you like to select?"
 msgstr ""
 
 #empty strings from id 31191 to 31193
