@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="ListItemLabel">
+		<value condition="String.Contains(Container.FolderPath,videoversions)">[B]$INFO[ListItem.FolderName] [$INFO[ListItem.Label]][/B]</value>
+		<value>[B]$INFO[ListItem.Label][/B]</value>
+	</variable>
 	<variable name="SelectVersionLabel2">
-		<value condition="!String.IsEmpty(ListItem.HdrType) + !String.IsEmpty(ListItem.AudioLanguage)">$VAR[HDRType] | $VAR[VideoAspect] | $VAR[AudioCodec] | $VAR[AudioChannels] | [UPPERCASE]$INFO[ListItem.AudioLanguage][/UPPERCASE] | $INFO[ListItem.Duration]</value>
-		<value condition="!String.IsEmpty(ListItem.AudioLanguage)">$VAR[VideoAspect] | $VAR[AudioCodec] | $VAR[AudioChannels] | [UPPERCASE]$INFO[ListItem.AudioLanguage][/UPPERCASE] | $INFO[ListItem.Duration]</value>
+		<value condition="!String.IsEmpty(ListItem.HdrType)">$VAR[HDRType] | $VAR[VideoAspect] | $VAR[AudioCodec] | $VAR[AudioChannels] | $INFO[ListItem.Duration]</value>
 		<value>$VAR[VideoAspect] | $VAR[AudioCodec] | $VAR[AudioChannels] | $INFO[ListItem.Duration]</value>
 	</variable>
 	<variable name="VideoAspect">

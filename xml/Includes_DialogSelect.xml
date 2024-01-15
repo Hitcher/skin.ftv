@@ -75,7 +75,7 @@
 						<font>Reg37</font>
 						<textcolor>ffffffff</textcolor>
 						<scrollspeed>200</scrollspeed>
-						<label>$INFO[ListItem.Label]</label>
+						<label>$INFO[ListItem.VideoVersionName]</label>
 					</control>
 					<control type="label">
 						<top>78</top>
@@ -103,7 +103,7 @@
 						<textcolor>ff000000</textcolor>
 						<selectedcolor>ff000000</selectedcolor>
 						<scrollspeed>200</scrollspeed>
-						<label>$INFO[ListItem.Label]</label>
+						<label>$INFO[ListItem.VideoVersionName]</label>
 					</control>
 					<control type="label">
 						<top>78</top>

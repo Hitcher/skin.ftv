@@ -724,7 +724,7 @@
 							<textcolor>ffcccccc</textcolor>
 							<texturefocus border="5">views/version_button.png</texturefocus>
 							<texturenofocus border="5">views/version_button.png</texturenofocus>
-							<visible>ListItem.HasVideoVersions | ListItem.IsCollection</visible>
+							<visible>ListItem.HasVideoVersions + !String.Contains(Container.FolderPath,videoversion) | ListItem.IsCollection</visible>
 						</control>
 					</control>
 					<!-- Movie / TV Show plot -->
@@ -739,7 +739,7 @@
 							<pagecontrol>96</pagecontrol>
 							<autoscroll>false</autoscroll>
 							<textcolor>ffbcbcbc</textcolor>
-							<label>[B]$INFO[ListItem.Label][/B] [LIGHT]$VAR[Plot][/LIGHT]</label>
+							<label>$VAR[ListItemLabel] [LIGHT]$VAR[Plot][/LIGHT]</label>
 						</control>
 						<control id="96" type="scrollbar">
 							<top>145</top>
