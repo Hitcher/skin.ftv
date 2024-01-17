@@ -32,7 +32,7 @@
 				<height>2</height>
 				<texture>dialogs/default_line.png</texture>
 			</control>
-			<control id="50" type="fixedlist">
+			<control id="50" type="list">
 				<top>60</top>
 				<width>558</width>
 				<height>560</height>
@@ -41,11 +41,8 @@
 				<onright>9000</onright>
 				<onup>noop</onup>
 				<ondown>noop</ondown>
-				<movement>1</movement>
 				<scrolltime>0</scrolltime>
-				<focusposition>1</focusposition>
 				<orientation>vertical</orientation>
-				<animation condition="String.IsEqual(Container(50).NumItems,0) | String.IsEqual(Container(50).NumItems,1) | [String.IsEqual(Container(50).NumItems,2) + !Container(50).HasParent]" effect="slide" end="0,-140">Conditional</animation>
 				<itemlayout height="140" width="558">
 					<control type="image">
 						<width>558</width>

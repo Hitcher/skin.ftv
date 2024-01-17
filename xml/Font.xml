@@ -253,6 +253,11 @@
 			<size>26</size>
 		</font>
 		<font>
+			<name>Med25</name>
+			<filename>HelveticaNeue_Med.ttf</filename>
+			<size>25</size>
+		</font>
+		<font>
 			<name>Med24Spaced</name>
 			<filename>HelveticaNeue_Med.ttf</filename>
 			<size>24</size>
@@ -260,12 +265,6 @@
 		</font>
 		<font>
 			<name>Med24</name>
-			<filename>HelveticaNeue_Med.ttf</filename>
-			<size>24</size>
-			<linespacing>1.1</linespacing>
-		</font>
-		<font>
-			<name>Med24Num</name>
 			<filename>HelveticaNeue_Med.ttf</filename>
 			<size>24</size>
 			<linespacing>1.1</linespacing>
@@ -360,11 +359,6 @@
 			<name>Bold26</name>
 			<filename>HelveticaNeue_Bold.ttf</filename>
 			<size>26</size>
-		</font>
-		<font>
-			<name>Bold24Num</name>
-			<filename>HelveticaNeue_Bold.ttf</filename>
-			<size>24</size>
 		</font>
 		<!-- Required for system -->
 		<font>
@@ -598,6 +592,11 @@
 			<size>26</size>
 		</font>
 		<font>
+			<name>Med25</name>
+			<filename>Roboto-Medium.ttf</filename>
+			<size>25</size>
+		</font>
+		<font>
 			<name>Med24Spaced</name>
 			<filename>Roboto-Medium.ttf</filename>
 			<size>24</size>
@@ -606,12 +605,6 @@
 		<font>
 			<name>Med24</name>
 			<filename>Roboto-Medium.ttf</filename>
-			<size>24</size>
-			<linespacing>1.1</linespacing>
-		</font>
-		<font>
-			<name>Med24Num</name>
-			<filename>HelveticaNeue_Med.ttf</filename>
 			<size>24</size>
 			<linespacing>1.1</linespacing>
 		</font>
@@ -705,11 +698,6 @@
 			<name>Bold26</name>
 			<filename>Roboto-Bold.ttf</filename>
 			<size>26</size>
-		</font>
-		<font>
-			<name>Bold24Num</name>
-			<filename>HelveticaNeue_Bold.ttf</filename>
-			<size>24</size>
 		</font>
 		<!-- Required for system -->
 		<font>
@@ -1016,6 +1004,13 @@
 			<size>26</size>
 		</font>
 		<font>
+			<name>Med25</name>
+			<filename>Arial.ttf</filename>
+			<aspect>0.9</aspect>
+			<style>bold</style>
+			<size>25</size>
+		</font>
+		<font>
 			<name>Med24Spaced</name>
 			<filename>Arial.ttf</filename>
 			<aspect>0.9</aspect>
@@ -1028,12 +1023,6 @@
 			<filename>Arial.ttf</filename>
 			<aspect>0.9</aspect>
 			<style>bold</style>
-			<size>24</size>
-			<linespacing>1.1</linespacing>
-		</font>
-		<font>
-			<name>Med24Num</name>
-			<filename>HelveticaNeue_Med.ttf</filename>
 			<size>24</size>
 			<linespacing>1.1</linespacing>
 		</font>
@@ -1161,11 +1150,6 @@
 			<aspect>0.9</aspect>
 			<style>bold</style>
 			<size>26</size>
-		</font>
-		<font>
-			<name>Bold24Num</name>
-			<filename>HelveticaNeue_Bold.ttf</filename>
-			<size>24</size>
 		</font>
 		<!-- Required for system -->
 		<font>

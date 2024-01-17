@@ -134,245 +134,23 @@
 				</control>
 				<!-- Movie / TV Show Details -->
 				<control type="grouplist">
-					<top>110</top>
-					<height>26</height>
+					<top>108</top>
+					<height>38</height>
 					<itemgap>10</itemgap>
 					<orientation>horizontal</orientation>
 					<usecontrolcoords>true</usecontrolcoords>
 					<visible>Container.Content(movies) | Container.Content(seasons) | Container.Content(tvshows)</visible>
 					<control type="label">
-						<top>-1</top>
 						<width>auto</width>
-						<height>24</height>
-						<font>Med24Num</font>
+						<height>26</height>
+						<font>Med26</font>
 						<aligny>bottom</aligny>
 						<textcolor>ffbebebe</textcolor>
 						<label>$INFO[ListItem.Year,,[COLOR 00ffffff]/[/COLOR]]</label>
 						<visible>!String.IsEmpty(ListItem.Year)</visible>
 					</control>
-					<control type="button">
-						<top>2</top>
-						<width>auto</width>
-						<height>23</height>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>Med16</font>
-						<label>$INFO[ListItem.Mpaa,  ,  ]</label>
-						<textcolor>$VAR[RatingTextColour]</textcolor>
-						<texturefocus colordiffuse="$VAR[RatingButtonColour]" border="3">rating/flag.png</texturefocus>
-						<texturenofocus colordiffuse="$VAR[RatingButtonColour]" border="3">rating/flag.png</texturenofocus>
-						<visible>!String.IsEmpty(ListItem.Mpaa)</visible>
-					</control>
-					<control type="button">
-						<top>2</top>
-						<width>auto</width>
-						<height>23</height>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>Med16</font>
-						<label>  CC  </label>
-						<textcolor>ffcccccc</textcolor>
-						<texturefocus colordiffuse="FF888888" border="3">rating/flag.png</texturefocus>
-						<texturenofocus colordiffuse="FF888888" border="3">rating/flag.png</texturenofocus>
-						<visible>!String.IsEmpty(ListItem.SubtitleLanguage)</visible>
-					</control>
-					<control type="button">
-						<top>2</top>
-						<width>auto</width>
-						<height>23</height>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>Med16</font>
-						<label>  $VAR[HDRType]  </label>
-						<textcolor>ffcccccc</textcolor>
-						<texturefocus colordiffuse="FF888888" border="3">rating/flag.png</texturefocus>
-						<texturenofocus colordiffuse="FF888888" border="3">rating/flag.png</texturenofocus>
-						<visible>!String.IsEmpty(ListItem.HdrType)</visible>
-					</control>
-					<control type="button">
-						<top>2</top>
-						<width>auto</width>
-						<height>23</height>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>Med16</font>
-						<label>  $VAR[AudioCodec]  </label>
-						<textcolor>ffcccccc</textcolor>
-						<texturefocus colordiffuse="FF888888" border="3">rating/flag.png</texturefocus>
-						<texturenofocus colordiffuse="FF888888" border="3">rating/flag.png</texturenofocus>
-						<visible>!String.IsEmpty(ListItem.AudioCodec)</visible>
-					</control>
-					<control type="button">
-						<top>2</top>
-						<width>auto</width>
-						<height>23</height>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>Med16</font>
-						<label>  $VAR[AudioChannels]  </label>
-						<textcolor>ffcccccc</textcolor>
-						<texturefocus colordiffuse="FF888888" border="3">rating/flag.png</texturefocus>
-						<texturenofocus colordiffuse="FF888888" border="3">rating/flag.png</texturenofocus>
-						<visible>!String.IsEmpty(ListItem.AudioChannels)</visible>
-					</control>
-					<control type="image">
-						<top>2</top>
-						<width>137</width>
-						<height>24</height>
-						<texture>$INFO[ListItem.UserRating,rating/rating,.png]</texture>
-						<aspectratio align="left">keep</aspectratio>
-						<visible>!String.IsEmpty(ListItem.UserRating)</visible>
-					</control>
-					<control type="image">
-						<top>2</top>
-						<width>48</width>
-						<height>23</height>
-						<texture>views/logos/imdb.png</texture>
-						<visible>!String.IsEmpty(ListItem.Rating(imdb))</visible>
-					</control>
-					<control type="label">
-						<top>-13</top>
-						<width>auto</width>
-						<height>34</height>
-						<font>Bold30</font>
-						<aligny>bottom</aligny>
-						<textcolor>ffbcbcbc</textcolor>
-						<label>$INFO[ListItem.Rating(imdb),,/10]</label>
-						<visible>!String.IsEmpty(ListItem.Rating(imdb))</visible>
-					</control>
-					<control type="image">
-						<top>2</top>
-						<width>40</width>
-						<height>23</height>
-						<texture>views/logos/tvdb.png</texture>
-						<visible>!String.IsEmpty(ListItem.Rating(tvdb))</visible>
-					</control>
-					<control type="label">
-						<top>-13</top>
-						<width>auto</width>
-						<height>34</height>
-						<font>Bold30</font>
-						<aligny>bottom</aligny>
-						<textcolor>ffbcbcbc</textcolor>
-						<label>$INFO[ListItem.Rating(tvdb),,/10]</label>
-						<visible>!String.IsEmpty(ListItem.Rating(tvdb))</visible>
-					</control>
-					<control type="image">
-						<top>2</top>
-						<width>54</width>
-						<height>23</height>
-						<texture>views/logos/tmdb.png</texture>
-						<visible>!String.IsEmpty(ListItem.Rating(themoviedb))</visible>
-					</control>
-					<control type="label">
-						<top>-13</top>
-						<width>auto</width>
-						<height>34</height>
-						<font>Bold30</font>
-						<aligny>bottom</aligny>
-						<textcolor>ffbcbcbc</textcolor>
-						<label>$INFO[ListItem.Rating(themoviedb),,/10]</label>
-						<visible>!String.IsEmpty(ListItem.Rating(themoviedb))</visible>
-					</control>
-					<control type="image">
-						<top>2</top>
-						<width>54</width>
-						<height>23</height>
-						<texture>views/logos/tmdb.png</texture>
-						<visible>!String.IsEmpty(ListItem.Rating(tmdb))</visible>
-					</control>
-					<control type="label">
-						<top>-13</top>
-						<width>auto</width>
-						<height>34</height>
-						<font>Bold30</font>
-						<aligny>bottom</aligny>
-						<textcolor>ffbcbcbc</textcolor>
-						<label>$INFO[ListItem.Rating(tmdb),,/10]</label>
-						<visible>!String.IsEmpty(ListItem.Rating(tmdb))</visible>
-					</control>
-					<control type="image">
-						<top>2</top>
-						<width>23</width>
-						<height>23</height>
-						<texture>views/logos/trakt.png</texture>
-						<visible>!String.IsEmpty(ListItem.Rating(trakt))</visible>
-					</control>
-					<control type="label">
-						<top>-13</top>
-						<width>auto</width>
-						<height>34</height>
-						<font>Bold30</font>
-						<aligny>bottom</aligny>
-						<textcolor>ffbcbcbc</textcolor>
-						<label>$INFO[ListItem.Rating(trakt),,/10]</label>
-						<visible>!String.IsEmpty(ListItem.Rating(trakt))</visible>
-					</control>
-					<control type="image">
-						<top>2</top>
-						<width>24</width>
-						<height>24</height>
-						<texture>views/logos/metacritic.png</texture>
-						<visible>!String.IsEmpty(ListItem.Rating(metacritic))</visible>
-					</control>
-					<control type="label">
-						<top>-13</top>
-						<width>auto</width>
-						<height>34</height>
-						<font>Bold30</font>
-						<aligny>bottom</aligny>
-						<textcolor>ffbcbcbc</textcolor>
-						<label>$INFO[ListItem.Rating(metacritic),,/10]</label>
-						<visible>!String.IsEmpty(ListItem.Rating(metacritic))</visible>
-					</control>
-					<control type="image">
-						<top>2</top>
-						<width>24</width>
-						<height>24</height>
-						<texture>views/logos/rotten_tomatoes_fresh.png</texture>
-						<visible>[Skin.HasSetting(TomatoMeterAllCritics) + !String.IsEmpty(ListItem.Rating(tomatometerallcritics)) + Integer.IsGreaterOrEqual(Control.GetLabel(777),6)] | [Skin.HasSetting(AverageRatingAllCritics) + !String.IsEmpty(ListItem.Rating(tomatometeravgcritics)) + Integer.IsGreaterOrEqual(Control.GetLabel(777),6)]</visible>
-					</control>
-					<control type="image">
-						<top>2</top>
-						<width>25</width>
-						<height>24</height>
-						<texture>views/logos/rotten_tomatoes_rotten.png</texture>
-						<visible>[Skin.HasSetting(TomatoMeterAllCritics) + !String.IsEmpty(ListItem.Rating(tomatometerallcritics)) + Integer.IsLess(Control.GetLabel(777),6)] | [Skin.HasSetting(AverageRatingAllCritics) + !String.IsEmpty(ListItem.Rating(tomatometeravgcritics)) + Integer.IsLess(Control.GetLabel(777),6)]</visible>
-					</control>
-					<control type="image">
-						<top>2</top>
-						<width>18</width>
-						<height>24</height>
-						<texture>views/logos/rotten_tomatoes_audience_fresh.png</texture>
-						<visible>[Skin.HasSetting(TomatoMeterAudienceScore) + !String.IsEmpty(ListItem.Rating(tomatometerallaudience)) + Integer.IsGreaterOrEqual(Control.GetLabel(777),6)] | [Skin.HasSetting(AverageRatingAudienceScore) + !String.IsEmpty(ListItem.Rating(tomatometeravgaudience)) + Integer.IsGreaterOrEqual(Control.GetLabel(777),6)]</visible>
-					</control>
-					<control type="image">
-						<top>2</top>
-						<width>33</width>
-						<height>24</height>
-						<texture>views/logos/rotten_tomatoes_audience_rotten.png</texture>
-						<visible>[Skin.HasSetting(TomatoMeterAudienceScore) + !String.IsEmpty(ListItem.Rating(tomatometerallaudience)) + Integer.IsLess(Control.GetLabel(777),6)] | [Skin.HasSetting(AverageRatingAudienceScore) + !String.IsEmpty(ListItem.Rating(tomatometeravgaudience)) + Integer.IsLess(Control.GetLabel(777),6)]</visible>
-					</control>
-					<control type="label" id="777">
-						<top>-13</top>
-						<width>auto</width>
-						<height>34</height>
-						<font>Bold30</font>
-						<aligny>bottom</aligny>
-						<textcolor>ffbcbcbc</textcolor>
-						<label>$VAR[TomatoMeter,,/10]</label>
-						<visible>!String.IsEmpty(ListItem.Rating(tomatometerallcritics)) | !String.IsEmpty(ListItem.Rating(tomatometerallaudience)) | !String.IsEmpty(ListItem.Rating(tomatometeravgcritics)) | !String.IsEmpty(ListItem.Rating(tomatometeravgaudience))</visible>
-					</control>
-					<control type="label">
-						<top>-13</top>
-						<width>auto</width>
-						<height>34</height>
-						<font>Bold30</font>
-						<aligny>bottom</aligny>
-						<textcolor>ffbcbcbc</textcolor>
-						<label>$INFO[ListItem.Rating,,/10]</label>
-						<visible>String.IsEmpty(ListItem.Rating(imdb)) + String.IsEmpty(ListItem.Rating(trakt)) + String.IsEmpty(ListItem.Rating(tvdb)) + String.IsEmpty(ListItem.Rating(themoviedb)) + String.IsEmpty(ListItem.Rating(tmdb)) + String.IsEmpty(ListItem.Rating(metacritic)) + String.IsEmpty(ListItem.Rating(tomatometerallaudience)) + String.IsEmpty(ListItem.Rating(tomatometerallcritics)) + String.IsEmpty(ListItem.Rating(tomatometeravgaudience)) + String.IsEmpty(ListItem.Rating(tomatometeravgcritics))</visible>
-					</control>
+					<include>VideoDetails</include>
+					<include>VideoRatings</include>
 				</control>
 				<!-- Movie / TV Show plot -->
 				<control type="group">
@@ -415,104 +193,40 @@
 				</control>
 				<!-- Episode Plot -->
 				<control type="grouplist">
-					<top>111</top>
-					<height>30</height>
-					<itemgap>20</itemgap>
+					<top>108</top>
+					<height>38</height>
+					<itemgap>10</itemgap>
 					<orientation>horizontal</orientation>
 					<usecontrolcoords>true</usecontrolcoords>
 					<visible>Container.Content(episodes)</visible>
 					<control type="label">
 						<width>auto</width>
-						<height>24</height>
-						<font>Med24</font>
+						<height>26</height>
+						<font>Med26</font>
 						<aligny>bottom</aligny>
 						<textcolor>ffbebebe</textcolor>
-						<label>$INFO[ListItem.Duration(mins),, $LOCALIZE[31147]]</label>
+						<label>$INFO[ListItem.Duration(mins),, $LOCALIZE[31147]]  </label>
 						<visible>!String.IsEmpty(ListItem.Duration)</visible>
 					</control>
 					<control type="label">
 						<width>auto</width>
-						<height>24</height>
-						<font>Med24</font>
+						<height>26</height>
+						<font>Med26</font>
 						<aligny>bottom</aligny>
 						<textcolor>ffbebebe</textcolor>
-						<label>[COLOR ff707070]$LOCALIZE[31152]: [/COLOR]$VAR[AiredDate_Day] $VAR[AiredDate_Month] $VAR[AiredDate_YearStart]$VAR[AiredDate_YearEnd]</label>
+						<label>[COLOR ff707070]$LOCALIZE[31152]: [/COLOR]$VAR[AiredDate_Day] $VAR[AiredDate_Month] $VAR[AiredDate_YearStart]$VAR[AiredDate_YearEnd] </label>
 						<visible>!String.IsEmpty(ListItem.Premiered) + String.IsEqual(System.Language,English)</visible>
 					</control>
 					<control type="label">
 						<width>auto</width>
-						<height>24</height>
-						<font>Med24</font>
+						<height>26</height>
+						<font>Med26</font>
 						<aligny>bottom</aligny>
 						<textcolor>ffbebebe</textcolor>
 						<label>[COLOR ff707070]$LOCALIZE[31152]: [/COLOR]$INFO[ListItem.Premiered]</label>
 						<visible>!String.IsEmpty(ListItem.Premiered) + !String.IsEqual(System.Language,English)</visible>
 					</control>
-					<control type="button">
-						<top>3</top>
-						<width>auto</width>
-						<height>23</height>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>Med16</font>
-						<label>$INFO[ListItem.Mpaa,  ,  ]</label>
-						<textcolor>$VAR[RatingTextColour]</textcolor>
-						<texturefocus colordiffuse="$VAR[RatingButtonColour]" border="3">rating/flag.png</texturefocus>
-						<texturenofocus colordiffuse="$VAR[RatingButtonColour]" border="3">rating/flag.png</texturenofocus>
-						<visible>!String.IsEmpty(ListItem.Mpaa)</visible>
-					</control>
-					<control type="button">
-						<top>3</top>
-						<width>auto</width>
-						<height>23</height>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>Med16</font>
-						<label>  CC  </label>
-						<textcolor>ffcccccc</textcolor>
-						<texturefocus colordiffuse="FF888888" border="3">rating/flag.png</texturefocus>
-						<texturenofocus colordiffuse="FF888888" border="3">rating/flag.png</texturenofocus>
-						<visible>!String.IsEmpty(ListItem.SubtitleLanguage)</visible>
-					</control>
-					<control type="button">
-						<top>3</top>
-						<width>auto</width>
-						<height>23</height>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>Med16</font>
-						<label>  $VAR[HDRType]  </label>
-						<textcolor>ffcccccc</textcolor>
-						<texturefocus colordiffuse="FF888888" border="3">rating/flag.png</texturefocus>
-						<texturenofocus colordiffuse="FF888888" border="3">rating/flag.png</texturenofocus>
-						<visible>!String.IsEmpty(ListItem.HdrType)</visible>
-					</control>
-					<control type="button">
-						<top>3</top>
-						<width>auto</width>
-						<height>23</height>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>Med16</font>
-						<label>  $VAR[AudioCodec]  </label>
-						<textcolor>ffcccccc</textcolor>
-						<texturefocus colordiffuse="FF888888" border="3">rating/flag.png</texturefocus>
-						<texturenofocus colordiffuse="FF888888" border="3">rating/flag.png</texturenofocus>
-						<visible>!String.IsEmpty(ListItem.AudioCodec)</visible>
-					</control>
-					<control type="button">
-						<top>3</top>
-						<width>auto</width>
-						<height>23</height>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>Med16</font>
-						<label>  $VAR[AudioChannels]  </label>
-						<textcolor>ffcccccc</textcolor>
-						<texturefocus colordiffuse="FF888888" border="3">rating/flag.png</texturefocus>
-						<texturenofocus colordiffuse="FF888888" border="3">rating/flag.png</texturenofocus>
-						<visible>!String.IsEmpty(ListItem.AudioChannels)</visible>
-					</control>
+					<include>VideoDetails</include>
 				</control>
 				<control type="group">
 					<visible>Container.Content(episodes)</visible>

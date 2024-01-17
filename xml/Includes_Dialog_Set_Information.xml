@@ -82,60 +82,35 @@
 			</control>
 			<!-- Year / Runtime / Rating -->
 			<control type="grouplist">
-				<top>60</top>
-				<height>32</height>
-				<itemgap>22</itemgap>
+				<top>58</top>
+				<height>38</height>
+				<itemgap>10</itemgap>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
 				<visible>!Control.HasFocus(50) + !Control.HasFocus(55)</visible>
 				<animation effect="fade" end="0" start="100" time="0">Hidden</animation>
 				<animation delay="200" effect="fade" end="100" start="0" time="80">Visible</animation>
 				<control type="label">
-					<top>-6</top>
+					<top>-4</top>
 					<width>auto</width>
-					<height>32</height>
+					<height>34</height>
 					<font>Light32</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffbebebe</textcolor>
-					<label>$INFO[ListItem.Year]</label>
+					<label>$INFO[ListItem.Year]  </label>
 					<visible>!String.IsEmpty(ListItem.Year)</visible>
 				</control>
 				<control type="label">
-					<top>-6</top>
+					<top>-4</top>
 					<width>auto</width>
-					<height>32</height>
+					<height>34</height>
 					<font>Light32</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffbebebe</textcolor>
-					<label>$VAR[DurationHours]$VAR[DurationSpacing]$VAR[DurationMins] </label>
+					<label>$VAR[DurationHours]$VAR[DurationSpacing]$VAR[DurationMins]  </label>
 					<visible>!String.IsEmpty(ListItem.Duration)</visible>
 				</control>
-				<control type="button">
-					<top>3</top>
-					<width>auto</width>
-					<height>23</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>Med16</font>
-					<label>$INFO[ListItem.Mpaa,  ,  ]</label>
-					<textcolor>$VAR[RatingTextColour]</textcolor>
-					<texturefocus colordiffuse="$VAR[RatingButtonColour]" border="3">rating/flag.png</texturefocus>
-					<texturenofocus colordiffuse="$VAR[RatingButtonColour]" border="3">rating/flag.png</texturenofocus>
-					<visible>!String.IsEmpty(ListItem.Mpaa)</visible>
-				</control>
-				<control type="button">
-					<top>3</top>
-					<width>auto</width>
-					<height>23</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>Med16</font>
-					<label>  CC  </label>
-					<textcolor>ffcccccc</textcolor>
-					<texturefocus colordiffuse="FF888888" border="3">rating/flag.png</texturefocus>
-					<texturenofocus colordiffuse="FF888888" border="3">rating/flag.png</texturenofocus>
-					<visible>!String.IsEmpty(ListItem.SubtitleLanguage)</visible>
-				</control>
+				<include>VideoDetails</include>
 			</control>
 			<!-- Star rating / Rating -->
 			<control type="grouplist">

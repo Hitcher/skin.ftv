@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<variable name="ListItemLabel">
-		<value condition="String.Contains(Container.FolderPath,videoversions)">[B]$INFO[ListItem.FolderName] [$INFO[ListItem.Label]][/B]</value>
+		<value condition="String.Contains(Container.FolderPath,videoversions) + !String.IsEqual(Container.FolderName,ListItem.VideoVersionName)">[B]$INFO[Container.FolderName] [$INFO[ListItem.VideoVersionName]][/B]</value>
 		<value>[B]$INFO[ListItem.Label][/B]</value>
 	</variable>
-	<variable name="SelectVersionLabel2">
-		<value condition="!String.IsEmpty(ListItem.HdrType)">$VAR[HDRType] | $VAR[VideoAspect] | $VAR[AudioCodec] | $VAR[AudioChannels] | $INFO[ListItem.Duration]</value>
-		<value>$VAR[VideoAspect] | $VAR[AudioCodec] | $VAR[AudioChannels] | $INFO[ListItem.Duration]</value>
-	</variable>
 	<variable name="VideoAspect">
-		<value condition="String.IsEqual(ListItem.VideoAspect,1.00">1.00:1</value>
+		<value condition="String.IsEqual(ListItem.VideoAspect,1.00">1:1</value>
 		<value condition="String.IsEqual(ListItem.VideoAspect,1.19">1.19:1</value>
 		<value condition="String.IsEqual(ListItem.VideoAspect,1.33">4:3</value>
 		<value condition="String.IsEqual(ListItem.VideoAspect,1.37">1.37:1</value>
 		<value condition="String.IsEqual(ListItem.VideoAspect,1.66">1.66:1</value>
 		<value condition="String.IsEqual(ListItem.VideoAspect,1.78">16:9</value>
 		<value condition="String.IsEqual(ListItem.VideoAspect,1.85">1.85:1</value>
-		<value condition="String.IsEqual(ListItem.VideoAspect,2.00">2.00:1</value>
+		<value condition="String.IsEqual(ListItem.VideoAspect,2.00">2:1</value>
 		<value condition="String.IsEqual(ListItem.VideoAspect,2.20">2.20:1</value>
 		<value condition="String.IsEqual(ListItem.VideoAspect,2.35">2.35:1</value>
 		<value condition="String.IsEqual(ListItem.VideoAspect,2.40">2.40:1</value>
