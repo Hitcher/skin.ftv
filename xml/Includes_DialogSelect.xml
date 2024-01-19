@@ -26,7 +26,7 @@
 				<top>26</top>
 				<height>34</height>
 				<font>Reg28</font>
-				<label>31190</label>
+				<label>$VAR[SelectTypeMessage]</label>
 				<textcolor>ffdadada</textcolor>
 			</control>
 			<control type="image">

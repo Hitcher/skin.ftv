@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="SelectTypeMessage">
+		<value condition="Window.IsVisible(selectvideoversion)">$LOCALIZE[31190]</value>
+		<value condition="Window.IsVisible(selectvideoextra)">$LOCALIZE[31191]</value>
+	</variable>
 	<variable name="ListItemLabel">
 		<value condition="String.Contains(Container.FolderPath,videoversions) + !String.IsEqual(Container.FolderName,ListItem.VideoVersionName)">[B]$INFO[Container.FolderName] [$INFO[ListItem.VideoVersionName]][/B]</value>
 		<value>[B]$INFO[ListItem.Label][/B]</value>
@@ -20,7 +24,9 @@
 		<value condition="String.IsEqual(ListItem.VideoAspect,2.76">2.76:1</value>
 	</variable>
 	<variable name="VersionLabel">
+		<value condition="ListItem.HasVideoVersions + ListItem.HasVideoExtras">[UPPERCASE]$LOCALIZE[24069] + $LOCALIZE[40211][/UPPERCASE]</value>
 		<value condition="ListItem.HasVideoVersions">[UPPERCASE]$LOCALIZE[24069][/UPPERCASE]</value>
+		<value condition="ListItem.HasVideoExtras">[UPPERCASE]$LOCALIZE[40211][/UPPERCASE]</value>
 		<value condition="ListItem.IsCollection">[UPPERCASE]$LOCALIZE[31181][/UPPERCASE]</value>
 	</variable>
 	<variable name="VersionPoster">
