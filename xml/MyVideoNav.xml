@@ -335,7 +335,7 @@
 						<control type="button">
 							<top>2</top>
 							<width>auto</width>
-							<height>26</height>
+							<height>28</height>
 							<align>center</align>
 							<aligny>top</aligny>
 							<font>Med25</font>
