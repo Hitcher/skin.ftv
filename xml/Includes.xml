@@ -414,8 +414,8 @@
 			<font>Med18</font>
 			<label>$INFO[ListItem.Mpaa, , ]</label>
 			<textcolor>$VAR[RatingTextColour]</textcolor>
-			<texturefocus colordiffuse="$VAR[RatingButtonColour]" border="4">rating/flag.png</texturefocus>
-			<texturenofocus colordiffuse="$VAR[RatingButtonColour]" border="4">rating/flag.png</texturenofocus>
+			<texturefocus colordiffuse="$VAR[RatingButtonColour]" border="3">rating/flag.png</texturefocus>
+			<texturenofocus colordiffuse="$VAR[RatingButtonColour]" border="3">rating/flag.png</texturenofocus>
 			<visible>!String.IsEmpty(ListItem.Mpaa)</visible>
 		</control>
 		<control type="image">
@@ -434,8 +434,8 @@
 			<font>Med18</font>
 			<label> $VAR[VideoAspect] </label>
 			<textcolor>ffcccccc</textcolor>
-			<texturefocus colordiffuse="FF888888" border="4">rating/flag.png</texturefocus>
-			<texturenofocus colordiffuse="FF888888" border="4">rating/flag.png</texturenofocus>
+			<texturefocus colordiffuse="FF888888" border="3">rating/flag.png</texturefocus>
+			<texturenofocus colordiffuse="FF888888" border="3">rating/flag.png</texturenofocus>
 			<visible>!String.IsEmpty(ListItem.VideoAspect)</visible>
 		</control>
 		<control type="button">
@@ -447,8 +447,8 @@
 			<font>Med18</font>
 			<label> $VAR[HDRType] </label>
 			<textcolor>ffcccccc</textcolor>
-			<texturefocus colordiffuse="FF888888" border="4">rating/flag.png</texturefocus>
-			<texturenofocus colordiffuse="FF888888" border="4">rating/flag.png</texturenofocus>
+			<texturefocus colordiffuse="FF888888" border="3">rating/flag.png</texturefocus>
+			<texturenofocus colordiffuse="FF888888" border="3">rating/flag.png</texturenofocus>
 			<visible>!String.IsEmpty(ListItem.HdrType)</visible>
 		</control>
 		<control type="button">
@@ -460,8 +460,8 @@
 			<font>Med18</font>
 			<label> $VAR[AudioCodec] </label>
 			<textcolor>ffcccccc</textcolor>
-			<texturefocus colordiffuse="FF888888" border="4">rating/flag.png</texturefocus>
-			<texturenofocus colordiffuse="FF888888" border="4">rating/flag.png</texturenofocus>
+			<texturefocus colordiffuse="FF888888" border="3">rating/flag.png</texturefocus>
+			<texturenofocus colordiffuse="FF888888" border="3">rating/flag.png</texturenofocus>
 			<visible>!String.IsEmpty(ListItem.AudioCodec)</visible>
 		</control>
 		<control type="button">
@@ -473,8 +473,8 @@
 			<font>Med18</font>
 			<label> $VAR[AudioChannels] </label>
 			<textcolor>ffcccccc</textcolor>
-			<texturefocus colordiffuse="FF888888" border="4">rating/flag.png</texturefocus>
-			<texturenofocus colordiffuse="FF888888" border="4">rating/flag.png</texturenofocus>
+			<texturefocus colordiffuse="FF888888" border="3">rating/flag.png</texturefocus>
+			<texturenofocus colordiffuse="FF888888" border="3">rating/flag.png</texturenofocus>
 			<visible>!String.IsEmpty(ListItem.AudioChannels)</visible>
 		</control>
 	</include>

@@ -211,8 +211,8 @@
 						<textcolor>ffdadada</textcolor>
 						<focusedcolor>ff222222</focusedcolor>
 						<visible>Control.IsEnabled(2)</visible>
-						<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-						<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+						<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+						<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 						<visible>!String.IsEqual(ListItem.Label,..) + !String.Contains(Container.FolderName,$LOCALIZE[20434]) + !String.StartsWith(ListItem.Path,videodb://movies/sets)</visible>
 					</control>
 					<control id="4" type="button">
@@ -227,8 +227,8 @@
 						<textcolor>ffdadada</textcolor>
 						<focusedcolor>ff222222</focusedcolor>
 						<visible>Control.IsEnabled(4)</visible>
-						<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-						<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+						<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+						<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 					</control>
 					<control id="3" type="button">
 						<width min="144" max="204">auto</width>
@@ -242,8 +242,8 @@
 						<textcolor>ffdadada</textcolor>
 						<focusedcolor>ff222222</focusedcolor>
 						<visible>Control.IsEnabled(3)</visible>
-						<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-						<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+						<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+						<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 					</control>
 				</control>
 				<!-- Details -->

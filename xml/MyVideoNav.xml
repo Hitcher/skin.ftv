@@ -222,8 +222,8 @@
 							<textoffsetx>28</textoffsetx>
 							<textcolor>ffdadada</textcolor>
 							<focusedcolor>ff222222</focusedcolor>
-							<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-							<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+							<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+							<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 							<visible>String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,episode) | String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(ListItem.DBTYPE,season) | String.IsEqual(ListItem.DBTYPE,musicvideo) | String.IsEqual(ListItem.DBTYPE,album) | String.IsEqual(ListItem.DBTYPE,artist) | String.IsEqual(ListItem.DBTYPE,song) | String.IsEqual(ListItem.DBTYPE,set)</visible>
 						</control>
 						<control id="1003" type="button">
@@ -240,8 +240,8 @@
 							<textcolor>ffdadada</textcolor>
 							<focusedcolor>ff222222</focusedcolor>
 							<visible>!String.IsEmpty(ListItem.Trailer)</visible>
-							<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-							<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+							<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+							<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 						</control>
 						<control id="1004" type="button">
 							<width min="124" max="204">auto</width>
@@ -256,8 +256,8 @@
 							<textcolor>ffdadada</textcolor>
 							<focusedcolor>ff222222</focusedcolor>
 							<visible>Integer.IsGreater(Playlist.Length(video),0)</visible>
-							<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-							<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+							<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+							<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 						</control>
 						<control id="1005" type="button">
 							<width min="124" max="204">auto</width>
@@ -271,8 +271,8 @@
 							<textoffsetx>28</textoffsetx>
 							<textcolor>ffdadada</textcolor>
 							<focusedcolor>ff222222</focusedcolor>
-							<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-							<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+							<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+							<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 						</control>
 						<control type="button" id="1006">
 							<width min="124" max="204">auto</width>
@@ -287,8 +287,8 @@
 							<focusedcolor>ff222222</focusedcolor>
 							<onclick>Action(close)</onclick>
 							<onclick>RunScript(plugin.video.specialfeatures,ListItem)</onclick>
-							<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-							<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+							<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+							<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 							<visible>String.IsEqual(Window(home).Property(SpecialFeatures.Visible),true)</visible>
 						</control>
 						<control id="20" type="togglebutton">
@@ -306,10 +306,10 @@
 							<focusedcolor>ff222222</focusedcolor>
 							<visible>Control.IsEnabled(20)</visible>
 							<usealttexture>Library.IsScanningVideo</usealttexture>
-							<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-							<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
-							<alttexturefocus border="13,5,5,7">views/button_fo.png</alttexturefocus>
-							<alttexturenofocus border="13,3,5,5">views/button_nf.png</alttexturenofocus>
+							<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+							<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
+							<alttexturefocus border="14,6,5,7">views/button_fo.png</alttexturefocus>
+							<alttexturenofocus border="16,6,6,6">views/button_nf.png</alttexturenofocus>
 						</control>
 					</control>
 					<!-- Movie / TV Show Details -->
@@ -335,16 +335,14 @@
 						<control type="button">
 							<top>2</top>
 							<width>auto</width>
-							<height>28</height>
+							<height>26</height>
 							<align>center</align>
-							<aligny>top</aligny>
-							<font>Med25</font>
-							<label>$VAR[VersionLabel]</label>
-							<textoffsetx>10</textoffsetx>
-							<textoffsety>-2</textoffsety>
+							<aligny>bottom</aligny>
+							<font>Med18</font>
+							<label>  $VAR[VersionLabel]  </label>
 							<textcolor>ffcccccc</textcolor>
-							<texturefocus border="6">views/version_button.png</texturefocus>
-							<texturenofocus border="6">views/version_button.png</texturenofocus>
+							<texturefocus colordiffuse="FF888888" border="3">rating/flag.png</texturefocus>
+							<texturenofocus colordiffuse="FF888888" border="3">rating/flag.png</texturenofocus>
 							<visible>ListItem.HasVideoVersions + !String.Contains(Container.FolderPath,videoversion) | ListItem.IsCollection</visible>
 						</control>
 					</control>
@@ -487,7 +485,6 @@
 					<top>807</top>
 					<include>VisibleDelayFadeAnimation</include>
 					<visible>[!String.IsEmpty(Container.PluginName) + !Container.Content(episodes)] | [!Container.Content(movies) + !Container.Content(sets) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)]</visible>
-					<visible></visible>
 					<!-- Controls -->
 					<control id="1000" type="grouplist">
 						<left>-10</left>
@@ -519,8 +516,8 @@
 							<textoffsetx>28</textoffsetx>
 							<textcolor>ffdadada</textcolor>
 							<focusedcolor>ff222222</focusedcolor>
-							<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-							<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+							<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+							<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 							<visible>String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,episode) | String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(ListItem.DBTYPE,season) | String.IsEqual(ListItem.DBTYPE,musicvideo) | String.IsEqual(ListItem.DBTYPE,album) | String.IsEqual(ListItem.DBTYPE,artist) | String.IsEqual(ListItem.DBTYPE,song) | String.IsEqual(ListItem.DBTYPE,set)</visible>
 						</control>
 						<control id="1003" type="button">
@@ -537,8 +534,8 @@
 							<textcolor>ffdadada</textcolor>
 							<focusedcolor>ff222222</focusedcolor>
 							<visible>!String.IsEmpty(ListItem.Trailer)</visible>
-							<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-							<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+							<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+							<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 						</control>
 						<control id="1004" type="button">
 							<width min="124" max="204">auto</width>
@@ -553,8 +550,8 @@
 							<textcolor>ffdadada</textcolor>
 							<focusedcolor>ff222222</focusedcolor>
 							<visible>Integer.IsGreater(Playlist.Length(video),0)</visible>
-							<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-							<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+							<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+							<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 						</control>
 						<control id="1005" type="button">
 							<width min="124" max="204">auto</width>
@@ -568,8 +565,8 @@
 							<textoffsetx>28</textoffsetx>
 							<textcolor>ffdadada</textcolor>
 							<focusedcolor>ff222222</focusedcolor>
-							<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-							<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+							<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+							<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 						</control>
 						<control id="16" type="button">
 							<width min="124" max="204">auto</width>
@@ -582,8 +579,8 @@
 							<textoffsetx>28</textoffsetx>
 							<textcolor>ffdadada</textcolor>
 							<focusedcolor>ff222222</focusedcolor>
-							<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-							<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+							<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+							<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 							<visible>Container.Content(musicvideos)</visible>
 						</control>
 						<control id="20" type="togglebutton">
@@ -601,10 +598,10 @@
 							<focusedcolor>ff222222</focusedcolor>
 							<visible>Control.IsEnabled(20) + String.IsEmpty(Container.PluginName)</visible>
 							<usealttexture>Library.IsScanningVideo</usealttexture>
-							<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-							<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
-							<alttexturefocus border="13,5,5,7">views/button_fo.png</alttexturefocus>
-							<alttexturenofocus border="13,3,5,5">views/button_nf.png</alttexturenofocus>
+							<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+							<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
+							<alttexturefocus border="14,6,5,7">views/button_fo.png</alttexturefocus>
+							<alttexturenofocus border="16,6,6,6">views/button_nf.png</alttexturenofocus>
 						</control>
 					</control>
 					<!-- Details -->

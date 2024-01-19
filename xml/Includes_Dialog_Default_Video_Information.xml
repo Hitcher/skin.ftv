@@ -358,10 +358,10 @@
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
 					<visible>Control.IsEnabled(8) + !Control.IsEnabled(9)</visible>
-					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
-					<alttexturefocus border="13,5,5,7">views/button_fo.png</alttexturefocus>
-					<alttexturenofocus border="13,3,5,5">views/button_nf.png</alttexturenofocus>
+					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
+					<alttexturefocus border="14,6,5,7">views/button_fo.png</alttexturefocus>
+					<alttexturenofocus border="16,6,6,6">views/button_nf.png</alttexturenofocus>
 					<usealttexture>String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(Container.Content,seasons) | String.IsEqual(ListItem.DBTYPE,set)</usealttexture>
 				</control>
 				<!-- Resume Button -->
@@ -378,8 +378,8 @@
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
 					<visible>Control.IsEnabled(9)</visible>
-					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 				</control>
 				<!-- User Rating Button -->
 				<control id="1002" type="button">
@@ -398,8 +398,8 @@
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
 					<visible>Control.IsEnabled(7)</visible>
-					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 				</control>
 				<!-- Trailer button -->
 				<control id="1003" type="button">
@@ -418,8 +418,8 @@
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
 					<visible>!String.IsEmpty(ListItem.Trailer)</visible>
-					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 				</control>
 				<!-- Refresh Button -->
 				<control id="6" type="button">
@@ -435,8 +435,8 @@
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
 					<visible>Control.IsEnabled(6)</visible>
-					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 				</control>
 				<!-- Get Thumb Button -->
 				<control id="10" type="button">
@@ -452,8 +452,8 @@
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
 					<visible>Control.IsEnabled(10)</visible>
-					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 				</control>
 				<!-- Cinema Experience Button -->
 				<control id="21" type="button">
@@ -470,8 +470,8 @@
 					<textoffsetx>28</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
-					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 					<visible>System.HasAddon(script.cinema.experience) + String.IsEqual(ListItem.DBTYPE,movie)</visible>
 				</control>
 				<!-- Special Features button -->
@@ -489,8 +489,8 @@
 					<focusedcolor>ff222222</focusedcolor>
 					<onclick>Action(close)</onclick>
 					<onclick>RunScript(plugin.video.specialfeatures,ListItem)</onclick>
-					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 					<visible>String.IsEqual(Window(home).Property(SpecialFeatures.Visible),true)</visible>
 				</control>
 			</control>

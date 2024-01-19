@@ -210,10 +210,10 @@
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
 					<visible>Control.IsVisible(8)</visible>
-					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
-					<alttexturefocus border="13,5,5,7">views/button_fo.png</alttexturefocus>
-					<alttexturenofocus border="13,3,5,5">views/button_nf.png</alttexturenofocus>
+					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
+					<alttexturefocus border="14,6,5,7">views/button_fo.png</alttexturefocus>
+					<alttexturenofocus border="16,6,6,6">views/button_nf.png</alttexturenofocus>
 					<usealttexture>String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(Container.Content,seasons) | String.IsEqual(ListItem.DBTYPE,set)</usealttexture>
 				</control>
 				<!-- Get Thumb Button -->
@@ -231,8 +231,8 @@
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
 					<visible>Control.IsEnabled(10)</visible>
-					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 				</control>
 			</control>
 			<!-- Dummy Button grouplist -->

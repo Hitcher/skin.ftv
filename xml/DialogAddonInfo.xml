@@ -244,8 +244,8 @@
 					<textoffsetx>28</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
-					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 					<visible>Control.IsEnabled(12)</visible>
 				</control>
 				<!-- What's new Button -->
@@ -261,8 +261,8 @@
 					<textoffsetx>28</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
-					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 					<visible>!String.IsEmpty(ListItem.AddonNews)</visible>
 				</control>
 				<!-- Configure Addon button -->
@@ -278,8 +278,8 @@
 					<textoffsetx>28</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
-					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 					<visible>Control.IsEnabled(9)</visible>
 				</control>
 				<!-- Dependencies Button -->
@@ -295,8 +295,8 @@
 					<textoffsetx>28</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
-					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 					<visible>Control.IsEnabled(10)</visible>
 				</control>
 				<!-- Update Addon Button -->
@@ -312,8 +312,8 @@
 					<textoffsetx>28</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
-					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 					<visible>Control.IsEnabled(14)</visible>
 				</control>
 				<!-- Install/UnInstall Addon button -->
@@ -329,8 +329,8 @@
 					<textoffsetx>28</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
-					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 					<visible>Control.IsEnabled(6)</visible>
 				</control>
 				<!-- Enable/Disable Addon button -->
@@ -346,8 +346,8 @@
 					<textoffsetx>28</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
-					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 					<visible>Control.IsEnabled(7)</visible>
 				</control>
 				<!-- Auto-update Addon Button -->
@@ -365,8 +365,8 @@
 					<textoffsetx>28</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
-					<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 				</control>
 			</control>
 			<!-- Screenshots list -->

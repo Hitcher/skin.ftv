@@ -145,8 +145,8 @@
 							<textoffsetx>28</textoffsetx>
 							<textcolor>ffdadada</textcolor>
 							<focusedcolor>ff222222</focusedcolor>
-							<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-							<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+							<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+							<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 							<visible>!ListItem.IsParentFolder + !Control.IsVisible(54) + [Container.Content(artists) | Container.Content(albums)]</visible>
 						</control>
 						<control id="1005" type="button">
@@ -162,8 +162,8 @@
 							<textcolor>ffdadada</textcolor>
 							<focusedcolor>ff222222</focusedcolor>
 							<visible>Integer.IsGreater(Playlist.Length(music),0)</visible>
-							<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-							<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+							<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+							<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 						</control>
 						<control id="1006" type="button">
 							<width min="124" max="204">auto</width>
@@ -177,8 +177,8 @@
 							<textoffsetx>28</textoffsetx>
 							<textcolor>ffdadada</textcolor>
 							<focusedcolor>ff222222</focusedcolor>
-							<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-							<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+							<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+							<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 						</control>
 						<control id="1007" type="button">
 							<width min="124" max="204">auto</width>
@@ -193,8 +193,8 @@
 							<textcolor>ffdadada</textcolor>
 							<focusedcolor>ff222222</focusedcolor>
 							<visible>Player.HasAudio</visible>
-							<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-							<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+							<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+							<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 						</control>
 						<control id="16" type="button">
 							<width min="124" max="204">auto</width>
@@ -208,8 +208,8 @@
 							<textoffsetx>28</textoffsetx>
 							<textcolor>ffdadada</textcolor>
 							<focusedcolor>ff222222</focusedcolor>
-							<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-							<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
+							<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+							<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
 						</control>
 						<control id="20" type="togglebutton">
 							<width min="124" max="204">auto</width>
@@ -226,10 +226,10 @@
 							<focusedcolor>ff222222</focusedcolor>
 							<visible>Control.IsEnabled(20)</visible>
 							<usealttexture>Library.IsScanningMusic</usealttexture>
-							<texturefocus border="13,5,5,7">views/button_fo.png</texturefocus>
-							<texturenofocus border="13,3,5,5">views/button_nf.png</texturenofocus>
-							<alttexturefocus border="13,5,5,7">views/button_fo.png</alttexturefocus>
-							<alttexturenofocus border="13,3,5,5">views/button_nf.png</alttexturenofocus>
+							<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
+							<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
+							<alttexturefocus border="14,6,5,7">views/button_fo.png</alttexturefocus>
+							<alttexturenofocus border="16,6,6,6">views/button_nf.png</alttexturenofocus>
 						</control>
 					</control>
 					<!-- Details -->
