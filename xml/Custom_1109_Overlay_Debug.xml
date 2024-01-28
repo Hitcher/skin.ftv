@@ -5,11 +5,11 @@
 	<controls>
 		<!-- Window/Dialog debug -->
 		<control type="grouplist">
-			<left>15</left>
-			<top>15</top>
-			<width>1920</width>
-			<height>450</height>
-			<itemgap>12</itemgap>
+			<left>30</left>
+			<top>30</top>
+			<width>3840</width>
+			<height>900</height>
+			<itemgap>24</itemgap>
 			<visible>Skin.HasSetting(DebugInfo)</visible>
 			<!-- Window labels -->
 			<control type="label">
@@ -441,11 +441,11 @@
 		</control>
 		<!-- Controls debug -->
 		<control type="grouplist">
-			<right>15</right>
-			<top>15</top>
-			<width>1400</width>
-			<height>450</height>
-			<itemgap>12</itemgap>
+			<right>30</right>
+			<top>30</top>
+			<width>2800</width>
+			<height>900</height>
+			<itemgap>24</itemgap>
 			<visible>Skin.HasSetting(DebugInfo)</visible>
 			<!-- Control label -->
 			<control type="label">

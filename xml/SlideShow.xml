@@ -6,12 +6,12 @@
 		<control type="image">
 			<centerleft>50%</centerleft>
 			<centertop>50%</centertop>
-			<width>321</width>
-			<height>341</height>
+			<width>642</width>
+			<height>682</height>
 			<texture>osd/Pause.png</texture>
 			<visible>SlideShow.IsPaused + !Window.IsVisible(addoninformation)</visible>
 			<animation type="Conditional" condition="System.IdleTime(2)" reversible="true">
-				<effect type="fade" start="100" end="0" time="200"/>
+				<effect type="fade" start="100" end="0" time="200" />
 			</animation>
 		</control>
 	</controls>

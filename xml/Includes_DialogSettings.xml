@@ -6,24 +6,23 @@
 		<control type="group">
 			<centerleft>50%</centerleft>
 			<centertop>50%</centertop>
-			<width>1378</width>
-			<height>480</height>
+			<width>2756</width>
+			<height>960</height>
 			<include>DialogSlideAnimation</include>
 			<include content="DialogZoomAnimation">
 				<param name="OpenCondition" value="!Window.IsVisible(settingscategory.xml) + !Window.IsVisible(addonbrowser)"/>
 				<param name="CloseCondition" value="!Window.IsVisible(settingscategory.xml)"/>
 			</include>
-			<include content="DialogBack">
-			</include>
+			<include content="DialogBack"/>
 			<!-- Heading -->
 			<include content="DialogHeading">
 				<param name="dialog_heading_label_id" value="2"/>
 			</include>
 			<!-- Grouplist -->
 			<control type="grouplist" id="5">
-				<top>60</top>
-				<width>978</width>
-				<height>420</height>
+				<top>120</top>
+				<width>1956</width>
+				<height>840</height>
 				<itemgap>0</itemgap>
 				<onleft>noop</onleft>
 				<onright>9001</onright>
@@ -35,106 +34,106 @@
 			</control>
 			<!-- Default button -->
 			<control type="button" id="7">
-				<width>978</width>
-				<height>84</height>
+				<width>1956</width>
+				<height>168</height>
 				<font>Light32</font>
-				<textoffsetx>40</textoffsetx>
+				<textoffsetx>80</textoffsetx>
 				<textcolor>NotFocusedColour</textcolor>
 				<focusedcolor>FocusedColour</focusedcolor>
-				<texturefocus border="3">settings/button_focus.png</texturefocus>
-				<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+				<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
+				<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
 			</control>
 			<!-- Default radiobutton -->
 			<control type="radiobutton" id="8">
-				<width>978</width>
-				<height>84</height>
+				<width>1956</width>
+				<height>168</height>
 				<font>Light32</font>
-				<textwidth>704</textwidth>
-				<textoffsetx>40</textoffsetx>
+				<textwidth>1508</textwidth>
+				<textoffsetx>80</textoffsetx>
 				<textcolor>NotFocusedColour</textcolor>
 				<focusedcolor>FocusedColour</focusedcolor>
-				<radiowidth>125</radiowidth>
-				<radioheight>53</radioheight>
-				<radioposx>773</radioposx>
+				<radiowidth>250</radiowidth>
+				<radioheight>106</radioheight>
+				<radioposx>1646</radioposx>
 				<textureradioonfocus>settings/radio_on_focus.png</textureradioonfocus>
 				<textureradioonnofocus>settings/radio_on_no_focus.png</textureradioonnofocus>
 				<textureradioondisabled>settings/radio_on_disabled.png</textureradioondisabled>
 				<textureradioofffocus>settings/radio_off_focus.png</textureradioofffocus>
 				<textureradiooffnofocus>settings/radio_off_no_focus.png</textureradiooffnofocus>
 				<textureradiooffdisabled>settings/radio_off_disabled.png</textureradiooffdisabled>
-				<texturefocus border="3">settings/button_focus.png</texturefocus>
-				<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+				<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
+				<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
 			</control>
 			<!-- Default spincontrolex -->
 			<control type="spincontrolex" id="9">
-				<width>978</width>
-				<height>84</height>
+				<width>1956</width>
+				<height>168</height>
 				<font>Light32</font>
-				<textwidth>738</textwidth>
-				<textoffsetx>40</textoffsetx>
+				<textwidth>1476</textwidth>
+				<textoffsetx>80</textoffsetx>
 				<textcolor>NotFocusedColour</textcolor>
 				<focusedcolor>FocusedColour</focusedcolor>
 				<selectedcolor>ffffffff</selectedcolor>
-				<texturefocus border="3">settings/button_focus.png</texturefocus>
-				<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+				<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
+				<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
 				<aligny>center</aligny>
 				<reverse>yes</reverse>
 			</control>
 			<!-- Default seperator -->
 			<control id="11" type="image">
-				<top>-2</top>
-				<height>2</height>
+				<top>-4</top>
+				<height>4</height>
 				<texture>dialogs/default_line.png</texture>
 			</control>
 			<!-- Default edit -->
 			<control type="edit" id="12">
-				<width>978</width>
-				<height>84</height>
+				<width>1956</width>
+				<height>168</height>
 				<font>Light32</font>
-				<textoffsetx>40</textoffsetx>
+				<textoffsetx>80</textoffsetx>
 				<textcolor>NotFocusedColour</textcolor>
 				<focusedcolor>FocusedColour</focusedcolor>
-				<texturefocus border="3">settings/button_focus.png</texturefocus>
-				<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+				<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
+				<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
 			</control>
 			<!-- Default slider -->
 			<control type="sliderex" id="13">
-				<width>978</width>
-				<height>84</height>
+				<width>1956</width>
+				<height>168</height>
 				<font>Light32</font>
-				<textwidth>738</textwidth>
-				<textoffsetx>40</textoffsetx>
+				<textwidth>1476</textwidth>
+				<textoffsetx>80</textoffsetx>
 				<textcolor>NotFocusedColour</textcolor>
 				<focusedcolor>FocusedColour</focusedcolor>
-				<texturefocus border="3">settings/button_focus.png</texturefocus>
-				<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
-				<sliderwidth>200</sliderwidth>
-				<sliderheight>11</sliderheight>
-				<texturesliderbar border="4">osd/progress_back.png</texturesliderbar>
-				<texturesliderbardisabled colordiffuse="DisabledColour" border="4">osd/progress_back.png</texturesliderbardisabled>
-				<textureslidernib border="4">osd/progress_cache.png</textureslidernib>
-				<textureslidernibdisabled colordiffuse="DisabledColour" border="4">osd/progress_cache.png</textureslidernibdisabled>
-				<textureslidernibfocus border="4">osd/progress_bar.png</textureslidernibfocus>
+				<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
+				<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+				<sliderwidth>400</sliderwidth>
+				<sliderheight>24</sliderheight>
+				<texturesliderbar border="12">osd/progress_bar_back.png</texturesliderbar>
+				<texturesliderbardisabled colordiffuse="DisabledColour" border="12">osd/progress_bar_back.png</texturesliderbardisabled>
+				<textureslidernib border="12">osd/progress_bar_cache.png</textureslidernib>
+				<textureslidernibdisabled colordiffuse="DisabledColour" border="12">osd/progress_bar_cache.png</textureslidernibdisabled>
+				<textureslidernibfocus border="12">osd/progress_bar.png</textureslidernibfocus>
 			</control>
 			<!-- Default label -->
 			<control type="label" id="14">
-				<width>978</width>
-				<height>84</height>
+				<width>1956</width>
+				<height>168</height>
 				<font>Bold30</font>
-				<textoffsetx>40</textoffsetx>
+				<textoffsetx>80</textoffsetx>
 				<textcolor>ffdadada</textcolor>
 			</control>
 			<control type="grouplist" id="9001">
-				<right>24</right>
-				<bottom>33</bottom>
-				<width>352</width>
-				<height>420</height>
+				<right>48</right>
+				<bottom>66</bottom>
+				<width>704</width>
+				<height>840</height>
 				<onleft>5</onleft>
 				<onright>noop</onright>
 				<onup>noop</onup>
 				<ondown>noop</ondown>
 				<onback>5</onback>
-				<itemgap>10</itemgap>
+				<itemgap>20</itemgap>
 				<align>right</align>
 				<!-- Settings Button -->
 				<include content="DialogButton">
@@ -159,28 +158,28 @@
 	</include>
 	<include name="Includes_DialogSettings_OSDSettings">
 		<control type="group">
-			<top>655</top>
+			<top>1310</top>
 			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(subtitlesearch) | Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
 			<!-- Background -->
 			<control type="image">
-				<width>1920</width>
-				<height>425</height>
+				<width>3840</width>
+				<height>850</height>
 				<texture>osd/mask.png</texture>
 			</control>
 			<!-- Heading label -->
 			<control type="label" id="2">
-				<left>92</left>
-				<top>20</top>
-				<height>36</height>
+				<left>184</left>
+				<top>40</top>
+				<height>72</height>
 				<font>Bold30</font>
 				<textcolor>ffdadada</textcolor>
 			</control>
 			<!-- Grouplist -->
 			<control type="grouplist" id="5">
-				<left>87</left>
-				<top>60</top>
-				<width>1746</width>
-				<height>348</height>
+				<left>174</left>
+				<top>120</top>
+				<width>3492</width>
+				<height>696</height>
 				<itemgap>0</itemgap>
 				<onleft>noop</onleft>
 				<onright>noop</onright>
@@ -191,9 +190,9 @@
 			</control>
 			<!-- Default button -->
 			<control type="button" id="7">
-				<height>58</height>
+				<height>116</height>
 				<font>Light32</font>
-				<textoffsetx>5</textoffsetx>
+				<textoffsetx>10</textoffsetx>
 				<textcolor>ffffffff</textcolor>
 				<shadowcolor>ShadowColour</shadowcolor>
 				<focusedcolor>ffffc04b</focusedcolor>
@@ -203,16 +202,16 @@
 			</control>
 			<!-- Default radiobutton -->
 			<control type="radiobutton" id="8">
-				<height>58</height>
+				<height>116</height>
 				<font>Light32</font>
-				<textoffsetx>5</textoffsetx>
+				<textoffsetx>10</textoffsetx>
 				<textcolor>ffffffff</textcolor>
 				<shadowcolor>ShadowColour</shadowcolor>
 				<focusedcolor>ffffc04b</focusedcolor>
 				<disabledcolor>88ffffff</disabledcolor>
 				<texturefocus/>
 				<texturenofocus/>
-				<radioposx>708</radioposx>
+				<radioposx>1416</radioposx>
 				<radiowidth/>
 				<radioheight/>
 				<textureradioonfocus/>
@@ -222,9 +221,9 @@
 			</control>
 			<!-- Default spincontrolex -->
 			<control type="spincontrolex" id="9">
-				<height>58</height>
+				<height>116</height>
 				<font>Light32</font>
-				<textoffsetx>5</textoffsetx>
+				<textoffsetx>10</textoffsetx>
 				<textcolor>ffffffff</textcolor>
 				<shadowcolor>ShadowColour</shadowcolor>
 				<focusedcolor>ffffc04b</focusedcolor>
@@ -234,17 +233,17 @@
 			</control>
 			<!-- Default sliderex -->
 			<control type="sliderex" id="13">
-				<height>58</height>
+				<height>116</height>
 				<font>Light32</font>
-				<textoffsetx>5</textoffsetx>
+				<textoffsetx>10</textoffsetx>
 				<textcolor>ffffffff</textcolor>
 				<shadowcolor>ShadowColour</shadowcolor>
 				<focusedcolor>ffffc04b</focusedcolor>
 				<disabledcolor>88ffffff</disabledcolor>
 				<texturefocus/>
 				<texturenofocus/>
-				<sliderwidth>200</sliderwidth>
-				<sliderheight>11</sliderheight>
+				<sliderwidth>400</sliderwidth>
+				<sliderheight>24</sliderheight>
 			</control>
 		</control>
 	</include>

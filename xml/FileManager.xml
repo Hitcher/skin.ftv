@@ -6,10 +6,10 @@
 	<controls>
 		<!-- Heading -->
 		<control type="label">
-			<left>90</left>
-			<top>84</top>
+			<left>180</left>
+			<top>168</top>
 			<width>auto</width>
-			<height>80</height>
+			<height>160</height>
 			<font>Med48</font>
 			<aligny>bottom</aligny>
 			<textcolor>ffdadada</textcolor>
@@ -19,35 +19,35 @@
 		<!-- Main group -->
 		<control type="group">
 			<include content="DialogZoomAnimation">
-				<param name="OpenCondition" value="true"/>
-				<param name="CloseCondition" value="true"/>
+				<param name="OpenCondition" value="true" />
+				<param name="CloseCondition" value="true" />
 			</include>
 			<!-- Left group -->
 			<control type="group">
-				<left>90</left>
-				<top>174</top>
-				<width>825</width>
-				<height>816</height>
+				<left>180</left>
+				<top>348</top>
+				<width>1650</width>
+				<height>1632</height>
 				<include content="DialogBack">
-					<param name="dialog_back_width" value="825"/>
-					<param name="dialog_back_height" value="816"/>
-					<param name="dialog_heading_width" value="825"/>
+					<param name="dialog_back_width" value="1650" />
+					<param name="dialog_back_height" value="1632" />
+					<param name="dialog_heading_width" value="1650" />
 				</include>
 				<!-- Root label -->
 				<include content="DialogHeading">
-					<param name="dialog_heading_label_id" value="101"/>
-					<param name="dialog_heading_label_width" value="600"/>
-					<param name="dialog_heading_label_haspath" value="true"/>
+					<param name="dialog_heading_label_id" value="101" />
+					<param name="dialog_heading_label_width" value="1200" />
+					<param name="dialog_heading_label_haspath" value="true" />
 				</include>
 				<include content="DialogHeadingCount">
-					<param name="dialog_heading_count_width" value="745"/>
-					<param name="dialog_heading_count_container_id" value="20"/>
+					<param name="dialog_heading_count_width" value="1490" />
+					<param name="dialog_heading_count_container_id" value="20" />
 				</include>
 				<!-- Left list -->
 				<control id="20" type="fixedlist">
-					<top>60</top>
-					<width>825</width>
-					<height>756</height>
+					<top>120</top>
+					<width>1650</width>
+					<height>1512</height>
 					<onleft>Back</onleft>
 					<onright>21</onright>
 					<onup>20</onup>
@@ -56,54 +56,54 @@
 					<scrolltime>0</scrolltime>
 					<focusposition>4</focusposition>
 					<orientation>vertical</orientation>
-					<animation condition="String.IsEqual(Container(20).NumItems,0) | String.IsEqual(Container(20).NumItems,1) | [String.IsEqual(Container(20).NumItems,2) + !Container(20).HasParent]" effect="slide" end="0,-336">Conditional</animation>
-					<animation condition="[String.IsEqual(Container(20).NumItems,2) + Container(20).HasParent] | String.IsEqual(Container(20).NumItems,3) | [String.IsEqual(Container(20).NumItems,4) + !Container(20).HasParent]" effect="slide" end="0,-252">Conditional</animation>
-					<animation condition="[String.IsEqual(Container(20).NumItems,4) + Container(20).HasParent] | String.IsEqual(Container(20).NumItems,5) | [String.IsEqual(Container(20).NumItems,6) + !Container(20).HasParent]" effect="slide" end="0,-168">Conditional</animation>
-					<animation condition="[String.IsEqual(Container(20).NumItems,6) + Container(20).HasParent] | String.IsEqual(Container(20).NumItems,7) | [String.IsEqual(Container(20).NumItems,8) + !Container(20).HasParent]" effect="slide" end="0,-84">Conditional</animation>
-					<itemlayout height="84" width="825">
+					<animation condition="String.IsEqual(Container(20).NumItems,0) | String.IsEqual(Container(20).NumItems,1) | [String.IsEqual(Container(20).NumItems,2) + !Container(20).HasParent]" effect="slide" end="0,-672">Conditional</animation>
+					<animation condition="[String.IsEqual(Container(20).NumItems,2) + Container(20).HasParent] | String.IsEqual(Container(20).NumItems,3) | [String.IsEqual(Container(20).NumItems,4) + !Container(20).HasParent]" effect="slide" end="0,-504">Conditional</animation>
+					<animation condition="[String.IsEqual(Container(20).NumItems,4) + Container(20).HasParent] | String.IsEqual(Container(20).NumItems,5) | [String.IsEqual(Container(20).NumItems,6) + !Container(20).HasParent]" effect="slide" end="0,-336">Conditional</animation>
+					<animation condition="[String.IsEqual(Container(20).NumItems,6) + Container(20).HasParent] | String.IsEqual(Container(20).NumItems,7) | [String.IsEqual(Container(20).NumItems,8) + !Container(20).HasParent]" effect="slide" end="0,-168">Conditional</animation>
+					<itemlayout height="168" width="1650">
 						<control type="image">
-							<width>825</width>
-							<height>84</height>
-							<texture border="3">settings/button_no_focus.png</texture>
+							<width>1650</width>
+							<height>168</height>
+							<texture border="1,1,1,6">settings/button_no_focus.png</texture>
 						</control>
 						<control type="label">
-							<left>40</left>
-							<width>745</width>
-							<height>84</height>
+							<left>80</left>
+							<width>1490</width>
+							<height>168</height>
 							<font>Light32</font>
 							<textcolor>NotFocusedColour</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
-							<right>40</right>
-							<width>745</width>
-							<height>84</height>
+							<right>80</right>
+							<width>1490</width>
+							<height>168</height>
 							<align>right</align>
 							<font>Light32</font>
 							<textcolor>ff717171</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout height="84" width="825">
+					<focusedlayout height="168" width="1650">
 						<control type="image">
-							<width>825</width>
-							<height>84</height>
-							<texture border="3">settings/button_focus.png</texture>
+							<width>1650</width>
+							<height>168</height>
+							<texture border="1,1,1,6">settings/button_focus.png</texture>
 						</control>
 						<control type="group">
 							<visible>Control.HasFocus(20)</visible>
 							<control type="label">
-								<left>40</left>
-								<width>745</width>
-								<height>84</height>
+								<left>80</left>
+								<width>1490</width>
+								<height>168</height>
 								<font>Light32</font>
 								<textcolor>FocusedColour</textcolor>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
-								<right>40</right>
-								<width>745</width>
-								<height>84</height>
+								<right>80</right>
+								<width>1490</width>
+								<height>168</height>
 								<align>right</align>
 								<font>Light32</font>
 								<textcolor>ffdadada</textcolor>
@@ -113,17 +113,17 @@
 						<control type="group">
 							<visible>!Control.HasFocus(20)</visible>
 							<control type="label">
-								<left>40</left>
-								<width>745</width>
-								<height>84</height>
+								<left>80</left>
+								<width>1490</width>
+								<height>168</height>
 								<font>Light32</font>
 								<textcolor>ffffffff</textcolor>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
-								<right>40</right>
-								<width>745</width>
-								<height>84</height>
+								<right>80</right>
+								<width>1490</width>
+								<height>168</height>
 								<align>right</align>
 								<font>Light32</font>
 								<textcolor>ffdadada</textcolor>
@@ -133,46 +133,46 @@
 					</focusedlayout>
 				</control>
 				<control type="image">
-					<top>60</top>
-					<width>825</width>
-					<height>84</height>
+					<top>120</top>
+					<width>1650</width>
+					<height>168</height>
 					<visible>Container(20).HasPrevious</visible>
-					<texture border="2" diffuse="settings/mask.png" flipy="true">settings/mask_back.png</texture>
+					<texture border="4" diffuse="settings/mask.png" flipy="true">settings/mask_back.png</texture>
 				</control>
 				<control type="image">
-					<top>732</top>
-					<width>825</width>
-					<height>84</height>
+					<top>1464</top>
+					<width>1650</width>
+					<height>168</height>
 					<visible>Container(20).HasNext</visible>
-					<texture border="2" diffuse="settings/mask.png">settings/mask_back.png</texture>
+					<texture border="4" diffuse="settings/mask.png">settings/mask_back.png</texture>
 				</control>
 			</control>
 			<!-- Right group -->
 			<control type="group">
-				<left>1005</left>
-				<top>174</top>
-				<width>825</width>
-				<height>816</height>
+				<left>2010</left>
+				<top>348</top>
+				<width>1650</width>
+				<height>1632</height>
 				<include content="DialogBack">
-					<param name="dialog_back_width" value="825"/>
-					<param name="dialog_back_height" value="816"/>
-					<param name="dialog_heading_width" value="825"/>
+					<param name="dialog_back_width" value="1650" />
+					<param name="dialog_back_height" value="1632" />
+					<param name="dialog_heading_width" value="1650" />
 				</include>
 				<!-- Root label -->
 				<include content="DialogHeading">
-					<param name="dialog_heading_label_id" value="102"/>
-					<param name="dialog_heading_label_width" value="600"/>
-					<param name="dialog_heading_label_haspath" value="true"/>
+					<param name="dialog_heading_label_id" value="102" />
+					<param name="dialog_heading_label_width" value="1200" />
+					<param name="dialog_heading_label_haspath" value="true" />
 				</include>
 				<include content="DialogHeadingCount">
-					<param name="dialog_heading_count_width" value="745"/>
-					<param name="dialog_heading_count_container_id" value="21"/>
+					<param name="dialog_heading_count_width" value="1490" />
+					<param name="dialog_heading_count_container_id" value="21" />
 				</include>
 				<!-- Right list -->
 				<control id="21" type="fixedlist">
-					<top>60</top>
-					<width>825</width>
-					<height>756</height>
+					<top>120</top>
+					<width>1650</width>
+					<height>1512</height>
 					<onleft>20</onleft>
 					<onright>21</onright>
 					<onup>21</onup>
@@ -181,54 +181,54 @@
 					<scrolltime>0</scrolltime>
 					<focusposition>4</focusposition>
 					<orientation>vertical</orientation>
-					<animation condition="String.IsEqual(Container(21).NumItems,0) | String.IsEqual(Container(21).NumItems,1) | [String.IsEqual(Container(21).NumItems,2) + !Container(21).HasParent]" effect="slide" end="0,-336">Conditional</animation>
-					<animation condition="[String.IsEqual(Container(21).NumItems,2) + Container(21).HasParent] | String.IsEqual(Container(21).NumItems,3) | [String.IsEqual(Container(21).NumItems,4) + !Container(21).HasParent]" effect="slide" end="0,-252">Conditional</animation>
-					<animation condition="[String.IsEqual(Container(21).NumItems,4) + Container(21).HasParent] | String.IsEqual(Container(21).NumItems,5) | [String.IsEqual(Container(21).NumItems,6) + !Container(21).HasParent]" effect="slide" end="0,-168">Conditional</animation>
-					<animation condition="[String.IsEqual(Container(21).NumItems,6) + Container(21).HasParent] | String.IsEqual(Container(21).NumItems,7) | [String.IsEqual(Container(21).NumItems,8) + !Container(21).HasParent]" effect="slide" end="0,-84">Conditional</animation>
-					<itemlayout height="84" width="825">
+					<animation condition="String.IsEqual(Container(21).NumItems,0) | String.IsEqual(Container(21).NumItems,1) | [String.IsEqual(Container(21).NumItems,2) + !Container(21).HasParent]" effect="slide" end="0,-672">Conditional</animation>
+					<animation condition="[String.IsEqual(Container(21).NumItems,2) + Container(21).HasParent] | String.IsEqual(Container(21).NumItems,3) | [String.IsEqual(Container(21).NumItems,4) + !Container(21).HasParent]" effect="slide" end="0,-504">Conditional</animation>
+					<animation condition="[String.IsEqual(Container(21).NumItems,4) + Container(21).HasParent] | String.IsEqual(Container(21).NumItems,5) | [String.IsEqual(Container(21).NumItems,6) + !Container(21).HasParent]" effect="slide" end="0,-336">Conditional</animation>
+					<animation condition="[String.IsEqual(Container(21).NumItems,6) + Container(21).HasParent] | String.IsEqual(Container(21).NumItems,7) | [String.IsEqual(Container(21).NumItems,8) + !Container(21).HasParent]" effect="slide" end="0,-168">Conditional</animation>
+					<itemlayout height="168" width="1650">
 						<control type="image">
-							<width>825</width>
-							<height>84</height>
-							<texture border="3">settings/button_no_focus.png</texture>
+							<width>1650</width>
+							<height>168</height>
+							<texture border="1,1,1,6">settings/button_no_focus.png</texture>
 						</control>
 						<control type="label">
-							<left>40</left>
-							<width>745</width>
-							<height>84</height>
+							<left>80</left>
+							<width>1490</width>
+							<height>168</height>
 							<font>Light32</font>
 							<textcolor>NotFocusedColour</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
-							<right>40</right>
-							<width>745</width>
-							<height>84</height>
+							<right>80</right>
+							<width>1490</width>
+							<height>168</height>
 							<align>right</align>
 							<font>Light32</font>
 							<textcolor>ff717171</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout height="84" width="825">
+					<focusedlayout height="168" width="1650">
 						<control type="image">
-							<width>825</width>
-							<height>84</height>
-							<texture border="3">settings/button_focus.png</texture>
+							<width>1650</width>
+							<height>168</height>
+							<texture border="1,1,1,6">settings/button_focus.png</texture>
 						</control>
 						<control type="group">
 							<visible>Control.HasFocus(21)</visible>
 							<control type="label">
-								<left>40</left>
-								<width>745</width>
-								<height>84</height>
+								<left>80</left>
+								<width>1490</width>
+								<height>168</height>
 								<font>Light32</font>
 								<textcolor>FocusedColour</textcolor>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
-								<right>40</right>
-								<width>745</width>
-								<height>84</height>
+								<right>80</right>
+								<width>1490</width>
+								<height>168</height>
 								<align>right</align>
 								<font>Light32</font>
 								<textcolor>ffdadada</textcolor>
@@ -238,17 +238,17 @@
 						<control type="group">
 							<visible>!Control.HasFocus(21)</visible>
 							<control type="label">
-								<left>40</left>
-								<width>745</width>
-								<height>84</height>
+								<left>80</left>
+								<width>1490</width>
+								<height>168</height>
 								<font>Light32</font>
 								<textcolor>ffffffff</textcolor>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
-								<right>40</right>
-								<width>745</width>
-								<height>84</height>
+								<right>80</right>
+								<width>1490</width>
+								<height>168</height>
 								<align>right</align>
 								<font>Light32</font>
 								<textcolor>ffdadada</textcolor>
@@ -258,18 +258,18 @@
 					</focusedlayout>
 				</control>
 				<control type="image">
-					<top>60</top>
-					<width>825</width>
-					<height>84</height>
+					<top>120</top>
+					<width>1650</width>
+					<height>168</height>
 					<visible>Container(21).HasPrevious</visible>
-					<texture border="2" diffuse="settings/mask.png" flipy="true">settings/mask_back.png</texture>
+					<texture border="4" diffuse="settings/mask.png" flipy="true">settings/mask_back.png</texture>
 				</control>
 				<control type="image">
-					<top>732</top>
-					<width>825</width>
-					<height>84</height>
+					<top>1464</top>
+					<width>1650</width>
+					<height>168</height>
 					<visible>Container(21).HasNext</visible>
-					<texture border="2" diffuse="settings/mask.png">settings/mask_back.png</texture>
+					<texture border="4" diffuse="settings/mask.png">settings/mask_back.png</texture>
 				</control>
 			</control>
 		</control>

@@ -24,21 +24,33 @@
 			<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
 			<visible>Skin.HasSetting(EnableFanart)</visible>
 		</control>
+			<!-- No info found -->
+			<control type="label">
+				<centertop>50%</centertop>
+				<centerleft>50%</centerleft>
+				<width>2000</width>
+				<height>64</height>
+				<font>Med54</font>
+				<align>center</align>
+				<textcolor>ffbebebe</textcolor>
+				<label>$LOCALIZE[31078]</label>
+				<visible>Control.IsVisible(999)</visible>
+			</control>
 		<control type="group">
 			<visible>!Control.IsVisible(991) + !Control.IsVisible(999)</visible>
 			<animation delay="800" effect="fade" end="100" start="0" time="200">WindowOpen</animation>
 			<!-- Search Result -->
 			<control type="grouplist">
-				<left>176</left>
-				<top>118</top>
-				<height>80</height>
-				<itemgap>10</itemgap>
+				<left>352</left>
+				<top>236</top>
+				<height>160</height>
+				<itemgap>20</itemgap>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
 				<include>VisibleDelayFadeAnimation</include>
 				<control type="label">
 					<width>auto</width>
-					<height>60</height>
+					<height>120</height>
 					<font>Med48</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffdadada</textcolor>
@@ -47,9 +59,9 @@
 			</control>
 			<!-- Categories -->
 			<control type="fixedlist" id="9000">
-				<left>196</left>
-				<top>212</top>
-				<height>40</height>
+				<left>392</left>
+				<top>424</top>
+				<height>80</height>
 				<onup>Back</onup>
 				<ondown>50</ondown>
 				<onleft>Down</onleft>
@@ -57,10 +69,10 @@
 				<focusposition>0</focusposition>
 				<orientation>horizontal</orientation>
 				<include>VisibleDelayFadeAnimation</include>
-				<itemlayout width="287" height="40">
+				<itemlayout width="574" height="80">
 					<control type="label">
-						<width>287</width>
-						<height>40</height>
+						<width>574</width>
+						<height>80</height>
 						<font>Light32</font>
 						<aligny>bottom</aligny>
 						<textcolor>ff8e8b90</textcolor>
@@ -68,8 +80,8 @@
 						<visible>Control.HasFocus(9000)</visible>
 					</control>
 					<control type="label">
-						<width>287</width>
-						<height>40</height>
+						<width>574</width>
+						<height>80</height>
 						<font>Light32</font>
 						<aligny>bottom</aligny>
 						<textcolor>ff505559</textcolor>
@@ -77,10 +89,10 @@
 						<visible>!Control.HasFocus(9000)</visible>
 					</control>
 				</itemlayout>
-				<focusedlayout width="287" height="40">
+				<focusedlayout width="574" height="80">
 					<control type="label">
-						<width>287</width>
-						<height>40</height>
+						<width>574</width>
+						<height>80</height>
 						<font>Light32</font>
 						<aligny>bottom</aligny>
 						<textcolor>ffffc24b</textcolor>
@@ -88,8 +100,8 @@
 						<visible>Control.HasFocus(9000)</visible>
 					</control>
 					<control type="label">
-						<width>287</width>
-						<height>40</height>
+						<width>574</width>
+						<height>80</height>
 						<font>Light32</font>
 						<aligny>bottom</aligny>
 						<textcolor>ffd7d7d7</textcolor>
@@ -100,14 +112,14 @@
 			</control>
 			<!-- Lower group -->
 			<control type="group">
-				<left>196</left>
-				<top>782</top>
+				<left>392</left>
+				<top>1564</top>
 				<visible>!Control.HasFocus(9000)</visible>
 				<include>VisibleFadeAnimation</include>
 				<!-- Controls -->
 				<control id="1000" type="grouplist">
-					<left>-10</left>
-					<height>100</height>
+					<left>-20</left>
+					<height>200</height>
 					<itemgap>0</itemgap>
 					<onleft>50</onleft>
 					<onright>50</onright>
@@ -116,33 +128,33 @@
 					<defaultcontrol always="true">1001</defaultcontrol>
 					<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)</visible>
 					<control id="1001" type="button">
-						<width min="124" max="204">auto</width>
+						<width min="248" max="408">auto</width>
 						<wrapmultiline>true</wrapmultiline>
-						<height>100</height>
+						<height>200</height>
 						<onup>50</onup>
 						<ondown>3000</ondown>
 						<onclick>SetFocus(50)</onclick>
 						<onclick>Info</onclick>
 						<font>Med24</font>
 						<label>[CAPITALIZE]$VAR[MediaType][CR]$LOCALIZE[19033][/CAPITALIZE]</label>
-						<textoffsetx>28</textoffsetx>
+						<textoffsetx>56</textoffsetx>
 						<textcolor>ffdadada</textcolor>
 						<focusedcolor>ff222222</focusedcolor>
-						<texturefocus border="3">views/button_fo.png</texturefocus>
-						<texturenofocus border="3,3,5,5">views/button_nf.png</texturenofocus>
+						<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
+						<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
 					</control>
 				</control>
 				<!-- Movie / TV Show Details -->
 				<control type="grouplist">
-					<top>108</top>
-					<height>38</height>
-					<itemgap>10</itemgap>
+					<top>216</top>
+					<height>76</height>
+					<itemgap>20</itemgap>
 					<orientation>horizontal</orientation>
 					<usecontrolcoords>true</usecontrolcoords>
 					<visible>Container.Content(movies) | Container.Content(seasons) | Container.Content(tvshows)</visible>
 					<control type="label">
 						<width>auto</width>
-						<height>26</height>
+						<height>52</height>
 						<font>Med26</font>
 						<aligny>bottom</aligny>
 						<textcolor>ffbebebe</textcolor>
@@ -155,11 +167,11 @@
 				<!-- Movie / TV Show plot -->
 				<control type="group">
 					<visible>Container.Content(movies) | Container.Content(seasons) | Container.Content(tvshows)</visible>
-					<animation effect="slide" end="0,-144" time="0" condition="Container.Content(seasons)">Conditional</animation>
+					<animation effect="slide" end="0,-288" time="0" condition="Container.Content(seasons)">Conditional</animation>
 					<control type="textbox">
-						<top>145</top>
-						<width>1192</width>
-						<height>88</height>
+						<top>290</top>
+						<width>2384</width>
+						<height>176</height>
 						<align>left</align>
 						<font>Reg30Spaced</font>
 						<pagecontrol>96</pagecontrol>
@@ -168,18 +180,18 @@
 						<label>[B]$INFO[ListItem.Label][/B] [LIGHT]$VAR[Plot][/LIGHT]</label>
 					</control>
 					<control id="96" type="scrollbar">
-						<top>145</top>
-						<width>1192</width>
-						<height>88</height>
+						<top>290</top>
+						<width>2384</width>
+						<height>176</height>
 						<showonepage>false</showonepage>
 						<orientation>vertical</orientation>
 					</control>
 					<!-- More button -->
 					<control id="3000" type="button">
-						<left>1194</left>
-						<top>192</top>
-						<width>37</width>
-						<height>23</height>
+						<left>2388</left>
+						<top>384</top>
+						<width>74</width>
+						<height>46</height>
 						<onup>1000</onup>
 						<ondown>noop</ondown>
 						<onleft>50</onleft>
@@ -193,15 +205,15 @@
 				</control>
 				<!-- Episode Plot -->
 				<control type="grouplist">
-					<top>108</top>
-					<height>38</height>
-					<itemgap>10</itemgap>
+					<top>216</top>
+					<height>76</height>
+					<itemgap>20</itemgap>
 					<orientation>horizontal</orientation>
 					<usecontrolcoords>true</usecontrolcoords>
 					<visible>Container.Content(episodes)</visible>
 					<control type="label">
 						<width>auto</width>
-						<height>26</height>
+						<height>52</height>
 						<font>Med26</font>
 						<aligny>bottom</aligny>
 						<textcolor>ffbebebe</textcolor>
@@ -210,7 +222,7 @@
 					</control>
 					<control type="label">
 						<width>auto</width>
-						<height>26</height>
+						<height>52</height>
 						<font>Med26</font>
 						<aligny>bottom</aligny>
 						<textcolor>ffbebebe</textcolor>
@@ -219,7 +231,7 @@
 					</control>
 					<control type="label">
 						<width>auto</width>
-						<height>26</height>
+						<height>52</height>
 						<font>Med26</font>
 						<aligny>bottom</aligny>
 						<textcolor>ffbebebe</textcolor>
@@ -231,9 +243,9 @@
 				<control type="group">
 					<visible>Container.Content(episodes)</visible>
 					<control type="textbox">
-						<top>145</top>
-						<width>1192</width>
-						<height>88</height>
+						<top>290</top>
+						<width>2384</width>
+						<height>176</height>
 						<align>left</align>
 						<font>Reg30Spaced</font>
 						<pagecontrol>98</pagecontrol>
@@ -242,18 +254,18 @@
 						<label>[B]$INFO[ListItem.TVShowTitle] - $INFO[ListItem.Title][/B] [LIGHT]$VAR[Plot][/LIGHT]</label>
 					</control>
 					<control id="98" type="scrollbar">
-						<top>145</top>
-						<width>1192</width>
-						<height>88</height>
+						<top>290</top>
+						<width>2384</width>
+						<height>176</height>
 						<showonepage>false</showonepage>
 						<orientation>vertical</orientation>
 					</control>
 					<!-- More button -->
 					<control id="3000" type="button">
-						<left>1194</left>
-						<top>192</top>
-						<width>37</width>
-						<height>23</height>
+						<left>2388</left>
+						<top>384</top>
+						<width>74</width>
+						<height>46</height>
 						<onup>1000</onup>
 						<ondown>noop</ondown>
 						<onleft>50</onleft>
@@ -269,9 +281,9 @@
 				<control type="group">
 					<visible>![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)]</visible>
 					<control type="textbox">
-						<top>7</top>
-						<width>1192</width>
-						<height>126</height>
+						<top>14</top>
+						<width>2384</width>
+						<height>252</height>
 						<align>left</align>
 						<font>Reg30Spaced</font>
 						<pagecontrol>98</pagecontrol>
@@ -280,18 +292,18 @@
 						<label>[B]$INFO[ListItem.Label][/B] [LIGHT]$INFO[ListItem.Label2][/LIGHT]</label>
 					</control>
 					<control id="98" type="scrollbar">
-						<top>5</top>
-						<width>1192</width>
-						<height>126</height>
+						<top>10</top>
+						<width>2384</width>
+						<height>252</height>
 						<showonepage>false</showonepage>
 						<orientation>vertical</orientation>
 					</control>
 					<!-- More button -->
 					<control id="3000" type="button">
-						<left>1194</left>
-						<top>92</top>
-						<width>37</width>
-						<height>23</height>
+						<left>2388</left>
+						<top>184</top>
+						<width>74</width>
+						<height>46</height>
 						<onup>1000</onup>
 						<ondown>noop</ondown>
 						<onleft>50</onleft>
@@ -306,10 +318,10 @@
 			</control>
 			<!-- Search list -->
 			<control type="fixedlist" id="50">
-				<left>-102</left>
-				<top>242</top>
-				<width>2388</width>
-				<height>576</height>
+				<left>-204</left>
+				<top>484</top>
+				<width>4776</width>
+				<height>1152</height>
 				<onup>9000</onup>
 				<ondown>1000</ondown>
 				<onleft>Back</onleft>
@@ -322,50 +334,50 @@
 				<scrolltime easing="inout" tween="sine">300</scrolltime>
 				<visible>!Container(9000).OnNext + !Container(9000).OnPrevious</visible>
 				<animation reversible="false" type="Hidden">
-					<effect center="357,540" easing="out" end="98" start="100" time="180" tween="linear" type="zoom"/>
-					<effect easing="out" end="0" start="100" time="180" tween="linear" type="fade"/>
+					<effect center="714,1080" easing="out" end="98" start="100" time="180" tween="linear" type="zoom" />
+					<effect easing="out" end="0" start="100" time="180" tween="linear" type="fade" />
 				</animation>
 				<include>ListBounceAnimation</include>
 				<animation reversible="false" type="Visible">
-					<effect center="357,540" delay="280" easing="in" end="100" start="98" time="180" tween="sine" type="zoom"/>
-					<effect delay="280" easing="in" end="100" start="0" time="180" tween="sine" type="fade"/>
+					<effect center="714,1080" delay="280" easing="in" end="100" start="98" time="180" tween="sine" type="zoom" />
+					<effect delay="280" easing="in" end="100" start="0" time="180" tween="sine" type="fade" />
 				</animation>
-				<animation effect="slide" end="-272,0" time="0" condition="Container.Content(episodes)">Conditional</animation>
-				<animation effect="slide" end="-136,0" time="0" condition="![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)]">Conditional</animation>
-				<itemlayout height="576" width="300" condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">
+				<animation effect="slide" end="-544,0" time="0" condition="Container.Content(episodes) | Container.Content(musicvideos)">Conditional</animation>
+				<animation effect="slide" end="-272,0" time="0" condition="![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)]">Conditional</animation>
+				<itemlayout height="1152" width="600" condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">
 					<control type="group">
-						<animation center="150,288" condition="true" effect="zoom" end="85" start="85">Conditional</animation>
+						<animation center="300,576" condition="true" effect="zoom" end="85" start="85">Conditional</animation>
 						<control type="image">
-							<left>-48</left>
-							<centertop>288</centertop>
-							<width>416</width>
-							<height>576</height>
-							<texture border="50">views/shadow_nf.png</texture>
+							<left>-96</left>
+							<centertop>576</centertop>
+							<width>832</width>
+							<height>1152</height>
+							<texture border="100">views/shadow_nf.png</texture>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>320</width>
-							<height>480</height>
+							<top>96</top>
+							<width>640</width>
+							<height>960</height>
 							<aspectratio align="center">scale</aspectratio>
 							<texture background="true" fallback="views/movie_fallback.png">$INFO[ListItem.Art(poster)]</texture>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>90</width>
-							<height>90</height>
+							<top>96</top>
+							<width>180</width>
+							<height>180</height>
 							<texture>$INFO[ListItem.VideoResolution,views/resolution/,.png]</texture>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>90</width>
-							<height>90</height>
+							<top>96</top>
+							<width>180</width>
+							<height>180</height>
 							<texture>views/OverlayWatched.png</texture>
 							<visible>Integer.IsGreater(ListItem.Property(PlayCount),0)</visible>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>320</width>
-							<height>480</height>
+							<top>96</top>
+							<width>640</width>
+							<height>960</height>
 							<texture>views/OverlayNF.png</texture>
 							<visible>!Control.HasFocus(999)</visible>
 							<animation center="auto" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Hidden</animation>
@@ -373,149 +385,149 @@
 						</control>
 					</control>
 				</itemlayout>
-				<focusedlayout height="576" width="300" condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">
+				<focusedlayout height="1152" width="600" condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">
 					<control type="group">
-						<animation center="150,288" easing="inout" effect="zoom" end="100" start="85" time="300" tween="sine">Focus</animation>
-						<animation center="150,288" condition="Container(50).OnNext | Container(50).OnPrevious" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">UnFocus</animation>
-						<animation center="150,288" condition="Window.IsVisible(textviewer)" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">Conditional</animation>
+						<animation center="300,576" easing="inout" effect="zoom" end="100" start="85" time="300" tween="sine">Focus</animation>
+						<animation center="300,576" condition="Container(50).OnNext | Container(50).OnPrevious" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">UnFocus</animation>
+						<animation center="300,576" condition="Window.IsVisible(textviewer)" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">Conditional</animation>
 						<control type="image">
-							<left>-48</left>
-							<centertop>288</centertop>
-							<width>416</width>
-							<height>576</height>
-							<texture border="50">views/shadow_fo.png</texture>
+							<left>-96</left>
+							<centertop>576</centertop>
+							<width>832</width>
+							<height>1152</height>
+							<texture border="100">views/shadow_fo.png</texture>
 							<include content="ContainerMoveFadeAnimation">
-								<param name="ListID" value="50"/>
+								<param name="ListID" value="50" />
 							</include>
 						</control>
 						<control type="image">
-							<left>-48</left>
-							<centertop>288</centertop>
-							<width>416</width>
-							<height>576</height>
-							<texture border="50">views/shadow_nf.png</texture>
+							<left>-96</left>
+							<centertop>576</centertop>
+							<width>832</width>
+							<height>1152</height>
+							<texture border="100">views/shadow_nf.png</texture>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="50"/>
+								<param name="ListID" value="50" />
 							</include>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>320</width>
-							<height>480</height>
+							<top>96</top>
+							<width>640</width>
+							<height>960</height>
 							<aspectratio align="center">scale</aspectratio>
 							<texture background="true" fallback="views/movie_fallback.png">$INFO[ListItem.Art(poster)]</texture>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>90</width>
-							<height>90</height>
+							<top>96</top>
+							<width>180</width>
+							<height>180</height>
 							<texture>$INFO[ListItem.VideoResolution,views/resolution/,.png]</texture>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>90</width>
-							<height>90</height>
+							<top>96</top>
+							<width>180</width>
+							<height>180</height>
 							<texture>views/OverlayWatched.png</texture>
 							<visible>Integer.IsGreater(ListItem.Property(PlayCount),0)</visible>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>320</width>
-							<height>480</height>
+							<top>96</top>
+							<width>640</width>
+							<height>960</height>
 							<texture>views/OverlayNF.png</texture>
 							<visible>!Control.HasFocus(999)</visible>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="50"/>
+								<param name="ListID" value="50" />
 							</include>
 						</control>
 					</control>
 				</focusedlayout>
-				<itemlayout height="576" width="572" condition="Container.Content(episodes) | Container.Content(musicvideos)">
+				<itemlayout height="1152" width="1144" condition="Container.Content(episodes) | Container.Content(musicvideos)">
 					<control type="group">
-						<animation center="150,288" condition="true" effect="zoom" end="85" start="85">Conditional</animation>
+						<animation center="300,576" condition="true" effect="zoom" end="85" start="85">Conditional</animation>
 						<control type="image">
-							<left>-48</left>
-							<centertop>288</centertop>
-							<width>736</width>
-							<height>576</height>
-							<texture border="50">views/shadow_nf.png</texture>
+							<left>-96</left>
+							<centertop>576</centertop>
+							<width>1472</width>
+							<height>1152</height>
+							<texture border="100">views/shadow_nf.png</texture>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>640</width>
-							<height>480</height>
+							<top>96</top>
+							<width>1280</width>
+							<height>960</height>
 							<aspectratio align="center">scale</aspectratio>
 							<texture background="true" fallback="views/episode_fallback.png">$VAR[WideImage]</texture>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>640</width>
-							<height>480</height>
+							<top>96</top>
+							<width>1280</width>
+							<height>960</height>
 							<aspectratio align="center">scale</aspectratio>
 							<texture>views/episode_fallback.png</texture>
 							<visible>!ListItem.IsParentFolder + String.IsEqual(ListItem.Icon,ListItem.Art(fanart))</visible>
 						</control>
 						<control type="image">
-							<left>119</left>
-							<top>328</top>
-							<width>400</width>
-							<height>155</height>
+							<left>238</left>
+							<top>656</top>
+							<width>800</width>
+							<height>310</height>
 							<aspectratio align="center" aligny="top">keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
 							<visible>!ListItem.IsParentFolder + String.IsEqual(ListItem.Icon,ListItem.Art(fanart))</visible>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>90</width>
-							<height>90</height>
+							<top>96</top>
+							<width>180</width>
+							<height>180</height>
 							<texture>$INFO[ListItem.VideoResolution,views/resolution/,.png]</texture>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>90</width>
-							<height>90</height>
+							<top>96</top>
+							<width>180</width>
+							<height>180</height>
 							<texture>views/OverlayWatched.png</texture>
 							<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
 						</control>
 						<control type="progress">
-							<top>515</top>
-							<width>640</width>
-							<height>12</height>
+							<top>1030</top>
+							<width>1280</width>
+							<height>24</height>
 							<info>ListItem.PercentPlayed</info>
-							<texturebg border="2">views/ProgressBack.png</texturebg>
-							<lefttexture/>
-							<midtexture border="2">views/ProgressBar.png</midtexture>
-							<righttexture/>
-							<overlaytexture/>
+							<texturebg border="4">views/ProgressBack.png</texturebg>
+							<lefttexture />
+							<midtexture border="4">views/ProgressBar.png</midtexture>
+							<righttexture />
+							<overlaytexture />
 							<visible>ListItem.IsResumable</visible>
 						</control>
 						<control type="image">
-							<top>515</top>
-							<width>640</width>
-							<height>12</height>
-							<texture border="2">views/ProgressBar.png</texture>
+							<top>1030</top>
+							<width>1280</width>
+							<height>24</height>
+							<texture border="4">views/ProgressBar.png</texture>
 							<visible>!ListItem.IsResumable + String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
 						</control>
 						<control type="image">
-							<bottom>48</bottom>
-							<width>640</width>
-							<height>125</height>
-							<texture border="2">views/default_overlay.png</texture>
+							<bottom>96</bottom>
+							<width>1280</width>
+							<height>250</height>
+							<texture border="4">views/default_overlay.png</texture>
 						</control>
 						<control type="label">
-							<left>18</left>
-							<top>448</top>
-							<width>604</width>
-							<height>42</height>
+							<left>36</left>
+							<top>896</top>
+							<width>1208</width>
+							<height>84</height>
 							<font>Bold44</font>
 							<textcolor>ffffffff</textcolor>
 							<shadowcolor>ShadowColour</shadowcolor>
 							<label>$VAR[EpisodeValue]</label>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>640</width>
-							<height>480</height>
+							<top>96</top>
+							<width>1280</width>
+							<height>960</height>
 							<texture>views/OverlayNF.png</texture>
 							<visible>!Control.HasFocus(999)</visible>
 							<animation center="auto" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Hidden</animation>
@@ -523,136 +535,136 @@
 						</control>
 					</control>
 				</itemlayout>
-				<focusedlayout height="576" width="572" condition="Container.Content(episodes) | Container.Content(musicvideos)">
+				<focusedlayout height="1152" width="1144" condition="Container.Content(episodes) | Container.Content(musicvideos)">
 					<control type="group">
-						<animation center="150,288" easing="inout" effect="zoom" end="100" start="85" time="300" tween="sine">Focus</animation>
-						<animation center="150,288" condition="Container(50).OnNext | Container(50).OnPrevious" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">UnFocus</animation>
-						<animation center="150,288" condition="Window.IsVisible(textviewer)" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">Conditional</animation>
+						<animation center="300,576" easing="inout" effect="zoom" end="100" start="85" time="300" tween="sine">Focus</animation>
+						<animation center="300,576" condition="Container(50).OnNext | Container(50).OnPrevious" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">UnFocus</animation>
+						<animation center="300,576" condition="Window.IsVisible(textviewer)" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">Conditional</animation>
 						<control type="image">
-							<left>-48</left>
-							<centertop>288</centertop>
-							<width>736</width>
-							<height>576</height>
-							<texture border="50">views/shadow_fo.png</texture>
+							<left>-96</left>
+							<centertop>576</centertop>
+							<width>1472</width>
+							<height>1152</height>
+							<texture border="100">views/shadow_fo.png</texture>
 							<include content="ContainerMoveFadeAnimation">
-								<param name="ListID" value="50"/>
+								<param name="ListID" value="50" />
 							</include>
 						</control>
 						<control type="image">
-							<left>-48</left>
-							<centertop>288</centertop>
-							<width>736</width>
-							<height>576</height>
-							<texture border="50">views/shadow_nf.png</texture>
+							<left>-96</left>
+							<centertop>576</centertop>
+							<width>1472</width>
+							<height>1152</height>
+							<texture border="100">views/shadow_nf.png</texture>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="50"/>
+								<param name="ListID" value="50" />
 							</include>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>640</width>
-							<height>480</height>
+							<top>96</top>
+							<width>1280</width>
+							<height>960</height>
 							<aspectratio align="center">scale</aspectratio>
 							<texture background="true" fallback="views/episode_fallback.png">$VAR[WideImage]</texture>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>640</width>
-							<height>480</height>
+							<top>96</top>
+							<width>1280</width>
+							<height>960</height>
 							<aspectratio align="center">scale</aspectratio>
 							<texture>views/episode_fallback.png</texture>
 							<visible>!ListItem.IsParentFolder + String.IsEqual(ListItem.Icon,ListItem.Art(fanart))</visible>
 						</control>
 						<control type="image">
-							<left>119</left>
-							<top>328</top>
-							<width>400</width>
-							<height>155</height>
+							<left>238</left>
+							<top>656</top>
+							<width>800</width>
+							<height>310</height>
 							<aspectratio align="center" aligny="top">keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
 							<visible>!ListItem.IsParentFolder + String.IsEqual(ListItem.Icon,ListItem.Art(fanart))</visible>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>90</width>
-							<height>90</height>
+							<top>96</top>
+							<width>180</width>
+							<height>180</height>
 							<texture>$INFO[ListItem.VideoResolution,views/resolution/,.png]</texture>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>90</width>
-							<height>90</height>
+							<top>96</top>
+							<width>180</width>
+							<height>180</height>
 							<texture>views/OverlayWatched.png</texture>
 							<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
 						</control>
 						<control type="image">
-							<bottom>48</bottom>
-							<width>640</width>
-							<height>125</height>
-							<texture border="2">views/default_overlay.png</texture>
+							<bottom>96</bottom>
+							<width>1280</width>
+							<height>250</height>
+							<texture border="4">views/default_overlay.png</texture>
 						</control>
 						<control type="progress">
-							<top>515</top>
-							<width>640</width>
-							<height>12</height>
+							<top>1030</top>
+							<width>1280</width>
+							<height>24</height>
 							<info>ListItem.PercentPlayed</info>
-							<texturebg border="2">views/ProgressBack.png</texturebg>
-							<lefttexture/>
-							<midtexture border="2">views/ProgressBar.png</midtexture>
-							<righttexture/>
-							<overlaytexture/>
+							<texturebg border="4">views/ProgressBack.png</texturebg>
+							<lefttexture />
+							<midtexture border="4">views/ProgressBar.png</midtexture>
+							<righttexture />
+							<overlaytexture />
 							<visible>ListItem.IsResumable</visible>
 						</control>
 						<control type="image">
-							<top>515</top>
-							<width>640</width>
-							<height>12</height>
-							<texture border="2">views/ProgressBar.png</texture>
+							<top>1030</top>
+							<width>1280</width>
+							<height>24</height>
+							<texture border="4">views/ProgressBar.png</texture>
 							<visible>!ListItem.IsResumable + String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
 						</control>
 						<control type="label">
-							<left>18</left>
-							<top>448</top>
-							<width>604</width>
-							<height>42</height>
+							<left>36</left>
+							<top>896</top>
+							<width>1208</width>
+							<height>84</height>
 							<font>Bold44</font>
 							<textcolor>ffffffff</textcolor>
 							<shadowcolor>ShadowColour</shadowcolor>
 							<label>$VAR[EpisodeValue]</label>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>640</width>
-							<height>480</height>
+							<top>96</top>
+							<width>1280</width>
+							<height>960</height>
 							<texture>views/OverlayNF.png</texture>
 							<visible>!Control.HasFocus(999)</visible>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="50"/>
+								<param name="ListID" value="50" />
 							</include>
 						</control>
 					</control>
 				</focusedlayout>
-				<itemlayout height="576" width="436" condition="![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)]">
+				<itemlayout height="1152" width="872" condition="![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)]">
 					<control type="group">
-						<animation center="150,288" condition="true" effect="zoom" end="85" start="85">Conditional</animation>
+						<animation center="300,576" condition="true" effect="zoom" end="85" start="85">Conditional</animation>
 						<control type="image">
-							<left>-48</left>
-							<centertop>288</centertop>
-							<width>576</width>
-							<height>576</height>
-							<texture border="50">views/shadow_nf.png</texture>
+							<left>-96</left>
+							<centertop>576</centertop>
+							<width>1152</width>
+							<height>1152</height>
+							<texture border="100">views/shadow_nf.png</texture>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>480</width>
-							<height>480</height>
+							<top>96</top>
+							<width>960</width>
+							<height>960</height>
 							<aspectratio align="center">scale</aspectratio>
 							<texture background="true" fallback="views/music_fallback.png">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>480</width>
-							<height>480</height>
+							<top>96</top>
+							<width>960</width>
+							<height>960</height>
 							<texture>views/OverlayNF.png</texture>
 							<visible>!Control.HasFocus(999)</visible>
 							<animation center="auto" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Hidden</animation>
@@ -660,46 +672,46 @@
 						</control>
 					</control>
 				</itemlayout>
-				<focusedlayout height="576" width="436" condition="![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)]">
+				<focusedlayout height="1152" width="872" condition="![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)]">
 					<control type="group">
-						<animation center="150,288" easing="inout" effect="zoom" end="100" start="85" time="300" tween="sine">Focus</animation>
-						<animation center="150,288" condition="Container(50).OnNext | Container(50).OnPrevious" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">UnFocus</animation>
-						<animation center="150,288" condition="Window.IsVisible(textviewer)" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">Conditional</animation>
+						<animation center="300,576" easing="inout" effect="zoom" end="100" start="85" time="300" tween="sine">Focus</animation>
+						<animation center="300,576" condition="Container(50).OnNext | Container(50).OnPrevious" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">UnFocus</animation>
+						<animation center="300,576" condition="Window.IsVisible(textviewer)" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">Conditional</animation>
 						<control type="image">
-							<left>-48</left>
-							<centertop>288</centertop>
-							<width>576</width>
-							<height>576</height>
-							<texture border="50">views/shadow_fo.png</texture>
+							<left>-96</left>
+							<centertop>576</centertop>
+							<width>1152</width>
+							<height>1152</height>
+							<texture border="100">views/shadow_fo.png</texture>
 							<include content="ContainerMoveFadeAnimation">
-								<param name="ListID" value="50"/>
+								<param name="ListID" value="50" />
 							</include>
 						</control>
 						<control type="image">
-							<left>-48</left>
-							<centertop>288</centertop>
-							<width>576</width>
-							<height>576</height>
-							<texture border="50">views/shadow_nf.png</texture>
+							<left>-96</left>
+							<centertop>576</centertop>
+							<width>1152</width>
+							<height>1152</height>
+							<texture border="100">views/shadow_nf.png</texture>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="50"/>
+								<param name="ListID" value="50" />
 							</include>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>480</width>
-							<height>480</height>
+							<top>96</top>
+							<width>960</width>
+							<height>960</height>
 							<aspectratio align="center">scale</aspectratio>
 							<texture background="true" fallback="views/music_fallback.png">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>480</width>
-							<height>480</height>
+							<top>96</top>
+							<width>960</width>
+							<height>960</height>
 							<texture>views/OverlayNF.png</texture>
 							<visible>!Control.HasFocus(999)</visible>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="50"/>
+								<param name="ListID" value="50" />
 							</include>
 						</control>
 					</control>
@@ -715,16 +727,16 @@
 			<control type="image">
 				<centerleft>50%</centerleft>
 				<centertop>50%</centertop>
-				<width>94</width>
-				<height>94</height>
+				<width>188</width>
+				<height>188</height>
 				<texture>common/spinner_outer.png</texture>
 				<animation effect="rotate" end="-360" center="auto" time="1120" loop="true" reversible="false" condition="true">Conditional</animation>
 			</control>
 			<control type="image">
 				<centerleft>50%</centerleft>
 				<centertop>50%</centertop>
-				<width>94</width>
-				<height>94</height>
+				<width>188</width>
+				<height>188</height>
 				<texture>common/spinner_inner.png</texture>
 				<animation effect="rotate" end="360" center="auto" time="1680" loop="true" reversible="false" condition="true">Conditional</animation>
 			</control>

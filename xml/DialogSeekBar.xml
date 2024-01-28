@@ -11,25 +11,25 @@
 			<control type="group">
 				<visible>Player.Paused + !Player.Forwarding + !Player.Rewinding</visible>
 				<animation condition="System.IdleTime(4) + !Player.Caching" reversible="true" type="Conditional">
-					<effect end="0" start="100" time="200" type="fade"/>
+					<effect end="0" start="100" time="200" type="fade" />
 				</animation>
 				<control type="image">
-					<width>1980</width>
-					<height>210</height>
+					<width>3960</width>
+					<height>420</height>
 					<texture border="1">osd/mask_top.png</texture>
 				</control>
 				<control type="grouplist">
-					<left>20</left>
-					<top>64</top>
-					<width>1880</width>
-					<height>50</height>
+					<left>40</left>
+					<top>128</top>
+					<width>3760</width>
+					<height>100</height>
 					<align>center</align>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
 					<!--  Movie title -->
 					<control type="label">
 						<width>auto</width>
-						<height>50</height>
+						<height>100</height>
 						<font>OSD40</font>
 						<textcolor>ffeaeaea</textcolor>
 						<shadowcolor>ShadowColour</shadowcolor>
@@ -39,7 +39,7 @@
 					<!--  TV Show title -->
 					<control type="label">
 						<width>auto</width>
-						<height>50</height>
+						<height>100</height>
 						<font>OSD40</font>
 						<textcolor>ffeaeaea</textcolor>
 						<shadowcolor>ShadowColour</shadowcolor>
@@ -49,7 +49,7 @@
 					<!-- Season/Episode number -->
 					<control type="label">
 						<width>auto</width>
-						<height>50</height>
+						<height>100</height>
 						<font>OSD40</font>
 						<textcolor>ffeaeaea</textcolor>
 						<shadowcolor>ShadowColour</shadowcolor>
@@ -58,7 +58,7 @@
 					<!--  Song title -->
 					<control type="label">
 						<width>auto</width>
-						<height>50</height>
+						<height>100</height>
 						<font>OSD40</font>
 						<textcolor>ffeaeaea</textcolor>
 						<shadowcolor>ShadowColour</shadowcolor>
@@ -68,10 +68,10 @@
 				</control>
 				<!--  Episode title -->
 				<control type="label">
-					<left>20</left>
-					<top>129</top>
-					<width>1880</width>
-					<height>80</height>
+					<left>40</left>
+					<top>258</top>
+					<width>3760</width>
+					<height>160</height>
 					<aligny>top</aligny>
 					<align>center</align>
 					<font>OSD32</font>
@@ -83,10 +83,10 @@
 				</control>
 				<!--  Artist / Album title -->
 				<control type="label">
-					<left>20</left>
-					<top>130</top>
-					<width>1880</width>
-					<height>40</height>
+					<left>40</left>
+					<top>260</top>
+					<width>3760</width>
+					<height>80</height>
 					<align>center</align>
 					<font>OSD32</font>
 					<textcolor>fffe8e8e8</textcolor>
@@ -97,12 +97,12 @@
 				<control type="image">
 					<centerleft>50%</centerleft>
 					<centertop>50%</centertop>
-					<width>321</width>
-					<height>341</height>
+					<width>642</width>
+					<height>682</height>
 					<texture>osd/Pause.png</texture>
 					<visible>Player.Paused + !Player.Caching + !Window.IsVisible(subtitlesearch)</visible>
 					<animation condition="System.IdleTime(2)" reversible="true" type="Conditional">
-						<effect end="0" start="100" time="200" type="fade"/>
+						<effect end="0" start="100" time="200" type="fade" />
 					</animation>
 				</control>
 				<control type="group">
@@ -111,24 +111,24 @@
 					<control type="image">
 						<centerleft>50%</centerleft>
 						<centertop>50%</centertop>
-						<width>94</width>
-						<height>94</height>
+						<width>188</width>
+						<height>188</height>
 						<texture>common/spinner_outer.png</texture>
 						<animation effect="rotate" end="-360" center="auto" time="1120" loop="true" reversible="false" condition="true">Conditional</animation>
 					</control>
 					<control type="image">
 						<centerleft>50%</centerleft>
 						<centertop>50%</centertop>
-						<width>94</width>
-						<height>94</height>
+						<width>188</width>
+						<height>188</height>
 						<texture>common/spinner_inner.png</texture>
 						<animation effect="rotate" end="360" center="auto" time="1680" loop="true" reversible="false" condition="true">Conditional</animation>
 					</control>
 				</control>
 				<control type="image">
 					<bottom>0</bottom>
-					<width>1980</width>
-					<height>120</height>
+					<width>3960</width>
+					<height>240</height>
 					<texture>osd/mask.png</texture>
 				</control>
 				<include>VideoPlayerDetails</include>
@@ -137,8 +137,8 @@
 				<visible>!Player.Paused + [Player.Seeking | Player.HasPerformedSeek(3)]</visible>
 				<control type="image">
 					<bottom>0</bottom>
-					<width>1980</width>
-					<height>120</height>
+					<width>3960</width>
+					<height>240</height>
 					<texture>osd/mask.png</texture>
 				</control>
 				<include>VideoPlayerDetails</include>
@@ -147,23 +147,23 @@
 				<include>VisibleFadeAnimation</include>
 				<visible>!Player.Forwarding + !Player.Rewinding + [Player.Seeking | Player.HasPerformedSeek(3)]</visible>
 				<control type="group">
-					<left>97</left>
-					<bottom>123</bottom>
-					<width>80</width>
-					<height>80</height>
+					<left>194</left>
+					<bottom>246</bottom>
+					<width>160</width>
+					<height>160</height>
 					<control type="image">
-						<width>80</width>
-						<height>80</height>
+						<width>160</width>
+						<height>160</height>
 						<texture>osd/step_forward.png</texture>
-						<animation condition="String.Contains(Player.SeekStepSize,-) | [String.IsEmpty(Player.SeekStepSize) + String.Contains(Player.SeekOffset,-)]" effect="rotatey" end="180" center="40,0" time="0">Conditional</animation>
+						<animation condition="String.Contains(Player.SeekStepSize,-) | [String.IsEmpty(Player.SeekStepSize) + String.Contains(Player.SeekOffset,-)]" effect="rotatey" end="180" center="80,0" time="0">Conditional</animation>
 						<visible>!String.IsEmpty(Player.SeekOffset) | !String.IsEmpty(Player.SeekStepSize)</visible>
 					</control>
 				</control>
 				<control type="label">
-					<centerleft>137</centerleft>
-					<bottom>141</bottom>
-					<width>50</width>
-					<height>40</height>
+					<centerleft>274</centerleft>
+					<bottom>282</bottom>
+					<width>100</width>
+					<height>80</height>
 					<align>center</align>
 					<font>OSD20</font>
 					<textcolor>ffe5e4e5</textcolor>
@@ -171,10 +171,10 @@
 					<visible>$EXP[SeekOffsetLargeLabel]</visible>
 				</control>
 				<control type="label">
-					<centerleft>137</centerleft>
-					<bottom>140</bottom>
-					<width>60</width>
-					<height>40</height>
+					<centerleft>274</centerleft>
+					<bottom>280</bottom>
+					<width>120</width>
+					<height>80</height>
 					<align>center</align>
 					<font>OSD16</font>
 					<textcolor>ffe5e4e5</textcolor>
@@ -182,13 +182,13 @@
 					<visible>$EXP[SeekOffsetSmallLabel]</visible>
 				</control>
 				<control type="slider" id="401">
-					<left>92</left>
-					<bottom>105</bottom>
-					<width>1735</width>
-					<height>11</height>
-					<texturesliderbar border="4" colordiffuse="00ffffff">osd/progress_back.png</texturesliderbar>
-					<textureslidernib>osd/osd_seek_bar.png</textureslidernib>
-					<textureslidernibfocus>osd/osd_seek_bar.png</textureslidernibfocus>
+					<left>184</left>
+					<bottom>210</bottom>
+					<width>3470</width>
+					<height>24</height>
+					<texturesliderbar colordiffuse="00ffffff" border="12">osd/progress_bar_back.png</texturesliderbar>
+					<textureslidernib colordiffuse="fff6a42f">osd/progress_bar_pointer.png</textureslidernib>
+					<textureslidernibfocus colordiffuse="fff6a42f">osd/progress_bar_pointer.png</textureslidernibfocus>
 					<visible>!Player.Forwarding + !Player.Rewinding + Player.Seeking</visible>
 				</control>
 			</control>

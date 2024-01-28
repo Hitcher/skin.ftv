@@ -5,27 +5,27 @@
 	<controls>
 		<!-- Tempo -->
 		<control id="2" type="group">
-			<left>60</left>
-			<top>60</top>
+			<left>120</left>
+			<top>120</top>
 			<animation condition="System.IdleTime(2)" reversible="true" type="Conditional">
-				<effect type="fade" start="100" end="0" time="200"/>
+				<effect type="fade" start="100" end="0" time="200" />
 			</animation>
 			<control id="2" type="image">
-				<width>260</width>
-				<height>71</height>
+				<width>520</width>
+				<height>142</height>
 				<texture>osd/progress_box_tempo.png</texture>
 			</control>
 			<control id="2" type="image">
-				<left>20</left>
-				<top>18</top>
-				<width>115</width>
-				<height>33</height>
+				<left>40</left>
+				<top>36</top>
+				<width>230</width>
+				<height>66</height>
 				<texture>$VAR[PlaySpeed]</texture>
 			</control>
 			<control id="2" type="label">
-				<left>160</left>
-				<top>12</top>
-				<height>30</height>
+				<left>320</left>
+				<top>24</top>
+				<height>60</height>
 				<aligny>top</aligny>
 				<font>OSD32</font>
 				<textcolor>ffffffff</textcolor>

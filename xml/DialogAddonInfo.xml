@@ -11,9 +11,9 @@
 	<controls>
 		<!-- Hidden Description -->
 		<control type="textbox">
-			<left>-1200</left>
-			<width>792</width>
-			<height>560</height>
+			<left>-2400</left>
+			<width>1584</width>
+			<height>1120</height>
 			<align>left</align>
 			<font>Light30</font>
 			<pagecontrol>96</pagecontrol>
@@ -23,10 +23,10 @@
 		</control>
 		<!-- Hidden scrollbar -->
 		<control id="96" type="scrollbar">
-			<left>-1200</left>
-			<top>295</top>
-			<width>792</width>
-			<height>560</height>
+			<left>-2400</left>
+			<top>590</top>
+			<width>1584</width>
+			<height>1120</height>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
 		</control>
@@ -77,27 +77,27 @@
 			<include>DialogVideoInfoAnimation</include>
 		</control>
 		<control type="group">
-			<left>90</left>
-			<top>99</top>
+			<left>180</left>
+			<top>198</top>
 			<include>DialogVideoInfoAnimation</include>
 			<animation effect="fade" end="100" start="0" time="200">WindowOpen</animation>
 			<!-- Icon -->
 			<control type="image">
-				<width>336</width>
-				<height>336</height>
+				<width>672</width>
+				<height>672</height>
 				<texture>DefaultAddon.png</texture>
 				<aspectratio>scale</aspectratio>
 			</control>
 			<control type="image">
-				<width>336</width>
-				<height>336</height>
+				<width>672</width>
+				<height>672</height>
 				<texture>$INFO[ListItem.Icon]</texture>
 				<aspectratio>scale</aspectratio>
 			</control>
 			<control id="7000" type="button">
-				<top>374</top>
-				<width>480</width>
-				<height>35</height>
+				<top>748</top>
+				<width>960</width>
+				<height>70</height>
 				<onup condition="!Control.IsVisible(96)">Close</onup>
 				<onup condition="Control.IsVisible(96)">3002</onup>
 				<ondown>7001</ondown>
@@ -112,9 +112,9 @@
 				<animation condition="!String.IsEmpty(Window(home).Property(AddonDetails))" effect="fade" end="50" start="100" time="0">Conditional</animation>
 			</control>
 			<control id="7001" type="button">
-				<top>429</top>
-				<width>480</width>
-				<height>35</height>
+				<top>858</top>
+				<width>960</width>
+				<height>70</height>
 				<onup>7000</onup>
 				<ondown>noop</ondown>
 				<onleft>Close</onleft>
@@ -130,14 +130,14 @@
 			</control>
 		</control>
 		<control type="group">
-			<left>460</left>
-			<top>99</top>
+			<left>920</left>
+			<top>198</top>
 			<animation effect="fade" end="100" start="0" time="200" delay="400">WindowOpen</animation>
 			<!-- Heading -->
 			<control type="label">
-				<top>-10</top>
-				<width>1170</width>
-				<height>48</height>
+				<top>-20</top>
+				<width>2340</width>
+				<height>96</height>
 				<font>Med48</font>
 				<scroll>true</scroll>
 				<textcolor>ffdadada</textcolor>
@@ -147,12 +147,12 @@
 			</control>
 			<!-- Type -->
 			<control type="group">
-				<top>57</top>
-				<height>36</height>
+				<top>114</top>
+				<height>72</height>
 				<include>DialogVideoInfoAnimation</include>
 				<control type="textbox">
-					<width>1192</width>
-					<height>36</height>
+					<width>2384</width>
+					<height>72</height>
 					<align>left</align>
 					<font>Reg30Spaced</font>
 					<autoscroll>false</autoscroll>
@@ -163,12 +163,12 @@
 			</control>
 			<!-- Version -->
 			<control type="group">
-				<top>97</top>
-				<height>36</height>
+				<top>194</top>
+				<height>72</height>
 				<include>DialogVideoInfoAnimation</include>
 				<control type="textbox">
-					<width>1192</width>
-					<height>36</height>
+					<width>2384</width>
+					<height>72</height>
 					<align>left</align>
 					<font>Reg30Spaced</font>
 					<autoscroll>false</autoscroll>
@@ -179,12 +179,12 @@
 			</control>
 			<!-- Creator -->
 			<control type="group">
-				<top>137</top>
-				<height>36</height>
+				<top>274</top>
+				<height>72</height>
 				<include>DialogVideoInfoAnimation</include>
 				<control type="textbox">
-					<width>1192</width>
-					<height>76</height>
+					<width>2384</width>
+					<height>152</height>
 					<align>left</align>
 					<font>Reg30Spaced</font>
 					<autoscroll>false</autoscroll>
@@ -195,12 +195,12 @@
 			</control>
 			<!-- Summary -->
 			<control type="group">
-				<top>235</top>
-				<width>792</width>
+				<top>470</top>
+				<width>1584</width>
 				<include>DialogVideoInfoAnimation</include>
 				<animation condition="!String.IsEmpty(Window(home).Property(AddonDetails))" effect="fade" end="0" start="100" time="0">Conditional</animation>
 				<control type="textbox">
-					<height>74</height>
+					<height>148</height>
 					<align>left</align>
 					<font>Light30</font>
 					<autoscroll>false</autoscroll>
@@ -211,10 +211,10 @@
 			</control>
 			<!-- Button grouplist -->
 			<control id="9000" type="grouplist">
-				<left>-12</left>
-				<top>346</top>
-				<width>1620</width>
-				<height>116</height>
+				<left>-24</left>
+				<top>692</top>
+				<width>3240</width>
+				<height>232</height>
 				<itemgap>0</itemgap>
 				<onleft>7000</onleft>
 				<onright>noop</onright>
@@ -222,7 +222,7 @@
 				<include>DialogVideoInfoAnimation</include>
 				<defaultcontrol always="true">9001</defaultcontrol>
 				<animation condition="!String.IsEmpty(Window(home).Property(AddonDetails))" effect="fade" end="0" start="100" time="0">Conditional</animation>
-				<animation condition="Control.HasFocus(50) | Control.HasFocus(5000)" effect="slide" end="0,-192" start="0,0" time="200">Conditional</animation>
+				<animation condition="Control.HasFocus(50) | Control.HasFocus(5000)" effect="slide" end="0,-384" start="0,0" time="200">Conditional</animation>
 				<!-- Dummy to always set focus to first visible button -->
 				<control id="9001" type="button">
 					<width>0</width>
@@ -233,128 +233,128 @@
 				</control>
 				<!-- Launch Addon Button -->
 				<control id="9012" type="button">
-					<width min="124" max="204">auto</width>
+					<width min="248" max="408">auto</width>
 					<wrapmultiline>true</wrapmultiline>
-					<height>116</height>
+					<height>232</height>
 					<onup>Close</onup>
 					<ondown condition="Control.IsVisible(50)">50</ondown>
 					<onclick>SendClick(12)</onclick>
 					<font>Med24</font>
 					<label>$LOCALIZE[31033]</label>
-					<textoffsetx>28</textoffsetx>
+					<textoffsetx>56</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
-					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
+					<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
 					<visible>Control.IsEnabled(12)</visible>
 				</control>
 				<!-- What's new Button -->
 				<control id="9021" type="button">
-					<width min="104" max="204">auto</width>
+					<width min="208" max="408">auto</width>
 					<wrapmultiline>true</wrapmultiline>
-					<height>116</height>
+					<height>232</height>
 					<onup>Close</onup>
 					<ondown condition="Control.IsVisible(50)">50</ondown>
 					<onclick>RunScript(script.skinvariables,run_dialog=textviewer,heading='$LOCALIZE[24054]',text='$ESCINFO[ListItem.AddonNews]')</onclick>
 					<font>Med24</font>
 					<label>$LOCALIZE[31256]</label>
-					<textoffsetx>28</textoffsetx>
+					<textoffsetx>56</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
-					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
+					<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
 					<visible>!String.IsEmpty(ListItem.AddonNews)</visible>
 				</control>
 				<!-- Configure Addon button -->
 				<control id="9009" type="button">
-					<width min="124" max="204">auto</width>
+					<width min="248" max="408">auto</width>
 					<wrapmultiline>true</wrapmultiline>
-					<height>116</height>
+					<height>232</height>
 					<onup>Close</onup>
 					<ondown condition="Control.IsVisible(50)">50</ondown>
 					<onclick>SendClick(9)</onclick>
 					<font>Med24</font>
 					<label>24020</label>
-					<textoffsetx>28</textoffsetx>
+					<textoffsetx>56</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
-					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
+					<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
 					<visible>Control.IsEnabled(9)</visible>
 				</control>
 				<!-- Dependencies Button -->
 				<control id="9010" type="button">
-					<width min="104" max="224">auto</width>
+					<width min="208" max="448">auto</width>
 					<wrapmultiline>true</wrapmultiline>
-					<height>116</height>
+					<height>232</height>
 					<onup>Close</onup>
 					<ondown condition="Control.IsVisible(50)">50</ondown>
 					<onclick>SendClick(10)</onclick>
 					<font>Med24</font>
 					<label>39024</label>
-					<textoffsetx>28</textoffsetx>
+					<textoffsetx>56</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
-					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
+					<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
 					<visible>Control.IsEnabled(10)</visible>
 				</control>
 				<!-- Update Addon Button -->
 				<control id="9014" type="button">
-					<width min="124" max="204">auto</width>
+					<width min="248" max="408">auto</width>
 					<wrapmultiline>true</wrapmultiline>
-					<height>116</height>
+					<height>232</height>
 					<onup>Close</onup>
 					<ondown condition="Control.IsVisible(50)">50</ondown>
 					<onclick>SendClick(14)</onclick>
 					<font>Med24</font>
 					<label>$LOCALIZE[24069]</label>
-					<textoffsetx>28</textoffsetx>
+					<textoffsetx>56</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
-					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
+					<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
 					<visible>Control.IsEnabled(14)</visible>
 				</control>
 				<!-- Install/UnInstall Addon button -->
 				<control id="9006" type="button">
-					<width min="124" max="204">auto</width>
+					<width min="248" max="408">auto</width>
 					<wrapmultiline>true</wrapmultiline>
-					<height>116</height>
+					<height>232</height>
 					<onup>Close</onup>
 					<ondown condition="Control.IsVisible(50)">50</ondown>
 					<onclick>SendClick(6)</onclick>
 					<font>Med24</font>
 					<label>$INFO[Control.GetLabel(6)]</label>
-					<textoffsetx>28</textoffsetx>
+					<textoffsetx>56</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
-					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
+					<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
 					<visible>Control.IsEnabled(6)</visible>
 				</control>
 				<!-- Enable/Disable Addon button -->
 				<control id="9007" type="button">
-					<width min="124" max="204">auto</width>
+					<width min="248" max="408">auto</width>
 					<wrapmultiline>true</wrapmultiline>
-					<height>116</height>
+					<height>232</height>
 					<onup>Close</onup>
 					<ondown condition="Control.IsVisible(50)">50</ondown>
 					<onclick>SendClick(7)</onclick>
 					<font>Med24</font>
 					<label>$INFO[Control.GetLabel(7)]</label>
-					<textoffsetx>28</textoffsetx>
+					<textoffsetx>56</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
-					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
+					<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
 					<visible>Control.IsEnabled(7)</visible>
 				</control>
 				<!-- Auto-update Addon Button -->
 				<control id="9013" type="button">
-					<width min="124" max="204">auto</width>
+					<width min="248" max="408">auto</width>
 					<wrapmultiline>true</wrapmultiline>
-					<height>116</height>
+					<height>232</height>
 					<onup>Close</onup>
 					<ondown condition="Control.IsVisible(50)">50</ondown>
 					<onclick>SendClick(13)</onclick>
@@ -362,20 +362,20 @@
 					<onclick condition="String.Contains(Skin.String(AutoUpdate),on)">Skin.SetString(AutoUpdate,off)</onclick>
 					<font>Med24</font>
 					<label>$VAR[AutoUpdate]</label>
-					<textoffsetx>28</textoffsetx>
+					<textoffsetx>56</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
-					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
+					<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
 				</control>
 			</control>
 			<!-- Screenshots list -->
 			<control type="group">
-				<left>-748</left>
-				<top>265</top>
+				<left>-1496</left>
+				<top>530</top>
 				<control id="50" type="fixedlist">
-					<width>2600</width>
-					<height>576</height>
+					<width>5200</width>
+					<height>1152</height>
 					<onup>Control.SetFocus(50,0,absolute)</onup>
 					<onup>9001</onup>
 					<ondown>Back</ondown>
@@ -394,74 +394,74 @@
 					<animation delay="300" effect="fade" end="100" start="0" time="300">Visible</animation>
 					<animation effect="fade" end="0" start="100" time="300">Hidden</animation>
 					<animation effect="fade" end="0" start="100" time="0" condition="!String.IsEmpty(Window(home).Property(AddonDetails))">Conditional</animation>
-					<animation center="480,1022" condition="!Control.HasFocus(50)" easing="inout" effect="zoom" end="81" start="100" time="300" tween="sine">Conditional</animation>
-					<itemlayout height="576" width="750">
+					<animation center="960,2044" condition="!Control.HasFocus(50)" easing="inout" effect="zoom" end="81" start="100" time="300" tween="sine">Conditional</animation>
+					<itemlayout height="1152" width="1500">
 						<control type="group">
-							<animation center="416.5,288" condition="true" effect="zoom" end="85" start="85">Conditional</animation>
+							<animation center="833,576" condition="true" effect="zoom" end="85" start="85">Conditional</animation>
 							<control type="image">
-								<left>-48</left>
-								<centertop>288</centertop>
-								<width>949</width>
-								<height>576</height>
-								<texture border="50">views/shadow_nf.png</texture>
+								<left>-96</left>
+								<centertop>576</centertop>
+								<width>1898</width>
+								<height>1152</height>
+								<texture border="100">views/shadow_nf.png</texture>
 							</control>
 							<control type="image">
-								<top>48</top>
-								<width>853</width>
-								<height>480</height>
+								<top>96</top>
+								<width>1706</width>
+								<height>960</height>
 								<aspectratio align="center">scale</aspectratio>
 								<texture background="true">$INFO[ListItem.Icon]</texture>
 							</control>
 							<control type="image">
-								<top>48</top>
-								<width>853</width>
-								<height>480</height>
+								<top>96</top>
+								<width>1706</width>
+								<height>960</height>
 								<texture>views/OverlayNF.png</texture>
 								<visible>Control.HasFocus(50)</visible>
 								<animation center="auto" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">VisibleChange</animation>
 							</control>
 						</control>
 					</itemlayout>
-					<focusedlayout height="576" width="750">
+					<focusedlayout height="1152" width="1500">
 						<control type="group">
-							<animation center="416.5,288" condition="Control.HasFocus(50) + [Container(50).OnNext | Container(50).OnPrevious]" easing="inout" effect="zoom" end="100" start="85" time="300" tween="sine">Focus</animation>
-							<animation center="416.5,288" condition="Control.HasFocus(50) + [Container(50).OnNext | Container(50).OnPrevious]" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">UnFocus</animation>
-							<animation center="416.5,288" condition="!Control.HasFocus(50)" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">Conditional</animation>
+							<animation center="833,576" condition="Control.HasFocus(50) + [Container(50).OnNext | Container(50).OnPrevious]" easing="inout" effect="zoom" end="100" start="85" time="300" tween="sine">Focus</animation>
+							<animation center="833,576" condition="Control.HasFocus(50) + [Container(50).OnNext | Container(50).OnPrevious]" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">UnFocus</animation>
+							<animation center="833,576" condition="!Control.HasFocus(50)" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">Conditional</animation>
 							<control type="image">
-								<left>-48</left>
-								<centertop>288</centertop>
-								<width>949</width>
-								<height>576</height>
-								<texture border="50">views/shadow_fo.png</texture>
+								<left>-96</left>
+								<centertop>576</centertop>
+								<width>1898</width>
+								<height>1152</height>
+								<texture border="100">views/shadow_fo.png</texture>
 								<include content="ContainerMoveFadeAnimation">
-									<param name="ListID" value="50"/>
+									<param name="ListID" value="50" />
 								</include>
 							</control>
 							<control type="image">
-								<left>-48</left>
-								<centertop>288</centertop>
-								<width>949</width>
-								<height>576</height>
-								<texture border="50">views/shadow_nf.png</texture>
+								<left>-96</left>
+								<centertop>576</centertop>
+								<width>1898</width>
+								<height>1152</height>
+								<texture border="100">views/shadow_nf.png</texture>
 								<include content="FocusedListIDAnimation">
-									<param name="ListID" value="50"/>
+									<param name="ListID" value="50" />
 								</include>
 							</control>
 							<control type="image">
-								<top>48</top>
-								<width>853</width>
-								<height>480</height>
+								<top>96</top>
+								<width>1706</width>
+								<height>960</height>
 								<aspectratio align="center">scale</aspectratio>
 								<texture background="true">$INFO[ListItem.Icon]</texture>
 							</control>
 							<control type="image">
-								<top>48</top>
-								<width>853</width>
-								<height>480</height>
+								<top>96</top>
+								<width>1706</width>
+								<height>960</height>
 								<texture>views/OverlayNF.png</texture>
 								<visible>Control.HasFocus(50)</visible>
 								<include content="FocusedListIDAnimation">
-									<param name="ListID" value="50"/>
+									<param name="ListID" value="50" />
 								</include>
 							</control>
 						</control>
@@ -472,9 +472,9 @@
 				<animation condition="String.IsEmpty(Window(home).Property(AddonDetails))" effect="fade" end="0" start="100" time="0">Conditional</animation>
 				<!-- Description -->
 				<control type="label">
-					<top>235</top>
-					<width>792</width>
-					<height>32</height>
+					<top>470</top>
+					<width>1584</width>
+					<height>64</height>
 					<align>left</align>
 					<font>Med32</font>
 					<textcolor>ffdadada</textcolor>
@@ -482,9 +482,9 @@
 					<visible>!String.IsEmpty(ListItem.AddonDescription)</visible>
 				</control>
 				<control type="textbox">
-					<top>296</top>
-					<width>792</width>
-					<height>560</height>
+					<top>592</top>
+					<width>1584</width>
+					<height>1120</height>
 					<align>left</align>
 					<font>Light30</font>
 					<autoscroll>false</autoscroll>
@@ -493,10 +493,10 @@
 				</control>
 				<!-- More button -->
 				<control id="3002" type="button">
-					<left>794</left>
-					<top>816</top>
-					<width>37</width>
-					<height>23</height>
+					<left>1588</left>
+					<top>1632</top>
+					<width>74</width>
+					<height>46</height>
 					<onleft>7001</onleft>
 					<onright>50</onright>
 					<onclick>RunScript(script.skinvariables,run_dialog=textviewer,heading='empty',text='$ESCINFO[ListItem.AddonDescription]')</onclick>
@@ -506,13 +506,13 @@
 				</control>
 				<!-- Details -->
 				<control type="grouplist">
-					<left>900</left>
-					<top>235</top>
-					<width>470</width>
-					<height>618</height>
-					<itemgap>38</itemgap>
+					<left>1800</left>
+					<top>470</top>
+					<width>940</width>
+					<height>1236</height>
+					<itemgap>76</itemgap>
 					<control type="textbox">
-						<width>470</width>
+						<width>940</width>
 						<height>auto</height>
 						<align>left</align>
 						<font>Light30</font>
@@ -522,7 +522,7 @@
 						<visible>!String.IsEmpty(ListItem.Property(Addon.ID))</visible>
 					</control>
 					<control type="textbox">
-						<width>470</width>
+						<width>940</width>
 						<height>auto</height>
 						<align>left</align>
 						<font>Light30</font>
@@ -532,7 +532,7 @@
 						<visible>!String.IsEmpty(ListItem.Property(Addon.Status))</visible>
 					</control>
 					<control type="textbox">
-						<width>470</width>
+						<width>940</width>
 						<height>auto</height>
 						<align>left</align>
 						<font>Light30</font>
@@ -542,7 +542,7 @@
 						<visible>!String.IsEmpty(ListItem.AddonSize)</visible>
 					</control>
 					<control type="textbox">
-						<width>470</width>
+						<width>940</width>
 						<height>auto</height>
 						<align>left</align>
 						<font>Light30</font>
@@ -552,7 +552,7 @@
 						<visible>!String.IsEmpty(ListItem.AddonLifecycleType)</visible>
 					</control>
 					<control type="textbox">
-						<width>470</width>
+						<width>940</width>
 						<height>auto</height>
 						<align>left</align>
 						<font>Light30</font>

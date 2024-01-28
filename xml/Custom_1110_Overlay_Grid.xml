@@ -7,7 +7,7 @@
 		<control type="image">
 			<width>$INFO[System.ScreenWidth]</width>
 			<height>$INFO[System.ScreenHeight]</height>
-			<texture>special://skin/extras/debuggrid1080.png</texture>
+			<texture>$VAR[DebugGrid]</texture>
 			<colordiffuse>88ffffff</colordiffuse>
 		</control>
 	</controls>

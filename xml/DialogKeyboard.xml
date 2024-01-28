@@ -7,48 +7,48 @@
 		<include>DialogBackgroundImage</include>
 		<!-- Dialog group -->
 		<control type="group">
-			<left>455</left>
-			<top>102</top>
+			<left>910</left>
+			<top>204</top>
 			<include content="DialogZoomAnimation">
-				<param name="OpenCondition" value="true"/>
-				<param name="CloseCondition" value="true"/>
+				<param name="OpenCondition" value="true" />
+				<param name="CloseCondition" value="true" />
 			</include>
 			<animation condition="Window.IsVisible(numericinput)" easing="inout" effect="fade" end="0" start="100" time="120" tween="sine">Conditional</animation>
 			<!-- Background -->
 			<control type="image">
-				<width>1180</width>
-				<height>879</height>
-				<texture border="2">dialogs/DialogMessageBackground.png</texture>
+				<width>2360</width>
+				<height>1758</height>
+				<texture border="4">dialogs/DialogMessageBackground.png</texture>
 				<visible>Control.IsVisible(111) | Control.IsVisible(131) | Control.IsVisible(151) | Control.IsVisible(171)</visible>
 			</control>
 			<control type="image">
-				<width>1100</width>
-				<height>879</height>
-				<texture border="2">dialogs/DialogMessageBackground.png</texture>
+				<width>2200</width>
+				<height>1758</height>
+				<texture border="4">dialogs/DialogMessageBackground.png</texture>
 				<visible>[Control.IsVisible(110) | Control.IsVisible(130) | Control.IsVisible(150) | Control.IsVisible(170)] + [!Control.IsVisible(111) + !Control.IsVisible(131) + !Control.IsVisible(151) + !Control.IsVisible(171)]</visible>
 			</control>
 			<control type="image">
-				<width>1010</width>
-				<height>879</height>
-				<texture border="2">dialogs/DialogMessageBackground.png</texture>
+				<width>2020</width>
+				<height>1758</height>
+				<texture border="4">dialogs/DialogMessageBackground.png</texture>
 				<visible>!Control.IsVisible(110) + !Control.IsVisible(130) + !Control.IsVisible(150) + !Control.IsVisible(170) + !Control.IsVisible(111) + !Control.IsVisible(131) + !Control.IsVisible(151) + !Control.IsVisible(171)</visible>
 			</control>
 			<!-- Control group -->
 			<control type="group">
-				<left>61</left>
-				<top>48</top>
+				<left>122</left>
+				<top>96</top>
 				<!-- Heading -->
 				<control id="311" type="label">
-					<width>888</width>
-					<height>36</height>
+					<width>1776</width>
+					<height>72</height>
 					<font>LightCap36</font>
 					<textcolor>ffdadada</textcolor>
 				</control>
 				<!-- Edit -->
 				<control id="312" type="edit">
-					<top>70</top>
-					<width>888</width>
-					<height>48</height>
+					<top>140</top>
+					<width>1776</width>
+					<height>96</height>
 					<ondown>1000</ondown>
 					<font>Light39</font>
 					<textcolor>ffdadada</textcolor>
@@ -57,19 +57,19 @@
 				</control>
 				<!-- Edit Text line -->
 				<control type="image">
-					<top>126</top>
-					<width>888</width>
-					<height>2</height>
+					<top>252</top>
+					<width>1776</width>
+					<height>4</height>
 					<texture border="1">dialogs/KeyboardEditLine.png</texture>
 				</control>
 				<!-- Keys -->
 				<control type="group">
-					<top>152</top>
+					<top>304</top>
 					<!-- First row -->
 					<control id="1000" type="grouplist">
-						<width>1080</width>
-						<height>78</height>
-						<itemgap>12</itemgap>
+						<width>2160</width>
+						<height>156</height>
+						<itemgap>24</itemgap>
 						<onup>312</onup>
 						<onleft>1000</onleft>
 						<onright>1000</onright>
@@ -137,10 +137,10 @@
 					</control>
 					<!-- Second row -->
 					<control id="2000" type="grouplist">
-						<top>90</top>
-						<width>1080</width>
-						<height>78</height>
-						<itemgap>12</itemgap>
+						<top>180</top>
+						<width>2160</width>
+						<height>156</height>
+						<itemgap>24</itemgap>
 						<onleft>2000</onleft>
 						<onright>2000</onright>
 						<orientation>horizontal</orientation>
@@ -219,10 +219,10 @@
 					</control>
 					<!-- Third row -->
 					<control id="3000" type="grouplist">
-						<top>180</top>
-						<width>1080</width>
-						<height>78</height>
-						<itemgap>12</itemgap>
+						<top>360</top>
+						<width>2160</width>
+						<height>156</height>
+						<itemgap>24</itemgap>
 						<onleft>3000</onleft>
 						<onright>3000</onright>
 						<orientation>horizontal</orientation>
@@ -301,10 +301,10 @@
 					</control>
 					<!-- Forth row -->
 					<control id="4000" type="grouplist">
-						<top>270</top>
-						<width>1080</width>
-						<height>78</height>
-						<itemgap>12</itemgap>
+						<top>540</top>
+						<width>2160</width>
+						<height>156</height>
+						<itemgap>24</itemgap>
 						<onleft>4000</onleft>
 						<onright>4000</onright>
 						<orientation>horizontal</orientation>
@@ -383,10 +383,10 @@
 					</control>
 					<!-- Fifth row -->
 					<control id="5000" type="grouplist">
-						<top>360</top>
-						<width>1080</width>
-						<height>78</height>
-						<itemgap>12</itemgap>
+						<top>720</top>
+						<width>2160</width>
+						<height>156</height>
+						<itemgap>24</itemgap>
 						<onleft>5000</onleft>
 						<onright>5000</onright>
 						<orientation>horizontal</orientation>
@@ -395,7 +395,7 @@
 							<onup>160</onup>
 							<ondown condition="!Control.IsVisible(310)">302</ondown>
 							<ondown condition="Control.IsVisible(310)">999</ondown>
-							<width>438</width>
+							<width>876</width>
 							<label>20182</label>
 							<include>KeyboardButtons</include>
 						</control>
@@ -403,7 +403,7 @@
 						<control id="8" type="button">
 							<onup>165</onup>
 							<ondown>303</ondown>
-							<width>258</width>
+							<width>516</width>
 							<label>20181</label>
 							<include>KeyboardButtons</include>
 						</control>
@@ -424,173 +424,173 @@
 					</control>
 					<!-- Dummy Sixth row -->
 					<control type="grouplist">
-						<top>450</top>
-						<width>1080</width>
-						<height>78</height>
-						<itemgap>12</itemgap>
+						<top>900</top>
+						<width>2160</width>
+						<height>156</height>
+						<itemgap>24</itemgap>
 						<orientation>horizontal</orientation>
 						<!-- Shift on -->
 						<control type="image">
-							<width>348</width>
-							<height>78</height>
+							<width>696</width>
+							<height>156</height>
 							<texture border="3">dialogs/KeyboardButtonToggleOn.png</texture>
 							<visible>!Control.IsVisible(310) + String.Contains(Control.GetLabel(302),*)</visible>
 						</control>
 						<!-- Shift off -->
 						<control type="image">
-							<width>348</width>
-							<height>78</height>
+							<width>696</width>
+							<height>156</height>
 							<texture border="3">dialogs/KeyboardButtonToggleOff.png</texture>
 							<visible>!Control.IsVisible(310) + !String.Contains(Control.GetLabel(302),*)</visible>
 						</control>
 						<!-- Shift on -->
 						<control type="image">
-							<width>258</width>
-							<height>78</height>
+							<width>516</width>
+							<height>156</height>
 							<texture border="3">dialogs/KeyboardButtonToggleOn.png</texture>
 							<visible>Control.IsVisible(310) + String.Contains(Control.GetLabel(302),*)</visible>
 						</control>
 						<!-- Shift off -->
 						<control type="image">
-							<width>258</width>
-							<height>78</height>
+							<width>516</width>
+							<height>156</height>
 							<texture border="3">dialogs/KeyboardButtonToggleOff.png</texture>
 							<visible>Control.IsVisible(310) + !String.Contains(Control.GetLabel(302),*)</visible>
 						</control>
 						<!-- Caps lock on-->
 						<control type="image">
-							<width>348</width>
-							<height>78</height>
+							<width>696</width>
+							<height>156</height>
 							<texture border="3">dialogs/KeyboardButtonToggleOn.png</texture>
 							<visible>String.Contains(Control.GetLabel(303),*)</visible>
 						</control>
 						<!-- Caps lock off-->
 						<control type="image">
-							<width>348</width>
-							<height>78</height>
+							<width>696</width>
+							<height>156</height>
 							<texture border="3">dialogs/KeyboardButtonToggleOff.png</texture>
 							<visible>!String.Contains(Control.GetLabel(303),*)</visible>
 						</control>
 						<!-- Password show focus -->
 						<control type="image">
-							<width>78</width>
-							<height>78</height>
-							<texture border="3">dialogs/password_show_fo.png</texture>
+							<width>156</width>
+							<height>156</height>
+							<texture border="6">dialogs/password_show_fo.png</texture>
 							<visible>Control.IsVisible(310) + String.IsEqual(Control.GetLabel(310),$LOCALIZE[12309]) + Control.HasFocus(310)</visible>
 						</control>
 						<!-- Password show no focus -->
 						<control type="image">
-							<width>78</width>
-							<height>78</height>
-							<texture border="3">dialogs/password_show_nf.png</texture>
+							<width>156</width>
+							<height>156</height>
+							<texture border="6">dialogs/password_show_nf.png</texture>
 							<visible>Control.IsVisible(310) + String.IsEqual(Control.GetLabel(310),$LOCALIZE[12309]) + !Control.HasFocus(310)</visible>
 						</control>
 						<!-- Password hide focus -->
 						<control type="image">
-							<width>78</width>
-							<height>78</height>
-							<texture border="3">dialogs/password_hide_fo.png</texture>
+							<width>156</width>
+							<height>156</height>
+							<texture border="6">dialogs/password_hide_fo.png</texture>
 							<visible>Control.IsVisible(310) + String.IsEqual(Control.GetLabel(310),$LOCALIZE[12308]) + Control.HasFocus(310)</visible>
 						</control>
 						<!-- Password hide no focus -->
 						<control type="image">
-							<width>78</width>
-							<height>78</height>
-							<texture border="3">dialogs/password_hide_nf.png</texture>
+							<width>156</width>
+							<height>156</height>
+							<texture border="6">dialogs/password_hide_nf.png</texture>
 							<visible>Control.IsVisible(310) + String.IsEqual(Control.GetLabel(310),$LOCALIZE[12308]) + !Control.HasFocus(310)</visible>
 						</control>
 						<!-- Symbols on -->
 						<control type="image">
-							<width>78</width>
-							<height>78</height>
+							<width>156</width>
+							<height>156</height>
 							<texture border="3">dialogs/KeyboardButtonToggleOn.png</texture>
 							<visible>String.Contains(Control.GetLabel(304),*)</visible>
 						</control>
 						<!-- Symbols off -->
 						<control type="image">
-							<width>78</width>
-							<height>78</height>
+							<width>156</width>
+							<height>156</height>
 							<texture border="3">dialogs/KeyboardButtonToggleOff.png</texture>
 							<visible>!String.Contains(Control.GetLabel(304),*)</visible>
 						</control>
 					</control>
 					<!-- Sixth row -->
 					<control id="6000" type="grouplist">
-						<top>450</top>
-						<width>1080</width>
-						<height>78</height>
-						<itemgap>12</itemgap>
+						<top>900</top>
+						<width>2160</width>
+						<height>156</height>
+						<itemgap>24</itemgap>
 						<onleft>6000</onleft>
 						<onright>6000</onright>
 						<orientation>horizontal</orientation>
 						<!-- Shift -->
 						<control id="302" type="radiobutton">
-							<width>348</width>
+							<width>696</width>
 							<onup>32</onup>
 							<ondown>309</ondown>
 							<label>20178</label>
-							<texturenofocus/>
-							<textureradioonfocus/>
-							<textureradioonnofocus/>
-							<textureradioofffocus/>
-							<textureradiooffnofocus/>
+							<texturenofocus />
+							<textureradioonfocus />
+							<textureradioonnofocus />
+							<textureradioofffocus />
+							<textureradiooffnofocus />
 							<include>KeyboardButtons</include>
 							<visible>!Control.IsVisible(310)</visible>
 						</control>
 						<!-- Shift short -->
 						<control id="999" type="button">
-							<width>258</width>
+							<width>516</width>
 							<onup>32</onup>
 							<ondown>309</ondown>
 							<onclick>SendClick(302)</onclick>
 							<label>20178</label>
-							<texturenofocus/>
-							<textureradioonfocus/>
-							<textureradioonnofocus/>
-							<textureradioofffocus/>
-							<textureradiooffnofocus/>
+							<texturenofocus />
+							<textureradioonfocus />
+							<textureradioonnofocus />
+							<textureradioofffocus />
+							<textureradiooffnofocus />
 							<include>KeyboardButtons</include>
 							<visible>Control.IsVisible(310)</visible>
 						</control>
 						<!-- Caps lock -->
 						<control id="303" type="radiobutton">
-							<width>348</width>
+							<width>696</width>
 							<onup>8</onup>
 							<ondown>301</ondown>
 							<label>20179</label>
-							<texturenofocus/>
-							<textureradioonfocus/>
-							<textureradioonnofocus/>
-							<textureradioofffocus/>
-							<textureradiooffnofocus/>
+							<texturenofocus />
+							<textureradioonfocus />
+							<textureradioonnofocus />
+							<textureradioofffocus />
+							<textureradiooffnofocus />
 							<include>KeyboardButtons</include>
 						</control>
 						<!-- Password -->
 						<control id="310" type="button">
-							<width>78</width>
+							<width>156</width>
 							<onup>8</onup>
 							<ondown>301</ondown>
-							<font/>
-							<texturefocus/>
-							<texturenofocus/>
+							<font />
+							<texturefocus />
+							<texturenofocus />
 							<include>KeyboardButtons</include>
 						</control>
 						<!-- Symbols -->
 						<control id="304" type="radiobutton">
-							<width>78</width>
+							<width>156</width>
 							<onup>305</onup>
 							<ondown>300</ondown>
 							<label>ãé</label>
-							<texturenofocus/>
-							<textureradioonfocus/>
-							<textureradioonnofocus/>
-							<textureradioofffocus/>
-							<textureradiooffnofocus/>
+							<texturenofocus />
+							<textureradioonfocus />
+							<textureradioonnofocus />
+							<textureradioofffocus />
+							<textureradiooffnofocus />
 							<include>KeyboardButtons</include>
 						</control>
 						<!-- IP address -->
 						<control id="307" type="button">
-							<width>78</width>
+							<width>156</width>
 							<onup>306</onup>
 							<ondown>300</ondown>
 							<include>KeyboardButtons</include>
@@ -599,16 +599,16 @@
 					</control>
 					<!-- Seventh row -->
 					<control id="7000" type="grouplist">
-						<top>540</top>
-						<width>1080</width>
-						<height>78</height>
-						<itemgap>12</itemgap>
+						<top>1080</top>
+						<width>2160</width>
+						<height>156</height>
+						<itemgap>24</itemgap>
 						<onleft>7000</onleft>
 						<onright>7000</onright>
 						<orientation>horizontal</orientation>
 						<!-- Layout -->
 						<control id="309" type="button">
-							<width>438</width>
+							<width>876</width>
 							<onup condition="!Control.IsVisible(310)">302</onup>
 							<onup condition="Control.IsVisible(310)">999</onup>
 							<include>KeyboardButtons</include>
@@ -616,14 +616,14 @@
 						</control>
 						<!-- Cancel Button -->
 						<control id="301" type="button">
-							<width>258</width>
+							<width>516</width>
 							<onup>303</onup>
 							<include>KeyboardButtons</include>
 							<label>222</label>
 						</control>
 						<!-- Done -->
 						<control id="300" type="button">
-							<width>168</width>
+							<width>336</width>
 							<onup>307</onup>
 							<include>KeyboardButtons</include>
 							<label>20177</label>

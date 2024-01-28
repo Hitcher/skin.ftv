@@ -9,50 +9,49 @@
 			<include>DialogZoomAnimation</include>
 			<centerleft>50%</centerleft>
 			<centertop>50%</centertop>
-			<width>1378</width>
-			<height>480</height>
-			<include content="DialogBack">
-			</include>
+			<width>2756</width>
+			<height>960</height>
+			<include content="DialogBack"/>
 			<!-- Heading -->
 			<include content="DialogHeading">
 				<param name="dialog_heading_label_id" value="2"/>
 			</include>
 			<!-- Left group -->
 			<control type="list" id="10">
-				<top>60</top>
-				<width>978</width>
-				<height>336</height>
+				<top>120</top>
+				<width>1956</width>
+				<height>672</height>
 				<onleft>noop</onleft>
 				<onright>9001</onright>
 				<onup>noop</onup>
 				<ondown>12</ondown>
 				<scrolltime>0</scrolltime>
 				<orientation>vertical</orientation>
-				<itemlayout height="84" width="978">
+				<itemlayout height="168" width="1956">
 					<control type="image">
-						<width>978</width>
-						<height>84</height>
-						<texture border="3">settings/button_no_focus.png</texture>
+						<width>1956</width>
+						<height>168</height>
+						<texture border="1,1,1,6">settings/button_no_focus.png</texture>
 					</control>
 					<control type="label">
-						<left>40</left>
-						<width>778</width>
-						<height>84</height>
+						<left>80</left>
+						<width>1556</width>
+						<height>168</height>
 						<font>Light32</font>
 						<textcolor>NotFocusedColour</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="84" width="978">
+				<focusedlayout height="168" width="1956">
 					<control type="image">
-						<width>978</width>
-						<height>84</height>
-						<texture border="3">settings/button_focus.png</texture>
+						<width>1956</width>
+						<height>168</height>
+						<texture border="1,1,1,6">settings/button_focus.png</texture>
 					</control>
 					<control type="label">
-						<left>40</left>
-						<width>778</width>
-						<height>84</height>
+						<left>80</left>
+						<width>1556</width>
+						<height>168</height>
 						<font>Light32</font>
 						<scroll>true</scroll>
 						<textcolor>ffffffff</textcolor>
@@ -64,40 +63,40 @@
 				</focusedlayout>
 			</control>
 			<control id="11" type="image">
-				<top>394</top>
-				<width>978</width>
-				<height>2</height>
+				<top>788</top>
+				<width>1956</width>
+				<height>4</height>
 				<texture>dialogs/default_line.png</texture>
 			</control>
 			<!-- Name -->
 			<control type="edit" id="12">
-				<top>396</top>
-				<width>978</width>
-				<height>84</height>
+				<top>792</top>
+				<width>1956</width>
+				<height>168</height>
 				<onup>10</onup>
 				<onleft>noop</onleft>
 				<onright>9001</onright>
 				<ondown>noop</ondown>
 				<font>Light32</font>
-				<textoffsetx>40</textoffsetx>
+				<textoffsetx>80</textoffsetx>
 				<textcolor>NotFocusedColour</textcolor>
 				<focusedcolor>FocusedColour</focusedcolor>
-				<texturefocus border="3">settings/button_focus.png</texturefocus>
-				<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+				<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
+				<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
 				<hinttext>$LOCALIZE[1022]</hinttext>
 			</control>
 			<!-- Right grouplist -->
 			<control type="grouplist" id="9001">
-				<right>24</right>
-				<bottom>33</bottom>
-				<width>352</width>
-				<height>420</height>
+				<right>48</right>
+				<bottom>66</bottom>
+				<width>704</width>
+				<height>840</height>
 				<onleft>10</onleft>
 				<onright>noop</onright>
 				<onup>noop</onup>
 				<ondown>noop</ondown>
 				<onback>10</onback>
-				<itemgap>10</itemgap>
+				<itemgap>20</itemgap>
 				<align>right</align>
 				<!-- Browse -->
 				<include content="DialogButton">

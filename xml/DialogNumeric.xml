@@ -7,53 +7,53 @@
 		<include>DialogBackgroundImage</include>
 		<!-- Dialog group -->
 		<control type="group">
-			<left>455</left>
-			<top>192</top>
+			<left>910</left>
+			<top>384</top>
 			<include content="DialogZoomAnimation">
-				<param name="OpenCondition" value="true"/>
-				<param name="CloseCondition" value="true"/>
+				<param name="OpenCondition" value="true" />
+				<param name="CloseCondition" value="true" />
 			</include>
 			<!-- Dialog Background -->
 			<control type="image">
-				<width>1010</width>
-				<height>699</height>
-				<texture border="2">dialogs/DialogMessageBackground.png</texture>
+				<width>2020</width>
+				<height>1398</height>
+				<texture border="4">dialogs/DialogMessageBackground.png</texture>
 			</control>
 			<!-- Control group -->
 			<control type="group">
-				<left>61</left>
-				<top>48</top>
+				<left>122</left>
+				<top>96</top>
 				<!-- Heading -->
 				<control id="1" type="label">
-					<width>888</width>
-					<height>36</height>
+					<width>1776</width>
+					<height>72</height>
 					<font>LightCap36</font>
 					<textcolor>ffdadada</textcolor>
 				</control>
 				<!-- Edit -->
 				<control id="4" type="label">
-					<top>70</top>
-					<width>888</width>
-					<height>48</height>
+					<top>140</top>
+					<width>1776</width>
+					<height>96</height>
 					<scroll>true</scroll>
 					<font>Light39</font>
 					<textcolor>ffdadada</textcolor>
 				</control>
 				<!-- Edit Text line -->
 				<control type="image">
-					<top>126</top>
-					<width>888</width>
-					<height>2</height>
+					<top>252</top>
+					<width>1776</width>
+					<height>4</height>
 					<texture border="1">dialogs/KeyboardEditLine.png</texture>
 				</control>
 				<!-- Keys -->
 				<control type="group">
-					<top>152</top>
+					<top>304</top>
 					<!-- First row -->
 					<control id="1000" type="grouplist">
-						<width>1080</width>
-						<height>168</height>
-						<itemgap>12</itemgap>
+						<width>2160</width>
+						<height>336</height>
+						<itemgap>24</itemgap>
 						<onleft>1000</onleft>
 						<onright>1000</onright>
 						<orientation>horizontal</orientation>
@@ -90,10 +90,10 @@
 					</control>
 					<!-- Second row -->
 					<control id="2000" type="grouplist">
-						<top>180</top>
-						<width>1080</width>
-						<height>168</height>
-						<itemgap>12</itemgap>
+						<top>360</top>
+						<width>2160</width>
+						<height>336</height>
+						<itemgap>24</itemgap>
 						<onup>1000</onup>
 						<onleft>2000</onleft>
 						<onright>2000</onright>
@@ -136,10 +136,10 @@
 					</control>
 					<!-- Third row -->
 					<control id="3000" type="grouplist">
-						<top>360</top>
-						<width>1080</width>
-						<height>78</height>
-						<itemgap>12</itemgap>
+						<top>720</top>
+						<width>2160</width>
+						<height>156</height>
+						<itemgap>24</itemgap>
 						<onleft>3000</onleft>
 						<onright>3000</onright>
 						<orientation>horizontal</orientation>
@@ -158,14 +158,14 @@
 						<!-- BACKSPACE -->
 						<control id="23" type="button">
 							<onup>17</onup>
-							<width>258</width>
+							<width>516</width>
 							<label>20181</label>
 							<include>KeyboardButtons</include>
 						</control>
 						<!-- Cancel Button -->
 						<control id="301" type="button">
 							<onup>19</onup>
-							<width>258</width>
+							<width>516</width>
 							<label>222</label>
 							<onclick>Close</onclick>
 							<include>KeyboardButtons</include>
@@ -173,7 +173,7 @@
 						<!-- Done -->
 						<control id="21" type="button">
 							<onup>10</onup>
-							<width>168</width>
+							<width>336</width>
 							<label>20177</label>
 							<include>KeyboardButtons</include>
 						</control>

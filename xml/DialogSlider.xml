@@ -7,62 +7,62 @@
 		<control type="group">
 			<include>NotificationAnimation</include>
 			<centerleft>50%</centerleft>
-			<top>26</top>
-			<width>738</width>
-			<height>163</height>
+			<top>52</top>
+			<width>1476</width>
+			<height>326</height>
 			<!-- Background image -->
 			<control type="image">
 				<centerleft>50%</centerleft>
 				<width>100%</width>
 				<height>100%</height>
-				<texture border="4">dialogs/notification_back.png</texture>
+				<texture border="1,4,1,1">dialogs/notification_back.png</texture>
 			</control>
 			<!-- Icon back -->
 			<control type="image">
-				<left>26</left>
-				<top>26</top>
-				<width>111</width>
-				<height>111</height>
+				<left>52</left>
+				<top>52</top>
+				<width>222</width>
+				<height>222</height>
 				<texture>dialogs/notification_icon.png</texture>
 			</control>
 			<!-- Icon -->
 			<control type="image">
-				<left>26</left>
-				<top>26</top>
-				<width>111</width>
-				<height>111</height>
+				<left>52</left>
+				<top>52</top>
+				<width>222</width>
+				<height>222</height>
 				<texture>dialogs/notification_slider.png</texture>
 			</control>
 			<!-- Heading -->
 			<control id="10" type="label">
-				<left>160</left>
-				<top>42</top>
-				<width>552</width>
-				<height>31</height>
+				<left>320</left>
+				<top>84</top>
+				<width>1104</width>
+				<height>62</height>
 				<font>Light31</font>
 				<textcolor>fff6f6f6</textcolor>
 			</control>
 			<!-- Details -->
 			<control id="12" type="label">
-				<left>160</left>
-				<top>47</top>
-				<width>552</width>
-				<height>26</height>
+				<left>320</left>
+				<top>94</top>
+				<width>1104</width>
+				<height>52</height>
 				<align>right</align>
 				<font>Light26</font>
 				<textcolor>fffbbb45</textcolor>
 			</control>
 			<!-- Slider -->
 			<control id="11" type="slider">
-				<left>160</left>
-				<top>104</top>
-				<width>552</width>
-				<height>11</height>
-				<texturesliderbar border="4">osd/progress_back.png</texturesliderbar>
-				<texturesliderbardisabled colordiffuse="DisabledColour" border="4">osd/progress_back.png</texturesliderbardisabled>
-				<textureslidernib border="4">osd/progress_cache.png</textureslidernib>
-				<textureslidernibdisabled colordiffuse="DisabledColour" border="4">osd/progress_cache.png</textureslidernibdisabled>
-				<textureslidernibfocus border="4">osd/progress_bar.png</textureslidernibfocus>
+				<left>320</left>
+				<top>208</top>
+				<width>1104</width>
+				<height>24</height>
+				<texturesliderbar border="12">osd/progress_bar_back.png</texturesliderbar>
+				<texturesliderbardisabled colordiffuse="DisabledColour" border="12">osd/progress_bar_back.png</texturesliderbardisabled>
+				<textureslidernib border="12">osd/progress_bar_cache.png</textureslidernib>
+				<textureslidernibdisabled colordiffuse="DisabledColour" border="12">osd/progress_bar_cache.png</textureslidernibdisabled>
+				<textureslidernibfocus border="12">osd/progress_bar.png</textureslidernibfocus>
 			</control>
 		</control>
 	</controls>

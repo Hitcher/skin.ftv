@@ -2,7 +2,7 @@
 <window>
 	<!-- visualisation -->
 	<backgroundcolor>BackgroundColour</backgroundcolor>
-	<defaultcontrol/>
+	<defaultcontrol />
 	<onload condition="System.HasAddon(script.artistslideshow)">RunScript(script.artistslideshow)</onload>
 	<controls>
 		<!-- Fanart -->
@@ -31,42 +31,42 @@
 			<visible>!Window.IsActive(seekbar) + !Window.IsActive(musicosd) + Player.ShowInfo</visible>
 			<!-- Heading / Current item / Total items -->
 			<control type="grouplist">
-				<left>198</left>
-				<top>118</top>
-				<height>80</height>
-				<itemgap>10</itemgap>
+				<left>396</left>
+				<top>236</top>
+				<height>160</height>
+				<itemgap>20</itemgap>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
 				<control type="label">
 					<width>auto</width>
-					<height>60</height>
+					<height>120</height>
 					<font>Med48</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffdadada</textcolor>
 					<label>$LOCALIZE[10517]  </label>
 				</control>
 				<control type="label">
-					<top>30</top>
+					<top>60</top>
 					<width>auto</width>
-					<height>60</height>
+					<height>120</height>
 					<font>Med32</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffdadada</textcolor>
 					<label>$INFO[MusicPlayer.PlaylistPosition]</label>
 				</control>
 				<control type="label">
-					<top>28</top>
+					<top>56</top>
 					<width>auto</width>
-					<height>60</height>
+					<height>120</height>
 					<font>Light36</font>
 					<aligny>bottom</aligny>
 					<textcolor>ff505050</textcolor>
 					<label>|</label>
 				</control>
 				<control type="label">
-					<top>30</top>
+					<top>60</top>
 					<width>auto</width>
-					<height>60</height>
+					<height>120</height>
 					<font>Light32</font>
 					<aligny>bottom</aligny>
 					<textcolor>ff505050</textcolor>
@@ -75,77 +75,77 @@
 			</control>
 			<!-- Title -->
 			<control type="label">
-				<left>198</left>
-				<top>200</top>
+				<left>396</left>
+				<top>400</top>
 				<width>auto</width>
-				<height>26</height>
+				<height>52</height>
 				<font>Med26</font>
 				<textcolor>ffbebebe</textcolor>
 				<label>$INFO[MusicPlayer.Title]</label>
 			</control>
 			<!-- Cover -->
 			<control type="image">
-				<left>198</left>
-				<top>836</top>
-				<width>154</width>
-				<height>154</height>
+				<left>396</left>
+				<top>1672</top>
+				<width>308</width>
+				<height>308</height>
 				<texture fallback="common/missing_image_cover.png">$INFO[Player.Art(thumb)]</texture>
 				<aspectratio align="centre" aligny="bottom">scale</aspectratio>
 			</control>
 			<!-- Details -->
 			<control type="group">
-				<left>392</left>
-				<top>847</top>
+				<left>784</left>
+				<top>1694</top>
 				<!-- Album -->
 				<control type="label">
 					<width>auto</width>
-					<height>40</height>
+					<height>80</height>
 					<font>Med40</font>
 					<textcolor>ffbebebe</textcolor>
 					<label>$INFO[MusicPlayer.Album]</label>
 				</control>
 				<!-- Artist / Track -->
 				<control type="label">
-					<top>50</top>
+					<top>100</top>
 					<width>auto</width>
-					<height>40</height>
+					<height>80</height>
 					<font>Light30</font>
 					<textcolor>ffbebebe</textcolor>
 					<label>$VAR[ArtistTrack]</label>
 				</control>
 				<!-- Time / Duration / Shuffle /Repeat -->
 				<control type="grouplist">
-					<top>98</top>
-					<height>50</height>
-					<itemgap>30</itemgap>
+					<top>196</top>
+					<height>100</height>
+					<itemgap>60</itemgap>
 					<orientation>horizontal</orientation>
 					<usecontrolcoords>true</usecontrolcoords>
 					<control type="label">
 						<width>auto</width>
-						<height>50</height>
+						<height>100</height>
 						<font>Light26</font>
 						<aligny>bottom</aligny>
 						<textcolor>ffdadada</textcolor>
 						<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
 					</control>
 					<control type="image">
-						<top>5</top>
-						<width>26</width>
-						<height>22</height>
+						<top>10</top>
+						<width>52</width>
+						<height>44</height>
 						<texture>osd/visualistion_shuffle.png</texture>
 						<visible>String.IsEqual(Playlist.Random,$LOCALIZE[16041])</visible>
 					</control>
 					<control type="image">
-						<top>5</top>
-						<width>30</width>
-						<height>22</height>
+						<top>10</top>
+						<width>60</width>
+						<height>44</height>
 						<texture>osd/visualistion_repeat.png</texture>
 						<visible>String.IsEqual(Playlist.Repeat,$LOCALIZE[593])</visible>
 					</control>
 					<control type="image">
-						<top>5</top>
-						<width>42</width>
-						<height>22</height>
+						<top>10</top>
+						<width>84</width>
+						<height>44</height>
 						<texture>osd/visualistion_repeat_1.png</texture>
 						<visible>String.IsEqual(Playlist.Repeat,$LOCALIZE[592])</visible>
 					</control>

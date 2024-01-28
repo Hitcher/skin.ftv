@@ -7,9 +7,9 @@
 		</control>
 		<!-- Hidden Plot -->
 		<control type="textbox">
-			<left>-1200</left>
-			<width>1192</width>
-			<height>126</height>
+			<left>-2400</left>
+			<width>2384</width>
+			<height>252</height>
 			<align>left</align>
 			<font>Light30Spaced</font>
 			<pagecontrol>96</pagecontrol>
@@ -19,9 +19,9 @@
 		</control>
 		<!-- Hidden scrollbar -->
 		<control id="96" type="scrollbar">
-			<left>-1200</left>
-			<width>1192</width>
-			<height>126</height>
+			<left>-2400</left>
+			<width>2384</width>
+			<height>252</height>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
 		</control>
@@ -37,90 +37,90 @@
 			<include>DialogVideoInfoAnimation</include>
 		</control>
 		<control type="group">
-			<left>90</left>
-			<top>99</top>
+			<left>180</left>
+			<top>198</top>
 			<include>DialogVideoInfoAnimation</include>
 			<animation effect="fade" end="100" start="0" time="200">WindowOpen</animation>
 			<!-- Icon -->
 			<control type="image">
-				<width>320</width>
-				<height>480</height>
+				<width>640</width>
+				<height>960</height>
 				<texture>$VAR[VideoInfoImage]</texture>
 				<aspectratio aligny="center">scale</aspectratio>
 			</control>
 			<control type="image">
-				<width>90</width>
-				<height>90</height>
+				<width>180</width>
+				<height>180</height>
 				<texture>$INFO[ListItem.VideoResolution,views/resolution/,.png]</texture>
 			</control>
 			<control type="image">
-				<width>90</width>
-				<height>90</height>
+				<width>180</width>
+				<height>180</height>
 				<texture>views/OverlayWatched.png</texture>
 				<visible>[Integer.IsGreater(ListItem.PlayCount,0) + Container.Content(episodes)] | [Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),99) + Integer.IsGreater(ListItem.Property(TotalEpisodes),0) + !Container.Content(episodes)]</visible>
 			</control>
 			<control type="image">
-				<top>400</top>
-				<width>320</width>
-				<height>80</height>
-				<texture border="2">views/default_overlay.png</texture>
+				<top>800</top>
+				<width>640</width>
+				<height>160</height>
+				<texture border="4">views/default_overlay.png</texture>
 				<visible>[ListItem.IsResumable + [!Container.Content(tvshows) + !Container.Content(seasons)]]| [Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),00) + Integer.IsLess(ListItem.Property(WatchedEpisodePercent),100) + [Container.Content(tvshows) | Container.Content(seasons)]]</visible>
 			</control>
 			<control type="label">
-				<left>16</left>
-				<top>436</top>
-				<width>604</width>
-				<height>28</height>
+				<left>32</left>
+				<top>872</top>
+				<width>1208</width>
+				<height>56</height>
 				<font>Med20</font>
 				<textcolor>ffbcbcbc</textcolor>
 				<label>$VAR[PercentRemaining]</label>
 				<visible>ListItem.IsResumable + [Container.Content(movies) | Container.Content(episodes)]</visible>
 			</control>
 			<control type="label">
-				<left>16</left>
-				<top>436</top>
-				<width>604</width>
-				<height>28</height>
+				<left>32</left>
+				<top>872</top>
+				<width>1208</width>
+				<height>56</height>
 				<font>Med20</font>
 				<textcolor>ffbcbcbc</textcolor>
 				<label>$VAR[TVShowPercentRemaining]</label>
 				<visible>Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),00) + [Container.Content(tvshows) | Container.Content(seasons)]</visible>
 			</control>
 			<control type="progress">
-				<top>480</top>
-				<width>320</width>
-				<height>8</height>
+				<top>960</top>
+				<width>640</width>
+				<height>16</height>
 				<info>ListItem.PercentPlayed</info>
-				<texturebg border="2">views/ProgressBack.png</texturebg>
-				<lefttexture/>
-				<midtexture border="2">views/ProgressBar.png</midtexture>
-				<righttexture/>
-				<overlaytexture/>
+				<texturebg border="4">views/ProgressBack.png</texturebg>
+				<lefttexture />
+				<midtexture border="4">views/ProgressBar.png</midtexture>
+				<righttexture />
+				<overlaytexture />
 				<visible>ListItem.IsResumable</visible>
 			</control>
 			<control type="progress">
-				<top>480</top>
-				<width>320</width>
-				<height>8</height>
+				<top>960</top>
+				<width>640</width>
+				<height>16</height>
 				<info>ListItem.Property(WatchedEpisodePercent)</info>
-				<texturebg border="2">views/ProgressBack.png</texturebg>
-				<lefttexture/>
-				<midtexture border="2">views/ProgressBar.png</midtexture>
-				<righttexture/>
-				<overlaytexture/>
+				<texturebg border="4">views/ProgressBack.png</texturebg>
+				<lefttexture />
+				<midtexture border="4">views/ProgressBar.png</midtexture>
+				<righttexture />
+				<overlaytexture />
 				<visible>Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),00) + [Container.Content(tvshows) | Container.Content(seasons)]</visible>
 			</control>
 			<control type="image">
-				<top>480</top>
-				<width>320</width>
-				<height>8</height>
-				<texture border="2">views/ProgressBar.png</texture>
+				<top>960</top>
+				<width>640</width>
+				<height>16</height>
+				<texture border="4">views/ProgressBar.png</texture>
 				<visible>Container.Content(episodes) + Integer.IsGreater(ListItem.PlayCount,0) + !ListItem.IsResumable</visible>
 			</control>
 			<control id="7000" type="button">
-				<top>518</top>
-				<width>480</width>
-				<height>35</height>
+				<top>1036</top>
+				<width>960</width>
+				<height>70</height>
 				<onup condition="!Control.IsVisible(96)">Close</onup>
 				<onup condition="Control.IsVisible(96)">3002</onup>
 				<ondown>noop</ondown>
@@ -134,14 +134,14 @@
 			</control>
 		</control>
 		<control type="group">
-			<left>510</left>
-			<top>99</top>
+			<left>1020</left>
+			<top>198</top>
 			<animation effect="fade" end="100" start="0" time="200" delay="400">WindowOpen</animation>
 			<!-- Heading -->
 			<control type="label">
-				<top>-7</top>
-				<width>1170</width>
-				<height>48</height>
+				<top>-14</top>
+				<width>2340</width>
+				<height>96</height>
 				<font>Med48</font>
 				<scroll>true</scroll>
 				<textcolor>ffdadada</textcolor>
@@ -151,18 +151,18 @@
 			</control>
 			<!-- Year / Runtime / Rating -->
 			<control type="grouplist">
-				<top>58</top>
-				<height>38</height>
-				<itemgap>10</itemgap>
+				<top>116</top>
+				<height>76</height>
+				<itemgap>20</itemgap>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
 				<visible>!Control.HasFocus(50)</visible>
 				<animation effect="fade" end="0" start="100" time="0">Hidden</animation>
 				<animation delay="200" effect="fade" end="100" start="0" time="80">Visible</animation>
 				<control type="label">
-					<top>-4</top>
+					<top>-8</top>
 					<width>auto</width>
-					<height>34</height>
+					<height>68</height>
 					<font>Light32</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffbebebe</textcolor>
@@ -170,9 +170,9 @@
 					<visible>!String.IsEmpty(ListItem.Year)</visible>
 				</control>
 				<control type="label">
-					<top>-4</top>
+					<top>-8</top>
 					<width>auto</width>
-					<height>34</height>
+					<height>68</height>
 					<font>Light32</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffbebebe</textcolor>
@@ -183,9 +183,9 @@
 			</control>
 			<!-- Star rating / Rating -->
 			<control type="grouplist">
-				<top>102</top>
-				<height>40</height>
-				<itemgap>10</itemgap>
+				<top>204</top>
+				<height>80</height>
+				<itemgap>20</itemgap>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
 				<visible>!Control.HasFocus(50)</visible>
@@ -194,18 +194,18 @@
 				<include>VideoRatings</include>
 			</control>
 			<control type="grouplist">
-				<top>156</top>
-				<width>2800</width>
-				<height>1400</height>
+				<top>312</top>
+				<width>5600</width>
+				<height>2800</height>
 				<itemgap>0</itemgap>
 				<ondown>8</ondown>
 				<orientation>vertical</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
-				<animation condition="Control.HasFocus(50)" effect="slide" end="0,-91" start="0,0" time="200">Conditional</animation>
+				<animation condition="Control.HasFocus(50)" effect="slide" end="0,-182" start="0,0" time="200">Conditional</animation>
 				<!-- Plot -->
 				<control type="textbox">
-					<width>1192</width>
-					<height max="124">auto</height>
+					<width>2384</width>
+					<height max="248">auto</height>
 					<align>left</align>
 					<font>Light30Spaced</font>
 					<autoscroll>false</autoscroll>
@@ -220,10 +220,10 @@
 				</control>
 				<!-- More button -->
 				<control id="3002" type="button">
-					<left>1194</left>
-					<top>-38</top>
-					<width>37</width>
-					<height>23</height>
+					<left>2388</left>
+					<top>-76</top>
+					<width>74</width>
+					<height>46</height>
 					<onleft>7000</onleft>
 					<onright>8</onright>
 					<onclick>RunScript(script.skinvariables,run_dialog=textviewer,heading='empty',text='$ESCVAR[Plot]')</onclick>
@@ -235,9 +235,9 @@
 			</control>
 			<!-- Starring -->
 			<control type="grouplist">
-				<top>297</top>
-				<height>40</height>
-				<itemgap>20</itemgap>
+				<top>594</top>
+				<height>80</height>
+				<itemgap>40</itemgap>
 				<include>DialogVideoInfoAnimation</include>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
@@ -246,16 +246,16 @@
 				<animation condition="!Control.HasFocus(50)" delay="200" effect="fade" end="100" start="0" time="80">Conditional</animation>
 				<control type="label">
 					<width>auto</width>
-					<height>24</height>
+					<height>48</height>
 					<font>Med30</font>
 					<aligny>bottom</aligny>
 					<textcolor>ff717171</textcolor>
 					<label>$LOCALIZE[31071]:</label>
 				</control>
 				<control type="label">
-					<top>-1</top>
-					<width max="1024">auto</width>
-					<height>24</height>
+					<top>-2</top>
+					<width max="2048">auto</width>
+					<height>48</height>
 					<font>Light30Spaced</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffbcbcbc</textcolor>
@@ -264,10 +264,10 @@
 			</control>
 			<!-- Director -->
 			<control type="grouplist">
-				<top>339</top>
-				<width>1192</width>
-				<height>40</height>
-				<itemgap>20</itemgap>
+				<top>678</top>
+				<width>2384</width>
+				<height>80</height>
+				<itemgap>40</itemgap>
 				<include>DialogVideoInfoAnimation</include>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
@@ -276,16 +276,16 @@
 				<animation condition="!Control.HasFocus(50)" delay="200" effect="fade" end="100" start="0" time="80">Conditional</animation>
 				<control type="label">
 					<width>auto</width>
-					<height>24</height>
+					<height>48</height>
 					<font>Med30</font>
 					<aligny>bottom</aligny>
 					<textcolor>ff717171</textcolor>
 					<label>$LOCALIZE[31072]:</label>
 				</control>
 				<control type="label">
-					<top>-1</top>
+					<top>-2</top>
 					<width>auto</width>
-					<height>24</height>
+					<height>48</height>
 					<font>Light30Spaced</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffbcbcbc</textcolor>
@@ -294,10 +294,10 @@
 			</control>
 			<!-- Next Airs -->
 			<control type="grouplist">
-				<top>339</top>
-				<width>1192</width>
-				<height>40</height>
-				<itemgap>20</itemgap>
+				<top>678</top>
+				<width>2384</width>
+				<height>80</height>
+				<itemgap>40</itemgap>
 				<include>DialogVideoInfoAnimation</include>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
@@ -306,16 +306,16 @@
 				<animation condition="!Control.HasFocus(50)" delay="200" effect="fade" end="100" start="0" time="80">Conditional</animation>
 				<control type="label">
 					<width>auto</width>
-					<height>24</height>
+					<height>48</height>
 					<font>Med30</font>
 					<aligny>bottom</aligny>
 					<textcolor>ff717171</textcolor>
 					<label>$LOCALIZE[31073]:</label>
 				</control>
 				<control type="label">
-					<top>-1</top>
+					<top>-2</top>
 					<width>auto</width>
-					<height>24</height>
+					<height>48</height>
 					<font>Light30Spaced</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffbcbcbc</textcolor>
@@ -324,17 +324,17 @@
 			</control>
 			<!-- Button grouplist -->
 			<control id="9000" type="grouplist">
-				<left>-12</left>
-				<top>409</top>
-				<width>1620</width>
-				<height>116</height>
+				<left>-24</left>
+				<top>818</top>
+				<width>3240</width>
+				<height>232</height>
 				<itemgap>0</itemgap>
 				<onleft>7000</onleft>
 				<onright>noop</onright>
 				<orientation>horizontal</orientation>
 				<include>DialogVideoInfoAnimation</include>
 				<defaultcontrol always="true">9001</defaultcontrol>
-				<animation condition="Control.HasFocus(50)" effect="slide" end="0,-192" start="0,0" time="200">Conditional</animation>
+				<animation condition="Control.HasFocus(50)" effect="slide" end="0,-384" start="0,0" time="200">Conditional</animation>
 				<!-- Dummy to always set focus to first visible button -->
 				<control id="9001" type="button">
 					<width>0</width>
@@ -345,47 +345,47 @@
 				</control>
 				<!-- Play/Browse Button -->
 				<control id="8" type="togglebutton">
-					<width min="124" max="204">auto</width>
+					<width min="248" max="408">auto</width>
 					<wrapmultiline>true</wrapmultiline>
-					<height>116</height>
+					<height>232</height>
 					<onup condition="!Control.IsVisible(96)">Close</onup>
 					<onup condition="Control.IsVisible(96)">3002</onup>
 					<ondown>50</ondown>
 					<font>Med24</font>
 					<label>$VAR[VideoInfoButton8]</label>
 					<altlabel>$VAR[AltVideoInfoButton8]</altlabel>
-					<textoffsetx>28</textoffsetx>
+					<textoffsetx>56</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
 					<visible>Control.IsEnabled(8) + !Control.IsEnabled(9)</visible>
-					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
-					<alttexturefocus border="14,6,5,7">views/button_fo.png</alttexturefocus>
-					<alttexturenofocus border="16,6,6,6">views/button_nf.png</alttexturenofocus>
+					<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
+					<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
+					<alttexturefocus border="28,12,10,14">views/button_fo.png</alttexturefocus>
+					<alttexturenofocus border="32,12,12,12">views/button_nf.png</alttexturenofocus>
 					<usealttexture>String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(Container.Content,seasons) | String.IsEqual(ListItem.DBTYPE,set)</usealttexture>
 				</control>
 				<!-- Resume Button -->
 				<control id="9" type="button">
-					<width min="124" max="204">auto</width>
+					<width min="248" max="408">auto</width>
 					<wrapmultiline>true</wrapmultiline>
-					<height>116</height>
+					<height>232</height>
 					<onup condition="!Control.IsVisible(96)">Close</onup>
 					<onup condition="Control.IsVisible(96)">3002</onup>
-					<ondown>500</ondown>
+					<ondown>50</ondown>
 					<font>Med24</font>
 					<label>13404</label>
-					<textoffsetx>28</textoffsetx>
+					<textoffsetx>56</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
 					<visible>Control.IsEnabled(9)</visible>
-					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
+					<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
 				</control>
 				<!-- User Rating Button -->
 				<control id="1002" type="button">
-					<width min="124" max="204">auto</width>
+					<width min="248" max="408">auto</width>
 					<wrapmultiline>true</wrapmultiline>
-					<height>116</height>
+					<height>232</height>
 					<onup condition="!Control.IsVisible(96)">Close</onup>
 					<onup condition="Control.IsVisible(96)">3002</onup>
 					<ondown>50</ondown>
@@ -394,18 +394,18 @@
 					<onclick>SendClick(7)</onclick>
 					<font>Med24</font>
 					<label>[CAPITALIZE]$LOCALIZE[31235][/CAPITALIZE][CR][COLOR=00ffffff]$LOCALIZE[31236][/COLOR]</label>
-					<textoffsetx>28</textoffsetx>
+					<textoffsetx>56</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
 					<visible>Control.IsEnabled(7)</visible>
-					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
+					<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
 				</control>
 				<!-- Trailer button -->
 				<control id="1003" type="button">
-					<width min="124" max="204">auto</width>
+					<width min="248" max="408">auto</width>
 					<wrapmultiline>true</wrapmultiline>
-					<height>116</height>
+					<height>232</height>
 					<onup condition="!Control.IsVisible(96)">Close</onup>
 					<onup condition="Control.IsVisible(96)">3002</onup>
 					<ondown>50</ondown>
@@ -414,52 +414,52 @@
 					<onclick>PlayMedia($INFO[ListItem.Trailer])</onclick>
 					<font>Med24</font>
 					<label>$LOCALIZE[31075]</label>
-					<textoffsetx>28</textoffsetx>
+					<textoffsetx>56</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
 					<visible>!String.IsEmpty(ListItem.Trailer)</visible>
-					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
+					<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
 				</control>
 				<!-- Refresh Button -->
 				<control id="6" type="button">
-					<width min="124" max="204">auto</width>
+					<width min="248" max="408">auto</width>
 					<wrapmultiline>true</wrapmultiline>
-					<height>116</height>
+					<height>232</height>
 					<onup condition="!Control.IsVisible(96)">Close</onup>
 					<onup condition="Control.IsVisible(96)">3002</onup>
 					<ondown>50</ondown>
 					<font>Med24</font>
 					<label>31205</label>
-					<textoffsetx>28</textoffsetx>
+					<textoffsetx>56</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
 					<visible>Control.IsEnabled(6)</visible>
-					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
+					<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
 				</control>
 				<!-- Get Thumb Button -->
 				<control id="10" type="button">
-					<width min="124" max="204">auto</width>
+					<width min="248" max="408">auto</width>
 					<wrapmultiline>true</wrapmultiline>
-					<height>116</height>
+					<height>232</height>
 					<onup condition="!Control.IsVisible(96)">Close</onup>
 					<onup condition="Control.IsVisible(96)">3002</onup>
 					<ondown>50</ondown>
 					<font>Med24</font>
 					<label>[CAPITALIZE]$LOCALIZE[31165][/CAPITALIZE]</label>
-					<textoffsetx>28</textoffsetx>
+					<textoffsetx>56</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
 					<visible>Control.IsEnabled(10)</visible>
-					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
+					<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
 				</control>
 				<!-- Cinema Experience Button -->
 				<control id="21" type="button">
-					<width min="124" max="204">auto</width>
+					<width min="248" max="408">auto</width>
 					<wrapmultiline>true</wrapmultiline>
-					<height>116</height>
+					<height>232</height>
 					<onup condition="!Control.IsVisible(96)">Close</onup>
 					<onup condition="Control.IsVisible(96)">3002</onup>
 					<ondown>50</ondown>
@@ -467,92 +467,92 @@
 					<onclick>RunScript(script.cinema.experience,movieid=$INFO[ListItem.DBID])</onclick>
 					<font>Med24</font>
 					<label>31104</label>
-					<textoffsetx>28</textoffsetx>
+					<textoffsetx>56</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
-					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
+					<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
 					<visible>System.HasAddon(script.cinema.experience) + String.IsEqual(ListItem.DBTYPE,movie)</visible>
 				</control>
 				<!-- Special Features button -->
 				<control type="button" id="22">
-					<width min="124" max="204">auto</width>
+					<width min="248" max="408">auto</width>
 					<wrapmultiline>true</wrapmultiline>
-					<height>116</height>
+					<height>232</height>
 					<onup condition="!Control.IsVisible(96)">Close</onup>
 					<onup condition="Control.IsVisible(96)">3002</onup>
 					<ondown>50</ondown>
 					<font>Med24</font>
 					<label>$LOCALIZE[31023]</label>
-					<textoffsetx>28</textoffsetx>
+					<textoffsetx>56</textoffsetx>
 					<textcolor>ffdadada</textcolor>
 					<focusedcolor>ff222222</focusedcolor>
 					<onclick>Action(close)</onclick>
 					<onclick>RunScript(plugin.video.specialfeatures,ListItem)</onclick>
-					<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
-					<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
+					<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
+					<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
 					<visible>String.IsEqual(Window(home).Property(SpecialFeatures.Visible),true)</visible>
 				</control>
 			</control>
 			<!-- Dummy Button grouplist -->
 			<control type="grouplist">
-				<left>-12</left>
-				<top>409</top>
-				<width>1620</width>
-				<height>116</height>
+				<left>-24</left>
+				<top>818</top>
+				<width>3240</width>
+				<height>232</height>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
 				<include>DialogVideoInfoAnimation</include>
-				<animation condition="Control.HasFocus(50)" effect="slide" end="0,-192" start="0,0" time="200">Conditional</animation>
+				<animation condition="Control.HasFocus(50)" effect="slide" end="0,-384" start="0,0" time="200">Conditional</animation>
 				<!-- Play/Browse Button -->
 				<control type="button">
-					<width min="124" max="204">auto</width>
+					<width min="248" max="408">auto</width>
 					<wrapmultiline>true</wrapmultiline>
-					<height>116</height>
+					<height>232</height>
 					<font>Med24</font>
 					<label>$INFO[Control.GetLabel(8)]</label>
-					<textoffsetx>28</textoffsetx>
+					<textoffsetx>56</textoffsetx>
 					<textcolor>00ffffff</textcolor>
 					<focusedcolor>00ffffff</focusedcolor>
 					<visible>Control.IsEnabled(8) + !Control.IsEnabled(9)</visible>
-					<texturefocus/>
-					<texturenofocus/>
+					<texturefocus />
+					<texturenofocus />
 				</control>
 				<!-- Resume Button -->
 				<control type="button">
-					<width min="124" max="204">auto</width>
+					<width min="248" max="408">auto</width>
 					<wrapmultiline>true</wrapmultiline>
-					<height>116</height>
+					<height>232</height>
 					<font>Med24</font>
 					<label>$INFO[Control.GetLabel(9)]</label>
-					<textoffsetx>28</textoffsetx>
+					<textoffsetx>56</textoffsetx>
 					<textcolor>00ffffff</textcolor>
 					<focusedcolor>00ffffff</focusedcolor>
 					<visible>Control.IsEnabled(9)</visible>
-					<texturefocus/>
-					<texturenofocus/>
+					<texturefocus />
+					<texturenofocus />
 				</control>
 				<!-- User Rating Button -->
 				<control type="image">
-					<left>29</left>
-					<top>65</top>
-					<width>115</width>
-					<height>22</height>
+					<left>58</left>
+					<top>130</top>
+					<width>230</width>
+					<height>44</height>
 					<visible>Control.IsEnabled(7)</visible>
 					<texture>$VAR[UserRatingButton]</texture>
 				</control>
 			</control>
 		</control>
 		<control type="group">
-			<left>-67</left>
-			<top>686</top>
+			<left>-134</left>
+			<top>1372</top>
 			<animation effect="fade" end="100" start="0" time="200" delay="800">WindowOpen</animation>
 			<!-- Cast label -->
 			<control type="label">
-				<left>575</left>
-				<width>1000</width>
-				<height>32</height>
+				<left>1150</left>
+				<width>2000</width>
+				<height>64</height>
 				<font>Med32</font>
 				<textcolor>ff717171</textcolor>
 				<label>$LOCALIZE[31076]</label>
@@ -562,10 +562,10 @@
 			</control>
 			<!-- Cast -->
 			<control id="50" type="fixedlist">
-				<left>-25</left>
-				<top>-271</top>
-				<width>2600</width>
-				<height>576</height>
+				<left>-50</left>
+				<top>-542</top>
+				<width>5200</width>
+				<height>1152</height>
 				<onclick>Control.SetFocus(50,0,absolute)</onclick>
 				<onup>Control.SetFocus(50,0,absolute)</onup>
 				<onup>9001</onup>
@@ -584,46 +584,46 @@
 				<include>ListBounceAnimation</include>
 				<animation delay="300" effect="fade" end="100" start="0" time="300">Visible</animation>
 				<animation effect="fade" end="0" start="100" time="300">Hidden</animation>
-				<animation center="480,1022" condition="!Control.HasFocus(50)" easing="inout" effect="zoom" end="81" start="100" time="300" tween="sine">Conditional</animation>
-				<itemlayout height="576" width="300">
+				<animation center="960,2044" condition="!Control.HasFocus(50)" easing="inout" effect="zoom" end="81" start="100" time="300" tween="sine">Conditional</animation>
+				<itemlayout height="1152" width="600">
 					<control type="group">
-						<animation center="150,288" condition="true" effect="zoom" end="85" start="85">Conditional</animation>
+						<animation center="300,576" condition="true" effect="zoom" end="85" start="85">Conditional</animation>
 						<control type="image">
-							<left>-48</left>
-							<centertop>288</centertop>
-							<width>416</width>
-							<height>576</height>
-							<texture border="50">views/shadow_nf.png</texture>
+							<left>-96</left>
+							<centertop>576</centertop>
+							<width>832</width>
+							<height>1152</height>
+							<texture border="100">views/shadow_nf.png</texture>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>320</width>
-							<height>480</height>
+							<top>96</top>
+							<width>640</width>
+							<height>960</height>
 							<aspectratio align="center">scale</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="image">
-							<bottom>48</bottom>
-							<width>320</width>
-							<height>165</height>
-							<texture border="2">views/default_overlay.png</texture>
+							<bottom>96</bottom>
+							<width>640</width>
+							<height>330</height>
+							<texture border="4">views/default_overlay.png</texture>
 							<visible>!String.Contains(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="label">
-							<left>18</left>
-							<top>412</top>
-							<width>290</width>
-							<height>42</height>
+							<left>36</left>
+							<top>824</top>
+							<width>580</width>
+							<height>84</height>
 							<font>Bold42</font>
 							<textcolor>ffffffff</textcolor>
 							<shadowcolor>ShadowColour</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
-							<left>18</left>
-							<top>463</top>
-							<width>290</width>
-							<height>28</height>
+							<left>36</left>
+							<top>926</top>
+							<width>580</width>
+							<height>56</height>
 							<font>Med28</font>
 							<scroll>false</scroll>
 							<textcolor>ffffffff</textcolor>
@@ -631,93 +631,93 @@
 							<label>$INFO[ListItem.Label2,$LOCALIZE[20347] ,]</label>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>320</width>
-							<height>480</height>
+							<top>96</top>
+							<width>640</width>
+							<height>960</height>
 							<texture>views/OverlayNF.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<animation center="auto" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">VisibleChange</animation>
 						</control>
 					</control>
 				</itemlayout>
-				<focusedlayout height="576" width="300">
+				<focusedlayout height="1152" width="600">
 					<control type="group">
-						<animation center="150,288" condition="Control.HasFocus(50) + [Container(50).OnNext | Container(50).OnPrevious]" easing="inout" effect="zoom" end="100" start="85" time="300" tween="sine">Focus</animation>
-						<animation center="150,288" condition="Control.HasFocus(50) + [Container(50).OnNext | Container(50).OnPrevious]" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">UnFocus</animation>
-						<animation center="150,288" condition="!Control.HasFocus(50)" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">Conditional</animation>
+						<animation center="300,576" condition="Control.HasFocus(50) + [Container(50).OnNext | Container(50).OnPrevious]" easing="inout" effect="zoom" end="100" start="85" time="300" tween="sine">Focus</animation>
+						<animation center="300,576" condition="Control.HasFocus(50) + [Container(50).OnNext | Container(50).OnPrevious]" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">UnFocus</animation>
+						<animation center="300,576" condition="!Control.HasFocus(50)" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">Conditional</animation>
 						<control type="image">
-							<left>-48</left>
-							<centertop>288</centertop>
-							<width>416</width>
-							<height>576</height>
-							<texture border="50">views/shadow_fo.png</texture>
+							<left>-96</left>
+							<centertop>576</centertop>
+							<width>832</width>
+							<height>1152</height>
+							<texture border="100">views/shadow_fo.png</texture>
 							<include content="ContainerMoveFadeAnimation">
-								<param name="ListID" value="50"/>
+								<param name="ListID" value="50" />
 							</include>
 						</control>
 						<control type="image">
-							<left>-48</left>
-							<centertop>288</centertop>
-							<width>416</width>
-							<height>576</height>
-							<texture border="50">views/shadow_nf.png</texture>
+							<left>-96</left>
+							<centertop>576</centertop>
+							<width>832</width>
+							<height>1152</height>
+							<texture border="100">views/shadow_nf.png</texture>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="50"/>
+								<param name="ListID" value="50" />
 							</include>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>320</width>
-							<height>480</height>
+							<top>96</top>
+							<width>640</width>
+							<height>960</height>
 							<aspectratio align="center">scale</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="image">
-							<bottom>48</bottom>
-							<width>320</width>
-							<height>165</height>
-							<texture border="2">views/default_overlay.png</texture>
+							<bottom>96</bottom>
+							<width>640</width>
+							<height>330</height>
+							<texture border="4">views/default_overlay.png</texture>
 							<visible>!String.Contains(ListItem.Icon,Default)</visible>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="50"/>
+								<param name="ListID" value="50" />
 							</include>
 						</control>
 						<control type="label">
-							<left>18</left>
-							<top>412</top>
-							<width>290</width>
-							<height>42</height>
+							<left>36</left>
+							<top>824</top>
+							<width>580</width>
+							<height>84</height>
 							<font>Bold42</font>
 							<scroll>false</scroll>
 							<textcolor>ffffffff</textcolor>
 							<shadowcolor>ShadowColour</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="50"/>
+								<param name="ListID" value="50" />
 							</include>
 						</control>
 						<control type="label">
-							<left>18</left>
-							<top>463</top>
-							<width>290</width>
-							<height>28</height>
+							<left>36</left>
+							<top>926</top>
+							<width>580</width>
+							<height>56</height>
 							<font>Med28</font>
 							<scroll>false</scroll>
 							<textcolor>ffffffff</textcolor>
 							<shadowcolor>ShadowColour</shadowcolor>
 							<label>$INFO[ListItem.Label2,$LOCALIZE[20347] ,]</label>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="50"/>
+								<param name="ListID" value="50" />
 							</include>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>320</width>
-							<height>480</height>
+							<top>96</top>
+							<width>640</width>
+							<height>960</height>
 							<texture>views/OverlayNF.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="50"/>
+								<param name="ListID" value="50" />
 							</include>
 						</control>
 					</control>
@@ -725,11 +725,11 @@
 			</control>
 			<!-- Info -->
 			<control type="grouplist">
-				<left>575</left>
-				<top>277</top>
-				<width>1192</width>
-				<height>40</height>
-				<itemgap>8</itemgap>
+				<left>1150</left>
+				<top>554</top>
+				<width>2384</width>
+				<height>80</height>
+				<itemgap>16</itemgap>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
 				<visible>Control.HasFocus(50)</visible>
@@ -737,7 +737,7 @@
 				<animation effect="fade" end="0" start="100" time="0">Hidden</animation>
 				<control type="label">
 					<width>auto</width>
-					<height>36</height>
+					<height>72</height>
 					<align>left</align>
 					<font>Bold31</font>
 					<textcolor>ffbcbcbc</textcolor>
@@ -745,9 +745,9 @@
 					<visible>Control.HasFocus(50)</visible>
 				</control>
 				<control type="label">
-					<top>7</top>
+					<top>14</top>
 					<width>auto</width>
-					<height>29</height>
+					<height>58</height>
 					<align>left</align>
 					<font>Light24</font>
 					<textcolor>ffbcbcbc</textcolor>

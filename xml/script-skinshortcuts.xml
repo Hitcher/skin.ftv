@@ -46,146 +46,146 @@
 		<control type="group">
 			<centerleft>50%</centerleft>
 			<centertop>50%</centertop>
-			<width>1540</width>
-			<height>748</height>
+			<width>3080</width>
+			<height>1496</height>
 			<include content="DialogZoomAnimation">
-				<param name="OpenCondition" value="true"/>
-				<param name="CloseCondition" value="true"/>
+				<param name="OpenCondition" value="true" />
+				<param name="CloseCondition" value="true" />
 			</include>
 			<include content="DialogBack">
-				<param name="dialog_back_width" value="1540"/>
-				<param name="dialog_back_height" value="748"/>
-				<param name="dialog_heading_width" value="1540"/>
-				<param name="dialog_shadow_1_visible" value="false"/>
-				<param name="dialog_shadow_2_left" value="670"/>
-				<param name="dialog_shadow_2_height" value="588"/>
-				<param name="dialog_shadow_2_visible" value="true"/>
+				<param name="dialog_back_width" value="3080" />
+				<param name="dialog_back_height" value="1496" />
+				<param name="dialog_heading_width" value="3080" />
+				<param name="dialog_shadow_1_visible" value="false" />
+				<param name="dialog_shadow_2_left" value="1340" />
+				<param name="dialog_shadow_2_height" value="1176" />
+				<param name="dialog_shadow_2_visible" value="true" />
 			</include>
 			<!-- Heading -->
 			<include content="DialogHeading">
-				<param name="dialog_heading_label_width" value="1460"/>
-				<param name="dialog_heading_label" value="21432"/>
-				<param name="dialog_heading_label_visible" value="String.IsEqual(Window.Property(groupname), mainmenu)"/>
+				<param name="dialog_heading_label_width" value="2920" />
+				<param name="dialog_heading_label" value="21432" />
+				<param name="dialog_heading_label_visible" value="String.IsEqual(Window.Property(groupname), mainmenu)" />
 			</include>
 			<include content="DialogHeading">
-				<param name="dialog_heading_label_width" value="1460"/>
-				<param name="dialog_heading_label" value="31114"/>
-				<param name="dialog_heading_label_visible" value="String.IsEqual(Window.Property(groupname), shutdown)"/>
+				<param name="dialog_heading_label_width" value="2920" />
+				<param name="dialog_heading_label" value="31114" />
+				<param name="dialog_heading_label_visible" value="String.IsEqual(Window.Property(groupname), shutdown)" />
 			</include>
 			<!-- Left list -->
 			<control type="list" id="211">
-				<top>60</top>
-				<width>670</width>
-				<height>588</height>
+				<top>120</top>
+				<width>1340</width>
+				<height>1176</height>
 				<onleft>noop</onleft>
 				<onright>304</onright>
 				<onup>noop</onup>
 				<ondown>9001</ondown>
 				<scrolltime>0</scrolltime>
-				<itemlayout height="84" width="670">
+				<itemlayout height="168" width="1340">
 					<control type="image">
-						<width>670</width>
-						<height>84</height>
-						<texture border="3">settings/button_no_focus.png</texture>
+						<width>1340</width>
+						<height>168</height>
+						<texture border="1,1,1,6">settings/button_no_focus.png</texture>
 					</control>
 					<control type="label">
-						<left>40</left>
-						<width>590</width>
-						<height>84</height>
+						<left>80</left>
+						<width>1180</width>
+						<height>168</height>
 						<font>Light32</font>
 						<textcolor>NotFocusedColour</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
-						<left>40</left>
-						<width>590</width>
-						<height>84</height>
+						<left>80</left>
+						<width>1180</width>
+						<height>168</height>
 						<font>Light32</font>
 						<align>right</align>
 						<textcolor>NotFocusedColour</textcolor>
 						<label>$INFO[Container(211).ListItem.Property(list)]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="84" width="670">
+				<focusedlayout height="168" width="1340">
 					<control type="image">
-						<width>670</width>
-						<height>84</height>
-						<texture border="3">settings/button_focus.png</texture>
+						<width>1340</width>
+						<height>168</height>
+						<texture border="1,1,1,6">settings/button_focus.png</texture>
 					</control>
 					<control type="label">
-						<left>40</left>
-						<width>590</width>
-						<height>84</height>
+						<left>80</left>
+						<width>1180</width>
+						<height>168</height>
 						<font>Light32</font>
 						<textcolor>ffffffff</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<include content="FadeDiffuseAnimationFO">
-							<param name="FadeDiffuseConditionFO" value="Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303) | Control.HasFocus(304)"/>
+							<param name="FadeDiffuseConditionFO" value="Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303) | Control.HasFocus(304)" />
 						</include>
 					</control>
 					<control type="image">
-						<top>31</top>
-						<left>514</left>
-						<width>21</width>
-						<height>21</height>
+						<top>62</top>
+						<left>1028</left>
+						<width>42</width>
+						<height>42</height>
 						<texture>dialogs/Delete.png</texture>
 						<include content="FadeDiffuseAnimationFO">
-							<param name="FadeDiffuseConditionFO" value="Control.HasFocus(302)"/>
+							<param name="FadeDiffuseConditionFO" value="Control.HasFocus(302)" />
 						</include>
 						<include content="FadeDiffuseAnimationNF">
-							<param name="FadeDiffuseConditionNF" value="!Control.HasFocus(302)"/>
+							<param name="FadeDiffuseConditionNF" value="!Control.HasFocus(302)" />
 						</include>
 					</control>
 					<control type="image">
-						<top>31</top>
-						<left>540</left>
-						<width>21</width>
-						<height>21</height>
+						<top>62</top>
+						<left>1080</left>
+						<width>42</width>
+						<height>42</height>
 						<texture>dialogs/Add.png</texture>
 						<include content="FadeDiffuseAnimationFO">
-							<param name="FadeDiffuseConditionFO" value="Control.HasFocus(301) + Integer.IsLess(Container(211).NumItems,13)"/>
+							<param name="FadeDiffuseConditionFO" value="Control.HasFocus(301) + Integer.IsLess(Container(211).NumItems,13)" />
 						</include>
 						<include content="FadeDiffuseAnimationNF">
-							<param name="FadeDiffuseConditionNF" value="!Control.HasFocus(301) + Integer.IsLess(Container(211).NumItems,13)"/>
+							<param name="FadeDiffuseConditionNF" value="!Control.HasFocus(301) + Integer.IsLess(Container(211).NumItems,13)" />
 						</include>
 						<include content="FadeDiffuseAnimationDisabled">
-							<param name="FadeDiffuseConditionDisabled" value="!Control.HasFocus(301) + Integer.IsGreaterOrEqual(Container(211).NumItems,13)"/>
+							<param name="FadeDiffuseConditionDisabled" value="!Control.HasFocus(301) + Integer.IsGreaterOrEqual(Container(211).NumItems,13)" />
 						</include>
 					</control>
 					<control type="image">
-						<top>31</top>
-						<left>566</left>
-						<width>32</width>
-						<height>21</height>
+						<top>62</top>
+						<left>1132</left>
+						<width>64</width>
+						<height>42</height>
 						<texture>dialogs/SpinDown.png</texture>
 						<include content="FadeDiffuseAnimationFO">
-							<param name="FadeDiffuseConditionFO" value="Control.HasFocus(304)"/>
+							<param name="FadeDiffuseConditionFO" value="Control.HasFocus(304)" />
 						</include>
 						<include content="FadeDiffuseAnimationNF">
-							<param name="FadeDiffuseConditionNF" value="!Control.HasFocus(304) "/>
+							<param name="FadeDiffuseConditionNF" value="!Control.HasFocus(304) " />
 						</include>
 					</control>
 					<control type="image">
-						<top>31</top>
-						<left>598</left>
-						<width>32</width>
-						<height>21</height>
+						<top>62</top>
+						<left>1196</left>
+						<width>64</width>
+						<height>42</height>
 						<texture>dialogs/SpinUp.png</texture>
 						<include content="FadeDiffuseAnimationFO">
-							<param name="FadeDiffuseConditionFO" value="Control.HasFocus(303)"/>
+							<param name="FadeDiffuseConditionFO" value="Control.HasFocus(303)" />
 						</include>
 						<include content="FadeDiffuseAnimationNF">
-							<param name="FadeDiffuseConditionNF" value="!Control.HasFocus(303) "/>
+							<param name="FadeDiffuseConditionNF" value="!Control.HasFocus(303) " />
 						</include>
 					</control>
 				</focusedlayout>
 			</control>
 			<!-- Right grouplist -->
 			<control type="grouplist" id="9000">
-				<left>670</left>
-				<top>60</top>
-				<width>870</width>
-				<height>588</height>
+				<left>1340</left>
+				<top>120</top>
+				<width>1740</width>
+				<height>1176</height>
 				<itemgap>0</itemgap>
 				<onleft>303</onleft>
 				<onright>noop</onright>
@@ -196,71 +196,71 @@
 				<scrolltime tween="sine" easing="out">240</scrolltime>
 				<!-- Change shortcut -->
 				<control type="button" id="401">
-					<width>870</width>
-					<height>84</height>
+					<width>1740</width>
+					<height>168</height>
 					<font>Light32</font>
-					<textwidth>790</textwidth>
-					<textoffsetx>40</textoffsetx>
+					<textwidth>1580</textwidth>
+					<textoffsetx>80</textoffsetx>
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="3">settings/button_focus.png</texturefocus>
-					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
 					<label>$ADDON[script.skinshortcuts 32048]</label>
 				</control>
 				<!-- Change label -->
 				<control type="button" id="305">
-					<width>870</width>
-					<height>84</height>
+					<width>1740</width>
+					<height>168</height>
 					<font>Light32</font>
-					<textwidth>790</textwidth>
-					<textoffsetx>40</textoffsetx>
+					<textwidth>1580</textwidth>
+					<textoffsetx>80</textoffsetx>
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="3">settings/button_focus.png</texturefocus>
-					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
 					<label>$ADDON[script.skinshortcuts 32025]</label>
 					<label2>$INFO[Container(211).ListItem.Label]</label2>
 				</control>
 				<!-- Change action -->
 				<control type="button" id="307">
-					<width>870</width>
-					<height>84</height>
+					<width>1740</width>
+					<height>168</height>
 					<font>Light32</font>
-					<textwidth>790</textwidth>
-					<textoffsetx>40</textoffsetx>
+					<textwidth>1580</textwidth>
+					<textoffsetx>80</textoffsetx>
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="3">settings/button_focus.png</texturefocus>
-					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
 					<label>$ADDON[script.skinshortcuts 32027]</label>
 					<label2>$INFO[Container(211).ListItem.Property(displaypath)]</label2>
 				</control>
 				<!-- Select widget group -->
 				<control id="309" type="button">
-					<width>870</width>
-					<height>84</height>
+					<width>1740</width>
+					<height>168</height>
 					<font>Light32</font>
-					<textwidth>790</textwidth>
-					<textoffsetx>40</textoffsetx>
+					<textwidth>1580</textwidth>
+					<textoffsetx>80</textoffsetx>
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="3">settings/button_focus.png</texturefocus>
-					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
 					<label>31218</label>
 					<label2>$INFO[Container(211).ListItem.Property(widgetName)]</label2>
 					<enable>!String.IsEqual(Container(211).ListItem.Property(defaultID),settings) + !String.IsEqual(Container(211).ListItem.Property(defaultID),exit)</enable>
 				</control>
 				<!-- Customise widget group -->
 				<control id="998" type="button">
-					<width>870</width>
-					<height>84</height>
+					<width>1740</width>
+					<height>168</height>
 					<font>Light32</font>
-					<textwidth>790</textwidth>
-					<textoffsetx>40</textoffsetx>
+					<textwidth>1580</textwidth>
+					<textoffsetx>80</textoffsetx>
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="3">settings/button_focus.png</texturefocus>
-					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
 					<label>$LOCALIZE[31219]</label>
 					<label2>$INFO[Container(211).ListItem.Property(widgetName)]</label2>
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),widget1)">SetProperty(SubMenu,1000,home)</onclick>
@@ -276,16 +276,16 @@
 				</control>
 			</control>
 			<control type="image">
-				<top>646</top>
-				<height>2</height>
+				<top>1292</top>
+				<height>4</height>
 				<texture>dialogs/default_line.png</texture>
 			</control>
 			<!-- Button grouplist -->
 			<control type="grouplist" id="9001">
 				<left>0</left>
-				<bottom>12</bottom>
-				<width>1540</width>
-				<height>76</height>
+				<bottom>24</bottom>
+				<width>3080</width>
+				<height>152</height>
 				<itemgap>0</itemgap>
 				<onleft>noop</onleft>
 				<onright>noop</onright>
@@ -295,37 +295,37 @@
 				<orientation>horizontal</orientation>
 				<!-- Reset -->
 				<control type="button" id="308">
-					<width>320</width>
-					<height>76</height>
+					<width>640</width>
+					<height>152</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Med24</font>
 					<onup>303</onup>
-					<textoffsetx>23</textoffsetx>
-					<textoffsety>27</textoffsety>
+					<textoffsetx>46</textoffsetx>
+					<textoffsety>54</textoffsety>
 					<label>$ADDON[script.skinshortcuts 32028]</label>
 				</control>
 				<!-- Cancel Button -->
 				<control type="button" id="21">
-					<width>320</width>
-					<height>76</height>
+					<width>640</width>
+					<height>152</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Med24</font>
-					<textoffsetx>23</textoffsetx>
-					<textoffsety>27</textoffsety>
+					<textoffsetx>46</textoffsetx>
+					<textoffsety>54</textoffsety>
 					<label>222</label>
 					<onclick>Close</onclick>
 				</control>
 				<!-- OK Button -->
 				<control type="button" id="10">
-					<width>320</width>
-					<height>76</height>
+					<width>640</width>
+					<height>152</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Med24</font>
-					<textoffsetx>23</textoffsetx>
-					<textoffsety>27</textoffsety>
+					<textoffsetx>46</textoffsetx>
+					<textoffsety>54</textoffsety>
 					<label>186</label>
 					<onback>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=99&amp;levels=5&amp;group=mainmenu|shutdown)</onback>
 					<onclick>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=99&amp;levels=0&amp;group=mainmenu|shutdown)</onclick>

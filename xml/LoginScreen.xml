@@ -9,34 +9,34 @@
 			<animation effect="fade" end="0" start="100" time="0">WindowClose</animation>
 			<!-- Heading / Current item / Total items -->
 			<control type="grouplist">
-				<left>198</left>
-				<top>118</top>
-				<height>80</height>
-				<itemgap>10</itemgap>
+				<left>396</left>
+				<top>236</top>
+				<height>160</height>
+				<itemgap>20</itemgap>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
 				<include>VisibleDelayFadeAnimation</include>
 				<control type="label">
 					<width>auto</width>
-					<height>60</height>
+					<height>120</height>
 					<font>Med48</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffdadada</textcolor>
 					<label>$LOCALIZE[10029]  </label>
 				</control>
 				<control type="label">
-					<top>30</top>
+					<top>60</top>
 					<width>auto</width>
-					<height>60</height>
+					<height>120</height>
 					<font>Med32</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffdadada</textcolor>
 					<label>$INFO[Container(52).CurrentItem]</label>
 				</control>
 				<control type="label">
-					<top>28</top>
+					<top>56</top>
 					<width>auto</width>
-					<height>60</height>
+					<height>120</height>
 					<font>Light36</font>
 					<aligny>bottom</aligny>
 					<textcolor>ff505050</textcolor>
@@ -44,9 +44,9 @@
 					<visible>Integer.IsGreater(Container(52).NumItems,0)</visible>
 				</control>
 				<control type="label">
-					<top>30</top>
+					<top>60</top>
 					<width>auto</width>
-					<height>60</height>
+					<height>120</height>
 					<font>Light32</font>
 					<aligny>bottom</aligny>
 					<textcolor>ff505050</textcolor>
@@ -56,10 +56,10 @@
 			</control>
 		</control>
 		<control id="52" type="fixedlist">
-			<left>-77</left>
-			<top>289</top>
-			<width>3000</width>
-			<height>497</height>
+			<left>-154</left>
+			<top>578</top>
+			<width>6000</width>
+			<height>994</height>
 			<onup>noop</onup>
 			<ondown>1000</ondown>
 			<onleft>noop</onleft>
@@ -71,91 +71,95 @@
 			<orientation>horizontal</orientation>
 			<scrolltime easing="inout" tween="sine">300</scrolltime>
 			<include>ListBounceAnimation</include>
-			<itemlayout height="497" width="300">
+			<itemlayout height="994" width="600">
 				<control type="group">
-					<animation center="134,240" condition="true" effect="zoom" end="85" start="85">Conditional</animation>
-					<animation condition="ControlGroup(9001).HasFocus" easing="inout" effect="slide" end="49,0" reversible="true" start="0,0" time="125" tween="sine">Conditional</animation>
+					<animation center="268,480" condition="true" effect="zoom" end="85" start="85">Conditional</animation>
+					<animation condition="ControlGroup(9001).HasFocus" easing="inout" effect="slide" end="98,0" reversible="true" start="0,0" time="125" tween="sine">Conditional</animation>
 					<control type="image">
-						<left>-24</left>
-						<width>333</width>
-						<height>497</height>
-						<texture border="1,1,14,18">settings/settings_tile.png</texture>
+						<left>-48</left>
+						<width>666</width>
+						<height>994</height>
+						<bordersize>0,0,26,34</bordersize>
+						<bordertexture infill="false" border="24,22,26,34">settings/settings_back_shadow.png</bordertexture>
+						<texture border="0,0,1,0">settings/settings_back.png</texture>
 					</control>
 					<control type="label">
-						<left>-10</left>
-						<top>28</top>
-						<width>276</width>
-						<height>32</height>
+						<left>-20</left>
+						<top>56</top>
+						<width>552</width>
+						<height>64</height>
 						<font>Bold34</font>
 						<textcolor>ffdadada</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="textbox">
-						<left>-10</left>
-						<top>80</top>
-						<width>276</width>
-						<height>112</height>
+						<left>-20</left>
+						<top>160</top>
+						<width>552</width>
+						<height>224</height>
 						<font>Light26</font>
 						<textcolor>ffdadada</textcolor>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 					<control type="image">
-						<left>-13</left>
-						<top>169</top>
-						<width>300</width>
-						<height>300</height>
+						<left>-26</left>
+						<top>338</top>
+						<width>600</width>
+						<height>600</height>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="image">
-						<left>-24</left>
-						<width>320</width>
-						<height>480</height>
+						<left>-48</left>
+						<width>640</width>
+						<height>960</height>
 						<texture>views/OverlayNF.png</texture>
 						<animation center="auto" condition="Window.Next(home)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Conditional</animation>
 					</control>
 				</control>
 			</itemlayout>
-			<focusedlayout height="497" width="300">
+			<focusedlayout height="994" width="600">
 				<control type="group">
-					<animation center="134,240" easing="inout" effect="zoom" end="100" start="85" time="300" tween="sine">Focus</animation>
-					<animation center="134,240" condition="Container(52).OnNext | Container(52).OnPrevious" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">UnFocus</animation>
+					<animation center="268,480" easing="inout" effect="zoom" end="100" start="85" time="300" tween="sine">Focus</animation>
+					<animation center="268,480" condition="Container(52).OnNext | Container(52).OnPrevious" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">UnFocus</animation>
 					<control type="image">
-						<left>-24</left>
-						<width>333</width>
-						<height>497</height>
-						<texture border="1,1,14,18">settings/settings_tile.png</texture>
+						<left>-48</left>
+						<width>666</width>
+						<height>994</height>
+						<bordersize>0,0,26,34</bordersize>
+						<bordertexture infill="false" border="24,22,26,34">settings/settings_back_shadow.png</bordertexture>
+						<texture border="0,0,1,0">settings/settings_back.png</texture>
 					</control>
 					<control type="label">
-						<left>-10</left>
-						<top>28</top>
-						<width>276</width>
-						<height>32</height>
+						<left>-20</left>
+						<top>56</top>
+						<width>552</width>
+						<height>64</height>
 						<font>Bold34</font>
 						<textcolor>ffdadada</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="textbox">
-						<left>-10</left>
-						<top>80</top>
-						<width>276</width>
-						<height>112</height>
+						<left>-20</left>
+						<top>160</top>
+						<width>552</width>
+						<height>224</height>
 						<font>Light26</font>
 						<textcolor>ffdadada</textcolor>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 					<control type="image">
-						<left>-13</left>
-						<top>169</top>
-						<width>300</width>
-						<height>300</height>
+						<left>-26</left>
+						<top>338</top>
+						<width>600</width>
+						<height>600</height>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="image">
-						<left>-24</left>
-						<width>320</width>
-						<height>480</height>
+						<left>-48</left>
+						<width>640</width>
+						<height>960</height>
 						<texture>views/OverlayNF.png</texture>
 						<animation center="auto" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
 						<animation center="auto" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
@@ -165,23 +169,23 @@
 		</control>
 		<!-- Lower group -->
 		<control type="group">
-			<left>186</left>
-			<top>782</top>
+			<left>372</left>
+			<top>1564</top>
 			<include>VisibleDelayFadeAnimation</include>
 			<control id="1000" type="button">
-				<width min="124" max="204">auto</width>
+				<width min="248" max="408">auto</width>
 				<wrapmultiline>true</wrapmultiline>
-				<height>100</height>
+				<height>200</height>
 				<onup>52</onup>
 				<ondown>noop</ondown>
 				<onclick>ActivateWindow(ShutdownMenu)</onclick>
 				<font>Med24</font>
 				<label>$LOCALIZE[31085]</label>
-				<textoffsetx>28</textoffsetx>
+				<textoffsetx>56</textoffsetx>
 				<textcolor>ffdadada</textcolor>
 				<focusedcolor>ff222222</focusedcolor>
-				<texturefocus border="3">views/button_fo.png</texturefocus>
-				<texturenofocus border="3,3,5,5">views/button_nf.png</texturenofocus>
+				<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
+				<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
 			</control>
 		</control>
 	</controls>

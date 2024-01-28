@@ -3,7 +3,7 @@
 	<!-- DialogGameControllers -->
 	<defaultcontrol always="true">3</defaultcontrol>
 	<controls>
-		<include condition="Window.IsDialogTopMost(gamecontrollers)">Includes_DialogGameController</include>
+		<include condition="Window.IsDialogTopMost(gamecontrollers)">Includes_DialogGameControllers</include>
 		<include condition="Window.IsDialogTopMost(gameports)">Includes_DialogGamePorts</include>
 		<include condition="Window.IsDialogTopMost(gameagents)">Includes_DialogGameAgents</include>
 	</controls>

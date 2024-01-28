@@ -15,13 +15,13 @@
 			<include>HiddenControl</include>
 		</control>
 		<control type="group">
-			<left>1472</left>
-			<top>564</top>
-			<width>328</width>
+			<left>2944</left>
+			<top>1128</top>
+			<width>656</width>
 			<!--  Next up label -->
 			<control type="label">
 				<width>auto</width>
-				<height>50</height>
+				<height>100</height>
 				<font>OSD40</font>
 				<textcolor>ffffffff</textcolor>
 				<shadowcolor>ShadowColour</shadowcolor>
@@ -29,45 +29,45 @@
 			</control>
 			<!-- Next episode thumb -->
 			<control type="image">
-				<top>76</top>
-				<width>328</width>
-				<height>245</height>
+				<top>152</top>
+				<width>656</width>
+				<height>490</height>
 				<texture>views/episode_fallback.png</texture>
 				<aspectratio>scale</aspectratio>
 			</control>
 			<control type="image">
-				<top>76</top>
-				<width>328</width>
-				<height>245</height>
+				<top>152</top>
+				<width>656</width>
+				<height>490</height>
 				<aspectratio>scale</aspectratio>
 				<texture>$VAR[NextUpThumb]</texture>
 			</control>
 			<!-- Next episode countdown -->
 			<control type="image">
-				<left>109</left>
-				<top>142</top>
-				<width>110</width>
-				<height>110</height>
+				<left>218</left>
+				<top>284</top>
+				<width>220</width>
+				<height>220</height>
 				<texture>osd/nextup/progress/background.png</texture>
 			</control>
 			<control type="image">
-				<left>109</left>
-				<top>142</top>
-				<width>110</width>
-				<height>110</height>
+				<left>218</left>
+				<top>284</top>
+				<width>220</width>
+				<height>220</height>
 				<texture>$INFO[Control.GetLabel(3014),osd/nextup/progress/percent,.png]</texture>
 			</control>
 			<control type="image">
-				<top>321</top>
-				<width>328</width>
-				<height>68</height>
+				<top>642</top>
+				<width>656</width>
+				<height>136</height>
 				<texture>osd/nextup/background.png</texture>
 			</control>
 			<!--  Next episode label -->
 			<control type="label">
-				<top>335</top>
-				<width>328</width>
-				<height>40</height>
+				<top>670</top>
+				<width>656</width>
+				<height>80</height>
 				<font>Reg28</font>
 				<align>center</align>
 				<textcolor>ff000000</textcolor>
@@ -75,10 +75,10 @@
 			</control>
 			<!--  Close NextUp label -->
 			<control type="label">
-				<right>52</right>
-				<top>424</top>
-				<width>328</width>
-				<height>40</height>
+				<right>104</right>
+				<top>848</top>
+				<width>656</width>
+				<height>80</height>
 				<font>OSD32</font>
 				<align>right</align>
 				<textcolor>ffffffff</textcolor>
@@ -88,9 +88,9 @@
 			<!--  Close NextUp image -->
 			<control type="image">
 				<right>0</right>
-				<top>423</top>
-				<width>44</width>
-				<height>44</height>
+				<top>846</top>
+				<width>88</width>
+				<height>88</height>
 				<texture>osd/nextup/back.png</texture>
 			</control>
 		</control>

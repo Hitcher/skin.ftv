@@ -9,27 +9,27 @@
 		<control type="group">
 			<centerleft>50%</centerleft>
 			<centertop>50%</centertop>
-			<width>1740</width>
-			<height>564</height>
+			<width>3480</width>
+			<height>1128</height>
 			<include>DialogZoomAnimation</include>
 			<include content="DialogBack">
-				<param name="dialog_back_width" value="1740"/>
-				<param name="dialog_back_height" value="564"/>
-				<param name="dialog_heading_width" value="1380"/>
-				<param name="dialog_shadow_1_left" value="1380"/>
-				<param name="dialog_shadow_1_height" value="564"/>
-				<param name="dialog_shadow_2_left" value="422"/>
-				<param name="dialog_shadow_2_height" value="504"/>
-				<param name="dialog_shadow_2_visible" value="true"/>
+				<param name="dialog_back_width" value="3480" />
+				<param name="dialog_back_height" value="1128" />
+				<param name="dialog_heading_width" value="2760" />
+				<param name="dialog_shadow_1_left" value="2760" />
+				<param name="dialog_shadow_1_height" value="1128" />
+				<param name="dialog_shadow_2_left" value="844" />
+				<param name="dialog_shadow_2_height" value="1008" />
+				<param name="dialog_shadow_2_visible" value="true" />
 			</include>
 			<!-- Heading -->
 			<include content="DialogHeading">
-				<param name="dialog_heading_label_id" value="2"/>
+				<param name="dialog_heading_label_id" value="2" />
 			</include>
 			<control id="3" type="grouplist">
-				<top>60</top>
-				<width>422</width>
-				<height>504</height>
+				<top>120</top>
+				<width>844</width>
+				<height>1008</height>
 				<itemgap>0</itemgap>
 				<onleft>Close</onleft>
 				<onright>5</onright>
@@ -39,27 +39,27 @@
 			</control>
 			<!-- Default button -->
 			<control id="10" type="togglebutton">
-				<height>126</height>
-				<width>422</width>
-				<textoffsetx>40</textoffsetx>
-				<textwidth>342</textwidth>
+				<height>252</height>
+				<width>844</width>
+				<textoffsetx>80</textoffsetx>
+				<textwidth>684</textwidth>
 				<aligny>center</aligny>
 				<font>Light30Spaced</font>
 				<onright>5</onright>
 				<onclick>SetFocus(5)</onclick>
 				<textcolor>NotFocusedColour</textcolor>
 				<focusedcolor>$VAR[AddonSettingsDefaultButton]</focusedcolor>
-				<texturefocus border="3">settings/button_focus.png</texturefocus>
-				<alttexturefocus border="3">settings/button_focus.png</alttexturefocus>
-				<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+				<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
+				<alttexturefocus border="1,1,1,6">settings/button_focus.png</alttexturefocus>
+				<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
 				<pulseonselect>false</pulseonselect>
 			</control>
 			<!-- Right grouplist -->
 			<control id="5" type="grouplist">
-				<left>422</left>
-				<top>60</top>
-				<width>958</width>
-				<height>504</height>
+				<left>844</left>
+				<top>120</top>
+				<width>1916</width>
+				<height>1008</height>
 				<itemgap>0</itemgap>
 				<onleft>3</onleft>
 				<onright>9000</onright>
@@ -71,126 +71,126 @@
 			</control>
 			<!-- Default button -->
 			<control id="7" type="button">
-				<width>958</width>
-				<height>84</height>
+				<width>1916</width>
+				<height>168</height>
 				<font>Light32</font>
-				<textwidth>878</textwidth>
-				<textoffsetx>40</textoffsetx>
+				<textwidth>1756</textwidth>
+				<textoffsetx>80</textoffsetx>
 				<textcolor>NotFocusedColour</textcolor>
 				<focusedcolor>FocusedColour</focusedcolor>
-				<texturefocus border="3">settings/button_focus.png</texturefocus>
-				<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+				<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
+				<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
 			</control>
 			<!-- Default radiobutton -->
 			<control id="8" type="radiobutton">
-				<width>958</width>
-				<height>84</height>
+				<width>1916</width>
+				<height>168</height>
 				<font>Light32</font>
-				<textwidth>738</textwidth>
-				<textoffsetx>40</textoffsetx>
+				<textwidth>1476</textwidth>
+				<textoffsetx>80</textoffsetx>
 				<textcolor>NotFocusedColour</textcolor>
 				<focusedcolor>FocusedColour</focusedcolor>
-				<radiowidth>125</radiowidth>
-				<radioheight>53</radioheight>
-				<radioposx>813</radioposx>
+				<radiowidth>250</radiowidth>
+				<radioheight>106</radioheight>
+				<radioposx>1626</radioposx>
 				<textureradioonfocus>settings/radio_on_focus.png</textureradioonfocus>
 				<textureradioonnofocus>settings/radio_on_no_focus.png</textureradioonnofocus>
 				<textureradioondisabled>settings/radio_on_disabled.png</textureradioondisabled>
 				<textureradioofffocus>settings/radio_off_focus.png</textureradioofffocus>
 				<textureradiooffnofocus>settings/radio_off_no_focus.png</textureradiooffnofocus>
 				<textureradiooffdisabled>settings/radio_off_disabled.png</textureradiooffdisabled>
-				<texturefocus border="3">settings/button_focus.png</texturefocus>
-				<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+				<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
+				<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
 			</control>
 			<!-- Default spincontrolex -->
 			<control id="9" type="spincontrolex">
-				<width>958</width>
-				<height>84</height>
+				<width>1916</width>
+				<height>168</height>
 				<font>Light32</font>
-				<textwidth>738</textwidth>
-				<textoffsetx>40</textoffsetx>
+				<textwidth>1476</textwidth>
+				<textoffsetx>80</textoffsetx>
 				<textcolor>NotFocusedColour</textcolor>
 				<focusedcolor>FocusedColour</focusedcolor>
 				<selectedcolor>ffffffff</selectedcolor>
-				<texturefocus border="3">settings/button_focus.png</texturefocus>
-				<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+				<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
+				<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
 				<aligny>center</aligny>
 				<reverse>yes</reverse>
 			</control>
 			<!-- Default seperator -->
 			<control id="11" type="image">
-				<top>-2</top>
-				<height>2</height>
+				<top>-4</top>
+				<height>4</height>
 				<texture>dialogs/default_line.png</texture>
 			</control>
 			<!-- Default edit -->
 			<control type="edit" id="12">
-				<width>958</width>
-				<height>84</height>
+				<width>1916</width>
+				<height>168</height>
 				<font>Light32</font>
-				<textoffsetx>40</textoffsetx>
+				<textoffsetx>80</textoffsetx>
 				<textcolor>NotFocusedColour</textcolor>
 				<focusedcolor>FocusedColour</focusedcolor>
-				<texturefocus border="3">settings/button_focus.png</texturefocus>
-				<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+				<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
+				<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
 			</control>
 			<!-- Default slider -->
 			<control id="13" type="sliderex">
-				<width>958</width>
-				<height>84</height>
+				<width>1916</width>
+				<height>168</height>
 				<font>Light32</font>
-				<textwidth>558</textwidth>
-				<textoffsetx>40</textoffsetx>
+				<textwidth>1116</textwidth>
+				<textoffsetx>80</textoffsetx>
 				<textcolor>NotFocusedColour</textcolor>
 				<focusedcolor>FocusedColour</focusedcolor>
-				<texturefocus border="3">settings/button_focus.png</texturefocus>
-				<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
-				<sliderwidth>200</sliderwidth>
-				<sliderheight>11</sliderheight>
-				<texturesliderbar border="4">osd/progress_back.png</texturesliderbar>
-				<texturesliderbardisabled colordiffuse="DisabledColour" border="4">osd/progress_back.png</texturesliderbardisabled>
-				<textureslidernib border="4">osd/progress_cache.png</textureslidernib>
-				<textureslidernibdisabled colordiffuse="DisabledColour" border="4">osd/progress_cache.png</textureslidernibdisabled>
-				<textureslidernibfocus border="4">osd/progress_bar.png</textureslidernibfocus>
+				<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
+				<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+				<sliderwidth>400</sliderwidth>
+				<sliderheight>24</sliderheight>
+				<texturesliderbar border="12">osd/progress_bar_back.png</texturesliderbar>
+				<texturesliderbardisabled colordiffuse="DisabledColour" border="12">osd/progress_bar_back.png</texturesliderbardisabled>
+				<textureslidernib border="12">osd/progress_bar_cache.png</textureslidernib>
+				<textureslidernibdisabled colordiffuse="DisabledColour" border="12">osd/progress_bar_cache.png</textureslidernibdisabled>
+				<textureslidernibfocus border="12">osd/progress_bar.png</textureslidernibfocus>
 			</control>
 			<!-- Default label -->
 			<control id="14" type="label">
-				<textoffsetx>40</textoffsetx>
-				<width>878</width>
-				<height>84</height>
+				<textoffsetx>80</textoffsetx>
+				<width>1756</width>
+				<height>168</height>
 				<font>Bold30</font>
 				<textcolor>ffdadada</textcolor>
 			</control>
 			<!-- Button grouplist -->
 			<control id="9000" type="grouplist">
-				<left>1404</left>
-				<bottom>33</bottom>
-				<width>311</width>
-				<height>400</height>
+				<left>2808</left>
+				<bottom>66</bottom>
+				<width>622</width>
+				<height>800</height>
 				<onleft>5</onleft>
 				<onright>noop</onright>
 				<onup>noop</onup>
 				<ondown>noop</ondown>
 				<onback>5</onback>
-				<itemgap>10</itemgap>
+				<itemgap>20</itemgap>
 				<align>right</align>
 				<!-- Defaults Button -->
 				<include content="DialogButton">
-					<param name="button_id" value="30"/>
-					<param name="button_label" value="409"/>
-					<param name="button_visible" value="Control.IsEnabled(30)"/>
+					<param name="button_id" value="30" />
+					<param name="button_label" value="409" />
+					<param name="button_visible" value="Control.IsEnabled(30)" />
 				</include>
 				<!-- Cancel Button -->
 				<include content="DialogButton">
-					<param name="button_id" value="29"/>
-					<param name="button_label" value="222"/>
-					<param name="button_visible" value="Control.IsEnabled(29)"/>
+					<param name="button_id" value="29" />
+					<param name="button_label" value="222" />
+					<param name="button_visible" value="Control.IsEnabled(29)" />
 				</include>
 				<!-- OK Button -->
 				<include content="DialogButton">
-					<param name="button_id" value="28"/>
-					<param name="button_label" value="186"/>
-					<param name="button_visible" value="Control.IsEnabled(28)"/>
+					<param name="button_id" value="28" />
+					<param name="button_label" value="186" />
+					<param name="button_visible" value="Control.IsEnabled(28)" />
 				</include>
 			</control>
 		</control>

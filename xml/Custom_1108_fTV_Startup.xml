@@ -7,8 +7,8 @@
 			<control type="image">
 				<centertop>50%</centertop>
 				<centerleft>50%</centerleft>
-				<width>256</width>
-				<height>256</height>
+				<width>512</width>
+				<height>512</height>
 				<texture>ftv_icon.png</texture>
 				<include>StartUpFadeAnimation</include>
 			</control>

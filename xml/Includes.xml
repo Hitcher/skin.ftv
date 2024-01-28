@@ -1,39 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<include file="Defaults.xml"/>
-	<include file="Includes_Animations.xml"/>
-	<include file="Includes_Expressions.xml"/>
-	<include file="Includes_Parameters.xml"/>
-	<include file="Includes_Variables.xml"/>
-	<include file="Includes_AddonBrowser.xml"/>
-	<include file="Includes_Dialog_Video_Information.xml"/>
-	<include file="Includes_Dialog_Person_Information.xml"/>
-	<include file="Includes_Dialog_Set_Information.xml"/>
-	<include file="Includes_Dialog_Movie_TV_Information.xml"/>
-	<include file="Includes_Dialog_Default_Video_Information.xml"/>
-	<include file="Includes_DialogSelect.xml"/>
-	<include file="Includes_DialogSettings.xml"/>
-	<include file="Includes_DialogGameControllers.xml"/>
-	<include file="Includes_Home_Widgets_Setup.xml"/>
-	<include file="Includes_VideoInfoCast.xml"/>
-	<include file="Viewtype50.xml"/>
-	<include file="Viewtype51.xml"/>
-	<include file="Viewtype52.xml"/>
-	<include file="Viewtype53.xml"/>
-	<include file="Viewtype54.xml"/>
-	<include file="Viewtype55.xml"/>
-	<include file="Viewtype56.xml"/>
-	<include file="ForcedViewtype60.xml"/>
-	<include file="ForcedViewtype61.xml"/>
-	<include file="script-skinviewtypes-includes.xml"/>
-	<include file="script-skinshortcuts-includes.xml"/>
-	<include file="script-skinshortcuts-includes-default.xml"/>
+	<include file="Defaults.xml" />
+	<include file="Includes_Animations.xml" />
+	<include file="Includes_Expressions.xml" />
+	<include file="Includes_Parameters.xml" />
+	<include file="Includes_Variables.xml" />
+	<include file="Includes_AddonBrowser.xml" />
+	<include file="Includes_Dialog_Video_Information.xml" />
+	<include file="Includes_Dialog_Person_Information.xml" />
+	<include file="Includes_Dialog_Set_Information.xml" />
+	<include file="Includes_Dialog_Movie_TV_Information.xml" />
+	<include file="Includes_Dialog_Default_Video_Information.xml" />
+	<include file="Includes_DialogSelect.xml" />
+	<include file="Includes_DialogSettings.xml" />
+	<include file="Includes_DialogGameControllers.xml" />
+	<include file="Includes_Home_Widgets_Setup.xml" />
+	<include file="Includes_VideoInfoCast.xml" />
+	<include file="Viewtype50.xml" />
+	<include file="Viewtype51.xml" />
+	<include file="Viewtype52.xml" />
+	<include file="Viewtype53.xml" />
+	<include file="Viewtype54.xml" />
+	<include file="Viewtype55.xml" />
+	<include file="Viewtype56.xml" />
+	<include file="ForcedViewtype60.xml" />
+	<include file="ForcedViewtype61.xml" />
+	<include file="script-skinviewtypes-includes.xml" />
+	<include file="script-skinshortcuts-includes.xml" />
+	<include file="script-skinshortcuts-includes-default.xml" />
 	<!-- Fullscreen dimensions -->
 	<include name="FullscreenDimensions">
 		<left>0</left>
 		<top>0</top>
-		<width>1920</width>
-		<height>1080</height>
+		<width>3840</width>
+		<height>2160</height>
 	</include>
 	<!-- Background image -->
 	<include name="BackgroundImage">
@@ -44,8 +44,8 @@
 	</include>
 	<!-- Debug window label -->
 	<include name="DebugWindowLabel">
-		<width>1920</width>
-		<height>21</height>
+		<width>3840</width>
+		<height>42</height>
 		<textcolor>FF0000FF</textcolor>
 		<shadowcolor>ShadowColour</shadowcolor>
 		<font>font13</font>
@@ -53,8 +53,8 @@
 	</include>
 	<!-- Debug dialog label -->
 	<include name="DebugDialogLabel">
-		<width>1920</width>
-		<height>21</height>
+		<width>3840</width>
+		<height>42</height>
 		<textcolor>FFFF0000</textcolor>
 		<shadowcolor>ShadowColour</shadowcolor>
 		<font>font13</font>
@@ -62,8 +62,8 @@
 	</include>
 	<!-- Debug control label -->
 	<include name="DebugControlLabel">
-		<width>1400</width>
-		<height>21</height>
+		<width>2800</width>
+		<height>42</height>
 		<textcolor>FFFF0000</textcolor>
 		<shadowcolor>ShadowColour</shadowcolor>
 		<font>font13</font>
@@ -89,43 +89,43 @@
 	</include>
 	<!-- Message Background image -->
 	<include name="MessageBackground">
-		<texture border="2">dialogs/DialogMessageBackground.png</texture>
-		<bordersize>-52</bordersize>
+		<texture border="4">dialogs/DialogMessageBackground.png</texture>
+		<bordersize>-104</bordersize>
 	</include>
 	<!-- Widths -->
 	<include name="Width195">
-		<width>195</width>
+		<width>390</width>
 	</include>
 	<include name="Width292">
-		<width>292</width>
+		<width>584</width>
 	</include>
 	<include name="Width673">
-		<width>673</width>
+		<width>1346</width>
 	</include>
 	<include name="Width770">
-		<width>770</width>
+		<width>1540</width>
 	</include>
 	<include name="Width715">
-		<width>715</width>
+		<width>1430</width>
 	</include>
 	<include name="Width812">
-		<width>812</width>
+		<width>1624</width>
 	</include>
 	<!-- OSD Padding -->
 	<include name="osd_padding">
-		<height>82</height>
-		<width>17.36</width>
-		<texture/>
+		<height>164</height>
+		<width>35</width>
+		<texture />
 	</include>
 	<!-- Hidden List -->
 	<include name="HiddenList">
-		<top>-10</top>
-		<width>10</width>
+		<top>-20</top>
+		<width>20</width>
 		<height>1</height>
 		<viewtype label="">list</viewtype>
 		<orientation>horizontal</orientation>
-		<itemlayout height="1" width="1"/>
-		<focusedlayout height="1" width="1"/>
+		<itemlayout height="1" width="1" />
+		<focusedlayout height="1" width="1" />
 	</include>
 	<!-- Cast list -->
 	<include name="CastList">
@@ -147,142 +147,140 @@
 	</include>
 	<!-- No textures -->
 	<include name="NoTextures">
-		<texturefocus/>
-		<texturenofocus/>
-		<alttexturenofocus/>
-		<alttexturefocus/>
-		<textureradioonfocus/>
-		<textureradioonnofocus/>
-		<textureradioofffocus/>
-		<textureradiooffnofocus/>
-		<textureup/>
-		<texturedown/>
-		<textureupfocus/>
-		<texturedownfocus/>
+		<texturefocus />
+		<texturenofocus />
+		<alttexturenofocus />
+		<alttexturefocus />
+		<textureradioonfocus />
+		<textureradioonnofocus />
+		<textureradioofffocus />
+		<textureradiooffnofocus />
+		<textureup />
+		<texturedown />
+		<textureupfocus />
+		<texturedownfocus />
 	</include>
 	<!-- Hidden control -->
 	<include name="HiddenControl">
-		<left>-10</left>
-		<top>-10</top>
+		<left>-20</left>
+		<top>-20</top>
 		<width>1</width>
 		<height>1</height>
-		<font/>
-		<texture/>
-		<texturefocus/>
-		<texturenofocus/>
-		<alttexturenofocus/>
-		<alttexturefocus/>
-		<textureradiofocus/>
-		<textureradionofocus/>
+		<font />
+		<texture />
+		<texturefocus />
+		<texturenofocus />
+		<alttexturenofocus />
+		<alttexturefocus />
+		<textureradiofocus />
+		<textureradionofocus />
 	</include>
 	<!-- Keyboard buttons -->
 	<include name="KeyboardButtons">
-		<width>78</width>
-		<height>78</height>
+		<width>156</width>
+		<height>156</height>
 		<font>Med40</font>
 		<align>center</align>
 		<aligny>center</aligny>
 		<textcolor>ffdadada</textcolor>
 		<focusedcolor>ff0c0c0c</focusedcolor>
-		<texturefocus border="2">dialogs/KeyboardButtonFO.png</texturefocus>
-		<texturenofocus border="2">dialogs/KeyboardButtonNF.png</texturenofocus>
+		<texturefocus border="4">dialogs/KeyboardButtonFO.png</texturefocus>
+		<texturenofocus border="4">dialogs/KeyboardButtonNF.png</texturenofocus>
 	</include>
 	<!-- Numeric buttons -->
 	<include name="NumericButtons">
-		<width>168</width>
-		<height>168</height>
+		<width>336</width>
+		<height>336</height>
 		<font>Med40</font>
 		<align>center</align>
 		<aligny>center</aligny>
 		<textcolor>ffdadada</textcolor>
 		<focusedcolor>ff0c0c0c</focusedcolor>
-		<texturefocus border="2">dialogs/KeyboardButtonFO.png</texturefocus>
-		<texturenofocus border="2">dialogs/KeyboardButtonNF.png</texturenofocus>
+		<texturefocus border="4">dialogs/KeyboardButtonFO.png</texturefocus>
+		<texturenofocus border="4">dialogs/KeyboardButtonNF.png</texturenofocus>
 	</include>
 	<!-- Video player details -->
 	<include name="VideoPlayerDetails">
 		<!--  Cache bar -->
 		<control type="progress">
-			<left>92</left>
-			<bottom>93</bottom>
-			<width>1735</width>
-			<height>11</height>
-			<reveal>true</reveal>
+			<left>184</left>
+			<bottom>186</bottom>
+			<width>3470</width>
+			<height>24</height>
 			<info>Player.ProgressCache</info>
-			<texturebg border="4">osd/progress_back.png</texturebg>
-			<lefttexture/>
-			<midtexture border="4">osd/progress_cache.png</midtexture>
-			<righttexture/>
-			<overlaytexture/>
+			<texturebg border="12">osd/progress_bar_back.png</texturebg>
+			<lefttexture />
+			<midtexture border="12">osd/progress_bar_cache.png</midtexture>
+			<righttexture />
+			<overlaytexture />
 		</control>
 		<!--  Progress bar -->
 		<control type="progress">
-			<left>92</left>
-			<bottom>93</bottom>
-			<width>1735</width>
-			<height>11</height>
-			<reveal>true</reveal>
+			<left>184</left>
+			<bottom>186</bottom>
+			<width>3470</width>
+			<height>24</height>
 			<info>Player.Progress</info>
-			<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
-			<lefttexture/>
-			<midtexture border="4">osd/progress_bar.png</midtexture>
-			<righttexture/>
-			<overlaytexture/>
+			<texturebg colordiffuse="00ffffff" border="12">osd/progress_bar_back.png</texturebg>
+			<lefttexture />
+			<midtexture border="12">osd/progress_bar.png</midtexture>
+			<righttexture />
+			<overlaytexture />
 		</control>
 		<!--  Edits -->
 		<control type="ranges">
-			<left>92</left>
-			<bottom>105</bottom>
-			<width>1735</width>
-			<height>11</height>
+			<left>184</left>
+			<bottom>210</bottom>
+			<width>3470</width>
+			<height>24</height>
 			<info>Player.Editlist</info>
-			<lefttexture border="1">osd/chapter.png</lefttexture>
-			<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
-			<midtexture border="4">osd/osd_scene.png</midtexture>
-			<righttexture border="1">osd/chapter.png</righttexture>
+			<lefttexture>osd/progress_bar_chapter.png</lefttexture>
+			<texturebg colordiffuse="00ffffff" border="12">osd/progress_bar_back.png</texturebg>
+			<midtexture border="1,7,1,7">osd/progress_bar_scene.png</midtexture>
+			<righttexture>osd/progress_bar_chapter.png</righttexture>
 		</control>
 		<!--  Cuts -->
 		<control type="ranges">
-			<left>92</left>
-			<bottom>105</bottom>
-			<width>1735</width>
-			<height>11</height>
+			<left>184</left>
+			<bottom>210</bottom>
+			<width>3470</width>
+			<height>24</height>
 			<info>Player.Cuts</info>
-			<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
-			<righttexture border="2">osd/osd_cut.png</righttexture>
+			<texturebg colordiffuse="00ffffff" border="12">osd/progress_bar_back.png</texturebg>
+			<righttexture colordiffuse="ffed202c">osd/progress_bar_pointer.png</righttexture>
 		</control>
 		<!--  Scenes -->
 		<control type="ranges">
-			<left>92</left>
-			<bottom>93</bottom>
-			<width>1735</width>
-			<height>11</height>
+			<left>184</left>
+			<bottom>186</bottom>
+			<width>3470</width>
+			<height>24</height>
 			<info>Player.SceneMarkers</info>
-			<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
-			<righttexture border="1">osd/chapter.png</righttexture>
+			<texturebg colordiffuse="00ffffff" border="12">osd/progress_bar_back.png</texturebg>
+			<righttexture>osd/progress_bar_chapter.png</righttexture>
 		</control>
 		<!--  Chapters -->
 		<control type="ranges">
-			<left>92</left>
-			<bottom>93</bottom>
-			<width>1735</width>
-			<height>11</height>
+			<left>184</left>
+			<bottom>186</bottom>
+			<width>3470</width>
+			<height>24</height>
 			<info>Player.Chapters</info>
-			<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
-			<righttexture border="1">osd/chapter.png</righttexture>
+			<texturebg colordiffuse="00ffffff" border="12">osd/progress_bar_back.png</texturebg>
+			<righttexture>osd/progress_bar_chapter.png</righttexture>
 		</control>
 		<control type="grouplist">
-			<left>92</left>
-			<bottom>40</bottom>
-			<width>800</width>
-			<height>38</height>
-			<itemgap>2</itemgap>
+			<left>184</left>
+			<bottom>80</bottom>
+			<width>1600</width>
+			<height>76</height>
+			<itemgap>4</itemgap>
 			<orientation>horizontal</orientation>
 			<usecontrolcoords>true</usecontrolcoords>
 			<!--  Current position -->
 			<control type="label">
 				<width>auto</width>
-				<height>38</height>
+				<height>76</height>
 				<font>OSD32</font>
 				<textcolor>fff3f3f3</textcolor>
 				<label>$VAR[PlayerTime]</label>
@@ -290,7 +288,7 @@
 			<!--  Divider -->
 			<control type="label">
 				<width>auto</width>
-				<height>38</height>
+				<height>76</height>
 				<font>OSD32</font>
 				<textcolor>ff696969</textcolor>
 				<label>/</label>
@@ -299,17 +297,17 @@
 			<!--  Total length -->
 			<control type="label">
 				<width>auto</width>
-				<height>38</height>
+				<height>76</height>
 				<font>OSD32</font>
 				<textcolor>ff696969</textcolor>
 				<label>$VAR[PlayerDuration]</label>
 			</control>
 			<!--  4K label -->
 			<control type="label">
-				<left>24</left>
-				<top>-2</top>
+				<left>48</left>
+				<top>-4</top>
 				<width>auto</width>
-				<height>38</height>
+				<height>76</height>
 				<font>Bold36</font>
 				<textcolor>ffebebeb</textcolor>
 				<label>Ultra</label>
@@ -317,9 +315,9 @@
 			</control>
 			<!--  4K label -->
 			<control type="label">
-				<left>6</left>
+				<left>12</left>
 				<width>auto</width>
-				<height>38</height>
+				<height>76</height>
 				<font>Light35</font>
 				<textcolor>ffebebeb</textcolor>
 				<label>HD</label>
@@ -327,9 +325,9 @@
 			</control>
 			<!--  HD label -->
 			<control type="label">
-				<left>24</left>
+				<left>48</left>
 				<width>auto</width>
-				<height>38</height>
+				<height>76</height>
 				<font>Bold32</font>
 				<textcolor>ffebebeb</textcolor>
 				<label>[B]HD[/B]</label>
@@ -337,9 +335,9 @@
 			</control>
 			<!--  Resolution label -->
 			<control type="label">
-				<left>2</left>
+				<left>4</left>
 				<width>auto</width>
-				<height>38</height>
+				<height>76</height>
 				<font>Bold31</font>
 				<textcolor>ffebebeb</textcolor>
 				<label>1080p</label>
@@ -347,10 +345,10 @@
 			</control>
 			<!--  HDR label -->
 			<control type="label">
-				<left>24</left>
-				<top>-2</top>
+				<left>48</left>
+				<top>-4</top>
 				<width>auto</width>
-				<height>38</height>
+				<height>76</height>
 				<font>Bold36</font>
 				<textcolor>ffebebeb</textcolor>
 				<label>$VAR[PlayerHDRType]</label>
@@ -358,9 +356,9 @@
 			</control>
 			<!--  HDR label -->
 			<control type="label">
-				<left>6</left>
+				<left>12</left>
 				<width>auto</width>
-				<height>38</height>
+				<height>76</height>
 				<font>Light35</font>
 				<textcolor>ffebebeb</textcolor>
 				<label>Vision</label>
@@ -370,33 +368,33 @@
 		<!--  X-Ray -->
 		<control type="grouplist">
 			<centerleft>50%</centerleft>
-			<bottom>38</bottom>
-			<height>42</height>
-			<itemgap>10</itemgap>
+			<bottom>76</bottom>
+			<height>84</height>
+			<itemgap>20</itemgap>
 			<align>center</align>
 			<orientation>horizontal</orientation>
 			<usecontrolcoords>true</usecontrolcoords>
 			<visible>!String.IsEmpty(Container(1000).ListItem.Label)</visible>
 			<control type="label">
 				<width>auto</width>
-				<height>42</height>
+				<height>84</height>
 				<font>OSD32</font>
 				<textcolor>fff3f3f3</textcolor>
 				<label>31233</label>
 			</control>
 			<control type="image">
-				<top>4</top>
-				<width>40</width>
-				<height>38</height>
+				<top>8</top>
+				<width>80</width>
+				<height>76</height>
 				<texture>osd/x_ray.png</texture>
 			</control>
 		</control>
 		<!--  Current time -->
 		<control type="label">
-			<right>92</right>
-			<bottom>40</bottom>
-			<width>800</width>
-			<height>38</height>
+			<right>184</right>
+			<bottom>80</bottom>
+			<width>1600</width>
+			<height>76</height>
 			<font>OSD32</font>
 			<align>right</align>
 			<textcolor>fff3f3f3</textcolor>
@@ -406,99 +404,132 @@
 	<!-- Video details -->
 	<include name="VideoDetails">
 		<control type="button">
-			<top>2</top>
+			<top>4</top>
 			<width>auto</width>
-			<height>26</height>
+			<height>52</height>
 			<align>center</align>
 			<aligny>bottom</aligny>
 			<font>Med18</font>
 			<label>$INFO[ListItem.Mpaa, , ]</label>
 			<textcolor>$VAR[RatingTextColour]</textcolor>
-			<texturefocus colordiffuse="$VAR[RatingButtonColour]" border="3">rating/flag.png</texturefocus>
-			<texturenofocus colordiffuse="$VAR[RatingButtonColour]" border="3">rating/flag.png</texturenofocus>
+			<texturefocus colordiffuse="$VAR[RatingButtonColour]" border="6">rating/flag.png</texturefocus>
+			<texturenofocus colordiffuse="$VAR[RatingButtonColour]" border="6">rating/flag.png</texturenofocus>
 			<visible>!String.IsEmpty(ListItem.Mpaa)</visible>
 		</control>
 		<control type="image">
-			<top>2</top>
-			<width>36</width>
-			<height>26</height>
-			<texture border="3">rating/cc.png</texture>
+			<top>4</top>
+			<width>72</width>
+			<height>52</height>
+			<texture border="6">rating/cc.png</texture>
 			<visible>!String.IsEmpty(ListItem.SubtitleLanguage)</visible>
 		</control>
 		<control type="button">
-			<top>2</top>
+			<top>4</top>
 			<width>auto</width>
-			<height>26</height>
+			<height>52</height>
 			<align>center</align>
 			<aligny>bottom</aligny>
 			<font>Med18</font>
 			<label> $VAR[VideoAspect] </label>
 			<textcolor>ffcccccc</textcolor>
-			<texturefocus colordiffuse="FF888888" border="3">rating/flag.png</texturefocus>
-			<texturenofocus colordiffuse="FF888888" border="3">rating/flag.png</texturenofocus>
+			<texturefocus colordiffuse="FF888888" border="6">rating/flag.png</texturefocus>
+			<texturenofocus colordiffuse="FF888888" border="6">rating/flag.png</texturenofocus>
 			<visible>!String.IsEmpty(ListItem.VideoAspect)</visible>
 		</control>
 		<control type="button">
-			<top>2</top>
+			<top>4</top>
 			<width>auto</width>
-			<height>26</height>
+			<height>52</height>
 			<align>center</align>
 			<aligny>bottom</aligny>
 			<font>Med18</font>
 			<label> $VAR[HDRType] </label>
 			<textcolor>ffcccccc</textcolor>
-			<texturefocus colordiffuse="FF888888" border="3">rating/flag.png</texturefocus>
-			<texturenofocus colordiffuse="FF888888" border="3">rating/flag.png</texturenofocus>
-			<visible>!String.IsEmpty(ListItem.HdrType)</visible>
+			<texturefocus colordiffuse="FF888888" border="6">rating/flag.png</texturefocus>
+			<texturenofocus colordiffuse="FF888888" border="6">rating/flag.png</texturenofocus>
+			<visible>!String.IsEmpty(ListItem.HdrType) + !String.IsEqual(ListItem.HdrType,dolbyvision)</visible>
 		</control>
 		<control type="button">
-			<top>2</top>
+			<top>4</top>
 			<width>auto</width>
-			<height>26</height>
+			<height>52</height>
+			<align>center</align>
+			<aligny>bottom</aligny>
+			<font>Bold22</font>
+			<label>     DOLBY</label>
+			<include condition="Integer.IsLess(System.ScreenHeight,1080)">ButtonDolbyOffset_720p</include>
+			<include condition="Integer.IsGreater(System.ScreenHeight,720) + Integer.IsLess(System.ScreenHeight,2160)">ButtonDolbyOffset_1080p</include>
+			<include condition="Integer.IsGreaterOrEqual(System.ScreenHeight,2160)">ButtonDolbyOffset_4k</include>
+			<textcolor>ffcccccc</textcolor>
+			<texturefocus border="58,6,6,6">rating/dolby_left.png</texturefocus>
+			<texturenofocus border="58,6,6,6">rating/dolby_left.png</texturenofocus>
+			<visible>String.IsEqual(ListItem.HdrType,dolbyvision)</visible>
+		</control>
+		<control type="button">
+			<top>4</top>
+			<left>-20</left>
+			<width>auto</width>
+			<height>52</height>
+			<align>center</align>
+			<aligny>bottom</aligny>
+			<font>Light22</font>
+			<label> VISION </label>
+			<include condition="Integer.IsLess(System.ScreenHeight,1080)">ButtonVisionOffset_720p</include>
+			<include condition="Integer.IsGreater(System.ScreenHeight,720) + Integer.IsLess(System.ScreenHeight,2160)">ButtonVisionOffset_1080p</include>
+			<include condition="Integer.IsGreaterOrEqual(System.ScreenHeight,2160)">ButtonVisionOffset_4k</include>
+			<textcolor>ffcccccc</textcolor>
+			<texturefocus border="0,6,6,6">rating/dolby_right.png</texturefocus>
+			<texturenofocus border="0,6,6,6">rating/dolby_right.png</texturenofocus>
+			<visible>String.IsEqual(ListItem.HdrType,dolbyvision)</visible>
+		</control>
+		<control type="button">
+			<top>4</top>
+			<width>auto</width>
+			<height>52</height>
 			<align>center</align>
 			<aligny>bottom</aligny>
 			<font>Med18</font>
 			<label> $VAR[AudioCodec] </label>
 			<textcolor>ffcccccc</textcolor>
-			<texturefocus colordiffuse="FF888888" border="3">rating/flag.png</texturefocus>
-			<texturenofocus colordiffuse="FF888888" border="3">rating/flag.png</texturenofocus>
+			<texturefocus colordiffuse="FF888888" border="6">rating/flag.png</texturefocus>
+			<texturenofocus colordiffuse="FF888888" border="6">rating/flag.png</texturenofocus>
 			<visible>!String.IsEmpty(ListItem.AudioCodec)</visible>
 		</control>
 		<control type="button">
-			<top>2</top>
+			<top>4</top>
 			<width>auto</width>
-			<height>26</height>
+			<height>52</height>
 			<align>center</align>
 			<aligny>bottom</aligny>
 			<font>Med18</font>
 			<label> $VAR[AudioChannels] </label>
 			<textcolor>ffcccccc</textcolor>
-			<texturefocus colordiffuse="FF888888" border="3">rating/flag.png</texturefocus>
-			<texturenofocus colordiffuse="FF888888" border="3">rating/flag.png</texturenofocus>
+			<texturefocus colordiffuse="FF888888" border="6">rating/flag.png</texturefocus>
+			<texturenofocus colordiffuse="FF888888" border="6">rating/flag.png</texturenofocus>
 			<visible>!String.IsEmpty(ListItem.AudioChannels)</visible>
 		</control>
 	</include>
 	<!-- Video details -->
 	<include name="VideoRatings">
 		<control type="image">
-			<top>2</top>
-			<width>148.5</width>
-			<height>26</height>
+			<top>4</top>
+			<width>297</width>
+			<height>52</height>
 			<texture>$INFO[ListItem.UserRating,rating/rating,.png]</texture>
 			<aspectratio align="left">keep</aspectratio>
 			<visible>!String.IsEmpty(ListItem.UserRating)</visible>
 		</control>
 		<control type="image">
-			<top>2</top>
-			<width>52</width>
-			<height>26</height>
+			<top>4</top>
+			<width>104</width>
+			<height>52</height>
 			<texture>views/logos/imdb.png</texture>
 			<visible>!String.IsEmpty(ListItem.Rating(imdb))</visible>
 		</control>
 		<control type="label">
-			<top>-18</top>
+			<top>-36</top>
 			<width>auto</width>
-			<height>34</height>
+			<height>68</height>
 			<font>Bold36</font>
 			<aligny>top</aligny>
 			<textcolor>ffbcbcbc</textcolor>
@@ -506,16 +537,16 @@
 			<visible>!String.IsEmpty(ListItem.Rating(imdb))</visible>
 		</control>
 		<control type="image">
-			<top>2</top>
-			<width>40</width>
-			<height>26</height>
+			<top>4</top>
+			<width>80</width>
+			<height>52</height>
 			<texture>views/logos/tvdb.png</texture>
 			<visible>!String.IsEmpty(ListItem.Rating(tvdb))</visible>
 		</control>
 		<control type="label">
-			<top>-18</top>
+			<top>-36</top>
 			<width>auto</width>
-			<height>34</height>
+			<height>68</height>
 			<font>Bold36</font>
 			<aligny>top</aligny>
 			<textcolor>ffbcbcbc</textcolor>
@@ -523,16 +554,16 @@
 			<visible>!String.IsEmpty(ListItem.Rating(tvdb))</visible>
 		</control>
 		<control type="image">
-			<top>2</top>
-			<width>54</width>
-			<height>26</height>
+			<top>4</top>
+			<width>108</width>
+			<height>52</height>
 			<texture>views/logos/tmdb.png</texture>
 			<visible>!String.IsEmpty(ListItem.Rating(themoviedb))</visible>
 		</control>
 		<control type="label">
-			<top>-18</top>
+			<top>-36</top>
 			<width>auto</width>
-			<height>34</height>
+			<height>68</height>
 			<font>Bold36</font>
 			<aligny>top</aligny>
 			<textcolor>ffbcbcbc</textcolor>
@@ -540,16 +571,16 @@
 			<visible>!String.IsEmpty(ListItem.Rating(themoviedb))</visible>
 		</control>
 		<control type="image">
-			<top>2</top>
-			<width>54</width>
-			<height>26</height>
+			<top>4</top>
+			<width>108</width>
+			<height>52</height>
 			<texture>views/logos/tmdb.png</texture>
 			<visible>!String.IsEmpty(ListItem.Rating(tmdb))</visible>
 		</control>
 		<control type="label">
-			<top>-18</top>
+			<top>-36</top>
 			<width>auto</width>
-			<height>34</height>
+			<height>68</height>
 			<font>Bold36</font>
 			<aligny>top</aligny>
 			<textcolor>ffbcbcbc</textcolor>
@@ -557,16 +588,16 @@
 			<visible>!String.IsEmpty(ListItem.Rating(tmdb))</visible>
 		</control>
 		<control type="image">
-			<top>2</top>
-			<width>26</width>
-			<height>26</height>
+			<top>4</top>
+			<width>52</width>
+			<height>52</height>
 			<texture>views/logos/trakt.png</texture>
 			<visible>!String.IsEmpty(ListItem.Rating(trakt))</visible>
 		</control>
 		<control type="label">
-			<top>-18</top>
+			<top>-36</top>
 			<width>auto</width>
-			<height>34</height>
+			<height>68</height>
 			<font>Bold36</font>
 			<aligny>top</aligny>
 			<textcolor>ffbcbcbc</textcolor>
@@ -574,16 +605,16 @@
 			<visible>!String.IsEmpty(ListItem.Rating(trakt))</visible>
 		</control>
 		<control type="image">
-			<top>2</top>
-			<width>26</width>
-			<height>26</height>
+			<top>4</top>
+			<width>52</width>
+			<height>52</height>
 			<texture>views/logos/metacritic.png</texture>
 			<visible>!String.IsEmpty(ListItem.Rating(metacritic))</visible>
 		</control>
 		<control type="label">
-			<top>-18</top>
+			<top>-36</top>
 			<width>auto</width>
-			<height>34</height>
+			<height>68</height>
 			<font>Bold36</font>
 			<aligny>top</aligny>
 			<textcolor>ffbcbcbc</textcolor>
@@ -591,37 +622,37 @@
 			<visible>!String.IsEmpty(ListItem.Rating(metacritic))</visible>
 		</control>
 		<control type="image">
-			<top>2</top>
-			<width>26</width>
-			<height>26</height>
+			<top>4</top>
+			<width>52</width>
+			<height>52</height>
 			<texture>views/logos/rotten_tomatoes_fresh.png</texture>
 			<visible>[Skin.HasSetting(TomatoMeterAllCritics) + !String.IsEmpty(ListItem.Rating(tomatometerallcritics)) + Integer.IsGreaterOrEqual(Control.GetLabel(777),6)] | [Skin.HasSetting(AverageRatingAllCritics) + !String.IsEmpty(ListItem.Rating(tomatometeravgcritics)) + Integer.IsGreaterOrEqual(Control.GetLabel(777),6)]</visible>
 		</control>
 		<control type="image">
-			<top>2</top>
-			<width>26.5</width>
-			<height>26</height>
+			<top>4</top>
+			<width>53</width>
+			<height>52</height>
 			<texture>views/logos/rotten_tomatoes_rotten.png</texture>
 			<visible>[Skin.HasSetting(TomatoMeterAllCritics) + !String.IsEmpty(ListItem.Rating(tomatometerallcritics)) + Integer.IsLess(Control.GetLabel(777),6)] | [Skin.HasSetting(AverageRatingAllCritics) + !String.IsEmpty(ListItem.Rating(tomatometeravgcritics)) + Integer.IsLess(Control.GetLabel(777),6)]</visible>
 		</control>
 		<control type="image">
-			<top>2</top>
-			<width>19.5</width>
-			<height>26</height>
+			<top>4</top>
+			<width>39</width>
+			<height>52</height>
 			<texture>views/logos/rotten_tomatoes_audience_fresh.png</texture>
 			<visible>[Skin.HasSetting(TomatoMeterAudienceScore) + !String.IsEmpty(ListItem.Rating(tomatometerallaudience)) + Integer.IsGreaterOrEqual(Control.GetLabel(777),6)] | [Skin.HasSetting(AverageRatingAudienceScore) + !String.IsEmpty(ListItem.Rating(tomatometeravgaudience)) + Integer.IsGreaterOrEqual(Control.GetLabel(777),6)]</visible>
 		</control>
 		<control type="image">
-			<top>2</top>
-			<width>36</width>
-			<height>26</height>
+			<top>4</top>
+			<width>72</width>
+			<height>52</height>
 			<texture>views/logos/rotten_tomatoes_audience_rotten.png</texture>
 			<visible>[Skin.HasSetting(TomatoMeterAudienceScore) + !String.IsEmpty(ListItem.Rating(tomatometerallaudience)) + Integer.IsLess(Control.GetLabel(777),6)] | [Skin.HasSetting(AverageRatingAudienceScore) + !String.IsEmpty(ListItem.Rating(tomatometeravgaudience)) + Integer.IsLess(Control.GetLabel(777),6)]</visible>
 		</control>
 		<control type="label" id="777">
-			<top>-18</top>
+			<top>-36</top>
 			<width>auto</width>
-			<height>34</height>
+			<height>68</height>
 			<font>Bold36</font>
 			<aligny>top</aligny>
 			<textcolor>ffbcbcbc</textcolor>
@@ -629,14 +660,33 @@
 			<visible>!String.IsEmpty(ListItem.Rating(tomatometerallcritics)) | !String.IsEmpty(ListItem.Rating(tomatometerallaudience)) | !String.IsEmpty(ListItem.Rating(tomatometeravgcritics)) | !String.IsEmpty(ListItem.Rating(tomatometeravgaudience))</visible>
 		</control>
 		<control type="label">
-			<top>-18</top>
+			<top>-36</top>
 			<width>auto</width>
-			<height>34</height>
+			<height>68</height>
 			<font>Bold36</font>
 			<aligny>top</aligny>
 			<textcolor>ffbcbcbc</textcolor>
 			<label>$INFO[ListItem.Rating,,/10]</label>
 			<visible>String.IsEmpty(ListItem.Rating(imdb)) + String.IsEmpty(ListItem.Rating(trakt)) + String.IsEmpty(ListItem.Rating(tvdb)) + String.IsEmpty(ListItem.Rating(themoviedb)) + String.IsEmpty(ListItem.Rating(tmdb)) + String.IsEmpty(ListItem.Rating(metacritic)) + String.IsEmpty(ListItem.Rating(tomatometerallaudience)) + String.IsEmpty(ListItem.Rating(tomatometerallcritics)) + String.IsEmpty(ListItem.Rating(tomatometeravgaudience)) + String.IsEmpty(ListItem.Rating(tomatometeravgcritics))</visible>
 		</control>
+	</include>
+	<!-- Offsets -->
+	<include name="ButtonDolbyOffset_720p">
+		<textoffsety>-14</textoffsety>
+	</include>
+	<include name="ButtonDolbyOffset_1080p">
+		<textoffsety>-16</textoffsety>
+	</include>
+	<include name="ButtonDolbyOffset_4k">
+		<textoffsety>-15</textoffsety>
+	</include>
+	<include name="ButtonVisionOffset_720p">
+		<textoffsety>-2</textoffsety>
+	</include>
+	<include name="ButtonVisionOffset_1080p">
+		<textoffsety>-2</textoffsety>
+	</include>
+	<include name="ButtonVisionOffset_4k">
+		<textoffsety>-1</textoffsety>
 	</include>
 </includes>

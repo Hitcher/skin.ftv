@@ -6,11 +6,11 @@
 	<onunload>ClearProperty(OpenTextViewer,home)</onunload>
 	<controls>
 		<control id="5" type="textbox">
-			<font/>
+			<font />
 		</control>
 		<!-- Heading -->
 		<control id="1" type="label">
-			<font/>
+			<font />
 		</control>
 		<!-- Background -->
 		<include>DialogTextBackgroundImage</include>
@@ -20,16 +20,16 @@
 			<control type="image">
 				<centerleft>50%</centerleft>
 				<centertop>50%</centertop>
-				<width>973</width>
-				<height>764</height>
-				<texture border="4,3,4,7">views/text_viewer_background.png</texture>
+				<width>1946</width>
+				<height>1528</height>
+				<texture border="8,6,8,14">views/text_viewer_background.png</texture>
 			</control>
 			<!-- Arrow up -->
 			<control type="image">
-				<left>942</left>
-				<top>216</top>
-				<width>36</width>
-				<height>20</height>
+				<left>1884</left>
+				<top>432</top>
+				<width>72</width>
+				<height>40</height>
 				<texture>views/arrow_up.png</texture>
 				<visible>Container(10).HasPrevious</visible>
 				<animation delay="80" effect="fade" end="100" start="0" time="120">Visible</animation>
@@ -39,8 +39,8 @@
 			<control id="10" type="textbox">
 				<centerleft>50%</centerleft>
 				<centertop>50%</centertop>
-				<width>788</width>
-				<height>452</height>
+				<width>1576</width>
+				<height>904</height>
 				<align>left</align>
 				<font>Reg36Spaced</font>
 				<pagecontrol>3000</pagecontrol>
@@ -50,10 +50,10 @@
 			</control>
 			<!-- Arrow down -->
 			<control type="image">
-				<left>942</left>
-				<top>844</top>
-				<width>36</width>
-				<height>20</height>
+				<left>1884</left>
+				<top>1688</top>
+				<width>72</width>
+				<height>40</height>
 				<texture>views/arrow_down.png</texture>
 				<visible>Container(10).HasNext</visible>
 				<animation delay="80" effect="fade" end="100" start="0" time="120">Visible</animation>
@@ -61,17 +61,17 @@
 			</control>
 			<!-- Scrollbar -->
 			<control id="3000" type="scrollbar">
-				<left>1394</left>
+				<left>2788</left>
 				<centertop>50%</centertop>
-				<width>8</width>
-				<height>446</height>
+				<width>16</width>
+				<height>892</height>
 				<onup>noop</onup>
 				<ondown>noop</ondown>
 				<onleft>Close</onleft>
 				<onright>Close</onright>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
-				<texturesliderbarfocus border="3">common/Scrollbar.png</texturesliderbarfocus>
+				<texturesliderbarfocus border="6">common/Scrollbar.png</texturesliderbarfocus>
 				<visible allowhiddenfocus="true">Control.HasFocus(3000)</visible>
 				<animation condition="System.IdleTime(1)" effect="fade" end="0" start="100" time="200">Conditional</animation>
 			</control>

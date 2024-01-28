@@ -1,16 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include name="DialogBack">
-		<param name="dialog_back_width" default="1378"/>
-		<param name="dialog_back_height" default="480"/>
-		<param name="dialog_heading_width" default="978"/>
-		<param name="dialog_heading_height" default="60"/>
+		<param name="dialog_back_width" default="2756"/>
+		<param name="dialog_back_height" default="960"/>
+		<param name="dialog_heading_width" default="1956"/>
+		<param name="dialog_heading_height" default="120"/>
 		<param name="dialog_heading_height" default="true"/>
-		<param name="dialog_shadow_1_left" default="978"/>
-		<param name="dialog_shadow_1_height" default="480"/>
+		<param name="dialog_shadow_1_left" default="1956"/>
+		<param name="dialog_shadow_1_height" default="960"/>
 		<param name="dialog_shadow_1_visible" default="true"/>
 		<param name="dialog_shadow_1_animation" default=""/>
-		<param name="dialog_shadow_2_top" default="60"/>
-		<param name="dialog_shadow_2_height" default="420"/>
+		<param name="dialog_shadow_2_top" default="120"/>
+		<param name="dialog_shadow_2_height" default="840"/>
 		<param name="dialog_shadow_2_visible" default="false"/>
 		<param name="dialog_group_visible" default="true"/>
 		<definition>
@@ -30,7 +31,7 @@
 				<control type="image">
 					<top>$PARAM[dialog_shadow_1_top]</top>
 					<left>$PARAM[dialog_shadow_1_left]</left>
-					<width>40</width>
+					<width>80</width>
 					<height>$PARAM[dialog_shadow_1_height]</height>
 					<texture>dialogs/dialog_shadow.png</texture>
 					<visible>$PARAM[dialog_shadow_1_visible]</visible>
@@ -39,7 +40,7 @@
 				<control type="image">
 					<top>$PARAM[dialog_shadow_2_top]</top>
 					<left>$PARAM[dialog_shadow_2_left]</left>
-					<width>40</width>
+					<width>80</width>
 					<height>$PARAM[dialog_shadow_2_height]</height>
 					<texture>dialogs/dialog_shadow.png</texture>
 					<visible>$PARAM[dialog_shadow_2_visible]</visible>
@@ -49,16 +50,16 @@
 	</include>
 	<include name="DialogHeading">
 		<param name="dialog_heading_label_id" default="1"/>
-		<param name="dialog_heading_label_left" default="40"/>
-		<param name="dialog_heading_label_top" default="14"/>
-		<param name="dialog_heading_label_width" default="898"/>
+		<param name="dialog_heading_label_left" default="80"/>
+		<param name="dialog_heading_label_top" default="28"/>
+		<param name="dialog_heading_label_width" default="1796"/>
 		<param name="dialog_heading_label_haspath" default="false"/>
 		<param name="dialog_heading_label_visible" default="true"/>
 		<definition>
 			<control id="$PARAM[dialog_heading_label_id]" type="label">
 				<left>$PARAM[dialog_heading_label_left]</left>
 				<top>$PARAM[dialog_heading_label_top]</top>
-				<height>30</height>
+				<height>60</height>
 				<width>$PARAM[dialog_heading_label_width]</width>
 				<aligny>center</aligny>
 				<font>Bold30</font>
@@ -70,13 +71,13 @@
 		</definition>
 	</include>
 	<include name="DialogHeadingCount">
-		<param name="dialog_heading_count_width" default="898"/>
+		<param name="dialog_heading_count_width" default="1796"/>
 		<param name="dialog_heading_count_visible" default="true"/>
 		<definition>
 			<control type="label">
-				<left>40</left>
-				<top>15</top>
-				<height>30</height>
+				<left>80</left>
+				<top>30</top>
+				<height>60</height>
 				<width>$PARAM[dialog_heading_count_width]</width>
 				<font>Light30Spaced</font>
 				<align>right</align>
@@ -90,18 +91,18 @@
 		<param name="button_type" default="button"/>
 		<definition>
 			<control id="$PARAM[button_id]" type="$PARAM[button_type]">
-				<height>76</height>
+				<height>152</height>
 				<width>100%</width>
 				<aligny>top</aligny>
 				<font>Med24</font>
-				<textoffsetx>23</textoffsetx>
-				<textoffsety>27</textoffsety>
-				<radiowidth>94</radiowidth>
-				<radioheight>40</radioheight>
-				<radioposx>235</radioposx>
+				<textoffsetx>46</textoffsetx>
+				<textoffsety>54</textoffsety>
+				<radiowidth>188</radiowidth>
+				<radioheight>80</radioheight>
+				<radioposx>470</radioposx>
 				<label>$PARAM[button_label]</label>
-				<texturefocus border="8">dialogs/DialogButtonFO.png</texturefocus>
-				<texturenofocus border="8">dialogs/DialogButtonNF.png</texturenofocus>
+				<texturefocus border="13,15,13,15">dialogs/DialogButtonFO.png</texturefocus>
+				<texturenofocus border="13,15,13,15">dialogs/DialogButtonNF.png</texturenofocus>
 				<textureradioonfocus/>
 				<textureradioonnofocus/>
 				<textureradioofffocus/>
@@ -186,10 +187,10 @@
 			<content target="$INFO[Skin.String($PARAM[ID]0-WidgetType-8)]" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-8)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-8)]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-8)]</content>
 		</control>
 		<control id="$PARAM[ID]" type="fixedlist">
-			<left>419</left>
-			<top>-253</top>
-			<width>2100</width>
-			<height>1500</height>
+			<left>838</left>
+			<top>-506</top>
+			<width>4200</width>
+			<height>3000</height>
 			<onup condition="!Window.IsVisible(1101)">SetProperty(BounceUp,1,Home)</onup>
 			<onup>noop</onup>
 			<ondown condition="!Window.IsVisible(1101)">SetProperty(BounceDown,1,Home)</ondown>
@@ -206,23 +207,25 @@
 			<include>HomeWidgetsAnimation</include>
 			<include>WindowHomeFadeAnimation</include>
 			<visible>String.IsEqual(Container(99).ListItem.Property(widget),$PARAM[widget])</visible>
-			<animation condition="String.IsEqual(Container($PARAM[ID]).NumItems,1)" effect="slide" end="-304,-114">Conditional</animation>
-			<animation condition="String.IsEqual(Container($PARAM[ID]).NumItems,2)" effect="slide" end="0,-299">Conditional</animation>
-			<animation condition="Integer.IsGreater(Container($PARAM[ID]).NumItems,2) + !Container($PARAM[ID]).Row(1)" easing="inout" effect="slide" end="0,-114" time="220" tween="sine">Conditional</animation>
-			<animation condition="Integer.IsGreater(Container($PARAM[ID]).NumItems,2) + Container($PARAM[ID]).Row(3) + Control.HasFocus($PARAM[ID])" easing="inout" effect="slide" end="0,-212" time="220" tween="sine">Conditional</animation>
-			<itemlayout height="370" width="2000">
+			<animation condition="String.IsEqual(Container($PARAM[ID]).NumItems,1)" effect="slide" end="-608,-228">Conditional</animation>
+			<animation condition="String.IsEqual(Container($PARAM[ID]).NumItems,2)" effect="slide" end="0,-598">Conditional</animation>
+			<animation condition="Integer.IsGreater(Container($PARAM[ID]).NumItems,2) + !Container($PARAM[ID]).Row(1)" easing="inout" effect="slide" end="0,-228" time="220" tween="sine">Conditional</animation>
+			<animation condition="Integer.IsGreater(Container($PARAM[ID]).NumItems,2) + Container($PARAM[ID]).Row(3) + Control.HasFocus($PARAM[ID])" easing="inout" effect="slide" end="0,-424" time="220" tween="sine">Conditional</animation>
+			<itemlayout height="740" width="4000">
 				<control type="group">
-					<left>33</left>
+					<top>26</top>
+					<left>66</left>
 					<control type="image">
-						<width>227</width>
-						<height>334</height>
-						<texture border="0,15,11,14">home/home_button_nf.png</texture>
+						<top>-2</top>
+						<width>434</width>
+						<height>619</height>
+						<texture border="2">home/home_button_nf.png</texture>
 					</control>
 					<control type="textbox">
-						<left>14</left>
-						<top>22</top>
-						<width>191</width>
-						<height>152</height>
+						<left>28</left>
+						<top>4</top>
+						<width>382</width>
+						<height>304</height>
 						<font>Bold26</font>
 						<align>left</align>
 						<textcolor>ffdadada</textcolor>
@@ -234,7 +237,7 @@
 				<include>HomeSquareItemlayout</include>
 				<include>HomeSquareInfoItemlayout</include>
 			</itemlayout>
-			<focusedlayout height="370" width="2000" condition="Integer.IsGreater(Container($PARAM[ID]).NumItems,1)">
+			<focusedlayout height="740" width="4000" condition="Integer.IsGreater(Container($PARAM[ID]).NumItems,1)">
 				<control type="button">
 					<include>HiddenControl</include>
 					<onfocus condition="String.IsEqual(Container($PARAM[ID]).NumItems,2) + Container($PARAM[ID]).Row(2)">SetProperty(FocusRow,1_2)</onfocus>
@@ -247,31 +250,33 @@
 					<onfocus condition="!String.IsEqual(Container($PARAM[ID]).ListItem.Property(WidgetStyle),$LOCALIZE[31159]) + !String.IsEqual(Container($PARAM[ID]).ListItem.Property(WidgetStyle),$LOCALIZE[31160])">ClearProperty(ForceViewType,Home)</onfocus>
 				</control>
 				<control type="group">
-					<animation center="142,167" easing="inout" effect="zoom" end="132" start="100" time="220" tween="sine">Focus</animation>
-					<animation center="142,167" easing="inout" effect="zoom" end="100" start="132" time="220" tween="sine">UnFocus</animation>
+					<animation center="284,334" easing="inout" effect="zoom" end="132" start="100" time="220" tween="sine">Focus</animation>
+					<animation center="284,334" easing="inout" effect="zoom" end="100" start="132" time="220" tween="sine">UnFocus</animation>
 					<control type="group">
-						<left>33</left>
+						<top>26</top>
+						<left>66</left>
 						<control type="image">
-							<width>227</width>
-							<height>334</height>
-							<texture border="0,15,11,14">home/home_button_nf.png</texture>
+							<top>-2</top>
+							<width>434</width>
+							<height>619</height>
+							<texture border="2">home/home_button_nf.png</texture>
 						</control>
 						<control type="textbox">
-							<top>2</top>
-							<width>254</width>
-							<height>200</height>
+							<top>4</top>
+							<width>508</width>
+							<height>400</height>
 							<font>Bold34</font>
 							<align>left</align>
 							<textcolor>ffdadada</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<animation effect="fade" end="0" start="100" time="0">Focus</animation>
-							<animation condition="true" effect="slide" end="-18,-26" time="0">Conditional</animation>
-							<animation center="135,201" condition="true" effect="zoom" end="76" start="76" time="0">Conditional</animation>
+							<animation condition="true" effect="slide" end="-36,-86" time="0">Conditional</animation>
+							<animation center="270,402" condition="true" effect="zoom" end="76" start="76" time="0">Conditional</animation>
 						</control>
 						<control type="image">
-							<width>227</width>
-							<height>334</height>
-							<texture border="0,14,11,14">home/home_button_fo.png</texture>
+							<width>434</width>
+							<height>616</height>
+							<texture border="1">home/home_button_fo.png</texture>
 							<visible>!String.IsEmpty(Window(Home).Property(WidgetHasFocus))</visible>
 							<animation effect="fade" end="100" start="0" time="0" condition="!String.IsEmpty(Window(Home).Property(WidgetHasFocus))">Conditional</animation>
 							<animation effect="fade" end="0" start="100" time="0" condition="String.IsEmpty(Window(Home).Property(WidgetHasFocus))">Conditional</animation>
@@ -279,9 +284,9 @@
 							<animation effect="fade" end="0" start="100" time="0">UnFocus</animation>
 						</control>
 						<control type="textbox">
-							<top>2</top>
-							<width>254</width>
-							<height>200</height>
+							<top>4</top>
+							<width>508</width>
+							<height>400</height>
 							<font>Bold34</font>
 							<align>left</align>
 							<textcolor>ff453a18</textcolor>
@@ -291,8 +296,8 @@
 							<animation effect="fade" end="0" start="100" time="0" condition="String.IsEmpty(Window(Home).Property(WidgetHasFocus))">Conditional</animation>
 							<animation effect="fade" end="100" start="0" time="0">Focus</animation>
 							<animation effect="fade" end="0" start="100" time="0">UnFocus</animation>
-							<animation condition="true" effect="slide" end="-18,-26" time="0">Conditional</animation>
-							<animation center="135,201" condition="true" effect="zoom" end="76" start="76" time="0">Conditional</animation>
+							<animation condition="true" effect="slide" end="-36,-86" time="0">Conditional</animation>
+							<animation center="270,402" condition="true" effect="zoom" end="76" start="76" time="0">Conditional</animation>
 						</control>
 					</control>
 					<include>HomePosterFocusedlayout</include>
@@ -301,9 +306,9 @@
 					<include>HomeSquareInfoFocusedlayout</include>
 				</control>
 			</focusedlayout>
-			<focusedlayout height="370" width="2000" condition="!Integer.IsGreater(Container($PARAM[ID]).NumItems,1)">
+			<focusedlayout height="740" width="4000" condition="!Integer.IsGreater(Container($PARAM[ID]).NumItems,1)">
 				<control type="group">
-					<animation center="142,167" condition="true" effect="zoom" end="132" start="100" time="0">Conditional</animation>
+					<animation center="284,334" condition="true" effect="zoom" end="132" start="100" time="0">Conditional</animation>
 					<include>HomePosterFocusedlayout</include>
 					<include>HomeWideFocusedlayout</include>
 					<include>HomeSquareFocusedlayout</include>

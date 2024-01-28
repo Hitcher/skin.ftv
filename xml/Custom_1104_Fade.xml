@@ -3,5 +3,5 @@
 	<onload>ClearProperty(Fade,Home)</onload>
 	<visible>!String.IsEmpty(Window(Home).Property(Fade))</visible>
 	<include>CustomFadeAnimation</include>
-	<controls/>
+	<controls />
 </window>

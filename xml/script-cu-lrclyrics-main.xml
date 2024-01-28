@@ -5,14 +5,14 @@
 			<include>HiddenControl</include>
 		</control>
 		<control type="list" id="110">
-			<right>198</right>
-			<top>134</top>
-			<width>570</width>
-			<height>465</height>
+			<right>396</right>
+			<top>268</top>
+			<width>1140</width>
+			<height>930</height>
 			<scrolltime>0</scrolltime>
-			<itemlayout height="155">
+			<itemlayout height="310">
 				<control type="textbox">
-					<height>155</height>
+					<height>310</height>
 					<align>right</align>
 					<aligny>top</aligny>
 					<font>Med40Spaced</font>
@@ -22,18 +22,18 @@
 					<visible>!String.IsEqual(ListItem.Label,...)</visible>
 				</control>
 				<control type="image">
-					<right>168</right>
+					<right>336</right>
 					<top>0</top>
-					<width>62</width>
-					<height>62</height>
+					<width>124</width>
+					<height>124</height>
 					<texture>views/equaliser.png</texture>
 					<visible>String.IsEqual(ListItem.Label,...) | String.IsEmpty(ListItem.Label)</visible>
 					<animation effect="fade" end="55" condition="true">Conditional</animation>
 				</control>
 			</itemlayout>
-			<focusedlayout height="155">
+			<focusedlayout height="310">
 				<control type="textbox">
-					<height>155</height>
+					<height>310</height>
 					<align>right</align>
 					<aligny>top</aligny>
 					<font>Med40Spaced</font>
@@ -43,10 +43,10 @@
 					<visible>!String.IsEqual(ListItem.Label,...)</visible>
 				</control>
 				<control type="image">
-					<right>168</right>
+					<right>336</right>
 					<top>0</top>
-					<width>62</width>
-					<height>62</height>
+					<width>124</width>
+					<height>124</height>
 					<texture>views/equaliser.gif</texture>
 					<visible>String.IsEqual(ListItem.Label,...) | String.IsEmpty(ListItem.Label)</visible>
 				</control>

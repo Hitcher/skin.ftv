@@ -3,5 +3,5 @@
 	<onload>ClearProperty(BounceRight,Home)</onload>
 	<visible>!String.IsEmpty(Window(Home).Property(BounceRight))</visible>
 	<include>WindowCloseFadeAnimation</include>
-	<controls/>
+	<controls />
 </window>

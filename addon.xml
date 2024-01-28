@@ -11,7 +11,7 @@
 		<import addon="resource.images.weatherfanart.single" version="0.0.6" />
 	</requires>
 	<extension point="xbmc.gui.skin" effectslowdown="1.00" debugging="false">
-		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml"/>
+		<res width="3840" height="2160" aspect="16:9" default="true" folder="xml"/>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
@@ -32,7 +32,7 @@
 			<screenshot>resources/screenshot-12.jpg</screenshot>
 			<screenshot>resources/screenshot-13.jpg</screenshot>
 		</assets>
-		<news>Updated for Kodi v19 (Matrix).</news>
+		<news>Now in 4k resolution.</news>
 		<summary lang="ca_ES">Skin basada en la interfície d&apos;usuari de Fire TV</summary>
 		<summary lang="de_DE">Skin basierend auf der Fire TV-Benutzeroberfläche</summary>
 		<summary lang="en_GB">Skin based on the Fire TV UI</summary>

@@ -73,7 +73,7 @@
 			<onfocus>Skin.SetString(2000-WidgetAction-3,ActivateWindow(Videos,special://skin/extras/video/InProgressMovies.xsp,return))</onfocus>
 			<onfocus>Skin.SetString(2000-WidgetAction-4,ActivateWindow(Videos,special://skin/extras/video/KidsMovies.xsp,return))</onfocus>
 			<onfocus>Skin.SetString(2000-WidgetAction-5,ActivateWindow(Videos,special://skin/extras/video/TopRatedMovies.xsp,return))</onfocus>
-			<onfocus>Skin.SetString(2000-WidgetAction-6,ActivateWindow(Videos,&quot;library://video/movies/sets.xml/&quot;,return))</onfocus>
+			<onfocus>Skin.SetString(2000-WidgetAction-6,ActivateWindow(Videos,"library://video/movies/sets.xml/",return))</onfocus>
 			<onfocus>Skin.Reset(2000-WidgetAction-7)</onfocus>
 			<onfocus>Skin.Reset(2000-WidgetAction-8)</onfocus>
 			<onfocus>Skin.SetString(2000-WidgetLabel-1,$LOCALIZE[31168])</onfocus>

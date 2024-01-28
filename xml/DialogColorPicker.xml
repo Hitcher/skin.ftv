@@ -10,20 +10,21 @@
 			<include>DialogAnimation</include>
 			<centerleft>50%</centerleft>
 			<centertop>50%</centertop>
-			<width>1010</width>
-			<height>879</height>
+			<width>2020</width>
+			<height>1758</height>
 			<!-- Background -->
 			<include content="DialogBack">
-				<param name="dialog_back_width" value="100%"/>
-				<param name="dialog_back_height" value="100%"/>
-				<param name="dialog_shadow_1_visible" value="false"/>
+				<param name="dialog_back_width" value="100%" />
+				<param name="dialog_back_height" value="100%" />
+				<param name="dialog_heading_width" value="100%" />
+				<param name="dialog_shadow_1_visible" value="false" />
 			</include>
 			<!-- Heading -->
 			<control type="label" id="1">
-				<left>40</left>
-				<top>14</top>
-				<height>30</height>
-				<width>938</width>
+				<left>80</left>
+				<top>28</top>
+				<height>60</height>
+				<width>1876</width>
 				<aligny>center</aligny>
 				<font>Bold30</font>
 				<label>1021</label>
@@ -31,10 +32,10 @@
 			</control>
 			<!-- Color picker label -->
 			<control type="label">
-				<right>40</right>
-				<top>14</top>
-				<height>30</height>
-				<width>938</width>
+				<right>80</right>
+				<top>28</top>
+				<height>60</height>
+				<width>1876</width>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>Light30</font>
@@ -43,10 +44,10 @@
 			</control>
 			<!-- Color picker panel -->
 			<control type="panel" id="6">
-				<left>61</left>
-				<top>118</top>
-				<width>900</width>
-				<height>720</height>
+				<left>122</left>
+				<top>236</top>
+				<width>1800</width>
+				<height>1440</height>
 				<onup>6</onup>
 				<ondown>6</ondown>
 				<onleft>9001</onleft>
@@ -54,35 +55,35 @@
 				<orientation>vertical</orientation>
 				<pagecontrol>61</pagecontrol>
 				<viewtype label="100">icon</viewtype>
-				<itemlayout height="90" width="90">
+				<itemlayout height="180" width="180">
 					<control type="group">
 						<control type="image">
-							<width>78</width>
-							<height>78</height>
-							<texture border="2">dialogs/KeyboardButtonNF.png</texture>
+							<width>156</width>
+							<height>156</height>
+							<texture border="4">dialogs/KeyboardButtonNF.png</texture>
 						</control>
 						<control type="image">
-							<top>2</top>
-							<left>2</left>
-							<width>74</width>
-							<height>74</height>
-							<texture border="2">dialogs/white.png</texture>
+							<top>4</top>
+							<left>4</left>
+							<width>148</width>
+							<height>148</height>
+							<texture border="4">dialogs/white.png</texture>
 							<colordiffuse>$INFO[ListItem.Label2]</colordiffuse>
 						</control>
 					</control>
 				</itemlayout>
-				<focusedlayout height="90" width="90">
+				<focusedlayout height="180" width="180">
 					<control type="image">
-						<width>78</width>
-						<height>78</height>
-						<texture border="2">dialogs/KeyboardButtonFO.png</texture>
+						<width>156</width>
+						<height>156</height>
+						<texture border="4">dialogs/KeyboardButtonFO.png</texture>
 					</control>
 					<control type="image">
-						<top>2</top>
-						<left>2</left>
-						<width>74</width>
-						<height>74</height>
-						<texture border="2">dialogs/white.png</texture>
+						<top>4</top>
+						<left>4</left>
+						<width>148</width>
+						<height>148</height>
+						<texture border="4">dialogs/white.png</texture>
 						<colordiffuse>$INFO[ListItem.Label2]</colordiffuse>
 					</control>
 				</focusedlayout>

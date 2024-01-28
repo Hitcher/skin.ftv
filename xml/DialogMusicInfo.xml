@@ -17,9 +17,9 @@
 		</control>
 		<!-- Hidden Description -->
 		<control type="textbox" id="99">
-			<left>-1200</left>
-			<width>792</width>
-			<height>560</height>
+			<left>-2400</left>
+			<width>1584</width>
+			<height>1120</height>
 			<align>left</align>
 			<font>Light30Spaced</font>
 			<pagecontrol>96</pagecontrol>
@@ -29,10 +29,10 @@
 		</control>
 		<!-- Hidden scrollbar -->
 		<control id="96" type="scrollbar">
-			<left>-1200</left>
-			<top>295</top>
-			<width>792</width>
-			<height>560</height>
+			<left>-2400</left>
+			<top>590</top>
+			<width>1584</width>
+			<height>1120</height>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
 		</control>
@@ -47,20 +47,20 @@
 			</control>
 		</control>
 		<control type="group">
-			<left>90</left>
-			<top>99</top>
+			<left>180</left>
+			<top>198</top>
 			<animation effect="fade" end="100" start="0" time="200">WindowOpen</animation>
 			<!-- Icon -->
 			<control type="image">
-				<width>336</width>
-				<height>336</height>
+				<width>672</width>
+				<height>672</height>
 				<texture>$INFO[ListItem.Icon]</texture>
 				<aspectratio>scale</aspectratio>
 			</control>
 			<control id="7000" type="button">
-				<top>374</top>
-				<width>480</width>
-				<height>35</height>
+				<top>748</top>
+				<width>960</width>
+				<height>70</height>
 				<onup condition="!Control.IsVisible(96)">Close</onup>
 				<onup condition="Control.IsVisible(96)">3002</onup>
 				<ondown>7001</ondown>
@@ -75,9 +75,9 @@
 				<animation condition="!String.IsEmpty(Window(home).Property(AlbumDetails))" effect="fade" end="50" start="100" time="0">Conditional</animation>
 			</control>
 			<control id="7001" type="button">
-				<top>429</top>
-				<width>480</width>
-				<height>35</height>
+				<top>858</top>
+				<width>960</width>
+				<height>70</height>
 				<onup>7000</onup>
 				<ondown>noop</ondown>
 				<onleft>Close</onleft>
@@ -93,14 +93,14 @@
 			</control>
 		</control>
 		<control type="group">
-			<left>460</left>
-			<top>99</top>
+			<left>920</left>
+			<top>198</top>
 			<animation effect="fade" end="100" start="0" time="200" delay="400">WindowOpen</animation>
 			<!-- Heading -->
 			<control type="label">
-				<top>-10</top>
-				<width>1170</width>
-				<height>48</height>
+				<top>-20</top>
+				<width>2340</width>
+				<height>96</height>
 				<font>Med48</font>
 				<scroll>true</scroll>
 				<textcolor>ffdadada</textcolor>
@@ -108,18 +108,18 @@
 				<label>$VAR[MusicInfoLabel]</label>
 			</control>
 			<control type="grouplist">
-				<top>57</top>
-				<width>1192</width>
-				<height>171</height>
+				<top>114</top>
+				<width>2384</width>
+				<height>342</height>
 				<itemgap>0</itemgap>
 				<orientation>vertical</orientation>
 				<!-- Composer -->
 				<control type="group">
-					<height>40</height>
+					<height>80</height>
 					<visible>String.IsEqual(ListItem.DBTYPE,song) + !String.IsEmpty(ListItem.Property(Role.Composer))</visible>
 					<control type="textbox">
-						<width>1192</width>
-						<height>40</height>
+						<width>2384</width>
+						<height>80</height>
 						<align>left</align>
 						<font>Reg30Spaced</font>
 						<autoscroll>false</autoscroll>
@@ -129,11 +129,11 @@
 				</control>
 				<!-- Conductor -->
 				<control type="group">
-					<height>40</height>
+					<height>80</height>
 					<visible>String.IsEqual(ListItem.DBTYPE,song) + !String.IsEmpty(ListItem.Property(Role.Conductor))</visible>
 					<control type="textbox">
-						<width>1192</width>
-						<height>40</height>
+						<width>2384</width>
+						<height>80</height>
 						<align>left</align>
 						<font>Reg30Spaced</font>
 						<autoscroll>false</autoscroll>
@@ -143,11 +143,11 @@
 				</control>
 				<!-- Engineer -->
 				<control type="group">
-					<height>40</height>
+					<height>80</height>
 					<visible>String.IsEqual(ListItem.DBTYPE,song) + !String.IsEmpty(ListItem.Property(Role.Engineer))</visible>
 					<control type="textbox">
-						<width>1192</width>
-						<height>40</height>
+						<width>2384</width>
+						<height>80</height>
 						<align>left</align>
 						<font>Reg30Spaced</font>
 						<autoscroll>false</autoscroll>
@@ -157,11 +157,11 @@
 				</control>
 				<!-- DJMixer -->
 				<control type="group">
-					<height>40</height>
+					<height>80</height>
 					<visible>String.IsEqual(ListItem.DBTYPE,song) + !String.IsEmpty(ListItem.Property(Role.DJMixer))</visible>
 					<control type="textbox">
-						<width>1192</width>
-						<height>40</height>
+						<width>2384</width>
+						<height>80</height>
 						<align>left</align>
 						<font>Reg30Spaced</font>
 						<autoscroll>false</autoscroll>
@@ -171,11 +171,11 @@
 				</control>
 				<!-- Formed -->
 				<control type="group">
-					<height>40</height>
+					<height>80</height>
 					<visible>String.IsEqual(ListItem.DBTYPE,artist) + !String.IsEmpty(ListItem.Property(Artist_Formed))</visible>
 					<control type="textbox">
-						<width>1192</width>
-						<height>40</height>
+						<width>2384</width>
+						<height>80</height>
 						<align>left</align>
 						<font>Reg30Spaced</font>
 						<autoscroll>false</autoscroll>
@@ -185,11 +185,11 @@
 				</control>
 				<!-- Year -->
 				<control type="group">
-					<height>40</height>
+					<height>80</height>
 					<visible>String.IsEqual(ListItem.DBTYPE,album) + !String.IsEmpty(ListItem.Year)</visible>
 					<control type="textbox">
-						<width>1192</width>
-						<height>40</height>
+						<width>2384</width>
+						<height>80</height>
 						<align>left</align>
 						<font>Reg30Spaced</font>
 						<autoscroll>false</autoscroll>
@@ -199,10 +199,10 @@
 				</control>
 				<!-- Genre -->
 				<control type="group">
-					<height>40</height>
+					<height>80</height>
 					<control type="textbox">
-						<width>1192</width>
-						<height>40</height>
+						<width>2384</width>
+						<height>80</height>
 						<align>left</align>
 						<font>Reg30Spaced</font>
 						<autoscroll>false</autoscroll>
@@ -212,11 +212,11 @@
 				</control>
 				<!-- Active -->
 				<control type="group">
-					<height>40</height>
+					<height>80</height>
 					<visible>String.IsEqual(ListItem.DBTYPE,artist) + !String.IsEmpty(ListItem.Property(Artist_YearsActive))</visible>
 					<control type="textbox">
-						<width>1192</width>
-						<height>40</height>
+						<width>2384</width>
+						<height>80</height>
 						<align>left</align>
 						<font>Reg30Spaced</font>
 						<autoscroll>false</autoscroll>
@@ -226,11 +226,11 @@
 				</control>
 				<!-- Artist -->
 				<control type="group">
-					<height>40</height>
+					<height>80</height>
 					<visible>String.IsEqual(ListItem.DBTYPE,album) + !String.IsEmpty(ListItem.Artist)</visible>
 					<control type="textbox">
-						<width>1192</width>
-						<height>40</height>
+						<width>2384</width>
+						<height>80</height>
 						<align>left</align>
 						<font>Reg30Spaced</font>
 						<autoscroll>false</autoscroll>
@@ -240,24 +240,24 @@
 				</control>
 				<!-- Star rating / Rating -->
 				<control type="grouplist">
-					<height>40</height>
-					<itemgap>10</itemgap>
+					<height>80</height>
+					<itemgap>20</itemgap>
 					<orientation>horizontal</orientation>
 					<usecontrolcoords>true</usecontrolcoords>
 					<animation effect="fade" end="0" start="100" time="0">Hidden</animation>
 					<animation delay="200" effect="fade" end="100" start="0" time="80">Visible</animation>
 					<control type="image">
-						<top>2</top>
-						<width>148.5</width>
-						<height>26</height>
+						<top>4</top>
+						<width>297</width>
+						<height>52</height>
 						<texture>$INFO[ListItem.UserRating,rating/rating,.png]</texture>
 						<aspectratio align="left">keep</aspectratio>
 						<visible>!String.IsEmpty(ListItem.UserRating)</visible>
 					</control>
 					<control type="label">
-						<top>-18</top>
+						<top>-36</top>
 						<width>auto</width>
-						<height>34</height>
+						<height>68</height>
 						<font>Bold36</font>
 						<aligny>top</aligny>
 						<textcolor>ffbcbcbc</textcolor>
@@ -270,16 +270,16 @@
 				<animation condition="!String.IsEmpty(Window(home).Property(AlbumDetails))" effect="fade" end="0" start="100" time="0">Conditional</animation>
 				<!-- Button grouplist -->
 				<control id="9000" type="grouplist">
-					<left>-12</left>
-					<top>346</top>
-					<width>1620</width>
-					<height>116</height>
+					<left>-24</left>
+					<top>692</top>
+					<width>3240</width>
+					<height>232</height>
 					<itemgap>0</itemgap>
 					<onleft>7000</onleft>
 					<onright>noop</onright>
 					<orientation>horizontal</orientation>
 					<defaultcontrol always="true">9001</defaultcontrol>
-					<animation condition="Control.HasFocus(50)" effect="slide" end="0,-192" start="0,0" time="200">Conditional</animation>
+					<animation condition="Control.HasFocus(50)" effect="slide" end="0,-384" start="0,0" time="200">Conditional</animation>
 					<!-- Dummy to always set focus to first visible button -->
 					<control id="9001" type="button">
 						<width>0</width>
@@ -290,132 +290,132 @@
 					</control>
 					<!-- Play Button -->
 					<control type="button" id="1001">
-						<width min="124" max="204">auto</width>
+						<width min="248" max="408">auto</width>
 						<wrapmultiline>true</wrapmultiline>
-						<height>116</height>
+						<height>232</height>
 						<onup>noop</onup>
 						<ondown>noop</ondown>
 						<onclick>SendClick(8)</onclick>
 						<font>Med24</font>
 						<label>$VAR[MusicInfoButton8]</label>
-						<textoffsetx>28</textoffsetx>
+						<textoffsetx>56</textoffsetx>
 						<textcolor>ffdadada</textcolor>
 						<focusedcolor>ff222222</focusedcolor>
-						<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
-						<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
+						<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
+						<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
 						<visible>Control.IsEnabled(8)</visible>
 					</control>
 					<!-- Refresh Button -->
 					<control type="button" id="6">
-						<width min="124" max="204">auto</width>
+						<width min="248" max="408">auto</width>
 						<wrapmultiline>true</wrapmultiline>
-						<height>116</height>
+						<height>232</height>
 						<onup>noop</onup>
 						<ondown>noop</ondown>
 						<font>Med24</font>
 						<label>$LOCALIZE[184]</label>
-						<textoffsetx>28</textoffsetx>
+						<textoffsetx>56</textoffsetx>
 						<textcolor>ffdadada</textcolor>
 						<focusedcolor>ff222222</focusedcolor>
-						<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
-						<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
+						<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
+						<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
 						<visible>Control.IsEnabled(6)</visible>
 					</control>
 					<!-- User Rating Button -->
 					<control id="1002" type="button">
-						<width min="124" max="204">auto</width>
+						<width min="248" max="408">auto</width>
 						<wrapmultiline>true</wrapmultiline>
-						<height>116</height>
+						<height>232</height>
 						<onup>noop</onup>
 						<ondown>noop</ondown>
 						<onclick>SetProperty(SetUserRating,music,home)</onclick>
 						<onclick>SendClick(7)</onclick>
 						<font>Med24</font>
 						<label>[CAPITALIZE]$LOCALIZE[31235][/CAPITALIZE][CR][COLOR=00ffffff]$LOCALIZE[31236][/COLOR]</label>
-						<textoffsetx>28</textoffsetx>
+						<textoffsetx>56</textoffsetx>
 						<textcolor>ffdadada</textcolor>
 						<focusedcolor>ff222222</focusedcolor>
 						<visible>Control.IsVisible(7)</visible>
-						<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
-						<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
+						<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
+						<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
 					</control>
 					<!-- Get Thumb Button -->
 					<control type="button" id="10">
-						<width min="124" max="204">auto</width>
+						<width min="248" max="408">auto</width>
 						<wrapmultiline>true</wrapmultiline>
-						<height>116</height>
+						<height>232</height>
 						<onup>noop</onup>
 						<ondown>noop</ondown>
 						<font>Med24</font>
 						<label>$LOCALIZE[31062]</label>
-						<textoffsetx>28</textoffsetx>
+						<textoffsetx>56</textoffsetx>
 						<textcolor>ffdadada</textcolor>
 						<focusedcolor>ff222222</focusedcolor>
-						<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
-						<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
+						<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
+						<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
 						<visible>Control.IsEnabled(10)</visible>
 					</control>
 					<!-- Fanart Button -->
 					<control type="button" id="12">
-						<width min="124" max="204">auto</width>
+						<width min="248" max="408">auto</width>
 						<wrapmultiline>true</wrapmultiline>
-						<height>116</height>
+						<height>232</height>
 						<onup>noop</onup>
 						<ondown>noop</ondown>
 						<font>Med24</font>
 						<label>$LOCALIZE[31067]</label>
-						<textoffsetx>28</textoffsetx>
+						<textoffsetx>56</textoffsetx>
 						<textcolor>ffdadada</textcolor>
 						<focusedcolor>ff222222</focusedcolor>
-						<texturefocus border="14,6,5,7">views/button_fo.png</texturefocus>
-						<texturenofocus border="16,6,6,6">views/button_nf.png</texturenofocus>
+						<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
+						<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
 						<visible>Control.IsEnabled(12) + !String.IsEmpty(ListItem.Album)</visible>
 					</control>
 				</control>
 				<!-- Dummy Button grouplist -->
 				<control type="grouplist">
-					<left>-12</left>
-					<top>346</top>
-					<width>1620</width>
-					<height>116</height>
+					<left>-24</left>
+					<top>692</top>
+					<width>3240</width>
+					<height>232</height>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
 					<usecontrolcoords>true</usecontrolcoords>
-					<animation condition="Control.HasFocus(50)" effect="slide" end="0,-192" start="0,0" time="200">Conditional</animation>
+					<animation condition="Control.HasFocus(50)" effect="slide" end="0,-384" start="0,0" time="200">Conditional</animation>
 					<!-- Play Button -->
 					<control type="button">
-						<width min="124" max="204">auto</width>
+						<width min="248" max="408">auto</width>
 						<wrapmultiline>true</wrapmultiline>
-						<height>116</height>
+						<height>232</height>
 						<font>Med24</font>
 						<label>$INFO[Control.GetLabel(1001)]</label>
-						<textoffsetx>28</textoffsetx>
+						<textoffsetx>56</textoffsetx>
 						<textcolor>00ffffff</textcolor>
 						<focusedcolor>00ffffff</focusedcolor>
-						<texturefocus/>
-						<texturenofocus/>
+						<texturefocus />
+						<texturenofocus />
 						<visible>Control.IsEnabled(8)</visible>
 					</control>
 					<!-- Refresh Button -->
 					<control type="button">
-						<width min="124" max="204">auto</width>
+						<width min="248" max="408">auto</width>
 						<wrapmultiline>true</wrapmultiline>
-						<height>116</height>
+						<height>232</height>
 						<font>Med24</font>
 						<label>$INFO[Control.GetLabel(6)]</label>
-						<textoffsetx>28</textoffsetx>
+						<textoffsetx>56</textoffsetx>
 						<textcolor>00ffffff</textcolor>
 						<focusedcolor>00ffffff</focusedcolor>
-						<texturefocus/>
-						<texturenofocus/>
+						<texturefocus />
+						<texturenofocus />
 						<visible>Control.IsVisible(6)</visible>
 					</control>
 					<!-- User Rating Button -->
 					<control type="image">
-						<left>29</left>
-						<top>65</top>
-						<width>115</width>
-						<height>22</height>
+						<left>58</left>
+						<top>130</top>
+						<width>230</width>
+						<height>44</height>
 						<visible>Control.IsVisible(7)</visible>
 						<texture>$VAR[UserRatingButton]</texture>
 					</control>
@@ -426,17 +426,17 @@
 				<animation effect="fade" end="100" start="0" time="200" delay="800">WindowOpen</animation>
 				<!-- Fanart -->
 				<control type="image">
-					<left>-48</left>
-					<top>456</top>
-					<width>761</width>
-					<height>470</height>
-					<texture border="50">views/shadow_nf.png</texture>
+					<left>-96</left>
+					<top>912</top>
+					<width>1522</width>
+					<height>940</height>
+					<texture border="100">views/shadow_nf.png</texture>
 					<visible>!String.IsEmpty(ListItem.Art(fanart))</visible>
 				</control>
 				<control type="image">
-					<top>504</top>
-					<width>665</width>
-					<height>374</height>
+					<top>1008</top>
+					<width>1330</width>
+					<height>748</height>
 					<texture>$INFO[ListItem.Art(fanart)]</texture>
 				</control>
 			</control>
@@ -444,9 +444,9 @@
 				<animation condition="String.IsEmpty(Window(home).Property(AlbumDetails))" effect="fade" end="0" start="100" time="0">Conditional</animation>
 				<!-- Description -->
 				<control type="label">
-					<top>235</top>
-					<width>792</width>
-					<height>32</height>
+					<top>470</top>
+					<width>1584</width>
+					<height>64</height>
 					<align>left</align>
 					<font>Med32</font>
 					<textcolor>ffdadada</textcolor>
@@ -454,9 +454,9 @@
 				</control>
 				<!-- Info -->
 				<control type="textbox">
-					<top>296</top>
-					<width>792</width>
-					<height>560</height>
+					<top>592</top>
+					<width>1584</width>
+					<height>1120</height>
 					<align>left</align>
 					<font>Light30Spaced</font>
 					<autoscroll>false</autoscroll>
@@ -465,10 +465,10 @@
 				</control>
 				<!-- More button -->
 				<control id="3002" type="button">
-					<left>794</left>
-					<top>816</top>
-					<width>37</width>
-					<height>23</height>
+					<left>1588</left>
+					<top>1632</top>
+					<width>74</width>
+					<height>46</height>
 					<onleft>7001</onleft>
 					<onright>50</onright>
 					<onclick>RunScript(script.skinvariables,run_dialog=textviewer,heading='empty',text='$ESCVAR[MusicInfoDescription]')</onclick>
@@ -478,10 +478,10 @@
 				</control>
 				<!-- Albums -->
 				<control type="label">
-					<left>900</left>
-					<top>235</top>
-					<width>470</width>
-					<height>32</height>
+					<left>1800</left>
+					<top>470</top>
+					<width>940</width>
+					<height>64</height>
 					<align>left</align>
 					<font>Med32</font>
 					<textcolor>ffdadada</textcolor>
@@ -490,10 +490,10 @@
 				</control>
 				<!-- Tracks -->
 				<control type="label">
-					<left>900</left>
-					<top>235</top>
-					<width>470</width>
-					<height>32</height>
+					<left>1800</left>
+					<top>470</top>
+					<width>940</width>
+					<height>64</height>
 					<align>left</align>
 					<font>Med32</font>
 					<textcolor>ffdadada</textcolor>
@@ -501,15 +501,15 @@
 					<visible>String.IsEqual(ListItem.DBTYPE,album) + !String.IsEmpty(Container(50).ListItem.Label)</visible>
 				</control>
 				<control type="list" id="50">
-					<left>900</left>
-					<top>293</top>
-					<width>470</width>
-					<height>560</height>
+					<left>1800</left>
+					<top>586</top>
+					<width>940</width>
+					<height>1120</height>
 					<onleft>7001</onleft>
-					<itemlayout width="470" height="40">
+					<itemlayout width="940" height="80">
 						<control type="label">
-							<width>470</width>
-							<height>40</height>
+							<width>940</width>
+							<height>80</height>
 							<align>left</align>
 							<font>Light30</font>
 							<textcolor>ff646668</textcolor>
@@ -517,8 +517,8 @@
 							<visible>String.IsEqual(ListItem.DBTYPE,song)</visible>
 						</control>
 						<control type="label">
-							<width>470</width>
-							<height>40</height>
+							<width>940</width>
+							<height>80</height>
 							<align>left</align>
 							<font>Light30</font>
 							<textcolor>ffd8d8d8</textcolor>
@@ -526,8 +526,8 @@
 							<visible>String.IsEqual(ListItem.DBTYPE,album)</visible>
 						</control>
 						<control type="label">
-							<width>470</width>
-							<height>40</height>
+							<width>940</width>
+							<height>80</height>
 							<align>left</align>
 							<font>Light30</font>
 							<textcolor>ffd8d8d8</textcolor>
@@ -535,12 +535,12 @@
 							<visible>String.IsEqual(ListItem.DBTYPE,artist)</visible>
 						</control>
 					</itemlayout>
-					<focusedlayout width="470" height="40">
+					<focusedlayout width="940" height="80">
 						<control type="group">
 							<visible>!Control.HasFocus(50)</visible>
 							<control type="label">
-								<width>470</width>
-								<height>40</height>
+								<width>940</width>
+								<height>80</height>
 								<align>left</align>
 								<font>Light30</font>
 								<textcolor>ff646668</textcolor>
@@ -548,8 +548,8 @@
 								<visible>String.IsEqual(ListItem.DBTYPE,song)</visible>
 							</control>
 							<control type="label">
-								<width>470</width>
-								<height>40</height>
+								<width>940</width>
+								<height>80</height>
 								<align>left</align>
 								<font>Light30</font>
 								<textcolor>ffd8d8d8</textcolor>
@@ -557,8 +557,8 @@
 								<visible>String.IsEqual(ListItem.DBTYPE,album)</visible>
 							</control>
 							<control type="label">
-								<width>470</width>
-								<height>40</height>
+								<width>940</width>
+								<height>80</height>
 								<align>left</align>
 								<font>Light30</font>
 								<textcolor>ffd8d8d8</textcolor>
@@ -569,8 +569,8 @@
 						<control type="group">
 							<visible>Control.HasFocus(50)</visible>
 							<control type="label">
-								<width>470</width>
-								<height>40</height>
+								<width>940</width>
+								<height>80</height>
 								<align>left</align>
 								<font>Light30</font>
 								<textcolor>ffe9a01e</textcolor>
@@ -578,8 +578,8 @@
 								<visible>String.IsEqual(ListItem.DBTYPE,song)</visible>
 							</control>
 							<control type="label">
-								<width>470</width>
-								<height>40</height>
+								<width>940</width>
+								<height>80</height>
 								<align>left</align>
 								<font>Light30</font>
 								<textcolor>ffe9a01e</textcolor>
@@ -587,8 +587,8 @@
 								<visible>String.IsEqual(ListItem.DBTYPE,album)</visible>
 							</control>
 							<control type="label">
-								<width>470</width>
-								<height>40</height>
+								<width>940</width>
+								<height>80</height>
 								<align>left</align>
 								<font>Light30</font>
 								<textcolor>ffe9a01e</textcolor>

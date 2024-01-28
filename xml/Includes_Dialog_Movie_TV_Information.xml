@@ -3,9 +3,9 @@
 	<include name="Includes_Dialog_Movie_TV_Information">
 		<!-- Hidden Plot -->
 		<control type="textbox">
-			<left>-1200</left>
-			<width>1192</width>
-			<height>122</height>
+			<left>-2400</left>
+			<width>2384</width>
+			<height>244</height>
 			<align>left</align>
 			<font>Light30Spaced</font>
 			<pagecontrol>96</pagecontrol>
@@ -15,9 +15,9 @@
 		</control>
 		<!-- Hidden scrollbar -->
 		<control id="96" type="scrollbar">
-			<left>-1200</left>
-			<width>1192</width>
-			<height>122</height>
+			<left>-2400</left>
+			<width>2384</width>
+			<height>244</height>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
 		</control>
@@ -38,21 +38,21 @@
 			<visible>String.IsEmpty(Window(home).Property(ShowXRay))</visible>
 		</control>
 		<control type="group">
-			<left>90</left>
-			<top>99</top>
+			<left>180</left>
+			<top>198</top>
 			<include>DialogVideoInfoAnimation</include>
 			<animation effect="fade" end="100" start="0" time="200">WindowOpen</animation>
 			<!-- Icon -->
 			<control type="image">
-				<width>320</width>
-				<height>480</height>
+				<width>640</width>
+				<height>960</height>
 				<texture>$VAR[VideoInfoImage]</texture>
 				<aspectratio aligny="center">scale</aspectratio>
 			</control>
 			<control id="7000" type="button">
-				<top>518</top>
-				<width>480</width>
-				<height>35</height>
+				<top>1036</top>
+				<width>960</width>
+				<height>70</height>
 				<onup condition="!Control.IsVisible(96)">Close</onup>
 				<onup condition="Control.IsVisible(96)">3000</onup>
 				<ondown>7001</ondown>
@@ -67,9 +67,9 @@
 				<animation condition="!String.IsEmpty(Window(home).Property(RecommendedVideos))" effect="fade" end="50" start="100" time="0">Conditional</animation>
 			</control>
 			<control id="7001" type="button">
-				<top>573</top>
-				<width>480</width>
-				<height>35</height>
+				<top>1146</top>
+				<width>960</width>
+				<height>70</height>
 				<onup>7000</onup>
 				<ondown>noop</ondown>
 				<onleft>Close</onleft>
@@ -84,14 +84,14 @@
 			</control>
 		</control>
 		<control type="group">
-			<left>475</left>
-			<top>99</top>
+			<left>950</left>
+			<top>198</top>
 			<animation effect="fade" end="100" start="0" time="200" delay="400">WindowOpen</animation>
 			<!-- Heading -->
 			<control type="label">
-				<top>-7</top>
-				<width>1170</width>
-				<height>48</height>
+				<top>-14</top>
+				<width>2340</width>
+				<height>96</height>
 				<font>Med48</font>
 				<scroll>true</scroll>
 				<textcolor>ffdadada</textcolor>
@@ -101,18 +101,18 @@
 			</control>
 			<!-- Year / Runtime / Rating -->
 			<control type="grouplist">
-				<top>60</top>
-				<height>32</height>
-				<itemgap>22</itemgap>
+				<top>120</top>
+				<height>64</height>
+				<itemgap>44</itemgap>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
 				<visible>!Control.HasFocus(500)</visible>
 				<animation effect="fade" end="0" start="100" time="0">Hidden</animation>
 				<animation delay="200" effect="fade" end="100" start="0" time="80">Visible</animation>
 				<control type="label">
-					<top>-6</top>
+					<top>-12</top>
 					<width>auto</width>
-					<height>32</height>
+					<height>64</height>
 					<font>Light32</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffbebebe</textcolor>
@@ -120,9 +120,9 @@
 					<visible>!String.IsEmpty(ListItem.Year)</visible>
 				</control>
 				<control type="label">
-					<top>-6</top>
+					<top>-12</top>
 					<width>auto</width>
-					<height>32</height>
+					<height>64</height>
 					<font>Light32</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffbebebe</textcolor>
@@ -130,40 +130,40 @@
 					<visible>!String.IsEmpty(ListItem.Duration)</visible>
 				</control>
 				<control type="button">
-					<top>3</top>
+					<top>6</top>
 					<width>auto</width>
-					<height>23</height>
+					<height>46</height>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>Med16</font>
 					<label>$INFO[ListItem.Mpaa,  ,  ]</label>
 					<textcolor>$VAR[RatingTextColour]</textcolor>
-					<texturefocus colordiffuse="$VAR[RatingButtonColour]" border="3">rating/flag.png</texturefocus>
-					<texturenofocus colordiffuse="$VAR[RatingButtonColour]" border="3">rating/flag.png</texturenofocus>
+					<texturefocus colordiffuse="$VAR[RatingButtonColour]" border="6">rating/flag.png</texturefocus>
+					<texturenofocus colordiffuse="$VAR[RatingButtonColour]" border="6">rating/flag.png</texturenofocus>
 					<visible>!String.IsEmpty(ListItem.Mpaa)</visible>
 				</control>
 			</control>
 			<!-- Star rating / Rating -->
 			<control type="grouplist">
-				<top>100</top>
-				<height>40</height>
-				<itemgap>10</itemgap>
+				<top>200</top>
+				<height>80</height>
+				<itemgap>20</itemgap>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
 				<visible>!Control.HasFocus(500)</visible>
 				<animation effect="fade" end="0" start="100" time="0">Hidden</animation>
 				<animation delay="200" effect="fade" end="100" start="0" time="80">Visible</animation>
 				<control type="image">
-					<top>3</top>
-					<width>54</width>
-					<height>23</height>
+					<top>6</top>
+					<width>108</width>
+					<height>46</height>
 					<texture>views/logos/tmdb.png</texture>
 					<visible>!String.IsEmpty(ListItem.Rating)</visible>
 				</control>
 				<control type="label">
-					<top>-13</top>
+					<top>-26</top>
 					<width>auto</width>
-					<height>34</height>
+					<height>68</height>
 					<font>Bold30</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffbcbcbc</textcolor>
@@ -172,18 +172,18 @@
 				</control>
 			</control>
 			<control type="grouplist">
-				<top>156</top>
-				<width>2800</width>
-				<height>1400</height>
+				<top>312</top>
+				<width>5600</width>
+				<height>2800</height>
 				<itemgap>0</itemgap>
 				<ondown>500</ondown>
 				<orientation>vertical</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
-				<animation condition="Control.HasFocus(500)" effect="slide" end="0,-91" start="0,0" time="200">Conditional</animation>
+				<animation condition="Control.HasFocus(500)" effect="slide" end="0,-182" start="0,0" time="200">Conditional</animation>
 				<!-- Plot -->
 				<control type="textbox">
-					<width>1192</width>
-					<height max="122">auto</height>
+					<width>2384</width>
+					<height max="244">auto</height>
 					<align>left</align>
 					<font>Light30Spaced</font>
 					<autoscroll>false</autoscroll>
@@ -198,10 +198,10 @@
 				</control>
 				<!-- More button -->
 				<control id="3000" type="button">
-					<left>1194</left>
-					<top>-38</top>
-					<width>37</width>
-					<height>23</height>
+					<left>2388</left>
+					<top>-76</top>
+					<width>74</width>
+					<height>46</height>
 					<onup>Close</onup>
 					<onleft>7000</onleft>
 					<onright>noop</onright>
@@ -214,9 +214,9 @@
 			</control>
 			<!-- Starring -->
 			<control type="grouplist">
-				<top>297</top>
-				<height>40</height>
-				<itemgap>20</itemgap>
+				<top>594</top>
+				<height>80</height>
+				<itemgap>40</itemgap>
 				<include>DialogVideoInfoAnimation</include>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
@@ -225,16 +225,16 @@
 				<animation condition="!Control.HasFocus(500)" delay="200" effect="fade" end="100" start="0" time="80">Conditional</animation>
 				<control type="label">
 					<width>auto</width>
-					<height>24</height>
+					<height>48</height>
 					<font>Med30</font>
 					<aligny>bottom</aligny>
 					<textcolor>ff717171</textcolor>
 					<label>$LOCALIZE[31071]:</label>
 				</control>
 				<control type="label">
-					<top>-1</top>
-					<width max="1024">auto</width>
-					<height>24</height>
+					<top>-2</top>
+					<width max="2048">auto</width>
+					<height>48</height>
 					<font>Light30Spaced</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffbcbcbc</textcolor>
@@ -243,10 +243,10 @@
 			</control>
 			<!-- Director -->
 			<control type="grouplist">
-				<top>339</top>
-				<width>1192</width>
-				<height>40</height>
-				<itemgap>20</itemgap>
+				<top>678</top>
+				<width>2384</width>
+				<height>80</height>
+				<itemgap>40</itemgap>
 				<include>DialogVideoInfoAnimation</include>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
@@ -255,16 +255,16 @@
 				<animation condition="!Control.HasFocus(500)" delay="200" effect="fade" end="100" start="0" time="80">Conditional</animation>
 				<control type="label">
 					<width>auto</width>
-					<height>24</height>
+					<height>48</height>
 					<font>Med30</font>
 					<aligny>bottom</aligny>
 					<textcolor>ff717171</textcolor>
 					<label>$LOCALIZE[31072]:</label>
 				</control>
 				<control type="label">
-					<top>-1</top>
+					<top>-2</top>
 					<width>auto</width>
-					<height>24</height>
+					<height>48</height>
 					<font>Light30Spaced</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffbcbcbc</textcolor>
@@ -273,10 +273,10 @@
 			</control>
 			<!-- Next Airs -->
 			<control type="grouplist">
-				<top>339</top>
-				<width>1192</width>
-				<height>40</height>
-				<itemgap>20</itemgap>
+				<top>678</top>
+				<width>2384</width>
+				<height>80</height>
+				<itemgap>40</itemgap>
 				<include>DialogVideoInfoAnimation</include>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
@@ -285,16 +285,16 @@
 				<animation condition="!Control.HasFocus(500)" delay="200" effect="fade" end="100" start="0" time="80">Conditional</animation>
 				<control type="label">
 					<width>auto</width>
-					<height>24</height>
+					<height>48</height>
 					<font>Med30</font>
 					<aligny>bottom</aligny>
 					<textcolor>ff717171</textcolor>
 					<label>$VAR[AiredPrefix]</label>
 				</control>
 				<control type="label">
-					<top>-1</top>
+					<top>-2</top>
 					<width>auto</width>
-					<height>24</height>
+					<height>48</height>
 					<font>Light30Spaced</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffbcbcbc</textcolor>
@@ -303,16 +303,16 @@
 			</control>
 		</control>
 		<control type="group">
-			<left>-100</left>
-			<top>686</top>
+			<left>-200</left>
+			<top>1372</top>
 			<animation effect="fade" end="100" start="0" time="200" delay="800">WindowOpen</animation>
 			<animation condition="Container(500).IsUpdating" effect="fade" end="0" start="100" time="200">Conditional</animation>
 			<!-- Cast label -->
 			<control type="label">
-				<top>-157</top>
-				<left>575</left>
-				<width>1000</width>
-				<height>32</height>
+				<top>-314</top>
+				<left>1150</left>
+				<width>2000</width>
+				<height>64</height>
 				<font>Med32</font>
 				<textcolor>$VAR[ExtendedInfoLabelColor]</textcolor>
 				<label>$VAR[VideoInfoLabelHeading]</label>
@@ -322,10 +322,10 @@
 			</control>
 			<!-- No info found -->
 			<control type="label">
-				<top>-157</top>
-				<left>575</left>
-				<width>1000</width>
-				<height>32</height>
+				<top>-314</top>
+				<left>1150</left>
+				<width>2000</width>
+				<height>64</height>
 				<font>Med54</font>
 				<textcolor>ffbebebe</textcolor>
 				<label>$LOCALIZE[31078]</label>
@@ -336,10 +336,10 @@
 			</control>
 			<!-- Cast -->
 			<control id="500" type="fixedlist">
-				<left>-25</left>
-				<top>-271</top>
-				<width>2400</width>
-				<height>576</height>
+				<left>-50</left>
+				<top>-542</top>
+				<width>4800</width>
+				<height>1152</height>
 				<onclick condition="String.IsEmpty(Window(home).Property(RecommendedVideos))">RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Container(500).ListItem.Label],type=person,call_auto=1113)</onclick>
 				<onclick condition="!String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEqual(ListItem.DBTYPE,movie)">RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Container(500).ListItem.Label],type=movie,call_auto=1113)</onclick>
 				<onclick condition="!String.IsEmpty(Window(home).Property(RecommendedVideos)) + !String.IsEqual(ListItem.DBTYPE,movie)">RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Container(500).ListItem.Label],type=tv,call_auto=1113)</onclick>
@@ -363,48 +363,48 @@
 				<include>ListBounceAnimation</include>
 				<animation delay="300" effect="fade" end="100" start="0" time="300">Visible</animation>
 				<animation effect="fade" end="0" start="100" time="300">Hidden</animation>
-				<animation center="480,212" condition="!Control.HasFocus(500)" easing="inout" effect="zoom" end="81" start="100" time="300" tween="sine">Conditional</animation>
-				<itemlayout height="576" width="300">
+				<animation center="960,424" condition="!Control.HasFocus(500)" easing="inout" effect="zoom" end="81" start="100" time="300" tween="sine">Conditional</animation>
+				<itemlayout height="1152" width="600">
 					<control type="group">
-						<animation center="150,288" condition="true" effect="zoom" end="85" start="85">Conditional</animation>
+						<animation center="300,576" condition="true" effect="zoom" end="85" start="85">Conditional</animation>
 						<control type="image">
-							<left>-48</left>
-							<centertop>288</centertop>
-							<width>416</width>
-							<height>576</height>
-							<texture border="50">views/shadow_nf.png</texture>
+							<left>-96</left>
+							<centertop>576</centertop>
+							<width>832</width>
+							<height>1152</height>
+							<texture border="100">views/shadow_nf.png</texture>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>320</width>
-							<height>480</height>
+							<top>96</top>
+							<width>640</width>
+							<height>960</height>
 							<aspectratio align="center">scale</aspectratio>
 							<texture background="true">$VAR[DialogSelectImage]</texture>
 						</control>
 						<control type="image">
-							<bottom>48</bottom>
-							<width>320</width>
-							<height>165</height>
-							<texture border="2">views/default_overlay.png</texture>
+							<bottom>96</bottom>
+							<width>640</width>
+							<height>330</height>
+							<texture border="4">views/default_overlay.png</texture>
 							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label) + String.IsEmpty(Window(home).Property(RecommendedVideos))</visible>
 						</control>
 						<control type="label">
-							<left>18</left>
-							<top>412</top>
-							<width>290</width>
-							<height>42</height>
+							<left>36</left>
+							<top>824</top>
+							<width>580</width>
+							<height>84</height>
 							<font>Bold42</font>
 							<textcolor>ffffffff</textcolor>
 							<shadowcolor>ShadowColour</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label) + String.IsEmpty(Window(home).Property(RecommendedVideos))</visible>
-							<animation condition="String.IsEmpty(ListItem.Label2)" effect="slide" end="0,31" start="0,0" time="0">Conditional</animation>
+							<animation condition="String.IsEmpty(ListItem.Label2)" effect="slide" end="0,62" start="0,0" time="0">Conditional</animation>
 						</control>
 						<control type="label">
-							<left>18</left>
-							<top>463</top>
-							<width>290</width>
-							<height>28</height>
+							<left>36</left>
+							<top>926</top>
+							<width>580</width>
+							<height>56</height>
 							<font>Med28</font>
 							<scroll>false</scroll>
 							<textcolor>ffffffff</textcolor>
@@ -413,78 +413,78 @@
 							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label2)</visible>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>320</width>
-							<height>480</height>
+							<top>96</top>
+							<width>640</width>
+							<height>960</height>
 							<texture>views/OverlayNF.png</texture>
 							<visible>Control.HasFocus(500)</visible>
 							<animation center="auto" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">VisibleChange</animation>
 						</control>
 					</control>
 				</itemlayout>
-				<focusedlayout height="576" width="300">
+				<focusedlayout height="1152" width="600">
 					<control type="group">
-						<animation center="150,288" condition="Control.HasFocus(500) + [Container(500).OnNext | Container(500).OnPrevious]" easing="inout" effect="zoom" end="100" start="85" time="300" tween="sine">Focus</animation>
-						<animation center="150,288" condition="Control.HasFocus(500) + [Container(500).OnNext | Container(500).OnPrevious]" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">UnFocus</animation>
-						<animation center="150,288" condition="!Control.HasFocus(500)" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">Conditional</animation>
+						<animation center="300,576" condition="Control.HasFocus(500) + [Container(500).OnNext | Container(500).OnPrevious]" easing="inout" effect="zoom" end="100" start="85" time="300" tween="sine">Focus</animation>
+						<animation center="300,576" condition="Control.HasFocus(500) + [Container(500).OnNext | Container(500).OnPrevious]" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">UnFocus</animation>
+						<animation center="300,576" condition="!Control.HasFocus(500)" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">Conditional</animation>
 						<control type="image">
-							<left>-48</left>
-							<centertop>288</centertop>
-							<width>416</width>
-							<height>576</height>
-							<texture border="50">views/shadow_fo.png</texture>
+							<left>-96</left>
+							<centertop>576</centertop>
+							<width>832</width>
+							<height>1152</height>
+							<texture border="100">views/shadow_fo.png</texture>
 							<include content="ContainerMoveFadeAnimation">
-								<param name="ListID" value="500"/>
+								<param name="ListID" value="500" />
 							</include>
 						</control>
 						<control type="image">
-							<left>-48</left>
-							<centertop>288</centertop>
-							<width>416</width>
-							<height>576</height>
-							<texture border="50">views/shadow_nf.png</texture>
+							<left>-96</left>
+							<centertop>576</centertop>
+							<width>832</width>
+							<height>1152</height>
+							<texture border="100">views/shadow_nf.png</texture>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="500"/>
+								<param name="ListID" value="500" />
 							</include>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>320</width>
-							<height>480</height>
+							<top>96</top>
+							<width>640</width>
+							<height>960</height>
 							<aspectratio align="center">scale</aspectratio>
 							<texture background="true">$VAR[DialogSelectImage]</texture>
 						</control>
 						<control type="image">
-							<bottom>48</bottom>
-							<width>320</width>
-							<height>165</height>
-							<texture border="2">views/default_overlay.png</texture>
+							<bottom>96</bottom>
+							<width>640</width>
+							<height>330</height>
+							<texture border="4">views/default_overlay.png</texture>
 							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label) + String.IsEmpty(Window(home).Property(RecommendedVideos))</visible>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="500"/>
+								<param name="ListID" value="500" />
 							</include>
 						</control>
 						<control type="label">
-							<left>18</left>
-							<top>412</top>
-							<width>290</width>
-							<height>42</height>
+							<left>36</left>
+							<top>824</top>
+							<width>580</width>
+							<height>84</height>
 							<font>Bold42</font>
 							<scroll>false</scroll>
 							<textcolor>ffffffff</textcolor>
 							<shadowcolor>ShadowColour</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label) + String.IsEmpty(Window(home).Property(RecommendedVideos))</visible>
-							<animation condition="String.IsEmpty(ListItem.Label2)" effect="slide" end="0,31" start="0,0" time="0">Conditional</animation>
+							<animation condition="String.IsEmpty(ListItem.Label2)" effect="slide" end="0,62" start="0,0" time="0">Conditional</animation>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="500"/>
+								<param name="ListID" value="500" />
 							</include>
 						</control>
 						<control type="label">
-							<left>18</left>
-							<top>463</top>
-							<width>290</width>
-							<height>28</height>
+							<left>36</left>
+							<top>926</top>
+							<width>580</width>
+							<height>56</height>
 							<font>Med28</font>
 							<scroll>false</scroll>
 							<textcolor>ffffffff</textcolor>
@@ -492,17 +492,17 @@
 							<label>$INFO[ListItem.Label2,$LOCALIZE[20347] ,]</label>
 							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label2)</visible>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="500"/>
+								<param name="ListID" value="500" />
 							</include>
 						</control>
 						<control type="image">
-							<top>48</top>
-							<width>320</width>
-							<height>480</height>
+							<top>96</top>
+							<width>640</width>
+							<height>960</height>
 							<texture>views/OverlayNF.png</texture>
 							<visible>Control.HasFocus(500)</visible>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="500"/>
+								<param name="ListID" value="500" />
 							</include>
 						</control>
 					</control>
@@ -511,11 +511,11 @@
 			</control>
 			<!-- Info -->
 			<control type="grouplist">
-				<left>575</left>
-				<top>277</top>
-				<width>1192</width>
-				<height>40</height>
-				<itemgap>8</itemgap>
+				<left>1150</left>
+				<top>554</top>
+				<width>2384</width>
+				<height>80</height>
+				<itemgap>16</itemgap>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
 				<visible>Control.HasFocus(500)</visible>
@@ -523,16 +523,16 @@
 				<animation effect="fade" end="0" start="100" time="0">Hidden</animation>
 				<control type="label">
 					<width>auto</width>
-					<height>36</height>
+					<height>72</height>
 					<align>left</align>
 					<font>Bold31</font>
 					<textcolor>ffbcbcbc</textcolor>
 					<label>$INFO[Container(500).ListItem.Label]</label>
 				</control>
 				<control type="label">
-					<top>7</top>
+					<top>14</top>
 					<width>auto</width>
-					<height>29</height>
+					<height>58</height>
 					<align>left</align>
 					<font>Light24</font>
 					<textcolor>ffbcbcbc</textcolor>
@@ -542,19 +542,19 @@
 		</control>
 		<!-- Busy -->
 		<control type="group">
-			<left>571</left>
-			<top>693</top>
+			<left>1142</left>
+			<top>1386</top>
 			<visible>Container(500).IsUpdating</visible>
 			<animation effect="fade" end="0" start="100" delay="200">Visible</animation>
 			<control type="image">
-				<width>94</width>
-				<height>94</height>
+				<width>188</width>
+				<height>188</height>
 				<texture>common/spinner_outer.png</texture>
 				<animation effect="rotate" end="-360" center="auto" time="1120" loop="true" reversible="false" condition="true">Conditional</animation>
 			</control>
 			<control type="image">
-				<width>94</width>
-				<height>94</height>
+				<width>188</width>
+				<height>188</height>
 				<texture>common/spinner_inner.png</texture>
 				<animation effect="rotate" end="360" center="auto" time="1680" loop="true" reversible="false" condition="true">Conditional</animation>
 			</control>

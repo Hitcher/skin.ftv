@@ -5,10 +5,10 @@
 			<visible>Control.IsVisible(50)</visible>
 			<!-- Square -->
 			<control id="50" type="fixedlist">
-				<left>-238</left>
-				<top>242</top>
-				<width>2200</width>
-				<height>576</height>
+				<left>-476</left>
+				<top>484</top>
+				<width>4400</width>
+				<height>1152</height>
 				<onback condition="!String.IsEqual(Container(50).CurrentItem,0)">Control.Move(50,$INFO[Container(50).CurrentItem,-])</onback>
 				<onback condition="!String.IsEqual(Container(50).CurrentItem,0)">Control.Move(50,1)</onback>
 				<onup>Back</onup>
@@ -25,52 +25,52 @@
 				<visible>$EXP[Exp_View_50]</visible>
 				<include>ListBounceAnimation</include>
 				<include content="HomeToWindowSlideAnimation">
-					<param name="FocusRowID1_1" value="193,10"/>
-					<param name="FocusRowID1_2" value="497,-175"/>
-					<param name="FocusRowID2_2" value="497,195"/>
-					<param name="FocusRowID1_3" value="497,-246"/>
-					<param name="FocusRowID2_3" value="497,10"/>
-					<param name="FocusRowID3_3" value="497,168"/>
+					<param name="FocusRowID1_1" value="386,20"/>
+					<param name="FocusRowID1_2" value="994,-350"/>
+					<param name="FocusRowID2_2" value="994,390"/>
+					<param name="FocusRowID1_3" value="994,-492"/>
+					<param name="FocusRowID2_3" value="994,20"/>
+					<param name="FocusRowID3_3" value="994,336"/>
 				</include>
-				<itemlayout height="576" width="436">
+				<itemlayout height="1152" width="872">
 					<control type="group">
-						<animation center="250,288" condition="true" effect="zoom" end="85" start="85">Conditional</animation>
+						<animation center="500,576" condition="true" effect="zoom" end="85" start="85">Conditional</animation>
 						<control type="image">
-							<left>-48</left>
-							<centertop>288</centertop>
-							<width>576</width>
-							<height>576</height>
-							<texture border="50">views/shadow_nf.png</texture>
+							<left>-96</left>
+							<centertop>576</centertop>
+							<width>1152</width>
+							<height>1152</height>
+							<texture border="100">views/shadow_nf.png</texture>
 						</control>
 						<control type="group">
 							<include>ItemListFadeDiffuseAnimation</include>
 							<control type="image">
-								<top>48</top>
-								<width>480</width>
-								<height>480</height>
+								<top>96</top>
+								<width>960</width>
+								<height>960</height>
 								<aspectratio align="center">scale</aspectratio>
 								<texture background="true" fallback="views/square_fallback.png">$VAR[SquareImage]</texture>
 							</control>
 							<control type="image">
-								<bottom>48</bottom>
-								<width>480</width>
-								<height>125</height>
-								<texture border="2">views/default_overlay.png</texture>
+								<bottom>96</bottom>
+								<width>960</width>
+								<height>250</height>
+								<texture border="4">views/default_overlay.png</texture>
 								<visible>!ListItem.IsParentFolder + !String.Contains(ListItem.Icon,Default)</visible>
 							</control>
 							<control type="image">
-								<left>17</left>
-								<top>419</top>
-								<width>62</width>
-								<height>62</height>
+								<left>34</left>
+								<top>838</top>
+								<width>124</width>
+								<height>124</height>
 								<texture>views/equaliser.gif</texture>
 								<visible>Player.Playing + String.IsEqual(MusicPlayer.Album,ListItem.Album) + Container.Content(albums)</visible>
 							</control>
 							<control type="label">
-								<left>98</left>
-								<top>447</top>
-								<width>366</width>
-								<height>42</height>
+								<left>196</left>
+								<top>894</top>
+								<width>732</width>
+								<height>84</height>
 								<font>Bold44</font>
 								<scroll>false</scroll>
 								<textcolor>ffffffff</textcolor>
@@ -79,10 +79,10 @@
 								<visible>!ListItem.IsParentFolder + Player.Playing + String.IsEqual(MusicPlayer.Album,ListItem.Album) + Container.Content(albums)</visible>
 							</control>
 							<control type="label">
-								<left>18</left>
-								<top>447</top>
-								<width>446</width>
-								<height>42</height>
+								<left>36</left>
+								<top>894</top>
+								<width>892</width>
+								<height>84</height>
 								<font>Bold44</font>
 								<scroll>false</scroll>
 								<textcolor>ffffffff</textcolor>
@@ -93,62 +93,62 @@
 						</control>
 					</control>
 				</itemlayout>
-				<focusedlayout height="576" width="436">
+				<focusedlayout height="1152" width="872">
 					<control type="group">
-						<animation center="250,288" easing="inout" effect="zoom" end="100" start="85" time="300" tween="sine">Focus</animation>
-						<animation center="250,288" condition="Container(50).OnNext | Container(50).OnPrevious" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">UnFocus</animation>
-						<animation center="250,288" condition="Control.HasFocus(4000)" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">Conditional</animation>
+						<animation center="500,576" easing="inout" effect="zoom" end="100" start="85" time="300" tween="sine">Focus</animation>
+						<animation center="500,576" condition="Container(50).OnNext | Container(50).OnPrevious" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">UnFocus</animation>
+						<animation center="500,576" condition="Control.HasFocus(4000)" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">Conditional</animation>
 						<control type="image">
-							<left>-48</left>
-							<centertop>288</centertop>
-							<width>576</width>
-							<height>576</height>
-							<texture border="50">views/shadow_fo.png</texture>
+							<left>-96</left>
+							<centertop>576</centertop>
+							<width>1152</width>
+							<height>1152</height>
+							<texture border="100">views/shadow_fo.png</texture>
 							<include content="ContainerMoveFadeAnimation">
-								<param name="ListID" value="50"/>
+								<param name="ListID" value="50" />
 							</include>
 						</control>
 						<control type="image">
-							<left>-48</left>
-							<centertop>288</centertop>
-							<width>576</width>
-							<height>576</height>
-							<texture border="50">views/shadow_nf.png</texture>
+							<left>-96</left>
+							<centertop>576</centertop>
+							<width>1152</width>
+							<height>1152</height>
+							<texture border="100">views/shadow_nf.png</texture>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="50"/>
+								<param name="ListID" value="50" />
 							</include>
 						</control>
 						<control type="group">
 							<include content="FocusedListIDFadeDiffuseAnimation">
-								<param name="ListID" value="50"/>
+								<param name="ListID" value="50" />
 							</include>
 							<control type="image">
-								<top>48</top>
-								<width>480</width>
-								<height>480</height>
+								<top>96</top>
+								<width>960</width>
+								<height>960</height>
 								<aspectratio align="center">scale</aspectratio>
 								<texture background="true" fallback="views/square_fallback.png">$VAR[SquareImage]</texture>
 							</control>
 							<control type="image">
-								<bottom>48</bottom>
-								<width>480</width>
-								<height>125</height>
-								<texture border="2">views/default_overlay.png</texture>
+								<bottom>96</bottom>
+								<width>960</width>
+								<height>250</height>
+								<texture border="4">views/default_overlay.png</texture>
 								<visible>!ListItem.IsParentFolder + !String.Contains(ListItem.Icon,Default)</visible>
 							</control>
 							<control type="image">
-								<left>17</left>
-								<top>419</top>
-								<width>62</width>
-								<height>62</height>
+								<left>34</left>
+								<top>838</top>
+								<width>124</width>
+								<height>124</height>
 								<texture>views/equaliser.gif</texture>
 								<visible>Player.Playing + String.IsEqual(MusicPlayer.Album,ListItem.Album) + Container.Content(albums)</visible>
 							</control>
 							<control type="label">
-								<left>98</left>
-								<top>447</top>
-								<width>366</width>
-								<height>42</height>
+								<left>196</left>
+								<top>894</top>
+								<width>732</width>
+								<height>84</height>
 								<font>Bold44</font>
 								<scroll>false</scroll>
 								<textcolor>ffffffff</textcolor>
@@ -157,10 +157,10 @@
 								<visible>!ListItem.IsParentFolder + Player.Playing + String.IsEqual(MusicPlayer.Album,ListItem.Album) + Container.Content(albums)</visible>
 							</control>
 							<control type="label">
-								<left>18</left>
-								<top>447</top>
-								<width>446</width>
-								<height>42</height>
+								<left>36</left>
+								<top>894</top>
+								<width>892</width>
+								<height>84</height>
 								<font>Bold44</font>
 								<scroll>false</scroll>
 								<textcolor>ffffffff</textcolor>

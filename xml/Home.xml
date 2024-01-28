@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<!-- home -->
 	<backgroundcolor>BackgroundColour</backgroundcolor>
@@ -25,10 +25,10 @@
 			</control>
 			<!-- Main list -->
 			<control id="99" type="list">
-				<left>84</left>
-				<top>78</top>
-				<width>284</width>
-				<height>1040</height>
+				<left>168</left>
+				<top>156</top>
+				<width>568</width>
+				<height>2080</height>
 				<onup>noop</onup>
 				<onup>SetProperty(Movement,1)</onup>
 				<ondown>noop</ondown>
@@ -133,10 +133,10 @@
 				<scrolltime easing="out" tween="sine">180</scrolltime>
 				<include>WindowHomeFadeAnimation</include>
 				<include>HomeMenuSlideAnimation</include>
-				<itemlayout height="74" width="284">
+				<itemlayout height="148" width="568">
 					<control type="label">
-						<width>284</width>
-						<height>74</height>
+						<width>568</width>
+						<height>148</height>
 						<align>right</align>
 						<label>$INFO[ListItem.Label]</label>
 						<font>LightCap38</font>
@@ -144,7 +144,7 @@
 						<animation condition="!Control.HasFocus(99)" easing="in" effect="fade" end="40" reversible="true" start="100" time="600" tween="linear">Conditional</animation>
 					</control>
 				</itemlayout>
-				<focusedlayout height="128" width="284">
+				<focusedlayout height="256" width="568">
 					<control type="button">
 						<texturefocus/>
 						<texturenofocus/>
@@ -210,18 +210,18 @@
 						<onfocus condition="!Control.IsVisible(800) + String.IsEqual(Container(800).CurrentItem,8)">Control.Move(800,-7)</onfocus>
 					</control>
 					<control type="label">
-						<width>284</width>
-						<height>128</height>
+						<width>568</width>
+						<height>256</height>
 						<align>right</align>
 						<label>$INFO[ListItem.Label]</label>
 						<font>LightCap38</font>
 						<textcolor>ff5b6064</textcolor>
 						<animation condition="Container(99).OnNext" reversible="false" type="UnFocus">
-							<effect easing="out" end="0,-28" start="0,0" time="200" tween="circle" type="slide"/>
+							<effect easing="out" end="0,-56" start="0,0" time="200" tween="circle" type="slide"/>
 							<effect end="100" start="0" time="0" type="fade"/>
 						</animation>
 						<animation condition="Container(99).OnPrevious" reversible="false" type="UnFocus">
-							<effect easing="out" end="0,-28" start="0,-56" time="200" tween="circle" type="slide"/>
+							<effect easing="out" end="0,-56" start="0,-112" time="200" tween="circle" type="slide"/>
 							<effect end="100" start="0" time="0" type="fade"/>
 						</animation>
 						<animation reversible="false" type="Focus">
@@ -230,8 +230,8 @@
 						<visible>Control.HasFocus(99)</visible>
 					</control>
 					<control type="label">
-						<width>284</width>
-						<height>128</height>
+						<width>568</width>
+						<height>256</height>
 						<align>right</align>
 						<label>$INFO[ListItem.Label]</label>
 						<font>LightCap48</font>
@@ -242,8 +242,8 @@
 						<visible>Control.HasFocus(99)</visible>
 					</control>
 					<control type="label">
-						<width>284</width>
-						<height>128</height>
+						<width>568</width>
+						<height>256</height>
 						<align>right</align>
 						<label>$INFO[ListItem.Label]</label>
 						<font>LightCap48</font>
@@ -256,37 +256,37 @@
 				</content>
 			</control>
 			<control type="image">
-				<left>84</left>
-				<top>-766</top>
-				<width>284</width>
-				<height>1846</height>
+				<left>168</left>
+				<top>-1532</top>
+				<width>568</width>
+				<height>3692</height>
 				<aspectratio>stretch</aspectratio>
 				<texture border="0,0,1,0">home/home_list_fade.png</texture>
 				<animation condition="Container(99).Row(0)" effect="slide" end="0,0" time="200">Conditional</animation>
-				<animation condition="Container(99).Row(1)" effect="slide" end="0,63" time="200">Conditional</animation>
-				<animation condition="Container(99).Row(2)" effect="slide" end="0,126" time="200">Conditional</animation>
-				<animation condition="Container(99).Row(3)" effect="slide" end="0,189" time="200">Conditional</animation>
-				<animation condition="Container(99).Row(4)" effect="slide" end="0,252" time="200">Conditional</animation>
-				<animation condition="Container(99).Row(5)" effect="slide" end="0,315" time="200">Conditional</animation>
-				<animation condition="Container(99).Row(6)" effect="slide" end="0,378" time="200">Conditional</animation>
-				<animation condition="Container(99).Row(7)" effect="slide" end="0,441" time="200">Conditional</animation>
-				<animation condition="Container(99).Row(8)" effect="slide" end="0,504" time="200">Conditional</animation>
-				<animation condition="Container(99).Row(9)" effect="slide" end="0,567" time="200">Conditional</animation>
-				<animation condition="Container(99).Row(10)" effect="slide" end="0,630" time="200">Conditional</animation>
-				<animation condition="Container(99).Row(11)" effect="slide" end="0,693" time="200">Conditional</animation>
-				<animation condition="Container(99).Row(12)" effect="slide" end="0,756" time="200">Conditional</animation>
-				<animation condition="String.IsEqual(Container(99).NumItems,12)" effect="slide" end="0,32" time="0">Conditional</animation>
-				<animation condition="String.IsEqual(Container(99).NumItems,11)" effect="slide" end="0,64" time="0">Conditional</animation>
-				<animation condition="String.IsEqual(Container(99).NumItems,10)" effect="slide" end="0,96" time="0">Conditional</animation>
-				<animation condition="String.IsEqual(Container(99).NumItems,9)" effect="slide" end="0,128" time="0">Conditional</animation>
-				<animation condition="String.IsEqual(Container(99).NumItems,8)" effect="slide" end="0,160" time="0">Conditional</animation>
-				<animation condition="String.IsEqual(Container(99).NumItems,7)" effect="slide" end="0,192" time="0">Conditional</animation>
-				<animation condition="String.IsEqual(Container(99).NumItems,6)" effect="slide" end="0,224" time="0">Conditional</animation>
-				<animation condition="String.IsEqual(Container(99).NumItems,5)" effect="slide" end="0,256" time="0">Conditional</animation>
-				<animation condition="String.IsEqual(Container(99).NumItems,4)" effect="slide" end="0,288" time="0">Conditional</animation>
-				<animation condition="String.IsEqual(Container(99).NumItems,3)" effect="slide" end="0,320" time="0">Conditional</animation>
-				<animation condition="String.IsEqual(Container(99).NumItems,2)" effect="slide" end="0,352" time="0">Conditional</animation>
-				<animation condition="String.IsEqual(Container(99).NumItems,1)" effect="slide" end="0,384" time="0">Conditional</animation>
+				<animation condition="Container(99).Row(1)" effect="slide" end="0,126" time="200">Conditional</animation>
+				<animation condition="Container(99).Row(2)" effect="slide" end="0,252" time="200">Conditional</animation>
+				<animation condition="Container(99).Row(3)" effect="slide" end="0,378" time="200">Conditional</animation>
+				<animation condition="Container(99).Row(4)" effect="slide" end="0,504" time="200">Conditional</animation>
+				<animation condition="Container(99).Row(5)" effect="slide" end="0,630" time="200">Conditional</animation>
+				<animation condition="Container(99).Row(6)" effect="slide" end="0,756" time="200">Conditional</animation>
+				<animation condition="Container(99).Row(7)" effect="slide" end="0,882" time="200">Conditional</animation>
+				<animation condition="Container(99).Row(8)" effect="slide" end="0,1008" time="200">Conditional</animation>
+				<animation condition="Container(99).Row(9)" effect="slide" end="0,1134" time="200">Conditional</animation>
+				<animation condition="Container(99).Row(10)" effect="slide" end="0,1260" time="200">Conditional</animation>
+				<animation condition="Container(99).Row(11)" effect="slide" end="0,1386" time="200">Conditional</animation>
+				<animation condition="Container(99).Row(12)" effect="slide" end="0,1512" time="200">Conditional</animation>
+				<animation condition="String.IsEqual(Container(99).NumItems,12)" effect="slide" end="0,64" time="0">Conditional</animation>
+				<animation condition="String.IsEqual(Container(99).NumItems,11)" effect="slide" end="0,128" time="0">Conditional</animation>
+				<animation condition="String.IsEqual(Container(99).NumItems,10)" effect="slide" end="0,192" time="0">Conditional</animation>
+				<animation condition="String.IsEqual(Container(99).NumItems,9)" effect="slide" end="0,256" time="0">Conditional</animation>
+				<animation condition="String.IsEqual(Container(99).NumItems,8)" effect="slide" end="0,320" time="0">Conditional</animation>
+				<animation condition="String.IsEqual(Container(99).NumItems,7)" effect="slide" end="0,384" time="0">Conditional</animation>
+				<animation condition="String.IsEqual(Container(99).NumItems,6)" effect="slide" end="0,448" time="0">Conditional</animation>
+				<animation condition="String.IsEqual(Container(99).NumItems,5)" effect="slide" end="0,512" time="0">Conditional</animation>
+				<animation condition="String.IsEqual(Container(99).NumItems,4)" effect="slide" end="0,576" time="0">Conditional</animation>
+				<animation condition="String.IsEqual(Container(99).NumItems,3)" effect="slide" end="0,640" time="0">Conditional</animation>
+				<animation condition="String.IsEqual(Container(99).NumItems,2)" effect="slide" end="0,704" time="0">Conditional</animation>
+				<animation condition="String.IsEqual(Container(99).NumItems,1)" effect="slide" end="0,768" time="0">Conditional</animation>
 			</control>
 			<!-- List Item #1 sub menu -->
 			<include content="ParamWidgetInclude">
@@ -338,10 +338,10 @@
 			</include>
 			<!-- Favourites widget -->
 			<control id="9000" type="fixedlist">
-				<left>419</left>
-				<top>-367</top>
-				<width>2100</width>
-				<height>1500</height>
+				<left>838</left>
+				<top>-734</top>
+				<width>4200</width>
+				<height>3000</height>
 				<onup condition="!Window.IsVisible(1101)">SetProperty(BounceUp,1,Home)</onup>
 				<onup>noop</onup>
 				<ondown condition="!Window.IsVisible(1101)">SetProperty(BounceDown,1,Home)</ondown>
@@ -358,13 +358,13 @@
 				<include>HomeWidgetsAnimation</include>
 				<include>WindowHomeFadeAnimation</include>
 				<visible>String.IsEqual(Container(99).ListItem.Property(widget),favourites)</visible>
-				<animation condition="true" effect="slide" end="-304,0">Conditional</animation>
-				<itemlayout height="370" width="2000">
+				<animation condition="true" effect="slide" end="-608,0">Conditional</animation>
+				<itemlayout height="740" width="4000">
 					<include>HomeFavouritesItemlayout</include>
 				</itemlayout>
-				<focusedlayout height="370" width="2000">
+				<focusedlayout height="740" width="4000">
 					<control type="group">
-						<animation center="142,167" condition="true" effect="zoom" end="132" start="100" time="0">Conditional</animation>
+						<animation center="284,334" condition="true" effect="zoom" end="132" start="100" time="0">Conditional</animation>
 						<include>HomeFavouritesFocusedlayout</include>
 					</control>
 				</focusedlayout>
@@ -372,108 +372,108 @@
 			</control>
 			<!-- Weather widget -->
 			<control type="fixedlist" id="9001">
-				<left>433</left>
-				<top>83</top>
-				<width>2000</width>
-				<height>914</height>
+				<left>866</left>
+				<top>166</top>
+				<width>4000</width>
+				<height>1828</height>
 				<viewtype label="">list</viewtype>
 				<orientation>horizontal</orientation>
 				<include>WindowHomeFadeAnimation</include>
 				<include>HomeWidgetsAnimation</include>
 				<visible>String.IsEqual(Container(99).ListItem.Property(widget),weather)</visible>
-				<itemlayout height="914" width="297">
+				<itemlayout height="1828" width="594">
 					<control type="image">
-						<width>297</width>
-						<height>914</height>
+						<width>594</width>
+						<height>1828</height>
 						<aspectratio align="center">scale</aspectratio>
 						<texture background="true">$INFO[ListItem.Property(Fanart)]</texture>
 					</control>
 					<control type="image">
-						<top>321</top>
-						<width>297</width>
-						<height>272</height>
+						<top>642</top>
+						<width>594</width>
+						<height>544</height>
 						<texture background="true">views/OverlayNF.png</texture>
 					</control>
 					<control type="label">
-						<left>23</left>
-						<top>334</top>
-						<width>251</width>
-						<height>38</height>
+						<left>46</left>
+						<top>668</top>
+						<width>502</width>
+						<height>76</height>
 						<font>Light28</font>
 						<label>$INFO[ListItem.Property(LongDay)]</label>
 						<textcolor>ffffffff</textcolor>
 					</control>
 					<control type="textbox">
-						<left>23</left>
-						<top>383</top>
-						<width>251</width>
-						<height>48</height>
+						<left>46</left>
+						<top>766</top>
+						<width>502</width>
+						<height>96</height>
 						<font>Med20</font>
 						<label>$INFO[ListItem.Property(Outlook)]</label>
 						<textcolor>ffdadada</textcolor>
 					</control>
 					<control type="image">
-						<left>23</left>
-						<top>408</top>
-						<width>140</width>
-						<height>140</height>
+						<left>46</left>
+						<top>816</top>
+						<width>280</width>
+						<height>280</height>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
-						<left>23</left>
-						<top>548</top>
-						<width>251</width>
-						<height>30</height>
+						<left>46</left>
+						<top>1096</top>
+						<width>502</width>
+						<height>60</height>
 						<font>Med20</font>
 						<textcolor>ffffffff</textcolor>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="914" width="297">
+				<focusedlayout height="1828" width="594">
 					<control type="image">
-						<width>297</width>
-						<height>914</height>
+						<width>594</width>
+						<height>1828</height>
 						<aspectratio align="center">scale</aspectratio>
 						<texture background="true">$INFO[ListItem.Property(Fanart)]</texture>
 					</control>
 					<control type="image">
-						<top>321</top>
-						<width>297</width>
-						<height>272</height>
+						<top>642</top>
+						<width>594</width>
+						<height>544</height>
 						<texture background="true">views/OverlayNF.png</texture>
 					</control>
 					<control type="label">
-						<left>23</left>
-						<top>334</top>
-						<width>251</width>
-						<height>38</height>
+						<left>46</left>
+						<top>668</top>
+						<width>502</width>
+						<height>76</height>
 						<font>Light28</font>
 						<label>$INFO[ListItem.Property(LongDay)]</label>
 						<textcolor>ffffffff</textcolor>
 					</control>
 					<control type="textbox">
-						<left>23</left>
-						<top>383</top>
-						<width>251</width>
-						<height>48</height>
+						<left>46</left>
+						<top>766</top>
+						<width>502</width>
+						<height>96</height>
 						<font>Med20</font>
 						<label>$INFO[ListItem.Property(Outlook)]</label>
 						<textcolor>ffdadada</textcolor>
 					</control>
 					<control type="image">
-						<left>23</left>
-						<top>408</top>
-						<width>140</width>
-						<height>140</height>
+						<left>46</left>
+						<top>816</top>
+						<width>280</width>
+						<height>280</height>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
-						<left>23</left>
-						<top>548</top>
-						<width>251</width>
-						<height>30</height>
+						<left>46</left>
+						<top>1096</top>
+						<width>502</width>
+						<height>60</height>
 						<font>Med20</font>
 						<textcolor>ffffffff</textcolor>
 						<label>$INFO[ListItem.Label2]</label>
@@ -514,10 +514,10 @@
 			</control>
 			<!-- Settings widget -->
 			<control id="9002" type="fixedlist">
-				<left>413</left>
-				<top>289</top>
-				<width>2200</width>
-				<height>497</height>
+				<left>826</left>
+				<top>578</top>
+				<width>4400</width>
+				<height>994</height>
 				<focusposition>1</focusposition>
 				<viewtype label="">list</viewtype>
 				<orientation>horizontal</orientation>
@@ -528,55 +528,59 @@
 				<animation effect="fade" end="0" start="100" time="0" condition="Window.IsActive(shutdownmenu)">Conditional</animation>
 				<include>HomeWidgetsAnimation</include>
 				<visible>String.IsEqual(Container(99).ListItem.Property(defaultID),settings)</visible>
-				<itemlayout height="497" width="300">
+				<itemlayout height="994" width="600">
 					<control type="group">
-						<animation center="134,240" condition="true" effect="zoom" end="84.5" start="84.5">Conditional</animation>
+						<animation center="268,480" condition="true" effect="zoom" end="84.5" start="84.5">Conditional</animation>
 						<control type="image">
-							<width>333</width>
-							<height>497</height>
-							<texture border="1,1,14,18">settings/settings_tile.png</texture>
+							<width>666</width>
+							<height>994</height>
+							<bordersize>0,0,26,34</bordersize>
+							<bordertexture infill="false" border="24,22,26,34">settings/settings_back_shadow.png</bordertexture>
+							<texture border="0,0,1,0">settings/settings_back.png</texture>
 						</control>
 						<control type="label">
-							<left>14</left>
-							<top>28</top>
-							<width>276</width>
-							<height>32</height>
+							<left>28</left>
+							<top>56</top>
+							<width>552</width>
+							<height>64</height>
 							<font>Bold34</font>
 							<textcolor>ffdadada</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="image">
-							<left>11</left>
-							<top>123</top>
-							<width>300</width>
-							<height>300</height>
+							<left>22</left>
+							<top>246</top>
+							<width>600</width>
+							<height>600</height>
 							<aspectratio align="center" aligny="center">keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
 						</control>
 					</control>
 				</itemlayout>
-				<focusedlayout height="497" width="300">
+				<focusedlayout height="994" width="600">
 					<control type="group">
-						<animation center="134,240" condition="true" effect="zoom" end="84.5" start="84.5">Conditional</animation>
+						<animation center="268,480" condition="true" effect="zoom" end="84.5" start="84.5">Conditional</animation>
 						<control type="image">
-							<width>333</width>
-							<height>497</height>
-							<texture border="1,1,14,18">settings/settings_tile.png</texture>
+							<width>666</width>
+							<height>994</height>
+							<bordersize>0,0,26,34</bordersize>
+							<bordertexture infill="false" border="24,22,26,34">settings/settings_back_shadow.png</bordertexture>
+							<texture border="0,0,1,0">settings/settings_back.png</texture>
 						</control>
 						<control type="label">
-							<left>14</left>
-							<top>28</top>
-							<width>276</width>
-							<height>32</height>
+							<left>28</left>
+							<top>56</top>
+							<width>552</width>
+							<height>64</height>
 							<font>Bold34</font>
 							<textcolor>ffdadada</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="image">
-							<left>11</left>
-							<top>123</top>
-							<width>300</width>
-							<height>300</height>
+							<left>22</left>
+							<top>246</top>
+							<width>600</width>
+							<height>600</height>
 							<aspectratio align="center" aligny="center">keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
 						</control>

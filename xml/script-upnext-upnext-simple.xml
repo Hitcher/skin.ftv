@@ -15,13 +15,13 @@
 			<include>HiddenControl</include>
 		</control>
 		<control type="group">
-			<left>1430</left>
-			<top>666</top>
+			<left>2860</left>
+			<top>1332</top>
 			<animation effect="fade" end="100" start="0" time="200" condition="Window.IsVisible(script-nextup-notification-NextUpInfo.xml)">Conditional</animation>
 			<!--  Next up label -->
 			<control type="label">
 				<width>auto</width>
-				<height>32</height>
+				<height>64</height>
 				<font>Light32</font>
 				<textcolor>ffffffff</textcolor>
 				<shadowcolor>ShadowColour</shadowcolor>
@@ -29,16 +29,16 @@
 			</control>
 			<!-- Next episode thumb -->
 			<control type="image">
-				<top>56</top>
-				<width>370</width>
-				<height>277</height>
+				<top>112</top>
+				<width>740</width>
+				<height>554</height>
 				<texture>views/episode_fallback.png</texture>
 				<aspectratio>scale</aspectratio>
 			</control>
 			<control type="image">
-				<top>56</top>
-				<width>370</width>
-				<height>277</height>
+				<top>112</top>
+				<width>740</width>
+				<height>554</height>
 				<aspectratio>scale</aspectratio>
 				<texture>$VAR[NextUpThumb]</texture>
 			</control>
@@ -50,32 +50,32 @@
 				<visible>IntegerGreaterThan(Control.GetLabel(3011),719)</visible>
 			</control-->
 			<control type="image">
-				<top>237</top>
-				<width>370</width>
-				<height>96</height>
-				<texture border="2">views/default_overlay.png</texture>
+				<top>474</top>
+				<width>740</width>
+				<height>192</height>
+				<texture border="4">views/default_overlay.png</texture>
 			</control>
 			<!-- Next episode countdown -->
 			<control type="image">
-				<left>12</left>
-				<top>276</top>
-				<width>44</width>
-				<height>44</height>
+				<left>24</left>
+				<top>552</top>
+				<width>88</width>
+				<height>88</height>
 				<texture>osd/nextup_simple/progress/background.png</texture>
 			</control>
 			<control type="image">
-				<left>12</left>
-				<top>276</top>
-				<width>44</width>
-				<height>44</height>
+				<left>24</left>
+				<top>552</top>
+				<width>88</width>
+				<height>88</height>
 				<texture>$INFO[Control.GetLabel(3014),osd/nextup_simple/progress/percent,.png]</texture>
 			</control>
 			<!--  Next episode label -->
 			<control type="label">
-				<left>64</left>
-				<top>286</top>
+				<left>128</left>
+				<top>572</top>
 				<width>auto</width>
-				<height>24</height>
+				<height>48</height>
 				<font>Light24</font>
 				<textcolor>ffffffff</textcolor>
 				<shadowcolor>ShadowColour</shadowcolor>

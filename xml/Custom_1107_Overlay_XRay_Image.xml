@@ -9,30 +9,30 @@
 	<onunload>RunScript(plugin.video.themoviedb.helper,close_dialog=1113)</onunload>
 	<controls>
 		<control type="group">
-			<right>100</right>
-			<top>56</top>
-			<width>500</width>
-			<height>118</height>
+			<right>200</right>
+			<top>112</top>
+			<width>1000</width>
+			<height>236</height>
 			<control type="image">
-				<width>500</width>
-				<height>118</height>
+				<width>1000</width>
+				<height>236</height>
 				<texture>dialogs/DialogBackground.png</texture>
 			</control>
 			<control type="label">
-				<right>112</right>
-				<top>16</top>
-				<height>40</height>
-				<width>360</width>
+				<right>224</right>
+				<top>32</top>
+				<height>80</height>
+				<width>720</width>
 				<font>Bold30</font>
 				<align>right</align>
 				<textcolor>ffe7e7e7</textcolor>
 				<label>$INFO[Player.Title]</label>
 			</control>
 			<control type="label">
-				<right>112</right>
-				<top>61</top>
-				<height>40</height>
-				<width>360</width>
+				<right>224</right>
+				<top>122</top>
+				<height>80</height>
+				<width>720</width>
 				<font>Light32</font>
 				<align>right</align>
 				<textcolor>ff999999</textcolor>
@@ -40,14 +40,14 @@
 			</control>
 			<control type="image">
 				<right>0</right>
-				<width>79</width>
-				<height>118</height>
+				<width>158</width>
+				<height>236</height>
 				<texture>$INFO[Player.Art(poster)]</texture>
 			</control>
 			<control type="image">
 				<right>0</right>
-				<width>79</width>
-				<height>118</height>
+				<width>158</width>
+				<height>236</height>
 				<texture>$INFO[Player.Art(tvshow.poster)]</texture>
 			</control>
 		</control>

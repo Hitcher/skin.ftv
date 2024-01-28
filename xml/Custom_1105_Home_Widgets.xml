@@ -98,66 +98,66 @@
 			<control type="group">
 				<centerleft>50%</centerleft>
 				<centertop>50%</centertop>
-				<width>1740</width>
-				<height>832</height>
+				<width>3480</width>
+				<height>1664</height>
 				<include content="DialogZoomAnimation">
-					<param name="OpenCondition" value="true"/>
-					<param name="CloseCondition" value="true"/>
+					<param name="OpenCondition" value="true" />
+					<param name="CloseCondition" value="true" />
 				</include>
 				<include content="DialogBack">
-					<param name="dialog_back_width" value="1740"/>
-					<param name="dialog_back_height" value="832"/>
-					<param name="dialog_heading_width" value="1740"/>
-					<param name="dialog_shadow_1_visible" value="false"/>
+					<param name="dialog_back_width" value="3480" />
+					<param name="dialog_back_height" value="1664" />
+					<param name="dialog_heading_width" value="3480" />
+					<param name="dialog_shadow_1_visible" value="false" />
 				</include>
 				<!-- Widget name -->
 				<include content="DialogHeading">
-					<param name="dialog_heading_label_left" value="40"/>
-					<param name="dialog_heading_label_width" value="460"/>
-					<param name="dialog_heading_label" value="551"/>
+					<param name="dialog_heading_label_left" value="80" />
+					<param name="dialog_heading_label_width" value="920" />
+					<param name="dialog_heading_label" value="551" />
 				</include>
 				<!-- Widget path -->
 				<include content="DialogHeading">
-					<param name="dialog_heading_label_left" value="380"/>
-					<param name="dialog_heading_label_width" value="820"/>
-					<param name="dialog_heading_label" value="15217"/>
+					<param name="dialog_heading_label_left" value="760" />
+					<param name="dialog_heading_label_width" value="1640" />
+					<param name="dialog_heading_label" value="15217" />
 				</include>
 				<!-- Widget layout -->
 				<include content="DialogHeading">
-					<param name="dialog_heading_label_left" value="1080"/>
-					<param name="dialog_heading_label_width" value="210"/>
-					<param name="dialog_heading_label" value="31198"/>
+					<param name="dialog_heading_label_left" value="2160" />
+					<param name="dialog_heading_label_width" value="420" />
+					<param name="dialog_heading_label" value="31198" />
 				</include>
 				<!-- Widget sort by -->
 				<include content="DialogHeading">
-					<param name="dialog_heading_label_left" value="1300"/>
-					<param name="dialog_heading_label_width" value="210"/>
-					<param name="dialog_heading_label" value="31092"/>
+					<param name="dialog_heading_label_left" value="2600" />
+					<param name="dialog_heading_label_width" value="420" />
+					<param name="dialog_heading_label" value="31092" />
 				</include>
 				<!-- Widget sort by order -->
 				<include content="DialogHeading">
-					<param name="dialog_heading_label_left" value="1540"/>
-					<param name="dialog_heading_label_width" value="210"/>
-					<param name="dialog_heading_label" value="31202"/>
+					<param name="dialog_heading_label_left" value="3080" />
+					<param name="dialog_heading_label_width" value="420" />
+					<param name="dialog_heading_label" value="31202" />
 				</include>
 				<!-- Widget -->
 				<control type="list" id="100">
-					<top>60</top>
-					<width>1740</width>
-					<height>672</height>
+					<top>120</top>
+					<width>3480</width>
+					<height>1344</height>
 					<scrolltime>0</scrolltime>
-					<itemlayout height="84" width="1740">
+					<itemlayout height="168" width="3480">
 						<control type="image">
-							<width>1740</width>
-							<height>84</height>
-							<texture border="3">settings/button_no_focus.png</texture>
+							<width>3480</width>
+							<height>168</height>
+							<texture border="1,1,1,6">settings/button_no_focus.png</texture>
 						</control>
 					</itemlayout>
-					<focusedlayout height="84" width="1740">
+					<focusedlayout height="168" width="3480">
 						<control type="image">
-							<width>1740</width>
-							<height>84</height>
-							<texture border="3">settings/button_focus.png</texture>
+							<width>3480</width>
+							<height>168</height>
+							<texture border="1,1,1,6">settings/button_focus.png</texture>
 						</control>
 					</focusedlayout>
 					<content>
@@ -189,30 +189,30 @@
 				</control>
 				<!-- Widget label -->
 				<control type="list" id="200">
-					<left>40</left>
-					<top>60</top>
-					<width>300</width>
-					<height>672</height>
+					<left>80</left>
+					<top>120</top>
+					<width>600</width>
+					<height>1344</height>
 					<scrolltime>0</scrolltime>
-					<itemlayout height="84" width="300">
+					<itemlayout height="168" width="600">
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<textcolor>NotFocusedColour</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>!String.IsEmpty(ListItem.Label)</visible>
 						</control>
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<textcolor>NotFocusedColour</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
 							<visible>String.IsEmpty(ListItem.Label)</visible>
 						</control>
 					</itemlayout>
-					<focusedlayout height="84" width="300">
+					<focusedlayout height="168" width="600">
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<scroll>true</scroll>
 							<textcolor>FocusedColour</textcolor>
@@ -220,21 +220,21 @@
 							<visible>Control.HasFocus(20) + !String.IsEmpty(ListItem.Label)</visible>
 						</control>
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<textcolor>ffffffff</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>!Control.HasFocus(20) + !String.IsEmpty(ListItem.Label)</visible>
 						</control>
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<textcolor>FocusedColour</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
 							<visible>Control.HasFocus(20) + String.IsEmpty(ListItem.Label)</visible>
 						</control>
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<textcolor>ffffffff</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
@@ -286,30 +286,30 @@
 				</control>
 				<!-- Widget path -->
 				<control type="list" id="300">
-					<left>380</left>
-					<top>60</top>
-					<width>660</width>
-					<height>672</height>
+					<left>760</left>
+					<top>120</top>
+					<width>1320</width>
+					<height>1344</height>
 					<scrolltime>0</scrolltime>
-					<itemlayout height="84" width="660">
+					<itemlayout height="168" width="1320">
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<textcolor>NotFocusedColour</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>!String.IsEmpty(ListItem.Label)</visible>
 						</control>
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<textcolor>NotFocusedColour</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
 							<visible>String.IsEmpty(ListItem.Label)</visible>
 						</control>
 					</itemlayout>
-					<focusedlayout height="84" width="660">
+					<focusedlayout height="168" width="1320">
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<scroll>true</scroll>
 							<textcolor>FocusedColour</textcolor>
@@ -317,21 +317,21 @@
 							<visible>Control.HasFocus(30) + !String.IsEmpty(ListItem.Label)</visible>
 						</control>
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<textcolor>ffffffff</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>!Control.HasFocus(30) + !String.IsEmpty(ListItem.Label)</visible>
 						</control>
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<textcolor>FocusedColour</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
 							<visible>Control.HasFocus(30) + String.IsEmpty(ListItem.Label)</visible>
 						</control>
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<textcolor>ffffffff</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
@@ -383,30 +383,30 @@
 				</control>
 				<!-- Widget layout -->
 				<control type="list" id="400">
-					<left>1080</left>
-					<top>60</top>
-					<width>180</width>
-					<height>672</height>
+					<left>2160</left>
+					<top>120</top>
+					<width>360</width>
+					<height>1344</height>
 					<scrolltime>0</scrolltime>
-					<itemlayout height="84" width="180">
+					<itemlayout height="168" width="360">
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<textcolor>NotFocusedColour</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>!String.IsEmpty(ListItem.Label)</visible>
 						</control>
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<textcolor>NotFocusedColour</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
 							<visible>String.IsEmpty(ListItem.Label)</visible>
 						</control>
 					</itemlayout>
-					<focusedlayout height="84" width="180">
+					<focusedlayout height="168" width="360">
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<scroll>true</scroll>
 							<textcolor>FocusedColour</textcolor>
@@ -414,21 +414,21 @@
 							<visible>Control.HasFocus(40) + !String.IsEmpty(ListItem.Label)</visible>
 						</control>
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<textcolor>ffffffff</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>!Control.HasFocus(40) + !String.IsEmpty(ListItem.Label)</visible>
 						</control>
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<textcolor>FocusedColour</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
 							<visible>Control.HasFocus(40) + String.IsEmpty(ListItem.Label)</visible>
 						</control>
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<textcolor>ffffffff</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
@@ -480,30 +480,30 @@
 				</control>
 				<!-- Widget sort by -->
 				<control type="list" id="500">
-					<left>1300</left>
-					<top>60</top>
-					<width>220</width>
-					<height>672</height>
+					<left>2600</left>
+					<top>120</top>
+					<width>440</width>
+					<height>1344</height>
 					<scrolltime>0</scrolltime>
-					<itemlayout height="84" width="220">
+					<itemlayout height="168" width="440">
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<textcolor>NotFocusedColour</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>!String.IsEmpty(ListItem.Label)</visible>
 						</control>
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<textcolor>NotFocusedColour</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
 							<visible>String.IsEmpty(ListItem.Label)</visible>
 						</control>
 					</itemlayout>
-					<focusedlayout height="84" width="220">
+					<focusedlayout height="168" width="440">
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<scroll>true</scroll>
 							<textcolor>FocusedColour</textcolor>
@@ -511,21 +511,21 @@
 							<visible>Control.HasFocus(50) + !String.IsEmpty(ListItem.Label)</visible>
 						</control>
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<textcolor>ffffffff</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>!Control.HasFocus(50) + !String.IsEmpty(ListItem.Label)</visible>
 						</control>
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<textcolor>FocusedColour</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
 							<visible>Control.HasFocus(50) + String.IsEmpty(ListItem.Label)</visible>
 						</control>
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<textcolor>ffffffff</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
@@ -577,30 +577,30 @@
 				</control>
 				<!-- Widget sort by -->
 				<control type="list" id="600">
-					<left>1540</left>
-					<top>60</top>
-					<width>170</width>
-					<height>672</height>
+					<left>3080</left>
+					<top>120</top>
+					<width>340</width>
+					<height>1344</height>
 					<scrolltime>0</scrolltime>
-					<itemlayout height="84" width="170">
+					<itemlayout height="168" width="340">
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<textcolor>NotFocusedColour</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>!String.IsEmpty(ListItem.Label)</visible>
 						</control>
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<textcolor>NotFocusedColour</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
 							<visible>String.IsEmpty(ListItem.Label)</visible>
 						</control>
 					</itemlayout>
-					<focusedlayout height="84" width="170">
+					<focusedlayout height="168" width="340">
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<scroll>true</scroll>
 							<textcolor>FocusedColour</textcolor>
@@ -608,21 +608,21 @@
 							<visible>Control.HasFocus(60) + !String.IsEmpty(ListItem.Label)</visible>
 						</control>
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<textcolor>ffffffff</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>!Control.HasFocus(60) + !String.IsEmpty(ListItem.Label)</visible>
 						</control>
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<textcolor>FocusedColour</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
 							<visible>Control.HasFocus(60) + String.IsEmpty(ListItem.Label)</visible>
 						</control>
 						<control type="label">
-							<height>84</height>
+							<height>168</height>
 							<font>Light32</font>
 							<textcolor>ffffffff</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
@@ -673,16 +673,16 @@
 					</content>
 				</control>
 				<control type="image">
-					<top>730</top>
-					<height>2</height>
+					<top>1460</top>
+					<height>4</height>
 					<texture>dialogs/default_line.png</texture>
 				</control>
 				<!-- Button grouplist -->
 				<control type="grouplist" id="9001">
 					<left>0</left>
-					<bottom>12</bottom>
-					<width>1740</width>
-					<height>76</height>
+					<bottom>24</bottom>
+					<width>3480</width>
+					<height>152</height>
 					<itemgap>0</itemgap>
 					<onleft>noop</onleft>
 					<onright>noop</onright>
@@ -692,13 +692,13 @@
 					<orientation>horizontal</orientation>
 					<!-- Defaults Button -->
 					<control type="button" id="1001">
-						<width>320</width>
-						<height>76</height>
+						<width>640</width>
+						<height>152</height>
 						<align>center</align>
 						<aligny>top</aligny>
 						<font>Med24</font>
-						<textoffsetx>23</textoffsetx>
-						<textoffsety>27</textoffsety>
+						<textoffsetx>46</textoffsetx>
+						<textoffsety>54</textoffsety>
 						<label>13007</label>
 						<include condition="String.IsEqual(Window(home).Property(SubMenu),1000)">1000-WidgetDefaults</include>
 						<include condition="String.IsEqual(Window(home).Property(SubMenu),2000)">2000-WidgetDefaults</include>
@@ -711,13 +711,13 @@
 					</control>
 					<!-- Clear Button -->
 					<control type="button" id="1002">
-						<width>320</width>
-						<height>76</height>
+						<width>640</width>
+						<height>152</height>
 						<align>center</align>
 						<aligny>top</aligny>
 						<font>Med24</font>
-						<textoffsetx>23</textoffsetx>
-						<textoffsety>27</textoffsety>
+						<textoffsetx>46</textoffsetx>
+						<textoffsety>54</textoffsety>
 						<label>192</label>
 						<onclick>Skin.Reset($INFO[Window(home).Property(SubMenu),,-WidgetLabel-1])</onclick>
 						<onclick>Skin.Reset($INFO[Window(home).Property(SubMenu),,-WidgetLabel-2])</onclick>
@@ -770,13 +770,13 @@
 					</control>
 					<!-- OK Button -->
 					<control type="button" id="1003">
-						<width>320</width>
-						<height>76</height>
+						<width>640</width>
+						<height>152</height>
 						<align>center</align>
 						<aligny>top</aligny>
 						<font>Med24</font>
-						<textoffsetx>23</textoffsetx>
-						<textoffsety>27</textoffsety>
+						<textoffsetx>46</textoffsetx>
+						<textoffsety>54</textoffsety>
 						<label>186</label>
 						<onclick>Close</onclick>
 					</control>
