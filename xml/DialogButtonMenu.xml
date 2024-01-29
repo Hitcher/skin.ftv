@@ -3,8 +3,8 @@
 	<!-- shutdownmenu -->
 	<defaultcontrol always="true">6000</defaultcontrol>
 	<animation type="WindowOpen">
-		<effect center="auto" tween="circle" easing="out" end="100" start="110" time="400" type="zoom" />
-		<effect easing="inout" end="100" start="0" time="400" tween="sine" type="fade" />
+		<effect center="auto" tween="circle" easing="out" end="100" start="110" time="400" type="zoom"/>
+		<effect easing="inout" end="100" start="0" time="400" tween="sine" type="fade"/>
 	</animation>
 	<animation easing="inout" effect="fade" end="0" start="100" time="400" tween="sine">WindowClose</animation>
 	<controls>

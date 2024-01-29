@@ -92,10 +92,10 @@
 				<height>16</height>
 				<info>ListItem.PercentPlayed</info>
 				<texturebg border="4">views/ProgressBack.png</texturebg>
-				<lefttexture />
+				<lefttexture/>
 				<midtexture border="4">views/ProgressBar.png</midtexture>
-				<righttexture />
-				<overlaytexture />
+				<righttexture/>
+				<overlaytexture/>
 				<visible>ListItem.IsResumable + [!Container.Content(tvshows) + !Container.Content(seasons)]</visible>
 			</control>
 			<control type="progress">
@@ -104,10 +104,10 @@
 				<height>16</height>
 				<info>ListItem.Property(WatchedEpisodePercent)</info>
 				<texturebg border="4">views/ProgressBack.png</texturebg>
-				<lefttexture />
+				<lefttexture/>
 				<midtexture border="4">views/ProgressBar.png</midtexture>
-				<righttexture />
-				<overlaytexture />
+				<righttexture/>
+				<overlaytexture/>
 				<visible>Integer.IsGreater(ListItem.Property(WatchedEpisodePercent),00) + [Container.Content(tvshows) | Container.Content(seasons)]</visible>
 			</control>
 			<control type="image">
@@ -568,8 +568,8 @@
 					<textcolor>00ffffff</textcolor>
 					<focusedcolor>00ffffff</focusedcolor>
 					<visible>Control.IsEnabled(8) + !Control.IsEnabled(9)</visible>
-					<texturefocus />
-					<texturenofocus />
+					<texturefocus/>
+					<texturenofocus/>
 				</control>
 				<!-- Resume Button -->
 				<control type="button">
@@ -582,8 +582,8 @@
 					<textcolor>00ffffff</textcolor>
 					<focusedcolor>00ffffff</focusedcolor>
 					<visible>Control.IsEnabled(9)</visible>
-					<texturefocus />
-					<texturenofocus />
+					<texturefocus/>
+					<texturenofocus/>
 				</control>
 				<!-- User Rating Button -->
 				<control type="image">
@@ -726,7 +726,7 @@
 							<height>1152</height>
 							<texture border="100">views/shadow_fo.png</texture>
 							<include content="ContainerMoveFadeAnimation">
-								<param name="ListID" value="500" />
+								<param name="ListID" value="500"/>
 							</include>
 						</control>
 						<control type="image">
@@ -736,7 +736,7 @@
 							<height>1152</height>
 							<texture border="100">views/shadow_nf.png</texture>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="500" />
+								<param name="ListID" value="500"/>
 							</include>
 						</control>
 						<control type="image">
@@ -753,7 +753,7 @@
 							<texture border="4">views/default_overlay.png</texture>
 							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label) + String.IsEmpty(Window(home).Property(RecommendedVideos))</visible>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="500" />
+								<param name="ListID" value="500"/>
 							</include>
 						</control>
 						<control type="label">
@@ -769,7 +769,7 @@
 							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label) + String.IsEmpty(Window(home).Property(RecommendedVideos))</visible>
 							<animation condition="String.IsEmpty(ListItem.Label2)" effect="slide" end="0,62" start="0,0" time="0">Conditional</animation>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="500" />
+								<param name="ListID" value="500"/>
 							</include>
 						</control>
 						<control type="label">
@@ -784,7 +784,7 @@
 							<label>$INFO[ListItem.Label2,$LOCALIZE[20347] ,]</label>
 							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label2)</visible>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="500" />
+								<param name="ListID" value="500"/>
 							</include>
 						</control>
 						<control type="image">
@@ -794,7 +794,7 @@
 							<texture>views/OverlayNF.png</texture>
 							<visible>Control.HasFocus(500)</visible>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="500" />
+								<param name="ListID" value="500"/>
 							</include>
 						</control>
 					</control>

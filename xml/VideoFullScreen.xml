@@ -113,8 +113,8 @@
 			</control>
 			<control type="group">
 				<animation reversible="true" type="WindowOpen">
-					<effect end="100" start="0" time="200" type="fade" />
-					<effect delay="4200" end="0" start="100" time="200" type="fade" />
+					<effect end="100" start="0" time="200" type="fade"/>
+					<effect delay="4200" end="0" start="100" time="200" type="fade"/>
 				</animation>
 				<visible>!Window.IsActive(seekbar) + !Window.IsActive(fullscreeninfo) + !Window.IsActive(videoosd) + !Window.IsActive(musicosd) + !Window.IsActive(subtitlesearch) + !Window.IsVisible(script-nextup-notification-NextUpInfo.xml)</visible>
 				<control type="image">
@@ -191,11 +191,11 @@
 					<width>3470</width>
 					<height>22</height>
 					<info>Player.Progress</info>
-					<texturebg />
-					<lefttexture />
-					<midtexture />
-					<righttexture />
-					<overlaytexture />
+					<texturebg/>
+					<lefttexture/>
+					<midtexture/>
+					<righttexture/>
+					<overlaytexture/>
 				</control>
 				<control type="grouplist">
 					<left>120</left>
@@ -683,7 +683,7 @@
 				<texture>osd/Pause.png</texture>
 				<visible>Player.Paused + !Player.Caching + !Window.IsVisible(subtitlesearch) + !Window.IsVisible(videobookmarks) + !Player.FrameAdvance</visible>
 				<animation condition="System.IdleTime(2)" reversible="true" type="Conditional">
-					<effect type="fade" start="100" end="0" time="200" />
+					<effect type="fade" start="100" end="0" time="200"/>
 				</animation>
 			</control>
 			<control type="group">

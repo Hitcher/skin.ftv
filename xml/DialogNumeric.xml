@@ -10,8 +10,8 @@
 			<left>910</left>
 			<top>384</top>
 			<include content="DialogZoomAnimation">
-				<param name="OpenCondition" value="true" />
-				<param name="CloseCondition" value="true" />
+				<param name="OpenCondition" value="true"/>
+				<param name="CloseCondition" value="true"/>
 			</include>
 			<!-- Dialog Background -->
 			<control type="image">

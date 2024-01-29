@@ -105,7 +105,7 @@
 					<width>1430</width>
 					<height>96</height>
 					<font>Reg37</font>
-					<label />
+					<label/>
 					<textcolor>ffdadada</textcolor>
 				</control>
 				<control type="image">
@@ -184,7 +184,7 @@
 					<width>980</width>
 					<height>68</height>
 					<font>Reg24</font>
-					<label />
+					<label/>
 					<textcolor>ffdadada</textcolor>
 				</control>
 			</control>

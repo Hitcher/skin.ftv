@@ -19,8 +19,8 @@
 		<!-- Main group -->
 		<control type="group">
 			<include content="DialogZoomAnimation">
-				<param name="OpenCondition" value="true" />
-				<param name="CloseCondition" value="true" />
+				<param name="OpenCondition" value="true"/>
+				<param name="CloseCondition" value="true"/>
 			</include>
 			<!-- Left group -->
 			<control type="group">
@@ -29,19 +29,19 @@
 				<width>1650</width>
 				<height>1632</height>
 				<include content="DialogBack">
-					<param name="dialog_back_width" value="1650" />
-					<param name="dialog_back_height" value="1632" />
-					<param name="dialog_heading_width" value="1650" />
+					<param name="dialog_back_width" value="1650"/>
+					<param name="dialog_back_height" value="1632"/>
+					<param name="dialog_heading_width" value="1650"/>
 				</include>
 				<!-- Root label -->
 				<include content="DialogHeading">
-					<param name="dialog_heading_label_id" value="101" />
-					<param name="dialog_heading_label_width" value="1200" />
-					<param name="dialog_heading_label_haspath" value="true" />
+					<param name="dialog_heading_label_id" value="101"/>
+					<param name="dialog_heading_label_width" value="1200"/>
+					<param name="dialog_heading_label_haspath" value="true"/>
 				</include>
 				<include content="DialogHeadingCount">
-					<param name="dialog_heading_count_width" value="1490" />
-					<param name="dialog_heading_count_container_id" value="20" />
+					<param name="dialog_heading_count_width" value="1490"/>
+					<param name="dialog_heading_count_container_id" value="20"/>
 				</include>
 				<!-- Left list -->
 				<control id="20" type="fixedlist">
@@ -154,19 +154,19 @@
 				<width>1650</width>
 				<height>1632</height>
 				<include content="DialogBack">
-					<param name="dialog_back_width" value="1650" />
-					<param name="dialog_back_height" value="1632" />
-					<param name="dialog_heading_width" value="1650" />
+					<param name="dialog_back_width" value="1650"/>
+					<param name="dialog_back_height" value="1632"/>
+					<param name="dialog_heading_width" value="1650"/>
 				</include>
 				<!-- Root label -->
 				<include content="DialogHeading">
-					<param name="dialog_heading_label_id" value="102" />
-					<param name="dialog_heading_label_width" value="1200" />
-					<param name="dialog_heading_label_haspath" value="true" />
+					<param name="dialog_heading_label_id" value="102"/>
+					<param name="dialog_heading_label_width" value="1200"/>
+					<param name="dialog_heading_label_haspath" value="true"/>
 				</include>
 				<include content="DialogHeadingCount">
-					<param name="dialog_heading_count_width" value="1490" />
-					<param name="dialog_heading_count_container_id" value="21" />
+					<param name="dialog_heading_count_width" value="1490"/>
+					<param name="dialog_heading_count_container_id" value="21"/>
 				</include>
 				<!-- Right list -->
 				<control id="21" type="fixedlist">

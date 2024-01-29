@@ -2,7 +2,7 @@
 <window>
 	<!-- visualisation -->
 	<backgroundcolor>BackgroundColour</backgroundcolor>
-	<defaultcontrol />
+	<defaultcontrol/>
 	<onload condition="System.HasAddon(script.artistslideshow)">RunScript(script.artistslideshow)</onload>
 	<controls>
 		<!-- Fanart -->

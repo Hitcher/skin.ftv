@@ -12,18 +12,18 @@
 			<height>1464</height>
 			<include>DialogZoomAnimation</include>
 			<include content="DialogBack">
-				<param name="dialog_back_width" value="3080" />
-				<param name="dialog_back_height" value="1464" />
-				<param name="dialog_heading_width" value="2280" />
-				<param name="dialog_shadow_1_left" value="2280" />
-				<param name="dialog_shadow_1_height" value="1464" />
-				<param name="dialog_shadow_2_left" value="1140" />
-				<param name="dialog_shadow_2_height" value="1344" />
-				<param name="dialog_shadow_2_visible" value="true" />
+				<param name="dialog_back_width" value="3080"/>
+				<param name="dialog_back_height" value="1464"/>
+				<param name="dialog_heading_width" value="2280"/>
+				<param name="dialog_shadow_1_left" value="2280"/>
+				<param name="dialog_shadow_1_height" value="1464"/>
+				<param name="dialog_shadow_2_left" value="1140"/>
+				<param name="dialog_shadow_2_height" value="1344"/>
+				<param name="dialog_shadow_2_visible" value="true"/>
 			</include>
 			<!-- Heading -->
 			<include content="DialogHeading">
-				<param name="dialog_heading_label" value="21432" />
+				<param name="dialog_heading_label" value="21432"/>
 			</include>
 			<!-- Left group -->
 			<control type="grouplist" id="100">
@@ -242,15 +242,15 @@
 				<align>right</align>
 				<!-- Cancel Button -->
 				<include content="DialogButton">
-					<param name="button_id" value="21" />
-					<param name="button_label" value="222" />
-					<param name="button_visible" value="Control.IsEnabled(21)" />
+					<param name="button_id" value="21"/>
+					<param name="button_label" value="222"/>
+					<param name="button_visible" value="Control.IsEnabled(21)"/>
 				</include>
 				<!-- OK/Manual/Get more Button -->
 				<include content="DialogButton">
-					<param name="button_id" value="20" />
-					<param name="button_label" value="186" />
-					<param name="button_visible" value="Control.IsEnabled(20)" />
+					<param name="button_id" value="20"/>
+					<param name="button_label" value="186"/>
+					<param name="button_visible" value="Control.IsEnabled(20)"/>
 				</include>
 			</control>
 		</control>

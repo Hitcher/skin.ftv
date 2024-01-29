@@ -8,7 +8,7 @@
 			<left>120</left>
 			<top>120</top>
 			<animation condition="System.IdleTime(2)" reversible="true" type="Conditional">
-				<effect type="fade" start="100" end="0" time="200" />
+				<effect type="fade" start="100" end="0" time="200"/>
 			</animation>
 			<control id="2" type="image">
 				<width>520</width>

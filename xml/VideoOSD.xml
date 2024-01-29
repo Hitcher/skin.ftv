@@ -107,7 +107,7 @@
 				<control type="button" id="301">
 					<width>128</width>
 					<height>128</height>
-					<font />
+					<font/>
 					<texturefocus>osd/osd_prev_fo.png</texturefocus>
 					<texturenofocus>osd/osd_prev_nf.png</texturenofocus>
 					<onclick>PlayerControl(Previous)</onclick>
@@ -116,7 +116,7 @@
 				<control type="button" id="302">
 					<width>128</width>
 					<height>128</height>
-					<font />
+					<font/>
 					<texturefocus>osd/osd_rw_fo.png</texturefocus>
 					<texturenofocus>osd/osd_rw_nf.png</texturenofocus>
 					<onclick condition="!Player.Paused + !Player.IsTempo">PlayerControl(Rewind)</onclick>
@@ -128,7 +128,7 @@
 				<control type="button" id="303">
 					<width>128</width>
 					<height>128</height>
-					<font />
+					<font/>
 					<texturefocus>osd/osd_stop_fo.png</texturefocus>
 					<texturenofocus>osd/osd_stop_nf.png</texturenofocus>
 					<onclick>PlayerControl(Stop)</onclick>
@@ -137,7 +137,7 @@
 				<control type="togglebutton" id="304">
 					<width>128</width>
 					<height>128</height>
-					<font />
+					<font/>
 					<texturefocus>osd/osd_pause_fo.png</texturefocus>
 					<texturenofocus>osd/osd_pause_nf.png</texturenofocus>
 					<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
@@ -149,7 +149,7 @@
 				<control type="button" id="305">
 					<width>128</width>
 					<height>128</height>
-					<font />
+					<font/>
 					<texturefocus>osd/osd_ff_fo.png</texturefocus>
 					<texturenofocus>osd/osd_ff_nf.png</texturenofocus>
 					<onclick condition="!Player.Paused + !Player.IsTempo">PlayerControl(Forward)</onclick>
@@ -161,7 +161,7 @@
 				<control type="button" id="306">
 					<width>128</width>
 					<height>128</height>
-					<font />
+					<font/>
 					<texturefocus>osd/osd_next_fo.png</texturefocus>
 					<texturenofocus>osd/osd_next_nf.png</texturenofocus>
 					<onclick>PlayerControl(Next)</onclick>
@@ -190,8 +190,8 @@
 					<textcolor>ffffffff</textcolor>
 					<shadowcolor>ShadowColour</shadowcolor>
 					<focusedcolor>ffffc04b</focusedcolor>
-					<texturefocus />
-					<texturenofocus />
+					<texturefocus/>
+					<texturenofocus/>
 					<onclick>Close</onclick>
 					<onclick>StereoMode</onclick>
 					<visible>VideoPlayer.IsStereoscopic</visible>
@@ -206,8 +206,8 @@
 					<textcolor>ffffffff</textcolor>
 					<shadowcolor>ShadowColour</shadowcolor>
 					<focusedcolor>ffffc04b</focusedcolor>
-					<texturefocus />
-					<texturenofocus />
+					<texturefocus/>
+					<texturenofocus/>
 					<onclick>PlayerControl(ShowVideoMenu)</onclick>
 					<visible>VideoPlayer.HasMenu</visible>
 				</control>
@@ -221,8 +221,8 @@
 					<textcolor>ffffffff</textcolor>
 					<shadowcolor>ShadowColour</shadowcolor>
 					<focusedcolor>ffffc04b</focusedcolor>
-					<texturefocus />
-					<texturenofocus />
+					<texturefocus/>
+					<texturenofocus/>
 					<onclick>SetProperty(VideoOSDSelect,1,home)</onclick>
 					<onclick>ActivateWindow(osdsubtitlesettings)</onclick>
 				</control>
@@ -236,8 +236,8 @@
 					<textcolor>ffffffff</textcolor>
 					<shadowcolor>ShadowColour</shadowcolor>
 					<focusedcolor>ffffc04b</focusedcolor>
-					<texturefocus />
-					<texturenofocus />
+					<texturefocus/>
+					<texturenofocus/>
 					<onclick>ActivateWindow(videobookmarks)</onclick>
 				</control>
 				<!-- Video Settings -->
@@ -250,8 +250,8 @@
 					<textcolor>ffffffff</textcolor>
 					<shadowcolor>ShadowColour</shadowcolor>
 					<focusedcolor>ffffc04b</focusedcolor>
-					<texturefocus />
-					<texturenofocus />
+					<texturefocus/>
+					<texturenofocus/>
 					<onclick>SetProperty(VideoOSDSelect,1,home)</onclick>
 					<onclick>ActivateWindow(osdvideosettings)</onclick>
 				</control>
@@ -265,8 +265,8 @@
 					<textcolor>ffffffff</textcolor>
 					<shadowcolor>ShadowColour</shadowcolor>
 					<focusedcolor>ffffc04b</focusedcolor>
-					<texturefocus />
-					<texturenofocus />
+					<texturefocus/>
+					<texturenofocus/>
 					<onclick>SetProperty(VideoOSDSelect,1,home)</onclick>
 					<onclick>ActivateWindow(osdaudiosettings)</onclick>
 				</control>
@@ -280,8 +280,8 @@
 					<textcolor>ffffffff</textcolor>
 					<shadowcolor>ShadowColour</shadowcolor>
 					<focusedcolor>ffffc04b</focusedcolor>
-					<texturefocus />
-					<texturenofocus />
+					<texturefocus/>
+					<texturenofocus/>
 					<onclick>PlayerControl(Next)</onclick>
 					<visible>Window.IsVisible(VideoFullScreen.xml) + system.getbool(videoplayer.autoplaynextitem)</visible>
 				</control>
@@ -295,8 +295,8 @@
 					<textcolor>ffffffff</textcolor>
 					<shadowcolor>ShadowColour</shadowcolor>
 					<focusedcolor>ffffc04b</focusedcolor>
-					<texturefocus />
-					<texturenofocus />
+					<texturefocus/>
+					<texturenofocus/>
 					<onclick>ActivateWindow(osdcmssettings)</onclick>
 					<visible>System.HasCMS</visible>
 				</control>

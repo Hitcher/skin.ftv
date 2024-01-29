@@ -392,8 +392,8 @@
 						<textoffsetx>56</textoffsetx>
 						<textcolor>00ffffff</textcolor>
 						<focusedcolor>00ffffff</focusedcolor>
-						<texturefocus />
-						<texturenofocus />
+						<texturefocus/>
+						<texturenofocus/>
 						<visible>Control.IsEnabled(8)</visible>
 					</control>
 					<!-- Refresh Button -->
@@ -406,8 +406,8 @@
 						<textoffsetx>56</textoffsetx>
 						<textcolor>00ffffff</textcolor>
 						<focusedcolor>00ffffff</focusedcolor>
-						<texturefocus />
-						<texturenofocus />
+						<texturefocus/>
+						<texturenofocus/>
 						<visible>Control.IsVisible(6)</visible>
 					</control>
 					<!-- User Rating Button -->

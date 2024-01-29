@@ -82,7 +82,7 @@
 					<animation center="500,576" condition="Control.HasFocus(4000)" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">Conditional</animation>
 					<control type="group">
 						<include content="FocusedListIDFadeDiffuseAnimation">
-							<param name="ListID" value="570" />
+							<param name="ListID" value="570"/>
 						</include>
 						<control type="image">
 							<top>96</top>

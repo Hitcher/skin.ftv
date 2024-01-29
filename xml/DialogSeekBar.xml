@@ -11,7 +11,7 @@
 			<control type="group">
 				<visible>Player.Paused + !Player.Forwarding + !Player.Rewinding</visible>
 				<animation condition="System.IdleTime(4) + !Player.Caching" reversible="true" type="Conditional">
-					<effect end="0" start="100" time="200" type="fade" />
+					<effect end="0" start="100" time="200" type="fade"/>
 				</animation>
 				<control type="image">
 					<width>3960</width>
@@ -102,7 +102,7 @@
 					<texture>osd/Pause.png</texture>
 					<visible>Player.Paused + !Player.Caching + !Window.IsVisible(subtitlesearch)</visible>
 					<animation condition="System.IdleTime(2)" reversible="true" type="Conditional">
-						<effect end="0" start="100" time="200" type="fade" />
+						<effect end="0" start="100" time="200" type="fade"/>
 					</animation>
 				</control>
 				<control type="group">

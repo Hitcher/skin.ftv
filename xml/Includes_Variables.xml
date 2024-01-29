@@ -330,7 +330,7 @@
 		<value condition="String.IsEqual(Container(10051).ListItem.Duration(hh),07)">7 $LOCALIZE[31148]</value>
 		<value condition="String.IsEqual(Container(10051).ListItem.Duration(hh),08)">8 $LOCALIZE[31148]</value>
 		<value condition="String.IsEqual(Container(10051).ListItem.Duration(hh),09)">9 $LOCALIZE[31148]</value>
-		<value />
+		<value/>
 	</variable>
 	<variable name="ExtendedDurationMins">
 		<value condition="Integer.IsGreater(Container(10051).ListItem.Duration(mm),09)">$INFO[Container(10051).ListItem.Duration(mm),, $LOCALIZE[31147]]</value>
@@ -343,11 +343,11 @@
 		<value condition="String.IsEqual(Container(10051).ListItem.Duration(mm),07)">7 $LOCALIZE[31147]</value>
 		<value condition="String.IsEqual(Container(10051).ListItem.Duration(mm),08)">8 $LOCALIZE[31147]</value>
 		<value condition="String.IsEqual(Container(10051).ListItem.Duration(mm),09)">9 $LOCALIZE[31147]</value>
-		<value />
+		<value/>
 	</variable>
 	<variable name="ExtendedDurationSpacing">
 		<value condition="Integer.IsGreater(Container(10051).ListItem.Duration(hh),00) + Integer.IsGreater(Container(10051).ListItem.Duration(mm),00)">[COLOR=00ffffff]r[/COLOR]</value>
-		<value />
+		<value/>
 	</variable>
 	<variable name="RatingTextColour">
 		<value condition="String.EndsWith(ListItem.Mpaa,12)">FFFF3C3C</value>
@@ -1417,7 +1417,7 @@
 		<value condition="String.StartsWith(ListItem.Premiered,31/)">31</value>
 	</variable>
 	<variable name="AiredDate_Month">
-		<value condition="!Skin.HasSetting(UK)" />
+		<value condition="!Skin.HasSetting(UK)"/>
 		<value condition="String.Contains(ListItem.Premiered,/01/)">$LOCALIZE[21]</value>
 		<value condition="String.Contains(ListItem.Premiered,/02/)">$LOCALIZE[22]</value>
 		<value condition="String.Contains(ListItem.Premiered,/03/)">$LOCALIZE[23]</value>
@@ -1432,7 +1432,7 @@
 		<value condition="String.Contains(ListItem.Premiered,/12/)">$LOCALIZE[32]</value>
 	</variable>
 	<variable name="AiredDate_YearStart">
-		<value condition="!Skin.HasSetting(UK)" />
+		<value condition="!Skin.HasSetting(UK)"/>
 		<value condition="String.Contains(ListItem.Premiered,/19)">19</value>
 		<value condition="String.Contains(ListItem.Premiered,/20)">20</value>
 	</variable>
@@ -1695,7 +1695,7 @@
 		<value condition="String.IsEqual(ListItem.Duration(hh),07)">7 $LOCALIZE[31148]</value>
 		<value condition="String.IsEqual(ListItem.Duration(hh),08)">8 $LOCALIZE[31148]</value>
 		<value condition="String.IsEqual(ListItem.Duration(hh),09)">9 $LOCALIZE[31148]</value>
-		<value />
+		<value/>
 	</variable>
 	<variable name="DurationMins">
 		<value condition="Integer.IsGreater(ListItem.Duration(mm),09)">$INFO[ListItem.Duration(mm),, $LOCALIZE[31147]]</value>
@@ -1708,14 +1708,14 @@
 		<value condition="String.IsEqual(ListItem.Duration(mm),07)">7 $LOCALIZE[31147]</value>
 		<value condition="String.IsEqual(ListItem.Duration(mm),08)">8 $LOCALIZE[31147]</value>
 		<value condition="String.IsEqual(ListItem.Duration(mm),09)">9 $LOCALIZE[31147]</value>
-		<value />
+		<value/>
 	</variable>
 	<variable name="DurationSpacing">
 		<value condition="Integer.IsGreater(ListItem.Duration(hh),00) + Integer.IsGreater(ListItem.Duration(mm),00)">[COLOR=00ffffff]r[/COLOR]</value>
-		<value />
+		<value/>
 	</variable>
 	<variable name="AiredDate_YearEnd">
-		<value condition="!Skin.HasSetting(UK)" />
+		<value condition="!Skin.HasSetting(UK)"/>
 		<value condition="String.EndsWith(ListItem.Premiered,00)">00</value>
 		<value condition="String.EndsWith(ListItem.Premiered,01)">01</value>
 		<value condition="String.EndsWith(ListItem.Premiered,02)">02</value>

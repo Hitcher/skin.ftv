@@ -302,7 +302,7 @@
 							<height>1152</height>
 							<texture border="100">views/shadow_fo.png</texture>
 							<include content="ContainerMoveFadeAnimation">
-								<param name="ListID" value="500" />
+								<param name="ListID" value="500"/>
 							</include>
 						</control>
 						<control type="image">
@@ -312,7 +312,7 @@
 							<height>1152</height>
 							<texture border="100">views/shadow_nf.png</texture>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="500" />
+								<param name="ListID" value="500"/>
 							</include>
 						</control>
 						<control type="image">
@@ -329,7 +329,7 @@
 							<texture>views/OverlayNF.png</texture>
 							<visible>Control.HasFocus(500)</visible>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="500" />
+								<param name="ListID" value="500"/>
 							</include>
 						</control>
 					</control>

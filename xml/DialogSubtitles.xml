@@ -11,8 +11,8 @@
 			<height>682</height>
 			<texture>osd/Pause.png</texture>
 			<animation reversible="true" type="WindowOpen">
-				<effect end="100" start="100" time="2000" type="fade" />
-				<effect delay="2000" end="0" start="100" time="200" type="fade" />
+				<effect end="100" start="100" time="2000" type="fade"/>
+				<effect delay="2000" end="0" start="100" time="200" type="fade"/>
 			</animation>
 		</control>
 		<control type="image">

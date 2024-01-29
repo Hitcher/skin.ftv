@@ -15,7 +15,7 @@
 	<!-- Settings shadow animation -->
 	<include name="SettingsShadowAnimation">
 		<animation condition="Container.Content(addons)" type="Conditional">
-			<effect easing="inout" end="100" start="0" time="120" tween="sine" type="fade" delay="80" />
+			<effect easing="inout" end="100" start="0" time="120" tween="sine" type="fade" delay="80"/>
 		</animation>
 	</include>
 	<!-- Home to window slide animation -->
@@ -30,8 +30,8 @@
 	<!-- List bounce animation -->
 	<include name="ListBounceAnimation">
 		<animation condition="Window.IsVisible(1103)" reversible="false" type="Conditional">
-			<effect easing="out" end="-40,0" start="0,0" time="60" tween="sine" type="slide" />
-			<effect delay="80" easing="out" end="40,0" start="0,0" time="120" tween="sine" type="slide" />
+			<effect easing="out" end="-40,0" start="0,0" time="60" tween="sine" type="slide"/>
+			<effect delay="80" easing="out" end="40,0" start="0,0" time="120" tween="sine" type="slide"/>
 		</animation>
 	</include>
 	<!-- Container move fade animation -->
@@ -56,23 +56,23 @@
 	<!-- Dialog zoom/fade visible animation -->
 	<include name="DialogZoomFadeVisibleAnimation">
 		<animation reversible="true" type="Visible">
-			<effect center="auto" easing="inout" end="100" start="92" time="120" tween="sine" type="zoom" />
-			<effect easing="inout" end="100" start="0" time="120" tween="sine" type="fade" />
+			<effect center="auto" easing="inout" end="100" start="92" time="120" tween="sine" type="zoom"/>
+			<effect easing="inout" end="100" start="0" time="120" tween="sine" type="fade"/>
 		</animation>
 		<animation reversible="true" type="Hidden">
-			<effect center="auto" easing="inout" end="92" start="100" time="120" tween="sine" type="zoom" />
-			<effect easing="inout" end="0" start="100" time="120" tween="sine" type="fade" />
+			<effect center="auto" easing="inout" end="92" start="100" time="120" tween="sine" type="zoom"/>
+			<effect easing="inout" end="0" start="100" time="120" tween="sine" type="fade"/>
 		</animation>
 	</include>
 	<!-- Dialog zoom/fade window open animation -->
 	<include name="DialogZoomFadeWindowOpenAnimation">
 		<animation reversible="true" type="WindowOpen">
-			<effect center="auto" easing="inout" end="100" start="92" time="120" tween="sine" type="zoom" />
-			<effect easing="inout" end="100" start="0" time="120" tween="sine" type="fade" />
+			<effect center="auto" easing="inout" end="100" start="92" time="120" tween="sine" type="zoom"/>
+			<effect easing="inout" end="100" start="0" time="120" tween="sine" type="fade"/>
 		</animation>
 		<animation reversible="true" type="WindowClose">
-			<effect center="auto" easing="inout" end="92" start="100" time="120" tween="sine" type="zoom" />
-			<effect easing="inout" end="0" start="100" time="120" tween="sine" type="fade" />
+			<effect center="auto" easing="inout" end="92" start="100" time="120" tween="sine" type="zoom"/>
+			<effect easing="inout" end="0" start="100" time="120" tween="sine" type="fade"/>
 		</animation>
 	</include>
 	<!-- Startup fade animation -->
@@ -120,24 +120,24 @@
 	<!-- Dialog fade and zoom animation -->
 	<include name="DialogZoomAnimation">
 		<animation condition="$PARAM[OpenCondition]" type="WindowOpen">
-			<effect center="auto" end="100" start="90" time="120" type="zoom" />
-			<effect easing="inout" end="100" start="0" time="120" tween="sine" type="fade" />
+			<effect center="auto" end="100" start="90" time="120" type="zoom"/>
+			<effect easing="inout" end="100" start="0" time="120" tween="sine" type="fade"/>
 		</animation>
 		<animation condition="$PARAM[CloseCondition]" type="WindowClose">
-			<effect center="auto" end="90" start="100" time="120" type="zoom" />
-			<effect easing="inout" end="0" start="100" time="120" tween="sine" type="fade" />
+			<effect center="auto" end="90" start="100" time="120" type="zoom"/>
+			<effect easing="inout" end="0" start="100" time="120" tween="sine" type="fade"/>
 		</animation>
 	</include>
 	<!-- Dialog slide animation -->
 	<include name="DialogSlideAnimation">
 		<animation condition="!Window.IsVisible(script-skinshortcuts.xml) + !Window.IsVisible(addoninformation) + [Window.IsVisible(addonbrowser) | Window.IsVisible(settingscategory.xml) | Window.IsVisible(skinsettings)]" effect="slide" end="-148,-22">Conditional</animation>
 		<animation condition="!Window.IsVisible(1105) + !Window.IsVisible(script-skinshortcuts.xml) + !Window.IsVisible(addoninformation) + [Window.IsVisible(addonbrowser) | Window.IsVisible(settingscategory.xml) | Window.IsVisible(skinsettings)]" reversible="false" type="WindowOpen">
-			<effect end="100" start="0" time="200" type="fade" delay="100" />
-			<effect easing="inout" end="0,0" start="1000,0" time="200" tween="sine" type="slide" delay="100" />
+			<effect end="100" start="0" time="200" type="fade" delay="100"/>
+			<effect easing="inout" end="0,0" start="1000,0" time="200" tween="sine" type="slide" delay="100"/>
 		</animation>
 		<animation condition="!Window.IsVisible(1105) + !Window.IsVisible(script-skinshortcuts.xml) + !Window.IsVisible(addoninformation) + [Window.IsVisible(addonbrowser) | Window.IsVisible(settingscategory.xml) | Window.IsVisible(skinsettings)]" reversible="false" type="WindowClose">
-			<effect end="0" start="100" time="120" type="fade" />
-			<effect easing="inout" end="1000,0" start="0,0" time="120" tween="sine" type="slide" />
+			<effect end="0" start="100" time="120" type="fade"/>
+			<effect easing="inout" end="1000,0" start="0,0" time="120" tween="sine" type="slide"/>
 		</animation>
 	</include>
 	<!-- Dialog video info animation -->
@@ -147,26 +147,26 @@
 	<!-- Home Widgets Animation -->
 	<include name="HomeWidgetsAnimation">
 		<animation condition="Container(99).OnNext" reversible="false" type="Visible">
-			<effect center="1920,1080" delay="280" easing="in" end="100" start="98" time="180" tween="sine" type="zoom" />
-			<effect delay="280" easing="in" end="0,0" start="0,-80" time="180" tween="sine" type="slide" />
-			<effect delay="280" easing="in" end="100" start="0" time="180" tween="sine" type="fade" />
+			<effect center="1920,1080" delay="280" easing="in" end="100" start="98" time="180" tween="sine" type="zoom"/>
+			<effect delay="280" easing="in" end="0,0" start="0,-80" time="180" tween="sine" type="slide"/>
+			<effect delay="280" easing="in" end="100" start="0" time="180" tween="sine" type="fade"/>
 		</animation>
 		<animation condition="Container(99).OnPrevious" reversible="false" type="Visible">
-			<effect center="1920,1080" delay="280" easing="in" end="100" start="98" time="180" tween="sine" type="zoom" />
-			<effect delay="280" easing="in" end="0,0" start="0,80" time="180" tween="sine" type="slide" />
-			<effect delay="280" easing="in" end="100" start="0" time="180" tween="sine" type="fade" />
+			<effect center="1920,1080" delay="280" easing="in" end="100" start="98" time="180" tween="sine" type="zoom"/>
+			<effect delay="280" easing="in" end="0,0" start="0,80" time="180" tween="sine" type="slide"/>
+			<effect delay="280" easing="in" end="100" start="0" time="180" tween="sine" type="fade"/>
 		</animation>
 		<animation reversible="false" type="Hidden">
-			<effect center="1920,1080" easing="out" end="98" start="100" time="180" tween="linear" type="zoom" />
-			<effect easing="out" end="0" start="100" time="180" tween="linear" type="fade" />
+			<effect center="1920,1080" easing="out" end="98" start="100" time="180" tween="linear" type="zoom"/>
+			<effect easing="out" end="0" start="100" time="180" tween="linear" type="fade"/>
 		</animation>
 		<animation condition="Window.IsVisible(1101)" reversible="false" type="Conditional">
-			<effect easing="out" end="0,60" start="0,0" time="60" tween="sine" type="slide" />
-			<effect delay="80" easing="out" end="0,-60" start="0,0" time="120" tween="sine" type="slide" />
+			<effect easing="out" end="0,60" start="0,0" time="60" tween="sine" type="slide"/>
+			<effect delay="80" easing="out" end="0,-60" start="0,0" time="120" tween="sine" type="slide"/>
 		</animation>
 		<animation condition="Window.IsVisible(1102)" reversible="false" type="Conditional">
-			<effect easing="out" end="0,-60" start="0,0" time="60" tween="sine" type="slide" />
-			<effect delay="80" easing="out" end="0,60" start="0,0" time="120" tween="sine" type="slide" />
+			<effect easing="out" end="0,-60" start="0,0" time="60" tween="sine" type="slide"/>
+			<effect delay="80" easing="out" end="0,60" start="0,0" time="120" tween="sine" type="slide"/>
 		</animation>
 	</include>
 	<!-- Home menu slide animations -->

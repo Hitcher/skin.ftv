@@ -155,7 +155,7 @@
 						<height>1152</height>
 						<texture border="100">views/shadow_fo.png</texture>
 						<include content="ContainerMoveFadeAnimation">
-							<param name="ListID" value="50" />
+							<param name="ListID" value="50"/>
 						</include>
 					</control>
 					<control type="image">
@@ -165,12 +165,12 @@
 						<height>1152</height>
 						<texture border="100">views/shadow_nf.png</texture>
 						<include content="FocusedListIDAnimation">
-							<param name="ListID" value="50" />
+							<param name="ListID" value="50"/>
 						</include>
 					</control>
 					<control type="group">
 						<include content="FocusedListIDFadeDiffuseAnimation">
-							<param name="ListID" value="50" />
+							<param name="ListID" value="50"/>
 						</include>
 						<control type="image">
 							<top>96</top>
@@ -657,10 +657,10 @@
 					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="6">dialogs/OptionsBackgroundButtonFO.png</texturefocus>
 					<texturenofocus border="6">dialogs/OptionsBackgroundButtonNF.png</texturenofocus>
-					<textureradioonfocus />
-					<textureradioonnofocus />
-					<textureradioofffocus />
-					<textureradiooffnofocus />
+					<textureradioonfocus/>
+					<textureradioonnofocus/>
+					<textureradioofffocus/>
+					<textureradiooffnofocus/>
 					<visible>Container.CanFilterAdvanced</visible>
 				</control>
 				<control type="image" id="5012">

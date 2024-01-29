@@ -12,8 +12,8 @@
 			<width>2120</width>
 			<height>1146</height>
 			<include content="DialogZoomAnimation">
-				<param name="OpenCondition" value="!Window.IsVisible(settingscategory.xml)" />
-				<param name="CloseCondition" value="!Window.IsVisible(settingscategory.xml)" />
+				<param name="OpenCondition" value="!Window.IsVisible(settingscategory.xml)"/>
+				<param name="CloseCondition" value="!Window.IsVisible(settingscategory.xml)"/>
 			</include>
 			<!-- Dialog background image -->
 			<control type="image">
@@ -129,28 +129,28 @@
 			<height>960</height>
 			<include>DialogSlideAnimation</include>
 			<include content="DialogZoomAnimation">
-				<param name="OpenCondition" value="!Window.IsVisible(settingscategory.xml)" />
-				<param name="CloseCondition" value="!Window.IsVisible(settingscategory.xml)" />
+				<param name="OpenCondition" value="!Window.IsVisible(settingscategory.xml)"/>
+				<param name="CloseCondition" value="!Window.IsVisible(settingscategory.xml)"/>
 			</include>
 			<include content="DialogBack">
-				<param name="dialog_group_visible" value="Control.IsVisible(3)" />
+				<param name="dialog_group_visible" value="Control.IsVisible(3)"/>
 			</include>
 			<include content="DialogBack">
-				<param name="dialog_shadow_2_left" value="1116" />
-				<param name="dialog_shadow_2_visible" value="true" />
-				<param name="dialog_group_visible" value="Control.IsVisible(6)" />
+				<param name="dialog_shadow_2_left" value="1116"/>
+				<param name="dialog_shadow_2_visible" value="true"/>
+				<param name="dialog_group_visible" value="Control.IsVisible(6)"/>
 			</include>
 			<include content="DialogHeading">
-				<param name="dialog_heading_label_visible" value="Control.IsVisible(3)" />
+				<param name="dialog_heading_label_visible" value="Control.IsVisible(3)"/>
 			</include>
 			<include content="DialogHeadingCount">
-				<param name="dialog_heading_count_container_id" value="3" />
+				<param name="dialog_heading_count_container_id" value="3"/>
 			</include>
 			<include content="DialogHeading">
-				<param name="dialog_heading_label_visible" value="Control.IsVisible(6)" />
+				<param name="dialog_heading_label_visible" value="Control.IsVisible(6)"/>
 			</include>
 			<include content="DialogHeadingCount">
-				<param name="dialog_heading_count_container_id" value="6" />
+				<param name="dialog_heading_count_container_id" value="6"/>
 			</include>
 			<control id="3" type="fixedlist">
 				<top>120</top>
@@ -345,21 +345,21 @@
 				<align>right</align>
 				<!-- Get more Button -->
 				<include content="DialogButton">
-					<param name="button_id" value="8" />
-					<param name="button_label" value="" />
-					<param name="button_visible" value="Control.IsEnabled(8)" />
+					<param name="button_id" value="8"/>
+					<param name="button_label" value=""/>
+					<param name="button_visible" value="Control.IsEnabled(8)"/>
 				</include>
 				<!-- Cancel Button -->
 				<include content="DialogButton">
-					<param name="button_id" value="7" />
-					<param name="button_label" value="222" />
-					<param name="button_visible" value="Control.IsEnabled(7)" />
+					<param name="button_id" value="7"/>
+					<param name="button_label" value="222"/>
+					<param name="button_visible" value="Control.IsEnabled(7)"/>
 				</include>
 				<!-- OK Button -->
 				<include content="DialogButton">
-					<param name="button_id" value="5" />
-					<param name="button_label" value="409" />
-					<param name="button_visible" value="Control.IsEnabled(5)" />
+					<param name="button_id" value="5"/>
+					<param name="button_label" value="409"/>
+					<param name="button_visible" value="Control.IsEnabled(5)"/>
 				</include>
 			</control>
 		</control>
@@ -629,7 +629,7 @@
 						<height>504</height>
 						<texture>views/OverlayNF.png</texture>
 						<include content="FocusedListIDAnimation">
-							<param name="ListID" value="10811" />
+							<param name="ListID" value="10811"/>
 						</include>
 					</control>
 				</focusedlayout>
@@ -730,7 +730,7 @@
 						<height>504</height>
 						<texture>views/OverlayNF.png</texture>
 						<include content="FocusedListIDAnimation">
-							<param name="ListID" value="10811" />
+							<param name="ListID" value="10811"/>
 						</include>
 					</control>
 				</focusedlayout>
@@ -755,13 +755,13 @@
 			<height>960</height>
 			<include content="DialogZoomAnimation"></include>
 			<include content="DialogBack">
-				<param name="dialog_back_width" value="2874" />
-				<param name="dialog_heading_width" value="1716" />
-				<param name="dialog_shadow_1_left" value="1716" />
+				<param name="dialog_back_width" value="2874"/>
+				<param name="dialog_heading_width" value="1716"/>
+				<param name="dialog_shadow_1_left" value="1716"/>
 			</include>
 			<include content="DialogHeading">
-				<param name="dialog_heading_label_width" value="1556" />
-				<param name="dialog_heading_label" value="31171" />
+				<param name="dialog_heading_label_width" value="1556"/>
+				<param name="dialog_heading_label" value="31171"/>
 			</include>
 			<control type="label">
 				<left>80</left>

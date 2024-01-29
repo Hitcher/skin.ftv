@@ -41,7 +41,7 @@
 					<width>960</width>
 					<height>192</height>
 					<font>Reg24</font>
-					<label />
+					<label/>
 					<textcolor>ffdadada</textcolor>
 					<wrapmultiline>true</wrapmultiline>
 				</control>
@@ -50,7 +50,7 @@
 					<width>960</width>
 					<height>96</height>
 					<font>Reg37</font>
-					<label />
+					<label/>
 					<textcolor>ffdadada</textcolor>
 				</control>
 				<control type="label" id="205">
@@ -58,7 +58,7 @@
 					<width>960</width>
 					<height>192</height>
 					<font>Reg24</font>
-					<label />
+					<label/>
 					<textcolor>ffdadada</textcolor>
 					<wrapmultiline>true</wrapmultiline>
 				</control>

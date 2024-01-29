@@ -49,28 +49,28 @@
 			<width>3080</width>
 			<height>1496</height>
 			<include content="DialogZoomAnimation">
-				<param name="OpenCondition" value="true" />
-				<param name="CloseCondition" value="true" />
+				<param name="OpenCondition" value="true"/>
+				<param name="CloseCondition" value="true"/>
 			</include>
 			<include content="DialogBack">
-				<param name="dialog_back_width" value="3080" />
-				<param name="dialog_back_height" value="1496" />
-				<param name="dialog_heading_width" value="3080" />
-				<param name="dialog_shadow_1_visible" value="false" />
-				<param name="dialog_shadow_2_left" value="1340" />
-				<param name="dialog_shadow_2_height" value="1176" />
-				<param name="dialog_shadow_2_visible" value="true" />
+				<param name="dialog_back_width" value="3080"/>
+				<param name="dialog_back_height" value="1496"/>
+				<param name="dialog_heading_width" value="3080"/>
+				<param name="dialog_shadow_1_visible" value="false"/>
+				<param name="dialog_shadow_2_left" value="1340"/>
+				<param name="dialog_shadow_2_height" value="1176"/>
+				<param name="dialog_shadow_2_visible" value="true"/>
 			</include>
 			<!-- Heading -->
 			<include content="DialogHeading">
-				<param name="dialog_heading_label_width" value="2920" />
-				<param name="dialog_heading_label" value="21432" />
-				<param name="dialog_heading_label_visible" value="String.IsEqual(Window.Property(groupname), mainmenu)" />
+				<param name="dialog_heading_label_width" value="2920"/>
+				<param name="dialog_heading_label" value="21432"/>
+				<param name="dialog_heading_label_visible" value="String.IsEqual(Window.Property(groupname), mainmenu)"/>
 			</include>
 			<include content="DialogHeading">
-				<param name="dialog_heading_label_width" value="2920" />
-				<param name="dialog_heading_label" value="31114" />
-				<param name="dialog_heading_label_visible" value="String.IsEqual(Window.Property(groupname), shutdown)" />
+				<param name="dialog_heading_label_width" value="2920"/>
+				<param name="dialog_heading_label" value="31114"/>
+				<param name="dialog_heading_label_visible" value="String.IsEqual(Window.Property(groupname), shutdown)"/>
 			</include>
 			<!-- Left list -->
 			<control type="list" id="211">
@@ -120,7 +120,7 @@
 						<textcolor>ffffffff</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<include content="FadeDiffuseAnimationFO">
-							<param name="FadeDiffuseConditionFO" value="Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303) | Control.HasFocus(304)" />
+							<param name="FadeDiffuseConditionFO" value="Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303) | Control.HasFocus(304)"/>
 						</include>
 					</control>
 					<control type="image">
@@ -130,10 +130,10 @@
 						<height>42</height>
 						<texture>dialogs/Delete.png</texture>
 						<include content="FadeDiffuseAnimationFO">
-							<param name="FadeDiffuseConditionFO" value="Control.HasFocus(302)" />
+							<param name="FadeDiffuseConditionFO" value="Control.HasFocus(302)"/>
 						</include>
 						<include content="FadeDiffuseAnimationNF">
-							<param name="FadeDiffuseConditionNF" value="!Control.HasFocus(302)" />
+							<param name="FadeDiffuseConditionNF" value="!Control.HasFocus(302)"/>
 						</include>
 					</control>
 					<control type="image">
@@ -143,13 +143,13 @@
 						<height>42</height>
 						<texture>dialogs/Add.png</texture>
 						<include content="FadeDiffuseAnimationFO">
-							<param name="FadeDiffuseConditionFO" value="Control.HasFocus(301) + Integer.IsLess(Container(211).NumItems,13)" />
+							<param name="FadeDiffuseConditionFO" value="Control.HasFocus(301) + Integer.IsLess(Container(211).NumItems,13)"/>
 						</include>
 						<include content="FadeDiffuseAnimationNF">
-							<param name="FadeDiffuseConditionNF" value="!Control.HasFocus(301) + Integer.IsLess(Container(211).NumItems,13)" />
+							<param name="FadeDiffuseConditionNF" value="!Control.HasFocus(301) + Integer.IsLess(Container(211).NumItems,13)"/>
 						</include>
 						<include content="FadeDiffuseAnimationDisabled">
-							<param name="FadeDiffuseConditionDisabled" value="!Control.HasFocus(301) + Integer.IsGreaterOrEqual(Container(211).NumItems,13)" />
+							<param name="FadeDiffuseConditionDisabled" value="!Control.HasFocus(301) + Integer.IsGreaterOrEqual(Container(211).NumItems,13)"/>
 						</include>
 					</control>
 					<control type="image">
@@ -159,10 +159,10 @@
 						<height>42</height>
 						<texture>dialogs/SpinDown.png</texture>
 						<include content="FadeDiffuseAnimationFO">
-							<param name="FadeDiffuseConditionFO" value="Control.HasFocus(304)" />
+							<param name="FadeDiffuseConditionFO" value="Control.HasFocus(304)"/>
 						</include>
 						<include content="FadeDiffuseAnimationNF">
-							<param name="FadeDiffuseConditionNF" value="!Control.HasFocus(304) " />
+							<param name="FadeDiffuseConditionNF" value="!Control.HasFocus(304) "/>
 						</include>
 					</control>
 					<control type="image">
@@ -172,10 +172,10 @@
 						<height>42</height>
 						<texture>dialogs/SpinUp.png</texture>
 						<include content="FadeDiffuseAnimationFO">
-							<param name="FadeDiffuseConditionFO" value="Control.HasFocus(303)" />
+							<param name="FadeDiffuseConditionFO" value="Control.HasFocus(303)"/>
 						</include>
 						<include content="FadeDiffuseAnimationNF">
-							<param name="FadeDiffuseConditionNF" value="!Control.HasFocus(303) " />
+							<param name="FadeDiffuseConditionNF" value="!Control.HasFocus(303) "/>
 						</include>
 					</control>
 				</focusedlayout>

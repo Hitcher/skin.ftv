@@ -360,10 +360,10 @@
 					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="6">dialogs/OptionsBackgroundButtonFO.png</texturefocus>
 					<texturenofocus border="6">dialogs/OptionsBackgroundButtonNF.png</texturenofocus>
-					<textureradioonfocus />
-					<textureradioonnofocus />
-					<textureradioofffocus />
-					<textureradiooffnofocus />
+					<textureradioonfocus/>
+					<textureradioonnofocus/>
+					<textureradioofffocus/>
+					<textureradiooffnofocus/>
 					<visible>Container.CanFilterAdvanced</visible>
 				</control>
 				<control type="image" id="5012">

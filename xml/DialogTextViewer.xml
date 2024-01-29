@@ -6,11 +6,11 @@
 	<onunload>ClearProperty(OpenTextViewer,home)</onunload>
 	<controls>
 		<control id="5" type="textbox">
-			<font />
+			<font/>
 		</control>
 		<!-- Heading -->
 		<control id="1" type="label">
-			<font />
+			<font/>
 		</control>
 		<!-- Background -->
 		<include>DialogTextBackgroundImage</include>

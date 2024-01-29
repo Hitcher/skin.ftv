@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<include file="Defaults.xml" />
-	<include file="Includes_Animations.xml" />
-	<include file="Includes_Expressions.xml" />
-	<include file="Includes_Parameters.xml" />
-	<include file="Includes_Variables.xml" />
-	<include file="Includes_AddonBrowser.xml" />
-	<include file="Includes_Dialog_Video_Information.xml" />
-	<include file="Includes_Dialog_Person_Information.xml" />
-	<include file="Includes_Dialog_Set_Information.xml" />
-	<include file="Includes_Dialog_Movie_TV_Information.xml" />
-	<include file="Includes_Dialog_Default_Video_Information.xml" />
-	<include file="Includes_DialogSelect.xml" />
-	<include file="Includes_DialogSettings.xml" />
-	<include file="Includes_DialogGameControllers.xml" />
-	<include file="Includes_Home_Widgets_Setup.xml" />
-	<include file="Includes_VideoInfoCast.xml" />
-	<include file="Viewtype50.xml" />
-	<include file="Viewtype51.xml" />
-	<include file="Viewtype52.xml" />
-	<include file="Viewtype53.xml" />
-	<include file="Viewtype54.xml" />
-	<include file="Viewtype55.xml" />
-	<include file="Viewtype56.xml" />
-	<include file="ForcedViewtype60.xml" />
-	<include file="ForcedViewtype61.xml" />
-	<include file="script-skinviewtypes-includes.xml" />
-	<include file="script-skinshortcuts-includes.xml" />
-	<include file="script-skinshortcuts-includes-default.xml" />
+	<include file="Defaults.xml"/>
+	<include file="Includes_Animations.xml"/>
+	<include file="Includes_Expressions.xml"/>
+	<include file="Includes_Parameters.xml"/>
+	<include file="Includes_Variables.xml"/>
+	<include file="Includes_AddonBrowser.xml"/>
+	<include file="Includes_Dialog_Video_Information.xml"/>
+	<include file="Includes_Dialog_Person_Information.xml"/>
+	<include file="Includes_Dialog_Set_Information.xml"/>
+	<include file="Includes_Dialog_Movie_TV_Information.xml"/>
+	<include file="Includes_Dialog_Default_Video_Information.xml"/>
+	<include file="Includes_DialogSelect.xml"/>
+	<include file="Includes_DialogSettings.xml"/>
+	<include file="Includes_DialogGameControllers.xml"/>
+	<include file="Includes_Home_Widgets_Setup.xml"/>
+	<include file="Includes_VideoInfoCast.xml"/>
+	<include file="Viewtype50.xml"/>
+	<include file="Viewtype51.xml"/>
+	<include file="Viewtype52.xml"/>
+	<include file="Viewtype53.xml"/>
+	<include file="Viewtype54.xml"/>
+	<include file="Viewtype55.xml"/>
+	<include file="Viewtype56.xml"/>
+	<include file="ForcedViewtype60.xml"/>
+	<include file="ForcedViewtype61.xml"/>
+	<include file="script-skinviewtypes-includes.xml"/>
+	<include file="script-skinshortcuts-includes.xml"/>
+	<include file="script-skinshortcuts-includes-default.xml"/>
 	<!-- Fullscreen dimensions -->
 	<include name="FullscreenDimensions">
 		<left>0</left>
@@ -115,7 +115,7 @@
 	<include name="osd_padding">
 		<height>164</height>
 		<width>35</width>
-		<texture />
+		<texture/>
 	</include>
 	<!-- Hidden List -->
 	<include name="HiddenList">
@@ -124,8 +124,8 @@
 		<height>1</height>
 		<viewtype label="">list</viewtype>
 		<orientation>horizontal</orientation>
-		<itemlayout height="1" width="1" />
-		<focusedlayout height="1" width="1" />
+		<itemlayout height="1" width="1"/>
+		<focusedlayout height="1" width="1"/>
 	</include>
 	<!-- Cast list -->
 	<include name="CastList">
@@ -147,18 +147,18 @@
 	</include>
 	<!-- No textures -->
 	<include name="NoTextures">
-		<texturefocus />
-		<texturenofocus />
-		<alttexturenofocus />
-		<alttexturefocus />
-		<textureradioonfocus />
-		<textureradioonnofocus />
-		<textureradioofffocus />
-		<textureradiooffnofocus />
-		<textureup />
-		<texturedown />
-		<textureupfocus />
-		<texturedownfocus />
+		<texturefocus/>
+		<texturenofocus/>
+		<alttexturenofocus/>
+		<alttexturefocus/>
+		<textureradioonfocus/>
+		<textureradioonnofocus/>
+		<textureradioofffocus/>
+		<textureradiooffnofocus/>
+		<textureup/>
+		<texturedown/>
+		<textureupfocus/>
+		<texturedownfocus/>
 	</include>
 	<!-- Hidden control -->
 	<include name="HiddenControl">
@@ -166,14 +166,14 @@
 		<top>-20</top>
 		<width>1</width>
 		<height>1</height>
-		<font />
-		<texture />
-		<texturefocus />
-		<texturenofocus />
-		<alttexturenofocus />
-		<alttexturefocus />
-		<textureradiofocus />
-		<textureradionofocus />
+		<font/>
+		<texture/>
+		<texturefocus/>
+		<texturenofocus/>
+		<alttexturenofocus/>
+		<alttexturefocus/>
+		<textureradiofocus/>
+		<textureradionofocus/>
 	</include>
 	<!-- Keyboard buttons -->
 	<include name="KeyboardButtons">
@@ -209,10 +209,10 @@
 			<height>24</height>
 			<info>Player.ProgressCache</info>
 			<texturebg border="12">osd/progress_bar_back.png</texturebg>
-			<lefttexture />
+			<lefttexture/>
 			<midtexture border="12">osd/progress_bar_cache.png</midtexture>
-			<righttexture />
-			<overlaytexture />
+			<righttexture/>
+			<overlaytexture/>
 		</control>
 		<!--  Progress bar -->
 		<control type="progress">
@@ -222,10 +222,10 @@
 			<height>24</height>
 			<info>Player.Progress</info>
 			<texturebg colordiffuse="00ffffff" border="12">osd/progress_bar_back.png</texturebg>
-			<lefttexture />
+			<lefttexture/>
 			<midtexture border="12">osd/progress_bar.png</midtexture>
-			<righttexture />
-			<overlaytexture />
+			<righttexture/>
+			<overlaytexture/>
 		</control>
 		<!--  Edits -->
 		<control type="ranges">

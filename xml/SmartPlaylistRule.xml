@@ -12,22 +12,22 @@
 			<height>792</height>
 			<include>DialogZoomAnimation</include>
 			<include content="DialogBack">
-				<param name="dialog_back_width" value="2400" />
-				<param name="dialog_back_height" value="792" />
-				<param name="dialog_heading_width" value="1600" />
-				<param name="dialog_shadow_1_left" value="1600" />
-				<param name="dialog_shadow_2_top" value="624" />
-				<param name="dialog_shadow_2_left" value="1200" />
-				<param name="dialog_shadow_2_height" value="168" />
-				<param name="dialog_shadow_2_visible" value="true" />
+				<param name="dialog_back_width" value="2400"/>
+				<param name="dialog_back_height" value="792"/>
+				<param name="dialog_heading_width" value="1600"/>
+				<param name="dialog_shadow_1_left" value="1600"/>
+				<param name="dialog_shadow_2_top" value="624"/>
+				<param name="dialog_shadow_2_left" value="1200"/>
+				<param name="dialog_shadow_2_height" value="168"/>
+				<param name="dialog_shadow_2_visible" value="true"/>
 			</include>
 			<!-- Heading -->
 			<include content="DialogHeading">
-				<param name="dialog_heading_label" value="21421" />
+				<param name="dialog_heading_label" value="21421"/>
 			</include>
 			<include content="DialogHeading">
-				<param name="dialog_heading_label_top" value="168" />
-				<param name="dialog_heading_label" value="21422" />
+				<param name="dialog_heading_label_top" value="168"/>
+				<param name="dialog_heading_label" value="21422"/>
 			</include>
 			<control type="image">
 				<top>284</top>
@@ -167,15 +167,15 @@
 				<align>right</align>
 				<!-- Cancel Button -->
 				<include content="DialogButton">
-					<param name="button_id" value="19" />
-					<param name="button_label" value="222" />
-					<param name="button_visible" value="Control.IsEnabled(19)" />
+					<param name="button_id" value="19"/>
+					<param name="button_label" value="222"/>
+					<param name="button_visible" value="Control.IsEnabled(19)"/>
 				</include>
 				<!-- OK/Manual/Get more Button -->
 				<include content="DialogButton">
-					<param name="button_id" value="18" />
-					<param name="button_label" value="186" />
-					<param name="button_visible" value="Control.IsEnabled(18)" />
+					<param name="button_id" value="18"/>
+					<param name="button_label" value="186"/>
+					<param name="button_visible" value="Control.IsEnabled(18)"/>
 				</include>
 			</control>
 		</control>

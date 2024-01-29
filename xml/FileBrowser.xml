@@ -16,30 +16,30 @@
 			<height>960</height>
 			<include>DialogSlideAnimation</include>
 			<include content="DialogZoomAnimation">
-				<param name="OpenCondition" value="!Window.IsVisible(settingscategory.xml) + !Window.IsVisible(addonbrowser)" />
-				<param name="CloseCondition" value="!Window.IsVisible(settingscategory.xml)" />
+				<param name="OpenCondition" value="!Window.IsVisible(settingscategory.xml) + !Window.IsVisible(addonbrowser)"/>
+				<param name="CloseCondition" value="!Window.IsVisible(settingscategory.xml)"/>
 			</include>
 			<include content="DialogBack">
-				<param name="dialog_group_visible" value="Control.IsVisible(450)" />
+				<param name="dialog_group_visible" value="Control.IsVisible(450)"/>
 			</include>
 			<include content="DialogBack">
-				<param name="dialog_shadow_2_left" value="1116" />
-				<param name="dialog_shadow_2_visible" value="true" />
-				<param name="dialog_group_visible" value="Control.IsVisible(451)" />
+				<param name="dialog_shadow_2_left" value="1116"/>
+				<param name="dialog_shadow_2_visible" value="true"/>
+				<param name="dialog_group_visible" value="Control.IsVisible(451)"/>
 			</include>
 			<include content="DialogHeading">
-				<param name="dialog_heading_label" value="$INFO[Control.GetLabel(411)]" />
-				<param name="dialog_heading_label_visible" value="Control.IsVisible(450)" />
+				<param name="dialog_heading_label" value="$INFO[Control.GetLabel(411)]"/>
+				<param name="dialog_heading_label_visible" value="Control.IsVisible(450)"/>
 			</include>
 			<include content="DialogHeadingCount">
-				<param name="dialog_heading_count_container_id" value="450" />
+				<param name="dialog_heading_count_container_id" value="450"/>
 			</include>
 			<include content="DialogHeading">
-				<param name="dialog_heading_label" value="$INFO[Control.GetLabel(411)]" />
-				<param name="dialog_heading_label_visible" value="Control.IsVisible(451)" />
+				<param name="dialog_heading_label" value="$INFO[Control.GetLabel(411)]"/>
+				<param name="dialog_heading_label_visible" value="Control.IsVisible(451)"/>
 			</include>
 			<include content="DialogHeadingCount">
-				<param name="dialog_heading_count_container_id" value="451" />
+				<param name="dialog_heading_count_container_id" value="451"/>
 			</include>
 			<control id="450" type="fixedlist">
 				<top>120</top>
@@ -221,28 +221,28 @@
 				<align>right</align>
 				<!-- Create folder -->
 				<include content="DialogButton">
-					<param name="button_id" value="415" />
-					<param name="button_label" value="119" />
-					<param name="button_visible" value="Control.IsEnabled(415)" />
+					<param name="button_id" value="415"/>
+					<param name="button_label" value="119"/>
+					<param name="button_visible" value="Control.IsEnabled(415)"/>
 				</include>
 				<!-- Mirror image -->
 				<include content="DialogButton">
-					<param name="button_id" value="416" />
-					<param name="button_type" value="radiobutton" />
-					<param name="button_label" value="749" />
-					<param name="button_visible" value="Control.IsEnabled(416)" />
+					<param name="button_id" value="416"/>
+					<param name="button_type" value="radiobutton"/>
+					<param name="button_label" value="749"/>
+					<param name="button_visible" value="Control.IsEnabled(416)"/>
 				</include>
 				<!-- Cancel Button -->
 				<include content="DialogButton">
-					<param name="button_id" value="414" />
-					<param name="button_label" value="222" />
-					<param name="button_visible" value="Control.IsEnabled(414)" />
+					<param name="button_id" value="414"/>
+					<param name="button_label" value="222"/>
+					<param name="button_visible" value="Control.IsEnabled(414)"/>
 				</include>
 				<!-- OK Button -->
 				<include content="DialogButton">
-					<param name="button_id" value="413" />
-					<param name="button_label" value="186" />
-					<param name="button_visible" value="Control.IsEnabled(413)" />
+					<param name="button_id" value="413"/>
+					<param name="button_label" value="186"/>
+					<param name="button_visible" value="Control.IsEnabled(413)"/>
 				</include>
 			</control>
 			<control type="label">

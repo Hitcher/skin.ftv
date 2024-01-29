@@ -24,18 +24,18 @@
 			<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
 			<visible>Skin.HasSetting(EnableFanart)</visible>
 		</control>
-			<!-- No info found -->
-			<control type="label">
-				<centertop>50%</centertop>
-				<centerleft>50%</centerleft>
-				<width>2000</width>
-				<height>64</height>
-				<font>Med54</font>
-				<align>center</align>
-				<textcolor>ffbebebe</textcolor>
-				<label>$LOCALIZE[31078]</label>
-				<visible>Control.IsVisible(999)</visible>
-			</control>
+		<!-- No info found -->
+		<control type="label">
+			<centertop>50%</centertop>
+			<centerleft>50%</centerleft>
+			<width>2000</width>
+			<height>64</height>
+			<font>Med54</font>
+			<align>center</align>
+			<textcolor>ffbebebe</textcolor>
+			<label>$LOCALIZE[31078]</label>
+			<visible>Control.IsVisible(999)</visible>
+		</control>
 		<control type="group">
 			<visible>!Control.IsVisible(991) + !Control.IsVisible(999)</visible>
 			<animation delay="800" effect="fade" end="100" start="0" time="200">WindowOpen</animation>
@@ -334,13 +334,13 @@
 				<scrolltime easing="inout" tween="sine">300</scrolltime>
 				<visible>!Container(9000).OnNext + !Container(9000).OnPrevious</visible>
 				<animation reversible="false" type="Hidden">
-					<effect center="714,1080" easing="out" end="98" start="100" time="180" tween="linear" type="zoom" />
-					<effect easing="out" end="0" start="100" time="180" tween="linear" type="fade" />
+					<effect center="714,1080" easing="out" end="98" start="100" time="180" tween="linear" type="zoom"/>
+					<effect easing="out" end="0" start="100" time="180" tween="linear" type="fade"/>
 				</animation>
 				<include>ListBounceAnimation</include>
 				<animation reversible="false" type="Visible">
-					<effect center="714,1080" delay="280" easing="in" end="100" start="98" time="180" tween="sine" type="zoom" />
-					<effect delay="280" easing="in" end="100" start="0" time="180" tween="sine" type="fade" />
+					<effect center="714,1080" delay="280" easing="in" end="100" start="98" time="180" tween="sine" type="zoom"/>
+					<effect delay="280" easing="in" end="100" start="0" time="180" tween="sine" type="fade"/>
 				</animation>
 				<animation effect="slide" end="-544,0" time="0" condition="Container.Content(episodes) | Container.Content(musicvideos)">Conditional</animation>
 				<animation effect="slide" end="-272,0" time="0" condition="![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)]">Conditional</animation>
@@ -397,7 +397,7 @@
 							<height>1152</height>
 							<texture border="100">views/shadow_fo.png</texture>
 							<include content="ContainerMoveFadeAnimation">
-								<param name="ListID" value="50" />
+								<param name="ListID" value="50"/>
 							</include>
 						</control>
 						<control type="image">
@@ -407,7 +407,7 @@
 							<height>1152</height>
 							<texture border="100">views/shadow_nf.png</texture>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="50" />
+								<param name="ListID" value="50"/>
 							</include>
 						</control>
 						<control type="image">
@@ -437,7 +437,7 @@
 							<texture>views/OverlayNF.png</texture>
 							<visible>!Control.HasFocus(999)</visible>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="50" />
+								<param name="ListID" value="50"/>
 							</include>
 						</control>
 					</control>
@@ -495,10 +495,10 @@
 							<height>24</height>
 							<info>ListItem.PercentPlayed</info>
 							<texturebg border="4">views/ProgressBack.png</texturebg>
-							<lefttexture />
+							<lefttexture/>
 							<midtexture border="4">views/ProgressBar.png</midtexture>
-							<righttexture />
-							<overlaytexture />
+							<righttexture/>
+							<overlaytexture/>
 							<visible>ListItem.IsResumable</visible>
 						</control>
 						<control type="image">
@@ -547,7 +547,7 @@
 							<height>1152</height>
 							<texture border="100">views/shadow_fo.png</texture>
 							<include content="ContainerMoveFadeAnimation">
-								<param name="ListID" value="50" />
+								<param name="ListID" value="50"/>
 							</include>
 						</control>
 						<control type="image">
@@ -557,7 +557,7 @@
 							<height>1152</height>
 							<texture border="100">views/shadow_nf.png</texture>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="50" />
+								<param name="ListID" value="50"/>
 							</include>
 						</control>
 						<control type="image">
@@ -609,10 +609,10 @@
 							<height>24</height>
 							<info>ListItem.PercentPlayed</info>
 							<texturebg border="4">views/ProgressBack.png</texturebg>
-							<lefttexture />
+							<lefttexture/>
 							<midtexture border="4">views/ProgressBar.png</midtexture>
-							<righttexture />
-							<overlaytexture />
+							<righttexture/>
+							<overlaytexture/>
 							<visible>ListItem.IsResumable</visible>
 						</control>
 						<control type="image">
@@ -639,7 +639,7 @@
 							<texture>views/OverlayNF.png</texture>
 							<visible>!Control.HasFocus(999)</visible>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="50" />
+								<param name="ListID" value="50"/>
 							</include>
 						</control>
 					</control>
@@ -684,7 +684,7 @@
 							<height>1152</height>
 							<texture border="100">views/shadow_fo.png</texture>
 							<include content="ContainerMoveFadeAnimation">
-								<param name="ListID" value="50" />
+								<param name="ListID" value="50"/>
 							</include>
 						</control>
 						<control type="image">
@@ -694,7 +694,7 @@
 							<height>1152</height>
 							<texture border="100">views/shadow_nf.png</texture>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="50" />
+								<param name="ListID" value="50"/>
 							</include>
 						</control>
 						<control type="image">
@@ -711,7 +711,7 @@
 							<texture>views/OverlayNF.png</texture>
 							<visible>!Control.HasFocus(999)</visible>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="50" />
+								<param name="ListID" value="50"/>
 							</include>
 						</control>
 					</control>

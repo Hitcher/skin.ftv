@@ -5,7 +5,7 @@
 			<label>$LOCALIZE[137]</label>
 			<label2>Custom shortcut</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">script.globalsearch</property>
 			<property name="defaultID">script.globalsearch</property>
 			<onclick>RunScript(script.globalsearch)</onclick>
@@ -21,7 +21,7 @@
 			<label>$LOCALIZE[10000]</label>
 			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">10000</property>
 			<property name="defaultID">home</property>
 			<property name="widgetName">31210</property>
@@ -40,7 +40,7 @@
 			<label>$LOCALIZE[20342]</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultMovies.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">20342</property>
 			<property name="defaultID">movies</property>
 			<property name="widgetName">31211</property>
@@ -59,7 +59,7 @@
 			<label>$LOCALIZE[36903]</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultTVShows.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">36903</property>
 			<property name="defaultID">tvshows</property>
 			<property name="widgetName">31212</property>
@@ -78,7 +78,7 @@
 			<label>$LOCALIZE[1036]</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">1036</property>
 			<property name="defaultID">favourites</property>
 			<property name="widget">favourites</property>
@@ -96,7 +96,7 @@
 			<label>$LOCALIZE[10025]</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultVideo.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">10025</property>
 			<property name="defaultID">videos</property>
 			<property name="widgetName">31213</property>
@@ -114,7 +114,7 @@
 			<label>$LOCALIZE[10502]</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultMusicAlbums.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">10502</property>
 			<property name="defaultID">music</property>
 			<property name="widgetName">31214</property>
@@ -130,9 +130,9 @@
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
 			<label>$LOCALIZE[15016]</label>
-			<label2 />
+			<label2/>
 			<icon>ftv_icon.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">15016</property>
 			<property name="defaultID">games</property>
 			<property name="widgetName">31215</property>
@@ -151,7 +151,7 @@
 			<label>$LOCALIZE[10506]</label>
 			<label2>Custom shortcut</label2>
 			<icon>DefaultProgram.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">10506</property>
 			<property name="defaultID">programs</property>
 			<property name="widgetName">31216</property>
@@ -169,7 +169,7 @@
 			<label>$LOCALIZE[1213]</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultPicture.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">1213</property>
 			<property name="defaultID">pictures</property>
 			<property name="widgetName">31217</property>
@@ -187,7 +187,7 @@
 			<label>$LOCALIZE[12600]</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">weather</property>
 			<property name="defaultID">weather</property>
 			<property name="widget">weather</property>
@@ -206,7 +206,7 @@
 			<label>$LOCALIZE[10004]</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultSettings.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">settings</property>
 			<property name="defaultID">settings</property>
 			<onclick>ActivateWindowAndFocus(Settings,9000,0)</onclick>
@@ -222,7 +222,7 @@
 			<label>$LOCALIZE[13012]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">13012</property>
 			<property name="defaultID">exit</property>
 			<onclick>ActivateWindow(ShutdownMenu)</onclick>
@@ -234,7 +234,7 @@
 			<property name="hasSubmenu">False</property>
 			</item>
 		</include>
-	<include />
+	<include/>
 	<include name="skinshortcuts-submenu">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
@@ -242,7 +242,7 @@
 			<label>$LOCALIZE[20386]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultRecentlyAddedMovies.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">20386</property>
 			<property name="defaultID">20386</property>
 			<onclick>ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</onclick>
@@ -258,7 +258,7 @@
 			<label>$LOCALIZE[20434]</label>
 			<label2>$LOCALIZE[342]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">20434</property>
 			<property name="defaultID">20434</property>
 			<visible>[Library.HasContent(MovieSets)] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),num-20342)</visible>
@@ -275,7 +275,7 @@
 			<label>$LOCALIZE[369]</label>
 			<label2>$LOCALIZE[342]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">369</property>
 			<property name="defaultID">369</property>
 			<visible>[Library.HasContent(Movies)] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),num-20342)</visible>
@@ -292,7 +292,7 @@
 			<label>$LOCALIZE[135]</label>
 			<label2>$LOCALIZE[342]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
 			<visible>[Library.HasContent(Movies)] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),num-20342)</visible>
@@ -309,7 +309,7 @@
 			<label>$LOCALIZE[562]</label>
 			<label2>$LOCALIZE[342]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">562</property>
 			<property name="defaultID">562</property>
 			<visible>[Library.HasContent(Movies)] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),num-20342)</visible>
@@ -326,7 +326,7 @@
 			<label>$LOCALIZE[344]</label>
 			<label2>$LOCALIZE[342]</label2>
 			<icon>DefaultActor.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">344</property>
 			<property name="defaultID">344</property>
 			<visible>[Library.HasContent(Movies)] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),num-20342)</visible>
@@ -343,7 +343,7 @@
 			<label>$LOCALIZE[20387]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultRecentlyAddedEpisodes.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">20387</property>
 			<property name="defaultID">20387</property>
 			<onclick>ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</onclick>
@@ -359,7 +359,7 @@
 			<label>$LOCALIZE[369]</label>
 			<label2>$LOCALIZE[20343]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">369</property>
 			<property name="defaultID">369</property>
 			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),num-36903)</visible>
@@ -376,7 +376,7 @@
 			<label>$LOCALIZE[135]</label>
 			<label2>$LOCALIZE[20343]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
 			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),num-36903)</visible>
@@ -393,7 +393,7 @@
 			<label>$LOCALIZE[562]</label>
 			<label2>$LOCALIZE[20343]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">562</property>
 			<property name="defaultID">562</property>
 			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),num-36903)</visible>
@@ -410,7 +410,7 @@
 			<label>$LOCALIZE[344]</label>
 			<label2>$LOCALIZE[20343]</label2>
 			<icon>DefaultActor.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">344</property>
 			<property name="defaultID">344</property>
 			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),num-36903)</visible>
@@ -427,7 +427,7 @@
 			<label>$LOCALIZE[20389]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultMusicVideos.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">musicvideos</property>
 			<property name="defaultID">musicvideos</property>
 			<visible>[Library.HasContent(MusicVideos)] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),num-10025)</visible>
@@ -444,7 +444,7 @@
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultFolder.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">744</property>
 			<property name="defaultID">744</property>
 			<onclick>ActivateWindow(Videos,Files,return)</onclick>
@@ -460,7 +460,7 @@
 			<label>$LOCALIZE[1037]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddonVideo.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">1037</property>
 			<property name="defaultID">1037</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
@@ -476,7 +476,7 @@
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultFolder.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">744</property>
 			<property name="defaultID">744</property>
 			<onclick>ActivateWindow(Music,Files,Return)</onclick>
@@ -492,7 +492,7 @@
 			<label>$LOCALIZE[15100]</label>
 			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultFolder.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">15100</property>
 			<property name="defaultID">15100</property>
 			<onclick>ActivateWindow(Music,MusicLibrary,return)</onclick>
@@ -508,7 +508,7 @@
 			<label>$LOCALIZE[1038]</label>
 			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultAddonMusic.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">1038</property>
 			<property name="defaultID">1038</property>
 			<onclick>ActivateWindow(Music,Addons,return)</onclick>
@@ -524,7 +524,7 @@
 			<label>$LOCALIZE[1039]</label>
 			<label2>$ADDON[script.skinshortcuts 32020]</label2>
 			<icon>DefaultAddonPicture.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">1039</property>
 			<property name="defaultID">1039</property>
 			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
@@ -540,7 +540,7 @@
 			<label>$LOCALIZE[7]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultFolder.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">7</property>
 			<property name="defaultID">7</property>
 			<onclick>ActivateWindow(FileManager)</onclick>
@@ -556,7 +556,7 @@
 			<label>$LOCALIZE[13200]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">13200</property>
 			<property name="defaultID">13200</property>
 			<onclick>ActivateWindow(Profiles)</onclick>
@@ -572,7 +572,7 @@
 			<label>$LOCALIZE[10007]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">10007</property>
 			<property name="defaultID">10007</property>
 			<onclick>ActivateWindow(SystemInfo)</onclick>
@@ -588,7 +588,7 @@
 			<label>$LOCALIZE[14111]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">14111</property>
 			<property name="defaultID">14111</property>
 			<visible>[system.getbool(eventlog.enabled)] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),settings)</visible>
@@ -605,7 +605,7 @@
 			<label>$LOCALIZE[13009]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultQuit.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">13009</property>
 			<property name="defaultID">13009</property>
 			<visible>[System.ShowExitButton] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),shutdown)</visible>
@@ -623,7 +623,7 @@
 			<label>$LOCALIZE[13011]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultSleep.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">13011</property>
 			<property name="defaultID">13011</property>
 			<visible>[System.CanSuspend] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),shutdown)</visible>
@@ -641,7 +641,7 @@
 			<label>$LOCALIZE[13010]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultSleep.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">13010</property>
 			<property name="defaultID">13010</property>
 			<visible>[System.CanHibernate] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),shutdown)</visible>
@@ -659,7 +659,7 @@
 			<label>$LOCALIZE[13013]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultReboot.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">13013</property>
 			<property name="defaultID">13013</property>
 			<onclick condition="true">Close</onclick>
@@ -676,7 +676,7 @@
 			<label>$LOCALIZE[13016]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultShutdown.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">13016</property>
 			<property name="defaultID">13016</property>
 			<visible>[System.CanPowerDown] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),shutdown)</visible>
@@ -694,7 +694,7 @@
 			<label>$LOCALIZE[13005]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultShutdown.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">13005</property>
 			<property name="defaultID">13005</property>
 			<onclick condition="true">Close</onclick>
@@ -711,7 +711,7 @@
 			<label>$LOCALIZE[19026]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultTimer.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">19026</property>
 			<property name="defaultID">19026</property>
 			<onclick condition="true">Close</onclick>
@@ -728,7 +728,7 @@
 			<label>$LOCALIZE[20151]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultQuit.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">20151</property>
 			<property name="defaultID">20151</property>
 			<visible>[System.HasAlarm(shutdowntimer)] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),shutdown)</visible>
@@ -746,7 +746,7 @@
 			<label>$LOCALIZE[360]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultScreensaver.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">360</property>
 			<property name="defaultID">360</property>
 			<onclick condition="true">Close</onclick>
@@ -763,7 +763,7 @@
 			<label>$LOCALIZE[20045]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultMastermode.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">20045</property>
 			<property name="defaultID">20045</property>
 			<visible>[System.HasLocks] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),shutdown)</visible>
@@ -781,7 +781,7 @@
 			<label>$LOCALIZE[20126]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultActor.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">20126</property>
 			<property name="defaultID">20126</property>
 			<visible>[[System.HasLoginScreen | Integer.IsGreater(System.ProfileCount,1)] + System.Loggedon] + String.IsEqual(Container(99).ListItem.Property(submenuVisibility),shutdown)</visible>
@@ -799,7 +799,7 @@
 			<label>$LOCALIZE[10004]</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultSettings.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">settings</property>
 			<property name="defaultID">settings</property>
 			<onclick condition="true">Close</onclick>
@@ -830,7 +830,7 @@
 			<label>$LOCALIZE[20386]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultRecentlyAddedMovies.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">20386</property>
 			<property name="defaultID">20386</property>
 			<onclick>ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</onclick>
@@ -846,7 +846,7 @@
 			<label>$LOCALIZE[20434]</label>
 			<label2>$LOCALIZE[342]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">20434</property>
 			<property name="defaultID">20434</property>
 			<visible>Library.HasContent(MovieSets)</visible>
@@ -863,7 +863,7 @@
 			<label>$LOCALIZE[369]</label>
 			<label2>$LOCALIZE[342]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">369</property>
 			<property name="defaultID">369</property>
 			<visible>Library.HasContent(Movies)</visible>
@@ -880,7 +880,7 @@
 			<label>$LOCALIZE[135]</label>
 			<label2>$LOCALIZE[342]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
 			<visible>Library.HasContent(Movies)</visible>
@@ -897,7 +897,7 @@
 			<label>$LOCALIZE[562]</label>
 			<label2>$LOCALIZE[342]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">562</property>
 			<property name="defaultID">562</property>
 			<visible>Library.HasContent(Movies)</visible>
@@ -914,7 +914,7 @@
 			<label>$LOCALIZE[344]</label>
 			<label2>$LOCALIZE[342]</label2>
 			<icon>DefaultActor.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">344</property>
 			<property name="defaultID">344</property>
 			<visible>Library.HasContent(Movies)</visible>
@@ -933,7 +933,7 @@
 			<label>$LOCALIZE[20386]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultRecentlyAddedMovies.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">20386</property>
 			<property name="defaultID">20386</property>
 			<onclick>ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</onclick>
@@ -949,7 +949,7 @@
 			<label>$LOCALIZE[20434]</label>
 			<label2>$LOCALIZE[342]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">20434</property>
 			<property name="defaultID">20434</property>
 			<visible>[Library.HasContent(MovieSets)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-20342)</visible>
@@ -966,7 +966,7 @@
 			<label>$LOCALIZE[369]</label>
 			<label2>$LOCALIZE[342]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">369</property>
 			<property name="defaultID">369</property>
 			<visible>[Library.HasContent(Movies)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-20342)</visible>
@@ -983,7 +983,7 @@
 			<label>$LOCALIZE[135]</label>
 			<label2>$LOCALIZE[342]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
 			<visible>[Library.HasContent(Movies)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-20342)</visible>
@@ -1000,7 +1000,7 @@
 			<label>$LOCALIZE[562]</label>
 			<label2>$LOCALIZE[342]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">562</property>
 			<property name="defaultID">562</property>
 			<visible>[Library.HasContent(Movies)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-20342)</visible>
@@ -1017,7 +1017,7 @@
 			<label>$LOCALIZE[344]</label>
 			<label2>$LOCALIZE[342]</label2>
 			<icon>DefaultActor.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">344</property>
 			<property name="defaultID">344</property>
 			<visible>[Library.HasContent(Movies)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-20342)</visible>
@@ -1036,7 +1036,7 @@
 			<label>$LOCALIZE[20387]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultRecentlyAddedEpisodes.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">20387</property>
 			<property name="defaultID">20387</property>
 			<onclick>ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</onclick>
@@ -1052,7 +1052,7 @@
 			<label>$LOCALIZE[369]</label>
 			<label2>$LOCALIZE[20343]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">369</property>
 			<property name="defaultID">369</property>
 			<visible>Library.HasContent(TVShows)</visible>
@@ -1069,7 +1069,7 @@
 			<label>$LOCALIZE[135]</label>
 			<label2>$LOCALIZE[20343]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
 			<visible>Library.HasContent(TVShows)</visible>
@@ -1086,7 +1086,7 @@
 			<label>$LOCALIZE[562]</label>
 			<label2>$LOCALIZE[20343]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">562</property>
 			<property name="defaultID">562</property>
 			<visible>Library.HasContent(TVShows)</visible>
@@ -1103,7 +1103,7 @@
 			<label>$LOCALIZE[344]</label>
 			<label2>$LOCALIZE[20343]</label2>
 			<icon>DefaultActor.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">344</property>
 			<property name="defaultID">344</property>
 			<visible>Library.HasContent(TVShows)</visible>
@@ -1122,7 +1122,7 @@
 			<label>$LOCALIZE[20387]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultRecentlyAddedEpisodes.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">20387</property>
 			<property name="defaultID">20387</property>
 			<onclick>ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</onclick>
@@ -1138,7 +1138,7 @@
 			<label>$LOCALIZE[369]</label>
 			<label2>$LOCALIZE[20343]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">369</property>
 			<property name="defaultID">369</property>
 			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-36903)</visible>
@@ -1155,7 +1155,7 @@
 			<label>$LOCALIZE[135]</label>
 			<label2>$LOCALIZE[20343]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
 			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-36903)</visible>
@@ -1172,7 +1172,7 @@
 			<label>$LOCALIZE[562]</label>
 			<label2>$LOCALIZE[20343]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">562</property>
 			<property name="defaultID">562</property>
 			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-36903)</visible>
@@ -1189,7 +1189,7 @@
 			<label>$LOCALIZE[344]</label>
 			<label2>$LOCALIZE[20343]</label2>
 			<icon>DefaultActor.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">344</property>
 			<property name="defaultID">344</property>
 			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-36903)</visible>
@@ -1214,7 +1214,7 @@
 			<label>$LOCALIZE[20389]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultMusicVideos.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">musicvideos</property>
 			<property name="defaultID">musicvideos</property>
 			<visible>Library.HasContent(MusicVideos)</visible>
@@ -1231,7 +1231,7 @@
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultFolder.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">744</property>
 			<property name="defaultID">744</property>
 			<onclick>ActivateWindow(Videos,Files,return)</onclick>
@@ -1247,7 +1247,7 @@
 			<label>$LOCALIZE[1037]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddonVideo.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">1037</property>
 			<property name="defaultID">1037</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
@@ -1265,7 +1265,7 @@
 			<label>$LOCALIZE[20389]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultMusicVideos.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">musicvideos</property>
 			<property name="defaultID">musicvideos</property>
 			<visible>[Library.HasContent(MusicVideos)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-10025)</visible>
@@ -1282,7 +1282,7 @@
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultFolder.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">744</property>
 			<property name="defaultID">744</property>
 			<onclick>ActivateWindow(Videos,Files,return)</onclick>
@@ -1298,7 +1298,7 @@
 			<label>$LOCALIZE[1037]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddonVideo.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">1037</property>
 			<property name="defaultID">1037</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
@@ -1316,7 +1316,7 @@
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultFolder.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">744</property>
 			<property name="defaultID">744</property>
 			<onclick>ActivateWindow(Music,Files,Return)</onclick>
@@ -1332,7 +1332,7 @@
 			<label>$LOCALIZE[15100]</label>
 			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultFolder.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">15100</property>
 			<property name="defaultID">15100</property>
 			<onclick>ActivateWindow(Music,MusicLibrary,return)</onclick>
@@ -1348,7 +1348,7 @@
 			<label>$LOCALIZE[1038]</label>
 			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultAddonMusic.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">1038</property>
 			<property name="defaultID">1038</property>
 			<onclick>ActivateWindow(Music,Addons,return)</onclick>
@@ -1366,7 +1366,7 @@
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultFolder.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">744</property>
 			<property name="defaultID">744</property>
 			<onclick>ActivateWindow(Music,Files,Return)</onclick>
@@ -1382,7 +1382,7 @@
 			<label>$LOCALIZE[15100]</label>
 			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultFolder.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">15100</property>
 			<property name="defaultID">15100</property>
 			<onclick>ActivateWindow(Music,MusicLibrary,return)</onclick>
@@ -1398,7 +1398,7 @@
 			<label>$LOCALIZE[1038]</label>
 			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultAddonMusic.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">1038</property>
 			<property name="defaultID">1038</property>
 			<onclick>ActivateWindow(Music,Addons,return)</onclick>
@@ -1428,7 +1428,7 @@
 			<label>$LOCALIZE[1039]</label>
 			<label2>$ADDON[script.skinshortcuts 32020]</label2>
 			<icon>DefaultAddonPicture.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">1039</property>
 			<property name="defaultID">1039</property>
 			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
@@ -1446,7 +1446,7 @@
 			<label>$LOCALIZE[1039]</label>
 			<label2>$ADDON[script.skinshortcuts 32020]</label2>
 			<icon>DefaultAddonPicture.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">1039</property>
 			<property name="defaultID">1039</property>
 			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
@@ -1470,7 +1470,7 @@
 			<label>$LOCALIZE[7]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultFolder.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">7</property>
 			<property name="defaultID">7</property>
 			<onclick>ActivateWindow(FileManager)</onclick>
@@ -1486,7 +1486,7 @@
 			<label>$LOCALIZE[13200]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">13200</property>
 			<property name="defaultID">13200</property>
 			<onclick>ActivateWindow(Profiles)</onclick>
@@ -1502,7 +1502,7 @@
 			<label>$LOCALIZE[10007]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">10007</property>
 			<property name="defaultID">10007</property>
 			<onclick>ActivateWindow(SystemInfo)</onclick>
@@ -1518,7 +1518,7 @@
 			<label>$LOCALIZE[14111]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">14111</property>
 			<property name="defaultID">14111</property>
 			<visible>system.getbool(eventlog.enabled)</visible>
@@ -1537,7 +1537,7 @@
 			<label>$LOCALIZE[7]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultFolder.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">7</property>
 			<property name="defaultID">7</property>
 			<onclick>ActivateWindow(FileManager)</onclick>
@@ -1553,7 +1553,7 @@
 			<label>$LOCALIZE[13200]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">13200</property>
 			<property name="defaultID">13200</property>
 			<onclick>ActivateWindow(Profiles)</onclick>
@@ -1569,7 +1569,7 @@
 			<label>$LOCALIZE[10007]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">10007</property>
 			<property name="defaultID">10007</property>
 			<onclick>ActivateWindow(SystemInfo)</onclick>
@@ -1585,7 +1585,7 @@
 			<label>$LOCALIZE[14111]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">14111</property>
 			<property name="defaultID">14111</property>
 			<visible>[system.getbool(eventlog.enabled)] + String.IsEqual(Window(10000).Property(submenuVisibility),settings)</visible>
@@ -1610,7 +1610,7 @@
 			<label>$LOCALIZE[13009]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultQuit.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">13009</property>
 			<property name="defaultID">13009</property>
 			<visible>System.ShowExitButton</visible>
@@ -1628,7 +1628,7 @@
 			<label>$LOCALIZE[13011]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultSleep.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">13011</property>
 			<property name="defaultID">13011</property>
 			<visible>System.CanSuspend</visible>
@@ -1646,7 +1646,7 @@
 			<label>$LOCALIZE[13010]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultSleep.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">13010</property>
 			<property name="defaultID">13010</property>
 			<visible>System.CanHibernate</visible>
@@ -1664,7 +1664,7 @@
 			<label>$LOCALIZE[13013]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultReboot.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">13013</property>
 			<property name="defaultID">13013</property>
 			<onclick condition="true">Close</onclick>
@@ -1681,7 +1681,7 @@
 			<label>$LOCALIZE[13016]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultShutdown.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">13016</property>
 			<property name="defaultID">13016</property>
 			<visible>System.CanPowerDown</visible>
@@ -1699,7 +1699,7 @@
 			<label>$LOCALIZE[13005]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultShutdown.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">13005</property>
 			<property name="defaultID">13005</property>
 			<onclick condition="true">Close</onclick>
@@ -1716,7 +1716,7 @@
 			<label>$LOCALIZE[19026]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultTimer.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">19026</property>
 			<property name="defaultID">19026</property>
 			<onclick condition="true">Close</onclick>
@@ -1733,7 +1733,7 @@
 			<label>$LOCALIZE[20151]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultQuit.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">20151</property>
 			<property name="defaultID">20151</property>
 			<visible>System.HasAlarm(shutdowntimer)</visible>
@@ -1751,7 +1751,7 @@
 			<label>$LOCALIZE[360]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultScreensaver.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">360</property>
 			<property name="defaultID">360</property>
 			<onclick condition="true">Close</onclick>
@@ -1768,7 +1768,7 @@
 			<label>$LOCALIZE[20045]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultMastermode.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">20045</property>
 			<property name="defaultID">20045</property>
 			<visible>System.HasLocks</visible>
@@ -1786,7 +1786,7 @@
 			<label>$LOCALIZE[20126]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultActor.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">20126</property>
 			<property name="defaultID">20126</property>
 			<visible>[System.HasLoginScreen | Integer.IsGreater(System.ProfileCount,1)] + System.Loggedon</visible>
@@ -1804,7 +1804,7 @@
 			<label>$LOCALIZE[10004]</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultSettings.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">settings</property>
 			<property name="defaultID">settings</property>
 			<onclick condition="true">Close</onclick>
@@ -1823,7 +1823,7 @@
 			<label>$LOCALIZE[13009]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultQuit.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">13009</property>
 			<property name="defaultID">13009</property>
 			<visible>[System.ShowExitButton] + String.IsEqual(Window(10000).Property(submenuVisibility),shutdown)</visible>
@@ -1841,7 +1841,7 @@
 			<label>$LOCALIZE[13011]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultSleep.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">13011</property>
 			<property name="defaultID">13011</property>
 			<visible>[System.CanSuspend] + String.IsEqual(Window(10000).Property(submenuVisibility),shutdown)</visible>
@@ -1859,7 +1859,7 @@
 			<label>$LOCALIZE[13010]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultSleep.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">13010</property>
 			<property name="defaultID">13010</property>
 			<visible>[System.CanHibernate] + String.IsEqual(Window(10000).Property(submenuVisibility),shutdown)</visible>
@@ -1877,7 +1877,7 @@
 			<label>$LOCALIZE[13013]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultReboot.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">13013</property>
 			<property name="defaultID">13013</property>
 			<onclick condition="true">Close</onclick>
@@ -1894,7 +1894,7 @@
 			<label>$LOCALIZE[13016]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultShutdown.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">13016</property>
 			<property name="defaultID">13016</property>
 			<visible>[System.CanPowerDown] + String.IsEqual(Window(10000).Property(submenuVisibility),shutdown)</visible>
@@ -1912,7 +1912,7 @@
 			<label>$LOCALIZE[13005]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultShutdown.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">13005</property>
 			<property name="defaultID">13005</property>
 			<onclick condition="true">Close</onclick>
@@ -1929,7 +1929,7 @@
 			<label>$LOCALIZE[19026]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultTimer.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">19026</property>
 			<property name="defaultID">19026</property>
 			<onclick condition="true">Close</onclick>
@@ -1946,7 +1946,7 @@
 			<label>$LOCALIZE[20151]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultQuit.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">20151</property>
 			<property name="defaultID">20151</property>
 			<visible>[System.HasAlarm(shutdowntimer)] + String.IsEqual(Window(10000).Property(submenuVisibility),shutdown)</visible>
@@ -1964,7 +1964,7 @@
 			<label>$LOCALIZE[360]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultScreensaver.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">360</property>
 			<property name="defaultID">360</property>
 			<onclick condition="true">Close</onclick>
@@ -1981,7 +1981,7 @@
 			<label>$LOCALIZE[20045]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultMastermode.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">20045</property>
 			<property name="defaultID">20045</property>
 			<visible>[System.HasLocks] + String.IsEqual(Window(10000).Property(submenuVisibility),shutdown)</visible>
@@ -1999,7 +1999,7 @@
 			<label>$LOCALIZE[20126]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultActor.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">20126</property>
 			<property name="defaultID">20126</property>
 			<visible>[[System.HasLoginScreen | Integer.IsGreater(System.ProfileCount,1)] + System.Loggedon] + String.IsEqual(Window(10000).Property(submenuVisibility),shutdown)</visible>
@@ -2017,7 +2017,7 @@
 			<label>$LOCALIZE[10004]</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultSettings.png</icon>
-			<thumb />
+			<thumb/>
 			<property name="labelID">settings</property>
 			<property name="defaultID">settings</property>
 			<onclick condition="true">Close</onclick>

@@ -11,21 +11,21 @@
 			<height>1360</height>
 			<include>DialogSlideAnimation</include>
 			<include content="DialogZoomAnimation">
-				<param name="OpenCondition" value="true" />
-				<param name="CloseCondition" value="true" />
+				<param name="OpenCondition" value="true"/>
+				<param name="CloseCondition" value="true"/>
 			</include>
 			<include content="DialogBack">
-				<param name="dialog_back_height" value="1360" />
-				<param name="dialog_shadow_1_height" value="1240" />
-				<param name="dialog_shadow_2_left" value="1116" />
-				<param name="dialog_shadow_2_height" value="1120" />
-				<param name="dialog_shadow_2_visible" value="true" />
+				<param name="dialog_back_height" value="1360"/>
+				<param name="dialog_shadow_1_height" value="1240"/>
+				<param name="dialog_shadow_2_left" value="1116"/>
+				<param name="dialog_shadow_2_height" value="1120"/>
+				<param name="dialog_shadow_2_visible" value="true"/>
 			</include>
 			<include content="DialogHeading">
-				<param name="dialog_heading_label_id" value="2" />
+				<param name="dialog_heading_label_id" value="2"/>
 			</include>
 			<include content="DialogHeadingCount">
-				<param name="dialog_heading_count_container_id" value="50" />
+				<param name="dialog_heading_count_container_id" value="50"/>
 			</include>
 			<control type="image">
 				<top>1240</top>
@@ -160,45 +160,45 @@
 				<align>right</align>
 				<!-- Play Button -->
 				<include content="DialogButton">
-					<param name="button_id" value="21" />
-					<param name="button_label" value="208" />
-					<param name="button_visible" value="Control.IsEnabled(21)" />
+					<param name="button_id" value="21"/>
+					<param name="button_label" value="208"/>
+					<param name="button_visible" value="Control.IsEnabled(21)"/>
 				</include>
 				<!-- Add version Button -->
 				<include content="DialogButton">
-					<param name="button_id" value="22" />
-					<param name="button_label" value="40014" />
-					<param name="button_visible" value="Window.IsVisible(managevideoversions)" />
+					<param name="button_id" value="22"/>
+					<param name="button_label" value="40014"/>
+					<param name="button_visible" value="Window.IsVisible(managevideoversions)"/>
 				</include>
 				<!-- Add extras Button -->
 				<include content="DialogButton">
-					<param name="button_id" value="23" />
-					<param name="button_label" value="40015" />
-					<param name="button_visible" value="Window.IsVisible(managevideoextras)" />
+					<param name="button_id" value="23"/>
+					<param name="button_label" value="40015"/>
+					<param name="button_visible" value="Window.IsVisible(managevideoextras)"/>
 				</include>
 				<!-- Choose art Button -->
 				<include content="DialogButton">
-					<param name="button_id" value="27" />
-					<param name="button_label" value="13511" />
-					<param name="button_visible" value="Control.IsEnabled(27)" />
+					<param name="button_id" value="27"/>
+					<param name="button_label" value="13511"/>
+					<param name="button_visible" value="Control.IsEnabled(27)"/>
 				</include>
 				<!-- Rename Button -->
 				<include content="DialogButton">
-					<param name="button_id" value="24" />
-					<param name="button_label" value="118" />
-					<param name="button_visible" value="Control.IsEnabled(24)" />
+					<param name="button_id" value="24"/>
+					<param name="button_label" value="118"/>
+					<param name="button_visible" value="Control.IsEnabled(24)"/>
 				</include>
 				<!-- Remove Button -->
 				<include content="DialogButton">
-					<param name="button_id" value="26" />
-					<param name="button_label" value="15015" />
-					<param name="button_visible" value="Control.IsEnabled(26)" />
+					<param name="button_id" value="26"/>
+					<param name="button_label" value="15015"/>
+					<param name="button_visible" value="Control.IsEnabled(26)"/>
 				</include>
 				<!-- Set default Button -->
 				<include content="DialogButton">
-					<param name="button_id" value="25" />
-					<param name="button_label" value="40023" />
-					<param name="button_visible" value="Window.IsVisible(managevideoversions)" />
+					<param name="button_id" value="25"/>
+					<param name="button_label" value="40023"/>
+					<param name="button_visible" value="Window.IsVisible(managevideoversions)"/>
 				</include>
 			</control>
 			<control type="label">

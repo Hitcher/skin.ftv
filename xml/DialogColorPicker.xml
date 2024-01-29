@@ -14,10 +14,10 @@
 			<height>1758</height>
 			<!-- Background -->
 			<include content="DialogBack">
-				<param name="dialog_back_width" value="100%" />
-				<param name="dialog_back_height" value="100%" />
-				<param name="dialog_heading_width" value="100%" />
-				<param name="dialog_shadow_1_visible" value="false" />
+				<param name="dialog_back_width" value="100%"/>
+				<param name="dialog_back_height" value="100%"/>
+				<param name="dialog_heading_width" value="100%"/>
+				<param name="dialog_shadow_1_visible" value="false"/>
 			</include>
 			<!-- Heading -->
 			<control type="label" id="1">

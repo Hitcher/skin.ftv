@@ -23,12 +23,12 @@
 				<visible>$EXP[Exp_View_55]</visible>
 				<include>ListBounceAnimation</include>
 				<include content="HomeToWindowSlideAnimation">
-					<param name="FocusRowID1_1" value="372,20" />
-					<param name="FocusRowID1_2" value="980,-348" />
-					<param name="FocusRowID2_2" value="980,390" />
-					<param name="FocusRowID1_3" value="980,-492" />
-					<param name="FocusRowID2_3" value="980,20" />
-					<param name="FocusRowID3_3" value="980,336" />
+					<param name="FocusRowID1_1" value="372,20"/>
+					<param name="FocusRowID1_2" value="980,-348"/>
+					<param name="FocusRowID2_2" value="980,390"/>
+					<param name="FocusRowID1_3" value="980,-492"/>
+					<param name="FocusRowID2_3" value="980,20"/>
+					<param name="FocusRowID3_3" value="980,336"/>
 				</include>
 				<itemlayout height="1152" width="1144">
 					<control type="group">
@@ -95,7 +95,7 @@
 							<height>1152</height>
 							<texture border="100">views/shadow_fo.png</texture>
 							<include content="ContainerMoveFadeAnimation">
-								<param name="ListID" value="55" />
+								<param name="ListID" value="55"/>
 							</include>
 						</control>
 						<control type="image">
@@ -105,12 +105,12 @@
 							<height>1152</height>
 							<texture border="100">views/shadow_nf.png</texture>
 							<include content="FocusedListIDAnimation">
-								<param name="ListID" value="55" />
+								<param name="ListID" value="55"/>
 							</include>
 						</control>
 						<control type="group">
 							<include content="FocusedListIDFadeDiffuseAnimation">
-								<param name="ListID" value="55" />
+								<param name="ListID" value="55"/>
 							</include>
 							<control type="image">
 								<top>96</top>

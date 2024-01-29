@@ -20,8 +20,8 @@
 		<!-- Main group -->
 		<control type="group">
 			<include content="DialogZoomAnimation">
-				<param name="OpenCondition" value="true" />
-				<param name="CloseCondition" value="true" />
+				<param name="OpenCondition" value="true"/>
+				<param name="CloseCondition" value="true"/>
 			</include>
 			<!-- Left group -->
 			<control type="group">
@@ -30,17 +30,17 @@
 				<width>1300</width>
 				<height>1632</height>
 				<include content="DialogBack">
-					<param name="dialog_back_width" value="1300" />
-					<param name="dialog_back_height" value="1632" />
-					<param name="dialog_heading_width" value="1300" />
+					<param name="dialog_back_width" value="1300"/>
+					<param name="dialog_back_height" value="1632"/>
+					<param name="dialog_heading_width" value="1300"/>
 				</include>
 				<include content="DialogHeading">
-					<param name="dialog_heading_label" value="31007" />
-					<param name="dialog_heading_label_width" value="1200" />
+					<param name="dialog_heading_label" value="31007"/>
+					<param name="dialog_heading_label_width" value="1200"/>
 				</include>
 				<include content="DialogHeadingCount">
-					<param name="dialog_heading_count_width" value="1140" />
-					<param name="dialog_heading_count_container_id" value="50" />
+					<param name="dialog_heading_count_width" value="1140"/>
+					<param name="dialog_heading_count_container_id" value="50"/>
 				</include>
 				<!-- Left list -->
 				<control id="50" type="fixedlist">
@@ -153,13 +153,13 @@
 				<width>720</width>
 				<height>1632</height>
 				<include content="DialogBack">
-					<param name="dialog_back_width" value="720" />
-					<param name="dialog_back_height" value="1632" />
-					<param name="dialog_heading_width" value="720" />
+					<param name="dialog_back_width" value="720"/>
+					<param name="dialog_back_height" value="1632"/>
+					<param name="dialog_heading_width" value="720"/>
 				</include>
 				<include content="DialogHeading">
-					<param name="dialog_heading_label" value="31008" />
-					<param name="dialog_heading_label_width" value="640" />
+					<param name="dialog_heading_label" value="31008"/>
+					<param name="dialog_heading_label_width" value="640"/>
 				</include>
 				<control type="group">
 					<visible>Control.HasFocus(50)</visible>
@@ -226,21 +226,21 @@
 					<orientation>vertical</orientation>
 					<!-- Open Button -->
 					<include content="DialogButton">
-						<param name="button_id" value="6" />
-						<param name="button_label" value="31009" />
-						<param name="button_visible" value="Control.IsEnabled(6)" />
+						<param name="button_id" value="6"/>
+						<param name="button_label" value="31009"/>
+						<param name="button_visible" value="Control.IsEnabled(6)"/>
 					</include>
 					<!-- Save Button -->
 					<include content="DialogButton">
-						<param name="button_id" value="7" />
-						<param name="button_label" value="31010" />
-						<param name="button_visible" value="Control.IsEnabled(7)" />
+						<param name="button_id" value="7"/>
+						<param name="button_label" value="31010"/>
+						<param name="button_visible" value="Control.IsEnabled(7)"/>
 					</include>
 					<!-- Clear Button -->
 					<include content="DialogButton">
-						<param name="button_id" value="8" />
-						<param name="button_label" value="31011" />
-						<param name="button_visible" value="Control.IsEnabled(8)" />
+						<param name="button_id" value="8"/>
+						<param name="button_label" value="31011"/>
+						<param name="button_visible" value="Control.IsEnabled(8)"/>
 					</include>
 				</control>
 			</control>
@@ -251,17 +251,17 @@
 				<width>1300</width>
 				<height>1632</height>
 				<include content="DialogBack">
-					<param name="dialog_back_width" value="1300" />
-					<param name="dialog_back_height" value="1632" />
-					<param name="dialog_heading_width" value="1300" />
+					<param name="dialog_back_width" value="1300"/>
+					<param name="dialog_back_height" value="1632"/>
+					<param name="dialog_heading_width" value="1300"/>
 				</include>
 				<include content="DialogHeading">
-					<param name="dialog_heading_label" value="31012" />
-					<param name="dialog_heading_label_width" value="1200" />
+					<param name="dialog_heading_label" value="31012"/>
+					<param name="dialog_heading_label_width" value="1200"/>
 				</include>
 				<include content="DialogHeadingCount">
-					<param name="dialog_heading_count_width" value="1140" />
-					<param name="dialog_heading_count_container_id" value="100" />
+					<param name="dialog_heading_count_width" value="1140"/>
+					<param name="dialog_heading_count_container_id" value="100"/>
 				</include>
 				<!-- Right list -->
 				<control id="100" type="fixedlist">

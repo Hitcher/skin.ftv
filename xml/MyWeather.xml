@@ -9,12 +9,12 @@
 		<control type="group">
 			<left>256</left>
 			<animation type="WindowOpen">
-				<effect end="0,0" start="400,0" time="200" type="slide" />
-				<effect end="100" start="0" time="200" type="fade" />
+				<effect end="0,0" start="400,0" time="200" type="slide"/>
+				<effect end="100" start="0" time="200" type="fade"/>
 			</animation>
 			<animation type="WindowClose">
-				<effect end="400,0" start="0,0" time="200" type="slide" />
-				<effect end="0" start="100" time="200" type="fade" />
+				<effect end="400,0" start="0,0" time="200" type="slide"/>
+				<effect end="0" start="100" time="200" type="fade"/>
 			</animation>
 			<control type="image">
 				<width>3328</width>
@@ -115,7 +115,7 @@
 						<control type="label">
 							<width>2004</width>
 							<height>8</height>
-							<font />
+							<font/>
 						</control>
 						<control type="textbox">
 							<width>2004</width>
@@ -128,7 +128,7 @@
 						<control type="label">
 							<width>2004</width>
 							<height>8</height>
-							<font />
+							<font/>
 						</control>
 						<control type="label">
 							<width>2004</width>
@@ -236,139 +236,139 @@
 						</focusedlayout>
 						<content>
 							<include content="WeatherHourlyItem">
-								<param name="item_index" value="1" />
+								<param name="item_index" value="1"/>
 							</include>
 							<include content="WeatherHourlyItem">
-								<param name="item_index" value="2" />
+								<param name="item_index" value="2"/>
 							</include>
 							<include content="WeatherHourlyItem">
-								<param name="item_index" value="3" />
+								<param name="item_index" value="3"/>
 							</include>
 							<include content="WeatherHourlyItem">
-								<param name="item_index" value="4" />
+								<param name="item_index" value="4"/>
 							</include>
 							<include content="WeatherHourlyItem">
-								<param name="item_index" value="5" />
+								<param name="item_index" value="5"/>
 							</include>
 							<include content="WeatherHourlyItem">
-								<param name="item_index" value="6" />
+								<param name="item_index" value="6"/>
 							</include>
 							<include content="WeatherHourlyItem">
-								<param name="item_index" value="7" />
+								<param name="item_index" value="7"/>
 							</include>
 							<include content="WeatherHourlyItem">
-								<param name="item_index" value="8" />
+								<param name="item_index" value="8"/>
 							</include>
 							<include content="WeatherHourlyItem">
-								<param name="item_index" value="9" />
+								<param name="item_index" value="9"/>
 							</include>
 							<include content="WeatherHourlyItem">
-								<param name="item_index" value="10" />
+								<param name="item_index" value="10"/>
 							</include>
 							<include content="WeatherHourlyItem">
-								<param name="item_index" value="11" />
+								<param name="item_index" value="11"/>
 							</include>
 							<include content="WeatherHourlyItem">
-								<param name="item_index" value="12" />
+								<param name="item_index" value="12"/>
 							</include>
 							<include content="WeatherHourlyItem">
-								<param name="item_index" value="13" />
+								<param name="item_index" value="13"/>
 							</include>
 							<include content="WeatherHourlyItem">
-								<param name="item_index" value="14" />
+								<param name="item_index" value="14"/>
 							</include>
 							<include content="WeatherHourlyItem">
-								<param name="item_index" value="15" />
+								<param name="item_index" value="15"/>
 							</include>
 							<include content="WeatherHourlyItem">
-								<param name="item_index" value="16" />
+								<param name="item_index" value="16"/>
 							</include>
 							<include content="WeatherHourlyItem">
-								<param name="item_index" value="17" />
+								<param name="item_index" value="17"/>
 							</include>
 							<include content="WeatherHourlyItem">
-								<param name="item_index" value="18" />
+								<param name="item_index" value="18"/>
 							</include>
 							<include content="WeatherHourlyItem">
-								<param name="item_index" value="19" />
+								<param name="item_index" value="19"/>
 							</include>
 							<include content="WeatherHourlyItem">
-								<param name="item_index" value="20" />
+								<param name="item_index" value="20"/>
 							</include>
 							<include content="WeatherHourlyItem">
-								<param name="item_index" value="21" />
+								<param name="item_index" value="21"/>
 							</include>
 							<include content="WeatherHourlyItem">
-								<param name="item_index" value="22" />
+								<param name="item_index" value="22"/>
 							</include>
 							<include content="WeatherHourlyItem">
-								<param name="item_index" value="23" />
+								<param name="item_index" value="23"/>
 							</include>
 							<include content="WeatherHourlyItem">
-								<param name="item_index" value="24" />
+								<param name="item_index" value="24"/>
 							</include>
 							<include content="WeatherDayItem">
-								<param name="item_index" value="0" />
+								<param name="item_index" value="0"/>
 							</include>
 							<include content="WeatherDayItem">
-								<param name="item_index" value="1" />
+								<param name="item_index" value="1"/>
 							</include>
 							<include content="WeatherDayItem">
-								<param name="item_index" value="2" />
+								<param name="item_index" value="2"/>
 							</include>
 							<include content="WeatherDayItem">
-								<param name="item_index" value="3" />
+								<param name="item_index" value="3"/>
 							</include>
 							<include content="WeatherDayItem">
-								<param name="item_index" value="4" />
+								<param name="item_index" value="4"/>
 							</include>
 							<include content="WeatherDayItem">
-								<param name="item_index" value="5" />
+								<param name="item_index" value="5"/>
 							</include>
 							<include content="WeatherDayItem">
-								<param name="item_index" value="6" />
+								<param name="item_index" value="6"/>
 							</include>
 							<include content="WeatherDailyItem">
-								<param name="item_index" value="1" />
+								<param name="item_index" value="1"/>
 							</include>
 							<include content="WeatherDailyItem">
-								<param name="item_index" value="2" />
+								<param name="item_index" value="2"/>
 							</include>
 							<include content="WeatherDailyItem">
-								<param name="item_index" value="3" />
+								<param name="item_index" value="3"/>
 							</include>
 							<include content="WeatherDailyItem">
-								<param name="item_index" value="4" />
+								<param name="item_index" value="4"/>
 							</include>
 							<include content="WeatherDailyItem">
-								<param name="item_index" value="5" />
+								<param name="item_index" value="5"/>
 							</include>
 							<include content="WeatherDailyItem">
-								<param name="item_index" value="6" />
+								<param name="item_index" value="6"/>
 							</include>
 							<include content="WeatherDailyItem">
-								<param name="item_index" value="7" />
+								<param name="item_index" value="7"/>
 							</include>
 							<include content="WeatherDailyItem">
-								<param name="item_index" value="8" />
+								<param name="item_index" value="8"/>
 							</include>
 							<include content="WeatherDailyItem">
-								<param name="item_index" value="9" />
+								<param name="item_index" value="9"/>
 							</include>
 							<include content="WeatherDailyItem">
-								<param name="item_index" value="10" />
+								<param name="item_index" value="10"/>
 							</include>
 							<include content="WeatherDailyItem">
-								<param name="item_index" value="11" />
+								<param name="item_index" value="11"/>
 							</include>
 							<include content="WeatherDailyItem">
-								<param name="item_index" value="12" />
+								<param name="item_index" value="12"/>
 							</include>
 							<include content="WeatherDailyItem">
-								<param name="item_index" value="13" />
+								<param name="item_index" value="13"/>
 							</include>
 							<include content="WeatherDailyItem">
-								<param name="item_index" value="14" />
+								<param name="item_index" value="14"/>
 							</include>
 						</content>
 					</control>

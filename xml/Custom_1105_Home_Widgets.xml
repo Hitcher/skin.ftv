@@ -101,44 +101,44 @@
 				<width>3480</width>
 				<height>1664</height>
 				<include content="DialogZoomAnimation">
-					<param name="OpenCondition" value="true" />
-					<param name="CloseCondition" value="true" />
+					<param name="OpenCondition" value="true"/>
+					<param name="CloseCondition" value="true"/>
 				</include>
 				<include content="DialogBack">
-					<param name="dialog_back_width" value="3480" />
-					<param name="dialog_back_height" value="1664" />
-					<param name="dialog_heading_width" value="3480" />
-					<param name="dialog_shadow_1_visible" value="false" />
+					<param name="dialog_back_width" value="3480"/>
+					<param name="dialog_back_height" value="1664"/>
+					<param name="dialog_heading_width" value="3480"/>
+					<param name="dialog_shadow_1_visible" value="false"/>
 				</include>
 				<!-- Widget name -->
 				<include content="DialogHeading">
-					<param name="dialog_heading_label_left" value="80" />
-					<param name="dialog_heading_label_width" value="920" />
-					<param name="dialog_heading_label" value="551" />
+					<param name="dialog_heading_label_left" value="80"/>
+					<param name="dialog_heading_label_width" value="920"/>
+					<param name="dialog_heading_label" value="551"/>
 				</include>
 				<!-- Widget path -->
 				<include content="DialogHeading">
-					<param name="dialog_heading_label_left" value="760" />
-					<param name="dialog_heading_label_width" value="1640" />
-					<param name="dialog_heading_label" value="15217" />
+					<param name="dialog_heading_label_left" value="760"/>
+					<param name="dialog_heading_label_width" value="1640"/>
+					<param name="dialog_heading_label" value="15217"/>
 				</include>
 				<!-- Widget layout -->
 				<include content="DialogHeading">
-					<param name="dialog_heading_label_left" value="2160" />
-					<param name="dialog_heading_label_width" value="420" />
-					<param name="dialog_heading_label" value="31198" />
+					<param name="dialog_heading_label_left" value="2160"/>
+					<param name="dialog_heading_label_width" value="420"/>
+					<param name="dialog_heading_label" value="31198"/>
 				</include>
 				<!-- Widget sort by -->
 				<include content="DialogHeading">
-					<param name="dialog_heading_label_left" value="2600" />
-					<param name="dialog_heading_label_width" value="420" />
-					<param name="dialog_heading_label" value="31092" />
+					<param name="dialog_heading_label_left" value="2600"/>
+					<param name="dialog_heading_label_width" value="420"/>
+					<param name="dialog_heading_label" value="31092"/>
 				</include>
 				<!-- Widget sort by order -->
 				<include content="DialogHeading">
-					<param name="dialog_heading_label_left" value="3080" />
-					<param name="dialog_heading_label_width" value="420" />
-					<param name="dialog_heading_label" value="31202" />
+					<param name="dialog_heading_label_left" value="3080"/>
+					<param name="dialog_heading_label_width" value="420"/>
+					<param name="dialog_heading_label" value="31202"/>
 				</include>
 				<!-- Widget -->
 				<control type="list" id="100">
