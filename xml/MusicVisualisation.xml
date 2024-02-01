@@ -90,7 +90,7 @@
 				<width>308</width>
 				<height>308</height>
 				<texture fallback="common/missing_image_cover.png">$INFO[Player.Art(thumb)]</texture>
-				<aspectratio align="centre" aligny="bottom">scale</aspectratio>
+				<aspectratio align="center" aligny="bottom">scale</aspectratio>
 			</control>
 			<!-- Details -->
 			<control type="group">

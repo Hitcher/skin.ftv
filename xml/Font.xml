@@ -114,12 +114,6 @@
 			<linespacing>1.18</linespacing>
 		</font>
 		<font>
-			<name>Light36Spaced</name>
-			<filename>HelveticaNeue_Lt.ttf</filename>
-			<size>72</size>
-			<linespacing>1.12</linespacing>
-		</font>
-		<font>
 			<name>Light35</name>
 			<filename>HelveticaNeue_Lt.ttf</filename>
 			<size>70</size>
@@ -258,11 +252,6 @@
 			<size>52</size>
 		</font>
 		<font>
-			<name>Med25</name>
-			<filename>HelveticaNeue_Med.ttf</filename>
-			<size>50</size>
-		</font>
-		<font>
 			<name>Med24Spaced</name>
 			<filename>HelveticaNeue_Med.ttf</filename>
 			<size>48</size>
@@ -309,11 +298,6 @@
 			<size>48</size>
 		</font>
 		<!-- Bold -->
-		<font>
-			<name>Bold46</name>
-			<filename>HelveticaNeue_Bold.ttf</filename>
-			<size>92</size>
-		</font>
 		<font>
 			<name>Bold44</name>
 			<filename>HelveticaNeue_Bold.ttf</filename>
@@ -364,11 +348,6 @@
 			<name>Bold26</name>
 			<filename>HelveticaNeue_Bold.ttf</filename>
 			<size>52</size>
-		</font>
-		<font>
-			<name>Bold23</name>
-			<filename>HelveticaNeue_Bold.ttf</filename>
-			<size>46</size>
 		</font>
 		<font>
 			<name>Bold22</name>
@@ -474,12 +453,6 @@
 			<filename>Roboto-Light.ttf</filename>
 			<size>72</size>
 			<linespacing>1.18</linespacing>
-		</font>
-		<font>
-			<name>Light36Spaced</name>
-			<filename>Roboto-Light.ttf</filename>
-			<size>72</size>
-			<linespacing>1.12</linespacing>
 		</font>
 		<font>
 			<name>Light35</name>
@@ -612,11 +585,6 @@
 			<size>52</size>
 		</font>
 		<font>
-			<name>Med25</name>
-			<filename>Roboto-Medium.ttf</filename>
-			<size>50</size>
-		</font>
-		<font>
 			<name>Med24Spaced</name>
 			<filename>Roboto-Medium.ttf</filename>
 			<size>48</size>
@@ -663,11 +631,6 @@
 			<size>48</size>
 		</font>
 		<!-- Bold -->
-		<font>
-			<name>Bold46</name>
-			<filename>Roboto-Bold.ttf</filename>
-			<size>92</size>
-		</font>
 		<font>
 			<name>Bold44</name>
 			<filename>Roboto-Bold.ttf</filename>
@@ -718,11 +681,6 @@
 			<name>Bold26</name>
 			<filename>Roboto-Bold.ttf</filename>
 			<size>52</size>
-		</font>
-		<font>
-			<name>Bold23</name>
-			<filename>Roboto-Bold.ttf</filename>
-			<size>46</size>
 		</font>
 		<font>
 			<name>Bold22</name>
@@ -858,14 +816,6 @@
 			<linespacing>1.18</linespacing>
 		</font>
 		<font>
-			<name>Light36Spaced</name>
-			<filename>Arial.ttf</filename>
-			<aspect>0.9</aspect>
-			<style>lighten</style>
-			<size>72</size>
-			<linespacing>1.12</linespacing>
-		</font>
-		<font>
 			<name>Light35</name>
 			<filename>Arial.ttf</filename>
 			<aspect>0.9</aspect>
@@ -1041,13 +991,6 @@
 			<size>52</size>
 		</font>
 		<font>
-			<name>Med25</name>
-			<filename>Arial.ttf</filename>
-			<aspect>0.9</aspect>
-			<style>bold</style>
-			<size>50</size>
-		</font>
-		<font>
 			<name>Med24Spaced</name>
 			<filename>Arial.ttf</filename>
 			<aspect>0.9</aspect>
@@ -1110,13 +1053,6 @@
 			<size>48</size>
 		</font>
 		<!-- Bold -->
-		<font>
-			<name>Bold46</name>
-			<filename>Arial.ttf</filename>
-			<aspect>0.9</aspect>
-			<style>bold</style>
-			<size>92</size>
-		</font>
 		<font>
 			<name>Bold44</name>
 			<filename>Arial.ttf</filename>
@@ -1187,13 +1123,6 @@
 			<aspect>0.9</aspect>
 			<style>bold</style>
 			<size>52</size>
-		</font>
-		<font>
-			<name>Bold23</name>
-			<filename>Arial.ttf</filename>
-			<aspect>0.9</aspect>
-			<style>bold</style>
-			<size>46</size>
 		</font>
 		<font>
 			<name>Bold22</name>

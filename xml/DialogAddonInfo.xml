@@ -229,7 +229,7 @@
 					<height>0</height>
 					<onfocus>Right</onfocus>
 					<include>NoTextures</include>
-					<visible>!Control.HasFocus(9012) + !Control.HasFocus(9021) + !Control.HasFocus(909) + !Control.HasFocus(9010) + !Control.HasFocus(9014) + !Control.HasFocus(906) + !Control.HasFocus(907) + !Control.HasFocus(9013)</visible>
+					<visible>!Control.HasFocus(9012) + !Control.HasFocus(9021) + !Control.HasFocus(9009) + !Control.HasFocus(9010) + !Control.HasFocus(9014) + !Control.HasFocus(9006) + !Control.HasFocus(9007) + !Control.HasFocus(9013)</visible>
 				</control>
 				<!-- Launch Addon Button -->
 				<control id="9012" type="button">

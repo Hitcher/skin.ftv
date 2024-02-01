@@ -51,7 +51,7 @@
 							<width>960</width>
 							<height>960</height>
 							<aspectratio align="center">scale</aspectratio>
-							<texture fallback="DefaultAddonNone" background="true">$INFO[ListItem.Icon]</texture>
+							<texture fallback="DefaultAddonNone.png" background="true">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="image">
 							<bottom>96</bottom>
@@ -89,7 +89,7 @@
 							<width>960</width>
 							<height>960</height>
 							<aspectratio align="center">scale</aspectratio>
-							<texture fallback="DefaultAddonNone" background="true">$INFO[ListItem.Icon]</texture>
+							<texture fallback="DefaultAddonNone.png" background="true">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="image">
 							<bottom>96</bottom>

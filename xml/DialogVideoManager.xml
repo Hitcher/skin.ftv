@@ -206,7 +206,7 @@
 				<left>80</left>
 				<width>2596</width>
 				<height>60</height>
-				<font>Reg30</font>
+				<font>Reg30Spaced</font>
 				<scroll>true</scroll>
 				<textcolor>NotFocusedColour</textcolor>
 				<label>$INFO[Container(50).ListItem.FileNameAndPath]</label>

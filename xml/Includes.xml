@@ -409,7 +409,7 @@
 			<height>52</height>
 			<align>center</align>
 			<aligny>bottom</aligny>
-			<font>Med18</font>
+			<font>Med22</font>
 			<label>$INFO[ListItem.Mpaa, , ]</label>
 			<textcolor>$VAR[RatingTextColour]</textcolor>
 			<texturefocus colordiffuse="$VAR[RatingButtonColour]" border="6">rating/flag.png</texturefocus>
@@ -429,7 +429,7 @@
 			<height>52</height>
 			<align>center</align>
 			<aligny>bottom</aligny>
-			<font>Med18</font>
+			<font>Med22</font>
 			<label> $VAR[VideoAspect] </label>
 			<textcolor>ffcccccc</textcolor>
 			<texturefocus colordiffuse="FF888888" border="6">rating/flag.png</texturefocus>
@@ -442,7 +442,7 @@
 			<height>52</height>
 			<align>center</align>
 			<aligny>bottom</aligny>
-			<font>Med18</font>
+			<font>Med22</font>
 			<label> $VAR[HDRType] </label>
 			<textcolor>ffcccccc</textcolor>
 			<texturefocus colordiffuse="FF888888" border="6">rating/flag.png</texturefocus>
@@ -488,7 +488,7 @@
 			<height>52</height>
 			<align>center</align>
 			<aligny>bottom</aligny>
-			<font>Med18</font>
+			<font>Med22</font>
 			<label> $VAR[AudioCodec] </label>
 			<textcolor>ffcccccc</textcolor>
 			<texturefocus colordiffuse="FF888888" border="6">rating/flag.png</texturefocus>
@@ -501,7 +501,7 @@
 			<height>52</height>
 			<align>center</align>
 			<aligny>bottom</aligny>
-			<font>Med18</font>
+			<font>Med22</font>
 			<label> $VAR[AudioChannels] </label>
 			<textcolor>ffcccccc</textcolor>
 			<texturefocus colordiffuse="FF888888" border="6">rating/flag.png</texturefocus>

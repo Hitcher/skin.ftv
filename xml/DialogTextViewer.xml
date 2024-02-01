@@ -71,7 +71,7 @@
 				<onright>Close</onright>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
-				<texturesliderbarfocus border="6">common/Scrollbar.png</texturesliderbarfocus>
+				<texturesliderbarfocus border="3">common/Scrollbar.png</texturesliderbarfocus>
 				<visible allowhiddenfocus="true">Control.HasFocus(3000)</visible>
 				<animation condition="System.IdleTime(1)" effect="fade" end="0" start="100" time="200">Conditional</animation>
 			</control>

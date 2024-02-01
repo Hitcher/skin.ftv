@@ -80,7 +80,7 @@
 							<top>96</top>
 							<width>960</width>
 							<height>960</height>
-							<texture border="4">views/season_overlay.png</texture>
+							<texture border="4">views/default_overlay.png</texture>
 							<visible>!ListItem.IsParentFolder + !String.Contains(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="image">
@@ -199,7 +199,7 @@
 							<top>96</top>
 							<width>960</width>
 							<height>960</height>
-							<texture border="4">views/season_overlay.png</texture>
+							<texture border="4">views/default_overlay.png</texture>
 							<visible>!ListItem.IsParentFolder + !String.Contains(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="image">

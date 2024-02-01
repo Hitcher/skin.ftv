@@ -272,83 +272,6 @@
 		<value condition="String.IsEqual(VideoPlayer.HdrType,hdr10)">HDR10</value>
 		<value condition="String.IsEqual(VideoPlayer.HdrType,dolbyvision)">Dolby</value>
 	</variable>
-	<variable name="SimilarVideos">
-		<value condition="[String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(ListItem.DBTYPE,episode)] + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.IMDbNumber) + String.StartsWith(ListItem.IMDbNumber,tt)">plugin://plugin.video.themoviedb.helper?info=similar&amp;type=tv&amp;imdb_id=$INFO[ListItem.IMDBNumber]&amp;nextpage=false</value>
-		<value condition="String.IsEqual(ListItem.DBTYPE,tvshow) + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.Title) + !String.IsEmpty(ListItem.Year)">plugin://plugin.video.themoviedb.helper?info=similar&amp;type=tv&amp;query=$INFO[ListItem.Title]&amp;year=$INFO[ListItem.Year]&amp;nextpage=false</value>
-		<value condition="String.IsEqual(ListItem.DBTYPE,tvshow) + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.Title)">plugin://plugin.video.themoviedb.helper?info=similar&amp;type=tv&amp;query=$INFO[ListItem.Title]&amp;nextpage=false</value>
-		<value condition="String.IsEqual(ListItem.DBTYPE,episode) + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.TVShowTitle)">plugin://plugin.video.themoviedb.helper?info=similar&amp;type=tv&amp;query=$INFO[ListItem.TVShowTitle]&amp;nextpage=false</value>
-		<value condition="String.IsEqual(ListItem.DBTYPE,movie) + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.IMDBNumber) + String.StartsWith(VideoPlayer.IMDBNumber,tt)">plugin://plugin.video.themoviedb.helper?info=similar&amp;type=movie&amp;imdb_id=$INFO[ListItem.IMDBNumber]&amp;nextpage=false</value>
-		<value condition="String.IsEqual(ListItem.DBTYPE,movie) + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.Title) + !String.IsEmpty(ListItem.Year)">plugin://plugin.video.themoviedb.helper?info=similar&amp;type=movie&amp;query=$INFO[ListItem.Title]&amp;year=$INFO[ListItem.Year]&amp;nextpage=false</value>
-		<value condition="String.IsEqual(ListItem.DBTYPE,movie) + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.Title)">plugin://plugin.video.themoviedb.helper?info=similar&amp;type=movie&amp;query=$INFO[ListItem.Title]&amp;nextpage=false</value>
-	</variable>
-	<variable name="ExtendedRatingTextColour">
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,12)">FFFF3C3C</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,12A)">FFFF3C3C</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,14)">FFFF3C3C</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,15)">FFFF3C3C</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,16)">FFFF3C3C</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,18)">FFFF3C3C</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,MA)">FFFF3C3C</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,NC17)">FFFF3C3C</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,NR)">FFFF3C3C</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,R)">FFFF3C3C</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,6)">FFFEE100</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,7)">FFFEE100</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,PG)">FFFEE100</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,PG-13)">FFFEE100</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,U)">FF13912D</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,G)">FF13912D</value>
-		<value>ffcccccc</value>
-	</variable>
-	<variable name="ExtendedRatingButtonColour">
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,12)">FFFF3C3C</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,12A)">FFFF3C3C</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,14)">FFFF3C3C</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,15)">FFFF3C3C</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,16)">FFFF3C3C</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,18)">FFFF3C3C</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,MA)">FFFF3C3C</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,NC17)">FFFF3C3C</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,NR)">FFFF3C3C</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,R)">FFFF3C3C</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,6)">FFFEE100</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,7)">FFFEE100</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,PG)">FFFEE100</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,PG-13)">FFFEE100</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,U)">FF13912D</value>
-		<value condition="String.EndsWith(Container(10051).ListItem.Mpaa,G)">FF13912D</value>
-		<value>FF888888</value>
-	</variable>
-	<variable name="ExtendedDurationHours">
-		<value condition="Integer.IsGreater(Container(10051).ListItem.Duration(hh),09)">$INFO[Container(10051).ListItem.Duration(hh),, $LOCALIZE[31148]]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Duration(hh),01)">1 $LOCALIZE[31005]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Duration(hh),02)">2 $LOCALIZE[31148]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Duration(hh),03)">3 $LOCALIZE[31148]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Duration(hh),04)">4 $LOCALIZE[31148]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Duration(hh),05)">5 $LOCALIZE[31148]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Duration(hh),06)">6 $LOCALIZE[31148]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Duration(hh),07)">7 $LOCALIZE[31148]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Duration(hh),08)">8 $LOCALIZE[31148]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Duration(hh),09)">9 $LOCALIZE[31148]</value>
-		<value/>
-	</variable>
-	<variable name="ExtendedDurationMins">
-		<value condition="Integer.IsGreater(Container(10051).ListItem.Duration(mm),09)">$INFO[Container(10051).ListItem.Duration(mm),, $LOCALIZE[31147]]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Duration(mm),01)">1 $LOCALIZE[31004]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Duration(mm),02)">2 $LOCALIZE[31147]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Duration(mm),03)">3 $LOCALIZE[31147]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Duration(mm),04)">4 $LOCALIZE[31147]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Duration(mm),05)">5 $LOCALIZE[31147]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Duration(mm),06)">6 $LOCALIZE[31147]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Duration(mm),07)">7 $LOCALIZE[31147]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Duration(mm),08)">8 $LOCALIZE[31147]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Duration(mm),09)">9 $LOCALIZE[31147]</value>
-		<value/>
-	</variable>
-	<variable name="ExtendedDurationSpacing">
-		<value condition="Integer.IsGreater(Container(10051).ListItem.Duration(hh),00) + Integer.IsGreater(Container(10051).ListItem.Duration(mm),00)">[COLOR=00ffffff]r[/COLOR]</value>
-		<value/>
-	</variable>
 	<variable name="RatingTextColour">
 		<value condition="String.EndsWith(ListItem.Mpaa,12)">FFFF3C3C</value>
 		<value condition="String.EndsWith(ListItem.Mpaa,12A)">FFFF3C3C</value>
@@ -451,11 +374,6 @@
 		<value condition="Skin.HasSetting(AverageRatingAllCritics) + !String.IsEmpty(Container(9001).Listitem.Rating(tomatometeravgcritics))">$INFO[Container(9001).Listitem.Rating(tomatometeravgcritics)]</value>
 		<value condition="Skin.HasSetting(AverageRatingAudienceScore) + !String.IsEmpty(Listitem.Rating(tomatometeravgaudience))">$INFO[ListItem.Rating(tomatometeravgaudience)]</value>
 		<value condition="Skin.HasSetting(AverageRatingAudienceScore) + !String.IsEmpty(Container(9001).Listitem.Rating(tomatometeravgaudience))">$INFO[Container(9001).Listitem.Rating(tomatometeravgaudience)]</value>
-	</variable>
-	<variable name="GameSelectHeader">
-		<value condition="Window.IsActive(gamevideofilter)">$LOCALIZE[230]</value>
-		<value condition="Window.IsActive(gamestretchmode)">$LOCALIZE[35233]</value>
-		<value condition="Window.IsActive(gamevideorotation)">$LOCALIZE[35227]</value>
 	</variable>
 	<variable name="PlaySpeed">
 		<value condition="Player.Rewinding2x">osd/rwx2.png</value>
@@ -597,10 +515,6 @@
 		<value condition="!String.IsEmpty(Window(home).Property(XRayInfo))">[B]$LOCALIZE[31108]:[/B]  [LIGHT]$INFO[ListItem.Property(Movie.Cast.1.Title)]$INFO[ListItem.Property(Movie.Cast.2.Title),$COMMA ]$INFO[ListItem.Property(Movie.Cast.3.Title),$COMMA ][/LIGHT]</value>
 		<value>[COLOR $VAR[ExtendedInfoLabelColor]][B]$LOCALIZE[31108]:[/B][/COLOR]  [LIGHT]$INFO[ListItem.Property(Movie.Cast.1.Title)]$INFO[ListItem.Property(Movie.Cast.2.Title),$COMMA ]$INFO[ListItem.Property(Movie.Cast.3.Title),$COMMA ][/LIGHT]</value>
 	</variable>
-	<variable name="ExtendedInfoLabelStarring">
-		<value condition="!String.IsEmpty(Window(home).Property(XRayInfo))">[B]$LOCALIZE[31071]:[/B]  [LIGHT]$INFO[Container(50).ListItemAbsolute(0).Label]$INFO[Container(50).ListItemAbsolute(0).Year, (,)]$INFO[Container(50).ListItemAbsolute(1).Label,$COMMA ]$INFO[Container(50).ListItemAbsolute(1).Year, (,)]$INFO[Container(50).ListItemAbsolute(2).Label,$COMMA ]$INFO[Container(50).ListItemAbsolute(2).Year, (,)][/LIGHT]</value>
-		<value>[COLOR $VAR[ExtendedInfoLabelColor]][B]$LOCALIZE[31071]:[/B][/COLOR]  [LIGHT]$INFO[Container(50).ListItemAbsolute(0).Label]$INFO[Container(50).ListItemAbsolute(1).Label,$COMMA ]$INFO[Container(50).ListItemAbsolute(2).Label,$COMMA ][/LIGHT]</value>
-	</variable>
 	<variable name="ExtendedInfoLabelColor">
 		<value condition="!String.IsEmpty(Window(home).Property(XRayInfo))">ffbbbbbb</value>
 		<value>ff717171</value>
@@ -655,7 +569,9 @@
 		<value condition="Control.HasFocus(1002)">rating/user_rating/none_fo.png</value>
 	</variable>
 	<variable name="VolumeIcon">
-		<value condition="!Player.Muted">dialogs/notification_volume.png</value>
+		<value condition="Integer.IsGreater(Control.GetLabel(404),66)">dialogs/notification_volume_max.png</value>
+		<value condition="Integer.IsGreater(Control.GetLabel(404),33)">dialogs/notification_volume_mid.png</value>
+		<value condition="Integer.IsGreater(Control.GetLabel(404),0)">dialogs/notification_volume_min.png</value>
 		<value>dialogs/notification_volume_mute.png</value>
 	</variable>
 	<variable name="VolumeDetails">
@@ -1484,69 +1400,6 @@
 	<variable name="DayNightWeather">
 		<value condition="System.Time(06:00,20:00)">$LOCALIZE[31058]</value>
 		<value>$LOCALIZE[31059]</value>
-	</variable>
-	<variable name="Day0">
-		<value condition="String.IsEqual(Window(Weather).Property(Day0.Title),$LOCALIZE[11]) | String.IsEqual(Window(Weather).Property(Day0.Title),$LOCALIZE[41])">$LOCALIZE[41]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day0.Title),$LOCALIZE[12]) | String.IsEqual(Window(Weather).Property(Day0.Title),$LOCALIZE[42])">$LOCALIZE[42]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day0.Title),$LOCALIZE[13]) | String.IsEqual(Window(Weather).Property(Day0.Title),$LOCALIZE[43])">$LOCALIZE[43]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day0.Title),$LOCALIZE[14]) | String.IsEqual(Window(Weather).Property(Day0.Title),$LOCALIZE[44])">$LOCALIZE[44]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day0.Title),$LOCALIZE[15]) | String.IsEqual(Window(Weather).Property(Day0.Title),$LOCALIZE[45])">$LOCALIZE[45]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day0.Title),$LOCALIZE[16]) | String.IsEqual(Window(Weather).Property(Day0.Title),$LOCALIZE[46])">$LOCALIZE[46]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day0.Title),$LOCALIZE[17]) | String.IsEqual(Window(Weather).Property(Day0.Title),$LOCALIZE[47])">$LOCALIZE[47]</value>
-	</variable>
-	<variable name="Day1">
-		<value condition="String.IsEqual(Window(Weather).Property(Day1.Title),$LOCALIZE[11]) | String.IsEqual(Window(Weather).Property(Day1.Title),$LOCALIZE[41])">$LOCALIZE[41]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day1.Title),$LOCALIZE[12]) | String.IsEqual(Window(Weather).Property(Day1.Title),$LOCALIZE[42])">$LOCALIZE[42]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day1.Title),$LOCALIZE[13]) | String.IsEqual(Window(Weather).Property(Day1.Title),$LOCALIZE[43])">$LOCALIZE[43]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day1.Title),$LOCALIZE[14]) | String.IsEqual(Window(Weather).Property(Day1.Title),$LOCALIZE[44])">$LOCALIZE[44]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day1.Title),$LOCALIZE[15]) | String.IsEqual(Window(Weather).Property(Day1.Title),$LOCALIZE[45])">$LOCALIZE[45]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day1.Title),$LOCALIZE[16]) | String.IsEqual(Window(Weather).Property(Day1.Title),$LOCALIZE[46])">$LOCALIZE[46]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day1.Title),$LOCALIZE[17]) | String.IsEqual(Window(Weather).Property(Day1.Title),$LOCALIZE[47])">$LOCALIZE[47]</value>
-	</variable>
-	<variable name="Day2">
-		<value condition="String.IsEqual(Window(Weather).Property(Day2.Title),$LOCALIZE[11]) | String.IsEqual(Window(Weather).Property(Day2.Title),$LOCALIZE[41])">$LOCALIZE[41]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day2.Title),$LOCALIZE[12]) | String.IsEqual(Window(Weather).Property(Day2.Title),$LOCALIZE[42])">$LOCALIZE[42]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day2.Title),$LOCALIZE[13]) | String.IsEqual(Window(Weather).Property(Day2.Title),$LOCALIZE[43])">$LOCALIZE[43]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day2.Title),$LOCALIZE[14]) | String.IsEqual(Window(Weather).Property(Day2.Title),$LOCALIZE[44])">$LOCALIZE[44]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day2.Title),$LOCALIZE[15]) | String.IsEqual(Window(Weather).Property(Day2.Title),$LOCALIZE[45])">$LOCALIZE[45]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day2.Title),$LOCALIZE[16]) | String.IsEqual(Window(Weather).Property(Day2.Title),$LOCALIZE[46])">$LOCALIZE[46]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day2.Title),$LOCALIZE[17]) | String.IsEqual(Window(Weather).Property(Day2.Title),$LOCALIZE[47])">$LOCALIZE[47]</value>
-	</variable>
-	<variable name="Day3">
-		<value condition="String.IsEqual(Window(Weather).Property(Day3.Title),$LOCALIZE[11]) | String.IsEqual(Window(Weather).Property(Day3.Title),$LOCALIZE[41])">$LOCALIZE[41]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day3.Title),$LOCALIZE[12]) | String.IsEqual(Window(Weather).Property(Day3.Title),$LOCALIZE[42])">$LOCALIZE[42]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day3.Title),$LOCALIZE[13]) | String.IsEqual(Window(Weather).Property(Day3.Title),$LOCALIZE[43])">$LOCALIZE[43]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day3.Title),$LOCALIZE[14]) | String.IsEqual(Window(Weather).Property(Day3.Title),$LOCALIZE[44])">$LOCALIZE[44]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day3.Title),$LOCALIZE[15]) | String.IsEqual(Window(Weather).Property(Day3.Title),$LOCALIZE[45])">$LOCALIZE[45]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day3.Title),$LOCALIZE[16]) | String.IsEqual(Window(Weather).Property(Day3.Title),$LOCALIZE[46])">$LOCALIZE[46]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day3.Title),$LOCALIZE[17]) | String.IsEqual(Window(Weather).Property(Day3.Title),$LOCALIZE[47])">$LOCALIZE[47]</value>
-	</variable>
-	<variable name="Day4">
-		<value condition="String.IsEqual(Window(Weather).Property(Day4.Title),$LOCALIZE[11]) | String.IsEqual(Window(Weather).Property(Day4.Title),$LOCALIZE[41])">$LOCALIZE[41]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day4.Title),$LOCALIZE[12]) | String.IsEqual(Window(Weather).Property(Day4.Title),$LOCALIZE[42])">$LOCALIZE[42]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day4.Title),$LOCALIZE[13]) | String.IsEqual(Window(Weather).Property(Day4.Title),$LOCALIZE[43])">$LOCALIZE[43]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day4.Title),$LOCALIZE[14]) | String.IsEqual(Window(Weather).Property(Day4.Title),$LOCALIZE[44])">$LOCALIZE[44]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day4.Title),$LOCALIZE[15]) | String.IsEqual(Window(Weather).Property(Day4.Title),$LOCALIZE[45])">$LOCALIZE[45]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day4.Title),$LOCALIZE[16]) | String.IsEqual(Window(Weather).Property(Day4.Title),$LOCALIZE[46])">$LOCALIZE[46]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day4.Title),$LOCALIZE[17]) | String.IsEqual(Window(Weather).Property(Day4.Title),$LOCALIZE[47])">$LOCALIZE[47]</value>
-	</variable>
-	<variable name="Day5">
-		<value condition="String.IsEqual(Window(Weather).Property(Day5.Title),$LOCALIZE[11]) | String.IsEqual(Window(Weather).Property(Day5.Title),$LOCALIZE[41])">$LOCALIZE[41]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day5.Title),$LOCALIZE[12]) | String.IsEqual(Window(Weather).Property(Day5.Title),$LOCALIZE[42])">$LOCALIZE[42]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day5.Title),$LOCALIZE[13]) | String.IsEqual(Window(Weather).Property(Day5.Title),$LOCALIZE[43])">$LOCALIZE[43]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day5.Title),$LOCALIZE[14]) | String.IsEqual(Window(Weather).Property(Day5.Title),$LOCALIZE[44])">$LOCALIZE[44]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day5.Title),$LOCALIZE[15]) | String.IsEqual(Window(Weather).Property(Day5.Title),$LOCALIZE[45])">$LOCALIZE[45]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day5.Title),$LOCALIZE[16]) | String.IsEqual(Window(Weather).Property(Day5.Title),$LOCALIZE[46])">$LOCALIZE[46]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day5.Title),$LOCALIZE[17]) | String.IsEqual(Window(Weather).Property(Day5.Title),$LOCALIZE[47])">$LOCALIZE[47]</value>
-	</variable>
-	<variable name="Day6">
-		<value condition="String.IsEqual(Window(Weather).Property(Day6.Title),$LOCALIZE[11]) | String.IsEqual(Window(Weather).Property(Day6.Title),$LOCALIZE[41])">$LOCALIZE[41]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day6.Title),$LOCALIZE[12]) | String.IsEqual(Window(Weather).Property(Day6.Title),$LOCALIZE[42])">$LOCALIZE[42]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day6.Title),$LOCALIZE[13]) | String.IsEqual(Window(Weather).Property(Day6.Title),$LOCALIZE[43])">$LOCALIZE[43]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day6.Title),$LOCALIZE[14]) | String.IsEqual(Window(Weather).Property(Day6.Title),$LOCALIZE[44])">$LOCALIZE[44]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day6.Title),$LOCALIZE[15]) | String.IsEqual(Window(Weather).Property(Day6.Title),$LOCALIZE[45])">$LOCALIZE[45]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day6.Title),$LOCALIZE[16]) | String.IsEqual(Window(Weather).Property(Day6.Title),$LOCALIZE[46])">$LOCALIZE[46]</value>
-		<value condition="String.IsEqual(Window(Weather).Property(Day6.Title),$LOCALIZE[17]) | String.IsEqual(Window(Weather).Property(Day6.Title),$LOCALIZE[47])">$LOCALIZE[47]</value>
 	</variable>
 	<variable name="VideoInfoLabel">
 		<value condition="Container.Content(episodes)">$INFO[ListItem.Title]$INFO[ListItem.TVShowTitle, / ]</value>
