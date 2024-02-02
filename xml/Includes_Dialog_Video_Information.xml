@@ -271,7 +271,6 @@
 					<label>$LOCALIZE[31071]:</label>
 				</control>
 				<control type="label">
-					<top>-2</top>
 					<width max="2048">auto</width>
 					<height>48</height>
 					<font>Light30Spaced</font>
@@ -301,7 +300,6 @@
 					<label>$LOCALIZE[31072]:</label>
 				</control>
 				<control type="label">
-					<top>-2</top>
 					<width>auto</width>
 					<height>48</height>
 					<font>Light30Spaced</font>
@@ -331,7 +329,6 @@
 					<label>$VAR[AiredPrefix]</label>
 				</control>
 				<control type="label">
-					<top>-2</top>
 					<width>auto</width>
 					<height>48</height>
 					<font>Light30Spaced</font>

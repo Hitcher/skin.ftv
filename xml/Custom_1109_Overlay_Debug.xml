@@ -498,12 +498,6 @@
 				<label>$INFO[ListItem.DBID,[COLOR FF00FF00]DBID - [/COLOR]]</label>
 				<visible>!String.IsEmpty(ListItem.DBID)</visible>
 			</control>
-			<!-- TvShowDBID label -->
-			<control type="label">
-				<include>DebugControlLabel</include>
-				<label>$INFO[ListItem.TvShowDBID,[COLOR FF00FF00]TvShowDBID - [/COLOR]]</label>
-				<visible>!String.IsEmpty(ListItem.TvShowDBID)</visible>
-			</control>
 			<!-- IMDBNumber label -->
 			<control type="label">
 				<include>DebugControlLabel</include>
