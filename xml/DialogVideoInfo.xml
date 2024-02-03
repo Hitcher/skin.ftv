@@ -30,5 +30,12 @@
 		<include condition="[!String.IsEmpty(ListItem.Property(item.type),movie) | !String.IsEmpty(ListItem.Property(item.type),tv)] + !String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + Skin.HasSetting(ExtendedInfo)">Includes_Dialog_Movie_TV_Information</include>
 		<include condition="!String.IsEqual(ListItem.Property(item.type),person) + Container.Content(Sets)">Includes_Dialog_Set_Information</include>
 		<include condition="String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets)">Includes_Dialog_Person_Information</include>
+		<control type="label">
+			<right>40</right>
+			<bottom>40</bottom>
+			<include>DebugControlLabel</include>
+			<label>[COLOR FF00FF00]TMDb_ID - [/COLOR]$INFO[Container(99950).ListItem.Property(TMDb_ID)]</label>
+			<visible>Skin.HasSetting(DebugInfo)</visible>
+		</control>
 	</controls>
 </window>

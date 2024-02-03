@@ -315,6 +315,7 @@
 				<label>$VAR[VideoInfoLabelHeading]</label>
 				<animation delay="400" effect="fade" end="100" start="0" time="200">Visible</animation>
 				<animation effect="fade" end="0" start="100" time="0">Hidden</animation>
+				<animation condition="Container(500).IsUpdating" effect="fade" end="0" start="100" time="0">Conditional</animation>
 				<visible>!String.IsEmpty(Container(500).ListItem.Label) + !Control.HasFocus(500)</visible>
 			</control>
 			<!-- No info found -->
@@ -360,6 +361,7 @@
 				<include>ListBounceAnimation</include>
 				<animation delay="300" effect="fade" end="100" start="0" time="300">Visible</animation>
 				<animation effect="fade" end="0" start="100" time="300">Hidden</animation>
+				<animation condition="Container(500).IsUpdating" effect="fade" end="0" start="100" time="0">Conditional</animation>
 				<animation center="960,424" condition="!Control.HasFocus(500)" easing="inout" effect="zoom" end="81" start="100" time="300" tween="sine">Conditional</animation>
 				<itemlayout height="1152" width="600">
 					<control type="group">
