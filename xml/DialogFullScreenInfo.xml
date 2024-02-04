@@ -40,7 +40,7 @@
 						<font>Med48</font>
 						<aligny>bottom</aligny>
 						<textcolor>ffdadada</textcolor>
-						<label>31232</label>
+						<label>$LOCALIZE[31076]</label>
 					</control>
 					<control type="image">
 						<top>76</top>

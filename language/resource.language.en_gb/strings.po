@@ -796,7 +796,11 @@ msgctxt "#31191"
 msgid "Which extra would you like to watch?"
 msgstr ""
 
-#empty strings from id 31192 to 31193
+msgctxt "#31192"
+msgid "Director"
+msgstr ""
+
+#empty string with id 31193
 
 msgctxt "#31194"
 msgid "Submit"
@@ -931,7 +935,7 @@ msgid "Please try again later."
 msgstr ""
 
 msgctxt "#31232"
-msgid "Cast and Role"
+msgid "Also directed by"
 msgstr ""
 
 msgctxt "#31233"

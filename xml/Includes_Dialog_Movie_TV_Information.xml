@@ -59,28 +59,49 @@
 				<onleft>Close</onleft>
 				<onright>500</onright>
 				<onfocus>ClearProperty(RecommendedVideos,home)</onfocus>
+				<onfocus>ClearProperty(DirectedByList,home)</onfocus>
 				<font>Light35</font>
 				<textcolor>ffdadada</textcolor>
 				<focusedcolor>ffffc24b</focusedcolor>
 				<label>$LOCALIZE[31026]</label>
 				<include>NoTextures</include>
-				<animation condition="!String.IsEmpty(Window(home).Property(RecommendedVideos))" effect="fade" end="50" start="100" time="0">Conditional</animation>
+				<animation condition="![String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEmpty(Window(home).Property(DirectedByList))]" effect="fade" end="50" start="100" time="0">Conditional</animation>
 			</control>
 			<control id="7001" type="button">
 				<top>1146</top>
 				<width>960</width>
 				<height>70</height>
 				<onup>7000</onup>
-				<ondown>noop</ondown>
+				<ondown>7002</ondown>
 				<onleft>Close</onleft>
 				<onright>500</onright>
 				<onfocus>SetProperty(RecommendedVideos,1,home)</onfocus>
+				<onfocus>ClearProperty(DirectedByList,home)</onfocus>
 				<font>Light35</font>
 				<textcolor>ffdadada</textcolor>
 				<focusedcolor>ffffc24b</focusedcolor>
 				<label>$LOCALIZE[31070]</label>
 				<include>NoTextures</include>
 				<animation condition="String.IsEmpty(Window(home).Property(RecommendedVideos))" effect="fade" end="50" start="100" time="0">Conditional</animation>
+			</control>
+			<control id="7002" type="button">
+				<top>1256</top>
+				<width>960</width>
+				<height>70</height>
+				<onup>7001</onup>
+				<ondown>noop</ondown>
+				<onleft>Close</onleft>
+				<onright>500</onright>
+				<onfocus>SetProperty(DirectedByList,1,home)</onfocus>
+				<onfocus>ClearProperty(RecommendedVideos,home)</onfocus>
+				<font>Light35</font>
+				<textcolor>ffdadada</textcolor>
+				<focusedcolor>ffffc24b</focusedcolor>
+				<label>$LOCALIZE[31192]</label>
+				<include>NoTextures</include>
+				<visible>String.IsEqual(ListItem.DBTYPE,movie)</visible>
+				<animation condition="String.IsEmpty(Window(home).Property(DirectedByList))" effect="fade" end="50" start="100" time="0">Conditional</animation>
+				<animation condition="!Control.IsVisible(7001)" effect="slide" end="0,-110" start="0,0" time="0">Conditional</animation>
 			</control>
 		</control>
 		<control type="group">
@@ -338,21 +359,21 @@
 				<top>-542</top>
 				<width>4800</width>
 				<height>1152</height>
-				<onclick condition="String.IsEmpty(Window(home).Property(RecommendedVideos))">RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Container(500).ListItem.Label],type=person,call_auto=1113)</onclick>
-				<onclick condition="!String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEqual(ListItem.DBTYPE,movie)">RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Container(500).ListItem.Label],type=movie,call_auto=1113)</onclick>
-				<onclick condition="!String.IsEmpty(Window(home).Property(RecommendedVideos)) + !String.IsEqual(ListItem.DBTYPE,movie)">RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Container(500).ListItem.Label],type=tv,call_auto=1113)</onclick>
+				<onclick>RunScript(plugin.video.themoviedb.helper,add_path=$INFO[Container(500).ListItem.FolderPath],call_auto=1113)</onclick>
 				<onclick>Control.SetFocus(500,0,absolute)</onclick>
 				<onup condition="Control.IsVisible(96)">3000</onup>
 				<onup>Control.SetFocus(500,0,absolute)</onup>
 				<ondown>noop</ondown>
 				<onleft>Control.SetFocus(500,0,absolute)</onleft>
-				<onleft condition="String.IsEmpty(Window(home).Property(RecommendedVideos))">7000</onleft>
+				<onleft condition="String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEmpty(Window(home).Property(DirectedByList))">7000</onleft>
 				<onleft condition="!String.IsEmpty(Window(home).Property(RecommendedVideos))">7001</onleft>
+				<onleft condition="!String.IsEmpty(Window(home).Property(DirectedByList))">7002</onleft>
 				<onright>noop</onright>
 				<onright condition="!Window.IsVisible(1103)">SetProperty(BounceRight,1,Home)</onright>
 				<onback>Control.SetFocus(500,0,absolute)</onback>
-				<onback condition="String.IsEmpty(Window(home).Property(RecommendedVideos))">7000</onback>
+				<onback condition="String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEmpty(Window(home).Property(DirectedByList))">7000</onback>
 				<onback condition="!String.IsEmpty(Window(home).Property(RecommendedVideos))">7001</onback>
+				<onback condition="!String.IsEmpty(Window(home).Property(DirectedByList))">7002</onback>
 				<preloaditems>2</preloaditems>
 				<focusposition>2</focusposition>
 				<viewtype label="">list</viewtype>
@@ -385,7 +406,7 @@
 							<width>640</width>
 							<height>330</height>
 							<texture border="4">views/default_overlay.png</texture>
-							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label) + String.IsEmpty(Window(home).Property(RecommendedVideos))</visible>
+							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label) + String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEmpty(Window(home).Property(DirectedByList))</visible>
 						</control>
 						<control type="label">
 							<left>36</left>
@@ -396,7 +417,7 @@
 							<textcolor>ffffffff</textcolor>
 							<shadowcolor>ShadowColour</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
-							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label) + String.IsEmpty(Window(home).Property(RecommendedVideos))</visible>
+							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label) + String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEmpty(Window(home).Property(DirectedByList))</visible>
 							<animation condition="String.IsEmpty(ListItem.Label2)" effect="slide" end="0,62" start="0,0" time="0">Conditional</animation>
 						</control>
 						<control type="label">
@@ -409,7 +430,7 @@
 							<textcolor>ffffffff</textcolor>
 							<shadowcolor>ShadowColour</shadowcolor>
 							<label>$INFO[ListItem.Label2,$LOCALIZE[20347] ,]</label>
-							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label2)</visible>
+							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label2) + String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEmpty(Window(home).Property(DirectedByList))</visible>
 						</control>
 						<control type="image">
 							<top>96</top>
@@ -458,7 +479,7 @@
 							<width>640</width>
 							<height>330</height>
 							<texture border="4">views/default_overlay.png</texture>
-							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label) + String.IsEmpty(Window(home).Property(RecommendedVideos))</visible>
+							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label) + String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEmpty(Window(home).Property(DirectedByList))</visible>
 							<include content="FocusedListIDAnimation">
 								<param name="ListID" value="500"/>
 							</include>
@@ -473,7 +494,7 @@
 							<textcolor>ffffffff</textcolor>
 							<shadowcolor>ShadowColour</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
-							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label) + String.IsEmpty(Window(home).Property(RecommendedVideos))</visible>
+							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label) + String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEmpty(Window(home).Property(DirectedByList))</visible>
 							<animation condition="String.IsEmpty(ListItem.Label2)" effect="slide" end="0,62" start="0,0" time="0">Conditional</animation>
 							<include content="FocusedListIDAnimation">
 								<param name="ListID" value="500"/>
@@ -489,7 +510,7 @@
 							<textcolor>ffffffff</textcolor>
 							<shadowcolor>ShadowColour</shadowcolor>
 							<label>$INFO[ListItem.Label2,$LOCALIZE[20347] ,]</label>
-							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label2)</visible>
+							<visible>!Container.Content(Sets) + !String.IsEmpty(ListItem.Label2) + String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEmpty(Window(home).Property(DirectedByList))</visible>
 							<include content="FocusedListIDAnimation">
 								<param name="ListID" value="500"/>
 							</include>
@@ -536,6 +557,7 @@
 					<font>Light24</font>
 					<textcolor>ffbcbcbc</textcolor>
 					<label>$INFO[Container(500).ListItem.Label2,$LOCALIZE[20347] ,]</label>
+					<visible>String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEmpty(Window(home).Property(DirectedByList))</visible>
 				</control>
 			</control>
 		</control>
