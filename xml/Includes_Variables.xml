@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="TmdbType">
+		<value condition="String.IsEqual(ListItem.DBType,movie)">tmdb_type=movie</value>
+		<value condition="String.IsEqual(ListItem.DBType,tvshow)">tmdb_type=tvshow</value>
+	</variable>
 	<variable name="DebugGrid">
 		<value condition="Integer.IsGreaterOrEqual(System.ScreenHeight,2160)">special://skin/extras/debuggrid4k.png</value>
 		<value>special://skin/extras/debuggrid1080.png</value>

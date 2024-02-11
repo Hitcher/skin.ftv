@@ -563,6 +563,24 @@
 					<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
 					<visible>String.IsEqual(ListItem.DBType,movie)</visible>
 				</control>
+				<!-- Wikipedia button -->
+				<control type="button" id="1004">
+					<width min="248" max="408">auto</width>
+					<wrapmultiline>true</wrapmultiline>
+					<height>232</height>
+					<onup condition="!Control.IsVisible(96)">Close</onup>
+					<onup condition="Control.IsVisible(96)">3002</onup>
+					<ondown>500</ondown>
+					<font>Med24</font>
+					<label>Wikipedia</label>
+					<textoffsetx>56</textoffsetx>
+					<textcolor>ffdadada</textcolor>
+					<focusedcolor>ff222222</focusedcolor>
+					<onclick>RunScript(script.wikipedia,wikipedia=$INFO[Container(99950).ListItem.Property(base_title)],$VAR[TmdbType])</onclick>
+					<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
+					<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
+					<visible>String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)</visible>
+				</control>
 			</control>
 			<!-- Dummy Button grouplist -->
 			<control type="grouplist">
