@@ -286,7 +286,7 @@
 						<height>0</height>
 						<onfocus>Right</onfocus>
 						<include>NoTextures</include>
-						<visible>!Control.HasFocus(1001) + !Control.HasFocus(6) + !Control.HasFocus(1002) + !Control.HasFocus(10) + !Control.HasFocus(12)</visible>
+						<visible>!ControlGroup(9000).HasFocus()</visible>
 					</control>
 					<!-- Play Button -->
 					<control type="button" id="1001">

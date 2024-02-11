@@ -192,7 +192,7 @@
 					<height>0</height>
 					<onfocus>Right</onfocus>
 					<include>NoTextures</include>
-					<visible>!Control.HasFocus(8) + !Control.HasFocus(10)</visible>
+					<visible>!ControlGroup(9000).HasFocus()</visible>
 				</control>
 				<!-- Play/Browse Button -->
 				<control id="8" type="togglebutton">
