@@ -4,7 +4,7 @@
 	<timer>
 		<name>autoclosestartupscreen</name>
 		<start reset="true">String.IsEqual(Window(home).Property(StartUp),true)</start>
-		<stop>Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(autoclosestartupscreen),5)</stop>
+		<stop>Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(autoclosestartupscreen),4)</stop>
 		<onstop>ClearProperty(StartUp,home)</onstop>
 	</timer>
 	<!-- Timer to auto close the video OSD -->
