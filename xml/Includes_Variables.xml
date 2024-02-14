@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="VideoPlayerTitle">
+		<value condition="String.IsEmpty(VideoPlayer.TVShowTitle) + !String.IsEmpty(VideoPlayer.VideoVersionName)">$INFO[VideoPlayer.Title] &#91;$INFO[VideoPlayer.VideoVersionName]&#93;</value>
+		<value condition="String.IsEmpty(VideoPlayer.TVShowTitle)">$INFO[VideoPlayer.Title]</value>
+		<value>$INFO[VideoPlayer.TVShowTitle]</value>
+	</variable>
 	<variable name="TmdbType">
 		<value condition="String.IsEqual(ListItem.DBType,movie)">tmdb_type=movie</value>
 		<value condition="String.IsEqual(ListItem.DBType,tvshow)">tmdb_type=tvshow</value>
@@ -2534,7 +2539,6 @@
 		<value condition="String.Contains(Player.SeekOffset,00:59)">59s</value>
 	</variable>
 	<variable name="PlayerEpisodeValue">
-		<value condition="String.IsEmpty(VideoPlayer.TVShowTitle)">$INFO[VideoPlayer.Label]</value>
 		<value condition="!String.IsEqual(VideoPlayer.Season,0) + !String.IsEmpty(VideoPlayer.Season) + !String.IsEmpty(VideoPlayer.Episode)">$INFO[VideoPlayer.Season, $LOCALIZE[20373] ,], $INFO[VideoPlayer.Episode,$LOCALIZE[20359] ]</value>
 		<value condition="!String.IsEqual(VideoPlayer.Season,0) + !String.IsEmpty(VideoPlayer.Episode)">$INFO[VideoPlayer.Episode,$LOCALIZE[20359] ]</value>
 		<value condition="String.IsEqual(VideoPlayer.Season,0)"> $LOCALIZE[31146] $LOCALIZE[20359] $INFO[VideoPlayer.Episode]</value>

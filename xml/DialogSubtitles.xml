@@ -28,25 +28,14 @@
 			<align>center</align>
 			<itemgap>0</itemgap>
 			<orientation>horizontal</orientation>
-			<!--  Movie title -->
+			<!--  Video title -->
 			<control type="label">
 				<width>auto</width>
 				<height>100</height>
-				<font>Med40</font>
-				<textcolor>ffeaeaea</textcolor>
+				<font>OSD40</font>
+				<textcolor>fffafafa</textcolor>
 				<shadowcolor>ShadowColour</shadowcolor>
-				<label>$INFO[VideoPlayer.Title]</label>
-				<visible>String.IsEmpty(VideoPlayer.TVShowTitle)</visible>
-			</control>
-			<!--  TV Show title -->
-			<control type="label">
-				<width>auto</width>
-				<height>100</height>
-				<font>Med40</font>
-				<textcolor>ffeaeaea</textcolor>
-				<shadowcolor>ShadowColour</shadowcolor>
-				<label>$INFO[VideoPlayer.TVShowTitle]</label>
-				<visible>!String.IsEmpty(VideoPlayer.TVShowTitle)</visible>
+				<label>$VAR[VideoPlayerTitle]</label>
 			</control>
 			<!-- Season/Episode number -->
 			<control type="label">
