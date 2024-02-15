@@ -187,7 +187,7 @@
 						<focusedcolor>ff222222</focusedcolor>
 						<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
 						<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
-						<enabled>!ListItem.IsParentFolder</enabled>
+						<enable>!ListItem.IsParentFolder</enable>
 					</control>
 					<control id="2004" type="button">
 						<top>220</top>
