@@ -309,7 +309,7 @@ msgid "Images for"
 msgstr ""
 
 msgctxt "#31070"
-msgid "Similar Titles"
+msgid "Suggested"
 msgstr ""
 
 msgctxt "#31071"
@@ -934,9 +934,7 @@ msgctxt "#31231"
 msgid "Please try again later."
 msgstr ""
 
-msgctxt "#31232"
-msgid "Also directed by"
-msgstr ""
+#empty string with id 31232
 
 msgctxt "#31233"
 msgid "View All Cast"

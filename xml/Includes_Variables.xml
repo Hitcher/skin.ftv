@@ -551,7 +551,7 @@
 	<variable name="VideoInfoLabelHeading">
 		<value condition="String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEmpty(Window(home).Property(DirectedByList)) + !String.IsEmpty(Container(500).ListItem.Label)">$LOCALIZE[31076]</value>
 		<value condition="!String.IsEmpty(Window(home).Property(RecommendedVideos)) + !String.IsEmpty(Container(500).ListItem.Label)">$LOCALIZE[31113]</value>
-		<value condition="!String.IsEmpty(Window(home).Property(DirectedByList)) + !String.IsEmpty(Container(500).ListItem.Label)">$LOCALIZE[31232] $VAR[Director_Name]</value>
+		<value condition="!String.IsEmpty(Window(home).Property(DirectedByList)) + !String.IsEmpty(Container(500).ListItem.Label)">$LOCALIZE[31072] $VAR[Director_Name]</value>
 		<value condition="String.IsEqual(ListItem.DBTYPE,set)">$LOCALIZE[31066]</value>
 	</variable>
 	<variable name="ExtendedInfoLabelHeading">
