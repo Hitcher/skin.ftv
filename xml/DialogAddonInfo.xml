@@ -141,7 +141,6 @@
 				<font>Med48</font>
 				<scroll>true</scroll>
 				<textcolor>ffdadada</textcolor>
-				<scrollspeed>100</scrollspeed>
 				<label>$INFO[ListItem.AddonName]</label>
 				<include>DialogVideoInfoAnimation</include>
 			</control>

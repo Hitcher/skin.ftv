@@ -7,6 +7,7 @@
 		<textcolor>ffffffff</textcolor>
 		<disabledcolor>DisabledColour</disabledcolor>
 		<selectedcolor>ffffffff</selectedcolor>
+		<scrollspeed>120</scrollspeed>
 		<scrollsuffix>         |         </scrollsuffix>
 	</default>
 	<default type="fadelabel">
@@ -15,7 +16,7 @@
 		<aligny>center</aligny>
 		<font>Med22</font>
 		<scrollout>false</scrollout>
-		<scrollspeed>80</scrollspeed>
+		<scrollspeed>120</scrollspeed>
 		<pauseatend>2000</pauseatend>
 	</default>
 	<default type="button">

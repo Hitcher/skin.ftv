@@ -96,7 +96,6 @@
 				<font>Med48</font>
 				<scroll>true</scroll>
 				<textcolor>ffdadada</textcolor>
-				<scrollspeed>100</scrollspeed>
 				<include>DialogVideoInfoAnimation</include>
 			</control>
 			<!-- Creative commons attribution label -->

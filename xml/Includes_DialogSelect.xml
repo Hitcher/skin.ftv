@@ -74,7 +74,6 @@
 						<height>120</height>
 						<font>Reg37</font>
 						<textcolor>ffffffff</textcolor>
-						<scrollspeed>200</scrollspeed>
 						<label>$INFO[ListItem.VideoVersionName]</label>
 					</control>
 					<control type="label">
@@ -84,7 +83,6 @@
 						<height>80</height>
 						<font>Reg25</font>
 						<textcolor>ffffffff</textcolor>
-						<scrollspeed>200</scrollspeed>
 						<label>$VAR[VideoAspect]$VAR[HDRType, | ]$VAR[AudioCodec, | ]$VAR[AudioChannels, | ]$INFO[ListItem.Duration, | ]</label>
 					</control>
 				</itemlayout>
@@ -102,7 +100,6 @@
 						<font>Reg37</font>
 						<textcolor>ff000000</textcolor>
 						<selectedcolor>ff000000</selectedcolor>
-						<scrollspeed>200</scrollspeed>
 						<label>$INFO[ListItem.VideoVersionName]</label>
 					</control>
 					<control type="label">
@@ -113,7 +110,6 @@
 						<font>Reg25</font>
 						<textcolor>ff000000</textcolor>
 						<selectedcolor>ff000000</selectedcolor>
-						<scrollspeed>200</scrollspeed>
 						<label>$VAR[VideoAspect]$VAR[HDRType, | ]$VAR[AudioCodec, | ]$VAR[AudioChannels, | ]$INFO[ListItem.Duration, | ]</label>
 					</control>
 				</focusedlayout>
@@ -541,7 +537,6 @@
 						<font>Reg37</font>
 						<textcolor>ff000000</textcolor>
 						<selectedcolor>ff000000</selectedcolor>
-						<scrollspeed>200</scrollspeed>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</focusedlayout>

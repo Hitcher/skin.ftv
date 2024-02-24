@@ -60,7 +60,6 @@
 				<width>776</width>
 				<height>72</height>
 				<font>Reg25</font>
-				<scrollspeed>100</scrollspeed>
 				<scrollsuffix/>
 				<textcolor>ffdadada</textcolor>
 			</control>

@@ -104,7 +104,6 @@
 				<font>Med48</font>
 				<scroll>true</scroll>
 				<textcolor>ffdadada</textcolor>
-				<scrollspeed>100</scrollspeed>
 				<label>$VAR[MusicInfoLabel]</label>
 			</control>
 			<control type="grouplist">

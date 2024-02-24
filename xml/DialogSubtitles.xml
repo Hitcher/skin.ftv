@@ -184,7 +184,6 @@
 								<width>1568</width>
 								<height>68</height>
 								<font>Light32</font>
-								<scrollspeed>120</scrollspeed>
 								<textcolor>ffffc04b</textcolor>
 								<label>$INFO[ListItem.Label2]</label>
 							</control>
