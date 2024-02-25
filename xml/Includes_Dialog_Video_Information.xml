@@ -543,7 +543,7 @@
 					<focusedcolor>ff222222</focusedcolor>
 					<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
 					<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
-					<visible>String.IsEqual(ListItem.DBType,movie)</visible>
+					<visible>ListItem.HasVideoVersions</visible>
 				</control>
 				<!-- Extras button -->
 				<control type="button" id="15">
@@ -560,7 +560,7 @@
 					<focusedcolor>ff222222</focusedcolor>
 					<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
 					<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
-					<visible>String.IsEqual(ListItem.DBType,movie)</visible>
+					<visible>ListItem.HasVideoExtras</visible>
 				</control>
 				<!-- Wikipedia button -->
 				<control type="button" id="1004">
