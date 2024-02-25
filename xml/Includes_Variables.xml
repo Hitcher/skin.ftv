@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<variable name="VideoPlayerTitle">
-		<value condition="String.IsEmpty(VideoPlayer.TVShowTitle) + !String.IsEmpty(VideoPlayer.VideoVersionName)">$INFO[VideoPlayer.Title] &#91;$INFO[VideoPlayer.VideoVersionName]&#93;</value>
+		<value condition="String.IsEmpty(VideoPlayer.TVShowTitle) + VideoPlayer.HasVideoVersions">$INFO[VideoPlayer.Title] &#91;$INFO[VideoPlayer.VideoVersionName]&#93;</value>
 		<value condition="String.IsEmpty(VideoPlayer.TVShowTitle)">$INFO[VideoPlayer.Title]</value>
 		<value>$INFO[VideoPlayer.TVShowTitle]</value>
 	</variable>
