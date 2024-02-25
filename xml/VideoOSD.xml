@@ -97,8 +97,8 @@
 					<width>128</width>
 					<height>128</height>
 					<font/>
-					<texturefocus>osd/osd_prev_fo.png</texturefocus>
-					<texturenofocus>osd/osd_prev_nf.png</texturenofocus>
+					<texturefocus colordiffuse="OSDFocusColour">osd/osd_prev.png</texturefocus>
+					<texturenofocus colordiffuse="OSDNotFocusColour">osd/osd_prev.png</texturenofocus>
 					<onclick>PlayerControl(Previous)</onclick>
 				</control>
 				<!-- Rewind -->
@@ -106,8 +106,8 @@
 					<width>128</width>
 					<height>128</height>
 					<font/>
-					<texturefocus>osd/osd_rw_fo.png</texturefocus>
-					<texturenofocus>osd/osd_rw_nf.png</texturenofocus>
+					<texturefocus colordiffuse="OSDFocusColour">osd/osd_rw.png</texturefocus>
+					<texturenofocus colordiffuse="OSDNotFocusColour">osd/osd_rw.png</texturenofocus>
 					<onclick condition="!Player.Paused + !Player.IsTempo">PlayerControl(Rewind)</onclick>
 					<onclick condition="Player.Paused + Player.TempoEnabled">PlayerControl(Play)</onclick>
 					<onclick condition="Player.Paused + Player.TempoEnabled">PlayerControl(TempoDown)</onclick>
@@ -118,8 +118,8 @@
 					<width>128</width>
 					<height>128</height>
 					<font/>
-					<texturefocus>osd/osd_stop_fo.png</texturefocus>
-					<texturenofocus>osd/osd_stop_nf.png</texturenofocus>
+					<texturefocus colordiffuse="OSDFocusColour">osd/osd_stop.png</texturefocus>
+					<texturenofocus colordiffuse="OSDNotFocusColour">osd/osd_stop.png</texturenofocus>
 					<onclick>PlayerControl(Stop)</onclick>
 				</control>
 				<!-- Play/Pause -->
@@ -127,11 +127,11 @@
 					<width>128</width>
 					<height>128</height>
 					<font/>
-					<texturefocus>osd/osd_pause_fo.png</texturefocus>
-					<texturenofocus>osd/osd_pause_nf.png</texturenofocus>
+					<texturefocus colordiffuse="OSDFocusColour">osd/osd_pause.png</texturefocus>
+					<texturenofocus colordiffuse="OSDNotFocusColour">osd/osd_pause.png</texturenofocus>
 					<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-					<alttexturefocus>osd/osd_play_fo.png</alttexturefocus>
-					<alttexturenofocus>osd/osd_play_nf.png</alttexturenofocus>
+					<alttexturefocus colordiffuse="OSDFocusColour">osd/osd_play.png</alttexturefocus>
+					<alttexturenofocus colordiffuse="OSDNotFocusColour">osd/osd_play.png</alttexturenofocus>
 					<onclick>PlayerControl(Play)</onclick>
 				</control>
 				<!-- Fast Forward -->
@@ -139,8 +139,8 @@
 					<width>128</width>
 					<height>128</height>
 					<font/>
-					<texturefocus>osd/osd_ff_fo.png</texturefocus>
-					<texturenofocus>osd/osd_ff_nf.png</texturenofocus>
+					<texturefocus colordiffuse="OSDFocusColour">osd/osd_ff.png</texturefocus>
+					<texturenofocus colordiffuse="OSDNotFocusColour">osd/osd_ff.png</texturenofocus>
 					<onclick condition="!Player.Paused + !Player.IsTempo">PlayerControl(Forward)</onclick>
 					<onclick condition="Player.Paused + Player.TempoEnabled">PlayerControl(Play)</onclick>
 					<onclick condition="Player.Paused + Player.TempoEnabled">PlayerControl(TempoUp)</onclick>
@@ -151,8 +151,8 @@
 					<width>128</width>
 					<height>128</height>
 					<font/>
-					<texturefocus>osd/osd_next_fo.png</texturefocus>
-					<texturenofocus>osd/osd_next_nf.png</texturenofocus>
+					<texturefocus colordiffuse="OSDFocusColour">osd/osd_next.png</texturefocus>
+					<texturenofocus colordiffuse="OSDNotFocusColour">osd/osd_next.png</texturenofocus>
 					<onclick>PlayerControl(Next)</onclick>
 				</control>
 			</control>
