@@ -18,7 +18,7 @@
 		<value condition="Window.IsVisible(selectvideoextra)">$LOCALIZE[31191]</value>
 	</variable>
 	<variable name="ListItemLabel">
-		<value condition="String.Contains(Container.FolderPath,videoversions) + !String.IsEqual(Container.FolderName,ListItem.VideoVersionName)">[B]$INFO[Container.FolderName] [$INFO[ListItem.VideoVersionName]][/B]</value>
+		<value condition="String.Contains(Container.FolderPath,movies/videoversions) + !String.IsEqual(Container.FolderName,ListItem.VideoVersionName)">[B]$INFO[Container.FolderName] [$INFO[ListItem.VideoVersionName]][/B]</value>
 		<value>[B]$INFO[ListItem.Label][/B]</value>
 	</variable>
 	<variable name="VideoAspect">
