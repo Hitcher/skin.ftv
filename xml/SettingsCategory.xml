@@ -13,7 +13,7 @@
 		<!-- Heading / Current item / Total items -->
 		<control type="grouplist">
 			<left>396</left>
-			<top>236</top>
+			<top>256</top>
 			<height>160</height>
 			<itemgap>20</itemgap>
 			<orientation>horizontal</orientation>
@@ -27,7 +27,7 @@
 				<label>$LOCALIZE[5]  </label>
 			</control>
 			<control type="label">
-				<top>60</top>
+				<top>34</top>
 				<width>auto</width>
 				<height>120</height>
 				<font>Med32</font>
@@ -36,7 +36,7 @@
 				<label>$VAR[SettingsCurrentItem]</label>
 			</control>
 			<control type="label">
-				<top>56</top>
+				<top>26</top>
 				<width>auto</width>
 				<height>120</height>
 				<font>Light36</font>
@@ -45,7 +45,7 @@
 				<label>|</label>
 			</control>
 			<control type="label">
-				<top>60</top>
+				<top>34</top>
 				<width>auto</width>
 				<height>120</height>
 				<font>Light32</font>

@@ -42,7 +42,7 @@
 			<!-- Search Result -->
 			<control type="grouplist">
 				<left>352</left>
-				<top>236</top>
+				<top>256</top>
 				<height>160</height>
 				<itemgap>20</itemgap>
 				<orientation>horizontal</orientation>
@@ -153,6 +153,7 @@
 					<usecontrolcoords>true</usecontrolcoords>
 					<visible>Container.Content(movies) | Container.Content(seasons) | Container.Content(tvshows)</visible>
 					<control type="label">
+						<top>-14</top>
 						<width>auto</width>
 						<height>52</height>
 						<font>Med26</font>
@@ -189,7 +190,7 @@
 					<!-- More button -->
 					<control id="3000" type="button">
 						<left>2388</left>
-						<top>384</top>
+						<top>392</top>
 						<width>74</width>
 						<height>46</height>
 						<onup>1000</onup>
@@ -212,6 +213,7 @@
 					<usecontrolcoords>true</usecontrolcoords>
 					<visible>Container.Content(episodes)</visible>
 					<control type="label">
+					<top>-14</top>
 						<width>auto</width>
 						<height>52</height>
 						<font>Med26</font>
@@ -221,6 +223,7 @@
 						<visible>!String.IsEmpty(ListItem.Duration)</visible>
 					</control>
 					<control type="label">
+						<top>-14</top>
 						<width>auto</width>
 						<height>52</height>
 						<font>Med26</font>
@@ -230,6 +233,7 @@
 						<visible>!String.IsEmpty(ListItem.Premiered) + String.IsEqual(System.Language,English)</visible>
 					</control>
 					<control type="label">
+						<top>-14</top>
 						<width>auto</width>
 						<height>52</height>
 						<font>Med26</font>
@@ -263,7 +267,7 @@
 					<!-- More button -->
 					<control id="3000" type="button">
 						<left>2388</left>
-						<top>384</top>
+						<top>392</top>
 						<width>74</width>
 						<height>46</height>
 						<onup>1000</onup>
@@ -301,7 +305,7 @@
 					<!-- More button -->
 					<control id="3000" type="button">
 						<left>2388</left>
-						<top>184</top>
+						<top>192</top>
 						<width>74</width>
 						<height>46</height>
 						<onup>1000</onup>

@@ -123,49 +123,37 @@
 			<control type="grouplist">
 				<top>120</top>
 				<height>64</height>
-				<itemgap>44</itemgap>
+				<itemgap>20</itemgap>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
 				<visible>!Control.HasFocus(500)</visible>
 				<animation effect="fade" end="0" start="100" time="0">Hidden</animation>
 				<animation delay="200" effect="fade" end="100" start="0" time="80">Visible</animation>
 				<control type="label">
-					<top>-12</top>
+					<top>-14</top>
 					<width>auto</width>
-					<height>64</height>
+					<height>68</height>
 					<font>Light32</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffbebebe</textcolor>
-					<label>$INFO[ListItem.Year]</label>
+					<label>$INFO[ListItem.Year]  </label>
 					<visible>!String.IsEmpty(ListItem.Year)</visible>
 				</control>
 				<control type="label">
-					<top>-12</top>
+					<top>-14</top>
 					<width>auto</width>
-					<height>64</height>
+					<height>68</height>
 					<font>Light32</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffbebebe</textcolor>
-					<label>$VAR[DurationHours]$VAR[DurationSpacing]$VAR[DurationMins] </label>
+					<label>$VAR[DurationHours]$VAR[DurationSpacing]$VAR[DurationMins]  </label>
 					<visible>!String.IsEmpty(ListItem.Duration)</visible>
 				</control>
-				<control type="button">
-					<top>6</top>
-					<width>auto</width>
-					<height>46</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>Med16</font>
-					<label>$INFO[ListItem.Mpaa,  ,  ]</label>
-					<textcolor>$VAR[RatingTextColour]</textcolor>
-					<texturefocus colordiffuse="$VAR[RatingButtonColour]" border="6">rating/flag.png</texturefocus>
-					<texturenofocus colordiffuse="$VAR[RatingButtonColour]" border="6">rating/flag.png</texturenofocus>
-					<visible>!String.IsEmpty(ListItem.Mpaa)</visible>
-				</control>
+				<include>VideoDetails</include>
 			</control>
 			<!-- Star rating / Rating -->
 			<control type="grouplist">
-				<top>200</top>
+				<top>212</top>
 				<height>80</height>
 				<itemgap>20</itemgap>
 				<orientation>horizontal</orientation>
@@ -173,23 +161,7 @@
 				<visible>!Control.HasFocus(500)</visible>
 				<animation effect="fade" end="0" start="100" time="0">Hidden</animation>
 				<animation delay="200" effect="fade" end="100" start="0" time="80">Visible</animation>
-				<control type="image">
-					<top>6</top>
-					<width>108</width>
-					<height>46</height>
-					<texture>views/logos/tmdb.png</texture>
-					<visible>!String.IsEmpty(ListItem.Rating)</visible>
-				</control>
-				<control type="label">
-					<top>-26</top>
-					<width>auto</width>
-					<height>68</height>
-					<font>Bold30</font>
-					<aligny>bottom</aligny>
-					<textcolor>ffbcbcbc</textcolor>
-					<label>$INFO[ListItem.Rating,,/10]</label>
-					<visible>!String.IsEmpty(ListItem.Rating)</visible>
-				</control>
+				<include>VideoRatings</include>
 			</control>
 			<control type="grouplist">
 				<top>312</top>
@@ -219,7 +191,7 @@
 				<!-- More button -->
 				<control id="3000" type="button">
 					<left>2388</left>
-					<top>-76</top>
+					<top>-72</top>
 					<width>74</width>
 					<height>46</height>
 					<onup>Close</onup>

@@ -46,7 +46,7 @@
 				<onleft>noop</onleft>
 				<onright>3012</onright>
 				<font>MedUpper24</font>
-				<textoffsety>54</textoffsety>
+				<textoffsety>44</textoffsety>
 				<label>106</label>
 				<onclick>SendClick(3013)</onclick>
 			</control>
@@ -61,7 +61,7 @@
 				<onleft>99</onleft>
 				<onright>noop</onright>
 				<font>MedUpper24</font>
-				<textoffsety>54</textoffsety>
+				<textoffsety>44</textoffsety>
 				<label>107</label>
 			</control>
 		</control>

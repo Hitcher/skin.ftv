@@ -93,22 +93,22 @@
 		<bordersize>-104</bordersize>
 	</include>
 	<!-- Widths -->
-	<include name="Width195">
+	<include name="Width390">
 		<width>390</width>
 	</include>
-	<include name="Width292">
+	<include name="Width584">
 		<width>584</width>
 	</include>
-	<include name="Width673">
+	<include name="Width1346">
 		<width>1346</width>
 	</include>
-	<include name="Width770">
+	<include name="Width1540">
 		<width>1540</width>
 	</include>
-	<include name="Width715">
+	<include name="Width1430">
 		<width>1430</width>
 	</include>
-	<include name="Width812">
+	<include name="Width1624">
 		<width>1624</width>
 	</include>
 	<!-- OSD Padding -->
@@ -271,9 +271,9 @@
 		</control>
 		<control type="grouplist">
 			<left>184</left>
-			<bottom>80</bottom>
+			<bottom>76</bottom>
 			<width>1600</width>
-			<height>76</height>
+			<height>80</height>
 			<itemgap>4</itemgap>
 			<orientation>horizontal</orientation>
 			<usecontrolcoords>true</usecontrolcoords>
@@ -409,6 +409,8 @@
 			<height>52</height>
 			<align>center</align>
 			<aligny>bottom</aligny>
+			<include condition="!Integer.IsEqual(System.ScreenHeight,1080)">ButtonOffset_Default</include>
+			<include condition="Integer.IsEqual(System.ScreenHeight,1080)">ButtonOffset_1080p</include>
 			<font>Med22</font>
 			<label>$INFO[ListItem.Mpaa, , ]</label>
 			<textcolor>$VAR[RatingTextColour]</textcolor>
@@ -429,6 +431,8 @@
 			<height>52</height>
 			<align>center</align>
 			<aligny>bottom</aligny>
+			<include condition="!Integer.IsEqual(System.ScreenHeight,1080)">ButtonOffset_Default</include>
+			<include condition="Integer.IsEqual(System.ScreenHeight,1080)">ButtonOffset_1080p</include>
 			<font>Med22</font>
 			<label> $VAR[VideoAspect] </label>
 			<textcolor>ffcccccc</textcolor>
@@ -442,6 +446,8 @@
 			<height>52</height>
 			<align>center</align>
 			<aligny>bottom</aligny>
+			<include condition="!Integer.IsEqual(System.ScreenHeight,1080)">ButtonOffset_Default</include>
+			<include condition="Integer.IsEqual(System.ScreenHeight,1080)">ButtonOffset_1080p</include>
 			<font>Med22</font>
 			<label> $VAR[HDRType] </label>
 			<textcolor>ffcccccc</textcolor>
@@ -455,11 +461,9 @@
 			<height>52</height>
 			<align>center</align>
 			<aligny>bottom</aligny>
+			<textoffsety>-6</textoffsety>
 			<font>Bold22</font>
 			<label>     DOLBY</label>
-			<include condition="Integer.IsLess(System.ScreenHeight,1080)">ButtonDolbyOffset_720p</include>
-			<include condition="Integer.IsGreater(System.ScreenHeight,720) + Integer.IsLess(System.ScreenHeight,2160)">ButtonDolbyOffset_1080p</include>
-			<include condition="Integer.IsGreaterOrEqual(System.ScreenHeight,2160)">ButtonDolbyOffset_4k</include>
 			<textcolor>ffcccccc</textcolor>
 			<texturefocus border="58,6,6,6">rating/dolby_left.png</texturefocus>
 			<texturenofocus border="58,6,6,6">rating/dolby_left.png</texturenofocus>
@@ -472,11 +476,10 @@
 			<height>52</height>
 			<align>center</align>
 			<aligny>bottom</aligny>
+			<include condition="!Integer.IsEqual(System.ScreenHeight,2160)">ButtonVisionOffset_Default</include>
+			<include condition="Integer.IsEqual(System.ScreenHeight,2160)">ButtonVisionOffset_4k</include>
 			<font>Light22</font>
 			<label> VISION </label>
-			<include condition="Integer.IsLess(System.ScreenHeight,1080)">ButtonVisionOffset_720p</include>
-			<include condition="Integer.IsGreater(System.ScreenHeight,720) + Integer.IsLess(System.ScreenHeight,2160)">ButtonVisionOffset_1080p</include>
-			<include condition="Integer.IsGreaterOrEqual(System.ScreenHeight,2160)">ButtonVisionOffset_4k</include>
 			<textcolor>ffcccccc</textcolor>
 			<texturefocus border="0,6,6,6">rating/dolby_right.png</texturefocus>
 			<texturenofocus border="0,6,6,6">rating/dolby_right.png</texturenofocus>
@@ -488,6 +491,8 @@
 			<height>52</height>
 			<align>center</align>
 			<aligny>bottom</aligny>
+			<include condition="!Integer.IsEqual(System.ScreenHeight,1080)">ButtonOffset_Default</include>
+			<include condition="Integer.IsEqual(System.ScreenHeight,1080)">ButtonOffset_1080p</include>
 			<font>Med22</font>
 			<label> $VAR[AudioCodec] </label>
 			<textcolor>ffcccccc</textcolor>
@@ -501,6 +506,8 @@
 			<height>52</height>
 			<align>center</align>
 			<aligny>bottom</aligny>
+			<include condition="!Integer.IsEqual(System.ScreenHeight,1080)">ButtonOffset_Default</include>
+			<include condition="Integer.IsEqual(System.ScreenHeight,1080)">ButtonOffset_1080p</include>
 			<font>Med22</font>
 			<label> $VAR[AudioChannels] </label>
 			<textcolor>ffcccccc</textcolor>
@@ -527,7 +534,7 @@
 			<visible>!String.IsEmpty(ListItem.Rating(imdb))</visible>
 		</control>
 		<control type="label">
-			<top>-36</top>
+			<top>-22</top>
 			<width>auto</width>
 			<height>68</height>
 			<font>Bold36</font>
@@ -544,7 +551,7 @@
 			<visible>!String.IsEmpty(ListItem.Rating(tvdb))</visible>
 		</control>
 		<control type="label">
-			<top>-36</top>
+			<top>-22</top>
 			<width>auto</width>
 			<height>68</height>
 			<font>Bold36</font>
@@ -561,7 +568,7 @@
 			<visible>!String.IsEmpty(ListItem.Rating(themoviedb))</visible>
 		</control>
 		<control type="label">
-			<top>-36</top>
+			<top>-22</top>
 			<width>auto</width>
 			<height>68</height>
 			<font>Bold36</font>
@@ -578,7 +585,7 @@
 			<visible>!String.IsEmpty(ListItem.Rating(tmdb))</visible>
 		</control>
 		<control type="label">
-			<top>-36</top>
+			<top>-22</top>
 			<width>auto</width>
 			<height>68</height>
 			<font>Bold36</font>
@@ -595,7 +602,7 @@
 			<visible>!String.IsEmpty(ListItem.Rating(trakt))</visible>
 		</control>
 		<control type="label">
-			<top>-36</top>
+			<top>-22</top>
 			<width>auto</width>
 			<height>68</height>
 			<font>Bold36</font>
@@ -612,7 +619,7 @@
 			<visible>!String.IsEmpty(ListItem.Rating(metacritic))</visible>
 		</control>
 		<control type="label">
-			<top>-36</top>
+			<top>-22</top>
 			<width>auto</width>
 			<height>68</height>
 			<font>Bold36</font>
@@ -650,7 +657,7 @@
 			<visible>[Skin.HasSetting(TomatoMeterAudienceScore) + !String.IsEmpty(ListItem.Rating(tomatometerallaudience)) + Integer.IsLess(Control.GetLabel(777),6)] | [Skin.HasSetting(AverageRatingAudienceScore) + !String.IsEmpty(ListItem.Rating(tomatometeravgaudience)) + Integer.IsLess(Control.GetLabel(777),6)]</visible>
 		</control>
 		<control type="label" id="777">
-			<top>-36</top>
+			<top>-22</top>
 			<width>auto</width>
 			<height>68</height>
 			<font>Bold36</font>
@@ -660,7 +667,7 @@
 			<visible>!String.IsEmpty(ListItem.Rating(tomatometerallcritics)) | !String.IsEmpty(ListItem.Rating(tomatometerallaudience)) | !String.IsEmpty(ListItem.Rating(tomatometeravgcritics)) | !String.IsEmpty(ListItem.Rating(tomatometeravgaudience))</visible>
 		</control>
 		<control type="label">
-			<top>-36</top>
+			<top>-22</top>
 			<width>auto</width>
 			<height>68</height>
 			<font>Bold36</font>
@@ -671,22 +678,16 @@
 		</control>
 	</include>
 	<!-- Offsets -->
-	<include name="ButtonDolbyOffset_720p">
-		<textoffsety>-14</textoffsety>
+	<include name="ButtonOffset_Default">
+		<textoffsety>-5</textoffsety>
 	</include>
-	<include name="ButtonDolbyOffset_1080p">
-		<textoffsety>-16</textoffsety>
+	<include name="ButtonOffset_1080p">
+		<textoffsety>-6</textoffsety>
 	</include>
-	<include name="ButtonDolbyOffset_4k">
-		<textoffsety>-15</textoffsety>
-	</include>
-	<include name="ButtonVisionOffset_720p">
-		<textoffsety>-2</textoffsety>
-	</include>
-	<include name="ButtonVisionOffset_1080p">
-		<textoffsety>-2</textoffsety>
+	<include name="ButtonVisionOffset_Default">
+		<textoffsety>-6</textoffsety>
 	</include>
 	<include name="ButtonVisionOffset_4k">
-		<textoffsety>-1</textoffsety>
+		<textoffsety>-5</textoffsety>
 	</include>
 </includes>

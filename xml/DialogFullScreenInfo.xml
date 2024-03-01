@@ -29,7 +29,7 @@
 				<!-- Heading -->
 				<control type="grouplist">
 					<left>392</left>
-					<top>236</top>
+					<top>256</top>
 					<height>160</height>
 					<itemgap>68</itemgap>
 					<orientation>horizontal</orientation>

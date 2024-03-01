@@ -56,7 +56,7 @@
 				<onleft>noop</onleft>
 				<onright>3012</onright>
 				<font>MedUpper24</font>
-				<textoffsety>54</textoffsety>
+				<textoffsety>44</textoffsety>
 				<label>222</label>
 				<onclick>SendClick(3013)</onclick>
 			</control>
@@ -71,7 +71,7 @@
 				<onleft>99</onleft>
 				<onright>noop</onright>
 				<font>MedUpper24</font>
-				<textoffsety>54</textoffsety>
+				<textoffsety>44</textoffsety>
 				<label>$LOCALIZE[19194]$INFO[Player.TimeRemaining(ss), ]</label>
 			</control>
 		</control>

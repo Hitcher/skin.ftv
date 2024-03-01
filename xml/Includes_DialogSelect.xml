@@ -370,8 +370,8 @@
 			<include>DialogAnimation</include>
 			<centerleft>50%</centerleft>
 			<centertop>50%</centertop>
-			<include condition="String.IsEqual(Window(home).Property(SetUserRating),music)">Width770</include>
-			<include condition="String.IsEqual(Window(home).Property(SetUserRating),video)">Width673</include>
+			<include condition="String.IsEqual(Window(home).Property(SetUserRating),music)">Width1540</include>
+			<include condition="String.IsEqual(Window(home).Property(SetUserRating),video)">Width1346</include>
 			<height>646</height>
 			<!-- Background -->
 			<control type="image">
@@ -384,8 +384,8 @@
 			<control type="label">
 				<left>-42</left>
 				<top>-52</top>
-				<include condition="String.IsEqual(Window(home).Property(SetUserRating),music)">Width812</include>
-				<include condition="String.IsEqual(Window(home).Property(SetUserRating),video)">Width715</include>
+				<include condition="String.IsEqual(Window(home).Property(SetUserRating),music)">Width1624</include>
+				<include condition="String.IsEqual(Window(home).Property(SetUserRating),video)">Width1430</include>
 				<height>68</height>
 				<font>Light23</font>
 				<label>31238</label>
@@ -394,16 +394,16 @@
 			<control type="image">
 				<left>-42</left>
 				<top>40</top>
-				<include condition="String.IsEqual(Window(home).Property(SetUserRating),music)">Width812</include>
-				<include condition="String.IsEqual(Window(home).Property(SetUserRating),video)">Width715</include>
+				<include condition="String.IsEqual(Window(home).Property(SetUserRating),music)">Width1624</include>
+				<include condition="String.IsEqual(Window(home).Property(SetUserRating),video)">Width1430</include>
 				<height>1</height>
 				<texture>rating/dialog_select/line.png</texture>
 			</control>
 			<control type="image">
 				<left>-42</left>
 				<top>100</top>
-				<include condition="String.IsEqual(Window(home).Property(SetUserRating),music)">Width292</include>
-				<include condition="String.IsEqual(Window(home).Property(SetUserRating),video)">Width195</include>
+				<include condition="String.IsEqual(Window(home).Property(SetUserRating),music)">Width584</include>
+				<include condition="String.IsEqual(Window(home).Property(SetUserRating),video)">Width390</include>
 				<height>584</height>
 				<texture>$VAR[InfoImage]</texture>
 				<aspectratio aligny="center">scale</aspectratio>
@@ -450,7 +450,7 @@
 					<align>center</align>
 					<font>Med30</font>
 					<textoffsetx>46</textoffsetx>
-					<textoffsety>54</textoffsety>
+					<textoffsety>44</textoffsety>
 					<label>31194</label>
 				</control>
 			</control>
@@ -873,7 +873,7 @@
 				<aligny>top</aligny>
 				<font>Med24</font>
 				<textoffsetx>46</textoffsetx>
-				<textoffsety>54</textoffsety>
+				<textoffsety>44</textoffsety>
 				<label>35261</label>
 			</control>
 		</control>

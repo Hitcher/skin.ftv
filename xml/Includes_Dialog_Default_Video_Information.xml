@@ -159,7 +159,7 @@
 				<animation effect="fade" end="0" start="100" time="0">Hidden</animation>
 				<animation delay="200" effect="fade" end="100" start="0" time="80">Visible</animation>
 				<control type="label">
-					<top>-8</top>
+					<top>-14</top>
 					<width>auto</width>
 					<height>68</height>
 					<font>Light32</font>
@@ -169,7 +169,7 @@
 					<visible>!String.IsEmpty(ListItem.Year)</visible>
 				</control>
 				<control type="label">
-					<top>-8</top>
+					<top>-14</top>
 					<width>auto</width>
 					<height>68</height>
 					<font>Light32</font>
@@ -182,7 +182,7 @@
 			</control>
 			<!-- Star rating / Rating -->
 			<control type="grouplist">
-				<top>204</top>
+				<top>212</top>
 				<height>80</height>
 				<itemgap>20</itemgap>
 				<orientation>horizontal</orientation>
@@ -220,7 +220,7 @@
 				<!-- More button -->
 				<control id="3002" type="button">
 					<left>2388</left>
-					<top>-76</top>
+					<top>-72</top>
 					<width>74</width>
 					<height>46</height>
 					<onleft>7000</onleft>

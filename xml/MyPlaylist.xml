@@ -171,7 +171,7 @@
 			<!-- Heading / Current item / Total items -->
 			<control type="grouplist">
 				<left>396</left>
-				<top>236</top>
+				<top>256</top>
 				<height>160</height>
 				<itemgap>20</itemgap>
 				<orientation>horizontal</orientation>
@@ -187,7 +187,7 @@
 					<label>$LOCALIZE[31106]  </label>
 				</control>
 				<control type="label">
-					<top>60</top>
+					<top>34</top>
 					<width>auto</width>
 					<height>120</height>
 					<font>Med32</font>
@@ -197,7 +197,7 @@
 					<visible>Integer.IsGreater(Container.NumItems,0)</visible>
 				</control>
 				<control type="label">
-					<top>56</top>
+					<top>26</top>
 					<width>auto</width>
 					<height>120</height>
 					<font>Light36</font>
@@ -207,7 +207,7 @@
 					<visible>Integer.IsGreater(Container.NumItems,0)</visible>
 				</control>
 				<control type="label">
-					<top>60</top>
+					<top>34</top>
 					<width>auto</width>
 					<height>120</height>
 					<font>Light32</font>
@@ -257,7 +257,6 @@
 					<label>$LOCALIZE[31086]</label>
 				</control>
 				<control type="label">
-					<top>1</top>
 					<width>auto</width>
 					<height>60</height>
 					<align>right</align>
@@ -549,7 +548,7 @@
 					<onclick>SetFocus(50)</onclick>
 					<font>Med24</font>
 					<label>20177</label>
-					<textoffsety>54</textoffsety>
+					<textoffsety>44</textoffsety>
 				</control>
 			</control>
 		</control>

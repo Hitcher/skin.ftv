@@ -11,6 +11,10 @@
 	<onunload>ClearProperty(Window(Home).Property(ForceViewType))</onunload>
 	<views>60,61,50,51,52,53,55,56</views>
 	<controls>
+		<!-- TMDbHelper monitor list -->
+		<control type="list" id="99950">
+			<include>HiddenList</include>
+		</control>
 		<control type="group">
 			<visible>!Window.IsVisible(movieinformation)</visible>
 			<control id="2" type="button">
@@ -37,7 +41,7 @@
 				<!-- Heading / Current item / Total items -->
 				<control type="grouplist">
 					<left>396</left>
-					<top>236</top>
+					<top>256</top>
 					<height>160</height>
 					<itemgap>20</itemgap>
 					<orientation>horizontal</orientation>
@@ -53,7 +57,7 @@
 						<label>$VAR[HeadingLabel]  </label>
 					</control>
 					<control type="label">
-						<top>60</top>
+						<top>34</top>
 						<width>auto</width>
 						<height>120</height>
 						<font>Med32</font>
@@ -63,7 +67,7 @@
 						<visible>Integer.IsGreater(Container.NumItems,0)</visible>
 					</control>
 					<control type="label">
-						<top>56</top>
+						<top>26</top>
 						<width>auto</width>
 						<height>120</height>
 						<font>Light36</font>
@@ -73,7 +77,7 @@
 						<visible>Integer.IsGreater(Container.NumItems,0)</visible>
 					</control>
 					<control type="label">
-						<top>60</top>
+						<top>34</top>
 						<width>auto</width>
 						<height>120</height>
 						<font>Light32</font>
@@ -86,7 +90,7 @@
 				<!-- Title -->
 				<control type="grouplist">
 					<left>396</left>
-					<top>236</top>
+					<top>256</top>
 					<height>160</height>
 					<itemgap>20</itemgap>
 					<orientation>horizontal</orientation>
@@ -102,7 +106,7 @@
 						<label>$INFO[Container.FolderName]  </label>
 					</control>
 					<control type="label">
-						<top>60</top>
+						<top>34</top>
 						<width>auto</width>
 						<height>120</height>
 						<font>Med32</font>
@@ -112,7 +116,7 @@
 						<visible>Integer.IsGreater(Container.NumItems,0)</visible>
 					</control>
 					<control type="label">
-						<top>56</top>
+						<top>26</top>
 						<width>auto</width>
 						<height>120</height>
 						<font>Light36</font>
@@ -122,7 +126,7 @@
 						<visible>Integer.IsGreater(Container.NumItems,0)</visible>
 					</control>
 					<control type="label">
-						<top>60</top>
+						<top>34</top>
 						<width>auto</width>
 						<height>120</height>
 						<font>Light32</font>
@@ -176,7 +180,6 @@
 						<label>$LOCALIZE[31086]</label>
 					</control>
 					<control type="label">
-						<top>1</top>
 						<width>auto</width>
 						<height>60</height>
 						<align>right</align>
@@ -321,6 +324,7 @@
 						<usecontrolcoords>true</usecontrolcoords>
 						<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows)</visible>
 						<control type="label">
+							<top>-6</top>
 							<width>auto</width>
 							<height>52</height>
 							<font>Med26</font>
@@ -338,6 +342,8 @@
 							<height>52</height>
 							<align>center</align>
 							<aligny>bottom</aligny>
+							<include condition="!Integer.IsEqual(System.ScreenHeight,1080)">ButtonOffset_Default</include>
+							<include condition="Integer.IsEqual(System.ScreenHeight,1080)">ButtonOffset_1080p</include>
 							<font>Med22</font>
 							<label>  $VAR[VersionLabel]  </label>
 							<textcolor>ffcccccc</textcolor>
@@ -350,7 +356,7 @@
 					<control type="group">
 						<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows)</visible>
 						<control type="textbox">
-							<top>290</top>
+							<top>284</top>
 							<width>2384</width>
 							<height>176</height>
 							<align>left</align>
@@ -361,7 +367,7 @@
 							<label>$VAR[ListItemLabel] [LIGHT]$VAR[Plot][/LIGHT]</label>
 						</control>
 						<control id="96" type="scrollbar">
-							<top>290</top>
+							<top>284</top>
 							<width>2384</width>
 							<height>176</height>
 							<showonepage>false</showonepage>
@@ -370,7 +376,7 @@
 						<!-- More button -->
 						<control id="3000" type="button">
 							<left>2388</left>
-							<top>384</top>
+							<top>386</top>
 							<width>74</width>
 							<height>46</height>
 							<onup>1000</onup>
@@ -388,7 +394,7 @@
 					<control type="group">
 						<visible>Container.Content(seasons)</visible>
 						<control type="textbox">
-							<top>206</top>
+							<top>200</top>
 							<width>2384</width>
 							<height>252</height>
 							<align>left</align>
@@ -399,7 +405,7 @@
 							<label>[B]$INFO[ListItem.TVShowTitle] - $VAR[SeasonValue][/B] [LIGHT]$VAR[Plot][/LIGHT]</label>
 						</control>
 						<control id="97" type="scrollbar">
-							<top>206</top>
+							<top>200</top>
 							<width>2384</width>
 							<height>252</height>
 							<showonepage>false</showonepage>
@@ -408,7 +414,7 @@
 						<!-- More button -->
 						<control id="3000" type="button">
 							<left>2388</left>
-							<top>384</top>
+							<top>386</top>
 							<width>74</width>
 							<height>46</height>
 							<onup>1000</onup>
@@ -422,7 +428,7 @@
 							<texturenofocus>views/more_nf.png</texturenofocus>
 						</control>
 					</control>
-					<!-- Episode Plot -->
+					<!-- Episode Details -->
 					<control type="grouplist">
 						<top>216</top>
 						<height>60</height>
@@ -431,6 +437,7 @@
 						<usecontrolcoords>true</usecontrolcoords>
 						<visible>Container.Content(episodes)</visible>
 						<control type="label">
+							<top>-6</top>
 							<width>auto</width>
 							<height>52</height>
 							<font>Med26</font>
@@ -440,6 +447,7 @@
 							<visible>!String.IsEmpty(ListItem.Duration)</visible>
 						</control>
 						<control type="label">
+							<top>-6</top>
 							<width>auto</width>
 							<height>52</height>
 							<font>Med26</font>
@@ -449,6 +457,7 @@
 							<visible>!String.IsEmpty(ListItem.Premiered) + String.IsEqual(System.Language,English)</visible>
 						</control>
 						<control type="label">
+							<top>-6</top>
 							<width>auto</width>
 							<height>52</height>
 							<font>Med26</font>
@@ -459,10 +468,11 @@
 						</control>
 						<include>VideoDetails</include>
 					</control>
+					<!-- Episode Plot -->
 					<control type="group">
 						<visible>Container.Content(episodes)</visible>
 						<control type="textbox">
-							<top>290</top>
+							<top>284</top>
 							<width>2384</width>
 							<height>176</height>
 							<align>left</align>
@@ -473,7 +483,7 @@
 							<label>[B]$VAR[NextAiredTitle][/B] [LIGHT]$VAR[Plot][/LIGHT]</label>
 						</control>
 						<control id="98" type="scrollbar">
-							<top>290</top>
+							<top>284</top>
 							<width>2384</width>
 							<height>176</height>
 							<showonepage>false</showonepage>
@@ -482,7 +492,7 @@
 						<!-- More button -->
 						<control id="3000" type="button">
 							<left>2388</left>
-							<top>384</top>
+							<top>386</top>
 							<width>74</width>
 							<height>46</height>
 							<onup>1000</onup>
@@ -644,7 +654,7 @@
 					<!-- More button -->
 					<control id="3000" type="button">
 						<left>2388</left>
-						<top>384</top>
+						<top>392</top>
 						<width>74</width>
 						<height>46</height>
 						<onup>1000</onup>
@@ -907,7 +917,7 @@
 						<onclick>SetFocus(50)</onclick>
 						<font>Med24</font>
 						<label>20177</label>
-						<textoffsety>54</textoffsety>
+						<textoffsety>44</textoffsety>
 					</control>
 				</control>
 			</control>

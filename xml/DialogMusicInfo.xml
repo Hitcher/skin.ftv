@@ -237,6 +237,10 @@
 						<label>[LIGHT]$INFO[ListItem.Artist,[B]$LOCALIZE[557]:[/B] ][/LIGHT]</label>
 					</control>
 				</control>
+				<!-- Spacing -->
+				<control type="group">
+					<height>12</height>
+				</control>
 				<!-- Star rating / Rating -->
 				<control type="grouplist">
 					<height>80</height>
@@ -254,7 +258,7 @@
 						<visible>!String.IsEmpty(ListItem.UserRating)</visible>
 					</control>
 					<control type="label">
-						<top>-36</top>
+						<top>-22</top>
 						<width>auto</width>
 						<height>68</height>
 						<font>Bold36</font>
@@ -453,7 +457,7 @@
 				</control>
 				<!-- Info -->
 				<control type="textbox">
-					<top>592</top>
+					<top>586</top>
 					<width>1584</width>
 					<height>1120</height>
 					<align>left</align>
@@ -465,7 +469,7 @@
 				<!-- More button -->
 				<control id="3002" type="button">
 					<left>1588</left>
-					<top>1632</top>
+					<top>1642</top>
 					<width>74</width>
 					<height>46</height>
 					<onleft>7001</onleft>

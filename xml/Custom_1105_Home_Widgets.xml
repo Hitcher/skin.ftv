@@ -698,7 +698,7 @@
 						<aligny>top</aligny>
 						<font>Med24</font>
 						<textoffsetx>46</textoffsetx>
-						<textoffsety>54</textoffsety>
+						<textoffsety>44</textoffsety>
 						<label>13007</label>
 						<include condition="String.IsEqual(Window(home).Property(SubMenu),1000)">1000-WidgetDefaults</include>
 						<include condition="String.IsEqual(Window(home).Property(SubMenu),2000)">2000-WidgetDefaults</include>
@@ -717,7 +717,7 @@
 						<aligny>top</aligny>
 						<font>Med24</font>
 						<textoffsetx>46</textoffsetx>
-						<textoffsety>54</textoffsety>
+						<textoffsety>44</textoffsety>
 						<label>192</label>
 						<onclick>Skin.Reset($INFO[Window(home).Property(SubMenu),,-WidgetLabel-1])</onclick>
 						<onclick>Skin.Reset($INFO[Window(home).Property(SubMenu),,-WidgetLabel-2])</onclick>
@@ -776,7 +776,7 @@
 						<aligny>top</aligny>
 						<font>Med24</font>
 						<textoffsetx>46</textoffsetx>
-						<textoffsety>54</textoffsety>
+						<textoffsety>44</textoffsety>
 						<label>186</label>
 						<onclick>Close</onclick>
 					</control>

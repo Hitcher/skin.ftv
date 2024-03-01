@@ -96,7 +96,7 @@
 				<aligny>top</aligny>
 				<font>Med24</font>
 				<textoffsetx>46</textoffsetx>
-				<textoffsety>54</textoffsety>
+				<textoffsety>44</textoffsety>
 				<radiowidth>188</radiowidth>
 				<radioheight>80</radioheight>
 				<radioposx>470</radioposx>
@@ -123,7 +123,7 @@
 	<include name="WeatherHourlyItem">
 		<item>
 			<label>$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Time)]</label>
-			<label2>$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Temperature)] ∙ $INFO[Window(weather).Property(Hourly.$PARAM[item_index].Precipitation)]</label2>
+			<label2>$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Temperature)] &#x2022; $INFO[Window(weather).Property(Hourly.$PARAM[item_index].Precipitation)]</label2>
 			<icon>resource://resource.images.weathericons.default/$INFO[Window(weather).Property(Hourly.$PARAM[item_index].OutlookIcon)]</icon>
 			<onclick>noop</onclick>
 			<visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched)) + !String.IsEmpty(Window(weather).Property(Hourly.$PARAM[item_index].Outlook)) + String.IsEqual(Window(home).Property(Hourly),true)</visible>
@@ -132,7 +132,7 @@
 	<include name="WeatherDailyItem">
 		<item>
 			<label>$INFO[Window(weather).Property(Daily.$PARAM[item_index].ShortDay)]</label>
-			<label2>$INFO[Window(weather).Property(Daily.$PARAM[item_index].LowTemperature)] ∙ $INFO[Window(weather).Property(Daily.$PARAM[item_index].HighTemperature)]</label2>
+			<label2>$INFO[Window(weather).Property(Daily.$PARAM[item_index].LowTemperature)] &#x2022; $INFO[Window(weather).Property(Daily.$PARAM[item_index].HighTemperature)]</label2>
 			<icon>$INFO[Window(weather).Property(Daily.$PARAM[item_index].FanartCode),weather/icons/,.png]</icon>
 			<property name="LongDay">$INFO[Window(weather).Property(Daily.$PARAM[item_index].LongDay)]</property>
 			<property name="Outlook">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Outlook)]</property>
@@ -144,7 +144,7 @@
 	<include name="WeatherDayItem">
 		<item>
 			<label>$VAR[Day$PARAM[item_index]]</label>
-			<label2>$INFO[Window(weather).Property(Day$PARAM[item_index].LowTemp)]$INFO[System.TemperatureUnits] ∙ $INFO[Window(weather).Property(Day$PARAM[item_index].HighTemp)]$INFO[System.TemperatureUnits]</label2>
+			<label2>$INFO[Window(weather).Property(Day$PARAM[item_index].LowTemp)]$INFO[System.TemperatureUnits] &#x2022; $INFO[Window(weather).Property(Day$PARAM[item_index].HighTemp)]$INFO[System.TemperatureUnits]</label2>
 			<property name="LongDay">$INFO[Window(weather).Property(Day$PARAM[item_index].Title)]</property>
 			<property name="Outlook">$INFO[Window(weather).Property(Day$PARAM[item_index].Outlook)]</property>
 			<property name="Fanart">$INFO[Window(Weather).Property(Day$PARAM[item_index].FanartCode),resource://resource.images.weatherfanart.single/,.jpg]</property>

@@ -302,7 +302,7 @@
 					<font>Med24</font>
 					<onup>303</onup>
 					<textoffsetx>46</textoffsetx>
-					<textoffsety>54</textoffsety>
+					<textoffsety>44</textoffsety>
 					<label>$ADDON[script.skinshortcuts 32028]</label>
 				</control>
 				<!-- Cancel Button -->
@@ -313,7 +313,7 @@
 					<aligny>top</aligny>
 					<font>Med24</font>
 					<textoffsetx>46</textoffsetx>
-					<textoffsety>54</textoffsety>
+					<textoffsety>44</textoffsety>
 					<label>222</label>
 					<onclick>Close</onclick>
 				</control>
@@ -325,7 +325,7 @@
 					<aligny>top</aligny>
 					<font>Med24</font>
 					<textoffsetx>46</textoffsetx>
-					<textoffsety>54</textoffsety>
+					<textoffsety>44</textoffsety>
 					<label>186</label>
 					<onback>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=99&amp;levels=5&amp;group=mainmenu|shutdown)</onback>
 					<onclick>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=99&amp;levels=0&amp;group=mainmenu|shutdown)</onclick>

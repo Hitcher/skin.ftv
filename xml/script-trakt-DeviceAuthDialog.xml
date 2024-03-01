@@ -87,7 +87,7 @@
 					<onleft>10</onleft>
 					<onright>noop</onright>
 					<font>MedUpper24</font>
-					<textoffsety>54</textoffsety>
+					<textoffsety>44</textoffsety>
 					<label>$ADDON[script.trakt 32155]</label>
 				</control>
 				<control type="button" id="202">
@@ -98,7 +98,7 @@
 					<onleft>10</onleft>
 					<onright>noop</onright>
 					<font>MedUpper24</font>
-					<textoffsety>54</textoffsety>
+					<textoffsety>44</textoffsety>
 					<label>$ADDON[script.trakt 32156]</label>
 				</control>
 			</control>
