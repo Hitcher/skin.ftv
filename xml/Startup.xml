@@ -481,6 +481,9 @@
 			<onfocus>Skin.SetBool(skinshortcuts-widget-widget6)</onfocus>
 			<onfocus>Skin.SetBool(skinshortcuts-widget-widget7)</onfocus>
 			<onfocus>Skin.SetBool(skinshortcuts-widget-widget8)</onfocus>
+			<onfocus>Skin.SetBool(ExtendedInfo)</onfocus>
+			<onfocus>Skin.SetBool(EnableFanart)</onfocus>
+			<onfocus>Skin.SetBool(EnableXRay)</onfocus>
 			<onfocus>Skin.SetBool(TomatoMeterAllCritics)</onfocus>
 			<onfocus>Skin.SetBool(US)</onfocus>
 			<onfocus>RunScript(script.skinshortcuts,type=setProperty&amp;property=widgetName|widget|widgetName|widget|widgetName|widget|widgetName|widget|widgetName|widget|widgetName|widget|widgetName|widget|widgetName|widget&amp;value=31210|widget1|31211|widget2|31212|widget3|31213|widget4|31214|widget5|31215|widget6|31216|widget7|31217|widget8&amp;labelID=10000|10000|20342|20342|36903|36903|10025|10025|10502|10502|15016|15016|10506|10506|1213|1213)</onfocus>
