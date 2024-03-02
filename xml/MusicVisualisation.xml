@@ -129,22 +129,22 @@
 						<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
 					</control>
 					<control type="image">
-						<top>10</top>
+						<top>16</top>
 						<width>52</width>
 						<height>44</height>
 						<texture>osd/visualistion_shuffle.png</texture>
 						<visible>String.IsEqual(Playlist.Random,$LOCALIZE[16041])</visible>
 					</control>
 					<control type="image">
-						<top>10</top>
-						<width>60</width>
+						<top>16</top>
+						<width>62</width>
 						<height>44</height>
 						<texture>osd/visualistion_repeat.png</texture>
 						<visible>String.IsEqual(Playlist.Repeat,$LOCALIZE[593])</visible>
 					</control>
 					<control type="image">
-						<top>10</top>
-						<width>84</width>
+						<top>16</top>
+						<width>80</width>
 						<height>44</height>
 						<texture>osd/visualistion_repeat_1.png</texture>
 						<visible>String.IsEqual(Playlist.Repeat,$LOCALIZE[592])</visible>
