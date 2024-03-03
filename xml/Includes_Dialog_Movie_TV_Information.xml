@@ -191,7 +191,7 @@
 				<!-- More button -->
 				<control id="3000" type="button">
 					<left>2388</left>
-					<top>-72</top>
+					<top>-66</top>
 					<width>74</width>
 					<height>46</height>
 					<onup>Close</onup>

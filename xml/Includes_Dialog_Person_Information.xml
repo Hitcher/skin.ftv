@@ -166,7 +166,7 @@
 				<!-- More button -->
 				<control id="3000" type="button">
 					<left>2388</left>
-					<top>-62</top>
+					<top>-58</top>
 					<width>74</width>
 					<height>46</height>
 					<onleft condition="String.IsEmpty(Window(home).Property(StarredInTV)) + String.IsEmpty(Window(home).Property(ActorImages))">7000</onleft>
