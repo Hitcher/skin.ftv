@@ -498,7 +498,51 @@
 			<textcolor>ffcccccc</textcolor>
 			<texturefocus colordiffuse="FF888888" border="6">rating/flag.png</texturefocus>
 			<texturenofocus colordiffuse="FF888888" border="6">rating/flag.png</texturenofocus>
-			<visible>!String.IsEmpty(ListItem.AudioCodec)</visible>
+			<visible>!String.IsEmpty(ListItem.AudioCodec) + !String.Contains(ListItem.FileName,atmos)</visible>
+		</control>
+		<control type="button">
+			<top>4</top>
+			<width>auto</width>
+			<height>52</height>
+			<align>center</align>
+			<aligny>bottom</aligny>
+			<textoffsety>-6</textoffsety>
+			<font>Bold22</font>
+			<label>     DOLBY</label>
+			<textcolor>ffcccccc</textcolor>
+			<texturefocus border="58,6,6,6">rating/dolby_left.png</texturefocus>
+			<texturenofocus border="58,6,6,6">rating/dolby_left.png</texturenofocus>
+			<visible>String.Contains(ListItem.FileName,atmos) + String.IsEqual(ListItem.AudioCodec,EAC3)</visible>
+		</control>
+		<control type="button">
+			<top>4</top>
+			<width>auto</width>
+			<height>52</height>
+			<align>center</align>
+			<aligny>bottom</aligny>
+			<textoffsety>-6</textoffsety>
+			<font>Bold22</font>
+			<label>     TRUEHD</label>
+			<textcolor>ffcccccc</textcolor>
+			<texturefocus border="58,6,6,6">rating/dolby_left.png</texturefocus>
+			<texturenofocus border="58,6,6,6">rating/dolby_left.png</texturenofocus>
+			<visible>String.Contains(ListItem.FileName,atmos) + String.IsEqual(ListItem.AudioCodec,trueHD)</visible>
+		</control>
+		<control type="button">
+			<top>4</top>
+			<left>-20</left>
+			<width>auto</width>
+			<height>52</height>
+			<align>center</align>
+			<aligny>bottom</aligny>
+			<include condition="!Integer.IsEqual(System.ScreenHeight,2160)">ButtonVisionOffset_Default</include>
+			<include condition="Integer.IsEqual(System.ScreenHeight,2160)">ButtonVisionOffset_4k</include>
+			<font>Light22</font>
+			<label> ATMOS </label>
+			<textcolor>ffcccccc</textcolor>
+			<texturefocus border="0,6,6,6">rating/dolby_right.png</texturefocus>
+			<texturenofocus border="0,6,6,6">rating/dolby_right.png</texturenofocus>
+			<visible>String.Contains(ListItem.FileName,atmos)</visible>
 		</control>
 		<control type="button">
 			<top>4</top>

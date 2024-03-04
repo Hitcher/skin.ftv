@@ -294,7 +294,6 @@
 	<variable name="HDRType">
 		<value condition="String.IsEqual(ListItem.HdrType,hlg)">HLG</value>
 		<value condition="String.IsEqual(ListItem.HdrType,hdr10)">HDR10</value>
-		<value condition="String.IsEqual(ListItem.HdrType,dolbyvision)">DOLBY VISION</value>
 	</variable>
 	<variable name="PlayerHDRType">
 		<value condition="String.IsEqual(VideoPlayer.HdrType,hlg)">HLG</value>
@@ -340,7 +339,7 @@
 		<value>FF888888</value>
 	</variable>
 	<variable name="AudioCodec">
-		<value condition="String.Contains(ListItem.FileName,ATMOS)">ATMOS</value>
+		<!--value condition="String.Contains(ListItem.FileName,ATMOS)">ATMOS</value-->
 		<value condition="String.IsEqual(ListItem.AudioCodec,AIF)">AIFF</value>
 		<value condition="String.IsEqual(ListItem.AudioCodec,AIFF)">AIFF</value>
 		<value condition="String.IsEqual(ListItem.AudioCodec,MP1)">MP1</value>
