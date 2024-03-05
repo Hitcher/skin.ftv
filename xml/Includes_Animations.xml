@@ -48,6 +48,7 @@
 	<include name="FocusedListIDFadeDiffuseAnimation">
 		<animation center="auto" condition="Control.HasFocus($PARAM[ListID])" easing="inout" effect="fadediffuse" end="FFFFFFFF" start="FF898989" time="300" tween="sine">Focus</animation>
 		<animation center="auto" condition="Control.HasFocus($PARAM[ListID])" easing="inout" effect="fadediffuse" end="FF898989" start="FFFFFFFF" time="300" tween="sine">UnFocus</animation>
+		<animation center="auto" condition="!Control.HasFocus($PARAM[ListID])" easing="inout" effect="fadediffuse" end="FF898989" start="FFFFFFFF" time="0" tween="sine">Conditional</animation>
 	</include>
 	<!-- Item list fade diffuse animation -->
 	<include name="ItemListFadeDiffuseAnimation">
