@@ -43,7 +43,7 @@
 						<label>$LOCALIZE[31076]</label>
 					</control>
 					<control type="image">
-						<top>76</top>
+						<top>56</top>
 						<width>108</width>
 						<height>46</height>
 						<texture>views/logos/tmdb.png</texture>
