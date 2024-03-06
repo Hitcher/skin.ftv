@@ -409,6 +409,17 @@
 					</control>
 				</control>
 			</control>
+			<!-- More arrow -->
+			<control type="image">
+				<left>3260</left>
+				<top>1630</top>
+				<width>40</width>
+				<height>72</height>
+				<texture>views/arrow_right.png</texture>
+				<visible>Container(99).HasNext</visible>
+				<animation delay="80" effect="fade" end="100" start="0" time="120">Visible</animation>
+				<animation delay="80" effect="fade" end="0" start="100" time="120">Hidden</animation>
+			</control>
 		</control>
 		<control type="image">
 			<centerleft>50%</centerleft>
@@ -418,17 +429,6 @@
 			<texture>common/busy.png</texture>
 			<animation center="auto" condition="true" effect="rotate" end="-360" loop="true" reversible="false" time="1120">Conditional</animation>
 			<visible>String.IsEmpty(Window(weather).Property(Daily.IsFetched))</visible>
-		</control>
-		<!-- More arrow -->
-		<control type="image">
-			<left>3516</left>
-			<top>1630</top>
-			<width>40</width>
-			<height>72</height>
-			<texture>views/arrow_right.png</texture>
-			<visible>Container(99).HasNext</visible>
-			<animation delay="80" effect="fade" end="100" start="0" time="120">Visible</animation>
-			<animation delay="80" effect="fade" end="0" start="100" time="120">Hidden</animation>
 		</control>
 	</controls>
 </window>
