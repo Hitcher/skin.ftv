@@ -111,8 +111,8 @@
 			<!-- Text -->
 			<control type="textbox" id="9903">
 				<top>280</top>
-				<width>2544</width>
-				<height>1502</height>
+				<width>2524</width>
+				<height>1514</height>
 				<align>left</align>
 				<font>Light30Spaced</font>
 				<autoscroll>false</autoscroll>
@@ -120,12 +120,23 @@
 				<pagecontrol>61</pagecontrol>
 				<include>DialogVideoInfoAnimation</include>
 			</control>
+			<!-- More button -->
+			<control type="button">
+				<left>2534</left>
+				<top>1734</top>
+				<width>74</width>
+				<height>46</height>
+				<include>DialogVideoInfoAnimation</include>
+				<texturefocus>views/more_fo.png</texturefocus>
+				<texturenofocus>views/more_nf.png</texturenofocus>
+				<visible>!Control.HasFocus(61) + Container(9903).HasNext</visible>
+			</control>
 			<!-- Scrollbar -->
 			<control id="61" type="scrollbar">
 				<top>280</top>
 				<left>2624</left>
 				<width>16</width>
-				<height>1502</height>
+				<height>1500</height>
 				<onleft>9902</onleft>
 				<onback>9902</onback>
 				<showonepage>false</showonepage>
