@@ -147,11 +147,11 @@
 			<!-- Type -->
 			<control type="group">
 				<top>114</top>
-				<height>72</height>
+				<height>76</height>
 				<include>DialogVideoInfoAnimation</include>
 				<control type="textbox">
 					<width>2384</width>
-					<height>72</height>
+					<height>76</height>
 					<align>left</align>
 					<font>Reg30Spaced</font>
 					<autoscroll>false</autoscroll>
@@ -163,11 +163,11 @@
 			<!-- Version -->
 			<control type="group">
 				<top>194</top>
-				<height>72</height>
+				<height>76</height>
 				<include>DialogVideoInfoAnimation</include>
 				<control type="textbox">
 					<width>2384</width>
-					<height>72</height>
+					<height>76</height>
 					<align>left</align>
 					<font>Reg30Spaced</font>
 					<autoscroll>false</autoscroll>
