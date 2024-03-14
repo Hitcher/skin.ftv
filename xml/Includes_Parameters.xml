@@ -1,5 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<!-- Home Square Info Itemlayout -->
+	<include name="HomePosterList">
+		<control id="ListID" type="fixedlist">
+			<width>4200</width>
+			<height>2160</height>
+			<onup condition="!Window.IsVisible(1101)">SetProperty(BounceUp,1,Home)</onup>
+			<onup>noop</onup>
+			<ondown condition="!Window.IsVisible(1101)">SetProperty(BounceDown,1,Home)</ondown>
+			<ondown>noop</ondown>
+			<viewtype label="">list</viewtype>
+			<orientation>horizontal</orientation>
+			<scrolltime easing="inout" tween="sine">300</scrolltime>
+			<focusposition>1</focusposition>
+			<include>HomeWidgetsAnimation</include>
+			<include>WindowHomeFadeAnimation</include>
+			<itemlayout height="1152" width="600">
+				<control type="group">
+					<animation center="300,576" condition="true" effect="zoom" end="85" start="85">Conditional</animation>
+					<control type="image">
+						<left>-96</left>
+						<centertop>576</centertop>
+						<width>832</width>
+						<height>1152</height>
+						<texture border="100">views/shadow_nf.png</texture>
+					</control>
+					<control type="image">
+						<top>96</top>
+						<width>640</width>
+						<height>960</height>
+						<aspectratio align="center">scale</aspectratio>
+						<texture background="true" fallback="views/movie_fallback.png">$VAR[PosterImage]</texture>
+					</control>
+					<control type="image">
+						<top>96</top>
+						<width>180</width>
+						<height>180</height>
+						<texture>$INFO[ListItem.VideoResolution,views/resolution/,.png]</texture>
+					</control>
+					<control type="image">
+						<top>96</top>
+						<width>180</width>
+						<height>180</height>
+						<texture>views/OverlayWatched.png</texture>
+						<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
+					</control>
+				</control>
+			</itemlayout>
+			<focusedlayout height="1152" width="600">
+				<control type="group">
+					<animation center="300,576" easing="inout" effect="zoom" end="100" start="85" time="300" tween="sine">Focus</animation>
+					<animation center="300,576" condition="Container($PARAM[ListID]).OnNext | Container(ListID).OnPrevious" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">UnFocus</animation>
+					<animation center="300,576" condition="Control.HasFocus(4000)" easing="inout" effect="zoom" end="85" start="100" time="300" tween="sine">Conditional</animation>
+					<control type="image">
+						<left>-96</left>
+						<centertop>576</centertop>
+						<width>832</width>
+						<height>1152</height>
+						<texture border="100">views/shadow_fo.png</texture>
+						<animation center="auto" condition="Control.HasFocus($PARAM[ListID]) | Container($PARAM[ListID]).OnNext | Container($PARAM[ListID]).OnPrevious" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">Focus</animation>
+						<animation center="auto" condition="Container($PARAM[ListID]).OnNext | Container($PARAM[ListID]).OnPrevious" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">UnFocus</animation>
+					</control>
+					<control type="image">
+						<left>-96</left>
+						<centertop>576</centertop>
+						<width>832</width>
+						<height>1152</height>
+						<texture border="100">views/shadow_nf.png</texture>
+						<animation center="auto" condition="Control.HasFocus($PARAM[ListID])" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
+						<animation center="auto" condition="Control.HasFocus($PARAM[ListID])" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+					</control>
+					<control type="group">
+						<animation center="auto" condition="Control.HasFocus($PARAM[ListID])" easing="inout" effect="fadediffuse" end="FFFFFFFF" start="FF898989" time="300" tween="sine">Focus</animation>
+						<animation center="auto" condition="Control.HasFocus($PARAM[ListID])" easing="inout" effect="fadediffuse" end="FF898989" start="FFFFFFFF" time="300" tween="sine">UnFocus</animation>
+						<animation center="auto" condition="!Control.HasFocus($PARAM[ListID])" easing="inout" effect="fadediffuse" end="FF898989" start="FFFFFFFF" time="0" tween="sine">Conditional</animation>
+						<control type="image">
+							<top>96</top>
+							<width>640</width>
+							<height>960</height>
+							<aspectratio align="center">scale</aspectratio>
+							<texture background="true" fallback="views/movie_fallback.png">$VAR[PosterImage]</texture>
+						</control>
+						<control type="image">
+							<top>96</top>
+							<width>180</width>
+							<height>180</height>
+							<texture>$INFO[ListItem.VideoResolution,views/resolution/,.png]</texture>
+						</control>
+						<control type="image">
+							<top>96</top>
+							<width>180</width>
+							<height>180</height>
+							<texture>views/OverlayWatched.png</texture>
+							<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
+						</control>
+					</control>
+				</control>
+			</focusedlayout>
+			<content target="videos" limit="10" browse="auto">videodb://movies/titles</content>
+		</control>
+	</include>
 	<include name="DialogBack">
 		<param name="dialog_back_width" default="2756"/>
 		<param name="dialog_back_height" default="960"/>
@@ -154,168 +254,1173 @@
 		</item>
 	</include>
 	<include name="ParamWidgetInclude">
-		<control id="$PARAM[ID]1" type="list">
-			<include>HiddenList</include>
-			<content target="$INFO[Skin.String($PARAM[ID]0-WidgetType-1)]" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-1)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-1)]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-1)]</content>
-		</control>
-		<control id="$PARAM[ID]2" type="list">
-			<include>HiddenList</include>
-			<content target="$INFO[Skin.String($PARAM[ID]0-WidgetType-2)]" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-2)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-2)]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-2)]</content>
-		</control>
-		<control id="$PARAM[ID]3" type="list">
-			<include>HiddenList</include>
-			<content target="$INFO[Skin.String($PARAM[ID]0-WidgetType-3)]" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-3)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-3)]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-3)]</content>
-		</control>
-		<control id="$PARAM[ID]4" type="list">
-			<include>HiddenList</include>
-			<content target="$INFO[Skin.String($PARAM[ID]0-WidgetType-4)]" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-4)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-4)]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-4)]</content>
-		</control>
-		<control id="$PARAM[ID]5" type="list">
-			<include>HiddenList</include>
-			<content target="$INFO[Skin.String($PARAM[ID]0-WidgetType-4)]" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-5)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-5)]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-5)]</content>
-		</control>
-		<control id="$PARAM[ID]6" type="list">
-			<include>HiddenList</include>
-			<content target="$INFO[Skin.String($PARAM[ID]0-WidgetType-6)]" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-6)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-6)]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-6)]</content>
-		</control>
-		<control id="$PARAM[ID]7" type="list">
-			<include>HiddenList</include>
-			<content target="$INFO[Skin.String($PARAM[ID]0-WidgetType-7)]" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-7)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-7)]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-7)]</content>
-		</control>
-		<control id="$PARAM[ID]8" type="list">
-			<include>HiddenList</include>
-			<content target="$INFO[Skin.String($PARAM[ID]0-WidgetType-8)]" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-8)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-8)]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-8)]</content>
-		</control>
-		<control id="$PARAM[ID]" type="fixedlist">
-			<left>838</left>
-			<top>-506</top>
+		<control id="$PARAM[ID]1" type="fixedlist">
 			<width>4200</width>
-			<height>3000</height>
+			<height>740</height>
 			<onup condition="!Window.IsVisible(1101)">SetProperty(BounceUp,1,Home)</onup>
 			<onup>noop</onup>
 			<ondown condition="!Window.IsVisible(1101)">SetProperty(BounceDown,1,Home)</ondown>
 			<ondown>noop</ondown>
-			<onleft>99</onleft>
 			<onright>Select</onright>
 			<onback>99</onback>
-			<movement>1</movement>
-			<preloaditems>2</preloaditems>
-			<focusposition>2</focusposition>
+			<onback>Control.SetFocus($PARAM[ID]1),0,absolute)</onback>
 			<viewtype label="">list</viewtype>
-			<orientation>vertical</orientation>
+			<orientation>horizontal</orientation>
 			<scrolltime easing="inout" tween="sine">300</scrolltime>
-			<include>HomeWidgetsAnimation</include>
-			<include>WindowHomeFadeAnimation</include>
-			<visible>String.IsEqual(Container(99).ListItem.Property(widget),$PARAM[widget])</visible>
-			<animation condition="String.IsEqual(Container($PARAM[ID]).NumItems,1)" effect="slide" end="-608,-228">Conditional</animation>
-			<animation condition="String.IsEqual(Container($PARAM[ID]).NumItems,2)" effect="slide" end="0,-598">Conditional</animation>
-			<animation condition="Integer.IsGreater(Container($PARAM[ID]).NumItems,2) + !Container($PARAM[ID]).Row(1)" easing="inout" effect="slide" end="0,-228" time="220" tween="sine">Conditional</animation>
-			<animation condition="Integer.IsGreater(Container($PARAM[ID]).NumItems,2) + Container($PARAM[ID]).Row(3) + Control.HasFocus($PARAM[ID])" easing="inout" effect="slide" end="0,-424" time="220" tween="sine">Conditional</animation>
-			<itemlayout height="740" width="4000">
+			<focusposition>1</focusposition>
+			<visible>Integer.IsGreater(Container($PARAM[ID]1).NumItems,1) | Container($PARAM[ID]1).IsUpdating</visible>
+			<animation center="301,360" condition="Control.HasFocus($PARAM[ID]1)" easing="inout" effect="zoom" end="132" start="100" time="300" tween="sine">Conditional</animation>
+			<visible>[!Control.HasFocus($PARAM[ID]2) | [Control.HasFocus($PARAM[ID]2) + String.IsEqual(Container($PARAM[ID]2).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]3) | [Control.HasFocus($PARAM[ID]3) + String.IsEqual(Container($PARAM[ID]3).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]4) | [Control.HasFocus($PARAM[ID]4) + String.IsEqual(Container($PARAM[ID]4).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]5) | [Control.HasFocus($PARAM[ID]5) + String.IsEqual(Container($PARAM[ID]5).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]6) | [Control.HasFocus($PARAM[ID]6) + String.IsEqual(Container($PARAM[ID]6).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]7) | [Control.HasFocus($PARAM[ID]7) + String.IsEqual(Container($PARAM[ID]7).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]8) | [Control.HasFocus($PARAM[ID]8) + String.IsEqual(Container($PARAM[ID]8).CurrentItem,1)]]
+</visible>
+			<itemlayout height="720" width="456">
+				<control type="image">
+					<left>23</left>
+					<top>51</top>
+					<width>410</width>
+					<height>618</height>
+					<texture border="100">views/shadow_nf.png</texture>
+					<bordersize>-100</bordersize>
+				</control>
 				<control type="group">
-					<top>26</top>
-					<left>66</left>
+					<include content="HomeItemListFadeDiffuseAnimation">
+						<param name="ListID" value="$PARAM[ID]1"/>
+					</include>
 					<control type="image">
-						<top>-2</top>
-						<width>434</width>
-						<height>619</height>
-						<texture border="2">home/home_button_nf.png</texture>
+						<left>23</left>
+						<top>51</top>
+						<width>410</width>
+						<height>618</height>
+						<aspectratio align="center">scale</aspectratio>
+						<texture background="true" fallback="views/movie_fallback.png">$VAR[PosterImage]</texture>
 					</control>
-					<control type="textbox">
-						<left>28</left>
-						<top>4</top>
-						<width>382</width>
-						<height>304</height>
-						<font>Bold26</font>
-						<align>left</align>
-						<textcolor>ffdadada</textcolor>
-						<label>$INFO[ListItem.Label]</label>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>115</width>
+						<height>115</height>
+						<texture>$INFO[ListItem.VideoResolution,views/resolution/,.png]</texture>
+					</control>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>115</width>
+						<height>115</height>
+						<texture>views/OverlayWatched.png</texture>
+						<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
 					</control>
 				</control>
-				<include>HomePosterItemlayout</include>
-				<include>HomeWideItemlayout</include>
-				<include>HomeSquareItemlayout</include>
-				<include>HomeSquareInfoItemlayout</include>
 			</itemlayout>
-			<focusedlayout height="740" width="4000" condition="Integer.IsGreater(Container($PARAM[ID]).NumItems,1)">
-				<control type="button">
-					<include>HiddenControl</include>
-					<onfocus condition="String.IsEqual(Container($PARAM[ID]).NumItems,2) + Container($PARAM[ID]).Row(2)">SetProperty(FocusRow,1_2)</onfocus>
-					<onfocus condition="String.IsEqual(Container($PARAM[ID]).NumItems,2) + Container($PARAM[ID]).Row(3)">SetProperty(FocusRow,2_2)</onfocus>
-					<onfocus condition="Integer.IsGreater(Container($PARAM[ID]).NumItems,2) + Container($PARAM[ID]).Row(1)">SetProperty(FocusRow,1_3)</onfocus>
-					<onfocus condition="Integer.IsGreater(Container($PARAM[ID]).NumItems,2) + Container($PARAM[ID]).Row(2)">SetProperty(FocusRow,2_3)</onfocus>
-					<onfocus condition="Integer.IsGreater(Container($PARAM[ID]).NumItems,2) + Container($PARAM[ID]).Row(3)">SetProperty(FocusRow,3_3)</onfocus>
-					<onfocus condition="String.IsEqual(Container($PARAM[ID]).ListItem.Property(WidgetStyle),$LOCALIZE[31159])">SetProperty(ForceViewType,wide,Home)</onfocus>
-					<onfocus condition="String.IsEqual(Container($PARAM[ID]).ListItem.Property(WidgetStyle),$LOCALIZE[31160])">SetProperty(ForceViewType,poster,Home)</onfocus>
-					<onfocus condition="!String.IsEqual(Container($PARAM[ID]).ListItem.Property(WidgetStyle),$LOCALIZE[31159]) + !String.IsEqual(Container($PARAM[ID]).ListItem.Property(WidgetStyle),$LOCALIZE[31160])">ClearProperty(ForceViewType,Home)</onfocus>
-				</control>
+			<focusedlayout height="720" width="456">
 				<control type="group">
-					<animation center="284,334" easing="inout" effect="zoom" end="132" start="100" time="220" tween="sine">Focus</animation>
-					<animation center="284,334" easing="inout" effect="zoom" end="100" start="132" time="220" tween="sine">UnFocus</animation>
+					<animation center="301,360" easing="inout" effect="zoom" end="132" start="100" time="300" tween="sine">Focus</animation>
+					<animation center="301,360" condition="Container($PARAM[ID]1).OnNext | Container($PARAM[ID]1).OnPrevious | !Control.HasFocus($PARAM[ID]1)" easing="inout" effect="zoom" end="100" start="132" time="300" tween="sine">UnFocus</animation>
+					<animation center="301,360" condition="Control.HasFocus(4000)" easing="inout" effect="zoom" end="100" start="132" time="300" tween="sine">Conditional</animation>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>410</width>
+						<height>618</height>
+						<texture border="100">views/shadow_fo.png</texture>
+						<bordersize>-100</bordersize>
+						<include content="ContainerMoveFadeAnimation">
+							<param name="ListID" value="$PARAM[ID]1"/>
+						</include>
+						<visible>Control.HasFocus($PARAM[ID]1)</visible>
+					</control>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>410</width>
+						<height>618</height>
+						<texture border="100">views/shadow_nf.png</texture>
+						<bordersize>-100</bordersize>
+						<include content="FocusedListIDAnimation">
+							<param name="ListID" value="$PARAM[ID]1"/>
+						</include>
+					</control>
 					<control type="group">
-						<top>26</top>
-						<left>66</left>
+						<include content="HomeFocusedListIDFadeDiffuseAnimation">
+							<param name="ListID" value="$PARAM[ID]1"/>
+						</include>
 						<control type="image">
-							<top>-2</top>
-							<width>434</width>
-							<height>619</height>
-							<texture border="2">home/home_button_nf.png</texture>
+							<left>23</left>
+							<top>51</top>
+							<width>410</width>
+							<height>618</height>
+							<aspectratio align="center">scale</aspectratio>
+							<texture background="true" fallback="views/movie_fallback.png">$VAR[PosterImage]</texture>
+						</control>
+						<control type="image">
+							<left>23</left>
+							<top>51</top>
+							<width>115</width>
+							<height>115</height>
+							<texture>$INFO[ListItem.VideoResolution,views/resolution/,.png]</texture>
+						</control>
+						<control type="image">
+							<left>23</left>
+							<top>51</top>
+							<width>115</width>
+							<height>115</height>
+							<texture>views/OverlayWatched.png</texture>
+							<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
 						</control>
 						<control type="textbox">
-							<top>4</top>
-							<width>508</width>
-							<height>400</height>
-							<font>Bold34</font>
+							<left>28</left>
+							<top>84</top>
+							<width>382</width>
+							<height>304</height>
+							<font>Bold26</font>
 							<align>left</align>
 							<textcolor>ffdadada</textcolor>
 							<label>$INFO[ListItem.Label]</label>
-							<animation effect="fade" end="0" start="100" time="0">Focus</animation>
-							<animation condition="true" effect="slide" end="-36,-86" time="0">Conditional</animation>
-							<animation center="270,402" condition="true" effect="zoom" end="76" start="76" time="0">Conditional</animation>
-						</control>
-						<control type="image">
-							<width>434</width>
-							<height>616</height>
-							<texture border="1">home/home_button_fo.png</texture>
-							<visible>!String.IsEmpty(Window(Home).Property(WidgetHasFocus))</visible>
-							<animation effect="fade" end="100" start="0" time="0" condition="!String.IsEmpty(Window(Home).Property(WidgetHasFocus))">Conditional</animation>
-							<animation effect="fade" end="0" start="100" time="0" condition="String.IsEmpty(Window(Home).Property(WidgetHasFocus))">Conditional</animation>
-							<animation effect="fade" end="100" start="0" time="0">Focus</animation>
-							<animation effect="fade" end="0" start="100" time="0">UnFocus</animation>
-						</control>
-						<control type="textbox">
-							<top>4</top>
-							<width>508</width>
-							<height>400</height>
-							<font>Bold34</font>
-							<align>left</align>
-							<textcolor>ff453a18</textcolor>
-							<label>$INFO[ListItem.Label]</label>
-							<visible>!String.IsEmpty(Window(Home).Property(WidgetHasFocus))</visible>
-							<animation effect="fade" end="100" start="0" time="0" condition="!String.IsEmpty(Window(Home).Property(WidgetHasFocus))">Conditional</animation>
-							<animation effect="fade" end="0" start="100" time="0" condition="String.IsEmpty(Window(Home).Property(WidgetHasFocus))">Conditional</animation>
-							<animation effect="fade" end="100" start="0" time="0">Focus</animation>
-							<animation effect="fade" end="0" start="100" time="0">UnFocus</animation>
-							<animation condition="true" effect="slide" end="-36,-86" time="0">Conditional</animation>
-							<animation center="270,402" condition="true" effect="zoom" end="76" start="76" time="0">Conditional</animation>
 						</control>
 					</control>
-					<include>HomePosterFocusedlayout</include>
-					<include>HomeWideFocusedlayout</include>
-					<include>HomeSquareFocusedlayout</include>
-					<include>HomeSquareInfoFocusedlayout</include>
 				</control>
 			</focusedlayout>
-			<focusedlayout height="740" width="4000" condition="!Integer.IsGreater(Container($PARAM[ID]).NumItems,1)">
+			<content>
+				<item>
+					<label>$INFO[Skin.String($PARAM[ID]0-WidgetLabel-1)]</label>
+					<label2>FOCUS</label2>
+					<icon>home/home_button_nf.png</icon>
+					<visible>!Control.HasFocus($PARAM[ID]1)</visible>
+				</item>
+				<item>
+					<label>$INFO[Skin.String($PARAM[ID]0-WidgetLabel-1)]</label>
+					<label2>FOCUS</label2>
+					<icon>home/home_button_fo.png</icon>
+					<visible>Control.HasFocus($PARAM[ID]1)</visible>
+				</item>
+			</content>
+			<content target="videos" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-1)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-1)]" limit="10" browse="auto">$INFO[Skin.String($PARAM[ID]0-WidgetList-1)]</content>
+		</control>
+		<control id="$PARAM[ID]2" type="fixedlist">
+			<width>4200</width>
+			<height>740</height>
+			<onup condition="!Window.IsVisible(1101)">SetProperty(BounceUp,1,Home)</onup>
+			<onup>noop</onup>
+			<ondown condition="!Window.IsVisible(1101)">SetProperty(BounceDown,1,Home)</ondown>
+			<ondown>noop</ondown>
+			<onright>Select</onright>
+			<onback>Control.SetFocus($PARAM[ID]2),0,absolute)</onback>
+			<onback>99</onback>
+			<viewtype label="">list</viewtype>
+			<orientation>horizontal</orientation>
+			<scrolltime easing="inout" tween="sine">300</scrolltime>
+			<focusposition>1</focusposition>
+			<visible>Integer.IsGreater(Container($PARAM[ID]2).NumItems,1) | Container($PARAM[ID]2).IsUpdating</visible>
+			<animation center="301,360" condition="Control.HasFocus($PARAM[ID]2)" easing="inout" effect="zoom" end="132" start="100" time="300" tween="sine">Conditional</animation>
+			<visible>[!Control.HasFocus($PARAM[ID]1) | [Control.HasFocus($PARAM[ID]1) + String.IsEqual(Container($PARAM[ID]1).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]3) | [Control.HasFocus($PARAM[ID]3) + String.IsEqual(Container($PARAM[ID]3).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]4) | [Control.HasFocus($PARAM[ID]4) + String.IsEqual(Container($PARAM[ID]4).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]5) | [Control.HasFocus($PARAM[ID]5) + String.IsEqual(Container($PARAM[ID]5).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]6) | [Control.HasFocus($PARAM[ID]6) + String.IsEqual(Container($PARAM[ID]6).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]7) | [Control.HasFocus($PARAM[ID]7) + String.IsEqual(Container($PARAM[ID]7).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]8) | [Control.HasFocus($PARAM[ID]8) + String.IsEqual(Container($PARAM[ID]8).CurrentItem,1)]]
+</visible>
+			<itemlayout height="720" width="456">
+				<control type="image">
+					<left>23</left>
+					<top>51</top>
+					<width>410</width>
+					<height>618</height>
+					<texture border="100">views/shadow_nf.png</texture>
+					<bordersize>-100</bordersize>
+				</control>
 				<control type="group">
-					<animation center="284,334" condition="true" effect="zoom" end="132" start="100" time="0">Conditional</animation>
-					<include>HomePosterFocusedlayout</include>
-					<include>HomeWideFocusedlayout</include>
-					<include>HomeSquareFocusedlayout</include>
-					<include>HomeSquareInfoFocusedlayout</include>
+					<include content="HomeItemListFadeDiffuseAnimation">
+						<param name="ListID" value="$PARAM[ID]2"/>
+					</include>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>410</width>
+						<height>618</height>
+						<aspectratio align="center">scale</aspectratio>
+						<texture background="true" fallback="views/movie_fallback.png">$VAR[PosterImage]</texture>
+					</control>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>115</width>
+						<height>115</height>
+						<texture>$INFO[ListItem.VideoResolution,views/resolution/,.png]</texture>
+					</control>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>115</width>
+						<height>115</height>
+						<texture>views/OverlayWatched.png</texture>
+						<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
+					</control>
+				</control>
+			</itemlayout>
+			<focusedlayout height="720" width="456">
+				<control type="group">
+					<animation center="301,360" easing="inout" effect="zoom" end="132" start="100" time="300" tween="sine">Focus</animation>
+					<animation center="301,360" condition="Container($PARAM[ID]2).OnNext | Container($PARAM[ID]2).OnPrevious | !Control.HasFocus($PARAM[ID]2)" easing="inout" effect="zoom" end="100" start="132" time="300" tween="sine">UnFocus</animation>
+					<animation center="301,360" condition="Control.HasFocus(4000)" easing="inout" effect="zoom" end="100" start="132" time="300" tween="sine">Conditional</animation>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>410</width>
+						<height>618</height>
+						<texture border="100">views/shadow_fo.png</texture>
+						<bordersize>-100</bordersize>
+						<include content="ContainerMoveFadeAnimation">
+							<param name="ListID" value="$PARAM[ID]2"/>
+						</include>
+						<visible>Control.HasFocus($PARAM[ID]2)</visible>
+					</control>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>410</width>
+						<height>618</height>
+						<texture border="100">views/shadow_nf.png</texture>
+						<bordersize>-100</bordersize>
+						<include content="FocusedListIDAnimation">
+							<param name="ListID" value="$PARAM[ID]2"/>
+						</include>
+					</control>
+					<control type="group">
+						<include content="HomeFocusedListIDFadeDiffuseAnimation">
+							<param name="ListID" value="$PARAM[ID]2"/>
+						</include>
+						<control type="image">
+							<left>23</left>
+							<top>51</top>
+							<width>410</width>
+							<height>618</height>
+							<aspectratio align="center">scale</aspectratio>
+							<texture background="true" fallback="views/movie_fallback.png">$VAR[PosterImage]</texture>
+						</control>
+						<control type="image">
+							<left>23</left>
+							<top>51</top>
+							<width>115</width>
+							<height>115</height>
+							<texture>$INFO[ListItem.VideoResolution,views/resolution/,.png]</texture>
+						</control>
+						<control type="image">
+							<left>23</left>
+							<top>51</top>
+							<width>115</width>
+							<height>115</height>
+							<texture>views/OverlayWatched.png</texture>
+							<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
+						</control>
+						<control type="textbox">
+							<left>28</left>
+							<top>84</top>
+							<width>382</width>
+							<height>304</height>
+							<font>Bold26</font>
+							<align>left</align>
+							<textcolor>ffdadada</textcolor>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+					</control>
 				</control>
 			</focusedlayout>
-			<include>$PARAM[content]</include>
+			<content>
+				<item>
+					<label>$INFO[Skin.String($PARAM[ID]0-WidgetLabel-2)]</label>
+					<label2>FOCUS</label2>
+					<icon>home/home_button_nf.png</icon>
+					<visible>!Control.HasFocus($PARAM[ID]2)</visible>
+				</item>
+				<item>
+					<label>$INFO[Skin.String($PARAM[ID]0-WidgetLabel-2)]</label>
+					<label2>FOCUS</label2>
+					<icon>home/home_button_fo.png</icon>
+					<visible>Control.HasFocus($PARAM[ID]2)</visible>
+				</item>
+			</content>
+			<content target="videos" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-2)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-2)]" limit="10" browse="auto">$INFO[Skin.String($PARAM[ID]0-WidgetList-2)]</content>
+		</control>
+		<control id="$PARAM[ID]3" type="fixedlist">
+			<width>4200</width>
+			<height>740</height>
+			<onup condition="!Window.IsVisible(1101)">SetProperty(BounceUp,1,Home)</onup>
+			<onup>noop</onup>
+			<ondown condition="!Window.IsVisible(1101)">SetProperty(BounceDown,1,Home)</ondown>
+			<ondown>noop</ondown>
+			<onright>Select</onright>
+			<onback>Control.SetFocus($PARAM[ID]3),0,absolute)</onback>
+			<onback>99</onback>
+			<viewtype label="">list</viewtype>
+			<orientation>horizontal</orientation>
+			<scrolltime easing="inout" tween="sine">300</scrolltime>
+			<focusposition>1</focusposition>
+			<visible>Integer.IsGreater(Container($PARAM[ID]3).NumItems,1) | Container($PARAM[ID]3).IsUpdating</visible>
+			<animation center="301,360" condition="Control.HasFocus($PARAM[ID]3)" easing="inout" effect="zoom" end="132" start="100" time="300" tween="sine">Conditional</animation>
+			<visible>[!Control.HasFocus($PARAM[ID]1) | [Control.HasFocus($PARAM[ID]1) + String.IsEqual(Container($PARAM[ID]1).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]2) | [Control.HasFocus($PARAM[ID]2) + String.IsEqual(Container($PARAM[ID]2).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]4) | [Control.HasFocus($PARAM[ID]4) + String.IsEqual(Container($PARAM[ID]4).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]5) | [Control.HasFocus($PARAM[ID]5) + String.IsEqual(Container($PARAM[ID]5).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]6) | [Control.HasFocus($PARAM[ID]6) + String.IsEqual(Container($PARAM[ID]6).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]7) | [Control.HasFocus($PARAM[ID]7) + String.IsEqual(Container($PARAM[ID]7).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]8) | [Control.HasFocus($PARAM[ID]8) + String.IsEqual(Container($PARAM[ID]8).CurrentItem,1)]]
+</visible>
+			<itemlayout height="720" width="456">
+				<control type="image">
+					<left>23</left>
+					<top>51</top>
+					<width>410</width>
+					<height>618</height>
+					<texture border="100">views/shadow_nf.png</texture>
+					<bordersize>-100</bordersize>
+				</control>
+				<control type="group">
+					<include content="HomeItemListFadeDiffuseAnimation">
+						<param name="ListID" value="$PARAM[ID]3"/>
+					</include>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>410</width>
+						<height>618</height>
+						<aspectratio align="center">scale</aspectratio>
+						<texture background="true" fallback="views/movie_fallback.png">$VAR[PosterImage]</texture>
+					</control>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>115</width>
+						<height>115</height>
+						<texture>$INFO[ListItem.VideoResolution,views/resolution/,.png]</texture>
+					</control>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>115</width>
+						<height>115</height>
+						<texture>views/OverlayWatched.png</texture>
+						<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
+					</control>
+				</control>
+			</itemlayout>
+			<focusedlayout height="720" width="456">
+				<control type="group">
+					<animation center="301,360" easing="inout" effect="zoom" end="132" start="100" time="300" tween="sine">Focus</animation>
+					<animation center="301,360" condition="Container($PARAM[ID]3).OnNext | Container($PARAM[ID]3).OnPrevious | !Control.HasFocus($PARAM[ID]3)" easing="inout" effect="zoom" end="100" start="132" time="300" tween="sine">UnFocus</animation>
+					<animation center="301,360" condition="Control.HasFocus(4000)" easing="inout" effect="zoom" end="100" start="132" time="300" tween="sine">Conditional</animation>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>410</width>
+						<height>618</height>
+						<texture border="100">views/shadow_fo.png</texture>
+						<bordersize>-100</bordersize>
+						<include content="ContainerMoveFadeAnimation">
+							<param name="ListID" value="$PARAM[ID]3"/>
+						</include>
+						<visible>Control.HasFocus($PARAM[ID]3)</visible>
+					</control>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>410</width>
+						<height>618</height>
+						<texture border="100">views/shadow_nf.png</texture>
+						<bordersize>-100</bordersize>
+						<include content="FocusedListIDAnimation">
+							<param name="ListID" value="$PARAM[ID]3"/>
+						</include>
+					</control>
+					<control type="group">
+						<include content="HomeFocusedListIDFadeDiffuseAnimation">
+							<param name="ListID" value="$PARAM[ID]3"/>
+						</include>
+						<control type="image">
+							<left>23</left>
+							<top>51</top>
+							<width>410</width>
+							<height>618</height>
+							<aspectratio align="center">scale</aspectratio>
+							<texture background="true" fallback="views/movie_fallback.png">$VAR[PosterImage]</texture>
+						</control>
+						<control type="image">
+							<left>23</left>
+							<top>51</top>
+							<width>115</width>
+							<height>115</height>
+							<texture>$INFO[ListItem.VideoResolution,views/resolution/,.png]</texture>
+						</control>
+						<control type="image">
+							<left>23</left>
+							<top>51</top>
+							<width>115</width>
+							<height>115</height>
+							<texture>views/OverlayWatched.png</texture>
+							<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
+						</control>
+						<control type="textbox">
+							<left>28</left>
+							<top>84</top>
+							<width>382</width>
+							<height>304</height>
+							<font>Bold26</font>
+							<align>left</align>
+							<textcolor>ffdadada</textcolor>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+					</control>
+				</control>
+			</focusedlayout>
+			<content>
+				<item>
+					<label>$INFO[Skin.String($PARAM[ID]0-WidgetLabel-3)]</label>
+					<label2>FOCUS</label2>
+					<icon>home/home_button_nf.png</icon>
+					<visible>!Control.HasFocus($PARAM[ID]3)</visible>
+				</item>
+				<item>
+					<label>$INFO[Skin.String($PARAM[ID]0-WidgetLabel-3)]</label>
+					<label2>FOCUS</label2>
+					<icon>home/home_button_fo.png</icon>
+					<visible>Control.HasFocus($PARAM[ID]3)</visible>
+				</item>
+			</content>
+			<content target="videos" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-3)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-3)]" limit="10" browse="auto">$INFO[Skin.String($PARAM[ID]0-WidgetList-3)]</content>
+		</control>
+		<control id="$PARAM[ID]4" type="fixedlist">
+			<width>4200</width>
+			<height>740</height>
+			<onup condition="!Window.IsVisible(1101)">SetProperty(BounceUp,1,Home)</onup>
+			<onup>noop</onup>
+			<ondown condition="!Window.IsVisible(1101)">SetProperty(BounceDown,1,Home)</ondown>
+			<ondown>noop</ondown>
+			<onright>Select</onright>
+			<onback>Control.SetFocus($PARAM[ID]4),0,absolute)</onback>
+			<onback>99</onback>
+			<viewtype label="">list</viewtype>
+			<orientation>horizontal</orientation>
+			<scrolltime easing="inout" tween="sine">300</scrolltime>
+			<focusposition>1</focusposition>
+			<visible>Integer.IsGreater(Container($PARAM[ID]4).NumItems,1) | Container($PARAM[ID]4).IsUpdating</visible>
+			<animation center="301,360" condition="Control.HasFocus($PARAM[ID]4)" easing="inout" effect="zoom" end="132" start="100" time="300" tween="sine">Conditional</animation>
+			<visible>[!Control.HasFocus($PARAM[ID]1) | [Control.HasFocus($PARAM[ID]1) + String.IsEqual(Container($PARAM[ID]1).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]2) | [Control.HasFocus($PARAM[ID]2) + String.IsEqual(Container($PARAM[ID]2).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]3) | [Control.HasFocus($PARAM[ID]3) + String.IsEqual(Container($PARAM[ID]3).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]5) | [Control.HasFocus($PARAM[ID]5) + String.IsEqual(Container($PARAM[ID]5).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]6) | [Control.HasFocus($PARAM[ID]6) + String.IsEqual(Container($PARAM[ID]6).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]7) | [Control.HasFocus($PARAM[ID]7) + String.IsEqual(Container($PARAM[ID]7).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]8) | [Control.HasFocus($PARAM[ID]8) + String.IsEqual(Container($PARAM[ID]8).CurrentItem,1)]]
+</visible>
+			<itemlayout height="720" width="456">
+				<control type="image">
+					<left>23</left>
+					<top>51</top>
+					<width>410</width>
+					<height>618</height>
+					<texture border="100">views/shadow_nf.png</texture>
+					<bordersize>-100</bordersize>
+				</control>
+				<control type="group">
+					<include content="HomeItemListFadeDiffuseAnimation">
+						<param name="ListID" value="$PARAM[ID]4"/>
+					</include>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>410</width>
+						<height>618</height>
+						<aspectratio align="center">scale</aspectratio>
+						<texture background="true" fallback="views/movie_fallback.png">$VAR[PosterImage]</texture>
+					</control>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>115</width>
+						<height>115</height>
+						<texture>$INFO[ListItem.VideoResolution,views/resolution/,.png]</texture>
+					</control>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>115</width>
+						<height>115</height>
+						<texture>views/OverlayWatched.png</texture>
+						<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
+					</control>
+				</control>
+			</itemlayout>
+			<focusedlayout height="720" width="456">
+				<control type="group">
+					<animation center="301,360" easing="inout" effect="zoom" end="132" start="100" time="300" tween="sine">Focus</animation>
+					<animation center="301,360" condition="Container($PARAM[ID]4).OnNext | Container($PARAM[ID]4).OnPrevious | !Control.HasFocus($PARAM[ID]4)" easing="inout" effect="zoom" end="100" start="132" time="300" tween="sine">UnFocus</animation>
+					<animation center="301,360" condition="Control.HasFocus(4000)" easing="inout" effect="zoom" end="100" start="132" time="300" tween="sine">Conditional</animation>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>410</width>
+						<height>618</height>
+						<texture border="100">views/shadow_fo.png</texture>
+						<bordersize>-100</bordersize>
+						<include content="ContainerMoveFadeAnimation">
+							<param name="ListID" value="$PARAM[ID]4"/>
+						</include>
+						<visible>Control.HasFocus($PARAM[ID]4)</visible>
+					</control>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>410</width>
+						<height>618</height>
+						<texture border="100">views/shadow_nf.png</texture>
+						<bordersize>-100</bordersize>
+						<include content="FocusedListIDAnimation">
+							<param name="ListID" value="$PARAM[ID]4"/>
+						</include>
+					</control>
+					<control type="group">
+						<include content="HomeFocusedListIDFadeDiffuseAnimation">
+							<param name="ListID" value="$PARAM[ID]4"/>
+						</include>
+						<control type="image">
+							<left>23</left>
+							<top>51</top>
+							<width>410</width>
+							<height>618</height>
+							<aspectratio align="center">scale</aspectratio>
+							<texture background="true" fallback="views/movie_fallback.png">$VAR[PosterImage]</texture>
+						</control>
+						<control type="image">
+							<left>23</left>
+							<top>51</top>
+							<width>115</width>
+							<height>115</height>
+							<texture>$INFO[ListItem.VideoResolution,views/resolution/,.png]</texture>
+						</control>
+						<control type="image">
+							<left>23</left>
+							<top>51</top>
+							<width>115</width>
+							<height>115</height>
+							<texture>views/OverlayWatched.png</texture>
+							<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
+						</control>
+						<control type="textbox">
+							<left>28</left>
+							<top>84</top>
+							<width>382</width>
+							<height>304</height>
+							<font>Bold26</font>
+							<align>left</align>
+							<textcolor>ffdadada</textcolor>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+					</control>
+				</control>
+			</focusedlayout>
+			<content>
+				<item>
+					<label>$INFO[Skin.String($PARAM[ID]0-WidgetLabel-4)]</label>
+					<label2>FOCUS</label2>
+					<icon>home/home_button_nf.png</icon>
+					<visible>!Control.HasFocus($PARAM[ID]4)</visible>
+				</item>
+				<item>
+					<label>$INFO[Skin.String($PARAM[ID]0-WidgetLabel-4)]</label>
+					<label2>FOCUS</label2>
+					<icon>home/home_button_fo.png</icon>
+					<visible>Control.HasFocus($PARAM[ID]4)</visible>
+				</item>
+			</content>
+			<content target="videos" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-4)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-4)]" limit="10" browse="auto">$INFO[Skin.String($PARAM[ID]0-WidgetList-4)]</content>
+		</control>
+		<control id="$PARAM[ID]5" type="fixedlist">
+			<width>4200</width>
+			<height>740</height>
+			<onup condition="!Window.IsVisible(1101)">SetProperty(BounceUp,1,Home)</onup>
+			<onup>noop</onup>
+			<ondown condition="!Window.IsVisible(1101)">SetProperty(BounceDown,1,Home)</ondown>
+			<ondown>noop</ondown>
+			<onright>Select</onright>
+			<onback>Control.SetFocus($PARAM[ID]5),0,absolute)</onback>
+			<onback>99</onback>
+			<viewtype label="">list</viewtype>
+			<orientation>horizontal</orientation>
+			<scrolltime easing="inout" tween="sine">300</scrolltime>
+			<focusposition>1</focusposition>
+			<visible>Integer.IsGreater(Container($PARAM[ID]5).NumItems,1) | Container($PARAM[ID]5).IsUpdating</visible>
+			<animation center="301,360" condition="Control.HasFocus($PARAM[ID]5)" easing="inout" effect="zoom" end="132" start="100" time="300" tween="sine">Conditional</animation>
+			<visible>[!Control.HasFocus($PARAM[ID]1) | [Control.HasFocus($PARAM[ID]1) + String.IsEqual(Container($PARAM[ID]1).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]2) | [Control.HasFocus($PARAM[ID]2) + String.IsEqual(Container($PARAM[ID]2).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]3) | [Control.HasFocus($PARAM[ID]3) + String.IsEqual(Container($PARAM[ID]3).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]4) | [Control.HasFocus($PARAM[ID]4) + String.IsEqual(Container($PARAM[ID]4).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]6) | [Control.HasFocus($PARAM[ID]6) + String.IsEqual(Container($PARAM[ID]6).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]7) | [Control.HasFocus($PARAM[ID]7) + String.IsEqual(Container($PARAM[ID]7).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]8) | [Control.HasFocus($PARAM[ID]8) + String.IsEqual(Container($PARAM[ID]8).CurrentItem,1)]]
+</visible>
+			<itemlayout height="720" width="456">
+				<control type="image">
+					<left>23</left>
+					<top>51</top>
+					<width>410</width>
+					<height>618</height>
+					<texture border="100">views/shadow_nf.png</texture>
+					<bordersize>-100</bordersize>
+				</control>
+				<control type="group">
+					<include content="HomeItemListFadeDiffuseAnimation">
+						<param name="ListID" value="$PARAM[ID]5"/>
+					</include>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>410</width>
+						<height>618</height>
+						<aspectratio align="center">scale</aspectratio>
+						<texture background="true" fallback="views/movie_fallback.png">$VAR[PosterImage]</texture>
+					</control>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>115</width>
+						<height>115</height>
+						<texture>$INFO[ListItem.VideoResolution,views/resolution/,.png]</texture>
+					</control>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>115</width>
+						<height>115</height>
+						<texture>views/OverlayWatched.png</texture>
+						<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
+					</control>
+				</control>
+			</itemlayout>
+			<focusedlayout height="720" width="456">
+				<control type="group">
+					<animation center="301,360" easing="inout" effect="zoom" end="132" start="100" time="300" tween="sine">Focus</animation>
+					<animation center="301,360" condition="Container($PARAM[ID]5).OnNext | Container($PARAM[ID]5).OnPrevious | !Control.HasFocus($PARAM[ID]5)" easing="inout" effect="zoom" end="100" start="132" time="300" tween="sine">UnFocus</animation>
+					<animation center="301,360" condition="Control.HasFocus(4000)" easing="inout" effect="zoom" end="100" start="132" time="300" tween="sine">Conditional</animation>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>410</width>
+						<height>618</height>
+						<texture border="100">views/shadow_fo.png</texture>
+						<bordersize>-100</bordersize>
+						<include content="ContainerMoveFadeAnimation">
+							<param name="ListID" value="$PARAM[ID]5"/>
+						</include>
+						<visible>Control.HasFocus($PARAM[ID]5)</visible>
+					</control>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>410</width>
+						<height>618</height>
+						<texture border="100">views/shadow_nf.png</texture>
+						<bordersize>-100</bordersize>
+						<include content="FocusedListIDAnimation">
+							<param name="ListID" value="$PARAM[ID]5"/>
+						</include>
+					</control>
+					<control type="group">
+						<include content="HomeFocusedListIDFadeDiffuseAnimation">
+							<param name="ListID" value="$PARAM[ID]5"/>
+						</include>
+						<control type="image">
+							<left>23</left>
+							<top>51</top>
+							<width>410</width>
+							<height>618</height>
+							<aspectratio align="center">scale</aspectratio>
+							<texture background="true" fallback="views/movie_fallback.png">$VAR[PosterImage]</texture>
+						</control>
+						<control type="image">
+							<left>23</left>
+							<top>51</top>
+							<width>115</width>
+							<height>115</height>
+							<texture>$INFO[ListItem.VideoResolution,views/resolution/,.png]</texture>
+						</control>
+						<control type="image">
+							<left>23</left>
+							<top>51</top>
+							<width>115</width>
+							<height>115</height>
+							<texture>views/OverlayWatched.png</texture>
+							<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
+						</control>
+						<control type="textbox">
+							<left>28</left>
+							<top>84</top>
+							<width>382</width>
+							<height>304</height>
+							<font>Bold26</font>
+							<align>left</align>
+							<textcolor>ffdadada</textcolor>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+					</control>
+				</control>
+			</focusedlayout>
+			<content>
+				<item>
+					<label>$INFO[Skin.String($PARAM[ID]0-WidgetLabel-5)]</label>
+					<label2>FOCUS</label2>
+					<icon>home/home_button_nf.png</icon>
+					<visible>!Control.HasFocus($PARAM[ID]5)</visible>
+				</item>
+				<item>
+					<label>$INFO[Skin.String($PARAM[ID]0-WidgetLabel-5)]</label>
+					<label2>FOCUS</label2>
+					<icon>home/home_button_fo.png</icon>
+					<visible>Control.HasFocus($PARAM[ID]5)</visible>
+				</item>
+			</content>
+			<content target="videos" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-5)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-5)]" limit="10" browse="auto">$INFO[Skin.String($PARAM[ID]0-WidgetList-5)]</content>
+		</control>
+		<control id="$PARAM[ID]6" type="fixedlist">
+			<width>4200</width>
+			<height>740</height>
+			<onup condition="!Window.IsVisible(1101)">SetProperty(BounceUp,1,Home)</onup>
+			<onup>noop</onup>
+			<ondown condition="!Window.IsVisible(1101)">SetProperty(BounceDown,1,Home)</ondown>
+			<ondown>noop</ondown>
+			<onright>Select</onright>
+			<onback>Control.SetFocus($PARAM[ID]6),0,absolute)</onback>
+			<onback>99</onback>
+			<viewtype label="">list</viewtype>
+			<orientation>horizontal</orientation>
+			<scrolltime easing="inout" tween="sine">300</scrolltime>
+			<focusposition>1</focusposition>
+			<visible>Integer.IsGreater(Container($PARAM[ID]6).NumItems,1) | Container($PARAM[ID]6).IsUpdating</visible>
+			<animation center="301,360" condition="Control.HasFocus($PARAM[ID]6)" easing="inout" effect="zoom" end="132" start="100" time="300" tween="sine">Conditional</animation>
+			<visible>[!Control.HasFocus($PARAM[ID]1) | [Control.HasFocus($PARAM[ID]1) + String.IsEqual(Container($PARAM[ID]1).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]2) | [Control.HasFocus($PARAM[ID]2) + String.IsEqual(Container($PARAM[ID]2).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]3) | [Control.HasFocus($PARAM[ID]3) + String.IsEqual(Container($PARAM[ID]3).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]4) | [Control.HasFocus($PARAM[ID]4) + String.IsEqual(Container($PARAM[ID]4).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]5) | [Control.HasFocus($PARAM[ID]5) + String.IsEqual(Container($PARAM[ID]5).CurrentItem,1)]] +  
+[!Control.HasFocus($PARAM[ID]7) | [Control.HasFocus($PARAM[ID]7) + String.IsEqual(Container($PARAM[ID]7).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]8) | [Control.HasFocus($PARAM[ID]8) + String.IsEqual(Container($PARAM[ID]8).CurrentItem,1)]]
+</visible>
+			<itemlayout height="720" width="456">
+				<control type="image">
+					<left>23</left>
+					<top>51</top>
+					<width>410</width>
+					<height>618</height>
+					<texture border="100">views/shadow_nf.png</texture>
+					<bordersize>-100</bordersize>
+				</control>
+				<control type="group">
+					<include content="HomeItemListFadeDiffuseAnimation">
+						<param name="ListID" value="$PARAM[ID]6"/>
+					</include>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>410</width>
+						<height>618</height>
+						<aspectratio align="center">scale</aspectratio>
+						<texture background="true" fallback="views/movie_fallback.png">$VAR[PosterImage]</texture>
+					</control>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>115</width>
+						<height>115</height>
+						<texture>$INFO[ListItem.VideoResolution,views/resolution/,.png]</texture>
+					</control>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>115</width>
+						<height>115</height>
+						<texture>views/OverlayWatched.png</texture>
+						<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
+					</control>
+				</control>
+			</itemlayout>
+			<focusedlayout height="720" width="456">
+				<control type="group">
+					<animation center="301,360" easing="inout" effect="zoom" end="132" start="100" time="300" tween="sine">Focus</animation>
+					<animation center="301,360" condition="Container($PARAM[ID]6).OnNext | Container($PARAM[ID]6).OnPrevious | !Control.HasFocus($PARAM[ID]6)" easing="inout" effect="zoom" end="100" start="132" time="300" tween="sine">UnFocus</animation>
+					<animation center="301,360" condition="Control.HasFocus(4000)" easing="inout" effect="zoom" end="100" start="132" time="300" tween="sine">Conditional</animation>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>410</width>
+						<height>618</height>
+						<texture border="100">views/shadow_fo.png</texture>
+						<bordersize>-100</bordersize>
+						<include content="ContainerMoveFadeAnimation">
+							<param name="ListID" value="$PARAM[ID]6"/>
+						</include>
+						<visible>Control.HasFocus($PARAM[ID]6)</visible>
+					</control>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>410</width>
+						<height>618</height>
+						<texture border="100">views/shadow_nf.png</texture>
+						<bordersize>-100</bordersize>
+						<include content="FocusedListIDAnimation">
+							<param name="ListID" value="$PARAM[ID]6"/>
+						</include>
+					</control>
+					<control type="group">
+						<include content="HomeFocusedListIDFadeDiffuseAnimation">
+							<param name="ListID" value="$PARAM[ID]6"/>
+						</include>
+						<control type="image">
+							<left>23</left>
+							<top>51</top>
+							<width>410</width>
+							<height>618</height>
+							<aspectratio align="center">scale</aspectratio>
+							<texture background="true" fallback="views/movie_fallback.png">$VAR[PosterImage]</texture>
+						</control>
+						<control type="image">
+							<left>23</left>
+							<top>51</top>
+							<width>115</width>
+							<height>115</height>
+							<texture>$INFO[ListItem.VideoResolution,views/resolution/,.png]</texture>
+						</control>
+						<control type="image">
+							<left>23</left>
+							<top>51</top>
+							<width>115</width>
+							<height>115</height>
+							<texture>views/OverlayWatched.png</texture>
+							<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
+						</control>
+						<control type="textbox">
+							<left>28</left>
+							<top>84</top>
+							<width>382</width>
+							<height>304</height>
+							<font>Bold26</font>
+							<align>left</align>
+							<textcolor>ffdadada</textcolor>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+					</control>
+				</control>
+			</focusedlayout>
+			<content>
+				<item>
+					<label>$INFO[Skin.String($PARAM[ID]0-WidgetLabel-6)]</label>
+					<label2>FOCUS</label2>
+					<icon>home/home_button_nf.png</icon>
+					<visible>!Control.HasFocus($PARAM[ID]6)</visible>
+				</item>
+				<item>
+					<label>$INFO[Skin.String($PARAM[ID]0-WidgetLabel-6)]</label>
+					<label2>FOCUS</label2>
+					<icon>home/home_button_fo.png</icon>
+					<visible>Control.HasFocus($PARAM[ID]6)</visible>
+				</item>
+			</content>
+			<content target="videos" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-6)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-6)]" limit="10" browse="auto">$INFO[Skin.String($PARAM[ID]0-WidgetList-6)]</content>
+		</control>
+		<control id="$PARAM[ID]7" type="fixedlist">
+			<width>4200</width>
+			<height>740</height>
+			<onup condition="!Window.IsVisible(1101)">SetProperty(BounceUp,1,Home)</onup>
+			<onup>noop</onup>
+			<ondown condition="!Window.IsVisible(1101)">SetProperty(BounceDown,1,Home)</ondown>
+			<ondown>noop</ondown>
+			<onright>Select</onright>
+			<onback>Control.SetFocus($PARAM[ID]7),0,absolute)</onback>
+			<onback>99</onback>
+			<viewtype label="">list</viewtype>
+			<orientation>horizontal</orientation>
+			<scrolltime easing="inout" tween="sine">300</scrolltime>
+			<focusposition>1</focusposition>
+			<visible>Integer.IsGreater(Container($PARAM[ID]7).NumItems,1) | Container($PARAM[ID]7).IsUpdating</visible>
+			<animation center="301,360" condition="Control.HasFocus($PARAM[ID]7)" easing="inout" effect="zoom" end="132" start="100" time="300" tween="sine">Conditional</animation>
+			<visible>[!Control.HasFocus($PARAM[ID]1) | [Control.HasFocus($PARAM[ID]1) + String.IsEqual(Container($PARAM[ID]1).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]2) | [Control.HasFocus($PARAM[ID]2) + String.IsEqual(Container($PARAM[ID]2).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]3) | [Control.HasFocus($PARAM[ID]3) + String.IsEqual(Container($PARAM[ID]3).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]4) | [Control.HasFocus($PARAM[ID]4) + String.IsEqual(Container($PARAM[ID]4).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]5) | [Control.HasFocus($PARAM[ID]5) + String.IsEqual(Container($PARAM[ID]5).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]6) | [Control.HasFocus($PARAM[ID]6) + String.IsEqual(Container($PARAM[ID]6).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]8) | [Control.HasFocus($PARAM[ID]8) + String.IsEqual(Container($PARAM[ID]8).CurrentItem,1)]]
+</visible>
+			<itemlayout height="720" width="456">
+				<control type="image">
+					<left>23</left>
+					<top>51</top>
+					<width>410</width>
+					<height>618</height>
+					<texture border="100">views/shadow_nf.png</texture>
+					<bordersize>-100</bordersize>
+				</control>
+				<control type="group">
+					<include content="HomeItemListFadeDiffuseAnimation">
+						<param name="ListID" value="$PARAM[ID]7"/>
+					</include>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>410</width>
+						<height>618</height>
+						<aspectratio align="center">scale</aspectratio>
+						<texture background="true" fallback="views/movie_fallback.png">$VAR[PosterImage]</texture>
+					</control>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>115</width>
+						<height>115</height>
+						<texture>$INFO[ListItem.VideoResolution,views/resolution/,.png]</texture>
+					</control>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>115</width>
+						<height>115</height>
+						<texture>views/OverlayWatched.png</texture>
+						<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
+					</control>
+				</control>
+			</itemlayout>
+			<focusedlayout height="720" width="456">
+				<control type="group">
+					<animation center="301,360" easing="inout" effect="zoom" end="132" start="100" time="300" tween="sine">Focus</animation>
+					<animation center="301,360" condition="Container($PARAM[ID]7).OnNext | Container($PARAM[ID]7).OnPrevious | !Control.HasFocus($PARAM[ID]7)" easing="inout" effect="zoom" end="100" start="132" time="300" tween="sine">UnFocus</animation>
+					<animation center="301,360" condition="Control.HasFocus(4000)" easing="inout" effect="zoom" end="100" start="132" time="300" tween="sine">Conditional</animation>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>410</width>
+						<height>618</height>
+						<texture border="100">views/shadow_fo.png</texture>
+						<bordersize>-100</bordersize>
+						<include content="ContainerMoveFadeAnimation">
+							<param name="ListID" value="$PARAM[ID]7"/>
+						</include>
+						<visible>Control.HasFocus($PARAM[ID]7)</visible>
+					</control>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>410</width>
+						<height>618</height>
+						<texture border="100">views/shadow_nf.png</texture>
+						<bordersize>-100</bordersize>
+						<include content="FocusedListIDAnimation">
+							<param name="ListID" value="$PARAM[ID]7"/>
+						</include>
+					</control>
+					<control type="group">
+						<include content="HomeFocusedListIDFadeDiffuseAnimation">
+							<param name="ListID" value="$PARAM[ID]7"/>
+						</include>
+						<control type="image">
+							<left>23</left>
+							<top>51</top>
+							<width>410</width>
+							<height>618</height>
+							<aspectratio align="center">scale</aspectratio>
+							<texture background="true" fallback="views/movie_fallback.png">$VAR[PosterImage]</texture>
+						</control>
+						<control type="image">
+							<left>23</left>
+							<top>51</top>
+							<width>115</width>
+							<height>115</height>
+							<texture>$INFO[ListItem.VideoResolution,views/resolution/,.png]</texture>
+						</control>
+						<control type="image">
+							<left>23</left>
+							<top>51</top>
+							<width>115</width>
+							<height>115</height>
+							<texture>views/OverlayWatched.png</texture>
+							<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
+						</control>
+					</control>
+						<control type="textbox">
+							<left>28</left>
+							<top>84</top>
+							<width>382</width>
+							<height>304</height>
+							<font>Bold26</font>
+							<align>left</align>
+							<textcolor>ffdadada</textcolor>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+					</control>
+			</focusedlayout>
+			<content>
+				<item>
+					<label>$INFO[Skin.String($PARAM[ID]0-WidgetLabel-7)]</label>
+					<label2>FOCUS</label2>
+					<icon>home/home_button_nf.png</icon>
+					<visible>!Control.HasFocus($PARAM[ID]7)</visible>
+				</item>
+				<item>
+					<label>$INFO[Skin.String($PARAM[ID]0-WidgetLabel-7)]</label>
+					<label2>FOCUS</label2>
+					<icon>home/home_button_fo.png</icon>
+					<visible>Control.HasFocus($PARAM[ID]7)</visible>
+				</item>
+			</content>
+			<content target="videos" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-7)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-7)]" limit="10" browse="auto">$INFO[Skin.String($PARAM[ID]0-WidgetList-7)]</content>
+		</control>
+		<control id="$PARAM[ID]8" type="fixedlist">
+			<width>4200</width>
+			<height>740</height>
+			<onup condition="!Window.IsVisible(1101)">SetProperty(BounceUp,1,Home)</onup>
+			<onup>noop</onup>
+			<ondown condition="!Window.IsVisible(1101)">SetProperty(BounceDown,1,Home)</ondown>
+			<ondown>noop</ondown>
+			<onright>Select</onright>
+			<onback>Control.SetFocus($PARAM[ID]8),0,absolute)</onback>
+			<onback>99</onback>
+			<viewtype label="">list</viewtype>
+			<orientation>horizontal</orientation>
+			<scrolltime easing="inout" tween="sine">300</scrolltime>
+			<focusposition>1</focusposition>
+			<visible>Integer.IsGreater(Container($PARAM[ID]8).NumItems,1) | Container($PARAM[ID]8).IsUpdating</visible>
+			<animation center="301,360" condition="Control.HasFocus($PARAM[ID]8)" easing="inout" effect="zoom" end="132" start="100" time="300" tween="sine">Conditional</animation>
+			<visible>[!Control.HasFocus($PARAM[ID]1) | [Control.HasFocus($PARAM[ID]1) + String.IsEqual(Container($PARAM[ID]1).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]2) | [Control.HasFocus($PARAM[ID]2) + String.IsEqual(Container($PARAM[ID]2).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]3) | [Control.HasFocus($PARAM[ID]3) + String.IsEqual(Container($PARAM[ID]3).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]4) | [Control.HasFocus($PARAM[ID]4) + String.IsEqual(Container($PARAM[ID]4).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]5) | [Control.HasFocus($PARAM[ID]5) + String.IsEqual(Container($PARAM[ID]5).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]6) | [Control.HasFocus($PARAM[ID]6) + String.IsEqual(Container($PARAM[ID]6).CurrentItem,1)]] + 
+[!Control.HasFocus($PARAM[ID]7) | [Control.HasFocus($PARAM[ID]7) + String.IsEqual(Container($PARAM[ID]7).CurrentItem,1)]]
+</visible>
+			<itemlayout height="720" width="456">
+				<control type="image">
+					<left>23</left>
+					<top>51</top>
+					<width>410</width>
+					<height>618</height>
+					<texture border="100">views/shadow_nf.png</texture>
+					<bordersize>-100</bordersize>
+				</control>
+				<control type="group">
+					<include content="HomeItemListFadeDiffuseAnimation">
+						<param name="ListID" value="$PARAM[ID]8"/>
+					</include>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>410</width>
+						<height>618</height>
+						<aspectratio align="center">scale</aspectratio>
+						<texture background="true" fallback="views/movie_fallback.png">$VAR[PosterImage]</texture>
+					</control>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>115</width>
+						<height>115</height>
+						<texture>$INFO[ListItem.VideoResolution,views/resolution/,.png]</texture>
+					</control>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>115</width>
+						<height>115</height>
+						<texture>views/OverlayWatched.png</texture>
+						<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
+					</control>
+				</control>
+			</itemlayout>
+			<focusedlayout height="720" width="456">
+				<control type="group">
+					<animation center="301,360" easing="inout" effect="zoom" end="132" start="100" time="300" tween="sine">Focus</animation>
+					<animation center="301,360" condition="Container($PARAM[ID]8).OnNext | Container($PARAM[ID]8).OnPrevious | !Control.HasFocus($PARAM[ID]8)" easing="inout" effect="zoom" end="100" start="132" time="300" tween="sine">UnFocus</animation>
+					<animation center="301,360" condition="Control.HasFocus(4000)" easing="inout" effect="zoom" end="100" start="132" time="300" tween="sine">Conditional</animation>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>410</width>
+						<height>618</height>
+						<texture border="100">views/shadow_fo.png</texture>
+						<bordersize>-100</bordersize>
+						<include content="ContainerMoveFadeAnimation">
+							<param name="ListID" value="$PARAM[ID]8"/>
+						</include>
+						<visible>Control.HasFocus($PARAM[ID]8)</visible>
+					</control>
+					<control type="image">
+						<left>23</left>
+						<top>51</top>
+						<width>410</width>
+						<height>618</height>
+						<texture border="100">views/shadow_nf.png</texture>
+						<bordersize>-100</bordersize>
+						<include content="FocusedListIDAnimation">
+							<param name="ListID" value="$PARAM[ID]8"/>
+						</include>
+					</control>
+					<control type="group">
+						<include content="HomeFocusedListIDFadeDiffuseAnimation">
+							<param name="ListID" value="$PARAM[ID]8"/>
+						</include>
+						<control type="image">
+							<left>23</left>
+							<top>51</top>
+							<width>410</width>
+							<height>618</height>
+							<aspectratio align="center">scale</aspectratio>
+							<texture background="true" fallback="views/movie_fallback.png">$VAR[PosterImage]</texture>
+						</control>
+						<control type="image">
+							<left>23</left>
+							<top>51</top>
+							<width>115</width>
+							<height>115</height>
+							<texture>$INFO[ListItem.VideoResolution,views/resolution/,.png]</texture>
+						</control>
+						<control type="image">
+							<left>23</left>
+							<top>51</top>
+							<width>115</width>
+							<height>115</height>
+							<texture>views/OverlayWatched.png</texture>
+							<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
+						</control>
+					</control>
+						<control type="textbox">
+							<left>28</left>
+							<top>84</top>
+							<width>382</width>
+							<height>304</height>
+							<font>Bold26</font>
+							<align>left</align>
+							<textcolor>ffdadada</textcolor>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+					</control>
+			</focusedlayout>
+			<content>
+				<item>
+					<label>$INFO[Skin.String($PARAM[ID]0-WidgetLabel-8)]</label>
+					<label2>FOCUS</label2>
+					<icon>home/home_button_nf.png</icon>
+					<visible>!Control.HasFocus($PARAM[ID]8)</visible>
+				</item>
+				<item>
+					<label>$INFO[Skin.String($PARAM[ID]0-WidgetLabel-8)]</label>
+					<label2>FOCUS</label2>
+					<icon>home/home_button_fo.png</icon>
+					<visible>Control.HasFocus($PARAM[ID]8)</visible>
+				</item>
+			</content>
+			<content target="videos" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-8)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-8)]" limit="10" browse="auto">$INFO[Skin.String($PARAM[ID]0-WidgetList-8)]</content>
 		</control>
 	</include>
 </includes>

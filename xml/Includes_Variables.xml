@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="CurrentContainer">
+		<value condition="String.IsEqual(System.CurrentControlID,8001)">$INFO[System.CurrentControlID]</value>
+	</variable>
+<variable name="1000-WidgetContentType-1">
+		<value condition="String.Contains(Skin.String($PARAM[ID]0-WidgetAction-1),)">video</value>
+		<value condition="String.Contains(Skin.String($PARAM[ID]0-WidgetAction-1),)">video</value>
+</variable>
 	<variable name="VideoPlayerTitle">
 		<value condition="String.IsEmpty(VideoPlayer.TVShowTitle) + VideoPlayer.HasVideoVersions">$INFO[VideoPlayer.Title] &#91;$INFO[VideoPlayer.VideoVersionName]&#93;</value>
 		<value condition="String.IsEmpty(VideoPlayer.TVShowTitle)">$INFO[VideoPlayer.Title]</value>

@@ -24,7 +24,7 @@
 			<thumb />
 			<property name="labelID">10000</property>
 			<property name="defaultID">home</property>
-			<property name="widgetName">31210</property>
+			<property name="widgetName">Widget Group 1</property>
 			<property name="widget">widget1</property>
 			<visible>Library.HasContent(Movies) | Library.HasContent(TVShows)</visible>
 			<onclick>noop</onclick>
@@ -43,7 +43,7 @@
 			<thumb />
 			<property name="labelID">20342</property>
 			<property name="defaultID">movies</property>
-			<property name="widgetName">31211</property>
+			<property name="widgetName">Widget Group 2</property>
 			<property name="widget">widget2</property>
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
@@ -62,7 +62,7 @@
 			<thumb />
 			<property name="labelID">36903</property>
 			<property name="defaultID">tvshows</property>
-			<property name="widgetName">31212</property>
+			<property name="widgetName">Widget Group 3</property>
 			<property name="widget">widget3</property>
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
@@ -82,7 +82,7 @@
 			<property name="labelID">1036</property>
 			<property name="defaultID">favourites</property>
 			<property name="widget">favourites</property>
-			<property name="widgetName">1036</property>
+			<property name="widgetName">Favourites</property>
 			<onclick>ActivateWindow(favouritesbrowser,return)</onclick>
 			<property name="path">ActivateWindow(favouritesbrowser,return)</property>
 			<property name="list">favouritesbrowser</property>
@@ -99,7 +99,7 @@
 			<thumb />
 			<property name="labelID">10025</property>
 			<property name="defaultID">videos</property>
-			<property name="widgetName">31213</property>
+			<property name="widgetName">Widget Group 4</property>
 			<property name="widget">widget4</property>
 			<onclick>ActivateWindow(Videos,root)</onclick>
 			<property name="path">ActivateWindow(Videos,root)</property>
@@ -117,7 +117,7 @@
 			<thumb />
 			<property name="labelID">10502</property>
 			<property name="defaultID">music</property>
-			<property name="widgetName">31214</property>
+			<property name="widgetName">Widget Group 5</property>
 			<property name="widget">widget5</property>
 			<onclick>ActivateWindow(Music,root)</onclick>
 			<property name="path">ActivateWindow(Music,root)</property>
@@ -135,8 +135,6 @@
 			<thumb />
 			<property name="labelID">15016</property>
 			<property name="defaultID">games</property>
-			<property name="widgetName">31215</property>
-			<property name="widget">widget6</property>
 			<visible>System.GetBool(gamesgeneral.enable)</visible>
 			<onclick>ActivateWindow(Games)</onclick>
 			<property name="path">ActivateWindow(Games)</property>
@@ -154,8 +152,6 @@
 			<thumb />
 			<property name="labelID">10506</property>
 			<property name="defaultID">programs</property>
-			<property name="widgetName">31216</property>
-			<property name="widget">widget7</property>
 			<onclick>ActivateWindow(1112)</onclick>
 			<property name="path">ActivateWindow(1112)</property>
 			<property name="list">1112</property>
@@ -172,8 +168,6 @@
 			<thumb />
 			<property name="labelID">1213</property>
 			<property name="defaultID">pictures</property>
-			<property name="widgetName">31217</property>
-			<property name="widget">widget8</property>
 			<onclick>ActivateWindow(Pictures)</onclick>
 			<property name="path">ActivateWindow(Pictures)</property>
 			<property name="list">Pictures</property>

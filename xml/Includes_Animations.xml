@@ -52,6 +52,15 @@
 	</include>
 	<!-- Item list fade diffuse animation -->
 	<include name="ItemListFadeDiffuseAnimation">
+		<animation effect="fadediffuse" start="FFFFFFFF" end="FF898989" time="200" condition="Control.HasFocus($PARAM[ID]1)">Conditional</animation>
+	</include>
+	<!-- Home focused list fade diffuse animation -->
+	<include name="HomeFocusedListIDFadeDiffuseAnimation">
+		<animation center="auto" condition="Control.HasFocus($PARAM[ListID])" easing="inout" effect="fadediffuse" end="FFFFFFFF" start="FF898989" time="300" tween="sine">Focus</animation>
+		<animation center="auto" condition="Control.HasFocus($PARAM[ListID])" easing="inout" effect="fadediffuse" end="FF898989" start="FFFFFFFF" time="300" tween="sine">UnFocus</animation>
+	</include>
+	<!-- Home item list fade diffuse animation -->
+	<include name="HomeItemListFadeDiffuseAnimation">
 		<animation effect="fadediffuse" start="FF898989" end="FF898989" time="0" condition="true">Conditional</animation>
 	</include>
 	<!-- Dialog zoom/fade visible animation -->
