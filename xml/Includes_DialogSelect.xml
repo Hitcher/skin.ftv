@@ -83,7 +83,7 @@
 						<height>80</height>
 						<font>Reg25</font>
 						<textcolor>ffffffff</textcolor>
-						<label>$VAR[VideoAspect]$VAR[HDRType, | ]$VAR[AudioCodec, | ]$VAR[AudioChannels, | ]$INFO[ListItem.Duration, | ]</label>
+						<label>$INFO[ListItem.VideoResolution,, [COLOR ff505050]|[/COLOR] ]$VAR[VideoAspect]$VAR[HDRType, [COLOR ff505050]|[/COLOR] ]$VAR[AudioCodec, [COLOR ff505050]|[/COLOR] ]$VAR[AudioChannels, [COLOR ff505050]|[/COLOR] ]$INFO[ListItem.Duration, [COLOR ff505050]|[/COLOR] ]</label>
 					</control>
 				</itemlayout>
 				<focusedlayout height="308" width="1414">
@@ -110,7 +110,7 @@
 						<font>Reg25</font>
 						<textcolor>ff000000</textcolor>
 						<selectedcolor>ff000000</selectedcolor>
-						<label>$VAR[VideoAspect]$VAR[HDRType, | ]$VAR[AudioCodec, | ]$VAR[AudioChannels, | ]$INFO[ListItem.Duration, | ]</label>
+						<label>$INFO[ListItem.VideoResolution,, [COLOR ff505050]|[/COLOR] ]$VAR[VideoAspect]$VAR[HDRType, [COLOR ff505050]|[/COLOR] ]$VAR[AudioCodec, [COLOR ff505050]|[/COLOR] ]$VAR[AudioChannels, [COLOR ff505050]|[/COLOR] ]$INFO[ListItem.Duration, [COLOR ff505050]|[/COLOR] ]</label>
 					</control>
 				</focusedlayout>
 			</control>
