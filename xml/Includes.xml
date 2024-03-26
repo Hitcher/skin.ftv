@@ -202,7 +202,7 @@
 	<!-- Video player details -->
 	<include name="VideoPlayerDetails">
 		<!--  Cache bar -->
-		<control type="progress">
+		<control id="99" type="progress">
 			<left>184</left>
 			<bottom>186</bottom>
 			<width>3470</width>
@@ -215,7 +215,7 @@
 			<overlaytexture/>
 		</control>
 		<!--  Progress bar -->
-		<control type="progress">
+		<control id="99" type="progress">
 			<left>184</left>
 			<bottom>186</bottom>
 			<width>3470</width>
@@ -228,7 +228,7 @@
 			<overlaytexture/>
 		</control>
 		<!--  Edits -->
-		<control type="ranges">
+		<control id="99" type="ranges">
 			<left>184</left>
 			<bottom>210</bottom>
 			<width>3470</width>
@@ -240,7 +240,7 @@
 			<righttexture>osd/progress_bar_chapter.png</righttexture>
 		</control>
 		<!--  Cuts -->
-		<control type="ranges">
+		<control id="99" type="ranges">
 			<left>184</left>
 			<bottom>210</bottom>
 			<width>3470</width>
@@ -250,7 +250,7 @@
 			<righttexture colordiffuse="ffed202c">osd/progress_bar_pointer.png</righttexture>
 		</control>
 		<!--  Scenes -->
-		<control type="ranges">
+		<control id="99" type="ranges">
 			<left>184</left>
 			<bottom>186</bottom>
 			<width>3470</width>
@@ -260,7 +260,7 @@
 			<righttexture>osd/progress_bar_chapter.png</righttexture>
 		</control>
 		<!--  Chapters -->
-		<control type="ranges">
+		<control id="99" type="ranges">
 			<left>184</left>
 			<bottom>186</bottom>
 			<width>3470</width>
@@ -269,7 +269,7 @@
 			<texturebg colordiffuse="00ffffff" border="12">osd/progress_bar_back.png</texturebg>
 			<righttexture>osd/progress_bar_chapter.png</righttexture>
 		</control>
-		<control type="grouplist">
+		<control id="99" type="grouplist">
 			<left>184</left>
 			<bottom>76</bottom>
 			<width>1600</width>
@@ -278,7 +278,7 @@
 			<orientation>horizontal</orientation>
 			<usecontrolcoords>true</usecontrolcoords>
 			<!--  Current position -->
-			<control type="label">
+			<control id="99" type="label">
 				<width>auto</width>
 				<height>76</height>
 				<font>OSD32</font>
@@ -286,7 +286,7 @@
 				<label>$VAR[PlayerTime]</label>
 			</control>
 			<!--  Divider -->
-			<control type="label">
+			<control id="99" type="label">
 				<width>auto</width>
 				<height>76</height>
 				<font>OSD32</font>
@@ -295,7 +295,7 @@
 				<visible>!String.IsEmpty(Player.Time) + !String.IsEmpty(Player.Duration)</visible>
 			</control>
 			<!--  Total length -->
-			<control type="label">
+			<control id="99" type="label">
 				<width>auto</width>
 				<height>76</height>
 				<font>OSD32</font>
@@ -303,7 +303,7 @@
 				<label>$VAR[PlayerDuration]</label>
 			</control>
 			<!--  4K label -->
-			<control type="label">
+			<control id="99" type="label">
 				<left>48</left>
 				<top>-4</top>
 				<width>auto</width>
@@ -314,7 +314,7 @@
 				<visible>String.IsEqual(VideoPlayer.VideoResolution,4K)</visible>
 			</control>
 			<!--  4K label -->
-			<control type="label">
+			<control id="99" type="label">
 				<left>12</left>
 				<width>auto</width>
 				<height>76</height>
@@ -324,7 +324,7 @@
 				<visible>String.IsEqual(VideoPlayer.VideoResolution,4K)</visible>
 			</control>
 			<!--  HD label -->
-			<control type="label">
+			<control id="99" type="label">
 				<left>48</left>
 				<width>auto</width>
 				<height>76</height>
@@ -334,7 +334,7 @@
 				<visible>String.IsEqual(VideoPlayer.VideoResolution,720) | String.IsEqual(VideoPlayer.VideoResolution,1080)</visible>
 			</control>
 			<!--  Resolution label -->
-			<control type="label">
+			<control id="99" type="label">
 				<left>4</left>
 				<width>auto</width>
 				<height>76</height>
@@ -344,7 +344,7 @@
 				<visible>String.IsEqual(VideoPlayer.VideoResolution,1080)</visible>
 			</control>
 			<!--  HDR label -->
-			<control type="label">
+			<control id="99" type="label">
 				<left>48</left>
 				<top>-4</top>
 				<width>auto</width>
@@ -355,7 +355,7 @@
 				<visible>!String.IsEmpty(VideoPlayer.HdrType)</visible>
 			</control>
 			<!--  HDR label -->
-			<control type="label">
+			<control id="99" type="label">
 				<left>12</left>
 				<width>auto</width>
 				<height>76</height>
@@ -366,7 +366,7 @@
 			</control>
 		</control>
 		<!--  X-Ray -->
-		<control type="grouplist">
+		<control id="99" type="grouplist">
 			<centerleft>50%</centerleft>
 			<bottom>76</bottom>
 			<height>84</height>
@@ -375,14 +375,14 @@
 			<orientation>horizontal</orientation>
 			<usecontrolcoords>true</usecontrolcoords>
 			<visible>!String.IsEmpty(Container(1000).ListItem.Label)</visible>
-			<control type="label">
+			<control id="99" type="label">
 				<width>auto</width>
 				<height>84</height>
 				<font>OSD32</font>
 				<textcolor>fff3f3f3</textcolor>
 				<label>31233</label>
 			</control>
-			<control type="image">
+			<control id="99" type="image">
 				<top>8</top>
 				<width>80</width>
 				<height>76</height>
@@ -390,7 +390,7 @@
 			</control>
 		</control>
 		<!--  Current time -->
-		<control type="label">
+		<control id="99" type="label">
 			<right>184</right>
 			<bottom>80</bottom>
 			<width>1600</width>
