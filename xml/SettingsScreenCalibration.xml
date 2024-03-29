@@ -21,8 +21,8 @@
 		</control>
 		<!-- Top left mover -->
 		<control type="mover" id="8">
-			<width>472</width>
-			<height>472</height>
+			<width>236</width>
+			<height>236</height>
 			<texturefocus>calibrate/focus.png</texturefocus>
 			<texturenofocus/>
 			<movingspeed acceleration="180" maxvelocity="300" resettimeout="200" delta="1">
@@ -34,8 +34,8 @@
 		</control>
 		<!-- Bottom right mover -->
 		<control type="mover" id="9">
-			<width>472</width>
-			<height>472</height>
+			<width>236</width>
+			<height>236</height>
 			<texturefocus flipx="true" flipy="true">calibrate/focus.png</texturefocus>
 			<texturenofocus/>
 			<movingspeed acceleration="180" maxvelocity="300" resettimeout="200" delta="1">
@@ -47,8 +47,8 @@
 		</control>
 		<!-- Subtitle position mover -->
 		<control type="mover" id="10">
-			<width>792</width>
-			<height>176</height>
+			<width>396</width>
+			<height>88</height>
 			<texturefocus>calibrate/subtitle.png</texturefocus>
 			<texturenofocus/>
 			<movingspeed acceleration="180" maxvelocity="300" resettimeout="200" delta="1">
@@ -116,6 +116,18 @@
 			<wrapmultiline>true</wrapmultiline>
 			<label>$LOCALIZE[31037]</label>
 			<visible>Control.HasFocus(12)</visible>
+		</control>
+		<!-- Subtitle manual label -->
+		<control type="label">
+			<left>1228</left>
+			<top>980</top>
+			<height>168</height>
+			<width>2400</width>
+			<font>Light39</font>
+			<textcolor>ffdadada</textcolor>
+			<wrapmultiline>true</wrapmultiline>
+			<label>$LOCALIZE[39189]</label>
+			<visible>String.Contains(Control.GetLabel(3),$LOCALIZE[39189])</visible>
 		</control>
 	</controls>
 </window>
