@@ -21,8 +21,8 @@
 		</control>
 		<!-- Top left mover -->
 		<control type="mover" id="8">
-			<width>236</width>
-			<height>236</height>
+			<width>472</width>
+			<height>472</height>
 			<texturefocus>calibrate/focus.png</texturefocus>
 			<texturenofocus/>
 			<movingspeed acceleration="180" maxvelocity="300" resettimeout="200" delta="1">
@@ -34,8 +34,8 @@
 		</control>
 		<!-- Bottom right mover -->
 		<control type="mover" id="9">
-			<width>236</width>
-			<height>236</height>
+			<width>472</width>
+			<height>472</height>
 			<texturefocus flipx="true" flipy="true">calibrate/focus.png</texturefocus>
 			<texturenofocus/>
 			<movingspeed acceleration="180" maxvelocity="300" resettimeout="200" delta="1">
