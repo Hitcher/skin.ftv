@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="ContentID">
+		<value condition="!String.IsEmpty(Container.Content)">$INFO[Container.Content]</value>
+		<value condition="String.IsEmpty(Container.Content)">none</value>
+	</variable>
 	<variable name="VideoPlayerTitle">
 		<value condition="String.IsEmpty(VideoPlayer.TVShowTitle) + VideoPlayer.HasVideoVersions">$INFO[VideoPlayer.Title] &#91;$INFO[VideoPlayer.VideoVersionName]&#93;</value>
 		<value condition="String.IsEmpty(VideoPlayer.TVShowTitle)">$INFO[VideoPlayer.Title]</value>
@@ -1162,7 +1166,6 @@
 		<value condition="ListItem.IsParentFolder">views/folder_back_wide.png</value>
 		<value condition="String.IsEqual(ListItem.Icon,ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="Container.Content(episodes) + !String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
-		<value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
 		<value>$INFO[ListItem.Icon]</value>
 		<value>views/episode_fallback.png</value>
 	</variable>
@@ -1170,7 +1173,6 @@
 		<value condition="String.IsEqual(ListItem.Label,$LOCALIZE[33078]) | String.IsEqual(ListItem.Label,$LOCALIZE[22082])">views/next_page_wide.png</value>
 		<value condition="ListItem.IsParentFolder">views/folder_back_wide.png</value>
 		<value condition="!String.IsEmpty(ListItem.Art(ftv))">$INFO[ListItem.Art(ftv)]</value>
-		<value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="!Container.Content(episodes)">$INFO[ListItem.Icon]</value>
 		<value>views/episode_fallback.png</value>
 	</variable>
@@ -1180,6 +1182,7 @@
 		<value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
 		<value condition="Container.Content(seasons)">$INFO[ListItem.Art(tvshow.poster)]</value>
 		<value condition="!String.IsEmpty(ListItem.Icon)">$INFO[ListItem.Icon]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
 		<value>views/movie_fallback.png</value>
 	</variable>
 	<variable name="SeasonValue">

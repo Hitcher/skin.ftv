@@ -16,7 +16,7 @@
 				<onright condition="!Window.IsVisible(1103)">SetProperty(BounceRight,1,Home)</onright>
 				<preloaditems>2</preloaditems>
 				<focusposition>1</focusposition>
-				<viewtype label="31172">list</viewtype>
+				<viewtype label="31203">list</viewtype>
 				<orientation>horizontal</orientation>
 				<defaultcontrol always="true">0</defaultcontrol>
 				<scrolltime easing="inout" tween="sine">300</scrolltime>
@@ -68,18 +68,6 @@
 								<height>250</height>
 								<texture border="4">views/default_overlay.png</texture>
 								<visible>!ListItem.IsParentFolder + !String.Contains(ListItem.Icon,Default)</visible>
-							</control>
-							<control type="label">
-								<left>36</left>
-								<top>894</top>
-								<width>892</width>
-								<height>84</height>
-								<font>Bold44</font>
-								<scroll>false</scroll>
-								<textcolor>ffffffff</textcolor>
-								<shadowcolor>ShadowColour</shadowcolor>
-								<label>$INFO[ListItem.Label]</label>
-								<visible>!ListItem.IsParentFolder</visible>
 							</control>
 						</control>
 					</control>
@@ -139,18 +127,6 @@
 								<height>250</height>
 								<texture border="4">views/default_overlay.png</texture>
 								<visible>!ListItem.IsParentFolder + !String.Contains(ListItem.Icon,Default)</visible>
-							</control>
-							<control type="label">
-								<left>36</left>
-								<top>894</top>
-								<width>892</width>
-								<height>84</height>
-								<font>Bold44</font>
-								<scroll>false</scroll>
-								<textcolor>ffffffff</textcolor>
-								<shadowcolor>ShadowColour</shadowcolor>
-								<label>$INFO[ListItem.Label]</label>
-								<visible>!ListItem.IsParentFolder</visible>
 							</control>
 						</control>
 					</control>

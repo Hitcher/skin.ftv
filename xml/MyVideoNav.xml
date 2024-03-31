@@ -725,7 +725,7 @@
 						<font>Light30Spaced</font>
 						<label>$INFO[Container.Viewmode]</label>
 						<onback>50</onback>
-						<onclick>Runscript(script.skinvariables,action=buildviews,contentid=$INFO[Container.Content],pluginname=$INFO[Container.PluginName])</onclick>
+						<onclick>Runscript(script.skinvariables,action=buildviews,contentid=$VAR[ContentID],pluginname=$INFO[Container.PluginName])</onclick>
 						<textcolor>NotFocusedColour</textcolor>
 						<focusedcolor>FocusedColour</focusedcolor>
 						<texturefocus border="6">dialogs/OptionsBackgroundButtonFO.png</texturefocus>

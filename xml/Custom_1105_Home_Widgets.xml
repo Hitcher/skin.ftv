@@ -439,42 +439,42 @@
 						<item>
 							<label>$VAR[WidgetStyle-1]</label>
 							<label2>...</label2>
-							<onclick>RunScript(script.skinvariables,run_dialog=select,heading=$LOCALIZE[31198],list=$LOCALIZE[31159] / $LOCALIZE[31160] / $LOCALIZE[31161] / $LOCALIZE[31203],"executebuiltin=Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-1],{v})")</onclick>
+							<onclick>RunScript(script.skinvariables,run_dialog=select,heading=$LOCALIZE[31198],list=$LOCALIZE[31159] / $LOCALIZE[31160] / $LOCALIZE[31203] / $LOCALIZE[31161],"executebuiltin=Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-1],{v})")</onclick>
 						</item>
 						<item>
 							<label>$VAR[WidgetStyle-2]</label>
 							<label2>...</label2>
-							<onclick>RunScript(script.skinvariables,run_dialog=select,heading=$LOCALIZE[31198],list=$LOCALIZE[31159] / $LOCALIZE[31160] / $LOCALIZE[31161] / $LOCALIZE[31203],"executebuiltin=Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-2],{v})")</onclick>
+							<onclick>RunScript(script.skinvariables,run_dialog=select,heading=$LOCALIZE[31198],list=$LOCALIZE[31159] / $LOCALIZE[31160] / $LOCALIZE[31203] / $LOCALIZE[31161],"executebuiltin=Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-2],{v})")</onclick>
 						</item>
 						<item>
 							<label>$VAR[WidgetStyle-3]</label>
 							<label2>...</label2>
-							<onclick>RunScript(script.skinvariables,run_dialog=select,heading=$LOCALIZE[31198],list=$LOCALIZE[31159] / $LOCALIZE[31160] / $LOCALIZE[31161] / $LOCALIZE[31203],"executebuiltin=Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-3],{v})")</onclick>
+							<onclick>RunScript(script.skinvariables,run_dialog=select,heading=$LOCALIZE[31198],list=$LOCALIZE[31159] / $LOCALIZE[31160] / $LOCALIZE[31203] / $LOCALIZE[31161],"executebuiltin=Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-3],{v})")</onclick>
 						</item>
 						<item>
 							<label>$VAR[WidgetStyle-4]</label>
 							<label2>...</label2>
-							<onclick>RunScript(script.skinvariables,run_dialog=select,heading=$LOCALIZE[31198],list=$LOCALIZE[31159] / $LOCALIZE[31160] / $LOCALIZE[31161] / $LOCALIZE[31203],"executebuiltin=Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-4],{v})")</onclick>
+							<onclick>RunScript(script.skinvariables,run_dialog=select,heading=$LOCALIZE[31198],list=$LOCALIZE[31159] / $LOCALIZE[31160] / $LOCALIZE[31203] / $LOCALIZE[31161],"executebuiltin=Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-4],{v})")</onclick>
 						</item>
 						<item>
 							<label>$VAR[WidgetStyle-5]</label>
 							<label2>...</label2>
-							<onclick>RunScript(script.skinvariables,run_dialog=select,heading=$LOCALIZE[31198],list=$LOCALIZE[31159] / $LOCALIZE[31160] / $LOCALIZE[31161] / $LOCALIZE[31203],"executebuiltin=Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-5],{v})")</onclick>
+							<onclick>RunScript(script.skinvariables,run_dialog=select,heading=$LOCALIZE[31198],list=$LOCALIZE[31159] / $LOCALIZE[31160] / $LOCALIZE[31203] / $LOCALIZE[31161],"executebuiltin=Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-5],{v})")</onclick>
 						</item>
 						<item>
 							<label>$VAR[WidgetStyle-6]</label>
 							<label2>...</label2>
-							<onclick>RunScript(script.skinvariables,run_dialog=select,heading=$LOCALIZE[31198],list=$LOCALIZE[31159] / $LOCALIZE[31160] / $LOCALIZE[31161] / $LOCALIZE[31203],"executebuiltin=Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-6],{v})")</onclick>
+							<onclick>RunScript(script.skinvariables,run_dialog=select,heading=$LOCALIZE[31198],list=$LOCALIZE[31159] / $LOCALIZE[31160] / $LOCALIZE[31203] / $LOCALIZE[31161],"executebuiltin=Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-6],{v})")</onclick>
 						</item>
 						<item>
 							<label>$VAR[WidgetStyle-7]</label>
 							<label2>...</label2>
-							<onclick>RunScript(script.skinvariables,run_dialog=select,heading=$LOCALIZE[31198],list=$LOCALIZE[31159] / $LOCALIZE[31160] / $LOCALIZE[31161] / $LOCALIZE[31203],"executebuiltin=Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-7],{v})")</onclick>
+							<onclick>RunScript(script.skinvariables,run_dialog=select,heading=$LOCALIZE[31198],list=$LOCALIZE[31159] / $LOCALIZE[31160] / $LOCALIZE[31203] / $LOCALIZE[31161],"executebuiltin=Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-7],{v})")</onclick>
 						</item>
 						<item>
 							<label>$VAR[WidgetStyle-8]</label>
 							<label2>...</label2>
-							<onclick>RunScript(script.skinvariables,run_dialog=select,heading=$LOCALIZE[31198],list=$LOCALIZE[31159] / $LOCALIZE[31160] / $LOCALIZE[31161] / $LOCALIZE[31203],"executebuiltin=Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-8],{v})")</onclick>
+							<onclick>RunScript(script.skinvariables,run_dialog=select,heading=$LOCALIZE[31198],list=$LOCALIZE[31159] / $LOCALIZE[31160] / $LOCALIZE[31203] / $LOCALIZE[31161],"executebuiltin=Skin.SetString($INFO[Window(home).Property(SubMenu),,-WidgetStyle-8],{v})")</onclick>
 						</item>
 					</content>
 				</control>

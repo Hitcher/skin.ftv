@@ -3,7 +3,7 @@
 	<!-- Home Square Info Itemlayout -->
 	<include name="HomeSquareInfoItemlayout">
 		<control type="group">
-			<visible>String.IsEqual(ListItem.Property(WidgetStyle),$LOCALIZE[31203]) | String.IsEmpty(ListItem.Property(WidgetStyle))</visible>
+			<visible>String.IsEqual(ListItem.Property(WidgetStyle),$LOCALIZE[31161]) | String.IsEmpty(ListItem.Property(WidgetStyle))</visible>
 			<control type="group">
 				<left>546</left>
 				<control type="image">
@@ -244,7 +244,7 @@
 	<!-- Home Square Info Focusedlayout -->
 	<include name="HomeSquareInfoFocusedlayout">
 		<control type="group">
-			<visible>String.IsEqual(ListItem.Property(WidgetStyle),$LOCALIZE[31203]) | String.IsEmpty(ListItem.Property(WidgetStyle))</visible>
+			<visible>String.IsEqual(ListItem.Property(WidgetStyle),$LOCALIZE[31161]) | String.IsEmpty(ListItem.Property(WidgetStyle))</visible>
 			<control type="group">
 				<left>546</left>
 				<control type="image">
@@ -489,7 +489,7 @@
 	<!-- Home Square Itemlayout -->
 	<include name="HomeSquareItemlayout">
 		<control type="group">
-			<visible>String.IsEqual(ListItem.Property(WidgetStyle),$LOCALIZE[31161])</visible>
+			<visible>String.IsEqual(ListItem.Property(WidgetStyle),$LOCALIZE[31203])</visible>
 			<control type="group">
 				<left>546</left>
 				<control type="image">
@@ -574,7 +574,7 @@
 	<!-- Home Square Focusedlayout -->
 	<include name="HomeSquareFocusedlayout">
 		<control type="group">
-			<visible>String.IsEqual(ListItem.Property(WidgetStyle),$LOCALIZE[31161])</visible>
+			<visible>String.IsEqual(ListItem.Property(WidgetStyle),$LOCALIZE[31203])</visible>
 			<control type="group">
 				<left>546</left>
 				<control type="image">
@@ -4958,7 +4958,7 @@
 		<onclick>Skin.Reset(4000-WidgetSortOrder-6)</onclick>
 		<onclick>Skin.Reset(4000-WidgetSortOrder-7)</onclick>
 		<onclick>Skin.Reset(4000-WidgetSortOrder-8)</onclick>
-		<onclick>Skin.SetString(4000-WidgetStyle-1,$LOCALIZE[31203])</onclick>
+		<onclick>Skin.SetString(4000-WidgetStyle-1,$LOCALIZE[31161])</onclick>
 		<onclick>Skin.Reset(4000-WidgetStyle-2)</onclick>
 		<onclick>Skin.Reset(4000-WidgetStyle-3)</onclick>
 		<onclick>Skin.Reset(4000-WidgetStyle-4)</onclick>
@@ -5016,11 +5016,11 @@
 		<onclick>Skin.Reset(5000-WidgetSortOrder-6)</onclick>
 		<onclick>Skin.Reset(5000-WidgetSortOrder-7)</onclick>
 		<onclick>Skin.Reset(5000-WidgetSortOrder-8)</onclick>
-		<onclick>Skin.SetString(5000-WidgetStyle-1,$LOCALIZE[31203])</onclick>
-		<onclick>Skin.SetString(5000-WidgetStyle-2,$LOCALIZE[31203])</onclick>
-		<onclick>Skin.SetString(5000-WidgetStyle-3,$LOCALIZE[31203])</onclick>
-		<onclick>Skin.SetString(5000-WidgetStyle-4,$LOCALIZE[31203])</onclick>
-		<onclick>Skin.SetString(5000-WidgetStyle-5,$LOCALIZE[31203])</onclick>
+		<onclick>Skin.SetString(5000-WidgetStyle-1,$LOCALIZE[31161])</onclick>
+		<onclick>Skin.SetString(5000-WidgetStyle-2,$LOCALIZE[31161])</onclick>
+		<onclick>Skin.SetString(5000-WidgetStyle-3,$LOCALIZE[31161])</onclick>
+		<onclick>Skin.SetString(5000-WidgetStyle-4,$LOCALIZE[31161])</onclick>
+		<onclick>Skin.SetString(5000-WidgetStyle-5,$LOCALIZE[31161])</onclick>
 		<onclick>Skin.Reset(5000-WidgetStyle-6)</onclick>
 		<onclick>Skin.Reset(5000-WidgetStyle-7)</onclick>
 		<onclick>Skin.Reset(5000-WidgetStyle-8)</onclick>
@@ -5074,7 +5074,7 @@
 		<onclick>Skin.Reset(6000-WidgetSortOrder-6)</onclick>
 		<onclick>Skin.Reset(6000-WidgetSortOrder-7)</onclick>
 		<onclick>Skin.Reset(6000-WidgetSortOrder-8)</onclick>
-		<onclick>Skin.SetString(6000-WidgetStyle-1,$LOCALIZE[31203])</onclick>
+		<onclick>Skin.SetString(6000-WidgetStyle-1,$LOCALIZE[31161])</onclick>
 		<onclick>Skin.Reset(6000-WidgetStyle-2)</onclick>
 		<onclick>Skin.Reset(6000-WidgetStyle-3)</onclick>
 		<onclick>Skin.Reset(6000-WidgetStyle-4)</onclick>
@@ -5132,7 +5132,7 @@
 		<onclick>Skin.Reset(7000-WidgetSortOrder-6)</onclick>
 		<onclick>Skin.Reset(7000-WidgetSortOrder-7)</onclick>
 		<onclick>Skin.Reset(7000-WidgetSortOrder-8)</onclick>
-		<onclick>Skin.SetString(7000-WidgetStyle-1,$LOCALIZE[31203])</onclick>
+		<onclick>Skin.SetString(7000-WidgetStyle-1,$LOCALIZE[31161])</onclick>
 		<onclick>Skin.Reset(7000-WidgetStyle-2)</onclick>
 		<onclick>Skin.Reset(7000-WidgetStyle-3)</onclick>
 		<onclick>Skin.Reset(7000-WidgetStyle-4)</onclick>
@@ -5190,7 +5190,7 @@
 		<onclick>Skin.Reset(8000-WidgetSortOrder-6)</onclick>
 		<onclick>Skin.Reset(8000-WidgetSortOrder-7)</onclick>
 		<onclick>Skin.Reset(8000-WidgetSortOrder-8)</onclick>
-		<onclick>Skin.SetString(8000-WidgetStyle-1,$LOCALIZE[31203])</onclick>
+		<onclick>Skin.SetString(8000-WidgetStyle-1,$LOCALIZE[31161])</onclick>
 		<onclick>Skin.Reset(8000-WidgetStyle-2)</onclick>
 		<onclick>Skin.Reset(8000-WidgetStyle-3)</onclick>
 		<onclick>Skin.Reset(8000-WidgetStyle-4)</onclick>

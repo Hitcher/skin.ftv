@@ -7,7 +7,7 @@
         "53":   "31160",
         "54":   "31112",
         "55":   "31159",
-        "56":   "31172"
+        "56":   "31203"
     },
     "rules": {
         "images": {
@@ -45,15 +45,10 @@
             "viewtypes": ["51", "53"],
             "library": "53"
         },
-        "episodes_library": {
-            "rule": "Container.Content(episodes) + String.IsEmpty(Container.PluginName)",
-            "viewtypes": ["52"],
+        "episodes": {
+            "rule": "Container.Content(episodes)",
+            "viewtypes": ["50", "51", "52", "53", "55", "56"],
             "library": "52"
-        },
-        "episodes_plugins": {
-            "rule": "Container.Content(episodes) + !String.IsEmpty(Container.PluginName)",
-            "viewtypes": ["55"],
-            "library": "55"
         },
         "genres": {
             "rule": "Container.Content(genres)",
@@ -142,7 +137,7 @@
         },
         "none": {
             "rule": "Container.Content()",
-            "viewtypes": ["50"],
+            "viewtypes": ["50", "51", "52", "53", "55", "56"],
             "library": "50"
         }
 

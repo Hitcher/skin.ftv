@@ -673,7 +673,7 @@ msgid "Poster"
 msgstr ""
 
 msgctxt "#31161"
-msgid "Square"
+msgid "Square Info"
 msgstr ""
 
 msgctxt "#31162"
@@ -829,7 +829,7 @@ msgid "Order"
 msgstr ""
 
 msgctxt "#31203"
-msgid "Square Info"
+msgid "Square"
 msgstr ""
 
 msgctxt "#31204"
