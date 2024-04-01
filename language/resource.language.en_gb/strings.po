@@ -800,7 +800,9 @@ msgctxt "#31192"
 msgid "Director"
 msgstr ""
 
-#empty string with id 31193
+msgctxt "#31193"
+msgid "Now Playing"
+msgstr ""
 
 msgctxt "#31194"
 msgid "Submit"

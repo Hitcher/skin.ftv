@@ -43,7 +43,7 @@
 					<font>Med48</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffdadada</textcolor>
-					<label>$LOCALIZE[10517]  </label>
+					<label>$LOCALIZE[31193]  </label>
 				</control>
 				<control type="label">
 					<top>34</top>
@@ -52,7 +52,8 @@
 					<font>Med32</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffdadada</textcolor>
-					<label>$INFO[MusicPlayer.PlaylistPosition]</label>
+					<label>$INFO[Playlist.Position]</label>
+					<visible>Integer.IsGreater(Playlist.Length(music),1) + Integer.IsGreater(Playlist.Position(music),0)</visible>
 				</control>
 				<control type="label">
 					<top>26</top>
@@ -62,6 +63,7 @@
 					<aligny>bottom</aligny>
 					<textcolor>ff505050</textcolor>
 					<label>|</label>
+					<visible>Integer.IsGreater(Playlist.Length(music),1) + Integer.IsGreater(Playlist.Position(music),0)</visible>
 				</control>
 				<control type="label">
 					<top>34</top>
@@ -70,7 +72,8 @@
 					<font>Light32</font>
 					<aligny>bottom</aligny>
 					<textcolor>ff505050</textcolor>
-					<label>$INFO[MusicPlayer.PlaylistLength]</label>
+					<label>$INFO[Playlist.Length]</label>
+					<visible>Integer.IsGreater(Playlist.Length(music),1) + Integer.IsGreater(Playlist.Position(music),0)</visible>
 				</control>
 			</control>
 			<!-- Title -->
@@ -81,7 +84,7 @@
 				<height>52</height>
 				<font>Med26</font>
 				<textcolor>ffbebebe</textcolor>
-				<label>$INFO[MusicPlayer.Title]</label>
+				<label>$INFO[Player.Title]</label>
 			</control>
 			<!-- Cover -->
 			<control type="image">
@@ -89,7 +92,7 @@
 				<top>1672</top>
 				<width>308</width>
 				<height>308</height>
-				<texture fallback="common/missing_image_cover.png">$INFO[Player.Art(thumb)]</texture>
+				<texture fallback="common/missing_image_cover.png">$INFO[Player.Icon]</texture>
 				<aspectratio align="center" aligny="bottom">scale</aspectratio>
 			</control>
 			<!-- Details -->
@@ -102,7 +105,7 @@
 					<height>80</height>
 					<font>Med40</font>
 					<textcolor>ffbebebe</textcolor>
-					<label>$INFO[MusicPlayer.Album]</label>
+					<label fallback="$INFO[Player.Title]">$INFO[MusicPlayer.Album]</label>
 				</control>
 				<!-- Artist / Track -->
 				<control type="label">
