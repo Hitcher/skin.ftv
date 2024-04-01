@@ -52,7 +52,7 @@
 		<param name="dialog_heading_label_id" default="1"/>
 		<param name="dialog_heading_label_left" default="80"/>
 		<param name="dialog_heading_label_top" default="28"/>
-		<param name="dialog_heading_label_width" default="1796"/>
+		<param name="dialog_heading_label_width" default="1596"/>
 		<param name="dialog_heading_label_haspath" default="false"/>
 		<param name="dialog_heading_label_visible" default="true"/>
 		<definition>
