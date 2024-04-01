@@ -105,7 +105,7 @@
 					<height>80</height>
 					<font>Med40</font>
 					<textcolor>ffbebebe</textcolor>
-					<label fallback="$INFO[Player.Title]">$INFO[MusicPlayer.Album]</label>
+					<label>$INFO[MusicPlayer.Album]</label>
 				</control>
 				<!-- Artist / Track -->
 				<control type="label">
