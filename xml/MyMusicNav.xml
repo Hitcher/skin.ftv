@@ -345,12 +345,11 @@
 						<font>Light30Spaced</font>
 						<label>$INFO[Container.Viewmode]</label>
 						<onback>50</onback>
-						<onclick>Container.NextViewMode</onclick>
+						<onclick>Runscript(script.skinvariables,action=buildviews,contentid=$VAR[ContentID],pluginname=$INFO[Container.PluginName])</onclick>
 						<textcolor>NotFocusedColour</textcolor>
 						<focusedcolor>FocusedColour</focusedcolor>
 						<texturefocus border="6">dialogs/OptionsBackgroundButtonFO.png</texturefocus>
 						<texturenofocus border="6">dialogs/OptionsBackgroundButtonNF.png</texturenofocus>
-						<visible>!String.IsEmpty(Container.PluginName)</visible>
 					</control>
 					<control type="image" id="5002">
 						<width>1280</width>

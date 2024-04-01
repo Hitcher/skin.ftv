@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<variable name="ContentID">
+		<value condition="Container.Content(episodes) + Window.IsVisible(videos)">episodes_video</value>
+		<value condition="Container.Content(episodes) + !Window.IsVisible(videos)">episodes_non_video</value>
 		<value condition="!String.IsEmpty(Container.Content)">$INFO[Container.Content]</value>
 		<value condition="String.IsEmpty(Container.Content)">none</value>
 	</variable>
