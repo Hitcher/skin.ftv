@@ -698,7 +698,7 @@
 					<control type="button" id="5001">
 						<width>-16</width>
 						<height>0</height>
-						<onfocus>SetFocus(5022)</onfocus>
+						<onfocus>Down</onfocus>
 						<include>NoTextures</include>
 						<visible>!Control.HasFocus(5022) + !Control.HasFocus(5004) + !Control.HasFocus(14) + !Control.HasFocus(4) + !Control.HasFocus(19) + !Control.HasFocus(5011) + !Control.HasFocus(5013)</visible>
 					</control>
@@ -706,6 +706,7 @@
 						<width>1280</width>
 						<height>120</height>
 						<texture border="4">dialogs/OptionsBackgroundHeading.png</texture>
+						<visible>!Control.IsVisible(60) + !Control.IsVisible(61)</visible>
 					</control>
 					<control type="label" id="5021">
 						<left>80</left>
@@ -715,6 +716,7 @@
 						<font>Bold30</font>
 						<textcolor>ffdadada</textcolor>
 						<label>$LOCALIZE[582]:</label>
+						<visible>!Control.IsVisible(60) + !Control.IsVisible(61)</visible>
 					</control>
 					<control type="button" id="5022">
 						<height>220</height>
@@ -730,6 +732,7 @@
 						<focusedcolor>FocusedColour</focusedcolor>
 						<texturefocus border="6">dialogs/OptionsBackgroundButtonFO.png</texturefocus>
 						<texturenofocus border="6">dialogs/OptionsBackgroundButtonNF.png</texturenofocus>
+						<visible>!Control.IsVisible(60) + !Control.IsVisible(61)</visible>
 					</control>
 					<control type="image" id="5002">
 						<width>1280</width>
