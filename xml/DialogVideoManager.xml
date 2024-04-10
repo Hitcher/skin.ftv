@@ -182,11 +182,17 @@
 					<param name="button_label" value="13511"/>
 					<param name="button_visible" value="Control.IsEnabled(27)"/>
 				</include>
-				<!-- Rename Button -->
+				<!-- Rename Version Button -->
 				<include content="DialogButton">
 					<param name="button_id" value="24"/>
 					<param name="button_label" value="118"/>
-					<param name="button_visible" value="Control.IsEnabled(24)"/>
+					<param name="button_visible" value="Window.IsVisible(managevideoversions)"/>
+				</include>
+				<!-- Rename Extra Button -->
+				<include content="DialogButton">
+					<param name="button_id" value="28"/>
+					<param name="button_label" value="118"/>
+					<param name="button_visible" value="Window.IsVisible(managevideoextras)"/>
 				</include>
 				<!-- Remove Button -->
 				<include content="DialogButton">
