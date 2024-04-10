@@ -1,8 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<include name="Includes_DialogSelect_Missing_Episode">
+		<include>DialogBackgroundImage</include>
+		<!-- Hidden List -->
+		<control id="6" type="list">
+			<include>HiddenControl</include>
+		</control>
+		<control type="group">
+			<centerleft>50%</centerleft>
+			<centertop>50%</centertop>
+			<width>2120</width>
+			<height>1146</height>
+			<include content="DialogZoomAnimation">
+				<param name="OpenCondition" value="!Window.IsVisible(settingscategory.xml)"/>
+				<param name="CloseCondition" value="!Window.IsVisible(settingscategory.xml)"/>
+			</include>
+			<!-- Dialog background image -->
+			<control type="image">
+				<width>100%</width>
+				<height>100%</height>
+				<texture border="4">dialogs/DialogMessageBackground.png</texture>
+			</control>
+			<control type="label" id="1">
+				<left>54</left>
+				<top>52</top>
+				<height>68</height>
+				<font>Reg28</font>
+				<textcolor>ffdadada</textcolor>
+			</control>
+			<control type="image">
+				<left>54</left>
+				<top>172</top>
+				<width>2012</width>
+				<height>1</height>
+				<texture>rating/dialog_select/line.png</texture>
+			</control>
+			<control type="image">
+				<left>54</left>
+				<top>228</top>
+				<width>602</width>
+				<height>898</height>
+				<aspectratio aligny="top">scale</aspectratio>
+				<bordersize>0,0,26,34</bordersize>
+				<texture fallback="views/square_fallback.png">$INFO[Player.Art(tvshow.poster)]</texture>
+				<bordertexture infill="false" border="28,36,28,36">dialogs/shadow.png</bordertexture>
+			</control>
+			<control id="3" type="fixedlist">
+				<left>668</left>
+				<top>214</top>
+				<width>1414</width>
+				<height>918</height>
+				<onleft>Back</onleft>
+				<onleft>noop</onleft>
+				<onright>9000</onright>
+				<onup>noop</onup>
+				<ondown>noop</ondown>
+				<movement>1</movement>
+				<scrolltime>0</scrolltime>
+				<focusposition>1</focusposition>
+				<orientation>vertical</orientation>
+				<animation condition="Integer.IsLessOrEqual(Container(3).NumItems,2)" effect="slide" end="0,-308">Conditional</animation>
+				<itemlayout height="308" width="1414">
+					<control type="image">
+						<width>1414</width>
+						<height>276</height>
+						<texture border="13,15,13,15">dialogs/DialogButtonNF.png</texture>
+					</control>
+					<control type="textbox">
+						<left>68</left>
+						<width>1278</width>
+						<height>276</height>
+						<font>Reg37</font>
+						<aligny>center</aligny>
+						<textcolor>ffffffff</textcolor>
+						<wrapmultiline>true</wrapmultiline>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout height="308" width="1414">
+					<control type="image">
+						<width>1414</width>
+						<height>276</height>
+						<texture border="13,15,13,15">dialogs/DialogButtonFO.png</texture>
+					</control>
+					<control type="textbox">
+						<left>68</left>
+						<width>1278</width>
+						<height>276</height>
+						<font>Reg37</font>
+						<aligny>center</aligny>
+						<textcolor>ff000000</textcolor>
+						<selectedcolor>ff000000</selectedcolor>
+						<wrapmultiline>true</wrapmultiline>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</focusedlayout>
+			</control>
+		</control>
+	</include>
 	<include name="Includes_DialogSelect_Video_Version">
 		<include>DialogBackgroundImage</include>
-		<!-- Hidden Button -->
+		<!-- Hidden List -->
 		<control id="3" type="list">
 			<include>HiddenControl</include>
 		</control>
@@ -70,7 +168,7 @@
 					<control type="label">
 						<top>40</top>
 						<left>68</left>
-						<width>1544</width>
+						<width>1278</width>
 						<height>120</height>
 						<font>Reg37</font>
 						<textcolor>ffffffff</textcolor>
@@ -79,7 +177,7 @@
 					<control type="label">
 						<top>156</top>
 						<left>68</left>
-						<width>1544</width>
+						<width>1278</width>
 						<height>80</height>
 						<font>Reg25</font>
 						<textcolor>ffffffff</textcolor>
@@ -95,7 +193,7 @@
 					<control type="label">
 						<top>40</top>
 						<left>68</left>
-						<width>1544</width>
+						<width>1278</width>
 						<height>120</height>
 						<font>Reg37</font>
 						<textcolor>ff000000</textcolor>
@@ -105,7 +203,7 @@
 					<control type="label">
 						<top>156</top>
 						<left>68</left>
-						<width>1544</width>
+						<width>1278</width>
 						<height>80</height>
 						<font>Reg25</font>
 						<textcolor>ff000000</textcolor>
