@@ -42,7 +42,7 @@
 				<height>898</height>
 				<aspectratio aligny="top">scale</aspectratio>
 				<bordersize>0,0,26,34</bordersize>
-				<texture fallback="views/square_fallback.png">$INFO[Player.Art(tvshow.poster)]</texture>
+				<texture fallback="views/poster_fallback.png">$INFO[Player.Art(tvshow.poster)]</texture>
 				<bordertexture infill="false" border="28,36,28,36">dialogs/shadow.png</bordertexture>
 			</control>
 			<control id="3" type="fixedlist">
