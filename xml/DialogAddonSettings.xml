@@ -161,6 +161,17 @@
 				<font>Bold30</font>
 				<textcolor>ffdadada</textcolor>
 			</control>
+			<!-- Default color button -->
+			<control id="15" type="colorbutton">
+				<width>1916</width>
+				<height>168</height>
+				<font>Light32</font>
+				<textoffsetx>80</textoffsetx>
+				<textcolor>NotFocusedColour</textcolor>
+				<focusedcolor>FocusedColour</focusedcolor>
+				<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
+				<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+			</control>
 			<!-- Button grouplist -->
 			<control id="9000" type="grouplist">
 				<left>2808</left>
