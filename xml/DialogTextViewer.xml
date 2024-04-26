@@ -2,6 +2,8 @@
 <window>
 	<!-- textviewer -->
 	<defaultcontrol always="true">3000</defaultcontrol>
+	<onload>SetProperty(ResetScroll," ",home)</onload>
+	<onload>AlarmClock(ClearValue,ClearProperty(ResetScroll,home),00:01,silent)</onload>
 	<onunload condition="!String.IsEmpty(Window(home).Property(OpenTextViewer))">SetFocus(50)</onunload>
 	<onunload>ClearProperty(OpenTextViewer,home)</onunload>
 	<controls>
@@ -46,7 +48,7 @@
 				<pagecontrol>3000</pagecontrol>
 				<autoscroll>false</autoscroll>
 				<textcolor>ffdadada</textcolor>
-				<label>$VAR[TextViewerDescription]</label>
+				<label>$VAR[TextViewerDescription]$INFO[Window(home).Property(ResetScroll)]</label>
 			</control>
 			<!-- Arrow down -->
 			<control type="image">
