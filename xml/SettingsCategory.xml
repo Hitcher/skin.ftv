@@ -626,7 +626,7 @@
 				<left>1960</left>
 				<top>44</top>
 				<width>840</width>
-				<height>872</height>
+				<height>832</height>
 				<font>Med24</font>
 				<aligny>top</aligny>
 				<pagecontrol>96</pagecontrol>
@@ -637,14 +637,14 @@
 			<control id="96" type="scrollbar">
 				<top>44</top>
 				<width>840</width>
-				<height>872</height>
+				<height>832</height>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
 			</control>
 			<!-- More button -->
 			<control id="3000" type="button">
 				<left>2760</left>
-				<top>848</top>
+				<top>818</top>
 				<width>74</width>
 				<height>46</height>
 				<onup>noop</onup>
