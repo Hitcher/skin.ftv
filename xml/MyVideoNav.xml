@@ -349,7 +349,7 @@
 							<textcolor>ffcccccc</textcolor>
 							<texturefocus colordiffuse="FF888888" border="6">rating/flag.png</texturefocus>
 							<texturenofocus colordiffuse="FF888888" border="6">rating/flag.png</texturenofocus>
-							<visible>[ListItem.HasVideoVersions + !String.Contains(Container.FolderPath,movies/videoversion)] | [ListItem.IsCollection + !String.Contains(Container.FolderPath,movies/sets)]</visible>
+							<visible>ListItem.HasVideoExtras | [ListItem.HasVideoVersions + !String.Contains(Container.FolderPath,movies/videoversion)] | [ListItem.IsCollection + !String.Contains(Container.FolderPath,movies/sets)]</visible>
 						</control>
 					</control>
 					<!-- Movie / TV Show plot -->
