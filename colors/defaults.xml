@@ -10,4 +10,5 @@
 	<color name="InvalidColour">ffa10000</color>
 	<color name="OSDFocusColour">fff6a42f</color>
 	<color name="OSDNotFocusColour">ffffffff</color>
+	<color name="SelectedColour">ffffffff</color>
 </colors>
