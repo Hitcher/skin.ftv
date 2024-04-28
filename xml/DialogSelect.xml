@@ -6,8 +6,10 @@
 	<onunload>ClearProperty(SetUserRating,home)</onunload>
 	<onunload>ClearProperty(UserRatingIcon,home)</onunload>
 	<controls>
-		<include condition="String.IsEmpty(Window(home).Property(CheckPreviousEpisode)) + String.IsEmpty(Window(home).Property(SetUserRating)) + String.IsEmpty(Window(home).Property(VideoOSDSelect)) + !Window.IsActive(selectvideoversion) + !Window.IsActive(gamesaves) + !Window.IsActive(gamestretchmode) + !Window.IsActive(gamevideofilter) + !Window.IsActive(gamevideorotation) + !Window.IsActive(ingamesaves)">Includes_DialogSelect_Default</include>
-		<include condition="String.IsEmpty(Window(home).Property(SetUserRating)) + Window.IsActive(selectvideoversion)">Includes_DialogSelect_Video_Version</include>
+		<include condition="String.IsEmpty(Window(home).Property(CheckPreviousEpisode)) + String.IsEmpty(Window(home).Property(SetUserRating)) + String.IsEmpty(Window(home).Property(VideoOSDSelect)) + !Window.IsActive(selectvideoversion) + !Window.IsActive(selectvideoextra) + !Window.IsActive(gamesaves) + !Window.IsActive(gamestretchmode) + !Window.IsActive(gamevideofilter) + !Window.IsActive(gamevideorotation) + !Window.IsActive(ingamesaves)">Includes_DialogSelect_Default</include>
+		<include condition="String.IsEmpty(Window(home).Property(SetUserRating)) + Window.IsActive(selectvideoversion) + !ListItem.HasVideoExtras">Includes_DialogSelect_Video_Version</include>
+		<include condition="String.IsEmpty(Window(home).Property(SetUserRating)) + Window.IsActive(selectvideoversion) + ListItem.HasVideoExtras">Includes_DialogSelect_Video_Version_Extra</include>
+		<include condition="String.IsEmpty(Window(home).Property(SetUserRating)) + Window.IsActive(selectvideoextra)">Includes_DialogSelect_Video_Extra</include>
 		<include condition="String.IsEmpty(Window(home).Property(SetUserRating)) + Window.IsActive(gamesaves)">Includes_DialogSelect_Game_Saves</include>
 		<include condition="String.IsEmpty(Window(home).Property(SetUserRating)) + [Window.IsActive(gamestretchmode) | Window.IsActive(gamevideofilter) | Window.IsActive(gamevideorotation)]">Includes_DialogSelect_Game_View</include>
 		<include condition="String.IsEmpty(Window(home).Property(SetUserRating)) + Window.IsActive(ingamesaves)">Includes_DialogSelect_In_Game_Saves</include>
