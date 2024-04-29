@@ -733,4 +733,14 @@
 	<include name="ButtonVisionOffset_4k">
 		<textoffsety>-5</textoffsety>
 	</include>
+	<!-- Scrollspeeds -->
+	<include name="ScrollSpeed_720">
+		<scrollspeed>160</scrollspeed>
+	</include>
+	<include name="ScrollSpeed_1080">
+		<scrollspeed>240</scrollspeed>
+	</include>
+	<include name="ScrollSpeed_4k">
+		<scrollspeed>480</scrollspeed>
+	</include>
 </includes>

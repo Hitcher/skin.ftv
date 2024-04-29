@@ -7,7 +7,9 @@
 		<textcolor>ffffffff</textcolor>
 		<disabledcolor>DisabledColour</disabledcolor>
 		<selectedcolor>SelectedColour</selectedcolor>
-		<scrollspeed>120</scrollspeed>
+		<include condition="Integer.IsLess(System.ScreenHeight,1080)">ScrollSpeed_720</include>
+		<include condition="Integer.IsEqual(System.ScreenHeight,1080)">ScrollSpeed_1080</include>
+		<include condition="Integer.IsGreaterOrEqual(System.ScreenHeight,2160)">ScrollSpeed_4k</include>
 		<scrollsuffix>         |         </scrollsuffix>
 	</default>
 	<default type="fadelabel">
@@ -16,7 +18,9 @@
 		<aligny>center</aligny>
 		<font>Med22</font>
 		<scrollout>false</scrollout>
-		<scrollspeed>120</scrollspeed>
+		<include condition="Integer.IsLess(System.ScreenHeight,1080)">ScrollSpeed_720</include>
+		<include condition="Integer.IsEqual(System.ScreenHeight,1080)">ScrollSpeed_1080</include>
+		<include condition="Integer.IsGreaterOrEqual(System.ScreenHeight,2160)">ScrollSpeed_4k</include>
 		<pauseatend>2000</pauseatend>
 	</default>
 	<default type="button">
