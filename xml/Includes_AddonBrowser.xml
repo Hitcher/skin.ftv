@@ -545,7 +545,7 @@
 					<!-- More button -->
 					<control id="3002" type="button">
 						<left>776</left>
-						<top>852</top>
+						<top>864</top>
 						<width>74</width>
 						<height>46</height>
 						<onleft>51</onleft>
