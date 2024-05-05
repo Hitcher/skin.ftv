@@ -735,12 +735,12 @@
 	</include>
 	<!-- Scrollspeeds -->
 	<include name="ScrollSpeed_720">
-		<scrollspeed>160</scrollspeed>
+		<scrollspeed>120</scrollspeed>
 	</include>
 	<include name="ScrollSpeed_1080">
-		<scrollspeed>240</scrollspeed>
+		<scrollspeed>180</scrollspeed>
 	</include>
 	<include name="ScrollSpeed_4k">
-		<scrollspeed>480</scrollspeed>
+		<scrollspeed>360</scrollspeed>
 	</include>
 </includes>
