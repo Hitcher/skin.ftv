@@ -527,7 +527,7 @@
 					<control type="textbox">
 						<top>526</top>
 						<width>776</width>
-						<height>392</height>
+						<height>396</height>
 						<font>Light30Spaced</font>
 						<textcolor>ffd5d5d5</textcolor>
 						<pagecontrol>96</pagecontrol>
@@ -538,14 +538,14 @@
 					<control id="96" type="scrollbar">
 						<left>-2400</left>
 						<width>776</width>
-						<height>392</height>
+						<height>396</height>
 						<showonepage>false</showonepage>
 						<orientation>vertical</orientation>
 					</control>
 					<!-- More button -->
 					<control id="3002" type="button">
 						<left>776</left>
-						<top>864</top>
+						<top>866</top>
 						<width>74</width>
 						<height>46</height>
 						<onleft>51</onleft>
