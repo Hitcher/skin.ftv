@@ -56,7 +56,7 @@
 								<width>960</width>
 								<height>250</height>
 								<texture border="4">views/default_overlay.png</texture>
-								<visible>!ListItem.IsParentFolder + !String.Contains(ListItem.Icon,Default)</visible>
+								<visible>!ListItem.IsParentFolder</visible>
 							</control>
 							<control type="image">
 								<left>34</left>
@@ -134,7 +134,7 @@
 								<width>960</width>
 								<height>250</height>
 								<texture border="4">views/default_overlay.png</texture>
-								<visible>!ListItem.IsParentFolder + !String.Contains(ListItem.Icon,Default)</visible>
+								<visible>!ListItem.IsParentFolder</visible>
 							</control>
 							<control type="image">
 								<left>34</left>

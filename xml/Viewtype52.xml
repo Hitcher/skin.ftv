@@ -48,7 +48,7 @@
 								<height>960</height>
 								<aspectratio align="center">scale</aspectratio>
 								<texture>views/episode_fallback.png</texture>
-								<visible>!ListItem.IsParentFolder + String.IsEqual(ListItem.Icon,ListItem.Art(fanart))</visible>
+								<visible>!String.StartsWith(Container.FolderPath,plugin://) + !ListItem.IsParentFolder + $EXP[HideWatchedEpisodeCheck]</visible>
 							</control>
 							<control type="image">
 								<top>96</top>
@@ -156,7 +156,7 @@
 								<height>960</height>
 								<aspectratio align="center">scale</aspectratio>
 								<texture>views/episode_fallback.png</texture>
-								<visible>!ListItem.IsParentFolder + String.IsEqual(ListItem.Icon,ListItem.Art(fanart))</visible>
+								<visible>!String.StartsWith(Container.FolderPath,plugin://) + !ListItem.IsParentFolder + $EXP[HideWatchedEpisodeCheck]</visible>
 							</control>
 							<control type="image">
 								<top>96</top>

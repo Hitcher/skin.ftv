@@ -48,6 +48,24 @@
 								<height>960</height>
 								<aspectratio align="center">scale</aspectratio>
 								<texture background="true" fallback="views/episode_fallback.png">$VAR[TVShowWideImage]</texture>
+								<visible>!String.IsEqual(ListItem.DBTYPE,movie)</visible>
+							</control>
+							<control type="image">
+								<top>96</top>
+								<width>1280</width>
+								<height>960</height>
+								<colordiffuse>ff212121</colordiffuse>
+								<aspectratio align="center">scale</aspectratio>
+								<texture background="true" fallback="views/episode_fallback.png">$INFO[ListItem.Art(fanart)]</texture>
+								<visible>String.IsEqual(ListItem.DBTYPE,movie)</visible>
+							</control>
+							<control type="image">
+								<top>96</top>
+								<width>1280</width>
+								<height>960</height>
+								<aspectratio align="center">keep</aspectratio>
+								<texture background="true" fallback="views/episode_fallback.png">$INFO[ListItem.Art(poster)]</texture>
+								<visible>String.IsEqual(ListItem.DBTYPE,movie)</visible>
 							</control>
 							<control type="image">
 								<top>96</top>
@@ -118,6 +136,24 @@
 								<height>960</height>
 								<aspectratio align="center">scale</aspectratio>
 								<texture background="true" fallback="views/episode_fallback.png">$VAR[TVShowWideImage]</texture>
+								<visible>!String.IsEqual(ListItem.DBTYPE,movie)</visible>
+							</control>
+							<control type="image">
+								<top>96</top>
+								<width>1280</width>
+								<height>960</height>
+								<colordiffuse>ff212121</colordiffuse>
+								<aspectratio align="center">scale</aspectratio>
+								<texture background="true" fallback="views/episode_fallback.png">$INFO[ListItem.Art(fanart)]</texture>
+								<visible>String.IsEqual(ListItem.DBTYPE,movie)</visible>
+							</control>
+							<control type="image">
+								<top>96</top>
+								<width>1280</width>
+								<height>960</height>
+								<aspectratio align="center">keep</aspectratio>
+								<texture background="true" fallback="views/episode_fallback.png">$INFO[ListItem.Art(poster)]</texture>
+								<visible>String.IsEqual(ListItem.DBTYPE,movie)</visible>
 							</control>
 							<control type="image">
 								<top>96</top>

@@ -45,14 +45,9 @@
             "viewtypes": ["51", "53"],
             "library": "53"
         },
-        "episodes_video": {
+        "episodes": {
             "rule": "Container.Content(episodes)",
-            "viewtypes": ["50", "51", "52", "53", "55", "56"],
-            "library": "52"
-        },
-        "episodes_non_video": {
-            "rule": "Container.Content(episodes)",
-            "viewtypes": ["50", "56"],
+            "viewtypes": ["52"],
             "library": "52"
         },
         "genres": {

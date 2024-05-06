@@ -28,8 +28,8 @@
 			<!-- Fanart -->
 			<include condition="Skin.HasSetting(EnableFanart)">Fanart</include>
 			<!-- Views -->
-			<include>ForcedViewtype60</include>
-			<include>ForcedViewtype61</include>
+			<include condition="String.IsEqual(Window(Home).Property(ForceViewType),poster)">ForcedViewtype60</include>
+			<include condition="String.IsEqual(Window(Home).Property(ForceViewType),wide)">ForcedViewtype61</include>
 			<include condition="$EXP[Exp_View_50_Include]">Viewtype50</include>
 			<include condition="$EXP[Exp_View_51_Include]">Viewtype51</include>
 			<include condition="$EXP[Exp_View_52_Include]">Viewtype52</include>
