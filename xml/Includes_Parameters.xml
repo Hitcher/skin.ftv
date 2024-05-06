@@ -206,7 +206,7 @@
 			<scrolltime easing="inout" tween="sine">300</scrolltime>
 			<include>HomeWidgetsAnimation</include>
 			<include>WindowHomeFadeAnimation</include>
-			<visible>String.IsEqual(Container(99).ListItem.Property(widget),$PARAM[widget])</visible>
+			<visible>[String.IsEmpty(Container(99).ListItem.Property(widget) + String.IsEqual(Container(99).ListItem.Label2,$PARAM[widget]) ] | String.IsEqual(Container(99).ListItem.Property(widget),$PARAM[widget])</visible>
 			<animation condition="String.IsEqual(Container($PARAM[ID]).NumItems,1)" effect="slide" end="-608,-228">Conditional</animation>
 			<animation condition="String.IsEqual(Container($PARAM[ID]).NumItems,2)" effect="slide" end="0,-598">Conditional</animation>
 			<animation condition="Integer.IsGreater(Container($PARAM[ID]).NumItems,2) + !Container($PARAM[ID]).Row(1)" easing="inout" effect="slide" end="0,-228" time="220" tween="sine">Conditional</animation>

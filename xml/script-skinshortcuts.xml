@@ -247,8 +247,8 @@
 					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
 					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
 					<label>31218</label>
-					<label2>$INFO[Container(211).ListItem.Property(widgetName)]</label2>
-					<enable>!String.IsEqual(Container(211).ListItem.Property(defaultID),settings) + !String.IsEqual(Container(211).ListItem.Property(defaultID),exit)</enable>
+					<label2>$VAR[ShortcutsWidgetName]</label2>
+					<enable>!String.IsEqual(Container(211).ListItem.Property(defaultID),script.globalsearch) + !String.IsEqual(Container(211).ListItem.Property(defaultID),favourites) + !String.IsEqual(Container(211).ListItem.Property(defaultID),weather) + !String.IsEqual(Container(211).ListItem.Property(defaultID),settings) + !String.IsEqual(Container(211).ListItem.Property(defaultID),exit)</enable>
 				</control>
 				<!-- Customise widget group -->
 				<control id="998" type="button">
@@ -262,7 +262,7 @@
 					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
 					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
 					<label>$LOCALIZE[31219]</label>
-					<label2>$INFO[Container(211).ListItem.Property(widgetName)]</label2>
+					<label2>$VAR[ShortcutsWidget]</label2>
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),widget1)">SetProperty(SubMenu,1000,home)</onclick>
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),widget2)">SetProperty(SubMenu,2000,home)</onclick>
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),widget3)">SetProperty(SubMenu,3000,home)</onclick>
@@ -271,7 +271,7 @@
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),widget6)">SetProperty(SubMenu,6000,home)</onclick>
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),widget7)">SetProperty(SubMenu,7000,home)</onclick>
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),widget8)">SetProperty(SubMenu,8000,home)</onclick>
-					<enable>String.StartsWith(Container(211).ListItem.Property(widget),widget)</enable>
+					<enable>String.StartsWith(Container(211).ListItem.Property(widget),widget) + [!String.IsEqual(Container(211).ListItem.Property(defaultID),script.globalsearch) + !String.IsEqual(Container(211).ListItem.Property(defaultID),favourites) + !String.IsEqual(Container(211).ListItem.Property(defaultID),weather) + !String.IsEqual(Container(211).ListItem.Property(defaultID),settings) + !String.IsEqual(Container(211).ListItem.Property(defaultID),exit)]</enable>
 					<onclick>ActivateWindow(1105)</onclick>
 				</control>
 			</control>

@@ -19,7 +19,6 @@
 					<width>616</width>
 					<height>160</height>
 					<texture border="4">views/default_overlay.png</texture>
-					<visible>!String.Contains(ListItem.Property(Icon1),Default)</visible>
 				</control>
 				<control type="image">
 					<left>20</left>
@@ -78,7 +77,6 @@
 					<width>616</width>
 					<height>160</height>
 					<texture border="4">views/default_overlay.png</texture>
-					<visible>!String.Contains(ListItem.Property(Icon2),Default)</visible>
 				</control>
 				<control type="image">
 					<left>20</left>
@@ -137,7 +135,6 @@
 					<width>616</width>
 					<height>160</height>
 					<texture border="4">views/default_overlay.png</texture>
-					<visible>!String.Contains(ListItem.Property(Icon3),Default)</visible>
 				</control>
 				<control type="image">
 					<left>20</left>
@@ -196,7 +193,6 @@
 					<width>616</width>
 					<height>160</height>
 					<texture border="4">views/default_overlay.png</texture>
-					<visible>!String.Contains(ListItem.Property(Icon4),Default)</visible>
 				</control>
 				<control type="image">
 					<left>20</left>
@@ -260,7 +256,6 @@
 					<width>616</width>
 					<height>160</height>
 					<texture border="4">views/default_overlay.png</texture>
-					<visible>!String.Contains(ListItem.Property(Icon1),Default)</visible>
 				</control>
 				<control type="image">
 					<left>20</left>
@@ -320,7 +315,6 @@
 					<width>616</width>
 					<height>160</height>
 					<texture border="4">views/default_overlay.png</texture>
-					<visible>!String.Contains(ListItem.Property(Icon2),Default)</visible>
 				</control>
 				<control type="image">
 					<left>20</left>
@@ -380,7 +374,6 @@
 					<width>616</width>
 					<height>160</height>
 					<texture border="4">views/default_overlay.png</texture>
-					<visible>!String.Contains(ListItem.Property(Icon3),Default)</visible>
 				</control>
 				<control type="image">
 					<left>20</left>
@@ -440,7 +433,6 @@
 					<width>616</width>
 					<height>160</height>
 					<texture border="4">views/default_overlay.png</texture>
-					<visible>!String.Contains(ListItem.Property(Icon4),Default)</visible>
 				</control>
 				<control type="image">
 					<left>20</left>
