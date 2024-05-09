@@ -34,19 +34,19 @@
 		<value>[B]$INFO[ListItem.Label][/B]</value>
 	</variable>
 	<variable name="VideoAspect">
-		<value condition="String.IsEqual(ListItem.VideoAspect,1.00">1:1</value>
-		<value condition="String.IsEqual(ListItem.VideoAspect,1.19">1.19:1</value>
-		<value condition="String.IsEqual(ListItem.VideoAspect,1.33">4:3</value>
-		<value condition="String.IsEqual(ListItem.VideoAspect,1.37">1.37:1</value>
-		<value condition="String.IsEqual(ListItem.VideoAspect,1.66">1.66:1</value>
-		<value condition="String.IsEqual(ListItem.VideoAspect,1.78">16:9</value>
-		<value condition="String.IsEqual(ListItem.VideoAspect,1.85">1.85:1</value>
-		<value condition="String.IsEqual(ListItem.VideoAspect,2.00">2:1</value>
-		<value condition="String.IsEqual(ListItem.VideoAspect,2.20">2.20:1</value>
-		<value condition="String.IsEqual(ListItem.VideoAspect,2.35">2.35:1</value>
-		<value condition="String.IsEqual(ListItem.VideoAspect,2.40">2.40:1</value>
-		<value condition="String.IsEqual(ListItem.VideoAspect,2.55">2.55:1</value>
-		<value condition="String.IsEqual(ListItem.VideoAspect,2.76">2.76:1</value>
+		<value condition="String.IsEqual(ListItem.VideoAspect,1.00)">1:1</value>
+		<value condition="String.IsEqual(ListItem.VideoAspect,1.19)">1.19:1</value>
+		<value condition="String.IsEqual(ListItem.VideoAspect,1.33)">4:3</value>
+		<value condition="String.IsEqual(ListItem.VideoAspect,1.37)">1.37:1</value>
+		<value condition="String.IsEqual(ListItem.VideoAspect,1.66)">1.66:1</value>
+		<value condition="String.IsEqual(ListItem.VideoAspect,1.78)">16:9</value>
+		<value condition="String.IsEqual(ListItem.VideoAspect,1.85)">1.85:1</value>
+		<value condition="String.IsEqual(ListItem.VideoAspect,2.00)">2:1</value>
+		<value condition="String.IsEqual(ListItem.VideoAspect,2.20)">2.20:1</value>
+		<value condition="String.IsEqual(ListItem.VideoAspect,2.35)">2.35:1</value>
+		<value condition="String.IsEqual(ListItem.VideoAspect,2.40)">2.40:1</value>
+		<value condition="String.IsEqual(ListItem.VideoAspect,2.55)">2.55:1</value>
+		<value condition="String.IsEqual(ListItem.VideoAspect,2.76)">2.76:1</value>
 	</variable>
 	<variable name="VersionLabel">
 		<value condition="ListItem.HasVideoVersions + ListItem.HasVideoExtras">[UPPERCASE]$LOCALIZE[24069] + $LOCALIZE[40211][/UPPERCASE]</value>
