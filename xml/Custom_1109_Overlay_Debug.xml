@@ -469,8 +469,7 @@
 			<!-- Content label -->
 			<control type="label">
 				<include>DebugControlLabel</include>
-				<label>$INFO[Container.Content,[COLOR FF00FF00]Content - [/COLOR]]</label>
-				<visible>!String.IsEmpty(Container.Content)</visible>
+				<label>$VAR[ContentID,[COLOR FF00FF00]Content - [/COLOR]]</label>
 			</control>
 			<!-- Plugin label -->
 			<control type="label">

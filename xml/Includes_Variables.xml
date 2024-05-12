@@ -9,6 +9,8 @@
 		<value>$INFO[Container(211).ListItem.Property(widget)]</value>
 	</variable>
 	<variable name="ContentID">
+		<value condition="!String.IsEmpty(Container.PluginName) + String.IsEmpty(Container.Content)">plugins_none</value>
+		<value condition="!String.IsEmpty(Container.PluginName)">$INFO[Container.Content,plugins_]</value>
 		<value condition="!String.IsEmpty(Container.Content)">$INFO[Container.Content]</value>
 		<value condition="String.IsEmpty(Container.Content)">none</value>
 	</variable>
