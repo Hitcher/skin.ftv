@@ -51,6 +51,15 @@
 								<visible>!String.IsEqual(ListItem.DBTYPE,movie)</visible>
 							</control>
 							<control type="image">
+								<left>238</left>
+								<top>656</top>
+								<width>800</width>
+								<height>310</height>
+								<aspectratio align="center" aligny="bottom">keep</aspectratio>
+								<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
+								<visible>!String.IsEqual(ListItem.DBTYPE,movie) + !ListItem.IsParentFolder + String.IsEmpty(ListItem.Art(ftv)) + String.IsEmpty(ListItem.Art(landscape)) + !String.IsEmpty(ListItem.Art(fanart))</visible>
+							</control>
+							<control type="image">
 								<top>96</top>
 								<width>1280</width>
 								<height>960</height>
@@ -137,6 +146,15 @@
 								<aspectratio align="center">scale</aspectratio>
 								<texture background="true" fallback="views/episode_fallback.png">$VAR[TVShowWideImage]</texture>
 								<visible>!String.IsEqual(ListItem.DBTYPE,movie)</visible>
+							</control>
+							<control type="image">
+								<left>238</left>
+								<top>656</top>
+								<width>800</width>
+								<height>310</height>
+								<aspectratio align="center" aligny="bottom">keep</aspectratio>
+								<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
+								<visible>!String.IsEqual(ListItem.DBTYPE,movie) + !ListItem.IsParentFolder + String.IsEmpty(ListItem.Art(ftv)) + String.IsEmpty(ListItem.Art(landscape)) + !String.IsEmpty(ListItem.Art(fanart))</visible>
 							</control>
 							<control type="image">
 								<top>96</top>

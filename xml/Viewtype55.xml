@@ -48,6 +48,15 @@
 								<height>960</height>
 								<aspectratio align="center">scale</aspectratio>
 								<texture background="true" fallback="views/wide_fallback.png">$VAR[WideImage]</texture>
+								<animation effect="fadediffuse" start="ff212121" end="ff212121" time="0" condition="!ListItem.IsParentFolder + !String.IsEmpty(ListItem.Art(poster))">Conditional</animation>
+							</control>
+							<control type="image">
+								<top>96</top>
+								<width>1280</width>
+								<height>960</height>
+								<aspectratio align="center">keep</aspectratio>
+								<texture background="true" fallback="views/episode_fallback.png">$INFO[ListItem.Art(poster)]</texture>
+								<visible>!ListItem.IsParentFolder + !String.IsEmpty(ListItem.Art(poster))</visible>
 							</control>
 							<control type="image">
 								<top>96</top>
@@ -118,6 +127,15 @@
 								<height>960</height>
 								<aspectratio align="center">scale</aspectratio>
 								<texture background="true" fallback="views/wide_fallback.png">$VAR[WideImage]</texture>
+								<animation effect="fadediffuse" start="ff212121" end="ff212121" time="0" condition="!ListItem.IsParentFolder + !String.IsEmpty(ListItem.Art(poster))">Conditional</animation>
+							</control>
+							<control type="image">
+								<top>96</top>
+								<width>1280</width>
+								<height>960</height>
+								<aspectratio align="center">keep</aspectratio>
+								<texture background="true" fallback="views/episode_fallback.png">$INFO[ListItem.Art(poster)]</texture>
+								<visible>!ListItem.IsParentFolder + !String.IsEmpty(ListItem.Art(poster))</visible>
 							</control>
 							<control type="image">
 								<top>96</top>
