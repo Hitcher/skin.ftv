@@ -308,6 +308,7 @@
 	<variable name="HDRType">
 		<value condition="String.IsEqual(ListItem.HdrType,hlg)">HLG</value>
 		<value condition="String.IsEqual(ListItem.HdrType,hdr10)">HDR10</value>
+		<value condition="String.IsEqual(ListItem.HdrType,dolbyvision)">Dolby Vision</value>
 	</variable>
 	<variable name="PlayerHDRType">
 		<value condition="String.IsEqual(VideoPlayer.HdrType,hlg)">HLG</value>
