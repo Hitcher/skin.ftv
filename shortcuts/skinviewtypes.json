@@ -177,7 +177,7 @@
         },
         "plugins_episodes": {
             "rule": "!String.IsEmpty(Container.PluginName) + Container.Content(episodes)",
-            "viewtypes": ["52"],
+            "viewtypes": ["50", "51", "52", "53", "55", "56"],
             "library": "52"
         },
         "plugins_genres": {
@@ -227,7 +227,7 @@
         },
         "plugins_games": {
             "rule": "!String.IsEmpty(Container.PluginName) + Container.Content(games)",
-            "viewtypes": ["50", "53", "55"],
+            "viewtypes": ["50", "51", "52", "53", "55", "56"],
             "library": "50"
         },
         "plugins_musicvideos": {

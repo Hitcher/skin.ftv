@@ -7,7 +7,7 @@
 	<onload condition="Window.Previous(home) + [Container.HasParent | String.StartsWith(Container.ListItemAbsolute(0).Label,*)]">Control.SetFocus($VAR[ContainerID],1,absolute)</onload>
 	<onload condition="Window.Previous(home) + Container.HasParent + String.StartsWith(Container.ListItemAbsolute(1).Label,*)">Control.SetFocus($VAR[ContainerID],2,absolute)</onload>
 	<onload condition="Window.Previous(home) + !Container.HasParent + !String.StartsWith(Container.ListItemAbsolute(0).Label,*)">Control.SetFocus($VAR[ContainerID],0,absolute)</onload>
-	<views>61,54,50,56,55</views>
+	<views>50,51,52,53,55,56</views>
 	<controls>
 		<control type="group">
 			<visible>!Window.IsVisible(musicinformation)</visible>
@@ -21,10 +21,12 @@
 			<!-- Fanart -->
 			<include condition="Skin.HasSetting(EnableFanart)">Fanart</include>
 			<!-- Views -->
-			<include>Viewtype50</include>
-			<include>Viewtype54</include>
-			<include>Viewtype55</include>
-			<include>Viewtype56</include>
+			<include condition="$EXP[Exp_View_50_Include]">Viewtype50</include>
+			<include condition="$EXP[Exp_View_51_Include]">Viewtype51</include>
+			<include condition="$EXP[Exp_View_52_Include]">Viewtype52</include>
+			<include condition="$EXP[Exp_View_53_Include]">Viewtype53</include>
+			<include condition="$EXP[Exp_View_55_Include]">Viewtype55</include>
+			<include condition="$EXP[Exp_View_56_Include]">Viewtype56</include>
 			<control type="group">
 				<animation condition="!Window.Previous(visualisation)" delay="400" effect="fade" end="100" start="0" time="200">WindowOpen</animation>
 				<!-- Heading / Current item / Total items -->
