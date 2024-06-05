@@ -62,13 +62,6 @@
 								<texture>views/OverlayWatched.png</texture>
 								<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
 							</control>
-							<control type="image">
-								<bottom>96</bottom>
-								<width>960</width>
-								<height>250</height>
-								<texture border="4">views/default_overlay.png</texture>
-								<visible>!ListItem.IsParentFolder + !String.Contains(ListItem.Icon,Default)</visible>
-							</control>
 						</control>
 					</control>
 				</itemlayout>
@@ -120,13 +113,6 @@
 								<height>180</height>
 								<texture>views/OverlayWatched.png</texture>
 								<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [!Integer.IsEqual(ListItem.Property(NumEpisodes),0) | String.IsEmpty(ListItem.Property(NumEpisodes))]</visible>
-							</control>
-							<control type="image">
-								<bottom>96</bottom>
-								<width>960</width>
-								<height>250</height>
-								<texture border="4">views/default_overlay.png</texture>
-								<visible>!ListItem.IsParentFolder + !String.Contains(ListItem.Icon,Default)</visible>
 							</control>
 						</control>
 					</control>
