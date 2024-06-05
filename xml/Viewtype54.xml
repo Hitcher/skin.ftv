@@ -21,7 +21,7 @@
 			</control>
 			<!-- Artist / Album -->
 			<control type="group">
-				<left>1382</left>
+				<left>1372</left>
 				<top>276</top>
 				<control type="label">
 					<width>1680</width>
