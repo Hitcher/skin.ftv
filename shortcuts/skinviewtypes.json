@@ -96,8 +96,8 @@
             "library": "50"
         },
         "games": {
-            "rule": "String.IsEmpty(Container.PluginName) + Container.Content(games)",
-            "viewtypes": ["50", "53", "55"],
+            "rule": "String.IsEmpty(Container.PluginName) + Window.IsVisible(games)",
+            "viewtypes": ["50", "51", "52", "53", "55", "56"],
             "library": "50"
         },
         "musicvideos": {
@@ -132,7 +132,7 @@
         },
         "addons": {
             "rule": "String.IsEmpty(Container.PluginName) + Container.Content(addons)",
-            "viewtypes": ["50"],
+            "viewtypes": ["50", "51", "52", "53", "55", "56"],
             "library": "50"
         },
         "none": {
@@ -226,7 +226,7 @@
             "library": "50"
         },
         "plugins_games": {
-            "rule": "!String.IsEmpty(Container.PluginName) + Container.Content(games)",
+            "rule": "!String.IsEmpty(Container.PluginName) + Window.IsVisible(games)",
             "viewtypes": ["50", "51", "52", "53", "55", "56"],
             "library": "50"
         },

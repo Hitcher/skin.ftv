@@ -7,7 +7,7 @@
 	<onload condition="Window.Previous(home) + [Container.HasParent | String.StartsWith(Container.ListItemAbsolute(0).Label,*)]">Control.SetFocus($VAR[ContainerID],1,absolute)</onload>
 	<onload condition="Window.Previous(home) + Container.HasParent + String.StartsWith(Container.ListItemAbsolute(1).Label,*)">Control.SetFocus($VAR[ContainerID],2,absolute)</onload>
 	<onload condition="Window.Previous(home) + !Container.HasParent + !String.StartsWith(Container.ListItemAbsolute(0).Label,*)">Control.SetFocus($VAR[ContainerID],0,absolute)</onload>
-	<views>50,51,52,53,55,56</views>
+	<views>50,51,52,53,54,55,56</views>
 	<controls>
 		<control type="group">
 			<visible>!Window.IsVisible(musicinformation)</visible>
@@ -25,6 +25,7 @@
 			<include condition="$EXP[Exp_View_51_Include]">Viewtype51</include>
 			<include condition="$EXP[Exp_View_52_Include]">Viewtype52</include>
 			<include condition="$EXP[Exp_View_53_Include]">Viewtype53</include>
+			<include condition="$EXP[Exp_View_54_Include]">Viewtype54</include>
 			<include condition="$EXP[Exp_View_55_Include]">Viewtype55</include>
 			<include condition="$EXP[Exp_View_56_Include]">Viewtype56</include>
 			<control type="group">
@@ -245,7 +246,7 @@
 							<pagecontrol>98</pagecontrol>
 							<autoscroll>false</autoscroll>
 							<textcolor>ffbcbcbc</textcolor>
-							<label>[B]$INFO[ListItem.Label][/B] [LIGHT]$INFO[ListItem.Label2][/LIGHT]</label>
+							<label>[B]$VAR[Label1][/B] [LIGHT]$VAR[Label2][/LIGHT]</label>
 						</control>
 						<control id="98" type="scrollbar">
 							<top>208</top>
