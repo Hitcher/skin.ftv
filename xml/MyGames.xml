@@ -197,12 +197,13 @@
 				<orientation>vertical</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
 				<defaultcontrol always="true">5001</defaultcontrol>
-				<control type="button" id="5001">
-					<width>-16</width>
+				<!-- Dummy to always set focus to first visible button -->
+				<control id="5001" type="button">
+					<width>0</width>
 					<height>0</height>
-					<onfocus>SetFocus(5022)</onfocus>
+					<onfocus>Down</onfocus>
 					<include>NoTextures</include>
-					<visible>!Control.HasFocus(5004) + !Control.HasFocus(4) + !Control.HasFocus(19) + !Control.HasFocus(5011) + !Control.HasFocus(5013)</visible>
+					<visible>!Control.HasFocus(5022) + !Control.HasFocus(5004) + !Control.HasFocus(4) + !Control.HasFocus(19) + !Control.HasFocus(5011) + !Control.HasFocus(5013)</visible>
 				</control>
 				<control type="image" id="5020">
 					<width>1280</width>
