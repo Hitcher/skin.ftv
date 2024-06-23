@@ -8,11 +8,11 @@
 			<right>396</right>
 			<top>268</top>
 			<width>1140</width>
-			<height>930</height>
+			<height>948</height>
 			<scrolltime>0</scrolltime>
-			<itemlayout height="310">
+			<itemlayout height="316">
 				<control type="textbox">
-					<height>310</height>
+					<height>316</height>
 					<align>right</align>
 					<aligny>top</aligny>
 					<font>Med40Spaced</font>
@@ -31,9 +31,9 @@
 					<animation effect="fade" end="55" condition="true">Conditional</animation>
 				</control>
 			</itemlayout>
-			<focusedlayout height="310">
+			<focusedlayout height="316">
 				<control type="textbox">
-					<height>310</height>
+					<height>316</height>
 					<align>right</align>
 					<aligny>top</aligny>
 					<font>Med40Spaced</font>
