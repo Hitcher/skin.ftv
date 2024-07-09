@@ -184,13 +184,12 @@
 					<param name="button_visible" value="Window.IsVisible(managevideoversions)"/>
 				</include>
 			</control>
-			<control type="label">
+			<control type="fadelabel">
 				<bottom>28</bottom>
 				<left>80</left>
 				<width>2596</width>
 				<height>60</height>
 				<font>Reg30Spaced</font>
-				<haspath>true</haspath>
 				<textcolor>ffd8d8d8</textcolor>
 				<label>$INFO[Container(50).ListItem.FileNameAndPath]</label>
 			</control>
