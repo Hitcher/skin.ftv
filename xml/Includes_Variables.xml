@@ -74,8 +74,8 @@
 		</value>
 	</variable>
 	<variable name="NextAiredTitle">
-		<value condition="String.IsEmpty(ListItem.Property(stacked_count))">$INFO[ListItem.Title]</value>
-		<value condition="!String.IsEmpty(ListItem.Property(stacked_count))">$INFO[ListItem.Property(stacked_titles)]</value>
+		<value condition="!String.IsEmpty(ListItem.Property(stacked_count)) + !String.Contains(ListItem.Property(stacked_episodes),0x)">$INFO[ListItem.Property(stacked_titles)]</value>
+		<value>$INFO[ListItem.Title]</value>
 	</variable>
 	<variable name="DialogVideoInfoImage">
 		<value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
@@ -2632,7 +2632,7 @@
 		<value>$INFO[ListItem.Label]</value>
 	</variable>
 	<variable name="EpisodeValue">
-		<value condition="!String.IsEmpty(ListItem.Property(stacked_count))">$INFO[ListItem.Season,$LOCALIZE[20373] ,] $INFO[ListItem.Property(stacked_first_episode),$LOCALIZE[20360] ]$INFO[ListItem.Property(stacked_last_episode),-]</value>
+		<value condition="!String.IsEmpty(ListItem.Property(stacked_count)) + !String.Contains(ListItem.Property(stacked_episodes),0x)">$INFO[ListItem.Season,$LOCALIZE[20373] ,] $INFO[ListItem.Property(stacked_first_episode),$LOCALIZE[20360] ]$INFO[ListItem.Property(stacked_last_episode),-]</value>
 		<value condition="String.IsEqual(ListItem.DBID,-1)">$INFO[ListItem.Label]</value>
 		<value condition="!String.IsEqual(ListItem.Season,0) + !String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.Episode)">$INFO[ListItem.Season,$LOCALIZE[20373] ,] $INFO[ListItem.Episode,$LOCALIZE[20359] ]</value>
 		<value condition="!String.IsEqual(ListItem.Season,0) + !String.IsEmpty(ListItem.Episode)">$INFO[ListItem.Episode,$LOCALIZE[20359] ]</value>
