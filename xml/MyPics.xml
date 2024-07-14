@@ -264,6 +264,7 @@
 					<height>120</height>
 					<texture border="4">dialogs/OptionsBackgroundHeading.png</texture>
 					<visible>Control.IsEnabled(2)</visible>
+					<visible>String.IsEmpty(Window(Home).Property(WidgetHasFocus))</visible>
 				</control>
 				<control type="label" id="5021">
 					<left>80</left>
@@ -274,6 +275,7 @@
 					<textcolor>ffdadada</textcolor>
 					<label>$LOCALIZE[582]:</label>
 					<visible>Control.IsEnabled(2)</visible>
+					<visible>String.IsEmpty(Window(Home).Property(WidgetHasFocus))</visible>
 				</control>
 				<control type="button" id="5022">
 					<height>220</height>
@@ -290,6 +292,7 @@
 					<texturefocus border="6">dialogs/OptionsBackgroundButtonFO.png</texturefocus>
 					<texturenofocus border="6">dialogs/OptionsBackgroundButtonNF.png</texturenofocus>
 					<visible>Control.IsEnabled(2)</visible>
+					<visible>String.IsEmpty(Window(Home).Property(WidgetHasFocus))</visible>
 				</control>
 				<control type="image" id="5002">
 					<width>1280</width>
