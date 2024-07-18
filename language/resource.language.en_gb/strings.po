@@ -808,7 +808,15 @@ msgctxt "#31194"
 msgid "Submit"
 msgstr ""
 
-#empty strings from id 31195 to 31197
+msgctxt "#31195"
+msgid "Ended"
+msgstr ""
+
+msgctxt "#31196"
+msgid "Cancelled"
+msgstr ""
+
+#empty string with id 31197
 
 msgctxt "#31198"
 msgid "View Type"

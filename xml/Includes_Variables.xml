@@ -138,6 +138,8 @@
 		<value condition="Window.IsVisible(10032)">(interfacesettings)</value>
 	</variable>
 	<variable name="AiredPrefix">
+		<value condition="String.IsEqual(ListItem.Status,ended)">$LOCALIZE[31195]:</value>
+		<value condition="String.IsEqual(ListItem.Status,canceled)">$LOCALIZE[31196]:</value>
 		<value condition="!String.IsEmpty(Container(99950).ListItem.Property(Next_Aired.Custom))">$LOCALIZE[31073]:</value>
 		<value condition="!String.IsEmpty(Container(99950).ListItem.Property(Last_Aired.Custom))">$LOCALIZE[31082]:</value>
 	</variable>
