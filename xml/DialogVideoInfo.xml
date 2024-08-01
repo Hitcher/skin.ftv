@@ -35,7 +35,7 @@
 			<bottom>80</bottom>
 			<height>80</height>
 			<include>DebugDialogLabel</include>
-			<multilinewrap>true</multilinewrap>
+			<wrapmultiline>true</wrapmultiline>
 			<label>[COLOR FF00FF00]TMDb_ID - [/COLOR]$INFO[Container(99950).ListItem.Property(TMDb_ID)][CR][COLOR FF00FF00]TVShow.TMDb_ID - [/COLOR]$INFO[Container(99950).ListItem.Property(TVShow.TMDb_ID)]</label>
 			<visible>Skin.HasSetting(DebugInfo)</visible>
 		</control>
