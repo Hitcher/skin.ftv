@@ -328,12 +328,6 @@
 			<aspect>1.04</aspect>
 			<size>40</size>
 		</font>
-		<font>
-			<name>Med16</name>
-			<filename>Roboto-Medium.ttf</filename>
-			<aspect>1.04</aspect>
-			<size>32</size>
-		</font>
 		<!-- Med uppercase -->
 		<font>
 			<name>MedUpper24</name>
