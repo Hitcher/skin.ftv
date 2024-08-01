@@ -4,7 +4,7 @@
 		<defaultID>13009</defaultID>
 		<label>13009</label>
 		<label2>Kodi Command</label2>
-		<icon>DefaultShortcut.png</icon>
+		<icon>shutdown/DefaultQuit.png</icon>
 		<thumb />
 		<action>Quit</action>
 	</shortcut>
@@ -12,7 +12,7 @@
 		<defaultID>13011</defaultID>
 		<label>13011</label>
 		<label2>Kodi Command</label2>
-		<icon>DefaultShortcut.png</icon>
+		<icon>shutdown/DefaultShortcut.png</icon>
 		<thumb />
 		<action>Suspend</action>
 	</shortcut>
@@ -20,7 +20,7 @@
 		<defaultID>13010</defaultID>
 		<label>13010</label>
 		<label2>Kodi Command</label2>
-		<icon>DefaultShortcut.png</icon>
+		<icon>shutdown/DefaultShortcut.png</icon>
 		<thumb />
 		<action>Hibernate</action>
 	</shortcut>
@@ -28,7 +28,7 @@
 		<defaultID>13013</defaultID>
 		<label>13013</label>
 		<label2>Kodi Command</label2>
-		<icon>DefaultShortcut.png</icon>
+		<icon>shutdown/DefaultShortcut.png</icon>
 		<thumb />
 		<action>Reboot</action>
 	</shortcut>
@@ -36,7 +36,7 @@
 		<defaultID>13016</defaultID>
 		<label>13016</label>
 		<label2>Kodi Command</label2>
-		<icon>DefaultShortcut.png</icon>
+		<icon>shutdown/DefaultShutdown.png</icon>
 		<thumb />
 		<action>PowerDown</action>
 	</shortcut>
@@ -44,7 +44,7 @@
 		<defaultID>13005</defaultID>
 		<label>13005</label>
 		<label2>Kodi Command</label2>
-		<icon>DefaultShortcut.png</icon>
+		<icon>shutdown/DefaultShutdown.png</icon>
 		<thumb />
 		<action>ShutDown</action>
 	</shortcut>
@@ -52,7 +52,7 @@
 		<defaultID>19026</defaultID>
 		<label>19026</label>
 		<label2>Kodi Command</label2>
-		<icon>DefaultShortcut.png</icon>
+		<icon>shutdown/DefaultTimer.png</icon>
 		<thumb />
 		<action>AlarmClock(shutdowntimer,XBMC.Shutdown())</action>
 	</shortcut>
@@ -60,7 +60,7 @@
 		<defaultID>20151</defaultID>
 		<label>20151</label>
 		<label2>Kodi Command</label2>
-		<icon>DefaultShortcut.png</icon>
+		<icon>shutdown/DefaultTimer.png</icon>
 		<thumb />
 		<action>CancelAlarm(shutdowntimer)</action>
 	</shortcut>
@@ -68,7 +68,7 @@
 		<defaultID>360</defaultID>
 		<label>360</label>
 		<label2>Kodi Command</label2>
-		<icon>DefaultShortcut.png</icon>
+		<icon>shutdown/DefaultScreensaver.png</icon>
 		<thumb />
 		<action>ActivateScreensaver</action>
 	</shortcut>
@@ -76,7 +76,7 @@
 		<defaultID>20045</defaultID>
 		<label>20045</label>
 		<label2>Kodi Command</label2>
-		<icon>DefaultActor.png</icon>
+		<icon>shutdown/DefaultMasterMode.png</icon>
 		<thumb />
 		<action>Mastermode</action>
 	</shortcut>
@@ -84,7 +84,7 @@
 		<defaultID>20126</defaultID>
 		<label>20126</label>
 		<label2>Kodi Command</label2>
-		<icon>DefaultActor.png</icon>
+		<icon>shutdown/DefaultActor.png</icon>
 		<thumb />
 		<action>System.LogOff</action>
 	</shortcut>
@@ -92,7 +92,7 @@
 		<defaultID>settings</defaultID>
 		<label>10004</label>
 		<label2>Common Shortcut</label2>
-		<icon>DefaultShortcut.png</icon>
+		<icon>shutdown/DefaultSettings.png</icon>
 		<thumb />
 		<action>ActivateWindow(Settings)</action>
 	</shortcut>
