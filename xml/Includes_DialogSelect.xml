@@ -73,7 +73,6 @@
 						<font>Reg37</font>
 						<aligny>center</aligny>
 						<textcolor>ffffffff</textcolor>
-						<wrapmultiline>true</wrapmultiline>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
@@ -91,7 +90,6 @@
 						<aligny>center</aligny>
 						<textcolor>ff000000</textcolor>
 						<selectedcolor>ff000000</selectedcolor>
-						<wrapmultiline>true</wrapmultiline>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</focusedlayout>
