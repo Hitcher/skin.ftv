@@ -15,7 +15,6 @@
 	<include file="Includes_DialogSettings.xml"/>
 	<include file="Includes_DialogGameControllers.xml"/>
 	<include file="Includes_Home_Widgets_Setup.xml"/>
-	<include file="Includes_VideoInfoCast.xml"/>
 	<include file="Viewtype50.xml"/>
 	<include file="Viewtype51.xml"/>
 	<include file="Viewtype52.xml"/>

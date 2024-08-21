@@ -1021,7 +1021,6 @@ msgid "Configure various game settings."
 msgstr ""
 
 #empty string with id 31251
-msgstr ""
 
 msgctxt "#31252"
 msgid "This skin only supports a maximum of 13 home menu items. Please remove some to ensure everything works correctly."
