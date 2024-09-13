@@ -30,7 +30,7 @@
 			<orientation>horizontal</orientation>
 			<!--  Video title -->
 			<control type="label">
-				<width>auto</width>
+				<width min="0" max="3200">auto</width>
 				<height>100</height>
 				<font>OSD40</font>
 				<textcolor>fffafafa</textcolor>
@@ -39,7 +39,7 @@
 			</control>
 			<!-- Season/Episode number -->
 			<control type="label">
-				<width>auto</width>
+				<width min="0" max="3200">auto</width>
 				<height>100</height>
 				<font>Med40</font>
 				<textcolor>ffeaeaea</textcolor>
