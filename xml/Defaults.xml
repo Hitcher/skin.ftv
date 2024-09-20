@@ -37,6 +37,9 @@
 		<texturefocus border="13,15,13,15">dialogs/DialogButtonFO.png</texturefocus>
 		<texturenofocus border="13,15,13,15">dialogs/DialogButtonNF.png</texturenofocus>
 		<pulseonselect>false</pulseonselect>
+		<include condition="Integer.IsLess(System.ScreenHeight,1080)">ScrollSpeed_720</include>
+		<include condition="Integer.IsEqual(System.ScreenHeight,1080)">ScrollSpeed_1080</include>
+		<include condition="Integer.IsGreaterOrEqual(System.ScreenHeight,2160)">ScrollSpeed_4k</include>
 	</default>
 	<default type="togglebutton">
 		<width>800</width>
@@ -53,6 +56,9 @@
 		<alttexturenofocus/>
 		<alttexturefocus/>
 		<pulseonselect>false</pulseonselect>
+		<include condition="Integer.IsLess(System.ScreenHeight,1080)">ScrollSpeed_720</include>
+		<include condition="Integer.IsEqual(System.ScreenHeight,1080)">ScrollSpeed_1080</include>
+		<include condition="Integer.IsGreaterOrEqual(System.ScreenHeight,2160)">ScrollSpeed_4k</include>
 	</default>
 	<default type="radiobutton">
 		<width>800</width>
@@ -71,6 +77,9 @@
 		<textureradioofffocus/>
 		<textureradiooffnofocus/>
 		<pulseonselect>false</pulseonselect>
+		<include condition="Integer.IsLess(System.ScreenHeight,1080)">ScrollSpeed_720</include>
+		<include condition="Integer.IsEqual(System.ScreenHeight,1080)">ScrollSpeed_1080</include>
+		<include condition="Integer.IsGreaterOrEqual(System.ScreenHeight,2160)">ScrollSpeed_4k</include>
 	</default>
 	<default type="spincontrolex">
 		<width>800</width>
@@ -94,6 +103,9 @@
 		<texturedowndisabled colordiffuse="DisabledColour">dialogs/SpinDown.png</texturedowndisabled>
 		<reverse>yes</reverse>
 		<pulseonselect>false</pulseonselect>
+		<include condition="Integer.IsLess(System.ScreenHeight,1080)">ScrollSpeed_720</include>
+		<include condition="Integer.IsEqual(System.ScreenHeight,1080)">ScrollSpeed_1080</include>
+		<include condition="Integer.IsGreaterOrEqual(System.ScreenHeight,2160)">ScrollSpeed_4k</include>
 	</default>
 	<default type="spincontrol">
 		<height>132</height>
@@ -115,6 +127,9 @@
 		<texturedowndisabled colordiffuse="DisabledColour">dialogs/SpinDown.png</texturedowndisabled>
 		<reverse>yes</reverse>
 		<pulseonselect>false</pulseonselect>
+		<include condition="Integer.IsLess(System.ScreenHeight,1080)">ScrollSpeed_720</include>
+		<include condition="Integer.IsEqual(System.ScreenHeight,1080)">ScrollSpeed_1080</include>
+		<include condition="Integer.IsGreaterOrEqual(System.ScreenHeight,2160)">ScrollSpeed_4k</include>
 	</default>
 	<default type="sliderex">
 		<height>132</height>
@@ -136,6 +151,9 @@
 		<textureslidernibdisabled colordiffuse="DisabledColour" border="12">osd/progress_bar_cache.png</textureslidernibdisabled>
 		<textureslidernibfocus border="12">osd/progress_bar.png</textureslidernibfocus>
 		<pulseonselect>false</pulseonselect>
+		<include condition="Integer.IsLess(System.ScreenHeight,1080)">ScrollSpeed_720</include>
+		<include condition="Integer.IsEqual(System.ScreenHeight,1080)">ScrollSpeed_1080</include>
+		<include condition="Integer.IsGreaterOrEqual(System.ScreenHeight,2160)">ScrollSpeed_4k</include>
 	</default>
 	<default type="slider">
 		<width>720</width>
