@@ -712,7 +712,7 @@
 				<include content="DialogButton">
 					<param name="button_id" value="8"/>
 					<param name="button_label" value=""/>
-					<param name="button_visible" value="Control.IsEnabled(8)"/>
+					<param name="button_visible" value="false"/>
 				</include>
 				<!-- Cancel Button -->
 				<include content="DialogButton">
