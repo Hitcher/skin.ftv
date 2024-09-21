@@ -409,7 +409,7 @@
 				<height>898</height>
 				<aspectratio aligny="top">keep</aspectratio>
 				<bordersize>0,0,26,34</bordersize>
-				<texture fallback="views/square_fallback.png">$INFO[Container(6).ListItem.Art(thumb)]</texture>
+				<texture fallback="views/square_fallback.png">$INFO[Container(6).ListItem.Art(poster)]</texture>
 				<bordertexture infill="false" border="28,36,28,36">dialogs/shadow.png</bordertexture>
 			</control>
 			<control id="6" type="fixedlist">

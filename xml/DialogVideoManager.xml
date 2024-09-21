@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<!-- selectdialog -->
+	<!-- managevideoversions/managevideoextras -->
 	<defaultcontrol always="true">50</defaultcontrol>
 	<controls>
 		<include>DialogBackgroundImage</include>
@@ -54,7 +54,7 @@
 						<top>40</top>
 						<width>200</width>
 						<height>200</height>
-						<texture fallback="views/square_fallback.png">$VAR[DialogSelectImage]</texture>
+						<texture fallback="$INFO[ListItem.Icon]">$INFO[ListItem.Art(poster)]</texture>
 						<aspectratio aligny="center">keep</aspectratio>
 					</control>
 					<control type="label">
@@ -88,7 +88,7 @@
 						<top>40</top>
 						<width>200</width>
 						<height>200</height>
-						<texture fallback="views/square_fallback.png">$VAR[DialogSelectImage]</texture>
+						<texture fallback="$INFO[ListItem.Icon]">$INFO[ListItem.Art(poster)]</texture>
 						<aspectratio aligny="center">keep</aspectratio>
 					</control>
 					<control type="label">
