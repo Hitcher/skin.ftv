@@ -18,16 +18,16 @@ msgstr ""
 "X-Generator: Weblate 5.0.2\n"
 
 msgctxt "Addon Summary"
-msgid "Skin based on the Fire TV UI"
-msgstr "Kulit berdasarkan UI Fire TV"
+msgid "Skin based on the original Fire TV UI"
+msgstr ""
 
 msgctxt "Addon Description"
-msgid "A skin designed to access all your content as easily and seemlessly as possible.[CR][CR]Supports:[CR]Global Search[CR]Next Aired[CR]Up Next[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]Based on the original Fire TV UI."
-msgstr "Skin yang dirancang untuk mengakses semua konten Anda semudah dan semudah mungkin.[CR][CR]Mendukung:[CR]Pencarian Global[CR]Tayang Berikutnya[CR]Berikutnya[CR]Info Embuary[CR]Trakt[CR] Lirik CU[CR]Pengalaman Bioskop[CR]Fitur Khusus[CR][CR]Berdasarkan UI Fire TV asli."
+msgid "A skin designed to access all your content as easily and seemlessly as possible.[CR][CR]Addons supported:[CR]Global Search[CR]Up Next[CR]TheMovieDb Helper[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]Based on the original Fire TV UI."
+msgstr ""
 
 msgctxt "Addon Disclaimer"
-msgid "To make use of the 'HDR' & 'ATMOS' tags they need to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV"
-msgstr "Untuk menggunakan tag 'HDR' & 'ATMOS', tag tersebut perlu ditambahkan ke nama file Anda.[CR]Tidak mendukung: Perangkat Mouse dan Sentuh atau TV Langsung"
+msgid "To make use of the'ATMOS' tag it needs to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV"
+msgstr ""
 
 msgctxt "#31000"
 msgid "Audio Options"
@@ -126,8 +126,8 @@ msgid "Special[CR]Features"
 msgstr "Fitur[CR]Spesial"
 
 msgctxt "#31024"
-msgid "Widget Name"
-msgstr "Nama Widget"
+msgid "Movie Sets"
+msgstr ""
 
 msgctxt "#31025"
 msgid "Notice"
@@ -311,8 +311,8 @@ msgid "Images for"
 msgstr "Gambar untuk"
 
 msgctxt "#31070"
-msgid "Similar Titles"
-msgstr "Judul serupa"
+msgid "Suggested"
+msgstr ""
 
 msgctxt "#31071"
 msgid "Starring"
@@ -434,8 +434,8 @@ msgid "Start Slideshow"
 msgstr "Mulai Slideshow"
 
 msgctxt "#31100"
-msgid "Photos"
-msgstr "Foto"
+msgid "Game Addons"
+msgstr ""
 
 msgctxt "#31101"
 msgid "Apps"
@@ -682,8 +682,8 @@ msgid "Poster"
 msgstr "Poster"
 
 msgctxt "#31161"
-msgid "Square"
-msgstr "Kotak"
+msgid "Square Info"
+msgstr ""
 
 msgctxt "#31162"
 msgid "Show"
@@ -717,8 +717,16 @@ msgctxt "#31169"
 msgid "In Progress Movies"
 msgstr "Film Sedang Berlangsung"
 
+msgctxt "#31170"
+msgid "Kids Movies"
+msgstr "Film Anak-anak"
+
 msgctxt "#31171"
 msgid "Game saves"
+msgstr ""
+
+msgctxt "#31172"
+msgid "Square List"
 msgstr ""
 
 # empty strings from id 31171 to 31172
@@ -747,6 +755,18 @@ msgctxt "#31178"
 msgid "Kids TV Shows"
 msgstr "Acara TV Anak-anak"
 
+msgctxt "#31179"
+msgid "Playlist options"
+msgstr ""
+
+msgctxt "#31180"
+msgid "Choose view"
+msgstr ""
+
+msgctxt "#31181"
+msgid "Collection"
+msgstr ""
+
 # empty strings from id 31179 to 31181
 msgctxt "#31182"
 msgid "Top Rated TV Shows"
@@ -772,15 +792,42 @@ msgctxt "#31187"
 msgid "Your Genres"
 msgstr "Aliran Anda"
 
+msgctxt "#31188"
+msgid "Manage[CR]Versions"
+msgstr ""
+
+msgctxt "#31189"
+msgid "Manage[CR]Extras"
+msgstr ""
+
+msgctxt "#31190"
+msgid "Which version would you like to watch?"
+msgstr ""
+
+msgctxt "#31191"
+msgid "Which extra would you like to watch?"
+msgstr ""
+
+msgctxt "#31192"
+msgid "Director"
+msgstr ""
+
+msgctxt "#31193"
+msgid "Now Playing"
+msgstr ""
+
 # empty strings from id 31187 to 31193
 msgctxt "#31194"
 msgid "Submit"
 msgstr "Masukkan"
 
-# empty strings from id 31195 to 31196
-msgctxt "#31197"
-msgid "Widget"
-msgstr "Widget"
+msgctxt "#31195"
+msgid "Ended"
+msgstr ""
+
+msgctxt "#31196"
+msgid "Cancelled"
+msgstr ""
 
 msgctxt "#31198"
 msgid "View Type"
@@ -799,12 +846,12 @@ msgid "Choose Shortcut"
 msgstr "Pilih Pintasan"
 
 msgctxt "#31202"
-msgid "Widget Action"
-msgstr "Aksi Widget"
+msgid "Order"
+msgstr ""
 
 msgctxt "#31203"
-msgid "Square Info"
-msgstr "Info Kotak"
+msgid "Square"
+msgstr ""
 
 msgctxt "#31204"
 msgid "Movies starring"
@@ -906,10 +953,6 @@ msgctxt "#31231"
 msgid "Please try again later."
 msgstr "Silakan coba lagi nanti."
 
-msgctxt "#31232"
-msgid "Cast and Role"
-msgstr "Pemeran"
-
 msgctxt "#31233"
 msgid "View All Cast"
 msgstr "Lihat Semua Pemeran"
@@ -924,16 +967,16 @@ msgstr "Penilaian Anda"
 
 # Must match #31235 without the space
 msgctxt "#31236"
-msgid "YourRating"
-msgstr "Penilaianmu"
+msgid "Your_Rating"
+msgstr ""
 
 msgctxt "#31237"
 msgid "Select your rating"
 msgstr "Pilih Nilai Anda"
 
 msgctxt "#31238"
-msgid "This is your own personal rating and is not shared publicly"
-msgstr "Ini adalah penilaian pribadi Anda dan tidak dibagikan secara publik"
+msgid "This is your own personal rating and is only stored locally"
+msgstr ""
 
 msgctxt "#31239"
 msgid "Press play to resume"
@@ -983,10 +1026,6 @@ msgctxt "#31250"
 msgid "Configure various game settings."
 msgstr "Konfigurasikan berbagai pengaturan permainan."
 
-msgctxt "#31251"
-msgid "Watchlist"
-msgstr "Daftar pantauan"
-
 msgctxt "#31252"
 msgid "This skin only supports a maximum of 13 home menu items. Please remove some to ensure everything works correctly."
 msgstr "Skin ini hanya mendukung maksimal 13 item menu home. Hapus beberapa untuk memastikan semuanya berfungsi dengan benar."
@@ -1027,9 +1066,63 @@ msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "Rata-rata Rating Skor Audiens"
 
-#~ msgctxt "#31170"
-#~ msgid "Kids Movies"
-#~ msgstr "Film Anak-anak"
+#~ msgctxt "Addon Summary"
+#~ msgid "Skin based on the Fire TV UI"
+#~ msgstr "Kulit berdasarkan UI Fire TV"
+
+#~ msgctxt "Addon Description"
+#~ msgid "A skin designed to access all your content as easily and seemlessly as possible.[CR][CR]Supports:[CR]Global Search[CR]Next Aired[CR]Up Next[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]Based on the original Fire TV UI."
+#~ msgstr "Skin yang dirancang untuk mengakses semua konten Anda semudah dan semudah mungkin.[CR][CR]Mendukung:[CR]Pencarian Global[CR]Tayang Berikutnya[CR]Berikutnya[CR]Info Embuary[CR]Trakt[CR] Lirik CU[CR]Pengalaman Bioskop[CR]Fitur Khusus[CR][CR]Berdasarkan UI Fire TV asli."
+
+#~ msgctxt "Addon Disclaimer"
+#~ msgid "To make use of the 'HDR' & 'ATMOS' tags they need to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV"
+#~ msgstr "Untuk menggunakan tag 'HDR' & 'ATMOS', tag tersebut perlu ditambahkan ke nama file Anda.[CR]Tidak mendukung: Perangkat Mouse dan Sentuh atau TV Langsung"
+
+#~ msgctxt "#31024"
+#~ msgid "Widget Name"
+#~ msgstr "Nama Widget"
+
+#~ msgctxt "#31070"
+#~ msgid "Similar Titles"
+#~ msgstr "Judul serupa"
+
+#~ msgctxt "#31100"
+#~ msgid "Photos"
+#~ msgstr "Foto"
+
+#~ msgctxt "#31161"
+#~ msgid "Square"
+#~ msgstr "Kotak"
+
+# empty strings from id 31195 to 31196
+#~ msgctxt "#31197"
+#~ msgid "Widget"
+#~ msgstr "Widget"
+
+#~ msgctxt "#31202"
+#~ msgid "Widget Action"
+#~ msgstr "Aksi Widget"
+
+#~ msgctxt "#31203"
+#~ msgid "Square Info"
+#~ msgstr "Info Kotak"
+
+#~ msgctxt "#31232"
+#~ msgid "Cast and Role"
+#~ msgstr "Pemeran"
+
+# Must match #31235 without the space
+#~ msgctxt "#31236"
+#~ msgid "YourRating"
+#~ msgstr "Penilaianmu"
+
+#~ msgctxt "#31238"
+#~ msgid "This is your own personal rating and is not shared publicly"
+#~ msgstr "Ini adalah penilaian pribadi Anda dan tidak dibagikan secara publik"
+
+#~ msgctxt "#31251"
+#~ msgid "Watchlist"
+#~ msgstr "Daftar pantauan"
 
 #~ msgctxt "#31087"
 #~ msgid "Tomorrow"
