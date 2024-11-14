@@ -5,29 +5,29 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2024-06-25 20:22+0000\n"
-"Last-Translator: roliverosc <roliverosc@hotmail.com>\n"
+"PO-Revision-Date: 2024-11-14 21:10+0000\n"
+"Last-Translator: Alfonso Cachero <alfonso.cachero@gmail.com>\n"
 "Language-Team: Spanish (Spain) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/es_es/>\n"
 "Language: es_es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6\n"
+"X-Generator: Weblate 5.8.2\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the original Fire TV UI"
-msgstr ""
+msgstr "Skin basada en la interfaz original de Fire TV"
 
 msgctxt "Addon Description"
 msgid "A skin designed to access all your content as easily and seemlessly as possible.[CR][CR]Addons supported:[CR]Global Search[CR]Up Next[CR]TheMovieDb Helper[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]Based on the original Fire TV UI."
-msgstr ""
+msgstr "Una skin diseñada para acceder a tdo el contenido de manera sencilla y directa cuando sea posible.[CR][CR]Addons soportados:[CR]Búsqueda Global[CR]Siguiente[CR]TheMovieDb Helper[CR]Trakt[CR]CU Lyrics[CR]Experiencia de Cine[CR]Funcionalidades Especiales[CR][CR]Basado en la interfaz original de Fire TV."
 
 msgctxt "Addon Disclaimer"
 msgid "To make use of the'ATMOS' tag it needs to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV"
-msgstr ""
+msgstr "Para usar la etiqueta 'ATMOS' es necesario que se añada al nombre del archivo.[CR]No soporta: Ratón y Dispositivos táctiles o TV en directo"
 
 msgctxt "#31000"
 msgid "Audio Options"
@@ -127,7 +127,7 @@ msgstr "Características[CR]Especiales"
 
 msgctxt "#31024"
 msgid "Movie Sets"
-msgstr ""
+msgstr "Saga de Películas"
 
 msgctxt "#31025"
 msgid "Notice"
@@ -311,7 +311,7 @@ msgstr "Imágenes para"
 
 msgctxt "#31070"
 msgid "Suggested"
-msgstr ""
+msgstr "Sugerido"
 
 msgctxt "#31071"
 msgid "Starring"
@@ -431,7 +431,7 @@ msgstr "Iniciar presentación de imágenes"
 
 msgctxt "#31100"
 msgid "Game Addons"
-msgstr ""
+msgstr "Addons de Juegos"
 
 msgctxt "#31101"
 msgid "Apps"
@@ -675,7 +675,7 @@ msgstr "Póster"
 
 msgctxt "#31161"
 msgid "Square Info"
-msgstr ""
+msgstr "Info Cuadrado"
 
 msgctxt "#31162"
 msgid "Show"
@@ -719,7 +719,7 @@ msgstr "Partidas guardadas"
 
 msgctxt "#31172"
 msgid "Square List"
-msgstr ""
+msgstr "Lista Cuadrado"
 
 # empty strings from id 31171 to 31172
 msgctxt "#31173"
@@ -748,15 +748,15 @@ msgstr "Series infantiles"
 
 msgctxt "#31179"
 msgid "Playlist options"
-msgstr ""
+msgstr "Opciones de lista de reproducción"
 
 msgctxt "#31180"
 msgid "Choose view"
-msgstr ""
+msgstr "Escoger vista"
 
 msgctxt "#31181"
 msgid "Collection"
-msgstr ""
+msgstr "Colección"
 
 msgctxt "#31182"
 msgid "Top Rated TV Shows"
@@ -784,27 +784,27 @@ msgstr "Tus géneros"
 
 msgctxt "#31188"
 msgid "Manage[CR]Versions"
-msgstr ""
+msgstr "Gestionar[CR]Versiones"
 
 msgctxt "#31189"
 msgid "Manage[CR]Extras"
-msgstr ""
+msgstr "Gestionar[CR]Extras"
 
 msgctxt "#31190"
 msgid "Which version would you like to watch?"
-msgstr ""
+msgstr "¿Qué versión quieres ver?"
 
 msgctxt "#31191"
 msgid "Which extra would you like to watch?"
-msgstr ""
+msgstr "¿Qué extra quieres ver?"
 
 msgctxt "#31192"
 msgid "Director"
-msgstr ""
+msgstr "Dirección"
 
 msgctxt "#31193"
 msgid "Now Playing"
-msgstr ""
+msgstr "Reproduciendo Ahora"
 
 msgctxt "#31194"
 msgid "Submit"
@@ -812,11 +812,11 @@ msgstr "Enviar"
 
 msgctxt "#31195"
 msgid "Ended"
-msgstr ""
+msgstr "Finalizado"
 
 msgctxt "#31196"
 msgid "Cancelled"
-msgstr ""
+msgstr "Cancelado"
 
 msgctxt "#31198"
 msgid "View Type"
@@ -836,11 +836,11 @@ msgstr "Elegir acceso directo"
 
 msgctxt "#31202"
 msgid "Order"
-msgstr ""
+msgstr "Orden"
 
 msgctxt "#31203"
 msgid "Square"
-msgstr ""
+msgstr "Cuadrado"
 
 msgctxt "#31204"
 msgid "Movies starring"
@@ -954,7 +954,7 @@ msgstr "Tu valoración"
 # Must match #31235 without the space
 msgctxt "#31236"
 msgid "Your_Rating"
-msgstr ""
+msgstr "Tu_Valoración"
 
 msgctxt "#31237"
 msgid "Select your rating"
@@ -962,7 +962,7 @@ msgstr "Seleccionar tu valoración"
 
 msgctxt "#31238"
 msgid "This is your own personal rating and is only stored locally"
-msgstr ""
+msgstr "Esta es tu valoración personal y se guarda solo en local"
 
 msgctxt "#31239"
 msgid "Press play to resume"
