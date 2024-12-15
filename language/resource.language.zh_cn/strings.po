@@ -18,16 +18,16 @@ msgstr ""
 "X-Generator: Weblate 5.0.2\n"
 
 msgctxt "Addon Summary"
-msgid "Skin based on the Fire TV UI"
-msgstr "基于Fire TV UI的皮肤"
+msgid "Skin based on the original Fire TV UI"
+msgstr ""
 
 msgctxt "Addon Description"
-msgid "A skin designed to access all your content as easily and seemlessly as possible.[CR][CR]Supports:[CR]Global Search[CR]Next Aired[CR]Up Next[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]Based on the original Fire TV UI."
-msgstr "一种外观，旨在尽可能轻松、无缝地访问您的所有内容。[CR][CR]支持：[CR]全局搜索[CR]下一集[CR]接下来播放[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]基于原始Fire TV UI的特殊功能[CR][CR]。"
+msgid "A skin designed to access all your content as easily and seemlessly as possible.[CR][CR]Addons supported:[CR]Global Search[CR]Up Next[CR]TheMovieDb Helper[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]Based on the original Fire TV UI."
+msgstr ""
 
 msgctxt "Addon Disclaimer"
-msgid "To make use of the 'HDR' & 'ATMOS' tags they need to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV"
-msgstr "为使'HDR' & 'ATMOS'标签生效，你需要将它们添加到你的文件名中。[CR]不支持：鼠标和触摸设备或Live TV"
+msgid "To make use of the'ATMOS' tag it needs to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV"
+msgstr ""
 
 msgctxt "#31000"
 msgid "Audio Options"
@@ -126,8 +126,8 @@ msgid "Special[CR]Features"
 msgstr "特殊[CR]功能"
 
 msgctxt "#31024"
-msgid "Widget Name"
-msgstr "小部件名称"
+msgid "Movie Sets"
+msgstr ""
 
 msgctxt "#31025"
 msgid "Notice"
@@ -311,8 +311,8 @@ msgid "Images for"
 msgstr "图片来自"
 
 msgctxt "#31070"
-msgid "Similar Titles"
-msgstr "类似标题"
+msgid "Suggested"
+msgstr ""
 
 msgctxt "#31071"
 msgid "Starring"
@@ -432,8 +432,8 @@ msgid "Start Slideshow"
 msgstr "开始幻灯片"
 
 msgctxt "#31100"
-msgid "Photos"
-msgstr "照片"
+msgid "Game Addons"
+msgstr ""
 
 msgctxt "#31101"
 msgid "Apps"
@@ -680,8 +680,8 @@ msgid "Poster"
 msgstr "海报"
 
 msgctxt "#31161"
-msgid "Square"
-msgstr "方块"
+msgid "Square Info"
+msgstr ""
 
 msgctxt "#31162"
 msgid "Show"
@@ -715,8 +715,16 @@ msgctxt "#31169"
 msgid "In Progress Movies"
 msgstr "在播电影"
 
+msgctxt "#31170"
+msgid "Kids Movies"
+msgstr "儿童电影"
+
 msgctxt "#31171"
 msgid "Game saves"
+msgstr ""
+
+msgctxt "#31172"
+msgid "Square List"
 msgstr ""
 
 # empty strings from id 31171 to 31172
@@ -745,6 +753,18 @@ msgctxt "#31178"
 msgid "Kids TV Shows"
 msgstr "儿童电视节目"
 
+msgctxt "#31179"
+msgid "Playlist options"
+msgstr ""
+
+msgctxt "#31180"
+msgid "Choose view"
+msgstr ""
+
+msgctxt "#31181"
+msgid "Collection"
+msgstr ""
+
 # empty strings from id 31179 to 31181
 msgctxt "#31182"
 msgid "Top Rated TV Shows"
@@ -770,14 +790,42 @@ msgctxt "#31187"
 msgid "Your Genres"
 msgstr ""
 
+msgctxt "#31188"
+msgid "Manage[CR]Versions"
+msgstr ""
+
+msgctxt "#31189"
+msgid "Manage[CR]Extras"
+msgstr ""
+
+msgctxt "#31190"
+msgid "Which version would you like to watch?"
+msgstr ""
+
+msgctxt "#31191"
+msgid "Which extra would you like to watch?"
+msgstr ""
+
+msgctxt "#31192"
+msgid "Director"
+msgstr ""
+
+msgctxt "#31193"
+msgid "Now Playing"
+msgstr ""
+
 # empty strings from id 31187 to 31193
 msgctxt "#31194"
 msgid "Submit"
 msgstr "提交"
 
-msgctxt "#31197"
-msgid "Widget"
-msgstr "小部件"
+msgctxt "#31195"
+msgid "Ended"
+msgstr ""
+
+msgctxt "#31196"
+msgid "Cancelled"
+msgstr ""
 
 msgctxt "#31198"
 msgid "View Type"
@@ -796,12 +844,12 @@ msgid "Choose Shortcut"
 msgstr "选择快捷方式"
 
 msgctxt "#31202"
-msgid "Widget Action"
-msgstr "小部件动作"
+msgid "Order"
+msgstr ""
 
 msgctxt "#31203"
-msgid "Square Info"
-msgstr "方框信息"
+msgid "Square"
+msgstr ""
 
 msgctxt "#31204"
 msgid "Movies starring"
@@ -902,10 +950,6 @@ msgctxt "#31231"
 msgid "Please try again later."
 msgstr "请稍后再试。"
 
-msgctxt "#31232"
-msgid "Cast and Role"
-msgstr "演员和角色"
-
 msgctxt "#31233"
 msgid "View All Cast"
 msgstr "查看所有演员"
@@ -920,16 +964,16 @@ msgstr "你的评分"
 
 # Must match #31235 without the space
 msgctxt "#31236"
-msgid "YourRating"
-msgstr "你的评分"
+msgid "Your_Rating"
+msgstr ""
 
 msgctxt "#31237"
 msgid "Select your rating"
 msgstr "选择你的评分"
 
 msgctxt "#31238"
-msgid "This is your own personal rating and is not shared publicly"
-msgstr "这是您个人的评分，不会公开共享"
+msgid "This is your own personal rating and is only stored locally"
+msgstr ""
 
 msgctxt "#31239"
 msgid "Press play to resume"
@@ -979,10 +1023,6 @@ msgctxt "#31250"
 msgid "Configure various game settings."
 msgstr "配置各种游戏设置。"
 
-msgctxt "#31251"
-msgid "Watchlist"
-msgstr "观看列表"
-
 msgctxt "#31252"
 msgid "This skin only supports a maximum of 13 home menu items. Please remove some to ensure everything works correctly."
 msgstr "此皮肤仅支持最多13个主菜单项。请删除一些以确保一切正常。"
@@ -1023,9 +1063,62 @@ msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "观众平均分"
 
-#~ msgctxt "#31170"
-#~ msgid "Kids Movies"
-#~ msgstr "儿童电影"
+#~ msgctxt "Addon Summary"
+#~ msgid "Skin based on the Fire TV UI"
+#~ msgstr "基于Fire TV UI的皮肤"
+
+#~ msgctxt "Addon Description"
+#~ msgid "A skin designed to access all your content as easily and seemlessly as possible.[CR][CR]Supports:[CR]Global Search[CR]Next Aired[CR]Up Next[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]Based on the original Fire TV UI."
+#~ msgstr "一种外观，旨在尽可能轻松、无缝地访问您的所有内容。[CR][CR]支持：[CR]全局搜索[CR]下一集[CR]接下来播放[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]基于原始Fire TV UI的特殊功能[CR][CR]。"
+
+#~ msgctxt "Addon Disclaimer"
+#~ msgid "To make use of the 'HDR' & 'ATMOS' tags they need to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV"
+#~ msgstr "为使'HDR' & 'ATMOS'标签生效，你需要将它们添加到你的文件名中。[CR]不支持：鼠标和触摸设备或Live TV"
+
+#~ msgctxt "#31024"
+#~ msgid "Widget Name"
+#~ msgstr "小部件名称"
+
+#~ msgctxt "#31070"
+#~ msgid "Similar Titles"
+#~ msgstr "类似标题"
+
+#~ msgctxt "#31100"
+#~ msgid "Photos"
+#~ msgstr "照片"
+
+#~ msgctxt "#31161"
+#~ msgid "Square"
+#~ msgstr "方块"
+
+#~ msgctxt "#31197"
+#~ msgid "Widget"
+#~ msgstr "小部件"
+
+#~ msgctxt "#31202"
+#~ msgid "Widget Action"
+#~ msgstr "小部件动作"
+
+#~ msgctxt "#31203"
+#~ msgid "Square Info"
+#~ msgstr "方框信息"
+
+#~ msgctxt "#31232"
+#~ msgid "Cast and Role"
+#~ msgstr "演员和角色"
+
+# Must match #31235 without the space
+#~ msgctxt "#31236"
+#~ msgid "YourRating"
+#~ msgstr "你的评分"
+
+#~ msgctxt "#31238"
+#~ msgid "This is your own personal rating and is not shared publicly"
+#~ msgstr "这是您个人的评分，不会公开共享"
+
+#~ msgctxt "#31251"
+#~ msgid "Watchlist"
+#~ msgstr "观看列表"
 
 #~ msgctxt "#31037"
 #~ msgid "Hide Unwatched Episode Thumbs"

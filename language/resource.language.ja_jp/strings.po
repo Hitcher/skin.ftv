@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2023-12-12 14:11+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
@@ -18,16 +18,16 @@ msgstr ""
 "X-Generator: Weblate 5.2.1\n"
 
 msgctxt "Addon Summary"
-msgid "Skin based on the Fire TV UI"
-msgstr "Fire TV UIベースのスキン"
+msgid "Skin based on the original Fire TV UI"
+msgstr ""
 
 msgctxt "Addon Description"
-msgid "A skin designed to access all your content as easily and seemlessly as possible.[CR][CR]Supports:[CR]Global Search[CR]Next Aired[CR]Up Next[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]Based on the original Fire TV UI."
-msgstr "すべてのコンテンツに可能な限り簡単でシームレスにアクセスできるようにデザインされたスキン。[CR][CR]サポート:[CR]Global Search[CR]Next Aired[CR]Up Next[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]ベースになっているオリジナルは、Fire TV UIです。"
+msgid "A skin designed to access all your content as easily and seemlessly as possible.[CR][CR]Addons supported:[CR]Global Search[CR]Up Next[CR]TheMovieDb Helper[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]Based on the original Fire TV UI."
+msgstr ""
 
 msgctxt "Addon Disclaimer"
-msgid "To make use of the 'HDR' & 'ATMOS' tags they need to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV"
-msgstr "'HDR' と 'ATMOS' タグを使用するには、ファイル名に追加する必要があります。[CR]未サポート: マウスとタッチデバイスまたはLive TV"
+msgid "To make use of the'ATMOS' tag it needs to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV"
+msgstr ""
 
 msgctxt "#31000"
 msgid "Audio Options"
@@ -126,8 +126,8 @@ msgid "Special[CR]Features"
 msgstr "特別な[CR]機能"
 
 msgctxt "#31024"
-msgid "Widget Name"
-msgstr "ウィジェット名"
+msgid "Movie Sets"
+msgstr ""
 
 msgctxt "#31025"
 msgid "Notice"
@@ -310,8 +310,8 @@ msgid "Images for"
 msgstr "の画像"
 
 msgctxt "#31070"
-msgid "Similar Titles"
-msgstr "類似タイトル"
+msgid "Suggested"
+msgstr ""
 
 msgctxt "#31071"
 msgid "Starring"
@@ -430,8 +430,8 @@ msgid "Start Slideshow"
 msgstr "スライドショーを開始"
 
 msgctxt "#31100"
-msgid "Photos"
-msgstr "フォト"
+msgid "Game Addons"
+msgstr ""
 
 msgctxt "#31101"
 msgid "Apps"
@@ -674,8 +674,8 @@ msgid "Poster"
 msgstr "ポスター"
 
 msgctxt "#31161"
-msgid "Square"
-msgstr "正方形"
+msgid "Square Info"
+msgstr ""
 
 msgctxt "#31162"
 msgid "Show"
@@ -709,8 +709,16 @@ msgctxt "#31169"
 msgid "In Progress Movies"
 msgstr "進行中のムービー"
 
+msgctxt "#31170"
+msgid "Kids Movies"
+msgstr "キッズムービー"
+
 msgctxt "#31171"
 msgid "Game saves"
+msgstr ""
+
+msgctxt "#31172"
+msgid "Square List"
 msgstr ""
 
 # empty strings from id 31171 to 31172
@@ -738,6 +746,18 @@ msgctxt "#31178"
 msgid "Kids TV Shows"
 msgstr "子供向けTV番組"
 
+msgctxt "#31179"
+msgid "Playlist options"
+msgstr ""
+
+msgctxt "#31180"
+msgid "Choose view"
+msgstr ""
+
+msgctxt "#31181"
+msgid "Collection"
+msgstr ""
+
 msgctxt "#31182"
 msgid "Top Rated TV Shows"
 msgstr "評価の高いTV番組"
@@ -762,13 +782,41 @@ msgctxt "#31187"
 msgid "Your Genres"
 msgstr ""
 
+msgctxt "#31188"
+msgid "Manage[CR]Versions"
+msgstr ""
+
+msgctxt "#31189"
+msgid "Manage[CR]Extras"
+msgstr ""
+
+msgctxt "#31190"
+msgid "Which version would you like to watch?"
+msgstr ""
+
+msgctxt "#31191"
+msgid "Which extra would you like to watch?"
+msgstr ""
+
+msgctxt "#31192"
+msgid "Director"
+msgstr ""
+
+msgctxt "#31193"
+msgid "Now Playing"
+msgstr ""
+
 msgctxt "#31194"
 msgid "Submit"
 msgstr "登録"
 
-msgctxt "#31197"
-msgid "Widget"
-msgstr "ウィジェット"
+msgctxt "#31195"
+msgid "Ended"
+msgstr ""
+
+msgctxt "#31196"
+msgid "Cancelled"
+msgstr ""
 
 msgctxt "#31198"
 msgid "View Type"
@@ -787,12 +835,12 @@ msgid "Choose Shortcut"
 msgstr "ショートカットを選択"
 
 msgctxt "#31202"
-msgid "Widget Action"
-msgstr "ウィジェット アクション"
+msgid "Order"
+msgstr ""
 
 msgctxt "#31203"
-msgid "Square Info"
-msgstr "スクエア インフォ"
+msgid "Square"
+msgstr ""
 
 msgctxt "#31204"
 msgid "Movies starring"
@@ -891,10 +939,6 @@ msgctxt "#31231"
 msgid "Please try again later."
 msgstr "後でもう一度試してください。"
 
-msgctxt "#31232"
-msgid "Cast and Role"
-msgstr "キャストとロール"
-
 msgctxt "#31233"
 msgid "View All Cast"
 msgstr "すべてのキャストを表示"
@@ -907,17 +951,18 @@ msgctxt "#31235"
 msgid "Your Rating"
 msgstr "あなたのレーティング"
 
+# Must match #31235 without the space
 msgctxt "#31236"
-msgid "YourRating"
-msgstr "あなたのレーティング"
+msgid "Your_Rating"
+msgstr ""
 
 msgctxt "#31237"
 msgid "Select your rating"
 msgstr "レーティングを選択"
 
 msgctxt "#31238"
-msgid "This is your own personal rating and is not shared publicly"
-msgstr "これはあなた自身の個人的なレーティングであり、公開されていません"
+msgid "This is your own personal rating and is only stored locally"
+msgstr ""
 
 msgctxt "#31239"
 msgid "Press play to resume"
@@ -967,10 +1012,6 @@ msgctxt "#31250"
 msgid "Configure various game settings."
 msgstr "さまざまなゲーム設定を構成します。"
 
-msgctxt "#31251"
-msgid "Watchlist"
-msgstr "ウォッチリスト"
-
 msgctxt "#31252"
 msgid "This skin only supports a maximum of 13 home menu items. Please remove some to ensure everything works correctly."
 msgstr "このスキンがサポートしているホームメニューのアイテム数は最大13個です。必要に応じて一部を削除し、正しく動作させてください。"
@@ -1011,9 +1052,61 @@ msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "平均視聴者スコア"
 
-#~ msgctxt "#31170"
-#~ msgid "Kids Movies"
-#~ msgstr "キッズムービー"
+#~ msgctxt "Addon Summary"
+#~ msgid "Skin based on the Fire TV UI"
+#~ msgstr "Fire TV UIベースのスキン"
+
+#~ msgctxt "Addon Description"
+#~ msgid "A skin designed to access all your content as easily and seemlessly as possible.[CR][CR]Supports:[CR]Global Search[CR]Next Aired[CR]Up Next[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]Based on the original Fire TV UI."
+#~ msgstr "すべてのコンテンツに可能な限り簡単でシームレスにアクセスできるようにデザインされたスキン。[CR][CR]サポート:[CR]Global Search[CR]Next Aired[CR]Up Next[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]ベースになっているオリジナルは、Fire TV UIです。"
+
+#~ msgctxt "Addon Disclaimer"
+#~ msgid "To make use of the 'HDR' & 'ATMOS' tags they need to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV"
+#~ msgstr "'HDR' と 'ATMOS' タグを使用するには、ファイル名に追加する必要があります。[CR]未サポート: マウスとタッチデバイスまたはLive TV"
+
+#~ msgctxt "#31024"
+#~ msgid "Widget Name"
+#~ msgstr "ウィジェット名"
+
+#~ msgctxt "#31070"
+#~ msgid "Similar Titles"
+#~ msgstr "類似タイトル"
+
+#~ msgctxt "#31100"
+#~ msgid "Photos"
+#~ msgstr "フォト"
+
+#~ msgctxt "#31161"
+#~ msgid "Square"
+#~ msgstr "正方形"
+
+#~ msgctxt "#31197"
+#~ msgid "Widget"
+#~ msgstr "ウィジェット"
+
+#~ msgctxt "#31202"
+#~ msgid "Widget Action"
+#~ msgstr "ウィジェット アクション"
+
+#~ msgctxt "#31203"
+#~ msgid "Square Info"
+#~ msgstr "スクエア インフォ"
+
+#~ msgctxt "#31232"
+#~ msgid "Cast and Role"
+#~ msgstr "キャストとロール"
+
+#~ msgctxt "#31236"
+#~ msgid "YourRating"
+#~ msgstr "あなたのレーティング"
+
+#~ msgctxt "#31238"
+#~ msgid "This is your own personal rating and is not shared publicly"
+#~ msgstr "これはあなた自身の個人的なレーティングであり、公開されていません"
+
+#~ msgctxt "#31251"
+#~ msgid "Watchlist"
+#~ msgstr "ウォッチリスト"
 
 #~ msgctxt "#31087"
 #~ msgid "Tomorrow"

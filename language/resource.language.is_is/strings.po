@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2023-11-03 12:11+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
@@ -18,15 +18,15 @@ msgstr ""
 "X-Generator: Weblate 5.1\n"
 
 msgctxt "Addon Summary"
-msgid "Skin based on the Fire TV UI"
+msgid "Skin based on the original Fire TV UI"
 msgstr ""
 
 msgctxt "Addon Description"
-msgid "A skin designed to access all your content as easily and seemlessly as possible.[CR][CR]Supports:[CR]Global Search[CR]Next Aired[CR]Up Next[CR]Embuary Info[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]Based on the original Fire TV UI."
+msgid "A skin designed to access all your content as easily and seemlessly as possible.[CR][CR]Addons supported:[CR]Global Search[CR]Up Next[CR]TheMovieDb Helper[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]Based on the original Fire TV UI."
 msgstr ""
 
 msgctxt "Addon Disclaimer"
-msgid "To make use of the 'HDR' & 'ATMOS' tags they need to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV"
+msgid "To make use of the'ATMOS' tag it needs to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV"
 msgstr ""
 
 msgctxt "#31000"
@@ -126,7 +126,7 @@ msgid "Special[CR]Features"
 msgstr ""
 
 msgctxt "#31024"
-msgid "Widget Name"
+msgid "Movie Sets"
 msgstr ""
 
 msgctxt "#31025"
@@ -311,7 +311,7 @@ msgid "Images for"
 msgstr ""
 
 msgctxt "#31070"
-msgid "Similar Titles"
+msgid "Suggested"
 msgstr ""
 
 msgctxt "#31071"
@@ -432,7 +432,7 @@ msgid "Start Slideshow"
 msgstr ""
 
 msgctxt "#31100"
-msgid "Photos"
+msgid "Game Addons"
 msgstr ""
 
 msgctxt "#31101"
@@ -680,8 +680,8 @@ msgid "Poster"
 msgstr "Veggspjald"
 
 msgctxt "#31161"
-msgid "Square"
-msgstr "Ferningur"
+msgid "Square Info"
+msgstr ""
 
 msgctxt "#31162"
 msgid "Show"
@@ -715,8 +715,16 @@ msgctxt "#31169"
 msgid "In Progress Movies"
 msgstr "Kvikmyndir í gangi"
 
+msgctxt "#31170"
+msgid "Kids Movies"
+msgstr ""
+
 msgctxt "#31171"
 msgid "Game saves"
+msgstr ""
+
+msgctxt "#31172"
+msgid "Square List"
 msgstr ""
 
 # empty strings from id 31171 to 31172
@@ -744,6 +752,18 @@ msgctxt "#31178"
 msgid "Kids TV Shows"
 msgstr ""
 
+msgctxt "#31179"
+msgid "Playlist options"
+msgstr ""
+
+msgctxt "#31180"
+msgid "Choose view"
+msgstr ""
+
+msgctxt "#31181"
+msgid "Collection"
+msgstr ""
+
 # empty strings from id 31179 to 31181
 msgctxt "#31182"
 msgid "Top Rated TV Shows"
@@ -769,14 +789,42 @@ msgctxt "#31187"
 msgid "Your Genres"
 msgstr ""
 
+msgctxt "#31188"
+msgid "Manage[CR]Versions"
+msgstr ""
+
+msgctxt "#31189"
+msgid "Manage[CR]Extras"
+msgstr ""
+
+msgctxt "#31190"
+msgid "Which version would you like to watch?"
+msgstr ""
+
+msgctxt "#31191"
+msgid "Which extra would you like to watch?"
+msgstr ""
+
+msgctxt "#31192"
+msgid "Director"
+msgstr ""
+
+msgctxt "#31193"
+msgid "Now Playing"
+msgstr ""
+
 # empty strings from id 31187 to 31193
 msgctxt "#31194"
 msgid "Submit"
 msgstr ""
 
-msgctxt "#31197"
-msgid "Widget"
-msgstr "Græja"
+msgctxt "#31195"
+msgid "Ended"
+msgstr ""
+
+msgctxt "#31196"
+msgid "Cancelled"
+msgstr ""
 
 msgctxt "#31198"
 msgid "View Type"
@@ -795,11 +843,11 @@ msgid "Choose Shortcut"
 msgstr ""
 
 msgctxt "#31202"
-msgid "Widget Action"
+msgid "Order"
 msgstr ""
 
 msgctxt "#31203"
-msgid "Square Info"
+msgid "Square"
 msgstr ""
 
 msgctxt "#31204"
@@ -902,10 +950,6 @@ msgctxt "#31231"
 msgid "Please try again later."
 msgstr ""
 
-msgctxt "#31232"
-msgid "Cast and Role"
-msgstr ""
-
 msgctxt "#31233"
 msgid "View All Cast"
 msgstr ""
@@ -920,7 +964,7 @@ msgstr ""
 
 # Must match #31235 without the space
 msgctxt "#31236"
-msgid "YourRating"
+msgid "Your_Rating"
 msgstr ""
 
 msgctxt "#31237"
@@ -928,7 +972,7 @@ msgid "Select your rating"
 msgstr ""
 
 msgctxt "#31238"
-msgid "This is your own personal rating and is not shared publicly"
+msgid "This is your own personal rating and is only stored locally"
 msgstr ""
 
 msgctxt "#31239"
@@ -979,10 +1023,6 @@ msgctxt "#31250"
 msgid "Configure various game settings."
 msgstr ""
 
-msgctxt "#31251"
-msgid "Watchlist"
-msgstr ""
-
 msgctxt "#31252"
 msgid "This skin only supports a maximum of 13 home menu items. Please remove some to ensure everything works correctly."
 msgstr ""
@@ -1022,3 +1062,11 @@ msgstr ""
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr ""
+
+#~ msgctxt "#31161"
+#~ msgid "Square"
+#~ msgstr "Ferningur"
+
+#~ msgctxt "#31197"
+#~ msgid "Widget"
+#~ msgstr "Græja"
