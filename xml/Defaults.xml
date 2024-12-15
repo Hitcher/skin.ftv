@@ -141,8 +141,8 @@
 		<focusedcolor>ff000000</focusedcolor>
 		<selectedcolor>SelectedColour</selectedcolor>
 		<disabledcolor>DisabledColour</disabledcolor>
-		<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-		<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+		<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+		<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 		<sliderwidth>300</sliderwidth>
 		<sliderheight>24</sliderheight>
 		<texturesliderbar border="12">osd/progress_bar_back.png</texturesliderbar>

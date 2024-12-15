@@ -67,7 +67,7 @@
 							<left>4</left>
 							<width>148</width>
 							<height>148</height>
-							<texture border="4">dialogs/white.png</texture>
+							<texture>common/white_square.png</texture>
 							<colordiffuse>$INFO[ListItem.Label2]</colordiffuse>
 						</control>
 					</control>
@@ -83,7 +83,7 @@
 						<left>4</left>
 						<width>148</width>
 						<height>148</height>
-						<texture border="4">dialogs/white.png</texture>
+						<texture>common/white_square.png</texture>
 						<colordiffuse>$INFO[ListItem.Label2]</colordiffuse>
 					</control>
 				</focusedlayout>

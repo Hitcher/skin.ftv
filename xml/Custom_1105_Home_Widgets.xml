@@ -150,14 +150,14 @@
 						<control type="image">
 							<width>3480</width>
 							<height>168</height>
-							<texture border="1,1,1,6">settings/button_no_focus.png</texture>
+							<texture border="0,0,0,6">settings/button_no_focus.png</texture>
 						</control>
 					</itemlayout>
 					<focusedlayout height="168" width="3480">
 						<control type="image">
 							<width>3480</width>
 							<height>168</height>
-							<texture border="1,1,1,6">settings/button_focus.png</texture>
+							<texture border="0,0,0,6">settings/button_no_focus.png</texture>
 						</control>
 					</focusedlayout>
 					<content>

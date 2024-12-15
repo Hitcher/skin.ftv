@@ -82,7 +82,7 @@
 				<control type="textbox">
 					<left>100</left>
 					<width>1552</width>
-					<height min="70" max="420">auto</height>
+					<height min="70" max="364">auto</height>
 					<font>Light28</font>
 					<textcolor>ff9d9d9d</textcolor>
 					<autoscroll>False</autoscroll>

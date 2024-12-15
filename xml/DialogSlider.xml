@@ -15,7 +15,7 @@
 				<centerleft>50%</centerleft>
 				<width>100%</width>
 				<height>100%</height>
-				<texture border="1,4,1,1">dialogs/notification_back.png</texture>
+				<texture border="0,4,0,0">dialogs/notification_back.png</texture>
 			</control>
 			<!-- Icon back -->
 			<control type="image">

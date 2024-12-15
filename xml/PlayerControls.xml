@@ -19,7 +19,7 @@
 				<height>826</height>
 				<bordersize>100</bordersize>
 				<bordertexture border="100" infill="false">views/shadow_fo.png</bordertexture>
-				<texture border="1,4,1,1">dialogs/notification_back.png</texture>
+				<texture border="0,4,0,0">dialogs/notification_back.png</texture>
 			</control>
 			<!-- Info -->
 			<control type="image">

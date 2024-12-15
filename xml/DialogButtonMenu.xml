@@ -110,7 +110,7 @@
 					<left>40</left>
 					<width>376</width>
 					<height>376</height>
-					<texture border="6">common/button_nf.png</texture>
+					<texture>common/button_nf.png</texture>
 				</control>
 				<control type="image">
 					<left>140</left>

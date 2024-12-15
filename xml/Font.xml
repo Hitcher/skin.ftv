@@ -289,13 +289,6 @@
 			<size>52</size>
 		</font>
 		<font>
-			<name>Med24Spaced</name>
-			<filename>Roboto-Medium.ttf</filename>
-			<aspect>1.04</aspect>
-			<size>48</size>
-			<linespacing>0.8</linespacing>
-		</font>
-		<font>
 			<name>Med24</name>
 			<filename>Roboto-Medium.ttf</filename>
 			<aspect>1.04</aspect>
@@ -410,6 +403,21 @@
 			<filename>Roboto-Medium.ttf</filename>
 			<aspect>1.04</aspect>
 			<size>44</size>
+		</font>
+		<!-- Mono font -->
+		<font>
+			<name>MonoMed36</name>
+			<filename>RobotoMono-Medium.ttf</filename>
+			<aspect>1.04</aspect>
+			<size>36</size>
+			<linespacing>0.8</linespacing>
+		</font>
+		<font>
+			<name>MonoMed36Textbox</name>
+			<filename>RobotoMono-Medium.ttf</filename>
+			<aspect>1.04</aspect>
+			<size>36</size>
+			<linespacing>1.55</linespacing>
 		</font>
 	</fontset>
 </fonts>

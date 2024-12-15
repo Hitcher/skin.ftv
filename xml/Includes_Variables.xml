@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="StreamLabel">
+		<value condition="Window.IsVisible(12300)">$INFO[ListItem.Property(stream.resolution)]</value>
+		<value>$INFO[ListItem.Label]</value>
+	</variable>
+	<variable name="StreamSubtitleLabel">
+		<value condition="VideoPlayer.SubtitlesEnabled">$INFO[VideoPlayer.SubtitlesLanguage]</value>
+		<value>$LOCALIZE[231]</value>
+	</variable>
+	<variable name="StreamOriginal">
+		<value condition="String.IsEqual(ListItem.Property(stream.isoriginal),true)"> [$LOCALIZE[39111]]</value>
+	</variable>
+	<variable name="StreamForced">
+		<value condition="String.IsEqual(ListItem.Property(stream.isforced),true)"> [$LOCALIZE[39106]]</value>
+	</variable>
+	<variable name="StreamHearingImpaired">
+		<value condition="String.IsEqual(ListItem.Property(stream.ishearingimpaired),true)"> [$LOCALIZE[39107]]</value>
+	</variable>
+	<variable name="StreamVisualImpaired">
+		<value condition="String.IsEqual(ListItem.Property(stream.isvisualimpaired),true)"> [$LOCALIZE[39108]]</value>
+	</variable>
+	<variable name="StreamDetails">
+		<value condition="Window.IsVisible(12300)">$INFO[ListItem.Property(stream.codec)]$INFO[ListItem.Property(stream.bitrate), [COLOR ff505050]|[/COLOR] , kbps]$INFO[ListItem.Property(stream.fps), [COLOR ff505050]|[/COLOR] , fps]</value>
+		<value condition="Window.IsVisible(12301)">$INFO[ListItem.Property(stream.codecdesc)]$INFO[ListItem.Property(stream.channels), [COLOR ff505050]|[/COLOR] , $LOCALIZE[10127] ]$INFO[ListItem.Property(stream.description),[COLOR ff505050]|[/COLOR] ]</value>
+		<value condition="Window.IsVisible(12302)">$INFO[ListItem.Property(stream.description)]</value>
+	</variable>
 	<variable name="Label1">
 		<value>$INFO[ListItem.Label]</value>
 	</variable>
@@ -87,28 +112,31 @@
 		<value condition="Window.IsVisible(10827)">$LOCALIZE[35227]</value>
 	</variable>
 	<variable name="DialogConfirmName">
-		<value condition="Window.IsVisible(10100)">(yesnodialog)</value>
-		<value condition="Window.IsVisible(10101)">(progressdialog)</value>
-		<value condition="Window.IsVisible(10148)">(playeject)</value>
-		<value condition="Window.IsVisible(12002)">(okdialog)</value>
+		<value condition="Window.IsVisible(yesnodialog)">(yesnodialog)</value>
+		<value condition="Window.IsVisible(progressdialog)">(progressdialog)</value>
+		<value condition="Window.IsVisible(playeject)">(playeject)</value>
+		<value condition="Window.IsVisible(okdialog)">(okdialog)</value>
 	</variable>
 	<variable name="DialogGameControllersName">
-		<value condition="Window.IsVisible(10820)">(gamecontrollers)</value>
-		<value condition="Window.IsVisible(10828)">(gameports)</value>
-		<value condition="Window.IsVisible(10831)">(gameagents)</value>
+		<value condition="Window.IsVisible(gamecontrollers)">(gamecontrollers)</value>
+		<value condition="Window.IsVisible(gameports)">(gameports)</value>
+		<value condition="Window.IsVisible(gameagents)">(gameagents)</value>
 	</variable>
 	<variable name="DialogSelectName">
-		<value condition="Window.IsVisible(10110)">(gamepadinput)</value>
-		<value condition="Window.IsVisible(10122)">(visualisationpresetlist)</value>
-		<value condition="Window.IsVisible(10149)">(peripherals)</value>
-		<value condition="Window.IsVisible(10823)">(gamevideofilter)</value>
-		<value condition="Window.IsVisible(10824)">(gameviewmode)</value>
-		<value condition="Window.IsVisible(10827)">(gamevideorotation)</value>
-		<value condition="Window.IsVisible(10829)">(ingamesaves)</value>
-		<value condition="Window.IsVisible(10830)">(gamesaves)</value>
-		<value condition="Window.IsVisible(12000)">(selectdialog)</value>
-		<value condition="Window.IsVisible(12015)">(selectvideoversion)</value>
-		<value condition="Window.IsVisible(12016)">(selectvideoextra)</value>
+		<value condition="Window.IsVisible(gamepadinput)">(gamepadinput)</value>
+		<value condition="Window.IsVisible(visualisationpresetlist)">(visualisationpresetlist)</value>
+		<value condition="Window.IsVisible(peripherals)">(peripherals)</value>
+		<value condition="Window.IsVisible(gamevideofilter)">(gamevideofilter)</value>
+		<value condition="Window.IsVisible(gamestretchmode)">(gamestretchmode)</value>
+		<value condition="Window.IsVisible(gamevideorotation)">(gamevideorotation)</value>
+		<value condition="Window.IsVisible(ingamesaves)">(ingamesaves)</value>
+		<value condition="Window.IsVisible(gamesaves)">(gamesaves)</value>
+		<value condition="Window.IsVisible(selectdialog)">(selectdialog)</value>
+		<value condition="Window.IsVisible(selectvideoversion)">(selectvideoversion)</value>
+		<value condition="Window.IsVisible(selectvideoextra)">(selectvideoextra)</value>
+		<value condition="Window.IsVisible(dialogselectvideo)">(dialogselectvideo)</value>
+		<value condition="Window.IsVisible(dialogselectaudio)">(dialogselectaudio)</value>
+		<value condition="Window.IsVisible(dialogselectsubtitle)">(dialogselectsubtitle)</value>
 	</variable>
 	<variable name="DialogSettingsName">
 		<value condition="Window.IsVisible(10123)">(osdvideosettings)</value>

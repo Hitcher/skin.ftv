@@ -4,10 +4,8 @@
 	<onload condition="!Skin.HasSetting(HideOSDControls)">SetFocus(304)</onload>
 	<onload condition="Skin.HasSetting(HideOSDControls) + system.getbool(videoplayer.autoplaynextitem)">SetFocus(16)</onload>
 	<onload condition="Skin.HasSetting(HideOSDControls) + !system.getbool(videoplayer.autoplaynextitem)">SetFocus(15)</onload>
-	<onunload>ClearProperty(VideoOSDSelect,home)</onunload>
 	<controls>
 		<control type="group">
-			<visible>!Window.IsVisible(osdsubtitlesettings) + !Window.IsVisible(osdvideosettings) + !Window.IsVisible(osdaudiosettings) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(subtitlesearch)</visible>
 			<control type="image">
 				<width>3840</width>
 				<height>420</height>
@@ -84,10 +82,8 @@
 				<bottom>52</bottom>
 				<width>1600</width>
 				<height>128</height>
-				<onup condition="System.HasCMS">SetFocus(17)</onup>
-				<onup condition="System.GetBool(videoplayer.autoplaynextitem)">SetFocus(16)</onup>
-				<onup condition="!System.GetBool(videoplayer.autoplaynextitem) + !System.HasCMS">SetFocus(15)</onup>
-				<itemgap>0</itemgap>
+				<onup>noop</onup>
+				<itemgap>-14</itemgap>
 				<align>center</align>
 				<orientation>horizontal</orientation>
 				<defaultcontrol always="true">204</defaultcontrol>
@@ -134,6 +130,16 @@
 					<alttexturenofocus colordiffuse="OSDNotFocusColour">osd/osd_play.png</alttexturenofocus>
 					<onclick>PlayerControl(Play)</onclick>
 				</control>
+				<!-- Options -->
+				<control type="button" id="307">
+					<width>128</width>
+					<height>128</height>
+					<font/>
+					<texturefocus colordiffuse="OSDFocusColour">osd/osd_settings.png</texturefocus>
+					<texturenofocus colordiffuse="OSDNotFocusColour">osd/osd_settings.png</texturenofocus>
+					<onclick>Close</onclick>
+					<onclick>ActivateWindow(1114)</onclick>
+				</control>
 				<!-- Fast Forward -->
 				<control type="button" id="305">
 					<width>128</width>
@@ -154,140 +160,6 @@
 					<texturefocus colordiffuse="OSDFocusColour">osd/osd_next.png</texturefocus>
 					<texturenofocus colordiffuse="OSDNotFocusColour">osd/osd_next.png</texturenofocus>
 					<onclick>PlayerControl(Next)</onclick>
-				</control>
-			</control>
-			<!-- Options -->
-			<control id="100" type="grouplist">
-				<right>184</right>
-				<bottom>256</bottom>
-				<width>1200</width>
-				<height>1200</height>
-				<align>right</align>
-				<itemgap>0</itemgap>
-				<onleft>noop</onleft>
-				<onright>noop</onright>
-				<ondown condition="!Skin.HasSetting(HideOSDControls)">304</ondown>
-				<orientation>vertical</orientation>
-				<visible>!Player.Forwarding + !Player.Rewinding</visible>
-				<!-- 3D mode -->
-				<control id="10" type="button">
-					<width>1200</width>
-					<height>116</height>
-					<font>OSD32</font>
-					<align>right</align>
-					<label>$LOCALIZE[31153]</label>
-					<textcolor>ffffffff</textcolor>
-					<shadowcolor>ShadowColour</shadowcolor>
-					<focusedcolor>ffffc04b</focusedcolor>
-					<texturefocus/>
-					<texturenofocus/>
-					<onclick>Close</onclick>
-					<onclick>StereoMode</onclick>
-					<visible>VideoPlayer.IsStereoscopic</visible>
-				</control>
-				<!-- DVD menu -->
-				<control id="11" type="button">
-					<width>1200</width>
-					<height>116</height>
-					<font>OSD32</font>
-					<align>right</align>
-					<label>$LOCALIZE[31136]</label>
-					<textcolor>ffffffff</textcolor>
-					<shadowcolor>ShadowColour</shadowcolor>
-					<focusedcolor>ffffc04b</focusedcolor>
-					<texturefocus/>
-					<texturenofocus/>
-					<onclick>PlayerControl(ShowVideoMenu)</onclick>
-					<visible>VideoPlayer.HasMenu</visible>
-				</control>
-				<!-- Subtitles -->
-				<control id="12" type="button">
-					<width>1200</width>
-					<height>116</height>
-					<font>OSD32</font>
-					<align>right</align>
-					<label>287</label>
-					<textcolor>ffffffff</textcolor>
-					<shadowcolor>ShadowColour</shadowcolor>
-					<focusedcolor>ffffc04b</focusedcolor>
-					<texturefocus/>
-					<texturenofocus/>
-					<onclick>SetProperty(VideoOSDSelect,1,home)</onclick>
-					<onclick>ActivateWindow(osdsubtitlesettings)</onclick>
-				</control>
-				<!-- Bookmarks -->
-				<control id="13" type="button">
-					<width>1200</width>
-					<height>116</height>
-					<font>OSD32</font>
-					<align>right</align>
-					<label>298</label>
-					<textcolor>ffffffff</textcolor>
-					<shadowcolor>ShadowColour</shadowcolor>
-					<focusedcolor>ffffc04b</focusedcolor>
-					<texturefocus/>
-					<texturenofocus/>
-					<onclick>ActivateWindow(videobookmarks)</onclick>
-				</control>
-				<!-- Video Settings -->
-				<control id="14" type="button">
-					<width>1200</width>
-					<height>116</height>
-					<font>OSD32</font>
-					<align>right</align>
-					<label>$LOCALIZE[31137]</label>
-					<textcolor>ffffffff</textcolor>
-					<shadowcolor>ShadowColour</shadowcolor>
-					<focusedcolor>ffffc04b</focusedcolor>
-					<texturefocus/>
-					<texturenofocus/>
-					<onclick>SetProperty(VideoOSDSelect,1,home)</onclick>
-					<onclick>ActivateWindow(osdvideosettings)</onclick>
-				</control>
-				<!-- Audio Settings -->
-				<control id="15" type="button">
-					<width>1200</width>
-					<height>116</height>
-					<font>OSD32</font>
-					<align>right</align>
-					<label>$LOCALIZE[31000]</label>
-					<textcolor>ffffffff</textcolor>
-					<shadowcolor>ShadowColour</shadowcolor>
-					<focusedcolor>ffffc04b</focusedcolor>
-					<texturefocus/>
-					<texturenofocus/>
-					<onclick>SetProperty(VideoOSDSelect,1,home)</onclick>
-					<onclick>ActivateWindow(osdaudiosettings)</onclick>
-				</control>
-				<!-- Next Video -->
-				<control id="16" type="button">
-					<width>1200</width>
-					<height>116</height>
-					<font>OSD32</font>
-					<align>right</align>
-					<label>$VAR[NextVideo]</label>
-					<textcolor>ffffffff</textcolor>
-					<shadowcolor>ShadowColour</shadowcolor>
-					<focusedcolor>ffffc04b</focusedcolor>
-					<texturefocus/>
-					<texturenofocus/>
-					<onclick>PlayerControl(Next)</onclick>
-					<visible>Window.IsVisible(VideoFullScreen.xml) + system.getbool(videoplayer.autoplaynextitem)</visible>
-				</control>
-				<!-- Color management -->
-				<control id="17" type="button">
-					<width>1200</width>
-					<height>116</height>
-					<font>OSD32</font>
-					<align>right</align>
-					<label>$LOCALIZE[31138]</label>
-					<textcolor>ffffffff</textcolor>
-					<shadowcolor>ShadowColour</shadowcolor>
-					<focusedcolor>ffffc04b</focusedcolor>
-					<texturefocus/>
-					<texturenofocus/>
-					<onclick>ActivateWindow(osdcmssettings)</onclick>
-					<visible>System.HasCMS</visible>
 				</control>
 			</control>
 		</control>

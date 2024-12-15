@@ -559,7 +559,7 @@
 					<control type="image">
 						<width>1956</width>
 						<height>168</height>
-						<texture border="1,1,1,6">settings/button_no_focus.png</texture>
+						<texture border="0,0,0,6">settings/button_no_focus.png</texture>
 					</control>
 					<control type="label">
 						<left>80</left>
@@ -574,7 +574,7 @@
 					<control type="image">
 						<width>1956</width>
 						<height>168</height>
-						<texture border="1,1,1,6">settings/button_focus.png</texture>
+						<texture border="0,0,0,6">settings/button_no_focus.png</texture>
 					</control>
 					<control type="label">
 						<left>80</left>
@@ -618,7 +618,7 @@
 					<control type="image">
 						<width>1116</width>
 						<height>280</height>
-						<texture border="1,1,1,6">settings/button_no_focus.png</texture>
+						<texture border="0,0,0,6">settings/button_no_focus.png</texture>
 					</control>
 					<control type="image">
 						<left>80</left>
@@ -652,7 +652,7 @@
 					<control type="image">
 						<width>1116</width>
 						<height>280</height>
-						<texture border="1,1,1,6">settings/button_focus.png</texture>
+						<texture border="0,0,0,6">settings/button_no_focus.png</texture>
 					</control>
 					<control type="image">
 						<left>80</left>
@@ -860,29 +860,28 @@
 			<include>HiddenControl</include>
 			<visible>Control.IsEnabled(5)</visible>
 		</control>
-		<include>DialogBackgroundImage</include>
 		<control type="group">
 			<left>1080</left>
-			<top>177</top>
+			<top>435</top>
 			<width>1680</width>
-			<height>1806</height>
+			<height>1290</height>
 			<control id="3" type="fixedlist">
 				<width>1680</width>
-				<height>1806</height>
+				<height>1290</height>
 				<onleft>Back</onleft>
 				<onright>Back</onright>
 				<onup>noop</onup>
 				<ondown>noop</ondown>
-				<movement>3</movement>
+				<movement>2</movement>
 				<scrolltime>0</scrolltime>
-				<focusposition>3</focusposition>
+				<focusposition>2</focusposition>
 				<orientation>vertical</orientation>
-				<animation condition="String.IsEqual(Container(3).NumItems,2) | String.IsEqual(Container(3).NumItems,4) | String.IsEqual(Container(3).NumItems,6)" effect="slide" end="0,-129">Conditional</animation>
+				<animation condition="String.IsEqual(Container(3).NumItems,2) | String.IsEqual(Container(3).NumItems,4)" effect="slide" end="0,-129">Conditional</animation>
 				<itemlayout height="258" width="1680">
 					<control type="image">
 						<width>1680</width>
 						<height>258</height>
-						<texture border="6">dialogs/SubtitlesNF.png</texture>
+						<texture border="2">dialogs/SubtitlesNF.png</texture>
 					</control>
 					<control type="label">
 						<left>68</left>
@@ -891,6 +890,46 @@
 						<font>Reg37</font>
 						<textcolor>ffffffff</textcolor>
 						<label>$INFO[ListItem.Label]</label>
+						<visible>!Window.IsVisible(12300) + !Window.IsVisible(12301) + !Window.IsVisible(12302)</visible>
+					</control>
+					<control type="label">
+						<top>-28</top>
+						<left>68</left>
+						<width>1544</width>
+						<height>210</height>
+						<font>Reg37</font>
+						<textcolor>ffffffff</textcolor>
+						<label>[B]$VAR[StreamLabel]$VAR[StreamOriginal]$VAR[StreamForced]$VAR[StreamVisualImpaired]$VAR[StreamHearingImpaired][/B]</label>
+						<visible>Window.IsVisible(12300) | Window.IsVisible(12301) | Window.IsVisible(12302)</visible>
+					</control>
+					<control type="label">
+						<top>158</top>
+						<left>68</left>
+						<width>1544</width>
+						<height>68</height>
+						<font>Reg28</font>
+						<textcolor>ffffffff</textcolor>
+						<label>$VAR[StreamDetails]</label>
+						<visible>Window.IsVisible(12300) | Window.IsVisible(12301) | Window.IsVisible(12302)</visible>
+					</control>
+					<control type="image">
+						<right>68</right>
+						<top>44</top>
+						<width>80</width>
+						<height>62</height>
+						<texture>dialogs/checkmark.png</texture>
+						<visible>ListItem.IsSelected</visible>
+						<visible>Window.IsVisible(12300) | Window.IsVisible(12301) | Window.IsVisible(12302)</visible>
+						<animation condition="ListItem.Property(stream.isdefault)" effect="slide" end="-85,0">Conditional</animation>
+					</control>
+					<control type="image">
+						<right>68</right>
+						<top>44</top>
+						<width>65</width>
+						<height>62</height>
+						<texture>dialogs/star.png</texture>
+						<visible>ListItem.Property(stream.isdefault)</visible>
+						<visible>Window.IsVisible(12300) | Window.IsVisible(12301) | Window.IsVisible(12302)</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout height="258" width="1680">
@@ -907,6 +946,48 @@
 						<textcolor>ff000000</textcolor>
 						<selectedcolor>ff000000</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
+						<visible>!Window.IsVisible(12300) + !Window.IsVisible(12301) + !Window.IsVisible(12302)</visible>
+					</control>
+					<control type="label">
+						<top>-28</top>
+						<left>68</left>
+						<width>1544</width>
+						<height>210</height>
+						<font>Reg37</font>
+						<textcolor>ff000000</textcolor>
+						<selectedcolor>ff000000</selectedcolor>
+						<label>[B]$VAR[StreamLabel]$VAR[StreamOriginal]$VAR[StreamForced]$VAR[StreamVisualImpaired]$VAR[StreamHearingImpaired][/B]</label>
+						<visible>Window.IsVisible(12300) | Window.IsVisible(12301) | Window.IsVisible(12302)</visible>
+					</control>
+					<control type="label">
+						<top>158</top>
+						<left>68</left>
+						<width>1544</width>
+						<height>68</height>
+						<font>Reg28</font>
+						<textcolor>ff000000</textcolor>
+						<selectedcolor>ff000000</selectedcolor>
+						<label>$VAR[StreamDetails]</label>
+						<visible>Window.IsVisible(12300) | Window.IsVisible(12301) | Window.IsVisible(12302)</visible>
+					</control>
+					<control type="image">
+						<right>68</right>
+						<top>44</top>
+						<width>80</width>
+						<height>62</height>
+						<texture colordiffuse="ff000000">dialogs/checkmark.png</texture>
+						<visible>ListItem.IsSelected</visible>
+						<visible>Window.IsVisible(12300) | Window.IsVisible(12301) | Window.IsVisible(12302)</visible>
+						<animation condition="ListItem.Property(stream.isdefault)" effect="slide" end="-85,0">Conditional</animation>
+					</control>
+					<control type="image">
+						<right>68</right>
+						<top>44</top>
+						<width>65</width>
+						<height>62</height>
+						<texture colordiffuse="ff000000">dialogs/star.png</texture>
+						<visible>ListItem.Property(stream.isdefault)</visible>
+						<visible>Window.IsVisible(12300) | Window.IsVisible(12301) | Window.IsVisible(12302)</visible>
 					</control>
 				</focusedlayout>
 			</control>
@@ -1155,7 +1236,7 @@
 					<control type="image">
 						<width>1716</width>
 						<height>280</height>
-						<texture border="1,1,1,6">settings/button_no_focus.png</texture>
+						<texture border="0,0,0,6">settings/button_no_focus.png</texture>
 					</control>
 					<control type="image">
 						<left>54</left>
@@ -1189,7 +1270,7 @@
 					<control type="image">
 						<width>1716</width>
 						<height>280</height>
-						<texture border="1,1,1,6">settings/button_focus.png</texture>
+						<texture border="0,0,0,6">settings/button_no_focus.png</texture>
 					</control>
 					<control type="image">
 						<left>54</left>

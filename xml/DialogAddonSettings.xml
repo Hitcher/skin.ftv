@@ -49,9 +49,9 @@
 				<onclick>SetFocus(5)</onclick>
 				<textcolor>NotFocusedColour</textcolor>
 				<focusedcolor>$VAR[AddonSettingsDefaultButton]</focusedcolor>
-				<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-				<alttexturefocus border="1,1,1,6">settings/button_focus.png</alttexturefocus>
-				<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+				<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+				<alttexturefocus border="0,0,0,6">settings/button_focus.png</alttexturefocus>
+				<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 				<pulseonselect>false</pulseonselect>
 			</control>
 			<!-- Right grouplist -->
@@ -78,8 +78,8 @@
 				<textoffsetx>80</textoffsetx>
 				<textcolor>NotFocusedColour</textcolor>
 				<focusedcolor>FocusedColour</focusedcolor>
-				<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-				<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+				<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+				<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 			</control>
 			<!-- Default radiobutton -->
 			<control id="8" type="radiobutton">
@@ -99,8 +99,8 @@
 				<textureradioofffocus>settings/radio_off_focus.png</textureradioofffocus>
 				<textureradiooffnofocus>settings/radio_off_no_focus.png</textureradiooffnofocus>
 				<textureradiooffdisabled>settings/radio_off_disabled.png</textureradiooffdisabled>
-				<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-				<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+				<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+				<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 			</control>
 			<!-- Default spincontrolex -->
 			<control id="9" type="spincontrolex">
@@ -112,8 +112,8 @@
 				<textcolor>NotFocusedColour</textcolor>
 				<focusedcolor>FocusedColour</focusedcolor>
 				<selectedcolor>SelectedColour</selectedcolor>
-				<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-				<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+				<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+				<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 				<aligny>center</aligny>
 				<reverse>yes</reverse>
 			</control>
@@ -131,8 +131,8 @@
 				<textoffsetx>80</textoffsetx>
 				<textcolor>NotFocusedColour</textcolor>
 				<focusedcolor>FocusedColour</focusedcolor>
-				<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-				<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+				<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+				<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 			</control>
 			<!-- Default slider -->
 			<control id="13" type="sliderex">
@@ -143,8 +143,8 @@
 				<textoffsetx>80</textoffsetx>
 				<textcolor>NotFocusedColour</textcolor>
 				<focusedcolor>FocusedColour</focusedcolor>
-				<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-				<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+				<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+				<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 				<sliderwidth>400</sliderwidth>
 				<sliderheight>24</sliderheight>
 				<texturesliderbar border="12">osd/progress_bar_back.png</texturesliderbar>
@@ -169,8 +169,8 @@
 				<textoffsetx>80</textoffsetx>
 				<textcolor>NotFocusedColour</textcolor>
 				<focusedcolor>FocusedColour</focusedcolor>
-				<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-				<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+				<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+				<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 			</control>
 			<!-- Button grouplist -->
 			<control id="9000" type="grouplist">

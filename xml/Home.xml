@@ -261,7 +261,7 @@
 				<width>568</width>
 				<height>3692</height>
 				<aspectratio>stretch</aspectratio>
-				<texture border="0,0,1,0">home/home_list_fade.png</texture>
+				<texture>home/home_list_fade.png</texture>
 				<animation condition="Container(99).Row(0)" effect="slide" end="0,0" time="200">Conditional</animation>
 				<animation condition="Container(99).Row(1)" effect="slide" end="0,126" time="200">Conditional</animation>
 				<animation condition="Container(99).Row(2)" effect="slide" end="0,252" time="200">Conditional</animation>
@@ -536,7 +536,7 @@
 							<height>994</height>
 							<bordersize>0,0,26,34</bordersize>
 							<bordertexture infill="false" border="24,22,26,34">settings/settings_back_shadow.png</bordertexture>
-							<texture border="0,0,1,0">settings/settings_back.png</texture>
+							<texture>settings/settings_back.png</texture>
 						</control>
 						<control type="label">
 							<left>28</left>
@@ -565,7 +565,7 @@
 							<height>994</height>
 							<bordersize>0,0,26,34</bordersize>
 							<bordertexture infill="false" border="24,22,26,34">settings/settings_back_shadow.png</bordertexture>
-							<texture border="0,0,1,0">settings/settings_back.png</texture>
+							<texture>settings/settings_back.png</texture>
 						</control>
 						<control type="label">
 							<left>28</left>

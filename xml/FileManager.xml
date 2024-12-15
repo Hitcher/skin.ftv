@@ -64,7 +64,7 @@
 						<control type="image">
 							<width>1650</width>
 							<height>168</height>
-							<texture border="1,1,1,6">settings/button_no_focus.png</texture>
+							<texture border="0,0,0,6">settings/button_no_focus.png</texture>
 						</control>
 						<control type="label">
 							<left>80</left>
@@ -88,7 +88,7 @@
 						<control type="image">
 							<width>1650</width>
 							<height>168</height>
-							<texture border="1,1,1,6">settings/button_focus.png</texture>
+							<texture border="0,0,0,6">settings/button_no_focus.png</texture>
 						</control>
 						<control type="group">
 							<visible>Control.HasFocus(20)</visible>
@@ -189,7 +189,7 @@
 						<control type="image">
 							<width>1650</width>
 							<height>168</height>
-							<texture border="1,1,1,6">settings/button_no_focus.png</texture>
+							<texture border="0,0,0,6">settings/button_no_focus.png</texture>
 						</control>
 						<control type="label">
 							<left>80</left>
@@ -213,7 +213,7 @@
 						<control type="image">
 							<width>1650</width>
 							<height>168</height>
-							<texture border="1,1,1,6">settings/button_focus.png</texture>
+							<texture border="0,0,0,6">settings/button_no_focus.png</texture>
 						</control>
 						<control type="group">
 							<visible>Control.HasFocus(21)</visible>

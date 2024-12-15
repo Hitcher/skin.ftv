@@ -70,7 +70,7 @@
 					<height>994</height>
 					<bordersize>0,0,26,34</bordersize>
 					<bordertexture infill="false" border="24,22,26,34">settings/settings_back_shadow.png</bordertexture>
-					<texture border="0,0,1,0">settings/settings_back.png</texture>
+					<texture>settings/settings_back.png</texture>
 				</control>
 				<control type="label">
 					<left>-20</left>
@@ -114,7 +114,7 @@
 						<height>994</height>
 						<bordersize>0,0,26,34</bordersize>
 						<bordertexture infill="false" border="24,22,26,34">settings/settings_back_shadow.png</bordertexture>
-						<texture border="0,0,1,0">settings/settings_back.png</texture>
+						<texture>settings/settings_back.png</texture>
 					</control>
 					<control type="label">
 						<left>-20</left>
@@ -155,7 +155,7 @@
 						<height>994</height>
 						<bordersize>0,0,26,34</bordersize>
 						<bordertexture infill="false" border="24,22,26,34">settings/settings_back_shadow.png</bordertexture>
-						<texture border="0,0,1,0">settings/settings_back.png</texture>
+						<texture>settings/settings_back.png</texture>
 					</control>
 					<control type="label">
 						<left>-20</left>
@@ -196,7 +196,7 @@
 						<height>994</height>
 						<bordersize>0,0,26,34</bordersize>
 						<bordertexture infill="false" border="24,22,26,34">settings/settings_back_shadow.png</bordertexture>
-						<texture border="0,0,1,0">settings/settings_back.png</texture>
+						<texture>settings/settings_back.png</texture>
 					</control>
 					<control type="label">
 						<left>-20</left>
@@ -237,7 +237,7 @@
 						<height>994</height>
 						<bordersize>0,0,26,34</bordersize>
 						<bordertexture infill="false" border="24,22,26,34">settings/settings_back_shadow.png</bordertexture>
-						<texture border="0,0,1,0">settings/settings_back.png</texture>
+						<texture>settings/settings_back.png</texture>
 					</control>
 					<control type="label">
 						<left>-20</left>
@@ -278,7 +278,7 @@
 						<height>994</height>
 						<bordersize>0,0,26,34</bordersize>
 						<bordertexture infill="false" border="24,22,26,34">settings/settings_back_shadow.png</bordertexture>
-						<texture border="0,0,1,0">settings/settings_back.png</texture>
+						<texture>settings/settings_back.png</texture>
 					</control>
 					<control type="label">
 						<left>-20</left>
@@ -319,7 +319,7 @@
 						<height>994</height>
 						<bordersize>0,0,26,34</bordersize>
 						<bordertexture infill="false" border="24,22,26,34">settings/settings_back_shadow.png</bordertexture>
-						<texture border="0,0,1,0">settings/settings_back.png</texture>
+						<texture>settings/settings_back.png</texture>
 					</control>
 					<control type="label">
 						<left>-20</left>
@@ -356,7 +356,7 @@
 				<height>994</height>
 				<bordersize>0,0,26,34</bordersize>
 				<bordertexture infill="false" border="24,22,26,34">settings/settings_back_shadow.png</bordertexture>
-				<texture border="0,0,1,0">settings/settings_back.png</texture>
+				<texture>settings/settings_back.png</texture>
 			</control>
 			<control type="label">
 				<left>-20</left>
@@ -438,8 +438,8 @@
 					<onclick>SetFocus(5)</onclick>
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					<pulseonselect>false</pulseonselect>
 				</control>
 				<control type="image">
@@ -476,8 +476,8 @@
 						<textcolor>NotFocusedColour</textcolor>
 						<focusedcolor>FocusedColour</focusedcolor>
 						<onclick>ActivateWindow(filemanager)</onclick>
-						<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-						<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+						<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+						<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					</control>
 					<control id="9003" type="button">
 						<height>240</height>
@@ -490,8 +490,8 @@
 						<textcolor>NotFocusedColour</textcolor>
 						<focusedcolor>FocusedColour</focusedcolor>
 						<onclick>ActivateWindow(profiles)</onclick>
-						<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-						<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+						<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+						<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					</control>
 					<control id="9004" type="button">
 						<height>240</height>
@@ -505,8 +505,8 @@
 						<focusedcolor>FocusedColour</focusedcolor>
 						<onclick>ActivateWindow(systeminfo)</onclick>
 						<onfocus>SetProperty(SettingsLevel,$INFO[Control.GetLabel(20)],home)</onfocus>
-						<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-						<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+						<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+						<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					</control>
 					<control id="20" type="button">
 						<height>240</height>
@@ -519,8 +519,8 @@
 						<textcolor>NotFocusedColour</textcolor>
 						<focusedcolor>FocusedColour</focusedcolor>
 						<onclick>SettingsLevelChange</onclick>
-						<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-						<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+						<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+						<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					</control>
 				</control>
 				<control type="label">
@@ -664,8 +664,8 @@
 			<textoffsetx>80</textoffsetx>
 			<textcolor>NotFocusedColour</textcolor>
 			<focusedcolor>FocusedColour</focusedcolor>
-			<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-			<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+			<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+			<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 		</control>
 		<control id="8" type="radiobutton">
 			<width>1916</width>
@@ -684,8 +684,8 @@
 			<textureradioofffocus>settings/radio_off_focus.png</textureradioofffocus>
 			<textureradiooffnofocus>settings/radio_off_no_focus.png</textureradiooffnofocus>
 			<textureradiooffdisabled>settings/radio_off_disabled.png</textureradiooffdisabled>
-			<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-			<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+			<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+			<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 		</control>
 		<control id="9" type="spincontrolex">
 			<width>1916</width>
@@ -695,8 +695,8 @@
 			<textcolor>NotFocusedColour</textcolor>
 			<focusedcolor>FocusedColour</focusedcolor>
 			<selectedcolor>SelectedColour</selectedcolor>
-			<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-			<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+			<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+			<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 			<aligny>center</aligny>
 			<reverse>yes</reverse>
 		</control>
@@ -713,8 +713,8 @@
 			<textoffsetx>80</textoffsetx>
 			<textcolor>NotFocusedColour</textcolor>
 			<focusedcolor>FocusedColour</focusedcolor>
-			<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-			<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+			<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+			<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 			<sliderwidth>400</sliderwidth>
 			<sliderheight>24</sliderheight>
 			<texturesliderbar border="12">osd/progress_bar_back.png</texturesliderbar>
@@ -737,8 +737,8 @@
 			<textoffsetx>80</textoffsetx>
 			<textcolor>NotFocusedColour</textcolor>
 			<focusedcolor>FocusedColour</focusedcolor>
-			<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-			<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+			<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+			<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 		</control>
 	</controls>
 </window>

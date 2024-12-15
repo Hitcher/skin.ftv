@@ -49,7 +49,7 @@
 			<left>-56</left>
 			<top>578</top>
 			<visible>!Window.IsVisible(interfacesettings)</visible>
-			<animation condition="!Window.Previous(systeminfo)" easing="inout" effect="slide" end="0,0" start="-98,0" time="125" tween="sine">WindowOpen</animation>
+			<animation condition="!Window.Previous(systeminfo)" easing="inout" effect="slide" end="0,0" start="-98,0" time="125" tween="sine" delay="60">WindowOpen</animation>
 			<animation condition="!Window.Next(systeminfo)" easing="inout" effect="slide" end="-98,0" start="0,0" time="125" tween="sine">WindowClose</animation>
 			<control type="group">
 				<width>666</width>
@@ -61,7 +61,7 @@
 					<height>994</height>
 					<bordersize>0,0,26,34</bordersize>
 					<bordertexture infill="false" border="24,22,26,34">settings/settings_back_shadow.png</bordertexture>
-					<texture border="0,0,1,0">settings/settings_back.png</texture>
+					<texture>settings/settings_back.png</texture>
 				</control>
 				<control type="label">
 					<left>-20</left>
@@ -89,8 +89,8 @@
 			</control>
 		</control>
 		<control type="group">
-			<animation easing="inout" effect="slide" end="1178,0" start="0,0" time="120" tween="sine">WindowOpen</animation>
-			<animation easing="inout" effect="slide" end="0,0" start="1178,0" time="120" tween="sine">WindowClose</animation>
+			<animation easing="inout" effect="slide" end="1178,0" start="0,0" time="125" tween="sine">WindowOpen</animation>
+			<animation easing="inout" effect="slide" end="0,0" start="1178,0" time="125" tween="sine">WindowClose</animation>
 			<control type="group">
 				<left>1046</left>
 				<top>578</top>
@@ -105,7 +105,7 @@
 						<height>994</height>
 						<bordersize>0,0,26,34</bordersize>
 						<bordertexture infill="false" border="24,22,26,34">settings/settings_back_shadow.png</bordertexture>
-						<texture border="0,0,1,0">settings/settings_back.png</texture>
+						<texture>settings/settings_back.png</texture>
 					</control>
 					<control type="label">
 						<left>-20</left>
@@ -146,7 +146,7 @@
 						<height>994</height>
 						<bordersize>0,0,26,34</bordersize>
 						<bordertexture infill="false" border="24,22,26,34">settings/settings_back_shadow.png</bordertexture>
-						<texture border="0,0,1,0">settings/settings_back.png</texture>
+						<texture>settings/settings_back.png</texture>
 					</control>
 					<control type="label">
 						<left>-20</left>
@@ -187,7 +187,7 @@
 						<height>994</height>
 						<bordersize>0,0,26,34</bordersize>
 						<bordertexture infill="false" border="24,22,26,34">settings/settings_back_shadow.png</bordertexture>
-						<texture border="0,0,1,0">settings/settings_back.png</texture>
+						<texture>settings/settings_back.png</texture>
 					</control>
 					<control type="label">
 						<left>-20</left>
@@ -228,7 +228,7 @@
 						<height>994</height>
 						<bordersize>0,0,26,34</bordersize>
 						<bordertexture infill="false" border="24,22,26,34">settings/settings_back_shadow.png</bordertexture>
-						<texture border="0,0,1,0">settings/settings_back.png</texture>
+						<texture>settings/settings_back.png</texture>
 					</control>
 					<control type="label">
 						<left>-20</left>
@@ -269,7 +269,7 @@
 						<height>994</height>
 						<bordersize>0,0,26,34</bordersize>
 						<bordertexture infill="false" border="24,22,26,34">settings/settings_back_shadow.png</bordertexture>
-						<texture border="0,0,1,0">settings/settings_back.png</texture>
+						<texture>settings/settings_back.png</texture>
 					</control>
 					<control type="label">
 						<left>-20</left>
@@ -306,7 +306,7 @@
 				<height>994</height>
 				<bordersize>0,0,26,34</bordersize>
 				<bordertexture infill="false" border="24,22,26,34">settings/settings_back_shadow.png</bordertexture>
-				<texture border="0,0,1,0">settings/settings_back.png</texture>
+				<texture>settings/settings_back.png</texture>
 			</control>
 			<control type="label">
 				<left>-20</left>
@@ -380,7 +380,7 @@
 						<control type="image">
 							<width>1276</width>
 							<height>240</height>
-							<texture border="1,1,1,6">settings/button_no_focus.png</texture>
+							<texture border="0,0,0,6">settings/button_no_focus.png</texture>
 						</control>
 						<control type="label">
 							<left>80</left>
@@ -401,7 +401,7 @@
 						<control type="image">
 							<width>1276</width>
 							<height>240</height>
-							<texture border="1,1,1,6">settings/button_focus.png</texture>
+							<texture border="0,0,0,6">settings/button_no_focus.png</texture>
 						</control>
 						<control type="label">
 							<left>80</left>
@@ -772,7 +772,7 @@
 					<control type="image">
 						<width>1116</width>
 						<height>280</height>
-						<texture border="1,1,1,6">settings/button_no_focus.png</texture>
+						<texture border="0,0,0,6">settings/button_no_focus.png</texture>
 					</control>
 					<control type="image">
 						<left>54</left>
@@ -811,7 +811,7 @@
 					<control type="image">
 						<width>1116</width>
 						<height>280</height>
-						<texture border="1,1,1,6">settings/button_focus.png</texture>
+						<texture border="0,0,0,6">settings/button_no_focus.png</texture>
 					</control>
 					<control type="image">
 						<left>54</left>

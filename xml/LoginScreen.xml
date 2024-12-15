@@ -81,7 +81,7 @@
 						<height>994</height>
 						<bordersize>0,0,26,34</bordersize>
 						<bordertexture infill="false" border="24,22,26,34">settings/settings_back_shadow.png</bordertexture>
-						<texture border="0,0,1,0">settings/settings_back.png</texture>
+						<texture>settings/settings_back.png</texture>
 					</control>
 					<control type="label">
 						<left>-20</left>
@@ -128,7 +128,7 @@
 						<height>994</height>
 						<bordersize>0,0,26,34</bordersize>
 						<bordertexture infill="false" border="24,22,26,34">settings/settings_back_shadow.png</bordertexture>
-						<texture border="0,0,1,0">settings/settings_back.png</texture>
+						<texture>settings/settings_back.png</texture>
 					</control>
 					<control type="label">
 						<left>-20</left>

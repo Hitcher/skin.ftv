@@ -95,7 +95,7 @@
 						<width>16</width>
 						<height>662</height>
 						<colordiffuse>55ffffff</colordiffuse>
-						<texture border="6,0,0,0">common/WhiteLine.png</texture>
+						<texture>common/WhiteLine.png</texture>
 					</control>
 					<control type="grouplist">
 						<left>894</left>
@@ -163,7 +163,7 @@
 								<width>16</width>
 								<height>288</height>
 								<colordiffuse>55ffffff</colordiffuse>
-								<texture border="6,0,0,0">common/WhiteLine.png</texture>
+								<texture>common/WhiteLine.png</texture>
 							</control>
 							<control type="image">
 								<left>104</left>
@@ -199,7 +199,7 @@
 								<width>16</width>
 								<height>288</height>
 								<colordiffuse>55ffffff</colordiffuse>
-								<texture border="6,0,0,0">common/WhiteLine.png</texture>
+								<texture>common/WhiteLine.png</texture>
 							</control>
 							<control type="image">
 								<width>396</width>
@@ -388,9 +388,9 @@
 						<onclick>SetProperty(Hourly,true,home)</onclick>
 						<altclick>ClearProperty(Hourly,home)</altclick>
 						<texturefocus border="6">common/button_fo.png</texturefocus>
-						<texturenofocus border="6">common/button_nf.png</texturenofocus>
+						<texturenofocus>common/button_nf.png</texturenofocus>
 						<alttexturefocus border="6">common/button_fo.png</alttexturefocus>
-						<alttexturenofocus border="6">common/button_nf.png</alttexturenofocus>
+						<alttexturenofocus>common/button_nf.png</alttexturenofocus>
 						<usealttexture>String.IsEqual(Window(home).Property(Hourly),true)</usealttexture>
 					</control>
 					<control id="100" type="button">
@@ -405,7 +405,7 @@
 						<onright>99</onright>
 						<onclick>Weather.LocationNext</onclick>
 						<texturefocus border="6">common/button_fo.png</texturefocus>
-						<texturenofocus border="6">common/button_nf.png</texturenofocus>
+						<texturenofocus>common/button_nf.png</texturenofocus>
 					</control>
 				</control>
 			</control>

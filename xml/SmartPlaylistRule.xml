@@ -52,8 +52,8 @@
 					<textoffsetx>80</textoffsetx>
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					<aligny>center</aligny>
 					<reverse>yes</reverse>
 				</control>
@@ -89,8 +89,8 @@
 					<textoffsetx>80</textoffsetx>
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					<aligny>center</aligny>
 					<reverse>yes</reverse>
 				</control>
@@ -129,8 +129,8 @@
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
 					<hinttext>...</hinttext>
-					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 				</control>
 				<!-- Browse Button -->
 				<control type="button" id="20">
@@ -147,8 +147,8 @@
 					<textoffsetx>80</textoffsetx>
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					<label>1024</label>
 				</control>
 			</control>

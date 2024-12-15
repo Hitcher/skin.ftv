@@ -86,7 +86,7 @@
 					<control type="image">
 						<width>1340</width>
 						<height>168</height>
-						<texture border="1,1,1,6">settings/button_no_focus.png</texture>
+						<texture border="0,0,0,6">settings/button_no_focus.png</texture>
 					</control>
 					<control type="label">
 						<left>80</left>
@@ -110,7 +110,7 @@
 					<control type="image">
 						<width>1340</width>
 						<height>168</height>
-						<texture border="1,1,1,6">settings/button_focus.png</texture>
+						<texture border="0,0,0,6">settings/button_no_focus.png</texture>
 					</control>
 					<control type="label">
 						<left>80</left>
@@ -203,8 +203,8 @@
 					<textoffsetx>80</textoffsetx>
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					<label>$ADDON[script.skinshortcuts 32048]</label>
 				</control>
 				<!-- Change label -->
@@ -216,8 +216,8 @@
 					<textoffsetx>80</textoffsetx>
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					<label>$ADDON[script.skinshortcuts 32025]</label>
 					<label2>$INFO[Container(211).ListItem.Label]</label2>
 				</control>
@@ -230,8 +230,8 @@
 					<textoffsetx>80</textoffsetx>
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					<label>$ADDON[script.skinshortcuts 32027]</label>
 					<label2>$INFO[Container(211).ListItem.Property(displaypath)]</label2>
 				</control>
@@ -244,8 +244,8 @@
 					<textoffsetx>80</textoffsetx>
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					<label>31218</label>
 					<label2>$VAR[ShortcutsWidgetName]</label2>
 					<enable>!String.IsEqual(Window.Property(groupname), shutdown) + !String.IsEqual(Container(211).ListItem.Property(defaultID),script.globalsearch) + !String.IsEqual(Container(211).ListItem.Property(defaultID),favourites) + !String.IsEqual(Container(211).ListItem.Property(defaultID),weather) + !String.IsEqual(Container(211).ListItem.Property(defaultID),settings) + !String.IsEqual(Container(211).ListItem.Property(defaultID),exit)</enable>
@@ -259,8 +259,8 @@
 					<textoffsetx>80</textoffsetx>
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					<label>$LOCALIZE[31219]</label>
 					<label2>$VAR[ShortcutsWidget]</label2>
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),widget1)">SetProperty(SubMenu,1000,home)</onclick>

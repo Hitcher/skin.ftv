@@ -61,7 +61,7 @@
 					<height>994</height>
 					<bordersize>0,0,26,34</bordersize>
 					<bordertexture infill="false" border="24,22,26,34">settings/settings_back_shadow.png</bordertexture>
-					<texture border="0,0,1,0">settings/settings_back.png</texture>
+					<texture>settings/settings_back.png</texture>
 				</control>
 				<control type="label">
 					<left>-20</left>
@@ -97,7 +97,7 @@
 				<height>994</height>
 				<bordersize>0,0,26,34</bordersize>
 				<bordertexture infill="false" border="24,22,26,34">settings/settings_back_shadow.png</bordertexture>
-				<texture border="0,0,1,0">settings/settings_back.png</texture>
+				<texture>settings/settings_back.png</texture>
 			</control>
 			<control type="label">
 				<left>-20</left>
@@ -151,8 +151,8 @@
 					<font>Light30Spaced</font>
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					<pulseonselect>false</pulseonselect>
 				</control>
 				<control type="image">
@@ -177,8 +177,8 @@
 						<label>7</label>
 						<textcolor>NotFocusedColour</textcolor>
 						<focusedcolor>FocusedColour</focusedcolor>
-						<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-						<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+						<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+						<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					</control>
 					<control type="button">
 						<height>240</height>
@@ -190,8 +190,8 @@
 						<label>13200</label>
 						<textcolor>NotFocusedColour</textcolor>
 						<focusedcolor>FocusedColour</focusedcolor>
-						<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-						<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+						<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+						<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					</control>
 					<control type="button">
 						<height>240</height>
@@ -203,8 +203,8 @@
 						<label>138</label>
 						<textcolor>FocusedColour</textcolor>
 						<focusedcolor>FocusedColour</focusedcolor>
-						<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-						<texturenofocus border="1,1,1,6">settings/button_focus.png</texturenofocus>
+						<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+						<texturenofocus border="0,0,0,6">settings/button_focus.png</texturenofocus>
 					</control>
 					<control type="button">
 						<height>240</height>
@@ -217,8 +217,8 @@
 						<label>$INFO[Window(home).Property(SettingsLevel)]</label>
 						<textcolor>NotFocusedColour</textcolor>
 						<focusedcolor>ffdadada</focusedcolor>
-						<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-						<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+						<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+						<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					</control>
 				</control>
 				<control type="label">
@@ -269,7 +269,7 @@
 				<effect easing="inout" end="1000,0" start="0,0" time="120" tween="sine" type="slide"/>
 			</animation>
 			<include content="DialogBack">
-				<param name="dialog_back_width" value="2876"/>
+				<param name="dialog_back_width" value="3076"/>
 				<param name="dialog_heading_width" value="960"/>
 				<param name="dialog_shadow_1_left" value="960"/>
 			</include>
@@ -297,8 +297,8 @@
 					<label>$LOCALIZE[31129]</label>
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 				</control>
 				<control id="95" type="button">
 					<height>168</height>
@@ -310,8 +310,8 @@
 					<label>20037</label>
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 				</control>
 				<control id="98" type="button">
 					<height>168</height>
@@ -323,8 +323,8 @@
 					<label>13281</label>
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 				</control>
 				<control id="97" type="button">
 					<height>168</height>
@@ -336,8 +336,8 @@
 					<label>13280</label>
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 				</control>
 				<control id="96" type="button">
 					<height>168</height>
@@ -349,8 +349,8 @@
 					<label>13279</label>
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 				</control>
 				<control id="94" type="button">
 					<height>168</height>
@@ -362,8 +362,8 @@
 					<label>13277</label>
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 				</control>
 				<control id="100" type="button">
 					<height>168</height>
@@ -375,26 +375,26 @@
 					<label>12389</label>
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					<onclick>RunScript(script.skinvariables,run_dialog=textviewer,heading='empty',text='$ESCINFO[System.PrivacyPolicy]')</onclick>
 				</control>
 			</control>
 			<control type="grouplist">
 				<left>1002</left>
 				<top>44</top>
-				<width>1778</width>
-				<height>872</height>
-				<itemgap>28</itemgap>
+				<width>1978</width>
+				<height>888</height>
+				<itemgap>12</itemgap>
 				<visible>!Control.HasFocus(101)</visible>
 				<animation delay="100" effect="fade" end="100" start="0" time="200">WindowOpen</animation>
 				<animation effect="fade" end="0" start="100" time="0">WindowClose</animation>
 				<control id="2" type="label">
 					<left>1002</left>
 					<top>40</top>
-					<width>1778</width>
+					<width>1978</width>
 					<height>62</height>
-					<font>Med24Spaced</font>
+					<font>MonoMed36</font>
 					<aligny>top</aligny>
 					<textcolor>ffdadada</textcolor>
 					<wrapmultiline>true</wrapmultiline>
@@ -403,9 +403,9 @@
 				<control id="3" type="label">
 					<left>1002</left>
 					<top>40</top>
-					<width>1778</width>
+					<width>1978</width>
 					<height>62</height>
-					<font>Med24Spaced</font>
+					<font>MonoMed36</font>
 					<aligny>top</aligny>
 					<textcolor>ffdadada</textcolor>
 					<wrapmultiline>true</wrapmultiline>
@@ -413,9 +413,9 @@
 				<control id="4" type="label">
 					<left>1002</left>
 					<top>40</top>
-					<width>1778</width>
+					<width>1978</width>
 					<height>62</height>
-					<font>Med24Spaced</font>
+					<font>MonoMed36</font>
 					<aligny>top</aligny>
 					<textcolor>ffdadada</textcolor>
 					<wrapmultiline>true</wrapmultiline>
@@ -423,9 +423,9 @@
 				<control id="5" type="label">
 					<left>1002</left>
 					<top>40</top>
-					<width>1778</width>
+					<width>1978</width>
 					<height>62</height>
-					<font>Med24Spaced</font>
+					<font>MonoMed36</font>
 					<aligny>top</aligny>
 					<textcolor>ffdadada</textcolor>
 					<wrapmultiline>true</wrapmultiline>
@@ -433,9 +433,9 @@
 				<control id="6" type="label">
 					<left>1002</left>
 					<top>40</top>
-					<width>1778</width>
+					<width>1978</width>
 					<height>62</height>
-					<font>Med24Spaced</font>
+					<font>MonoMed36</font>
 					<aligny>top</aligny>
 					<textcolor>ffdadada</textcolor>
 					<wrapmultiline>true</wrapmultiline>
@@ -443,9 +443,9 @@
 				<control id="7" type="label">
 					<left>1002</left>
 					<top>40</top>
-					<width>1778</width>
+					<width>1978</width>
 					<height>62</height>
-					<font>Med24Spaced</font>
+					<font>MonoMed36</font>
 					<aligny>top</aligny>
 					<textcolor>ffdadada</textcolor>
 					<wrapmultiline>true</wrapmultiline>
@@ -453,9 +453,9 @@
 				<control id="8" type="label">
 					<left>1002</left>
 					<top>40</top>
-					<width>1778</width>
+					<width>1978</width>
 					<height>62</height>
-					<font>Med24Spaced</font>
+					<font>MonoMed36</font>
 					<aligny>top</aligny>
 					<textcolor>ffdadada</textcolor>
 					<wrapmultiline>true</wrapmultiline>
@@ -463,9 +463,9 @@
 				<control id="9" type="label">
 					<left>1002</left>
 					<top>40</top>
-					<width>1778</width>
+					<width>1978</width>
 					<height>62</height>
-					<font>Med24Spaced</font>
+					<font>MonoMed36</font>
 					<aligny>top</aligny>
 					<textcolor>ffdadada</textcolor>
 					<wrapmultiline>true</wrapmultiline>
@@ -473,9 +473,9 @@
 				<control id="10" type="label">
 					<left>1002</left>
 					<top>40</top>
-					<width>1778</width>
+					<width>1978</width>
 					<height>62</height>
-					<font>Med24Spaced</font>
+					<font>MonoMed36</font>
 					<aligny>top</aligny>
 					<textcolor>ffdadada</textcolor>
 					<wrapmultiline>true</wrapmultiline>
@@ -483,9 +483,29 @@
 				<control id="11" type="label">
 					<left>1002</left>
 					<top>40</top>
-					<width>1778</width>
+					<width>1978</width>
 					<height>62</height>
-					<font>Med24Spaced</font>
+					<font>MonoMed36</font>
+					<aligny>top</aligny>
+					<textcolor>ffdadada</textcolor>
+					<wrapmultiline>true</wrapmultiline>
+				</control>
+				<control id="12" type="label">
+					<left>1002</left>
+					<top>40</top>
+					<width>1978</width>
+					<height>62</height>
+					<font>MonoMed36</font>
+					<aligny>top</aligny>
+					<textcolor>ffdadada</textcolor>
+					<wrapmultiline>true</wrapmultiline>
+				</control>
+				<control id="13" type="label">
+					<left>1002</left>
+					<top>40</top>
+					<width>1978</width>
+					<height>62</height>
+					<font>MonoMed36</font>
 					<aligny>top</aligny>
 					<textcolor>ffdadada</textcolor>
 					<wrapmultiline>true</wrapmultiline>
@@ -494,9 +514,9 @@
 			<control type="textbox">
 				<left>1002</left>
 				<top>44</top>
-				<width>1778</width>
-				<height>868</height>
-				<font>Med24CR</font>
+				<width>1978</width>
+				<height>884</height>
+				<font>MonoMed36Textbox</font>
 				<aligny>top</aligny>
 				<label>$INFO[System.FriendlyName,$LOCALIZE[31158]: ,[CR]]$INFO[System.ProfileName,$LOCALIZE[31154]: ,[CR]]$INFO[System.BuildVersion,$LOCALIZE[31155]: ,[CR]]$INFO[System.FreeSpace,Storage $LOCALIZE[31156]: , / ]$INFO[System.TotalSpace,,[CR]]$LOCALIZE[31157]: $INFO[System.Date(d)] $INFO[System.Date(mmm)] $INFO[System.Date(yyyy)] $INFO[System.Time(hh:mm:ss xx)]</label>
 				<textcolor>ffdadada</textcolor>
@@ -507,9 +527,9 @@
 			<control type="textbox">
 				<left>1002</left>
 				<top>44</top>
-				<width>1778</width>
-				<height>868</height>
-				<font>Med24CR</font>
+				<width>1978</width>
+				<height>884</height>
+				<font>MonoMed36Textbox</font>
 				<aligny>top</aligny>
 				<label>$INFO[System.PrivacyPolicy]</label>
 				<textcolor>ffdadada</textcolor>

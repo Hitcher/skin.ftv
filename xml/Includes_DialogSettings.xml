@@ -40,8 +40,8 @@
 				<textoffsetx>80</textoffsetx>
 				<textcolor>NotFocusedColour</textcolor>
 				<focusedcolor>FocusedColour</focusedcolor>
-				<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-				<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+				<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+				<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 			</control>
 			<!-- Default radiobutton -->
 			<control type="radiobutton" id="8">
@@ -61,8 +61,8 @@
 				<textureradioofffocus>settings/radio_off_focus.png</textureradioofffocus>
 				<textureradiooffnofocus>settings/radio_off_no_focus.png</textureradiooffnofocus>
 				<textureradiooffdisabled>settings/radio_off_disabled.png</textureradiooffdisabled>
-				<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-				<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+				<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+				<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 			</control>
 			<!-- Default spincontrolex -->
 			<control type="spincontrolex" id="9">
@@ -74,8 +74,8 @@
 				<textcolor>NotFocusedColour</textcolor>
 				<focusedcolor>FocusedColour</focusedcolor>
 				<selectedcolor>SelectedColour</selectedcolor>
-				<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-				<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+				<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+				<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 				<aligny>center</aligny>
 				<reverse>yes</reverse>
 			</control>
@@ -93,8 +93,8 @@
 				<textoffsetx>80</textoffsetx>
 				<textcolor>NotFocusedColour</textcolor>
 				<focusedcolor>FocusedColour</focusedcolor>
-				<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-				<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+				<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+				<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 			</control>
 			<!-- Default slider -->
 			<control type="sliderex" id="13">
@@ -105,8 +105,8 @@
 				<textoffsetx>80</textoffsetx>
 				<textcolor>NotFocusedColour</textcolor>
 				<focusedcolor>FocusedColour</focusedcolor>
-				<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-				<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+				<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+				<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 				<sliderwidth>400</sliderwidth>
 				<sliderheight>24</sliderheight>
 				<texturesliderbar border="12">osd/progress_bar_back.png</texturesliderbar>

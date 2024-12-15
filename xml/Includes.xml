@@ -314,6 +314,8 @@
 			<!--  4K label -->
 			<control id="99" type="label">
 				<left>12</left>
+				<include condition="!Integer.IsEqual(System.ScreenHeight,2160)">LabelVisionOffset_Default</include>
+				<include condition="Integer.IsEqual(System.ScreenHeight,2160)">LabelVisionOffset_4k</include>
 				<width>auto</width>
 				<height>76</height>
 				<font>Light35</font>
@@ -355,6 +357,8 @@
 			<!--  HDR label -->
 			<control id="99" type="label">
 				<left>12</left>
+				<include condition="!Integer.IsEqual(System.ScreenHeight,2160)">LabelVisionOffset_Default</include>
+				<include condition="Integer.IsEqual(System.ScreenHeight,2160)">LabelVisionOffset_4k</include>
 				<width>auto</width>
 				<height>76</height>
 				<font>Light35</font>
@@ -412,8 +416,8 @@
 			<font>Med22</font>
 			<label>$INFO[ListItem.Mpaa, , ]</label>
 			<textcolor>$VAR[RatingTextColour]</textcolor>
-			<texturefocus colordiffuse="$VAR[RatingButtonColour]" border="6">rating/flag.png</texturefocus>
-			<texturenofocus colordiffuse="$VAR[RatingButtonColour]" border="6">rating/flag.png</texturenofocus>
+			<texturefocus colordiffuse="$VAR[RatingButtonColour]" infill="false" border="6">rating/flag.png</texturefocus>
+			<texturenofocus colordiffuse="$VAR[RatingButtonColour]" infill="false" border="6">rating/flag.png</texturenofocus>
 			<visible>!String.IsEmpty(ListItem.Mpaa)</visible>
 		</control>
 		<control type="image">
@@ -434,8 +438,8 @@
 			<font>Med22</font>
 			<label> $VAR[VideoAspect] </label>
 			<textcolor>ffcccccc</textcolor>
-			<texturefocus colordiffuse="FF888888" border="6">rating/flag.png</texturefocus>
-			<texturenofocus colordiffuse="FF888888" border="6">rating/flag.png</texturenofocus>
+			<texturefocus colordiffuse="FF888888" infill="false" border="6">rating/flag.png</texturefocus>
+			<texturenofocus colordiffuse="FF888888" infill="false" border="6">rating/flag.png</texturenofocus>
 			<visible>!String.IsEmpty(ListItem.VideoAspect)</visible>
 		</control>
 		<control type="button">
@@ -449,8 +453,8 @@
 			<font>Med22</font>
 			<label> $VAR[HDRType] </label>
 			<textcolor>ffcccccc</textcolor>
-			<texturefocus colordiffuse="FF888888" border="6">rating/flag.png</texturefocus>
-			<texturenofocus colordiffuse="FF888888" border="6">rating/flag.png</texturenofocus>
+			<texturefocus colordiffuse="FF888888" infill="false" border="6">rating/flag.png</texturefocus>
+			<texturenofocus colordiffuse="FF888888" infill="false" border="6">rating/flag.png</texturenofocus>
 			<visible>!String.IsEmpty(ListItem.HdrType) + !String.IsEqual(ListItem.HdrType,dolbyvision)</visible>
 		</control>
 		<control type="button">
@@ -494,8 +498,8 @@
 			<font>Med22</font>
 			<label> $VAR[AudioCodec] </label>
 			<textcolor>ffcccccc</textcolor>
-			<texturefocus colordiffuse="FF888888" border="6">rating/flag.png</texturefocus>
-			<texturenofocus colordiffuse="FF888888" border="6">rating/flag.png</texturenofocus>
+			<texturefocus colordiffuse="FF888888" infill="false" border="6">rating/flag.png</texturefocus>
+			<texturenofocus colordiffuse="FF888888" infill="false" border="6">rating/flag.png</texturenofocus>
 			<visible>!String.IsEmpty(ListItem.AudioCodec) + !String.Contains(ListItem.FileName,atmos)</visible>
 		</control>
 		<control type="button">
@@ -553,8 +557,8 @@
 			<font>Med22</font>
 			<label> $VAR[AudioChannels] </label>
 			<textcolor>ffcccccc</textcolor>
-			<texturefocus colordiffuse="FF888888" border="6">rating/flag.png</texturefocus>
-			<texturenofocus colordiffuse="FF888888" border="6">rating/flag.png</texturenofocus>
+			<texturefocus colordiffuse="FF888888" infill="false" border="6">rating/flag.png</texturefocus>
+			<texturenofocus colordiffuse="FF888888" infill="false" border="6">rating/flag.png</texturenofocus>
 			<visible>!String.IsEmpty(ListItem.AudioChannels)</visible>
 		</control>
 	</include>
@@ -732,6 +736,12 @@
 	<include name="ButtonVisionOffset_4k">
 		<textoffsety>-5</textoffsety>
 	</include>
+	<include name="LabelVisionOffset_Default">
+		<top>-2</top>
+	</include>
+	<include name="LabelVisionOffset_4k">
+		<top>-3</top>
+	</include>
 	<!-- Scrollspeeds -->
 	<include name="ScrollSpeed_720">
 		<scrollspeed>120</scrollspeed>
@@ -741,5 +751,16 @@
 	</include>
 	<include name="ScrollSpeed_4k">
 		<scrollspeed>360</scrollspeed>
+	</include>
+	<!-- OSD Option Button -->
+	<include name="OSDOptionButton">
+		<width>100%</width>
+		<height>168</height>
+		<font>Light32</font>
+		<textoffsetx>80</textoffsetx>
+		<textcolor>NotFocusedColour</textcolor>
+		<focusedcolor>FocusedColour</focusedcolor>
+		<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+		<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 	</include>
 </includes>

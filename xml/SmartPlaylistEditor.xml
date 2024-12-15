@@ -42,8 +42,8 @@
 					<textoffsetx>80</textoffsetx>
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					<aligny>center</aligny>
 					<reverse>yes</reverse>
 				</control>
@@ -56,8 +56,8 @@
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
 					<hinttext>21433</hinttext>
-					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 				</control>
 				<!-- Default button -->
 				<control type="button" id="16">
@@ -68,8 +68,8 @@
 					<textoffsetx>80</textoffsetx>
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					<aligny>center</aligny>
 					<reverse>yes</reverse>
 				</control>
@@ -82,8 +82,8 @@
 					<textoffsetx>80</textoffsetx>
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					<aligny>center</aligny>
 					<reverse>yes</reverse>
 				</control>
@@ -96,8 +96,8 @@
 					<textoffsetx>80</textoffsetx>
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					<aligny>center</aligny>
 					<reverse>yes</reverse>
 				</control>
@@ -110,8 +110,8 @@
 					<textoffsetx>80</textoffsetx>
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					<aligny>center</aligny>
 				</control>
 				<!-- Default button -->
@@ -123,8 +123,8 @@
 					<textoffsetx>80</textoffsetx>
 					<textcolor>NotFocusedColour</textcolor>
 					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					<aligny>center</aligny>
 					<reverse>yes</reverse>
 				</control>
@@ -147,8 +147,8 @@
 					<textureradioofffocus>settings/radio_off_focus.png</textureradioofffocus>
 					<textureradiooffnofocus>settings/radio_off_no_focus.png</textureradiooffnofocus>
 					<textureradiooffdisabled>settings/radio_off_disabled.png</textureradiooffdisabled>
-					<texturefocus border="1,1,1,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="1,1,1,6">settings/button_no_focus.png</texturenofocus>
+					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
+					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 				</control>
 			</control>
 			<!-- Right group -->
@@ -188,7 +188,7 @@
 						<control type="image">
 							<width>1140</width>
 							<height>168</height>
-							<texture border="1,1,1,6">settings/button_no_focus.png</texture>
+							<texture border="0,0,0,6">settings/button_no_focus.png</texture>
 						</control>
 						<control type="label">
 							<left>80</left>
@@ -203,7 +203,7 @@
 						<control type="image">
 							<width>1140</width>
 							<height>168</height>
-							<texture border="1,1,1,6">settings/button_focus.png</texture>
+							<texture border="0,0,0,6">settings/button_no_focus.png</texture>
 						</control>
 						<control type="label">
 							<left>80</left>
