@@ -425,8 +425,12 @@
 		<value condition="String.IsEqual(ListItem.AudioCodec,DTSHD_MA)">DTS-MA</value>
 		<value condition="String.IsEqual(ListItem.AudioCodec,DTSHDMA)">DTS-MA</value>
 		<value condition="String.IsEqual(ListItem.AudioCodec,DTSHD_HRA)">DTS-HRA</value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,trueHD)">DOLBY-HD</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,TRUEHD)">DOLBY-HD</value>
 		<value condition="String.IsEqual(ListItem.AudioCodec,VORBIS)">VORBIS</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,DTSHD_MA_X)">DTS:X</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,DTSHD_MA_X_IMAX)">DTS:X IMAX</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,EAC3_DDP_ATMOS)">DD+</value>
+		<value>$INFO[ListItem.AudioCodec]</value>
 	</variable>
 	<variable name="AudioChannels">
 		<value condition="String.IsEqual(ListItem.AudioChannels,1)">1.0</value>

@@ -500,7 +500,7 @@
 			<textcolor>ffcccccc</textcolor>
 			<texturefocus colordiffuse="FF888888" infill="false" border="6">rating/flag.png</texturefocus>
 			<texturenofocus colordiffuse="FF888888" infill="false" border="6">rating/flag.png</texturenofocus>
-			<visible>!String.IsEmpty(ListItem.AudioCodec) + !String.Contains(ListItem.FileName,atmos)</visible>
+			<visible>!String.IsEmpty(ListItem.AudioCodec) + !String.Contains(ListItem.AudioCodec,atmos) + !String.Contains(ListItem.AudioCodec,truehd) + !String.Contains(ListItem.AudioCodec,EAC3)</visible>
 		</control>
 		<control type="button">
 			<top>4</top>
@@ -514,7 +514,7 @@
 			<textcolor>ffcccccc</textcolor>
 			<texturefocus border="58,6,6,6">rating/dolby_left.png</texturefocus>
 			<texturenofocus border="58,6,6,6">rating/dolby_left.png</texturenofocus>
-			<visible>String.Contains(ListItem.FileName,atmos) + String.IsEqual(ListItem.AudioCodec,EAC3)</visible>
+			<visible>String.Contains(ListItem.AudioCodec,atmos) + String.IsEqual(ListItem.AudioCodec,EAC3)</visible>
 		</control>
 		<control type="button">
 			<top>4</top>
@@ -524,11 +524,25 @@
 			<aligny>bottom</aligny>
 			<textoffsety>-6</textoffsety>
 			<font>Bold22</font>
-			<label>     TRUEHD</label>
+			<label>     DOLBY TRUEHD</label>
 			<textcolor>ffcccccc</textcolor>
 			<texturefocus border="58,6,6,6">rating/dolby_left.png</texturefocus>
 			<texturenofocus border="58,6,6,6">rating/dolby_left.png</texturenofocus>
-			<visible>String.Contains(ListItem.FileName,atmos) + String.IsEqual(ListItem.AudioCodec,trueHD)</visible>
+			<visible>String.Contains(ListItem.AudioCodec,truehd)</visible>
+		</control>
+		<control type="button">
+			<top>4</top>
+			<width>auto</width>
+			<height>52</height>
+			<align>center</align>
+			<aligny>bottom</aligny>
+			<textoffsety>-6</textoffsety>
+			<font>Bold22</font>
+			<label>     DD+</label>
+			<textcolor>ffcccccc</textcolor>
+			<texturefocus border="58,6,6,6">rating/dolby_left.png</texturefocus>
+			<texturenofocus border="58,6,6,6">rating/dolby_left.png</texturenofocus>
+			<visible>String.Contains(ListItem.AudioCodec,EAC3)</visible>
 		</control>
 		<control type="button">
 			<top>4</top>
@@ -544,7 +558,22 @@
 			<textcolor>ffcccccc</textcolor>
 			<texturefocus border="0,6,6,6">rating/dolby_right.png</texturefocus>
 			<texturenofocus border="0,6,6,6">rating/dolby_right.png</texturenofocus>
-			<visible>String.Contains(ListItem.FileName,atmos)</visible>
+			<visible>String.Contains(ListItem.AudioCodec,atmos)</visible>
+		</control>
+		<control type="button">
+			<top>4</top>
+			<left>-20</left>
+			<width>12</width>
+			<height>52</height>
+			<align>center</align>
+			<aligny>bottom</aligny>
+			<include condition="!Integer.IsEqual(System.ScreenHeight,2160)">ButtonVisionOffset_Default</include>
+			<include condition="Integer.IsEqual(System.ScreenHeight,2160)">ButtonVisionOffset_4k</include>
+			<font>Light22</font>
+			<textcolor>ffcccccc</textcolor>
+			<texturefocus border="0,6,6,6">rating/dolby_right.png</texturefocus>
+			<texturenofocus border="0,6,6,6">rating/dolby_right.png</texturenofocus>
+			<visible>String.IsEqual(ListItem.AudioCodec,truehd) | String.IsEqual(ListItem.AudioCodec,EAC3)</visible>
 		</control>
 		<control type="button">
 			<top>4</top>
