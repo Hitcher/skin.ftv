@@ -20,7 +20,7 @@
 				<width>3328</width>
 				<height>2160</height>
 				<aspectratio align="center">scale</aspectratio>
-				<texture fallback="resource://resource.images.weatherfanart.single/na.jpg">$INFO[Window(Weather).Property(Current.FanartCode),resource://resource.images.weatherfanart.single/,.jpg]</texture>
+				<texture fallback="weather/background/na.jpg">$INFO[Window(Weather).Property(Current.FanartCode),weather/background/,.jpg]</texture>
 			</control>
 			<control type="image">
 				<top>296</top>

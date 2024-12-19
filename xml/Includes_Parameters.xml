@@ -136,7 +136,7 @@
 			<icon>$INFO[Window(weather).Property(Daily.$PARAM[item_index].FanartCode),weather/icons/,.png]</icon>
 			<property name="LongDay">$INFO[Window(weather).Property(Daily.$PARAM[item_index].LongDay)]</property>
 			<property name="Outlook">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Outlook)]</property>
-			<property name="Fanart">$INFO[Window(Weather).Property(Daily.$PARAM[item_index].FanartCode),resource://resource.images.weatherfanart.single/,.jpg]</property>
+			<property name="Fanart">$INFO[Window(Weather).Property(Daily.$PARAM[item_index].FanartCode),weather/home/,.jpg]</property>
 			<onclick>noop</onclick>
 			<visible>!String.IsEmpty(Window(weather).Property(Daily.IsFetched)) + !String.IsEmpty(Window(weather).Property(Daily.$PARAM[item_index].Outlook)) + !String.IsEqual(Window(home).Property(Hourly),true)</visible>
 		</item>
@@ -147,7 +147,7 @@
 			<label2>$INFO[Window(weather).Property(Day$PARAM[item_index].LowTemp)]$INFO[System.TemperatureUnits] &#x2022; $INFO[Window(weather).Property(Day$PARAM[item_index].HighTemp)]$INFO[System.TemperatureUnits]</label2>
 			<property name="LongDay">$INFO[Window(weather).Property(Day$PARAM[item_index].Title)]</property>
 			<property name="Outlook">$INFO[Window(weather).Property(Day$PARAM[item_index].Outlook)]</property>
-			<property name="Fanart">$INFO[Window(Weather).Property(Day$PARAM[item_index].FanartCode),resource://resource.images.weatherfanart.single/,.jpg]</property>
+			<property name="Fanart">$INFO[Window(Weather).Property(Day$PARAM[item_index].FanartCode),weather/home/,.jpg]</property>
 			<icon>$INFO[Window(weather).Property(Day$PARAM[item_index].OutlookIcon)]</icon>
 			<onclick>noop</onclick>
 			<visible>String.IsEmpty(Window(weather).Property(Daily.IsFetched)) + !String.IsEmpty(Window(weather).Property(Day$PARAM[item_index].Outlook)) + !String.IsEqual(Window(home).Property(Hourly),true)</visible>
