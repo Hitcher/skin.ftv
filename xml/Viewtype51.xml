@@ -57,7 +57,7 @@
 								<height>310</height>
 								<aspectratio align="center" aligny="bottom">keep</aspectratio>
 								<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
-								<visible>!String.IsEqual(ListItem.DBTYPE,movie) + !ListItem.IsParentFolder + String.IsEmpty(ListItem.Art(ftv)) + String.IsEmpty(ListItem.Art(landscape)) + !String.IsEmpty(ListItem.Art(fanart))</visible>
+								<visible>!String.IsEqual(ListItem.DBTYPE,movie) + !ListItem.IsParentFolder + String.IsEmpty(ListItem.Art(ftv)) + !String.IsEmpty(ListItem.Art(fanart))</visible>
 							</control>
 							<control type="image">
 								<top>96</top>
@@ -154,7 +154,7 @@
 								<height>310</height>
 								<aspectratio align="center" aligny="bottom">keep</aspectratio>
 								<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
-								<visible>!String.IsEqual(ListItem.DBTYPE,movie) + !ListItem.IsParentFolder + String.IsEmpty(ListItem.Art(ftv)) + String.IsEmpty(ListItem.Art(landscape)) + !String.IsEmpty(ListItem.Art(fanart))</visible>
+								<visible>!String.IsEqual(ListItem.DBTYPE,movie) + !ListItem.IsParentFolder + String.IsEmpty(ListItem.Art(ftv)) + !String.IsEmpty(ListItem.Art(fanart))</visible>
 							</control>
 							<control type="image">
 								<top>96</top>

@@ -425,11 +425,12 @@
 		<value condition="String.IsEqual(ListItem.AudioCodec,DTSHD_MA)">DTS-MA</value>
 		<value condition="String.IsEqual(ListItem.AudioCodec,DTSHDMA)">DTS-MA</value>
 		<value condition="String.IsEqual(ListItem.AudioCodec,DTSHD_HRA)">DTS-HRA</value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,TRUEHD)">DOLBY-HD</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,TRUEHD)">TRUE-HD</value>
 		<value condition="String.IsEqual(ListItem.AudioCodec,VORBIS)">VORBIS</value>
 		<value condition="String.IsEqual(ListItem.AudioCodec,DTSHD_MA_X)">DTS:X</value>
 		<value condition="String.IsEqual(ListItem.AudioCodec,DTSHD_MA_X_IMAX)">DTS:X IMAX</value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,EAC3_DDP_ATMOS)">DD+</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,EAC3_DDP_ATMOS)">DD+ ATMOS</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,TRUEHD_ATMOS)">TRUE-HD ATMOS</value>
 		<value>$INFO[ListItem.AudioCodec]</value>
 	</variable>
 	<variable name="AudioChannels">
@@ -1219,14 +1220,12 @@
 		<value condition="!String.StartsWith(Container.FolderPath,plugin://) + $EXP[HideWatchedEpisodeCheck]">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="Container.Content(episodes) + !String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
 		<value condition="String.StartsWith(Container.FolderPath,plugin://)">$INFO[ListItem.Art(fanart)]</value>
-		<value condition="!String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
 		<value>$INFO[ListItem.Icon]</value>
 	</variable>
 	<variable name="TVShowWideImage">
 		<value condition="String.StartsWith(ListItem.Label,$LOCALIZE[33078]) | String.IsEqual(ListItem.Label,$LOCALIZE[22082])">views/next_page_wide.png</value>
 		<value condition="ListItem.IsParentFolder">views/folder_back_wide.png</value>
 		<value condition="!String.IsEmpty(ListItem.Art(ftv))">$INFO[ListItem.Art(ftv)]</value>
-		<value condition="!String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="!Container.Content(episodes)">$INFO[ListItem.Icon]</value>
 		<value>views/episode_fallback.png</value>

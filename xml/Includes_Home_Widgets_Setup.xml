@@ -1403,10 +1403,10 @@
 				</control>
 				<control type="image">
 					<left>156</left>
-					<top>386</top>
+					<top>384</top>
 					<width>514</width>
 					<height>202</height>
-					<aspectratio align="center" aligny="top">keep</aspectratio>
+					<aspectratio align="center" aligny="bottom">keep</aspectratio>
 					<texture background="true">$INFO[ListItem.Property(ArtLogo1)]</texture>
 					<visible>String.IsEmpty(ListItem.Property(ArtFTV1)) + !String.IsEmpty(ListItem.Property(ArtFanart1))</visible>
 				</control>
@@ -1464,10 +1464,10 @@
 				</control>
 				<control type="image">
 					<left>156</left>
-					<top>386</top>
+					<top>384</top>
 					<width>514</width>
 					<height>202</height>
-					<aspectratio align="center" aligny="top">keep</aspectratio>
+					<aspectratio align="center" aligny="bottom">keep</aspectratio>
 					<texture background="true">$INFO[ListItem.Property(ArtLogo2)]</texture>
 					<visible>String.IsEmpty(ListItem.Property(ArtFTV2)) + !String.IsEmpty(ListItem.Property(ArtFanart2))</visible>
 				</control>
@@ -1525,10 +1525,10 @@
 				</control>
 				<control type="image">
 					<left>156</left>
-					<top>386</top>
+					<top>384</top>
 					<width>514</width>
 					<height>202</height>
-					<aspectratio align="center" aligny="top">keep</aspectratio>
+					<aspectratio align="center" aligny="bottom">keep</aspectratio>
 					<texture background="true">$INFO[ListItem.Property(ArtLogo3)]</texture>
 					<visible>String.IsEmpty(ListItem.Property(ArtFTV3)) + !String.IsEmpty(ListItem.Property(ArtFanart3))</visible>
 				</control>
@@ -1591,10 +1591,10 @@
 				</control>
 				<control type="image">
 					<left>156</left>
-					<top>386</top>
+					<top>384</top>
 					<width>514</width>
 					<height>202</height>
-					<aspectratio align="center" aligny="top">keep</aspectratio>
+					<aspectratio align="center" aligny="bottom">keep</aspectratio>
 					<texture background="true">$INFO[ListItem.Property(ArtLogo1)]</texture>
 					<visible>String.IsEmpty(ListItem.Property(ArtFTV1)) + !String.IsEmpty(ListItem.Property(ArtFanart1))</visible>
 				</control>
@@ -1654,10 +1654,10 @@
 				</control>
 				<control type="image">
 					<left>156</left>
-					<top>386</top>
+					<top>384</top>
 					<width>514</width>
 					<height>202</height>
-					<aspectratio align="center" aligny="top">keep</aspectratio>
+					<aspectratio align="center" aligny="bottom">keep</aspectratio>
 					<texture background="true">$INFO[ListItem.Property(ArtLogo2)]</texture>
 					<visible>String.IsEmpty(ListItem.Property(ArtFTV2)) + !String.IsEmpty(ListItem.Property(ArtFanart2))</visible>
 				</control>
@@ -1717,10 +1717,10 @@
 				</control>
 				<control type="image">
 					<left>156</left>
-					<top>386</top>
+					<top>384</top>
 					<width>514</width>
 					<height>202</height>
-					<aspectratio align="center" aligny="top">keep</aspectratio>
+					<aspectratio align="center" aligny="bottom">keep</aspectratio>
 					<texture background="true">$INFO[ListItem.Property(ArtLogo3)]</texture>
 					<visible>String.IsEmpty(ListItem.Property(ArtFTV3)) + !String.IsEmpty(ListItem.Property(ArtFanart3))</visible>
 				</control>
