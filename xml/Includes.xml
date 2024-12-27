@@ -446,7 +446,7 @@
 			<top>4</top>
 			<width>auto</width>
 			<height>52</height>
-			<align>center</align>
+			<align>left</align>
 			<aligny>bottom</aligny>
 			<include condition="!Integer.IsEqual(System.ScreenHeight,1080)">ButtonOffset_Default</include>
 			<include condition="Integer.IsEqual(System.ScreenHeight,1080)">ButtonOffset_1080p</include>
@@ -461,7 +461,7 @@
 			<top>4</top>
 			<width>auto</width>
 			<height>52</height>
-			<align>center</align>
+			<align>left</align>
 			<aligny>bottom</aligny>
 			<textoffsety>-6</textoffsety>
 			<font>Bold22</font>
@@ -506,7 +506,7 @@
 			<top>4</top>
 			<width>auto</width>
 			<height>52</height>
-			<align>center</align>
+			<align>left</align>
 			<aligny>bottom</aligny>
 			<textoffsety>-6</textoffsety>
 			<font>Bold22</font>
@@ -520,7 +520,7 @@
 			<top>4</top>
 			<width>auto</width>
 			<height>52</height>
-			<align>center</align>
+			<align>left</align>
 			<aligny>bottom</aligny>
 			<textoffsety>-6</textoffsety>
 			<font>Bold22</font>
@@ -534,7 +534,7 @@
 			<top>4</top>
 			<width>auto</width>
 			<height>52</height>
-			<align>center</align>
+			<align>left</align>
 			<aligny>bottom</aligny>
 			<textoffsety>-6</textoffsety>
 			<font>Bold22</font>
@@ -549,7 +549,7 @@
 			<left>-20</left>
 			<width>auto</width>
 			<height>52</height>
-			<align>center</align>
+			<align>left</align>
 			<aligny>bottom</aligny>
 			<include condition="!Integer.IsEqual(System.ScreenHeight,2160)">ButtonVisionOffset_Default</include>
 			<include condition="Integer.IsEqual(System.ScreenHeight,2160)">ButtonVisionOffset_4k</include>
