@@ -193,7 +193,7 @@
 				<bordersize>0,0,26,34</bordersize>
 				<texture>$INFO[Container(451).ListItem.Icon]</texture>
 				<bordertexture infill="false" border="28,36,28,36">dialogs/shadow.png</bordertexture>
-				<visible>!String.Contains(Control.GetLabel(416),*)</visible>
+				<visible>Control.IsVisible(451) + !String.Contains(Control.GetLabel(416),*)</visible>
 			</control>
 			<control type="image">
 				<left>1196</left>
@@ -204,7 +204,7 @@
 				<bordersize>0,0,26,34</bordersize>
 				<texture flipx="true">$INFO[Container(451).ListItem.Icon]</texture>
 				<bordertexture infill="false" border="28,36,28,36">dialogs/shadow.png</bordertexture>
-				<visible>String.Contains(Control.GetLabel(416),*)</visible>
+				<visible>Control.IsVisible(451) + String.Contains(Control.GetLabel(416),*)</visible>
 			</control>
 			<control id="9000" type="grouplist">
 				<right>48</right>
