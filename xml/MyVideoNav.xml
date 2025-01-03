@@ -49,7 +49,7 @@
 					<include>VisibleDelayFadeAnimation</include>
 					<visible>!Container.Content(seasons) + !Container.Content(episodes) + !String.IsEmpty(Container.NumItems)</visible>
 					<control type="label">
-						<width>auto</width>
+						<width>2600</width>
 						<height>120</height>
 						<font>Med48</font>
 						<aligny>bottom</aligny>

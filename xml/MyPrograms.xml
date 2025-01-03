@@ -27,7 +27,7 @@
 					<usecontrolcoords>true</usecontrolcoords>
 					<include>VisibleDelayFadeAnimation</include>
 					<control type="label">
-						<width>auto</width>
+						<width>2600</width>
 						<height>120</height>
 						<font>Med48</font>
 						<aligny>bottom</aligny>
