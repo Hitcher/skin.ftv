@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="StreamAudioLanguage">
+		<value condition="!String.IsEmpty(VideoPlayer.AudioLanguage)">$INFO[VideoPlayer.AudioLanguage]</value>
+		<value>$LOCALIZE[1446]</value>
+	</variable>
 	<variable name="StreamLabel">
 		<value condition="Window.IsVisible(12300)">$INFO[ListItem.Property(stream.resolution)]</value>
 		<value>$INFO[ListItem.Label]</value>
