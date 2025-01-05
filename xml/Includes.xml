@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<include file="Defaults.xml"/>
 	<include file="Includes_Animations.xml"/>
 	<include file="Includes_Expressions.xml"/>
 	<include file="Includes_Parameters.xml"/>
@@ -26,6 +25,9 @@
 	<include file="ForcedViewtype61.xml"/>
 	<include file="script-skinviewtypes-includes.xml"/>
 	<include file="script-skinshortcuts-includes.xml"/>
+	<include condition="Integer.IsLess(System.ScreenHeight,1080)" file="Constants_720.xml"/>
+	<include condition="Integer.IsEqual(System.ScreenHeight,1080)" file="Constants_1080.xml"/>
+	<include condition="Integer.IsGreaterOrEqual(System.ScreenHeight,2160)" file="Constants_4k.xml"/>
 	<!-- Fullscreen dimensions -->
 	<include name="FullscreenDimensions">
 		<left>0</left>
@@ -314,8 +316,7 @@
 			<!--  4K label -->
 			<control id="99" type="label">
 				<left>12</left>
-				<include condition="!Integer.IsEqual(System.ScreenHeight,2160)">LabelVisionOffset_Default</include>
-				<include condition="Integer.IsEqual(System.ScreenHeight,2160)">LabelVisionOffset_4k</include>
+				<top>LabelVisionOffset</top>
 				<width>auto</width>
 				<height>76</height>
 				<font>Light35</font>
@@ -357,8 +358,7 @@
 			<!--  HDR label -->
 			<control id="99" type="label">
 				<left>12</left>
-				<include condition="!Integer.IsEqual(System.ScreenHeight,2160)">LabelVisionOffset_Default</include>
-				<include condition="Integer.IsEqual(System.ScreenHeight,2160)">LabelVisionOffset_4k</include>
+				<top>LabelVisionOffset</top>
 				<width>auto</width>
 				<height>76</height>
 				<font>Light35</font>
@@ -411,8 +411,7 @@
 			<height>52</height>
 			<align>center</align>
 			<aligny>bottom</aligny>
-			<include condition="!Integer.IsEqual(System.ScreenHeight,1080)">ButtonOffset_Default</include>
-			<include condition="Integer.IsEqual(System.ScreenHeight,1080)">ButtonOffset_1080p</include>
+			<textoffsety>ButtonOffset</textoffsety>
 			<font>Med22</font>
 			<label>$INFO[ListItem.Mpaa, , ]</label>
 			<textcolor>$VAR[RatingTextColour]</textcolor>
@@ -433,8 +432,7 @@
 			<height>52</height>
 			<align>center</align>
 			<aligny>bottom</aligny>
-			<include condition="!Integer.IsEqual(System.ScreenHeight,1080)">ButtonOffset_Default</include>
-			<include condition="Integer.IsEqual(System.ScreenHeight,1080)">ButtonOffset_1080p</include>
+			<textoffsety>ButtonOffset</textoffsety>
 			<font>Med22</font>
 			<label> $VAR[VideoAspect] </label>
 			<textcolor>ffcccccc</textcolor>
@@ -448,8 +446,7 @@
 			<height>52</height>
 			<align>left</align>
 			<aligny>bottom</aligny>
-			<include condition="!Integer.IsEqual(System.ScreenHeight,1080)">ButtonOffset_Default</include>
-			<include condition="Integer.IsEqual(System.ScreenHeight,1080)">ButtonOffset_1080p</include>
+			<textoffsety>ButtonOffset</textoffsety>
 			<font>Med22</font>
 			<label> $VAR[HDRType] </label>
 			<textcolor>ffcccccc</textcolor>
@@ -478,8 +475,7 @@
 			<height>52</height>
 			<align>center</align>
 			<aligny>bottom</aligny>
-			<include condition="!Integer.IsEqual(System.ScreenHeight,2160)">ButtonVisionOffset_Default</include>
-			<include condition="Integer.IsEqual(System.ScreenHeight,2160)">ButtonVisionOffset_4k</include>
+			<textoffsety>ButtonVisionOffset</textoffsety>
 			<font>Light22</font>
 			<label> VISION </label>
 			<textcolor>ffcccccc</textcolor>
@@ -493,8 +489,7 @@
 			<height>52</height>
 			<align>center</align>
 			<aligny>bottom</aligny>
-			<include condition="!Integer.IsEqual(System.ScreenHeight,1080)">ButtonOffset_Default</include>
-			<include condition="Integer.IsEqual(System.ScreenHeight,1080)">ButtonOffset_1080p</include>
+			<textoffsety>ButtonOffset</textoffsety>
 			<font>Med22</font>
 			<label> $VAR[AudioCodec] </label>
 			<textcolor>ffcccccc</textcolor>
@@ -551,8 +546,7 @@
 			<height>52</height>
 			<align>left</align>
 			<aligny>bottom</aligny>
-			<include condition="!Integer.IsEqual(System.ScreenHeight,2160)">ButtonVisionOffset_Default</include>
-			<include condition="Integer.IsEqual(System.ScreenHeight,2160)">ButtonVisionOffset_4k</include>
+			<textoffsety>ButtonVisionOffset</textoffsety>
 			<font>Light22</font>
 			<label> ATMOS </label>
 			<textcolor>ffcccccc</textcolor>
@@ -567,8 +561,7 @@
 			<height>52</height>
 			<align>center</align>
 			<aligny>bottom</aligny>
-			<include condition="!Integer.IsEqual(System.ScreenHeight,2160)">ButtonVisionOffset_Default</include>
-			<include condition="Integer.IsEqual(System.ScreenHeight,2160)">ButtonVisionOffset_4k</include>
+			<textoffsety>ButtonVisionOffset</textoffsety>
 			<font>Light22</font>
 			<textcolor>ffcccccc</textcolor>
 			<texturefocus border="0,6,6,6">rating/dolby_right.png</texturefocus>
@@ -581,8 +574,7 @@
 			<height>52</height>
 			<align>center</align>
 			<aligny>bottom</aligny>
-			<include condition="!Integer.IsEqual(System.ScreenHeight,1080)">ButtonOffset_Default</include>
-			<include condition="Integer.IsEqual(System.ScreenHeight,1080)">ButtonOffset_1080p</include>
+			<textoffsety>ButtonOffset</textoffsety>
 			<font>Med22</font>
 			<label> $VAR[AudioChannels] </label>
 			<textcolor>ffcccccc</textcolor>
@@ -751,35 +743,6 @@
 			<label>$INFO[ListItem.Rating,,/10]</label>
 			<visible>String.IsEmpty(ListItem.Rating(imdb)) + String.IsEmpty(ListItem.Rating(trakt)) + String.IsEmpty(ListItem.Rating(tvdb)) + String.IsEmpty(ListItem.Rating(themoviedb)) + String.IsEmpty(ListItem.Rating(tmdb)) + String.IsEmpty(ListItem.Rating(metacritic)) + String.IsEmpty(ListItem.Rating(tomatometerallaudience)) + String.IsEmpty(ListItem.Rating(tomatometerallcritics)) + String.IsEmpty(ListItem.Rating(tomatometeravgaudience)) + String.IsEmpty(ListItem.Rating(tomatometeravgcritics))</visible>
 		</control>
-	</include>
-	<!-- Offsets -->
-	<include name="ButtonOffset_Default">
-		<textoffsety>-5</textoffsety>
-	</include>
-	<include name="ButtonOffset_1080p">
-		<textoffsety>-6</textoffsety>
-	</include>
-	<include name="ButtonVisionOffset_Default">
-		<textoffsety>-6</textoffsety>
-	</include>
-	<include name="ButtonVisionOffset_4k">
-		<textoffsety>-5</textoffsety>
-	</include>
-	<include name="LabelVisionOffset_Default">
-		<top>-2</top>
-	</include>
-	<include name="LabelVisionOffset_4k">
-		<top>-3</top>
-	</include>
-	<!-- Scrollspeeds -->
-	<include name="ScrollSpeed_720">
-		<scrollspeed>120</scrollspeed>
-	</include>
-	<include name="ScrollSpeed_1080">
-		<scrollspeed>180</scrollspeed>
-	</include>
-	<include name="ScrollSpeed_4k">
-		<scrollspeed>360</scrollspeed>
 	</include>
 	<!-- OSD Option Button -->
 	<include name="OSDOptionButton">

@@ -342,10 +342,9 @@
 							<height>52</height>
 							<align>center</align>
 							<aligny>bottom</aligny>
-							<include condition="!Integer.IsEqual(System.ScreenHeight,1080)">ButtonOffset_Default</include>
-							<include condition="Integer.IsEqual(System.ScreenHeight,1080)">ButtonOffset_1080p</include>
+							<textoffsety>ButtonOffset</textoffsety>
 							<font>Med22</font>
-							<label>  $VAR[VersionLabel]  </label>
+							<label> $VAR[VersionLabel] </label>
 							<textcolor>ff33b5e5</textcolor>
 							<texturefocus colordiffuse="FF33b5e5" infill="false" border="6">rating/flag.png</texturefocus>
 							<texturenofocus colordiffuse="FF33b5e5" infill="false" border="6">rating/flag.png</texturenofocus>
