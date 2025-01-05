@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-11-21 12:11+0000\n"
-"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"PO-Revision-Date: 2025-01-05 22:33+0000\n"
+"Last-Translator: Heiko Berner <berner.h@gmail.com>\n"
 "Language-Team: Afrikaans (South Africa) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/af_za/>\n"
 "Language: af_za\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.1\n"
+"X-Generator: Weblate 5.9.2\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the original Fire TV UI"
@@ -219,7 +219,7 @@ msgstr ""
 
 msgctxt "#31047"
 msgid "Visualisation Presets"
-msgstr "Visualisering Voorkeure"
+msgstr "Visualisering Voorafinstellings"
 
 msgctxt "#31048"
 msgid "Playlist Options"
@@ -386,7 +386,7 @@ msgstr "Onbeskikbaar"
 # empty string with id 31087
 msgctxt "#31088"
 msgid "Current Playlist"
-msgstr "Huidige speellys"
+msgstr "Huidige Speellys"
 
 msgctxt "#31089"
 msgid "View Options"
@@ -410,7 +410,7 @@ msgstr ""
 
 msgctxt "#31094"
 msgid "Save Playlist"
-msgstr "Stoor speellys"
+msgstr "Stoor Speellys"
 
 msgctxt "#31095"
 msgid "Clear Playlist"
@@ -435,7 +435,7 @@ msgstr ""
 
 msgctxt "#31100"
 msgid "Game Addons"
-msgstr ""
+msgstr "Speletjie Byvoegsels"
 
 msgctxt "#31101"
 msgid "Apps"
@@ -601,7 +601,7 @@ msgstr "Kies + Begin"
 
 msgctxt "#31141"
 msgid "Select + Right Stick"
-msgstr ""
+msgstr "Kies + Regter Stok"
 
 msgctxt "#31142"
 msgid "Peripheral dialog"
@@ -679,7 +679,7 @@ msgstr ""
 
 msgctxt "#31160"
 msgid "Poster"
-msgstr "Plakaat"
+msgstr "Plakkaat"
 
 msgctxt "#31161"
 msgid "Square Info"
@@ -723,7 +723,7 @@ msgstr ""
 
 msgctxt "#31171"
 msgid "Game saves"
-msgstr ""
+msgstr "Speletjie store"
 
 msgctxt "#31172"
 msgid "Square List"
@@ -757,7 +757,7 @@ msgstr ""
 
 msgctxt "#31179"
 msgid "Playlist options"
-msgstr ""
+msgstr "Speellys opsies"
 
 msgctxt "#31180"
 msgid "Choose view"
@@ -810,11 +810,11 @@ msgstr ""
 
 msgctxt "#31192"
 msgid "Director"
-msgstr ""
+msgstr "Direkteur"
 
 msgctxt "#31193"
 msgid "Now Playing"
-msgstr ""
+msgstr "Speel Nou"
 
 # empty strings from id 31187 to 31193
 msgctxt "#31194"
@@ -827,6 +827,10 @@ msgstr ""
 
 msgctxt "#31196"
 msgid "Cancelled"
+msgstr ""
+
+msgctxt "#31197"
+msgid "Subtitle streams"
 msgstr ""
 
 msgctxt "#31198"
@@ -847,7 +851,7 @@ msgstr ""
 
 msgctxt "#31202"
 msgid "Order"
-msgstr ""
+msgstr "Orde"
 
 msgctxt "#31203"
 msgid "Square"
@@ -917,10 +921,14 @@ msgctxt "#31219"
 msgid "Customise Widget Group"
 msgstr ""
 
+msgctxt "#31220"
+msgid "Audio streams"
+msgstr ""
+
 # empty string with id 31220
 msgctxt "#31221"
 msgid "Music Addons"
-msgstr "Musiek byvoegsels"
+msgstr "Musiek Byvoegsels"
 
 msgctxt "#31222"
 msgid "Program Addons"
@@ -929,10 +937,14 @@ msgstr ""
 # empty strings from id 31220 to 31222
 msgctxt "#31223"
 msgid "Video Addons"
-msgstr "Video byvoegsels"
+msgstr "Video Byvoegsels"
 
 msgctxt "#31224"
 msgid "Picture Addons"
+msgstr ""
+
+msgctxt "#31225"
+msgid "Video streams"
 msgstr ""
 
 # empty strings from id 31225 to 31226

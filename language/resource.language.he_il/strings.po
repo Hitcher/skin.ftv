@@ -827,6 +827,10 @@ msgctxt "#31196"
 msgid "Cancelled"
 msgstr ""
 
+msgctxt "#31197"
+msgid "Subtitle streams"
+msgstr ""
+
 msgctxt "#31198"
 msgid "View Type"
 msgstr ""
@@ -915,6 +919,10 @@ msgctxt "#31219"
 msgid "Customise Widget Group"
 msgstr ""
 
+msgctxt "#31220"
+msgid "Audio streams"
+msgstr ""
+
 # empty string with id 31220
 msgctxt "#31221"
 msgid "Music Addons"
@@ -930,6 +938,10 @@ msgstr "הרחבות וידאו"
 
 msgctxt "#31224"
 msgid "Picture Addons"
+msgstr ""
+
+msgctxt "#31225"
+msgid "Video streams"
 msgstr ""
 
 # empty strings from id 31225 to 31226
