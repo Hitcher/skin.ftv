@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-01-05 22:33+0000\n"
+"PO-Revision-Date: 2025-01-06 23:43+0000\n"
 "Last-Translator: Heiko Berner <berner.h@gmail.com>\n"
 "Language-Team: Afrikaans (South Africa) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/af_za/>\n"
 "Language: af_za\n"
@@ -923,7 +923,7 @@ msgstr ""
 
 msgctxt "#31220"
 msgid "Audio streams"
-msgstr ""
+msgstr "Oudio strome"
 
 # empty string with id 31220
 msgctxt "#31221"
@@ -945,7 +945,7 @@ msgstr ""
 
 msgctxt "#31225"
 msgid "Video streams"
-msgstr ""
+msgstr "Video strome"
 
 # empty strings from id 31225 to 31226
 msgctxt "#31227"
