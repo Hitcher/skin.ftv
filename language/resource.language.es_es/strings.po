@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2024-11-14 21:10+0000\n"
+"PO-Revision-Date: 2025-01-08 16:04+0000\n"
 "Last-Translator: Alfonso Cachero <alfonso.cachero@gmail.com>\n"
 "Language-Team: Spanish (Spain) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/es_es/>\n"
 "Language: es_es\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8.2\n"
+"X-Generator: Weblate 5.9.2\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the original Fire TV UI"
@@ -820,7 +820,7 @@ msgstr "Cancelado"
 
 msgctxt "#31197"
 msgid "Subtitle streams"
-msgstr ""
+msgstr "Pistas de subtítulos"
 
 msgctxt "#31198"
 msgid "View Type"
@@ -912,7 +912,7 @@ msgstr "Personalizar grupo de widgets"
 
 msgctxt "#31220"
 msgid "Audio streams"
-msgstr ""
+msgstr "Pistas de audio"
 
 # empty string with id 31220
 msgctxt "#31221"
@@ -933,7 +933,7 @@ msgstr "Add-ons de imagen"
 
 msgctxt "#31225"
 msgid "Video streams"
-msgstr ""
+msgstr "Transmisiones de vídeo"
 
 msgctxt "#31227"
 msgid "Air time"
