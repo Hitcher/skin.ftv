@@ -263,7 +263,7 @@
 						</control>
 						<control type="textbox">
 							<top>4</top>
-							<width>476</width>
+							<width>470</width>
 							<height>400</height>
 							<font>Bold34</font>
 							<align>left</align>
@@ -285,7 +285,7 @@
 						</control>
 						<control type="textbox">
 							<top>4</top>
-							<width>476</width>
+							<width>470</width>
 							<height>400</height>
 							<font>Bold34</font>
 							<align>left</align>
