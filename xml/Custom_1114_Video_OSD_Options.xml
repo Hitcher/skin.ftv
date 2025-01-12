@@ -148,7 +148,7 @@
 						</item>
 						<!-- Resolution button -->
 						<item id="109">
-							<label>31133</label>
+							<label>169</label>
 							<onclick>PlayerResolutionSelect</onclick>
 							<visible>Player.HasResolutions</visible>
 						</item>
