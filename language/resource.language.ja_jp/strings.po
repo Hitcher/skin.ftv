@@ -818,6 +818,10 @@ msgctxt "#31196"
 msgid "Cancelled"
 msgstr ""
 
+msgctxt "#31197"
+msgid "Subtitle streams"
+msgstr ""
+
 msgctxt "#31198"
 msgid "View Type"
 msgstr "ビュータイプ"
@@ -906,6 +910,10 @@ msgctxt "#31219"
 msgid "Customise Widget Group"
 msgstr "カスタム ウィジェットグループ"
 
+msgctxt "#31220"
+msgid "Audio streams"
+msgstr ""
+
 # empty string with id 31220
 msgctxt "#31221"
 msgid "Music Addons"
@@ -922,6 +930,10 @@ msgstr "ビデオアドオン"
 msgctxt "#31224"
 msgid "Picture Addons"
 msgstr "ピクチャーアドオン"
+
+msgctxt "#31225"
+msgid "Video streams"
+msgstr ""
 
 msgctxt "#31227"
 msgid "Air time"
