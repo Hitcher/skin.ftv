@@ -9,8 +9,10 @@
 		<value>$INFO[ListItem.Label]</value>
 	</variable>
 	<variable name="StreamSubtitleLabel">
-		<value condition="VideoPlayer.SubtitlesEnabled">$INFO[VideoPlayer.SubtitlesLanguage]</value>
-		<value>$LOCALIZE[231]</value>
+		<value condition="!VideoPlayer.HasSubtitles">$LOCALIZE[36623]</value>
+		<value condition="VideoPlayer.HasSubtitles + !VideoPlayer.SubtitlesEnabled">$LOCALIZE[1223]</value>
+		<value condition="VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled + !String.IsEmpty(VideoPlayer.SubtitlesLanguage)">$INFO[VideoPlayer.SubtitlesLanguage]</value>
+		<value condition="VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled + String.IsEmpty(VideoPlayer.SubtitlesLanguage)">$LOCALIZE[13205]</value>
 	</variable>
 	<variable name="StreamOriginal">
 		<value condition="String.IsEqual(ListItem.Property(stream.isoriginal),true)"> [$LOCALIZE[39111]]</value>
