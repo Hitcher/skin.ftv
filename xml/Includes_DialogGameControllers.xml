@@ -300,7 +300,7 @@
 						<visible>!Control.HasFocus(3)</visible>
 					</control>
 				</focusedlayout>
-			</control>&gt;
+			</control>
 			<!-- Right grouplist -->
 			<control type="grouplist" id="9001">
 				<right>48</right>
