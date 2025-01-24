@@ -165,11 +165,19 @@
 							<onclick>PlayerControl(ShowVideoMenu)</onclick>
 							<visible>VideoPlayer.HasMenu</visible>
 						</item>
-						<!-- Menu button -->
+						<!-- Next item button -->
 						<item id="112">
 							<label>$VAR[NextVideo]</label>
 							<onclick>PlayerControl(Next)</onclick>
 							<visible>Window.IsVisible(VideoFullScreen.xml) + system.getbool(videoplayer.autoplaynextitem)</visible>
+						</item>
+						<!-- Play speed button -->
+						<item id="113">
+							<label>31226</label>
+							<label2>[B]$INFO[Player.PlaySpeed][/B]</label2>
+							<onclick>Dialog.Close(all)</onclick>
+							<onclick>ActivateWindow(1111)</onclick>
+							<enable>Player.TempoEnabled</enable>
 						</item>
 					</content>
 				</control>
