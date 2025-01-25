@@ -177,7 +177,7 @@
 							<label2>[B]$INFO[Player.PlaySpeed][/B]</label2>
 							<onclick>Dialog.Close(all)</onclick>
 							<onclick>ActivateWindow(1111)</onclick>
-							<enable>Player.TempoEnabled</enable>
+							<visible>Player.TempoEnabled</visible>
 						</item>
 					</content>
 				</control>
