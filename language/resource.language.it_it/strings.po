@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2025-01-06 23:43+0000\n"
 "Last-Translator: Massimo Pissarello <mapi68@gmail.com>\n"
@@ -943,6 +943,10 @@ msgstr "Add-on immagini"
 msgctxt "#31225"
 msgid "Video streams"
 msgstr "Tracce video"
+
+msgctxt "#31226"
+msgid "Play speed"
+msgstr ""
 
 # empty strings from id 31225 to 31226
 msgctxt "#31227"

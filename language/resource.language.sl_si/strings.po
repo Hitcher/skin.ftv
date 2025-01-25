@@ -946,6 +946,10 @@ msgctxt "#31225"
 msgid "Video streams"
 msgstr ""
 
+msgctxt "#31226"
+msgid "Play speed"
+msgstr ""
+
 # empty strings from id 31225 to 31226
 msgctxt "#31227"
 msgid "Air time"

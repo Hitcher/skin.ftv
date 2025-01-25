@@ -935,6 +935,10 @@ msgctxt "#31225"
 msgid "Video streams"
 msgstr ""
 
+msgctxt "#31226"
+msgid "Play speed"
+msgstr ""
+
 msgctxt "#31227"
 msgid "Air time"
 msgstr "放映時間"
