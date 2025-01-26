@@ -247,7 +247,7 @@
 					<control type="image">
 						<width>1956</width>
 						<height>280</height>
-						<texture border="0,0,0,6">settings/button_no_focus.png</texture>
+						<texture border="0,0,0,6">settings/button_focus.png</texture>
 					</control>
 					<control type="image">
 						<left>54</left>
@@ -508,7 +508,7 @@
 						<control type="image">
 							<width>2680</width>
 							<height>172</height>
-							<texture border="0,0,0,6">settings/button_no_focus.png</texture>
+							<texture border="0,0,0,6">settings/button_focus.png</texture>
 						</control>
 						<control type="label">
 							<left>80</left>

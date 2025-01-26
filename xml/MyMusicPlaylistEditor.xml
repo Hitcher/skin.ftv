@@ -87,7 +87,7 @@
 						<control type="image">
 							<width>1300</width>
 							<height>168</height>
-							<texture border="0,0,0,6">settings/button_no_focus.png</texture>
+							<texture border="0,0,0,6">settings/button_focus.png</texture>
 						</control>
 						<control type="group">
 							<visible>Control.HasFocus(50)</visible>
@@ -308,7 +308,7 @@
 						<control type="image">
 							<width>1300</width>
 							<height>168</height>
-							<texture border="0,0,0,6">settings/button_no_focus.png</texture>
+							<texture border="0,0,0,6">settings/button_focus.png</texture>
 						</control>
 						<control type="group">
 							<visible>Control.HasFocus(100)</visible>
