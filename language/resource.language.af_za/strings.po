@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-01-25 15:27+0000\n"
+"PO-Revision-Date: 2025-01-30 16:27+0000\n"
 "Last-Translator: Heiko Berner <berner.h@gmail.com>\n"
 "Language-Team: Afrikaans (South Africa) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/af_za/>\n"
 "Language: af_za\n"
@@ -949,7 +949,7 @@ msgstr "Video strome"
 
 msgctxt "#31226"
 msgid "Play speed"
-msgstr ""
+msgstr "Speel spoed"
 
 # empty strings from id 31225 to 31226
 msgctxt "#31227"
