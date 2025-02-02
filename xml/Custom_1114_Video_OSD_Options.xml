@@ -13,14 +13,14 @@
 				<include>DialogAnimation</include>
 				<centerleft>50%</centerleft>
 				<centertop>50%</centertop>
-				<width>1116</width>
+				<width>1716</width>
 				<height>960</height>
 				<visible>!Window.IsVisible(12300) + !Window.IsVisible(12301) + !Window.IsVisible(12302)</visible>
 				<!-- Dialog background image -->
 				<include content="DialogBack">
-					<param name="dialog_back_width" value="1116"/>
+					<param name="dialog_back_width" value="1716"/>
 					<param name="dialog_back_height" value="960"/>
-					<param name="dialog_heading_width" value="1116"/>
+					<param name="dialog_heading_width" value="1716"/>
 					<param name="dialog_shadow_1_visible" value="false"/>
 				</include>
 				<!-- Heading -->
@@ -28,7 +28,7 @@
 					<left>80</left>
 					<top>28</top>
 					<height>60</height>
-					<width>1116</width>
+					<width>1716</width>
 					<aligny>center</aligny>
 					<font>Bold30</font>
 					<textcolor>ffdadada</textcolor>
@@ -37,7 +37,7 @@
 				<!-- List -->
 				<control type="fixedlist" id="100">
 					<top>120</top>
-					<width>1116</width>
+					<width>1716</width>
 					<height>840</height>
 					<itemgap>0</itemgap>
 					<onup>noop</onup>
@@ -46,15 +46,15 @@
 					<scrolltime>0</scrolltime>
 					<focusposition>2</focusposition>
 					<orientation>vertical</orientation>
-					<itemlayout height="168" width="1116">
+					<itemlayout height="168" width="1716">
 						<control type="image">
-							<width>1116</width>
+							<width>1716</width>
 							<height>168</height>
 							<texture border="0,0,0,6">settings/button_no_focus.png</texture>
 						</control>
 						<control type="label">
 							<left>80</left>
-							<width>956</width>
+							<width>1556</width>
 							<height>168</height>
 							<font>Light32</font>
 							<textcolor>NotFocusedColour</textcolor>
@@ -62,7 +62,7 @@
 						</control>
 						<control type="label">
 							<left>80</left>
-							<width>956</width>
+							<width>1556</width>
 							<height>168</height>
 							<font>Light32</font>
 							<align>right</align>
@@ -70,15 +70,15 @@
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout height="168" width="1116">
+					<focusedlayout height="168" width="1716">
 						<control type="image">
-							<width>1116</width>
+							<width>1716</width>
 							<height>168</height>
 							<texture border="0,0,0,6">settings/button_focus.png</texture>
 						</control>
 						<control type="label">
 							<left>80</left>
-							<width>956</width>
+							<width>1556</width>
 							<height>168</height>
 							<font>Light32</font>
 							<textcolor>FocusedColour</textcolor>
@@ -86,7 +86,7 @@
 						</control>
 						<control type="label">
 							<left>80</left>
-							<width>956</width>
+							<width>1556</width>
 							<height>168</height>
 							<font>Light32</font>
 							<align>right</align>
@@ -99,21 +99,21 @@
 						<item id="101">
 							<include>OSDOptionButton</include>
 							<label>31197</label>
-							<label2>[B]$VAR[StreamSubtitleLabel][/B]</label2>
+							<label2>[B]$VAR[StreamSubtitleLabel]$VAR[StreamOriginal]$VAR[StreamForced]$VAR[StreamVisualImpaired]$VAR[StreamHearingImpaired][/B]</label2>
 							<onclick>SetProperty(VideoOSDSelect,1,home)</onclick>
 							<onclick>DialogSelectSubtitle</onclick>
 						</item>
 						<!-- Audio stream selection button -->
 						<item id="102">
 							<label>31220</label>
-							<label2>[B]$VAR[StreamAudioLanguage][/B]</label2>
+							<label2>[B]$VAR[StreamAudioLanguage]$VAR[AudioCodec, | ]$VAR[AudioChannels, | ][/B]</label2>
 							<onclick>SetProperty(VideoOSDSelect,1,home)</onclick>
 							<onclick>DialogSelectAudio</onclick>
 						</item>
 						<!-- Video stream selection button -->
 						<item id="103">
 							<label>31225</label>
-							<label2>[B]$INFO[Player.Process(VideoWidth)]x$INFO[Player.Process(VideoHeight)]$INFO[Player.Process(VideoScanType)][/B]</label2>
+							<label2>[B]$VAR[VideoCodec]$INFO[Player.Process(VideoWidth), | ]x$INFO[Player.Process(VideoHeight)]$INFO[Player.Process(VideoScanType)][/B]</label2>
 							<onclick>SetProperty(VideoOSDSelect,1,home)</onclick>
 							<onclick>DialogSelectVideo</onclick>
 						</item>

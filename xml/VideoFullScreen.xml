@@ -673,7 +673,7 @@
 				<width>642</width>
 				<height>682</height>
 				<texture>osd/Pause.png</texture>
-				<visible>Player.Paused + !Player.Caching + !Window.IsVisible(subtitlesearch) + !Window.IsVisible(videobookmarks) + !Player.FrameAdvance</visible>
+				<visible>Player.Paused + !Player.Caching + !Window.IsVisible(subtitlesearch) + !Window.IsVisible(videobookmarks) + !Player.FrameAdvance + !Window.IsActive(1114) + !Window.IsActive(osdsubtitlesettings) + !Window.IsActive(osdaudiosettings) + !Window.IsActive(osdvideosettings)</visible>
 				<animation condition="System.IdleTime(2)" reversible="true" type="Conditional">
 					<effect type="fade" start="100" end="0" time="200"/>
 				</animation>
