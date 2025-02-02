@@ -28,7 +28,7 @@
 			<visible>String.IsEmpty(Visualisation.Enabled)</visible>
 		</control>
 		<control type="group">
-			<visible>!Window.IsActive(seekbar) + !Window.IsActive(musicosd) + Player.ShowInfo</visible>
+			<visible>!Window.IsActive(seekbar) + !Window.IsActive(musicosd) + Player.ShowInfo + !Window.IsVisble(1114)</visible>
 			<!-- Heading / Current item / Total items -->
 			<control type="grouplist">
 				<left>396</left>

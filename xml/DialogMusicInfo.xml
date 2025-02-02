@@ -334,7 +334,7 @@
 						<onclick>SetProperty(SetUserRating,music,home)</onclick>
 						<onclick>SendClick(7)</onclick>
 						<font>Med24</font>
-						<label>[CAPITALIZE]$LOCALIZE[31235][/CAPITALIZE][CR][COLOR=00ffffff]$LOCALIZE[31236][/COLOR]</label>
+						<label>[CAPITALIZE]$LOCALIZE[31235][CR][COLOR=00ffffff]$LOCALIZE[31236][/COLOR][/CAPITALIZE]</label>
 						<textoffsetx>56</textoffsetx>
 						<textcolor>ffdadada</textcolor>
 						<focusedcolor>ff222222</focusedcolor>

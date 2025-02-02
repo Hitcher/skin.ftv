@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<!-- musicosd -->
-	<onload condition="!Skin.HasSetting(HideOSDControls)">SetFocus(304)</onload>
-	<onload condition="Skin.HasSetting(HideOSDControls)">SetFocus(11)</onload>
+	<defaultcontrol>304</defaultcontrol>
 	<controls>
+		<!-- Options -->
+		<control type="button" id="500">
+			<include>HiddenControl</include>
+		</control>
 		<control type="group">
-			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(visualisationpresetlist) | Window.IsVisible(addonsettings) | Window.IsVisible(selectdialog)">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(visualisationpresetlist) | Window.IsVisible(addonsettings) | Window.IsVisible(selectdialog) | Window.IsVisible(1114)">Conditional</animation>
 			<control type="image">
 				<width>3840</width>
 				<height>420</height>
@@ -79,7 +82,7 @@
 				<!--  Current position -->
 				<control type="label">
 					<width>auto</width>
-					<height>68</height>
+					<height>60</height>
 					<font>OSD32</font>
 					<textcolor>fff3f3f3</textcolor>
 					<label>$VAR[PlayerTime]</label>
@@ -87,7 +90,7 @@
 				<!--  Divider -->
 				<control type="label">
 					<width>auto</width>
-					<height>68</height>
+					<height>60</height>
 					<font>OSD32</font>
 					<textcolor>ff696969</textcolor>
 					<label>/</label>
@@ -96,7 +99,7 @@
 				<!--  Total length -->
 				<control type="label">
 					<width>auto</width>
-					<height>68</height>
+					<height>60</height>
 					<font>OSD32</font>
 					<textcolor>ff696969</textcolor>
 					<label>$VAR[PlayerDuration]</label>
@@ -108,11 +111,10 @@
 				<width>1600</width>
 				<height>128</height>
 				<onup>11</onup>
-				<itemgap>0</itemgap>
+				<itemgap>-14</itemgap>
 				<align>center</align>
 				<orientation>horizontal</orientation>
-				<defaultcontrol always="true">204</defaultcontrol>
-				<visible>!Skin.HasSetting(HideOSDControls)</visible>
+				<defaultcontrol always="true">304</defaultcontrol>
 				<!-- Skip Back -->
 				<control type="button" id="301">
 					<width>128</width>
@@ -139,6 +141,15 @@
 					<texturefocus colordiffuse="OSDFocusColour">osd/osd_stop.png</texturefocus>
 					<texturenofocus colordiffuse="OSDNotFocusColour">osd/osd_stop.png</texturenofocus>
 					<onclick>PlayerControl(Stop)</onclick>
+				</control>
+				<!-- Options -->
+				<control type="button" id="307">
+					<width>128</width>
+					<height>128</height>
+					<font/>
+					<texturefocus colordiffuse="OSDFocusColour">osd/osd_settings.png</texturefocus>
+					<texturenofocus colordiffuse="OSDNotFocusColour">osd/osd_settings.png</texturenofocus>
+					<onclick>ActivateWindow(1114)</onclick>
 				</control>
 				<!-- Play/Pause -->
 				<control type="togglebutton" id="304">
@@ -181,148 +192,6 @@
 				<align>right</align>
 				<textcolor>fff3f3f3</textcolor>
 				<label>$INFO[System.Time][COLOR ff696969] / $INFO[Player.FinishTime][/COLOR]</label>
-			</control>
-			<!-- Options -->
-			<control id="100" type="grouplist">
-				<left>184</left>
-				<bottom>256</bottom>
-				<width>1200</width>
-				<height>1200</height>
-				<align>right</align>
-				<itemgap>0</itemgap>
-				<onleft>noop</onleft>
-				<onright>200</onright>
-				<ondown condition="!Skin.HasSetting(HideOSDControls)">304</ondown>
-				<orientation>vertical</orientation>
-				<visible>!Player.Forwarding + !Player.Rewinding</visible>
-				<!-- Lyrics -->
-				<control type="button" id="9">
-					<width>1200</width>
-					<height>116</height>
-					<font>OSD32</font>
-					<textcolor>ffffffff</textcolor>
-					<shadowcolor>ShadowColour</shadowcolor>
-					<focusedcolor>ffffc04b</focusedcolor>
-					<label>24013</label>
-					<texturefocus/>
-					<texturenofocus/>
-					<onclick>Close</onclick>
-					<onclick condition="!String.IsEmpty(Skin.String(LyricScript_Path))">RunScript($INFO[Skin.String(LyricScript_Path)])</onclick>
-					<onclick condition="String.IsEmpty(Skin.String(LyricScript_Path))">Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
-					<onclick condition="String.IsEmpty(Skin.String(LyricScript_Path))">Close</onclick>
-					<onclick condition="String.IsEmpty(Skin.String(LyricScript_Path))">RunScript($INFO[Skin.String(LyricScript_Path)])</onclick>
-				</control>
-				<!-- Playlist -->
-				<control type="button" id="10">
-					<width>1200</width>
-					<height>116</height>
-					<font>OSD32</font>
-					<textcolor>ffffffff</textcolor>
-					<shadowcolor>ShadowColour</shadowcolor>
-					<focusedcolor>ffffc04b</focusedcolor>
-					<label>559</label>
-					<texturefocus/>
-					<texturenofocus/>
-					<onclick>Close</onclick>
-					<onclick>ActivateWindow(MusicPlaylist)</onclick>
-				</control>
-				<!-- Repeat -->
-				<control type="button" id="7">
-					<width>1200</width>
-					<height>116</height>
-					<font>OSD32</font>
-					<textcolor>ffffffff</textcolor>
-					<shadowcolor>ShadowColour</shadowcolor>
-					<focusedcolor>ffffc04b</focusedcolor>
-					<label>$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</label>
-					<texturefocus/>
-					<texturenofocus/>
-					<onclick>PlayerControl(Repeat)</onclick>
-				</control>
-				<!-- Random -->
-				<control type="togglebutton" id="8">
-					<width>1200</width>
-					<height>116</height>
-					<font>OSD32</font>
-					<textcolor>ffffffff</textcolor>
-					<shadowcolor>ShadowColour</shadowcolor>
-					<focusedcolor>ffffc04b</focusedcolor>
-					<label>$LOCALIZE[590]$INFO[Playlist.Random, : ]</label>
-					<texturefocus/>
-					<texturenofocus/>
-					<onclick>PlayerControl(Random)</onclick>
-				</control>
-			</control>
-			<!-- Options -->
-			<control id="200" type="grouplist">
-				<right>184</right>
-				<bottom>256</bottom>
-				<width>1200</width>
-				<height>1200</height>
-				<align>right</align>
-				<itemgap>0</itemgap>
-				<onleft>100</onleft>
-				<onright>noop</onright>
-				<ondown condition="!Skin.HasSetting(HideOSDControls)">304</ondown>
-				<orientation>vertical</orientation>
-				<visible>!Player.Forwarding + !Player.Rewinding</visible>
-				<!-- Visualisation -->
-				<control type="button" id="501">
-					<width>1200</width>
-					<height>116</height>
-					<font>OSD32</font>
-					<align>right</align>
-					<textcolor>ffffffff</textcolor>
-					<shadowcolor>ShadowColour</shadowcolor>
-					<focusedcolor>ffffc04b</focusedcolor>
-					<label>31235</label>
-					<texturefocus/>
-					<texturenofocus/>
-					<onclick>SetProperty(SetUserRating,music,home)</onclick>
-					<onclick>setrating</onclick>
-				</control>
-				<!-- Visualisation -->
-				<control type="button" id="500">
-					<width>1200</width>
-					<height>116</height>
-					<font>OSD32</font>
-					<align>right</align>
-					<textcolor>ffffffff</textcolor>
-					<shadowcolor>ShadowColour</shadowcolor>
-					<focusedcolor>ffffc04b</focusedcolor>
-					<label>12006</label>
-					<texturefocus/>
-					<texturenofocus/>
-				</control>
-				<!-- Visualisation presets list -->
-				<control type="button" id="12">
-					<width>1200</width>
-					<height>116</height>
-					<font>OSD32</font>
-					<align>right</align>
-					<textcolor>ffffffff</textcolor>
-					<shadowcolor>ShadowColour</shadowcolor>
-					<focusedcolor>ffffc04b</focusedcolor>
-					<label>$LOCALIZE[31047]</label>
-					<texturefocus/>
-					<texturenofocus/>
-					<onclick>ActivateWindow(visualisationpresetlist)</onclick>
-					<visible>Visualisation.HasPresets</visible>
-				</control>
-				<!-- Visualisation settings -->
-				<control type="button" id="11">
-					<width>1200</width>
-					<height>116</height>
-					<font>OSD32</font>
-					<align>right</align>
-					<textcolor>ffffffff</textcolor>
-					<shadowcolor>ShadowColour</shadowcolor>
-					<focusedcolor>ffffc04b</focusedcolor>
-					<label>$LOCALIZE[250] $LOCALIZE[21417]</label>
-					<texturefocus/>
-					<texturenofocus/>
-					<onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
-				</control>
 			</control>
 		</control>
 	</controls>

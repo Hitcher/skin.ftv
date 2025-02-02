@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<!-- videoosd -->
-	<onload condition="!Skin.HasSetting(HideOSDControls)">SetFocus(304)</onload>
-	<onload condition="Skin.HasSetting(HideOSDControls) + system.getbool(videoplayer.autoplaynextitem)">SetFocus(16)</onload>
-	<onload condition="Skin.HasSetting(HideOSDControls) + !system.getbool(videoplayer.autoplaynextitem)">SetFocus(15)</onload>
+	<defaultcontrol>304</defaultcontrol>
 	<controls>
 		<control type="group">
+			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(selectdialog) | Window.IsVisible(1114)">Conditional</animation>
 			<control type="image">
 				<width>3840</width>
 				<height>420</height>
@@ -86,8 +85,7 @@
 				<itemgap>-14</itemgap>
 				<align>center</align>
 				<orientation>horizontal</orientation>
-				<defaultcontrol always="true">204</defaultcontrol>
-				<visible>!Skin.HasSetting(HideOSDControls)</visible>
+				<defaultcontrol always="true">304</defaultcontrol>
 				<!-- Skip Back -->
 				<control type="button" id="301">
 					<width>128</width>
@@ -118,6 +116,15 @@
 					<texturenofocus colordiffuse="OSDNotFocusColour">osd/osd_stop.png</texturenofocus>
 					<onclick>PlayerControl(Stop)</onclick>
 				</control>
+				<!-- Options -->
+				<control type="button" id="307">
+					<width>128</width>
+					<height>128</height>
+					<font/>
+					<texturefocus colordiffuse="OSDFocusColour">osd/osd_settings.png</texturefocus>
+					<texturenofocus colordiffuse="OSDNotFocusColour">osd/osd_settings.png</texturenofocus>
+					<onclick>ActivateWindow(1114)</onclick>
+				</control>
 				<!-- Play/Pause -->
 				<control type="togglebutton" id="304">
 					<width>128</width>
@@ -129,16 +136,6 @@
 					<alttexturefocus colordiffuse="OSDFocusColour">osd/osd_play.png</alttexturefocus>
 					<alttexturenofocus colordiffuse="OSDNotFocusColour">osd/osd_play.png</alttexturenofocus>
 					<onclick>PlayerControl(Play)</onclick>
-				</control>
-				<!-- Options -->
-				<control type="button" id="307">
-					<width>128</width>
-					<height>128</height>
-					<font/>
-					<texturefocus colordiffuse="OSDFocusColour">osd/osd_settings.png</texturefocus>
-					<texturenofocus colordiffuse="OSDNotFocusColour">osd/osd_settings.png</texturenofocus>
-					<onclick>Close</onclick>
-					<onclick>ActivateWindow(1114)</onclick>
 				</control>
 				<!-- Fast Forward -->
 				<control type="button" id="305">

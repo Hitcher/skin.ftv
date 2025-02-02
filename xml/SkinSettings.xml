@@ -431,28 +431,6 @@
 					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					<onclick>Skin.SelectBool(31135, 31001|US, 31002|UK, 31003|Germany)</onclick>
 				</control>
-				<control id="18" type="radiobutton">
-					<width>1916</width>
-					<height>168</height>
-					<font>Light32</font>
-					<label>31149</label>
-					<textoffsetx>80</textoffsetx>
-					<textcolor>NotFocusedColour</textcolor>
-					<focusedcolor>FocusedColour</focusedcolor>
-					<radiowidth>250</radiowidth>
-					<radioheight>106</radioheight>
-					<radioposx>1626</radioposx>
-					<textureradioonfocus>settings/radio_on_focus.png</textureradioonfocus>
-					<textureradioonnofocus>settings/radio_on_no_focus.png</textureradioonnofocus>
-					<textureradioondisabled>settings/radio_on_disabled.png</textureradioondisabled>
-					<textureradioofffocus>settings/radio_off_focus.png</textureradioofffocus>
-					<textureradiooffnofocus>settings/radio_off_no_focus.png</textureradiooffnofocus>
-					<textureradiooffdisabled>settings/radio_off_disabled.png</textureradiooffdisabled>
-					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
-					<onclick>Skin.ToggleSetting(HideOSDControls)</onclick>
-					<selected>Skin.HasSetting(HideOSDControls)</selected>
-				</control>
 				<control id="21" type="radiobutton">
 					<width>1916</width>
 					<height>168</height>
