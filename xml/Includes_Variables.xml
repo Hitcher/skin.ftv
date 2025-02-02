@@ -439,7 +439,7 @@
 	<variable name="AudioCodec">
 		<value condition="String.IsEqual(ListItem.AudioCodec,aac) | [Window.IsActive(fullscreenvideo) + String.IsEqual(VideoPlayer.AudioCodec,aac)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.AudioCodec,aac)]">AAC</value>
 		<value condition="String.IsEqual(ListItem.AudioCodec,aac_latm) | [Window.IsActive(fullscreenvideo) + String.IsEqual(VideoPlayer.AudioCodec,aac_latm)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.AudioCodec,aac_latm)]">AAC</value>
-		<value condition="String.IsEqual(ListItem.AudioCodec,ac3) | [Window.IsActive(fullscreenvideo) + String.IsEqual(VideoPlayer.AudioCodec,ac3)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.AudioCodec,ac3)]">Dolby Digital</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,ac3) | [Window.IsActive(fullscreenvideo) + String.IsEqual(VideoPlayer.AudioCodec,ac3)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.AudioCodec,ac3)]">DD</value>
 		<value condition="String.IsEqual(ListItem.AudioCodec,aif) | [Window.IsActive(fullscreenvideo) + String.IsEqual(VideoPlayer.AudioCodec,aif)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.AudioCodec,aif)]">AIFF</value>
 		<value condition="String.IsEqual(ListItem.AudioCodec,aifc) | [Window.IsActive(fullscreenvideo) + String.IsEqual(VideoPlayer.AudioCodec,aifc)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.AudioCodec,aifc)]">AIFF</value>
 		<value condition="String.IsEqual(ListItem.AudioCodec,aiff) | [Window.IsActive(fullscreenvideo) + String.IsEqual(VideoPlayer.AudioCodec,aiff)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.AudioCodec,aiff)]">AIFF</value>
@@ -474,9 +474,9 @@
 		<value condition="String.IsEqual(ListItem.AudioCodec,wavpack) | [Window.IsActive(fullscreenvideo) + String.IsEqual(VideoPlayer.AudioCodec,wavpack)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.AudioCodec,wavpack)]">">WAVP</value>
 		<value condition="String.IsEqual(ListItem.AudioCodec,wmapro) | [Window.IsActive(fullscreenvideo) + String.IsEqual(VideoPlayer.AudioCodec,wmapro)] | [Window.IsActive(visualisation) + String.IsEqual(VideoPlayer.AudioCodec,wmapro)]">WMA-PRO</value>
 		<value condition="String.IsEqual(ListItem.AudioCodec,wmav2) | [Window.IsActive(fullscreenvideo) + String.IsEqual(VideoPlayer.AudioCodec,wmav2)] | [Window.IsActive(visualisation) + String.IsEqual(VideoPlayer.AudioCodec,wmav2)]">WMA</value>
-		<value condition="Window.IsActive(fullscreenvideo)">$INFO[VideoPlayer.AudioCodec]</value>
-		<value condition="Window.IsActive(visualisation)">$INFO[MusicPlayer.Codec]</value>
-		<value>$INFO[ListItem.AudioCodec]</value>
+		<value condition="Window.IsActive(fullscreenvideo)">[UPPERCASE]$INFO[VideoPlayer.AudioCodec][/UPPERCASE]</value>
+		<value condition="Window.IsActive(visualisation)">[UPPERCASE]$INFO[MusicPlayer.Codec][/UPPERCASE]</value>
+		<value>[UPPERCASE]$INFO[ListItem.AudioCodec][/UPPERCASE]</value>
 	</variable>
 	<variable name="AudioChannels">
 		<value condition="String.IsEqual(ListItem.AudioChannels,0) | [Window.IsActive(fullscreenvideo) + String.IsEqual(VideoPlayer.AudioChannels,0)] | String.IsEqual(ListItem.MusicChannels,0) | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Channels,0)] | String.Contains(ListItem.Property(Stream.Channels),0)">0.0</value>
