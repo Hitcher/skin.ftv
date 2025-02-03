@@ -99,7 +99,7 @@
 						<item id="101">
 							<include>OSDOptionButton</include>
 							<label>31197</label>
-							<label2>[B]$VAR[StreamSubtitleLabel]$VAR[StreamOriginal]$VAR[StreamForced]$VAR[StreamVisualImpaired]$VAR[StreamHearingImpaired][/B]</label2>
+							<label2>[B]$VAR[StreamSubtitleLabel][/B]</label2>
 							<onclick>SetProperty(VideoOSDSelect,1,home)</onclick>
 							<onclick>DialogSelectSubtitle</onclick>
 							<visible>Window.IsVisible(fullscreenvideo)</visible>
