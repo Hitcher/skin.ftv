@@ -495,7 +495,7 @@
 			<textcolor>ffcccccc</textcolor>
 			<texturefocus colordiffuse="FF888888" infill="false" border="6">rating/flag.png</texturefocus>
 			<texturenofocus colordiffuse="FF888888" infill="false" border="6">rating/flag.png</texturenofocus>
-			<visible>!String.IsEmpty(ListItem.AudioCodec) + !String.Contains(ListItem.AudioCodec,atmos) + !String.Contains(ListItem.AudioCodec,truehd) + !String.Contains(ListItem.AudioCodec,EAC3)</visible>
+			<visible>!String.IsEmpty(ListItem.AudioCodec) + !String.Contains(ListItem.AudioCodec,atmos) + !String.Contains(ListItem.AudioCodec,truehd) + !String.Contains(ListItem.AudioCodec,AC3)</visible>
 		</control>
 		<control type="button">
 			<top>4</top>
@@ -510,6 +510,20 @@
 			<texturefocus border="58,6,6,6">rating/dolby_left.png</texturefocus>
 			<texturenofocus border="58,6,6,6">rating/dolby_left.png</texturenofocus>
 			<visible>String.Contains(ListItem.AudioCodec,atmos) + String.IsEqual(ListItem.AudioCodec,EAC3)</visible>
+		</control>
+		<control type="button">
+			<top>4</top>
+			<width>auto</width>
+			<height>52</height>
+			<align>left</align>
+			<aligny>bottom</aligny>
+			<textoffsety>-6</textoffsety>
+			<font>Bold22</font>
+			<label>     DD</label>
+			<textcolor>ffcccccc</textcolor>
+			<texturefocus border="58,6,6,6">rating/dolby_left.png</texturefocus>
+			<texturenofocus border="58,6,6,6">rating/dolby_left.png</texturenofocus>
+			<visible>String.IsEqual(ListItem.AudioCodec,AC3)</visible>
 		</control>
 		<control type="button">
 			<top>4</top>
@@ -566,7 +580,7 @@
 			<textcolor>ffcccccc</textcolor>
 			<texturefocus border="0,6,6,6">rating/dolby_right.png</texturefocus>
 			<texturenofocus border="0,6,6,6">rating/dolby_right.png</texturenofocus>
-			<visible>String.IsEqual(ListItem.AudioCodec,truehd) | String.IsEqual(ListItem.AudioCodec,EAC3)</visible>
+			<visible>String.IsEqual(ListItem.AudioCodec,truehd) | String.Contains(ListItem.AudioCodec,AC3) + !String.Contains(ListItem.AudioCodec,atmos)</visible>
 		</control>
 		<control type="button">
 			<top>4</top>
