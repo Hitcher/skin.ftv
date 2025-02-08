@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2025-01-30 16:27+0000\n"
 "Last-Translator: Heiko Berner <berner.h@gmail.com>\n"
@@ -218,8 +218,8 @@ msgid "Turn Off Shuffle All"
 msgstr ""
 
 msgctxt "#31047"
-msgid "Visualisation Presets"
-msgstr "Visualisering Voorafinstellings"
+msgid "Visualisation presets"
+msgstr ""
 
 msgctxt "#31048"
 msgid "Playlist Options"
@@ -634,7 +634,7 @@ msgid "hours"
 msgstr ""
 
 msgctxt "#31149"
-msgid "Hide OSD controls"
+msgid "Lyrics settings"
 msgstr ""
 
 msgctxt "#31150"
@@ -956,6 +956,10 @@ msgctxt "#31227"
 msgid "Air time"
 msgstr ""
 
+msgctxt "#31228"
+msgid "Visualisation settings"
+msgstr ""
+
 # empty string with id 31228
 msgctxt "#31229"
 msgid "Cancel Next Up"
@@ -978,12 +982,11 @@ msgid "Browse Addons"
 msgstr ""
 
 msgctxt "#31235"
-msgid "Your Rating"
+msgid "Your rating"
 msgstr ""
 
-# Must match #31235 without the space
 msgctxt "#31236"
-msgid "Your_Rating"
+msgid "Your_rating"
 msgstr ""
 
 msgctxt "#31237"
@@ -1081,3 +1084,7 @@ msgstr ""
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr ""
+
+#~ msgctxt "#31047"
+#~ msgid "Visualisation Presets"
+#~ msgstr "Visualisering Voorafinstellings"

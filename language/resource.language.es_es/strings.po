@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2025-01-30 16:27+0000\n"
 "Last-Translator: Alfonso Cachero <alfonso.cachero@gmail.com>\n"
@@ -218,8 +218,8 @@ msgid "Turn Off Shuffle All"
 msgstr "Desactivar mezclar todo"
 
 msgctxt "#31047"
-msgid "Visualisation Presets"
-msgstr "Preajustes de visualización"
+msgid "Visualisation presets"
+msgstr ""
 
 msgctxt "#31048"
 msgid "Playlist Options"
@@ -626,8 +626,8 @@ msgid "hours"
 msgstr "horas"
 
 msgctxt "#31149"
-msgid "Hide OSD controls"
-msgstr "Ocultar controles OSD"
+msgid "Lyrics settings"
+msgstr ""
 
 msgctxt "#31150"
 msgid "Hides the Stop, Play, Pause, etc buttons from the music and video OSD."
@@ -943,6 +943,10 @@ msgctxt "#31227"
 msgid "Air time"
 msgstr "Hora de emisión"
 
+msgctxt "#31228"
+msgid "Visualisation settings"
+msgstr ""
+
 msgctxt "#31229"
 msgid "Cancel Next Up"
 msgstr "Cancelar Next Up"
@@ -964,13 +968,12 @@ msgid "Browse Addons"
 msgstr "Explorar add-ons"
 
 msgctxt "#31235"
-msgid "Your Rating"
-msgstr "Tu valoración"
+msgid "Your rating"
+msgstr ""
 
-# Must match #31235 without the space
 msgctxt "#31236"
-msgid "Your_Rating"
-msgstr "Tu_Valoración"
+msgid "Your_rating"
+msgstr ""
 
 msgctxt "#31237"
 msgid "Select your rating"
@@ -1067,6 +1070,23 @@ msgstr "Valoración media Todos los críticos"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "Valoración media de audiencia"
+
+#~ msgctxt "#31047"
+#~ msgid "Visualisation Presets"
+#~ msgstr "Preajustes de visualización"
+
+#~ msgctxt "#31149"
+#~ msgid "Hide OSD controls"
+#~ msgstr "Ocultar controles OSD"
+
+#~ msgctxt "#31235"
+#~ msgid "Your Rating"
+#~ msgstr "Tu valoración"
+
+# Must match #31235 without the space
+#~ msgctxt "#31236"
+#~ msgid "Your_Rating"
+#~ msgstr "Tu_Valoración"
 
 #~ msgctxt "Addon Summary"
 #~ msgid "Skin based on the Fire TV UI"

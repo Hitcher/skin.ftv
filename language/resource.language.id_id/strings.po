@@ -7,27 +7,27 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-10-23 03:07+0000\n"
-"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"PO-Revision-Date: 2025-02-08 07:27+0000\n"
+"Last-Translator: Nao3Line Prez <n.yazawa6932@gmail.com>\n"
 "Language-Team: Indonesian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/id_id/>\n"
 "Language: id_id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.9.2\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the original Fire TV UI"
-msgstr ""
+msgstr "Skin yang berdasar dari UI Fire TV"
 
 msgctxt "Addon Description"
 msgid "A skin designed to access all your content as easily and seemlessly as possible.[CR][CR]Addons supported:[CR]Global Search[CR]Up Next[CR]TheMovieDb Helper[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]Based on the original Fire TV UI."
-msgstr ""
+msgstr "Tampilan yang dirancang untuk mengakses semua konten Anda semudah dan semulus mungkin.[CR][CR]Add-on yang didukung:[CR]Pencarian Global[CR]Berikutnya[CR]Pembantu TheMovieDb[CR]Trakt[CR]Lirik CU[CR]Pengalaman Sinema[CR]Fitur Khusus[CR][CR]Berdasarkan UI Fire TV asli."
 
 msgctxt "Addon Disclaimer"
 msgid "To make use of the'ATMOS' tag it needs to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV"
-msgstr ""
+msgstr "Untuk menggunakan tag 'ATMOS', tag tersebut perlu ditambahkan ke nama file Anda.[CR]Tidak mendukung: Perangkat Mouse dan Sentuh atau TV Langsung"
 
 msgctxt "#31000"
 msgid "Audio Options"
@@ -127,7 +127,7 @@ msgstr "Fitur[CR]Spesial"
 
 msgctxt "#31024"
 msgid "Movie Sets"
-msgstr ""
+msgstr "Set Film"
 
 msgctxt "#31025"
 msgid "Notice"
@@ -218,8 +218,8 @@ msgid "Turn Off Shuffle All"
 msgstr "Matikan Acak Semua"
 
 msgctxt "#31047"
-msgid "Visualisation Presets"
-msgstr "Preset visualisasi"
+msgid "Visualisation presets"
+msgstr ""
 
 msgctxt "#31048"
 msgid "Playlist Options"
@@ -312,7 +312,7 @@ msgstr "Gambar untuk"
 
 msgctxt "#31070"
 msgid "Suggested"
-msgstr ""
+msgstr "Disarankan"
 
 msgctxt "#31071"
 msgid "Starring"
@@ -435,7 +435,7 @@ msgstr "Mulai Slideshow"
 
 msgctxt "#31100"
 msgid "Game Addons"
-msgstr ""
+msgstr "Pengaya Gim"
 
 msgctxt "#31101"
 msgid "Apps"
@@ -589,7 +589,7 @@ msgstr "Opsi Video"
 
 msgctxt "#31138"
 msgid "Colour Management"
-msgstr ""
+msgstr "Manajemen Warna"
 
 msgctxt "#31139"
 msgid "Select + X"
@@ -601,11 +601,11 @@ msgstr "Select + Start"
 
 msgctxt "#31141"
 msgid "Select + Right Stick"
-msgstr ""
+msgstr "Select + Stik Kanan"
 
 msgctxt "#31142"
 msgid "Peripheral dialog"
-msgstr ""
+msgstr "Dialog periferal"
 
 # empty strings from id 31138 to 31142
 msgctxt "#31143"
@@ -614,7 +614,7 @@ msgstr "Ini akan membatalkan perubahan apa pun yang Anda buat pada menu beranda 
 
 msgctxt "#31144"
 msgid "Game rotation dialog"
-msgstr ""
+msgstr "Dialog rotasi gim"
 
 # empty string with id 31144
 msgctxt "#31145"
@@ -634,8 +634,8 @@ msgid "hours"
 msgstr "jam"
 
 msgctxt "#31149"
-msgid "Hide OSD controls"
-msgstr "Sembunyikan kontrol OSD"
+msgid "Lyrics settings"
+msgstr ""
 
 msgctxt "#31150"
 msgid "Hides the Stop, Play, Pause, etc buttons from the music and video OSD."
@@ -683,7 +683,7 @@ msgstr "Poster"
 
 msgctxt "#31161"
 msgid "Square Info"
-msgstr ""
+msgstr "Info Kotak"
 
 msgctxt "#31162"
 msgid "Show"
@@ -723,16 +723,16 @@ msgstr "Film Anak-anak"
 
 msgctxt "#31171"
 msgid "Game saves"
-msgstr ""
+msgstr "Simpanan gim"
 
 msgctxt "#31172"
 msgid "Square List"
-msgstr ""
+msgstr "Daftar Kotak"
 
 # empty strings from id 31171 to 31172
 msgctxt "#31173"
 msgid "In-game saves"
-msgstr ""
+msgstr "Penyimpanan dalam gim"
 
 # empty strings from id 31171 to 31173
 msgctxt "#31174"
@@ -757,15 +757,15 @@ msgstr "Acara TV Anak-anak"
 
 msgctxt "#31179"
 msgid "Playlist options"
-msgstr ""
+msgstr "Opsi daftarputar"
 
 msgctxt "#31180"
 msgid "Choose view"
-msgstr ""
+msgstr "Pilih penampilan"
 
 msgctxt "#31181"
 msgid "Collection"
-msgstr ""
+msgstr "Koleksi"
 
 # empty strings from id 31179 to 31181
 msgctxt "#31182"
@@ -794,27 +794,27 @@ msgstr "Aliran Anda"
 
 msgctxt "#31188"
 msgid "Manage[CR]Versions"
-msgstr ""
+msgstr "Atur[CR]Versi"
 
 msgctxt "#31189"
 msgid "Manage[CR]Extras"
-msgstr ""
+msgstr "Atur[CR]Ekstra"
 
 msgctxt "#31190"
 msgid "Which version would you like to watch?"
-msgstr ""
+msgstr "Versi mana yang ingin kamu tonton?"
 
 msgctxt "#31191"
 msgid "Which extra would you like to watch?"
-msgstr ""
+msgstr "Ekstra mana yang ingin kamu tonton?"
 
 msgctxt "#31192"
 msgid "Director"
-msgstr ""
+msgstr "Sutradara"
 
 msgctxt "#31193"
 msgid "Now Playing"
-msgstr ""
+msgstr "Sedang Diputar"
 
 # empty strings from id 31187 to 31193
 msgctxt "#31194"
@@ -823,15 +823,15 @@ msgstr "Masukkan"
 
 msgctxt "#31195"
 msgid "Ended"
-msgstr ""
+msgstr "Berakhir"
 
 msgctxt "#31196"
 msgid "Cancelled"
-msgstr ""
+msgstr "Dibatalkan"
 
 msgctxt "#31197"
 msgid "Subtitle streams"
-msgstr ""
+msgstr "Aliran takarir"
 
 msgctxt "#31198"
 msgid "View Type"
@@ -851,11 +851,11 @@ msgstr "Pilih Pintasan"
 
 msgctxt "#31202"
 msgid "Order"
-msgstr ""
+msgstr "Urut"
 
 msgctxt "#31203"
 msgid "Square"
-msgstr ""
+msgstr "Kotak"
 
 msgctxt "#31204"
 msgid "Movies starring"
@@ -923,7 +923,7 @@ msgstr "Sesuaikan Grup Widget"
 
 msgctxt "#31220"
 msgid "Audio streams"
-msgstr ""
+msgstr "Aliran audio"
 
 # empty string with id 31220
 msgctxt "#31221"
@@ -945,16 +945,20 @@ msgstr "Pengaya Gambar"
 
 msgctxt "#31225"
 msgid "Video streams"
-msgstr ""
+msgstr "Aliran Video"
 
 msgctxt "#31226"
 msgid "Play speed"
-msgstr ""
+msgstr "Kecepatan Pemutaran"
 
 # empty strings from id 31225 to 31226
 msgctxt "#31227"
 msgid "Air time"
 msgstr "Waktu udara"
+
+msgctxt "#31228"
+msgid "Visualisation settings"
+msgstr ""
 
 # empty string with id 31228
 msgctxt "#31229"
@@ -978,12 +982,11 @@ msgid "Browse Addons"
 msgstr "Jelajahi Pengaya"
 
 msgctxt "#31235"
-msgid "Your Rating"
-msgstr "Penilaian Anda"
+msgid "Your rating"
+msgstr ""
 
-# Must match #31235 without the space
 msgctxt "#31236"
-msgid "Your_Rating"
+msgid "Your_rating"
 msgstr ""
 
 msgctxt "#31237"
@@ -992,7 +995,7 @@ msgstr "Pilih Nilai Anda"
 
 msgctxt "#31238"
 msgid "This is your own personal rating and is only stored locally"
-msgstr ""
+msgstr "Ini adalah nilai pribadi dan disimpan lokal saja"
 
 msgctxt "#31239"
 msgid "Press play to resume"
@@ -1081,6 +1084,23 @@ msgstr "Nilai Rata-Rata Semua Kritik"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "Rata-rata Rating Skor Audiens"
+
+#~ msgctxt "#31047"
+#~ msgid "Visualisation Presets"
+#~ msgstr "Preset visualisasi"
+
+#~ msgctxt "#31149"
+#~ msgid "Hide OSD controls"
+#~ msgstr "Sembunyikan kontrol OSD"
+
+#~ msgctxt "#31235"
+#~ msgid "Your Rating"
+#~ msgstr "Penilaian Anda"
+
+# Must match #31235 without the space
+#~ msgctxt "#31236"
+#~ msgid "Your_Rating"
+#~ msgstr "Your_Rating"
 
 #~ msgctxt "Addon Summary"
 #~ msgid "Skin based on the Fire TV UI"

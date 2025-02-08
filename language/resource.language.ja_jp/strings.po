@@ -218,8 +218,8 @@ msgid "Turn Off Shuffle All"
 msgstr "すべてシャッフルをオフにする"
 
 msgctxt "#31047"
-msgid "Visualisation Presets"
-msgstr "視覚化プリセット"
+msgid "Visualisation presets"
+msgstr ""
 
 msgctxt "#31048"
 msgid "Playlist Options"
@@ -626,8 +626,8 @@ msgid "hours"
 msgstr "時間"
 
 msgctxt "#31149"
-msgid "Hide OSD controls"
-msgstr "OSDコントロールを表示しない"
+msgid "Lyrics settings"
+msgstr ""
 
 msgctxt "#31150"
 msgid "Hides the Stop, Play, Pause, etc buttons from the music and video OSD."
@@ -943,6 +943,10 @@ msgctxt "#31227"
 msgid "Air time"
 msgstr "放映時間"
 
+msgctxt "#31228"
+msgid "Visualisation settings"
+msgstr ""
+
 msgctxt "#31229"
 msgid "Cancel Next Up"
 msgstr "キャンセル Next Up"
@@ -964,12 +968,11 @@ msgid "Browse Addons"
 msgstr "アドオンのブラウズ"
 
 msgctxt "#31235"
-msgid "Your Rating"
-msgstr "あなたのレーティング"
+msgid "Your rating"
+msgstr ""
 
-# Must match #31235 without the space
 msgctxt "#31236"
-msgid "Your_Rating"
+msgid "Your_rating"
 msgstr ""
 
 msgctxt "#31237"
@@ -1067,6 +1070,18 @@ msgstr "すべての評論家の平均評価"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "平均視聴者スコア"
+
+#~ msgctxt "#31047"
+#~ msgid "Visualisation Presets"
+#~ msgstr "視覚化プリセット"
+
+#~ msgctxt "#31149"
+#~ msgid "Hide OSD controls"
+#~ msgstr "OSDコントロールを表示しない"
+
+#~ msgctxt "#31235"
+#~ msgid "Your Rating"
+#~ msgstr "あなたのレーティング"
 
 #~ msgctxt "Addon Summary"
 #~ msgid "Skin based on the Fire TV UI"

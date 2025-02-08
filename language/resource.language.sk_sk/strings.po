@@ -218,8 +218,8 @@ msgid "Turn Off Shuffle All"
 msgstr ""
 
 msgctxt "#31047"
-msgid "Visualisation Presets"
-msgstr "Predvoľby vizualizácie"
+msgid "Visualisation presets"
+msgstr ""
 
 msgctxt "#31048"
 msgid "Playlist Options"
@@ -630,8 +630,8 @@ msgid "hours"
 msgstr "hodiny"
 
 msgctxt "#31149"
-msgid "Hide OSD controls"
-msgstr "Skryť ovládacie prvky OSD"
+msgid "Lyrics settings"
+msgstr ""
 
 msgctxt "#31150"
 msgid "Hides the Stop, Play, Pause, etc buttons from the music and video OSD."
@@ -948,6 +948,10 @@ msgctxt "#31227"
 msgid "Air time"
 msgstr "Vysielací čas"
 
+msgctxt "#31228"
+msgid "Visualisation settings"
+msgstr ""
+
 # empty string with id 31228
 msgctxt "#31229"
 msgid "Cancel Next Up"
@@ -970,12 +974,11 @@ msgid "Browse Addons"
 msgstr "Prehliadať Doplnky"
 
 msgctxt "#31235"
-msgid "Your Rating"
-msgstr "Vaše Hodnotenie"
+msgid "Your rating"
+msgstr ""
 
-# Must match #31235 without the space
 msgctxt "#31236"
-msgid "Your_Rating"
+msgid "Your_rating"
 msgstr ""
 
 msgctxt "#31237"
@@ -1073,6 +1076,18 @@ msgstr ""
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr ""
+
+#~ msgctxt "#31047"
+#~ msgid "Visualisation Presets"
+#~ msgstr "Predvoľby vizualizácie"
+
+#~ msgctxt "#31149"
+#~ msgid "Hide OSD controls"
+#~ msgstr "Skryť ovládacie prvky OSD"
+
+#~ msgctxt "#31235"
+#~ msgid "Your Rating"
+#~ msgstr "Vaše Hodnotenie"
 
 #~ msgctxt "Addon Summary"
 #~ msgid "Skin based on the Fire TV UI"

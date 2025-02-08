@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-01-30 16:27+0000\n"
+"PO-Revision-Date: 2025-02-08 07:27+0000\n"
 "Last-Translator: Marek Adamski <fevbew@wp.pl>\n"
 "Language-Team: Polish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/pl_pl/>\n"
 "Language: pl_pl\n"
@@ -218,8 +218,8 @@ msgid "Turn Off Shuffle All"
 msgstr ""
 
 msgctxt "#31047"
-msgid "Visualisation Presets"
-msgstr "Zestaw ustawień wizualizacji"
+msgid "Visualisation presets"
+msgstr ""
 
 msgctxt "#31048"
 msgid "Playlist Options"
@@ -632,7 +632,7 @@ msgid "hours"
 msgstr ""
 
 msgctxt "#31149"
-msgid "Hide OSD controls"
+msgid "Lyrics settings"
 msgstr ""
 
 msgctxt "#31150"
@@ -941,7 +941,7 @@ msgstr ""
 
 msgctxt "#31225"
 msgid "Video streams"
-msgstr ""
+msgstr "Strumienie wideo"
 
 msgctxt "#31226"
 msgid "Play speed"
@@ -950,6 +950,10 @@ msgstr "Szybkość odtwarzania"
 # empty strings from id 31225 to 31226
 msgctxt "#31227"
 msgid "Air time"
+msgstr ""
+
+msgctxt "#31228"
+msgid "Visualisation settings"
 msgstr ""
 
 # empty string with id 31228
@@ -974,12 +978,11 @@ msgid "Browse Addons"
 msgstr ""
 
 msgctxt "#31235"
-msgid "Your Rating"
+msgid "Your rating"
 msgstr ""
 
-# Must match #31235 without the space
 msgctxt "#31236"
-msgid "Your_Rating"
+msgid "Your_rating"
 msgstr ""
 
 msgctxt "#31237"
@@ -1077,6 +1080,10 @@ msgstr ""
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr ""
+
+#~ msgctxt "#31047"
+#~ msgid "Visualisation Presets"
+#~ msgstr "Zestaw ustawień wizualizacji"
 
 #~ msgctxt "#31100"
 #~ msgid "Photos"

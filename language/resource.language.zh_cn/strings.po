@@ -218,8 +218,8 @@ msgid "Turn Off Shuffle All"
 msgstr "关闭全部随机播放"
 
 msgctxt "#31047"
-msgid "Visualisation Presets"
-msgstr "可视化效果预设"
+msgid "Visualisation presets"
+msgstr ""
 
 msgctxt "#31048"
 msgid "Playlist Options"
@@ -632,8 +632,8 @@ msgid "hours"
 msgstr "小时"
 
 msgctxt "#31149"
-msgid "Hide OSD controls"
-msgstr "隐藏OSD控制"
+msgid "Lyrics settings"
+msgstr ""
 
 msgctxt "#31150"
 msgid "Hides the Stop, Play, Pause, etc buttons from the music and video OSD."
@@ -953,6 +953,10 @@ msgctxt "#31227"
 msgid "Air time"
 msgstr "放送时间"
 
+msgctxt "#31228"
+msgid "Visualisation settings"
+msgstr ""
+
 # empty string with id 31228
 msgctxt "#31229"
 msgid "Cancel Next Up"
@@ -975,12 +979,11 @@ msgid "Browse Addons"
 msgstr "浏览插件"
 
 msgctxt "#31235"
-msgid "Your Rating"
-msgstr "你的评分"
+msgid "Your rating"
+msgstr ""
 
-# Must match #31235 without the space
 msgctxt "#31236"
-msgid "Your_Rating"
+msgid "Your_rating"
 msgstr ""
 
 msgctxt "#31237"
@@ -1078,6 +1081,18 @@ msgstr "评论家平均分"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "观众平均分"
+
+#~ msgctxt "#31047"
+#~ msgid "Visualisation Presets"
+#~ msgstr "可视化效果预设"
+
+#~ msgctxt "#31149"
+#~ msgid "Hide OSD controls"
+#~ msgstr "隐藏OSD控制"
+
+#~ msgctxt "#31235"
+#~ msgid "Your Rating"
+#~ msgstr "你的评分"
 
 #~ msgctxt "Addon Summary"
 #~ msgid "Skin based on the Fire TV UI"

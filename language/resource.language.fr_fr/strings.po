@@ -218,8 +218,8 @@ msgid "Turn Off Shuffle All"
 msgstr "Désactiver[CR]Tout Mélanger"
 
 msgctxt "#31047"
-msgid "Visualisation Presets"
-msgstr "Préréglages des visualisation"
+msgid "Visualisation presets"
+msgstr ""
 
 msgctxt "#31048"
 msgid "Playlist Options"
@@ -634,8 +634,8 @@ msgid "hours"
 msgstr "heures"
 
 msgctxt "#31149"
-msgid "Hide OSD controls"
-msgstr "Cacher les commandes à l’écran"
+msgid "Lyrics settings"
+msgstr ""
 
 msgctxt "#31150"
 msgid "Hides the Stop, Play, Pause, etc buttons from the music and video OSD."
@@ -956,6 +956,10 @@ msgctxt "#31227"
 msgid "Air time"
 msgstr "Temps d’antenne"
 
+msgctxt "#31228"
+msgid "Visualisation settings"
+msgstr ""
+
 # empty string with id 31228
 msgctxt "#31229"
 msgid "Cancel Next Up"
@@ -978,12 +982,11 @@ msgid "Browse Addons"
 msgstr "Explorer les extensions"
 
 msgctxt "#31235"
-msgid "Your Rating"
-msgstr "Votre notation"
+msgid "Your rating"
+msgstr ""
 
-# Must match #31235 without the space
 msgctxt "#31236"
-msgid "Your_Rating"
+msgid "Your_rating"
 msgstr ""
 
 msgctxt "#31237"
@@ -1081,6 +1084,18 @@ msgstr "Notation moyenne toutes critiques confondues"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "Score moyen d’audience"
+
+#~ msgctxt "#31047"
+#~ msgid "Visualisation Presets"
+#~ msgstr "Préréglages des visualisation"
+
+#~ msgctxt "#31149"
+#~ msgid "Hide OSD controls"
+#~ msgstr "Cacher les commandes à l’écran"
+
+#~ msgctxt "#31235"
+#~ msgid "Your Rating"
+#~ msgstr "Votre notation"
 
 #~ msgctxt "Addon Summary"
 #~ msgid "Skin based on the Fire TV UI"
