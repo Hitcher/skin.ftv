@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-01-30 16:27+0000\n"
+"PO-Revision-Date: 2025-02-13 06:19+0000\n"
 "Last-Translator: Massimo Pissarello <mapi68@gmail.com>\n"
 "Language-Team: Italian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/it_it/>\n"
 "Language: it_it\n"
@@ -219,7 +219,7 @@ msgstr "Disattiva Mescola tutto"
 
 msgctxt "#31047"
 msgid "Visualisation presets"
-msgstr ""
+msgstr "Preimpostazioni visualizzazione"
 
 msgctxt "#31048"
 msgid "Playlist Options"
@@ -633,7 +633,7 @@ msgstr "ore"
 
 msgctxt "#31149"
 msgid "Lyrics settings"
-msgstr ""
+msgstr "Impostazioni dei testi"
 
 msgctxt "#31150"
 msgid "Hides the Stop, Play, Pause, etc buttons from the music and video OSD."
@@ -955,7 +955,7 @@ msgstr "Orario trasmissione"
 
 msgctxt "#31228"
 msgid "Visualisation settings"
-msgstr ""
+msgstr "Impostazioni visualizzazione"
 
 # empty string with id 31228
 msgctxt "#31229"
@@ -980,11 +980,11 @@ msgstr "Sfoglia add-on"
 
 msgctxt "#31235"
 msgid "Your rating"
-msgstr ""
+msgstr "La tua valutazione"
 
 msgctxt "#31236"
 msgid "Your_rating"
-msgstr ""
+msgstr "Tua_valutazione"
 
 msgctxt "#31237"
 msgid "Select your rating"
