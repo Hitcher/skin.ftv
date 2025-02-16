@@ -206,7 +206,7 @@
 								<textcolor>ffffc448</textcolor>
 								<shadowcolor>ShadowColour</shadowcolor>
 								<label>$VAR[PercentRemaining]</label>
-								<visible>!ListItem.IsParentFolder + !ListItem.IsFolder</visible>
+								<visible>!ListItem.IsParentFolder + !ListItem.IsFolder + String.StartsWith(Container.FolderPath,videodb://)</visible>
 								<animation condition="Control.HasFocus(52) | Container(52).OnNext | Container(52).OnPrevious" delay="700" easing="inout" effect="fade" end="100" reversible="false" start="0" time="220" tween="sine">Focus</animation>
 								<animation condition="Container(52).OnNext | Container(52).OnPrevious" effect="fade" end="0" start="100" time="0">UnFocus</animation>
 							</control>
@@ -232,7 +232,7 @@
 								<shadowcolor>ShadowColour</shadowcolor>
 								<label>$VAR[EpisodeValue]</label>
 								<visible>!ListItem.IsParentFolder + !ListItem.IsFolder</visible>
-								<animation condition="Control.HasFocus(52) | Container(52).OnNext | Container(52).OnPrevious" delay="560" easing="inout" effect="slide" end="0,0" reversible="false" start="0,-42" time="220" tween="sine">Focus</animation>
+								<animation condition="String.StartsWith(Container.FolderPath,videodb://) + [Control.HasFocus(52) | Container(52).OnNext | Container(52).OnPrevious]" delay="560" easing="inout" effect="slide" end="0,0" reversible="false" start="0,-42" time="220" tween="sine">Focus</animation>
 								<animation condition="Container(52).OnNext | Container(52).OnPrevious" effect="slide" end="0,-42" start="0,0" time="0">UnFocus</animation>
 							</control>
 						</control>
