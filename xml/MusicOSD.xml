@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<!-- musicosd -->
-	<defaultcontrol>304</defaultcontrol>
+	<defaultcontrol>307</defaultcontrol>
 	<controls>
 		<!-- Options -->
 		<control type="button" id="500">
