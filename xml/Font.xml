@@ -296,13 +296,6 @@
 			<linespacing>1.14</linespacing>
 		</font>
 		<font>
-			<name>Med24CR</name>
-			<filename>Roboto-Medium.ttf</filename>
-			<aspect>1.04</aspect>
-			<size>48</size>
-			<linespacing>2.2</linespacing>
-		</font>
-		<font>
 			<name>Med23Spaced</name>
 			<filename>Roboto-Medium.ttf</filename>
 			<aspect>1.04</aspect>
