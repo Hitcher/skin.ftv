@@ -9,6 +9,8 @@
 			<top>268</top>
 			<width>1140</width>
 			<height>948</height>
+			<onleft>back</onleft>
+			<onright>back</onright>
 			<scrolltime>0</scrolltime>
 			<itemlayout height="316">
 				<control type="textbox">

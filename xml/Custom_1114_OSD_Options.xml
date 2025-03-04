@@ -196,14 +196,11 @@
 						<item id="114">
 							<label>24013</label>
 							<label2>[B]$INFO[Skin.String(LyricScript_Path)][/B]</label2>
-							<onclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
-							<visible>Window.IsVisible(visualisation)</visible>
-						</item>
-						<!-- Lyrics -->
-						<item id="115">
-							<label>31149</label>
-							<onclick>Addon.OpenSettings($INFO[Skin.String(LyricScript_Path)])</onclick>
-							<visible>!String.IsEmpty(Skin.String(LyricScript_Path))</visible>
+							<onclick>Close</onclick>
+							<onclick condition="!String.IsEmpty(Skin.String(LyricScript_Path))">RunScript($INFO[Skin.String(LyricScript_Path)])</onclick>
+							<onclick condition="String.IsEmpty(Skin.String(LyricScript_Path))">Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
+							<onclick condition="String.IsEmpty(Skin.String(LyricScript_Path))">Close</onclick>
+							<onclick condition="String.IsEmpty(Skin.String(LyricScript_Path))">RunScript($INFO[Skin.String(LyricScript_Path)])</onclick>
 							<visible>Window.IsVisible(visualisation)</visible>
 						</item>
 						<!-- Playlist -->
@@ -245,13 +242,13 @@
 						</item>
 						<!-- Visualisation settings -->
 						<item id="121">
-					<label>31228</label>
+							<label>31228</label>
 							<onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
 							<visible>Window.IsVisible(visualisation)</visible>
 						</item>
 						<!-- Visualisation presets -->
 						<item id="122">
-					<label>31047</label>
+							<label>31047</label>
 							<onclick>ActivateWindow(visualisationpresetlist)</onclick>
 							<visible>Visualisation.HasPresets</visible>
 							<visible>Window.IsVisible(visualisation)</visible>
