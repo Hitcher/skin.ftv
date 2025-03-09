@@ -1,5 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<include name="DebugWindowLabel">
+		<param name="debug_window_label" default=""/>
+		<param name="debug_window_label_visible" default=""/>
+		<definition>
+			<control type="label">
+				<width>3840</width>
+				<height>42</height>
+				<textcolor>ffadd8e6</textcolor>
+				<shadowcolor>ShadowColour</shadowcolor>
+				<font>font13</font>
+				<align>left</align>
+				<label>$PARAM[debug_window_label]</label>
+				<visible>Window.IsVisible($PARAM[debug_window_label_visible])</visible>
+			</control>
+		</definition>
+	</include>
+	<include name="DebugDialogLabel">
+		<param name="debug_dialog_label" default=""/>
+		<param name="debug_dialog_label_visible" default=""/>
+		<definition>
+			<control type="label">
+				<width>3840</width>
+				<height>42</height>
+				<textcolor>ffadd8e6</textcolor>
+				<shadowcolor>ShadowColour</shadowcolor>
+				<font>font13</font>
+				<align>left</align>
+				<label>$PARAM[debug_dialog_label]</label>
+				<visible>Window.IsVisible($PARAM[debug_dialog_label_visible])</visible>
+			</control>
+		</definition>
+	</include>
+	<include name="DebugControlLabel">
+		<param name="debug_control_label" default=""/>
+		<param name="debug_control_label_visible" default=""/>
+		<definition>
+			<control type="label">
+				<width>2800</width>
+				<height>42</height>
+				<textcolor>FFFF0000</textcolor>
+				<shadowcolor>ShadowColour</shadowcolor>
+				<font>font13</font>
+				<align>right</align>
+				<scroll>true</scroll>
+				<label>$PARAM[debug_control_label]</label>
+				<visible>$PARAM[debug_control_label_visible]</visible>
+			</control>
+		</definition>
+	</include>
+	<include name="DebugArtwork">
+		<param name="debug_artwork_info" default=""/>
+		<definition>
+			<control type="group">
+				<width>2800</width>
+				<height>100</height>
+				<visible>!String.IsEmpty($PARAM[debug_artwork_info])</visible>
+				<control type="label">
+					<right>190</right>
+					<width>2800</width>
+					<height>100</height>
+					<align>right</align>
+					<label>[COLOR FF00FF00]$PARAM[debug_artwork_info] - [/COLOR]</label>
+				</control>
+				<control type="image">
+					<right>0</right>
+					<width>178</width>
+					<height>100</height>
+					<align>right</align>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[$PARAM[debug_artwork_info]]</texture>
+				</control>
+			</control>
+		</definition>
+	</include>
 	<include name="DialogBack">
 		<param name="dialog_back_width" default="2756"/>
 		<param name="dialog_back_height" default="960"/>

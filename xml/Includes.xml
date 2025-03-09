@@ -42,42 +42,6 @@
 			<texture colordiffuse="BackgroundColour">common/white_square.png</texture>
 		</control>
 	</include>
-	<!-- Debug window label -->
-	<include name="DebugWindowLabel">
-		<width>3840</width>
-		<height>42</height>
-		<textcolor>FF0000FF</textcolor>
-		<shadowcolor>ShadowColour</shadowcolor>
-		<font>font13</font>
-		<align>left</align>
-	</include>
-	<!-- Debug dialog label -->
-	<include name="DebugDialogLabel">
-		<width>3840</width>
-		<height>42</height>
-		<textcolor>FFFF0000</textcolor>
-		<shadowcolor>ShadowColour</shadowcolor>
-		<font>font13</font>
-		<align>left</align>
-	</include>
-	<!-- Debug control label -->
-	<include name="DebugControlLabel">
-		<width>2800</width>
-		<height>42</height>
-		<textcolor>FFFF0000</textcolor>
-		<shadowcolor>ShadowColour</shadowcolor>
-		<font>font13</font>
-		<align>right</align>
-	</include>
-	<!-- Dialog background image -->
-	<include name="DialogBackgroundImage">
-		<control type="image">
-			<include>FullscreenDimensions</include>
-			<texture>dialogs/DialogBackground.png</texture>
-			<animation effect="fade" end="100" start="0" time="200">WindowOpen</animation>
-			<animation delay="100" effect="fade" end="0" start="100" time="200">WindowClose</animation>
-		</control>
-	</include>
 	<!-- Dialog text background image -->
 	<include name="DialogTextBackgroundImage">
 		<control type="image">
