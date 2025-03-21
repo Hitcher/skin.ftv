@@ -42,6 +42,15 @@
 			<texture colordiffuse="BackgroundColour">common/white_square.png</texture>
 		</control>
 	</include>
+	<!-- Dialog background image -->
+	<include name="DialogBackgroundImage">
+		<control type="image">
+			<include>FullscreenDimensions</include>
+			<texture>dialogs/DialogBackground.png</texture>
+			<animation effect="fade" end="100" start="0" time="200">WindowOpen</animation>
+			<animation delay="100" effect="fade" end="0" start="100" time="200">WindowClose</animation>
+		</control>
+	</include>
 	<!-- Dialog text background image -->
 	<include name="DialogTextBackgroundImage">
 		<control type="image">
