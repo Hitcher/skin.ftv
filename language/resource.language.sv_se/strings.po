@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-04-10 20:06+0000\n"
+"PO-Revision-Date: 2025-04-11 08:49+0000\n"
 "Last-Translator: Daniel Nylander <daniel@danielnylander.se>\n"
 "Language-Team: Swedish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/sv_se/>\n"
 "Language: sv_se\n"
@@ -147,7 +147,7 @@ msgstr ""
 
 msgctxt "#31029"
 msgid "Addon Details"
-msgstr ""
+msgstr "Tilläggsdetaljer"
 
 msgctxt "#31030"
 msgid "Customise the home menu to your liking with the Skin Shortcuts script."
@@ -434,7 +434,7 @@ msgstr ""
 
 msgctxt "#31100"
 msgid "Game Addons"
-msgstr ""
+msgstr "Speltillägg"
 
 msgctxt "#31101"
 msgid "Apps"
@@ -446,7 +446,7 @@ msgstr "Spelas nu"
 
 msgctxt "#31103"
 msgid "Addons"
-msgstr ""
+msgstr "Tillägg"
 
 msgctxt "#31104"
 msgid "Cinema Experience"
@@ -609,7 +609,7 @@ msgstr ""
 # empty strings from id 31138 to 31142
 msgctxt "#31143"
 msgid "This will undo any changes you've made to the home menu and widgets."
-msgstr ""
+msgstr "Detta kommer att ångra alla ändringar som du har gjort i startmenyn och widgetarna."
 
 msgctxt "#31144"
 msgid "Game rotation dialog"
@@ -768,7 +768,7 @@ msgstr ""
 # empty strings from id 31179 to 31181
 msgctxt "#31182"
 msgid "Top Rated TV Shows"
-msgstr ""
+msgstr "TV-serier med högsta betyg"
 
 msgctxt "#31183"
 msgid "Recently Played Albums"
