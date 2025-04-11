@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-04-11 08:49+0000\n"
+"PO-Revision-Date: 2025-04-11 13:18+0000\n"
 "Last-Translator: Daniel Nylander <daniel@danielnylander.se>\n"
 "Language-Team: Swedish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/sv_se/>\n"
 "Language: sv_se\n"
@@ -109,9 +109,10 @@ msgctxt "#31019"
 msgid "View Addons that are currently being downloaded."
 msgstr "Visa tillägg som för närvarande hämtas ner."
 
+#, fuzzy
 msgctxt "#31020"
 msgid "View all the system Addons including Dependencies, Orphaned Dependencies, and Running Addons."
-msgstr ""
+msgstr "Visa alla systemtillägg, inklusive beroenden, föräldralösa beroenden och tillägg som körs."
 
 msgctxt "#31021"
 msgid "Download Addons from your installed repos."
@@ -125,9 +126,10 @@ msgctxt "#31023"
 msgid "Special[CR]Features"
 msgstr "Speciella[CR]funktioner"
 
+#, fuzzy
 msgctxt "#31024"
 msgid "Movie Sets"
-msgstr ""
+msgstr "Filmkulisser"
 
 msgctxt "#31025"
 msgid "Notice"
@@ -137,170 +139,198 @@ msgctxt "#31026"
 msgid "Overview"
 msgstr "Översikt"
 
+#, fuzzy
 msgctxt "#31027"
 msgid "Install Addons using the file browser."
-msgstr ""
+msgstr "Installera tillägg med hjälp av filbläddraren."
 
 msgctxt "#31028"
 msgid "Search for an Addon from your installed repos."
-msgstr ""
+msgstr "Sök efter ett tillägg från dina installerade förråd."
 
 msgctxt "#31029"
 msgid "Addon Details"
 msgstr "Tilläggsdetaljer"
 
+#, fuzzy
 msgctxt "#31030"
 msgid "Customise the home menu to your liking with the Skin Shortcuts script."
-msgstr ""
+msgstr "Anpassa hemmenyn efter eget tycke och smak med skriptet Skin Shortcuts."
 
+#, fuzzy
 msgctxt "#31031"
 msgid "Customise the shutdown menu to include your favourite actions."
-msgstr ""
+msgstr "Anpassa avstängningsmenyn så att den innehåller dina favoritåtgärder."
 
+#, fuzzy
 msgctxt "#31032"
 msgid "Hide thumbnails for unwatched episodes to avoid possible spoilers."
-msgstr ""
+msgstr "Dölj miniatyrbilder för otittade avsnitt för att undvika eventuella spoilers."
 
 msgctxt "#31033"
 msgid "Launch Now"
-msgstr ""
+msgstr "Starta nu"
 
+#, fuzzy
 msgctxt "#31034"
 msgid "Select which Rotten Tomatoes rating to use."
-msgstr ""
+msgstr "Välj vilket Rotten Tomatoes-betyg som ska användas."
 
 msgctxt "#31035"
 msgid "Still there?"
 msgstr "Är du där?"
 
+#, fuzzy
 msgctxt "#31036"
 msgid "Displays fanart for your media in the background."
-msgstr ""
+msgstr "Visar fanart för dina medier i bakgrunden."
 
+#, fuzzy
 msgctxt "#31037"
 msgid "Press [B]BACK[/B] to keep current settings or [B]OK[/B] to reset."
-msgstr ""
+msgstr "Tryck på [B]BACK[/B] för att behålla aktuella inställningar eller [B]OK[/B] för att återställa."
 
+#, fuzzy
 msgctxt "#31038"
 msgid "Select your scrapers certification county."
-msgstr ""
+msgstr "Välj ditt skrotningscertifieringslän."
 
+#, fuzzy
 msgctxt "#31039"
 msgid "Enable debug grid.[CR]Useful when skinning."
-msgstr ""
+msgstr "Aktivera debug grid.[CR]Användbart vid skinning."
 
+#, fuzzy
 msgctxt "#31040"
 msgid "Enable debug info.[CR]Useful for bug reporting."
-msgstr ""
+msgstr "Aktivera felsökningsinformation[CR]Användbar för felrapportering."
 
+#, fuzzy
 msgctxt "#31041"
 msgid "Debug grid"
-msgstr ""
+msgstr "Felsök rutnät"
 
+#, fuzzy
 msgctxt "#31042"
 msgid "Debug labels"
-msgstr ""
+msgstr "Etiketter för felsökning"
 
+#, fuzzy
 msgctxt "#31043"
 msgid "Turn Off Randomise"
-msgstr ""
+msgstr "Stäng av slumpmässighet"
 
+#, fuzzy
 msgctxt "#31044"
 msgid "Local subtitle found!"
-msgstr ""
+msgstr "Lokal undertitel hittad!"
 
+#, fuzzy
 msgctxt "#31045"
 msgid "Turn On Randomise"
-msgstr ""
+msgstr "Slå på Randomisera"
 
+#, fuzzy
 msgctxt "#31046"
 msgid "Turn Off Shuffle All"
-msgstr ""
+msgstr "Stäng av Shuffle All"
 
+#, fuzzy
 msgctxt "#31047"
 msgid "Visualisation presets"
-msgstr ""
+msgstr "Förinställningar för visualisering"
 
 msgctxt "#31048"
 msgid "Playlist Options"
 msgstr "Spellistalternativ"
 
+#, fuzzy
 msgctxt "#31049"
 msgid "Customise Home Menu"
-msgstr ""
+msgstr "Anpassa startmenyn"
 
+#, fuzzy
 msgctxt "#31050"
 msgid "TV Shows starring"
-msgstr ""
+msgstr "TV-program med huvudrollsinnehavare"
 
 msgctxt "#31051"
 msgid "Images"
-msgstr ""
+msgstr "Bilder"
 
+#, fuzzy
 msgctxt "#31052"
 msgid "Turn On[CR]Shuffle All"
-msgstr ""
+msgstr "Slå på[CR]Blanda alla"
 
+#, fuzzy
 msgctxt "#31053"
 msgid "Turn Off[CR]Repeat"
-msgstr ""
+msgstr "Stäng av[CR]Upprepa"
 
+#, fuzzy
 msgctxt "#31054"
 msgid "Repeat This[CR]Item"
-msgstr ""
+msgstr "Upprepa detta[CR]objekt"
 
+#, fuzzy
 msgctxt "#31055"
 msgid "Turn On[CR]Repeat All"
-msgstr ""
+msgstr "Slå på[CR]Upprepa alla"
 
+#, fuzzy
 msgctxt "#31056"
 msgid "Move, copy and delete your files with KODI's built-in file manager."
-msgstr ""
+msgstr "Flytta, kopiera och radera dina filer med KODI:s inbyggda filhanterare."
 
 msgctxt "#31057"
 msgid "Watch[CR]Again"
-msgstr ""
+msgstr "Se[CR]igen"
 
 msgctxt "#31058"
 msgid "Today's weather:"
-msgstr ""
+msgstr "Dagens väder:"
 
+#, fuzzy
 msgctxt "#31059"
 msgid "Tonight's weather:"
-msgstr ""
+msgstr "Vädret ikväll:"
 
 msgctxt "#31060"
 msgid "Play Now"
-msgstr ""
+msgstr "Spela nu"
 
+#, fuzzy
 msgctxt "#31061"
 msgid "Enable X-Ray"
-msgstr ""
+msgstr "Aktivera röntgen"
 
 msgctxt "#31062"
 msgid "Choose Thumb"
-msgstr ""
+msgstr "Välj miniatyrbild"
 
+#, fuzzy
 msgctxt "#31063"
 msgid "Enables Cast info during video playback.[CR]Note: Can be CPU intensive."
-msgstr ""
+msgstr "Aktiverar Cast-info under videouppspelning.[CR]Obs: Kan vara CPU-krävande."
 
 msgctxt "#31064"
 msgid "Browse[CR]Season"
-msgstr ""
+msgstr "Bläddra[CR]säsong"
 
 msgctxt "#31065"
 msgid "Browse[CR]Movie Set"
-msgstr ""
+msgstr "Bläddra[CR]filmuppsättning"
 
+#, fuzzy
 msgctxt "#31066"
 msgid "Movies in this Set"
-msgstr ""
+msgstr "Filmer i denna uppsättning"
 
 # empty strings from id 31064 to 31066
 msgctxt "#31067"
 msgid "Choose Fanart"
-msgstr ""
+msgstr "Välj fanart"
 
 msgctxt "#31068"
 msgid "IP"
@@ -308,15 +338,17 @@ msgstr "IP"
 
 msgctxt "#31069"
 msgid "Images for"
-msgstr ""
+msgstr "Bilder för"
 
+#, fuzzy
 msgctxt "#31070"
 msgid "Suggested"
-msgstr ""
+msgstr "Föreslog"
 
+#, fuzzy
 msgctxt "#31071"
 msgid "Starring"
-msgstr ""
+msgstr "I huvudrollerna"
 
 msgctxt "#31072"
 msgid "Directed by"
@@ -328,56 +360,63 @@ msgstr "Nästa avsnitt"
 
 msgctxt "#31074"
 msgid "Browse[CR]TV Show"
-msgstr ""
+msgstr "Bläddra[CR]TV-serie"
 
 msgctxt "#31075"
 msgid "Play[CR]Trailer"
-msgstr ""
+msgstr "Spela[CR]trailer"
 
+#, fuzzy
 msgctxt "#31076"
 msgid "Cast and Role"
-msgstr ""
+msgstr "Rollbesättning och roll"
 
+#, fuzzy
 msgctxt "#31077"
 msgid "Viewers Also Watched"
-msgstr ""
+msgstr "Tittare som också tittat på"
 
+#, fuzzy
 msgctxt "#31078"
 msgid "Sorry, nothing found."
-msgstr ""
+msgstr "Tyvärr, ingenting hittades."
 
 msgctxt "#31079"
 msgid "Daily"
-msgstr ""
+msgstr "Dagligen"
 
+#, fuzzy
 msgctxt "#31080"
 msgid "Enable Extended Information"
-msgstr ""
+msgstr "Aktivera utökad information"
 
+#, fuzzy
 msgctxt "#31081"
 msgid "Shows Extended Information for actors when selected from the cast list."
-msgstr ""
+msgstr "Visar utökad information för skådespelare när de väljs från rollistan."
 
+#, fuzzy
 msgctxt "#31082"
 msgid "Last aired"
-msgstr ""
+msgstr "Senast sändes"
 
 msgctxt "#31083"
 msgid "Yesterday"
-msgstr ""
+msgstr "Igår"
 
 msgctxt "#31084"
 msgid "Today"
 msgstr "Idag"
 
 # empty strings from id 31079 to 31084
+#, fuzzy
 msgctxt "#31085"
 msgid "Shutdown Menu"
-msgstr ""
+msgstr "Avstängningsmeny"
 
 msgctxt "#31086"
 msgid "Sorted by"
-msgstr ""
+msgstr "Sorterade efter"
 
 msgctxt "#31087"
 msgid "Unavailable"
@@ -393,19 +432,19 @@ msgstr "Vy alternativ"
 
 msgctxt "#31090"
 msgid "Update Library"
-msgstr ""
+msgstr "Uppdatera biblioteket"
 
 msgctxt "#31091"
 msgid "Stop scanning"
-msgstr ""
+msgstr "Stoppa genomsökning"
 
 msgctxt "#31092"
 msgid "Sort By"
-msgstr ""
+msgstr "Sortera efter"
 
 msgctxt "#31093"
 msgid "Filter By"
-msgstr ""
+msgstr "Filtrera efter"
 
 msgctxt "#31094"
 msgid "Save Playlist"
@@ -413,24 +452,25 @@ msgstr "Spara spellista"
 
 msgctxt "#31095"
 msgid "Clear Playlist"
-msgstr ""
+msgstr "Töm spellista"
 
 msgctxt "#31096"
 msgid "Play[CR]Album"
-msgstr ""
+msgstr "Spela[CR]album"
 
 msgctxt "#31097"
 msgid "Play[CR]Song"
-msgstr ""
+msgstr "Spela[CR]låt"
 
 # empty strings from id 31096 to 31097
+#, fuzzy
 msgctxt "#31098"
 msgid "Press 'Continue?' to watch the next episode or 'Cancel' to stop watching."
-msgstr ""
+msgstr "Tryck på \"Continue?\" för att titta på nästa avsnitt eller \"Cancel\" för att avbryta tittandet."
 
 msgctxt "#31099"
 msgid "Start Slideshow"
-msgstr ""
+msgstr "Starta bildspel"
 
 msgctxt "#31100"
 msgid "Game Addons"
@@ -454,7 +494,7 @@ msgstr "Bioupplevelse"
 
 msgctxt "#31105"
 msgid "Your Addons"
-msgstr ""
+msgstr "Dina tillägg"
 
 msgctxt "#31106"
 msgid "Now Playing"
@@ -462,88 +502,103 @@ msgstr "Nu spelas"
 
 msgctxt "#31107"
 msgid "TV Roles"
-msgstr ""
+msgstr "TV-roller"
 
 msgctxt "#31108"
 msgid "Known For"
-msgstr ""
+msgstr "Känd för"
 
 msgctxt "#31109"
 msgid "Watch[CR]Now"
-msgstr ""
+msgstr "Titta[CR]nu"
 
 msgctxt "#31110"
 msgid "Written by"
 msgstr "Författare"
 
+#, fuzzy
 msgctxt "#31111"
 msgid "Episode Wide"
-msgstr ""
+msgstr "Episod Bred"
 
 msgctxt "#31112"
 msgid "Song List"
-msgstr ""
+msgstr "Låtlista"
 
+#, fuzzy
 msgctxt "#31113"
 msgid "Recommended viewing"
-msgstr ""
+msgstr "Rekommenderad visning"
 
 # empty strings from id 31111 to 31113
+#, fuzzy
 msgctxt "#31114"
 msgid "Customise Shutdown Menu"
-msgstr ""
+msgstr "Anpassa avstängningsmenyn"
 
+#, fuzzy
 msgctxt "#31115"
 msgid "Configure your Skin, Region, Control, Screensaver, and Master Lock settings."
-msgstr ""
+msgstr "Konfigurera inställningarna för Skin, Region, Control, Screensaver och Master Lock."
 
+#, fuzzy
 msgctxt "#31116"
 msgid "Manage, browse for, install and modify Addons."
-msgstr ""
+msgstr "Hantera, leta efter, installera och ändra tillägg."
 
+#, fuzzy
 msgctxt "#31117"
 msgid "Configure the handling and playback settings for Video, Music, and Pictures."
-msgstr ""
+msgstr "Konfigurera hanterings- och uppspelningsinställningarna för Video, Music och Pictures."
 
+#, fuzzy
 msgctxt "#31118"
 msgid "Configure the media list display, information, and database settings."
-msgstr ""
+msgstr "Konfigurera inställningar för visning, information och databas för medielistan."
 
+#, fuzzy
 msgctxt "#31119"
 msgid "Hardware decoding is active"
-msgstr ""
+msgstr "Avkodning av hårdvara är aktiv"
 
+#, fuzzy
 msgctxt "#31120"
 msgid "Hardware decoding is inactive"
-msgstr ""
+msgstr "Avkodning av hårdvara är inaktiv"
 
+#, fuzzy
 msgctxt "#31121"
 msgid "Setup and calibrate displays, configure audio output, setup remote controls, set power saving options, enable debugging and setup master lock."
-msgstr ""
+msgstr "Konfigurera och kalibrera skärmar, konfigurera ljudutgång, ställa in fjärrkontroller, ställa in energisparalternativ, aktivera felsökning och ställa in masterlås."
 
+#, fuzzy
 msgctxt "#31122"
 msgid "Setup control of Kodi via UPnP and HTTP, configure file sharing, enable Zeroconf and configure AirPlay."
-msgstr ""
+msgstr "Konfigurera styrning av Kodi via UPnP och HTTP, konfigurera fildelning, aktivera Zeroconf och konfigurera AirPlay."
 
+#, fuzzy
 msgctxt "#31123"
 msgid "Profiles, File Manager, System Information and Settings Level."
-msgstr ""
+msgstr "Profiler, Filhanterare, Systeminformation och Inställningsnivå."
 
+#, fuzzy
 msgctxt "#31124"
 msgid "Personalise your experience with profiles. Includes enabling login screen, profile creation and management."
-msgstr ""
+msgstr "Anpassa din upplevelse med profiler. Inkluderar aktivering av inloggningsskärm, skapande och hantering av profiler."
 
 msgctxt "#31125"
 msgid "Login"
 msgstr "Logga in"
 
+#, fuzzy
 msgctxt "#31126"
 msgid "Last login"
-msgstr ""
+msgstr "Senaste inloggning"
 
+#, fuzzy
 msgctxt "#31127"
 msgid "View your system's information. Includes storage, network, and hardware information."
-msgstr ""
+msgstr "Visa information om ditt system. Innehåller information om lagring, nätverk och maskinvara."
 
 msgctxt "#31128"
 msgid "About"
@@ -551,32 +606,37 @@ msgstr "Om"
 
 msgctxt "#31129"
 msgid "Kodi"
-msgstr ""
+msgstr "Kodi"
 
+#, fuzzy
 msgctxt "#31130"
 msgid "TV Show Wide"
-msgstr ""
+msgstr "TV-program på bred front"
 
 # empty string with id 31130
+#, fuzzy
 msgctxt "#31131"
 msgid "Enable Wide TV Show Icons"
-msgstr ""
+msgstr "Aktivera breda ikoner för TV-program"
 
 msgctxt "#31132"
 msgid "Continue watching?"
-msgstr ""
+msgstr "Fortsätta titta?"
 
+#, fuzzy
 msgctxt "#31133"
 msgid "Enable Wide Season Icons"
-msgstr ""
+msgstr "Aktivera ikoner för bred säsong"
 
+#, fuzzy
 msgctxt "#31134"
 msgid "Enable Fanart"
-msgstr ""
+msgstr "Aktivera Fanart"
 
+#, fuzzy
 msgctxt "#31135"
 msgid "Select Rating Country"
-msgstr ""
+msgstr "Välj Rating-land"
 
 msgctxt "#31136"
 msgid "DVD Menu"
@@ -584,11 +644,12 @@ msgstr "DVD-meny"
 
 msgctxt "#31137"
 msgid "Video Options"
-msgstr ""
+msgstr "Videoalternativ"
 
+#, fuzzy
 msgctxt "#31138"
 msgid "Colour Management"
-msgstr ""
+msgstr "Färghantering"
 
 msgctxt "#31139"
 msgid "Select + X"
@@ -598,31 +659,35 @@ msgctxt "#31140"
 msgid "Select + Start"
 msgstr "Select + Start"
 
+#, fuzzy
 msgctxt "#31141"
 msgid "Select + Right Stick"
-msgstr ""
+msgstr "Välj + höger spak"
 
+#, fuzzy
 msgctxt "#31142"
 msgid "Peripheral dialog"
-msgstr ""
+msgstr "Dialog om periferiutrustning"
 
 # empty strings from id 31138 to 31142
 msgctxt "#31143"
 msgid "This will undo any changes you've made to the home menu and widgets."
 msgstr "Detta kommer att ångra alla ändringar som du har gjort i startmenyn och widgetarna."
 
+#, fuzzy
 msgctxt "#31144"
 msgid "Game rotation dialog"
-msgstr ""
+msgstr "Dialog för spelrotation"
 
 # empty string with id 31144
 msgctxt "#31145"
 msgid "percent remaining"
-msgstr ""
+msgstr "procent kvar"
 
+#, fuzzy
 msgctxt "#31146"
 msgid "Special"
-msgstr ""
+msgstr "Special"
 
 msgctxt "#31147"
 msgid "minutes"
@@ -630,23 +695,25 @@ msgstr "minuter"
 
 msgctxt "#31148"
 msgid "hours"
-msgstr ""
+msgstr "timmar"
 
 msgctxt "#31149"
 msgid "Lyrics settings"
-msgstr ""
+msgstr "Inställningar för låttexter"
 
+#, fuzzy
 msgctxt "#31150"
 msgid "Hides the Stop, Play, Pause, etc buttons from the music and video OSD."
-msgstr ""
+msgstr "Döljer knapparna Stop, Play, Pause, etc. från OSD för musik och video."
 
 msgctxt "#31151"
 msgid "Creator"
 msgstr "Skapare"
 
+#, fuzzy
 msgctxt "#31152"
 msgid "Air Date"
-msgstr ""
+msgstr "Datum för sändning"
 
 msgctxt "#31153"
 msgid "3D Mode"
@@ -654,23 +721,24 @@ msgstr "3D läge"
 
 msgctxt "#31154"
 msgid "Profile"
-msgstr ""
+msgstr "Profil"
 
 msgctxt "#31155"
 msgid "Build Version"
-msgstr ""
+msgstr "Byggversion"
 
 msgctxt "#31156"
 msgid "Capacity"
-msgstr ""
+msgstr "Kapacitet"
 
+#, fuzzy
 msgctxt "#31157"
 msgid "Current Date and Time"
-msgstr ""
+msgstr "Aktuellt datum och aktuell tid"
 
 msgctxt "#31158"
 msgid "Device Name"
-msgstr ""
+msgstr "Enhetsnamn"
 
 msgctxt "#31159"
 msgid "Wide"
@@ -680,29 +748,31 @@ msgctxt "#31160"
 msgid "Poster"
 msgstr "Poster"
 
+#, fuzzy
 msgctxt "#31161"
 msgid "Square Info"
-msgstr ""
+msgstr "Fyrkantig information"
 
 msgctxt "#31162"
 msgid "Show"
-msgstr ""
+msgstr "Visa"
 
 msgctxt "#31163"
 msgid "Start Party Mode"
-msgstr ""
+msgstr "Starta partyläge"
 
+#, fuzzy
 msgctxt "#31164"
 msgid "Next Up"
-msgstr ""
+msgstr "Nästa upp"
 
 msgctxt "#31165"
 msgid "Choose[CR]Art"
-msgstr ""
+msgstr "Välj[CR]bild"
 
 msgctxt "#31166"
 msgid "Open Visualiser"
-msgstr ""
+msgstr "Öppna visualiserare"
 
 msgctxt "#31167"
 msgid "Recently Added Movies"
@@ -710,7 +780,7 @@ msgstr "Nyligen tillagda filmer"
 
 msgctxt "#31168"
 msgid "Your Movies"
-msgstr ""
+msgstr "Dina filmer"
 
 msgctxt "#31169"
 msgid "In Progress Movies"
@@ -718,65 +788,71 @@ msgstr "Pågående filmer"
 
 msgctxt "#31170"
 msgid "Kids Movies"
-msgstr ""
+msgstr "Filmer för barn"
 
 msgctxt "#31171"
 msgid "Game saves"
-msgstr ""
+msgstr "Sparade spel"
 
+#, fuzzy
 msgctxt "#31172"
 msgid "Square List"
-msgstr ""
+msgstr "Fyrkantig lista"
 
 # empty strings from id 31171 to 31172
+#, fuzzy
 msgctxt "#31173"
 msgid "In-game saves"
-msgstr ""
+msgstr "PER-SPEL-SPARNINGAR"
 
 msgctxt "#31174"
 msgid "Top Rated Movies"
 msgstr "Högst betygsatta filmer"
 
+#, fuzzy
 msgctxt "#31175"
 msgid "Recently Updated TV Shows"
-msgstr ""
+msgstr "Nyligen uppdaterade TV-program"
 
 msgctxt "#31176"
 msgid "Your TV Shows"
-msgstr ""
+msgstr "Dina TV-serier"
 
+#, fuzzy
 msgctxt "#31177"
 msgid "In Progress TV Shows"
-msgstr ""
+msgstr "Pågående TV-serier"
 
 msgctxt "#31178"
 msgid "Kids TV Shows"
-msgstr ""
+msgstr "TV-serier för barn"
 
+#, fuzzy
 msgctxt "#31179"
 msgid "Playlist options"
-msgstr ""
+msgstr "Alternativ för spellistor"
 
 msgctxt "#31180"
 msgid "Choose view"
-msgstr ""
+msgstr "Välj vy"
 
 msgctxt "#31181"
 msgid "Collection"
-msgstr ""
+msgstr "Samling"
 
 # empty strings from id 31179 to 31181
 msgctxt "#31182"
 msgid "Top Rated TV Shows"
 msgstr "TV-serier med högsta betyg"
 
+#, fuzzy
 msgctxt "#31183"
 msgid "Recently Played Albums"
-msgstr ""
+msgstr "Nyligen spelade album"
 
 msgctxt "#31184"
 msgid "Your Albums"
-msgstr ""
+msgstr "Dina album"
 
 msgctxt "#31185"
 msgid "Recently Added Albums"
@@ -784,144 +860,153 @@ msgstr "Nyligen tillagda album"
 
 msgctxt "#31186"
 msgid "Your Artists"
-msgstr ""
+msgstr "Dina artister"
 
 msgctxt "#31187"
 msgid "Your Genres"
-msgstr ""
+msgstr "Dina genrer"
 
 msgctxt "#31188"
 msgid "Manage[CR]Versions"
-msgstr ""
+msgstr "Hantera[CR]versioner"
 
 msgctxt "#31189"
 msgid "Manage[CR]Extras"
-msgstr ""
+msgstr "Hantera[CR]extramaterial"
 
+#, fuzzy
 msgctxt "#31190"
 msgid "Which version would you like to watch?"
-msgstr ""
+msgstr "Vilken version skulle du vilja se?"
 
+#, fuzzy
 msgctxt "#31191"
 msgid "Which extra would you like to watch?"
-msgstr ""
+msgstr "Vilket extramaterial skulle du vilja se?"
 
 msgctxt "#31192"
 msgid "Director"
-msgstr ""
+msgstr "Regissör"
 
 msgctxt "#31193"
 msgid "Now Playing"
-msgstr ""
+msgstr "Spelas nu"
 
 # empty strings from id 31187 to 31193
 msgctxt "#31194"
 msgid "Submit"
-msgstr ""
+msgstr "Skicka"
 
+#, fuzzy
 msgctxt "#31195"
 msgid "Ended"
-msgstr ""
+msgstr "Avslutade"
 
 msgctxt "#31196"
 msgid "Cancelled"
-msgstr ""
+msgstr "Avbruten"
 
 msgctxt "#31197"
 msgid "Subtitle streams"
-msgstr ""
+msgstr "Undertextströmmar"
 
+#, fuzzy
 msgctxt "#31198"
 msgid "View Type"
-msgstr ""
+msgstr "Visa Typ"
 
+#, fuzzy
 msgctxt "#31199"
 msgid "Label Overlay"
-msgstr ""
+msgstr "Etikettöverlägg"
 
 msgctxt "#31200"
 msgid "Enter Name"
-msgstr ""
+msgstr "Ange namn"
 
 msgctxt "#31201"
 msgid "Choose Shortcut"
-msgstr ""
+msgstr "Välj genväg"
 
 msgctxt "#31202"
 msgid "Order"
-msgstr ""
+msgstr "Ordning"
 
+#, fuzzy
 msgctxt "#31203"
 msgid "Square"
-msgstr ""
+msgstr "Fyrkant"
 
+#, fuzzy
 msgctxt "#31204"
 msgid "Movies starring"
-msgstr ""
+msgstr "Filmer med huvudrollsinnehavare"
 
 msgctxt "#31205"
 msgid "Refresh Information"
-msgstr ""
+msgstr "Uppdatera information"
 
 msgctxt "#31206"
 msgid "Enable Auto-Update"
-msgstr ""
+msgstr "Aktivera automatisk uppdatering"
 
 msgctxt "#31207"
 msgid "Disable Auto-Update"
-msgstr ""
+msgstr "Inaktivera automatisk uppdatering"
 
+#, fuzzy
 msgctxt "#31208"
 msgid "Enable Higher Levels"
-msgstr ""
+msgstr "Möjliggör högre nivåer"
 
 msgctxt "#31209"
 msgid "Disable Higher Levels"
-msgstr ""
+msgstr "Inaktivera högre nivåer"
 
 msgctxt "#31210"
 msgid "Widget Group 1"
-msgstr ""
+msgstr "Widgetgrupp 1"
 
 msgctxt "#31211"
 msgid "Widget Group 2"
-msgstr ""
+msgstr "Widgetgrupp 2"
 
 msgctxt "#31212"
 msgid "Widget Group 3"
-msgstr ""
+msgstr "Widgetgrupp 3"
 
 msgctxt "#31213"
 msgid "Widget Group 4"
-msgstr ""
+msgstr "Widgetgrupp 4"
 
 msgctxt "#31214"
 msgid "Widget Group 5"
-msgstr ""
+msgstr "Widgetgrupp 5"
 
 msgctxt "#31215"
 msgid "Widget Group 6"
-msgstr ""
+msgstr "Widgetgrupp 6"
 
 msgctxt "#31216"
 msgid "Widget Group 7"
-msgstr ""
+msgstr "Widgetgrupp 7"
 
 msgctxt "#31217"
 msgid "Widget Group 8"
-msgstr ""
+msgstr "Widgetgrupp 8"
 
 msgctxt "#31218"
 msgid "Select Widget Group"
-msgstr ""
+msgstr "Välj widgetgrupp"
 
+#, fuzzy
 msgctxt "#31219"
 msgid "Customise Widget Group"
-msgstr ""
+msgstr "Anpassa Widget-grupp"
 
 msgctxt "#31220"
 msgid "Audio streams"
-msgstr ""
+msgstr "Ljudströmmar"
 
 # empty string with id 31220
 msgctxt "#31221"
@@ -930,157 +1015,177 @@ msgstr "Misuktillägg"
 
 msgctxt "#31222"
 msgid "Program Addons"
-msgstr ""
+msgstr "Programtillägg"
 
 msgctxt "#31223"
 msgid "Video Addons"
 msgstr "Videotillägg"
 
+#, fuzzy
 msgctxt "#31224"
 msgid "Picture Addons"
-msgstr ""
+msgstr "Bildtillägg"
 
 msgctxt "#31225"
 msgid "Video streams"
-msgstr ""
+msgstr "Videoströmmar"
 
 msgctxt "#31226"
 msgid "Play speed"
-msgstr ""
+msgstr "Uppspelningshastighet"
 
 # empty strings from id 31225 to 31226
+#, fuzzy
 msgctxt "#31227"
 msgid "Air time"
-msgstr ""
+msgstr "Lufttid"
 
+#, fuzzy
 msgctxt "#31228"
 msgid "Visualisation settings"
-msgstr ""
+msgstr "Inställningar för visualisering"
 
 # empty string with id 31228
+#, fuzzy
 msgctxt "#31229"
 msgid "Cancel Next Up"
-msgstr ""
+msgstr "Avbryt Nästa upp"
 
+#, fuzzy
 msgctxt "#31230"
 msgid "Sorry, no shows are airing at this time."
-msgstr ""
+msgstr "Tyvärr, inga program sänds just nu."
 
 msgctxt "#31231"
 msgid "Please try again later."
-msgstr ""
+msgstr "Försök igen senare."
 
 msgctxt "#31233"
 msgid "View All Cast"
-msgstr ""
+msgstr "Visa alla roller"
 
+#, fuzzy
 msgctxt "#31234"
 msgid "Browse Addons"
-msgstr ""
+msgstr "Bläddra tillval"
 
 msgctxt "#31235"
 msgid "Your rating"
-msgstr ""
+msgstr "Ditt betyg"
 
+#, fuzzy
 msgctxt "#31236"
 msgid "Your_rating"
-msgstr ""
+msgstr "Ditt_betyg"
 
+#, fuzzy
 msgctxt "#31237"
 msgid "Select your rating"
-msgstr ""
+msgstr "Välj ditt betyg"
 
+#, fuzzy
 msgctxt "#31238"
 msgid "This is your own personal rating and is only stored locally"
-msgstr ""
+msgstr "Detta är ditt eget personliga betyg och lagras endast lokalt"
 
 msgctxt "#31239"
 msgid "Press play to resume"
-msgstr ""
+msgstr "Tryck på spela för att återuppta"
 
 msgctxt "#31240"
 msgid "Not rated"
-msgstr ""
+msgstr "Inget betyg"
 
 msgctxt "#31241"
 msgid "I hate it"
-msgstr ""
+msgstr "Jag hatar den"
 
 msgctxt "#31242"
 msgid "I don't like it"
-msgstr ""
+msgstr "Jag gillar inte denna"
 
 msgctxt "#31243"
 msgid "It's okay"
-msgstr ""
+msgstr "Det är okej"
 
 msgctxt "#31244"
 msgid "I like it"
-msgstr ""
+msgstr "Jag gillar"
 
 msgctxt "#31245"
 msgid "I love it"
-msgstr ""
+msgstr "Jag älskar den"
 
 msgctxt "#31246"
 msgid "Location"
 msgstr "Plats"
 
+#, fuzzy
 msgctxt "#31247"
 msgid "Media Processing Info"
-msgstr ""
+msgstr "Information om mediebearbetning"
 
 msgctxt "#31248"
 msgid "Order"
 msgstr "Sortera"
 
+#, fuzzy
 msgctxt "#31249"
 msgid "View Addons that have recently been updated."
-msgstr ""
+msgstr "Visa tillägg som nyligen har uppdaterats."
 
+#, fuzzy
 msgctxt "#31250"
 msgid "Configure various game settings."
-msgstr ""
+msgstr "Konfigurera olika spelinställningar."
 
+#, fuzzy
 msgctxt "#31252"
 msgid "This skin only supports a maximum of 13 home menu items. Please remove some to ensure everything works correctly."
-msgstr ""
+msgstr "Detta skin stöder endast maximalt 13 hemmenyalternativ. Vänligen ta bort några för att säkerställa att allt fungerar korrekt."
 
+#, fuzzy
 msgctxt "#31253"
 msgid "No items found in Your Favourites"
-msgstr ""
+msgstr "Inga objekt hittades i Dina favoriter"
 
+#, fuzzy
 msgctxt "#31254"
 msgid "When you add Favourites they will appear here"
-msgstr ""
+msgstr "När du lägger till favoriter kommer de att visas här"
 
 msgctxt "#31255"
 msgid "Reset Home Menu"
-msgstr ""
+msgstr "Återställ hemmeny"
 
 msgctxt "#31256"
 msgid "What's[CR]New"
-msgstr ""
+msgstr "Vad är[CR]nytt"
 
+#, fuzzy
 msgctxt "#31257"
 msgid "Rotten Tomatoes Rating"
-msgstr ""
+msgstr "Ruttna tomaters betyg"
 
+#, fuzzy
 msgctxt "#31258"
 msgid "TomatoMeter All Critics"
-msgstr ""
+msgstr "TomatoMeter Alla kritiker"
 
+#, fuzzy
 msgctxt "#31259"
 msgid "TomatoMeter Audience Score"
-msgstr ""
+msgstr "TomatoMeter Publikresultat"
 
+#, fuzzy
 msgctxt "#31260"
 msgid "Average Rating All Critics"
-msgstr ""
+msgstr "Genomsnittligt betyg Alla kritiker"
 
+#, fuzzy
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
-msgstr ""
+msgstr "Genomsnittligt betyg Publikens betyg"
 
 #~ msgctxt "#31047"
 #~ msgid "Visualisation Presets"
