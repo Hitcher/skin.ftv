@@ -800,14 +800,6 @@ msgctxt "#31189"
 msgid "Manage[CR]Extras"
 msgstr "Atur[CR]Ekstra"
 
-msgctxt "#31190"
-msgid "Which version would you like to watch?"
-msgstr "Versi mana yang ingin kamu tonton?"
-
-msgctxt "#31191"
-msgid "Which extra would you like to watch?"
-msgstr "Ekstra mana yang ingin kamu tonton?"
-
 msgctxt "#31192"
 msgid "Director"
 msgstr "Sutradara"
@@ -1084,6 +1076,14 @@ msgstr "Nilai Rata-Rata Semua Kritik"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "Rata-rata Rating Skor Audiens"
+
+#~ msgctxt "#31190"
+#~ msgid "Which version would you like to watch?"
+#~ msgstr "Versi mana yang ingin kamu tonton?"
+
+#~ msgctxt "#31191"
+#~ msgid "Which extra would you like to watch?"
+#~ msgstr "Ekstra mana yang ingin kamu tonton?"
 
 #~ msgctxt "#31047"
 #~ msgid "Visualisation Presets"
