@@ -788,13 +788,7 @@ msgctxt "#31189"
 msgid "Manage[CR]Extras"
 msgstr ""
 
-msgctxt "#31190"
-msgid "Which version would you like to watch?"
-msgstr ""
-
-msgctxt "#31191"
-msgid "Which extra would you like to watch?"
-msgstr ""
+#empty strings from id 31190 to 31191
 
 msgctxt "#31192"
 msgid "Director"

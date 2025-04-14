@@ -193,7 +193,7 @@
 					<left>392</left>
 					<top>1564</top>
 					<include>VisibleDelayFadeAnimation</include>
-					<visible>[String.IsEmpty(Container.PluginName) + [Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]] | [!String.IsEmpty(Container.PluginName) + Container.Content(episodes)]</visible>
+					<visible>[String.IsEmpty(Container.PluginName) + [Container.Content(movies) | Container.Content(videoversions) | Container.Content(videoextras) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]] | [!String.IsEmpty(Container.PluginName) + Container.Content(episodes)]</visible>
 					<!-- Controls -->
 					<control id="1000" type="grouplist">
 						<left>-20</left>
@@ -322,7 +322,7 @@
 						<itemgap>20</itemgap>
 						<orientation>horizontal</orientation>
 						<usecontrolcoords>true</usecontrolcoords>
-						<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows)</visible>
+						<visible>Container.Content(movies) | Container.Content(videoversions) | Container.Content(videoextras) | Container.Content(sets) | Container.Content(tvshows)</visible>
 						<control type="label">
 							<top>-6</top>
 							<width>auto</width>
@@ -348,12 +348,12 @@
 							<textcolor>ff33b5e5</textcolor>
 							<texturefocus colordiffuse="FF33b5e5" infill="false" border="6">rating/flag.png</texturefocus>
 							<texturenofocus colordiffuse="FF33b5e5" infill="false" border="6">rating/flag.png</texturenofocus>
-							<visible>ListItem.HasVideoExtras | [ListItem.HasVideoVersions + !String.Contains(Container.FolderPath,movies/videoversion)] | [ListItem.IsCollection + !String.Contains(Container.FolderPath,movies/sets)]</visible>
+							<visible>[Container.Content(movies) + [ListItem.HasVideoExtras  | ListItem.HasVideoVersions]] | [ListItem.IsCollection + !String.Contains(Container.FolderPath,movies/sets)]</visible>
 						</control>
 					</control>
 					<!-- Movie / TV Show plot -->
 					<control type="group">
-						<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows)</visible>
+						<visible>Container.Content(movies) | Container.Content(videoversions) | Container.Content(videoextras) | Container.Content(sets) | Container.Content(tvshows)</visible>
 						<control type="textbox">
 							<top>284</top>
 							<width>2384</width>
@@ -511,7 +511,7 @@
 					<left>392</left>
 					<top>1614</top>
 					<include>VisibleDelayFadeAnimation</include>
-					<visible>[!String.IsEmpty(Container.PluginName) + !Container.Content(episodes)] | [!Container.Content(movies) + !Container.Content(sets) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)]</visible>
+					<visible>[!String.IsEmpty(Container.PluginName) + !Container.Content(episodes)] | [!Container.Content(movies) + !Container.Content(videoversions) + !Container.Content(videoextras) + !Container.Content(sets) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)]</visible>
 					<!-- Controls -->
 					<control id="1000" type="grouplist">
 						<left>-20</left>

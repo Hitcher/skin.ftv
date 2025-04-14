@@ -93,10 +93,6 @@
 		<value condition="Integer.IsGreaterOrEqual(System.ScreenHeight,2160)">special://skin/extras/debuggrid4k.png</value>
 		<value>special://skin/extras/debuggrid1080.png</value>
 	</variable>
-	<variable name="SelectTypeMessage">
-		<value condition="Window.IsVisible(selectvideoversion)">$LOCALIZE[31190]</value>
-		<value condition="Window.IsVisible(selectvideoextra)">$LOCALIZE[31191]</value>
-	</variable>
 	<variable name="ListItemLabel">
 		<value condition="String.Contains(Container.FolderPath,movies/videoversions) + !String.IsEqual(Container.FolderName,ListItem.VideoVersionName)">[B]$INFO[Container.FolderName] [$INFO[ListItem.VideoVersionName]][/B]</value>
 		<value>[B]$INFO[ListItem.Label][/B]</value>
@@ -166,8 +162,6 @@
 		<value condition="Window.IsVisible(ingamesaves)">(ingamesaves)</value>
 		<value condition="Window.IsVisible(gamesaves)">(gamesaves)</value>
 		<value condition="Window.IsVisible(selectdialog)">(selectdialog)</value>
-		<value condition="Window.IsVisible(selectvideoversion)">(selectvideoversion)</value>
-		<value condition="Window.IsVisible(selectvideoextra)">(selectvideoextra)</value>
 		<value condition="Window.IsVisible(dialogselectvideo)">(dialogselectvideo)</value>
 		<value condition="Window.IsVisible(dialogselectaudio)">(dialogselectaudio)</value>
 		<value condition="Window.IsVisible(dialogselectsubtitle)">(dialogselectsubtitle)</value>
@@ -1285,6 +1279,7 @@
 		<value condition="ListItem.IsParentFolder">views/folder_back_poster.png</value>
 		<value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
 		<value condition="Container.Content(seasons)">$INFO[ListItem.Art(tvshow.poster)]</value>
+		<value condition="Container.Content(videoversions) + String.IsEqual(ListItem.Label,$LOCALIZE[40211])">views/video_extras.png</value>
 		<value condition="!String.IsEmpty(ListItem.Icon)">$INFO[ListItem.Icon]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
 		<value>views/movie_fallback.png</value>

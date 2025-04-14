@@ -30,10 +30,15 @@
             "viewtypes": ["53"],
             "library": "53"
         },
+        "videoextras": {
+            "rule": "String.IsEmpty(Container.PluginName) + Container.Content(videoextras)",
+            "viewtypes": ["53", "52"],
+            "library": "53"
+        },
         "videoversions": {
             "rule": "String.IsEmpty(Container.PluginName) + Container.Content(videoversions)",
-            "viewtypes": ["50"],
-            "library": "50"
+            "viewtypes": ["53"],
+            "library": "53"
         },
         "tvshows": {
             "rule": "String.IsEmpty(Container.PluginName) + Container.Content(tvshows)",
@@ -162,8 +167,13 @@
         },
         "plugins_videoversions": {
             "rule": "!String.IsEmpty(Container.PluginName) + Container.Content(videoversions)",
-            "viewtypes": ["50"],
-            "library": "50"
+            "viewtypes": ["53"],
+            "library": "53"
+        },
+        "plugins_videoextras": {
+            "rule": "!String.IsEmpty(Container.PluginName) + Container.Content(videoextras)",
+            "viewtypes": ["53"],
+            "library": "53"
         },
         "plugins_tvshows": {
             "rule": "!String.IsEmpty(Container.PluginName) + Container.Content(tvshows)",
