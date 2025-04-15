@@ -13,7 +13,7 @@
 		<value condition="String.IsEqual(ListItem.Property(Stream.Channels),10)">9.1</value>
 		<value condition="String.IsEqual(ListItem.Property(Stream.Channels),12)">7.1.4</value>
 		<value condition="String.IsEqual(ListItem.Property(Stream.Channels),16)">9.1.6</value>
-		<value>$INFO[ListItem.Property(Stream.Channels)][COLOR ff505050]|[/COLOR] ]$LOCALIZE[10127]</value>
+		<value>$INFO[ListItem.Property(Stream.Channels),, $LOCALIZE[10127]]</value>
 	</variable>
 	<variable name="StreamHDRTypeVar">
 		<value condition="String.IsEqual(ListItem.Property(stream.hdrtype),dolbyvision)">Dolby Vision</value>
@@ -178,7 +178,7 @@
 	</variable>
 	<variable name="StreamDetails">
 		<value condition="Window.IsVisible(12300)">$VAR[StreamCodecVar]$VAR[StreamHDRTypeVar, [COLOR ff505050]|[/COLOR] ]$INFO[ListItem.Property(stream.resolution), [COLOR ff505050]|[/COLOR] ]$VAR[StreamBitrateVar, [COLOR ff505050]|[/COLOR] , kbps]$INFO[ListItem.Property(stream.fps), [COLOR ff505050]|[/COLOR] , fps]</value>
-		<value condition="Window.IsVisible(12301)">$VAR[StreamCodecVar]$VAR[StreamAudioChannelsVar, ]</value>
+		<value condition="Window.IsVisible(12301)">$VAR[StreamCodecVar]$VAR[StreamAudioChannelsVar, ]$INFO[ListItem.Property(stream.description), [COLOR ff505050]|[/COLOR] ]</value>
 		<value condition="Window.IsVisible(12302)">$INFO[ListItem.Property(Stream.Description)]</value>
 	</variable>
 	<variable name="Label1">
