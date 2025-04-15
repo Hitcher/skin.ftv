@@ -107,7 +107,7 @@
 						<!-- Audio stream selection button -->
 						<item id="102">
 							<label>31220</label>
-							<label2>[B]$VAR[StreamAudioLanguage]$VAR[AudioCodec, | ]$VAR[AudioChannels, | ][/B]</label2>
+							<label2>[B]$VAR[StreamAudioLanguage]$VAR[AudioCodecVar, | ]$VAR[AudioChannelsVar, ][/B]</label2>
 							<onclick>SetProperty(VideoOSDSelect,1,home)</onclick>
 							<onclick>DialogSelectAudio</onclick>
 							<visible>Window.IsVisible(fullscreenvideo)</visible>
@@ -115,7 +115,7 @@
 						<!-- Video stream selection button -->
 						<item id="103">
 							<label>31225</label>
-							<label2>[B]$VAR[VideoCodec]$INFO[Player.Process(VideoWidth), | ]x$INFO[Player.Process(VideoHeight)]$INFO[Player.Process(VideoScanType)][/B]</label2>
+							<label2>[B]$VAR[VideoCodecVar]$VAR[VideoHDRTypeVar, | ]$VAR[VideoResolutionTypeVar, | ][/B]</label2>
 							<onclick>SetProperty(VideoOSDSelect,1,home)</onclick>
 							<onclick>DialogSelectVideo</onclick>
 							<visible>Window.IsVisible(fullscreenvideo)</visible>
