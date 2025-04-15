@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2025-02-13 18:09+0000\n"
 "Last-Translator: Simon <dolenec@gmail.com>\n"
@@ -798,14 +798,6 @@ msgstr ""
 
 msgctxt "#31189"
 msgid "Manage[CR]Extras"
-msgstr ""
-
-msgctxt "#31190"
-msgid "Which version would you like to watch?"
-msgstr ""
-
-msgctxt "#31191"
-msgid "Which extra would you like to watch?"
 msgstr ""
 
 msgctxt "#31192"

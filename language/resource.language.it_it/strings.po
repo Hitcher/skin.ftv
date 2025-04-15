@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2025-02-13 06:19+0000\n"
 "Last-Translator: Massimo Pissarello <mapi68@gmail.com>\n"
@@ -798,14 +798,6 @@ msgctxt "#31189"
 msgid "Manage[CR]Extras"
 msgstr "Gestisci[CR]Extra"
 
-msgctxt "#31190"
-msgid "Which version would you like to watch?"
-msgstr "Quale versione vorresti guardare?"
-
-msgctxt "#31191"
-msgid "Which extra would you like to watch?"
-msgstr "Quale contenuto extra vorresti guardare?"
-
 msgctxt "#31192"
 msgid "Director"
 msgstr "Regia"
@@ -1081,6 +1073,14 @@ msgstr "Valutazione media di tutte le recensioni"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "Punteggio medio del pubblico"
+
+#~ msgctxt "#31190"
+#~ msgid "Which version would you like to watch?"
+#~ msgstr "Quale versione vorresti guardare?"
+
+#~ msgctxt "#31191"
+#~ msgid "Which extra would you like to watch?"
+#~ msgstr "Quale contenuto extra vorresti guardare?"
 
 #~ msgctxt "#31047"
 #~ msgid "Visualisation Presets"
