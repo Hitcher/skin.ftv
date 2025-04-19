@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-04-16 16:09+0000\n"
+"PO-Revision-Date: 2025-04-19 03:33+0000\n"
 "Last-Translator: Daniel Nylander <daniel@danielnylander.se>\n"
 "Language-Team: Swedish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/sv_se/>\n"
 "Language: sv_se\n"
@@ -125,10 +125,9 @@ msgctxt "#31023"
 msgid "Special[CR]Features"
 msgstr "Speciella[CR]funktioner"
 
-#, fuzzy
 msgctxt "#31024"
 msgid "Movie Sets"
-msgstr "Filmkulisser"
+msgstr "Filmuppsättningar"
 
 msgctxt "#31025"
 msgid "Notice"
@@ -220,7 +219,6 @@ msgctxt "#31046"
 msgid "Turn Off Shuffle All"
 msgstr "Stäng av blanda alla"
 
-#, fuzzy
 msgctxt "#31047"
 msgid "Visualisation presets"
 msgstr "Förval för visualisering"
@@ -781,7 +779,6 @@ msgid "Collection"
 msgstr "Samling"
 
 # empty strings from id 31179 to 31181
-#, fuzzy
 msgctxt "#31182"
 msgid "Top Rated TV Shows"
 msgstr "TV-serier med högst betyg"
@@ -843,7 +840,6 @@ msgctxt "#31198"
 msgid "View Type"
 msgstr "Visningstyp"
 
-#, fuzzy
 msgctxt "#31199"
 msgid "Label Overlay"
 msgstr "Etikettöverlägg"
@@ -860,12 +856,10 @@ msgctxt "#31202"
 msgid "Order"
 msgstr "Ordning"
 
-#, fuzzy
 msgctxt "#31203"
 msgid "Square"
 msgstr "Fyrkant"
 
-#, fuzzy
 msgctxt "#31204"
 msgid "Movies starring"
 msgstr "Filmer med"
