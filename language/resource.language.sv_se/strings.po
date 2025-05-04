@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-04-19 03:33+0000\n"
+"PO-Revision-Date: 2025-05-01 00:16+0000\n"
 "Last-Translator: Daniel Nylander <daniel@danielnylander.se>\n"
 "Language-Team: Swedish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/sv_se/>\n"
 "Language: sv_se\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11\n"
+"X-Generator: Weblate 5.11.1\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the original Fire TV UI"
@@ -165,7 +165,6 @@ msgctxt "#31033"
 msgid "Launch Now"
 msgstr "Starta nu"
 
-#, fuzzy
 msgctxt "#31034"
 msgid "Select which Rotten Tomatoes rating to use."
 msgstr "Välj vilket Rotten Tomatoes-betyg som ska användas."
@@ -182,10 +181,9 @@ msgctxt "#31037"
 msgid "Press [B]BACK[/B] to keep current settings or [B]OK[/B] to reset."
 msgstr "Tryck på [B]BACK[/B] för att behålla aktuella inställningar eller [B]OK[/B] för att återställa."
 
-#, fuzzy
 msgctxt "#31038"
 msgid "Select your scrapers certification county."
-msgstr "Välj ditt skrotningscertifieringslän."
+msgstr "Välj ditt certifieringsland för skraparen."
 
 msgctxt "#31039"
 msgid "Enable debug grid.[CR]Useful when skinning."
@@ -283,10 +281,9 @@ msgctxt "#31062"
 msgid "Choose Thumb"
 msgstr "Välj miniatyrbild"
 
-#, fuzzy
 msgctxt "#31063"
 msgid "Enables Cast info during video playback.[CR]Note: Can be CPU intensive."
-msgstr "Aktiverar Cast-info under videouppspelning.[CR]Obs: Kan vara CPU-krävande."
+msgstr "Aktiverar medverkandeinfo under videouppspelning.[CR]Observera: Kan vara CPU-krävande."
 
 msgctxt "#31064"
 msgid "Browse[CR]Season"
@@ -479,10 +476,9 @@ msgctxt "#31110"
 msgid "Written by"
 msgstr "Författare"
 
-#, fuzzy
 msgctxt "#31111"
 msgid "Episode Wide"
-msgstr "Episod Bred"
+msgstr "Avsnitt bred"
 
 msgctxt "#31112"
 msgid "Song List"
@@ -557,34 +553,30 @@ msgctxt "#31129"
 msgid "Kodi"
 msgstr "Kodi"
 
-#, fuzzy
 msgctxt "#31130"
 msgid "TV Show Wide"
-msgstr "TV-program på bred front"
+msgstr "TV-serie bred"
 
 # empty string with id 31130
-#, fuzzy
 msgctxt "#31131"
 msgid "Enable Wide TV Show Icons"
-msgstr "Aktivera breda ikoner för TV-program"
+msgstr "Aktivera breda ikoner för TV-serier"
 
 msgctxt "#31132"
 msgid "Continue watching?"
 msgstr "Fortsätta titta?"
 
-#, fuzzy
 msgctxt "#31133"
 msgid "Enable Wide Season Icons"
-msgstr "Aktivera ikoner för bred säsong"
+msgstr "Aktivera breda ikoner för säsong"
 
 msgctxt "#31134"
 msgid "Enable Fanart"
 msgstr "Aktivera fanart"
 
-#, fuzzy
 msgctxt "#31135"
 msgid "Select Rating Country"
-msgstr "Välj Rating-land"
+msgstr "Välj klassificeringsland"
 
 msgctxt "#31136"
 msgid "DVD Menu"
@@ -606,7 +598,6 @@ msgctxt "#31140"
 msgid "Select + Start"
 msgstr "Select + Start"
 
-#, fuzzy
 msgctxt "#31141"
 msgid "Select + Right Stick"
 msgstr "Select + höger spak"
@@ -620,7 +611,6 @@ msgctxt "#31143"
 msgid "This will undo any changes you've made to the home menu and widgets."
 msgstr "Detta kommer att ångra alla ändringar som du har gjort i startmenyn och widgetarna."
 
-#, fuzzy
 msgctxt "#31144"
 msgid "Game rotation dialog"
 msgstr "Dialog för spelrotation"
@@ -690,7 +680,6 @@ msgctxt "#31160"
 msgid "Poster"
 msgstr "Poster"
 
-#, fuzzy
 msgctxt "#31161"
 msgid "Square Info"
 msgstr "Fyrkantig information"
@@ -735,13 +724,11 @@ msgctxt "#31171"
 msgid "Game saves"
 msgstr "Sparade spel"
 
-#, fuzzy
 msgctxt "#31172"
 msgid "Square List"
 msgstr "Fyrkantig lista"
 
 # empty strings from id 31171 to 31172
-#, fuzzy
 msgctxt "#31173"
 msgid "In-game saves"
 msgstr "Sparade spel"
@@ -1031,7 +1018,6 @@ msgctxt "#31246"
 msgid "Location"
 msgstr "Plats"
 
-#, fuzzy
 msgctxt "#31247"
 msgid "Media Processing Info"
 msgstr "Information om mediebearbetning"
@@ -1068,10 +1054,9 @@ msgctxt "#31256"
 msgid "What's[CR]New"
 msgstr "Vad är[CR]nytt"
 
-#, fuzzy
 msgctxt "#31257"
 msgid "Rotten Tomatoes Rating"
-msgstr "Ruttna tomaters betyg"
+msgstr "Rotten Tomatoes-betyg"
 
 msgctxt "#31258"
 msgid "TomatoMeter All Critics"
