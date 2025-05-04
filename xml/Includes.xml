@@ -421,7 +421,7 @@
 			<aligny>bottom</aligny>
 			<textoffsety>ButtonOffset</textoffsety>
 			<font>Med22</font>
-			<label> $VAR[HDRType] </label>
+			<label> $VAR[VideoHDRTypeVar] </label>
 			<textcolor>ffcccccc</textcolor>
 			<texturefocus colordiffuse="FF888888" infill="false" border="6">rating/flag.png</texturefocus>
 			<texturenofocus colordiffuse="FF888888" infill="false" border="6">rating/flag.png</texturenofocus>
@@ -563,7 +563,7 @@
 			<aligny>bottom</aligny>
 			<textoffsety>ButtonOffset</textoffsety>
 			<font>Med22</font>
-			<label> $VAR[AudioChannels] </label>
+			<label> $VAR[AudioChannelsVar] </label>
 			<textcolor>ffcccccc</textcolor>
 			<texturefocus colordiffuse="FF888888" infill="false" border="6">rating/flag.png</texturefocus>
 			<texturenofocus colordiffuse="FF888888" infill="false" border="6">rating/flag.png</texturenofocus>

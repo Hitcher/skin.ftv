@@ -60,7 +60,7 @@
 			<!-- Categories -->
 			<control type="fixedlist" id="9000">
 				<left>392</left>
-				<top>424</top>
+				<top>405</top>
 				<height>80</height>
 				<onup>Back</onup>
 				<ondown>50</ondown>
@@ -74,7 +74,6 @@
 						<width>574</width>
 						<height>80</height>
 						<font>Light32</font>
-						<aligny>bottom</aligny>
 						<textcolor>ff8e8b90</textcolor>
 						<label>$INFO[ListItem.Label]  $INFO[ListItem.Label2]</label>
 						<visible>Control.HasFocus(9000)</visible>
@@ -83,7 +82,6 @@
 						<width>574</width>
 						<height>80</height>
 						<font>Light32</font>
-						<aligny>bottom</aligny>
 						<textcolor>ff505559</textcolor>
 						<label>$INFO[ListItem.Label]  $INFO[ListItem.Label2]</label>
 						<visible>!Control.HasFocus(9000)</visible>
@@ -94,7 +92,6 @@
 						<width>574</width>
 						<height>80</height>
 						<font>Light32</font>
-						<aligny>bottom</aligny>
 						<textcolor>ffffc24b</textcolor>
 						<label>$INFO[ListItem.Label]  $INFO[ListItem.Label2]</label>
 						<visible>Control.HasFocus(9000)</visible>
@@ -103,7 +100,6 @@
 						<width>574</width>
 						<height>80</height>
 						<font>Light32</font>
-						<aligny>bottom</aligny>
 						<textcolor>ffd7d7d7</textcolor>
 						<label>$INFO[ListItem.Label]  $INFO[ListItem.Label2]</label>
 						<visible>!Control.HasFocus(9000)</visible>
