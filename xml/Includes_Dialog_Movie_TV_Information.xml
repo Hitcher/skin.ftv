@@ -528,7 +528,7 @@
 					<font>Light24</font>
 					<textcolor>ffbcbcbc</textcolor>
 					<label>$INFO[Container(500).ListItem.Label2,$LOCALIZE[20347] ,]</label>
-					<visible>String.IsEmpty(Window(home).Property(RecommendedVideos)) + String.IsEmpty(Window(home).Property(DirectedByList))</visible>
+					<visible>String.IsEmpty(Window(home).Property(RecommendedVideos))</visible>
 				</control>
 			</control>
 		</control>
