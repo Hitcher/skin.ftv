@@ -186,14 +186,6 @@
 			</control>
 		</definition>
 	</include>
-	<include name="XRayCastListItems">
-		<item id="$PARAM[item_index]">
-			<label>$INFO[Container(999).ListItemAbsolute($PARAM[item_index]).Label]</label>
-			<label2>$INFO[Container(999).ListItemAbsolute($PARAM[item_index]).Label2]</label2>
-			<icon>$INFO[Container(999).ListItemAbsolute($PARAM[item_index]).Icon]</icon>
-			<visible>!String.IsEmpty(Container(999).ListItemAbsolute($PARAM[item_index]).Label)</visible>
-		</item>
-	</include>
 	<include name="WeatherHourlyItem">
 		<item>
 			<label>$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Time)]</label>
