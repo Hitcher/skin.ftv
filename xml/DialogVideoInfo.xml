@@ -30,5 +30,31 @@
 		<include condition="[!String.IsEmpty(ListItem.Property(item.type),movie) | !String.IsEmpty(ListItem.Property(item.type),tv)] + !String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + Skin.HasSetting(ExtendedInfo)">Includes_Dialog_Movie_TV_Information</include>
 		<include condition="!String.IsEqual(ListItem.Property(item.type),person) + Container.Content(Sets)">Includes_Dialog_Set_Information</include>
 		<include condition="String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets)">Includes_Dialog_Person_Information</include>
+		<!-- TMDB debug -->
+		<control type="grouplist">
+			<left>30</left>
+			<bottom>30</bottom>
+			<width>2800</width>
+			<height>180</height>
+			<itemgap>24</itemgap>
+			<align>right</align>
+			<visible>Skin.HasSetting(DebugInfo)</visible>
+			<!-- UniqueID(tmdb) label -->
+			<control type="label">
+				<left>40</left>
+				<bottom>80</bottom>
+				<height>80</height>
+				<include>DebugDialogLabel</include>
+				<label>$INFO[Container(99950).ListItem.UniqueID(tmdb),[COLOR FF00FF00]UniqueID(tmdb) - [/COLOR]]</label>
+			</control>
+			<!-- Property(TMDb_ID) label -->
+			<control type="label">
+				<left>40</left>
+				<bottom>80</bottom>
+				<height>80</height>
+				<include>DebugDialogLabel</include>
+				<label>$INFO[Container(99950).ListItem.Property(TMDb_ID),[COLOR FF00FF00]Property(TMDb_ID) - [/COLOR]]</label>
+			</control>
+		</control>
 	</controls>
 </window>
