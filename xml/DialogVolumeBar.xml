@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<!-- volumebar -->
+	<zorder>99</zorder>
 	<controls>
 		<!-- Progress -->
 		<control id="404" type="progress">
@@ -13,13 +14,13 @@
 			<right>156</right>
 			<bottom>156</bottom>
 			<width>712</width>
-			<height>346</height>
+			<height>354</height>
 			<!-- Background image -->
 			<control type="image">
 				<left>-4</left>
 				<top>-4</top>
 				<width>812</width>
-				<height>446</height>
+				<height>454</height>
 				<bordersize>100</bordersize>
 				<bordertexture border="100" infill="false">views/shadow_fo.png</bordertexture>
 				<texture border="4">dialogs/DialogMessageBackground.png</texture>
@@ -40,53 +41,26 @@
 				<height>194</height>
 				<texture>$VAR[VolumeIcon]</texture>
 			</control>
-			<control type="group">
-				<visible>!player.passthrough</visible>
-				<!-- Heading -->
-				<control type="label">
-					<left>364</left>
-					<top>140</top>
-					<width>316</width>
-					<height>88</height>
-					<font>Med30</font>
-					<textcolor>ffdadada</textcolor>
-					<label>13376</label>
-				</control>
-				<!-- Details -->
-				<control type="label">
-					<left>364</left>
-					<top>224</top>
-					<width>316</width>
-					<height>72</height>
-					<font>Reg25</font>
-					<scroll>true</scroll>
-					<textcolor>ffdadada</textcolor>
-					<label>$VAR[VolumeDetails]</label>
-				</control>
+			<!-- Heading -->
+			<control type="label">
+				<left>364</left>
+				<top>140</top>
+				<width>316</width>
+				<height>88</height>
+				<font>Med30</font>
+				<textcolor>ffdadada</textcolor>
+				<label>$LOCALIZE[13376]</label>
 			</control>
-			<control type="group">
-				<visible>player.passthrough</visible>
-				<!-- Heading -->
-				<control type="label">
-					<left>364</left>
-					<top>140</top>
-					<width>316</width>
-					<height>88</height>
-					<font>Med30</font>
-					<textcolor>ffdadada</textcolor>
-					<label>13376</label>
-				</control>
-				<!-- Details -->
-				<control type="label">
-					<left>364</left>
-					<top>224</top>
-					<width>316</width>
-					<height>72</height>
-					<font>Reg25</font>
-					<scroll>true</scroll>
-					<textcolor>ffdadada</textcolor>
-					<label>29802</label>
-				</control>
+			<!-- Details -->
+			<control type="label">
+				<left>364</left>
+				<top>244</top>
+				<width>316</width>
+				<height>32</height>
+				<font>Reg25</font>
+				<scroll>true</scroll>
+				<textcolor>ffdadada</textcolor>
+				<label>$VAR[VolumeDetails]</label>
 			</control>
 		</control>
 	</controls>

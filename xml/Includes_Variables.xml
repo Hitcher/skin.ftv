@@ -865,6 +865,7 @@
 		<value>dialogs/notification_volume_mute.png</value>
 	</variable>
 	<variable name="VolumeDetails">
+		<value condition="Player.Passthrough">$LOCALIZE[29802]</value>
 		<value condition="!Player.Muted">$INFO[Control.GetLabel(404),,%]</value>
 		<value>$LOCALIZE[31013]</value>
 	</variable>

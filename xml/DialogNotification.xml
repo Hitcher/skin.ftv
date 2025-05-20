@@ -56,9 +56,9 @@
 			<!-- Details -->
 			<control id="402" type="label">
 				<left>364</left>
-				<top>224</top>
+				<top>244</top>
 				<width>776</width>
-				<height>72</height>
+				<height>32</height>
 				<font>Reg25</font>
 				<scrollsuffix/>
 				<textcolor>ffdadada</textcolor>
