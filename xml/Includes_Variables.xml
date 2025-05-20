@@ -878,7 +878,7 @@
 		<value>$INFO[Window.Property(thumb)]</value>
 	</variable>
 	<variable name="AutoUpdate">
-		<value condition="String.Contains(Skin.String(AutoUpdate),off)">$LOCALIZE[31206]</value>
+		<value condition="!String.Contains(Control.GetLabel(13),*)">$LOCALIZE[31206]</value>
 		<value>$LOCALIZE[31207]</value>
 	</variable>
 	<variable name="WidgetLabel-1">

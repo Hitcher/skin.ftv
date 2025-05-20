@@ -2,7 +2,6 @@
 <window>
 	<!-- addoninformation -->
 	<defaultcontrol always="true">7000</defaultcontrol>
-	<onload condition="!String.Contains(Control.GetLabel(13),*) | String.IsEmpty(Skin.String(AutoUpdate))">Skin.SetString(AutoUpdate,off)</onload>
 	<onload>Control.Move(50,$INFO[Container(50).CurrentItem,-])</onload>
 	<onload>Control.Move(50,1)</onload>
 	<onunload>ClearProperty(AddonDetails,home)</onunload>
@@ -58,7 +57,6 @@
 		<!-- Hidden Button -->
 		<control id="13" type="radiobutton">
 			<include>HiddenControl</include>
-			<onfocus>SetFocus(7000)</onfocus>
 		</control>
 		<!-- Hidden Button -->
 		<control id="14" type="button">
@@ -356,9 +354,9 @@
 					<height>232</height>
 					<onup>Close</onup>
 					<ondown condition="Control.IsVisible(50)">50</ondown>
-					<onclick>SendClick(13)</onclick>
-					<onclick condition="String.Contains(Skin.String(AutoUpdate),off)">Skin.SetString(AutoUpdate,on)</onclick>
-					<onclick condition="String.Contains(Skin.String(AutoUpdate),on)">Skin.SetString(AutoUpdate,off)</onclick>
+					<onclick>Control.SetFocus(13)</onclick>
+					<onclick>Select</onclick>
+					<onclick>Control.SetFocus(9013)</onclick>
 					<font>Med24</font>
 					<label>$VAR[AutoUpdate]</label>
 					<textoffsetx>56</textoffsetx>
@@ -366,6 +364,7 @@
 					<focusedcolor>ff222222</focusedcolor>
 					<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
 					<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
+					<visible>Control.IsEnabled(13)</visible>
 				</control>
 			</control>
 			<!-- Screenshots list -->
