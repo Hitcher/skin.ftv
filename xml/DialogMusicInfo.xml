@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<!-- musicinformation -->
-	<defaultcontrol always="true">7000</defaultcontrol>
-	<onunload>ClearProperty(AlbumDetails,home)</onunload>
+	<onload>SetFocus(7000,0)</onload>
 	<onunload condition="!Window.IsVisible(favouritesbrowser)">SetFocus(50)</onunload>
 	<onunload condition="Window.IsVisible(favouritesbrowser)">SetFocus(55)</onunload>
 	<animation effect="fade" end="100" start="100" time="200">WindowClose</animation>
@@ -57,40 +56,12 @@
 				<texture>$INFO[ListItem.Icon]</texture>
 				<aspectratio>scale</aspectratio>
 			</control>
-			<control id="7000" type="button">
-				<top>748</top>
-				<width>960</width>
-				<height>70</height>
-				<onup condition="!Control.IsVisible(96)">Close</onup>
-				<onup condition="Control.IsVisible(96)">3002</onup>
-				<ondown>7001</ondown>
-				<onleft>Close</onleft>
-				<onright>9000</onright>
-				<onfocus>ClearProperty(AlbumDetails,home)</onfocus>
-				<font>Light35</font>
-				<textcolor>ffdadada</textcolor>
-				<focusedcolor>ffffc24b</focusedcolor>
-				<label>$LOCALIZE[31026]</label>
-				<include>NoTextures</include>
-				<animation condition="!String.IsEmpty(Window(home).Property(AlbumDetails))" effect="fade" end="50" start="100" time="0">Conditional</animation>
-			</control>
-			<control id="7001" type="button">
-				<top>858</top>
-				<width>960</width>
-				<height>70</height>
-				<onup>7000</onup>
-				<ondown>noop</ondown>
-				<onleft>Close</onleft>
-				<onright condition="Control.IsVisible(96)">3002</onright>
-				<onright condition="!Control.IsVisible(96)">50</onright>
-				<onfocus>SetProperty(AlbumDetails,1,home)</onfocus>
-				<font>Light35</font>
-				<textcolor>ffdadada</textcolor>
-				<focusedcolor>ffffc24b</focusedcolor>
-				<label>$LOCALIZE[33029]</label>
-				<include>NoTextures</include>
-				<animation condition="String.IsEmpty(Window(home).Property(AlbumDetails))" effect="fade" end="50" start="100" time="0">Conditional</animation>
-			</control>
+			<include content="List7000">
+				<param name="List7000TopPos" value="728"/>
+				<param name="List7000OnRightPos1" value="3002"/>
+				<param name="List7000Item1Label" value="33029"/>
+				<param name="List7000Item1Visible" value="true"/>
+			</include>
 		</control>
 		<control type="group">
 			<left>920</left>
@@ -270,7 +241,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<animation condition="!String.IsEmpty(Window(home).Property(AlbumDetails))" effect="fade" end="0" start="100" time="0">Conditional</animation>
+				<animation condition="Container(7000).Position(1)" effect="fade" end="0" start="100" time="0">Conditional</animation>
 				<!-- Button grouplist -->
 				<control id="9000" type="grouplist">
 					<left>-24</left>
@@ -425,7 +396,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<animation condition="!String.IsEmpty(Window(home).Property(AlbumDetails))" effect="fade" end="0" start="100" time="0">Conditional</animation>
+				<animation condition="Container(7000).Position(1)" effect="fade" end="0" start="100" time="0">Conditional</animation>
 				<animation effect="fade" end="100" start="0" time="200" delay="800">WindowOpen</animation>
 				<!-- Fanart -->
 				<control type="image">
@@ -444,7 +415,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<animation condition="String.IsEmpty(Window(home).Property(AlbumDetails))" effect="fade" end="0" start="100" time="0">Conditional</animation>
+				<animation condition="Container(7000).Position(0)" effect="fade" end="0" start="100" time="0">Conditional</animation>
 				<!-- Description -->
 				<control type="label">
 					<top>470</top>
@@ -472,7 +443,7 @@
 					<top>1642</top>
 					<width>74</width>
 					<height>46</height>
-					<onleft>7001</onleft>
+					<onleft>7000</onleft>
 					<onright>50</onright>
 					<onclick>RunScript(script.skinvariables,run_dialog=textviewer,heading='empty',text='$ESCVAR[MusicInfoDescription]')</onclick>
 					<texturefocus>views/more_fo.png</texturefocus>
@@ -508,7 +479,7 @@
 					<top>586</top>
 					<width>940</width>
 					<height>1120</height>
-					<onleft>7001</onleft>
+					<onleft>7000</onleft>
 					<itemlayout width="940" height="80">
 						<control type="label">
 							<width>940</width>

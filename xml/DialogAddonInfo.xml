@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<!-- addoninformation -->
-	<defaultcontrol always="true">7000</defaultcontrol>
+	<onload>SetFocus(7000,0)</onload>
 	<onload>Control.Move(50,$INFO[Container(50).CurrentItem,-])</onload>
 	<onload>Control.Move(50,1)</onload>
-	<onunload>ClearProperty(AddonDetails,home)</onunload>
 	<onunload condition="Window.Next(programs)">SetFocus(56)</onunload>
 	<animation effect="fade" end="100" start="100" time="200">WindowClose</animation>
 	<controls>
@@ -92,40 +91,12 @@
 				<texture>$INFO[ListItem.Icon]</texture>
 				<aspectratio>scale</aspectratio>
 			</control>
-			<control id="7000" type="button">
-				<top>748</top>
-				<width>960</width>
-				<height>70</height>
-				<onup condition="!Control.IsVisible(96)">Close</onup>
-				<onup condition="Control.IsVisible(96)">3002</onup>
-				<ondown>7001</ondown>
-				<onleft>Close</onleft>
-				<onright>9000</onright>
-				<onfocus>ClearProperty(AddonDetails,home)</onfocus>
-				<font>Light35</font>
-				<textcolor>ffdadada</textcolor>
-				<focusedcolor>ffffc24b</focusedcolor>
-				<label>$LOCALIZE[31026]</label>
-				<include>NoTextures</include>
-				<animation condition="!String.IsEmpty(Window(home).Property(AddonDetails))" effect="fade" end="50" start="100" time="0">Conditional</animation>
-			</control>
-			<control id="7001" type="button">
-				<top>858</top>
-				<width>960</width>
-				<height>70</height>
-				<onup>7000</onup>
-				<ondown>noop</ondown>
-				<onleft>Close</onleft>
-				<onright>noop</onright>
-				<onright condition="Control.IsVisible(96)">3002</onright>
-				<onfocus>SetProperty(AddonDetails,1,home)</onfocus>
-				<font>Light35</font>
-				<textcolor>ffdadada</textcolor>
-				<focusedcolor>ffffc24b</focusedcolor>
-				<label>$LOCALIZE[31029]</label>
-				<include>NoTextures</include>
-				<animation condition="String.IsEmpty(Window(home).Property(AddonDetails))" effect="fade" end="50" start="100" time="0">Conditional</animation>
-			</control>
+			<include content="List7000">
+				<param name="List7000TopPos" value="728"/>
+				<param name="List7000OnRightPos1" value="noop"/>
+				<param name="List7000Item1Label" value="31029"/>
+				<param name="List7000Item1Visible" value="true"/>
+			</include>
 		</control>
 		<control type="group">
 			<left>920</left>
@@ -195,7 +166,7 @@
 				<top>470</top>
 				<width>1584</width>
 				<include>DialogVideoInfoAnimation</include>
-				<animation condition="!String.IsEmpty(Window(home).Property(AddonDetails))" effect="fade" end="0" start="100" time="0">Conditional</animation>
+				<animation condition="Container(7000).Position(1)" effect="fade" end="0" start="100" time="0">Conditional</animation>
 				<control type="textbox">
 					<height>148</height>
 					<align>left</align>
@@ -218,7 +189,7 @@
 				<orientation>horizontal</orientation>
 				<include>DialogVideoInfoAnimation</include>
 				<defaultcontrol always="true">9001</defaultcontrol>
-				<animation condition="!String.IsEmpty(Window(home).Property(AddonDetails))" effect="fade" end="0" start="100" time="0">Conditional</animation>
+				<animation condition="Container(7000).Position(1)" effect="fade" end="0" start="100" time="0">Conditional</animation>
 				<animation condition="Control.HasFocus(50) | Control.HasFocus(5000)" effect="slide" end="0,-384" start="0,0" time="200">Conditional</animation>
 				<!-- Dummy to always set focus to first visible button -->
 				<control id="9001" type="button">
@@ -382,7 +353,7 @@
 					<onright>noop</onright>
 					<onright condition="!Window.IsVisible(1103)">SetProperty(BounceRight,1,Home)</onright>
 					<onback>Control.SetFocus(50,0,absolute)</onback>
-					<onback>9001</onback>
+					<onback>7000</onback>
 					<preloaditems>2</preloaditems>
 					<focusposition>1</focusposition>
 					<viewtype label="">list</viewtype>
@@ -391,7 +362,7 @@
 					<include>ListBounceAnimation</include>
 					<animation delay="300" effect="fade" end="100" start="0" time="300">Visible</animation>
 					<animation effect="fade" end="0" start="100" time="300">Hidden</animation>
-					<animation effect="fade" end="0" start="100" time="0" condition="!String.IsEmpty(Window(home).Property(AddonDetails))">Conditional</animation>
+					<animation effect="fade" end="0" start="100" time="0" condition="Container(7000).Position(1)">Conditional</animation>
 					<animation center="960,2044" condition="!Control.HasFocus(50)" easing="inout" effect="zoom" end="81" start="100" time="300" tween="sine">Conditional</animation>
 					<itemlayout height="1152" width="1500">
 						<control type="group">
@@ -467,7 +438,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<animation condition="String.IsEmpty(Window(home).Property(AddonDetails))" effect="fade" end="0" start="100" time="0">Conditional</animation>
+				<animation condition="Container(7000).Position(0)" effect="fade" end="0" start="100" time="0">Conditional</animation>
 				<!-- Description -->
 				<control type="label">
 					<top>470</top>

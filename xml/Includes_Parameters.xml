@@ -1,5 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<include name="List7000">
+		<param name="List7000TopPos" default="1016"/>
+		<param name="List7000OnRightPos0" default="9000"/>
+		<param name="List7000Item0Label" default="31026"/>
+		<param name="List7000Item0Visible" default="true"/>
+		<param name="List7000Item1Visible" default="false"/>
+		<param name="List7000Item2Visible" default="false"/>
+		<definition>
+			<control id="7000" type="list">
+				<top>$PARAM[List7000TopPos]</top>
+				<top>1016</top>
+				<width>960</width>
+				<height>330</height>
+				<onup condition="!Control.IsVisible(96)">Close</onup>
+				<onup condition="Control.IsVisible(96)">3002</onup>
+				<ondown>noop</ondown>
+				<onleft>Close</onleft>
+				<onright condition="Container(7000).Position(0)">$PARAM[List7000OnRightPos0]</onright>
+				<onright condition="Container(7000).Position(1)">$PARAM[List7000OnRightPos1]</onright>
+				<onright condition="Container(7000).Position(2)">$PARAM[List7000OnRightPos2]</onright>
+				<scrolltime>0</scrolltime>
+				<orientation>vertical</orientation>
+				<itemlayout height="110" width="960">
+					<control type="label">
+						<width>960</width>
+						<height>110</height>
+						<font>Light35</font>
+						<aligny>center</aligny>
+						<textcolor>80dadada</textcolor>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout height="110" width="1956">
+					<control type="label">
+						<width>960</width>
+						<height>110</height>
+						<font>Light35</font>
+						<aligny>center</aligny>
+						<textcolor>ffffc24b</textcolor>
+						<label>$INFO[ListItem.Label]</label>
+						<visible>Control.HasFocus(7000)</visible>
+					</control>
+					<control type="label">
+						<width>960</width>
+						<height>110</height>
+						<font>Light35</font>
+						<scroll>false</scroll>
+						<aligny>center</aligny>
+						<textcolor>ffdadada</textcolor>
+						<label>$INFO[ListItem.Label]</label>
+						<visible>!Control.HasFocus(7000)</visible>
+					</control>
+				</focusedlayout>
+				<content>
+					<item>
+						<label>$PARAM[List7000Item0Label]</label>
+						<visible>$PARAM[List7000Item0Visible]</visible>
+					</item>
+					<item>
+						<label>$PARAM[List7000Item1Label]</label>
+						<visible>$PARAM[List7000Item1Visible]</visible>
+					</item>
+					<item>
+						<label>$PARAM[List7000Item2Label]</label>
+						<visible>$PARAM[List7000Item2Visible]</visible>
+					</item>
+				</content>
+			</control>
+		</definition>
+	</include>
 	<include name="DebugWindowLabel">
 		<param name="debug_window_label" default=""/>
 		<param name="debug_window_label_visible" default=""/>

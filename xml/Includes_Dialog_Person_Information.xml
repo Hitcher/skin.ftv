@@ -52,61 +52,15 @@
 				<texture>$VAR[VideoInfoImage]</texture>
 				<aspectratio aligny="center">scale</aspectratio>
 			</control>
-			<control id="7000" type="button">
-				<top>1036</top>
-				<width>960</width>
-				<height>70</height>
-				<onup condition="!Control.IsVisible(96)">Close</onup>
-				<onup condition="Control.IsVisible(96)">3000</onup>
-				<ondown>7001</ondown>
-				<onleft>Close</onleft>
-				<onright>500</onright>
-				<onfocus>ClearProperty(StarredInTV,home)</onfocus>
-				<onfocus>ClearProperty(ActorImages,home)</onfocus>
-				<font>Light35</font>
-				<textcolor>ffdadada</textcolor>
-				<focusedcolor>ffffc24b</focusedcolor>
-				<label>$LOCALIZE[31026]</label>
-				<include>NoTextures</include>
-				<animation condition="![String.IsEmpty(Window(home).Property(StarredInTV)) + String.IsEmpty(Window(home).Property(ActorImages))]" effect="fade" end="50" start="100" time="0">Conditional</animation>
-			</control>
-			<control id="7001" type="button">
-				<top>1146</top>
-				<width>960</width>
-				<height>70</height>
-				<onup>7000</onup>
-				<ondown>7002</ondown>
-				<onleft>Close</onleft>
-				<onright>500</onright>
-				<onfocus>SetProperty(StarredInTV,1,home)</onfocus>
-				<onfocus>ClearProperty(ActorImages,home)</onfocus>
-				<font>Light35</font>
-				<textcolor>ffdadada</textcolor>
-				<focusedcolor>ffffc24b</focusedcolor>
-				<label>$LOCALIZE[31107]</label>
-				<include>NoTextures</include>
-				<animation condition="String.IsEmpty(Window(home).Property(StarredInTV))" effect="fade" end="50" start="100" time="0">Conditional</animation>
-			</control>
-			<control id="7002" type="button">
-				<top>1256</top>
-				<width>960</width>
-				<height>70</height>
-				<onup condition="Control.IsVisible(7001)">7001</onup>
-				<onup condition="!Control.IsVisible(7001)">7000</onup>
-				<ondown>noop</ondown>
-				<onleft>Close</onleft>
-				<onright>500</onright>
-				<onfocus>SetProperty(ActorImages,1,home)</onfocus>
-				<onfocus>ClearProperty(StarredInTV,home)</onfocus>
-				<font>Light35</font>
-				<textcolor>ffdadada</textcolor>
-				<focusedcolor>ffffc24b</focusedcolor>
-				<label>$LOCALIZE[31051]</label>
-				<include>NoTextures</include>
-				<visible>!String.IsEqual(ListItem.DBTYPE,set)</visible>
-				<animation condition="String.IsEmpty(Window(home).Property(ActorImages))" effect="fade" end="50" start="100" time="0">Conditional</animation>
-				<animation condition="!Control.IsVisible(7001)" effect="slide" end="0,-110" start="0,0" time="0">Conditional</animation>
-			</control>
+			<include content="List7000">
+				<param name="List7000OnRightPos0" value="500"/>
+				<param name="List7000OnRightPos1" value="500"/>
+				<param name="List7000OnRightPos2" value="500"/>
+				<param name="List7000Item1Label" value="31107"/>
+				<param name="List7000Item1Visible" value="true"/>
+				<param name="List7000Item2Label" value="31051"/>
+				<param name="List7000Item2Visible" value="!String.IsEqual(ListItem.DBTYPE,set)"/>
+			</include>
 		</control>
 		<control type="group">
 			<left>950</left>
@@ -168,9 +122,7 @@
 					<top>-58</top>
 					<width>74</width>
 					<height>46</height>
-					<onleft condition="String.IsEmpty(Window(home).Property(StarredInTV)) + String.IsEmpty(Window(home).Property(ActorImages))">7000</onleft>
-					<onleft condition="!String.IsEmpty(Window(home).Property(StarredInTV)) + String.IsEmpty(Window(home).Property(ActorImages))">7001</onleft>
-					<onleft condition="String.IsEmpty(Window(home).Property(StarredInTV)) + !String.IsEmpty(Window(home).Property(ActorImages))">7002</onleft>
+					<onleft>7000</onleft>
 					<onclick>RunScript(script.skinvariables,run_dialog=textviewer,heading='empty',text='$ESCINFO[ListItem.Property(Biography)]')</onclick>
 					<include>DialogVideoInfoAnimation</include>
 					<texturefocus>views/more_fo.png</texturefocus>
@@ -213,10 +165,10 @@
 				<font>Bold30</font>
 				<textcolor>$VAR[ExtendedInfoLabelColor]</textcolor>
 				<label>$VAR[ExtendedInfoLabelHeading]</label>
-				<animation delay="400" effect="fade" end="100" start="0" time="200">Visible</animation>
+				<animation effect="fade" end="100" start="0" time="200">Visible</animation>
 				<animation effect="fade" end="0" start="100" time="0">Hidden</animation>
 				<animation condition="Container(500).IsUpdating" effect="fade" end="0" start="100" time="0">Conditional</animation>
-				<visible>!String.IsEmpty(Container(500).ListItem.Label) + !Control.HasFocus(500)</visible>
+				<visible>!String.IsEmpty(Container(500).ListItem.Label) + !Control.HasFocus(500) + !Container(7000).OnNext + !Container(7000).OnPrevious</visible>
 			</control>
 			<!-- No info found -->
 			<control type="label">
@@ -228,7 +180,7 @@
 				<textcolor>ffbebebe</textcolor>
 				<label>$LOCALIZE[31078]</label>
 				<visible>String.IsEmpty(Container(500).ListItem.Label)</visible>
-				<animation delay="400" effect="fade" end="100" start="0" time="200">Visible</animation>
+				<animation effect="fade" end="100" start="0" time="200">Visible</animation>
 				<animation condition="Control.HasFocus(55)" effect="fade" end="0" start="100" time="0">Conditional</animation>
 				<animation condition="!Control.HasFocus(55)" delay="200" effect="fade" end="100" start="0" time="80">Conditional</animation>
 			</control>
@@ -238,22 +190,18 @@
 				<top>-542</top>
 				<width>4800</width>
 				<height>1152</height>
-				<onclick condition="String.IsEmpty(Window(home).Property(StarredInTV)) + String.IsEmpty(Window(home).Property(ActorImages))">RunScript(plugin.video.themoviedb.helper,add_path=$INFO[Container(500).ListItem.FolderPath],call_auto=1113)</onclick>
-				<onclick condition="!String.IsEmpty(Window(home).Property(StarredInTV)) + String.IsEmpty(Window(home).Property(ActorImages))">RunScript(plugin.video.themoviedb.helper,add_path=$INFO[Container(500).ListItem.FolderPath],call_auto=1113)</onclick>
-				<onclick condition="String.IsEmpty(Window(home).Property(StarredInTV)) + !String.IsEmpty(Window(home).Property(ActorImages))">SetFocus(99)</onclick>
+				<onclick condition="Container(7000).Position(0)">RunScript(plugin.video.themoviedb.helper,add_path=$INFO[Container(500).ListItem.FolderPath],call_auto=1113)</onclick>
+				<onclick condition="Container(7000).Position(1)">RunScript(plugin.video.themoviedb.helper,add_path=$INFO[Container(500).ListItem.FolderPath],call_auto=1113)</onclick>
+				<onclick condition="Container(7000).Position(2)">SetFocus(99)</onclick>
 				<onup>Control.SetFocus(500,0,absolute)</onup>
 				<onup condition="Control.IsVisible(96)">3000</onup>
 				<ondown>noop</ondown>
 				<onleft>Control.SetFocus(500,0,absolute)</onleft>
-				<onleft condition="String.IsEmpty(Window(home).Property(StarredInTV)) + String.IsEmpty(Window(home).Property(ActorImages))">7000</onleft>
-				<onleft condition="!String.IsEmpty(Window(home).Property(StarredInTV)) + String.IsEmpty(Window(home).Property(ActorImages))">7001</onleft>
-				<onleft condition="String.IsEmpty(Window(home).Property(StarredInTV)) + !String.IsEmpty(Window(home).Property(ActorImages))">7002</onleft>
+				<onleft>7000</onleft>
 				<onright>noop</onright>
 				<onright condition="!Window.IsVisible(1103)">SetProperty(BounceRight,1,Home)</onright>
 				<onback>Control.SetFocus(500,0,absolute)</onback>
-				<onback condition="String.IsEmpty(Window(home).Property(StarredInTV)) + String.IsEmpty(Window(home).Property(ActorImages))">7000</onback>
-				<onback condition="!String.IsEmpty(Window(home).Property(StarredInTV)) + String.IsEmpty(Window(home).Property(ActorImages))">7001</onback>
-				<onback condition="String.IsEmpty(Window(home).Property(StarredInTV)) + !String.IsEmpty(Window(home).Property(ActorImages))">7002</onback>
+				<onback>7000</onback>
 				<preloaditems>2</preloaditems>
 				<focusposition>2</focusposition>
 				<viewtype label="">list</viewtype>
@@ -346,7 +294,7 @@
 				<itemgap>16</itemgap>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
-				<visible>Control.HasFocus(500) + String.IsEmpty(Window(home).Property(ActorImages))</visible>
+				<visible>Control.HasFocus(500) + !Container(7000).Position(2)</visible>
 				<animation delay="300" easing="inout" effect="fade" end="100" start="0" time="120" tween="sine">Visible</animation>
 				<animation effect="fade" end="0" start="100" time="0">Hidden</animation>
 				<control type="label">

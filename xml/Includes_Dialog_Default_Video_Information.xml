@@ -117,21 +117,8 @@
 				<texture border="4">views/ProgressBar.png</texture>
 				<visible>Container.Content(episodes) + Integer.IsGreater(ListItem.PlayCount,0) + !ListItem.IsResumable</visible>
 			</control>
-			<control id="7000" type="button">
-				<top>1036</top>
-				<width>960</width>
-				<height>70</height>
-				<onup condition="!Control.IsVisible(96)">Close</onup>
-				<onup condition="Control.IsVisible(96)">3002</onup>
-				<ondown>noop</ondown>
-				<onleft>Close</onleft>
-				<onright>9000</onright>
-				<font>Light35</font>
-				<textcolor>ffdadada</textcolor>
-				<focusedcolor>ffffc24b</focusedcolor>
-				<label>$LOCALIZE[31026]</label>
-				<include>NoTextures</include>
-			</control>
+			<include content="List7000">
+			</include>
 		</control>
 		<control type="group">
 			<left>1020</left>
@@ -604,7 +591,7 @@
 				<font>Med32</font>
 				<textcolor>ff717171</textcolor>
 				<label>$LOCALIZE[31076]</label>
-				<animation delay="400" effect="fade" end="100" start="0" time="200">Visible</animation>
+				<animation effect="fade" end="100" start="0" time="200">Visible</animation>
 				<animation effect="fade" end="0" start="100" time="0">Hidden</animation>
 				<visible>!String.IsEmpty(Container(50).ListItem.Label) + !Control.HasFocus(50)</visible>
 			</control>
