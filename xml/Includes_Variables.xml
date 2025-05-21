@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="MusicInfoIcon">
+		<value condition="String.IsEqual(ListItem.DBTYPE,album) + String.IsEmpty(ListItem.Icon)">DefaultAlbum.png</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,artist) + String.IsEmpty(ListItem.Icon)">DefaultArtist.png</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,song) + String.IsEmpty(ListItem.Icon)">DefaultSong.png</value>
+		<value>$INFO[ListItem.Icon]</value>
+	</variable>
 	<variable name="StreamAudioChannelsVar">
 		<value condition="String.IsEqual(ListItem.Property(Stream.Channels),0)">0.0</value>
 		<value condition="String.IsEqual(ListItem.Property(Stream.Channels),1)">1.0</value>

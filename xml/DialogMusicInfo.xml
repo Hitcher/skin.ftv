@@ -53,7 +53,7 @@
 			<control type="image">
 				<width>672</width>
 				<height>672</height>
-				<texture>$INFO[ListItem.Icon]</texture>
+				<texture>$VAR[MusicInfoIcon]</texture>
 				<aspectratio>scale</aspectratio>
 			</control>
 			<include content="List7000">
