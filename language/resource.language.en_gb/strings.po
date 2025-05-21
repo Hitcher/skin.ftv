@@ -349,11 +349,11 @@ msgid "Daily"
 msgstr ""
 
 msgctxt "#31080"
-msgid "Enable Extended Information"
+msgid "Enable extra information"
 msgstr ""
 
 msgctxt "#31081"
-msgid "Shows Extended Information for actors when selected from the cast list."
+msgid "Uses extra information provided by TheMovieDb Helper"
 msgstr ""
 
 msgctxt "#31082"
