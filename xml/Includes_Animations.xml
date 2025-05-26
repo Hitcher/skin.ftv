@@ -143,7 +143,7 @@
 	</include>
 	<!-- Dialog video info animation -->
 	<include name="DialogVideoInfoAnimation">
-		<animation condition="Control.HasFocus(50) | Control.HasFocus(500)" effect="fade" end="6" start="100" time="200">Conditional</animation>
+		<animation condition="Control.HasFocus(50) | Control.HasFocus(500) | Control.HasFocus(501) | Control.HasFocus(502)" effect="fade" end="6" start="100" time="200">Conditional</animation>
 	</include>
 	<!-- Home Widgets Animation -->
 	<include name="HomeWidgetsAnimation">

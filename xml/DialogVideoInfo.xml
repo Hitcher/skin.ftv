@@ -23,35 +23,39 @@
 		<!-- Cast list -->
 		<include condition="!Container.Content(Sets) + Skin.HasSetting(ExtendedInfo)">CastList</include>
 		<!-- Content type includes -->
-		<include condition="!String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + !Skin.HasSetting(ExtendedInfo)">Includes_Dialog_Default_Video_Information</include>
-		<include condition="String.IsEmpty(ListItem.Property(item.type),movie) + String.IsEmpty(ListItem.Property(item.type),tv) + !String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + Skin.HasSetting(ExtendedInfo)">Includes_Dialog_Video_Information</include>
-		<include condition="[!String.IsEmpty(ListItem.Property(item.type),movie) | !String.IsEmpty(ListItem.Property(item.type),tv)] + !String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + Skin.HasSetting(ExtendedInfo)">Includes_Dialog_Movie_TV_Information</include>
-		<include condition="!String.IsEqual(ListItem.Property(item.type),person) + Container.Content(Sets)">Includes_Dialog_Set_Information</include>
-		<include condition="String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets)">Includes_Dialog_Person_Information</include>
+		<include condition="!String.IsEqual(ListItem.Property(tmdb_type),person) + !Container.Content(Sets) + !Skin.HasSetting(ExtendedInfo)">Includes_Dialog_Default_Video_Information</include>
+		<include condition="!String.IsEqual(ListItem.Property(tmdb_type),person) + !Container.Content(Sets) + Skin.HasSetting(ExtendedInfo)">Includes_Dialog_Video_Information</include>
+		<include condition="!String.IsEqual(ListItem.Property(tmdb_type),person) + Container.Content(Sets)">Includes_Dialog_Set_Information</include>
+		<include condition="String.IsEqual(ListItem.Property(tmdb_type),person) + !Container.Content(Sets)">Includes_Dialog_Person_Information</include>
 		<!-- TMDB debug -->
 		<control type="grouplist">
 			<left>30</left>
 			<bottom>30</bottom>
 			<width>2800</width>
-			<height>180</height>
+			<height>400</height>
 			<itemgap>24</itemgap>
 			<align>right</align>
 			<visible>Skin.HasSetting(DebugInfo)</visible>
 			<!-- UniqueID(tmdb) label -->
 			<control type="label">
 				<left>40</left>
-				<bottom>80</bottom>
 				<height>80</height>
 				<include>DebugDialogLabel</include>
-				<label>$INFO[Container(99950).ListItem.UniqueID(tmdb),[COLOR FF00FF00]UniqueID(tmdb) - [/COLOR]]</label>
+				<label>[COLOR FF00FF00]UniqueID(tmdb) - [/COLOR]$INFO[Container(99950).ListItem.UniqueID(tmdb)]</label>
+			</control>
+			<!-- UniqueID(tvshow.tmdb) label -->
+			<control type="label">
+				<left>40</left>
+				<height>80</height>
+				<include>DebugDialogLabel</include>
+				<label>[COLOR FF00FF00]UniqueID(tvshow.tmdb) - [/COLOR]$INFO[Container(99950).ListItem.UniqueID(tvshow.tmdb)]</label>
 			</control>
 			<!-- Property(TMDb_ID) label -->
 			<control type="label">
 				<left>40</left>
-				<bottom>80</bottom>
 				<height>80</height>
 				<include>DebugDialogLabel</include>
-				<label>$INFO[Container(99950).ListItem.Property(TMDb_ID),[COLOR FF00FF00]Property(TMDb_ID) - [/COLOR]]</label>
+				<label>[COLOR FF00FF00]Property(TMDb_ID) - [/COLOR]$INFO[Container(99950).ListItem.Property(TMDb_ID)]</label>
 			</control>
 		</control>
 	</controls>

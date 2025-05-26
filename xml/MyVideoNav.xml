@@ -322,7 +322,7 @@
 						<itemgap>20</itemgap>
 						<orientation>horizontal</orientation>
 						<usecontrolcoords>true</usecontrolcoords>
-						<visible>Container.Content(movies) | Container.Content(videoversions) | Container.Content(videoextras) | Container.Content(sets) | Container.Content(tvshows)</visible>
+						<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows)</visible>
 						<control type="label">
 							<top>-6</top>
 							<width>auto</width>
@@ -353,7 +353,7 @@
 					</control>
 					<!-- Movie / TV Show plot -->
 					<control type="group">
-						<visible>Container.Content(movies) | Container.Content(videoversions) | Container.Content(videoextras) | Container.Content(sets) | Container.Content(tvshows)</visible>
+						<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows)</visible>
 						<control type="textbox">
 							<top>284</top>
 							<width>2384</width>
@@ -363,7 +363,7 @@
 							<pagecontrol>96</pagecontrol>
 							<autoscroll>false</autoscroll>
 							<textcolor>ffbcbcbc</textcolor>
-							<label>$VAR[ListItemLabel] [LIGHT]$VAR[Plot][/LIGHT]</label>
+							<label>[B]$INFO[ListItem.Label][/B] [LIGHT]$VAR[Plot][/LIGHT]</label>
 						</control>
 						<control id="96" type="scrollbar">
 							<top>284</top>
@@ -389,9 +389,9 @@
 							<texturenofocus>views/more_nf.png</texturenofocus>
 						</control>
 					</control>
-					<!-- Season Plot -->
+					<!-- Season Plot / Video Versions / Video Extras -->
 					<control type="group">
-						<visible>Container.Content(seasons)</visible>
+						<visible>Container.Content(seasons) | Container.Content(videoversions) | Container.Content(videoextras)</visible>
 						<control type="textbox">
 							<top>200</top>
 							<width>2384</width>
@@ -401,7 +401,7 @@
 							<pagecontrol>97</pagecontrol>
 							<autoscroll>false</autoscroll>
 							<textcolor>ffbcbcbc</textcolor>
-							<label>[B]$INFO[ListItem.TVShowTitle] - $VAR[SeasonValue][/B] [LIGHT]$VAR[Plot][/LIGHT]</label>
+							<label>[B]$INFO[ListItem.TVShowTitle,, - ]$VAR[SeasonValue][/B] [LIGHT]$VAR[Plot][/LIGHT]</label>
 						</control>
 						<control id="97" type="scrollbar">
 							<top>200</top>
@@ -509,7 +509,7 @@
 				<!-- Lower group -->
 				<control type="group">
 					<left>392</left>
-					<top>1614</top>
+					<top>1564</top>
 					<include>VisibleDelayFadeAnimation</include>
 					<visible>[!String.IsEmpty(Container.PluginName) + !Container.Content(episodes)] | [!Container.Content(movies) + !Container.Content(videoversions) + !Container.Content(videoextras) + !Container.Content(sets) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)]</visible>
 					<!-- Controls -->
@@ -922,6 +922,32 @@
 						<textoffsety>44</textoffsety>
 					</control>
 				</control>
+			</control>
+		</control>
+		<!-- Versions / Extras debug -->
+		<control type="grouplist">
+			<left>30</left>
+			<bottom>30</bottom>
+			<width>2800</width>
+			<height>400</height>
+			<itemgap>24</itemgap>
+			<align>right</align>
+			<visible>Skin.HasSetting(DebugInfo)</visible>
+			<!-- Versions label -->
+			<control type="label">
+				<left>40</left>
+				<height>80</height>
+				<include>DebugDialogLabel</include>
+				<label>[COLOR FF00FF00]ListItem.HasVideoVersions - [/COLOR]true</label>
+				<visible>ListItem.HasVideoVersions</visible>
+			</control>
+			<!-- Extras label -->
+			<control type="label">
+				<left>40</left>
+				<height>80</height>
+				<include>DebugDialogLabel</include>
+				<label>[COLOR FF00FF00]ListItem.HasVideoExtras - [/COLOR]true</label>
+				<visible>ListItem.HasVideoExtras</visible>
 			</control>
 		</control>
 	</controls>

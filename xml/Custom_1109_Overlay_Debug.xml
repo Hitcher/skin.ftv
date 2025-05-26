@@ -345,6 +345,10 @@
 				<param name="debug_dialog_label" value="script-upnext-stillwatching-simple.xml"/>
 				<param name="debug_dialog_label_visible" value="script-upnext-stillwatching-simple.xml"/>
 			</include>
+			<include content="DebugDialogLabel">
+				<param name="debug_dialog_label" value="script-wikipedia.xml"/>
+				<param name="debug_dialog_label_visible" value="script-wikipedia.xml"/>
+			</include>
 		</control>
 		<!-- Controls debug -->
 		<control type="grouplist">
@@ -384,10 +388,15 @@
 				<param name="debug_control_label" value="$INFO[ListItem.DBTYPE,[COLOR FF00FF00]DBTYPE - [/COLOR]]"/>
 				<param name="debug_control_label_visible" value="!String.IsEmpty(ListItem.DBTYPE)"/>
 			</include>
-			<!-- Item type label -->
+			<!-- Tmdb type label -->
 			<include content="DebugControlLabel">
-				<param name="debug_control_label" value="$INFO[ListItem.Property(item.type),[COLOR FF00FF00]Item Type - [/COLOR]]"/>
-				<param name="debug_control_label_visible" value="!String.IsEmpty(ListItem.Property(item.type))"/>
+				<param name="debug_control_label" value="$VAR[TmdbType,[COLOR FF00FF00]TMDB TYPE - [/COLOR]]"/>
+				<param name="debug_control_label_visible" value="!String.IsEmpty(ListItem.Property(tmdb_type))"/>
+			</include>
+			<!-- UniqueID(tmdb) label -->
+			<include content="DebugControlLabel">
+				<param name="debug_control_label" value="$INFO[ListItem.UniqueID(tmdb),[COLOR FF00FF00]TMDB Unique ID - [/COLOR]]"/>
+				<param name="debug_control_label_visible" value="!String.IsEmpty(ListItem.UniqueID(tmdb))"/>
 			</include>
 			<!-- DBID label -->
 			<include content="DebugControlLabel">

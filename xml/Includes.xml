@@ -8,7 +8,6 @@
 	<include file="Includes_Dialog_Video_Information.xml"/>
 	<include file="Includes_Dialog_Person_Information.xml"/>
 	<include file="Includes_Dialog_Set_Information.xml"/>
-	<include file="Includes_Dialog_Movie_TV_Information.xml"/>
 	<include file="Includes_Dialog_Default_Video_Information.xml"/>
 	<include file="Includes_DialogSelect.xml"/>
 	<include file="Includes_DialogSettings.xml"/>
@@ -40,6 +39,7 @@
 		<control type="image">
 			<include>FullscreenDimensions</include>
 			<texture colordiffuse="BackgroundColour">common/white_square.png</texture>
+			<visible>String.IsEmpty(Window(home).Property(ShowXRay))</visible>
 		</control>
 	</include>
 	<!-- Dialog background image -->

@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="TmdbType">
+		<value condition="String.IsEqual(ListItem.Property(tmdb_type),movie)">movie</value>
+		<value condition="String.IsEqual(ListItem.Property(tmdb_type),tv)">tv</value>
+		<value condition="String.IsEqual(ListItem.Property(tmdb_type),person)">person</value>
+	</variable>
+	<variable name="PersonAgeDied">
+		<value condition="!String.IsEmpty(ListItem.Property(Deathday))">[COLOR $VAR[ExtendedInfoLabelColor]][B]$LOCALIZE[21897]:[/B][/COLOR]  [LIGHT]$INFO[ListItem.Property(Deathday)]$INFO[ListItem.Property(Age), (, $LOCALIZE[31191])][/LIGHT]</value>
+		<value condition="!String.IsEmpty(ListItem.Property(Age))">[COLOR $VAR[ExtendedInfoLabelColor]][B]$LOCALIZE[31190]:[/B][/COLOR]  [LIGHT]$INFO[ListItem.Property(Age)][/LIGHT]</value>
+	</variable>
 	<variable name="MusicInfoIcon">
 		<value condition="String.IsEqual(ListItem.DBTYPE,album) + String.IsEmpty(ListItem.Icon)">DefaultAlbum.png</value>
 		<value condition="String.IsEqual(ListItem.DBTYPE,artist) + String.IsEmpty(ListItem.Icon)">DefaultArtist.png</value>
@@ -213,17 +222,9 @@
 		<value condition="String.IsEmpty(VideoPlayer.TVShowTitle)">$INFO[VideoPlayer.Title]</value>
 		<value>$INFO[VideoPlayer.TVShowTitle]</value>
 	</variable>
-	<variable name="TmdbType">
-		<value condition="String.IsEqual(ListItem.DBType,movie)">tmdb_type=movie</value>
-		<value condition="String.IsEqual(ListItem.DBType,tvshow)">tmdb_type=tvshow</value>
-	</variable>
 	<variable name="DebugGrid">
 		<value condition="Integer.IsGreaterOrEqual(System.ScreenHeight,2160)">special://skin/extras/debuggrid4k.png</value>
 		<value>special://skin/extras/debuggrid1080.png</value>
-	</variable>
-	<variable name="ListItemLabel">
-		<value condition="String.Contains(Container.FolderPath,movies/videoversions) + !String.IsEqual(Container.FolderName,ListItem.VideoVersionName)">[B]$INFO[Container.FolderName] [$INFO[ListItem.VideoVersionName]][/B]</value>
-		<value>[B]$INFO[ListItem.Label][/B]</value>
 	</variable>
 	<variable name="VideoAspect">
 		<value condition="String.IsEqual(ListItem.VideoAspect,1.00)">1:1</value>
@@ -332,15 +333,13 @@
 		<value condition="!String.IsEmpty(Container(99950).ListItem.Property(Last_Aired.Custom))">$INFO[Container(99950).ListItem.Property(Last_Aired.Day),,$COMMA ]$INFO[Container(99950).ListItem.Property(Last_Aired.Custom)]</value>
 	</variable>
 	<variable name="DialogVideoInfoInclude">
-		<value condition="!String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + !Skin.HasSetting(ExtendedInfo)">(Includes_Dialog_Default_Video_Information)
+		<value condition="!String.IsEqual(ListItem.Property(tmdb_type),person) + !Container.Content(Sets) + !Skin.HasSetting(ExtendedInfo)">(Includes_Dialog_Default_Video_Information)
 		</value>
-		<value condition="String.IsEmpty(ListItem.Property(item.type),movie) + String.IsEmpty(ListItem.Property(item.type),tv) + !String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + Skin.HasSetting(ExtendedInfo)">(Includes_Dialog_Video_Information)
+		<value condition="!String.IsEqual(ListItem.Property(tmdb_type),person) + !Container.Content(Sets) + Skin.HasSetting(ExtendedInfo)">(Includes_Dialog_Video_Information)
 		</value>
-		<value condition="[!String.IsEmpty(ListItem.Property(item.type),movie) | !String.IsEmpty(ListItem.Property(item.type),tv)] + !String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets) + Skin.HasSetting(ExtendedInfo)">(Includes_Dialog_Movie_TV_Information)
+		<value condition="!String.IsEqual(ListItem.Property(tmdb_type),person) + Container.Content(Sets)">(Includes_Dialog_Set_Information)
 		</value>
-		<value condition="!String.IsEqual(ListItem.Property(item.type),person) + Container.Content(Sets)">(Includes_Dialog_Set_Information)
-		</value>
-		<value condition="String.IsEqual(ListItem.Property(item.type),person) + !Container.Content(Sets)">(Includes_Dialog_Person_Information)
+		<value condition="String.IsEqual(ListItem.Property(tmdb_type),person) + !Container.Content(Sets)">(Includes_Dialog_Person_Information)
 		</value>
 	</variable>
 	<variable name="Director_ID">
@@ -368,16 +367,9 @@
 		<value condition="[!String.IsEmpty(Container(99950).ListItem.Director) | !String.IsEmpty(ListItem.Director)] + !String.IsEmpty(Container(99950).ListItem.Property(Director.1.TMDb_ID))">$INFO[Container(99950).ListItem.Property(Director.1.Name)]</value>
 	</variable>
 	<variable name="DialogPersonInfoListContent">
-		<value condition="String.IsEqual(ListItem.Property(item.type),person) + Container(7000).Position(0)">plugin://plugin.video.themoviedb.helper?info=stars_in_movies&amp;tmdb_type=person&amp;tmdb_id=$INFO[ListItem.Property(TMDb_ID)]&amp;nextpage=false&amp;limit=100</value>
+		<value condition="String.IsEqual(ListItem.Property(tmdb_type),person) + Container(7000).Position(0)">plugin://plugin.video.themoviedb.helper?info=stars_in_movies&amp;tmdb_type=person&amp;tmdb_id=$INFO[ListItem.Property(TMDb_ID)]&amp;nextpage=false&amp;limit=100</value>
 		<value condition="Container(7000).Position(1)">plugin://plugin.video.themoviedb.helper?info=stars_in_tvshows&amp;tmdb_type=person&amp;tmdb_id=$INFO[ListItem.Property(TMDb_ID)]&amp;nextpage=false&amp;limit=100</value>
 		<value condition="Container(7000).Position(2)">plugin://plugin.video.themoviedb.helper?info=images&amp;tmdb_type=person&amp;tmdb_id=$INFO[ListItem.Property(TMDb_ID)]&amp;nextpage=false</value>
-	</variable>
-	<variable name="DialogMovieInfoListContent">
-		<value condition="Container(7000).Position(0) + String.IsEqual(ListItem.Property(item.type),movie)">plugin://plugin.video.themoviedb.helper?info=cast&amp;tmdb_type=movie&amp;aggregate=true&amp;tmdb_id=$INFO[ListItem.Property(TMDb_ID)]&amp;nextpage=false</value>
-		<value condition="Container(7000).Position(0) + String.IsEqual(ListItem.Property(item.type),tv)">plugin://plugin.video.themoviedb.helper?info=cast&amp;tmdb_type=tv&amp;aggregate=true&amp;tmdb_id=$INFO[ListItem.Property(TMDb_ID)]&amp;nextpage=false</value>
-		<value condition="Container(7000).Position(1) + String.IsEqual(ListItem.Property(item.type),movie)">plugin://plugin.video.themoviedb.helper?info=recommendations&amp;tmdb_type=movie&amp;tmdb_id=$INFO[ListItem.Property(TMDb_ID)]&amp;nextpage=false</value>
-		<value condition="Container(7000).Position(1) + String.IsEqual(ListItem.Property(item.type),tv)">plugin://plugin.video.themoviedb.helper?info=recommendations&amp;tmdb_type=tv&amp;tmdb_id=$INFO[ListItem.Property(TMDb_ID)]&amp;nextpage=false</value>
-		<value condition="Container(7000).Position(2) + String.IsEqual(ListItem.DBTYPE,movie)">plugin://plugin.video.themoviedb.helper?info=crew_in_both&amp;type=person&amp;filter_key=job&amp;filter_value=Director$VAR[Director_ID]&amp;exclude_key=title&amp;exclude_value=$INFO[ListItem.Title]&amp;aggregate=true&amp;nextpage=false</value>
 	</variable>
 	<variable name="DialogVideoInfoListContent">
 		<value condition="Container(7000).Position(0) + !String.IsEmpty(Container(99950).ListItem.UniqueID(tmdb)) + String.IsEqual(ListItem.DBTYPE,movie)">plugin://plugin.video.themoviedb.helper?info=cast&amp;tmdb_id=$INFO[Container(99950).ListItem.UniqueID(tmdb)]&amp;tmdb_type=movie&amp;aggregate=true&amp;nextpage=false</value>
@@ -806,12 +798,8 @@
 		<value condition="String.EndsWith(ListItem.Label2,1%)">views/percentage/001.png</value>
 		<value condition="String.EndsWith(ListItem.Label2,0%)">views/percentage/000.png</value>
 	</variable>
-	<variable name="ExtendedInfoLabelKnowFor">
-		<value condition="!String.IsEmpty(Window(home).Property(XRayInfo))">[B]$LOCALIZE[31108]:[/B]  [LIGHT]$INFO[ListItem.Property(Movie.Cast.1.Title)]$INFO[ListItem.Property(Movie.Cast.2.Title),$COMMA ]$INFO[ListItem.Property(Movie.Cast.3.Title),$COMMA ][/LIGHT]</value>
-		<value>[COLOR $VAR[ExtendedInfoLabelColor]][B]$LOCALIZE[31108]:[/B][/COLOR]  [LIGHT]$INFO[ListItem.Property(Movie.Cast.1.Title)]$INFO[ListItem.Property(Movie.Cast.2.Title),$COMMA ]$INFO[ListItem.Property(Movie.Cast.3.Title),$COMMA ][/LIGHT]</value>
-	</variable>
 	<variable name="ExtendedInfoLabelColor">
-		<value condition="!String.IsEmpty(Window(home).Property(XRayInfo))">ffbbbbbb</value>
+		<value condition="!String.IsEmpty(Window(home).Property(ShowXRay))">ffbbbbbb</value>
 		<value>ff717171</value>
 	</variable>
 	<variable name="VideoInfoLabelHeading">
@@ -1694,7 +1682,10 @@
 	<variable name="Plot">
 		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode)] + !String.IsEmpty(ListItem.PlotOutline)">$INFO[ListItem.PlotOutline]</value>
 		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode)] + !String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
-		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode)] + !String.IsEmpty(Container(99950).ListItem.Plot)">$INFO[Container(99950).ListItem.Plot]</value>
+		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode)] + !String.IsEmpty(Container.ShowPlot)">$INFO[Container(99950).ListItem.Plot]</value>
+		<value condition="!String.IsEmpty(Container.ShowPlot)">$INFO[Container.ShowPlot]</value>
+		<value condition="String.IsEqual(ListItem.Property(tmdb_type),person) + !String.IsEmpty(ListItem.Property(Biography))">[COLOR $VAR[ExtendedInfoLabelColor]][B]$LOCALIZE[21887]:[/B][/COLOR]  [LIGHT]$INFO[ListItem.Property(Biography)][/LIGHT]</value>
+		<value>[COLOR 00ffffff]empty[/COLOR]</value>
 	</variable>
 	<variable name="DayNightWeather">
 		<value condition="System.Time(06:00,20:00)">$LOCALIZE[31058]</value>

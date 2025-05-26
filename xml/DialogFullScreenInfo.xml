@@ -2,9 +2,6 @@
 <window>
 	<!-- fullscreeninfo -->
 	<defaultcontrol>99</defaultcontrol>
-	<onunload>ClearProperty(ShowIcon,home)</onunload>
-	<onunload>ClearProperty(XRayRole,home)</onunload>
-	<onunload>ClearProperty(XRayInfo,home)</onunload>
 	<controls>
 		<control type="button" id="99">
 			<include>HiddenControl</include>
@@ -71,9 +68,6 @@
 				<onright>noop</onright>
 				<onright condition="!Window.IsVisible(1103)">SetProperty(BounceRight,1,Home)</onright>
 				<oninfo>Close</oninfo>
-				<onclick>SetProperty(XRayInfo,true,home)</onclick>
-				<onclick>SetProperty(XRayIcon,$INFO[ListItem.Icon],home)</onclick>
-				<onclick>SetProperty(XRayRole,$INFO[ListItem.Label2],home)</onclick>
 				<onclick>Dialog.Close(fullscreeninfo,force)</onclick>
 				<onclick>RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Container(1000).ListItem.Label],type=person,call_auto=1113)</onclick>
 				<onback condition="Player.Paused">PlayerControl(play)</onback>

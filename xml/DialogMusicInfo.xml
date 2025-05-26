@@ -56,13 +56,13 @@
 				<texture>$VAR[MusicInfoIcon]</texture>
 				<aspectratio>scale</aspectratio>
 			</control>
-			<include content="List7000">
-				<param name="List7000TopPos" value="728"/>
-				<param name="List7000OnRightPos1" value="3002"/>
-				<param name="List7000Item1Label" value="33029"/>
-				<param name="List7000Item1Visible" value="true"/>
-			</include>
 		</control>
+		<include content="List7000">
+			<param name="List7000TopPos" value="926"/>
+			<param name="List7000OnRightPos1" value="3002"/>
+			<param name="List7000Item1Label" value="33029"/>
+			<param name="List7000Item1Visible" value="true"/>
+		</include>
 		<control type="group">
 			<left>920</left>
 			<top>198</top>

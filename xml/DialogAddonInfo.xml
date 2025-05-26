@@ -91,13 +91,13 @@
 				<texture>$INFO[ListItem.Icon]</texture>
 				<aspectratio>scale</aspectratio>
 			</control>
-			<include content="List7000">
-				<param name="List7000TopPos" value="728"/>
-				<param name="List7000OnRightPos1" value="noop"/>
-				<param name="List7000Item1Label" value="31029"/>
-				<param name="List7000Item1Visible" value="true"/>
-			</include>
 		</control>
+		<include content="List7000">
+			<param name="List7000TopPos" value="926"/>
+			<param name="List7000OnRightPos1" value="noop"/>
+			<param name="List7000Item1Label" value="31029"/>
+			<param name="List7000Item1Visible" value="true"/>
+		</include>
 		<control type="group">
 			<left>920</left>
 			<top>198</top>
@@ -466,7 +466,7 @@
 					<top>1632</top>
 					<width>74</width>
 					<height>46</height>
-					<onleft>7001</onleft>
+					<onleft>7000</onleft>
 					<onright>50</onright>
 					<onclick>RunScript(script.skinvariables,run_dialog=textviewer,heading='empty',text='$ESCINFO[ListItem.AddonDescription]')</onclick>
 					<texturefocus>views/more_fo.png</texturefocus>

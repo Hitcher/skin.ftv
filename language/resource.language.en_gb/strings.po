@@ -349,7 +349,7 @@ msgid "Daily"
 msgstr ""
 
 msgctxt "#31080"
-msgid "Enable extra information"
+msgid "Enable Extra Information"
 msgstr ""
 
 msgctxt "#31081"
@@ -461,7 +461,7 @@ msgid "TV Roles"
 msgstr ""
 
 msgctxt "#31108"
-msgid "Known For"
+msgid "Known for"
 msgstr ""
 
 msgctxt "#31109"
@@ -788,7 +788,13 @@ msgctxt "#31189"
 msgid "Manage[CR]Extras"
 msgstr ""
 
-#empty strings from id 31190 to 31191
+msgctxt "#31190"
+msgid "Age"
+msgstr ""
+
+msgctxt "#31191"
+msgid "years old"
+msgstr ""
 
 msgctxt "#31192"
 msgid "Director"
