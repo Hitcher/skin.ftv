@@ -41,7 +41,7 @@
 			</control>
 			<!-- List -->
 			<control id="54" type="fixedlist">
-				<left>1336</left>
+				<left>1372</left>
 				<top>584</top>
 				<width>2264</width>
 				<height>1800</height>
@@ -61,12 +61,31 @@
 						<width>136</width>
 						<height>62</height>
 						<font>Light32</font>
-						<align>center</align>
 						<textcolor>ff646668</textcolor>
 						<label>$INFO[ListItem.TrackNumber]</label>
 					</control>
 					<control type="label">
-						<left>178</left>
+						<left>-2</left>
+						<top>70</top>
+						<width>136</width>
+						<height>56</height>
+						<font>CD</font>
+						<textcolor>ff636466</textcolor>
+						<label>&#8858;</label>
+						<visible>Integer.IsGreater(ListItem.TotalDiscs,1) + !String.IsEmpty(ListItem.DiscNumber)</visible>
+					</control>
+					<control type="label">
+						<top>70</top>
+						<left>48</left>
+						<width>136</width>
+						<height>56</height>
+						<font>Light28</font>
+						<textcolor>ff636466</textcolor>
+						<label>$INFO[ListItem.DiscNumber]</label>
+						<visible>Integer.IsGreater(ListItem.TotalDiscs,1) + !String.IsEmpty(ListItem.DiscNumber)</visible>
+					</control>
+					<control type="label">
+						<left>142</left>
 						<width>2088</width>
 						<height>62</height>
 						<font>Light32</font>
@@ -75,7 +94,7 @@
 						<visible>!ListItem.IsParentFolder + !String.IsEmpty(ListItem.Title)</visible>
 					</control>
 					<control type="label">
-						<left>178</left>
+						<left>142</left>
 						<width>2088</width>
 						<height>62</height>
 						<font>Light32</font>
@@ -84,7 +103,7 @@
 						<visible>ListItem.IsParentFolder | String.IsEmpty(ListItem.Title)</visible>
 					</control>
 					<control type="label">
-						<left>178</left>
+						<left>142</left>
 						<width>2088</width>
 						<height>62</height>
 						<font>Light32</font>
@@ -93,7 +112,7 @@
 						<label>$INFO[ListItem.Duration]</label>
 					</control>
 					<control type="label">
-						<left>178</left>
+						<left>142</left>
 						<top>70</top>
 						<width>2088</width>
 						<height>56</height>
@@ -108,13 +127,34 @@
 						<width>136</width>
 						<height>62</height>
 						<font>Light32</font>
-						<align>center</align>
 						<textcolor>ffe9a01e</textcolor>
 						<selectedcolor>ffe9a01e</selectedcolor>
 						<label>$INFO[ListItem.TrackNumber]</label>
 					</control>
 					<control type="label">
-						<left>178</left>
+						<left>-2</left>
+						<top>70</top>
+						<width>136</width>
+						<height>56</height>
+						<font>CD</font>
+						<textcolor>ffe9a01e</textcolor>
+						<selectedcolor>ffe9a01e</selectedcolor>
+						<label>&#8858;</label>
+						<visible>Integer.IsGreater(ListItem.TotalDiscs,1) + !String.IsEmpty(ListItem.DiscNumber)</visible>
+					</control>
+					<control type="label">
+						<top>70</top>
+						<left>48</left>
+						<width>136</width>
+						<height>56</height>
+						<font>Light28</font>
+						<textcolor>ffe9a01e</textcolor>
+						<selectedcolor>ffe9a01e</selectedcolor>
+						<label>$INFO[ListItem.DiscNumber]</label>
+						<visible>Integer.IsGreater(ListItem.TotalDiscs,1) + !String.IsEmpty(ListItem.DiscNumber)</visible>
+					</control>
+					<control type="label">
+						<left>142</left>
 						<width>2088</width>
 						<height>62</height>
 						<font>Light32</font>
@@ -124,7 +164,7 @@
 						<visible>!ListItem.IsParentFolder + !String.IsEmpty(ListItem.Title)</visible>
 					</control>
 					<control type="label">
-						<left>178</left>
+						<left>142</left>
 						<width>2088</width>
 						<height>62</height>
 						<font>Light32</font>
@@ -134,7 +174,7 @@
 						<visible>ListItem.IsParentFolder | String.IsEmpty(ListItem.Title)</visible>
 					</control>
 					<control type="label">
-						<left>178</left>
+						<left>142</left>
 						<width>2088</width>
 						<height>62</height>
 						<font>Light32</font>
@@ -144,7 +184,7 @@
 						<label>$INFO[ListItem.Duration]</label>
 					</control>
 					<control type="label">
-						<left>178</left>
+						<left>142</left>
 						<top>70</top>
 						<width>2088</width>
 						<height>56</height>
