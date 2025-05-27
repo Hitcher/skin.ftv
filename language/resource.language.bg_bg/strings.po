@@ -351,11 +351,11 @@ msgid "Daily"
 msgstr ""
 
 msgctxt "#31080"
-msgid "Enable Extended Information"
+msgid "Enable Extra Information"
 msgstr ""
 
 msgctxt "#31081"
-msgid "Shows Extended Information for actors when selected from the cast list."
+msgid "Uses extra information provided by TheMovieDb Helper"
 msgstr ""
 
 msgctxt "#31082"
@@ -465,7 +465,7 @@ msgid "TV Roles"
 msgstr ""
 
 msgctxt "#31108"
-msgid "Known For"
+msgid "Known for"
 msgstr ""
 
 msgctxt "#31109"
@@ -796,6 +796,14 @@ msgstr ""
 
 msgctxt "#31189"
 msgid "Manage[CR]Extras"
+msgstr ""
+
+msgctxt "#31190"
+msgid "Age"
+msgstr ""
+
+msgctxt "#31191"
+msgid "years old"
 msgstr ""
 
 msgctxt "#31192"

@@ -350,12 +350,12 @@ msgid "Daily"
 msgstr "A diario"
 
 msgctxt "#31080"
-msgid "Enable Extended Information"
-msgstr "Activar información ampliada"
+msgid "Enable Extra Information"
+msgstr ""
 
 msgctxt "#31081"
-msgid "Shows Extended Information for actors when selected from the cast list."
-msgstr "Muestra información ampliada de los actores cuando se seleccionan de la lista de reparto."
+msgid "Uses extra information provided by TheMovieDb Helper"
+msgstr ""
 
 msgctxt "#31082"
 msgid "Last aired"
@@ -462,8 +462,8 @@ msgid "TV Roles"
 msgstr "Papeles"
 
 msgctxt "#31108"
-msgid "Known For"
-msgstr "Conocido(a) Por"
+msgid "Known for"
+msgstr ""
 
 msgctxt "#31109"
 msgid "Watch[CR]Now"
@@ -790,6 +790,14 @@ msgctxt "#31189"
 msgid "Manage[CR]Extras"
 msgstr "Gestionar[CR]Extras"
 
+msgctxt "#31190"
+msgid "Age"
+msgstr ""
+
+msgctxt "#31191"
+msgid "years old"
+msgstr ""
+
 msgctxt "#31192"
 msgid "Director"
 msgstr "Dirección"
@@ -1062,6 +1070,18 @@ msgstr "Valoración media Todos los críticos"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "Valoración media de audiencia"
+
+#~ msgctxt "#31080"
+#~ msgid "Enable Extended Information"
+#~ msgstr "Activar información ampliada"
+
+#~ msgctxt "#31081"
+#~ msgid "Shows Extended Information for actors when selected from the cast list."
+#~ msgstr "Muestra información ampliada de los actores cuando se seleccionan de la lista de reparto."
+
+#~ msgctxt "#31108"
+#~ msgid "Known For"
+#~ msgstr "Conocido(a) Por"
 
 #~ msgctxt "#31190"
 #~ msgid "Which version would you like to watch?"
