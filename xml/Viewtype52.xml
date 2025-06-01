@@ -98,18 +98,18 @@
 								<textcolor>ffffffff</textcolor>
 								<shadowcolor>ShadowColour</shadowcolor>
 								<label>$VAR[EpisodeValue]</label>
-								<visible>!ListItem.IsParentFolder + !ListItem.IsFolder</visible>
+								<visible>!ListItem.IsParentFolder + !ListItem.IsFolder + String.StartsWith(Container.FolderPath,videodb://)</visible>
 							</control>
 							<control type="label">
 								<left>36</left>
-								<top>876</top>
+								<top>896</top>
 								<width>1208</width>
 								<height>84</height>
 								<font>Bold44</font>
 								<textcolor>ffffffff</textcolor>
 								<shadowcolor>ShadowColour</shadowcolor>
 								<label>$VAR[EpisodeValue]</label>
-								<visible>!ListItem.IsParentFolder + ListItem.IsFolder</visible>
+								<visible>[!ListItem.IsParentFolder + ListItem.IsFolder] | !String.StartsWith(Container.FolderPath,videodb://)</visible>
 							</control>
 						</control>
 					</control>
@@ -212,14 +212,14 @@
 							</control>
 							<control type="label">
 								<left>36</left>
-								<top>876</top>
+								<top>896</top>
 								<width>1208</width>
 								<height>84</height>
 								<font>Bold44</font>
 								<textcolor>ffffffff</textcolor>
 								<shadowcolor>ShadowColour</shadowcolor>
 								<label>$VAR[EpisodeValue]</label>
-								<visible>!ListItem.IsParentFolder + ListItem.IsFolder</visible>
+								<visible>[!ListItem.IsParentFolder + ListItem.IsFolder] | !String.StartsWith(Container.FolderPath,videodb://)</visible>
 							</control>
 							<control type="label">
 								<left>36</left>
@@ -231,8 +231,8 @@
 								<textcolor>ffffffff</textcolor>
 								<shadowcolor>ShadowColour</shadowcolor>
 								<label>$VAR[EpisodeValue]</label>
-								<visible>!ListItem.IsParentFolder + !ListItem.IsFolder</visible>
-								<animation condition="String.StartsWith(Container.FolderPath,videodb://) + [Control.HasFocus(52) | Container(52).OnNext | Container(52).OnPrevious]" delay="560" easing="inout" effect="slide" end="0,0" reversible="false" start="0,-42" time="220" tween="sine">Focus</animation>
+								<visible>!ListItem.IsParentFolder + !ListItem.IsFolder + String.StartsWith(Container.FolderPath,videodb://)</visible>
+								<animation condition="Control.HasFocus(52) | Container(52).OnNext | Container(52).OnPrevious" delay="560" easing="inout" effect="slide" end="0,0" reversible="false" start="0,-42" time="220" tween="sine">Focus</animation>
 								<animation condition="Container(52).OnNext | Container(52).OnPrevious" effect="slide" end="0,-42" start="0,0" time="0">UnFocus</animation>
 							</control>
 						</control>
