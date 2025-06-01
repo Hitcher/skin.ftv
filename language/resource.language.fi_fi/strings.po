@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-10-28 15:33+0000\n"
+"PO-Revision-Date: 2025-05-29 14:53+0000\n"
 "Last-Translator: Oskari Lavinto <olavinto@protonmail.com>\n"
 "Language-Team: Finnish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/fi_fi/>\n"
 "Language: fi_fi\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.1\n"
+"X-Generator: Weblate 5.11.4\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the original Fire TV UI"
@@ -127,7 +127,7 @@ msgstr ""
 
 msgctxt "#31024"
 msgid "Movie Sets"
-msgstr ""
+msgstr "Elokuvakokoelmat"
 
 msgctxt "#31025"
 msgid "Notice"
@@ -219,7 +219,7 @@ msgstr "Poista käytöstä[CR]kaikkien sekoitus"
 
 msgctxt "#31047"
 msgid "Visualisation presets"
-msgstr ""
+msgstr "Visualisoinnin esiasetukset"
 
 msgctxt "#31048"
 msgid "Playlist Options"
@@ -351,12 +351,12 @@ msgid "Daily"
 msgstr ""
 
 msgctxt "#31080"
-msgid "Enable Extended Information"
-msgstr "Käytä ExtendedInfo-tietoja"
+msgid "Enable Extra Information"
+msgstr ""
 
 msgctxt "#31081"
-msgid "Shows Extended Information for actors when selected from the cast list."
-msgstr "Näyttää näyttelijöiden ExtendedInfo-tiedot listalta valittaessa."
+msgid "Uses extra information provided by TheMovieDb Helper"
+msgstr ""
 
 msgctxt "#31082"
 msgid "Last aired"
@@ -464,8 +464,8 @@ msgid "TV Roles"
 msgstr ""
 
 msgctxt "#31108"
-msgid "Known For"
-msgstr ""
+msgid "Known for"
+msgstr "Tunnetaan"
 
 msgctxt "#31109"
 msgid "Watch[CR]Now"
@@ -754,15 +754,15 @@ msgstr ""
 
 msgctxt "#31179"
 msgid "Playlist options"
-msgstr ""
+msgstr "Toistolistavalinnat"
 
 msgctxt "#31180"
 msgid "Choose view"
-msgstr ""
+msgstr "Valitse näkymä"
 
 msgctxt "#31181"
 msgid "Collection"
-msgstr ""
+msgstr "Kokoelma"
 
 # empty strings from id 31179 to 31181
 msgctxt "#31182"
@@ -797,13 +797,21 @@ msgctxt "#31189"
 msgid "Manage[CR]Extras"
 msgstr ""
 
+msgctxt "#31190"
+msgid "Age"
+msgstr "Ikä"
+
+msgctxt "#31191"
+msgid "years old"
+msgstr ""
+
 msgctxt "#31192"
 msgid "Director"
-msgstr ""
+msgstr "Ohjaaja"
 
 msgctxt "#31193"
 msgid "Now Playing"
-msgstr ""
+msgstr "Toistetaan parhaillaan"
 
 # empty strings from id 31187 to 31193
 msgctxt "#31194"
@@ -812,7 +820,7 @@ msgstr ""
 
 msgctxt "#31195"
 msgid "Ended"
-msgstr ""
+msgstr "Päättyi"
 
 msgctxt "#31196"
 msgid "Cancelled"
@@ -840,11 +848,11 @@ msgstr ""
 
 msgctxt "#31202"
 msgid "Order"
-msgstr ""
+msgstr "Järjestys"
 
 msgctxt "#31203"
 msgid "Square"
-msgstr ""
+msgstr "Neliö"
 
 msgctxt "#31204"
 msgid "Movies starring"
@@ -912,7 +920,7 @@ msgstr ""
 
 msgctxt "#31220"
 msgid "Audio streams"
-msgstr ""
+msgstr "Äänivirrat"
 
 # empty string with id 31220
 msgctxt "#31221"
@@ -934,11 +942,11 @@ msgstr ""
 
 msgctxt "#31225"
 msgid "Video streams"
-msgstr ""
+msgstr "Videovirrat"
 
 msgctxt "#31226"
 msgid "Play speed"
-msgstr ""
+msgstr "Toistonopeus"
 
 # empty strings from id 31225 to 31226
 msgctxt "#31227"
@@ -947,7 +955,7 @@ msgstr ""
 
 msgctxt "#31228"
 msgid "Visualisation settings"
-msgstr ""
+msgstr "Visualisoinnin asetukset"
 
 # empty string with id 31228
 msgctxt "#31229"
@@ -972,7 +980,7 @@ msgstr ""
 
 msgctxt "#31235"
 msgid "Your rating"
-msgstr ""
+msgstr "Oma arvio"
 
 msgctxt "#31236"
 msgid "Your_rating"
@@ -1024,7 +1032,7 @@ msgstr ""
 
 msgctxt "#31248"
 msgid "Order"
-msgstr "Suunta"
+msgstr "Järjestys"
 
 msgctxt "#31249"
 msgid "View Addons that have recently been updated."
@@ -1073,6 +1081,14 @@ msgstr ""
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr ""
+
+#~ msgctxt "#31080"
+#~ msgid "Enable Extended Information"
+#~ msgstr "Käytä ExtendedInfo-tietoja"
+
+#~ msgctxt "#31081"
+#~ msgid "Shows Extended Information for actors when selected from the cast list."
+#~ msgstr "Näyttää näyttelijöiden ExtendedInfo-tiedot listalta valittaessa."
 
 #~ msgctxt "#31047"
 #~ msgid "Visualisation Presets"

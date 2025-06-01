@@ -351,12 +351,12 @@ msgid "Daily"
 msgstr "Harian"
 
 msgctxt "#31080"
-msgid "Enable Extended Information"
-msgstr "Aktifkan Informasi Tambahan"
+msgid "Enable Extra Information"
+msgstr ""
 
 msgctxt "#31081"
-msgid "Shows Extended Information for actors when selected from the cast list."
-msgstr "Menampilkan Informasi Tambahan untuk aktor ketika dipilih dari daftar pemeran."
+msgid "Uses extra information provided by TheMovieDb Helper"
+msgstr ""
 
 msgctxt "#31082"
 msgid "Last aired"
@@ -466,8 +466,8 @@ msgid "TV Roles"
 msgstr "Peran TV"
 
 msgctxt "#31108"
-msgid "Known For"
-msgstr "Dikenal sebagai"
+msgid "Known for"
+msgstr ""
 
 msgctxt "#31109"
 msgid "Watch[CR]Now"
@@ -800,6 +800,14 @@ msgctxt "#31189"
 msgid "Manage[CR]Extras"
 msgstr "Atur[CR]Ekstra"
 
+msgctxt "#31190"
+msgid "Age"
+msgstr ""
+
+msgctxt "#31191"
+msgid "years old"
+msgstr ""
+
 msgctxt "#31192"
 msgid "Director"
 msgstr "Sutradara"
@@ -1076,6 +1084,18 @@ msgstr "Nilai Rata-Rata Semua Kritik"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "Rata-rata Rating Skor Audiens"
+
+#~ msgctxt "#31080"
+#~ msgid "Enable Extended Information"
+#~ msgstr "Aktifkan Informasi Tambahan"
+
+#~ msgctxt "#31081"
+#~ msgid "Shows Extended Information for actors when selected from the cast list."
+#~ msgstr "Menampilkan Informasi Tambahan untuk aktor ketika dipilih dari daftar pemeran."
+
+#~ msgctxt "#31108"
+#~ msgid "Known For"
+#~ msgstr "Dikenal sebagai"
 
 #~ msgctxt "#31190"
 #~ msgid "Which version would you like to watch?"

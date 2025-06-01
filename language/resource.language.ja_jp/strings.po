@@ -350,12 +350,12 @@ msgid "Daily"
 msgstr "毎日"
 
 msgctxt "#31080"
-msgid "Enable Extended Information"
-msgstr "拡張情報を有効にする"
+msgid "Enable Extra Information"
+msgstr ""
 
 msgctxt "#31081"
-msgid "Shows Extended Information for actors when selected from the cast list."
-msgstr "キャストリストから選択した俳優の拡張情報を表示します。"
+msgid "Uses extra information provided by TheMovieDb Helper"
+msgstr ""
 
 msgctxt "#31082"
 msgid "Last aired"
@@ -462,8 +462,8 @@ msgid "TV Roles"
 msgstr "TV ロール"
 
 msgctxt "#31108"
-msgid "Known For"
-msgstr "で知られている"
+msgid "Known for"
+msgstr ""
 
 msgctxt "#31109"
 msgid "Watch[CR]Now"
@@ -790,6 +790,14 @@ msgctxt "#31189"
 msgid "Manage[CR]Extras"
 msgstr ""
 
+msgctxt "#31190"
+msgid "Age"
+msgstr ""
+
+msgctxt "#31191"
+msgid "years old"
+msgstr ""
+
 msgctxt "#31192"
 msgid "Director"
 msgstr ""
@@ -1062,6 +1070,18 @@ msgstr "すべての評論家の平均評価"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "平均視聴者スコア"
+
+#~ msgctxt "#31080"
+#~ msgid "Enable Extended Information"
+#~ msgstr "拡張情報を有効にする"
+
+#~ msgctxt "#31081"
+#~ msgid "Shows Extended Information for actors when selected from the cast list."
+#~ msgstr "キャストリストから選択した俳優の拡張情報を表示します。"
+
+#~ msgctxt "#31108"
+#~ msgid "Known For"
+#~ msgstr "で知られている"
 
 #~ msgctxt "#31047"
 #~ msgid "Visualisation Presets"
