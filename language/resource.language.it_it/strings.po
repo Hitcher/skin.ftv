@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2025-05-29 06:31+0000\n"
 "Last-Translator: Massimo Pissarello <mapi68@gmail.com>\n"
@@ -556,18 +556,9 @@ msgctxt "#31130"
 msgid "TV Show Wide"
 msgstr "Serie TV wide"
 
-# empty string with id 31130
-msgctxt "#31131"
-msgid "Enable Wide TV Show Icons"
-msgstr "Abilita icone wide delle serie TV"
-
 msgctxt "#31132"
 msgid "Continue watching?"
 msgstr "Continuare a guardare?"
-
-msgctxt "#31133"
-msgid "Enable Wide Season Icons"
-msgstr "Abilita icone wide delle stagioni"
 
 msgctxt "#31134"
 msgid "Enable Fanart"
@@ -1081,6 +1072,15 @@ msgstr "Valutazione media di tutte le recensioni"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "Punteggio medio del pubblico"
+
+# empty string with id 31130
+#~ msgctxt "#31131"
+#~ msgid "Enable Wide TV Show Icons"
+#~ msgstr "Abilita icone wide delle serie TV"
+
+#~ msgctxt "#31133"
+#~ msgid "Enable Wide Season Icons"
+#~ msgstr "Abilita icone wide delle stagioni"
 
 #~ msgctxt "#31080"
 #~ msgid "Enable Extended Information"

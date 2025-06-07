@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-05-01 00:16+0000\n"
+"PO-Revision-Date: 2025-06-07 10:47+0000\n"
 "Last-Translator: Daniel Nylander <daniel@danielnylander.se>\n"
 "Language-Team: Swedish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/sv_se/>\n"
 "Language: sv_se\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11.1\n"
+"X-Generator: Weblate 5.11.4\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the original Fire TV UI"
@@ -352,11 +352,11 @@ msgstr "Dagligen"
 
 msgctxt "#31080"
 msgid "Enable Extra Information"
-msgstr ""
+msgstr "Aktivera extra information"
 
 msgctxt "#31081"
 msgid "Uses extra information provided by TheMovieDb Helper"
-msgstr ""
+msgstr "Använder extra information tillhandahållen av TheMovieDb Helper"
 
 msgctxt "#31082"
 msgid "Last aired"
@@ -466,7 +466,7 @@ msgstr "TV-roller"
 
 msgctxt "#31108"
 msgid "Known for"
-msgstr ""
+msgstr "Känd för"
 
 msgctxt "#31109"
 msgid "Watch[CR]Now"
@@ -557,18 +557,9 @@ msgctxt "#31130"
 msgid "TV Show Wide"
 msgstr "TV-serie bred"
 
-# empty string with id 31130
-msgctxt "#31131"
-msgid "Enable Wide TV Show Icons"
-msgstr "Aktivera breda ikoner för TV-serier"
-
 msgctxt "#31132"
 msgid "Continue watching?"
 msgstr "Fortsätta titta?"
-
-msgctxt "#31133"
-msgid "Enable Wide Season Icons"
-msgstr "Aktivera breda ikoner för säsong"
 
 msgctxt "#31134"
 msgid "Enable Fanart"
@@ -800,11 +791,11 @@ msgstr "Hantera[CR]extramaterial"
 
 msgctxt "#31190"
 msgid "Age"
-msgstr ""
+msgstr "Ålder"
 
 msgctxt "#31191"
 msgid "years old"
-msgstr ""
+msgstr "år gammal"
 
 msgctxt "#31192"
 msgid "Director"
@@ -1081,6 +1072,15 @@ msgstr "Genomsnittligt betyg alla kritiker"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "Genomsnittligt betyg publikens betyg"
+
+# empty string with id 31130
+#~ msgctxt "#31131"
+#~ msgid "Enable Wide TV Show Icons"
+#~ msgstr "Aktivera breda ikoner för TV-serier"
+
+#~ msgctxt "#31133"
+#~ msgid "Enable Wide Season Icons"
+#~ msgstr "Aktivera breda ikoner för säsong"
 
 #~ msgctxt "#31080"
 #~ msgid "Enable Extended Information"

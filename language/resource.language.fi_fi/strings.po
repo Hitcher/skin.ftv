@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2025-05-29 14:53+0000\n"
 "Last-Translator: Oskari Lavinto <olavinto@protonmail.com>\n"
@@ -556,17 +556,8 @@ msgctxt "#31130"
 msgid "TV Show Wide"
 msgstr ""
 
-# empty string with id 31130
-msgctxt "#31131"
-msgid "Enable Wide TV Show Icons"
-msgstr ""
-
 msgctxt "#31132"
 msgid "Continue watching?"
-msgstr ""
-
-msgctxt "#31133"
-msgid "Enable Wide Season Icons"
 msgstr ""
 
 msgctxt "#31134"

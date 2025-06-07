@@ -553,17 +553,9 @@ msgctxt "#31130"
 msgid "TV Show Wide"
 msgstr ""
 
-msgctxt "#31131"
-msgid "Enable Wide TV Show Icons"
-msgstr "Enable Wide TV Show Icons"
-
 msgctxt "#31132"
 msgid "Continue watching?"
 msgstr "Continue watching?"
-
-msgctxt "#31133"
-msgid "Enable Wide Season Icons"
-msgstr "Enable Wide Season Icons"
 
 msgctxt "#31134"
 msgid "Enable Fanart"
@@ -1070,6 +1062,14 @@ msgstr "Average Rating All Critics"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "Average Rating Audience Score"
+
+#~ msgctxt "#31131"
+#~ msgid "Enable Wide TV Show Icons"
+#~ msgstr "Enable Wide TV Show Icons"
+
+#~ msgctxt "#31133"
+#~ msgid "Enable Wide Season Icons"
+#~ msgstr "Enable Wide Season Icons"
 
 #~ msgctxt "#31108"
 #~ msgid "Known For"

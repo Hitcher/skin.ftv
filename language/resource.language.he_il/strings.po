@@ -557,17 +557,8 @@ msgctxt "#31130"
 msgid "TV Show Wide"
 msgstr ""
 
-# empty string with id 31130
-msgctxt "#31131"
-msgid "Enable Wide TV Show Icons"
-msgstr ""
-
 msgctxt "#31132"
 msgid "Continue watching?"
-msgstr ""
-
-msgctxt "#31133"
-msgid "Enable Wide Season Icons"
 msgstr ""
 
 msgctxt "#31134"

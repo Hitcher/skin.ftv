@@ -558,18 +558,9 @@ msgctxt "#31130"
 msgid "TV Show Wide"
 msgstr "Acara TV Lebar"
 
-# empty string with id 31130
-msgctxt "#31131"
-msgid "Enable Wide TV Show Icons"
-msgstr "Aktifkan Ikon Acara TV Lebar"
-
 msgctxt "#31132"
 msgid "Continue watching?"
 msgstr "Lanjutkan?"
-
-msgctxt "#31133"
-msgid "Enable Wide Season Icons"
-msgstr "Aktifkan Ikon Lebar Musim"
 
 msgctxt "#31134"
 msgid "Enable Fanart"
@@ -1084,6 +1075,15 @@ msgstr "Nilai Rata-Rata Semua Kritik"
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
 msgstr "Rata-rata Rating Skor Audiens"
+
+# empty string with id 31130
+#~ msgctxt "#31131"
+#~ msgid "Enable Wide TV Show Icons"
+#~ msgstr "Aktifkan Ikon Acara TV Lebar"
+
+#~ msgctxt "#31133"
+#~ msgid "Enable Wide Season Icons"
+#~ msgstr "Aktifkan Ikon Lebar Musim"
 
 #~ msgctxt "#31080"
 #~ msgid "Enable Extended Information"
