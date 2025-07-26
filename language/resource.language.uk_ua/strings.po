@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-07-19 19:34+0000\n"
+"PO-Revision-Date: 2025-07-26 07:29+0000\n"
 "Last-Translator: Pavlo Marianov <acid@jack.kyiv.ua>\n"
 "Language-Team: Ukrainian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/uk_ua/>\n"
 "Language: uk_ua\n"
@@ -59,7 +59,7 @@ msgstr "Починається о"
 
 msgctxt "#31007"
 msgid "System music files"
-msgstr "Системні аудіофайли"
+msgstr "Системні музичні файли"
 
 msgctxt "#31008"
 msgid "Current selection"
@@ -199,27 +199,27 @@ msgstr "Сітка для налагодження"
 
 msgctxt "#31042"
 msgid "Debug labels"
-msgstr ""
+msgstr "Мітки налагодження"
 
 msgctxt "#31043"
 msgid "Turn Off Randomise"
-msgstr ""
+msgstr "Вимкнути рандомізацію"
 
 msgctxt "#31044"
 msgid "Local subtitle found!"
-msgstr ""
+msgstr "Знайдено локальні субтитри!"
 
 msgctxt "#31045"
 msgid "Turn On Randomise"
-msgstr ""
+msgstr "Увімкнути рандомізацію"
 
 msgctxt "#31046"
 msgid "Turn Off Shuffle All"
-msgstr ""
+msgstr "Вимкнути перемішування всього"
 
 msgctxt "#31047"
 msgid "Visualisation presets"
-msgstr ""
+msgstr "Налаштування візуалізації"
 
 msgctxt "#31048"
 msgid "Playlist Options"
@@ -227,96 +227,96 @@ msgstr "Параметри списку відтворення"
 
 msgctxt "#31049"
 msgid "Customise Home Menu"
-msgstr ""
+msgstr "Налаштувати головне меню"
 
 msgctxt "#31050"
 msgid "TV Shows starring"
-msgstr ""
+msgstr "Акторський склад серіалів"
 
 msgctxt "#31051"
 msgid "Images"
-msgstr ""
+msgstr "Зображення"
 
 msgctxt "#31052"
 msgid "Turn On[CR]Shuffle All"
-msgstr ""
+msgstr "Увімкнути[CR]Перемішати все"
 
 msgctxt "#31053"
 msgid "Turn Off[CR]Repeat"
-msgstr ""
+msgstr "Вимкнути[CR]Повторювати"
 
 msgctxt "#31054"
 msgid "Repeat This[CR]Item"
-msgstr ""
+msgstr "Повторювати цей[CR]елемент"
 
 msgctxt "#31055"
 msgid "Turn On[CR]Repeat All"
-msgstr ""
+msgstr "Увімкнути[CR]Повторювати все"
 
 msgctxt "#31056"
 msgid "Move, copy and delete your files with KODI's built-in file manager."
-msgstr ""
+msgstr "Переміщення, копіювання та видалення файлів у вбудованому файловому менеджері Kodi."
 
 msgctxt "#31057"
 msgid "Watch[CR]Again"
-msgstr ""
+msgstr "Дивитись[CR]знову"
 
 msgctxt "#31058"
 msgid "Today's weather:"
-msgstr ""
+msgstr "Погода вдень:"
 
 msgctxt "#31059"
 msgid "Tonight's weather:"
-msgstr ""
+msgstr "Погода ввечірі:"
 
 msgctxt "#31060"
 msgid "Play Now"
-msgstr ""
+msgstr "Відтворити зараз"
 
 msgctxt "#31061"
 msgid "Enable X-Ray"
-msgstr ""
+msgstr "Увімкнути ренген"
 
 msgctxt "#31062"
 msgid "Choose Thumb"
-msgstr ""
+msgstr "Виберіть ескіз"
 
 msgctxt "#31063"
 msgid "Enables Cast info during video playback.[CR]Note: Can be CPU intensive."
-msgstr ""
+msgstr "Показує відомості про акторський склад під час відворення відео.[CR]Примітка: може створити навантаження на процесор."
 
 msgctxt "#31064"
 msgid "Browse[CR]Season"
-msgstr ""
+msgstr "Оглянути[CR]сезон"
 
 msgctxt "#31065"
 msgid "Browse[CR]Movie Set"
-msgstr ""
+msgstr "Оглянути[CR]кіноцикл"
 
 msgctxt "#31066"
 msgid "Movies in this Set"
-msgstr ""
+msgstr "Фільми в цьому кіноциклі"
 
 # empty strings from id 31064 to 31066
 msgctxt "#31067"
 msgid "Choose Fanart"
-msgstr ""
+msgstr "Виберіть фанарт"
 
 msgctxt "#31068"
 msgid "IP"
-msgstr "IP"
+msgstr "IP-адреса"
 
 msgctxt "#31069"
 msgid "Images for"
-msgstr ""
+msgstr "Зображення для"
 
 msgctxt "#31070"
 msgid "Suggested"
-msgstr ""
+msgstr "Рекомендовано"
 
 msgctxt "#31071"
 msgid "Starring"
-msgstr ""
+msgstr "Акторський склад"
 
 msgctxt "#31072"
 msgid "Directed by"
@@ -328,56 +328,56 @@ msgstr "Наступна серія"
 
 msgctxt "#31074"
 msgid "Browse[CR]TV Show"
-msgstr ""
+msgstr "Оглянути[CR]серіал"
 
 msgctxt "#31075"
 msgid "Play[CR]Trailer"
-msgstr ""
+msgstr "Відтворити[CR]трейлер"
 
 msgctxt "#31076"
 msgid "Cast and Role"
-msgstr ""
+msgstr "Акторський склад та ролі"
 
 msgctxt "#31077"
 msgid "Viewers Also Watched"
-msgstr ""
+msgstr "Глядачі також дивились"
 
 msgctxt "#31078"
 msgid "Sorry, nothing found."
-msgstr ""
+msgstr "Нічого не знайдено."
 
 msgctxt "#31079"
 msgid "Daily"
-msgstr ""
+msgstr "Щодня"
 
 msgctxt "#31080"
 msgid "Enable Extra Information"
-msgstr ""
+msgstr "Увімкнути додаткові відомості"
 
 msgctxt "#31081"
 msgid "Uses extra information provided by TheMovieDb Helper"
-msgstr ""
+msgstr "Надає додаткові відомості з TheMovieDb Helper"
 
 msgctxt "#31082"
 msgid "Last aired"
-msgstr ""
+msgstr "Останній ефір"
 
 msgctxt "#31083"
 msgid "Yesterday"
-msgstr ""
+msgstr "Вчора"
 
 msgctxt "#31084"
 msgid "Today"
-msgstr ""
+msgstr "Сьогодні"
 
 # empty strings from id 31079 to 31084
 msgctxt "#31085"
 msgid "Shutdown Menu"
-msgstr ""
+msgstr "Меню завершення роботи"
 
 msgctxt "#31086"
 msgid "Sorted by"
-msgstr ""
+msgstr "Відсортовано за"
 
 msgctxt "#31087"
 msgid "Unavailable"
@@ -386,153 +386,153 @@ msgstr "Недоступно"
 # empty string with id 31087
 msgctxt "#31088"
 msgid "Current Playlist"
-msgstr ""
+msgstr "Поточний список відтворення"
 
 msgctxt "#31089"
 msgid "View Options"
-msgstr "Налаштування перегляду"
+msgstr "Налаштування виду"
 
 msgctxt "#31090"
 msgid "Update Library"
-msgstr ""
+msgstr "Оновити медіатеку"
 
 msgctxt "#31091"
 msgid "Stop scanning"
-msgstr ""
+msgstr "Зупинити сканування"
 
 msgctxt "#31092"
 msgid "Sort By"
-msgstr ""
+msgstr "Сорт. за"
 
 msgctxt "#31093"
 msgid "Filter By"
-msgstr ""
+msgstr "Фільтрувати за"
 
 msgctxt "#31094"
 msgid "Save Playlist"
-msgstr ""
+msgstr "Зберегти список відтворення"
 
 msgctxt "#31095"
 msgid "Clear Playlist"
-msgstr ""
+msgstr "Очистити список відтворення"
 
 msgctxt "#31096"
 msgid "Play[CR]Album"
-msgstr ""
+msgstr "Відтворити[CR]альбом"
 
 msgctxt "#31097"
 msgid "Play[CR]Song"
-msgstr ""
+msgstr "Відтворити[CR]пісню"
 
 # empty strings from id 31096 to 31097
 msgctxt "#31098"
 msgid "Press 'Continue?' to watch the next episode or 'Cancel' to stop watching."
-msgstr ""
+msgstr "Натисніть 'Продовжити?', щоб переглянути наступну серію, або 'Скасувати', щоб припинити перегляд."
 
 msgctxt "#31099"
 msgid "Start Slideshow"
-msgstr ""
+msgstr "Запустити слайд-шоу"
 
 msgctxt "#31100"
 msgid "Game Addons"
-msgstr ""
+msgstr "Ігорові додатки"
 
 msgctxt "#31101"
 msgid "Apps"
-msgstr ""
+msgstr "Додатки"
 
 msgctxt "#31102"
 msgid "Now playing"
-msgstr "Відтворюється"
+msgstr "Зараз відтворюється"
 
 msgctxt "#31103"
 msgid "Addons"
-msgstr ""
+msgstr "Додатки"
 
 msgctxt "#31104"
 msgid "Cinema Experience"
-msgstr "Досвід у кіно"
+msgstr "Режим кінотеатру"
 
 msgctxt "#31105"
 msgid "Your Addons"
-msgstr ""
+msgstr "Мої додатки"
 
 msgctxt "#31106"
 msgid "Now Playing"
-msgstr "Зараз відтворюється:"
+msgstr "Зараз відтворюється"
 
 msgctxt "#31107"
 msgid "TV Roles"
-msgstr ""
+msgstr "Ролі на ТБ"
 
 msgctxt "#31108"
 msgid "Known for"
-msgstr ""
+msgstr "Відомий через"
 
 msgctxt "#31109"
 msgid "Watch[CR]Now"
-msgstr ""
+msgstr "Дивитись[CR]зараз"
 
 msgctxt "#31110"
 msgid "Written by"
-msgstr ""
+msgstr "Сценаріст"
 
 msgctxt "#31111"
 msgid "Episode Wide"
-msgstr ""
+msgstr "В межах серії"
 
 msgctxt "#31112"
 msgid "Song List"
-msgstr ""
+msgstr "Список пісень"
 
 msgctxt "#31113"
 msgid "Recommended viewing"
-msgstr ""
+msgstr "Рекомендовано до перегляду"
 
 # empty strings from id 31111 to 31113
 msgctxt "#31114"
 msgid "Customise Shutdown Menu"
-msgstr ""
+msgstr "Налаштування меню завершення роботи"
 
 msgctxt "#31115"
 msgid "Configure your Skin, Region, Control, Screensaver, and Master Lock settings."
-msgstr ""
+msgstr "Налаштування обкладинки, регіону, керування, заставки та батьківського контролю."
 
 msgctxt "#31116"
 msgid "Manage, browse for, install and modify Addons."
-msgstr ""
+msgstr "Керування, перегляд, встановлення та зміна додатків."
 
 msgctxt "#31117"
 msgid "Configure the handling and playback settings for Video, Music, and Pictures."
-msgstr ""
+msgstr "Налаштування параметрів обробки та відтворення для відео, музики та фотографій."
 
 msgctxt "#31118"
 msgid "Configure the media list display, information, and database settings."
-msgstr ""
+msgstr "Налаштування показу списку відофайлів, відомостей та бази даних."
 
 msgctxt "#31119"
 msgid "Hardware decoding is active"
-msgstr ""
+msgstr "Апаратне декодування увімкнено"
 
 msgctxt "#31120"
 msgid "Hardware decoding is inactive"
-msgstr ""
+msgstr "Апаратне декодування вимкнено"
 
 msgctxt "#31121"
 msgid "Setup and calibrate displays, configure audio output, setup remote controls, set power saving options, enable debugging and setup master lock."
-msgstr ""
+msgstr "Налаштування та калібрування екранів, налаштування виводу звуку, пультів ДК, параметрів живлення, вмикання налагодження і батьківського контролю."
 
 msgctxt "#31122"
 msgid "Setup control of Kodi via UPnP and HTTP, configure file sharing, enable Zeroconf and configure AirPlay."
-msgstr ""
+msgstr "Налаштування керування Kodi через UPnP та HTTP, керування доступом до файлів, вмикання Zeroconf та налаштування AirPlay."
 
 msgctxt "#31123"
 msgid "Profiles, File Manager, System Information and Settings Level."
-msgstr ""
+msgstr "Профілі, менеджер файлів, відомості про систему та рівень налаштувань."
 
 msgctxt "#31124"
 msgid "Personalise your experience with profiles. Includes enabling login screen, profile creation and management."
-msgstr ""
+msgstr "Налаштування роботи з Kodi за допомогою профілів. Дозволяє увімкнути екран входу до системи, створювати профілі і керувати ними."
 
 msgctxt "#31125"
 msgid "Login"
@@ -540,47 +540,47 @@ msgstr "Вхід"
 
 msgctxt "#31126"
 msgid "Last login"
-msgstr ""
+msgstr "Останній вхід в систему"
 
 msgctxt "#31127"
 msgid "View your system's information. Includes storage, network, and hardware information."
-msgstr ""
+msgstr "Перегляд відомостей про систему: сховище, мережа та апаратне забезпечення."
 
 msgctxt "#31128"
 msgid "About"
-msgstr "Про"
+msgstr "Про обкладинку"
 
 msgctxt "#31129"
 msgid "Kodi"
-msgstr ""
+msgstr "Kodi"
 
 msgctxt "#31130"
 msgid "TV Show Wide"
-msgstr ""
+msgstr "В межах серіалу"
 
 msgctxt "#31132"
 msgid "Continue watching?"
-msgstr ""
+msgstr "Продовжити перегляд?"
 
 msgctxt "#31134"
 msgid "Enable Fanart"
-msgstr ""
+msgstr "Увімкнути фанарт"
 
 msgctxt "#31135"
 msgid "Select Rating Country"
-msgstr ""
+msgstr "Виберіть країну рейтингу"
 
 msgctxt "#31136"
 msgid "DVD Menu"
-msgstr ""
+msgstr "Меню DVD"
 
 msgctxt "#31137"
 msgid "Video Options"
-msgstr ""
+msgstr "Параметри відео"
 
 msgctxt "#31138"
 msgid "Colour Management"
-msgstr ""
+msgstr "Керування кольором"
 
 msgctxt "#31139"
 msgid "Select + X"
@@ -592,81 +592,81 @@ msgstr "Select + Start"
 
 msgctxt "#31141"
 msgid "Select + Right Stick"
-msgstr ""
+msgstr "Select + правий стік"
 
 msgctxt "#31142"
 msgid "Peripheral dialog"
-msgstr ""
+msgstr "Діалог периферійного присторою"
 
 # empty strings from id 31138 to 31142
 msgctxt "#31143"
 msgid "This will undo any changes you've made to the home menu and widgets."
-msgstr ""
+msgstr "Це скасує зміни, які ви зробили в головному меню та віджетах."
 
 msgctxt "#31144"
 msgid "Game rotation dialog"
-msgstr ""
+msgstr "Діалог ротації ігор"
 
 # empty string with id 31144
 msgctxt "#31145"
 msgid "percent remaining"
-msgstr ""
+msgstr "залишилось відсотків"
 
 msgctxt "#31146"
 msgid "Special"
-msgstr ""
+msgstr "Спецвипуск"
 
 msgctxt "#31147"
 msgid "minutes"
-msgstr ""
+msgstr "хвилин"
 
 msgctxt "#31148"
 msgid "hours"
-msgstr ""
+msgstr "годин"
 
 msgctxt "#31149"
 msgid "Lyrics settings"
-msgstr ""
+msgstr "Налаштування текстів пісень"
 
 msgctxt "#31150"
 msgid "Hides the Stop, Play, Pause, etc buttons from the music and video OSD."
-msgstr ""
+msgstr "Ховає кнопки Стоп, Відтворити, Пауза та інші кнопки в екранному меню для відео та музики."
 
 msgctxt "#31151"
 msgid "Creator"
-msgstr ""
+msgstr "Творець"
 
 msgctxt "#31152"
 msgid "Air Date"
-msgstr ""
+msgstr "Дата прем'єри"
 
 msgctxt "#31153"
 msgid "3D Mode"
-msgstr ""
+msgstr "3D-режим"
 
 msgctxt "#31154"
 msgid "Profile"
-msgstr ""
+msgstr "Профіль"
 
 msgctxt "#31155"
 msgid "Build Version"
-msgstr ""
+msgstr "Версія збирання"
 
 msgctxt "#31156"
 msgid "Capacity"
-msgstr ""
+msgstr "Ємність"
 
 msgctxt "#31157"
 msgid "Current Date and Time"
-msgstr ""
+msgstr "Поточна дата та час"
 
 msgctxt "#31158"
 msgid "Device Name"
-msgstr ""
+msgstr "Назва пристрою"
 
 msgctxt "#31159"
 msgid "Wide"
-msgstr ""
+msgstr "Широкий"
 
 msgctxt "#31160"
 msgid "Poster"
@@ -674,347 +674,347 @@ msgstr "Постер"
 
 msgctxt "#31161"
 msgid "Square Info"
-msgstr ""
+msgstr "Квадрат з відомостями"
 
 msgctxt "#31162"
 msgid "Show"
-msgstr ""
+msgstr "Показати"
 
 msgctxt "#31163"
 msgid "Start Party Mode"
-msgstr ""
+msgstr "Увімкнути режим вечірки"
 
 msgctxt "#31164"
 msgid "Next Up"
-msgstr ""
+msgstr "Наступний"
 
 msgctxt "#31165"
 msgid "Choose[CR]Art"
-msgstr ""
+msgstr "Виберіть[CR]зображення"
 
 msgctxt "#31166"
 msgid "Open Visualiser"
-msgstr ""
+msgstr "Відкрити візуалізацію"
 
 msgctxt "#31167"
 msgid "Recently Added Movies"
-msgstr ""
+msgstr "Останні додані фільми"
 
 msgctxt "#31168"
 msgid "Your Movies"
-msgstr ""
+msgstr "Мої фільми"
 
 msgctxt "#31169"
 msgid "In Progress Movies"
-msgstr ""
+msgstr "Поточні фільми"
 
 msgctxt "#31170"
 msgid "Kids Movies"
-msgstr ""
+msgstr "Дитячі фільми"
 
 msgctxt "#31171"
 msgid "Game saves"
-msgstr ""
+msgstr "Збереження ігор"
 
 msgctxt "#31172"
 msgid "Square List"
-msgstr ""
+msgstr "Квадратний список"
 
 # empty strings from id 31171 to 31172
 msgctxt "#31173"
 msgid "In-game saves"
-msgstr ""
+msgstr "Збереження всередині ігор"
 
 # empty strings from id 31171 to 31173
 msgctxt "#31174"
 msgid "Top Rated Movies"
-msgstr ""
+msgstr "Найкращі фільми"
 
 msgctxt "#31175"
 msgid "Recently Updated TV Shows"
-msgstr ""
+msgstr "Останні оновлені серіали"
 
 msgctxt "#31176"
 msgid "Your TV Shows"
-msgstr ""
+msgstr "Мої серіали"
 
 msgctxt "#31177"
 msgid "In Progress TV Shows"
-msgstr ""
+msgstr "Серіали, що переглядаються"
 
 msgctxt "#31178"
 msgid "Kids TV Shows"
-msgstr ""
+msgstr "Дитячі серіали"
 
 msgctxt "#31179"
 msgid "Playlist options"
-msgstr ""
+msgstr "Параметри списку відтворення"
 
 msgctxt "#31180"
 msgid "Choose view"
-msgstr ""
+msgstr "Виберіть вид"
 
 msgctxt "#31181"
 msgid "Collection"
-msgstr ""
+msgstr "Кіноцикл"
 
 # empty strings from id 31179 to 31181
 msgctxt "#31182"
 msgid "Top Rated TV Shows"
-msgstr ""
+msgstr "Найкращі серіали"
 
 msgctxt "#31183"
 msgid "Recently Played Albums"
-msgstr ""
+msgstr "Останні відтворені альбоми"
 
 msgctxt "#31184"
 msgid "Your Albums"
-msgstr ""
+msgstr "Мої альбоми"
 
 msgctxt "#31185"
 msgid "Recently Added Albums"
-msgstr ""
+msgstr "Останні додані альбоми"
 
 msgctxt "#31186"
 msgid "Your Artists"
-msgstr ""
+msgstr "Мої виконавці"
 
 msgctxt "#31187"
 msgid "Your Genres"
-msgstr ""
+msgstr "Мої жанри"
 
 msgctxt "#31188"
 msgid "Manage[CR]Versions"
-msgstr ""
+msgstr "Керувати[CR]версіями"
 
 msgctxt "#31189"
 msgid "Manage[CR]Extras"
-msgstr ""
+msgstr "Керування[CR]додатковими матеріалами"
 
 msgctxt "#31190"
 msgid "Age"
-msgstr ""
+msgstr "Вік"
 
 msgctxt "#31191"
 msgid "years old"
-msgstr ""
+msgstr "років"
 
 msgctxt "#31192"
 msgid "Director"
-msgstr ""
+msgstr "Режисер"
 
 msgctxt "#31193"
 msgid "Now Playing"
-msgstr ""
+msgstr "Зараз відтворюється"
 
 # empty strings from id 31187 to 31193
 msgctxt "#31194"
 msgid "Submit"
-msgstr ""
+msgstr "Надіслати"
 
 msgctxt "#31195"
 msgid "Ended"
-msgstr ""
+msgstr "Завершено"
 
 msgctxt "#31196"
 msgid "Cancelled"
-msgstr ""
+msgstr "Скасовано"
 
 msgctxt "#31197"
 msgid "Subtitle streams"
-msgstr ""
+msgstr "Потоки субтитрів"
 
 msgctxt "#31198"
 msgid "View Type"
-msgstr ""
+msgstr "Тип виду"
 
 msgctxt "#31199"
 msgid "Label Overlay"
-msgstr ""
+msgstr "Накладання мітки"
 
 msgctxt "#31200"
 msgid "Enter Name"
-msgstr ""
+msgstr "Введіть назву"
 
 msgctxt "#31201"
 msgid "Choose Shortcut"
-msgstr ""
+msgstr "Виберіть ярлик"
 
 msgctxt "#31202"
 msgid "Order"
-msgstr ""
+msgstr "Порядок"
 
 msgctxt "#31203"
 msgid "Square"
-msgstr ""
+msgstr "Квадрат"
 
 msgctxt "#31204"
 msgid "Movies starring"
-msgstr ""
+msgstr "Фільми з"
 
 msgctxt "#31205"
 msgid "Refresh Information"
-msgstr ""
+msgstr "Оновити інформацію"
 
 msgctxt "#31206"
 msgid "Enable Auto-Update"
-msgstr ""
+msgstr "Увімкнути автоматичне оновлення"
 
 msgctxt "#31207"
 msgid "Disable Auto-Update"
-msgstr ""
+msgstr "Вимкнути автоматичне оновлення"
 
 msgctxt "#31208"
 msgid "Enable Higher Levels"
-msgstr ""
+msgstr "Увімкнути підвищені рівні"
 
 msgctxt "#31209"
 msgid "Disable Higher Levels"
-msgstr ""
+msgstr "Вимкнути підвищені рівні"
 
 msgctxt "#31210"
 msgid "Widget Group 1"
-msgstr ""
+msgstr "Група віджетів 1"
 
 msgctxt "#31211"
 msgid "Widget Group 2"
-msgstr ""
+msgstr "Група віджетів 2"
 
 msgctxt "#31212"
 msgid "Widget Group 3"
-msgstr ""
+msgstr "Група віджетів 3"
 
 msgctxt "#31213"
 msgid "Widget Group 4"
-msgstr ""
+msgstr "Група віджетів 4"
 
 msgctxt "#31214"
 msgid "Widget Group 5"
-msgstr ""
+msgstr "Група віджетів 5"
 
 msgctxt "#31215"
 msgid "Widget Group 6"
-msgstr ""
+msgstr "Група віджетів 6"
 
 msgctxt "#31216"
 msgid "Widget Group 7"
-msgstr ""
+msgstr "Група віджетів 7"
 
 msgctxt "#31217"
 msgid "Widget Group 8"
-msgstr ""
+msgstr "Група віджетів 8"
 
 msgctxt "#31218"
 msgid "Select Widget Group"
-msgstr ""
+msgstr "Виберіть групу віджетів"
 
 msgctxt "#31219"
 msgid "Customise Widget Group"
-msgstr ""
+msgstr "Налаштувати групу віджетів"
 
 msgctxt "#31220"
 msgid "Audio streams"
-msgstr ""
+msgstr "Аудіопотоки"
 
 # empty string with id 31220
 msgctxt "#31221"
 msgid "Music Addons"
-msgstr ""
+msgstr "Музичні додатки"
 
 msgctxt "#31222"
 msgid "Program Addons"
-msgstr ""
+msgstr "Програмні додатки"
 
 # empty strings from id 31220 to 31222
 msgctxt "#31223"
 msgid "Video Addons"
-msgstr ""
+msgstr "Відеододатки"
 
 msgctxt "#31224"
 msgid "Picture Addons"
-msgstr ""
+msgstr "Фотододатки"
 
 msgctxt "#31225"
 msgid "Video streams"
-msgstr ""
+msgstr "Відеопотоки"
 
 msgctxt "#31226"
 msgid "Play speed"
-msgstr ""
+msgstr "Швидкість відтворення"
 
 # empty strings from id 31225 to 31226
 msgctxt "#31227"
 msgid "Air time"
-msgstr ""
+msgstr "Час прем'єри"
 
 msgctxt "#31228"
 msgid "Visualisation settings"
-msgstr ""
+msgstr "Налаштування візуалізації"
 
 # empty string with id 31228
 msgctxt "#31229"
 msgid "Cancel Next Up"
-msgstr ""
+msgstr "Скасувати наступне"
 
 msgctxt "#31230"
 msgid "Sorry, no shows are airing at this time."
-msgstr ""
+msgstr "Нажаль. зараз в ефірі немає серіалів."
 
 msgctxt "#31231"
 msgid "Please try again later."
-msgstr ""
+msgstr "Спробуйте пізніше."
 
 msgctxt "#31233"
 msgid "View All Cast"
-msgstr ""
+msgstr "Переглянути акторський склад"
 
 msgctxt "#31234"
 msgid "Browse Addons"
-msgstr ""
+msgstr "Огляд додатків"
 
 msgctxt "#31235"
 msgid "Your rating"
-msgstr ""
+msgstr "Ваш рейтинг"
 
 msgctxt "#31236"
 msgid "Your_rating"
-msgstr ""
+msgstr "Ваш_рейтинг"
 
 msgctxt "#31237"
 msgid "Select your rating"
-msgstr ""
+msgstr "Вкажіть свій рейтинг"
 
 msgctxt "#31238"
 msgid "This is your own personal rating and is only stored locally"
-msgstr ""
+msgstr "Це ваш особистий рейтинг, котрий зберігається тільки локально"
 
 msgctxt "#31239"
 msgid "Press play to resume"
-msgstr ""
+msgstr "Натисніть 'Відторити', щоб продовжити"
 
 msgctxt "#31240"
 msgid "Not rated"
-msgstr ""
+msgstr "Без рейтингу"
 
 msgctxt "#31241"
 msgid "I hate it"
-msgstr ""
+msgstr "Ненавиджу"
 
 msgctxt "#31242"
 msgid "I don't like it"
-msgstr ""
+msgstr "Не подобається"
 
 msgctxt "#31243"
 msgid "It's okay"
-msgstr ""
+msgstr "Нормально"
 
 msgctxt "#31244"
 msgid "I like it"
-msgstr ""
+msgstr "Подобається"
 
 msgctxt "#31245"
 msgid "I love it"
-msgstr ""
+msgstr "Люблю"
 
 msgctxt "#31246"
 msgid "Location"
@@ -1022,7 +1022,7 @@ msgstr "Розташування"
 
 msgctxt "#31247"
 msgid "Media Processing Info"
-msgstr ""
+msgstr "Відомості про обробку медіафайлу"
 
 msgctxt "#31248"
 msgid "Order"
@@ -1030,51 +1030,51 @@ msgstr "Порядок"
 
 msgctxt "#31249"
 msgid "View Addons that have recently been updated."
-msgstr ""
+msgstr "Перегляд додатків, котрі нещодано було оновлено."
 
 msgctxt "#31250"
 msgid "Configure various game settings."
-msgstr ""
+msgstr "Налаштування різних ігрових параметрів."
 
 msgctxt "#31252"
 msgid "This skin only supports a maximum of 13 home menu items. Please remove some to ensure everything works correctly."
-msgstr ""
+msgstr "Ця обкладинка може мати не більше 13 елементів в головном меню. Видаліть елементи, щоб все працювало без проблем."
 
 msgctxt "#31253"
 msgid "No items found in Your Favourites"
-msgstr ""
+msgstr "В обраному немає елементів"
 
 msgctxt "#31254"
 msgid "When you add Favourites they will appear here"
-msgstr ""
+msgstr "Після додавання обраних, вони з'являться тут"
 
 msgctxt "#31255"
 msgid "Reset Home Menu"
-msgstr ""
+msgstr "Скинути головне меню"
 
 msgctxt "#31256"
 msgid "What's[CR]New"
-msgstr ""
+msgstr "Що[CR]нового"
 
 msgctxt "#31257"
 msgid "Rotten Tomatoes Rating"
-msgstr ""
+msgstr "Рейтинг Rotten Tomatoes"
 
 msgctxt "#31258"
 msgid "TomatoMeter All Critics"
-msgstr ""
+msgstr "Рейтинг критиків TomatoMeter"
 
 msgctxt "#31259"
 msgid "TomatoMeter Audience Score"
-msgstr ""
+msgstr "Рейтинг глядачів TomatoMeter"
 
 msgctxt "#31260"
 msgid "Average Rating All Critics"
-msgstr ""
+msgstr "Середній рейтинг критиків"
 
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
-msgstr ""
+msgstr "Середній рейтинг глядачів"
 
 #~ msgctxt "#31047"
 #~ msgid "Visualisation Presets"
