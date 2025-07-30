@@ -134,8 +134,8 @@
 				<param name="debug_dialog_label_visible" value="Custom_1112_My_Programs.xml"/>
 			</include>
 			<include content="DebugDialogLabel">
-				<param name="debug_dialog_label" value="Custom_1113_Extended_Info.xml"/>
-				<param name="debug_dialog_label_visible" value="Custom_1113_Extended_Info.xml"/>
+				<param name="debug_dialog_label" value="Custom_1113_themoviedb_helper.xml"/>
+				<param name="debug_dialog_label_visible" value="Custom_1113_themoviedb_helper.xml"/>
 			</include>
 			<include content="DebugDialogLabel">
 				<param name="debug_dialog_label" value="Custom_1114_OSD_Options.xml"/>
