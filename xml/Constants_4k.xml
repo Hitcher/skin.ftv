@@ -165,7 +165,7 @@
 	</default>
 	<default type="textbox">
 		<font>Med22</font>
-		<autoscroll delay="8000" repeat="12000" time="4000">true</autoscroll>
+		<autoscroll delay="8000" repeat="12000" time="6000">true</autoscroll>
 	</default>
 	<default type="edit">
 		<height>132</height>
