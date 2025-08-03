@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<!-- fullscreenvideo -->
+	<onload condition="!String.IsEmpty(Window(fullscreenvideo).Property(OpenInfo))">Action(Info)</onload>
 	<controls>
 		<control id="99" type="label">
 			<centerleft>50%</centerleft>

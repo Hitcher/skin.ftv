@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<!-- fullscreeninfo -->
+	<!-- fullscreeninfo -->	
+	<onload>ClearProperty(OpenInfo,fullscreenvideo)</onload>
 	<defaultcontrol>99</defaultcontrol>
 	<controls>
 		<control type="button" id="99">
@@ -69,7 +70,8 @@
 				<onright condition="!Window.IsVisible(1103)">SetProperty(BounceRight,1,Home)</onright>
 				<oninfo>Close</oninfo>
 				<onclick>Dialog.Close(fullscreeninfo,force)</onclick>
-				<onclick>RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Container(1000).ListItem.Label],type=person,call_auto=1113)</onclick>
+				<onclick>SetProperty(OpenInfo,True,fullscreenvideo)</onclick>
+				<onclick>RunScript(plugin.video.themoviedb.helper,add_path=$INFO[Container(1000).ListItem.FolderPath],type=person,call_auto=1113)</onclick>
 				<onback condition="Player.Paused">PlayerControl(play)</onback>
 				<onback>Control.SetFocus(1000,0,absolute)</onback>
 				<onback>99</onback>
