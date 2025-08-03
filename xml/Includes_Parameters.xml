@@ -137,7 +137,7 @@
 						<top>-14</top>
 						<width>auto</width>
 						<height>68</height>
-						<font>Light32</font>
+						<font>Reg30Spaced</font>
 						<aligny>bottom</aligny>
 						<textcolor>ffbebebe</textcolor>
 						<label>$PARAM[DialogVideoInfoDetailsLine1Label1]</label>
