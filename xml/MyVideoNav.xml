@@ -322,7 +322,7 @@
 						<itemgap>20</itemgap>
 						<orientation>horizontal</orientation>
 						<usecontrolcoords>true</usecontrolcoords>
-						<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows)</visible>
+						<visible>Container.Content(movies) | Container.Content(videoversions) | Container.Content(videoextras) | Container.Content(sets) | Container.Content(tvshows)</visible>
 						<control type="label">
 							<top>-6</top>
 							<width>auto</width>
@@ -353,7 +353,7 @@
 					</control>
 					<!-- Movie / TV Show plot -->
 					<control type="group">
-						<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows)</visible>
+						<visible>Container.Content(movies) | Container.Content(videoversions) | Container.Content(videoextras) | Container.Content(sets) | Container.Content(tvshows)</visible>
 						<control type="textbox">
 							<top>284</top>
 							<width>2384</width>
@@ -389,9 +389,9 @@
 							<texturenofocus>views/more_nf.png</texturenofocus>
 						</control>
 					</control>
-					<!-- Season Plot / Video Versions / Video Extras -->
+					<!-- Season Plot  -->
 					<control type="group">
-						<visible>Container.Content(seasons) | Container.Content(videoversions) | Container.Content(videoextras)</visible>
+						<visible>Container.Content(seasons)</visible>
 						<control type="textbox">
 							<top>200</top>
 							<width>2384</width>
