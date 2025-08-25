@@ -38,6 +38,26 @@
 					<textcolor>ffbebebe</textcolor>
 					<label>$VAR[AlbumArtistName]</label>
 				</control>
+				<control type="label">
+					<top>196</top>
+					<left>-2</left>
+					<width>136</width>
+					<height>56</height>
+					<font>CD</font>
+					<textcolor>ffbebebe</textcolor>
+					<label>&#8858;</label>
+					<visible>Integer.IsGreater(ListItem.TotalDiscs,1) + !String.IsEmpty(ListItem.DiscNumber)</visible>
+				</control>
+				<control type="label">
+					<top>198</top>
+					<left>68</left>
+					<width>500</width>
+					<height>56</height>
+					<font>Light28</font>
+					<textcolor>ffbebebe</textcolor>
+					<label>$INFO[ListItem.DiscNumber] $LOCALIZE[20163] $INFO[ListItem.TotalDiscs]</label>
+					<visible>Integer.IsGreater(ListItem.TotalDiscs,1) + !String.IsEmpty(ListItem.DiscNumber)</visible>
+				</control>
 			</control>
 			<!-- List -->
 			<control id="54" type="fixedlist">
@@ -63,26 +83,6 @@
 						<font>Light32</font>
 						<textcolor>ff646668</textcolor>
 						<label>$INFO[ListItem.TrackNumber]</label>
-					</control>
-					<control type="label">
-						<left>-2</left>
-						<top>70</top>
-						<width>136</width>
-						<height>56</height>
-						<font>CD</font>
-						<textcolor>ff636466</textcolor>
-						<label>&#8858;</label>
-						<visible>Integer.IsGreater(ListItem.TotalDiscs,1) + !String.IsEmpty(ListItem.DiscNumber)</visible>
-					</control>
-					<control type="label">
-						<top>70</top>
-						<left>48</left>
-						<width>136</width>
-						<height>56</height>
-						<font>Light28</font>
-						<textcolor>ff636466</textcolor>
-						<label>$INFO[ListItem.DiscNumber]</label>
-						<visible>Integer.IsGreater(ListItem.TotalDiscs,1) + !String.IsEmpty(ListItem.DiscNumber)</visible>
 					</control>
 					<control type="label">
 						<left>142</left>
@@ -130,28 +130,6 @@
 						<textcolor>ffe9a01e</textcolor>
 						<selectedcolor>ffe9a01e</selectedcolor>
 						<label>$INFO[ListItem.TrackNumber]</label>
-					</control>
-					<control type="label">
-						<left>-2</left>
-						<top>70</top>
-						<width>136</width>
-						<height>56</height>
-						<font>CD</font>
-						<textcolor>ffe9a01e</textcolor>
-						<selectedcolor>ffe9a01e</selectedcolor>
-						<label>&#8858;</label>
-						<visible>Integer.IsGreater(ListItem.TotalDiscs,1) + !String.IsEmpty(ListItem.DiscNumber)</visible>
-					</control>
-					<control type="label">
-						<top>70</top>
-						<left>48</left>
-						<width>136</width>
-						<height>56</height>
-						<font>Light28</font>
-						<textcolor>ffe9a01e</textcolor>
-						<selectedcolor>ffe9a01e</selectedcolor>
-						<label>$INFO[ListItem.DiscNumber]</label>
-						<visible>Integer.IsGreater(ListItem.TotalDiscs,1) + !String.IsEmpty(ListItem.DiscNumber)</visible>
 					</control>
 					<control type="label">
 						<left>142</left>
