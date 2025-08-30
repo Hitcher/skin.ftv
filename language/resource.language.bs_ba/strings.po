@@ -5,379 +5,379 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2024-01-28 02:13+0000\n"
-"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"PO-Revision-Date: 2025-08-30 14:29+0000\n"
+"Last-Translator: SecularSteve <fairfull.playing@gmail.com>\n"
 "Language-Team: Bosnian (Bosnia and Herzegovina) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/bs_ba/>\n"
 "Language: bs_ba\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.3\n"
+"X-Generator: Weblate 5.13\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the original Fire TV UI"
-msgstr ""
+msgstr "Skin zasnovan na originalnom Fire TV UI-ju"
 
 msgctxt "Addon Description"
 msgid "A skin designed to access all your content as easily and seemlessly as possible.[CR][CR]Addons supported:[CR]Global Search[CR]Up Next[CR]TheMovieDb Helper[CR]Trakt[CR]CU Lyrics[CR]Cinema Experience[CR]Special Features[CR][CR]Based on the original Fire TV UI."
-msgstr ""
+msgstr "Skin dizajniran za što lakši i besprijekorniji pristup svim vašim sadržajima.[CR][CR]Podržani dodaci:[CR]Globalna pretraga[CR]Sljedeće[CR]TheMovieDb Helper[CR]Trakt[CR]CU tekst pjesama[CR]Kino iskustvo[CR]Posebne funkcije[CR][CR]Zasnovano na originalnom Fire TV korisničkom interfejsu."
 
 msgctxt "Addon Disclaimer"
 msgid "To make use of the'ATMOS' tag it needs to be added to your file name.[CR]Does not support: Mouse and Touch devices or Live TV"
-msgstr ""
+msgstr "Da biste koristili oznaku 'ATMOS', potrebno ju je dodati nazivu datoteke.[CR]Ne podržava: uređaje miš i dodir ili TV uživo"
 
 msgctxt "#31000"
 msgid "Audio Options"
-msgstr ""
+msgstr "Opcije zvuka"
 
 msgctxt "#31001"
 msgid "US"
-msgstr ""
+msgstr "SAD"
 
 msgctxt "#31002"
 msgid "UK"
-msgstr ""
+msgstr "Velika Britanija"
 
 msgctxt "#31003"
 msgid "Germany"
-msgstr ""
+msgstr "Njemačka"
 
 msgctxt "#31004"
 msgid "minute"
-msgstr ""
+msgstr "minuta"
 
 msgctxt "#31005"
 msgid "hour"
-msgstr ""
+msgstr "sat"
 
 msgctxt "#31006"
 msgid "Starts at"
-msgstr ""
+msgstr "Počinje u"
 
 msgctxt "#31007"
 msgid "System music files"
-msgstr ""
+msgstr "Sistemske muzičke datoteke"
 
 msgctxt "#31008"
 msgid "Current selection"
-msgstr ""
+msgstr "Trenutni odabir"
 
 msgctxt "#31009"
 msgid "Open playlist"
-msgstr ""
+msgstr "Otvori listu za reprodukciju"
 
 msgctxt "#31010"
 msgid "Save playlist"
-msgstr ""
+msgstr "Sačuvaj listu za reprodukciju"
 
 msgctxt "#31011"
 msgid "Close playlist"
-msgstr ""
+msgstr "Zatvori listu za reprodukciju"
 
 msgctxt "#31012"
 msgid "Current playlist"
-msgstr ""
+msgstr "Trenutna plejlista"
 
 msgctxt "#31013"
 msgid "Muted"
-msgstr ""
+msgstr "Utišano"
 
 msgctxt "#31014"
 msgid "Next Movie"
-msgstr ""
+msgstr "Sljedeći film"
 
 msgctxt "#31015"
 msgid "Next Video"
-msgstr ""
+msgstr "Sljedeći video"
 
 msgctxt "#31016"
 msgid "Settings level"
-msgstr ""
+msgstr "Nivo postavki"
 
 msgctxt "#31017"
 msgid "View all of your enabled and disabled Addons."
-msgstr ""
+msgstr "Pogledajte sve omogućene i onemogućene dodatke."
 
 msgctxt "#31018"
 msgid "View Addons that have updates available."
-msgstr ""
+msgstr "Pogledajte dodatke koji imaju dostupna ažuriranja."
 
 msgctxt "#31019"
 msgid "View Addons that are currently being downloaded."
-msgstr ""
+msgstr "Pogledajte dodatke koji se trenutno preuzimaju."
 
 msgctxt "#31020"
 msgid "View all the system Addons including Dependencies, Orphaned Dependencies, and Running Addons."
-msgstr ""
+msgstr "Pogledajte sve sistemske dodatke, uključujući zavisnosti, napuštene zavisnosti i aktivne dodatke."
 
 msgctxt "#31021"
 msgid "Download Addons from your installed repos."
-msgstr ""
+msgstr "Preuzmite dodatke iz instaliranih repozitorija."
 
 msgctxt "#31022"
 msgid "Update[CR]Now"
-msgstr ""
+msgstr "Ažuriraj[CR]Odmah"
 
 msgctxt "#31023"
 msgid "Special[CR]Features"
-msgstr ""
+msgstr "Specijalne[CR]karakteristike"
 
 msgctxt "#31024"
 msgid "Movie Sets"
-msgstr ""
+msgstr "Filmski setovi"
 
 msgctxt "#31025"
 msgid "Notice"
-msgstr ""
+msgstr "Obavještenje"
 
 msgctxt "#31026"
 msgid "Overview"
-msgstr ""
+msgstr "Pregled"
 
 msgctxt "#31027"
 msgid "Install Addons using the file browser."
-msgstr ""
+msgstr "Instalirajte dodatke pomoću preglednika datoteka."
 
 msgctxt "#31028"
 msgid "Search for an Addon from your installed repos."
-msgstr ""
+msgstr "Potražite dodatak (Addon) iz instaliranih repozitorija."
 
 msgctxt "#31029"
 msgid "Addon Details"
-msgstr ""
+msgstr "Detalji o dodatku"
 
 msgctxt "#31030"
 msgid "Customise the home menu to your liking with the Skin Shortcuts script."
-msgstr ""
+msgstr "Prilagodite početni meni svojim željama pomoću skripte Skin Shortcuts."
 
 msgctxt "#31031"
 msgid "Customise the shutdown menu to include your favourite actions."
-msgstr ""
+msgstr "Prilagodite meni za isključivanje kako biste uključili svoje omiljene radnje."
 
 msgctxt "#31032"
 msgid "Hide thumbnails for unwatched episodes to avoid possible spoilers."
-msgstr ""
+msgstr "Sakrijte sličice za nepogledane epizode kako biste izbjegli moguće spojlere."
 
 msgctxt "#31033"
 msgid "Launch Now"
-msgstr ""
+msgstr "Pokreni sada"
 
 msgctxt "#31034"
 msgid "Select which Rotten Tomatoes rating to use."
-msgstr ""
+msgstr "Odaberite koju ocjenu Rotten Tomatoes želite koristiti."
 
 msgctxt "#31035"
 msgid "Still there?"
-msgstr ""
+msgstr "Još uvijek tu?"
 
 msgctxt "#31036"
 msgid "Displays fanart for your media in the background."
-msgstr ""
+msgstr "Prikazuje fanart za vaše medije u pozadini."
 
 msgctxt "#31037"
 msgid "Press [B]BACK[/B] to keep current settings or [B]OK[/B] to reset."
-msgstr ""
+msgstr "Pritisnite [B]NAZAD[/B] da zadržite trenutne postavke ili [B]OK[/B] da ih resetujete."
 
 msgctxt "#31038"
 msgid "Select your scrapers certification county."
-msgstr ""
+msgstr "Odaberite županiju za koju želite dobiti certifikat za strugače."
 
 msgctxt "#31039"
 msgid "Enable debug grid.[CR]Useful when skinning."
-msgstr ""
+msgstr "Omogući mrežu za otklanjanje grešaka.[CR]Korisno prilikom skinovanja."
 
 msgctxt "#31040"
 msgid "Enable debug info.[CR]Useful for bug reporting."
-msgstr ""
+msgstr "Omogući informacije o otklanjanju grešaka.[CR]Korisno za prijavljivanje grešaka."
 
 msgctxt "#31041"
 msgid "Debug grid"
-msgstr ""
+msgstr "Mreža za otklanjanje grešaka"
 
 msgctxt "#31042"
 msgid "Debug labels"
-msgstr ""
+msgstr "Oznake za otklanjanje grešaka"
 
 msgctxt "#31043"
 msgid "Turn Off Randomise"
-msgstr ""
+msgstr "Isključi nasumično"
 
 msgctxt "#31044"
 msgid "Local subtitle found!"
-msgstr ""
+msgstr "Pronađen lokalni titl!"
 
 msgctxt "#31045"
 msgid "Turn On Randomise"
-msgstr ""
+msgstr "Uključi nasumično"
 
 msgctxt "#31046"
 msgid "Turn Off Shuffle All"
-msgstr ""
+msgstr "Isključi nasumično reproduciranje svega"
 
 msgctxt "#31047"
 msgid "Visualisation presets"
-msgstr ""
+msgstr "Unaprijed postavljene postavke vizualizacije"
 
 msgctxt "#31048"
 msgid "Playlist Options"
-msgstr ""
+msgstr "Opcije liste za reprodukciju"
 
 msgctxt "#31049"
 msgid "Customise Home Menu"
-msgstr ""
+msgstr "Prilagodite početni meni"
 
 msgctxt "#31050"
 msgid "TV Shows starring"
-msgstr ""
+msgstr "TV emisije u kojima glume"
 
 msgctxt "#31051"
 msgid "Images"
-msgstr ""
+msgstr "Slike"
 
 msgctxt "#31052"
 msgid "Turn On[CR]Shuffle All"
-msgstr ""
+msgstr "Uključi[CR]Nasumično reproduciraj sve"
 
 msgctxt "#31053"
 msgid "Turn Off[CR]Repeat"
-msgstr ""
+msgstr "Isključi [CR]Ponavljanje"
 
 msgctxt "#31054"
 msgid "Repeat This[CR]Item"
-msgstr ""
+msgstr "Ponovi ovu stavku[CR]"
 
 msgctxt "#31055"
 msgid "Turn On[CR]Repeat All"
-msgstr ""
+msgstr "Uključi [CR]Ponovi sve"
 
 msgctxt "#31056"
 msgid "Move, copy and delete your files with KODI's built-in file manager."
-msgstr ""
+msgstr "Premještajte, kopirajte i brišite datoteke pomoću ugrađenog upravitelja datoteka u KODI-ju."
 
 msgctxt "#31057"
 msgid "Watch[CR]Again"
-msgstr ""
+msgstr "Gledaj ponovo"
 
 msgctxt "#31058"
 msgid "Today's weather:"
-msgstr ""
+msgstr "Današnje vrijeme:"
 
 msgctxt "#31059"
 msgid "Tonight's weather:"
-msgstr ""
+msgstr "Vrijeme za večeras:"
 
 msgctxt "#31060"
 msgid "Play Now"
-msgstr ""
+msgstr "Igraj sada"
 
 msgctxt "#31061"
 msgid "Enable X-Ray"
-msgstr ""
+msgstr "Omogući rendgenski snimak"
 
 msgctxt "#31062"
 msgid "Choose Thumb"
-msgstr ""
+msgstr "Odaberite sličicu"
 
 msgctxt "#31063"
 msgid "Enables Cast info during video playback.[CR]Note: Can be CPU intensive."
-msgstr ""
+msgstr "Omogućava emitiranje informacija tokom reprodukcije videa.[CR]Napomena: Može intenzivno koristiti procesor."
 
 msgctxt "#31064"
 msgid "Browse[CR]Season"
-msgstr ""
+msgstr "Pregledaj[CR]Sezona"
 
 msgctxt "#31065"
 msgid "Browse[CR]Movie Set"
-msgstr ""
+msgstr "Pregledaj[CR]Filmski set"
 
 msgctxt "#31066"
 msgid "Movies in this Set"
-msgstr ""
+msgstr "Filmovi u ovom setu"
 
 # empty strings from id 31064 to 31066
 msgctxt "#31067"
 msgid "Choose Fanart"
-msgstr ""
+msgstr "Odaberite umjetničko djelo obožavatelja"
 
 msgctxt "#31068"
 msgid "IP"
-msgstr ""
+msgstr "IP adresa"
 
 msgctxt "#31069"
 msgid "Images for"
-msgstr ""
+msgstr "Slike za"
 
 msgctxt "#31070"
 msgid "Suggested"
-msgstr ""
+msgstr "Predloženo"
 
 msgctxt "#31071"
 msgid "Starring"
-msgstr ""
+msgstr "U glavnim ulogama"
 
 msgctxt "#31072"
 msgid "Directed by"
-msgstr ""
+msgstr "Režija"
 
 msgctxt "#31073"
 msgid "Next episode"
-msgstr ""
+msgstr "Sljedeća epizoda"
 
 msgctxt "#31074"
 msgid "Browse[CR]TV Show"
-msgstr ""
+msgstr "Pregledajte [CR]TV emisiju"
 
 msgctxt "#31075"
 msgid "Play[CR]Trailer"
-msgstr ""
+msgstr "Reproduciraj[CR]Trailer"
 
 msgctxt "#31076"
 msgid "Cast and Role"
-msgstr ""
+msgstr "Glumci i uloge"
 
 msgctxt "#31077"
 msgid "Viewers Also Watched"
-msgstr ""
+msgstr "Gledaoci su također gledali"
 
 msgctxt "#31078"
 msgid "Sorry, nothing found."
-msgstr ""
+msgstr "Žao nam je, ništa nije pronađeno."
 
 msgctxt "#31079"
 msgid "Daily"
-msgstr ""
+msgstr "Svakodnevno"
 
 msgctxt "#31080"
 msgid "Enable Extra Information"
-msgstr ""
+msgstr "Omogući dodatne informacije"
 
 msgctxt "#31081"
 msgid "Uses extra information provided by TheMovieDb Helper"
-msgstr ""
+msgstr "Koristi dodatne informacije koje pruža TheMovieDb Helper"
 
 msgctxt "#31082"
 msgid "Last aired"
-msgstr ""
+msgstr "Posljednje emitiranje"
 
 msgctxt "#31083"
 msgid "Yesterday"
-msgstr ""
+msgstr "Jučer"
 
 msgctxt "#31084"
 msgid "Today"
-msgstr ""
+msgstr "Danas"
 
 # empty strings from id 31079 to 31084
 msgctxt "#31085"
 msgid "Shutdown Menu"
-msgstr ""
+msgstr "Meni za isključivanje"
 
 msgctxt "#31086"
 msgid "Sorted by"
-msgstr ""
+msgstr "Sortirano po"
 
 msgctxt "#31087"
 msgid "Unavailable"
@@ -386,692 +386,692 @@ msgstr "Nedostupno"
 # empty string with id 31087
 msgctxt "#31088"
 msgid "Current Playlist"
-msgstr ""
+msgstr "Trenutna plejlista"
 
 msgctxt "#31089"
 msgid "View Options"
-msgstr ""
+msgstr "Opcije prikaza"
 
 msgctxt "#31090"
 msgid "Update Library"
-msgstr ""
+msgstr "Ažuriraj biblioteku"
 
 msgctxt "#31091"
 msgid "Stop scanning"
-msgstr ""
+msgstr "Zaustavi skeniranje"
 
 msgctxt "#31092"
 msgid "Sort By"
-msgstr ""
+msgstr "Sortiraj rezultate"
 
 msgctxt "#31093"
 msgid "Filter By"
-msgstr ""
+msgstr "Filtriraj po"
 
 msgctxt "#31094"
 msgid "Save Playlist"
-msgstr ""
+msgstr "Sačuvaj plejlistu"
 
 msgctxt "#31095"
 msgid "Clear Playlist"
-msgstr ""
+msgstr "Obriši listu za reprodukciju"
 
 msgctxt "#31096"
 msgid "Play[CR]Album"
-msgstr ""
+msgstr "Reproduciraj[CR]Album"
 
 msgctxt "#31097"
 msgid "Play[CR]Song"
-msgstr ""
+msgstr "Reproduciraj[CR]pjesmu"
 
 # empty strings from id 31096 to 31097
 msgctxt "#31098"
 msgid "Press 'Continue?' to watch the next episode or 'Cancel' to stop watching."
-msgstr ""
+msgstr "Pritisnite 'Nastavi?' da biste gledali sljedeću epizodu ili 'Otkaži' da biste prestali gledati."
 
 msgctxt "#31099"
 msgid "Start Slideshow"
-msgstr ""
+msgstr "Pokreni slajdšou"
 
 msgctxt "#31100"
 msgid "Game Addons"
-msgstr ""
+msgstr "Dodaci za igre"
 
 msgctxt "#31101"
 msgid "Apps"
-msgstr ""
+msgstr "Aplikacije"
 
 msgctxt "#31102"
 msgid "Now playing"
-msgstr ""
+msgstr "U tijeku"
 
 msgctxt "#31103"
 msgid "Addons"
-msgstr ""
+msgstr "Dodaci"
 
 msgctxt "#31104"
 msgid "Cinema Experience"
-msgstr ""
+msgstr "Kino iskustvo"
 
 msgctxt "#31105"
 msgid "Your Addons"
-msgstr ""
+msgstr "Vaši dodaci"
 
 msgctxt "#31106"
 msgid "Now Playing"
-msgstr ""
+msgstr "Trenutno se reproducira"
 
 msgctxt "#31107"
 msgid "TV Roles"
-msgstr ""
+msgstr "TV uloge"
 
 msgctxt "#31108"
 msgid "Known for"
-msgstr ""
+msgstr "Poznat po"
 
 msgctxt "#31109"
 msgid "Watch[CR]Now"
-msgstr ""
+msgstr "Gledajte[CR]Sada"
 
 msgctxt "#31110"
 msgid "Written by"
-msgstr ""
+msgstr "Napisao/la"
 
 msgctxt "#31111"
 msgid "Episode Wide"
-msgstr ""
+msgstr "Širom epizode"
 
 msgctxt "#31112"
 msgid "Song List"
-msgstr ""
+msgstr "Lista pjesama"
 
 msgctxt "#31113"
 msgid "Recommended viewing"
-msgstr ""
+msgstr "Preporučeno gledanje"
 
 # empty strings from id 31111 to 31113
 msgctxt "#31114"
 msgid "Customise Shutdown Menu"
-msgstr ""
+msgstr "Prilagodite meni za isključivanje"
 
 msgctxt "#31115"
 msgid "Configure your Skin, Region, Control, Screensaver, and Master Lock settings."
-msgstr ""
+msgstr "Konfigurišite postavke za Skin, Regiju, Kontrolu, Čuvar ekrana i Glavno zaključavanje."
 
 msgctxt "#31116"
 msgid "Manage, browse for, install and modify Addons."
-msgstr ""
+msgstr "Upravljajte, pretražujte, instalirajte i mijenjajte dodatke (Addons)."
 
 msgctxt "#31117"
 msgid "Configure the handling and playback settings for Video, Music, and Pictures."
-msgstr ""
+msgstr "Konfigurišite postavke rukovanja i reprodukcije za video, muziku i slike."
 
 msgctxt "#31118"
 msgid "Configure the media list display, information, and database settings."
-msgstr ""
+msgstr "Konfigurišite prikaz liste medija, informacije i postavke baze podataka."
 
 msgctxt "#31119"
 msgid "Hardware decoding is active"
-msgstr ""
+msgstr "Hardversko dekodiranje je aktivno"
 
 msgctxt "#31120"
 msgid "Hardware decoding is inactive"
-msgstr ""
+msgstr "Hardversko dekodiranje je neaktivno"
 
 msgctxt "#31121"
 msgid "Setup and calibrate displays, configure audio output, setup remote controls, set power saving options, enable debugging and setup master lock."
-msgstr ""
+msgstr "Podesite i kalibrirajte ekrane, konfigurirajte audio izlaz, podesite daljinske upravljače, postavite opcije za uštedu energije, omogućite otklanjanje grešaka i postavite glavnu bravu."
 
 msgctxt "#31122"
 msgid "Setup control of Kodi via UPnP and HTTP, configure file sharing, enable Zeroconf and configure AirPlay."
-msgstr ""
+msgstr "Podesite kontrolu Kodija putem UPnP-a i HTTP-a, konfigurirajte dijeljenje datoteka, omogućite Zeroconf i konfigurirajte AirPlay."
 
 msgctxt "#31123"
 msgid "Profiles, File Manager, System Information and Settings Level."
-msgstr ""
+msgstr "Profili, Upravitelj datoteka, Informacije o sistemu i Nivo postavki."
 
 msgctxt "#31124"
 msgid "Personalise your experience with profiles. Includes enabling login screen, profile creation and management."
-msgstr ""
+msgstr "Personalizirajte svoje iskustvo s profilima. Uključuje omogućavanje ekrana za prijavu, kreiranje i upravljanje profilima."
 
 msgctxt "#31125"
 msgid "Login"
-msgstr ""
+msgstr "Prijava"
 
 msgctxt "#31126"
 msgid "Last login"
-msgstr ""
+msgstr "Posljednja prijava"
 
 msgctxt "#31127"
 msgid "View your system's information. Includes storage, network, and hardware information."
-msgstr ""
+msgstr "Pogledajte informacije o vašem sistemu. Uključuje informacije o pohrani, mreži i hardveru."
 
 msgctxt "#31128"
 msgid "About"
-msgstr ""
+msgstr "O tome"
 
 msgctxt "#31129"
 msgid "Kodi"
-msgstr ""
+msgstr "Kodi"
 
 msgctxt "#31130"
 msgid "TV Show Wide"
-msgstr ""
+msgstr "TV emisija u cijelosti"
 
 msgctxt "#31132"
 msgid "Continue watching?"
-msgstr ""
+msgstr "Nastaviti gledanje?"
 
 msgctxt "#31134"
 msgid "Enable Fanart"
-msgstr ""
+msgstr "Omogući fanart"
 
 msgctxt "#31135"
 msgid "Select Rating Country"
-msgstr ""
+msgstr "Odaberite zemlju ocjenjivanja"
 
 msgctxt "#31136"
 msgid "DVD Menu"
-msgstr ""
+msgstr "DVD meni"
 
 msgctxt "#31137"
 msgid "Video Options"
-msgstr ""
+msgstr "Opcije videa"
 
 msgctxt "#31138"
 msgid "Colour Management"
-msgstr ""
+msgstr "Upravljanje bojama"
 
 msgctxt "#31139"
 msgid "Select + X"
-msgstr ""
+msgstr "Odaberite + X"
 
 msgctxt "#31140"
 msgid "Select + Start"
-msgstr ""
+msgstr "Odaberite + Početak"
 
 msgctxt "#31141"
 msgid "Select + Right Stick"
-msgstr ""
+msgstr "Odaberi + Desna palica"
 
 msgctxt "#31142"
 msgid "Peripheral dialog"
-msgstr ""
+msgstr "Periferni dijalog"
 
 # empty strings from id 31138 to 31142
 msgctxt "#31143"
 msgid "This will undo any changes you've made to the home menu and widgets."
-msgstr ""
+msgstr "Ovo će poništiti sve promjene koje ste napravili u početnom meniju i widgetima."
 
 msgctxt "#31144"
 msgid "Game rotation dialog"
-msgstr ""
+msgstr "Dijalog za rotaciju igre"
 
 # empty string with id 31144
 msgctxt "#31145"
 msgid "percent remaining"
-msgstr ""
+msgstr "preostali postotak"
 
 msgctxt "#31146"
 msgid "Special"
-msgstr ""
+msgstr "Posebno"
 
 msgctxt "#31147"
 msgid "minutes"
-msgstr ""
+msgstr "minuta"
 
 msgctxt "#31148"
 msgid "hours"
-msgstr ""
+msgstr "sati"
 
 msgctxt "#31149"
 msgid "Lyrics settings"
-msgstr ""
+msgstr "Postavke teksta pjesama"
 
 msgctxt "#31150"
 msgid "Hides the Stop, Play, Pause, etc buttons from the music and video OSD."
-msgstr ""
+msgstr "Skriva dugmad Stop, Play, Pause itd. iz OSD menija za muziku i video."
 
 msgctxt "#31151"
 msgid "Creator"
-msgstr ""
+msgstr "Kreator"
 
 msgctxt "#31152"
 msgid "Air Date"
-msgstr ""
+msgstr "Datum emitiranja"
 
 msgctxt "#31153"
 msgid "3D Mode"
-msgstr ""
+msgstr "3D način rada"
 
 msgctxt "#31154"
 msgid "Profile"
-msgstr ""
+msgstr "Profil"
 
 msgctxt "#31155"
 msgid "Build Version"
-msgstr ""
+msgstr "Verzija izgradnje"
 
 msgctxt "#31156"
 msgid "Capacity"
-msgstr ""
+msgstr "Kapacitet"
 
 msgctxt "#31157"
 msgid "Current Date and Time"
-msgstr ""
+msgstr "Trenutni datum i vrijeme"
 
 msgctxt "#31158"
 msgid "Device Name"
-msgstr ""
+msgstr "Naziv uređaja"
 
 msgctxt "#31159"
 msgid "Wide"
-msgstr ""
+msgstr "Široko"
 
 msgctxt "#31160"
 msgid "Poster"
-msgstr ""
+msgstr "Poster"
 
 msgctxt "#31161"
 msgid "Square Info"
-msgstr ""
+msgstr "Informacije o trgu"
 
 msgctxt "#31162"
 msgid "Show"
-msgstr ""
+msgstr "Prikaz"
 
 msgctxt "#31163"
 msgid "Start Party Mode"
-msgstr ""
+msgstr "Pokreni način rada za zabavu"
 
 msgctxt "#31164"
 msgid "Next Up"
-msgstr ""
+msgstr "Sljedeće"
 
 msgctxt "#31165"
 msgid "Choose[CR]Art"
-msgstr ""
+msgstr "Odaberite[CR]Art"
 
 msgctxt "#31166"
 msgid "Open Visualiser"
-msgstr ""
+msgstr "Otvori vizualizator"
 
 msgctxt "#31167"
 msgid "Recently Added Movies"
-msgstr ""
+msgstr "Nedavno dodani filmovi"
 
 msgctxt "#31168"
 msgid "Your Movies"
-msgstr ""
+msgstr "Vaši filmovi"
 
 msgctxt "#31169"
 msgid "In Progress Movies"
-msgstr ""
+msgstr "Filmovi u toku"
 
 msgctxt "#31170"
 msgid "Kids Movies"
-msgstr ""
+msgstr "Dječiji filmovi"
 
 msgctxt "#31171"
 msgid "Game saves"
-msgstr ""
+msgstr "Sačuvane igre"
 
 msgctxt "#31172"
 msgid "Square List"
-msgstr ""
+msgstr "Kvadratna lista"
 
 # empty strings from id 31171 to 31172
 msgctxt "#31173"
 msgid "In-game saves"
-msgstr ""
+msgstr "Sačuvane slike u igri"
 
 # empty strings from id 31171 to 31173
 msgctxt "#31174"
 msgid "Top Rated Movies"
-msgstr ""
+msgstr "Najbolje ocijenjeni filmovi"
 
 msgctxt "#31175"
 msgid "Recently Updated TV Shows"
-msgstr ""
+msgstr "Nedavno ažurirane TV emisije"
 
 msgctxt "#31176"
 msgid "Your TV Shows"
-msgstr ""
+msgstr "Vaše TV emisije"
 
 msgctxt "#31177"
 msgid "In Progress TV Shows"
-msgstr ""
+msgstr "TV emisije u toku"
 
 msgctxt "#31178"
 msgid "Kids TV Shows"
-msgstr ""
+msgstr "Dječije TV emisije"
 
 msgctxt "#31179"
 msgid "Playlist options"
-msgstr ""
+msgstr "Opcije liste za reprodukciju"
 
 msgctxt "#31180"
 msgid "Choose view"
-msgstr ""
+msgstr "Odaberite prikaz"
 
 msgctxt "#31181"
 msgid "Collection"
-msgstr ""
+msgstr "Kolekcija"
 
 # empty strings from id 31179 to 31181
 msgctxt "#31182"
 msgid "Top Rated TV Shows"
-msgstr ""
+msgstr "Najbolje ocijenjene TV emisije"
 
 msgctxt "#31183"
 msgid "Recently Played Albums"
-msgstr ""
+msgstr "Nedavno reproducirani albumi"
 
 msgctxt "#31184"
 msgid "Your Albums"
-msgstr ""
+msgstr "Vaši albumi"
 
 msgctxt "#31185"
 msgid "Recently Added Albums"
-msgstr ""
+msgstr "Nedavno dodani albumi"
 
 msgctxt "#31186"
 msgid "Your Artists"
-msgstr ""
+msgstr "Vaši umjetnici"
 
 msgctxt "#31187"
 msgid "Your Genres"
-msgstr ""
+msgstr "Vaši žanrovi"
 
 msgctxt "#31188"
 msgid "Manage[CR]Versions"
-msgstr ""
+msgstr "Upravljanje verzijama [CR]"
 
 msgctxt "#31189"
 msgid "Manage[CR]Extras"
-msgstr ""
+msgstr "Upravljanje dodatnim sadržajima [CR]"
 
 msgctxt "#31190"
 msgid "Age"
-msgstr ""
+msgstr "Dob"
 
 msgctxt "#31191"
 msgid "years old"
-msgstr ""
+msgstr "godina"
 
 msgctxt "#31192"
 msgid "Director"
-msgstr ""
+msgstr "Redatelj"
 
 msgctxt "#31193"
 msgid "Now Playing"
-msgstr ""
+msgstr "Trenutno se reproducira"
 
 # empty strings from id 31187 to 31193
 msgctxt "#31194"
 msgid "Submit"
-msgstr ""
+msgstr "Pošalji"
 
 msgctxt "#31195"
 msgid "Ended"
-msgstr ""
+msgstr "Završeno"
 
 msgctxt "#31196"
 msgid "Cancelled"
-msgstr ""
+msgstr "Otkazano"
 
 msgctxt "#31197"
 msgid "Subtitle streams"
-msgstr ""
+msgstr "Strimovi titlova"
 
 msgctxt "#31198"
 msgid "View Type"
-msgstr ""
+msgstr "Vrsta prikaza"
 
 msgctxt "#31199"
 msgid "Label Overlay"
-msgstr ""
+msgstr "Prekrivanje etikete"
 
 msgctxt "#31200"
 msgid "Enter Name"
-msgstr ""
+msgstr "Unesite ime"
 
 msgctxt "#31201"
 msgid "Choose Shortcut"
-msgstr ""
+msgstr "Odaberite prečicu"
 
 msgctxt "#31202"
 msgid "Order"
-msgstr ""
+msgstr "Redoslijed"
 
 msgctxt "#31203"
 msgid "Square"
-msgstr ""
+msgstr "Kvadrat"
 
 msgctxt "#31204"
 msgid "Movies starring"
-msgstr ""
+msgstr "Filmovi u kojima glume"
 
 msgctxt "#31205"
 msgid "Refresh Information"
-msgstr ""
+msgstr "Osvježi informacije"
 
 msgctxt "#31206"
 msgid "Enable Auto-Update"
-msgstr ""
+msgstr "Omogući automatsko ažuriranje"
 
 msgctxt "#31207"
 msgid "Disable Auto-Update"
-msgstr ""
+msgstr "Onemogući automatsko ažuriranje"
 
 msgctxt "#31208"
 msgid "Enable Higher Levels"
-msgstr ""
+msgstr "Omogući više nivoe"
 
 msgctxt "#31209"
 msgid "Disable Higher Levels"
-msgstr ""
+msgstr "Onemogući više nivoe"
 
 msgctxt "#31210"
 msgid "Widget Group 1"
-msgstr ""
+msgstr "Grupa widgeta 1"
 
 msgctxt "#31211"
 msgid "Widget Group 2"
-msgstr ""
+msgstr "Grupa widgeta 2"
 
 msgctxt "#31212"
 msgid "Widget Group 3"
-msgstr ""
+msgstr "Grupa widgeta 3"
 
 msgctxt "#31213"
 msgid "Widget Group 4"
-msgstr ""
+msgstr "Grupa widgeta 4"
 
 msgctxt "#31214"
 msgid "Widget Group 5"
-msgstr ""
+msgstr "Grupa widgeta 5"
 
 msgctxt "#31215"
 msgid "Widget Group 6"
-msgstr ""
+msgstr "Grupa widgeta 6"
 
 msgctxt "#31216"
 msgid "Widget Group 7"
-msgstr ""
+msgstr "Grupa widgeta 7"
 
 msgctxt "#31217"
 msgid "Widget Group 8"
-msgstr ""
+msgstr "Grupa widgeta 8"
 
 msgctxt "#31218"
 msgid "Select Widget Group"
-msgstr ""
+msgstr "Odaberite grupu widgeta"
 
 msgctxt "#31219"
 msgid "Customise Widget Group"
-msgstr ""
+msgstr "Prilagodi grupu widgeta"
 
 msgctxt "#31220"
 msgid "Audio streams"
-msgstr ""
+msgstr "Audio streamovi"
 
 # empty string with id 31220
 msgctxt "#31221"
 msgid "Music Addons"
-msgstr ""
+msgstr "Muzički dodaci"
 
 msgctxt "#31222"
 msgid "Program Addons"
-msgstr ""
+msgstr "Dodaci za program"
 
 # empty strings from id 31220 to 31222
 msgctxt "#31223"
 msgid "Video Addons"
-msgstr ""
+msgstr "Video dodaci"
 
 msgctxt "#31224"
 msgid "Picture Addons"
-msgstr ""
+msgstr "Dodaci za slike"
 
 msgctxt "#31225"
 msgid "Video streams"
-msgstr ""
+msgstr "Video streamovi"
 
 msgctxt "#31226"
 msgid "Play speed"
-msgstr ""
+msgstr "Brzina reprodukcije"
 
 # empty strings from id 31225 to 31226
 msgctxt "#31227"
 msgid "Air time"
-msgstr ""
+msgstr "Vrijeme emitiranja"
 
 msgctxt "#31228"
 msgid "Visualisation settings"
-msgstr ""
+msgstr "Postavke vizualizacije"
 
 # empty string with id 31228
 msgctxt "#31229"
 msgid "Cancel Next Up"
-msgstr ""
+msgstr "Otkaži sljedeće"
 
 msgctxt "#31230"
 msgid "Sorry, no shows are airing at this time."
-msgstr ""
+msgstr "Žao nam je, trenutno se ne emituju emisije."
 
 msgctxt "#31231"
 msgid "Please try again later."
-msgstr ""
+msgstr "Molimo pokušajte ponovo kasnije."
 
 msgctxt "#31233"
 msgid "View All Cast"
-msgstr ""
+msgstr "Pogledajte sve glumce"
 
 msgctxt "#31234"
 msgid "Browse Addons"
-msgstr ""
+msgstr "Pregledajte dodatke"
 
 msgctxt "#31235"
 msgid "Your rating"
-msgstr ""
+msgstr "Vaša ocjena"
 
 msgctxt "#31236"
 msgid "Your_rating"
-msgstr ""
+msgstr "Vaša ocjena"
 
 msgctxt "#31237"
 msgid "Select your rating"
-msgstr ""
+msgstr "Odaberite svoju ocjenu"
 
 msgctxt "#31238"
 msgid "This is your own personal rating and is only stored locally"
-msgstr ""
+msgstr "Ovo je vaša lična ocjena i pohranjuje se samo lokalno"
 
 msgctxt "#31239"
 msgid "Press play to resume"
-msgstr ""
+msgstr "Pritisnite play za nastavak"
 
 msgctxt "#31240"
 msgid "Not rated"
-msgstr ""
+msgstr "Nije ocijenjeno"
 
 msgctxt "#31241"
 msgid "I hate it"
-msgstr ""
+msgstr "Mrzim to"
 
 msgctxt "#31242"
 msgid "I don't like it"
-msgstr ""
+msgstr "Ne sviđa mi se"
 
 msgctxt "#31243"
 msgid "It's okay"
-msgstr ""
+msgstr "U redu je"
 
 msgctxt "#31244"
 msgid "I like it"
-msgstr ""
+msgstr "Sviđa mi se"
 
 msgctxt "#31245"
 msgid "I love it"
-msgstr ""
+msgstr "Volim to"
 
 msgctxt "#31246"
 msgid "Location"
-msgstr ""
+msgstr "Lokacija"
 
 msgctxt "#31247"
 msgid "Media Processing Info"
-msgstr ""
+msgstr "Informacije o obradi medija"
 
 msgctxt "#31248"
 msgid "Order"
-msgstr ""
+msgstr "Redoslijed"
 
 msgctxt "#31249"
 msgid "View Addons that have recently been updated."
-msgstr ""
+msgstr "Pogledajte dodatke koji su nedavno ažurirani."
 
 msgctxt "#31250"
 msgid "Configure various game settings."
-msgstr ""
+msgstr "Konfigurišite različite postavke igre."
 
 msgctxt "#31252"
 msgid "This skin only supports a maximum of 13 home menu items. Please remove some to ensure everything works correctly."
-msgstr ""
+msgstr "Ova koža podržava maksimalno 13 stavki početnog menija. Molimo vas da uklonite neke kako biste osigurali da sve ispravno funkcioniše."
 
 msgctxt "#31253"
 msgid "No items found in Your Favourites"
-msgstr ""
+msgstr "Nema pronađenih artikala u Vašim favoritima"
 
 msgctxt "#31254"
 msgid "When you add Favourites they will appear here"
-msgstr ""
+msgstr "Kada dodate favorite, oni će se pojaviti ovdje"
 
 msgctxt "#31255"
 msgid "Reset Home Menu"
-msgstr ""
+msgstr "Resetuj početni meni"
 
 msgctxt "#31256"
 msgid "What's[CR]New"
-msgstr ""
+msgstr "Šta je[CR]Novo"
 
 msgctxt "#31257"
 msgid "Rotten Tomatoes Rating"
-msgstr ""
+msgstr "Ocjena na Rotten Tomatoes"
 
 msgctxt "#31258"
 msgid "TomatoMeter All Critics"
-msgstr ""
+msgstr "TomatoMeter Svi kritičari"
 
 msgctxt "#31259"
 msgid "TomatoMeter Audience Score"
-msgstr ""
+msgstr "TomatoMeter ocjena publike"
 
 msgctxt "#31260"
 msgid "Average Rating All Critics"
-msgstr ""
+msgstr "Prosječna ocjena svih kritičara"
 
 msgctxt "#31261"
 msgid "Average Rating Audience Score"
-msgstr ""
+msgstr "Prosječna ocjena publike"
