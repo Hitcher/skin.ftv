@@ -1440,8 +1440,6 @@
 		<value>views/movie_fallback.png</value>
 	</variable>
 	<variable name="SeasonValue">
-		<value condition="!String.IsEqual(ListItem.Season,0) + !String.IsEmpty(ListItem.Season)">$INFO[ListItem.Season,$LOCALIZE[20373] ]</value>
-		<value condition="String.IsEqual(ListItem.Season,0)">$LOCALIZE[20381]</value>
 		<value>$INFO[ListItem.Label]</value>
 	</variable>
 	<variable name="MusicInfoButton8">
@@ -1681,8 +1679,8 @@
 	</variable>
 	<variable name="Plot">
 		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode)] + !String.IsEmpty(ListItem.PlotOutline)">$INFO[ListItem.PlotOutline]</value>
-		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode)] + !String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
-		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode)] + !String.IsEmpty(Container.ShowPlot)">$INFO[Container(99950).ListItem.Plot]</value>
+		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode)] + !String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
+		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode)] + !String.IsEmpty(Container(99950).ListItem.Plot)">$INFO[Container(99950).ListItem.Plot]</value>
 		<value condition="!String.IsEmpty(Container.ShowPlot)">$INFO[Container.ShowPlot]</value>
 		<value condition="String.IsEqual(ListItem.Property(tmdb_type),person) + !String.IsEmpty(ListItem.Property(Biography))">[COLOR $VAR[ExtendedInfoLabelColor]][B]$LOCALIZE[21887]:[/B][/COLOR]  [LIGHT]$INFO[ListItem.Property(Biography)][/LIGHT]</value>
 		<value>[COLOR 00ffffff]empty[/COLOR]</value>
