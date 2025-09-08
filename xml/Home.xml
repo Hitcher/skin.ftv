@@ -17,7 +17,7 @@
 			<!-- Hidden control to load weather conditions -->
 			<control type="label">
 				<font/>
-				<label>$INFO[Weather.Conditions]</label>
+				<label>$INFO[Weather.Data(Current.Condition)]</label>
 			</control>
 			<control id="9001" type="list">
 				<include>HiddenList</include>

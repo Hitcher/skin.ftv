@@ -1401,35 +1401,35 @@
 	</include>
 	<include name="WeatherHourlyItem">
 		<item>
-			<label>$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Time)]</label>
-			<label2>$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Temperature)] &#x2022; $INFO[Window(weather).Property(Hourly.$PARAM[item_index].Precipitation)]</label2>
-			<icon>resource://resource.images.weathericons.default/$INFO[Window(weather).Property(Hourly.$PARAM[item_index].OutlookIcon)]</icon>
+			<label>$INFO[Weather.Data(Hourly.$PARAM[item_index].Time)]</label>
+			<label2>$INFO[Weather.Data(Hourly.$PARAM[item_index].Temperature)] &#x2022; $INFO[Weather.Data(Hourly.$PARAM[item_index].Precipitation)]</label2>
+			<icon>resource://resource.images.weathericons.default/$INFO[Weather.Data(Hourly.$PARAM[item_index].OutlookIcon)]</icon>
 			<onclick>noop</onclick>
-			<visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched)) + !String.IsEmpty(Window(weather).Property(Hourly.$PARAM[item_index].Outlook)) + String.IsEqual(Window(home).Property(Hourly),true)</visible>
+			<visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched)) + !String.IsEmpty(Weather.Data(Hourly.$PARAM[item_index].Outlook)) + String.IsEqual(Window(home).Property(Hourly),true)</visible>
 		</item>
 	</include>
 	<include name="WeatherDailyItem">
 		<item>
-			<label>$INFO[Window(weather).Property(Daily.$PARAM[item_index].ShortDay)]</label>
-			<label2>$INFO[Window(weather).Property(Daily.$PARAM[item_index].LowTemperature)] &#x2022; $INFO[Window(weather).Property(Daily.$PARAM[item_index].HighTemperature)]</label2>
-			<icon>$INFO[Window(weather).Property(Daily.$PARAM[item_index].FanartCode),weather/icons/,.png]</icon>
-			<property name="LongDay">$INFO[Window(weather).Property(Daily.$PARAM[item_index].LongDay)]</property>
-			<property name="Outlook">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Outlook)]</property>
-			<property name="Fanart">$INFO[Window(Weather).Property(Daily.$PARAM[item_index].FanartCode),weather/home/,.jpg]</property>
+			<label>$INFO[Weather.Data(Daily.$PARAM[item_index].ShortDay)]</label>
+			<label2>$INFO[Weather.Data(Daily.$PARAM[item_index].LowTemperature)] &#x2022; $INFO[Weather.Data(Daily.$PARAM[item_index].HighTemperature)]</label2>
+			<icon>$INFO[Weather.Data(Daily.$PARAM[item_index].FanartCode),weather/icons/,.png]</icon>
+			<property name="LongDay">$INFO[Weather.Data(Daily.$PARAM[item_index].LongDay)]</property>
+			<property name="Outlook">$INFO[Weather.Data(Daily.$PARAM[item_index].Outlook)]</property>
+			<property name="Fanart">$INFO[Weather.Data(Daily.$PARAM[item_index].FanartCode),weather/home/,.jpg]</property>
 			<onclick>noop</onclick>
-			<visible>!String.IsEmpty(Window(weather).Property(Daily.IsFetched)) + !String.IsEmpty(Window(weather).Property(Daily.$PARAM[item_index].Outlook)) + !String.IsEqual(Window(home).Property(Hourly),true)</visible>
+			<visible>!String.IsEmpty(Window(weather).Property(Daily.IsFetched)) + !String.IsEmpty(Weather.Data(Daily.$PARAM[item_index].Outlook)) + !String.IsEqual(Window(home).Property(Hourly),true)</visible>
 		</item>
 	</include>
 	<include name="WeatherDayItem">
 		<item>
 			<label>$VAR[Day$PARAM[item_index]]</label>
-			<label2>$INFO[Window(weather).Property(Day$PARAM[item_index].LowTemp)]$INFO[System.TemperatureUnits] &#x2022; $INFO[Window(weather).Property(Day$PARAM[item_index].HighTemp)]$INFO[System.TemperatureUnits]</label2>
-			<property name="LongDay">$INFO[Window(weather).Property(Day$PARAM[item_index].Title)]</property>
-			<property name="Outlook">$INFO[Window(weather).Property(Day$PARAM[item_index].Outlook)]</property>
-			<property name="Fanart">$INFO[Window(Weather).Property(Day$PARAM[item_index].FanartCode),weather/home/,.jpg]</property>
-			<icon>$INFO[Window(weather).Property(Day$PARAM[item_index].OutlookIcon)]</icon>
+			<label2>$INFO[Weather.Data(Day$PARAM[item_index].LowTemp)]$INFO[System.TemperatureUnits] &#x2022; $INFO[Weather.Data(Day$PARAM[item_index].HighTemp)]$INFO[System.TemperatureUnits]</label2>
+			<property name="LongDay">$INFO[Weather.Data(Day$PARAM[item_index].Title)]</property>
+			<property name="Outlook">$INFO[Weather.Data(Day$PARAM[item_index].Outlook)]</property>
+			<property name="Fanart">$INFO[Weather.Data(Day$PARAM[item_index].FanartCode),weather/home/,.jpg]</property>
+			<icon>$INFO[Weather.Data(Day$PARAM[item_index].OutlookIcon)]</icon>
 			<onclick>noop</onclick>
-			<visible>String.IsEmpty(Window(weather).Property(Daily.IsFetched)) + !String.IsEmpty(Window(weather).Property(Day$PARAM[item_index].Outlook)) + !String.IsEqual(Window(home).Property(Hourly),true)</visible>
+			<visible>String.IsEmpty(Window(weather).Property(Daily.IsFetched)) + !String.IsEmpty(Weather.Data(Day$PARAM[item_index].Outlook)) + !String.IsEqual(Window(home).Property(Hourly),true)</visible>
 		</item>
 	</include>
 	<include name="ParamWidgetInclude">
