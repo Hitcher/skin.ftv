@@ -14,11 +14,6 @@
 	<onload condition="System.HasAddon(script.skinshortcuts)">RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=99&amp;levels=0&amp;group=mainmenu|shutdown)</onload>
 	<controls>
 		<control type="group">
-			<!-- Hidden control to load weather conditions -->
-			<control type="label">
-				<font/>
-				<label>$INFO[Weather.Data(Current.Condition)]</label>
-			</control>
 			<control id="9001" type="list">
 				<include>HiddenList</include>
 				<content limit="4">favourites://</content>
