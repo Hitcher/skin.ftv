@@ -240,6 +240,21 @@
 					</control>
 				</focusedlayout>
 			</control>
+			<!-- Details -->
+			<control type="textbox">
+				<left>392</left>
+				<top>1614</top>
+				<width>2384</width>
+				<height>252</height>
+				<align>left</align>
+				<font>Reg30Spaced</font>
+				<pagecontrol>96</pagecontrol>
+				<autoscroll>false</autoscroll>
+				<textcolor>ffbcbcbc</textcolor>
+				<label>[B]$INFO[ListItem.Label][/B]</label>
+				<include>VisibleDelayFadeAnimation</include>
+				<animation delay="400" effect="fade" end="100" start="0" time="200">WindowOpen</animation>
+			</control>
 		</control>
 	</controls>
 </window>
