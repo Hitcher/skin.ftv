@@ -20,23 +20,6 @@
 				<bordertexture border="100" infill="false">views/shadow_fo.png</bordertexture>
 				<texture border="4">dialogs/DialogMessageBackground.png</texture>
 			</control>
-			<!-- Icon back -->
-			<control type="image">
-				<left>126</left>
-				<top>126</top>
-				<width>194</width>
-				<height>194</height>
-				<texture>dialogs/notification_icon.png</texture>
-			</control>
-			<!-- Info default -->
-			<control type="image">
-				<left>126</left>
-				<top>126</top>
-				<width>194</width>
-				<height>194</height>
-				<texture>DefaultIconInfo.png</texture>
-				<visible>String.IsEmpty(Control.GetLabel(400))</visible>
-			</control>
 			<!-- Info -->
 			<control id="400" type="image">
 				<left>126</left>
