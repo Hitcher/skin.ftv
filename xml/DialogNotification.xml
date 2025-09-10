@@ -30,19 +30,19 @@
 			</control>
 			<!-- Info default -->
 			<control type="image">
-				<left>126</left>
-				<top>126</top>
-				<width>194</width>
-				<height>194</height>
+				<left>167</left>
+				<top>167</top>
+				<width>112</width>
+				<height>112</height>
 				<texture>DefaultIconInfo.png</texture>
 				<visible>String.IsEmpty(Control.GetLabel(400))</visible>
 			</control>
 			<!-- Info -->
 			<control id="400" type="image">
-				<left>126</left>
-				<top>126</top>
-				<width>194</width>
-				<height>194</height>
+				<left>167</left>
+				<top>167</top>
+				<width>112</width>
+				<height>112</height>
 			</control>
 			<!-- Heading -->
 			<control id="401" type="label">
