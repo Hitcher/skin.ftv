@@ -20,7 +20,7 @@
 				<width>3328</width>
 				<height>2160</height>
 				<aspectratio align="center">scale</aspectratio>
-				<texture fallback="weather/background/na.jpg">$INFO[Window(Weather).Property(Current.FanartCode),weather/background/,.jpg]</texture>
+				<texture fallback="weather/background/na.jpg">$INFO[Weather.Data(Current.FanartCode),weather/background/,.jpg]</texture>
 			</control>
 			<control type="image">
 				<top>296</top>
@@ -31,11 +31,12 @@
 			<control type="group">
 				<left>96</left>
 				<top>366</top>
+				<visible>!Weather.IsUpdating</visible>
 				<control type="label">
 					<width>3136</width>
 					<height>136</height>
 					<font>Med59</font>
-					<label fallback="$LOCALIZE[8]">$INFO[Window(Weather).Property(Location)]</label>
+					<label fallback="$LOCALIZE[8]">$INFO[Weather.Data(Location)]</label>
 					<textcolor>ffffffff</textcolor>
 				</control>
 				<control type="label">
@@ -43,16 +44,16 @@
 					<width>3136</width>
 					<height>80</height>
 					<font>Light30Spaced</font>
-					<label>$INFO[Window(Weather).Property(WeatherProvider)]</label>
+					<label>$INFO[Weather.Data(WeatherProvider)]</label>
 					<textcolor>ffffffff</textcolor>
 				</control>
 				<control type="group">
-					<animation condition="String.IsEmpty(Window(Weather).Property(Current.Temperature))" effect="fade" end="0" start="100">Conditional</animation>
+					<animation condition="String.IsEmpty(Weather.Data(Current.Temperature))" effect="fade" end="0" start="100">Conditional</animation>
 					<control type="image">
 						<top>258</top>
 						<width>256</width>
 						<height>256</height>
-						<texture fallback="weather/icons/na.png">$INFO[Window(Weather).Property(Current.FanartCode),weather/icons/,.png]</texture>
+						<texture fallback="weather/icons/na.png">$INFO[Weather.Data(Current.FanartCode),weather/icons/,.png]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="textbox">
@@ -70,7 +71,7 @@
 						<width>680</width>
 						<height>308</height>
 						<font>Light144</font>
-						<label>$INFO[Window(Weather).Property(Current.Temperature),,°]</label>
+						<label>$INFO[Weather.Data(Current.Temperature)]</label>
 						<textcolor>ffffffff</textcolor>
 					</control>
 					<control type="label">
@@ -122,7 +123,7 @@
 							<height>auto</height>
 							<font>Med59</font>
 							<autoscroll>False</autoscroll>
-							<label>$INFO[Window(Weather).Property(Day0.Outlook)]</label>
+							<label>$INFO[Weather.Data(Day0.Outlook)]</label>
 							<textcolor>ffffffff</textcolor>
 						</control>
 						<control type="label">
@@ -134,14 +135,14 @@
 							<width>2004</width>
 							<height>64</height>
 							<font>Light32</font>
-							<label>$INFO[Window(Weather).Property(Day0.LowTemp),Low ,°]    $INFO[Window(Weather).Property(Day0.HighTemp),High ,°]</label>
+							<label>$INFO[Weather.Data(Day0.LowTemp),Low ]    $INFO[Weather.Data(Day0.HighTemp),High ]</label>
 							<textcolor>ffffffff</textcolor>
 						</control>
 						<control type="label">
 							<width>2004</width>
 							<height>64</height>
 							<font>Light32</font>
-							<label>$INFO[Window(Weather).Property(Today.Sunrise),Sunrise ]    $INFO[Window(Weather).Property(Today.Sunset),Sunset ]</label>
+							<label>$INFO[Weather.Data(Today.Sunrise),Sunrise ]    $INFO[Weather.Data(Today.Sunset),Sunset ]</label>
 							<textcolor>ffffffff</textcolor>
 						</control>
 					</control>
@@ -428,7 +429,7 @@
 			<height>168</height>
 			<texture>common/busy.png</texture>
 			<animation center="auto" condition="true" effect="rotate" end="-360" loop="true" reversible="false" time="1120">Conditional</animation>
-			<visible>String.IsEmpty(Window(weather).Property(Daily.IsFetched))</visible>
+			<visible>Weather.IsUpdating</visible>
 		</control>
 	</controls>
 </window>

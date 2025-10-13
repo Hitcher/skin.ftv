@@ -1403,7 +1403,7 @@
 		<item>
 			<label>$INFO[Weather.Data(Hourly.$PARAM[item_index].Time)]</label>
 			<label2>$INFO[Weather.Data(Hourly.$PARAM[item_index].Temperature)] &#x2022; $INFO[Weather.Data(Hourly.$PARAM[item_index].Precipitation)]</label2>
-			<icon>resource://resource.images.weathericons.default/$INFO[Weather.Data(Hourly.$PARAM[item_index].OutlookIcon)]</icon>
+			<icon>resource://resource.images.weathericons.default/$INFO[Weather.Data(Hourly.$PARAM[item_index].FanartCode)].png</icon>
 			<onclick>noop</onclick>
 			<visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched)) + !String.IsEmpty(Weather.Data(Hourly.$PARAM[item_index].Outlook)) + String.IsEqual(Window(home).Property(Hourly),true)</visible>
 		</item>
@@ -1423,7 +1423,7 @@
 	<include name="WeatherDayItem">
 		<item>
 			<label>$VAR[Day$PARAM[item_index]]</label>
-			<label2>$INFO[Weather.Data(Day$PARAM[item_index].LowTemp)]$INFO[System.TemperatureUnits] &#x2022; $INFO[Weather.Data(Day$PARAM[item_index].HighTemp)]$INFO[System.TemperatureUnits]</label2>
+			<label2>$INFO[Weather.Data(Day$PARAM[item_index].LowTemp)] &#x2022; $INFO[Weather.Data(Day$PARAM[item_index].HighTemp)]</label2>
 			<property name="LongDay">$INFO[Weather.Data(Day$PARAM[item_index].Title)]</property>
 			<property name="Outlook">$INFO[Weather.Data(Day$PARAM[item_index].Outlook)]</property>
 			<property name="Fanart">$INFO[Weather.Data(Day$PARAM[item_index].FanartCode),weather/home/,.jpg]</property>
