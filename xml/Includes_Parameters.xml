@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include name="DialogVideoInfoDetails">
-		<param name="DialogVideoInfoDetailsTextbox" default="$VAR[Plot]"/>
 		<param name="Starring" default="$INFO[Container(99950).ListItem.Property(Cast.1.Name)]$INFO[Container(99950).ListItem.Property(Cast.2.Name),$COMMA ]$INFO[Container(99950).ListItem.Property(Cast.3.Name),$COMMA ]"/>
 		<param name="DirectorName" default="$VAR[Director_Name]"/>
 		<definition>
-			<!-- Hidden scrollbar -->
-			<control id="96" type="scrollbar">
-				<left>-2400</left>
-				<width>2384</width>
-				<height>244</height>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
-			</control>
 			<!-- Background -->
 			<include>BackgroundImage</include>
 			<!-- Fanart -->
@@ -177,49 +168,6 @@
 					</control>
 					<include condition="String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,set) | String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(ListItem.DBTYPE,episode)">VideoRatings</include>
 				</control>
-				<!-- Textbox -->
-				<control type="grouplist">
-					<top>312</top>
-					<width>5600</width>
-					<height>2800</height>
-					<itemgap>0</itemgap>
-					<ondown>8</ondown>
-					<orientation>vertical</orientation>
-					<usecontrolcoords>true</usecontrolcoords>
-					<animation condition="Control.HasFocus(50) | Control.HasFocus(500) | Control.HasFocus(501) | Control.HasFocus(502)" effect="slide" end="0,-182" start="0,0" time="200">Conditional</animation>
-					<!-- Plot -->
-					<control type="textbox">
-						<width>2384</width>
-						<height max="244">auto</height>
-						<align>left</align>
-						<font>$PARAM[DialogVideoInfoDetailsTextboxFont]</font>
-						<font>Light30Spaced</font>
-						<pagecontrol>96</pagecontrol>
-						<autoscroll>false</autoscroll>
-						<textcolor>ffbbbbbb</textcolor>
-						<label>$VAR[Plot]</label>
-						<include>DialogVideoInfoAnimation</include>
-					</control>
-					<!-- More button -->
-					<control id="3002" type="button">
-						<left>2388</left>
-						<top>-66</top>
-						<width>74</width>
-						<height>46</height>
-						<onleft>7000</onleft>
-						<onright>8</onright>
-						<onclick>$PARAM[DialogVideoInfoDetailsTextboxOnClick]</onclick>
-						<include>DialogVideoInfoAnimation</include>
-						<texturefocus>views/more_fo.png</texturefocus>
-						<texturenofocus>views/more_nf.png</texturenofocus>
-						<visible>Control.IsVisible(96)</visible>
-						<animation condition="String.IsEqual(ListItem.Property(tmdb_type),person)" effect="slide" end="0,8" start="0,0" time="0">Conditional</animation>
-					</control>
-					<control id="3003" type="button">
-						<onfocus>SetFocus(9000)</onfocus>
-						<visible allowhiddenfocus="true">false</visible>
-					</control>
-				</control>
 				<!-- Starring -->
 				<control type="grouplist">
 					<top>594</top>
@@ -306,6 +254,7 @@
 						<label>$VAR[AiredDate]</label>
 					</control>
 				</control>
+				<nested />
 			</control>
 			<!-- Buttons -->
 			<control type="group">

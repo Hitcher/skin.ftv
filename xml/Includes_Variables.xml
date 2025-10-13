@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="Bio">
+		<value condition="String.IsEqual(ListItem.Property(tmdb_type),person) + !String.IsEmpty(ListItem.Property(Biography))">[COLOR $VAR[ExtendedInfoLabelColor]][B]$LOCALIZE[21887]:[/B][/COLOR]  [LIGHT]$INFO[ListItem.Property(Biography)][/LIGHT]</value>
+	</variable>
 	<variable name="TmdbType">
 		<value condition="String.IsEqual(ListItem.Property(tmdb_type),movie)">movie</value>
 		<value condition="String.IsEqual(ListItem.Property(tmdb_type),tv)">tv</value>
@@ -1681,8 +1684,7 @@
 		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode)] + !String.IsEmpty(ListItem.PlotOutline)">$INFO[ListItem.PlotOutline]</value>
 		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode)] + !String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
 		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode)] + !String.IsEmpty(Container(99950).ListItem.Plot)">$INFO[Container(99950).ListItem.Plot]</value>
-		<value condition="!String.IsEmpty(Container.ShowPlot)">$INFO[Container.ShowPlot]</value>
-		<value condition="String.IsEqual(ListItem.Property(tmdb_type),person) + !String.IsEmpty(ListItem.Property(Biography))">[COLOR $VAR[ExtendedInfoLabelColor]][B]$LOCALIZE[21887]:[/B][/COLOR]  [LIGHT]$INFO[ListItem.Property(Biography)][/LIGHT]</value>
+		<value condition="[String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode)] + !String.IsEmpty(Container.ShowPlot)">$INFO[Container.ShowPlot]</value>
 		<value>[COLOR 00ffffff]empty[/COLOR]</value>
 	</variable>
 	<variable name="DayNightWeather">

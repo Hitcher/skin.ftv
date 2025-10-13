@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include name="Includes_Dialog_Person_Information">
-		<!-- Hidden List -->
-		<include>VideoInfoCastList</include>
 		<!-- Hidden Button -->
 		<control id="99" type="button">
 			<onup>noop</onup>
@@ -15,7 +13,6 @@
 			<include>HiddenControl</include>
 		</control>
 		<include content="DialogVideoInfoDetails">
-			<param name="DialogVideoInfoDetailsTextbox" value="$INFO[ListItem.Property(Biography)]"/>
 			<param name="DialogVideoInfoDetailsHeading" value="$VAR[VideoInfoLabel]"/>
 			<param name="DialogVideoInfoDetailsLine1Label1" value="[COLOR $VAR[ExtendedInfoLabelColor]][B]$LOCALIZE[21893]:[/B][/COLOR] "/>
 			<param name="DialogVideoInfoDetailsLine1Label1Visible" value="!String.IsEmpty(ListItem.Property(Birthday))"/>
@@ -23,8 +20,56 @@
 			<param name="DialogVideoInfoDetailsLine1Label2Visible" value="!String.IsEmpty(ListItem.Property(Birthday))"/>
 			<param name="DialogVideoInfoDetailsLine2Label1" value="$VAR[PersonAgeDied]"/>
 			<param name="DialogVideoInfoDetailsLine2Label1Visible" value="!String.IsEmpty(ListItem.Property(Age)) | !String.IsEmpty(ListItem.Property(Birthday))"/>
-			<param name="DialogVideoInfoDetailsTextboxFont" value="Reg30Spaced"/>
-			<param name="DialogVideoInfoDetailsTextboxOnClick" value="RunScript(script.skinvariables,run_dialog=textviewer,heading='empty',text='$ESCINFO[ListItem.Property(Biography)]')"/>
+			<!-- Hidden scrollbar -->
+			<control id="96" type="scrollbar">
+				<left>-2400</left>
+				<width>2384</width>
+				<height>252</height>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+			</control>
+			<!-- Textbox -->
+			<control type="grouplist">
+				<top>312</top>
+				<width>5600</width>
+				<height>2800</height>
+				<itemgap>0</itemgap>
+				<ondown>8</ondown>
+				<orientation>vertical</orientation>
+				<usecontrolcoords>true</usecontrolcoords>
+				<visible>String.IsEqual(ListItem.Property(tmdb_type),person) + !String.IsEmpty(ListItem.Property(Biography))</visible>
+				<animation condition="Control.HasFocus(50) | Control.HasFocus(500) | Control.HasFocus(501) | Control.HasFocus(502)" effect="slide" end="0,-182" start="0,0" time="200">Conditional</animation>
+				<!-- Biography -->
+				<control type="textbox">
+					<width>2384</width>
+					<height max="252">auto</height>
+					<align>left</align>
+					<font>Reg30Spaced</font>
+					<pagecontrol>96</pagecontrol>
+					<autoscroll>false</autoscroll>
+					<textcolor>ffbbbbbb</textcolor>
+					<label>$VAR[Bio]</label>
+					<include>DialogVideoInfoAnimation</include>
+				</control>
+				<!-- More button -->
+				<control id="3002" type="button">
+					<left>2388</left>
+					<top>-66</top>
+					<width>74</width>
+					<height>46</height>
+					<onleft>7000</onleft>
+					<onright>8</onright>
+					<onclick>RunScript(script.skinvariables,run_dialog=textviewer,heading='empty',text='$ESCINFO[ListItem.Property(Biography)]')</onclick>
+					<include>DialogVideoInfoAnimation</include>
+					<texturefocus>views/more_fo.png</texturefocus>
+					<texturenofocus>views/more_nf.png</texturenofocus>
+					<visible>Control.IsVisible(96)</visible>
+				</control>
+				<control id="3003" type="button">
+					<onfocus>SetFocus(9000)</onfocus>
+					<visible allowhiddenfocus="true">false</visible>
+				</control>
+			</control>
 		</include>
 		<!-- Known for -->
 		<control type="group">

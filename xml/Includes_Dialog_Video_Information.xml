@@ -11,8 +11,55 @@
 			<param name="DialogVideoInfoDetailsLine1Label1Visible" value="!String.IsEmpty(ListItem.Year)"/>
 			<param name="DialogVideoInfoDetailsLine1Label2Visible" value="false"/>
 			<param name="DialogVideoInfoDetailsLine2Label1Visible" value="false"/>
-			<param name="DialogVideoInfoDetailsTextboxFont" value="Light30Spaced"/>
-			<param name="DialogVideoInfoDetailsTextboxOnClick" value="RunScript(script.skinvariables,run_dialog=textviewer,heading='empty',text='$ESCVAR[Plot]')"/>
+			<!-- Hidden scrollbar -->
+			<control id="96" type="scrollbar">
+				<left>-2400</left>
+				<width>2384</width>
+				<height>244</height>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+			</control>
+			<!-- Textbox -->
+			<control type="grouplist">
+				<top>312</top>
+				<width>5600</width>
+				<height>2800</height>
+				<itemgap>0</itemgap>
+				<ondown>8</ondown>
+				<orientation>vertical</orientation>
+				<usecontrolcoords>true</usecontrolcoords>
+				<animation condition="Control.HasFocus(50) | Control.HasFocus(500) | Control.HasFocus(501) | Control.HasFocus(502)" effect="slide" end="0,-182" start="0,0" time="200">Conditional</animation>
+				<!-- Plot -->
+				<control type="textbox">
+					<width>2384</width>
+					<height max="244">auto</height>
+					<align>left</align>
+					<font>Light30Spaced</font>
+					<pagecontrol>96</pagecontrol>
+					<autoscroll>false</autoscroll>
+					<textcolor>ffbbbbbb</textcolor>
+					<label>$VAR[Plot]</label>
+					<include>DialogVideoInfoAnimation</include>
+				</control>
+				<!-- More button -->
+				<control id="3002" type="button">
+					<left>2388</left>
+					<top>-66</top>
+					<width>74</width>
+					<height>46</height>
+					<onleft>7000</onleft>
+					<onright>8</onright>
+					<onclick>RunScript(script.skinvariables,run_dialog=textviewer,heading='empty',text='$ESCVAR[Plot]')</onclick>
+					<include>DialogVideoInfoAnimation</include>
+					<texturefocus>views/more_fo.png</texturefocus>
+					<texturenofocus>views/more_nf.png</texturenofocus>
+					<visible>Control.IsVisible(96)</visible>
+				</control>
+				<control id="3003" type="button">
+					<onfocus>SetFocus(9000)</onfocus>
+					<visible allowhiddenfocus="true">false</visible>
+				</control>
+			</control>
 		</include>
 		<include content="List7000">
 			<param name="List7000OnRightPos1" value="501"/>
