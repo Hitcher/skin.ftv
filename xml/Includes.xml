@@ -39,7 +39,7 @@
 		<control type="image">
 			<include>FullscreenDimensions</include>
 			<texture colordiffuse="BackgroundColour">common/white_square.png</texture>
-			<visible>String.IsEmpty(Window(home).Property(ShowXRay))</visible>
+			<visible>String.IsEmpty(Window(home).Property(ShowXRay)) | Window.IsVisible(movieinformation)</visible>
 		</control>
 	</include>
 	<!-- Dialog background image -->
