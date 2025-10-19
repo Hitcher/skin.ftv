@@ -11,6 +11,9 @@
 	<onunload>Control.Move(5002,$INFO[Container(5002).CurrentItem,-])</onunload>
 	<onunload>Control.Move(5002,1)</onunload>
 	<onload>Skin.SetBool(TMDbHelper.DirectCallAuto)</onload>
+	<onunload>ClearProperty(origin_dbid,home)</onunload>
+	<onunload>ClearProperty(origin_tmdb_id,home)</onunload>
+	<onunload>ClearProperty(origin_tmdb_type,home)</onunload>
 	<onload condition="System.HasAddon(script.tvtunes)">RunScript(script.tvtunes,backend=true)</onload>
 	<onunload condition="!Window.IsVisible(favouritesbrowser)">SetFocus(50)</onunload>
 	<onunload condition="Window.IsVisible(favouritesbrowser)">SetFocus(55)</onunload>

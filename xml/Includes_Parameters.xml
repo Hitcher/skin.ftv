@@ -276,6 +276,9 @@
 					<control id="9001" type="button">
 						<width>0</width>
 						<height>0</height>
+						<onfocus condition="!String.IsEmpty(ListItem.DBID)">SetProperty(origin_dbid,$INFO[ListItem.DBID],home)</onfocus>
+						<onfocus condition="String.IsEmpty(ListItem.DBID)">SetProperty(origin_tmdb_id,$INFO[ListItem.Property(TMDb_ID)],home)</onfocus>
+						<onfocus>SetProperty(origin_tmdb_type,$VAR[Path_InfoParams_TMDbType],home)</onfocus>
 						<onfocus>Right</onfocus>
 						<include>NoTextures</include>
 						<visible>!ControlGroup(9000).HasFocus()</visible>
@@ -570,7 +573,7 @@
 	<include name="DialogVideoInfoList">
 		<param name="DialogVideoInfoListDetailsLabel1" default="$INFO[Container($PARAM[DialogVideoInfoListID]).ListItem.Label]"/>
 		<param name="DialogVideoInfoListLabelVisible" default="false"/>
-		<param name="DialogVideoInfoListOnClick1" default="RunScript(plugin.video.themoviedb.helper,add_path=$INFO[Container($PARAM[DialogVideoInfoListID]).ListItem.FolderPath],call_auto=1113)"/>
+		<param name="DialogVideoInfoListOnClick1" default="RunScript(plugin.video.themoviedb.helper,add_path=$INFO[Container($PARAM[DialogVideoInfoListID]).ListItem.FolderPath],call_auto=1113,origin_tmdb_type=$INFO[Window(home).Property(origin_tmdb_type)],$VAR[Path_Info_First_Item])"/>
 		<param name="DialogVideoInfoListOnClick3" default="SetFocus(7000)"/>
 		<definition>
 			<control type="group">
@@ -832,7 +835,7 @@
 	<include name="DefaultDialogVideoInfoList">
 		<param name="DialogVideoInfoListDetailsLabel1" default="$INFO[Container(50).ListItem.Label]"/>
 		<param name="DialogVideoInfoListLabelVisible" default="false"/>
-		<param name="DialogVideoInfoListOnClick1" default="RunScript(plugin.video.themoviedb.helper,add_path=$INFO[Container(50).ListItem.FolderPath],call_auto=1113)"/>
+		<param name="DialogVideoInfoListOnClick1" default="RunScript(plugin.video.themoviedb.helper,add_path=$INFO[Container(50).ListItem.FolderPath],call_auto=1113,origin_tmdb_type=$INFO[Window(home).Property(origin_tmdb_type)],origin_dbid=$INFO[Window(home).Property(origin_dbid)])"/>
 		<param name="DialogVideoInfoListOnClick3" default="SetFocus(7000)"/>
 		<definition>
 			<control type="group">

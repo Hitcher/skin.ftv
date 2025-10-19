@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+    <variable name="Path_Info_First_Item">
+        <value condition="!String.IsEmpty(Window(Home).Property(origin_dbid))">origin_dbid=$INFO[Window(home).Property(origin_dbid)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(origin_tmdb_id))">origin_tmdb_id=$INFO[Window(home).Property(origin_tmdb_id)]</value>
+    </variable>
+    <variable name="Path_InfoParams_TMDbType">
+        <value condition="String.IsEqual(ListItem.DBType,movie)">movie</value>
+        <value condition="String.IsEqual(ListItem.DBType,tvshow)">tv</value>
+        <value condition="String.IsEqual(ListItem.DBType,season)">season</value>
+        <value condition="String.IsEqual(ListItem.DBType,episode)">episode</value>
+    </variable>
 	<variable name="Bio">
 		<value condition="String.IsEqual(ListItem.Property(tmdb_type),person) + !String.IsEmpty(ListItem.Property(Biography))">[COLOR $VAR[ExtendedInfoLabelColor]][B]$LOCALIZE[21887]:[/B][/COLOR]  [LIGHT]$INFO[ListItem.Property(Biography)][/LIGHT]</value>
 	</variable>
@@ -1759,8 +1769,8 @@
 		<value>$INFO[ListItem.Title]</value>
 	</variable>
 	<variable name="VideoInfoImage">
-		<value condition="!String.IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
 		<value condition="!String.IsEmpty(ListItem.Icon)">$INFO[ListItem.Icon]</value>
 		<value>views/movie_fallback.png</value>
 	</variable>
