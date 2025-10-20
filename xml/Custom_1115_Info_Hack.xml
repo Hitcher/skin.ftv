@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1115">
+	<visible>Window.IsVisible(1113) + !String.IsEmpty(Window(home).Property(info_hack))</visible>
+	<onunload>Action(info,videos)</onunload>
+	<onunload>Dialog.Close(1114)</onunload>
+	<onunload>ClearProperty(info_hack,home)</onunload>
+	<controls/>
+</window>

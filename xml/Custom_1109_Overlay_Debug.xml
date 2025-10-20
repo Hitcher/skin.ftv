@@ -142,6 +142,10 @@
 				<param name="debug_dialog_label_visible" value="Custom_1114_OSD_Options.xml"/>
 			</include>
 			<include content="DebugDialogLabel">
+				<param name="debug_dialog_label" value="Custom_1115_Info_Hack.xml"/>
+				<param name="debug_dialog_label_visible" value="Custom_1115_Info_Hack.xml"/>
+			</include>
+			<include content="DebugDialogLabel">
 				<param name="debug_dialog_label" value="DialogAddonInfo.xml"/>
 				<param name="debug_dialog_label_visible" value="DialogAddonInfo.xml"/>
 			</include>
@@ -407,26 +411,6 @@
 			<include content="DebugControlLabel">
 				<param name="debug_control_label" value="$INFO[ListItem.IMDBNumber,[COLOR FF00FF00]IMDBNumber - [/COLOR]]"/>
 				<param name="debug_control_label_visible" value="!String.IsEmpty(ListItem.IMDBNumber)"/>
-			</include>
-			<include content="DebugControlLabel">
-				<param name="debug_control_label" value="TMDbType: $VAR[TMDbType]"/>
-				<param name="debug_control_label_visible" value="true"/>
-			</include>
-			<include content="DebugControlLabel">
-				<param name="debug_control_label" value="ListItem.UniqueID(tmdb): $INFO[ListItem.UniqueID(tmdb)]"/>
-				<param name="debug_control_label_visible" value="true"/>
-			</include>
-			<include content="DebugControlLabel">
-				<param name="debug_control_label" value="ListItem.UniqueID(tvshow.tmdb): $INFO[ListItem.UniqueID(tvshow.tmdb)]"/>
-				<param name="debug_control_label_visible" value="true"/>
-			</include>
-			<include content="DebugControlLabel">
-				<param name="debug_control_label" value="origin_tmdb_type: $INFO[Window(home).Property(origin_tmdb_type)]"/>
-				<param name="debug_control_label_visible" value="true"/>
-			</include>
-			<include content="DebugControlLabel">
-				<param name="debug_control_label" value="origin_dbid: $INFO[Window(home).Property(origin_dbid)]"/>
-				<param name="debug_control_label_visible" value="true"/>
 			</include>
 		</control>
 		<!-- Artwork debug -->
