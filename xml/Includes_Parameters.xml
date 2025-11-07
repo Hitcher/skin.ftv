@@ -513,7 +513,7 @@
 						<textoffsetx>56</textoffsetx>
 						<textcolor>ffdadada</textcolor>
 						<focusedcolor>ff222222</focusedcolor>
-						<onclick>RunScript(script.wikipedia,wikipedia=$INFO[Container(99950).ListItem.Property(base_title)],$VAR[TmdbType,tmdb_type=])</onclick>
+						<onclick>RunScript(script.wikipedia,wikipedia=$INFO[Container(99950).ListItem.Property(base_title)])</onclick>
 						<texturefocus border="28,12,10,14">views/button_fo.png</texturefocus>
 						<texturenofocus border="32,12,12,12">views/button_nf.png</texturenofocus>
 						<visible>String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.Property(tmdb_type),person)</visible>
