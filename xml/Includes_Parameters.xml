@@ -1357,7 +1357,7 @@
 			<label2>$INFO[Weather.Data(Hourly.$PARAM[item_index].Temperature)] &#x2022; $INFO[Weather.Data(Hourly.$PARAM[item_index].Precipitation)]</label2>
 			<icon>resource://resource.images.weathericons.default/$INFO[Weather.Data(Hourly.$PARAM[item_index].FanartCode)].png</icon>
 			<onclick>noop</onclick>
-			<visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched)) + !String.IsEmpty(Weather.Data(Hourly.$PARAM[item_index].Outlook)) + String.IsEqual(Window(home).Property(Hourly),true)</visible>
+			<visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched)) + !String.IsEmpty(Weather.Data(Hourly.$PARAM[item_index].Outlook)) + String.IsEqual(Window(home).Property(Weather_View),hourly)</visible>
 		</item>
 	</include>
 	<include name="WeatherDailyItem">
@@ -1369,7 +1369,7 @@
 			<property name="Outlook">$INFO[Weather.Data(Daily.$PARAM[item_index].Outlook)]</property>
 			<property name="Fanart">$INFO[Weather.Data(Daily.$PARAM[item_index].FanartCode),weather/home/,.jpg]</property>
 			<onclick>noop</onclick>
-			<visible>!String.IsEmpty(Window(weather).Property(Daily.IsFetched)) + !String.IsEmpty(Weather.Data(Daily.$PARAM[item_index].Outlook)) + !String.IsEqual(Window(home).Property(Hourly),true)</visible>
+			<visible>!String.IsEmpty(Window(weather).Property(Daily.IsFetched)) + !String.IsEmpty(Weather.Data(Daily.$PARAM[item_index].Outlook)) + String.IsEqual(Window(home).Property(Weather_View),daily)</visible>
 		</item>
 	</include>
 	<include name="WeatherDayItem">
@@ -1381,7 +1381,7 @@
 			<property name="Fanart">$INFO[Weather.Data(Day$PARAM[item_index].FanartCode),weather/home/,.jpg]</property>
 			<icon>$INFO[Weather.Data(Day$PARAM[item_index].OutlookIcon)]</icon>
 			<onclick>noop</onclick>
-			<visible>String.IsEmpty(Window(weather).Property(Daily.IsFetched)) + !String.IsEmpty(Weather.Data(Day$PARAM[item_index].Outlook)) + !String.IsEqual(Window(home).Property(Hourly),true)</visible>
+			<visible>String.IsEmpty(Window(weather).Property(Daily.IsFetched)) + !String.IsEmpty(Weather.Data(Day$PARAM[item_index].Outlook)) + String.IsEqual(Window(home).Property(Weather_View),daily)</visible>
 		</item>
 	</include>
 	<include name="ParamWidgetInclude">

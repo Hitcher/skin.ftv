@@ -4,7 +4,7 @@
 	<backgroundcolor>BackgroundColour</backgroundcolor>
 	<onload>Control.SetFocus(99,0,absolute)</onload>
 	<onload>Control.SetFocus(101)</onload>
-	<onunload>ClearProperty(Hourly,home)</onunload>
+	<onload>SetProperty(Weather_View,daily,home)</onload>
 	<controls>
 		<control type="group">
 			<left>256</left>
@@ -106,6 +106,7 @@
 						<itemgap>22</itemgap>
 						<align>center</align>
 						<orientation>vertical</orientation>
+						<visible>String.IsEqual(Window(home).Property(Weather_View),daily) | String.IsEqual(Window(home).Property(Weather_View),hourly)</visible>
 						<control type="label">
 							<width>2004</width>
 							<height>80</height>
@@ -375,24 +376,24 @@
 					</control>
 				</control>
 				<control type="group" id="98">
-					<control id="101" type="togglebutton">
+					<control id="101" type="button">
 						<top>1150</top>
 						<width>320</width>
 						<height>128</height>
 						<align>center</align>
-						<label>31079</label>
-						<altlabel>33036</altlabel>
+						<label>$VAR[Weather_View]</label>
 						<onup>Back</onup>
 						<ondown>100</ondown>
 						<onleft>Back</onleft>
 						<onright>99</onright>
-						<onclick>SetProperty(Hourly,true,home)</onclick>
-						<altclick>ClearProperty(Hourly,home)</altclick>
+						<onclick condition="String.IsEqual(Window(home).Property(Weather_View),daily)">SetProperty(Weather_View,hourly,home)</onclick>
+						<onclick condition="String.IsEqual(Window(home).Property(Weather_View),hourly)">SetProperty(Weather_View,map_temp,home)</onclick>
+						<onclick condition="String.IsEqual(Window(home).Property(Weather_View),map_temp)">SetProperty(Weather_View,map_wind,home)</onclick>
+						<onclick condition="String.IsEqual(Window(home).Property(Weather_View),map_wind)">SetProperty(Weather_View,map_radar,home)</onclick>
+						<onclick condition="String.IsEqual(Window(home).Property(Weather_View),map_radar)">SetProperty(Weather_View,map_infrared,home)</onclick>
+						<onclick condition="String.IsEqual(Window(home).Property(Weather_View),map_infrared)">SetProperty(Weather_View,daily,home)</onclick>
 						<texturefocus border="6">common/button_fo.png</texturefocus>
 						<texturenofocus>common/button_nf.png</texturenofocus>
-						<alttexturefocus border="6">common/button_fo.png</alttexturefocus>
-						<alttexturenofocus>common/button_nf.png</alttexturenofocus>
-						<usealttexture>String.IsEqual(Window(home).Property(Hourly),true)</usealttexture>
 					</control>
 					<control id="100" type="button">
 						<top>1318</top>
@@ -420,6 +421,50 @@
 				<visible>Container(99).HasNext</visible>
 				<animation delay="80" effect="fade" end="100" start="0" time="120">Visible</animation>
 				<animation delay="80" effect="fade" end="0" start="100" time="120">Hidden</animation>
+			</control>
+			<!-- Maps -->
+			<control type="group">
+				<left>1014</left>
+				<top>680</top>
+				<visible>String.StartsWith(Window(home).Property(Weather_View),map_)</visible>
+				<control type="image">
+					<width>2212</width>
+					<height>1132</height>
+					<texture>$INFO[Weather.Data(Map.1.Area)]</texture>
+					<aspectratio>scale</aspectratio>
+				</control>
+				<control type="image">
+					<width>2212</width>
+					<height>1132</height>
+					<texture>$INFO[Weather.Data(Map.3.Layer)]</texture>
+					<aspectratio>scale</aspectratio>
+					<colordiffuse>B0FFFFFF</colordiffuse>
+					<visible>String.IsEqual(Window(home).Property(Weather_View),map_temp)</visible>
+				</control>
+				<control type="image">
+					<width>2212</width>
+					<height>1132</height>
+					<texture>$INFO[Weather.Data(Map.4.Layer)]</texture>
+					<aspectratio>scale</aspectratio>
+					<colordiffuse>B0FFFFFF</colordiffuse>
+					<visible>String.IsEqual(Window(home).Property(Weather_View),map_wind)</visible>
+				</control>
+				<control type="image">
+					<width>2212</width>
+					<height>1132</height>
+					<texture>$INFO[Weather.Data(Map.1.Layer)]</texture>
+					<aspectratio>scale</aspectratio>
+					<colordiffuse>B0FFFFFF</colordiffuse>
+					<visible>String.IsEqual(Window(home).Property(Weather_View),map_radar)</visible>
+				</control>
+				<control type="image">
+					<width>2212</width>
+					<height>1132</height>
+					<texture>$INFO[Weather.Data(Map.2.Layer)]</texture>
+					<aspectratio>scale</aspectratio>
+					<colordiffuse>B0FFFFFF</colordiffuse>
+					<visible>String.IsEqual(Window(home).Property(Weather_View),map_infrared)</visible>
+				</control>
 			</control>
 		</control>
 		<control type="image">

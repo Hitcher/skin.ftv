@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="Weather_View">
+		<value condition="String.IsEqual(Window(home).Property(Weather_View),daily)">$LOCALIZE[31079]</value>
+		<value condition="String.IsEqual(Window(home).Property(Weather_View),hourly)">$LOCALIZE[33036]</value>
+		<value condition="String.IsEqual(Window(home).Property(Weather_View),map_temp)">$LOCALIZE[1375]</value>
+		<value condition="String.IsEqual(Window(home).Property(Weather_View),map_wind)">$LOCALIZE[383]</value>
+		<value condition="String.IsEqual(Window(home).Property(Weather_View),map_radar)">$LOCALIZE[1448]</value>
+		<value condition="String.IsEqual(Window(home).Property(Weather_View),map_infrared)">$LOCALIZE[31131]</value>
+	</variable>
 	<variable name="origin_tmdb">
 		<value condition="!String.IsEmpty(Window(Home).Property(origin_tmdb_id))">,origin_tmdb_type=$INFO[Window(home).Property(origin_tmdb_type)],origin_tmdb_id=$INFO[Window(home).Property(origin_tmdb_id)]</value>
 		<value/>
