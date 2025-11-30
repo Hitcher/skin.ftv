@@ -9,6 +9,7 @@
 	<onload>Skin.SetString(TMDbHelper.MonitorContainer,99950)</onload>
 	<onload>Skin.SetString(TMDbHelper.Date.Format,%d %B %Y)</onload>
 	<onload>RunScript(script.skinvariables,action=buildviews)</onload>
+	<onload>SetProperty(Weather_View,daily,home)</onload>
 	<onunload condition="Window.Next(addonbrowser)">SetProperty(WindowPreviousHome,true,home)</onunload>
 	<onunload condition="!Window.Next(addonbrowser)">ClearProperty(WindowPreviousHome,home)</onunload>
 	<onload condition="System.HasAddon(script.skinshortcuts)">RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=99&amp;levels=0&amp;group=mainmenu|shutdown)</onload>

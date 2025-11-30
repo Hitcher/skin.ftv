@@ -4,7 +4,6 @@
 	<backgroundcolor>BackgroundColour</backgroundcolor>
 	<onload>Control.SetFocus(99,0,absolute)</onload>
 	<onload>Control.SetFocus(101)</onload>
-	<onload>SetProperty(Weather_View,daily,home)</onload>
 	<controls>
 		<control type="group">
 			<left>256</left>
