@@ -409,60 +409,60 @@
 						<texturenofocus>common/button_nf.png</texturenofocus>
 					</control>
 				</control>
-			</control>
-			<!-- More arrow -->
-			<control type="image">
-				<left>3260</left>
-				<top>1630</top>
-				<width>40</width>
-				<height>72</height>
-				<texture>views/arrow_right.png</texture>
-				<visible>Container(99).HasNext</visible>
-				<animation delay="80" effect="fade" end="100" start="0" time="120">Visible</animation>
-				<animation delay="80" effect="fade" end="0" start="100" time="120">Hidden</animation>
-			</control>
-			<!-- Maps -->
-			<control type="group">
-				<left>1014</left>
-				<top>680</top>
-				<visible>String.StartsWith(Window(home).Property(Weather_View),map_)</visible>
+				<!-- More arrow -->
 				<control type="image">
-					<width>2212</width>
-					<height>1132</height>
-					<texture>$INFO[Weather.Data(Map.1.Area)]</texture>
-					<aspectratio>scale</aspectratio>
+					<left>3164</left>
+					<top>1264</top>
+					<width>40</width>
+					<height>72</height>
+					<texture>views/arrow_right.png</texture>
+					<visible>Container(99).HasNext</visible>
+					<animation delay="80" effect="fade" end="100" start="0" time="120">Visible</animation>
+					<animation delay="80" effect="fade" end="0" start="100" time="120">Hidden</animation>
 				</control>
-				<control type="image">
-					<width>2212</width>
-					<height>1132</height>
-					<texture>$INFO[Weather.Data(Map.3.Layer)]</texture>
-					<aspectratio>scale</aspectratio>
-					<colordiffuse>B0FFFFFF</colordiffuse>
-					<visible>String.IsEqual(Window(home).Property(Weather_View),map_temp)</visible>
-				</control>
-				<control type="image">
-					<width>2212</width>
-					<height>1132</height>
-					<texture>$INFO[Weather.Data(Map.4.Layer)]</texture>
-					<aspectratio>scale</aspectratio>
-					<colordiffuse>B0FFFFFF</colordiffuse>
-					<visible>String.IsEqual(Window(home).Property(Weather_View),map_wind)</visible>
-				</control>
-				<control type="image">
-					<width>2212</width>
-					<height>1132</height>
-					<texture>$INFO[Weather.Data(Map.1.Layer)]</texture>
-					<aspectratio>scale</aspectratio>
-					<colordiffuse>B0FFFFFF</colordiffuse>
-					<visible>String.IsEqual(Window(home).Property(Weather_View),map_radar)</visible>
-				</control>
-				<control type="image">
-					<width>2212</width>
-					<height>1132</height>
-					<texture>$INFO[Weather.Data(Map.2.Layer)]</texture>
-					<aspectratio>scale</aspectratio>
-					<colordiffuse>B0FFFFFF</colordiffuse>
-					<visible>String.IsEqual(Window(home).Property(Weather_View),map_infrared)</visible>
+				<!-- Maps -->
+				<control type="group">
+					<left>918</left>
+					<top>314</top>
+					<visible>String.StartsWith(Window(home).Property(Weather_View),map_)</visible>
+					<control type="image">
+						<width>2212</width>
+						<height>1132</height>
+						<texture>$INFO[Weather.Data(Map.1.Area)]</texture>
+						<aspectratio>scale</aspectratio>
+					</control>
+					<control type="image">
+						<width>2212</width>
+						<height>1132</height>
+						<texture>$INFO[Weather.Data(Map.3.Layer)]</texture>
+						<aspectratio>scale</aspectratio>
+						<colordiffuse>B0FFFFFF</colordiffuse>
+						<visible>String.IsEqual(Window(home).Property(Weather_View),map_temp)</visible>
+					</control>
+					<control type="image">
+						<width>2212</width>
+						<height>1132</height>
+						<texture>$INFO[Weather.Data(Map.4.Layer)]</texture>
+						<aspectratio>scale</aspectratio>
+						<colordiffuse>B0FFFFFF</colordiffuse>
+						<visible>String.IsEqual(Window(home).Property(Weather_View),map_wind)</visible>
+					</control>
+					<control type="image">
+						<width>2212</width>
+						<height>1132</height>
+						<texture>$INFO[Weather.Data(Map.1.Layer)]</texture>
+						<aspectratio>scale</aspectratio>
+						<colordiffuse>B0FFFFFF</colordiffuse>
+						<visible>String.IsEqual(Window(home).Property(Weather_View),map_radar)</visible>
+					</control>
+					<control type="image">
+						<width>2212</width>
+						<height>1132</height>
+						<texture>$INFO[Weather.Data(Map.2.Layer)]</texture>
+						<aspectratio>scale</aspectratio>
+						<colordiffuse>B0FFFFFF</colordiffuse>
+						<visible>String.IsEqual(Window(home).Property(Weather_View),map_infrared)</visible>
+					</control>
 				</control>
 			</control>
 		</control>
