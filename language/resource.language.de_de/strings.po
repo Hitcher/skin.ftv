@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2022-03-08 08:30+0000\n"
-"Last-Translator: Kai Sommerfeld <kai.sommerfeld@gmx.com>\n"
+"PO-Revision-Date: 2025-12-03 17:30+0000\n"
+"Last-Translator: Kai Sommerfeld <ksooo@users.noreply.kodi.weblate.cloud>\n"
 "Language-Team: German <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-ftv/de_de/>\n"
 "Language: de_de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.11.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 msgctxt "Addon Summary"
 msgid "Skin based on the original Fire TV UI"
@@ -127,7 +127,7 @@ msgstr ""
 
 msgctxt "#31024"
 msgid "Movie Sets"
-msgstr ""
+msgstr "Filmreihen"
 
 msgctxt "#31025"
 msgid "Notice"
@@ -219,7 +219,7 @@ msgstr ""
 
 msgctxt "#31047"
 msgid "Visualisation presets"
-msgstr ""
+msgstr "Visualisierungsvoreinstellungen"
 
 msgctxt "#31048"
 msgid "Playlist Options"
@@ -312,7 +312,7 @@ msgstr "Bilder für"
 
 msgctxt "#31070"
 msgid "Suggested"
-msgstr ""
+msgstr "Vorgeschlagen"
 
 msgctxt "#31071"
 msgid "Starring"
@@ -348,7 +348,7 @@ msgstr ""
 
 msgctxt "#31079"
 msgid "Daily"
-msgstr ""
+msgstr "Täglich"
 
 msgctxt "#31080"
 msgid "Enable Extra Information"
@@ -368,7 +368,7 @@ msgstr ""
 
 msgctxt "#31084"
 msgid "Today"
-msgstr ""
+msgstr "Heute"
 
 msgctxt "#31085"
 msgid "Shutdown Menu"
@@ -380,7 +380,7 @@ msgstr "Sortiert nach"
 
 msgctxt "#31087"
 msgid "Unavailable"
-msgstr ""
+msgstr "Nicht verfügbar"
 
 msgctxt "#31088"
 msgid "Current Playlist"
@@ -433,7 +433,7 @@ msgstr ""
 
 msgctxt "#31100"
 msgid "Game Addons"
-msgstr ""
+msgstr "Spiele-Addons"
 
 msgctxt "#31101"
 msgid "Apps"
@@ -465,7 +465,7 @@ msgstr ""
 
 msgctxt "#31108"
 msgid "Known for"
-msgstr ""
+msgstr "Bekannt für"
 
 msgctxt "#31109"
 msgid "Watch[CR]Now"
@@ -556,6 +556,10 @@ msgctxt "#31130"
 msgid "TV Show Wide"
 msgstr ""
 
+msgctxt "#31131"
+msgid "Satellite"
+msgstr ""
+
 msgctxt "#31132"
 msgid "Continue watching?"
 msgstr ""
@@ -582,15 +586,15 @@ msgstr ""
 
 msgctxt "#31139"
 msgid "Select + X"
-msgstr ""
+msgstr "Select + X"
 
 msgctxt "#31140"
 msgid "Select + Start"
-msgstr ""
+msgstr "Select + Start"
 
 msgctxt "#31141"
 msgid "Select + Right Stick"
-msgstr ""
+msgstr "Select + Rechter Stick"
 
 msgctxt "#31142"
 msgid "Peripheral dialog"
@@ -712,7 +716,7 @@ msgstr "Kinderfilme"
 
 msgctxt "#31171"
 msgid "Game saves"
-msgstr ""
+msgstr "Gespeicherte Spielstände"
 
 msgctxt "#31172"
 msgid "Square List"
@@ -745,15 +749,15 @@ msgstr "Kinderserien"
 
 msgctxt "#31179"
 msgid "Playlist options"
-msgstr ""
+msgstr "Wiedergabelisteneinstellungen"
 
 msgctxt "#31180"
 msgid "Choose view"
-msgstr ""
+msgstr "Ansicht auswählen"
 
 msgctxt "#31181"
 msgid "Collection"
-msgstr ""
+msgstr "Filmreihe"
 
 # empty strings from id 31179 to 31181
 msgctxt "#31182"
@@ -790,7 +794,7 @@ msgstr ""
 
 msgctxt "#31190"
 msgid "Age"
-msgstr ""
+msgstr "Alter"
 
 msgctxt "#31191"
 msgid "years old"
@@ -798,11 +802,11 @@ msgstr ""
 
 msgctxt "#31192"
 msgid "Director"
-msgstr ""
+msgstr "Regisseur"
 
 msgctxt "#31193"
 msgid "Now Playing"
-msgstr ""
+msgstr "Gerade läuft"
 
 # empty strings from id 31187 to 31193
 msgctxt "#31194"
@@ -811,7 +815,7 @@ msgstr ""
 
 msgctxt "#31195"
 msgid "Ended"
-msgstr ""
+msgstr "Beendet"
 
 msgctxt "#31196"
 msgid "Cancelled"
@@ -839,11 +843,11 @@ msgstr ""
 
 msgctxt "#31202"
 msgid "Order"
-msgstr ""
+msgstr "Reihenfolge"
 
 msgctxt "#31203"
 msgid "Square"
-msgstr ""
+msgstr "Quadratisch"
 
 msgctxt "#31204"
 msgid "Movies starring"
@@ -911,12 +915,12 @@ msgstr ""
 
 msgctxt "#31220"
 msgid "Audio streams"
-msgstr ""
+msgstr "Audiostreams"
 
 # empty string with id 31220
 msgctxt "#31221"
 msgid "Music Addons"
-msgstr ""
+msgstr "Musik-Addons"
 
 msgctxt "#31222"
 msgid "Program Addons"
@@ -932,11 +936,11 @@ msgstr ""
 
 msgctxt "#31225"
 msgid "Video streams"
-msgstr ""
+msgstr "Videostreams"
 
 msgctxt "#31226"
 msgid "Play speed"
-msgstr ""
+msgstr "Wiedergabegeschwindigkeit"
 
 # empty strings from id 31225 to 31226
 msgctxt "#31227"
@@ -945,7 +949,7 @@ msgstr ""
 
 msgctxt "#31228"
 msgid "Visualisation settings"
-msgstr ""
+msgstr "Visualisierungseinstellungen"
 
 # empty string with id 31228
 msgctxt "#31229"
@@ -970,7 +974,7 @@ msgstr ""
 
 msgctxt "#31235"
 msgid "Your rating"
-msgstr ""
+msgstr "Persönliche Bewertung"
 
 msgctxt "#31236"
 msgid "Your_rating"
