@@ -1170,7 +1170,7 @@
 		<param name="debug_window_label_visible" default=""/>
 		<definition>
 			<control type="label">
-				<width>3840</width>
+				<width>3780</width>
 				<height>42</height>
 				<textcolor>ffadd8e6</textcolor>
 				<shadowcolor>ShadowColour</shadowcolor>
@@ -1186,7 +1186,7 @@
 		<param name="debug_dialog_label_visible" default=""/>
 		<definition>
 			<control type="label">
-				<width>3840</width>
+				<width>3780</width>
 				<height>42</height>
 				<textcolor>ffadd8e6</textcolor>
 				<shadowcolor>ShadowColour</shadowcolor>

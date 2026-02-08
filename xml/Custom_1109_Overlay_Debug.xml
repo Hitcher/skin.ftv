@@ -7,7 +7,7 @@
 		<control type="grouplist">
 			<left>30</left>
 			<top>30</top>
-			<width>3840</width>
+			<width>3780</width>
 			<height>900</height>
 			<itemgap>6</itemgap>
 			<visible>Skin.HasSetting(DebugInfo)</visible>

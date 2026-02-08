@@ -131,7 +131,7 @@
 	</include>
 	<!-- Dialog slide animation -->
 	<include name="DialogSlideAnimation">
-		<animation condition="!Window.IsVisible(script-skinshortcuts.xml) + !Window.IsVisible(addoninformation) + [Window.IsVisible(addonbrowser) | Window.IsVisible(settingscategory.xml) | Window.IsVisible(skinsettings)]" effect="slide" end="-148,-22">Conditional</animation>
+		<animation condition="!Window.IsVisible(script-skinshortcuts.xml) + !Window.IsActive(addoninformation) + [Window.IsVisible(addonbrowser) | Window.IsVisible(settingscategory.xml) | Window.IsVisible(skinsettings)]" effect="slide" end="-148,-22">Conditional</animation>
 		<animation condition="!Window.IsVisible(1105) + !Window.IsVisible(script-skinshortcuts.xml) + !Window.IsVisible(addoninformation) + [Window.IsVisible(addonbrowser) | Window.IsVisible(settingscategory.xml) | Window.IsVisible(skinsettings)]" reversible="false" type="WindowOpen">
 			<effect end="100" start="0" time="200" type="fade" delay="100"/>
 			<effect easing="inout" end="0,0" start="1000,0" time="200" tween="sine" type="slide" delay="100"/>
