@@ -2,7 +2,7 @@
 <window>
 	<!-- seekbar -->
 	<defaultcontrol always="true">901</defaultcontrol>
-	<visible>[Window.IsVisible(visualisation) | VideoPlayer.IsFullscreen] + [Player.Seeking | Player.HasPerformedSeek(3) | Player.Paused | Player.Forwarding | Player.Rewinding] + !Player.HasGame + !Player.FrameAdvance + !Window.IsActive(1114) + !Window.IsActive(osdsubtitlesettings) + !Window.IsActive(osdaudiosettings) + !Window.IsActive(osdvideosettings)</visible>
+	<visible>[Window.IsVisible(visualisation) | VideoPlayer.IsFullscreen] + [Player.Seeking | Player.HasPerformedSeek(2) | Player.Paused | Player.Forwarding | Player.Rewinding] + !Player.HasGame + !Player.FrameAdvance + !Window.IsActive(1114) + !Window.IsActive(osdsubtitlesettings) + !Window.IsActive(osdaudiosettings) + !Window.IsActive(osdvideosettings)</visible>
 	<controls>
 		<!-- Tempo -->
 		<control type="group">
@@ -151,7 +151,7 @@
 				<include>VideoPlayerDetails</include>
 			</control>
 			<control type="group">
-				<visible>!Player.Paused + [Player.Seeking | Player.HasPerformedSeek(3)]</visible>
+				<visible>String.IsEmpty(Window(Home).Property(Skiptro.Skipping)) + !Player.Paused + [Player.Seeking | Player.HasPerformedSeek(2)]</visible>
 				<control type="image">
 					<bottom>0</bottom>
 					<width>3960</width>
@@ -162,7 +162,7 @@
 			</control>
 			<control type="group">
 				<include>VisibleFadeAnimation</include>
-				<visible>!Player.Forwarding + !Player.Rewinding + [Player.Seeking | Player.HasPerformedSeek(3)]</visible>
+				<visible>String.IsEmpty(Window(Home).Property(Skiptro.Skipping)) + !Player.Forwarding + !Player.Rewinding + [Player.Seeking | Player.HasPerformedSeek(2)]</visible>
 				<control type="group">
 					<left>194</left>
 					<bottom>246</bottom>
