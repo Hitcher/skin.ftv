@@ -268,6 +268,7 @@
 					<itemgap>0</itemgap>
 					<onleft>7000</onleft>
 					<onright>noop</onright>
+					<onback>7000</onback>
 					<orientation>horizontal</orientation>
 					<include>DialogVideoInfoAnimation</include>
 					<defaultcontrol always="true">9001</defaultcontrol>

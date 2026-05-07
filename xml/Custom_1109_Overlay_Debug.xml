@@ -33,6 +33,10 @@
 				<param name="debug_window_label_visible" value="MyFavourites.xml"/>
 			</include>
 			<include content="DebugWindowLabel">
+				<param name="debug_window_label" value="MyGames.xml"/>
+				<param name="debug_window_label_visible" value="MyGames.xml"/>
+			</include>
+			<include content="DebugWindowLabel">
 				<param name="debug_window_label" value="MyMusicNav.xml"/>
 				<param name="debug_window_label_visible" value="MyMusicNav.xml"/>
 			</include>
