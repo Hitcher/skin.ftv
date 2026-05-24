@@ -381,6 +381,11 @@
 				<param name="debug_control_label" value="$INFO[Container.FolderPath,[COLOR FF00FF00]Folder path - [/COLOR]]"/>
 				<param name="debug_control_label_visible" value="!String.IsEmpty(Container.FolderPath)"/>
 			</include>
+			<!-- FilenameAndPath label -->
+			<include content="DebugControlLabel">
+				<param name="debug_control_label" value="$INFO[ListItem.FilenameAndPath,[COLOR FF00FF00]File name - [/COLOR]]"/>
+				<param name="debug_control_label_visible" value="!String.IsEmpty(ListItem.FilenameAndPath)"/>
+			</include>
 			<!-- Content label -->
 			<include content="DebugControlLabel">
 				<param name="debug_control_label" value="$VAR[ContentID,[COLOR FF00FF00]Content - [/COLOR]]"/>
