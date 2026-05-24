@@ -645,18 +645,15 @@
 	<variable name="TomatoRating">
 		<value condition="Skin.HasSetting(TomatoMeterAllCritics)">$LOCALIZE[31258]</value>
 		<value condition="Skin.HasSetting(TomatoMeterAudienceScore)">$LOCALIZE[31259]</value>
-		<value condition="Skin.HasSetting(AverageRatingAllCritics)">$LOCALIZE[31260]</value>
-		<value condition="Skin.HasSetting(AverageRatingAudienceScore)">$LOCALIZE[31261]</value>
+		<value condition="Skin.HasSetting(TomatoMeterTopCritics)">$LOCALIZE[31260]</value>
 	</variable>
 	<variable name="TomatoMeter">
-		<value condition="Skin.HasSetting(TomatoMeterAllCritics) + !String.IsEmpty(Listitem.Rating(tomatometerallcritics))">$INFO[ListItem.Rating(tomatometerallcritics)]</value>
-		<value condition="Skin.HasSetting(TomatoMeterAllCritics) + !String.IsEmpty(Container(9001).Listitem.Rating(tomatometerallcritics))">$INFO[Container(9001).Listitem.Rating(tomatometerallcritics)]</value>
-		<value condition="Skin.HasSetting(TomatoMeterAudienceScore) + !String.IsEmpty(Listitem.Rating(tomatometerallaudience))">$INFO[ListItem.Rating(tomatometerallaudience)]</value>
-		<value condition="Skin.HasSetting(TomatoMeterAudienceScore) + !String.IsEmpty(Container(9001).Listitem.Rating(tomatometerallaudience))">$INFO[Container(9001).Listitem.Rating(tomatometerallaudience)]</value>
-		<value condition="Skin.HasSetting(AverageRatingAllCritics) + !String.IsEmpty(Listitem.Rating(tomatometeravgcritics))">$INFO[ListItem.Rating(tomatometeravgcritics)]</value>
-		<value condition="Skin.HasSetting(AverageRatingAllCritics) + !String.IsEmpty(Container(9001).Listitem.Rating(tomatometeravgcritics))">$INFO[Container(9001).Listitem.Rating(tomatometeravgcritics)]</value>
-		<value condition="Skin.HasSetting(AverageRatingAudienceScore) + !String.IsEmpty(Listitem.Rating(tomatometeravgaudience))">$INFO[ListItem.Rating(tomatometeravgaudience)]</value>
-		<value condition="Skin.HasSetting(AverageRatingAudienceScore) + !String.IsEmpty(Container(9001).Listitem.Rating(tomatometeravgaudience))">$INFO[Container(9001).Listitem.Rating(tomatometeravgaudience)]</value>
+		<value condition="Skin.HasSetting(TomatoMeterAllCritics) + !String.IsEmpty(Listitem.Rating(rottentomatoes))">$INFO[ListItem.Rating(rottentomatoes)]</value>
+		<value condition="Skin.HasSetting(TomatoMeterAllCritics) + !String.IsEmpty(Container(9001).Listitem.Rating(rottentomatoes))">$INFO[Container(9001).Listitem.Rating(rottentomatoes)]</value>
+		<value condition="Skin.HasSetting(TomatoMeterAudienceScore) + !String.IsEmpty(Listitem.Rating(rottentomatoes_audience))">$INFO[ListItem.Rating(rottentomatoes_audience)]</value>
+		<value condition="Skin.HasSetting(TomatoMeterAudienceScore) + !String.IsEmpty(Container(9001).Listitem.Rating(rottentomatoes_audience))">$INFO[Container(9001).Listitem.Rating(rottentomatoes_audience)]</value>
+		<value condition="Skin.HasSetting(TomatoMeterTopCritics) + !String.IsEmpty(Listitem.Rating(rottentomatoes_topcritics))">$INFO[ListItem.Rating(rottentomatoes_topcritics)]</value>
+		<value condition="Skin.HasSetting(TomatoMeterTopCritics) + !String.IsEmpty(Container(9001).Listitem.Rating(rottentomatoes_topcritics))">$INFO[Container(9001).Listitem.Rating(rottentomatoes_topcritics)]</value>
 	</variable>
 	<variable name="PlaySpeed">
 		<value condition="Player.Rewinding2x">osd/rwx2.png</value>

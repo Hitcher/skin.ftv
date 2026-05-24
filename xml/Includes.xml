@@ -687,28 +687,28 @@
 			<width>52</width>
 			<height>52</height>
 			<texture>views/logos/rotten_tomatoes_fresh.png</texture>
-			<visible>[Skin.HasSetting(TomatoMeterAllCritics) + !String.IsEmpty(ListItem.Rating(tomatometerallcritics)) + Integer.IsGreaterOrEqual(Control.GetLabel(777),6)] | [Skin.HasSetting(AverageRatingAllCritics) + !String.IsEmpty(ListItem.Rating(tomatometeravgcritics)) + Integer.IsGreaterOrEqual(Control.GetLabel(777),6)]</visible>
+			<visible>[Skin.HasSetting(TomatoMeterAllCritics) + !String.IsEmpty(ListItem.Rating(rottentomatoes)) + Integer.IsGreaterOrEqual(Control.GetLabel(777),6)] | [Skin.HasSetting(TomatoMeterTopCritics) + !String.IsEmpty(ListItem.Rating(rottentomatoes_topcritics)) + Integer.IsGreaterOrEqual(Control.GetLabel(777),6)]</visible>
 		</control>
 		<control type="image">
 			<top>4</top>
 			<width>53</width>
 			<height>52</height>
 			<texture>views/logos/rotten_tomatoes_rotten.png</texture>
-			<visible>[Skin.HasSetting(TomatoMeterAllCritics) + !String.IsEmpty(ListItem.Rating(tomatometerallcritics)) + Integer.IsLess(Control.GetLabel(777),6)] | [Skin.HasSetting(AverageRatingAllCritics) + !String.IsEmpty(ListItem.Rating(tomatometeravgcritics)) + Integer.IsLess(Control.GetLabel(777),6)]</visible>
+			<visible>[Skin.HasSetting(TomatoMeterAllCritics) + !String.IsEmpty(ListItem.Rating(rottentomatoes)) + Integer.IsLess(Control.GetLabel(777),6)] | [Skin.HasSetting(TomatoMeterTopCritics) + !String.IsEmpty(ListItem.Rating(rottentomatoes_topcritics)) + Integer.IsLess(Control.GetLabel(777),6)]</visible>
 		</control>
 		<control type="image">
 			<top>4</top>
 			<width>39</width>
 			<height>52</height>
 			<texture>views/logos/rotten_tomatoes_audience_fresh.png</texture>
-			<visible>[Skin.HasSetting(TomatoMeterAudienceScore) + !String.IsEmpty(ListItem.Rating(tomatometerallaudience)) + Integer.IsGreaterOrEqual(Control.GetLabel(777),6)] | [Skin.HasSetting(AverageRatingAudienceScore) + !String.IsEmpty(ListItem.Rating(tomatometeravgaudience)) + Integer.IsGreaterOrEqual(Control.GetLabel(777),6)]</visible>
+			<visible>Skin.HasSetting(TomatoMeterAudienceScore) + !String.IsEmpty(ListItem.Rating(rottentomatoes_audience)) + Integer.IsGreaterOrEqual(Control.GetLabel(777),6)</visible>
 		</control>
 		<control type="image">
 			<top>4</top>
 			<width>72</width>
 			<height>52</height>
 			<texture>views/logos/rotten_tomatoes_audience_rotten.png</texture>
-			<visible>[Skin.HasSetting(TomatoMeterAudienceScore) + !String.IsEmpty(ListItem.Rating(tomatometerallaudience)) + Integer.IsLess(Control.GetLabel(777),6)] | [Skin.HasSetting(AverageRatingAudienceScore) + !String.IsEmpty(ListItem.Rating(tomatometeravgaudience)) + Integer.IsLess(Control.GetLabel(777),6)]</visible>
+			<visible>Skin.HasSetting(TomatoMeterAudienceScore) + !String.IsEmpty(ListItem.Rating(rottentomatoes_audience)) + Integer.IsLess(Control.GetLabel(777),6)</visible>
 		</control>
 		<control type="label" id="777">
 			<top>-22</top>
@@ -718,7 +718,7 @@
 			<aligny>top</aligny>
 			<textcolor>ffbcbcbc</textcolor>
 			<label>$VAR[TomatoMeter,,/10]</label>
-			<visible>!String.IsEmpty(ListItem.Rating(tomatometerallcritics)) | !String.IsEmpty(ListItem.Rating(tomatometerallaudience)) | !String.IsEmpty(ListItem.Rating(tomatometeravgcritics)) | !String.IsEmpty(ListItem.Rating(tomatometeravgaudience))</visible>
+			<visible>!String.IsEmpty(ListItem.Rating(rottentomatoes)) | !String.IsEmpty(ListItem.Rating(rottentomatoes_audience)) | !String.IsEmpty(ListItem.Rating(rottentomatoes_topcritics))</visible>
 		</control>
 		<control type="label">
 			<top>-22</top>
@@ -728,7 +728,7 @@
 			<aligny>top</aligny>
 			<textcolor>ffbcbcbc</textcolor>
 			<label>$INFO[ListItem.Rating,,/10]</label>
-			<visible>String.IsEmpty(ListItem.Rating(imdb)) + String.IsEmpty(ListItem.Rating(trakt)) + String.IsEmpty(ListItem.Rating(tvdb)) + String.IsEmpty(ListItem.Rating(themoviedb)) + String.IsEmpty(ListItem.Rating(tmdb)) + String.IsEmpty(ListItem.Rating(metacritic)) + String.IsEmpty(ListItem.Rating(tomatometerallaudience)) + String.IsEmpty(ListItem.Rating(tomatometerallcritics)) + String.IsEmpty(ListItem.Rating(tomatometeravgaudience)) + String.IsEmpty(ListItem.Rating(tomatometeravgcritics))</visible>
+			<visible>String.IsEmpty(ListItem.Rating(imdb)) + String.IsEmpty(ListItem.Rating(trakt)) + String.IsEmpty(ListItem.Rating(tvdb)) + String.IsEmpty(ListItem.Rating(themoviedb)) + String.IsEmpty(ListItem.Rating(tmdb)) + String.IsEmpty(ListItem.Rating(metacritic)) + String.IsEmpty(ListItem.Rating(rottentomatoes_audience)) + String.IsEmpty(ListItem.Rating(rottentomatoes)) + String.IsEmpty(ListItem.Rating(rottentomatoes_topcritics))</visible>
 		</control>
 	</include>
 	<!-- OSD Option Button -->

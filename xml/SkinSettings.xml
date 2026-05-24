@@ -372,7 +372,7 @@
 					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
 					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
-					<onclick>Skin.SelectBool(31257, 31258|TomatoMeterAllCritics, 31259|TomatoMeterAudienceScore, 31260|AverageRatingAllCritics, 31261|AverageRatingAudienceScore)</onclick>
+					<onclick>Skin.SelectBool(31257, 31258|TomatoMeterAllCritics, 31259|TomatoMeterAudienceScore, 31260|TomatoMeterTopCritics)</onclick>
 				</control>
 				<control id="16" type="button">
 					<width>1916</width>
