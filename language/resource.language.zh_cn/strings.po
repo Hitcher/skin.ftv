@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2026-04-24 10:27+0000\n"
 "Last-Translator: wabisabi926 <wabisabi926@foxmail.com>\n"
@@ -1070,12 +1070,16 @@ msgid "TomatoMeter Audience Score"
 msgstr "观众新鲜度评分"
 
 msgctxt "#31260"
-msgid "Average Rating All Critics"
-msgstr "评论家平均分"
+msgid "TomatoMeter Top Critics"
+msgstr ""
 
-msgctxt "#31261"
-msgid "Average Rating Audience Score"
-msgstr "观众平均分"
+#~ msgctxt "#31260"
+#~ msgid "Average Rating All Critics"
+#~ msgstr "评论家平均分"
+
+#~ msgctxt "#31261"
+#~ msgid "Average Rating Audience Score"
+#~ msgstr "观众平均分"
 
 # empty string with id 31130
 #~ msgctxt "#31131"

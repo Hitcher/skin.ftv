@@ -1060,12 +1060,16 @@ msgid "TomatoMeter Audience Score"
 msgstr "TomatoMeter Audience Score"
 
 msgctxt "#31260"
-msgid "Average Rating All Critics"
-msgstr "Average Rating All Critics"
+msgid "TomatoMeter Top Critics"
+msgstr ""
 
-msgctxt "#31261"
-msgid "Average Rating Audience Score"
-msgstr "Average Rating Audience Score"
+#~ msgctxt "#31260"
+#~ msgid "Average Rating All Critics"
+#~ msgstr "Average Rating All Critics"
+
+#~ msgctxt "#31261"
+#~ msgid "Average Rating Audience Score"
+#~ msgstr "Average Rating Audience Score"
 
 #~ msgctxt "#31131"
 #~ msgid "Enable Wide TV Show Icons"

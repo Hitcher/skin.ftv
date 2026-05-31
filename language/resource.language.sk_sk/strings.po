@@ -1065,11 +1065,7 @@ msgid "TomatoMeter Audience Score"
 msgstr ""
 
 msgctxt "#31260"
-msgid "Average Rating All Critics"
-msgstr ""
-
-msgctxt "#31261"
-msgid "Average Rating Audience Score"
+msgid "TomatoMeter Top Critics"
 msgstr ""
 
 #~ msgctxt "#31108"

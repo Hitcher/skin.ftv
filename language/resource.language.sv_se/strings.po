@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2025-12-10 08:13+0000\n"
 "Last-Translator: Daniel Nylander <daniel@danielnylander.se>\n"
@@ -1070,12 +1070,16 @@ msgid "TomatoMeter Audience Score"
 msgstr "TomatoMeter Publikbetyg"
 
 msgctxt "#31260"
-msgid "Average Rating All Critics"
-msgstr "Genomsnittligt betyg alla kritiker"
+msgid "TomatoMeter Top Critics"
+msgstr ""
 
-msgctxt "#31261"
-msgid "Average Rating Audience Score"
-msgstr "Genomsnittligt betyg publikens betyg"
+#~ msgctxt "#31260"
+#~ msgid "Average Rating All Critics"
+#~ msgstr "Genomsnittligt betyg alla kritiker"
+
+#~ msgctxt "#31261"
+#~ msgid "Average Rating Audience Score"
+#~ msgstr "Genomsnittligt betyg publikens betyg"
 
 # empty string with id 31130
 #~ msgctxt "#31131"

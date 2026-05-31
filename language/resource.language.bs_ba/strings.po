@@ -1073,9 +1073,13 @@ msgid "TomatoMeter Audience Score"
 msgstr "TomatoMeter ocjena publike"
 
 msgctxt "#31260"
-msgid "Average Rating All Critics"
-msgstr "Prosječna ocjena svih kritičara"
+msgid "TomatoMeter Top Critics"
+msgstr ""
 
-msgctxt "#31261"
-msgid "Average Rating Audience Score"
-msgstr "Prosječna ocjena publike"
+#~ msgctxt "#31260"
+#~ msgid "Average Rating All Critics"
+#~ msgstr "Prosječna ocjena svih kritičara"
+
+#~ msgctxt "#31261"
+#~ msgid "Average Rating Audience Score"
+#~ msgstr "Prosječna ocjena publike"

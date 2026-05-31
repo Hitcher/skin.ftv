@@ -1073,12 +1073,16 @@ msgid "TomatoMeter Audience Score"
 msgstr "Score d’audience TomatoMeter"
 
 msgctxt "#31260"
-msgid "Average Rating All Critics"
-msgstr "Notation moyenne toutes critiques confondues"
+msgid "TomatoMeter Top Critics"
+msgstr ""
 
-msgctxt "#31261"
-msgid "Average Rating Audience Score"
-msgstr "Score moyen d’audience"
+#~ msgctxt "#31260"
+#~ msgid "Average Rating All Critics"
+#~ msgstr "Notation moyenne toutes critiques confondues"
+
+#~ msgctxt "#31261"
+#~ msgid "Average Rating Audience Score"
+#~ msgstr "Score moyen d’audience"
 
 # empty string with id 31130
 #~ msgctxt "#31131"

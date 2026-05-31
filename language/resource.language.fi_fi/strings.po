@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2025-12-10 08:13+0000\n"
 "Last-Translator: Oskari Lavinto <olavinto@protonmail.com>\n"
@@ -1070,11 +1070,7 @@ msgid "TomatoMeter Audience Score"
 msgstr ""
 
 msgctxt "#31260"
-msgid "Average Rating All Critics"
-msgstr ""
-
-msgctxt "#31261"
-msgid "Average Rating Audience Score"
+msgid "TomatoMeter Top Critics"
 msgstr ""
 
 #~ msgctxt "#31080"
