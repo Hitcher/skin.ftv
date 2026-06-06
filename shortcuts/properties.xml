@@ -2,16 +2,36 @@
 <properties>
 	<property name="widget" type="options">
 		<options>
-			<option value="favourites" label="1036"/>
-			<option value="weather" label="10508"/>
-			<option value="widget1" label="31210"/>
-			<option value="widget2" label="31211"/>
-			<option value="widget3" label="31212"/>
-			<option value="widget4" label="31213"/>
-			<option value="widget5" label="31214"/>
-			<option value="widget6" label="31215"/>
-			<option value="widget7" label="31216"/>
-			<option value="widget8" label="31217"/>
+			<option value="favourites" label="1036">
+				<icon>ftv_icon.png</icon>
+			</option>
+			<option value="weather" label="10508">
+				<icon>ftv_icon.png</icon>
+			</option>
+			<option value="widget1" label="31210">
+				<icon>ftv_icon.png</icon>
+			</option>
+			<option value="widget2" label="31211">
+				<icon>ftv_icon.png</icon>
+			</option>
+			<option value="widget3" label="31212">
+				<icon>ftv_icon.png</icon>
+			</option>
+			<option value="widget4" label="31213">
+				<icon>ftv_icon.png</icon>
+			</option>
+			<option value="widget5" label="31214">
+				<icon>ftv_icon.png</icon>
+			</option>
+			<option value="widget6" label="31215">
+				<icon>ftv_icon.png</icon>
+			</option>
+			<option value="widget7" label="31216">
+				<icon>ftv_icon.png</icon>
+			</option>
+			<option value="widget8" label="31217">
+				<icon>ftv_icon.png</icon>
+			</option>
 		</options>
 	</property>
 	<buttons>
