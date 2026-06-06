@@ -12,7 +12,7 @@
 	<onload>SetProperty(Weather_View,daily,home)</onload>
 	<onunload condition="Window.Next(addonbrowser)">SetProperty(WindowPreviousHome,true,home)</onunload>
 	<onunload condition="!Window.Next(addonbrowser)">ClearProperty(WindowPreviousHome,home)</onunload>
-	<onload condition="System.HasAddon(script.skinshortcuts)">RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=99&amp;levels=0&amp;group=mainmenu|shutdown)</onload>
+	<onload condition="System.HasAddon(script.skinshortcuts)">RunScript(script.skinshortcuts,type=buildxml)</onload>
 	<controls>
 		<control type="group">
 			<control id="9001" type="list">

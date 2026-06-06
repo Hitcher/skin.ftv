@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+	<property name="widget" type="options">
+		<options>
+			<option value="favourites" label="1036"/>
+			<option value="weather" label="10508"/>
+			<option value="widget1" label="31210"/>
+			<option value="widget2" label="31211"/>
+			<option value="widget3" label="31212"/>
+			<option value="widget4" label="31213"/>
+			<option value="widget5" label="31214"/>
+			<option value="widget6" label="31215"/>
+			<option value="widget7" label="31216"/>
+			<option value="widget8" label="31217"/>
+		</options>
+	</property>
+	<buttons>
+		<button id="309" property="widget" title="31218" showNone="true"/>
+	</buttons>
+</properties>

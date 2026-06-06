@@ -65,12 +65,12 @@
 			<include content="DialogHeading">
 				<param name="dialog_heading_label_width" value="2920"/>
 				<param name="dialog_heading_label" value="21432"/>
-				<param name="dialog_heading_label_visible" value="String.IsEqual(Window.Property(groupname), mainmenu)"/>
+				<param name="dialog_heading_label_visible" value="String.IsEqual(Window.Property(menuname), mainmenu)"/>
 			</include>
 			<include content="DialogHeading">
 				<param name="dialog_heading_label_width" value="2920"/>
 				<param name="dialog_heading_label" value="31114"/>
-				<param name="dialog_heading_label_visible" value="String.IsEqual(Window.Property(groupname), shutdown)"/>
+				<param name="dialog_heading_label_visible" value="String.IsEqual(Window.Property(menuname), shutdown)"/>
 			</include>
 			<!-- Left list -->
 			<control type="list" id="211">
@@ -95,15 +95,6 @@
 						<font>Light32</font>
 						<textcolor>NotFocusedColour</textcolor>
 						<label>$INFO[ListItem.Label]</label>
-					</control>
-					<control type="label">
-						<left>80</left>
-						<width>1180</width>
-						<height>168</height>
-						<font>Light32</font>
-						<align>right</align>
-						<textcolor>NotFocusedColour</textcolor>
-						<label>$INFO[Container(211).ListItem.Property(list)]</label>
 					</control>
 				</itemlayout>
 				<focusedlayout height="168" width="1340">
@@ -233,7 +224,7 @@
 					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
 					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					<label>$ADDON[script.skinshortcuts 32027]</label>
-					<label2>$INFO[Container(211).ListItem.Property(displaypath)]</label2>
+					<label2>$INFO[Container(211).ListItem.Property(action)]</label2>
 				</control>
 				<!-- Select widget group -->
 				<control id="309" type="button">
@@ -248,7 +239,8 @@
 					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					<label>31218</label>
 					<label2>$VAR[ShortcutsWidgetName]</label2>
-					<enable>!String.IsEqual(Window.Property(groupname), shutdown) + !String.IsEqual(Container(211).ListItem.Property(defaultID),script.globalsearch) + !String.IsEqual(Container(211).ListItem.Property(defaultID),favourites) + !String.IsEqual(Container(211).ListItem.Property(defaultID),weather) + !String.IsEqual(Container(211).ListItem.Property(defaultID),settings) + !String.IsEqual(Container(211).ListItem.Property(defaultID),exit)</enable>
+					<visible>!String.IsEqual(Window.Property(menuname), shutdown)</visible>
+					<enable>!String.IsEqual(Container(211).ListItem.Property(defaultID),script.globalsearch) + !String.IsEqual(Container(211).ListItem.Property(defaultID),favourites) + !String.IsEqual(Container(211).ListItem.Property(defaultID),weather) + !String.IsEqual(Container(211).ListItem.Property(defaultID),settings) + !String.IsEqual(Container(211).ListItem.Property(defaultID),exit)</enable>
 				</control>
 				<!-- Customise widget group -->
 				<control id="998" type="button">
@@ -271,7 +263,8 @@
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),widget6)">SetProperty(SubMenu,6000,home)</onclick>
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),widget7)">SetProperty(SubMenu,7000,home)</onclick>
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),widget8)">SetProperty(SubMenu,8000,home)</onclick>
-					<enable>!String.IsEqual(Window.Property(groupname), shutdown) + String.StartsWith(Container(211).ListItem.Property(widget),widget) + [!String.IsEqual(Container(211).ListItem.Property(defaultID),script.globalsearch) + !String.IsEqual(Container(211).ListItem.Property(defaultID),favourites) + !String.IsEqual(Container(211).ListItem.Property(defaultID),weather) + !String.IsEqual(Container(211).ListItem.Property(defaultID),settings) + !String.IsEqual(Container(211).ListItem.Property(defaultID),exit)]</enable>
+					<enable>String.StartsWith(Container(211).ListItem.Property(widget),widget) + [!String.IsEqual(Container(211).ListItem.Property(defaultID),script.globalsearch) + !String.IsEqual(Container(211).ListItem.Property(defaultID),favourites) + !String.IsEqual(Container(211).ListItem.Property(defaultID),weather) + !String.IsEqual(Container(211).ListItem.Property(defaultID),settings) + !String.IsEqual(Container(211).ListItem.Property(defaultID),exit)]</enable>
+					<visible>!String.IsEqual(Window.Property(menuname), shutdown)</visible>
 					<onclick>ActivateWindow(1105)</onclick>
 				</control>
 			</control>
@@ -293,8 +286,20 @@
 				<ondown>noop</ondown>
 				<align>center</align>
 				<orientation>horizontal</orientation>
+				<!-- Restore -->
+				<control type="button" id="311">
+					<width>640</width>
+					<height>152</height>
+					<align>center</align>
+					<aligny>top</aligny>
+					<font>Med24</font>
+					<onup>303</onup>
+					<textoffsetx>46</textoffsetx>
+					<textoffsety>44</textoffsety>
+					<label>$ADDON[script.skinshortcuts 32137]</label>
+				</control>
 				<!-- Reset -->
-				<control type="button" id="308">
+				<control type="button" id="312">
 					<width>640</width>
 					<height>152</height>
 					<align>center</align>
@@ -327,8 +332,8 @@
 					<textoffsetx>46</textoffsetx>
 					<textoffsety>44</textoffsety>
 					<label>186</label>
-					<onback>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=99&amp;levels=5&amp;group=mainmenu|shutdown)</onback>
-					<onclick>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=99&amp;levels=0&amp;group=mainmenu|shutdown)</onclick>
+					<onback>RunScript(script.skinshortcuts,type=buildxml,force=true)</onback>
+					<onclick>RunScript(script.skinshortcuts,type=buildxml,force=true)</onclick>
 					<onclick>Close</onclick>
 					<onfocus condition="Integer.IsGreater(Container(211).NumItems,13)">RunScript(script.skinvariables,run_dialog=ok,heading=$LOCALIZE[14117],message=$LOCALIZE[31252])</onfocus>
 				</control>

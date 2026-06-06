@@ -198,11 +198,11 @@
 		<value>$INFO[ListItem.Label2]</value>
 	</variable>
 	<variable name="ShortcutsWidgetName">
-		<value condition="String.IsEmpty(Container(211).ListItem.Property(widgetName)">$INFO[Container(211).ListItem.Thumb]</value>
+		<value condition="String.IsEmpty(Container(211).ListItem.Property(widgetName)">$INFO[Container(211).ListItem.Property(widgetName)]</value>
 		<value>$INFO[Container(211).ListItem.Property(widgetName)]</value>
 	</variable>
 	<variable name="ShortcutsWidget">
-		<value condition="String.IsEmpty(Container(211).ListItem.Property(widget)">$INFO[Container(211).ListItem.Label2]</value>
+		<value condition="String.IsEmpty(Container(211).ListItem.Property(widget))">$INFO[Container(211).ListItem.Label2]</value>
 		<value>$INFO[Container(211).ListItem.Property(widget)]</value>
 	</variable>
 	<variable name="ContentID">
