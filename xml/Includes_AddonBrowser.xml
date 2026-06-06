@@ -217,7 +217,7 @@
 			<control type="group">
 				<left>2846</left>
 				<top>578</top>
-				<visible>!Window.IsVisible(libraryssettings) + !Window.IsVisible(systemsettings) + !Window.IsVisible(servicesettings) + !String.IsEqual(Window(settings).Property(SettingsCurrentItem),7)</visible>
+				<visible>!Window.IsVisible(mediasettings) + !Window.IsVisible(systemsettings) + !Window.IsVisible(servicesettings) + !String.IsEqual(Window(settings).Property(SettingsCurrentItem),7)</visible>
 				<control type="group">
 					<width>666</width>
 					<height>994</height>
@@ -258,7 +258,7 @@
 			<control type="group">
 				<left>3446</left>
 				<top>578</top>
-				<visible>!Window.IsVisible(playersettings) + !Window.IsVisible(libraryssettings) + !Window.IsVisible(systemsettings) + !Window.IsVisible(servicesettings) + !String.IsEqual(Window(settings).Property(SettingsCurrentItem),7)</visible>
+				<visible>!Window.IsVisible(playersettings) + !Window.IsVisible(mediasettings) + !Window.IsVisible(systemsettings) + !Window.IsVisible(servicesettings) + !String.IsEqual(Window(settings).Property(SettingsCurrentItem),7)</visible>
 				<control type="group">
 					<width>666</width>
 					<height>994</height>
