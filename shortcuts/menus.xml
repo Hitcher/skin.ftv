@@ -200,88 +200,6 @@
 		</item>
 	</menu>
 	<groupings>
-		<group name="ftv" label="fTV" icon="ftv_icon.png">
-			<shortcut name="ftv-favourites" label="10134" icon="ftv_icon.png">
-				<action>ActivateWindow(favouritesbrowser,return)</action>
-			</shortcut>
-			<shortcut name="ftv-games" label="15016" icon="ftv_icon.png" type="game">
-				<action>ActivateWindow(Games)</action>
-			</shortcut>
-			<group name="ftv-movies" label="342" icon="DefaultMovies.png">
-				<shortcut name="recent-movies" label="31167" type="movie" icon="ftv_icon.png">
-					<action>ActivateWindow(Videos,special://skin/extras/video/RecentlyAddedMovies.xsp,return)</action>
-				</shortcut>
-				<shortcut name="your-movies" label="31168" type="movie" icon="ftv_icon.png">
-					<action>ActivateWindow(Videos,special://skin/extras/video/YourMovies.xsp,return)</action>
-				</shortcut>
-				<shortcut name="inprogress-movies" label="31169" type="movie" icon="ftv_icon.png">
-					<action>ActivateWindow(Videos,special://skin/extras/video/InProgressMovies.xsp,return)</action>
-				</shortcut>
-				<shortcut name="kids-movies" label="31170" type="movie" icon="ftv_icon.png">
-					<action>ActivateWindow(Videos,special://skin/extras/video/KidsMovies.xsp,return)</action>
-				</shortcut>
-				<shortcut name="toprated-movies" label="31174" type="movie" icon="ftv_icon.png">
-					<action>ActivateWindow(Videos,special://skin/extras/video/TopRatedMovies.xsp,return)</action>
-				</shortcut>
-				<shortcut name="movie-sets" label="31024" type="movie" icon="ftv_icon.png">
-					<action>ActivateWindow(Videos,&quot;library://video/movies/sets.xml/&quot;,return)</action>
-				</shortcut>
-			</group>
-			<group name="ftv-tvshows" label="20343" icon="DefaultTVShows.png">
-				<shortcut name="recent-tvshows" label="31175" type="tvshow" icon="ftv_icon.png">
-					<action>ActivateWindow(Videos,special://skin/extras/video/RecentlyUpdatedTVShows.xsp,return)</action>
-				</shortcut>
-				<shortcut name="your-tvshows" label="31176" type="tvshow" icon="ftv_icon.png">
-					<action>ActivateWindow(Videos,special://skin/extras/video/YourTVShows.xsp,return)</action>
-				</shortcut>
-				<shortcut name="inprogress-tvshows" label="31177" type="tvshow" icon="ftv_icon.png">
-					<action>ActivateWindow(Videos,special://skin/extras/video/InProgressTVShows.xsp,return)</action>
-				</shortcut>
-				<shortcut name="kids-tvshows" label="31178" type="tvshow" icon="ftv_icon.png">
-					<action>ActivateWindow(Videos,special://skin/extras/video/KidsTVShows.xsp,return)</action>
-				</shortcut>
-				<shortcut name="toprated-tvshows" label="31182" type="tvshow" icon="ftv_icon.png">
-					<action>ActivateWindow(Videos,special://skin/extras/video/TopRatedTVShows.xsp,return)</action>
-				</shortcut>
-			</group>
-			<group name="ftv-music" label="2" icon="DefaultMusicAlbums.png">
-				<shortcut name="recently-played-albums" label="31183" type="music" icon="ftv_icon.png">
-					<action>ActivateWindow(Music,musicdb://recentlyplayedalbums/,return)</action>
-				</shortcut>
-				<shortcut name="your-albums" label="31184" type="music" icon="ftv_icon.png">
-					<action>ActivateWindow(Music,special://skin/extras/music/YourAlbums.xsp,return)</action>
-				</shortcut>
-				<shortcut name="recently-added-albums" label="31185" type="music" icon="ftv_icon.png">
-					<action>ActivateWindow(Music,musicdb://recentlyaddedalbums/,return)</action>
-				</shortcut>
-				<shortcut name="your-artists" label="31186" type="music" icon="ftv_icon.png">
-					<action>ActivateWindow(Music,special://skin/extras/music/YourArtists.xsp,return)</action>
-				</shortcut>
-				<shortcut name="music-genres" label="31187" type="music" icon="ftv_icon.png">
-					<action>ActivateWindow(Music,musicdb://genres/,return)</action>
-				</shortcut>
-			</group>
-			<group name="ftv-addons" label="24001" icon="DefaultAddon.png">
-				<shortcut name="music-addons" label="31221" type="music" icon="ftv_icon.png">
-					<action>ActivateWindow(Music,addons://sources/audio/,return)</action>
-				</shortcut>
-				<shortcut name="program-addons" label="31222" type="program" icon="ftv_icon.png">
-					<action>ActivateWindow(Programs,addons://sources/executable/,return)</action>
-				</shortcut>
-				<shortcut name="video-addons" label="31223" type="video" icon="ftv_icon.png">
-					<action>ActivateWindow(Videos,addons://sources/video/,return)</action>
-				</shortcut>
-				<shortcut name="picture-addons" label="31224" type="picture" icon="ftv_icon.png">
-					<action>ActivateWindow(Pictures,addons://sources/image/,return)</action>
-				</shortcut>
-				<shortcut name="all-addons" label="31234" type="addons" icon="ftv_icon.png">
-					<action>ActivateWindow(AddonBrowser,&quot;addons://all/&quot;,return)</action>
-				</shortcut>
-			</group>
-		</group>
-		<group name="common" label="32029">
-			<content source="favourites"/>
-		</group>
 		<group name="video" label="32030">
 			<content source="nodes" target="video"/>
 			<content source="playlists" target="video"/>
@@ -311,8 +229,5 @@
 			<content source="commands"/>
 		</group>
 	</groupings>
-	<overrides>
-		<action replace="ActivateWindow(favourites)">ActivateWindow(favouritesbrowser)</action>
-	</overrides>
 	<contextmenu>true</contextmenu>
 </menus>

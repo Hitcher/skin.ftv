@@ -47,11 +47,20 @@
 			<path>musicdb://genres/</path>
 		</widget>
 	</group>
-	<group name="dynamic" label="32029">
-		<content source="favourites"/>
+	<group name="video" label="32030">
+		<content source="nodes" target="video"/>
 		<content source="playlists" target="video"/>
-		<content source="playlists" target="music"/>
 		<content source="addons" target="video"/>
+		<content source="sources" target="video"/>
+	</group>
+	<group name="music" label="32031">
+		<content source="nodes" target="music"/>
+		<content source="playlists" target="music"/>
 		<content source="addons" target="music"/>
+		<content source="sources" target="music"/>
+	</group>
+	<group name="pictures" label="32020">
+		<content source="addons" target="pictures"/>
+		<content source="sources" target="pictures"/>
 	</group>
 </widgets>
