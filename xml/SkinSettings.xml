@@ -3,7 +3,6 @@
 	<!-- skinsettings -->
 	<backgroundcolor>BackgroundColour</backgroundcolor>
 	<defaultcontrol always="true">9</defaultcontrol>
-	<onunload>RunScript(script.skinshortcuts,type=buildxml)</onunload>
 	<controls>
 		<!-- Dummy items to fake opening dialog -->
 		<control type="group">
@@ -234,7 +233,6 @@
 			<animation condition="!Window.Previous(settingscategory.xml)" reversible="false" type="WindowOpen">
 				<effect end="100" start="0" time="200" type="fade"/>
 				<effect easing="inout" end="0,0" start="0,-80" time="200" tween="sine" type="slide"/>
-				<effect center="auto" easing="inout" end="200" start="84.5" time="100" tween="sine" type="zoom"/>
 			</animation>
 			<animation condition="!Window.Previous(settingscategory.xml)" reversible="false" type="WindowClose">
 				<effect end="0" start="100" time="120" type="fade"/>
