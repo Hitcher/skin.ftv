@@ -198,12 +198,12 @@
 		<value>$INFO[ListItem.Label2]</value>
 	</variable>
 	<variable name="ShortcutsWidgetName">
-		<value condition="String.IsEmpty(Container(211).ListItem.Property(widgetName)">$INFO[Container(211).ListItem.Property(widgetName)]</value>
+		<value condition="String.IsEmpty(Container(211).ListItem.Property(widgetName)">$INFO[Container(211).ListItem.Thumb]</value>
 		<value>$INFO[Container(211).ListItem.Property(widgetName)]</value>
 	</variable>
 	<variable name="ShortcutsWidget">
-		<value condition="String.IsEmpty(Container(211).ListItem.Property(widgetgroup))">$INFO[Container(211).ListItem.Label2]</value>
-		<value>$INFO[Container(211).ListItem.Property(widgetgroup)]</value>
+		<value condition="String.IsEmpty(Container(211).ListItem.Property(widget)">$INFO[Container(211).ListItem.Label2]</value>
+		<value>$INFO[Container(211).ListItem.Property(widget)]</value>
 	</variable>
 	<variable name="ContentID">
 		<value condition="!String.IsEmpty(Container.PluginName) + String.IsEmpty(Container.Content)">plugins_none</value>
@@ -867,6 +867,406 @@
 	<variable name="AutoUpdate">
 		<value condition="!String.Contains(Control.GetLabel(13),*)">$LOCALIZE[31206]</value>
 		<value>$LOCALIZE[31207]</value>
+	</variable>
+	<variable name="WidgetLabel-1">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetLabel-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetLabel-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetLabel-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetLabel-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetLabel-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetLabel-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetLabel-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetLabel-1)]</value>
+	</variable>
+	<variable name="WidgetLabel-2">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetLabel-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetLabel-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetLabel-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetLabel-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetLabel-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetLabel-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetLabel-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetLabel-2)]</value>
+	</variable>
+	<variable name="WidgetLabel-3">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetLabel-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetLabel-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetLabel-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetLabel-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetLabel-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetLabel-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetLabel-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetLabel-3)]</value>
+	</variable>
+	<variable name="WidgetLabel-4">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetLabel-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetLabel-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetLabel-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetLabel-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetLabel-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetLabel-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetLabel-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetLabel-4)]</value>
+	</variable>
+	<variable name="WidgetLabel-5">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetLabel-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetLabel-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetLabel-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetLabel-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetLabel-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetLabel-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetLabel-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetLabel-5)]</value>
+	</variable>
+	<variable name="WidgetLabel-6">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetLabel-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetLabel-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetLabel-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetLabel-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetLabel-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetLabel-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetLabel-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetLabel-6)]</value>
+	</variable>
+	<variable name="WidgetLabel-7">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetLabel-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetLabel-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetLabel-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetLabel-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetLabel-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetLabel-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetLabel-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetLabel-7)]</value>
+	</variable>
+	<variable name="WidgetLabel-8">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetLabel-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetLabel-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetLabel-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetLabel-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetLabel-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetLabel-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetLabel-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetLabel-8)]</value>
+	</variable>
+	<variable name="WidgetAction-1">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetAction-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetAction-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetAction-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetAction-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetAction-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetAction-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetAction-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetAction-1)]</value>
+	</variable>
+	<variable name="WidgetAction-2">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetAction-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetAction-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetAction-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetAction-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetAction-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetAction-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetAction-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetAction-2)]</value>
+	</variable>
+	<variable name="WidgetAction-3">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetAction-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetAction-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetAction-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetAction-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetAction-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetAction-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetAction-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetAction-3)]</value>
+	</variable>
+	<variable name="WidgetAction-4">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetAction-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetAction-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetAction-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetAction-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetAction-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetAction-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetAction-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetAction-4)]</value>
+	</variable>
+	<variable name="WidgetAction-5">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetAction-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetAction-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetAction-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetAction-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetAction-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetAction-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetAction-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetAction-5)]</value>
+	</variable>
+	<variable name="WidgetAction-6">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetAction-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetAction-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetAction-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetAction-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetAction-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetAction-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetAction-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetAction-6)]</value>
+	</variable>
+	<variable name="WidgetAction-7">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetAction-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetAction-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetAction-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetAction-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetAction-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetAction-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetAction-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetAction-7)]</value>
+	</variable>
+	<variable name="WidgetAction-8">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetAction-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetAction-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetAction-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetAction-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetAction-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetAction-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetAction-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetAction-8)]</value>
+	</variable>
+	<variable name="WidgetStyle-1">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetStyle-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetStyle-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetStyle-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetStyle-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetStyle-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetStyle-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetStyle-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetStyle-1)]</value>
+	</variable>
+	<variable name="WidgetStyle-2">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetStyle-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetStyle-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetStyle-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetStyle-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetStyle-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetStyle-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetStyle-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetStyle-2)]</value>
+	</variable>
+	<variable name="WidgetStyle-3">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetStyle-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetStyle-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetStyle-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetStyle-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetStyle-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetStyle-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetStyle-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetStyle-3)]</value>
+	</variable>
+	<variable name="WidgetStyle-4">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetStyle-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetStyle-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetStyle-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetStyle-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetStyle-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetStyle-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetStyle-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetStyle-4)]</value>
+	</variable>
+	<variable name="WidgetStyle-5">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetStyle-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetStyle-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetStyle-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetStyle-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetStyle-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetStyle-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetStyle-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetStyle-5)]</value>
+	</variable>
+	<variable name="WidgetStyle-6">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetStyle-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetStyle-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetStyle-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetStyle-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetStyle-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetStyle-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetStyle-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetStyle-6)]</value>
+	</variable>
+	<variable name="WidgetStyle-7">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetStyle-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetStyle-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetStyle-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetStyle-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetStyle-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetStyle-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetStyle-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetStyle-7)]</value>
+	</variable>
+	<variable name="WidgetStyle-8">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetStyle-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetStyle-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetStyle-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetStyle-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetStyle-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetStyle-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetStyle-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetStyle-8)]</value>
+	</variable>
+	<variable name="WidgetSortBy-1">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortBy-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortBy-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortBy-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortBy-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortBy-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortBy-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortBy-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortBy-1)]</value>
+	</variable>
+	<variable name="WidgetSortBy-2">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortBy-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortBy-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortBy-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortBy-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortBy-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortBy-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortBy-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortBy-2)]</value>
+	</variable>
+	<variable name="WidgetSortBy-3">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortBy-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortBy-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortBy-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortBy-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortBy-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortBy-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortBy-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortBy-3)]</value>
+	</variable>
+	<variable name="WidgetSortBy-4">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortBy-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortBy-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortBy-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortBy-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortBy-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortBy-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortBy-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortBy-4)]</value>
+	</variable>
+	<variable name="WidgetSortBy-5">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortBy-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortBy-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortBy-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortBy-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortBy-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortBy-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortBy-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortBy-5)]</value>
+	</variable>
+	<variable name="WidgetSortBy-6">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortBy-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortBy-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortBy-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortBy-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortBy-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortBy-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortBy-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortBy-6)]</value>
+	</variable>
+	<variable name="WidgetSortBy-7">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortBy-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortBy-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortBy-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortBy-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortBy-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortBy-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortBy-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortBy-7)]</value>
+	</variable>
+	<variable name="WidgetSortBy-8">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortBy-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortBy-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortBy-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortBy-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortBy-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortBy-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortBy-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortBy-8)]</value>
+	</variable>
+	<variable name="WidgetSortOrder-1">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortOrder-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortOrder-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortOrder-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortOrder-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortOrder-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortOrder-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortOrder-1)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortOrder-1)]</value>
+	</variable>
+	<variable name="WidgetSortOrder-2">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortOrder-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortOrder-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortOrder-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortOrder-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortOrder-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortOrder-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortOrder-2)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortOrder-2)]</value>
+	</variable>
+	<variable name="WidgetSortOrder-3">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortOrder-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortOrder-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortOrder-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortOrder-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortOrder-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortOrder-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortOrder-3)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortOrder-3)]</value>
+	</variable>
+	<variable name="WidgetSortOrder-4">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortOrder-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortOrder-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortOrder-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortOrder-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortOrder-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortOrder-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortOrder-4)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortOrder-4)]</value>
+	</variable>
+	<variable name="WidgetSortOrder-5">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortOrder-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortOrder-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortOrder-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortOrder-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortOrder-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortOrder-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortOrder-5)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortOrder-5)]</value>
+	</variable>
+	<variable name="WidgetSortOrder-6">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortOrder-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortOrder-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortOrder-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortOrder-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortOrder-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortOrder-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortOrder-6)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortOrder-6)]</value>
+	</variable>
+	<variable name="WidgetSortOrder-7">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortOrder-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortOrder-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortOrder-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortOrder-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortOrder-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortOrder-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortOrder-7)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortOrder-7)]</value>
+	</variable>
+	<variable name="WidgetSortOrder-8">
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),1000)">$INFO[Skin.String(1000-WidgetSortOrder-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),2000)">$INFO[Skin.String(2000-WidgetSortOrder-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),3000)">$INFO[Skin.String(3000-WidgetSortOrder-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),4000)">$INFO[Skin.String(4000-WidgetSortOrder-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),5000)">$INFO[Skin.String(5000-WidgetSortOrder-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),6000)">$INFO[Skin.String(6000-WidgetSortOrder-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),7000)">$INFO[Skin.String(7000-WidgetSortOrder-8)]</value>
+		<value condition="String.IsEqual(Window(home).Property(SubMenu),8000)">$INFO[Skin.String(8000-WidgetSortOrder-8)]</value>
 	</variable>
 	<variable name="RatingCountry">
 		<value condition="Skin.HasSetting(US)">$LOCALIZE[31001]</value>

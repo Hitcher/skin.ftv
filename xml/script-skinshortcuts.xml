@@ -20,8 +20,8 @@
 			<onup condition="!String.IsEmpty(Container(211).ListItemNoWrap(-1).Label)">Control.Move(211,-1)</onup>
 			<ondown condition="!String.IsEmpty(Container(211).ListItemNoWrap(1).Label)">Control.Move(211,1)</ondown>
 			<ondown condition="String.IsEmpty(Container(211).ListItemNoWrap(1).Label)">9001</ondown>
-			<enable>[!String.StartsWith(Window.Property(menuname),widget) + Integer.IsLessOrEqual(Container(211).NumItems,12)] | [String.StartsWith(Window.Property(menuname),widget) + Integer.IsLessOrEqual(Container(211).NumItems,7)]</enable>
-			<onclick condition="!String.StartsWith(Window.Property(menuname),widget)">401</onclick>
+			<enable>Integer.IsLessOrEqual(Container(211).NumItems,12)</enable>
+			<onclick>401</onclick>
 		</control>
 		<!-- Move down -->
 		<control type="button" id="304">
@@ -65,17 +65,12 @@
 			<include content="DialogHeading">
 				<param name="dialog_heading_label_width" value="2920"/>
 				<param name="dialog_heading_label" value="21432"/>
-				<param name="dialog_heading_label_visible" value="String.IsEqual(Window.Property(menuname), mainmenu)"/>
+				<param name="dialog_heading_label_visible" value="String.IsEqual(Window.Property(groupname), mainmenu)"/>
 			</include>
 			<include content="DialogHeading">
 				<param name="dialog_heading_label_width" value="2920"/>
 				<param name="dialog_heading_label" value="31114"/>
-				<param name="dialog_heading_label_visible" value="String.IsEqual(Window.Property(menuname), shutdown)"/>
-			</include>
-			<include content="DialogHeading">
-				<param name="dialog_heading_label_width" value="2920"/>
-				<param name="dialog_heading_label" value="31219"/>
-				<param name="dialog_heading_label_visible" value="String.StartsWith(Window.Property(menuname),widget)"/>
+				<param name="dialog_heading_label_visible" value="String.IsEqual(Window.Property(groupname), shutdown)"/>
 			</include>
 			<!-- Left list -->
 			<control type="list" id="211">
@@ -100,6 +95,15 @@
 						<font>Light32</font>
 						<textcolor>NotFocusedColour</textcolor>
 						<label>$INFO[ListItem.Label]</label>
+					</control>
+					<control type="label">
+						<left>80</left>
+						<width>1180</width>
+						<height>168</height>
+						<font>Light32</font>
+						<align>right</align>
+						<textcolor>NotFocusedColour</textcolor>
+						<label>$INFO[Container(211).ListItem.Property(list)]</label>
 					</control>
 				</itemlayout>
 				<focusedlayout height="168" width="1340">
@@ -202,7 +206,6 @@
 					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
 					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					<label>$ADDON[script.skinshortcuts 32048]</label>
-					<visible>!String.StartsWith(Window.Property(menuname),widget)</visible>
 				</control>
 				<!-- Change label -->
 				<control type="button" id="305">
@@ -230,8 +233,7 @@
 					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
 					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					<label>$ADDON[script.skinshortcuts 32027]</label>
-					<label2>$INFO[Container(211).ListItem.Property(action)]</label2>
-					<visible>!String.StartsWith(Window.Property(menuname),widget)</visible>
+					<label2>$INFO[Container(211).ListItem.Property(displaypath)]</label2>
 				</control>
 				<!-- Select widget group -->
 				<control id="309" type="button">
@@ -246,122 +248,9 @@
 					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					<label>31218</label>
 					<label2>$VAR[ShortcutsWidgetName]</label2>
-					<visible>!String.IsEqual(Window.Property(menuname), shutdown) + !String.StartsWith(Window.Property(menuname),widget)</visible>
-					<enable>!String.IsEqual(Container(211).ListItem.Property(defaultID),script.globalsearch) + !String.IsEqual(Container(211).ListItem.Property(defaultID),favourites) + !String.IsEqual(Container(211).ListItem.Property(defaultID),weather) + !String.IsEqual(Container(211).ListItem.Property(defaultID),settings) + !String.IsEqual(Container(211).ListItem.Property(defaultID),exit)</enable>
+					<enable>!String.IsEqual(Window.Property(groupname), shutdown) + !String.IsEqual(Container(211).ListItem.Property(defaultID),script.globalsearch) + !String.IsEqual(Container(211).ListItem.Property(defaultID),favourites) + !String.IsEqual(Container(211).ListItem.Property(defaultID),weather) + !String.IsEqual(Container(211).ListItem.Property(defaultID),settings) + !String.IsEqual(Container(211).ListItem.Property(defaultID),exit)</enable>
 				</control>
-				<!-- Customise widget group: one button per group, the script opens the matching widget menu (subdialog buttonIDs in menus.xml) -->
-				<control id="9101" type="button">
-					<width>1740</width>
-					<height>168</height>
-					<font>Light32</font>
-					<textwidth>1580</textwidth>
-					<textoffsetx>80</textoffsetx>
-					<textcolor>NotFocusedColour</textcolor>
-					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
-					<label>$LOCALIZE[31219]</label>
-					<label2>$VAR[ShortcutsWidget]</label2>
-					<visible>!String.IsEqual(Window.Property(menuname), shutdown) + !String.StartsWith(Window.Property(menuname),widget) + String.IsEqual(Container(211).ListItem.Property(widgetgroup),widget1)</visible>
-				</control>
-				<control id="9102" type="button">
-					<width>1740</width>
-					<height>168</height>
-					<font>Light32</font>
-					<textwidth>1580</textwidth>
-					<textoffsetx>80</textoffsetx>
-					<textcolor>NotFocusedColour</textcolor>
-					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
-					<label>$LOCALIZE[31219]</label>
-					<label2>$VAR[ShortcutsWidget]</label2>
-					<visible>!String.IsEqual(Window.Property(menuname), shutdown) + !String.StartsWith(Window.Property(menuname),widget) + String.IsEqual(Container(211).ListItem.Property(widgetgroup),widget2)</visible>
-				</control>
-				<control id="9103" type="button">
-					<width>1740</width>
-					<height>168</height>
-					<font>Light32</font>
-					<textwidth>1580</textwidth>
-					<textoffsetx>80</textoffsetx>
-					<textcolor>NotFocusedColour</textcolor>
-					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
-					<label>$LOCALIZE[31219]</label>
-					<label2>$VAR[ShortcutsWidget]</label2>
-					<visible>!String.IsEqual(Window.Property(menuname), shutdown) + !String.StartsWith(Window.Property(menuname),widget) + String.IsEqual(Container(211).ListItem.Property(widgetgroup),widget3)</visible>
-				</control>
-				<control id="9104" type="button">
-					<width>1740</width>
-					<height>168</height>
-					<font>Light32</font>
-					<textwidth>1580</textwidth>
-					<textoffsetx>80</textoffsetx>
-					<textcolor>NotFocusedColour</textcolor>
-					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
-					<label>$LOCALIZE[31219]</label>
-					<label2>$VAR[ShortcutsWidget]</label2>
-					<visible>!String.IsEqual(Window.Property(menuname), shutdown) + !String.StartsWith(Window.Property(menuname),widget) + String.IsEqual(Container(211).ListItem.Property(widgetgroup),widget4)</visible>
-				</control>
-				<control id="9105" type="button">
-					<width>1740</width>
-					<height>168</height>
-					<font>Light32</font>
-					<textwidth>1580</textwidth>
-					<textoffsetx>80</textoffsetx>
-					<textcolor>NotFocusedColour</textcolor>
-					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
-					<label>$LOCALIZE[31219]</label>
-					<label2>$VAR[ShortcutsWidget]</label2>
-					<visible>!String.IsEqual(Window.Property(menuname), shutdown) + !String.StartsWith(Window.Property(menuname),widget) + String.IsEqual(Container(211).ListItem.Property(widgetgroup),widget5)</visible>
-				</control>
-				<control id="9106" type="button">
-					<width>1740</width>
-					<height>168</height>
-					<font>Light32</font>
-					<textwidth>1580</textwidth>
-					<textoffsetx>80</textoffsetx>
-					<textcolor>NotFocusedColour</textcolor>
-					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
-					<label>$LOCALIZE[31219]</label>
-					<label2>$VAR[ShortcutsWidget]</label2>
-					<visible>!String.IsEqual(Window.Property(menuname), shutdown) + !String.StartsWith(Window.Property(menuname),widget) + String.IsEqual(Container(211).ListItem.Property(widgetgroup),widget6)</visible>
-				</control>
-				<control id="9107" type="button">
-					<width>1740</width>
-					<height>168</height>
-					<font>Light32</font>
-					<textwidth>1580</textwidth>
-					<textoffsetx>80</textoffsetx>
-					<textcolor>NotFocusedColour</textcolor>
-					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
-					<label>$LOCALIZE[31219]</label>
-					<label2>$VAR[ShortcutsWidget]</label2>
-					<visible>!String.IsEqual(Window.Property(menuname), shutdown) + !String.StartsWith(Window.Property(menuname),widget) + String.IsEqual(Container(211).ListItem.Property(widgetgroup),widget7)</visible>
-				</control>
-				<control id="9108" type="button">
-					<width>1740</width>
-					<height>168</height>
-					<font>Light32</font>
-					<textwidth>1580</textwidth>
-					<textoffsetx>80</textoffsetx>
-					<textcolor>NotFocusedColour</textcolor>
-					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
-					<label>$LOCALIZE[31219]</label>
-					<label2>$VAR[ShortcutsWidget]</label2>
-					<visible>!String.IsEqual(Window.Property(menuname), shutdown) + !String.StartsWith(Window.Property(menuname),widget) + String.IsEqual(Container(211).ListItem.Property(widgetgroup),widget8)</visible>
-				</control>
+				<!-- Customise widget group -->
 				<control id="998" type="button">
 					<width>1740</width>
 					<height>168</height>
@@ -374,68 +263,16 @@
 					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					<label>$LOCALIZE[31219]</label>
 					<label2>$VAR[ShortcutsWidget]</label2>
-					<visible>!String.IsEqual(Window.Property(menuname), shutdown) + !String.StartsWith(Window.Property(menuname),widget) + !String.StartsWith(Container(211).ListItem.Property(widgetgroup),widget)</visible>
-					<enable>false</enable>
-				</control>
-				<!-- Choose widget -->
-				<control id="310" type="button">
-					<width>1740</width>
-					<height>168</height>
-					<font>Light32</font>
-					<textwidth>1580</textwidth>
-					<textoffsetx>80</textoffsetx>
-					<textcolor>NotFocusedColour</textcolor>
-					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
-					<label>$ADDON[script.skinshortcuts 32044]</label>
-					<label2>$INFO[Container(211).ListItem.Label]</label2>
-					<visible>String.StartsWith(Window.Property(menuname),widget)</visible>
-				</control>
-				<!-- Widget layout -->
-				<control id="350" type="button">
-					<width>1740</width>
-					<height>168</height>
-					<font>Light32</font>
-					<textwidth>1580</textwidth>
-					<textoffsetx>80</textoffsetx>
-					<textcolor>NotFocusedColour</textcolor>
-					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
-					<label>$LOCALIZE[31198]</label>
-					<label2>$INFO[Container(211).ListItem.Property(widgetStyle)]</label2>
-					<visible>String.StartsWith(Window.Property(menuname),widget)</visible>
-				</control>
-				<!-- Widget sort by -->
-				<control id="351" type="button">
-					<width>1740</width>
-					<height>168</height>
-					<font>Light32</font>
-					<textwidth>1580</textwidth>
-					<textoffsetx>80</textoffsetx>
-					<textcolor>NotFocusedColour</textcolor>
-					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
-					<label>$LOCALIZE[31092]</label>
-					<label2>$INFO[Container(211).ListItem.Property(widgetSortBy)]</label2>
-					<visible>String.StartsWith(Window.Property(menuname),widget)</visible>
-				</control>
-				<!-- Widget sort order -->
-				<control id="352" type="button">
-					<width>1740</width>
-					<height>168</height>
-					<font>Light32</font>
-					<textwidth>1580</textwidth>
-					<textoffsetx>80</textoffsetx>
-					<textcolor>NotFocusedColour</textcolor>
-					<focusedcolor>FocusedColour</focusedcolor>
-					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
-					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
-					<label>$LOCALIZE[31202]</label>
-					<label2>$INFO[Container(211).ListItem.Property(widgetSortOrder)]</label2>
-					<visible>String.StartsWith(Window.Property(menuname),widget)</visible>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),widget1)">SetProperty(SubMenu,1000,home)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),widget2)">SetProperty(SubMenu,2000,home)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),widget3)">SetProperty(SubMenu,3000,home)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),widget4)">SetProperty(SubMenu,4000,home)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),widget5)">SetProperty(SubMenu,5000,home)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),widget6)">SetProperty(SubMenu,6000,home)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),widget7)">SetProperty(SubMenu,7000,home)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),widget8)">SetProperty(SubMenu,8000,home)</onclick>
+					<enable>!String.IsEqual(Window.Property(groupname), shutdown) + String.StartsWith(Container(211).ListItem.Property(widget),widget) + [!String.IsEqual(Container(211).ListItem.Property(defaultID),script.globalsearch) + !String.IsEqual(Container(211).ListItem.Property(defaultID),favourites) + !String.IsEqual(Container(211).ListItem.Property(defaultID),weather) + !String.IsEqual(Container(211).ListItem.Property(defaultID),settings) + !String.IsEqual(Container(211).ListItem.Property(defaultID),exit)]</enable>
+					<onclick>ActivateWindow(1105)</onclick>
 				</control>
 			</control>
 			<control type="image">
@@ -456,20 +293,8 @@
 				<ondown>noop</ondown>
 				<align>center</align>
 				<orientation>horizontal</orientation>
-				<!-- Restore -->
-				<control type="button" id="311">
-					<width>640</width>
-					<height>152</height>
-					<align>center</align>
-					<aligny>top</aligny>
-					<font>Med24</font>
-					<onup>303</onup>
-					<textoffsetx>46</textoffsetx>
-					<textoffsety>44</textoffsety>
-					<label>$ADDON[script.skinshortcuts 32137]</label>
-				</control>
 				<!-- Reset -->
-				<control type="button" id="312">
+				<control type="button" id="308">
 					<width>640</width>
 					<height>152</height>
 					<align>center</align>
@@ -502,6 +327,8 @@
 					<textoffsetx>46</textoffsetx>
 					<textoffsety>44</textoffsety>
 					<label>186</label>
+					<onback>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=99&amp;levels=5&amp;group=mainmenu|shutdown)</onback>
+					<onclick>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=99&amp;levels=0&amp;group=mainmenu|shutdown)</onclick>
 					<onclick>Close</onclick>
 					<onfocus condition="Integer.IsGreater(Container(211).NumItems,13)">RunScript(script.skinvariables,run_dialog=ok,heading=$LOCALIZE[14117],message=$LOCALIZE[31252])</onfocus>
 				</control>

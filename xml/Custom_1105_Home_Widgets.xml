@@ -342,42 +342,42 @@
 						<item>
 							<label>$VAR[WidgetAction-1]</label>
 							<label2>31201</label2>
-							<onclick>RunScript(script.skinshortcuts,type=skinstring&amp;skinLabel=$INFO[Window(home).Property(SubMenu)]-WidgetLabel-1&amp;skinPath=$INFO[Window(home).Property(SubMenu)]-WidgetAction-1&amp;skinTarget=$INFO[Window(home).Property(SubMenu)]-WidgetList-1&amp;skinType=$INFO[Window(home).Property(SubMenu)]-WidgetType-1)</onclick>
+							<onclick>RunScript(script.skinshortcuts,type=shortcuts&amp;showNone=true&amp;skinLabel=$INFO[Window(home).Property(SubMenu)]-WidgetLabel-1&amp;skinAction=$INFO[Window(home).Property(SubMenu)]-WidgetAction-1&amp;skinList=$INFO[Window(home).Property(SubMenu)]-WidgetList-1&amp;skinType=$INFO[Window(home).Property(SubMenu)]-WidgetType-1)</onclick>
 						</item>
 						<item>
 							<label>$VAR[WidgetAction-2]</label>
 							<label2>31201</label2>
-							<onclick>RunScript(script.skinshortcuts,type=skinstring&amp;skinLabel=$INFO[Window(home).Property(SubMenu)]-WidgetLabel-2&amp;skinPath=$INFO[Window(home).Property(SubMenu)]-WidgetAction-2&amp;skinTarget=$INFO[Window(home).Property(SubMenu)]-WidgetList-2&amp;skinType=$INFO[Window(home).Property(SubMenu)]-WidgetType-2)</onclick>
+							<onclick>RunScript(script.skinshortcuts,type=shortcuts&amp;showNone=true&amp;skinLabel=$INFO[Window(home).Property(SubMenu)]-WidgetLabel-2&amp;skinAction=$INFO[Window(home).Property(SubMenu)]-WidgetAction-2&amp;skinList=$INFO[Window(home).Property(SubMenu)]-WidgetList-2&amp;skinType=$INFO[Window(home).Property(SubMenu)]-WidgetType-2)</onclick>
 						</item>
 						<item>
 							<label>$VAR[WidgetAction-3]</label>
 							<label2>31201</label2>
-							<onclick>RunScript(script.skinshortcuts,type=skinstring&amp;skinLabel=$INFO[Window(home).Property(SubMenu)]-WidgetLabel-3&amp;skinPath=$INFO[Window(home).Property(SubMenu)]-WidgetAction-3&amp;skinTarget=$INFO[Window(home).Property(SubMenu)]-WidgetList-3&amp;skinType=$INFO[Window(home).Property(SubMenu)]-WidgetType-3)</onclick>
+							<onclick>RunScript(script.skinshortcuts,type=shortcuts&amp;showNone=true&amp;skinLabel=$INFO[Window(home).Property(SubMenu)]-WidgetLabel-3&amp;skinAction=$INFO[Window(home).Property(SubMenu)]-WidgetAction-3&amp;skinList=$INFO[Window(home).Property(SubMenu)]-WidgetList-3&amp;skinType=$INFO[Window(home).Property(SubMenu)]-WidgetType-3)</onclick>
 						</item>
 						<item>
 							<label>$VAR[WidgetAction-4]</label>
 							<label2>31201</label2>
-							<onclick>RunScript(script.skinshortcuts,type=skinstring&amp;skinLabel=$INFO[Window(home).Property(SubMenu)]-WidgetLabel-4&amp;skinPath=$INFO[Window(home).Property(SubMenu)]-WidgetAction-4&amp;skinTarget=$INFO[Window(home).Property(SubMenu)]-WidgetList-4&amp;skinType=$INFO[Window(home).Property(SubMenu)]-WidgetType-4)</onclick>
+							<onclick>RunScript(script.skinshortcuts,type=shortcuts&amp;showNone=true&amp;skinLabel=$INFO[Window(home).Property(SubMenu)]-WidgetLabel-4&amp;skinAction=$INFO[Window(home).Property(SubMenu)]-WidgetAction-4&amp;skinList=$INFO[Window(home).Property(SubMenu)]-WidgetList-4&amp;skinType=$INFO[Window(home).Property(SubMenu)]-WidgetType-4)</onclick>
 						</item>
 						<item>
 							<label>$VAR[WidgetAction-5]</label>
 							<label2>31201</label2>
-							<onclick>RunScript(script.skinshortcuts,type=skinstring&amp;skinLabel=$INFO[Window(home).Property(SubMenu)]-WidgetLabel-5&amp;skinPath=$INFO[Window(home).Property(SubMenu)]-WidgetAction-5&amp;skinTarget=$INFO[Window(home).Property(SubMenu)]-WidgetList-5&amp;skinType=$INFO[Window(home).Property(SubMenu)]-WidgetType-5)</onclick>
+							<onclick>RunScript(script.skinshortcuts,type=shortcuts&amp;showNone=true&amp;skinLabel=$INFO[Window(home).Property(SubMenu)]-WidgetLabel-5&amp;skinAction=$INFO[Window(home).Property(SubMenu)]-WidgetAction-5&amp;skinList=$INFO[Window(home).Property(SubMenu)]-WidgetList-5&amp;skinType=$INFO[Window(home).Property(SubMenu)]-WidgetType-5)</onclick>
 						</item>
 						<item>
 							<label>$VAR[WidgetAction-6]</label>
 							<label2>31201</label2>
-							<onclick>RunScript(script.skinshortcuts,type=skinstring&amp;skinLabel=$INFO[Window(home).Property(SubMenu)]-WidgetLabel-6&amp;skinPath=$INFO[Window(home).Property(SubMenu)]-WidgetAction-6&amp;skinTarget=$INFO[Window(home).Property(SubMenu)]-WidgetList-6&amp;skinType=$INFO[Window(home).Property(SubMenu)]-WidgetType-6)</onclick>
+							<onclick>RunScript(script.skinshortcuts,type=shortcuts&amp;showNone=true&amp;skinLabel=$INFO[Window(home).Property(SubMenu)]-WidgetLabel-6&amp;skinAction=$INFO[Window(home).Property(SubMenu)]-WidgetAction-6&amp;skinList=$INFO[Window(home).Property(SubMenu)]-WidgetList-6&amp;skinType=$INFO[Window(home).Property(SubMenu)]-WidgetType-6)</onclick>
 						</item>
 						<item>
 							<label>$VAR[WidgetAction-7]</label>
 							<label2>31201</label2>
-							<onclick>RunScript(script.skinshortcuts,type=skinstring&amp;skinLabel=$INFO[Window(home).Property(SubMenu)]-WidgetLabel-7&amp;skinPath=$INFO[Window(home).Property(SubMenu)]-WidgetAction-7&amp;skinTarget=$INFO[Window(home).Property(SubMenu)]-WidgetList-7&amp;skinType=$INFO[Window(home).Property(SubMenu)]-WidgetType-7)</onclick>
+							<onclick>RunScript(script.skinshortcuts,type=shortcuts&amp;showNone=true&amp;skinLabel=$INFO[Window(home).Property(SubMenu)]-WidgetLabel-7&amp;skinAction=$INFO[Window(home).Property(SubMenu)]-WidgetAction-7&amp;skinList=$INFO[Window(home).Property(SubMenu)]-WidgetList-7&amp;skinType=$INFO[Window(home).Property(SubMenu)]-WidgetType-7)</onclick>
 						</item>
 						<item>
 							<label>$VAR[WidgetAction-8]</label>
 							<label2>31201</label2>
-							<onclick>RunScript(script.skinshortcuts,type=skinstring&amp;skinLabel=$INFO[Window(home).Property(SubMenu)]-WidgetLabel-8&amp;skinPath=$INFO[Window(home).Property(SubMenu)]-WidgetAction-8&amp;skinTarget=$INFO[Window(home).Property(SubMenu)]-WidgetList-8&amp;skinType=$INFO[Window(home).Property(SubMenu)]-WidgetType-8)</onclick>
+							<onclick>RunScript(script.skinshortcuts,type=shortcuts&amp;showNone=true&amp;skinLabel=$INFO[Window(home).Property(SubMenu)]-WidgetLabel-8&amp;skinAction=$INFO[Window(home).Property(SubMenu)]-WidgetAction-8&amp;skinList=$INFO[Window(home).Property(SubMenu)]-WidgetList-8&amp;skinType=$INFO[Window(home).Property(SubMenu)]-WidgetType-8)</onclick>
 						</item>
 					</content>
 				</control>

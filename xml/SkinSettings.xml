@@ -3,6 +3,7 @@
 	<!-- skinsettings -->
 	<backgroundcolor>BackgroundColour</backgroundcolor>
 	<defaultcontrol always="true">9</defaultcontrol>
+	<onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=99&amp;levels=0&amp;group=mainmenu|shutdown)</onunload>
 	<controls>
 		<!-- Dummy items to fake opening dialog -->
 		<control type="group">
@@ -233,6 +234,7 @@
 			<animation condition="!Window.Previous(settingscategory.xml)" reversible="false" type="WindowOpen">
 				<effect end="100" start="0" time="200" type="fade"/>
 				<effect easing="inout" end="0,0" start="0,-80" time="200" tween="sine" type="slide"/>
+				<effect center="auto" easing="inout" end="200" start="84.5" time="100" tween="sine" type="zoom"/>
 			</animation>
 			<animation condition="!Window.Previous(settingscategory.xml)" reversible="false" type="WindowClose">
 				<effect end="0" start="100" time="120" type="fade"/>
@@ -266,7 +268,7 @@
 					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
 					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
-					<onclick>RunScript(script.skinshortcuts,type=manage&amp;menu=mainmenu)</onclick>
+					<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</onclick>
 				</control>
 				<control id="19" type="button">
 					<width>1916</width>
@@ -291,7 +293,7 @@
 					<focusedcolor>FocusedColour</focusedcolor>
 					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
 					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
-					<onclick>RunScript(script.skinshortcuts,type=manage&amp;menu=shutdown)</onclick>
+					<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=shutdown)</onclick>
 				</control>
 				<control id="25" type="radiobutton">
 					<width>1916</width>

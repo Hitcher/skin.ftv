@@ -159,7 +159,7 @@
 				</control>
 			</focusedlayout>
 			<content>
-				<include>skinshortcuts-shutdown</include>
+				<include>skinshortcuts-group-shutdown</include>
 			</content>
 		</control>
 	</controls>
