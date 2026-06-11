@@ -1386,38 +1386,6 @@
 		</item>
 	</include>
 	<include name="ParamWidgetInclude">
-		<control id="$PARAM[ID]1" type="list">
-			<include>HiddenList</include>
-			<content target="$INFO[Skin.String($PARAM[ID]0-WidgetType-1)]" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-1)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-1)]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-1)]</content>
-		</control>
-		<control id="$PARAM[ID]2" type="list">
-			<include>HiddenList</include>
-			<content target="$INFO[Skin.String($PARAM[ID]0-WidgetType-2)]" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-2)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-2)]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-2)]</content>
-		</control>
-		<control id="$PARAM[ID]3" type="list">
-			<include>HiddenList</include>
-			<content target="$INFO[Skin.String($PARAM[ID]0-WidgetType-3)]" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-3)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-3)]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-3)]</content>
-		</control>
-		<control id="$PARAM[ID]4" type="list">
-			<include>HiddenList</include>
-			<content target="$INFO[Skin.String($PARAM[ID]0-WidgetType-4)]" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-4)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-4)]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-4)]</content>
-		</control>
-		<control id="$PARAM[ID]5" type="list">
-			<include>HiddenList</include>
-			<content target="$INFO[Skin.String($PARAM[ID]0-WidgetType-4)]" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-5)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-5)]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-5)]</content>
-		</control>
-		<control id="$PARAM[ID]6" type="list">
-			<include>HiddenList</include>
-			<content target="$INFO[Skin.String($PARAM[ID]0-WidgetType-6)]" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-6)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-6)]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-6)]</content>
-		</control>
-		<control id="$PARAM[ID]7" type="list">
-			<include>HiddenList</include>
-			<content target="$INFO[Skin.String($PARAM[ID]0-WidgetType-7)]" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-7)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-7)]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-7)]</content>
-		</control>
-		<control id="$PARAM[ID]8" type="list">
-			<include>HiddenList</include>
-			<content target="$INFO[Skin.String($PARAM[ID]0-WidgetType-8)]" sortby="$INFO[Skin.String($PARAM[ID]0-WidgetSortBy-8)]" sortorder="$INFO[Skin.String($PARAM[ID]0-WidgetSortOrder-8)]" limit="6">$INFO[Skin.String($PARAM[ID]0-WidgetList-8)]</content>
-		</control>
 		<control id="$PARAM[ID]" type="fixedlist">
 			<left>838</left>
 			<top>-506</top>
@@ -1438,7 +1406,7 @@
 			<scrolltime easing="inout" tween="sine">300</scrolltime>
 			<include>HomeWidgetsAnimation</include>
 			<include>WindowHomeFadeAnimation</include>
-			<visible>[String.IsEmpty(Container(99).ListItem.Property(widget)) + String.IsEqual(Container(99).ListItem.Label2,$PARAM[widget]) ] | String.IsEqual(Container(99).ListItem.Property(widget),$PARAM[widget])</visible>
+			<visible>[[String.IsEmpty(Container(99).ListItem.Property(widgetgroup)) + String.IsEqual(Container(99).ListItem.Label2,$PARAM[widget]) ] | String.IsEqual(Container(99).ListItem.Property(widgetgroup),$PARAM[widget])]</visible>
 			<animation condition="String.IsEqual(Container($PARAM[ID]).NumItems,1)" effect="slide" end="-608,-228">Conditional</animation>
 			<animation condition="String.IsEqual(Container($PARAM[ID]).NumItems,2)" effect="slide" end="0,-598">Conditional</animation>
 			<animation condition="Integer.IsGreater(Container($PARAM[ID]).NumItems,2) + !Container($PARAM[ID]).Row(1)" easing="inout" effect="slide" end="0,-228" time="220" tween="sine">Conditional</animation>
@@ -1547,7 +1515,9 @@
 					<include>HomeSquareInfoFocusedlayout</include>
 				</control>
 			</focusedlayout>
-			<include>$PARAM[content]</include>
+			<content>
+				<include>skinshortcuts-template-widget-rows</include>
+			</content>
 		</control>
 	</include>
 </includes>
