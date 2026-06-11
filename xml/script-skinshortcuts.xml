@@ -389,7 +389,7 @@
 					<texturefocus border="0,0,0,6">settings/button_focus.png</texturefocus>
 					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					<label>$ADDON[script.skinshortcuts 32044]</label>
-					<label2>$INFO[Container(211).ListItem.Label]</label2>
+					<label2>$INFO[Container(211).ListItem.Property(widgetPath)]</label2>
 					<visible>String.StartsWith(Window.Property(menuname),widget)</visible>
 				</control>
 				<!-- Widget layout -->
