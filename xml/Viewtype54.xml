@@ -69,13 +69,14 @@
 				<ondown>noop</ondown>
 				<onleft>2001</onleft>
 				<onright>noop</onright>
-				<movement>1</movement>
+				<aligny>top</aligny>
+				<startmovement>2</startmovement>
+				<endmovement>0</endmovement>
 				<focusposition>1</focusposition>
 				<orientation>vertical</orientation>
 				<viewtype label="31112">list</viewtype>
 				<scrolltime>0</scrolltime>
 				<visible>$EXP[Exp_View_54]</visible>
-				<animation condition="[!Container.HasParent + Integer.IsLessOrEqual(Container(54).NumItems,2)] | [Container.HasParent + Integer.IsLessOrEqual(Container(54).NumItems,1)]" effect="slide" end="0,-202" start="0,0">Conditional</animation>
 				<itemlayout height="202" width="2264">
 					<control type="label">
 						<width>136</width>
