@@ -39,7 +39,7 @@
 	<variable name="StreamHDRTypeVar">
 		<value condition="String.IsEqual(ListItem.Property(stream.hdrtype),dolbyvision)">Dolby Vision</value>
 		<value condition="String.IsEqual(ListItem.Property(stream.hdrtype),hdr10)">HDR10</value>
-		<value condition="String.IsEqual(ListItem.Property(stream.hdrtype),hdr10+)">HDR10+</value>
+		<value condition="String.IsEqual(ListItem.Property(stream.hdrtype),hdr10plus)">HDR10+</value>
 		<value condition="String.IsEqual(ListItem.Property(stream.hdrtype),hlg)">HLG</value>
 		<value>$INFO[ListItem.Property(stream.hdrtype)]</value>
 	</variable>
@@ -502,7 +502,7 @@
 	<variable name="VideoHDRTypeVar">
 		<value condition="String.IsEqual(ListItem.HdrType,dolbyvision) | [Window.IsActive(fullscreenvideo) + String.IsEqual(VideoPlayer.HdrType,dolbyvision)]">Dolby Vision</value>
 		<value condition="String.IsEqual(ListItem.HdrType,hdr10) | [Window.IsActive(fullscreenvideo) + String.IsEqual(VideoPlayer.HdrType,hdr10)]">HDR10</value>
-		<value condition="String.IsEqual(ListItem.HdrType,hdr10+) | [Window.IsActive(fullscreenvideo) + String.IsEqual(VideoPlayer.HdrType,hdr10+)]">HDR10+</value>
+		<value condition="String.IsEqual(ListItem.HdrType,hdr10plus) | [Window.IsActive(fullscreenvideo) + String.IsEqual(VideoPlayer.HdrType,hdr10plus)]">HDR10+</value>
 		<value condition="String.IsEqual(ListItem.HdrType,hlg) | [Window.IsActive(fullscreenvideo) + String.IsEqual(VideoPlayer.HdrType,hlg)]">HLG</value>
 		<value condition="Window.IsActive(fullscreenvideo)">$INFO[VideoPlayer.HdrType]</value>
 		<value>$INFO[ListItem.HdrType]</value>
@@ -510,7 +510,7 @@
 	<variable name="PlayerHDRType">
 		<value condition="String.IsEqual(VideoPlayer.HdrType,hlg)">HLG</value>
 		<value condition="String.IsEqual(VideoPlayer.HdrType,hdr10)">HDR10</value>
-		<value condition="String.IsEqual(VideoPlayer.HdrType,hdr10+)">HDR10+</value>
+		<value condition="String.IsEqual(VideoPlayer.HdrType,hdr10plus)">HDR10+</value>
 		<value condition="String.IsEqual(VideoPlayer.HdrType,dolbyvision)">Dolby</value>
 	</variable>
 	<variable name="RatingTextColour">
