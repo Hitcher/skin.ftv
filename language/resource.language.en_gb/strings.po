@@ -981,9 +981,7 @@ msgctxt "#31238"
 msgid "This is your own personal rating and is only stored locally"
 msgstr ""
 
-msgctxt "#31239"
-msgid "Press play to resume"
-msgstr ""
+#empty string with id 31239
 
 msgctxt "#31240"
 msgid "Not rated"

@@ -2,11 +2,7 @@
 <window type="dialog" id="1107">
 	<zorder>99</zorder>
 	<visible>Player.Paused + !String.IsEmpty(Window(home).Property(ShowXRay))</visible>
-	<onunload>Dialog.Close(all)</onunload>
-	<onunload>Dialog.Close(movieinformation,force)</onunload>
-	<onunload>Dialog.Close(fullscreeninfo,force)</onunload>
 	<onunload>ClearProperty(ShowXRay,home)</onunload>
-	<onunload>RunScript(plugin.video.themoviedb.helper,close_dialog=1113)</onunload>
 	<controls>
 		<control type="group">
 			<right>200</right>
@@ -23,20 +19,20 @@
 				<top>32</top>
 				<height>80</height>
 				<width>720</width>
-				<font>Bold30</font>
+				<font>Light32</font>
 				<align>right</align>
-				<textcolor>ffe7e7e7</textcolor>
-				<label>$INFO[Player.Title]</label>
+				<textcolor>ff999999</textcolor>
+				<label>31102</label>
 			</control>
 			<control type="label">
 				<right>224</right>
 				<top>122</top>
 				<height>80</height>
 				<width>720</width>
-				<font>Light32</font>
+				<font>Bold30</font>
 				<align>right</align>
-				<textcolor>ff999999</textcolor>
-				<label>31239</label>
+				<textcolor>ffe7e7e7</textcolor>
+				<label>$INFO[Player.Title]</label>
 			</control>
 			<control type="image">
 				<right>0</right>
