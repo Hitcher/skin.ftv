@@ -798,9 +798,7 @@ msgctxt "#31192"
 msgid "Director"
 msgstr ""
 
-msgctxt "#31193"
-msgid "Now Playing"
-msgstr ""
+#empty string with id 31193
 
 msgctxt "#31194"
 msgid "Submit"
@@ -1015,9 +1013,7 @@ msgctxt "#31247"
 msgid "Media Processing Info"
 msgstr ""
 
-msgctxt "#31248"
-msgid "Order"
-msgstr ""
+#empty string with id 31248
 
 msgctxt "#31249"
 msgid "View Addons that have recently been updated."
