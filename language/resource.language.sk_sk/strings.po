@@ -801,10 +801,6 @@ msgctxt "#31192"
 msgid "Director"
 msgstr ""
 
-msgctxt "#31193"
-msgid "Now Playing"
-msgstr ""
-
 # empty strings from id 31187 to 31193
 msgctxt "#31194"
 msgid "Submit"
@@ -984,10 +980,6 @@ msgctxt "#31238"
 msgid "This is your own personal rating and is only stored locally"
 msgstr ""
 
-msgctxt "#31239"
-msgid "Press play to resume"
-msgstr ""
-
 msgctxt "#31240"
 msgid "Not rated"
 msgstr "Nehodnotené"
@@ -1019,10 +1011,6 @@ msgstr "Mesto"
 msgctxt "#31247"
 msgid "Media Processing Info"
 msgstr ""
-
-msgctxt "#31248"
-msgid "Order"
-msgstr "Poradie"
 
 msgctxt "#31249"
 msgid "View Addons that have recently been updated."
@@ -1067,6 +1055,10 @@ msgstr ""
 msgctxt "#31260"
 msgid "TomatoMeter Top Critics"
 msgstr ""
+
+#~ msgctxt "#31248"
+#~ msgid "Order"
+#~ msgstr "Poradie"
 
 #~ msgctxt "#31108"
 #~ msgid "Known For"

@@ -798,10 +798,6 @@ msgctxt "#31192"
 msgid "Director"
 msgstr ""
 
-msgctxt "#31193"
-msgid "Now Playing"
-msgstr ""
-
 msgctxt "#31194"
 msgid "Submit"
 msgstr "登録"
@@ -979,10 +975,6 @@ msgctxt "#31238"
 msgid "This is your own personal rating and is only stored locally"
 msgstr ""
 
-msgctxt "#31239"
-msgid "Press play to resume"
-msgstr "再生を押して再開"
-
 msgctxt "#31240"
 msgid "Not rated"
 msgstr "未評価"
@@ -1014,10 +1006,6 @@ msgstr "地域"
 msgctxt "#31247"
 msgid "Media Processing Info"
 msgstr "メディア処理情報"
-
-msgctxt "#31248"
-msgid "Order"
-msgstr "並べ替え"
 
 msgctxt "#31249"
 msgid "View Addons that have recently been updated."
@@ -1062,6 +1050,14 @@ msgstr "TomatoMeterオーディエンススコア"
 msgctxt "#31260"
 msgid "TomatoMeter Top Critics"
 msgstr ""
+
+#~ msgctxt "#31239"
+#~ msgid "Press play to resume"
+#~ msgstr "再生を押して再開"
+
+#~ msgctxt "#31248"
+#~ msgid "Order"
+#~ msgstr "並べ替え"
 
 #~ msgctxt "#31260"
 #~ msgid "Average Rating All Critics"

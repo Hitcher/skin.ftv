@@ -805,10 +805,6 @@ msgctxt "#31192"
 msgid "Director"
 msgstr "Режиссёр"
 
-msgctxt "#31193"
-msgid "Now Playing"
-msgstr "Сейчас воспроизводится"
-
 # empty strings from id 31187 to 31193
 msgctxt "#31194"
 msgid "Submit"
@@ -989,10 +985,6 @@ msgctxt "#31238"
 msgid "This is your own personal rating and is only stored locally"
 msgstr "Это ваша личная оценка, которая хранится только локально"
 
-msgctxt "#31239"
-msgid "Press play to resume"
-msgstr "Нажмите воспроизведение для возобновления"
-
 msgctxt "#31240"
 msgid "Not rated"
 msgstr "Не оценено"
@@ -1024,10 +1016,6 @@ msgstr "Расположение"
 msgctxt "#31247"
 msgid "Media Processing Info"
 msgstr "Информация об обработке медиа"
-
-msgctxt "#31248"
-msgid "Order"
-msgstr "Заказ"
 
 msgctxt "#31249"
 msgid "View Addons that have recently been updated."
@@ -1072,6 +1060,18 @@ msgstr "Оценка зрителей (Томатометр)"
 msgctxt "#31260"
 msgid "TomatoMeter Top Critics"
 msgstr ""
+
+#~ msgctxt "#31193"
+#~ msgid "Now Playing"
+#~ msgstr "Сейчас воспроизводится"
+
+#~ msgctxt "#31239"
+#~ msgid "Press play to resume"
+#~ msgstr "Нажмите воспроизведение для возобновления"
+
+#~ msgctxt "#31248"
+#~ msgid "Order"
+#~ msgstr "Заказ"
 
 #~ msgctxt "#31260"
 #~ msgid "Average Rating All Critics"

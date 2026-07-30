@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2026-06-14 18:57+0000\n"
 "Last-Translator: wabisabi926 <wabisabi926@foxmail.com>\n"
@@ -805,10 +805,6 @@ msgctxt "#31192"
 msgid "Director"
 msgstr "导演"
 
-msgctxt "#31193"
-msgid "Now Playing"
-msgstr "正在播放"
-
 # empty strings from id 31187 to 31193
 msgctxt "#31194"
 msgid "Submit"
@@ -989,10 +985,6 @@ msgctxt "#31238"
 msgid "This is your own personal rating and is only stored locally"
 msgstr "这是你的个人评分，只存储在本地"
 
-msgctxt "#31239"
-msgid "Press play to resume"
-msgstr "按下播放键恢复播放"
-
 msgctxt "#31240"
 msgid "Not rated"
 msgstr "未评分"
@@ -1024,10 +1016,6 @@ msgstr "位置"
 msgctxt "#31247"
 msgid "Media Processing Info"
 msgstr "媒体处理信息"
-
-msgctxt "#31248"
-msgid "Order"
-msgstr "顺序"
 
 msgctxt "#31249"
 msgid "View Addons that have recently been updated."
@@ -1072,6 +1060,18 @@ msgstr "观众新鲜度评分"
 msgctxt "#31260"
 msgid "TomatoMeter Top Critics"
 msgstr "烂番茄专业影评人评分"
+
+#~ msgctxt "#31193"
+#~ msgid "Now Playing"
+#~ msgstr "正在播放"
+
+#~ msgctxt "#31239"
+#~ msgid "Press play to resume"
+#~ msgstr "按下播放键恢复播放"
+
+#~ msgctxt "#31248"
+#~ msgid "Order"
+#~ msgstr "顺序"
 
 #~ msgctxt "#31260"
 #~ msgid "Average Rating All Critics"
