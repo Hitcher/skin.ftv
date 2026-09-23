@@ -405,7 +405,7 @@
 					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					<label>$LOCALIZE[31198]</label>
 					<label2>$INFO[Container(211).ListItem.Property(widgetStyle)]</label2>
-					<visible>String.StartsWith(Window.Property(menuname),widget)</visible>
+					<visible>[String.StartsWith(Window.Property(menuname),widget)] + !String.IsEqual(Container(211).ListItem.Property(widgetType),ftv-action)</visible>
 				</control>
 				<!-- Widget sort by -->
 				<control id="351" type="button">
@@ -420,7 +420,7 @@
 					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					<label>$LOCALIZE[31092]</label>
 					<label2>$INFO[Container(211).ListItem.Property(widgetSortBy)]</label2>
-					<visible>String.StartsWith(Window.Property(menuname),widget)</visible>
+					<visible>[String.StartsWith(Window.Property(menuname),widget)] + !String.IsEqual(Container(211).ListItem.Property(widgetType),ftv-action)</visible>
 				</control>
 				<!-- Widget sort order -->
 				<control id="352" type="button">
@@ -435,7 +435,7 @@
 					<texturenofocus border="0,0,0,6">settings/button_no_focus.png</texturenofocus>
 					<label>$LOCALIZE[31202]</label>
 					<label2>$INFO[Container(211).ListItem.Property(widgetSortOrder)]</label2>
-					<visible>String.StartsWith(Window.Property(menuname),widget)</visible>
+					<visible>[String.StartsWith(Window.Property(menuname),widget)] + !String.IsEqual(Container(211).ListItem.Property(widgetType),ftv-action)</visible>
 				</control>
 			</control>
 			<control type="image">

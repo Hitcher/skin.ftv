@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates>
 	<template include="widget-lists">
-		<condition>widgetPath</condition>
+		<condition>widgetPath + !widgetType=ftv-action</condition>
 		<controls>
 			<control type="list" id="$MATH[$PROPERTY[groupId] + $PROPERTY[index]]">
 				<include>HiddenList</include>
@@ -58,6 +58,16 @@
 				<onclick>ActivateWindow($PROPERTY[widgetTarget],&quot;$PROPERTY[widgetPath]&quot;,return)</onclick>
 			</item>
 		</include>
+		<include name="widget-action-item">
+			<item>
+				<label>$PROPERTY[label]</label>
+				<icon>$PROPERTY[icon]</icon>
+				<property name="WidgetOnClick">$PROPERTY[widgetPath]</property>
+				<property name="Icon1">$PROPERTY[icon]</property>
+				<property name="InfoLabel1">$PROPERTY[label]</property>
+				<onclick>$PROPERTY[widgetPath]</onclick>
+			</item>
+		</include>
 	</includes>
 	<propertyGroups>
 		<propertyGroup name="widget-style">
@@ -73,56 +83,64 @@
 		<condition>widgetPath</condition>
 		<propertyGroup content="widget-style" />
 		<controls>
-			<skinshortcuts include="widget-row-item" />
+			<skinshortcuts include="widget-row-item" condition="!widgetType=ftv-action" />
+			<skinshortcuts include="widget-action-item" condition="widgetType=ftv-action" />
 		</controls>
 	</template>
 	<template menu="widget2" include="widget-rows-widget2">
 		<condition>widgetPath</condition>
 		<propertyGroup content="widget-style" />
 		<controls>
-			<skinshortcuts include="widget-row-item" />
+			<skinshortcuts include="widget-row-item" condition="!widgetType=ftv-action" />
+			<skinshortcuts include="widget-action-item" condition="widgetType=ftv-action" />
 		</controls>
 	</template>
 	<template menu="widget3" include="widget-rows-widget3">
 		<condition>widgetPath</condition>
 		<propertyGroup content="widget-style" />
 		<controls>
-			<skinshortcuts include="widget-row-item" />
+			<skinshortcuts include="widget-row-item" condition="!widgetType=ftv-action" />
+			<skinshortcuts include="widget-action-item" condition="widgetType=ftv-action" />
 		</controls>
 	</template>
 	<template menu="widget4" include="widget-rows-widget4">
 		<condition>widgetPath</condition>
 		<propertyGroup content="widget-style" />
 		<controls>
-			<skinshortcuts include="widget-row-item" />
+			<skinshortcuts include="widget-row-item" condition="!widgetType=ftv-action" />
+			<skinshortcuts include="widget-action-item" condition="widgetType=ftv-action" />
 		</controls>
 	</template>
 	<template menu="widget5" include="widget-rows-widget5">
 		<condition>widgetPath</condition>
 		<propertyGroup content="widget-style" />
 		<controls>
-			<skinshortcuts include="widget-row-item" />
+			<skinshortcuts include="widget-row-item" condition="!widgetType=ftv-action" />
+			<skinshortcuts include="widget-action-item" condition="widgetType=ftv-action" />
 		</controls>
 	</template>
 	<template menu="widget6" include="widget-rows-widget6">
 		<condition>widgetPath</condition>
 		<propertyGroup content="widget-style" />
 		<controls>
-			<skinshortcuts include="widget-row-item" />
+			<skinshortcuts include="widget-row-item" condition="!widgetType=ftv-action" />
+			<skinshortcuts include="widget-action-item" condition="widgetType=ftv-action" />
 		</controls>
 	</template>
 	<template menu="widget7" include="widget-rows-widget7">
 		<condition>widgetPath</condition>
 		<propertyGroup content="widget-style" />
 		<controls>
-			<skinshortcuts include="widget-row-item" />
+			<skinshortcuts include="widget-row-item" condition="!widgetType=ftv-action" />
+			<skinshortcuts include="widget-action-item" condition="widgetType=ftv-action" />
 		</controls>
 	</template>
 	<template menu="widget8" include="widget-rows-widget8">
 		<condition>widgetPath</condition>
 		<propertyGroup content="widget-style" />
 		<controls>
-			<skinshortcuts include="widget-row-item" />
+			<skinshortcuts include="widget-row-item" condition="!widgetType=ftv-action" />
+			<skinshortcuts include="widget-action-item" condition="widgetType=ftv-action" />
 		</controls>
 	</template>
 </templates>

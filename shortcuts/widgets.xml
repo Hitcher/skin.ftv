@@ -47,8 +47,71 @@
 			<path>musicdb://genres/</path>
 		</widget>
 	</group>
+	<!-- Action paths are commands, consumed only by the ftv-action templates. -->
 	<group name="common" label="32029">
-		<content source="favourites"/>
+		<widget name="action-games" label="$LOCALIZE[10821]" type="ftv-action" icon="DefaultAddonGame.png">
+			<path>ActivateWindow(games)</path>
+		</widget>
+		<widget name="action-videos" label="3" type="ftv-action" icon="DefaultVideo.png">
+			<path>ActivateWindow(Videos)</path>
+		</widget>
+		<widget name="action-movies" label="342" type="ftv-action" icon="DefaultMovies.png">
+			<path>ActivateWindow(Videos,videodb://movies/titles/,return)</path>
+		</widget>
+		<widget name="action-tvshows" label="20343" type="ftv-action" icon="DefaultTVShows.png">
+			<path>ActivateWindow(Videos,videodb://tvshows/titles/,return)</path>
+		</widget>
+		<widget name="action-livetv" label="32022" type="ftv-action" icon="DefaultTVShows.png">
+			<path>ActivateWindow(TVGuide)</path>
+		</widget>
+		<widget name="action-radio" label="32087" type="ftv-action" icon="DefaultTVShows.png">
+			<path>ActivateWindow(RadioGuide)</path>
+		</widget>
+		<widget name="action-music" label="2" type="ftv-action" icon="DefaultMusicAlbums.png">
+			<path>ActivateWindow(Music)</path>
+		</widget>
+		<widget name="action-party-mode" label="589" type="ftv-action" icon="DefaultMusicAlbums.png">
+			<path>PlayerControl(PartyMode)</path>
+		</widget>
+		<widget name="action-party-mode-video" label="32108" type="ftv-action" icon="DefaultMusicVideos.png">
+			<path>PlayerControl(PartyMode(Video))</path>
+		</widget>
+		<widget name="action-musicvideos" label="20389" type="ftv-action" icon="DefaultMusicVideos.png">
+			<path>ActivateWindow(Videos,videodb://musicvideos/titles/,return)</path>
+		</widget>
+		<widget name="action-pictures" label="10002" type="ftv-action" icon="DefaultPicture.png">
+			<path>ActivateWindow(Pictures)</path>
+		</widget>
+		<widget name="action-weather" label="12600" type="ftv-action" icon="Weather.png">
+			<path>ActivateWindow(Weather)</path>
+		</widget>
+		<widget name="action-programs" label="10001" type="ftv-action" icon="DefaultProgram.png">
+			<path>ActivateWindow(Programs,Addons,return)</path>
+		</widget>
+		<widget name="action-play-dvd" label="32032" type="ftv-action" icon="DefaultDVDFull.png">
+			<path>PlayDVD</path>
+		</widget>
+		<widget name="action-eject-tray" label="32033" type="ftv-action" icon="DefaultDVDFull.png">
+			<path>EjectTray()</path>
+		</widget>
+		<widget name="action-settings" label="10004" type="ftv-action" icon="Settings.png">
+			<path>ActivateWindow(Settings)</path>
+		</widget>
+		<widget name="action-file-manager" label="7" type="ftv-action" icon="DefaultFolder.png">
+			<path>ActivateWindow(FileManager)</path>
+		</widget>
+		<widget name="action-profiles" label="13200" type="ftv-action" icon="UnknownUser.png">
+			<path>ActivateWindow(Profiles)</path>
+		</widget>
+		<widget name="action-system-information" label="10007" type="ftv-action" icon="SystemInfo.png">
+			<path>ActivateWindow(SystemInfo)</path>
+		</widget>
+		<widget name="action-events" label="14111" type="ftv-action" icon="Events.png">
+			<path>ActivateWindow(EventLog,events://,return)</path>
+		</widget>
+		<widget name="action-favourites" label="1036" type="ftv-action" icon="Favourites.png">
+			<path>ActivateWindow(favouritesbrowser)</path>
+		</widget>
 	</group>
 	<group name="video" label="32030">
 		<content source="nodes" target="video"/>
