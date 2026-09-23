@@ -126,7 +126,8 @@
 								<texture border="13,15,13,15">dialogs/DialogButtonFO.png</texture>
 							</control>
 							<control type="label">
-								<width>776</width>
+								<left>20</left>
+								<width>736</width>
 								<height>152</height>
 								<align>center</align>
 								<font>MedUpper24</font>
@@ -144,7 +145,8 @@
 								<texture border="13,15,13,15">dialogs/DialogButtonNF.png</texture>
 							</control>
 							<control type="label">
-								<width>776</width>
+								<left>20</left>
+								<width>736</width>
 								<height>152</height>
 								<align>center</align>
 								<font>MedUpper24</font>
@@ -163,7 +165,8 @@
 								<texture border="13,15,13,15">dialogs/DialogButtonFO.png</texture>
 							</control>
 							<control type="label">
-								<width>776</width>
+								<left>20</left>
+								<width>736</width>
 								<height>152</height>
 								<align>center</align>
 								<font>MedUpper24</font>
@@ -181,7 +184,8 @@
 								<texture border="13,15,13,15">dialogs/DialogButtonNF.png</texture>
 							</control>
 							<control type="label">
-								<width>776</width>
+								<left>20</left>
+								<width>736</width>
 								<height>152</height>
 								<align>center</align>
 								<font>MedUpper24</font>
@@ -211,7 +215,8 @@
 								<texture border="13,15,13,15">dialogs/DialogButtonFO.png</texture>
 							</control>
 							<control type="label">
-								<width>524</width>
+								<left>20</left>
+								<width>484</width>
 								<height>152</height>
 								<align>center</align>
 								<font>MedUpper24</font>
@@ -229,7 +234,8 @@
 								<texture border="13,15,13,15">dialogs/DialogButtonNF.png</texture>
 							</control>
 							<control type="label">
-								<width>524</width>
+								<left>20</left>
+								<width>484</width>
 								<height>152</height>
 								<align>center</align>
 								<font>MedUpper24</font>
@@ -248,7 +254,8 @@
 								<texture border="13,15,13,15">dialogs/DialogButtonFO.png</texture>
 							</control>
 							<control type="label">
-								<width>524</width>
+								<left>20</left>
+								<width>484</width>
 								<height>152</height>
 								<align>center</align>
 								<font>MedUpper24</font>
@@ -266,7 +273,8 @@
 								<texture border="13,15,13,15">dialogs/DialogButtonNF.png</texture>
 							</control>
 							<control type="label">
-								<width>524</width>
+								<left>20</left>
+								<width>484</width>
 								<height>152</height>
 								<align>center</align>
 								<font>MedUpper24</font>
@@ -285,7 +293,8 @@
 								<texture border="13,15,13,15">dialogs/DialogButtonFO.png</texture>
 							</control>
 							<control type="label">
-								<width>524</width>
+								<left>20</left>
+								<width>484</width>
 								<height>152</height>
 								<align>center</align>
 								<font>MedUpper24</font>
@@ -303,7 +312,8 @@
 								<texture border="13,15,13,15">dialogs/DialogButtonNF.png</texture>
 							</control>
 							<control type="label">
-								<width>524</width>
+								<left>20</left>
+								<width>484</width>
 								<height>152</height>
 								<align>center</align>
 								<font>MedUpper24</font>
