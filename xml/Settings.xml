@@ -60,12 +60,12 @@
 			<top>578</top>
 			<width>6000</width>
 			<height>994</height>
-			<onup>PageUp</onup>
+			<onup>Control.SetFocus(9000,0,absolute)</onup>
 			<onup>Back</onup>
 			<ondown>noop</ondown>
 			<onleft>Back</onleft>
 			<onright>noop</onright>
-			<onback>PageUp</onback>
+			<onback>Control.SetFocus(9000,0,absolute)</onback>
 			<onright condition="!Window.IsVisible(1103)">SetProperty(BounceRight,1,Home)</onright>
 			<focusposition>1</focusposition>
 			<viewtype label="">list</viewtype>
