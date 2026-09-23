@@ -387,13 +387,12 @@
 				<onright>noop</onright>
 				<onup>noop</onup>
 				<ondown>noop</ondown>
+				<aligny>top</aligny>
 				<movement>2</movement>
 				<scrolltime>0</scrolltime>
 				<focusposition>2</focusposition>
 				<orientation>vertical</orientation>
 				<visible>ControlGroup(100).HasFocus(102)</visible>
-				<animation condition="String.IsEqual(Container(2).NumItems,0) | String.IsEqual(Container(2).NumItems,1) | [String.IsEqual(Container(2).NumItems,2) + !Container(2).HasParent]" effect="slide" end="0,-336">Conditional</animation>
-				<animation condition="[String.IsEqual(Container(2).NumItems,2) + Container(2).HasParent] | String.IsEqual(Container(2).NumItems,3) | [String.IsEqual(Container(2).NumItems,4) + !Container(2).HasParent]" effect="slide" end="0,-168">Conditional</animation>
 				<itemlayout height="168" width="1916">
 					<control type="image">
 						<width>1916</width>

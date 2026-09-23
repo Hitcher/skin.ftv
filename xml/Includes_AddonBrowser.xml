@@ -761,13 +761,13 @@
 				<onup>noop</onup>
 				<ondown>noop</ondown>
 				<onback>SetFocus(50)</onback>
+				<aligny>top</aligny>
 				<movement>1</movement>
 				<scrolltime>0</scrolltime>
 				<focusposition>1</focusposition>
 				<orientation>vertical</orientation>
 				<viewtype label="535">list</viewtype>
 				<visible>!String.IsEqual(Container.FolderPath,addons://)</visible>
-				<animation condition="String.IsEqual(Container(51).NumItems,0) | String.IsEqual(Container(51).NumItems,1) | [String.IsEqual(Container(51).NumItems,2) + !Container(51).HasParent]" effect="slide" end="0,-280">Conditional</animation>
 				<itemlayout height="280" width="1116">
 					<control type="image">
 						<width>1116</width>
