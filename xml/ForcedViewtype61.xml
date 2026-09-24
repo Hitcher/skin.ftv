@@ -20,7 +20,7 @@
 				<orientation>horizontal</orientation>
 				<defaultcontrol always="true">0</defaultcontrol>
 				<scrolltime easing="inout" tween="sine">300</scrolltime>
-				<visible>String.IsEqual(Window(Home).Property(ForceViewType),wide) + [Container.Content(tvshows) | Container.Content(episodes)]</visible>
+				<visible>String.IsEqual(Window(Home).Property(ForceViewType),wide) + Container.Content(tvshows)</visible>
 				<include>ListBounceAnimation</include>
 				<include content="HomeToWindowSlideAnimation">
 					<param name="FocusRowID1_1" value="372,20"/>
