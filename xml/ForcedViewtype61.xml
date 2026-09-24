@@ -20,7 +20,7 @@
 				<orientation>horizontal</orientation>
 				<defaultcontrol always="true">0</defaultcontrol>
 				<scrolltime easing="inout" tween="sine">300</scrolltime>
-				<visible>String.IsEqual(Window(Home).Property(ForceViewType),wide) + Container.Content(tvshows)</visible>
+				<visible>String.IsEqual(Window(Home).Property(ForceViewType),wide) + [Container.Content(tvshows) | Container.Content(episodes)]</visible>
 				<include>ListBounceAnimation</include>
 				<include content="HomeToWindowSlideAnimation">
 					<param name="FocusRowID1_1" value="372,20"/>
@@ -42,13 +42,14 @@
 						</control>
 						<control type="group">
 							<include>ItemListFadeDiffuseAnimation</include>
-							<control type="image">
-								<top>96</top>
-								<width>1280</width>
-								<height>960</height>
-								<aspectratio align="center">scale</aspectratio>
-								<texture background="true" fallback="views/episode_fallback.png">$VAR[TVShowWideImage]</texture>
-							</control>
+							<include content="SpoilerProtectedImage">
+								<param name="image" value="$VAR[ForcedWideImage]"/>
+								<param name="hidden" value="Container.Content(episodes) + !ListItem.IsParentFolder + !String.StartsWith(Container.FolderPath,plugin://) + $EXP[HideWatchedEpisodeCheck]"/>
+								<param name="fallback" value="views/episode_fallback.png"/>
+								<param name="top" value="96"/>
+								<param name="width" value="1280"/>
+								<param name="height" value="960"/>
+							</include>
 							<control type="image">
 								<left>238</left>
 								<top>656</top>
@@ -56,7 +57,7 @@
 								<height>310</height>
 								<aspectratio align="center" aligny="bottom">keep</aspectratio>
 								<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
-								<visible>!ListItem.IsParentFolder + String.IsEmpty(ListItem.Art(ftv)) + !String.IsEmpty(ListItem.Art(fanart))</visible>
+								<visible>!Container.Content(episodes) + !ListItem.IsParentFolder + String.IsEmpty(ListItem.Art(ftv)) + !String.IsEmpty(ListItem.Art(fanart))</visible>
 							</control>
 							<control type="image">
 								<top>96</top>
@@ -103,13 +104,14 @@
 							<include content="FocusedListIDFadeDiffuseAnimation">
 								<param name="ListID" value="61"/>
 							</include>
-							<control type="image">
-								<top>96</top>
-								<width>1280</width>
-								<height>960</height>
-								<aspectratio align="center">scale</aspectratio>
-								<texture background="true" fallback="views/episode_fallback.png">$VAR[TVShowWideImage]</texture>
-							</control>
+							<include content="SpoilerProtectedImage">
+								<param name="image" value="$VAR[ForcedWideImage]"/>
+								<param name="hidden" value="Container.Content(episodes) + !ListItem.IsParentFolder + !String.StartsWith(Container.FolderPath,plugin://) + $EXP[HideWatchedEpisodeCheck]"/>
+								<param name="fallback" value="views/episode_fallback.png"/>
+								<param name="top" value="96"/>
+								<param name="width" value="1280"/>
+								<param name="height" value="960"/>
+							</include>
 							<control type="image">
 								<left>238</left>
 								<top>656</top>
@@ -117,7 +119,7 @@
 								<height>310</height>
 								<aspectratio align="center" aligny="bottom">keep</aspectratio>
 								<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
-								<visible>!ListItem.IsParentFolder + String.IsEmpty(ListItem.Art(ftv)) + !String.IsEmpty(ListItem.Art(fanart))</visible>
+								<visible>!Container.Content(episodes) + !ListItem.IsParentFolder + String.IsEmpty(ListItem.Art(ftv)) + !String.IsEmpty(ListItem.Art(fanart))</visible>
 							</control>
 							<control type="image">
 								<top>96</top>

@@ -217,11 +217,7 @@
 		<item name="widget1-1">
 			<label>31177</label>
 			<icon>ftv_icon.png</icon>
-			<property name="widgetLabel">31177</property>
 			<property name="widget">inprogress-tvshows</property>
-			<property name="widgetPath">special://skin/extras/video/InProgressTVShows.xsp</property>
-			<property name="widgetType">tvshows</property>
-			<property name="widgetTarget">videos</property>
 			<property name="widgetSortBy">lastplayed</property>
 			<property name="widgetSortOrder">descending</property>
 			<property name="widgetStyle">poster</property>
@@ -229,11 +225,7 @@
 		<item name="widget1-2">
 			<label>31167</label>
 			<icon>ftv_icon.png</icon>
-			<property name="widgetLabel">31167</property>
 			<property name="widget">recent-movies</property>
-			<property name="widgetPath">special://skin/extras/video/RecentlyAddedMovies.xsp</property>
-			<property name="widgetType">movies</property>
-			<property name="widgetTarget">videos</property>
 			<property name="widgetSortBy">dateadded</property>
 			<property name="widgetSortOrder">descending</property>
 			<property name="widgetStyle">poster</property>
@@ -241,11 +233,7 @@
 		<item name="widget1-3">
 			<label>31175</label>
 			<icon>ftv_icon.png</icon>
-			<property name="widgetLabel">31175</property>
 			<property name="widget">recent-tvshows</property>
-			<property name="widgetPath">special://skin/extras/video/RecentlyUpdatedTVShows.xsp</property>
-			<property name="widgetType">tvshows</property>
-			<property name="widgetTarget">videos</property>
 			<property name="widgetSortBy">dateadded</property>
 			<property name="widgetSortOrder">descending</property>
 			<property name="widgetStyle">poster</property>
@@ -253,11 +241,7 @@
 		<item name="widget1-4">
 			<label>31169</label>
 			<icon>ftv_icon.png</icon>
-			<property name="widgetLabel">31169</property>
 			<property name="widget">inprogress-movies</property>
-			<property name="widgetPath">special://skin/extras/video/InProgressMovies.xsp</property>
-			<property name="widgetType">movies</property>
-			<property name="widgetTarget">videos</property>
 			<property name="widgetSortBy">lastplayed</property>
 			<property name="widgetSortOrder">descending</property>
 			<property name="widgetStyle">poster</property>
@@ -265,11 +249,7 @@
 		<item name="widget1-5">
 			<label>31183</label>
 			<icon>ftv_icon.png</icon>
-			<property name="widgetLabel">31183</property>
 			<property name="widget">recently-played-albums</property>
-			<property name="widgetPath">musicdb://recentlyplayedalbums/</property>
-			<property name="widgetType">albums</property>
-			<property name="widgetTarget">music</property>
 			<property name="widgetSortBy">lastplayed</property>
 			<property name="widgetSortOrder">descending</property>
 			<property name="widgetStyle">square</property>
@@ -277,11 +257,7 @@
 		<item name="widget1-6">
 			<label>31185</label>
 			<icon>ftv_icon.png</icon>
-			<property name="widgetLabel">31185</property>
 			<property name="widget">recently-added-albums</property>
-			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
-			<property name="widgetType">albums</property>
-			<property name="widgetTarget">music</property>
 			<property name="widgetSortBy">dateadded</property>
 			<property name="widgetSortOrder">descending</property>
 			<property name="widgetStyle">square</property>
@@ -295,11 +271,7 @@
 		<item name="widget2-1">
 			<label>31168</label>
 			<icon>ftv_icon.png</icon>
-			<property name="widgetLabel">31168</property>
 			<property name="widget">your-movies</property>
-			<property name="widgetPath">special://skin/extras/video/YourMovies.xsp</property>
-			<property name="widgetType">movies</property>
-			<property name="widgetTarget">videos</property>
 			<property name="widgetSortBy">name</property>
 			<property name="widgetSortOrder">ascending</property>
 			<property name="widgetStyle">poster</property>
@@ -307,11 +279,7 @@
 		<item name="widget2-2">
 			<label>31167</label>
 			<icon>ftv_icon.png</icon>
-			<property name="widgetLabel">31167</property>
 			<property name="widget">recent-movies</property>
-			<property name="widgetPath">special://skin/extras/video/RecentlyAddedMovies.xsp</property>
-			<property name="widgetType">movies</property>
-			<property name="widgetTarget">videos</property>
 			<property name="widgetSortBy">dateadded</property>
 			<property name="widgetSortOrder">descending</property>
 			<property name="widgetStyle">poster</property>
@@ -319,11 +287,7 @@
 		<item name="widget2-3">
 			<label>31169</label>
 			<icon>ftv_icon.png</icon>
-			<property name="widgetLabel">31169</property>
 			<property name="widget">inprogress-movies</property>
-			<property name="widgetPath">special://skin/extras/video/InProgressMovies.xsp</property>
-			<property name="widgetType">movies</property>
-			<property name="widgetTarget">videos</property>
 			<property name="widgetSortBy">lastplayed</property>
 			<property name="widgetSortOrder">descending</property>
 			<property name="widgetStyle">poster</property>
@@ -331,11 +295,7 @@
 		<item name="widget2-4">
 			<label>31170</label>
 			<icon>ftv_icon.png</icon>
-			<property name="widgetLabel">31170</property>
 			<property name="widget">kids-movies</property>
-			<property name="widgetPath">special://skin/extras/video/KidsMovies.xsp</property>
-			<property name="widgetType">movies</property>
-			<property name="widgetTarget">videos</property>
 			<property name="widgetSortBy">name</property>
 			<property name="widgetSortOrder">ascending</property>
 			<property name="widgetStyle">poster</property>
@@ -343,11 +303,7 @@
 		<item name="widget2-5">
 			<label>31174</label>
 			<icon>ftv_icon.png</icon>
-			<property name="widgetLabel">31174</property>
 			<property name="widget">toprated-movies</property>
-			<property name="widgetPath">special://skin/extras/video/TopRatedMovies.xsp</property>
-			<property name="widgetType">movies</property>
-			<property name="widgetTarget">videos</property>
 			<property name="widgetSortBy">rating</property>
 			<property name="widgetSortOrder">descending</property>
 			<property name="widgetStyle">poster</property>
@@ -372,11 +328,7 @@
 		<item name="widget3-1">
 			<label>31176</label>
 			<icon>ftv_icon.png</icon>
-			<property name="widgetLabel">31176</property>
 			<property name="widget">your-tvshows</property>
-			<property name="widgetPath">special://skin/extras/video/YourTVShows.xsp</property>
-			<property name="widgetType">tvshows</property>
-			<property name="widgetTarget">videos</property>
 			<property name="widgetSortBy">name</property>
 			<property name="widgetSortOrder">ascending</property>
 			<property name="widgetStyle">poster</property>
@@ -384,11 +336,7 @@
 		<item name="widget3-2">
 			<label>31175</label>
 			<icon>ftv_icon.png</icon>
-			<property name="widgetLabel">31175</property>
 			<property name="widget">recent-tvshows</property>
-			<property name="widgetPath">special://skin/extras/video/RecentlyUpdatedTVShows.xsp</property>
-			<property name="widgetType">tvshows</property>
-			<property name="widgetTarget">videos</property>
 			<property name="widgetSortBy">dateadded</property>
 			<property name="widgetSortOrder">descending</property>
 			<property name="widgetStyle">poster</property>
@@ -396,11 +344,7 @@
 		<item name="widget3-3">
 			<label>31177</label>
 			<icon>ftv_icon.png</icon>
-			<property name="widgetLabel">31177</property>
 			<property name="widget">inprogress-tvshows</property>
-			<property name="widgetPath">special://skin/extras/video/InProgressTVShows.xsp</property>
-			<property name="widgetType">tvshows</property>
-			<property name="widgetTarget">videos</property>
 			<property name="widgetSortBy">lastplayed</property>
 			<property name="widgetSortOrder">descending</property>
 			<property name="widgetStyle">poster</property>
@@ -408,11 +352,7 @@
 		<item name="widget3-4">
 			<label>31178</label>
 			<icon>ftv_icon.png</icon>
-			<property name="widgetLabel">31178</property>
 			<property name="widget">kids-tvshows</property>
-			<property name="widgetPath">special://skin/extras/video/KidsTVShows.xsp</property>
-			<property name="widgetType">tvshows</property>
-			<property name="widgetTarget">videos</property>
 			<property name="widgetSortBy">name</property>
 			<property name="widgetSortOrder">ascending</property>
 			<property name="widgetStyle">poster</property>
@@ -420,11 +360,7 @@
 		<item name="widget3-5">
 			<label>31182</label>
 			<icon>ftv_icon.png</icon>
-			<property name="widgetLabel">31182</property>
 			<property name="widget">toprated-tvshows</property>
-			<property name="widgetPath">special://skin/extras/video/TopRatedTVShows.xsp</property>
-			<property name="widgetType">tvshows</property>
-			<property name="widgetTarget">videos</property>
 			<property name="widgetSortBy">rating</property>
 			<property name="widgetSortOrder">descending</property>
 			<property name="widgetStyle">poster</property>
@@ -455,11 +391,7 @@
 		<item name="widget5-1">
 			<label>31183</label>
 			<icon>ftv_icon.png</icon>
-			<property name="widgetLabel">31183</property>
 			<property name="widget">recently-played-albums</property>
-			<property name="widgetPath">musicdb://recentlyplayedalbums/</property>
-			<property name="widgetType">albums</property>
-			<property name="widgetTarget">music</property>
 			<property name="widgetSortBy">lastplayed</property>
 			<property name="widgetSortOrder">descending</property>
 			<property name="widgetStyle">squareinfo</property>
@@ -467,11 +399,7 @@
 		<item name="widget5-2">
 			<label>31185</label>
 			<icon>ftv_icon.png</icon>
-			<property name="widgetLabel">31185</property>
 			<property name="widget">recently-added-albums</property>
-			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
-			<property name="widgetType">albums</property>
-			<property name="widgetTarget">music</property>
 			<property name="widgetSortBy">dateadded</property>
 			<property name="widgetSortOrder">descending</property>
 			<property name="widgetStyle">squareinfo</property>
@@ -479,11 +407,7 @@
 		<item name="widget5-3">
 			<label>31184</label>
 			<icon>ftv_icon.png</icon>
-			<property name="widgetLabel">31184</property>
 			<property name="widget">your-albums</property>
-			<property name="widgetPath">special://skin/extras/music/YourAlbums.xsp</property>
-			<property name="widgetType">albums</property>
-			<property name="widgetTarget">music</property>
 			<property name="widgetSortBy">artist</property>
 			<property name="widgetSortOrder">ascending</property>
 			<property name="widgetStyle">squareinfo</property>
@@ -491,11 +415,7 @@
 		<item name="widget5-4">
 			<label>31186</label>
 			<icon>ftv_icon.png</icon>
-			<property name="widgetLabel">31186</property>
 			<property name="widget">your-artists</property>
-			<property name="widgetPath">special://skin/extras/music/YourArtists.xsp</property>
-			<property name="widgetType">artists</property>
-			<property name="widgetTarget">music</property>
 			<property name="widgetSortBy">artist</property>
 			<property name="widgetSortOrder">ascending</property>
 			<property name="widgetStyle">squareinfo</property>
@@ -503,11 +423,7 @@
 		<item name="widget5-5">
 			<label>31187</label>
 			<icon>ftv_icon.png</icon>
-			<property name="widgetLabel">31187</property>
 			<property name="widget">music-genres</property>
-			<property name="widgetPath">musicdb://genres/</property>
-			<property name="widgetType">music</property>
-			<property name="widgetTarget">music</property>
 			<property name="widgetSortBy">genre</property>
 			<property name="widgetSortOrder">ascending</property>
 			<property name="widgetStyle">squareinfo</property>

@@ -1520,4 +1520,50 @@
 			</content>
 		</control>
 	</include>
+	<!-- Original fanart and spoiler overlay; overlay texture fading is disabled. -->
+	<include name="SpoilerProtectedImage">
+		<param name="image" default=""/>
+		<param name="fanart" default="$INFO[ListItem.Art(fanart)]"/>
+		<param name="hidden" default="false"/>
+		<param name="visible" default="true"/>
+		<param name="top" default="96"/>
+		<param name="width" default="1280"/>
+		<param name="height" default="960"/>
+		<param name="fallback" default="views/episode_fallback.png"/>
+		<param name="bordersize" default="0"/>
+		<param name="bordertexture" default=""/>
+		<definition>
+			<control type="image">
+				<top>$PARAM[top]</top>
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<bordersize>$PARAM[bordersize]</bordersize>
+				<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+				<texture background="true" fallback="$PARAM[fallback]">$PARAM[image]</texture>
+				<bordertexture infill="false" border="32,60,32,36">$PARAM[bordertexture]</bordertexture>
+				<visible>[$PARAM[visible]] + ![$PARAM[hidden]]</visible>
+			</control>
+			<control type="image">
+				<top>$PARAM[top]</top>
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<bordersize>$PARAM[bordersize]</bordersize>
+				<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+				<texture background="true" fallback="$PARAM[fallback]">$PARAM[fanart]</texture>
+				<bordertexture infill="false" border="32,60,32,36">$PARAM[bordertexture]</bordertexture>
+				<visible>[$PARAM[visible]] + [$PARAM[hidden]]</visible>
+			</control>
+			<control type="image">
+				<top>$PARAM[top]</top>
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<bordersize>$PARAM[bordersize]</bordersize>
+				<aspectratio>stretch</aspectratio>
+				<fadetime>0</fadetime>
+				<texture>views/episode_fallback.png</texture>
+				<bordertexture infill="false" border="32,60,32,36"></bordertexture>
+				<visible>[$PARAM[visible]] + [$PARAM[hidden]]</visible>
+			</control>
+		</definition>
+	</include>
 </includes>

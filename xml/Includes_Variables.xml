@@ -1025,6 +1025,15 @@
 		<value condition="!Container.Content(episodes)">$INFO[ListItem.Icon]</value>
 		<value>views/episode_fallback.png</value>
 	</variable>
+	<variable name="ForcedWideImage">
+		<value condition="String.StartsWith(ListItem.Label,$LOCALIZE[33078]) | String.IsEqual(ListItem.Label,$LOCALIZE[22082])">views/next_page_wide.png</value>
+		<value condition="ListItem.IsParentFolder">views/folder_back_wide.png</value>
+		<value condition="Container.Content(episodes)">$INFO[ListItem.Art(thumb)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(ftv))">$INFO[ListItem.Art(ftv)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="!Container.Content(episodes)">$INFO[ListItem.Icon]</value>
+		<value>views/episode_fallback.png</value>
+	</variable>
 	<variable name="PosterImage">
 		<value condition="String.StartsWith(ListItem.Label,$LOCALIZE[33078]) | String.IsEqual(ListItem.Label,$LOCALIZE[22082])">views/next_page_poster.png</value>
 		<value condition="ListItem.IsParentFolder">views/folder_back_poster.png</value>
@@ -2468,5 +2477,29 @@
 		<value condition="!String.IsEqual(ListItem.Season,0) + !String.IsEmpty(ListItem.Episode)">$INFO[ListItem.Episode,$LOCALIZE[20359] ]</value>
 		<value condition="String.IsEqual(ListItem.Season,0)">$LOCALIZE[31146] $LOCALIZE[20359] $INFO[ListItem.Episode]</value>
 		<value>$INFO[ListItem.Label]</value>
+	</variable>
+	<variable name="HomeEpisodeValue1">
+		<value condition="!String.IsEmpty(ListItem.Property(StackedCount1)) + !String.Contains(ListItem.Property(StackedEpisodes1),0x)">$INFO[ListItem.Property(Season1),$LOCALIZE[20373] ,] $INFO[ListItem.Property(StackedFirst1),$LOCALIZE[20360] ]$INFO[ListItem.Property(StackedLast1),-]</value>
+		<value condition="String.IsEqual(ListItem.Property(EpisodeDBID1),-1)">$INFO[ListItem.Property(InfoLabel1)]</value>
+		<value condition="!String.IsEqual(ListItem.Property(Season1),0) + !String.IsEmpty(ListItem.Property(Season1)) + !String.IsEmpty(ListItem.Property(Episode1))">$INFO[ListItem.Property(Season1),$LOCALIZE[20373] ,] $INFO[ListItem.Property(Episode1),$LOCALIZE[20359] ]</value>
+		<value condition="!String.IsEqual(ListItem.Property(Season1),0) + !String.IsEmpty(ListItem.Property(Episode1))">$INFO[ListItem.Property(Episode1),$LOCALIZE[20359] ]</value>
+		<value condition="String.IsEqual(ListItem.Property(Season1),0)">$LOCALIZE[31146] $LOCALIZE[20359] $INFO[ListItem.Property(Episode1)]</value>
+		<value>$INFO[ListItem.Property(InfoLabel1)]</value>
+	</variable>
+	<variable name="HomeEpisodeValue2">
+		<value condition="!String.IsEmpty(ListItem.Property(StackedCount2)) + !String.Contains(ListItem.Property(StackedEpisodes2),0x)">$INFO[ListItem.Property(Season2),$LOCALIZE[20373] ,] $INFO[ListItem.Property(StackedFirst2),$LOCALIZE[20360] ]$INFO[ListItem.Property(StackedLast2),-]</value>
+		<value condition="String.IsEqual(ListItem.Property(EpisodeDBID2),-1)">$INFO[ListItem.Property(InfoLabel2)]</value>
+		<value condition="!String.IsEqual(ListItem.Property(Season2),0) + !String.IsEmpty(ListItem.Property(Season2)) + !String.IsEmpty(ListItem.Property(Episode2))">$INFO[ListItem.Property(Season2),$LOCALIZE[20373] ,] $INFO[ListItem.Property(Episode2),$LOCALIZE[20359] ]</value>
+		<value condition="!String.IsEqual(ListItem.Property(Season2),0) + !String.IsEmpty(ListItem.Property(Episode2))">$INFO[ListItem.Property(Episode2),$LOCALIZE[20359] ]</value>
+		<value condition="String.IsEqual(ListItem.Property(Season2),0)">$LOCALIZE[31146] $LOCALIZE[20359] $INFO[ListItem.Property(Episode2)]</value>
+		<value>$INFO[ListItem.Property(InfoLabel2)]</value>
+	</variable>
+	<variable name="HomeEpisodeValue3">
+		<value condition="!String.IsEmpty(ListItem.Property(StackedCount3)) + !String.Contains(ListItem.Property(StackedEpisodes3),0x)">$INFO[ListItem.Property(Season3),$LOCALIZE[20373] ,] $INFO[ListItem.Property(StackedFirst3),$LOCALIZE[20360] ]$INFO[ListItem.Property(StackedLast3),-]</value>
+		<value condition="String.IsEqual(ListItem.Property(EpisodeDBID3),-1)">$INFO[ListItem.Property(InfoLabel3)]</value>
+		<value condition="!String.IsEqual(ListItem.Property(Season3),0) + !String.IsEmpty(ListItem.Property(Season3)) + !String.IsEmpty(ListItem.Property(Episode3))">$INFO[ListItem.Property(Season3),$LOCALIZE[20373] ,] $INFO[ListItem.Property(Episode3),$LOCALIZE[20359] ]</value>
+		<value condition="!String.IsEqual(ListItem.Property(Season3),0) + !String.IsEmpty(ListItem.Property(Episode3))">$INFO[ListItem.Property(Episode3),$LOCALIZE[20359] ]</value>
+		<value condition="String.IsEqual(ListItem.Property(Season3),0)">$LOCALIZE[31146] $LOCALIZE[20359] $INFO[ListItem.Property(Episode3)]</value>
+		<value>$INFO[ListItem.Property(InfoLabel3)]</value>
 	</variable>
 </includes>

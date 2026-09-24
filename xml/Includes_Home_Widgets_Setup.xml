@@ -1383,15 +1383,17 @@
 			<visible>String.IsEqual(ListItem.Property(WidgetStyle),$LOCALIZE[31159])</visible>
 			<control type="group">
 				<left>546</left>
-				<control type="image">
-					<width>846</width>
-					<height>668</height>
-					<bordersize>0,26,20,26</bordersize>
-					<aspectratio align="center">scale</aspectratio>
-					<texture background="true" fallback="views/episode_fallback.png">$INFO[ListItem.Property(ArtFTV1)]</texture>
-					<bordertexture infill="false" border="32,60,32,36">home/image_shadow_small_nf.png</bordertexture>
-					<visible>!String.IsEmpty(ListItem.Property(ArtFTV1))</visible>
-				</control>
+				<include content="SpoilerProtectedImage">
+					<param name="image" value="$INFO[ListItem.Property(ArtFTV1)]"/>
+					<param name="fanart" value="$INFO[ListItem.Property(EpisodeFanart1)]"/>
+					<param name="hidden" value="String.IsEqual(ListItem.Property(WidgetType),episodes) + !String.IsEmpty(ListItem.Property(EpisodeFanart1)) + String.IsEqual(ListItem.Property(Icon1),ListItem.Property(EpisodeFanart1))"/>
+					<param name="visible" value="!String.IsEmpty(ListItem.Property(ArtFTV1))"/>
+					<param name="top" value="0"/>
+					<param name="width" value="846"/>
+					<param name="height" value="668"/>
+					<param name="bordersize" value="0,26,20,26"/>
+					<param name="bordertexture" value="home/image_shadow_small_nf.png"/>
+				</include>
 				<control type="image">
 					<width>846</width>
 					<height>668</height>
@@ -1420,6 +1422,43 @@
 					<visible>String.IsEmpty(ListItem.Property(ArtFTV1)) + String.IsEmpty(ListItem.Property(ArtFanart1))</visible>
 				</control>
 				<control type="image">
+					<top>426</top>
+					<width>826</width>
+					<height>200</height>
+					<texture>views/default_overlay.png</texture>
+					<visible>String.IsEqual(ListItem.Property(WidgetType),episodes)</visible>
+				</control>
+				<control type="label">
+					<left>24</left>
+					<top>512</top>
+					<width>778</width>
+					<height>56</height>
+					<font>Bold28</font>
+					<textcolor>ffffffff</textcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
+					<label>$VAR[HomeEpisodeValue1]</label>
+					<visible>String.IsEqual(ListItem.Property(WidgetType),episodes)</visible>
+				</control>
+				<control type="progress">
+					<top>626</top>
+					<width>826</width>
+					<height>16</height>
+					<info>ListItem.Property(PercentPlayed1)</info>
+					<texturebg border="4">views/ProgressBack.png</texturebg>
+					<lefttexture/>
+					<midtexture border="4">views/ProgressBar.png</midtexture>
+					<righttexture/>
+					<overlaytexture/>
+					<visible>String.IsEqual(ListItem.Property(WidgetType),episodes) + Integer.IsGreater(ListItem.Property(PercentPlayed1),0)</visible>
+				</control>
+				<control type="image">
+					<top>626</top>
+					<width>826</width>
+					<height>16</height>
+					<texture border="4">views/ProgressBar.png</texture>
+					<visible>String.IsEqual(ListItem.Property(WidgetType),episodes) + !Integer.IsGreater(ListItem.Property(PercentPlayed1),0) + String.IsEqual(ListItem.Property(Overlay1),OverlayWatched.png)</visible>
+				</control>
+				<control type="image">
 					<top>26</top>
 					<width>116</width>
 					<height>116</height>
@@ -1444,15 +1483,17 @@
 			<control type="group">
 				<left>1414</left>
 				<visible>!String.IsEmpty(ListItem.Property(InfoLabel2))</visible>
-				<control type="image">
-					<width>846</width>
-					<height>668</height>
-					<bordersize>0,26,20,26</bordersize>
-					<aspectratio align="center">scale</aspectratio>
-					<texture background="true" fallback="views/episode_fallback.png">$INFO[ListItem.Property(ArtFTV2)]</texture>
-					<bordertexture infill="false" border="32,60,32,36">home/image_shadow_small_nf.png</bordertexture>
-					<visible>!String.IsEmpty(ListItem.Property(ArtFTV2))</visible>
-				</control>
+				<include content="SpoilerProtectedImage">
+					<param name="image" value="$INFO[ListItem.Property(ArtFTV2)]"/>
+					<param name="fanart" value="$INFO[ListItem.Property(EpisodeFanart2)]"/>
+					<param name="hidden" value="String.IsEqual(ListItem.Property(WidgetType),episodes) + !String.IsEmpty(ListItem.Property(EpisodeFanart2)) + String.IsEqual(ListItem.Property(Icon2),ListItem.Property(EpisodeFanart2))"/>
+					<param name="visible" value="!String.IsEmpty(ListItem.Property(ArtFTV2))"/>
+					<param name="top" value="0"/>
+					<param name="width" value="846"/>
+					<param name="height" value="668"/>
+					<param name="bordersize" value="0,26,20,26"/>
+					<param name="bordertexture" value="home/image_shadow_small_nf.png"/>
+				</include>
 				<control type="image">
 					<width>846</width>
 					<height>668</height>
@@ -1481,6 +1522,43 @@
 					<visible>String.IsEmpty(ListItem.Property(ArtFTV2)) + String.IsEmpty(ListItem.Property(ArtFanart2))</visible>
 				</control>
 				<control type="image">
+					<top>426</top>
+					<width>826</width>
+					<height>200</height>
+					<texture>views/default_overlay.png</texture>
+					<visible>String.IsEqual(ListItem.Property(WidgetType),episodes)</visible>
+				</control>
+				<control type="label">
+					<left>24</left>
+					<top>512</top>
+					<width>778</width>
+					<height>56</height>
+					<font>Bold28</font>
+					<textcolor>ffffffff</textcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
+					<label>$VAR[HomeEpisodeValue2]</label>
+					<visible>String.IsEqual(ListItem.Property(WidgetType),episodes)</visible>
+				</control>
+				<control type="progress">
+					<top>626</top>
+					<width>826</width>
+					<height>16</height>
+					<info>ListItem.Property(PercentPlayed2)</info>
+					<texturebg border="4">views/ProgressBack.png</texturebg>
+					<lefttexture/>
+					<midtexture border="4">views/ProgressBar.png</midtexture>
+					<righttexture/>
+					<overlaytexture/>
+					<visible>String.IsEqual(ListItem.Property(WidgetType),episodes) + Integer.IsGreater(ListItem.Property(PercentPlayed2),0)</visible>
+				</control>
+				<control type="image">
+					<top>626</top>
+					<width>826</width>
+					<height>16</height>
+					<texture border="4">views/ProgressBar.png</texture>
+					<visible>String.IsEqual(ListItem.Property(WidgetType),episodes) + !Integer.IsGreater(ListItem.Property(PercentPlayed2),0) + String.IsEqual(ListItem.Property(Overlay2),OverlayWatched.png)</visible>
+				</control>
+				<control type="image">
 					<top>26</top>
 					<width>116</width>
 					<height>116</height>
@@ -1505,15 +1583,17 @@
 			<control type="group">
 				<left>2282</left>
 				<visible>!String.IsEmpty(ListItem.Property(InfoLabel3))</visible>
-				<control type="image">
-					<width>846</width>
-					<height>668</height>
-					<bordersize>0,26,20,26</bordersize>
-					<aspectratio align="center">scale</aspectratio>
-					<texture background="true" fallback="views/episode_fallback.png">$INFO[ListItem.Property(ArtFTV3)]</texture>
-					<bordertexture infill="false" border="32,60,32,36">home/image_shadow_small_nf.png</bordertexture>
-					<visible>!String.IsEmpty(ListItem.Property(ArtFTV3))</visible>
-				</control>
+				<include content="SpoilerProtectedImage">
+					<param name="image" value="$INFO[ListItem.Property(ArtFTV3)]"/>
+					<param name="fanart" value="$INFO[ListItem.Property(EpisodeFanart3)]"/>
+					<param name="hidden" value="String.IsEqual(ListItem.Property(WidgetType),episodes) + !String.IsEmpty(ListItem.Property(EpisodeFanart3)) + String.IsEqual(ListItem.Property(Icon3),ListItem.Property(EpisodeFanart3))"/>
+					<param name="visible" value="!String.IsEmpty(ListItem.Property(ArtFTV3))"/>
+					<param name="top" value="0"/>
+					<param name="width" value="846"/>
+					<param name="height" value="668"/>
+					<param name="bordersize" value="0,26,20,26"/>
+					<param name="bordertexture" value="home/image_shadow_small_nf.png"/>
+				</include>
 				<control type="image">
 					<width>846</width>
 					<height>668</height>
@@ -1540,6 +1620,43 @@
 					<texture background="true" fallback="views/episode_fallback.png">$INFO[ListItem.Property(Icon3)]</texture>
 					<bordertexture infill="false" border="32,60,32,36">home/image_shadow_small_nf.png</bordertexture>
 					<visible>String.IsEmpty(ListItem.Property(ArtFTV3)) + String.IsEmpty(ListItem.Property(ArtFanart3))</visible>
+				</control>
+				<control type="image">
+					<top>426</top>
+					<width>826</width>
+					<height>200</height>
+					<texture>views/default_overlay.png</texture>
+					<visible>String.IsEqual(ListItem.Property(WidgetType),episodes)</visible>
+				</control>
+				<control type="label">
+					<left>24</left>
+					<top>512</top>
+					<width>778</width>
+					<height>56</height>
+					<font>Bold28</font>
+					<textcolor>ffffffff</textcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
+					<label>$VAR[HomeEpisodeValue3]</label>
+					<visible>String.IsEqual(ListItem.Property(WidgetType),episodes)</visible>
+				</control>
+				<control type="progress">
+					<top>626</top>
+					<width>826</width>
+					<height>16</height>
+					<info>ListItem.Property(PercentPlayed3)</info>
+					<texturebg border="4">views/ProgressBack.png</texturebg>
+					<lefttexture/>
+					<midtexture border="4">views/ProgressBar.png</midtexture>
+					<righttexture/>
+					<overlaytexture/>
+					<visible>String.IsEqual(ListItem.Property(WidgetType),episodes) + Integer.IsGreater(ListItem.Property(PercentPlayed3),0)</visible>
+				</control>
+				<control type="image">
+					<top>626</top>
+					<width>826</width>
+					<height>16</height>
+					<texture border="4">views/ProgressBar.png</texture>
+					<visible>String.IsEqual(ListItem.Property(WidgetType),episodes) + !Integer.IsGreater(ListItem.Property(PercentPlayed3),0) + String.IsEqual(ListItem.Property(Overlay3),OverlayWatched.png)</visible>
 				</control>
 				<control type="image">
 					<top>26</top>
@@ -1571,15 +1688,17 @@
 			<visible>String.IsEqual(ListItem.Property(WidgetStyle),$LOCALIZE[31159])</visible>
 			<control type="group">
 				<left>546</left>
-				<control type="image">
-					<width>846</width>
-					<height>668</height>
-					<bordersize>0,26,20,26</bordersize>
-					<aspectratio align="center">scale</aspectratio>
-					<texture background="true" fallback="views/episode_fallback.png">$INFO[ListItem.Property(ArtFTV1)]</texture>
-					<bordertexture infill="false" border="32,60,32,36">home/image_shadow_small_nf.png</bordertexture>
-					<visible>!String.IsEmpty(ListItem.Property(ArtFTV1))</visible>
-				</control>
+				<include content="SpoilerProtectedImage">
+					<param name="image" value="$INFO[ListItem.Property(ArtFTV1)]"/>
+					<param name="fanart" value="$INFO[ListItem.Property(EpisodeFanart1)]"/>
+					<param name="hidden" value="String.IsEqual(ListItem.Property(WidgetType),episodes) + !String.IsEmpty(ListItem.Property(EpisodeFanart1)) + String.IsEqual(ListItem.Property(Icon1),ListItem.Property(EpisodeFanart1))"/>
+					<param name="visible" value="!String.IsEmpty(ListItem.Property(ArtFTV1))"/>
+					<param name="top" value="0"/>
+					<param name="width" value="846"/>
+					<param name="height" value="668"/>
+					<param name="bordersize" value="0,26,20,26"/>
+					<param name="bordertexture" value="home/image_shadow_small_nf.png"/>
+				</include>
 				<control type="image">
 					<width>846</width>
 					<height>668</height>
@@ -1608,6 +1727,43 @@
 					<visible>String.IsEmpty(ListItem.Property(ArtFTV1)) + String.IsEmpty(ListItem.Property(ArtFanart1))</visible>
 				</control>
 				<control type="image">
+					<top>426</top>
+					<width>826</width>
+					<height>200</height>
+					<texture>views/default_overlay.png</texture>
+					<visible>String.IsEqual(ListItem.Property(WidgetType),episodes)</visible>
+				</control>
+				<control type="label">
+					<left>24</left>
+					<top>512</top>
+					<width>778</width>
+					<height>56</height>
+					<font>Bold28</font>
+					<textcolor>ffffffff</textcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
+					<label>$VAR[HomeEpisodeValue1]</label>
+					<visible>String.IsEqual(ListItem.Property(WidgetType),episodes)</visible>
+				</control>
+				<control type="progress">
+					<top>626</top>
+					<width>826</width>
+					<height>16</height>
+					<info>ListItem.Property(PercentPlayed1)</info>
+					<texturebg border="4">views/ProgressBack.png</texturebg>
+					<lefttexture/>
+					<midtexture border="4">views/ProgressBar.png</midtexture>
+					<righttexture/>
+					<overlaytexture/>
+					<visible>String.IsEqual(ListItem.Property(WidgetType),episodes) + Integer.IsGreater(ListItem.Property(PercentPlayed1),0)</visible>
+				</control>
+				<control type="image">
+					<top>626</top>
+					<width>826</width>
+					<height>16</height>
+					<texture border="4">views/ProgressBar.png</texture>
+					<visible>String.IsEqual(ListItem.Property(WidgetType),episodes) + !Integer.IsGreater(ListItem.Property(PercentPlayed1),0) + String.IsEqual(ListItem.Property(Overlay1),OverlayWatched.png)</visible>
+				</control>
+				<control type="image">
 					<top>26</top>
 					<width>116</width>
 					<height>116</height>
@@ -1634,15 +1790,17 @@
 			<control type="group">
 				<left>1414</left>
 				<visible>!String.IsEmpty(ListItem.Property(InfoLabel2))</visible>
-				<control type="image">
-					<width>846</width>
-					<height>668</height>
-					<bordersize>0,26,20,26</bordersize>
-					<aspectratio align="center">scale</aspectratio>
-					<texture background="true" fallback="views/episode_fallback.png">$INFO[ListItem.Property(ArtFTV2)]</texture>
-					<bordertexture infill="false" border="32,60,32,36">home/image_shadow_small_nf.png</bordertexture>
-					<visible>!String.IsEmpty(ListItem.Property(ArtFTV2))</visible>
-				</control>
+				<include content="SpoilerProtectedImage">
+					<param name="image" value="$INFO[ListItem.Property(ArtFTV2)]"/>
+					<param name="fanart" value="$INFO[ListItem.Property(EpisodeFanart2)]"/>
+					<param name="hidden" value="String.IsEqual(ListItem.Property(WidgetType),episodes) + !String.IsEmpty(ListItem.Property(EpisodeFanart2)) + String.IsEqual(ListItem.Property(Icon2),ListItem.Property(EpisodeFanart2))"/>
+					<param name="visible" value="!String.IsEmpty(ListItem.Property(ArtFTV2))"/>
+					<param name="top" value="0"/>
+					<param name="width" value="846"/>
+					<param name="height" value="668"/>
+					<param name="bordersize" value="0,26,20,26"/>
+					<param name="bordertexture" value="home/image_shadow_small_nf.png"/>
+				</include>
 				<control type="image">
 					<width>846</width>
 					<height>668</height>
@@ -1671,6 +1829,43 @@
 					<visible>String.IsEmpty(ListItem.Property(ArtFTV2)) + String.IsEmpty(ListItem.Property(ArtFanart2))</visible>
 				</control>
 				<control type="image">
+					<top>426</top>
+					<width>826</width>
+					<height>200</height>
+					<texture>views/default_overlay.png</texture>
+					<visible>String.IsEqual(ListItem.Property(WidgetType),episodes)</visible>
+				</control>
+				<control type="label">
+					<left>24</left>
+					<top>512</top>
+					<width>778</width>
+					<height>56</height>
+					<font>Bold28</font>
+					<textcolor>ffffffff</textcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
+					<label>$VAR[HomeEpisodeValue2]</label>
+					<visible>String.IsEqual(ListItem.Property(WidgetType),episodes)</visible>
+				</control>
+				<control type="progress">
+					<top>626</top>
+					<width>826</width>
+					<height>16</height>
+					<info>ListItem.Property(PercentPlayed2)</info>
+					<texturebg border="4">views/ProgressBack.png</texturebg>
+					<lefttexture/>
+					<midtexture border="4">views/ProgressBar.png</midtexture>
+					<righttexture/>
+					<overlaytexture/>
+					<visible>String.IsEqual(ListItem.Property(WidgetType),episodes) + Integer.IsGreater(ListItem.Property(PercentPlayed2),0)</visible>
+				</control>
+				<control type="image">
+					<top>626</top>
+					<width>826</width>
+					<height>16</height>
+					<texture border="4">views/ProgressBar.png</texture>
+					<visible>String.IsEqual(ListItem.Property(WidgetType),episodes) + !Integer.IsGreater(ListItem.Property(PercentPlayed2),0) + String.IsEqual(ListItem.Property(Overlay2),OverlayWatched.png)</visible>
+				</control>
+				<control type="image">
 					<top>26</top>
 					<width>116</width>
 					<height>116</height>
@@ -1697,15 +1892,17 @@
 			<control type="group">
 				<left>2282</left>
 				<visible>!String.IsEmpty(ListItem.Property(InfoLabel3))</visible>
-				<control type="image">
-					<width>846</width>
-					<height>668</height>
-					<bordersize>0,26,20,26</bordersize>
-					<aspectratio align="center">scale</aspectratio>
-					<texture background="true" fallback="views/episode_fallback.png">$INFO[ListItem.Property(ArtFTV3)]</texture>
-					<bordertexture infill="false" border="32,60,32,36">home/image_shadow_small_nf.png</bordertexture>
-					<visible>!String.IsEmpty(ListItem.Property(ArtFTV3))</visible>
-				</control>
+				<include content="SpoilerProtectedImage">
+					<param name="image" value="$INFO[ListItem.Property(ArtFTV3)]"/>
+					<param name="fanart" value="$INFO[ListItem.Property(EpisodeFanart3)]"/>
+					<param name="hidden" value="String.IsEqual(ListItem.Property(WidgetType),episodes) + !String.IsEmpty(ListItem.Property(EpisodeFanart3)) + String.IsEqual(ListItem.Property(Icon3),ListItem.Property(EpisodeFanart3))"/>
+					<param name="visible" value="!String.IsEmpty(ListItem.Property(ArtFTV3))"/>
+					<param name="top" value="0"/>
+					<param name="width" value="846"/>
+					<param name="height" value="668"/>
+					<param name="bordersize" value="0,26,20,26"/>
+					<param name="bordertexture" value="home/image_shadow_small_nf.png"/>
+				</include>
 				<control type="image">
 					<width>846</width>
 					<height>668</height>
@@ -1732,6 +1929,43 @@
 					<texture background="true" fallback="views/episode_fallback.png">$INFO[ListItem.Property(Icon3)]</texture>
 					<bordertexture infill="false" border="32,60,32,36">home/image_shadow_small_nf.png</bordertexture>
 					<visible>String.IsEmpty(ListItem.Property(ArtFTV3)) + String.IsEmpty(ListItem.Property(ArtFanart3))</visible>
+				</control>
+				<control type="image">
+					<top>426</top>
+					<width>826</width>
+					<height>200</height>
+					<texture>views/default_overlay.png</texture>
+					<visible>String.IsEqual(ListItem.Property(WidgetType),episodes)</visible>
+				</control>
+				<control type="label">
+					<left>24</left>
+					<top>512</top>
+					<width>778</width>
+					<height>56</height>
+					<font>Bold28</font>
+					<textcolor>ffffffff</textcolor>
+					<shadowcolor>ShadowColour</shadowcolor>
+					<label>$VAR[HomeEpisodeValue3]</label>
+					<visible>String.IsEqual(ListItem.Property(WidgetType),episodes)</visible>
+				</control>
+				<control type="progress">
+					<top>626</top>
+					<width>826</width>
+					<height>16</height>
+					<info>ListItem.Property(PercentPlayed3)</info>
+					<texturebg border="4">views/ProgressBack.png</texturebg>
+					<lefttexture/>
+					<midtexture border="4">views/ProgressBar.png</midtexture>
+					<righttexture/>
+					<overlaytexture/>
+					<visible>String.IsEqual(ListItem.Property(WidgetType),episodes) + Integer.IsGreater(ListItem.Property(PercentPlayed3),0)</visible>
+				</control>
+				<control type="image">
+					<top>626</top>
+					<width>826</width>
+					<height>16</height>
+					<texture border="4">views/ProgressBar.png</texture>
+					<visible>String.IsEqual(ListItem.Property(WidgetType),episodes) + !Integer.IsGreater(ListItem.Property(PercentPlayed3),0) + String.IsEqual(ListItem.Property(Overlay3),OverlayWatched.png)</visible>
 				</control>
 				<control type="image">
 					<top>26</top>

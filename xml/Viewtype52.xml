@@ -22,6 +22,14 @@
 				<scrolltime easing="inout" tween="sine">300</scrolltime>
 				<visible>$EXP[Exp_View_52]</visible>
 				<include>ListBounceAnimation</include>
+				<include content="HomeToWindowSlideAnimation" condition="String.IsEqual(Window(Home).Property(ForceViewType),wide)">
+					<param name="FocusRowID1_1" value="372,20"/>
+					<param name="FocusRowID1_2" value="980,-348"/>
+					<param name="FocusRowID2_2" value="980,390"/>
+					<param name="FocusRowID1_3" value="980,-492"/>
+					<param name="FocusRowID2_3" value="980,20"/>
+					<param name="FocusRowID3_3" value="980,336"/>
+				</include>
 				<animation condition="Control.HasFocus(55) | Control.HasFocus(2003) | Control.HasFocus(2004) | Control.HasFocus(3001)" effect="fade" end="0" start="100" time="200">Conditional</animation>
 				<itemlayout height="1152" width="1144">
 					<control type="group">
@@ -35,21 +43,14 @@
 						</control>
 						<control type="group">
 							<include>ItemListFadeDiffuseAnimation</include>
-							<control type="image">
-								<top>96</top>
-								<width>1280</width>
-								<height>960</height>
-								<aspectratio align="center">scale</aspectratio>
-								<texture background="true" fallback="views/episode_fallback.png">$VAR[WideImage]</texture>
-							</control>
-							<control type="image">
-								<top>96</top>
-								<width>1280</width>
-								<height>960</height>
-								<aspectratio align="center">scale</aspectratio>
-								<texture>views/episode_fallback.png</texture>
-								<visible>!String.StartsWith(Container.FolderPath,plugin://) + !ListItem.IsParentFolder + $EXP[HideWatchedEpisodeCheck]</visible>
-							</control>
+							<include content="SpoilerProtectedImage">
+								<param name="image" value="$VAR[WideImage]"/>
+								<param name="hidden" value="!ListItem.IsParentFolder + !String.StartsWith(Container.FolderPath,plugin://) + $EXP[HideWatchedEpisodeCheck]"/>
+								<param name="fallback" value="views/episode_fallback.png"/>
+								<param name="top" value="96"/>
+								<param name="width" value="1280"/>
+								<param name="height" value="960"/>
+							</include>
 							<control type="image">
 								<top>96</top>
 								<width>180</width>
@@ -143,21 +144,14 @@
 							<include content="FocusedListIDFadeDiffuseAnimation">
 								<param name="ListID" value="52"/>
 							</include>
-							<control type="image">
-								<top>96</top>
-								<width>1280</width>
-								<height>960</height>
-								<aspectratio align="center">scale</aspectratio>
-								<texture background="true" fallback="views/episode_fallback.png">$VAR[WideImage]</texture>
-							</control>
-							<control type="image">
-								<top>96</top>
-								<width>1280</width>
-								<height>960</height>
-								<aspectratio align="center">scale</aspectratio>
-								<texture>views/episode_fallback.png</texture>
-								<visible>!String.StartsWith(Container.FolderPath,plugin://) + !ListItem.IsParentFolder + $EXP[HideWatchedEpisodeCheck]</visible>
-							</control>
+							<include content="SpoilerProtectedImage">
+								<param name="image" value="$VAR[WideImage]"/>
+								<param name="hidden" value="!ListItem.IsParentFolder + !String.StartsWith(Container.FolderPath,plugin://) + $EXP[HideWatchedEpisodeCheck]"/>
+								<param name="fallback" value="views/episode_fallback.png"/>
+								<param name="top" value="96"/>
+								<param name="width" value="1280"/>
+								<param name="height" value="960"/>
+							</include>
 							<control type="image">
 								<top>96</top>
 								<width>180</width>

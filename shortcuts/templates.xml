@@ -15,7 +15,8 @@
 				<label>$PROPERTY[label]</label>
 				<visible>!String.IsEmpty(Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(0).Label)</visible>
 				<property name="WidgetStyle">$PROPERTY[styleLabel]</property>
-				<property name="WidgetOnClick">ActivateWindow($PROPERTY[widgetTarget],&quot;$PROPERTY[widgetPath]&quot;,return)</property>
+				<property name="WidgetPath">$PROPERTY[widgetPath]</property>
+				<property name="WidgetOnClick">ActivateWindow($PROPERTY[widgetTarget],$ESCINFO[Container($MATH[$PROPERTY[groupId] / 10]).ListItem.Property(WidgetPath)],return)</property>
 				<property name="Icon1">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(0).Icon]</property>
 				<property name="Icon2">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(1).Icon]</property>
 				<property name="Icon3">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(2).Icon]</property>
@@ -46,16 +47,44 @@
 				<property name="VideoResolution4">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(3).VideoResolution]</property>
 				<property name="VideoResolution5">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(4).VideoResolution]</property>
 				<property name="VideoResolution6">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(5).VideoResolution]</property>
-				<property name="ArtFTV1">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(0).Art(ftv)]</property>
-				<property name="ArtFTV2">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(1).Art(ftv)]</property>
-				<property name="ArtFTV3">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(2).Art(ftv)]</property>
-				<property name="ArtFanart1">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(0).Art(fanart)]</property>
-				<property name="ArtFanart2">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(1).Art(fanart)]</property>
-				<property name="ArtFanart3">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(2).Art(fanart)]</property>
-				<property name="ArtLogo1">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(0).Art(clearlogo)]</property>
-				<property name="ArtLogo2">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(1).Art(clearlogo)]</property>
-				<property name="ArtLogo3">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(2).Art(clearlogo)]</property>
-				<onclick>ActivateWindow($PROPERTY[widgetTarget],&quot;$PROPERTY[widgetPath]&quot;,return)</onclick>
+				<property name="Season1">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(0).Season]</property>
+				<property name="Episode1">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(0).Episode]</property>
+				<property name="EpisodeDBID1">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(0).DBID]</property>
+				<property name="StackedCount1">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(0).Property(stacked_count)]</property>
+				<property name="StackedEpisodes1">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(0).Property(stacked_episodes)]</property>
+				<property name="StackedFirst1">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(0).Property(stacked_first_episode)]</property>
+				<property name="StackedLast1">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(0).Property(stacked_last_episode)]</property>
+				<property name="Season2">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(1).Season]</property>
+				<property name="Episode2">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(1).Episode]</property>
+				<property name="EpisodeDBID2">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(1).DBID]</property>
+				<property name="StackedCount2">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(1).Property(stacked_count)]</property>
+				<property name="StackedEpisodes2">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(1).Property(stacked_episodes)]</property>
+				<property name="StackedFirst2">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(1).Property(stacked_first_episode)]</property>
+				<property name="StackedLast2">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(1).Property(stacked_last_episode)]</property>
+				<property name="Season3">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(2).Season]</property>
+				<property name="Episode3">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(2).Episode]</property>
+				<property name="EpisodeDBID3">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(2).DBID]</property>
+				<property name="StackedCount3">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(2).Property(stacked_count)]</property>
+				<property name="StackedEpisodes3">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(2).Property(stacked_episodes)]</property>
+				<property name="StackedFirst3">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(2).Property(stacked_first_episode)]</property>
+				<property name="StackedLast3">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(2).Property(stacked_last_episode)]</property>
+				<property name="WidgetType">$PROPERTY[widgetType]</property>
+				<property name="PercentPlayed1">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(0).PercentPlayed]</property>
+				<property name="EpisodeFanart1">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(0).Art(fanart)]</property>
+				<property name="PercentPlayed2">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(1).PercentPlayed]</property>
+				<property name="EpisodeFanart2">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(1).Art(fanart)]</property>
+				<property name="PercentPlayed3">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(2).PercentPlayed]</property>
+				<property name="EpisodeFanart3">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(2).Art(fanart)]</property>
+				<property name="ArtFTV1">$PROPERTY[wideArtFTV1]</property>
+				<property name="ArtFTV2">$PROPERTY[wideArtFTV2]</property>
+				<property name="ArtFTV3">$PROPERTY[wideArtFTV3]</property>
+				<property name="ArtFanart1">$PROPERTY[wideArtFanart1]</property>
+				<property name="ArtFanart2">$PROPERTY[wideArtFanart2]</property>
+				<property name="ArtFanart3">$PROPERTY[wideArtFanart3]</property>
+				<property name="ArtLogo1">$PROPERTY[wideArtLogo1]</property>
+				<property name="ArtLogo2">$PROPERTY[wideArtLogo2]</property>
+				<property name="ArtLogo3">$PROPERTY[wideArtLogo3]</property>
+				<onclick>ActivateWindow($PROPERTY[widgetTarget],$ESCINFO[Container($MATH[$PROPERTY[groupId] / 10]).ListItem.Property(WidgetPath)],return)</onclick>
 			</item>
 		</include>
 		<include name="widget-action-item">
@@ -71,11 +100,49 @@
 	</includes>
 	<propertyGroups>
 		<propertyGroup name="widget-style">
+			<!-- Wide episodes use thumbs; TV shows retain fTV art/fanart/logo selection. -->
 			<var name="styleLabel">
+				<value condition="widgetType=episodes + !widgetStyle">$LOCALIZE[31159]</value>
 				<value condition="widgetStyle=wide">$LOCALIZE[31159]</value>
 				<value condition="widgetStyle=poster">$LOCALIZE[31160]</value>
 				<value condition="widgetStyle=square">$LOCALIZE[31203]</value>
 				<value condition="widgetStyle=squareinfo">$LOCALIZE[31161]</value>
+			</var>
+			<var name="wideArtFTV1">
+				<value condition="widgetType=episodes">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(0).Art(thumb)]</value>
+				<value>$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(0).Art(ftv)]</value>
+			</var>
+			<var name="wideArtFanart1">
+				<value condition="widgetType=episodes"></value>
+				<value>$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(0).Art(fanart)]</value>
+			</var>
+			<var name="wideArtLogo1">
+				<value condition="widgetType=episodes"></value>
+				<value>$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(0).Art(clearlogo)]</value>
+			</var>
+			<var name="wideArtFTV2">
+				<value condition="widgetType=episodes">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(1).Art(thumb)]</value>
+				<value>$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(1).Art(ftv)]</value>
+			</var>
+			<var name="wideArtFanart2">
+				<value condition="widgetType=episodes"></value>
+				<value>$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(1).Art(fanart)]</value>
+			</var>
+			<var name="wideArtLogo2">
+				<value condition="widgetType=episodes"></value>
+				<value>$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(1).Art(clearlogo)]</value>
+			</var>
+			<var name="wideArtFTV3">
+				<value condition="widgetType=episodes">$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(2).Art(thumb)]</value>
+				<value>$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(2).Art(ftv)]</value>
+			</var>
+			<var name="wideArtFanart3">
+				<value condition="widgetType=episodes"></value>
+				<value>$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(2).Art(fanart)]</value>
+			</var>
+			<var name="wideArtLogo3">
+				<value condition="widgetType=episodes"></value>
+				<value>$INFO[Container($MATH[$PROPERTY[groupId] + $PROPERTY[index]]).ListItemPosition(2).Art(clearlogo)]</value>
 			</var>
 		</propertyGroup>
 	</propertyGroups>

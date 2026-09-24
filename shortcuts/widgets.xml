@@ -19,6 +19,9 @@
 		<widget name="recent-tvshows" label="31175" type="tvshows" target="videos" icon="ftv_icon.png">
 			<path>special://skin/extras/video/RecentlyUpdatedTVShows.xsp</path>
 		</widget>
+		<widget name="recent-episodes" label="31261" type="episodes" target="videos" icon="ftv_icon.png">
+			<path>library://video/tvshows/recentlyaddedepisodes.xml/</path>
+		</widget>
 		<widget name="your-tvshows" label="31176" type="tvshows" target="videos" icon="ftv_icon.png">
 			<path>special://skin/extras/video/YourTVShows.xsp</path>
 		</widget>

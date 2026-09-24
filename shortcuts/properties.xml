@@ -45,6 +45,7 @@
 	</property>
 	<property name="widgetSortBy" type="options">
 		<options>
+			<option value="none" label="571"/>
 			<option value="label" label="label"/>
 			<option value="name" label="name"/>
 			<option value="dateadded" label="dateadded"/>
@@ -81,6 +82,30 @@
 			<option value="descending" label="21431"/>
 		</options>
 	</property>
+	<!-- Defaults apply to content widgets only and preserve explicit user choices. -->
+	<fallbacks>
+		<fallback property="widgetStyle">
+			<when condition="widgetPath + widgetType=episodes">wide</when>
+			<when condition="widgetPath + [widgetType=movies | widgetType=tvshows]">poster</when>
+			<when condition="widgetPath + !widgetType=ftv-action">squareinfo</when>
+		</fallback>
+		<fallback property="widgetSortBy">
+			<!-- This node already sorts by date added and episode ID; keep its tie order. -->
+			<when condition="widgetPath=library://video/tvshows/recentlyaddedepisodes.xml/">none</when>
+			<when condition="widgetPath=musicdb://recentlyplayedalbums/ | widgetPath=special://skin/extras/video/InProgressMovies.xsp | widgetPath=special://skin/extras/video/InProgressTVShows.xsp">lastplayed</when>
+			<when condition="widgetPath=musicdb://recentlyaddedalbums/ | widgetPath=special://skin/extras/video/RecentlyAddedMovies.xsp | widgetPath=special://skin/extras/video/RecentlyUpdatedTVShows.xsp">dateadded</when>
+			<when condition="widgetPath=special://skin/extras/video/KidsMovies.xsp | widgetPath=special://skin/extras/video/KidsTVShows.xsp | widgetPath=special://skin/extras/video/YourMovies.xsp | widgetPath=special://skin/extras/video/YourTVShows.xsp">name</when>
+			<when condition="widgetPath=special://skin/extras/video/TopRatedMovies.xsp | widgetPath=special://skin/extras/video/TopRatedTVShows.xsp">rating</when>
+			<when condition="widgetPath=special://skin/extras/music/YourAlbums.xsp | widgetPath=special://skin/extras/music/YourArtists.xsp">artist</when>
+			<when condition="widgetPath=musicdb://genres/">genre</when>
+			<when condition="widgetPath + !widgetType=ftv-action">label</when>
+		</fallback>
+		<fallback property="widgetSortOrder">
+			<when condition="widgetPath=library://video/tvshows/recentlyaddedepisodes.xml/">descending</when>
+			<when condition="widgetPath + !widgetType=ftv-action + [widgetSortBy=dateadded | widgetSortBy=lastplayed | widgetSortBy=rating | widgetSortBy=lastupdated]">descending</when>
+			<when condition="widgetPath + !widgetType=ftv-action">ascending</when>
+		</fallback>
+	</fallbacks>
 	<buttons>
 		<button id="309" property="widgetgroup" title="31218" showNone="true"/>
 		<button id="310" property="widget"/>

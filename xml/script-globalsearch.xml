@@ -452,21 +452,14 @@
 							<height>1152</height>
 							<texture border="100">views/shadow_nf.png</texture>
 						</control>
-						<control type="image">
-							<top>96</top>
-							<width>1280</width>
-							<height>960</height>
-							<aspectratio align="center">scale</aspectratio>
-							<texture background="true" fallback="views/episode_fallback.png">$VAR[WideImage]</texture>
-						</control>
-						<control type="image">
-							<top>96</top>
-							<width>1280</width>
-							<height>960</height>
-							<aspectratio align="center">scale</aspectratio>
-							<texture>views/episode_fallback.png</texture>
-							<visible>!ListItem.IsParentFolder + $EXP[HideWatchedEpisodeCheck]</visible>
-						</control>
+						<include content="SpoilerProtectedImage">
+							<param name="image" value="$VAR[WideImage]"/>
+							<param name="hidden" value="!ListItem.IsParentFolder + !String.StartsWith(Container.FolderPath,plugin://) + $EXP[HideWatchedEpisodeCheck]"/>
+							<param name="fallback" value="views/episode_fallback.png"/>
+							<param name="top" value="96"/>
+							<param name="width" value="1280"/>
+							<param name="height" value="960"/>
+						</include>
 						<control type="image">
 							<left>238</left>
 							<top>656</top>
@@ -560,21 +553,14 @@
 								<param name="ListID" value="50"/>
 							</include>
 						</control>
-						<control type="image">
-							<top>96</top>
-							<width>1280</width>
-							<height>960</height>
-							<aspectratio align="center">scale</aspectratio>
-							<texture background="true" fallback="views/episode_fallback.png">$VAR[WideImage]</texture>
-						</control>
-						<control type="image">
-							<top>96</top>
-							<width>1280</width>
-							<height>960</height>
-							<aspectratio align="center">scale</aspectratio>
-							<texture>views/episode_fallback.png</texture>
-							<visible>!ListItem.IsParentFolder + $EXP[HideWatchedEpisodeCheck]</visible>
-						</control>
+						<include content="SpoilerProtectedImage">
+							<param name="image" value="$VAR[WideImage]"/>
+							<param name="hidden" value="!ListItem.IsParentFolder + !String.StartsWith(Container.FolderPath,plugin://) + $EXP[HideWatchedEpisodeCheck]"/>
+							<param name="fallback" value="views/episode_fallback.png"/>
+							<param name="top" value="96"/>
+							<param name="width" value="1280"/>
+							<param name="height" value="960"/>
+						</include>
 						<control type="image">
 							<left>238</left>
 							<top>656</top>
