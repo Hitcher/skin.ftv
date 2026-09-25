@@ -22,6 +22,11 @@
 		<control type="list" id="99950">
 			<include>HiddenList</include>
 		</control>
+		<!-- Library item plus parent-show details, supplied by the existing Skin Variables add-on. -->
+		<control type="list" id="99951">
+			<include>HiddenList</include>
+			<content>$VAR[fTVParentShowLibraryContent]</content>
+		</control>
 		<!-- Cast list -->
 		<include condition="!Container.Content(Sets) + Skin.HasSetting(ExtendedInfo)">CastList</include>
 		<!-- Content type includes -->
