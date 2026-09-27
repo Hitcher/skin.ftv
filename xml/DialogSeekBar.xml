@@ -172,8 +172,8 @@
 						<width>160</width>
 						<height>160</height>
 						<texture>osd/skip.png</texture>
-						<animation condition="String.Contains(Player.SeekStepSize,-) | [String.IsEmpty(Player.SeekStepSize) + String.Contains(Player.SeekOffset,-)]" effect="rotatey" end="180" center="80,0" time="0">Conditional</animation>
-						<visible>!String.IsEmpty(Player.SeekOffset) | !String.IsEmpty(Player.SeekStepSize)</visible>
+						<animation condition="String.Contains(Player.SeekStepValue,-) | [String.IsEmpty(Player.SeekStepValue) + String.Contains(Player.SeekOffset,-)]" effect="rotatey" end="180" center="80,0" time="0">Conditional</animation>
+						<visible>!String.IsEmpty(Player.SeekOffset) | !String.IsEmpty(Player.SeekStepValue)</visible>
 					</control>
 				</control>
 				<control type="label">
