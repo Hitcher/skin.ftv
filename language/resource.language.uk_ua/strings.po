@@ -1064,6 +1064,10 @@ msgctxt "#31260"
 msgid "TomatoMeter Top Critics"
 msgstr "Рейтинг найкращих критиків TomatoMeter"
 
+msgctxt "#31261"
+msgid "Recently Added Episodes"
+msgstr ""
+
 #~ msgctxt "#31193"
 #~ msgid "Now Playing"
 #~ msgstr "Зараз відтворюється"
