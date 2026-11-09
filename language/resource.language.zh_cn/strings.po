@@ -1061,6 +1061,10 @@ msgctxt "#31260"
 msgid "TomatoMeter Top Critics"
 msgstr "烂番茄专业影评人评分"
 
+msgctxt "#31261"
+msgid "Recently Added Episodes"
+msgstr ""
+
 #~ msgctxt "#31193"
 #~ msgid "Now Playing"
 #~ msgstr "正在播放"

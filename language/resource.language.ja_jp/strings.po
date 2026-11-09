@@ -1051,6 +1051,10 @@ msgctxt "#31260"
 msgid "TomatoMeter Top Critics"
 msgstr ""
 
+msgctxt "#31261"
+msgid "Recently Added Episodes"
+msgstr ""
+
 #~ msgctxt "#31239"
 #~ msgid "Press play to resume"
 #~ msgstr "再生を押して再開"
